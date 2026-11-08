@@ -1,0 +1,3697 @@
+{
+ "date": "2026-11-07",
+ "built_at": "2026-11-07T12:30:00-08:00",
+ "retro": true,
+ "metrics_through": "2026-11-06",
+ "injury_source": "NBA official injury report",
+ "injury_report_time": "2026-11-07T15:30:00-05:00",
+ "injury_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_03_30PM.pdf",
+ "first_tip_utc": "2026-11-07T22:00Z",
+ "games": [
+  {
+   "id": "401909942",
+   "state": "post",
+   "neutral": false,
+   "tip_utc": "2026-11-08T01:30Z",
+   "tip_pt": "5:30 PM PT",
+   "away": {
+    "id": "19",
+    "abbr": "ORL",
+    "name": "Magic",
+    "display": "Orlando Magic",
+    "record": "2-6",
+    "l3_record": "0-3",
+    "b2b": false,
+    "season": {
+     "efg": 53.68,
+     "opp_efg": 54.75,
+     "off": 104.55,
+     "def": 113.97,
+     "net": -9.41,
+     "poss_per_game": 100.9,
+     "ranks": {
+      "efg": 14,
+      "opp_efg": 22,
+      "off": 26,
+      "def": 25,
+      "net": 25
+     }
+    },
+    "last3": {
+     "efg": 53.31,
+     "opp_efg": 57.32,
+     "off": 101.65,
+     "def": 113.03,
+     "net": -11.37,
+     "poss_per_game": 96.7,
+     "ranks": {
+      "efg": 17,
+      "opp_efg": 26,
+      "off": 27,
+      "def": 18,
+      "net": 26
+     }
+    },
+    "power": {
+     "rank": 25,
+     "split": false,
+     "own_net": 25,
+     "bpi": null,
+     "nba_com": 18
+    },
+    "last3_games": [
+     {
+      "game_id": "401909936",
+      "date": "2026-11-05",
+      "site": "away",
+      "opp_id": "21",
+      "opp": "PHX",
+      "pts": 104,
+      "opp_pts": 117,
+      "metrics": {
+       "efg": 56.17,
+       "opp_efg": 61.49,
+       "off": 102.32,
+       "def": 115.11,
+       "net": -12.79
+      },
+      "opp_power_rank": 23
+     },
+     {
+      "game_id": "401909911",
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": "27",
+      "opp": "WSH",
+      "pts": 94,
+      "opp_pts": 103,
+      "metrics": {
+       "efg": 53.12,
+       "opp_efg": 59.33,
+       "off": 99.83,
+       "def": 109.39,
+       "net": -9.56
+      },
+      "opp_power_rank": 19
+     },
+     {
+      "game_id": "401909903",
+      "date": "2026-11-01",
+      "site": "home",
+      "opp_id": "2",
+      "opp": "BOS",
+      "pts": 97,
+      "opp_pts": 108,
+      "metrics": {
+       "efg": 50.62,
+       "opp_efg": 51.19,
+       "off": 102.75,
+       "def": 114.41,
+       "net": -11.65
+      },
+      "opp_power_rank": 4
+     }
+    ],
+    "injuries": [
+     {
+      "player": "Desmond Bane",
+      "status": "Out",
+      "reason": "Injury: Illness",
+      "is_key": true,
+      "key_info": {
+       "name": "Desmond Bane",
+       "starts": 8,
+       "team_games": 8,
+       "mpg": 34.5,
+       "ppg": 17.5,
+       "why": "starter"
+      },
+      "counts_as_out": true
+     },
+     {
+      "player": "Jalen Suggs",
+      "status": "Out",
+      "reason": "Injury: Right Knee Contusion/Bone Bruise",
+      "is_key": true,
+      "key_info": {
+       "name": "Jalen Suggs",
+       "starts": 3,
+       "team_games": 8,
+       "mpg": 33.3,
+       "ppg": 8.0,
+       "why": "top-5 minutes"
+      },
+      "counts_as_out": true
+     },
+     {
+      "player": "Izaiyah Nelson",
+      "status": "Out",
+      "reason": "Injury: Left Ankle Injury Recovery",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Jonathan Isaac",
+      "status": "Out",
+      "reason": "Injury: Left Knee Injury Management",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Noah Penda",
+      "status": "Out",
+      "reason": "Injury: Right Partially Torn Hamstring",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Paolo Banchero",
+      "status": "Out",
+      "reason": "Injury: Right High Ankle Sprain",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [
+     "Desmond Bane",
+     "Jalen Suggs"
+    ],
+    "key_questionable": []
+   },
+   "home": {
+    "id": "9",
+    "abbr": "GS",
+    "name": "Warriors",
+    "display": "Golden State Warriors",
+    "record": "6-3",
+    "l3_record": "3-0",
+    "b2b": false,
+    "season": {
+     "efg": 55.52,
+     "opp_efg": 54.86,
+     "off": 115.3,
+     "def": 110.63,
+     "net": 4.68,
+     "poss_per_game": 102.1,
+     "ranks": {
+      "efg": 5,
+      "opp_efg": 24,
+      "off": 4,
+      "def": 19,
+      "net": 11
+     }
+    },
+    "last3": {
+     "efg": 59.8,
+     "opp_efg": 51.15,
+     "off": 117.43,
+     "def": 106.02,
+     "net": 11.42,
+     "poss_per_game": 102.2,
+     "ranks": {
+      "efg": 2,
+      "opp_efg": 12,
+      "off": 6,
+      "def": 9,
+      "net": 6
+     }
+    },
+    "power": {
+     "rank": 12,
+     "split": false,
+     "own_net": 11,
+     "bpi": null,
+     "nba_com": 15
+    },
+    "last3_games": [
+     {
+      "game_id": "401909937",
+      "date": "2026-11-05",
+      "site": "home",
+      "opp_id": "14",
+      "opp": "MIA",
+      "pts": 120,
+      "opp_pts": 100,
+      "metrics": {
+       "efg": 62.5,
+       "opp_efg": 48.26,
+       "off": 113.14,
+       "def": 94.29,
+       "net": 18.86
+      },
+      "opp_power_rank": 22
+     },
+     {
+      "game_id": "401909919",
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": "21",
+      "opp": "PHX",
+      "pts": 116,
+      "opp_pts": 113,
+      "metrics": {
+       "efg": 50.6,
+       "opp_efg": 53.53,
+       "off": 112.91,
+       "def": 109.99,
+       "net": 2.92
+      },
+      "opp_power_rank": 23
+     },
+     {
+      "game_id": "401909905",
+      "date": "2026-11-01",
+      "site": "home",
+      "opp_id": "12",
+      "opp": "LAC",
+      "pts": 124,
+      "opp_pts": 112,
+      "metrics": {
+       "efg": 66.28,
+       "opp_efg": 51.65,
+       "off": 126.84,
+       "def": 114.57,
+       "net": 12.27
+      },
+      "opp_power_rank": 24
+     }
+    ],
+    "injuries": [
+     {
+      "player": "Draymond Green",
+      "status": "Questionable",
+      "reason": "Injury: Right Elbow Inflammation/Soreness",
+      "is_key": true,
+      "key_info": {
+       "name": "Draymond Green",
+       "starts": 7,
+       "team_games": 9,
+       "mpg": 26.7,
+       "ppg": 3.0,
+       "why": "starter"
+      },
+      "counts_as_out": false
+     },
+     {
+      "player": "Jimmy Butler III",
+      "status": "Out",
+      "reason": "Injury: Right ACLRepair/",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Kristaps Porzingis",
+      "status": "Out",
+      "reason": "Not With Team",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Moses Moody",
+      "status": "Out",
+      "reason": "Injury: Left Patellar Tendon Repair/Surgery",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Gary Payton II",
+      "status": "Questionable",
+      "reason": "Injury: Right Calf Tightness/Soreness",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": false
+     },
+     {
+      "player": "Gui Santos",
+      "status": "Questionable",
+      "reason": "Injury: Left Knee Tendinitis",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": false
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [
+     "Draymond Green"
+    ]
+   },
+   "spread": {
+    "favorite_id": "9",
+    "spread": 7.5,
+    "details": "GS -7.5",
+    "provider": "Draft Kings",
+    "ml_home": -309,
+    "ml_away": 250,
+    "closing": true
+   },
+   "favorite": "home",
+   "scoring": {
+    "scored": true,
+    "favorite_side": "home",
+    "fav": "GS",
+    "dog": "ORL",
+    "qualified": true,
+    "fails": [],
+    "warnings": [
+     "GS key player questionable: Draymond Green",
+     "Info: ORL without Desmond Bane, Jalen Suggs"
+    ],
+    "rules": [
+     {
+      "rule": 1,
+      "pass": true,
+      "detail": "Season top 10 in eFG%, Off Eff"
+     },
+     {
+      "rule": 2,
+      "pass": true,
+      "detail": "Also top 10 over last 3 in eFG%, Off Eff"
+     },
+     {
+      "rule": 3,
+      "pass": true,
+      "detail": "Underdog last-3 top 10: none"
+     },
+     {
+      "rule": 4,
+      "pass": true,
+      "detail": "Underdog last 3: 0-3"
+     },
+     {
+      "rule": 5,
+      "pass": true,
+      "detail": "Key out: none"
+     },
+     {
+      "rule": 6,
+      "pass": true,
+      "detail": "Injury report available"
+     }
+    ],
+    "qualifiers": [
+     "eFG%",
+     "Off Eff"
+    ],
+    "score": 21,
+    "max": 40,
+    "band": "yellow",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 8,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 8,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 2,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "GS",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 5,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 4,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 24,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 19,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "GS",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 2,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 6,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 12,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 9,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "ORL",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 22,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 25,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 14,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 26,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "ORL",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 26,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 18,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 17,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 27,
+        "color": "green"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "401909943",
+   "state": "post",
+   "neutral": false,
+   "tip_utc": "2026-11-08T02:00Z",
+   "tip_pt": "6:00 PM PT",
+   "away": {
+    "id": "10",
+    "abbr": "HOU",
+    "name": "Rockets",
+    "display": "Houston Rockets",
+    "record": "7-2",
+    "l3_record": "2-1",
+    "b2b": false,
+    "season": {
+     "efg": 56.65,
+     "opp_efg": 52.41,
+     "off": 117.35,
+     "def": 107.06,
+     "net": 10.29,
+     "poss_per_game": 100.5,
+     "ranks": {
+      "efg": 3,
+      "opp_efg": 14,
+      "off": 3,
+      "def": 8,
+      "net": 2
+     }
+    },
+    "last3": {
+     "efg": 56.37,
+     "opp_efg": 52.35,
+     "off": 115.96,
+     "def": 106.61,
+     "net": 9.35,
+     "poss_per_game": 96.3,
+     "ranks": {
+      "efg": 7,
+      "opp_efg": 17,
+      "off": 8,
+      "def": 10,
+      "net": 8
+     }
+    },
+    "power": {
+     "rank": 2,
+     "split": false,
+     "own_net": 2,
+     "bpi": null,
+     "nba_com": 1
+    },
+    "last3_games": [
+     {
+      "game_id": "401909930",
+      "date": "2026-11-04",
+      "site": "home",
+      "opp_id": "16",
+      "opp": "MIN",
+      "pts": 107,
+      "opp_pts": 117,
+      "metrics": {
+       "efg": 50.61,
+       "opp_efg": 61.49,
+       "off": 106.7,
+       "def": 116.67,
+       "net": -9.97
+      },
+      "opp_power_rank": 1
+     },
+     {
+      "game_id": "401909916",
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": "2",
+      "opp": "BOS",
+      "pts": 109,
+      "opp_pts": 93,
+      "metrics": {
+       "efg": 63.29,
+       "opp_efg": 45.78,
+       "off": 118.14,
+       "def": 100.8,
+       "net": 17.34
+      },
+      "opp_power_rank": 4
+     },
+     {
+      "game_id": "401909902",
+      "date": "2026-10-31",
+      "site": "home",
+      "opp_id": "25",
+      "opp": "OKC",
+      "pts": 119,
+      "opp_pts": 98,
+      "metrics": {
+       "efg": 55.56,
+       "opp_efg": 49.41,
+       "off": 123.5,
+       "def": 101.7,
+       "net": 21.79
+      },
+      "opp_power_rank": 11
+     }
+    ],
+    "injuries": [
+     {
+      "player": "Clint Capela",
+      "status": "Out",
+      "reason": "Injury: Right Ankle Sprain",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Julian Phillips",
+      "status": "Out",
+      "reason": "G League two-way",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Quadir Copeland",
+      "status": "Out",
+      "reason": "G League two-way",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Steven Adams",
+      "status": "Out",
+      "reason": "Injury: Right Soleus Strain",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Bruce Thornton",
+      "status": "Available",
+      "reason": "GLeague-On Assignment",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": false
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "home": {
+    "id": "21",
+    "abbr": "PHX",
+    "name": "Suns",
+    "display": "Phoenix Suns",
+    "record": "2-5",
+    "l3_record": "1-2",
+    "b2b": false,
+    "season": {
+     "efg": 54.6,
+     "opp_efg": 57.31,
+     "off": 111.54,
+     "def": 118.96,
+     "net": -7.42,
+     "poss_per_game": 102.1,
+     "ranks": {
+      "efg": 9,
+      "opp_efg": 28,
+      "off": 13,
+      "def": 28,
+      "net": 24
+     }
+    },
+    "last3": {
+     "efg": 54.92,
+     "opp_efg": 55.38,
+     "off": 112.86,
+     "def": 113.83,
+     "net": -0.97,
+     "poss_per_game": 103.1,
+     "ranks": {
+      "efg": 11,
+      "opp_efg": 20,
+      "off": 13,
+      "def": 19,
+      "net": 18
+     }
+    },
+    "power": {
+     "rank": 23,
+     "split": false,
+     "own_net": 24,
+     "bpi": null,
+     "nba_com": 22
+    },
+    "last3_games": [
+     {
+      "game_id": "401909936",
+      "date": "2026-11-05",
+      "site": "home",
+      "opp_id": "19",
+      "opp": "ORL",
+      "pts": 117,
+      "opp_pts": 104,
+      "metrics": {
+       "efg": 61.49,
+       "opp_efg": 56.17,
+       "off": 115.11,
+       "def": 102.32,
+       "net": 12.79
+      },
+      "opp_power_rank": 25
+     },
+     {
+      "game_id": "401909932",
+      "date": "2026-11-04",
+      "site": "home",
+      "opp_id": "22",
+      "opp": "POR",
+      "pts": 119,
+      "opp_pts": 132,
+      "metrics": {
+       "efg": 50.0,
+       "opp_efg": 59.3,
+       "off": 113.51,
+       "def": 125.91,
+       "net": -12.4
+      },
+      "opp_power_rank": 6
+     },
+     {
+      "game_id": "401909919",
+      "date": "2026-11-02",
+      "site": "away",
+      "opp_id": "9",
+      "opp": "GS",
+      "pts": 113,
+      "opp_pts": 116,
+      "metrics": {
+       "efg": 53.53,
+       "opp_efg": 50.6,
+       "off": 109.99,
+       "def": 112.91,
+       "net": -2.92
+      },
+      "opp_power_rank": 12
+     }
+    ],
+    "injuries": [
+     {
+      "player": "Jordan Goodwin",
+      "status": "Doubtful",
+      "reason": "Injury: Right Calf Injury Management",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Mark Williams",
+      "status": "Out",
+      "reason": "Injury: Left Shoulder Surgery",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Rasheer Fleming",
+      "status": "Questionable",
+      "reason": "Injury: Left Ankle Sprain",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": false
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "spread": {
+    "favorite_id": "10",
+    "spread": 6.5,
+    "details": "HOU -6.5",
+    "provider": "Draft Kings",
+    "ml_home": 217,
+    "ml_away": -264,
+    "closing": true
+   },
+   "favorite": "away",
+   "scoring": {
+    "scored": true,
+    "favorite_side": "away",
+    "fav": "HOU",
+    "dog": "PHX",
+    "qualified": true,
+    "fails": [],
+    "warnings": [],
+    "rules": [
+     {
+      "rule": 1,
+      "pass": true,
+      "detail": "Season top 10 in eFG%, Off Eff, Def Eff"
+     },
+     {
+      "rule": 2,
+      "pass": true,
+      "detail": "Also top 10 over last 3 in eFG%, Off Eff, Def Eff"
+     },
+     {
+      "rule": 3,
+      "pass": true,
+      "detail": "Underdog last-3 top 10: none"
+     },
+     {
+      "rule": 4,
+      "pass": true,
+      "detail": "Underdog last 3: 1-2"
+     },
+     {
+      "rule": 5,
+      "pass": true,
+      "detail": "Key out: none"
+     },
+     {
+      "rule": 6,
+      "pass": true,
+      "detail": "Injury report available"
+     }
+    ],
+    "qualifiers": [
+     "eFG%",
+     "Off Eff",
+     "Def Eff"
+    ],
+    "score": 18,
+    "max": 40,
+    "band": "yellow",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 8,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 4,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 2,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "HOU",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 3,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 3,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 14,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 8,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "HOU",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 7,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 8,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 17,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 10,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "PHX",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 28,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 28,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 9,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 13,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "PHX",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 20,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 19,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 11,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 13,
+        "color": "yellow"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "401909938",
+   "state": "post",
+   "neutral": true,
+   "tip_utc": "2026-11-07T22:00Z",
+   "tip_pt": "2:00 PM PT",
+   "away": {
+    "id": "7",
+    "abbr": "DEN",
+    "name": "Nuggets",
+    "display": "Denver Nuggets",
+    "record": "4-3",
+    "l3_record": "2-1",
+    "b2b": false,
+    "season": {
+     "efg": 56.12,
+     "opp_efg": 54.43,
+     "off": 114.66,
+     "def": 113.95,
+     "net": 0.71,
+     "poss_per_game": 100.7,
+     "ranks": {
+      "efg": 4,
+      "opp_efg": 20,
+      "off": 5,
+      "def": 24,
+      "net": 18
+     }
+    },
+    "last3": {
+     "efg": 61.7,
+     "opp_efg": 56.27,
+     "off": 124.19,
+     "def": 118.07,
+     "net": 6.12,
+     "poss_per_game": 98.0,
+     "ranks": {
+      "efg": 1,
+      "opp_efg": 21,
+      "off": 1,
+      "def": 28,
+      "net": 11
+     }
+    },
+    "power": {
+     "rank": 18,
+     "split": false,
+     "own_net": 18,
+     "bpi": null,
+     "nba_com": 13
+    },
+    "last3_games": [
+     {
+      "game_id": "401909931",
+      "date": "2026-11-04",
+      "site": "home",
+      "opp_id": "28",
+      "opp": "TOR",
+      "pts": 128,
+      "opp_pts": 109,
+      "metrics": {
+       "efg": 67.31,
+       "opp_efg": 55.29,
+       "off": 129.58,
+       "def": 110.35,
+       "net": 19.23
+      },
+      "opp_power_rank": 9
+     },
+     {
+      "game_id": "401909918",
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": "22",
+      "opp": "POR",
+      "pts": 110,
+      "opp_pts": 118,
+      "metrics": {
+       "efg": 52.6,
+       "opp_efg": 54.89,
+       "off": 115.06,
+       "def": 123.43,
+       "net": -8.37
+      },
+      "opp_power_rank": 6
+     },
+     {
+      "game_id": "401909286",
+      "date": "2026-10-30",
+      "site": "away",
+      "opp_id": "21",
+      "opp": "PHX",
+      "pts": 127,
+      "opp_pts": 120,
+      "metrics": {
+       "efg": 65.0,
+       "opp_efg": 58.51,
+       "off": 127.61,
+       "def": 120.58,
+       "net": 7.03
+      },
+      "opp_power_rank": 23
+     }
+    ],
+    "injuries": [
+     {
+      "player": "Julian Strawther",
+      "status": "Out",
+      "reason": "Injury: Left Knee Sprain",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "DeMar DeRozan",
+      "status": "Probable",
+      "reason": "Injury: Low Back Spasms",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": false
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "home": {
+    "id": "11",
+    "abbr": "IND",
+    "name": "Pacers",
+    "display": "Indiana Pacers",
+    "record": "3-6",
+    "l3_record": "1-2",
+    "b2b": false,
+    "season": {
+     "efg": 53.48,
+     "opp_efg": 53.11,
+     "off": 107.57,
+     "def": 110.47,
+     "net": -2.9,
+     "poss_per_game": 103.4,
+     "ranks": {
+      "efg": 16,
+      "opp_efg": 15,
+      "off": 21,
+      "def": 18,
+      "net": 20
+     }
+    },
+    "last3": {
+     "efg": 51.47,
+     "opp_efg": 50.56,
+     "off": 99.58,
+     "def": 102.22,
+     "net": -2.65,
+     "poss_per_game": 100.8,
+     "ranks": {
+      "efg": 21,
+      "opp_efg": 10,
+      "off": 28,
+      "def": 3,
+      "net": 20
+     }
+    },
+    "power": {
+     "rank": 20,
+     "split": true,
+     "own_net": 20,
+     "bpi": null,
+     "nba_com": 24
+    },
+    "last3_games": [
+     {
+      "game_id": "401909927",
+      "date": "2026-11-04",
+      "site": "away",
+      "opp_id": "29",
+      "opp": "MEM",
+      "pts": 107,
+      "opp_pts": 103,
+      "metrics": {
+       "efg": 52.27,
+       "opp_efg": 51.65,
+       "off": 102.85,
+       "def": 99.0,
+       "net": 3.84
+      },
+      "opp_power_rank": 8
+     },
+     {
+      "game_id": "401909909",
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": "1",
+      "opp": "ATL",
+      "pts": 104,
+      "opp_pts": 108,
+      "metrics": {
+       "efg": 52.5,
+       "opp_efg": 50.0,
+       "off": 99.22,
+       "def": 103.03,
+       "net": -3.82
+      },
+      "opp_power_rank": 15
+     },
+     {
+      "game_id": "401909904",
+      "date": "2026-11-01",
+      "site": "home",
+      "opp_id": "17",
+      "opp": "BKN",
+      "pts": 90,
+      "opp_pts": 98,
+      "metrics": {
+       "efg": 49.29,
+       "opp_efg": 50.0,
+       "off": 96.34,
+       "def": 104.9,
+       "net": -8.56
+      },
+      "opp_power_rank": 21
+     }
+    ],
+    "injuries": [
+     {
+      "player": "Tyrese Haliburton",
+      "status": "Out",
+      "reason": "Injury: Left Hamstring Strain",
+      "is_key": true,
+      "key_info": {
+       "name": "Tyrese Haliburton",
+       "starts": 4,
+       "team_games": 9,
+       "mpg": 33.0,
+       "ppg": 21.8,
+       "why": "top-5 minutes"
+      },
+      "counts_as_out": true
+     },
+     {
+      "player": "Kelly Oubre Jr.",
+      "status": "Available",
+      "reason": "Injury: Left Calf Contusion",
+      "is_key": true,
+      "key_info": {
+       "name": "Kelly Oubre Jr.",
+       "starts": 5,
+       "team_games": 9,
+       "mpg": 23.3,
+       "ppg": 9.4,
+       "why": "starter"
+      },
+      "counts_as_out": false
+     },
+     {
+      "player": "Ben Sheppard",
+      "status": "Out",
+      "reason": "Injury: Left Meniscus Surgery",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Johnny Furphy",
+      "status": "Out",
+      "reason": "Injury: Right ACLRepair/Surgery",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "T.J. McConnell",
+      "status": "Available",
+      "reason": "Injury: Right Hamstring Strain",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": false
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [
+     "Tyrese Haliburton"
+    ],
+    "key_questionable": []
+   },
+   "spread": {
+    "favorite_id": "7",
+    "spread": 8.5,
+    "details": "DEN -8.5",
+    "provider": "Draft Kings",
+    "ml_home": 261,
+    "ml_away": -324,
+    "closing": true
+   },
+   "favorite": "away",
+   "scoring": {
+    "scored": true,
+    "favorite_side": "away",
+    "fav": "DEN",
+    "dog": "IND",
+    "qualified": false,
+    "fails": [
+     "Underdog top 10 over last 3 in Opp eFG%, Def Eff"
+    ],
+    "warnings": [
+     "Info: IND without Tyrese Haliburton",
+     "IND power rank: NBA.com disagrees enough to change its top/bottom-10 group",
+     "Neutral-site game: no home-court point"
+    ],
+    "rules": [
+     {
+      "rule": 1,
+      "pass": true,
+      "detail": "Season top 10 in eFG%, Off Eff"
+     },
+     {
+      "rule": 2,
+      "pass": true,
+      "detail": "Also top 10 over last 3 in eFG%, Off Eff"
+     },
+     {
+      "rule": 3,
+      "pass": false,
+      "detail": "Underdog last-3 top 10: Opp eFG%, Def Eff"
+     },
+     {
+      "rule": 4,
+      "pass": true,
+      "detail": "Underdog last 3: 1-2"
+     },
+     {
+      "rule": 5,
+      "pass": true,
+      "detail": "Key out: none"
+     },
+     {
+      "rule": 6,
+      "pass": true,
+      "detail": "Injury report available"
+     }
+    ],
+    "qualifiers": [
+     "eFG%",
+     "Off Eff"
+    ],
+    "score": 15,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 8,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 4,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "DEN",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 4,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 5,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 20,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 24,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "DEN",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 1,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 1,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 21,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 28,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "IND",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 15,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 18,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 16,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 21,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "IND",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 10,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 3,
+        "color": "deep-red"
+       },
+       {
+        "metric": "efg",
+        "rank": 21,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 28,
+        "color": "green"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "401909941",
+   "state": "post",
+   "neutral": false,
+   "tip_utc": "2026-11-08T01:00Z",
+   "tip_pt": "5:00 PM PT",
+   "away": {
+    "id": "27",
+    "abbr": "WSH",
+    "name": "Wizards",
+    "display": "Washington Wizards",
+    "record": "4-5",
+    "l3_record": "1-2",
+    "b2b": true,
+    "season": {
+     "efg": 53.78,
+     "opp_efg": 50.76,
+     "off": 109.42,
+     "def": 110.29,
+     "net": -0.87,
+     "poss_per_game": 101.9,
+     "ranks": {
+      "efg": 12,
+      "opp_efg": 7,
+      "off": 19,
+      "def": 17,
+      "net": 19
+     }
+    },
+    "last3": {
+     "efg": 56.89,
+     "opp_efg": 56.27,
+     "off": 112.57,
+     "def": 116.87,
+     "net": -4.3,
+     "poss_per_game": 100.7,
+     "ranks": {
+      "efg": 5,
+      "opp_efg": 21,
+      "off": 14,
+      "def": 27,
+      "net": 21
+     }
+    },
+    "power": {
+     "rank": 19,
+     "split": false,
+     "own_net": 19,
+     "bpi": null,
+     "nba_com": 20
+    },
+    "last3_games": [
+     {
+      "game_id": "401909287",
+      "date": "2026-11-06",
+      "site": "away",
+      "opp_id": "1",
+      "opp": "ATL",
+      "pts": 132,
+      "opp_pts": 139,
+      "metrics": {
+       "efg": 60.44,
+       "opp_efg": 61.22,
+       "off": 124.32,
+       "def": 130.91,
+       "net": -6.59
+      },
+      "opp_power_rank": 15
+     },
+     {
+      "game_id": "401909923",
+      "date": "2026-11-04",
+      "site": "home",
+      "opp_id": "1",
+      "opp": "ATL",
+      "pts": 105,
+      "opp_pts": 120,
+      "metrics": {
+       "efg": 51.14,
+       "opp_efg": 53.96,
+       "off": 103.24,
+       "def": 117.99,
+       "net": -14.75
+      },
+      "opp_power_rank": 15
+     },
+     {
+      "game_id": "401909911",
+      "date": "2026-11-02",
+      "site": "away",
+      "opp_id": "19",
+      "opp": "ORL",
+      "pts": 103,
+      "opp_pts": 94,
+      "metrics": {
+       "efg": 59.33,
+       "opp_efg": 53.12,
+       "off": 109.39,
+       "def": 99.83,
+       "net": 9.56
+      },
+      "opp_power_rank": 25
+     }
+    ],
+    "injuries": [
+     {
+      "player": "Anthony Davis",
+      "status": "Questionable",
+      "reason": "Injury: Right Ankle Sprain",
+      "is_key": true,
+      "key_info": {
+       "name": "Anthony Davis",
+       "starts": 8,
+       "team_games": 9,
+       "mpg": 33.1,
+       "ppg": 23.4,
+       "why": "starter"
+      },
+      "counts_as_out": false
+     },
+     {
+      "player": "Felix Okpara",
+      "status": "Out",
+      "reason": "G League two-way",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Jamir Watkins",
+      "status": "Out",
+      "reason": "Injury: Left ACLRepair/Surgery",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Justin Champagnie",
+      "status": "Out",
+      "reason": "Injury: Right Foot Surgery",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Reece Beekman",
+      "status": "Out",
+      "reason": "Injury: Right ACJoint Injury",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Tristan Vukcevic",
+      "status": "Out",
+      "reason": "Injury: Left Hip Impingement",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [
+     "Anthony Davis"
+    ]
+   },
+   "home": {
+    "id": "25",
+    "abbr": "OKC",
+    "name": "Thunder",
+    "display": "Oklahoma City Thunder",
+    "record": "7-2",
+    "l3_record": "3-0",
+    "b2b": true,
+    "season": {
+     "efg": 51.58,
+     "opp_efg": 50.31,
+     "off": 109.8,
+     "def": 105.34,
+     "net": 4.47,
+     "poss_per_game": 102.0,
+     "ranks": {
+      "efg": 23,
+      "opp_efg": 4,
+      "off": 17,
+      "def": 6,
+      "net": 12
+     }
+    },
+    "last3": {
+     "efg": 55.73,
+     "opp_efg": 48.89,
+     "off": 118.44,
+     "def": 104.31,
+     "net": 14.12,
+     "poss_per_game": 103.9,
+     "ranks": {
+      "efg": 8,
+      "opp_efg": 6,
+      "off": 4,
+      "def": 5,
+      "net": 1
+     }
+    },
+    "power": {
+     "rank": 11,
+     "split": true,
+     "own_net": 12,
+     "bpi": null,
+     "nba_com": 7
+    },
+    "last3_games": [
+     {
+      "game_id": "401909291",
+      "date": "2026-11-06",
+      "site": "away",
+      "opp_id": "29",
+      "opp": "MEM",
+      "pts": 128,
+      "opp_pts": 97,
+      "metrics": {
+       "efg": 64.13,
+       "opp_efg": 38.64,
+       "off": 120.37,
+       "def": 91.22,
+       "net": 29.15
+      },
+      "opp_power_rank": 8
+     },
+     {
+      "game_id": "401909929",
+      "date": "2026-11-04",
+      "site": "home",
+      "opp_id": "5",
+      "opp": "CLE",
+      "pts": 124,
+      "opp_pts": 116,
+      "metrics": {
+       "efg": 54.49,
+       "opp_efg": 53.23,
+       "off": 117.11,
+       "def": 109.56,
+       "net": 7.56
+      },
+      "opp_power_rank": 13
+     },
+     {
+      "game_id": "401909907",
+      "date": "2026-11-02",
+      "site": "away",
+      "opp_id": "5",
+      "opp": "CLE",
+      "pts": 117,
+      "opp_pts": 112,
+      "metrics": {
+       "efg": 48.98,
+       "opp_efg": 54.44,
+       "off": 117.78,
+       "def": 112.74,
+       "net": 5.03
+      },
+      "opp_power_rank": 13
+     }
+    ],
+    "injuries": [
+     {
+      "player": "Chet Holmgren",
+      "status": "Out",
+      "reason": "Injury: Right Knee/Injury Recovery",
+      "is_key": true,
+      "key_info": {
+       "name": "Chet Holmgren",
+       "starts": 3,
+       "team_games": 9,
+       "mpg": 30.0,
+       "ppg": 12.0,
+       "why": "top-5 minutes"
+      },
+      "counts_as_out": true
+     },
+     {
+      "player": "Jalen Williams",
+      "status": "Out",
+      "reason": "Injury: Left Ankle Surgery",
+      "is_key": true,
+      "key_info": {
+       "name": "Jalen Williams",
+       "starts": 3,
+       "team_games": 9,
+       "mpg": 31.7,
+       "ppg": 13.7,
+       "why": "top-5 minutes"
+      },
+      "counts_as_out": true
+     },
+     {
+      "player": "Cason Wallace",
+      "status": "Out",
+      "reason": "Injury: Left Shoulder Surgery",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Jaylin Williams",
+      "status": "Out",
+      "reason": "Injury: Low Back Spasms",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Nikola Topic",
+      "status": "Out",
+      "reason": "GLeague-On Assignment",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Thomas Sorber",
+      "status": "Out",
+      "reason": "Injury: Right Knee Surgery",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [
+     "Chet Holmgren",
+     "Jalen Williams"
+    ],
+    "key_questionable": []
+   },
+   "spread": {
+    "favorite_id": "25",
+    "spread": 12.5,
+    "details": "OKC -12.5",
+    "provider": "Draft Kings",
+    "ml_home": -620,
+    "ml_away": 458,
+    "closing": true
+   },
+   "favorite": "home",
+   "scoring": {
+    "scored": true,
+    "favorite_side": "home",
+    "fav": "OKC",
+    "dog": "WSH",
+    "qualified": false,
+    "fails": [
+     "Underdog top 10 over last 3 in eFG%",
+     "Favorite key player out: Chet Holmgren, Jalen Williams"
+    ],
+    "warnings": [
+     "OKC power rank: NBA.com disagrees enough to change its top/bottom-10 group"
+    ],
+    "rules": [
+     {
+      "rule": 1,
+      "pass": true,
+      "detail": "Season top 10 in Opp eFG%, Def Eff"
+     },
+     {
+      "rule": 2,
+      "pass": true,
+      "detail": "Also top 10 over last 3 in Opp eFG%, Def Eff"
+     },
+     {
+      "rule": 3,
+      "pass": false,
+      "detail": "Underdog last-3 top 10: eFG%"
+     },
+     {
+      "rule": 4,
+      "pass": true,
+      "detail": "Underdog last 3: 1-2"
+     },
+     {
+      "rule": 5,
+      "pass": false,
+      "detail": "Key out: Chet Holmgren, Jalen Williams"
+     },
+     {
+      "rule": 6,
+      "pass": true,
+      "detail": "Injury report available"
+     }
+    ],
+    "qualifiers": [
+     "Opp eFG%",
+     "Def Eff"
+    ],
+    "score": 15,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 9,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 3,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 2,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 0,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "OKC",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 23,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 17,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 4,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 6,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "OKC",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 8,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 4,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 6,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 5,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "WSH",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 7,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 17,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 12,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 19,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "WSH",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 21,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 27,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 5,
+        "color": "deep-red"
+       },
+       {
+        "metric": "off",
+        "rank": 14,
+        "color": "yellow"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "401909944",
+   "state": "post",
+   "neutral": false,
+   "tip_utc": "2026-11-08T03:00Z",
+   "tip_pt": "7:00 PM PT",
+   "away": {
+    "id": "24",
+    "abbr": "SA",
+    "name": "Spurs",
+    "display": "San Antonio Spurs",
+    "record": "7-2",
+    "l3_record": "3-0",
+    "b2b": true,
+    "season": {
+     "efg": 52.25,
+     "opp_efg": 50.73,
+     "off": 114.23,
+     "def": 105.5,
+     "net": 8.74,
+     "poss_per_game": 103.0,
+     "ranks": {
+      "efg": 21,
+      "opp_efg": 6,
+      "off": 6,
+      "def": 7,
+      "net": 6
+     }
+    },
+    "last3": {
+     "efg": 50.0,
+     "opp_efg": 47.86,
+     "off": 117.68,
+     "def": 105.09,
+     "net": 12.6,
+     "poss_per_game": 100.6,
+     "ranks": {
+      "efg": 25,
+      "opp_efg": 1,
+      "off": 5,
+      "def": 7,
+      "net": 5
+     }
+    },
+    "power": {
+     "rank": 5,
+     "split": false,
+     "own_net": 6,
+     "bpi": null,
+     "nba_com": 4
+    },
+    "last3_games": [
+     {
+      "game_id": "401909295",
+      "date": "2026-11-06",
+      "site": "away",
+      "opp_id": "23",
+      "opp": "SAC",
+      "pts": 124,
+      "opp_pts": 109,
+      "metrics": {
+       "efg": 57.59,
+       "opp_efg": 58.54,
+       "off": 128.6,
+       "def": 113.05,
+       "net": 15.56
+      },
+      "opp_power_rank": 28
+     },
+     {
+      "game_id": "401909933",
+      "date": "2026-11-04",
+      "site": "home",
+      "opp_id": "6",
+      "opp": "DAL",
+      "pts": 112,
+      "opp_pts": 111,
+      "metrics": {
+       "efg": 41.58,
+       "opp_efg": 45.1,
+       "off": 110.02,
+       "def": 109.04,
+       "net": 0.98
+      },
+      "opp_power_rank": 16
+     },
+     {
+      "game_id": "401909917",
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": "26",
+      "opp": "UTAH",
+      "pts": 119,
+      "opp_pts": 97,
+      "metrics": {
+       "efg": 52.2,
+       "opp_efg": 41.67,
+       "off": 115.04,
+       "def": 93.77,
+       "net": 21.27
+      },
+      "opp_power_rank": 26
+     }
+    ],
+    "injuries": [
+     {
+      "player": "Ja'Kobi Gillespie",
+      "status": "Out",
+      "reason": "G League two-way",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Jayden Quaintance",
+      "status": "Out",
+      "reason": "Injury: Right Knee Surgery",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Maliq Brown",
+      "status": "Out",
+      "reason": "G League two-way",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Tobias Harris",
+      "status": "Out",
+      "reason": "Injury: Left Calf Strain",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "home": {
+    "id": "22",
+    "abbr": "POR",
+    "name": "Trail Blazers",
+    "display": "Portland Trail Blazers",
+    "record": "6-2",
+    "l3_record": "2-1",
+    "b2b": true,
+    "season": {
+     "efg": 57.32,
+     "opp_efg": 51.22,
+     "off": 118.32,
+     "def": 109.55,
+     "net": 8.77,
+     "poss_per_game": 102.6,
+     "ranks": {
+      "efg": 2,
+      "opp_efg": 10,
+      "off": 2,
+      "def": 14,
+      "net": 5
+     }
+    },
+    "last3": {
+     "efg": 59.27,
+     "opp_efg": 51.15,
+     "off": 121.36,
+     "def": 116.42,
+     "net": 4.95,
+     "poss_per_game": 101.1,
+     "ranks": {
+      "efg": 3,
+      "opp_efg": 12,
+      "off": 3,
+      "def": 26,
+      "net": 12
+     }
+    },
+    "power": {
+     "rank": 6,
+     "split": false,
+     "own_net": 5,
+     "bpi": null,
+     "nba_com": 9
+    },
+    "last3_games": [
+     {
+      "game_id": "401909294",
+      "date": "2026-11-06",
+      "site": "away",
+      "opp_id": "13",
+      "opp": "LAL",
+      "pts": 118,
+      "opp_pts": 124,
+      "metrics": {
+       "efg": 65.0,
+       "opp_efg": 51.08,
+       "off": 114.81,
+       "def": 120.65,
+       "net": -5.84
+      },
+      "opp_power_rank": 7
+     },
+     {
+      "game_id": "401909932",
+      "date": "2026-11-04",
+      "site": "away",
+      "opp_id": "21",
+      "opp": "PHX",
+      "pts": 132,
+      "opp_pts": 119,
+      "metrics": {
+       "efg": 59.3,
+       "opp_efg": 50.0,
+       "off": 125.91,
+       "def": 113.51,
+       "net": 12.4
+      },
+      "opp_power_rank": 23
+     },
+     {
+      "game_id": "401909918",
+      "date": "2026-11-02",
+      "site": "away",
+      "opp_id": "7",
+      "opp": "DEN",
+      "pts": 118,
+      "opp_pts": 110,
+      "metrics": {
+       "efg": 54.89,
+       "opp_efg": 52.6,
+       "off": 123.43,
+       "def": 115.06,
+       "net": 8.37
+      },
+      "opp_power_rank": 18
+     }
+    ],
+    "injuries": [],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "spread": {
+    "favorite_id": "24",
+    "spread": 5.5,
+    "details": "SA -5.5",
+    "provider": "Draft Kings",
+    "ml_home": 180,
+    "ml_away": -217,
+    "closing": true
+   },
+   "favorite": "away",
+   "scoring": {
+    "scored": true,
+    "favorite_side": "away",
+    "fav": "SA",
+    "dog": "POR",
+    "qualified": false,
+    "fails": [
+     "Underdog top 10 over last 3 in eFG%, Off Eff"
+    ],
+    "warnings": [],
+    "rules": [
+     {
+      "rule": 1,
+      "pass": true,
+      "detail": "Season top 10 in Off Eff, Opp eFG%, Def Eff"
+     },
+     {
+      "rule": 2,
+      "pass": true,
+      "detail": "Also top 10 over last 3 in Off Eff, Opp eFG%, Def Eff"
+     },
+     {
+      "rule": 3,
+      "pass": false,
+      "detail": "Underdog last-3 top 10: eFG%, Off Eff"
+     },
+     {
+      "rule": 4,
+      "pass": true,
+      "detail": "Underdog last 3: 2-1"
+     },
+     {
+      "rule": 5,
+      "pass": true,
+      "detail": "Key out: none"
+     },
+     {
+      "rule": 6,
+      "pass": true,
+      "detail": "Injury report available"
+     }
+    ],
+    "qualifiers": [
+     "Off Eff",
+     "Opp eFG%",
+     "Def Eff"
+    ],
+    "score": 14,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 8,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 2,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 2,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 0,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "SA",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 21,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 6,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 6,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 7,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "SA",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 25,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 5,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 1,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 7,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "POR",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 10,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 14,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 2,
+        "color": "deep-red"
+       },
+       {
+        "metric": "off",
+        "rank": 2,
+        "color": "deep-red"
+       }
+      ]
+     },
+     {
+      "team": "POR",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 12,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 26,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 3,
+        "color": "deep-red"
+       },
+       {
+        "metric": "off",
+        "rank": 3,
+        "color": "deep-red"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "401909940",
+   "state": "post",
+   "neutral": false,
+   "tip_utc": "2026-11-08T01:00Z",
+   "tip_pt": "5:00 PM PT",
+   "away": {
+    "id": "18",
+    "abbr": "NY",
+    "name": "Knicks",
+    "display": "New York Knicks",
+    "record": "4-4",
+    "l3_record": "2-1",
+    "b2b": false,
+    "season": {
+     "efg": 51.2,
+     "opp_efg": 51.09,
+     "off": 109.92,
+     "def": 105.05,
+     "net": 4.87,
+     "poss_per_game": 100.1,
+     "ranks": {
+      "efg": 26,
+      "opp_efg": 8,
+      "off": 16,
+      "def": 5,
+      "net": 10
+     }
+    },
+    "last3": {
+     "efg": 53.83,
+     "opp_efg": 48.79,
+     "off": 115.85,
+     "def": 102.55,
+     "net": 13.3,
+     "poss_per_game": 95.2,
+     "ranks": {
+      "efg": 15,
+      "opp_efg": 5,
+      "off": 9,
+      "def": 4,
+      "net": 3
+     }
+    },
+    "power": {
+     "rank": 10,
+     "split": false,
+     "own_net": 10,
+     "bpi": null,
+     "nba_com": 10
+    },
+    "last3_games": [
+     {
+      "game_id": "401909926",
+      "date": "2026-11-04",
+      "site": "home",
+      "opp_id": "4",
+      "opp": "CHI",
+      "pts": 135,
+      "opp_pts": 105,
+      "metrics": {
+       "efg": 60.34,
+       "opp_efg": 43.75,
+       "off": 131.96,
+       "def": 102.64,
+       "net": 29.33
+      },
+      "opp_power_rank": 30
+     },
+     {
+      "game_id": "401909910",
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": "17",
+      "opp": "BKN",
+      "pts": 103,
+      "opp_pts": 90,
+      "metrics": {
+       "efg": 52.67,
+       "opp_efg": 46.71,
+       "off": 111.57,
+       "def": 97.49,
+       "net": 14.08
+      },
+      "opp_power_rank": 21
+     },
+     {
+      "game_id": "401909280",
+      "date": "2026-10-30",
+      "site": "away",
+      "opp_id": "20",
+      "opp": "PHI",
+      "pts": 93,
+      "opp_pts": 98,
+      "metrics": {
+       "efg": 48.26,
+       "opp_efg": 57.33,
+       "off": 102.09,
+       "def": 107.57,
+       "net": -5.49
+      },
+      "opp_power_rank": 14
+     }
+    ],
+    "injuries": [
+     {
+      "player": "Josh Hart",
+      "status": "Out",
+      "reason": "Injury: Right Ankle Soreness",
+      "is_key": true,
+      "key_info": {
+       "name": "Josh Hart",
+       "starts": 7,
+       "team_games": 8,
+       "mpg": 31.7,
+       "ppg": 8.6,
+       "why": "starter"
+      },
+      "counts_as_out": true
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [
+     "Josh Hart"
+    ],
+    "key_questionable": []
+   },
+   "home": {
+    "id": "5",
+    "abbr": "CLE",
+    "name": "Cavaliers",
+    "display": "Cleveland Cavaliers",
+    "record": "5-4",
+    "l3_record": "1-2",
+    "b2b": true,
+    "season": {
+     "efg": 54.71,
+     "opp_efg": 51.13,
+     "off": 113.47,
+     "def": 109.14,
+     "net": 4.34,
+     "poss_per_game": 105.1,
+     "ranks": {
+      "efg": 8,
+      "opp_efg": 9,
+      "off": 9,
+      "def": 12,
+      "net": 13
+     }
+    },
+    "last3": {
+     "efg": 53.51,
+     "opp_efg": 48.71,
+     "off": 112.27,
+     "def": 108.71,
+     "net": 3.56,
+     "poss_per_game": 103.0,
+     "ranks": {
+      "efg": 16,
+      "opp_efg": 4,
+      "off": 15,
+      "def": 13,
+      "net": 13
+     }
+    },
+    "power": {
+     "rank": 13,
+     "split": false,
+     "own_net": 13,
+     "bpi": null,
+     "nba_com": 8
+    },
+    "last3_games": [
+     {
+      "game_id": "401909289",
+      "date": "2026-11-06",
+      "site": "home",
+      "opp_id": "20",
+      "opp": "PHI",
+      "pts": 119,
+      "opp_pts": 95,
+      "metrics": {
+       "efg": 52.84,
+       "opp_efg": 42.35,
+       "off": 114.58,
+       "def": 91.47,
+       "net": 23.11
+      },
+      "opp_power_rank": 14
+     },
+     {
+      "game_id": "401909929",
+      "date": "2026-11-04",
+      "site": "away",
+      "opp_id": "25",
+      "opp": "OKC",
+      "pts": 116,
+      "opp_pts": 124,
+      "metrics": {
+       "efg": 53.23,
+       "opp_efg": 54.49,
+       "off": 109.56,
+       "def": 117.11,
+       "net": -7.56
+      },
+      "opp_power_rank": 11
+     },
+     {
+      "game_id": "401909907",
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": "25",
+      "opp": "OKC",
+      "pts": 112,
+      "opp_pts": 117,
+      "metrics": {
+       "efg": 54.44,
+       "opp_efg": 48.98,
+       "off": 112.74,
+       "def": 117.78,
+       "net": -5.03
+      },
+      "opp_power_rank": 11
+     }
+    ],
+    "injuries": [
+     {
+      "player": "Jarrett Allen",
+      "status": "Out",
+      "reason": "Injury: Right Knee Contusion",
+      "is_key": true,
+      "key_info": {
+       "name": "Jarrett Allen",
+       "starts": 8,
+       "team_games": 9,
+       "mpg": 25.1,
+       "ppg": 13.2,
+       "why": "starter"
+      },
+      "counts_as_out": true
+     },
+     {
+      "player": "Jaylon Tyson",
+      "status": "Out",
+      "reason": "Injury: Right Ankle Sprain",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Jr.,Ernest Udeh",
+      "status": "Out",
+      "reason": "G League two-way",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Khalifa Diop",
+      "status": "Out",
+      "reason": "GLeague-On Assignment",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Nae'Qwan Tomlin",
+      "status": "Out",
+      "reason": "Injury: Low Back Stress Reaction",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Sam Merrill",
+      "status": "Out",
+      "reason": "Injury: Right Elbow Injury Management",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Tristan Enaruna",
+      "status": "Out",
+      "reason": "G League two-way",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [
+     "Jarrett Allen"
+    ],
+    "key_questionable": []
+   },
+   "spread": {
+    "favorite_id": "18",
+    "spread": 4.5,
+    "details": "NY -4.5",
+    "provider": "Draft Kings",
+    "ml_home": 164,
+    "ml_away": -197,
+    "closing": true
+   },
+   "favorite": "away",
+   "scoring": {
+    "scored": true,
+    "favorite_side": "away",
+    "fav": "NY",
+    "dog": "CLE",
+    "qualified": false,
+    "fails": [
+     "Underdog top 10 over last 3 in Opp eFG%",
+     "Favorite key player out: Josh Hart"
+    ],
+    "warnings": [
+     "Info: CLE without Jarrett Allen"
+    ],
+    "rules": [
+     {
+      "rule": 1,
+      "pass": true,
+      "detail": "Season top 10 in Opp eFG%, Def Eff"
+     },
+     {
+      "rule": 2,
+      "pass": true,
+      "detail": "Also top 10 over last 3 in Opp eFG%, Def Eff"
+     },
+     {
+      "rule": 3,
+      "pass": false,
+      "detail": "Underdog last-3 top 10: Opp eFG%"
+     },
+     {
+      "rule": 4,
+      "pass": true,
+      "detail": "Underdog last 3: 1-2"
+     },
+     {
+      "rule": 5,
+      "pass": false,
+      "detail": "Key out: Josh Hart"
+     },
+     {
+      "rule": 6,
+      "pass": true,
+      "detail": "Injury report available"
+     }
+    ],
+    "qualifiers": [
+     "Opp eFG%",
+     "Def Eff"
+    ],
+    "score": 11,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 8,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 0,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "NY",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 26,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 16,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 8,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 5,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "NY",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 15,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 9,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 5,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 4,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "CLE",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 9,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 12,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 8,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 9,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "CLE",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 4,
+        "color": "deep-red"
+       },
+       {
+        "metric": "def",
+        "rank": 13,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 16,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 15,
+        "color": "yellow"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "401909939",
+   "state": "post",
+   "neutral": false,
+   "tip_utc": "2026-11-08T00:30Z",
+   "tip_pt": "4:30 PM PT",
+   "away": {
+    "id": "17",
+    "abbr": "BKN",
+    "name": "Nets",
+    "display": "Brooklyn Nets",
+    "record": "2-6",
+    "l3_record": "2-1",
+    "b2b": false,
+    "season": {
+     "efg": 51.28,
+     "opp_efg": 54.15,
+     "off": 103.9,
+     "def": 109.99,
+     "net": -6.09,
+     "poss_per_game": 102.6,
+     "ranks": {
+      "efg": 25,
+      "opp_efg": 18,
+      "off": 27,
+      "def": 15,
+      "net": 21
+     }
+    },
+    "last3": {
+     "efg": 52.19,
+     "opp_efg": 50.0,
+     "off": 106.22,
+     "def": 104.46,
+     "net": 1.76,
+     "poss_per_game": 94.8,
+     "ranks": {
+      "efg": 18,
+      "opp_efg": 9,
+      "off": 22,
+      "def": 6,
+      "net": 14
+     }
+    },
+    "power": {
+     "rank": 21,
+     "split": false,
+     "own_net": 21,
+     "bpi": null,
+     "nba_com": 28
+    },
+    "last3_games": [
+     {
+      "game_id": "401909925",
+      "date": "2026-11-04",
+      "site": "home",
+      "opp_id": "30",
+      "opp": "CHA",
+      "pts": 114,
+      "opp_pts": 104,
+      "metrics": {
+       "efg": 59.49,
+       "opp_efg": 48.05,
+       "off": 115.64,
+       "def": 105.5,
+       "net": 10.14
+      },
+      "opp_power_rank": 29
+     },
+     {
+      "game_id": "401909910",
+      "date": "2026-11-02",
+      "site": "away",
+      "opp_id": "18",
+      "opp": "NY",
+      "pts": 90,
+      "opp_pts": 103,
+      "metrics": {
+       "efg": 46.71,
+       "opp_efg": 52.67,
+       "off": 97.49,
+       "def": 111.57,
+       "net": -14.08
+      },
+      "opp_power_rank": 10
+     },
+     {
+      "game_id": "401909904",
+      "date": "2026-11-01",
+      "site": "away",
+      "opp_id": "11",
+      "opp": "IND",
+      "pts": 98,
+      "opp_pts": 90,
+      "metrics": {
+       "efg": 50.0,
+       "opp_efg": 49.29,
+       "off": 104.9,
+       "def": 96.34,
+       "net": 8.56
+      },
+      "opp_power_rank": 20
+     }
+    ],
+    "injuries": [
+     {
+      "player": "Egor Demin",
+      "status": "Out",
+      "reason": "Injury: Right Bone Bruise",
+      "is_key": true,
+      "key_info": {
+       "name": "Egor Demin",
+       "starts": 4,
+       "team_games": 8,
+       "mpg": 21.8,
+       "ppg": 7.8,
+       "why": "starter"
+      },
+      "counts_as_out": true
+     },
+     {
+      "player": "Ben Saraf",
+      "status": "Out",
+      "reason": "GLeague-On Assignment",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Grant Nelson",
+      "status": "Out",
+      "reason": "G League two-way",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Joshua Jefferson",
+      "status": "Out",
+      "reason": "GLeague-On Assignment",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Tyler Bilodeau",
+      "status": "Out",
+      "reason": "G League two-way",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Drake Powell",
+      "status": "Available",
+      "reason": "GLeague-On Assignment",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": false
+     },
+     {
+      "player": "Noah Clowney",
+      "status": "Questionable",
+      "reason": "Injury: Illness",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": false
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [
+     "Egor Demin"
+    ],
+    "key_questionable": []
+   },
+   "home": {
+    "id": "1",
+    "abbr": "ATL",
+    "name": "Hawks",
+    "display": "Atlanta Hawks",
+    "record": "6-4",
+    "l3_record": "3-0",
+    "b2b": true,
+    "season": {
+     "efg": 53.43,
+     "opp_efg": 54.59,
+     "off": 112.29,
+     "def": 109.25,
+     "net": 3.04,
+     "poss_per_game": 105.2,
+     "ranks": {
+      "efg": 18,
+      "opp_efg": 21,
+      "off": 12,
+      "def": 13,
+      "net": 14
+     }
+    },
+    "last3": {
+     "efg": 54.97,
+     "opp_efg": 54.83,
+     "off": 117.36,
+     "def": 109.05,
+     "net": 8.31,
+     "poss_per_game": 104.2,
+     "ranks": {
+      "efg": 10,
+      "opp_efg": 19,
+      "off": 7,
+      "def": 14,
+      "net": 10
+     }
+    },
+    "power": {
+     "rank": 15,
+     "split": false,
+     "own_net": 14,
+     "bpi": null,
+     "nba_com": 19
+    },
+    "last3_games": [
+     {
+      "game_id": "401909287",
+      "date": "2026-11-06",
+      "site": "home",
+      "opp_id": "27",
+      "opp": "WSH",
+      "pts": 139,
+      "opp_pts": 132,
+      "metrics": {
+       "efg": 61.22,
+       "opp_efg": 60.44,
+       "off": 130.91,
+       "def": 124.32,
+       "net": 6.59
+      },
+      "opp_power_rank": 19
+     },
+     {
+      "game_id": "401909923",
+      "date": "2026-11-04",
+      "site": "away",
+      "opp_id": "27",
+      "opp": "WSH",
+      "pts": 120,
+      "opp_pts": 105,
+      "metrics": {
+       "efg": 53.96,
+       "opp_efg": 51.14,
+       "off": 117.99,
+       "def": 103.24,
+       "net": 14.75
+      },
+      "opp_power_rank": 19
+     },
+     {
+      "game_id": "401909909",
+      "date": "2026-11-02",
+      "site": "away",
+      "opp_id": "11",
+      "opp": "IND",
+      "pts": 108,
+      "opp_pts": 104,
+      "metrics": {
+       "efg": 50.0,
+       "opp_efg": 52.5,
+       "off": 103.03,
+       "def": 99.22,
+       "net": 3.82
+      },
+      "opp_power_rank": 20
+     }
+    ],
+    "injuries": [
+     {
+      "player": "Jalen Johnson",
+      "status": "Probable",
+      "reason": "Injury: Left Ankle Sprain",
+      "is_key": true,
+      "key_info": {
+       "name": "Jalen Johnson",
+       "starts": 7,
+       "team_games": 10,
+       "mpg": 32.7,
+       "ppg": 18.3,
+       "why": "starter"
+      },
+      "counts_as_out": false
+     },
+     {
+      "player": "Asa Newell",
+      "status": "Out",
+      "reason": "Injury: Left Left Great Toe Hyperextension",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Henri Veesaar",
+      "status": "Out",
+      "reason": "Injury: Right ACLTear",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Jock Landale",
+      "status": "Out",
+      "reason": "Injury: Left Hip Strain",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Keshon Gilbert",
+      "status": "Out",
+      "reason": "Injury: Left Left Knee Inflammation/Non-Surgical Procedure",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Mouhamed Gueye",
+      "status": "Out",
+      "reason": "Injury: Left Foot Fracture",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Jalen Wilson",
+      "status": "Questionable",
+      "reason": "G League two-way",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": false
+     },
+     {
+      "player": "RayJ Dennis",
+      "status": "Questionable",
+      "reason": "G League two-way",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": false
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "spread": {
+    "favorite_id": "1",
+    "spread": 6.5,
+    "details": "ATL -6.5",
+    "provider": "Draft Kings",
+    "ml_home": -265,
+    "ml_away": 217,
+    "closing": true
+   },
+   "favorite": "home",
+   "scoring": {
+    "scored": true,
+    "favorite_side": "home",
+    "fav": "ATL",
+    "dog": "BKN",
+    "qualified": false,
+    "fails": [
+     "Favorite not top 10 in any metric this season",
+     "Underdog top 10 over last 3 in Opp eFG%, Def Eff"
+    ],
+    "warnings": [
+     "Info: BKN without Egor Demin"
+    ],
+    "rules": [
+     {
+      "rule": 1,
+      "pass": false,
+      "detail": "Season top 10 in none"
+     },
+     {
+      "rule": 2,
+      "pass": false,
+      "detail": "Also top 10 over last 3 in none"
+     },
+     {
+      "rule": 3,
+      "pass": false,
+      "detail": "Underdog last-3 top 10: Opp eFG%, Def Eff"
+     },
+     {
+      "rule": 4,
+      "pass": true,
+      "detail": "Underdog last 3: 2-1"
+     },
+     {
+      "rule": 5,
+      "pass": true,
+      "detail": "Key out: none"
+     },
+     {
+      "rule": 6,
+      "pass": true,
+      "detail": "Injury report available"
+     }
+    ],
+    "qualifiers": [],
+    "score": 10,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 2,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 4,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 2,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 0,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "ATL",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 18,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 12,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 21,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 13,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "ATL",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 10,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 7,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 19,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 14,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "BKN",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 18,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 15,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 25,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 27,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "BKN",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 9,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 6,
+        "color": "red"
+       },
+       {
+        "metric": "efg",
+        "rank": 18,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 22,
+        "color": "green"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
