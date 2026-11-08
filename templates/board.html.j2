@@ -90,6 +90,15 @@ h3{margin:0 0 4px;font-size:16px;font-weight:700}
 .nav a{padding:8px 14px;border-radius:999px;font-size:14px;font-weight:600;color:#C7CEDC;text-decoration:none}
 .nav a.on{background:#1C2640;color:#fff;border:1px solid #2E3B5C}
 .sec-title{margin:6px 0 12px;font-size:22px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+/* live */
+.tabs{display:inline-flex;padding:4px;border-radius:999px;background:#121A2C;border:1px solid #26314B;gap:4px}
+.tabs a{min-height:36px;display:inline-flex;align-items:center;gap:7px;padding:0 16px;border-radius:999px;font-size:14px;font-weight:600;color:#9AA4BA;text-decoration:none}
+.tabs a.on{background:linear-gradient(180deg,#2E4170,#1C2845);color:#fff}
+.lv:empty{display:none}
+.lv{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;letter-spacing:.04em;padding:3px 9px;border-radius:999px;background:#121A2C;border:1px solid #26314B;color:#DCE2EE;width:fit-content}
+.lv .g{padding:0 6px;border-radius:5px;font-size:11px;color:#03240F;background:#43DE8F}.lv .g.B{background:#FADB80;color:#2A1C00}.lv .g.C{background:#D44444;color:#fff}
+.lv-dot:not(:empty),.lv i{width:7px;height:7px;border-radius:50%;background:#F05252;box-shadow:0 0 6px #F05252;display:inline-block;animation:blink 1.6s ease-in-out infinite}
+@keyframes blink{50%{opacity:.35}}
 </style>
 </head>
 <body>
@@ -101,9 +110,10 @@ h3{margin:0 0 4px;font-size:16px;font-weight:700}
 <radialGradient id="hub" cx="50%" cy="35%" r="70%"><stop offset="0" stop-color="#222C45"/><stop offset="1" stop-color="#0D1322"/></radialGradient>
 <filter id="drop" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity=".6"/></filter>
 </defs></svg>
-<div class="wrap" style="padding-bottom:0"><nav class="nav"><a class="on" href="{{ pages_url }}">Today's board</a><a href="{{ pages_url }}results.html">Results</a></nav></div>
+<div class="wrap" style="padding-bottom:0"><nav class="nav"><a class="on" href="{{ pages_url }}">Today's board</a><a href="{{ pages_url }}results.html">Results</a><a href="{{ pages_url }}live/">Live</a></nav></div>
 <div class="wrap" id="app" style="padding-top:18px"></div>
 <script>const DATA = {{ data_json|safe }};</script>
+<script src="{{ pages_url }}live/engine.js" defer></script>
 <script>
 (function(){
 const C = 289.027, MAX = DATA.max || 40;
@@ -163,8 +173,9 @@ function card(g, i){
   const qline = !sc.scored ? ['#9AA4BA','M4 8h8','No spread posted yet'] : (sc.qualified ? ['#86EFAC','M3 8.5l3.2 3L13 4.5','Qualified on '+sc.qualifiers.join(' · ')] : ['#FCA5A5','M4 4l8 8M12 4l-8 8',sc.fails[0]]);
   const yellows = (sc.warnings||[]).filter(w=>/questionable/i.test(w));
   const b2b = [g.away,g.home].map(t=>`<span>${esc(t.abbr)} <span class="yn" style="${t.b2b?'color:#F5EBFF;background:linear-gradient(180deg,#9B5CF0,#6D28D9)':'color:#9AA4BA;background:rgba(255,255,255,.06)'}">${t.b2b?'Yes':'No'}</span></span>`).join('');
-  return `<button type="button" class="card card-in" style="animation-delay:${delay}ms" onclick="location.hash='g-${g.id}'" aria-label="${esc(g.away.name)} at ${esc(g.home.name)}, open full breakdown">
+  return `<button type="button" class="card card-in" style="animation-delay:${delay}ms" onclick="openGame('${g.id}')" aria-label="${esc(g.away.name)} at ${esc(g.home.name)}, open full breakdown">
     <div class="row between" style="align-items:flex-start"><div style="display:flex;flex-direction:column;gap:5px"><span class="tip">${esc(g.tip_pt)}${g.neutral?' · Neutral':''}</span>
+      ${sc.qualified?`<span class="lv" data-live="${g.id}"></span>`:''}
       <span class="b2b"><b style="letter-spacing:.08em">B2B</b>${b2b}</span></div>
       <div class="row" style="gap:6px">${keyOut?`<span class="chip" style="color:#FCA5A5;background:rgba(220,50,50,.14);border:1px solid rgba(220,50,50,.4)">+ ${keyOut} key out</span>`:''}
       ${sc.scored && !sc.qualified?'<span class="chip" style="color:#fff;background:linear-gradient(180deg,#D44444,#A12222);letter-spacing:.08em;text-transform:uppercase">No track</span>':''}</div></div>
@@ -263,7 +274,8 @@ function detailView(g){
   const sc = g.scoring||{}, fav = favOf(g)||g.home, dog = dogOf(g)||g.away;
   const b = sc.scored ? BAND[sc.band] : {num:'#8B95AB',word:'No line'};
   let h = `<div class="row" style="flex-wrap:wrap;margin-bottom:18px"><button class="btn" onclick="location.hash=''"><svg viewBox="0 0 16 16" width="14" height="14" style="fill:none;stroke:currentColor;stroke-width:2" aria-hidden="true"><path d="M10 3L5 8l5 5"/></svg>All games</button>
-    <span style="font-size:13px;color:var(--muted)">${esc(g.tip_pt)} · Data pulled ${esc(DATA.built_label)}</span></div>
+    <span style="font-size:13px;color:var(--muted)">${esc(g.tip_pt)} · Data pulled ${esc(DATA.built_label)}</span>
+    ${sc.qualified && LIVE_ON?`<div class="tabs" style="margin-left:auto"><a class="on" aria-current="page" href="#g-${g.id}">Pregame</a><a href="${LIVE_URL}?g=${g.id}"><span class="lv-dot" data-livedot="${g.id}"></span>Live</a></div>`:''}</div>
     <h1 class="title cond" style="font-size:40px">${esc(g.away.name)} <span style="color:#7C869E">@</span> ${esc(g.home.name)}</h1>
     <div style="margin:8px 0 20px;font-size:14px;color:#9AA4BA">${g.spread?`Spread: ${esc(g.spread.details)} (${esc(g.spread.provider||'')})`:'No spread posted yet'}${g.neutral?' · Neutral site':''}${sc.scored?` · Favorite: ${esc(fav.name)}`:''}</div>`;
   if(sc.scored && !sc.qualified) h += `<div class="banner fade" style="background:linear-gradient(180deg,rgba(212,68,68,.22),rgba(161,34,34,.16));border:1px solid rgba(220,60,60,.5)"><span class="chip" style="color:#fff;background:linear-gradient(180deg,#D44444,#A12222);text-transform:uppercase">No track</span><div style="display:flex;flex-direction:column;gap:4px;font-size:14px;color:#FECACA">${sc.fails.map(f=>`<span>${esc(f)}</span>`).join('')}</div></div>`;
@@ -314,15 +326,58 @@ function countUp(){
   });
 }
 
+// ---- live status on today's board (tracked games only) ----
+const LIVE_URL = '{{ pages_url }}live/';
+const ET_TODAY = new Intl.DateTimeFormat('en-CA',{timeZone:'America/New_York'}).format(new Date());
+const LIVE_ON = DATA.kind !== 'retro' && DATA.date === ET_TODAY;
+const LIVE = {};
+window.openGame = id => { const s = LIVE[id]; if(s && s.state !== 'pre') location.href = LIVE_URL + '?g=' + id; else location.hash = 'g-' + id; };
+function paintLive(){
+  document.querySelectorAll('[data-live]').forEach(el=>{
+    const s = LIVE[el.dataset.live]; if(!s || s.state==='pre'){ el.innerHTML=''; return; }
+    if(s.state==='post'){ el.innerHTML = `Final · ${esc(s.score)}`; return; }
+    el.innerHTML = `<i></i>LIVE ${esc(s.clock)} · ${esc(s.lead)}${s.grade&&s.grade!=='–'?` <span class="g ${s.grade[0]==='A'?'':esc(s.grade)}">${esc(s.grade)}</span>`:''}`;
+  });
+  document.querySelectorAll('[data-livedot]').forEach(el=>{ const s = LIVE[el.dataset.livedot]; el.textContent = s && s.state==='in' ? ' ' : ''; });
+}
+async function pollLive(){
+  if(!LIVE_ON) return;
+  try{
+    const ymd = DATA.date.replace(/-/g,'');
+    const sb = await (await fetch(`https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=${ymd}&t=${Date.now()}`)).json();
+    const tracked = new Set(DATA.games.filter(g=>g.scoring&&g.scoring.qualified).map(g=>g.id));
+    let ctx = null;
+    for(const e of (sb.events||[])){
+      if(!tracked.has(e.id)) continue;
+      const c = e.competitions[0], st = c.status, ab = x => c.competitors.find(t=>t.homeAway===x);
+      const a = ab('away'), h = ab('home'), m = (+a.score||0) - (+h.score||0);
+      const s = LIVE[e.id] = {state: st.type.state, clock: `Q${st.period>4?'OT':st.period} ${st.displayClock}`,
+        score: `${a.team.abbreviation} ${a.score}-${h.score} ${h.team.abbreviation}`,
+        lead: m===0?'Tied':`${m>0?a.team.abbreviation:h.team.abbreviation} +${Math.abs(m)}`, grade: (LIVE[e.id]||{}).grade};
+      if(s.state==='in' && window.LiveEngine){
+        try{
+          ctx = ctx || await (await fetch(LIVE_URL + 'context.json?t=' + Date.now())).json();
+          const summ = await (await fetch(`https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=${e.id}`)).json();
+          s.grade = LiveEngine.analyze(summ, {date: DATA.date, closers: (ctx||{}).closers||{}}).decision.grade;
+        }catch(err){}
+      }
+    }
+    paintLive();
+    if(Object.values(LIVE).some(s=>s.state!=='post')) setTimeout(pollLive, 60000);
+  }catch(err){ setTimeout(pollLive, 120000); }
+}
+
 function render(){
   const id = (location.hash||'').replace(/^#g-/,'');
   const g = DATA.games.find(x=>x.id===id);
   app.innerHTML = g ? detailView(g) : listView();
+  paintLive();
   countUp();
   window.scrollTo(0,0);
 }
 window.addEventListener('hashchange', render);
 render();
+pollLive();
 })();
 </script>
 </body>
