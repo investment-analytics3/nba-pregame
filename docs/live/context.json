@@ -1,9 +1,31 @@
 {
  "date": "2026-11-08",
- "built_at": "2026-11-08T12:01:52-05:00",
+ "built_at": "2026-11-08T13:00:28-05:00",
  "games": [
   {
    "id": "401909945",
+   "fav_defense": {
+    "season": {
+     "opp_efg": {
+      "v": 50.29,
+      "r": 4
+     },
+     "def": {
+      "v": 103.79,
+      "r": 4
+     }
+    },
+    "last3": {
+     "opp_efg": {
+      "v": 51.35,
+      "r": 13
+     },
+     "def": {
+      "v": 106.9,
+      "r": 9
+     }
+    }
+   },
    "tip_utc": "2026-11-08T20:30Z",
    "tip_pt": "12:30 PM PT",
    "fav": "PHI",
@@ -31,6 +53,28 @@
   },
   {
    "id": "401909949",
+   "fav_defense": {
+    "season": {
+     "opp_efg": {
+      "v": 50.71,
+      "r": 6
+     },
+     "def": {
+      "v": 104.6,
+      "r": 5
+     }
+    },
+    "last3": {
+     "opp_efg": {
+      "v": 49.61,
+      "r": 8
+     },
+     "def": {
+      "v": 101.66,
+      "r": 4
+     }
+    }
+   },
    "tip_utc": "2026-11-09T01:00Z",
    "tip_pt": "5:00 PM PT",
    "fav": "BOS",
@@ -58,5 +102,159 @@
    }
   }
  ],
- "closers": {}
+ "closers": {
+  "MIL": {
+   "closers": [
+    "Tyler Herro",
+    "Jaime Jaquez Jr."
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "Tyler Herro": {
+     "ppm": 0.718,
+     "ppg": 22.3,
+     "gp": 9
+    },
+    "Jaime Jaquez Jr.": {
+     "ppm": 0.58,
+     "ppg": 16.4,
+     "gp": 9
+    }
+   }
+  },
+  "CHI": {
+   "closers": [
+    "Caleb Wilson",
+    "Josh Giddey"
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "Caleb Wilson": {
+     "ppm": 0.6,
+     "ppg": 19.5,
+     "gp": 8
+    },
+    "Josh Giddey": {
+     "ppm": 0.339,
+     "ppg": 9.2,
+     "gp": 8
+    }
+   }
+  },
+  "BOS": {
+   "closers": [
+    "Jayson Tatum",
+    "Paul George"
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "Jayson Tatum": {
+     "ppm": 0.811,
+     "ppg": 27.9,
+     "gp": 8
+    },
+    "Paul George": {
+     "ppm": 0.646,
+     "ppg": 19.6,
+     "gp": 8
+    }
+   }
+  },
+  "PHI": {
+   "closers": [
+    "Tyrese Maxey",
+    "VJ Edgecombe"
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "Tyrese Maxey": {
+     "ppm": 0.735,
+     "ppg": 26.9,
+     "gp": 10
+    },
+    "VJ Edgecombe": {
+     "ppm": 0.397,
+     "ppg": 13.2,
+     "gp": 9
+    }
+   }
+  }
+ },
+ "league": {
+  "opp_efg": [
+   48.45,
+   48.69,
+   50.06,
+   50.29,
+   50.39,
+   50.71,
+   51.01,
+   51.11,
+   51.23,
+   51.52,
+   51.54,
+   51.93,
+   51.94,
+   52.69,
+   52.89,
+   53.65,
+   53.73,
+   53.92,
+   54.04,
+   54.21,
+   54.41,
+   54.74,
+   54.75,
+   55.54,
+   55.6,
+   55.71,
+   56.01,
+   56.87,
+   57.67,
+   58.47
+  ],
+  "def": [
+   100.88,
+   102.13,
+   103.71,
+   103.79,
+   104.6,
+   104.62,
+   104.88,
+   106.65,
+   107.09,
+   107.82,
+   108.59,
+   109.23,
+   109.78,
+   110.2,
+   110.21,
+   110.26,
+   110.41,
+   110.48,
+   110.84,
+   111.15,
+   111.73,
+   111.86,
+   112.5,
+   112.87,
+   113.92,
+   114.89,
+   116.64,
+   117.22,
+   119.01,
+   119.8
+  ]
+ },
+ "fav10": {
+  "n": 39,
+  "won": 39,
+  "from": "2026-10-26",
+  "to": "2026-11-07",
+  "note": "Pregame favorite leading by 10+ at the end of the 3rd (games on graded boards)"
+ }
 }
