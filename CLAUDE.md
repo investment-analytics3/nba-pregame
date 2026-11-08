@@ -33,9 +33,15 @@ a phone alert. No AI runs in the daily pipeline; Claude is only used to change c
 | `scripts/run_board.py` | Publishes `docs/index.html` + `docs/boards/<date>-<kind>.html`, emails, alerts, logs snapshot |
 | `scripts/update_results.py` | Grades games, writes `docs/results.html` and `docs/results.csv` |
 | `scripts/rebuild_days.py` | Rebuilds unsent past days as "rebuilt" boards |
-| `templates/` | `board.html.j2` (interactive L1/L2 page), `email.html.j2`, `results.html.j2` |
+| `scripts/scheduler.py` | The 15-minute tick's decisions: nightly (catch-up), board/final, live |
+| `docs/live/engine.js` | Live grading engine (runs, answers, control, closers, A+/A/B/C, gates). ONE file used by the Live page (browser) and the tracker/backtest (Node) |
+| `docs/live/index.html` | Live L2 page (`live/?g=<id>`): grades in the browser from ESPN (CORS open); Kalshi comes from `live.json` |
+| `docs/live/context.json` | Today's tracked games + closers (+ season pts/min), written by `scripts/live_context.py` (called by run_board) |
+| `scripts/live_tracker.js` | Live tracker (live.yml): polls ESPN + Kalshi every 45 s, max 2 alerts/game (end of 3rd; first BET), force-pushes `live.json` to the `live-data` branch, writes `data/live/<date>.json` |
+| `scripts/live_backtest.js` | Replays the season through the engine at checkpoints → `data/live/backtest.json`; drafts `data/closers.json` (keeps entries not marked `"source":"draft"`) |
+| `templates/` | `board.html.j2` (interactive L1/L2 page, live chips, Pregame/Live tabs), `email.html.j2`, `results.html.j2` |
 | `data/` | Committed state: `team_games.csv`, `player_games.csv`, `metrics.json`, `power.json`, `slates/`, `board_log.json`, `results.json` |
-| `tests/` | `python -m unittest discover -s tests -v` (rules, schedule, grading) |
+| `tests/` | `python -m unittest discover -s tests -v` (rules, schedule, grading, scheduler) and `node --test tests/engine.test.js` (live engine) |
 
 ## Workflows (Actions)
 
@@ -45,6 +51,9 @@ a phone alert. No AI runs in the daily pipeline; Claude is only used to change c
 | `update-data.yml` | manual | catch-up, grading, slate; commits `data/` and `docs/` |
 | `board.yml` | manual | inputs: `kind` (preview/board/final/auto), `send` (true/false) |
 | `rebuild-days.yml` | manual, input `days` | rebuild + grade unsent past days |
+| `live.yml` | dispatched by the Scheduler (or manual: `send`, `once`) | live tracker; concurrency `nba-live`; up to ~5.5 h, the Scheduler restarts it |
+| `live-backtest.yml` | manual | backtest + closers draft |
+| `probe-live.yml` | manual | raw ESPN live / Kalshi samples + CORS headers → `dev-live-samples` branch |
 | `check-sources.yml` | manual | confirms every data source answers from GitHub's servers |
 | `fetch-samples.yml` | manual | saves raw source responses to the `dev-samples` branch (read them with `git fetch origin dev-samples`) |
 | `test-email.yml`, `test-alert.yml` | manual | delivery checks |
@@ -88,6 +97,12 @@ often: always `git pull --rebase origin main` before pushing.
 - Metrics are box-score based (TeamRankings-style possessions), validated against NBA.com:
   ranks match closely; values run ~2 points lower than NBA.com's play-by-play ratings.
 - Not used: TeamRankings (terms unclear), stats.nba.com (blocks cloud servers). BPI has no history.
+- Live mode (full table in the design spec "Live mode" section): tracks above-the-line games only; BET only
+  4th 10:00-4:00 for an A/A+ team that is LEADING (trailing A = comeback signal, not a bet); LEAN = same in the
+  3rd / before 10:00; under 4:00 and OT read only. Alerts: phone only, end of 3rd (always) + first BET signal.
+  Kalshi: public API (`api.elections.kalshi.com/trade-api/v2`, series `KXNBAGAME`, event
+  `KXNBAGAME-26NOV08PHICHI`); it refuses requests that carry a browser `Origin` header, so only the tracker
+  calls it. Price check never changes the grade.
 
 ## Privacy
 
@@ -96,6 +111,7 @@ often: always `git pull --rebase origin main` before pushing.
 
 ## Open items
 
-- Live-game mode (run detection, control vs momentum, closers, A+/A/B/C grade) is the next big piece.
+- Live mode built Nov 8. To confirm with the owner: trailing-A = no bet; opponent never ran = B max; 6:00-4:00 is a bet window.
+- Closers: `data/closers.json` is a draft until the owner marks teams `"source":"yours"`.
+- Live grades are logged (`data/live/<date>.json`) but not yet shown on the Results page.
 - Revisit the Analysis Score bands after 4-6 weeks of real boards (green is rarely reached early season).
-- Optional `data/closers.json` (e.g. `{"BOS": ["Player A", "Player B"]}`) replaces "top scorers" on boards.
