@@ -138,7 +138,7 @@ def team_block(side: dict, m: dict, pw: dict, b2b: bool, injuries: list, keys: d
     return {
         "id": tid, "abbr": side["abbr"], "name": side["name"], "display": side["display"],
         "record": (tm.get("record") if computed_record else side.get("record")) or tm.get("record"),
-        "l3_record": tm.get("l3_record"),
+        "l3_record": tm.get("l3_record"), "games_played": tm.get("games", 0),
         "b2b": b2b,
         "season": tm.get("season"), "last3": tm.get("last3"),
         "power": {"rank": p.get("rank"), "split": p.get("split", False), "own_net": p.get("own_net"),

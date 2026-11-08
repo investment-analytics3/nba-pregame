@@ -47,6 +47,10 @@ def main() -> int:
             print(f"{d}: a board was sent that day; skipping")
             continue
         slate = build_slate.build(d, retro=True)
+        early = [g for g in slate["games"] if min(g["home"].get("games_played", 0), g["away"].get("games_played", 0)) < 3]
+        slate["games"] = [g for g in slate["games"] if g not in early]
+        if early:
+            print(f"{d}: skipped {len(early)} game(s) where a team had played fewer than 3 games")
         if not slate["games"]:
             print(f"{d}: no games")
             continue
