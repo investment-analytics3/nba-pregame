@@ -1,0 +1,36 @@
+name: Live backtest + closers draft
+
+# Replays this season's finished games through the live engine and drafts each
+# team's closers from late, close-game play-by-play (scripts/live_backtest.js).
+# Writes data/closers.json (draft entries only; your edits are kept) and
+# data/live/backtest.json. Manual; no alerts or emails.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nba-data
+  cancel-in-progress: false
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Replay games and draft closers
+        run: node scripts/live_backtest.js
+      - name: Save to the repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/closers.json data/live/backtest.json
+          if git diff --cached --quiet; then echo "Nothing to save."; exit 0; fi
+          git commit -q -m "Live backtest and closers draft $(TZ=America/Los_Angeles date '+%Y-%m-%d %H:%M %Z')"
+          git pull -q --rebase origin main
+          git push -q origin HEAD:main
