@@ -41,8 +41,9 @@ a phone alert. No AI runs in the daily pipeline; Claude is only used to change c
 
 | Workflow file | Trigger | Notes |
 |---|---|---|
-| `update-data.yml` | cron 3 AM PT (two UTC entries; script acts only in the 3 AM PT hour) + manual | catch-up, grading, slate; commits `data/` and `docs/` |
-| `board.yml` | cron every 15 min ~7 AM-7 PM PT + manual | manual inputs: `kind` (preview/board/final/auto), `send` (true/false) |
+| `scheduler.yml` | every 15 min from cron-job.org (workflow_dispatch, input `source`) + GitHub cron backup | the only automatic trigger: nightly update (from 3 AM PT, catch-up, marker `nightly` in `data/state.json`), board/Final (`board_decide`), starts `live.yml`; pings healthchecks.io. Input `dry_run=true` decides only. Setup: `SCHEDULER.md` |
+| `update-data.yml` | manual | catch-up, grading, slate; commits `data/` and `docs/` |
+| `board.yml` | manual | inputs: `kind` (preview/board/final/auto), `send` (true/false) |
 | `rebuild-days.yml` | manual, input `days` | rebuild + grade unsent past days |
 | `check-sources.yml` | manual | confirms every data source answers from GitHub's servers |
 | `fetch-samples.yml` | manual | saves raw source responses to the `dev-samples` branch (read them with `git fetch origin dev-samples`) |
@@ -55,8 +56,9 @@ often: always `git pull --rebase origin main` before pushing.
 
 - Start a run: `gh api -X POST repos/investment-analytics3/nba-pregame/actions/workflows/<file>.yml/dispatches -f ref=main [-f "inputs[kind]=preview" -F "inputs[send]=false"]`
 - Latest run of a workflow: `gh api "repos/investment-analytics3/nba-pregame/actions/workflows/<file>.yml/runs?per_page=1" --jq '.workflow_runs[0] | "\(.id) \(.status) \(.conclusion)"'`
-- Scheduled runs: `gh api "repos/investment-analytics3/nba-pregame/actions/runs?event=schedule&per_page=5"`. If none appear,
-  push an edit to the workflow files; that re-registers the crons (needed after the account rename + history rewrite).
+- Scheduler ticks: `gh api "repos/investment-analytics3/nba-pregame/actions/workflows/scheduler.yml/runs?per_page=5"`. GitHub's own cron
+  never fired after the account rename + history rewrite, which is why cron-job.org is the primary clock.
+- Test the Scheduler without sending anything: dispatch `scheduler.yml` with `-F "inputs[dry_run]=true"`.
 - Logs: `gh run view <id> -R investment-analytics3/nba-pregame --log`
 - Artifact downloads are blocked from Claude's workspace; use the `dev-samples` branch pattern instead.
 - ESPN, NBA.com and ntfy.sh are NOT reachable from Claude's workspace; test network code by running a workflow.
@@ -66,7 +68,7 @@ often: always `git pull --rebase origin main` before pushing.
 ## Secrets (Settings > Secrets and variables > Actions)
 
 `GMAIL_ADDRESS`, `GMAIL_APP_PASSWORD` (Gmail app password), `NTFY_TOPIC` (phone alerts),
-optional `ODDS_API_KEY`. Never print, log or commit their values.
+`HEALTHCHECK_URL` (healthchecks.io ping URL for the Scheduler), optional `ODDS_API_KEY`. Never print, log or commit their values.
 
 ## Rules and decisions (keep in sync with the design spec)
 

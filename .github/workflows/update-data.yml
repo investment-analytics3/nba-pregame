@@ -1,14 +1,10 @@
 name: Overnight data update
 
-# 3:00 AM Pacific every day. GitHub schedules in UTC, so two times are listed
-# (one for standard time, one for daylight time); the script only acts when it
-# is the 3 AM hour in Pacific time. Can also be run by hand from the Actions tab.
-# If scheduled runs ever stop appearing (seen after an account rename and a
-# history rewrite), pushing any edit to this file re-registers the schedule.
+# Manual runs only. The nightly update itself is run by the Scheduler
+# (.github/workflows/scheduler.yml) once a day from 3 AM Pacific, with catch-up
+# if a tick is missed. Run this by hand to refresh data at any time; it only
+# fetches what is missing.
 on:
-  schedule:
-    - cron: "7 10 * * *"   # 3:07 AM PDT
-    - cron: "7 11 * * *"   # 3:07 AM PST
   workflow_dispatch:
 
 permissions:
@@ -34,7 +30,7 @@ jobs:
 
       - name: Catch up box scores, metrics and power ranks
         id: update
-        run: python scripts/update_data.py ${{ github.event_name == 'schedule' && '--scheduled' || '' }}
+        run: python scripts/update_data.py
 
       - name: Grade yesterday's boards and rebuild the Results page
         if: steps.update.outputs.acted == 'true'

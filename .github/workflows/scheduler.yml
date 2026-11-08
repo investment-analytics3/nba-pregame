@@ -1,0 +1,127 @@
+name: Scheduler
+
+# The single clock for the whole system. Every 15 minutes it checks what is due
+# and does it: the overnight data update (from 3 AM Pacific), the board and the
+# Final (scripts/board_decide.py), and starting the live tracker while an
+# above-the-line game is on. A missed tick is caught up by the next one, and
+# every job is safe to repeat (the board and Final go out at most once a day).
+#
+# Primary trigger: cron-job.org calls GitHub's workflow_dispatch API every 15
+# minutes (see SCHEDULER.md). GitHub's own cron below is only a backup;
+# it is best-effort and can be late or skipped.
+#
+# Health: each successful tick pings healthchecks.io (secret HEALTHCHECK_URL).
+# If no tick succeeds for 45 minutes, healthchecks.io alerts the owner once,
+# and once more when it recovers. Failed ticks don't alert on their own, so a
+# one-off blip never sends anything.
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "Who started this tick"
+        type: string
+        default: manual
+      dry_run:
+        description: "Only decide what's due; don't run or send anything"
+        type: boolean
+        default: false
+  schedule:
+    - cron: "11,26,41,56 * * * *"   # backup only (UTC, every hour)
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: nba-data
+  cancel-in-progress: false
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: What's due?
+        id: due
+        run: |
+          echo "Started by: ${{ inputs.source || github.event_name }}"
+          python scripts/scheduler.py decide ${{ inputs.dry_run == true && '--dry-run' || '' }}
+
+      - name: Install
+        if: steps.due.outputs.nightly == 'true' || steps.due.outputs.board != 'none'
+        run: pip install -q -r requirements.txt
+
+      # ---- Overnight data update (once a day, from 3 AM Pacific) ------------
+      - name: "Nightly: catch up box scores, metrics and power ranks"
+        if: steps.due.outputs.nightly == 'true'
+        run: python scripts/update_data.py
+
+      - name: "Nightly: grade yesterday's boards"
+        if: steps.due.outputs.nightly == 'true'
+        run: python scripts/update_results.py
+
+      - name: "Nightly: build today's slate"
+        if: steps.due.outputs.nightly == 'true'
+        run: |
+          python scripts/build_slate.py
+          python scripts/scheduler.py mark-nightly
+
+      # ---- Board / Final -----------------------------------------------------
+      - name: "Board: catch up and build today's slate"
+        if: steps.due.outputs.board != 'none'
+        run: |
+          python scripts/update_data.py
+          python scripts/build_slate.py
+
+      - name: "Board: publish, email, phone alert"
+        if: steps.due.outputs.board != 'none'
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          python scripts/run_board.py --kind "${{ steps.due.outputs.board }}"
+          python scripts/update_results.py
+
+      - name: Save to the repo
+        if: steps.due.outputs.nightly == 'true' || steps.due.outputs.board != 'none'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ docs/
+          if git diff --cached --quiet; then echo "Nothing to save."; exit 0; fi
+          git commit -q -m "Scheduler: ${{ steps.due.outputs.summary }} $(TZ=America/Los_Angeles date '+%Y-%m-%d %H:%M %Z')"
+          git pull -q --rebase origin main
+          git push -q origin HEAD:main
+
+      # ---- Live tracker -------------------------------------------------------
+      - name: "Live: make sure the tracker is running"
+        if: steps.due.outputs.live == 'true' && hashFiles('.github/workflows/live.yml') != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          running=$(gh api "repos/${{ github.repository }}/actions/workflows/live.yml/runs?per_page=10" \
+            --jq '[.workflow_runs[] | select(.status=="in_progress" or .status=="queued")] | length')
+          if [ "$running" = "0" ]; then
+            gh api -X POST "repos/${{ github.repository }}/actions/workflows/live.yml/dispatches" -f ref=main
+            echo "Live tracker started."
+          else
+            echo "Live tracker already running."
+          fi
+
+      # ---- Health ping --------------------------------------------------------
+      - name: Tell healthchecks.io this tick worked
+        if: success()
+        env:
+          HEALTHCHECK_URL: ${{ secrets.HEALTHCHECK_URL }}
+        run: |
+          if [ -z "$HEALTHCHECK_URL" ]; then echo "HEALTHCHECK_URL not set yet; skipping."; exit 0; fi
+          curl -fsS -m 10 --retry 3 --data-raw "source=${{ inputs.source || github.event_name }} ${{ steps.due.outputs.summary }}" \
+            "$HEALTHCHECK_URL" > /dev/null && echo "Health ping sent."

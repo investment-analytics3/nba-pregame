@@ -1,15 +1,11 @@
 name: Pregame board
 
-# Checks every 15 minutes from about 7 AM to 7 PM Pacific whether it's time to
-# send. Most checks take a few seconds and do nothing. It sends:
-#   - the board at 12 PM weekdays / 10 AM weekends
-#   - the Final 90 minutes before the day's first tip
-# (see scripts/board_decide.py for the exact rules).
-# Run by hand from the Actions tab to send a preview or force a board/final.
+# Manual runs only: send a preview, or force a board/final (send=false only
+# publishes the page). The automatic board and Final are sent by the Scheduler
+# (.github/workflows/scheduler.yml), using the same rules in
+# scripts/board_decide.py: the board at 12 PM weekdays / 10 AM weekends and the
+# Final 90 minutes before the day's first tip, each at most once a day.
 on:
-  schedule:
-    - cron: "4,19,34,49 14-23 * * *"   # UTC: 6 AM-3 PM PST / 7 AM-4 PM PDT
-    - cron: "4,19,34,49 0-2 * * *"     # UTC: 4-6 PM PST / 5-7 PM PDT
   workflow_dispatch:
     inputs:
       kind:
