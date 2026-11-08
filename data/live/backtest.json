@@ -1,0 +1,2647 @@
+{
+ "built": "2026-11-08T17:04:52.854Z",
+ "note": "Replay of finished games through the live engine. \"bet\" = the first BET call (the phone alert). In-sample: closers drafted from the same games.",
+ "all": {
+  "games": 139,
+  "bet_signals": 88,
+  "bet_won": 81,
+  "by_grade": [
+   {
+    "grade": "A+",
+    "n": 22,
+    "won": 21
+   },
+   {
+    "grade": "A",
+    "n": 66,
+    "won": 60
+   }
+  ]
+ },
+ "above_line": {
+  "games": 17,
+  "bet_signals": 8,
+  "bet_won": 8,
+  "by_grade": [
+   {
+    "grade": "A+",
+    "n": 1,
+    "won": 1
+   },
+   {
+    "grade": "A",
+    "n": 7,
+    "won": 7
+   }
+  ]
+ },
+ "checkpoints": {
+  "End 3rd": {
+   "BET": [
+    0,
+    0
+   ],
+   "LEAN": [
+    58,
+    47
+   ],
+   "grades": {
+    "C": 27,
+    "A": 76,
+    "B": 32,
+    "A+": 4
+   }
+  },
+  "10:00 Q4": {
+   "BET": [
+    5,
+    5
+   ],
+   "LEAN": [
+    51,
+    44
+   ],
+   "grades": {
+    "B": 36,
+    "A": 71,
+    "C": 26,
+    "A+": 6
+   }
+  },
+  "8:00 Q4": {
+   "BET": [
+    48,
+    42
+   ],
+   "LEAN": [
+    0,
+    0
+   ],
+   "grades": {
+    "A": 76,
+    "B": 39,
+    "C": 20,
+    "A+": 4
+   }
+  },
+  "6:00 Q4": {
+   "BET": [
+    48,
+    47
+   ],
+   "LEAN": [
+    0,
+    0
+   ],
+   "grades": {
+    "B": 28,
+    "A": 54,
+    "C": 21,
+    "A+": 36
+   }
+  },
+  "4:00 Q4": {
+   "BET": [
+    52,
+    50
+   ],
+   "LEAN": [
+    0,
+    0
+   ],
+   "grades": {
+    "A": 75,
+    "C": 23,
+    "A+": 9,
+    "B": 32
+   }
+  }
+ },
+ "games": [
+  {
+   "id": "401909088",
+   "date": "2026-10-20",
+   "game": "BOS@DET",
+   "final": "113-121",
+   "winner": "DET",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "BOS",
+    "score": "99-92"
+   },
+   "bet_won": false
+  },
+  {
+   "id": "401909089",
+   "date": "2026-10-20",
+   "game": "PHI@NY",
+   "final": "106-100",
+   "winner": "PHI",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "PHI"
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A",
+    "pick": "PHI",
+    "score": "96-90"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909090",
+   "date": "2026-10-20",
+   "game": "OKC@SA",
+   "final": "116-104",
+   "winner": "OKC",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909091",
+   "date": "2026-10-21",
+   "game": "MIN@MIA",
+   "final": "131-106",
+   "winner": "MIN",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "MIN"
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A",
+    "pick": "MIN",
+    "score": "114-90"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909092",
+   "date": "2026-10-21",
+   "game": "GS@LAL",
+   "final": "105-127",
+   "winner": "LAL",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "LAL"
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A",
+    "pick": "LAL",
+    "score": "83-116"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909093",
+   "date": "2026-10-22",
+   "game": "CLE@PHI",
+   "final": "106-114",
+   "winner": "PHI",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "4:00 Q4",
+    "grade": "A",
+    "pick": "PHI",
+    "score": "95-104"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909094",
+   "date": "2026-10-22",
+   "game": "DEN@OKC",
+   "final": "84-96",
+   "winner": "OKC",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "OKC",
+    "score": "68-74"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909095",
+   "date": "2026-10-23",
+   "game": "NY@BOS",
+   "final": "103-107",
+   "winner": "BOS",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909096",
+   "date": "2026-10-23",
+   "game": "HOU@SA",
+   "final": "114-110",
+   "winner": "HOU",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909277",
+   "date": "2026-10-30",
+   "game": "CHA@WSH",
+   "final": "79-95",
+   "winner": "WSH",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "WSH"
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909278",
+   "date": "2026-10-30",
+   "game": "CHI@BOS",
+   "final": "111-125",
+   "winner": "BOS",
+   "above_line": true,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "4:00 Q4",
+    "grade": "A",
+    "pick": "BOS",
+    "score": "96-116"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909279",
+   "date": "2026-10-30",
+   "game": "DET@BKN",
+   "final": "110-94",
+   "winner": "DET",
+   "above_line": true,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909280",
+   "date": "2026-10-30",
+   "game": "NY@PHI",
+   "final": "93-98",
+   "winner": "PHI",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909281",
+   "date": "2026-10-30",
+   "game": "ORL@TOR",
+   "final": "121-114",
+   "winner": "ORL",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "ORL"
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A+",
+    "pick": "TOR",
+    "score": "100-102"
+   },
+   "bet_won": false
+  },
+  {
+   "id": "401909282",
+   "date": "2026-10-30",
+   "game": "IND@MIA",
+   "final": "125-145",
+   "winner": "MIA",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "4:00 Q4",
+    "grade": "A+",
+    "pick": "MIA",
+    "score": "112-136"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909283",
+   "date": "2026-10-30",
+   "game": "HOU@DAL",
+   "final": "111-116",
+   "winner": "DAL",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "HOU"
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909284",
+   "date": "2026-10-30",
+   "game": "LAC@MIN",
+   "final": "101-127",
+   "winner": "MIN",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "MIN"
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A+",
+    "pick": "MIN",
+    "score": "92-112"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909285",
+   "date": "2026-10-30",
+   "game": "LAL@GS",
+   "final": "95-112",
+   "winner": "GS",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "GS",
+    "score": "80-96"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909286",
+   "date": "2026-10-30",
+   "game": "DEN@PHX",
+   "final": "127-120",
+   "winner": "DEN",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909287",
+   "date": "2026-11-06",
+   "game": "WSH@ATL",
+   "final": "132-139",
+   "winner": "ATL",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909288",
+   "date": "2026-11-06",
+   "game": "BOS@CHA",
+   "final": "119-80",
+   "winner": "BOS",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "BOS"
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "BOS",
+    "score": "104-61"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909289",
+   "date": "2026-11-06",
+   "game": "PHI@CLE",
+   "final": "95-119",
+   "winner": "CLE",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "CLE"
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "CLE",
+    "score": "78-98"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909290",
+   "date": "2026-11-06",
+   "game": "UTAH@DAL",
+   "final": "100-112",
+   "winner": "DAL",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "DAL"
+   },
+   "bet": {
+    "at": "4:00 Q4",
+    "grade": "A",
+    "pick": "DAL",
+    "score": "94-109"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909291",
+   "date": "2026-11-06",
+   "game": "OKC@MEM",
+   "final": "128-97",
+   "winner": "OKC",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "OKC"
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A+",
+    "pick": "OKC",
+    "score": "112-89"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909292",
+   "date": "2026-11-06",
+   "game": "TOR@MIL",
+   "final": "121-107",
+   "winner": "TOR",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A+",
+    "pick": "TOR",
+    "score": "97-93"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909293",
+   "date": "2026-11-06",
+   "game": "MIN@NO",
+   "final": "115-109",
+   "winner": "MIN",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "NO"
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909294",
+   "date": "2026-11-06",
+   "game": "POR@LAL",
+   "final": "118-124",
+   "winner": "LAL",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "LAL"
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909295",
+   "date": "2026-11-06",
+   "game": "SA@SAC",
+   "final": "124-109",
+   "winner": "SA",
+   "above_line": true,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "10:00 Q4",
+    "grade": "A",
+    "pick": "SA",
+    "score": "102-88"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909834",
+   "date": "2026-10-21",
+   "game": "ATL@ORL",
+   "final": "132-125",
+   "winner": "ATL",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "ORL",
+    "score": "108-109"
+   },
+   "bet_won": false
+  },
+  {
+   "id": "401909835",
+   "date": "2026-10-21",
+   "game": "MIL@WSH",
+   "final": "116-128",
+   "winner": "WSH",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "WSH",
+    "score": "98-106"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909836",
+   "date": "2026-10-21",
+   "game": "CHA@BKN",
+   "final": "110-103",
+   "winner": "CHA",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "CHA",
+    "score": "92-88"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909837",
+   "date": "2026-10-21",
+   "game": "CHI@TOR",
+   "final": "92-135",
+   "winner": "TOR",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "TOR",
+    "score": "75-121"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909838",
+   "date": "2026-10-21",
+   "game": "UTAH@MEM",
+   "final": "103-123",
+   "winner": "MEM",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A",
+    "pick": "MEM",
+    "score": "94-112"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909839",
+   "date": "2026-10-21",
+   "game": "IND@NO",
+   "final": "123-120",
+   "winner": "IND",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909840",
+   "date": "2026-10-21",
+   "game": "DAL@HOU",
+   "final": "110-128",
+   "winner": "HOU",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909841",
+   "date": "2026-10-21",
+   "game": "PHX@POR",
+   "final": "83-124",
+   "winner": "POR",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "POR"
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "POR",
+    "score": "69-109"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909842",
+   "date": "2026-10-21",
+   "game": "SAC@LAC",
+   "final": "96-121",
+   "winner": "LAC",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "LAC"
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A+",
+    "pick": "LAC",
+    "score": "85-110"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909843",
+   "date": "2026-10-23",
+   "game": "ATL@CHA",
+   "final": "128-81",
+   "winner": "ATL",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "ATL"
+   },
+   "bet": {
+    "at": "10:00 Q4",
+    "grade": "A",
+    "pick": "ATL",
+    "score": "103-67"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909844",
+   "date": "2026-10-23",
+   "game": "DAL@IND",
+   "final": "121-105",
+   "winner": "DAL",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909845",
+   "date": "2026-10-23",
+   "game": "MIN@ORL",
+   "final": "115-93",
+   "winner": "MIN",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "MIN"
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A",
+    "pick": "MIN",
+    "score": "98-78"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909846",
+   "date": "2026-10-23",
+   "game": "TOR@WSH",
+   "final": "112-102",
+   "winner": "TOR",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A+",
+    "pick": "TOR",
+    "score": "98-92"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909847",
+   "date": "2026-10-23",
+   "game": "DET@MIA",
+   "final": "128-111",
+   "winner": "DET",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909848",
+   "date": "2026-10-23",
+   "game": "CHI@MIL",
+   "final": "132-125",
+   "winner": "CHI",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909849",
+   "date": "2026-10-23",
+   "game": "NO@UTAH",
+   "final": "119-120",
+   "winner": "UTAH",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "NO"
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "NO",
+    "score": "100-98"
+   },
+   "bet_won": false
+  },
+  {
+   "id": "401909850",
+   "date": "2026-10-23",
+   "game": "MEM@GS",
+   "final": "111-108",
+   "winner": "MEM",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "GS",
+    "score": "89-95"
+   },
+   "bet_won": false
+  },
+  {
+   "id": "401909851",
+   "date": "2026-10-23",
+   "game": "LAC@LAL",
+   "final": "117-125",
+   "winner": "LAL",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "LAL",
+    "score": "97-112"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909852",
+   "date": "2026-10-23",
+   "game": "POR@SAC",
+   "final": "128-120",
+   "winner": "POR",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "POR"
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A",
+    "pick": "POR",
+    "score": "113-105"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909853",
+   "date": "2026-10-24",
+   "game": "MIA@CHA",
+   "final": "110-115",
+   "winner": "CHA",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "CHA"
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909854",
+   "date": "2026-10-24",
+   "game": "BKN@CLE",
+   "final": "121-125",
+   "winner": "CLE",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "CLE"
+   },
+   "bet": {
+    "at": "4:00 Q4",
+    "grade": "A+",
+    "pick": "CLE",
+    "score": "99-116"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909855",
+   "date": "2026-10-24",
+   "game": "MIL@PHI",
+   "final": "116-127",
+   "winner": "PHI",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "PHI"
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "PHI",
+    "score": "94-108"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909856",
+   "date": "2026-10-24",
+   "game": "HOU@ATL",
+   "final": "121-114",
+   "winner": "HOU",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A+",
+    "pick": "HOU",
+    "score": "105-88"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909857",
+   "date": "2026-10-24",
+   "game": "WSH@CHI",
+   "final": "124-120",
+   "winner": "WSH",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "WSH"
+   },
+   "bet": {
+    "at": "4:00 Q4",
+    "grade": "A",
+    "pick": "WSH",
+    "score": "112-96"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909858",
+   "date": "2026-10-24",
+   "game": "SA@DAL",
+   "final": "122-106",
+   "winner": "SA",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A+",
+    "pick": "SA",
+    "score": "103-94"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909859",
+   "date": "2026-10-24",
+   "game": "NO@DEN",
+   "final": "135-141",
+   "winner": "DEN",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "NO"
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909860",
+   "date": "2026-10-24",
+   "game": "GS@PHX",
+   "final": "122-131",
+   "winner": "PHX",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "PHX"
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A+",
+    "pick": "PHX",
+    "score": "102-118"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909861",
+   "date": "2026-10-25",
+   "game": "LAL@UTAH",
+   "final": "132-123",
+   "winner": "LAL",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909862",
+   "date": "2026-10-25",
+   "game": "IND@BKN",
+   "final": "136-109",
+   "winner": "IND",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909863",
+   "date": "2026-10-25",
+   "game": "ORL@NY",
+   "final": "111-102",
+   "winner": "ORL",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909864",
+   "date": "2026-10-25",
+   "game": "TOR@MIN",
+   "final": "94-117",
+   "winner": "MIN",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "MIN",
+    "score": "71-96"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909865",
+   "date": "2026-10-25",
+   "game": "LAC@OKC",
+   "final": "101-108",
+   "winner": "OKC",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909866",
+   "date": "2026-10-25",
+   "game": "DET@PHI",
+   "final": "106-93",
+   "winner": "DET",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909867",
+   "date": "2026-10-25",
+   "game": "MEM@SAC",
+   "final": "123-112",
+   "winner": "MEM",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "MEM"
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909868",
+   "date": "2026-10-26",
+   "game": "WSH@CHA",
+   "final": "103-110",
+   "winner": "CHA",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "4:00 Q4",
+    "grade": "A",
+    "pick": "CHA",
+    "score": "87-98"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909869",
+   "date": "2026-10-26",
+   "game": "MIN@CLE",
+   "final": "125-127",
+   "winner": "CLE",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909870",
+   "date": "2026-10-26",
+   "game": "CHI@BOS",
+   "final": "99-134",
+   "winner": "BOS",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "BOS"
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "BOS",
+    "score": "83-112"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909871",
+   "date": "2026-10-26",
+   "game": "DAL@MIA",
+   "final": "113-109",
+   "winner": "DAL",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909872",
+   "date": "2026-10-26",
+   "game": "IND@MIL",
+   "final": "102-110",
+   "winner": "MIL",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "4:00 Q4",
+    "grade": "A+",
+    "pick": "MIL",
+    "score": "96-101"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909873",
+   "date": "2026-10-26",
+   "game": "PHX@OKC",
+   "final": "114-125",
+   "winner": "OKC",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A+",
+    "pick": "OKC",
+    "score": "95-119"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909874",
+   "date": "2026-10-26",
+   "game": "ATL@HOU",
+   "final": "110-120",
+   "winner": "HOU",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "HOU",
+    "score": "93-103"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909875",
+   "date": "2026-10-26",
+   "game": "MEM@UTAH",
+   "final": "110-105",
+   "winner": "MEM",
+   "above_line": true,
+   "end3": {
+    "grade": "A",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "MEM",
+    "score": "98-89"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909876",
+   "date": "2026-10-26",
+   "game": "GS@DEN",
+   "final": "134-114",
+   "winner": "GS",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "GS"
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "GS",
+    "score": "110-91"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909877",
+   "date": "2026-10-27",
+   "game": "BKN@BOS",
+   "final": "124-125",
+   "winner": "BOS",
+   "above_line": true,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909878",
+   "date": "2026-10-27",
+   "game": "DET@NY",
+   "final": "97-111",
+   "winner": "NY",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "NY"
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "NY",
+    "score": "74-95"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909879",
+   "date": "2026-10-27",
+   "game": "SAC@SA",
+   "final": "103-130",
+   "winner": "SA",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "SA"
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909880",
+   "date": "2026-10-27",
+   "game": "POR@LAL",
+   "final": "136-129",
+   "winner": "POR",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "POR",
+    "score": "113-106"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909881",
+   "date": "2026-10-28",
+   "game": "MIA@ATL",
+   "final": "129-117",
+   "winner": "MIA",
+   "above_line": true,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909882",
+   "date": "2026-10-28",
+   "game": "WSH@CLE",
+   "final": "111-121",
+   "winner": "CLE",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "CLE",
+    "score": "99-102"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909883",
+   "date": "2026-10-28",
+   "game": "CHA@DET",
+   "final": "89-97",
+   "winner": "DET",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "DET",
+    "score": "75-82"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909884",
+   "date": "2026-10-28",
+   "game": "PHI@IND",
+   "final": "114-109",
+   "winner": "PHI",
+   "above_line": false,
+   "end3": {
+    "grade": "A+",
+    "action": "LEAN",
+    "pick": "IND"
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909885",
+   "date": "2026-10-28",
+   "game": "ORL@TOR",
+   "final": "99-129",
+   "winner": "TOR",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "TOR"
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "TOR",
+    "score": "85-111"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909886",
+   "date": "2026-10-28",
+   "game": "NY@CHI",
+   "final": "133-127",
+   "winner": "NY",
+   "above_line": true,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A+",
+    "pick": "NY",
+    "score": "114-109"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909887",
+   "date": "2026-10-28",
+   "game": "HOU@MIL",
+   "final": "132-100",
+   "winner": "HOU",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909888",
+   "date": "2026-10-28",
+   "game": "GS@MIN",
+   "final": "119-114",
+   "winner": "GS",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "GS",
+    "score": "103-87"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909889",
+   "date": "2026-10-28",
+   "game": "DEN@NO",
+   "final": "104-91",
+   "winner": "DEN",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "4:00 Q4",
+    "grade": "A",
+    "pick": "DEN",
+    "score": "96-87"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909890",
+   "date": "2026-10-28",
+   "game": "SA@UTAH",
+   "final": "117-111",
+   "winner": "SA",
+   "above_line": true,
+   "end3": {
+    "grade": "A",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909891",
+   "date": "2026-10-28",
+   "game": "OKC@DAL",
+   "final": "96-120",
+   "winner": "DAL",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "DAL"
+   },
+   "bet": {
+    "at": "10:00 Q4",
+    "grade": "A",
+    "pick": "DAL",
+    "score": "85-101"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909892",
+   "date": "2026-10-28",
+   "game": "LAL@LAC",
+   "final": "103-87",
+   "winner": "LAL",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "LAL"
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909893",
+   "date": "2026-10-29",
+   "game": "CLE@ATL",
+   "final": "111-114",
+   "winner": "ATL",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "ATL"
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "ATL",
+    "score": "91-99"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909894",
+   "date": "2026-10-29",
+   "game": "SAC@NO",
+   "final": "120-132",
+   "winner": "NO",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "NO"
+   },
+   "bet": {
+    "at": "4:00 Q4",
+    "grade": "A",
+    "pick": "NO",
+    "score": "110-123"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909895",
+   "date": "2026-10-29",
+   "game": "MEM@POR",
+   "final": "124-103",
+   "winner": "MEM",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909896",
+   "date": "2026-10-31",
+   "game": "POR@UTAH",
+   "final": "112-90",
+   "winner": "POR",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "4:00 Q4",
+    "grade": "A",
+    "pick": "POR",
+    "score": "104-82"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909897",
+   "date": "2026-10-31",
+   "game": "PHI@CHA",
+   "final": "109-104",
+   "winner": "PHI",
+   "above_line": false,
+   "end3": {
+    "grade": "A+",
+    "action": "LEAN",
+    "pick": "CHA"
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "CHA",
+    "score": "88-92"
+   },
+   "bet_won": false
+  },
+  {
+   "id": "401909898",
+   "date": "2026-10-31",
+   "game": "ATL@NO",
+   "final": "99-121",
+   "winner": "NO",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "NO"
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "NO",
+    "score": "83-102"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909899",
+   "date": "2026-10-31",
+   "game": "SAC@MEM",
+   "final": "105-136",
+   "winner": "MEM",
+   "above_line": true,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "MEM"
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909900",
+   "date": "2026-10-31",
+   "game": "CLE@MIL",
+   "final": "136-111",
+   "winner": "CLE",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "CLE"
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909901",
+   "date": "2026-10-31",
+   "game": "MIN@SA",
+   "final": "111-121",
+   "winner": "SA",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "SA",
+    "score": "95-103"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909902",
+   "date": "2026-10-31",
+   "game": "OKC@HOU",
+   "final": "98-119",
+   "winner": "HOU",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A+",
+    "pick": "HOU",
+    "score": "86-110"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909903",
+   "date": "2026-11-01",
+   "game": "BOS@ORL",
+   "final": "108-97",
+   "winner": "BOS",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A+",
+    "pick": "BOS",
+    "score": "92-85"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909904",
+   "date": "2026-11-01",
+   "game": "BKN@IND",
+   "final": "98-90",
+   "winner": "BKN",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A",
+    "pick": "BKN",
+    "score": "84-76"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909905",
+   "date": "2026-11-01",
+   "game": "LAC@GS",
+   "final": "112-124",
+   "winner": "GS",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A+",
+    "pick": "GS",
+    "score": "92-114"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909906",
+   "date": "2026-11-01",
+   "game": "TOR@LAL",
+   "final": "125-131",
+   "winner": "LAL",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "4:00 Q4",
+    "grade": "A+",
+    "pick": "LAL",
+    "score": "101-118"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909907",
+   "date": "2026-11-02",
+   "game": "OKC@CLE",
+   "final": "117-112",
+   "winner": "OKC",
+   "above_line": true,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909908",
+   "date": "2026-11-02",
+   "game": "DET@CHA",
+   "final": "124-91",
+   "winner": "DET",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "DET"
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909909",
+   "date": "2026-11-02",
+   "game": "ATL@IND",
+   "final": "108-104",
+   "winner": "ATL",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A",
+    "pick": "ATL",
+    "score": "101-90"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909910",
+   "date": "2026-11-02",
+   "game": "BKN@NY",
+   "final": "90-103",
+   "winner": "NY",
+   "above_line": false,
+   "end3": {
+    "grade": "A+",
+    "action": "LEAN",
+    "pick": "BKN"
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A+",
+    "pick": "NY",
+    "score": "84-95"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909911",
+   "date": "2026-11-02",
+   "game": "WSH@ORL",
+   "final": "103-94",
+   "winner": "WSH",
+   "above_line": false,
+   "end3": {
+    "grade": "A+",
+    "action": "LEAN",
+    "pick": "WSH"
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909912",
+   "date": "2026-11-02",
+   "game": "CHI@PHI",
+   "final": "107-126",
+   "winner": "PHI",
+   "above_line": true,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "PHI"
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "PHI",
+    "score": "92-101"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909913",
+   "date": "2026-11-02",
+   "game": "SAC@DAL",
+   "final": "115-100",
+   "winner": "SAC",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "SAC"
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "SAC",
+    "score": "94-79"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909914",
+   "date": "2026-11-02",
+   "game": "NO@MEM",
+   "final": "135-134",
+   "winner": "NO",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A+",
+    "pick": "NO",
+    "score": "111-106"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909915",
+   "date": "2026-11-02",
+   "game": "MIL@MIN",
+   "final": "100-112",
+   "winner": "MIN",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "MIN",
+    "score": "79-89"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909916",
+   "date": "2026-11-02",
+   "game": "BOS@HOU",
+   "final": "93-109",
+   "winner": "HOU",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "HOU",
+    "score": "79-90"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909917",
+   "date": "2026-11-02",
+   "game": "UTAH@SA",
+   "final": "97-119",
+   "winner": "SA",
+   "above_line": true,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "SA"
+   },
+   "bet": {
+    "at": "10:00 Q4",
+    "grade": "A",
+    "pick": "SA",
+    "score": "71-97"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909918",
+   "date": "2026-11-02",
+   "game": "POR@DEN",
+   "final": "118-110",
+   "winner": "POR",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909919",
+   "date": "2026-11-02",
+   "game": "PHX@GS",
+   "final": "113-116",
+   "winner": "GS",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909920",
+   "date": "2026-11-02",
+   "game": "TOR@LAC",
+   "final": "125-118",
+   "winner": "TOR",
+   "above_line": true,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909921",
+   "date": "2026-11-02",
+   "game": "MIA@LAL",
+   "final": "117-138",
+   "winner": "LAL",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "LAL",
+    "score": "101-119"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909922",
+   "date": "2026-11-04",
+   "game": "PHI@DET",
+   "final": "112-106",
+   "winner": "PHI",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "PHI"
+   },
+   "bet": {
+    "at": "10:00 Q4",
+    "grade": "A",
+    "pick": "PHI",
+    "score": "93-79"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909923",
+   "date": "2026-11-04",
+   "game": "ATL@WSH",
+   "final": "120-105",
+   "winner": "ATL",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "ATL"
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A+",
+    "pick": "ATL",
+    "score": "108-96"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909924",
+   "date": "2026-11-04",
+   "game": "MIL@BOS",
+   "final": "102-109",
+   "winner": "BOS",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909925",
+   "date": "2026-11-04",
+   "game": "CHA@BKN",
+   "final": "104-114",
+   "winner": "BKN",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "BKN",
+    "score": "87-93"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909926",
+   "date": "2026-11-04",
+   "game": "CHI@NY",
+   "final": "105-135",
+   "winner": "NY",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A",
+    "pick": "NY",
+    "score": "90-125"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909927",
+   "date": "2026-11-04",
+   "game": "IND@MEM",
+   "final": "107-103",
+   "winner": "IND",
+   "above_line": true,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "MEM"
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909928",
+   "date": "2026-11-04",
+   "game": "UTAH@NO",
+   "final": "113-120",
+   "winner": "NO",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "UTAH"
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909929",
+   "date": "2026-11-04",
+   "game": "CLE@OKC",
+   "final": "116-124",
+   "winner": "OKC",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "4:00 Q4",
+    "grade": "A",
+    "pick": "OKC",
+    "score": "93-109"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909930",
+   "date": "2026-11-04",
+   "game": "MIN@HOU",
+   "final": "117-107",
+   "winner": "MIN",
+   "above_line": false,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909931",
+   "date": "2026-11-04",
+   "game": "TOR@DEN",
+   "final": "109-128",
+   "winner": "DEN",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "DEN"
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "DEN",
+    "score": "92-117"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909932",
+   "date": "2026-11-04",
+   "game": "POR@PHX",
+   "final": "132-119",
+   "winner": "POR",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "POR"
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "POR",
+    "score": "114-97"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909933",
+   "date": "2026-11-04",
+   "game": "DAL@SA",
+   "final": "111-112",
+   "winner": "SA",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909934",
+   "date": "2026-11-04",
+   "game": "LAL@SAC",
+   "final": "116-103",
+   "winner": "LAL",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909935",
+   "date": "2026-11-04",
+   "game": "MIA@LAC",
+   "final": "117-116",
+   "winner": "MIA",
+   "above_line": true,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "LAC"
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909936",
+   "date": "2026-11-05",
+   "game": "ORL@PHX",
+   "final": "104-117",
+   "winner": "PHX",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909937",
+   "date": "2026-11-05",
+   "game": "MIA@GS",
+   "final": "100-120",
+   "winner": "GS",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "GS"
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "GS",
+    "score": "85-100"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909938",
+   "date": "2026-11-07",
+   "game": "DEN@IND",
+   "final": "114-102",
+   "winner": "DEN",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "4:00 Q4",
+    "grade": "A",
+    "pick": "DEN",
+    "score": "108-97"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909939",
+   "date": "2026-11-07",
+   "game": "BKN@ATL",
+   "final": "121-124",
+   "winner": "ATL",
+   "above_line": false,
+   "end3": {
+    "grade": "B",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "4:00 Q4",
+    "grade": "A",
+    "pick": "BKN",
+    "score": "109-103"
+   },
+   "bet_won": false
+  },
+  {
+   "id": "401909940",
+   "date": "2026-11-07",
+   "game": "NY@CLE",
+   "final": "109-97",
+   "winner": "NY",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "NY"
+   },
+   "bet": null,
+   "bet_won": null
+  },
+  {
+   "id": "401909941",
+   "date": "2026-11-07",
+   "game": "WSH@OKC",
+   "final": "75-114",
+   "winner": "OKC",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "OKC"
+   },
+   "bet": {
+    "at": "6:00 Q4",
+    "grade": "A+",
+    "pick": "OKC",
+    "score": "67-103"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909942",
+   "date": "2026-11-07",
+   "game": "ORL@GS",
+   "final": "119-126",
+   "winner": "GS",
+   "above_line": true,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "ORL"
+   },
+   "bet": {
+    "at": "4:00 Q4",
+    "grade": "A",
+    "pick": "GS",
+    "score": "96-98"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909943",
+   "date": "2026-11-07",
+   "game": "HOU@PHX",
+   "final": "99-102",
+   "winner": "PHX",
+   "above_line": true,
+   "end3": {
+    "grade": "C",
+    "action": "NO BET",
+    "pick": null
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "PHX",
+    "score": "84-85"
+   },
+   "bet_won": true
+  },
+  {
+   "id": "401909944",
+   "date": "2026-11-07",
+   "game": "SA@POR",
+   "final": "125-103",
+   "winner": "SA",
+   "above_line": false,
+   "end3": {
+    "grade": "A",
+    "action": "LEAN",
+    "pick": "SA"
+   },
+   "bet": {
+    "at": "8:00 Q4",
+    "grade": "A",
+    "pick": "SA",
+    "score": "116-82"
+   },
+   "bet_won": true
+  }
+ ]
+}
