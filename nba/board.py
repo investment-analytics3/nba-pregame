@@ -187,7 +187,8 @@ def page_data(slate: dict, kind: str, change_list: list[str] | None, earlier_lab
             t["is_fav"] = t is fav
             out = {i["player"] for i in t.get("injuries", []) if i.get("counts_as_out")}
             t["top_scorers"] = top_scorers(players, t["id"], out)
-            t["closers"] = closers.get(t["abbr"], [])
+            c = closers.get(t["abbr"], [])
+            t["closers"] = c.get("closers", []) if isinstance(c, dict) else c
         games.append({**g, "summary": text, "lean": lean})
     built = datetime.fromisoformat(slate["built_at"])
     return {

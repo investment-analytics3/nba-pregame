@@ -1,0 +1,60 @@
+name: Live tracker
+
+# Follows today's above-the-line games while they are on (scripts/live_tracker.js).
+# Started by the Scheduler 15 minutes before a tracked tip and kept running while
+# a tracked game is in progress. Sends at most two phone alerts per game (end of
+# the 3rd, and the first A/A+ BET signal) and publishes live.json to the
+# live-data branch for the Live page. Run by hand with send=false to test.
+on:
+  workflow_dispatch:
+    inputs:
+      send:
+        description: "Send phone alerts (untick to only log them)"
+        type: boolean
+        default: true
+      once:
+        description: "One pass only (testing)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nba-live
+  cancel-in-progress: false
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 345
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Today's tracked games and closers
+        run: python scripts/live_context.py
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Track live games
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/live_tracker.js ${{ inputs.send == false && '--no-send' || '' }} ${{ inputs.once == true && '--once' || '' }}
+
+      - name: Save the day's live log
+        if: always()
+        run: |
+          [ -d data/live ] || exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/live/
+          if git diff --cached --quiet; then echo "Nothing to save."; exit 0; fi
+          git commit -q -m "Live log $(TZ=America/Los_Angeles date '+%Y-%m-%d %H:%M %Z')"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done

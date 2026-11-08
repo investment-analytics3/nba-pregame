@@ -12,6 +12,7 @@ Reads data/slates/<date>.json (built just before by build_slate.py), then:
 """
 from __future__ import annotations
 
+import json
 import os
 import sys
 from datetime import date, datetime
@@ -19,6 +20,7 @@ from zoneinfo import ZoneInfo
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from nba import board, notify, store  # noqa: E402
+from scripts import live_context  # noqa: E402
 
 PT = ZoneInfo("America/Los_Angeles")
 ET = ZoneInfo("America/New_York")
@@ -53,6 +55,11 @@ def main() -> int:
     with open(os.path.join(DOCS, "boards", f"{day.isoformat()}-{kind}.html"), "w") as f:
         f.write(page)
     print(f"Page written ({len(page) // 1024} KB).")
+    ctx = live_context.build(day)
+    os.makedirs(os.path.dirname(live_context.OUT), exist_ok=True)
+    with open(live_context.OUT, "w") as f:
+        json.dump(ctx, f, indent=1)
+    print(f"Live context written ({len(ctx['games'])} tracked).")
 
     title, body = board.alert_text(data)
     if "--no-send" not in sys.argv:
