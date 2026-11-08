@@ -100,10 +100,13 @@ often: always `git pull --rebase origin main` before pushing.
 - Live mode (full table in the design spec "Live mode" section): tracks above-the-line games only; BET only
   4th 10:00-4:00 for an A/A+ team that is LEADING (trailing A = comeback signal, not a bet); LEAN = same in the
   3rd / before 10:00; under 4:00 and OT read only. Alerts: phone only, end of 3rd (always) + first BET signal.
-  End-of-3rd push: if the pregame favorite leads by 10+ it is its own signal ("<fav> (fav) up N", high priority)
-  with the season record (`fav10` in data/live/backtest.json), the favorite's defense (opp eFG% / Def Eff: last-3
-  ranks + tonight ranked vs season averages) and the Kalshi price; otherwise "wait for BET signal" / "likely no bet".
-  The tracker logs Kalshi at that moment so the backtest can later test whether the price leaves an edge.
+  End-of-3rd push = the 7-item checklist verdict (engine `checklist()`): lead 10+ at end of 3rd; opp eFG% top 10
+  last 3 AND tonight; Def Eff top 10 last 3 AND tonight; a closer active (played in Q3, <5 fouls); underdog has no
+  unanswered run; underdog not hot from 3 (40%+ on 15+ 3PA game, or 45%+ on 6+ last 12 min); favorite not on a
+  back-to-back (`fav_b2b` in context). "7 of 7, parlay-ready" (high priority) needs a single-leg Kalshi price <= 94c;
+  else "N of 7, skip: reasons". Parlay ceiling 80c for two legs; the tracker quotes the combined price when another
+  tracked game was ready and is still on. Logged in alerts.end3 (checklist + Kalshi); backtest `checklist` section
+  tracks win rate by score. The Live page card locks to the end-of-3rd snapshot (Kalshi stays live).
   Kalshi: public API (`api.elections.kalshi.com/trade-api/v2`, series `KXNBAGAME`, event
   `KXNBAGAME-26NOV08PHICHI`); it refuses requests that carry a browser `Origin` header, so only the tracker
   calls it. Price check never changes the grade.
