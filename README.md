@@ -1,57 +1,57 @@
 # NBA Pregame Dashboard
 
 Daily pregame board for an NBA moneyline system: pulls free data, applies the six
-qualification rules and the 39-point hero score, and emails an HTML page.
+qualification rules and the 39-point hero score, and emails an HTML page with
+a phone alert. Everything runs on GitHub Actions at no cost; no AI is used in
+the daily runs.
 
-This first piece is the **data source check**. It runs on GitHub's servers (the
-same ones the daily job will use) and confirms each free source answers with
-the fields the dashboard needs, before we build anything on top of them.
+## What's built so far
 
-## What it checks
+| Piece | Status |
+|---|---|
+| Data sources confirmed from GitHub's servers | Done |
+| Data engine: box scores, metrics, ranks, power rank, slate | Done |
+| Scoring: six rules, hero score | Next |
+| Board: HTML page, email, phone alert, schedule | After scoring |
 
-| Source | Used for | Required |
+## How the data works
+
+- **`data/team_games.csv`** - one row per team per game: the box-score totals the
+  formulas need. **`data/player_games.csv`** - minutes, points and starts per player
+  (used to decide who is a "key" player).
+- **`data/metrics.json`** - season and last-3 values and 1-30 ranks for eFG%,
+  opponent eFG%, offensive and defensive efficiency, and net rating.
+- **`data/power.json`** - consensus power rank from our own net-rating rank, ESPN BPI
+  and NBA.com's weekly rankings (half weight; dropped and flagged "split" when it
+  disagrees by more than 5 spots or a top/middle/bottom-10 bucket).
+- **`data/slates/<date>.json`** - everything for one day's games: tip time, spread
+  and favorite, records, back-to-backs, metrics, power ranks, last-3 game logs
+  with opponent power rank, and injuries with a key-player flag.
+
+Formulas: eFG% = (FGM + 0.5 x 3PM) / FGA; possessions = FGA - OREB + TOV + 0.44 x FTA
+(averaged with the opponent's); efficiency = points per 100 possessions. Ranks match
+NBA.com's closely (checked Nov 2026: net-rating ranks within 2 spots, 0.3 on average);
+values run about 2 points lower than NBA.com because NBA.com counts possessions from
+play-by-play.
+
+## Workflows (Actions tab)
+
+| Workflow | When | What |
 |---|---|---|
-| ESPN teams list | All 30 teams and their IDs | yes |
-| ESPN scoreboard | Today's slate, tip times, back-to-backs, records | yes |
-| ESPN scoreboard odds | Point spread (decides the favorite) | yes |
-| ESPN box scores | eFG%, opponent eFG%, offensive/defensive efficiency, net rating, starters | yes |
-| NBA official injury report (PDF) | Injuries and status | yes |
-| ESPN injuries | Injury backup | no |
-| ESPN BPI | Power rank input | no |
-| NBA.com power rankings | Weekly power rank input | no |
-| The Odds API | Spread backup (only if you add a key) | no |
-| stats.nba.com | Not used; recorded to confirm it blocks cloud servers | no |
+| Overnight data update | 3 AM Pacific daily, or by hand | Catches up box scores, recomputes metrics and power ranks, builds today's slate, saves to `data/` |
+| Check data sources | By hand | Confirms every free source still answers |
+| Test phone alert | By hand | Sends a test ntfy alert |
+| Fetch samples (developer) | By hand | Saves raw source responses to the `dev-samples` branch |
 
-## One-time setup (about 10 minutes)
+## Secrets (Settings > Secrets and variables > Actions)
 
-1. **Create a repository.** On github.com, click **New repository**, name it
-   `nba-pregame`, choose **Public** (unlimited free Actions minutes) or
-   **Private** (free monthly minutes, plenty for this), and click **Create**.
-2. **Upload the files.** On the new repo page, click **uploading an existing
-   file**, then drag in the *contents* of this folder (`scripts/`, `.github/`,
-   `README.md`, `.gitignore`) and click **Commit changes**.
-   - If the `.github` folder doesn't upload by dragging (hidden folders are
-     sometimes skipped on a Mac), click **Add file > Create new file**, type
-     `.github/workflows/check-sources.yml` as the name, paste the file's
-     contents, and commit.
-3. **Optional: add The Odds API key.** Sign up free at the-odds-api.com, then in
-   the repo go to **Settings > Secrets and variables > Actions > New repository
-   secret**, name it `ODDS_API_KEY`, paste the key, save.
-4. **Run it.** Go to the **Actions** tab, pick **Check data sources**, click
-   **Run workflow**. It takes under a minute.
-5. **Read the result.** Click the finished run: the summary table shows PASS,
-   WARN or FAIL for each source. Copy that table (or download the
-   `source-check-report` file at the bottom) and paste it back to Claude.
+| Name | Used for |
+|---|---|
+| `NTFY_TOPIC` | Phone alerts (set) |
+| `GMAIL_ADDRESS`, `GMAIL_APP_PASSWORD` | Emailing the board (needed for the board step) |
+| `ODDS_API_KEY` | Optional backup spread source |
 
-Run it on a **game day, in the afternoon Pacific**, so there is a slate with
-spreads and a fresh injury report to test against.
+## Sources
 
-## Run it on your own computer instead
-
-Needs Python 3.10 or newer, nothing else:
-
-```bash
-python3 scripts/check_sources.py
-```
-
-The report is written to `reports/source_check.md`.
+ESPN public JSON (scores, box scores, spreads via DraftKings, injuries, BPI; unofficial),
+the official NBA injury report PDFs, and NBA.com weekly power rankings.

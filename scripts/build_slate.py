@@ -71,7 +71,7 @@ def key_players(player_rows: list[dict], team_games: dict[str, int]) -> dict[str
 # --------------------------------------------------------------------------- #
 # Injuries
 # --------------------------------------------------------------------------- #
-def load_injuries(teams: list[dict], game_day: date) -> dict:
+def load_injuries(teams: list[dict], game_day: date, playing: set[str]) -> dict:
     """Official PDF first; ESPN for any team the PDF doesn't cover."""
     by_key = {norm(t["display"]): t["id"] for t in teams}
     by_abbr = {t["abbr"]: t["id"] for t in teams}
@@ -105,7 +105,7 @@ def load_injuries(teams: list[dict], game_day: date) -> dict:
         used = False
         for r in espn_rows:
             tid = r["team_id"] or by_key.get(norm(r["team_name"] or ""))
-            if tid and tid not in result["covered"]:
+            if tid and tid in playing and tid not in result["covered"]:
                 result["teams"][tid].append({"player": r["player"], "key": norm(r["player"] or ""),
                                              "status": r["status"], "reason": r["detail"],
                                              "source": "ESPN"})
@@ -159,10 +159,12 @@ def build(day: date) -> dict:
         print(f"  ! yesterday's scoreboard unavailable: {e}")
     team_games = {tid: d["games"] for tid, d in m["teams"].items()}
     keys = key_players(store.load_player_games(), team_games)
-    inj = load_injuries(teams, day)
+    events = [e for e in espn.parse_events(espn.scoreboard(day)) if e["season_type"] == espn.REGULAR_SEASON]
+    playing = {e[s]["id"] for e in events for s in ("home", "away")}
+    inj = load_injuries(teams, day, playing)
 
     games = []
-    for e in espn.parse_events(espn.scoreboard(day)):
+    for e in events:
         if e["season_type"] != espn.REGULAR_SEASON:
             continue
         tip_utc = datetime.fromisoformat(e["start_utc"].replace("Z", "+00:00"))
