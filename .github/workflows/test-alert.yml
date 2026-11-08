@@ -1,0 +1,25 @@
+name: Test phone alert
+
+# Run by hand from the Actions tab to confirm ntfy alerts reach your phone.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Send a test alert
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          if [ -z "$NTFY_TOPIC" ]; then echo "NTFY_TOPIC secret is missing"; exit 1; fi
+          curl -fsS \
+            -H "Title: NBA Pregame Board - Test" \
+            -H "Tags: basketball" \
+            -d "Alerts are working. You'll get one each time a board email goes out." \
+            "https://ntfy.sh/$NTFY_TOPIC" > /dev/null
+          echo "Test alert sent."
