@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T17:06:38.050Z",
+ "built": "2026-11-08T17:07:35.261Z",
  "note": "Replay of finished games through the live engine. \"bet\" = the first BET call (the phone alert). In-sample: closers drafted from the same games.",
  "all": {
   "games": 139,
@@ -45,6 +45,10 @@
     58,
     47
    ],
+   "leader": [
+    134,
+    107
+   ],
    "grades": {
     "C": 27,
     "A": 76,
@@ -60,6 +64,10 @@
    "LEAN": [
     51,
     44
+   ],
+   "leader": [
+    134,
+    114
    ],
    "grades": {
     "B": 36,
@@ -77,6 +85,10 @@
     0,
     0
    ],
+   "leader": [
+    136,
+    116
+   ],
    "grades": {
     "A": 76,
     "B": 39,
@@ -93,6 +105,10 @@
     0,
     0
    ],
+   "leader": [
+    133,
+    118
+   ],
    "grades": {
     "B": 28,
     "A": 54,
@@ -108,6 +124,10 @@
    "LEAN": [
     0,
     0
+   ],
+   "leader": [
+    134,
+    126
    ],
    "grades": {
     "A": 75,
@@ -134,7 +154,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "BOS",
-    "score": "99-92"
+    "score": "99-92",
+    "lead": 7
    },
    "bet_won": false
   },
@@ -154,7 +175,8 @@
     "at": "6:00 Q4",
     "grade": "A",
     "pick": "PHI",
-    "score": "96-90"
+    "score": "96-90",
+    "lead": 6
    },
    "bet_won": true
   },
@@ -189,7 +211,8 @@
     "at": "6:00 Q4",
     "grade": "A",
     "pick": "MIN",
-    "score": "114-90"
+    "score": "114-90",
+    "lead": 24
    },
    "bet_won": true
   },
@@ -209,7 +232,8 @@
     "at": "6:00 Q4",
     "grade": "A",
     "pick": "LAL",
-    "score": "83-116"
+    "score": "83-116",
+    "lead": 33
    },
    "bet_won": true
   },
@@ -229,7 +253,8 @@
     "at": "4:00 Q4",
     "grade": "A",
     "pick": "PHI",
-    "score": "95-104"
+    "score": "95-104",
+    "lead": 9
    },
    "bet_won": true
   },
@@ -249,7 +274,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "OKC",
-    "score": "68-74"
+    "score": "68-74",
+    "lead": 6
    },
    "bet_won": true
   },
@@ -314,7 +340,8 @@
     "at": "4:00 Q4",
     "grade": "A",
     "pick": "BOS",
-    "score": "96-116"
+    "score": "96-116",
+    "lead": 20
    },
    "bet_won": true
   },
@@ -364,7 +391,8 @@
     "at": "8:00 Q4",
     "grade": "A+",
     "pick": "TOR",
-    "score": "100-102"
+    "score": "100-102",
+    "lead": 2
    },
    "bet_won": false
   },
@@ -384,7 +412,8 @@
     "at": "4:00 Q4",
     "grade": "A+",
     "pick": "MIA",
-    "score": "112-136"
+    "score": "112-136",
+    "lead": 24
    },
    "bet_won": true
   },
@@ -419,7 +448,8 @@
     "at": "6:00 Q4",
     "grade": "A+",
     "pick": "MIN",
-    "score": "92-112"
+    "score": "92-112",
+    "lead": 20
    },
    "bet_won": true
   },
@@ -439,7 +469,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "GS",
-    "score": "80-96"
+    "score": "80-96",
+    "lead": 16
    },
    "bet_won": true
   },
@@ -489,7 +520,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "BOS",
-    "score": "104-61"
+    "score": "104-61",
+    "lead": 43
    },
    "bet_won": true
   },
@@ -509,7 +541,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "CLE",
-    "score": "78-98"
+    "score": "78-98",
+    "lead": 20
    },
    "bet_won": true
   },
@@ -529,7 +562,8 @@
     "at": "4:00 Q4",
     "grade": "A",
     "pick": "DAL",
-    "score": "94-109"
+    "score": "94-109",
+    "lead": 15
    },
    "bet_won": true
   },
@@ -549,7 +583,8 @@
     "at": "6:00 Q4",
     "grade": "A+",
     "pick": "OKC",
-    "score": "112-89"
+    "score": "112-89",
+    "lead": 23
    },
    "bet_won": true
   },
@@ -569,7 +604,8 @@
     "at": "8:00 Q4",
     "grade": "A+",
     "pick": "TOR",
-    "score": "97-93"
+    "score": "97-93",
+    "lead": 4
    },
    "bet_won": true
   },
@@ -619,7 +655,8 @@
     "at": "10:00 Q4",
     "grade": "A",
     "pick": "SA",
-    "score": "102-88"
+    "score": "102-88",
+    "lead": 14
    },
    "bet_won": true
   },
@@ -639,7 +676,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "ORL",
-    "score": "108-109"
+    "score": "108-109",
+    "lead": 1
    },
    "bet_won": false
   },
@@ -659,7 +697,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "WSH",
-    "score": "98-106"
+    "score": "98-106",
+    "lead": 8
    },
    "bet_won": true
   },
@@ -679,7 +718,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "CHA",
-    "score": "92-88"
+    "score": "92-88",
+    "lead": 4
    },
    "bet_won": true
   },
@@ -699,7 +739,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "TOR",
-    "score": "75-121"
+    "score": "75-121",
+    "lead": 46
    },
    "bet_won": true
   },
@@ -719,7 +760,8 @@
     "at": "6:00 Q4",
     "grade": "A",
     "pick": "MEM",
-    "score": "94-112"
+    "score": "94-112",
+    "lead": 18
    },
    "bet_won": true
   },
@@ -769,7 +811,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "POR",
-    "score": "69-109"
+    "score": "69-109",
+    "lead": 40
    },
    "bet_won": true
   },
@@ -789,7 +832,8 @@
     "at": "6:00 Q4",
     "grade": "A+",
     "pick": "LAC",
-    "score": "85-110"
+    "score": "85-110",
+    "lead": 25
    },
    "bet_won": true
   },
@@ -809,7 +853,8 @@
     "at": "10:00 Q4",
     "grade": "A",
     "pick": "ATL",
-    "score": "103-67"
+    "score": "103-67",
+    "lead": 36
    },
    "bet_won": true
   },
@@ -844,7 +889,8 @@
     "at": "6:00 Q4",
     "grade": "A",
     "pick": "MIN",
-    "score": "98-78"
+    "score": "98-78",
+    "lead": 20
    },
    "bet_won": true
   },
@@ -864,7 +910,8 @@
     "at": "6:00 Q4",
     "grade": "A+",
     "pick": "TOR",
-    "score": "98-92"
+    "score": "98-92",
+    "lead": 6
    },
    "bet_won": true
   },
@@ -914,7 +961,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "NO",
-    "score": "100-98"
+    "score": "100-98",
+    "lead": 2
    },
    "bet_won": false
   },
@@ -934,7 +982,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "GS",
-    "score": "89-95"
+    "score": "89-95",
+    "lead": 6
    },
    "bet_won": false
   },
@@ -954,7 +1003,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "LAL",
-    "score": "97-112"
+    "score": "97-112",
+    "lead": 15
    },
    "bet_won": true
   },
@@ -974,7 +1024,8 @@
     "at": "6:00 Q4",
     "grade": "A",
     "pick": "POR",
-    "score": "113-105"
+    "score": "113-105",
+    "lead": 8
    },
    "bet_won": true
   },
@@ -1009,7 +1060,8 @@
     "at": "4:00 Q4",
     "grade": "A+",
     "pick": "CLE",
-    "score": "99-116"
+    "score": "99-116",
+    "lead": 17
    },
    "bet_won": true
   },
@@ -1029,7 +1081,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "PHI",
-    "score": "94-108"
+    "score": "94-108",
+    "lead": 14
    },
    "bet_won": true
   },
@@ -1049,7 +1102,8 @@
     "at": "8:00 Q4",
     "grade": "A+",
     "pick": "HOU",
-    "score": "105-88"
+    "score": "105-88",
+    "lead": 17
    },
    "bet_won": true
   },
@@ -1069,7 +1123,8 @@
     "at": "4:00 Q4",
     "grade": "A",
     "pick": "WSH",
-    "score": "112-96"
+    "score": "112-96",
+    "lead": 16
    },
    "bet_won": true
   },
@@ -1089,7 +1144,8 @@
     "at": "8:00 Q4",
     "grade": "A+",
     "pick": "SA",
-    "score": "103-94"
+    "score": "103-94",
+    "lead": 9
    },
    "bet_won": true
   },
@@ -1124,7 +1180,8 @@
     "at": "6:00 Q4",
     "grade": "A+",
     "pick": "PHX",
-    "score": "102-118"
+    "score": "102-118",
+    "lead": 16
    },
    "bet_won": true
   },
@@ -1189,7 +1246,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "MIN",
-    "score": "71-96"
+    "score": "71-96",
+    "lead": 25
    },
    "bet_won": true
   },
@@ -1254,7 +1312,8 @@
     "at": "4:00 Q4",
     "grade": "A",
     "pick": "CHA",
-    "score": "87-98"
+    "score": "87-98",
+    "lead": 11
    },
    "bet_won": true
   },
@@ -1289,7 +1348,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "BOS",
-    "score": "83-112"
+    "score": "83-112",
+    "lead": 29
    },
    "bet_won": true
   },
@@ -1324,7 +1384,8 @@
     "at": "4:00 Q4",
     "grade": "A+",
     "pick": "MIL",
-    "score": "96-101"
+    "score": "96-101",
+    "lead": 5
    },
    "bet_won": true
   },
@@ -1344,7 +1405,8 @@
     "at": "6:00 Q4",
     "grade": "A+",
     "pick": "OKC",
-    "score": "95-119"
+    "score": "95-119",
+    "lead": 24
    },
    "bet_won": true
   },
@@ -1364,7 +1426,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "HOU",
-    "score": "93-103"
+    "score": "93-103",
+    "lead": 10
    },
    "bet_won": true
   },
@@ -1384,7 +1447,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "MEM",
-    "score": "98-89"
+    "score": "98-89",
+    "lead": 9
    },
    "bet_won": true
   },
@@ -1404,7 +1468,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "GS",
-    "score": "110-91"
+    "score": "110-91",
+    "lead": 19
    },
    "bet_won": true
   },
@@ -1439,7 +1504,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "NY",
-    "score": "74-95"
+    "score": "74-95",
+    "lead": 21
    },
    "bet_won": true
   },
@@ -1474,7 +1540,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "POR",
-    "score": "113-106"
+    "score": "113-106",
+    "lead": 7
    },
    "bet_won": true
   },
@@ -1509,7 +1576,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "CLE",
-    "score": "99-102"
+    "score": "99-102",
+    "lead": 3
    },
    "bet_won": true
   },
@@ -1529,7 +1597,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "DET",
-    "score": "75-82"
+    "score": "75-82",
+    "lead": 7
    },
    "bet_won": true
   },
@@ -1564,7 +1633,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "TOR",
-    "score": "85-111"
+    "score": "85-111",
+    "lead": 26
    },
    "bet_won": true
   },
@@ -1584,7 +1654,8 @@
     "at": "6:00 Q4",
     "grade": "A+",
     "pick": "NY",
-    "score": "114-109"
+    "score": "114-109",
+    "lead": 5
    },
    "bet_won": true
   },
@@ -1619,7 +1690,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "GS",
-    "score": "103-87"
+    "score": "103-87",
+    "lead": 16
    },
    "bet_won": true
   },
@@ -1639,7 +1711,8 @@
     "at": "4:00 Q4",
     "grade": "A",
     "pick": "DEN",
-    "score": "96-87"
+    "score": "96-87",
+    "lead": 9
    },
    "bet_won": true
   },
@@ -1674,7 +1747,8 @@
     "at": "10:00 Q4",
     "grade": "A",
     "pick": "DAL",
-    "score": "85-101"
+    "score": "85-101",
+    "lead": 16
    },
    "bet_won": true
   },
@@ -1709,7 +1783,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "ATL",
-    "score": "91-99"
+    "score": "91-99",
+    "lead": 8
    },
    "bet_won": true
   },
@@ -1729,7 +1804,8 @@
     "at": "4:00 Q4",
     "grade": "A",
     "pick": "NO",
-    "score": "110-123"
+    "score": "110-123",
+    "lead": 13
    },
    "bet_won": true
   },
@@ -1764,7 +1840,8 @@
     "at": "4:00 Q4",
     "grade": "A",
     "pick": "POR",
-    "score": "104-82"
+    "score": "104-82",
+    "lead": 22
    },
    "bet_won": true
   },
@@ -1784,7 +1861,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "CHA",
-    "score": "88-92"
+    "score": "88-92",
+    "lead": 4
    },
    "bet_won": false
   },
@@ -1804,7 +1882,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "NO",
-    "score": "83-102"
+    "score": "83-102",
+    "lead": 19
    },
    "bet_won": true
   },
@@ -1854,7 +1933,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "SA",
-    "score": "95-103"
+    "score": "95-103",
+    "lead": 8
    },
    "bet_won": true
   },
@@ -1874,7 +1954,8 @@
     "at": "6:00 Q4",
     "grade": "A+",
     "pick": "HOU",
-    "score": "86-110"
+    "score": "86-110",
+    "lead": 24
    },
    "bet_won": true
   },
@@ -1894,7 +1975,8 @@
     "at": "6:00 Q4",
     "grade": "A+",
     "pick": "BOS",
-    "score": "92-85"
+    "score": "92-85",
+    "lead": 7
    },
    "bet_won": true
   },
@@ -1914,7 +1996,8 @@
     "at": "6:00 Q4",
     "grade": "A",
     "pick": "BKN",
-    "score": "84-76"
+    "score": "84-76",
+    "lead": 8
    },
    "bet_won": true
   },
@@ -1934,7 +2017,8 @@
     "at": "6:00 Q4",
     "grade": "A+",
     "pick": "GS",
-    "score": "92-114"
+    "score": "92-114",
+    "lead": 22
    },
    "bet_won": true
   },
@@ -1954,7 +2038,8 @@
     "at": "4:00 Q4",
     "grade": "A+",
     "pick": "LAL",
-    "score": "101-118"
+    "score": "101-118",
+    "lead": 17
    },
    "bet_won": true
   },
@@ -2004,7 +2089,8 @@
     "at": "6:00 Q4",
     "grade": "A",
     "pick": "ATL",
-    "score": "101-90"
+    "score": "101-90",
+    "lead": 11
    },
    "bet_won": true
   },
@@ -2024,7 +2110,8 @@
     "at": "6:00 Q4",
     "grade": "A+",
     "pick": "NY",
-    "score": "84-95"
+    "score": "84-95",
+    "lead": 11
    },
    "bet_won": true
   },
@@ -2059,7 +2146,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "PHI",
-    "score": "92-101"
+    "score": "92-101",
+    "lead": 9
    },
    "bet_won": true
   },
@@ -2079,7 +2167,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "SAC",
-    "score": "94-79"
+    "score": "94-79",
+    "lead": 15
    },
    "bet_won": true
   },
@@ -2099,7 +2188,8 @@
     "at": "6:00 Q4",
     "grade": "A+",
     "pick": "NO",
-    "score": "111-106"
+    "score": "111-106",
+    "lead": 5
    },
    "bet_won": true
   },
@@ -2119,7 +2209,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "MIN",
-    "score": "79-89"
+    "score": "79-89",
+    "lead": 10
    },
    "bet_won": true
   },
@@ -2139,7 +2230,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "HOU",
-    "score": "79-90"
+    "score": "79-90",
+    "lead": 11
    },
    "bet_won": true
   },
@@ -2159,7 +2251,8 @@
     "at": "10:00 Q4",
     "grade": "A",
     "pick": "SA",
-    "score": "71-97"
+    "score": "71-97",
+    "lead": 26
    },
    "bet_won": true
   },
@@ -2224,7 +2317,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "LAL",
-    "score": "101-119"
+    "score": "101-119",
+    "lead": 18
    },
    "bet_won": true
   },
@@ -2244,7 +2338,8 @@
     "at": "10:00 Q4",
     "grade": "A",
     "pick": "PHI",
-    "score": "93-79"
+    "score": "93-79",
+    "lead": 14
    },
    "bet_won": true
   },
@@ -2264,7 +2359,8 @@
     "at": "6:00 Q4",
     "grade": "A+",
     "pick": "ATL",
-    "score": "108-96"
+    "score": "108-96",
+    "lead": 12
    },
    "bet_won": true
   },
@@ -2299,7 +2395,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "BKN",
-    "score": "87-93"
+    "score": "87-93",
+    "lead": 6
    },
    "bet_won": true
   },
@@ -2319,7 +2416,8 @@
     "at": "6:00 Q4",
     "grade": "A",
     "pick": "NY",
-    "score": "90-125"
+    "score": "90-125",
+    "lead": 35
    },
    "bet_won": true
   },
@@ -2369,7 +2467,8 @@
     "at": "4:00 Q4",
     "grade": "A",
     "pick": "OKC",
-    "score": "93-109"
+    "score": "93-109",
+    "lead": 16
    },
    "bet_won": true
   },
@@ -2404,7 +2503,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "DEN",
-    "score": "92-117"
+    "score": "92-117",
+    "lead": 25
    },
    "bet_won": true
   },
@@ -2424,7 +2524,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "POR",
-    "score": "114-97"
+    "score": "114-97",
+    "lead": 17
    },
    "bet_won": true
   },
@@ -2504,7 +2605,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "GS",
-    "score": "85-100"
+    "score": "85-100",
+    "lead": 15
    },
    "bet_won": true
   },
@@ -2524,7 +2626,8 @@
     "at": "4:00 Q4",
     "grade": "A",
     "pick": "DEN",
-    "score": "108-97"
+    "score": "108-97",
+    "lead": 11
    },
    "bet_won": true
   },
@@ -2544,7 +2647,8 @@
     "at": "4:00 Q4",
     "grade": "A",
     "pick": "BKN",
-    "score": "109-103"
+    "score": "109-103",
+    "lead": 6
    },
    "bet_won": false
   },
@@ -2579,7 +2683,8 @@
     "at": "6:00 Q4",
     "grade": "A+",
     "pick": "OKC",
-    "score": "67-103"
+    "score": "67-103",
+    "lead": 36
    },
    "bet_won": true
   },
@@ -2599,7 +2704,8 @@
     "at": "4:00 Q4",
     "grade": "A",
     "pick": "GS",
-    "score": "96-98"
+    "score": "96-98",
+    "lead": 2
    },
    "bet_won": true
   },
@@ -2619,7 +2725,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "PHX",
-    "score": "84-85"
+    "score": "84-85",
+    "lead": 1
    },
    "bet_won": true
   },
@@ -2639,7 +2746,8 @@
     "at": "8:00 Q4",
     "grade": "A",
     "pick": "SA",
-    "score": "116-82"
+    "score": "116-82",
+    "lead": 34
    },
    "bet_won": true
   }
