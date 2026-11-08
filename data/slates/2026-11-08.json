@@ -1,10 +1,10 @@
 {
  "date": "2026-11-08",
- "built_at": "2026-11-08T00:30:51-08:00",
+ "built_at": "2026-11-08T01:05:12-08:00",
  "metrics_through": "2026-11-07",
  "injury_source": "NBA official injury report",
- "injury_report_time": "2026-11-08T03:30:00-05:00",
- "injury_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-08_03_30AM.pdf",
+ "injury_report_time": "2026-11-08T04:00:00-05:00",
+ "injury_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-08_04_00AM.pdf",
  "first_tip_utc": "2026-11-08T20:30Z",
  "games": [
   {
@@ -53,7 +53,7 @@
     },
     "power": {
      "rank": 14,
-     "split": true,
+     "split": false,
      "own_net": 15,
      "bpi": 12,
      "nba_com": 3
@@ -67,6 +67,13 @@
       "opp": "CLE",
       "pts": 95,
       "opp_pts": 119,
+      "metrics": {
+       "efg": 42.35,
+       "opp_efg": 52.84,
+       "off": 91.47,
+       "def": 114.58,
+       "net": -23.11
+      },
       "opp_power_rank": 10
      },
      {
@@ -77,6 +84,13 @@
       "opp": "DET",
       "pts": 112,
       "opp_pts": 106,
+      "metrics": {
+       "efg": 50.58,
+       "opp_efg": 53.01,
+       "off": 109.57,
+       "def": 103.7,
+       "net": 5.87
+      },
       "opp_power_rank": 2
      },
      {
@@ -87,6 +101,13 @@
       "opp": "CHI",
       "pts": 126,
       "opp_pts": 107,
+      "metrics": {
+       "efg": 58.79,
+       "opp_efg": 48.31,
+       "off": 120.6,
+       "def": 102.41,
+       "net": 18.19
+      },
       "opp_power_rank": 29
      }
     ],
@@ -94,7 +115,7 @@
      {
       "player": "Joel Embiid",
       "status": "Probable",
-      "reason": "Injury / Illness - Right Foot Plantar Fascia Injury Management",
+      "reason": "Injury: Right Foot Plantar Fascia Injury Management",
       "is_key": true,
       "key_info": {
        "name": "Joel Embiid",
@@ -109,7 +130,7 @@
      {
       "player": "Adem Bona",
       "status": "Out",
-      "reason": "Injury / Illness - Cervical Spine Sprain",
+      "reason": "Injury: Cervical Spine Sprain",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -117,7 +138,7 @@
      {
       "player": "Ariel Hukporti",
       "status": "Out",
-      "reason": "Injury / Illness - Right Achilles Tendon Rupture / Tear",
+      "reason": "Injury: Right Achilles Tendon Rupture/Tear",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -125,7 +146,7 @@
      {
       "player": "Dominick Barlow",
       "status": "Out",
-      "reason": "Injury / Illness - Low Back Stress Reaction",
+      "reason": "Injury: Low Back Stress Reaction",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -189,6 +210,13 @@
       "opp": "NY",
       "pts": 105,
       "opp_pts": 135,
+      "metrics": {
+       "efg": 43.75,
+       "opp_efg": 60.34,
+       "off": 102.64,
+       "def": 131.96,
+       "net": -29.33
+      },
       "opp_power_rank": 8
      },
      {
@@ -199,6 +227,13 @@
       "opp": "PHI",
       "pts": 107,
       "opp_pts": 126,
+      "metrics": {
+       "efg": 48.31,
+       "opp_efg": 58.79,
+       "off": 102.41,
+       "def": 120.6,
+       "net": -18.19
+      },
       "opp_power_rank": 14
      },
      {
@@ -209,6 +244,13 @@
       "opp": "BOS",
       "pts": 111,
       "opp_pts": 125,
+      "metrics": {
+       "efg": 46.2,
+       "opp_efg": 57.32,
+       "off": 105.11,
+       "def": 118.37,
+       "net": -13.26
+      },
       "opp_power_rank": 6
      }
     ],
@@ -216,7 +258,7 @@
      {
       "player": "Jalen Smith",
       "status": "Probable",
-      "reason": "Injury / Illness - Left Finger Sprain",
+      "reason": "Injury: Left Finger Sprain",
       "is_key": true,
       "key_info": {
        "name": "Jalen Smith",
@@ -231,7 +273,7 @@
      {
       "player": "Dailyn Swain",
       "status": "Out",
-      "reason": "Injury / Illness - Right Disc Irritation",
+      "reason": "Injury: Right Disc Irritation",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -239,7 +281,7 @@
      {
       "player": "Jaylin Sellers",
       "status": "Out",
-      "reason": "GLeague - Two - Way",
+      "reason": "G League two-way",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -247,7 +289,7 @@
      {
       "player": "Zach Collins",
       "status": "Out",
-      "reason": "Injury / Illness - Respiratory Illness",
+      "reason": "Injury: Respiratory Illness",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -255,7 +297,7 @@
      {
       "player": "Nic Claxton",
       "status": "Questionable",
-      "reason": "Injury / Illness - Left Hamstring Strain",
+      "reason": "Injury: Left Hamstring Strain",
       "is_key": false,
       "key_info": null,
       "counts_as_out": false
@@ -263,7 +305,7 @@
      {
       "player": "Tobe Awaka",
       "status": "Questionable",
-      "reason": "Injury / Illness - Left MCLSprain",
+      "reason": "Injury: Left MCLSprain",
       "is_key": false,
       "key_info": null,
       "counts_as_out": false
@@ -289,9 +331,7 @@
     "dog": "CHI",
     "qualified": true,
     "fails": [],
-    "warnings": [
-     "PHI power-rank sources disagree (split)"
-    ],
+    "warnings": [],
     "rules": [
      {
       "rule": 1,
@@ -552,6 +592,13 @@
       "opp": "CHA",
       "pts": 119,
       "opp_pts": 80,
+      "metrics": {
+       "efg": 60.24,
+       "opp_efg": 35.33,
+       "off": 121.68,
+       "def": 81.8,
+       "net": 39.88
+      },
       "opp_power_rank": 27
      },
      {
@@ -562,6 +609,13 @@
       "opp": "MIL",
       "pts": 109,
       "opp_pts": 102,
+      "metrics": {
+       "efg": 49.45,
+       "opp_efg": 52.35,
+       "off": 113.33,
+       "def": 106.05,
+       "net": 7.28
+      },
       "opp_power_rank": 28
      },
      {
@@ -572,6 +626,13 @@
       "opp": "HOU",
       "pts": 93,
       "opp_pts": 109,
+      "metrics": {
+       "efg": 45.78,
+       "opp_efg": 63.29,
+       "off": 100.8,
+       "def": 118.14,
+       "net": -17.34
+      },
       "opp_power_rank": 3
      }
     ],
@@ -579,7 +640,7 @@
      {
       "player": "Amari Williams",
       "status": "Out",
-      "reason": "GLeague - Two - Way",
+      "reason": "G League two-way",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -587,7 +648,7 @@
      {
       "player": "Christopher Cenac Jr.",
       "status": "Out",
-      "reason": "GLeague - On Assignment",
+      "reason": "GLeague-On Assignment",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -595,7 +656,7 @@
      {
       "player": "Devin Carter",
       "status": "Out",
-      "reason": "GLeague - Two - Way",
+      "reason": "G League two-way",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -603,7 +664,7 @@
      {
       "player": "Dillon Mitchell",
       "status": "Out",
-      "reason": "GLeague - Two - Way",
+      "reason": "G League two-way",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -667,6 +728,13 @@
       "opp": "TOR",
       "pts": 107,
       "opp_pts": 121,
+      "metrics": {
+       "efg": 52.44,
+       "opp_efg": 52.15,
+       "off": 103.06,
+       "def": 116.55,
+       "net": -13.48
+      },
       "opp_power_rank": 16
      },
      {
@@ -677,6 +745,13 @@
       "opp": "BOS",
       "pts": 102,
       "opp_pts": 109,
+      "metrics": {
+       "efg": 52.35,
+       "opp_efg": 49.45,
+       "off": 106.05,
+       "def": 113.33,
+       "net": -7.28
+      },
       "opp_power_rank": 6
      },
      {
@@ -687,6 +762,13 @@
       "opp": "MIN",
       "pts": 100,
       "opp_pts": 112,
+      "metrics": {
+       "efg": 45.96,
+       "opp_efg": 51.04,
+       "off": 99.64,
+       "def": 111.6,
+       "net": -11.96
+      },
       "opp_power_rank": 4
      }
     ],
@@ -694,7 +776,7 @@
      {
       "player": "Bogoljub Markovic",
       "status": "Out",
-      "reason": "GLeague - On Assignment",
+      "reason": "GLeague-On Assignment",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -702,7 +784,7 @@
      {
       "player": "Cormac Ryan",
       "status": "Out",
-      "reason": "GLeague - Two - Way",
+      "reason": "G League two-way",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -710,7 +792,7 @@
      {
       "player": "Kam Jones",
       "status": "Out",
-      "reason": "GLeague - Two - Way",
+      "reason": "G League two-way",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -718,7 +800,7 @@
      {
       "player": "Pete Nance",
       "status": "Out",
-      "reason": "GLeague - Two - Way",
+      "reason": "G League two-way",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -1006,6 +1088,13 @@
       "opp": "DAL",
       "pts": 100,
       "opp_pts": 112,
+      "metrics": {
+       "efg": 53.05,
+       "opp_efg": 46.77,
+       "off": 98.62,
+       "def": 110.45,
+       "net": -11.83
+      },
       "opp_power_rank": 17
      },
      {
@@ -1016,6 +1105,13 @@
       "opp": "NO",
       "pts": 113,
       "opp_pts": 120,
+      "metrics": {
+       "efg": 49.47,
+       "opp_efg": 45.51,
+       "off": 99.07,
+       "def": 105.21,
+       "net": -6.14
+      },
       "opp_power_rank": 19
      },
      {
@@ -1026,6 +1122,13 @@
       "opp": "SA",
       "pts": 97,
       "opp_pts": 119,
+      "metrics": {
+       "efg": 41.67,
+       "opp_efg": 52.2,
+       "off": 93.77,
+       "def": 115.04,
+       "net": -21.27
+      },
       "opp_power_rank": 1
      }
     ],
@@ -1033,7 +1136,7 @@
      {
       "player": "Jaren Jackson Jr.",
       "status": "Out",
-      "reason": "Injury / Illness - Right MCLTear",
+      "reason": "Injury: Right MCLTear",
       "is_key": true,
       "key_info": {
        "name": "Jaren Jackson Jr.",
@@ -1048,7 +1151,7 @@
      {
       "player": "Lauri Markkanen",
       "status": "Questionable",
-      "reason": "Injury / Illness - Right Wrist Sprain",
+      "reason": "Injury: Right Wrist Sprain",
       "is_key": true,
       "key_info": {
        "name": "Lauri Markkanen",
@@ -1063,7 +1166,7 @@
      {
       "player": "Harrison Ingram",
       "status": "Out",
-      "reason": "GLeague - Two - Way",
+      "reason": "G League two-way",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -1071,7 +1174,7 @@
      {
       "player": "Jusuf Nurkic",
       "status": "Out",
-      "reason": "Injury / Illness - Right2nd Plantar Plate Tear",
+      "reason": "Injury: Right2nd Plantar Plate Tear",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -1079,7 +1182,7 @@
      {
       "player": "Trey Alexander",
       "status": "Out",
-      "reason": "GLeague - Two - Way",
+      "reason": "G League two-way",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -1133,7 +1236,7 @@
     },
     "power": {
      "rank": 4,
-     "split": true,
+     "split": false,
      "own_net": 1,
      "bpi": 7,
      "nba_com": 12
@@ -1147,6 +1250,13 @@
       "opp": "NO",
       "pts": 115,
       "opp_pts": 109,
+      "metrics": {
+       "efg": 50.0,
+       "opp_efg": 51.16,
+       "off": 115.16,
+       "def": 109.15,
+       "net": 6.01
+      },
       "opp_power_rank": 19
      },
      {
@@ -1157,6 +1267,13 @@
       "opp": "HOU",
       "pts": 117,
       "opp_pts": 107,
+      "metrics": {
+       "efg": 61.49,
+       "opp_efg": 50.61,
+       "off": 116.67,
+       "def": 106.7,
+       "net": 9.97
+      },
       "opp_power_rank": 3
      },
      {
@@ -1167,6 +1284,13 @@
       "opp": "MIL",
       "pts": 112,
       "opp_pts": 100,
+      "metrics": {
+       "efg": 51.04,
+       "opp_efg": 45.96,
+       "off": 111.6,
+       "def": 99.64,
+       "net": 11.96
+      },
       "opp_power_rank": 28
      }
     ],
@@ -1174,7 +1298,7 @@
      {
       "player": "Anthony Edwards",
       "status": "Out",
-      "reason": "Injury / Illness - Right Knee Arthroscopy",
+      "reason": "Injury: Right Knee Arthroscopy",
       "is_key": true,
       "key_info": {
        "name": "Anthony Edwards",
@@ -1189,7 +1313,7 @@
      {
       "player": "Donte DiVincenzo",
       "status": "Out",
-      "reason": "Injury / Illness - Right Achilles Tendon Repair / Surgery",
+      "reason": "Injury: Right Achilles Tendon Repair/Surgery",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -1197,7 +1321,7 @@
      {
       "player": "Joan Beringer",
       "status": "Questionable",
-      "reason": "Injury / Illness - Nasal Fracture / Face Mask",
+      "reason": "Injury: Nasal Fracture/Face Mask",
       "is_key": false,
       "key_info": null,
       "counts_as_out": false
@@ -1229,8 +1353,7 @@
      "Favorite key player out: Anthony Edwards"
     ],
     "warnings": [
-     "Info: UTAH without Jaren Jackson Jr.",
-     "MIN power-rank sources disagree (split)"
+     "Info: UTAH without Jaren Jackson Jr."
     ],
     "rules": [
      {
@@ -1480,7 +1603,7 @@
     },
     "power": {
      "rank": 7,
-     "split": true,
+     "split": false,
      "own_net": 7,
      "bpi": 8,
      "nba_com": 11
@@ -1494,6 +1617,13 @@
       "opp": "POR",
       "pts": 124,
       "opp_pts": 118,
+      "metrics": {
+       "efg": 51.08,
+       "opp_efg": 65.0,
+       "off": 120.65,
+       "def": 114.81,
+       "net": 5.84
+      },
       "opp_power_rank": 9
      },
      {
@@ -1504,6 +1634,13 @@
       "opp": "SAC",
       "pts": 116,
       "opp_pts": 103,
+      "metrics": {
+       "efg": 52.56,
+       "opp_efg": 45.56,
+       "off": 114.83,
+       "def": 101.96,
+       "net": 12.87
+      },
       "opp_power_rank": 30
      },
      {
@@ -1514,6 +1651,13 @@
       "opp": "MIA",
       "pts": 138,
       "opp_pts": 117,
+      "metrics": {
+       "efg": 67.98,
+       "opp_efg": 61.33,
+       "off": 132.72,
+       "def": 112.52,
+       "net": 20.2
+      },
       "opp_power_rank": 18
      }
     ],
@@ -1521,7 +1665,7 @@
      {
       "player": "Luka Doncic",
       "status": "Questionable",
-      "reason": "Injury / Illness - Low Back Tightness",
+      "reason": "Injury: Low Back Tightness",
       "is_key": true,
       "key_info": {
        "name": "Luka Doncic",
@@ -1536,7 +1680,7 @@
      {
       "player": "Walker Kessler",
       "status": "Available",
-      "reason": "Injury / Illness - Left Finger Splint",
+      "reason": "Injury: Left Finger Splint",
       "is_key": true,
       "key_info": {
        "name": "Walker Kessler",
@@ -1609,6 +1753,13 @@
       "opp": "PHI",
       "pts": 106,
       "opp_pts": 112,
+      "metrics": {
+       "efg": 53.01,
+       "opp_efg": 50.58,
+       "off": 103.7,
+       "def": 109.57,
+       "net": -5.87
+      },
       "opp_power_rank": 14
      },
      {
@@ -1619,6 +1770,13 @@
       "opp": "CHA",
       "pts": 124,
       "opp_pts": 91,
+      "metrics": {
+       "efg": 68.29,
+       "opp_efg": 45.83,
+       "off": 124.65,
+       "def": 91.48,
+       "net": 33.17
+      },
       "opp_power_rank": 27
      },
      {
@@ -1629,6 +1787,13 @@
       "opp": "BKN",
       "pts": 110,
       "opp_pts": 94,
+      "metrics": {
+       "efg": 48.89,
+       "opp_efg": 47.4,
+       "off": 105.38,
+       "def": 90.06,
+       "net": 15.33
+      },
       "opp_power_rank": 24
      }
     ],
@@ -1636,7 +1801,7 @@
      {
       "player": "Isaiah Joe",
       "status": "Out",
-      "reason": "Injury / Illness - Right Hip Contusion",
+      "reason": "Injury: Right Hip Contusion",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -1644,7 +1809,7 @@
      {
       "player": "Jalen Duren",
       "status": "Out",
-      "reason": "Injury / Illness - Right Hamstring Strain",
+      "reason": "Injury: Right Hamstring Strain",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -1652,7 +1817,7 @@
      {
       "player": "Ugonna Onyenso",
       "status": "Out",
-      "reason": "GLeague - Two - Way",
+      "reason": "G League two-way",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -1660,7 +1825,7 @@
      {
       "player": "Elijah Harkless",
       "status": "Questionable",
-      "reason": "GLeague - Two - Way",
+      "reason": "G League two-way",
       "is_key": false,
       "key_info": null,
       "counts_as_out": false
@@ -1668,7 +1833,7 @@
      {
       "player": "Isaac Jones",
       "status": "Questionable",
-      "reason": "GLeague - Two - Way",
+      "reason": "G League two-way",
       "is_key": false,
       "key_info": null,
       "counts_as_out": false
@@ -1697,9 +1862,7 @@
      "Underdog top 10 over last 3 in eFG%, Off Eff",
      "Underdog is 3-0 in its last 3"
     ],
-    "warnings": [
-     "LAL power-rank sources disagree (split)"
-    ],
+    "warnings": [],
     "rules": [
      {
       "rule": 1,
@@ -1948,7 +2111,7 @@
     },
     "power": {
      "rank": 19,
-     "split": true,
+     "split": false,
      "own_net": 17,
      "bpi": 22,
      "nba_com": 21
@@ -1962,6 +2125,13 @@
       "opp": "MIN",
       "pts": 109,
       "opp_pts": 115,
+      "metrics": {
+       "efg": 51.16,
+       "opp_efg": 50.0,
+       "off": 109.15,
+       "def": 115.16,
+       "net": -6.01
+      },
       "opp_power_rank": 4
      },
      {
@@ -1972,6 +2142,13 @@
       "opp": "UTAH",
       "pts": 120,
       "opp_pts": 113,
+      "metrics": {
+       "efg": 45.51,
+       "opp_efg": 49.47,
+       "off": 105.21,
+       "def": 99.07,
+       "net": 6.14
+      },
       "opp_power_rank": 26
      },
      {
@@ -1982,6 +2159,13 @@
       "opp": "MEM",
       "pts": 135,
       "opp_pts": 134,
+      "metrics": {
+       "efg": 54.46,
+       "opp_efg": 61.54,
+       "off": 124.95,
+       "def": 124.03,
+       "net": 0.93
+      },
       "opp_power_rank": 15
      }
     ],
@@ -1989,7 +2173,7 @@
      {
       "player": "Jaron Pierre Jr.",
       "status": "Out",
-      "reason": "GLeague - Two - Way",
+      "reason": "G League two-way",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -1997,7 +2181,7 @@
      {
       "player": "Malik Dia",
       "status": "Out",
-      "reason": "GLeague - Two - Way",
+      "reason": "G League two-way",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -2005,7 +2189,7 @@
      {
       "player": "Yves Missi",
       "status": "Out",
-      "reason": "Injury / Illness - Left Knee Contusion / Bone Bruise",
+      "reason": "Injury: Left Knee Contusion/Bone Bruise",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -2069,6 +2253,13 @@
       "opp": "MIA",
       "pts": 116,
       "opp_pts": 117,
+      "metrics": {
+       "efg": 56.67,
+       "opp_efg": 48.0,
+       "off": 103.46,
+       "def": 104.35,
+       "net": -0.89
+      },
       "opp_power_rank": 18
      },
      {
@@ -2079,6 +2270,13 @@
       "opp": "TOR",
       "pts": 118,
       "opp_pts": 125,
+      "metrics": {
+       "efg": 53.3,
+       "opp_efg": 56.63,
+       "off": 111.32,
+       "def": 117.92,
+       "net": -6.6
+      },
       "opp_power_rank": 16
      },
      {
@@ -2089,14 +2287,21 @@
       "opp": "GS",
       "pts": 112,
       "opp_pts": 124,
-      "opp_power_rank": 12
+      "metrics": {
+       "efg": 51.65,
+       "opp_efg": 66.28,
+       "off": 114.57,
+       "def": 126.84,
+       "net": -12.27
+      },
+      "opp_power_rank": 13
      }
     ],
     "injuries": [
      {
       "player": "Isaiah Jackson",
       "status": "Out",
-      "reason": "Injury / Illness - Left Groin Soreness",
+      "reason": "Injury: Left Groin Soreness",
       "is_key": true,
       "key_info": {
        "name": "Isaiah Jackson",
@@ -2111,7 +2316,7 @@
      {
       "player": "Bradley Beal",
       "status": "Out",
-      "reason": "Injury / Illness - Right Knee Injury Management",
+      "reason": "Injury: Right Knee Injury Management",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -2119,7 +2324,7 @@
      {
       "player": "Brandon Ingram",
       "status": "Out",
-      "reason": "Injury / Illness - Right Heel Surgery",
+      "reason": "Injury: Right Heel Surgery",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -2127,7 +2332,7 @@
      {
       "player": "Jordan Miller",
       "status": "Out",
-      "reason": "Injury / Illness - Left Rotator Cuff Surgery",
+      "reason": "Injury: Left Rotator Cuff Surgery",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -2135,7 +2340,7 @@
      {
       "player": "YanicKonan Niederhauser",
       "status": "Out",
-      "reason": "Injury / Illness - Right Lisfranc Surgery",
+      "reason": "Injury: Right Lisfranc Surgery",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -2166,8 +2371,7 @@
      "Favorite not top 10 in any metric this season"
     ],
     "warnings": [
-     "Info: LAC without Isaiah Jackson",
-     "NO power-rank sources disagree (split)"
+     "Info: LAC without Isaiah Jackson"
     ],
     "rules": [
      {
@@ -2427,7 +2631,14 @@
       "opp": "GS",
       "pts": 100,
       "opp_pts": 120,
-      "opp_power_rank": 12
+      "metrics": {
+       "efg": 48.26,
+       "opp_efg": 62.5,
+       "off": 94.29,
+       "def": 113.14,
+       "net": -18.86
+      },
+      "opp_power_rank": 13
      },
      {
       "game_id": "401909935",
@@ -2437,6 +2648,13 @@
       "opp": "LAC",
       "pts": 117,
       "opp_pts": 116,
+      "metrics": {
+       "efg": 48.0,
+       "opp_efg": 56.67,
+       "off": 104.35,
+       "def": 103.46,
+       "net": 0.89
+      },
       "opp_power_rank": 25
      },
      {
@@ -2447,6 +2665,13 @@
       "opp": "LAL",
       "pts": 117,
       "opp_pts": 138,
+      "metrics": {
+       "efg": 61.33,
+       "opp_efg": 67.98,
+       "off": 112.52,
+       "def": 132.72,
+       "net": -20.2
+      },
       "opp_power_rank": 7
      }
     ],
@@ -2454,7 +2679,7 @@
      {
       "player": "Tre Donaldson",
       "status": "Out",
-      "reason": "GLeague - Two - Way",
+      "reason": "G League two-way",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -2462,7 +2687,7 @@
      {
       "player": "Vladislav Goldin",
       "status": "Out",
-      "reason": "GLeague - Two - Way",
+      "reason": "G League two-way",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -2526,6 +2751,13 @@
       "opp": "SA",
       "pts": 109,
       "opp_pts": 124,
+      "metrics": {
+       "efg": 58.54,
+       "opp_efg": 57.59,
+       "off": 113.05,
+       "def": 128.6,
+       "net": -15.56
+      },
       "opp_power_rank": 1
      },
      {
@@ -2536,6 +2768,13 @@
       "opp": "LAL",
       "pts": 103,
       "opp_pts": 116,
+      "metrics": {
+       "efg": 45.56,
+       "opp_efg": 52.56,
+       "off": 101.96,
+       "def": 114.83,
+       "net": -12.87
+      },
       "opp_power_rank": 7
      },
      {
@@ -2546,6 +2785,13 @@
       "opp": "DAL",
       "pts": 115,
       "opp_pts": 100,
+      "metrics": {
+       "efg": 64.02,
+       "opp_efg": 45.51,
+       "off": 116.16,
+       "def": 101.01,
+       "net": 15.15
+      },
       "opp_power_rank": 17
      }
     ],
@@ -2553,7 +2799,7 @@
      {
       "player": "Ben Simmons",
       "status": "Out",
-      "reason": "Injury / Illness - Right Achilles Tendon Repair / Surgery",
+      "reason": "Injury: Right Achilles Tendon Repair/Surgery",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -2561,7 +2807,7 @@
      {
       "player": "Jonathan Mogbo",
       "status": "Out",
-      "reason": "GLeague - Two - Way",
+      "reason": "G League two-way",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -2569,7 +2815,7 @@
      {
       "player": "Maxime Raynaud",
       "status": "Out",
-      "reason": "Injury / Illness - Right Patella Subluxation",
+      "reason": "Injury: Right Patella Subluxation",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -2577,7 +2823,7 @@
      {
       "player": "Sean Pedulla",
       "status": "Out",
-      "reason": "GLeague - Two - Way",
+      "reason": "G League two-way",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -2585,7 +2831,7 @@
      {
       "player": "Keegan Murray",
       "status": "Questionable",
-      "reason": "Injury / Illness - Left Ankle Capsulitis",
+      "reason": "Injury: Left Ankle Capsulitis",
       "is_key": false,
       "key_info": null,
       "counts_as_out": false
@@ -2873,6 +3119,13 @@
       "opp": "ATL",
       "pts": 121,
       "opp_pts": 124,
+      "metrics": {
+       "efg": 56.18,
+       "opp_efg": 50.48,
+       "off": 109.13,
+       "def": 111.83,
+       "net": -2.71
+      },
       "opp_power_rank": 11
      },
      {
@@ -2883,6 +3136,13 @@
       "opp": "CHA",
       "pts": 114,
       "opp_pts": 104,
+      "metrics": {
+       "efg": 59.49,
+       "opp_efg": 48.05,
+       "off": 115.64,
+       "def": 105.5,
+       "net": 10.14
+      },
       "opp_power_rank": 27
      },
      {
@@ -2893,6 +3153,13 @@
       "opp": "NY",
       "pts": 90,
       "opp_pts": 103,
+      "metrics": {
+       "efg": 46.71,
+       "opp_efg": 52.67,
+       "off": 97.49,
+       "def": 111.57,
+       "net": -14.08
+      },
       "opp_power_rank": 8
      }
     ],
@@ -2955,6 +3222,13 @@
       "opp": "UTAH",
       "pts": 112,
       "opp_pts": 100,
+      "metrics": {
+       "efg": 46.77,
+       "opp_efg": 53.05,
+       "off": 110.45,
+       "def": 98.62,
+       "net": 11.83
+      },
       "opp_power_rank": 26
      },
      {
@@ -2965,6 +3239,13 @@
       "opp": "SA",
       "pts": 111,
       "opp_pts": 112,
+      "metrics": {
+       "efg": 45.1,
+       "opp_efg": 41.58,
+       "off": 109.04,
+       "def": 110.02,
+       "net": -0.98
+      },
       "opp_power_rank": 1
      },
      {
@@ -2975,6 +3256,13 @@
       "opp": "SAC",
       "pts": 100,
       "opp_pts": 115,
+      "metrics": {
+       "efg": 45.51,
+       "opp_efg": 64.02,
+       "off": 101.01,
+       "def": 116.16,
+       "net": -15.15
+      },
       "opp_power_rank": 30
      }
     ],
@@ -2982,7 +3270,7 @@
      {
       "player": "Dereck Lively II",
       "status": "Out",
-      "reason": "Injury / Illness - Right Foot Surgery",
+      "reason": "Injury: Right Foot Surgery",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -2990,7 +3278,7 @@
      {
       "player": "Sergio deLarrea",
       "status": "Out",
-      "reason": "Injury / Illness - Right Knee Sprain",
+      "reason": "Injury: Right Knee Sprain",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -2998,7 +3286,7 @@
      {
       "player": "Tarik Biberovic",
       "status": "Out",
-      "reason": "Injury / Illness - Right Heel Bursitis",
+      "reason": "Injury: Right Heel Bursitis",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -3006,7 +3294,7 @@
      {
       "player": "Caleb Martin",
       "status": "Available",
-      "reason": "Injury / Illness - Right Thumb Sprain",
+      "reason": "Injury: Right Thumb Sprain",
       "is_key": false,
       "key_info": null,
       "counts_as_out": false
@@ -3021,8 +3309,8 @@
     "spread": 9.5,
     "details": "DAL -9.5",
     "provider": "DraftKings",
-    "ml_home": -408,
-    "ml_away": 320
+    "ml_home": -423,
+    "ml_away": 331
    },
    "favorite": "home",
    "scoring": {
