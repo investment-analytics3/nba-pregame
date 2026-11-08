@@ -95,30 +95,32 @@ async function alert(title, message, click, priority) {
 // Favorite up 10+ -> its own signal with the season record, the favorite's defense
 // (last 3 ranks + tonight) and the Kalshi price. Otherwise: wait for the BET signal,
 // or likely no bet.
-function end3Message(g, r, scoreTxt) {
-  const f = r.favorite, d = r.decision;
-  const pctK = r.price || null;
-  const kal = (abbr) => (r._kalshi && r._kalshi[abbr] != null) ? ` · Kalshi ${Math.round(r._kalshi[abbr] * 100)}%` : '';
-  const defTxt = f ? defenseText(f) : '';
+function end3Message(g, r, scoreTxt, state) {
+  // One verdict from the 7-item checklist (docs/live/engine.js): "7 of 7, parlay-ready" or "N of 7, skip: reasons".
+  const c = r.checklist, d = r.decision;
   const when = r.period === 3 ? 'End of 3rd' : r.clockLabel;
-  if (f && f.up10) {
-    const rec = f.record && f.record.n ? ` · favorites up 10+ won ${f.record.won}-${f.record.n - f.record.won} this season` : '';
-    return { title: `${when}: ${f.abbr} (fav) up ${f.leadEnd3 != null ? f.leadEnd3 : f.lead}`, priority: 'high', fav10: true,
-             body: `${scoreTxt}${rec}${defTxt ? ' · ' + defTxt : ''}${kal(f.abbr)} · grade ${d.grade}` };
+  if (!c) return { title: `${when}: grade ${d.grade}`, body: scoreTxt, priority: 'default', ready: false };
+  const price = c.price ? ` · Kalshi ${c.price.cents}c (+${c.price.returnPct}%)` : ' · no Kalshi price';
+  const rec = r.favorite && r.favorite.record && r.favorite.record.n && r.favorite.up10
+    ? ` · fav up 10+ won ${r.favorite.record.won}-${r.favorite.record.n - r.favorite.record.won} this season` : '';
+  let parlay = '';
+  if (c.ready && c.price) {
+    // pair with another tracked game that was parlay-ready at its end of the 3rd and is still on
+    const other = Object.entries(state.games).find(([id, s]) => id !== g.id && s.alerts.end3 && s.alerts.end3.ready && !s.final && s.alerts.end3.kalshiFav);
+    if (other) {
+      const [, s2] = other, combo = c.price.prob * s2.alerts.end3.kalshiFav;
+      parlay = ` · parlay with ${s2.label}: ${Math.round(combo * 100)}c${combo > 0.80 ? ' (above 80c ceiling)' : ' (within 80c ceiling)'}`;
+    }
+  }
+  if (c.ready) {
+    return { title: `${when}: ${c.verdict}`, priority: 'high', ready: true,
+             body: `${scoreTxt} · ${c.fav} (fav) up ${r.favorite.leadEnd3 ?? r.favorite.lead}${price}${parlay}${rec}` };
   }
   const leadSide = r.teams.away.score === r.teams.home.score ? null : (r.teams.away.score > r.teams.home.score ? 'away' : 'home');
   const lg = leadSide ? r.sides[leadSide] : null;
-  const wait = lg && ['A+', 'A', 'B'].includes(lg.grade);
-  const lead = leadSide ? `${r.teams[leadSide].abbr} by ${Math.abs(r.teams.away.score - r.teams.home.score)}` : 'tied';
-  return { title: `${when}: ${wait ? 'wait for BET signal' : 'likely no bet'}`, priority: 'default', fav10: false,
-           body: `${scoreTxt} · ${lead}, grade ${lg ? lg.grade : d.grade}${defTxt ? ' · ' + defTxt : ''}${f ? kal(f.abbr) : ''}` };
-}
-function defenseText(f) {
-  const l3 = f.last3 || {}, t = f.tonight || {};
-  const r1 = x => (x && x.r != null ? `#${x.r}` : '–');
-  let s = `${f.abbr} D last 3: opp eFG ${r1(l3.opp_efg)}, Def ${r1(l3.def)}`;
-  if (t.opp_efg != null) s += ` · tonight opp eFG ${t.opp_efg}%${t.opp_efg_rank ? ` (#${t.opp_efg_rank})` : ''}, Def ${t.def}${t.def_rank ? ` (#${t.def_rank})` : ''}`;
-  return s;
+  const later = lg && ['A+', 'A', 'B'].includes(lg.grade) ? ` · grade ${lg.grade}: a BET signal may still come` : ' · likely no bet';
+  return { title: `${when}: ${c.verdict}`, priority: 'default', ready: false,
+           body: `${scoreTxt} · ${c.reasons.slice(0, 3).join('; ')}${price}${later}` };
 }
 
 // ------------------------------------------------------- live-data branch --
@@ -193,7 +195,7 @@ async function main() {
         st.kalshiEvent = k.event;
       }
       const r = E.analyze(summary, { date: ctx.date, fav: g.fav, closers: ctx.closers, kalshi: k,
-                                     favDefense: g.fav_defense, league: ctx.league, fav10: ctx.fav10 });
+                                     favDefense: g.fav_defense, favB2B: g.fav_b2b, league: ctx.league, fav10: ctx.fav10 });
       r._kalshi = k;
       const cp = { at: new Date().toISOString(), clock: r.clockLabel, score: `${r.teams.away.score}-${r.teams.home.score}`,
                    phase: r.phase.key, grade: r.decision.grade, action: r.decision.action, pick: r.decision.pick,
@@ -211,12 +213,14 @@ async function main() {
       // Alert 1: end of the 3rd (once)
       const past3 = r.state === 'in' && (r.period > 3 || (r.period === 3 && r.remain === 0));
       if (past3 && !st.alerts.end3) {
-        const msg = end3Message(g, r, scoreTxt);
+        const msg = end3Message(g, r, scoreTxt, state);
         if (await alert(`${title} - ${msg.title}`, `${msg.body} · Tap to open`, url, msg.priority)) {
           st.alerts.end3 = { at: cp.at, clock: r.clockLabel, grade: r.decision.grade, action: r.decision.action,
-                             score: cp.score, fav10: msg.fav10, favLead: r.favorite ? r.favorite.lead : null,
+                             score: cp.score, ready: msg.ready, favLead: r.favorite ? (r.favorite.leadEnd3 ?? r.favorite.lead) : null,
                              kalshiFav: r.favorite && k ? (k[r.favorite.abbr] ?? null) : null,
-                             defense: r.favorite ? r.favorite.tonight : null };
+                             defense: r.favorite ? r.favorite.tonight : null,
+                             checklist: r.checklist ? { passed: r.checklist.passed, total: r.checklist.total,
+                               items: r.checklist.items.map(i => ({ key: i.key, pass: i.pass, detail: i.detail })) } : null };
         }
       }
       // Alert 2: first BET signal (once)

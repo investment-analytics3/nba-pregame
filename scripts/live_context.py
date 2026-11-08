@@ -72,7 +72,7 @@ def build(day: date) -> dict:
         fav_def = {w: {m: {"v": (fav_team.get(w) or {}).get(m), "r": ((fav_team.get(w) or {}).get("ranks") or {}).get(m)}
                        for m in ("opp_efg", "def")} for w in ("season", "last3")}
         games.append({
-            "id": g["id"], "fav_defense": fav_def, "tip_utc": g.get("tip_utc"), "tip_pt": g.get("tip_pt"),
+            "id": g["id"], "fav_defense": fav_def, "fav_b2b": fav_team.get("b2b"), "tip_utc": g.get("tip_utc"), "tip_pt": g.get("tip_pt"),
             "fav": sc.get("fav"), "dog": sc.get("dog"), "qualifiers": sc.get("qualifiers", []),
             "score": sc.get("score"), "band": sc.get("band"),
             "spread": (g.get("spread") or {}).get("details") if isinstance(g.get("spread"), dict) else g.get("spread"),

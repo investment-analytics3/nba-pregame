@@ -597,6 +597,7 @@
       sides, decision, price, risk, changes, next,
     });
     out.favorite = favoriteRead(teams, plays, nowT, ctx);
+    out.checklist = checklist(out, S, ctx);
     out.logLine = logLine(out, ctx);
     return out;
   }
@@ -631,6 +632,63 @@
       last3: (ctx.favDefense || {}).last3 || null, season: (ctx.favDefense || {}).season || null,
       record: ctx.fav10 || null,
     };
+  }
+
+  // ------------------------------------------------ end-of-3rd checklist --
+  // Seven checks for betting the favorite from the end of the 3rd (Nov 8):
+  //  1 lead 10+ when the 3rd ends   2 opp eFG% top 10, last 3 AND tonight
+  //  3 Def Eff top 10, last 3 AND tonight   4 a closer active (played in the 3rd, under 5 fouls)
+  //  5 underdog has no unanswered run   6 underdog not hot from 3   7 favorite not on a back-to-back
+  // Plus the Kalshi price: a single leg above 94c is too thin. Never changes the A/A+ grade.
+  const SINGLE_CEILING = 0.94;
+  function checklist(out, S, ctx) {
+    const F = out.favorite;
+    if (!F) return null;
+    const fs = F.side, ds = other(fs), dog = out.teams[ds].abbr, fav = F.abbr;
+    const items = [];
+    const add = (key, label, pass, detail) => items.push({ key, label, pass: pass === null ? null : !!pass, detail });
+    const lead = F.leadEnd3 != null ? F.leadEnd3 : F.lead;
+    add('lead', 'Lead 10+ at the end of the 3rd', lead >= 10, `${fav} ${lead > 0 ? 'up ' + lead : (lead < 0 ? 'down ' + (-lead) : 'tied')}`);
+    const L3 = F.last3 || {}, T = F.tonight || {};
+    const top10 = (a, b) => (a == null || b == null) ? null : (a <= 10 && b <= 10);
+    const r3e = (L3.opp_efg || {}).r, r3d = (L3.def || {}).r;
+    add('opp_efg', 'Opp eFG% top 10 (last 3 and tonight)', top10(r3e, T.opp_efg_rank),
+        `last 3 #${r3e ?? '–'} · tonight ${T.opp_efg != null ? T.opp_efg + '% ' : ''}#${T.opp_efg_rank ?? '–'}`);
+    add('def', 'Def Eff top 10 (last 3 and tonight)', top10(r3d, T.def_rank),
+        `last 3 #${r3d ?? '–'} · tonight ${T.def != null ? T.def + ' ' : ''}#${T.def_rank ?? '–'}`);
+    // closer active: played in the 3rd and fewer than 5 fouls
+    const q3t0 = 2 * QLEN, q3t1 = 3 * QLEN;
+    const inQ3 = id => S.plays.some(p => p.t > q3t0 && p.t <= q3t1 && p.ath.includes(id));
+    const cl = (out.closers[fs] || {}).list || [];
+    const active = cl.filter(c => c.id && inQ3(c.id) && (!c.game || c.game.pf < 5));
+    const troubled = cl.filter(c => c.game && c.game.pf >= 5);
+    add('closer', 'Closer active (played in the 3rd, under 5 fouls)', cl.length ? active.length > 0 : null,
+        cl.length ? (active.length ? active.map(c => c.name).join(', ') : (troubled.length ? `${troubled[0].name} has ${troubled[0].game.pf} fouls` : 'closers did not play in the 3rd'))
+                  : 'no closer identified');
+    // underdog run unanswered
+    const side = out.sides[fs];
+    const unanswered = side.oppRun && !side.answered;
+    add('run', `${dog} has no unanswered run`, !unanswered,
+        unanswered ? `${dog}'s ${side.oppRun.label} (Q${side.oppRun.end.period} ${side.oppRun.end.clock}) not answered` : (side.oppRun ? `${fav} answered ${dog}'s ${side.oppRun.label}` : `${dog} has not had a run`));
+    // underdog hot from 3: 40%+ on 15+ attempts for the game, or 45%+ on 6+ in the last 12 minutes
+    const g3 = tally(S.plays, -1, S.nowT)[ds], r3 = tally(S.plays, S.nowT - 720, S.nowT)[ds];
+    const hotG = g3.fg3a >= 15 && g3.fg3m / g3.fg3a >= 0.40, hotR = r3.fg3a >= 6 && r3.fg3m / r3.fg3a >= 0.45;
+    add('three', `${dog} not hot from 3`, !(hotG || hotR), `game ${g3.fg3m}/${g3.fg3a}, last 12 min ${r3.fg3m}/${r3.fg3a}`);
+    const b2b = ctx.favB2B;
+    add('b2b', `${fav} not on a back-to-back`, b2b == null ? null : !b2b, b2b == null ? 'unknown' : (b2b ? 'second night of a back-to-back' : 'rested'));
+    const passed = items.filter(i => i.pass === true).length;
+    const failed = items.filter(i => i.pass !== true);
+    const k = (ctx.kalshi || {})[fav];
+    const price = k != null ? { prob: k, cents: Math.round(k * 100), tooThin: k > SINGLE_CEILING, returnPct: Math.round(100 * (1 - k) / k) } : null;
+    const ready = passed === items.length && !(price && price.tooThin);
+    return { fav, dog, passed, total: items.length, items, ready, price,
+             verdict: ready ? `${passed} of ${items.length}, parlay-ready` : `${passed} of ${items.length}, skip`,
+             reasons: failed.map(i => shortReason(i, fav, dog)).concat(price && price.tooThin ? [`price ${price.cents}c too thin`] : []) };
+  }
+  function shortReason(i, fav, dog) {
+    if (i.pass === null) return `${i.key === 'b2b' ? 'back-to-back' : i.key} unknown`;
+    return { lead: `${i.detail}`, opp_efg: `opp eFG not top 10 (${i.detail})`, def: `Def Eff not top 10 (${i.detail})`,
+             closer: `closer: ${i.detail}`, run: i.detail, three: `${dog} hot from 3 (${i.detail})`, b2b: `${fav} on a back-to-back` }[i.key] || i.label;
   }
 
   function toAmerican(p) {

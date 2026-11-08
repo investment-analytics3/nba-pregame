@@ -208,3 +208,24 @@ test('no favorite signal when the underdog leads', () => {
   const r = E.analyze(s, { fav: 'AAA' });
   assert.strictEqual(r.favorite.up10, false);
 });
+
+// ---- end-of-3rd checklist -------------------------------------------------------
+test('end-of-3rd checklist: seven items, a verdict, and the price ceiling', () => {
+  const plays = [];
+  for (let i = 0; i < 6; i++) plays.push([3, `${10 - i}:00`, 'A', 2, i % 2 ? 'a1' : 'a2']);   // AAA (fav) 12-0 in the 3rd
+  plays.push([3, '2:00', 'H', 2]);
+  const s = game(plays, at(3, '0.0'));
+  const ctx = { fav: 'AAA', favB2B: false, closers: { AAA: { closers: ['a1', 'a2'], elite: [] } },
+                league: { opp_efg: [10, 20, 30, 40, 50, 60, 70, 80, 90, 95, 99], def: [10, 20, 30, 40, 50, 60, 70, 80, 90, 95, 99] },
+                favDefense: { last3: { opp_efg: { r: 3 }, def: { r: 4 } } } };
+  const r = E.analyze(s, Object.assign({ kalshi: { AAA: 0.9 } }, ctx));
+  assert.strictEqual(r.checklist.total, 7);
+  assert.strictEqual(r.checklist.items.find(i => i.key === 'lead').pass, true);
+  assert.strictEqual(r.checklist.items.find(i => i.key === 'b2b').pass, true);
+  assert.match(r.checklist.verdict, /^\d of 7, (parlay-ready|skip)$/);
+  const thin = E.analyze(s, Object.assign({ kalshi: { AAA: 0.97 } }, ctx));
+  assert.strictEqual(thin.checklist.price.tooThin, true);
+  assert.strictEqual(thin.checklist.ready, false);
+  const b2b = E.analyze(s, Object.assign({}, ctx, { favB2B: true }));
+  assert.strictEqual(b2b.checklist.items.find(i => i.key === 'b2b').pass, false);
+});

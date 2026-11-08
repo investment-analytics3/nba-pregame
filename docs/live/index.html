@@ -70,6 +70,10 @@ box-shadow:inset 0 1px 0 rgba(255,255,255,.45),inset 0 -3px 0 rgba(0,0,0,.2),0 6
 .f-Hot{color:#03240F;background:#43DE8F}.f-Normal{color:#C7CEDC;background:#253049}.f-Cold{color:#fff;background:#3B5BA9}.f-Foul{color:#2A1C00;background:#FADB80}
 .tag{font-size:9.5px;font-weight:800;letter-spacing:.08em;padding:1px 6px;border-radius:5px}
 ul.clean{margin:0;padding-left:18px;line-height:1.6;font-size:14px;color:#D3D9E5}
+.ckrow{display:grid;grid-template-columns:28px minmax(0,1fr);gap:8px;align-items:start;font-size:14px;padding:6px 0;border-top:1px solid var(--line)}
+.ckrow:first-child{border-top:0}
+.ck{width:24px;height:24px;border-radius:7px;display:grid;place-items:center;font-weight:800;font-size:14px}
+.ck.ok{background:linear-gradient(180deg,#43DE8F,#1F9D58);color:#03240F}.ck.no{background:#3A1E22;color:#FCA5A5;border:1px solid rgba(200,48,48,.5)}.ck.un{background:#2A2F3A;color:#C7CEDC}
 .flag{display:inline-flex;margin:0 6px 6px 0;font-size:12.5px;padding:5px 10px;border-radius:999px;border:1px solid #3A2A2A;background:rgba(200,48,48,.12);color:#FECACA}
 .big{font-size:44px;font-weight:700;line-height:1}
 .logline{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.5;padding:10px 12px;border-radius:10px;background:#0B1120;border:1px solid #1F2A42;word-break:break-word}
@@ -167,6 +171,20 @@ function render(g, r){
     return h;
   }
   h += steps(r.phase.key);
+
+  // end-of-3rd checklist (the parlay filter): one verdict, seven checks
+  const C = r.checklistEnd3 || r.checklist;
+  if(C){
+    const decided = r.period >= 4 || (r.period === 3 && r.remain === 0) || r.state === 'post';
+    const mark = x => x===true ? '<span class="ck ok" aria-label="pass">✓</span>' : (x===false ? '<span class="ck no" aria-label="fail">✗</span>' : '<span class="ck un" aria-label="unknown">?</span>');
+    const k = C.price;
+    h += `<section class="panel pad" style="margin-top:16px;border-color:${C.ready?'rgba(47,195,115,.55)':'#1F2A42'}">
+      <div class="row between" style="align-items:flex-start;gap:12px"><div><div class="dim" style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700">End-of-3rd checklist · ${esc(C.fav)} (favorite)${decided?'':' · preview'}</div>
+        <div class="cond" style="font-size:28px;font-weight:700;margin-top:4px;color:${C.ready?'#6BF0AA':(C.passed>=5?'#FFD66B':'#E6EAF2')}">${esc(C.verdict)}</div></div>
+        <div style="text-align:right">${k?`<div class="cond" style="font-size:28px;font-weight:700">${k.cents}¢</div><div class="dim" style="font-size:12px">Kalshi ${esc(C.fav)} now · +${k.returnPct}% if it wins${k.tooThin?' · <b style="color:#FFD66B">too thin (above 94¢)</b>':''}</div>`:'<div class="dim" style="font-size:12px">No Kalshi price yet</div>'}</div></div>
+      <div style="margin-top:12px;display:flex;flex-direction:column;gap:6px">${C.items.map(i=>`<div class="ckrow">${mark(i.pass)}<span><b>${esc(i.label)}</b><br><span class="dim" style="font-size:12.5px">${esc(i.detail)}</span></span></div>`).join('')}</div>
+      <div class="dim" style="font-size:11.5px;margin-top:10px;line-height:1.5">${decided?'Checked when the 3rd ended. ':'Live preview; it locks when the 3rd ends. '}Parlay ceiling: two legs together at 80¢ or less (about +25%). Separate from your A/A+ grade; not betting advice.</div></section>`;
+  }
 
   const fs = r.sides[focusSide];
   // 1 game state
@@ -276,7 +294,12 @@ async function refresh(forceLive){
     const g = ctx.games.find(x=>x.id===gid);
     const [summary] = await Promise.all([getJSON(`${ESPN}/summary?event=${encodeURIComponent(gid)}&t=${Date.now()}`), loadLive(forceLive)]);
     const kal = kalshiNow(g);
-    const r = LiveEngine.analyze(summary, {date: ctx.date, fav: g.fav, closers: ctx.closers, kalshi: kal, favDefense: g.fav_defense, league: ctx.league, fav10: ctx.fav10});
+    const r = LiveEngine.analyze(summary, {date: ctx.date, fav: g.fav, closers: ctx.closers, kalshi: kal, favDefense: g.fav_defense, favB2B: g.fav_b2b, league: ctx.league, fav10: ctx.fav10});
+    // after the 3rd, the checklist is the one taken when the 3rd ended (Kalshi stays live)
+    if(r.state==='post' || r.period >= 4){
+      try{ const e3 = LiveEngine.analyze(summary, {date: ctx.date, fav: g.fav, closers: ctx.closers, kalshi: kal, favDefense: g.fav_defense, favB2B: g.fav_b2b, league: ctx.league, fav10: ctx.fav10}, {uptoT: 3*720});
+           if(e3.checklist) r.checklistEnd3 = e3.checklist; }catch(e){}
+    }
     lastRead = r; readAt = Date.now();
     if(r.state==='in'){ const x = {clock:r.clockLabel, grade:r.decision.grade, action:r.decision.action, pick:r.decision.pick, score:`${r.teams.away.score}-${r.teams.home.score}`}; if(!session.length || session[session.length-1].clock!==x.clock) session.push(x); }
     app.innerHTML = render(g, r);
