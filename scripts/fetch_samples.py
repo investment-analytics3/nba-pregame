@@ -73,7 +73,14 @@ def main():
             break
         t -= timedelta(minutes=15)
 
-    save("nba_power_rankings.html", "https://www.nba.com/news/category/power-rankings", want="bytes")
+    page = save("nba_power_rankings.html", "https://www.nba.com/news/category/power-rankings", want="bytes")
+    if page:
+        import re
+        weeks = re.findall(rb'/news/power-rankings-(\d{4})-(\d{2})-week-(\d+)', page)
+        if weeks:
+            y1, y2, wk = max(weeks, key=lambda w: (int(w[0]), int(w[2])))
+            slug = f"power-rankings-{y1.decode()}-{y2.decode()}-week-{wk.decode()}"
+            save("nba_power_rankings_article.html", f"https://www.nba.com/news/{slug}", want="bytes")
 
 
 if __name__ == "__main__":
