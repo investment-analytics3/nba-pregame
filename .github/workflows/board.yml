@@ -1,0 +1,85 @@
+name: Pregame board
+
+# Checks every 15 minutes from about 7 AM to 7 PM Pacific whether it's time to
+# send. Most checks take a few seconds and do nothing. It sends:
+#   - the board at 12 PM weekdays / 10 AM weekends
+#   - the Final 90 minutes before the day's first tip
+# (see scripts/board_decide.py for the exact rules).
+# Run by hand from the Actions tab to send a preview or force a board/final.
+on:
+  schedule:
+    - cron: "4,19,34,49 14-23 * * *"
+    - cron: "4,19,34,49 0-2 * * *"
+  workflow_dispatch:
+    inputs:
+      kind:
+        description: "What to send"
+        type: choice
+        options: [preview, board, final, auto]
+        default: preview
+      send:
+        description: "Send the email and phone alert (untick to only publish the page)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nba-data
+  cancel-in-progress: false
+
+jobs:
+  board:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Is it time to send?
+        id: decide
+        run: python scripts/board_decide.py --kind "${{ inputs.kind || 'auto' }}"
+
+      - name: Install
+        if: steps.decide.outputs.kind != 'none'
+        run: pip install -q -r requirements.txt
+
+      - name: Catch up any missing games
+        if: steps.decide.outputs.kind != 'none'
+        run: python scripts/update_data.py
+
+      - name: Build and score today's slate
+        if: steps.decide.outputs.kind != 'none'
+        run: python scripts/build_slate.py
+
+      - name: Publish the page, email it, send the phone alert
+        if: steps.decide.outputs.kind != 'none'
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: python scripts/run_board.py --kind "${{ steps.decide.outputs.kind }}" ${{ inputs.send == false && '--no-send' || '' }}
+
+      - name: Save to the repo
+        if: steps.decide.outputs.kind != 'none'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ docs/
+          if git diff --cached --quiet; then echo "Nothing to save."; exit 0; fi
+          git commit -q -m "Board ${{ steps.decide.outputs.kind }} $(TZ=America/Los_Angeles date '+%Y-%m-%d %H:%M %Z')"
+          git pull -q --rebase origin main
+          git push -q origin HEAD:main
+
+      - name: Phone alert if something failed
+        if: failure()
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          curl -fsS -H "Title: NBA board run FAILED" -H "Tags: warning" -H "Priority: high" \
+            -H "Click: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            -d "The pregame board run failed. Tap to see the details." "https://ntfy.sh/$NTFY_TOPIC" > /dev/null || true

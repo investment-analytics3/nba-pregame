@@ -130,7 +130,10 @@ def parse(pdf_bytes: bytes) -> dict:
             min(near, key=lambda r: abs(r["_top"] - top))["_parts"].append((top, txt))
     for r in rows:
         raw = "".join(t for _, t in sorted(r.pop("_parts")))
-        r["reason"] = re.sub(r"(?<=[a-z])(?=[A-Z])", " ", raw).replace("-", " - ").replace("/", " / ")
+        txt = re.sub(r"(?<=[a-z])(?=[A-Z])", " ", raw)
+        txt = re.sub(r"^Injury/Illness\s*-\s*", "Injury: ", txt)
+        txt = txt.replace("G League-Two-Way", "G League two-way").replace("GLeague-Two-Way", "G League two-way")
+        r["reason"] = txt
         r.pop("_page"); r.pop("_top")
     return {"report_time": report_time.isoformat() if report_time else None,
             "rows": rows, "not_submitted": not_submitted}

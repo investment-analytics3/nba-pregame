@@ -47,3 +47,12 @@ jobs:
           git commit -q -m "Data update $(TZ=America/Los_Angeles date '+%Y-%m-%d %H:%M %Z')"
           git pull -q --rebase origin main
           git push -q origin HEAD:main
+
+      - name: Phone alert if something failed
+        if: failure()
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          curl -fsS -H "Title: NBA overnight update FAILED" -H "Tags: warning" -H "Priority: high" \
+            -H "Click: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            -d "The 3 AM data update failed. Tap to see the details." "https://ntfy.sh/$NTFY_TOPIC" > /dev/null || true

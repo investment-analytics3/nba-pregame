@@ -114,7 +114,7 @@ def score_game(game: dict) -> dict:
         warnings.append(f"Info: {dog['abbr']} without {', '.join(dog['key_out'])}")
     for t in (fav, dog):
         if (t.get("power") or {}).get("split"):
-            warnings.append(f"{t['abbr']} power-rank sources disagree (split)")
+            warnings.append(f"{t['abbr']} power rank: NBA.com disagrees enough to change its top/bottom-10 group")
     if game.get("neutral"):
         warnings.append("Neutral-site game: no home-court point")
 

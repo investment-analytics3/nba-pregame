@@ -89,7 +89,9 @@ def compute(rows: list[dict], before: str | None = None) -> dict:
             "season": _calc(gs), "last3": _calc(last3),
             "last3_games": [{"game_id": g["game_id"], "date": g["game_date"], "site": g["site"],
                              "opp_id": g["opp_id"], "opp": g["opp"], "pts": g["pts"],
-                             "opp_pts": g["opp_pts"]} for g in reversed(last3)],
+                             "opp_pts": g["opp_pts"],
+                             "metrics": {k: v for k, v in _calc([g]).items() if k in METRICS}}
+                            for g in reversed(last3)],
         }
     _rank(teams, "season")
     _rank(teams, "last3")

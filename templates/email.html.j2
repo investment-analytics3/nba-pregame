@@ -1,0 +1,79 @@
+{%- set band_bg = {'green': '#1F9D58', 'yellow': '#D9A12A', 'red': '#B32A2A'} -%}
+{%- set band_fg = {'green': '#FFFFFF', 'yellow': '#2A1C00', 'red': '#FFFFFF'} -%}
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light"><title>NBA Pregame Board</title></head>
+<body style="margin:0;padding:0;background:#0A0F1C;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#0A0F1C" style="background:#0A0F1C;">
+<tr><td align="center" style="padding:20px 12px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;font-family:Arial,Helvetica,sans-serif;color:#E6EAF2;">
+
+<tr><td style="padding:4px 4px 14px;">
+  <div style="font-size:11px;letter-spacing:2px;color:#8B95AB;font-weight:bold;">NBA &middot; {{ 'FINAL' if d.kind == 'final' else ('PREVIEW' if d.kind == 'preview' else 'PREGAME BOARD') }}</div>
+  <div style="font-size:28px;font-weight:bold;margin-top:4px;color:#FFFFFF;">{{ d.date_label }}</div>
+  <div style="font-size:13px;color:#8B95AB;margin-top:4px;">{{ d.games|length }} games &middot; data pulled {{ d.built_label }} &middot; stats through {{ d.metrics_through_label }}</div>
+</td></tr>
+
+{% if d.kind == 'final' and d.earlier_label %}
+<tr><td style="padding:0 4px 16px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#16203A;border:1px solid #2E4A7A;border-radius:12px;">
+  <tr><td style="padding:12px 16px;font-size:14px;line-height:1.6;color:#D3D9E5;">
+    <b style="color:#FFFFFF;">What changed since the {{ d.earlier_label }} board</b><br>
+    {% if d.changes %}{% for c in d.changes %}&bull; {{ c }}<br>{% endfor %}{% else %}No changes.{% endif %}
+  </td></tr></table>
+</td></tr>
+{% endif %}
+
+<tr><td align="center" style="padding:0 4px 18px;">
+  <a href="{{ pages_url }}" style="display:inline-block;background:#2F6FE0;color:#FFFFFF;text-decoration:none;font-weight:bold;font-size:15px;padding:12px 22px;border-radius:999px;">Open the full board</a>
+  <div style="font-size:11px;color:#7C869E;margin-top:6px;">Interactive version with charts. Also attached to this email.</div>
+</td></tr>
+
+{% set q = d.games|selectattr('scoring.qualified')|list %}
+{% set n = d.games|rejectattr('scoring.qualified')|list %}
+{% for title, list, color in [('QUALIFIED', q, '#2FC373'), ('DID NOT QUALIFY', n, '#FF7676')] %}
+<tr><td style="padding:6px 4px 8px;">
+  <div style="font-size:15px;font-weight:bold;letter-spacing:1px;color:{{ color }};">{{ title }} ({{ list|length }})</div>
+  {% if title == 'DID NOT QUALIFY' %}<div style="height:5px;background:#C42B2B;border-radius:5px;margin-top:6px;"></div>{% endif %}
+</td></tr>
+{% if not list %}<tr><td style="padding:0 4px 14px;font-size:13px;color:#8B95AB;">None today.</td></tr>{% endif %}
+{% for g in list %}
+{% set sc = g.scoring %}
+{% set fav = g[g.favorite] if g.favorite in ('home', 'away') else None %}
+<tr><td style="padding:0 4px 12px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#141C30;border:1px solid #222D47;border-radius:14px;">
+  <tr>
+    <td width="74" valign="top" style="padding:14px 0 14px 14px;">
+      {% if sc.scored %}
+      <table role="presentation" cellpadding="0" cellspacing="0"><tr><td align="center" width="60" height="60" style="background:{{ band_bg[sc.band] }};border-radius:14px;color:{{ band_fg[sc.band] }};">
+        <div style="font-size:24px;font-weight:bold;line-height:1;">{{ sc.score }}</div><div style="font-size:10px;opacity:.85;">/ {{ d.max }}</div></td></tr></table>
+      {% else %}
+      <table role="presentation" cellpadding="0" cellspacing="0"><tr><td align="center" width="60" height="60" style="background:#2A3248;border-radius:14px;color:#9AA4BA;font-size:11px;">No line</td></tr></table>
+      {% endif %}
+    </td>
+    <td valign="top" style="padding:12px 14px 12px 12px;">
+      <div style="font-size:11px;color:#A9B2C6;font-weight:bold;letter-spacing:1px;">{{ g.tip_pt|upper }}{% if g.neutral %} &middot; NEUTRAL{% endif %}</div>
+      <div style="font-size:17px;font-weight:bold;color:#FFFFFF;margin-top:3px;">{{ g.away.abbr }} {{ g.away.spread_text }} <span style="color:#7C869E;font-weight:normal;">@</span> {{ g.home.abbr }} {{ g.home.spread_text }}</div>
+      <div style="font-size:12px;color:#8B95AB;margin-top:3px;">
+        {{ g.away.abbr }} {{ g.away.record }} (L3 {{ g.away.l3_record }}, PR #{{ g.away.power.rank }}){% if g.away.b2b %} <b style="color:#C4A5F7;">B2B</b>{% endif %}
+        &middot; {{ g.home.abbr }} {{ g.home.record }} (L3 {{ g.home.l3_record }}, PR #{{ g.home.power.rank }}){% if g.home.b2b %} <b style="color:#C4A5F7;">B2B</b>{% endif %}
+      </div>
+      <div style="font-size:13px;margin-top:8px;color:{{ '#86EFAC' if sc.qualified else '#FCA5A5' }};">
+        {% if not sc.scored %}No spread posted yet{% elif sc.qualified %}&#10003; Qualified on {{ sc.qualifiers|join(', ') }}{% else %}&#10007; {{ sc.fails[0] }}{% endif %}
+      </div>
+      {% for w in sc.warnings if 'questionable' in w|lower %}
+      <div style="font-size:12px;margin-top:6px;color:#2A1C00;background:#F2C14E;border-radius:8px;padding:4px 8px;display:inline-block;">{{ w }}</div>
+      {% endfor %}
+      <div style="font-size:12px;margin-top:8px;color:#9AA4BA;">{{ g.lean }}</div>
+    </td>
+  </tr></table>
+</td></tr>
+{% endfor %}
+{% endfor %}
+
+<tr><td style="padding:10px 4px 0;font-size:11px;line-height:1.6;color:#7C869E;">
+  Metrics computed from ESPN box scores &middot; spreads via ESPN &middot; injuries: {{ d.injury_source or 'unavailable' }}.<br>
+  Context only, not betting advice. Sent automatically by your nba-pregame GitHub repo.
+</td></tr>
+</table></td></tr></table>
+</body></html>

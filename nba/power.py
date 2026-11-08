@@ -42,34 +42,40 @@ def _bucket(r: float) -> str:
     return "top" if r <= 10 else ("bottom" if r >= 21 else "mid")
 
 
+def _rank_by(scores: dict) -> dict:
+    ordered = sorted((t for t in scores if scores[t] is not None), key=lambda t: scores[t])
+    return {t: i for i, t in enumerate(ordered, start=1)}
+
+
 def consensus(teams: list[dict], own_net_rank: dict, bpi_rank: dict, nba: dict) -> dict:
-    """teams: [{"id","display"}]. Returns {team_id: {...ranks, "rank", "split"}}."""
+    """teams: [{"id","display"}]. Returns {team_id: {...ranks, "rank", "split", "disagree"}}.
+
+    "disagree": NBA.com is more than 5 spots off the daily sources or in another
+    bucket, so it is left out of that team's blend.
+    "split" (the amber tag): the disagreement changes something that matters,
+    i.e. with vs without NBA.com the team lands in a different top-10 / middle /
+    bottom-10 bucket, which can change the power-rank point.
+    """
     nba_by_name = (nba or {}).get("by_name", {})
-    raw = {}
+    raw, daily_only, with_nba = {}, {}, {}
     for t in teams:
         tid = t["id"]
         own, b = own_net_rank.get(tid), bpi_rank.get(tid)
         n = nba_by_name.get(norm(t["display"]))
         daily = [x for x in (own, b) if x is not None]
-        split = False
-        if daily:
-            avg = sum(daily) / len(daily)
-            score = avg
-            if n is not None:
-                if abs(n - avg) > 5 or _bucket(avg) != _bucket(n):
-                    split = True
-                else:
-                    score = (sum(daily) + 0.5 * n) / (len(daily) + 0.5)
-        elif n is not None:
-            score = float(n)
-        else:
-            score = None
-        raw[tid] = {"own_net": own, "bpi": b, "nba_com": n, "score": score, "split": split}
-    ordered = sorted((tid for tid in raw if raw[tid]["score"] is not None),
-                     key=lambda tid: (raw[tid]["score"], raw[tid]["own_net"] or 99))
-    for i, tid in enumerate(ordered, start=1):
-        raw[tid]["rank"] = i
-        raw[tid]["score"] = round(raw[tid]["score"], 2)
+        avg = sum(daily) / len(daily) if daily else (float(n) if n is not None else None)
+        blended = (sum(daily) + 0.5 * n) / (len(daily) + 0.5) if (daily and n is not None) else avg
+        disagree = bool(daily and n is not None and (abs(n - avg) > 5 or _bucket(avg) != _bucket(n)))
+        daily_only[tid], with_nba[tid] = avg, blended
+        raw[tid] = {"own_net": own, "bpi": b, "nba_com": n, "disagree": disagree,
+                    "score": None if avg is None else round(avg if disagree else blended, 2)}
+    final = _rank_by({tid: r["score"] for tid, r in raw.items()})
+    r_daily, r_with = _rank_by(daily_only), _rank_by(with_nba)
+    for tid, r in raw.items():
+        r["rank"] = final.get(tid)
+        r["rank_daily_only"], r["rank_with_nba"] = r_daily.get(tid), r_with.get(tid)
+        r["split"] = bool(r["disagree"] and r_daily.get(tid) and r_with.get(tid)
+                          and _bucket(r_daily[tid]) != _bucket(r_with[tid]))
     return raw
 
 
