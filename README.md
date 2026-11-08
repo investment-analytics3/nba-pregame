@@ -12,7 +12,7 @@ the daily runs.
 | Data sources confirmed from GitHub's servers | Done |
 | Data engine: box scores, metrics, ranks, power rank, slate | Done |
 | Scoring: six rules, 40-point hero score (with unit tests) | Done |
-| Board: HTML page, email, phone alert, schedule | Next |
+| Board: HTML page, email, phone alert, schedule | Done |
 
 ## How the data works
 
@@ -38,17 +38,29 @@ play-by-play.
 
 | Workflow | When | What |
 |---|---|---|
+| Pregame board | 12 PM weekdays / 10 AM weekends, and 90 min before first tip | Builds and scores the slate, publishes the page (GitHub Pages, `docs/`), emails it, sends a phone alert. Run by hand for a preview. |
 | Overnight data update | 3 AM Pacific daily, or by hand | Catches up box scores, recomputes metrics and power ranks, builds today's slate, saves to `data/` |
+| Test email | By hand | Sends a test email and phone alert |
 | Check data sources | By hand | Confirms every free source still answers |
 | Test phone alert | By hand | Sends a test ntfy alert |
 | Fetch samples (developer) | By hand | Saves raw source responses to the `dev-samples` branch |
+
+## The board
+
+- Page: https://investment-analytics3.github.io/nba-pregame/ (needs GitHub Pages on: Settings > Pages >
+  Deploy from a branch > `main` / `/docs`). Past boards are kept in `docs/boards/`.
+- Email: summary of every game plus the full page attached. The Final email starts with what changed
+  since the earlier board.
+- Phone: ntfy alert with the qualified games; tapping it opens the page. A failed run also alerts.
+- Optional `data/closers.json`, e.g. `{"BOS": ["Jayson Tatum", "Jaylen Brown"]}`, replaces the
+  "top scorers" line with your own closers.
 
 ## Secrets (Settings > Secrets and variables > Actions)
 
 | Name | Used for |
 |---|---|
 | `NTFY_TOPIC` | Phone alerts (set) |
-| `GMAIL_ADDRESS`, `GMAIL_APP_PASSWORD` | Emailing the board (needed for the board step) |
+| `GMAIL_ADDRESS`, `GMAIL_APP_PASSWORD` | Emailing the board (set) |
 | `ODDS_API_KEY` | Optional backup spread source |
 
 ## Sources
