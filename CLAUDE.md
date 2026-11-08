@@ -100,6 +100,10 @@ often: always `git pull --rebase origin main` before pushing.
 - Live mode (full table in the design spec "Live mode" section): tracks above-the-line games only; BET only
   4th 10:00-4:00 for an A/A+ team that is LEADING (trailing A = comeback signal, not a bet); LEAN = same in the
   3rd / before 10:00; under 4:00 and OT read only. Alerts: phone only, end of 3rd (always) + first BET signal.
+  End-of-3rd push: if the pregame favorite leads by 10+ it is its own signal ("<fav> (fav) up N", high priority)
+  with the season record (`fav10` in data/live/backtest.json), the favorite's defense (opp eFG% / Def Eff: last-3
+  ranks + tonight ranked vs season averages) and the Kalshi price; otherwise "wait for BET signal" / "likely no bet".
+  The tracker logs Kalshi at that moment so the backtest can later test whether the price leaves an edge.
   Kalshi: public API (`api.elections.kalshi.com/trade-api/v2`, series `KXNBAGAME`, event
   `KXNBAGAME-26NOV08PHICHI`); it refuses requests that carry a browser `Origin` header, so only the tracker
   calls it. Price check never changes the grade.
