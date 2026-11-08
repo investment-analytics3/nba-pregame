@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T17:07:35.261Z",
+ "built": "2026-11-08T17:43:40.072Z",
  "note": "Replay of finished games through the live engine. \"bet\" = the first BET call (the phone alert). In-sample: closers drafted from the same games.",
  "all": {
   "games": 139,
@@ -148,7 +148,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "BOS",
+    "lead": 6,
+    "leaderGrade": "C",
+    "leaderControl": false,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -169,7 +175,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "PHI"
+    "pick": "PHI",
+    "leader": "PHI",
+    "lead": 7,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "6:00 Q4",
@@ -190,7 +202,13 @@
    "end3": {
     "grade": "A",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "OKC",
+    "lead": 13,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -205,7 +223,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "MIN"
+    "pick": "MIN",
+    "leader": "MIN",
+    "lead": 18,
+    "leaderGrade": "A",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": true
    },
    "bet": {
     "at": "6:00 Q4",
@@ -226,7 +250,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "LAL"
+    "pick": "LAL",
+    "leader": "LAL",
+    "lead": 34,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "6:00 Q4",
@@ -247,7 +277,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "CLE",
+    "lead": 8,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "4:00 Q4",
@@ -268,7 +304,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "OKC",
+    "lead": 6,
+    "leaderGrade": "C",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -289,7 +331,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "BOS",
+    "lead": 10,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -304,7 +352,13 @@
    "end3": {
     "grade": "A",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "HOU",
+    "lead": 4,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -319,7 +373,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "WSH"
+    "pick": "WSH",
+    "leader": "WSH",
+    "lead": 20,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -334,7 +394,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "BOS",
+    "lead": 25,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "4:00 Q4",
@@ -355,7 +421,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "DET",
+    "lead": 26,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -370,7 +442,13 @@
    "end3": {
     "grade": "A",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "PHI",
+    "lead": 9,
+    "leaderGrade": "C",
+    "leaderControl": false,
+    "leaderAnswered": false,
+    "leaderCloserEdge": true
    },
    "bet": null,
    "bet_won": null
@@ -385,7 +463,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "ORL"
+    "pick": "ORL",
+    "leader": "ORL",
+    "lead": 7,
+    "leaderGrade": "A",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": true
    },
    "bet": {
     "at": "8:00 Q4",
@@ -406,7 +490,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "MIA",
+    "lead": 15,
+    "leaderGrade": "B",
+    "leaderControl": true,
+    "leaderAnswered": false,
+    "leaderCloserEdge": true
    },
    "bet": {
     "at": "4:00 Q4",
@@ -427,7 +517,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "HOU"
+    "pick": "HOU",
+    "leader": "HOU",
+    "lead": 8,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -442,7 +538,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "MIN"
+    "pick": "MIN",
+    "leader": "MIN",
+    "lead": 17,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "6:00 Q4",
@@ -463,7 +565,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "GS",
+    "lead": 5,
+    "leaderGrade": "C",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -484,7 +592,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "DEN",
+    "lead": 10,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -499,7 +613,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "ATL",
+    "lead": 11,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -514,7 +634,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "BOS"
+    "pick": "BOS",
+    "leader": "BOS",
+    "lead": 39,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -535,7 +661,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "CLE"
+    "pick": "CLE",
+    "leader": "CLE",
+    "lead": 17,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -556,7 +688,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "DAL"
+    "pick": "DAL",
+    "leader": "DAL",
+    "lead": 13,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "4:00 Q4",
@@ -577,7 +715,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "OKC"
+    "pick": "OKC",
+    "leader": "OKC",
+    "lead": 22,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "6:00 Q4",
@@ -598,7 +742,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "TOR",
+    "lead": 2,
+    "leaderGrade": "C",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -619,7 +769,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "NO"
+    "pick": "NO",
+    "leader": "NO",
+    "lead": 2,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -634,7 +790,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "LAL"
+    "pick": "LAL",
+    "leader": "LAL",
+    "lead": 12,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -649,7 +811,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "SA",
+    "lead": 19,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "10:00 Q4",
@@ -670,7 +838,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "ORL",
+    "lead": 1,
+    "leaderGrade": "C",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -691,7 +865,13 @@
    "end3": {
     "grade": "A",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "MIL",
+    "lead": 3,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -712,7 +892,13 @@
    "end3": {
     "grade": "A",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "CHA",
+    "lead": 5,
+    "leaderGrade": "C",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -733,7 +919,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "TOR",
+    "lead": 32,
+    "leaderGrade": "C",
+    "leaderControl": false,
+    "leaderAnswered": false,
+    "leaderCloserEdge": true
    },
    "bet": {
     "at": "8:00 Q4",
@@ -754,7 +946,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "MEM",
+    "lead": 19,
+    "leaderGrade": "B",
+    "leaderControl": true,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "6:00 Q4",
@@ -775,7 +973,13 @@
    "end3": {
     "grade": "A",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "NO",
+    "lead": 6,
+    "leaderGrade": "C",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -790,7 +994,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "HOU",
+    "lead": 24,
+    "leaderGrade": "C",
+    "leaderControl": true,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -805,7 +1015,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "POR"
+    "pick": "POR",
+    "leader": "POR",
+    "lead": 41,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -826,7 +1042,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "LAC"
+    "pick": "LAC",
+    "leader": "LAC",
+    "lead": 23,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "6:00 Q4",
@@ -847,7 +1069,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "ATL"
+    "pick": "ATL",
+    "leader": "ATL",
+    "lead": 35,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "10:00 Q4",
@@ -868,7 +1096,13 @@
    "end3": {
     "grade": "A",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "DAL",
+    "lead": 22,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -883,7 +1117,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "MIN"
+    "pick": "MIN",
+    "leader": "MIN",
+    "lead": 26,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "6:00 Q4",
@@ -904,7 +1144,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "TOR",
+    "lead": 4,
+    "leaderGrade": "C",
+    "leaderControl": true,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "6:00 Q4",
@@ -925,7 +1171,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "DET",
+    "lead": 23,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -940,7 +1192,13 @@
    "end3": {
     "grade": "A",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "MIL",
+    "lead": 2,
+    "leaderGrade": "C",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -955,7 +1213,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "NO"
+    "pick": "NO",
+    "leader": "NO",
+    "lead": 4,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -976,7 +1240,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "GS",
+    "lead": 6,
+    "leaderGrade": "C",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -997,7 +1267,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "LAL",
+    "lead": 13,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -1018,7 +1294,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "POR"
+    "pick": "POR",
+    "leader": "POR",
+    "lead": 13,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "6:00 Q4",
@@ -1039,7 +1321,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "CHA"
+    "pick": "CHA",
+    "leader": "CHA",
+    "lead": 21,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": true
    },
    "bet": null,
    "bet_won": null
@@ -1054,7 +1342,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "CLE"
+    "pick": "CLE",
+    "leader": "CLE",
+    "lead": 18,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "4:00 Q4",
@@ -1075,7 +1369,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "PHI"
+    "pick": "PHI",
+    "leader": "PHI",
+    "lead": 10,
+    "leaderGrade": "A",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": true
    },
    "bet": {
     "at": "8:00 Q4",
@@ -1096,7 +1396,13 @@
    "end3": {
     "grade": "A",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "HOU",
+    "lead": 11,
+    "leaderGrade": "C",
+    "leaderControl": false,
+    "leaderAnswered": false,
+    "leaderCloserEdge": true
    },
    "bet": {
     "at": "8:00 Q4",
@@ -1117,7 +1423,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "WSH"
+    "pick": "WSH",
+    "leader": "WSH",
+    "lead": 15,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "4:00 Q4",
@@ -1138,7 +1450,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "SA",
+    "lead": 3,
+    "leaderGrade": "C",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -1159,7 +1477,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "NO"
+    "pick": "NO",
+    "leader": "NO",
+    "lead": 19,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -1174,7 +1498,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "PHX"
+    "pick": "PHX",
+    "leader": "PHX",
+    "lead": 10,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "6:00 Q4",
@@ -1195,7 +1525,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "LAL",
+    "lead": 3,
+    "leaderGrade": "C",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -1210,7 +1546,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "IND",
+    "lead": 22,
+    "leaderGrade": "C",
+    "leaderControl": false,
+    "leaderAnswered": false,
+    "leaderCloserEdge": true
    },
    "bet": null,
    "bet_won": null
@@ -1225,7 +1567,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "NY",
+    "lead": 4,
+    "leaderGrade": "C",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -1240,7 +1588,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "MIN",
+    "lead": 28,
+    "leaderGrade": "B",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -1261,7 +1615,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "OKC",
+    "lead": 1,
+    "leaderGrade": "C",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -1276,7 +1636,13 @@
    "end3": {
     "grade": "A",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "DET",
+    "lead": 10,
+    "leaderGrade": "A",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": true
    },
    "bet": null,
    "bet_won": null
@@ -1291,7 +1657,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "MEM"
+    "pick": "MEM",
+    "leader": "MEM",
+    "lead": 10,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -1306,7 +1678,13 @@
    "end3": {
     "grade": "A",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "CHA",
+    "lead": 12,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "4:00 Q4",
@@ -1327,7 +1705,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": null,
+    "lead": 0,
+    "leaderGrade": null,
+    "leaderControl": null,
+    "leaderAnswered": null,
+    "leaderCloserEdge": null
    },
    "bet": null,
    "bet_won": null
@@ -1342,7 +1726,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "BOS"
+    "pick": "BOS",
+    "leader": "BOS",
+    "lead": 30,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -1363,7 +1753,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "MIA",
+    "lead": 4,
+    "leaderGrade": "C",
+    "leaderControl": true,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -1378,7 +1774,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "IND",
+    "lead": 1,
+    "leaderGrade": "C",
+    "leaderControl": false,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "4:00 Q4",
@@ -1399,7 +1801,13 @@
    "end3": {
     "grade": "A",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "OKC",
+    "lead": 16,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "6:00 Q4",
@@ -1420,7 +1828,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "HOU",
+    "lead": 6,
+    "leaderGrade": "C",
+    "leaderControl": true,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -1441,7 +1855,13 @@
    "end3": {
     "grade": "A",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "MEM",
+    "lead": 13,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -1462,7 +1882,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "GS"
+    "pick": "GS",
+    "leader": "GS",
+    "lead": 16,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -1483,7 +1909,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "BOS",
+    "lead": 4,
+    "leaderGrade": "C",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -1498,7 +1930,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "NY"
+    "pick": "NY",
+    "leader": "NY",
+    "lead": 25,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -1519,7 +1957,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "SA"
+    "pick": "SA",
+    "leader": "SA",
+    "lead": 27,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -1534,7 +1978,13 @@
    "end3": {
     "grade": "A",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "LAL",
+    "lead": 1,
+    "leaderGrade": "C",
+    "leaderControl": false,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -1555,7 +2005,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "MIA",
+    "lead": 12,
+    "leaderGrade": "B",
+    "leaderControl": true,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -1570,7 +2026,13 @@
    "end3": {
     "grade": "A",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": null,
+    "lead": 0,
+    "leaderGrade": null,
+    "leaderControl": null,
+    "leaderAnswered": null,
+    "leaderCloserEdge": null
    },
    "bet": {
     "at": "8:00 Q4",
@@ -1591,7 +2053,13 @@
    "end3": {
     "grade": "A",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "DET",
+    "lead": 6,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -1612,7 +2080,13 @@
    "end3": {
     "grade": "A+",
     "action": "LEAN",
-    "pick": "IND"
+    "pick": "IND",
+    "leader": "IND",
+    "lead": 13,
+    "leaderGrade": "A+",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": true
    },
    "bet": null,
    "bet_won": null
@@ -1627,7 +2101,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "TOR"
+    "pick": "TOR",
+    "leader": "TOR",
+    "lead": 27,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -1648,7 +2128,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "CHI",
+    "lead": 6,
+    "leaderGrade": "C",
+    "leaderControl": false,
+    "leaderAnswered": false,
+    "leaderCloserEdge": true
    },
    "bet": {
     "at": "6:00 Q4",
@@ -1669,7 +2155,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "HOU",
+    "lead": 26,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -1684,7 +2176,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "GS",
+    "lead": 12,
+    "leaderGrade": "B",
+    "leaderControl": true,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -1705,7 +2203,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "DEN",
+    "lead": 6,
+    "leaderGrade": "C",
+    "leaderControl": false,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "4:00 Q4",
@@ -1726,7 +2230,13 @@
    "end3": {
     "grade": "A",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": null,
+    "lead": 0,
+    "leaderGrade": null,
+    "leaderControl": null,
+    "leaderAnswered": null,
+    "leaderCloserEdge": null
    },
    "bet": null,
    "bet_won": null
@@ -1741,7 +2251,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "DAL"
+    "pick": "DAL",
+    "leader": "DAL",
+    "lead": 13,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "10:00 Q4",
@@ -1762,7 +2278,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "LAL"
+    "pick": "LAL",
+    "leader": "LAL",
+    "lead": 19,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -1777,7 +2299,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "ATL"
+    "pick": "ATL",
+    "leader": "ATL",
+    "lead": 7,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -1798,7 +2326,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "NO"
+    "pick": "NO",
+    "leader": "NO",
+    "lead": 14,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "4:00 Q4",
@@ -1819,7 +2353,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "MEM",
+    "lead": 8,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -1834,7 +2374,13 @@
    "end3": {
     "grade": "A",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "POR",
+    "lead": 24,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "4:00 Q4",
@@ -1855,7 +2401,13 @@
    "end3": {
     "grade": "A+",
     "action": "LEAN",
-    "pick": "CHA"
+    "pick": "CHA",
+    "leader": "CHA",
+    "lead": 6,
+    "leaderGrade": "A+",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": true
    },
    "bet": {
     "at": "8:00 Q4",
@@ -1876,7 +2428,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "NO"
+    "pick": "NO",
+    "leader": "NO",
+    "lead": 18,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -1897,7 +2455,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "MEM"
+    "pick": "MEM",
+    "leader": "MEM",
+    "lead": 28,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -1912,7 +2476,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "CLE"
+    "pick": "CLE",
+    "leader": "CLE",
+    "lead": 33,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -1927,7 +2497,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "SA",
+    "lead": 5,
+    "leaderGrade": "C",
+    "leaderControl": true,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -1948,7 +2524,13 @@
    "end3": {
     "grade": "A",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "HOU",
+    "lead": 17,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "6:00 Q4",
@@ -1969,7 +2551,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "BOS",
+    "lead": 3,
+    "leaderGrade": "C",
+    "leaderControl": false,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "6:00 Q4",
@@ -1990,7 +2578,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "BKN",
+    "lead": 9,
+    "leaderGrade": "B",
+    "leaderControl": true,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "6:00 Q4",
@@ -2011,7 +2605,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "GS",
+    "lead": 7,
+    "leaderGrade": "B",
+    "leaderControl": true,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "6:00 Q4",
@@ -2032,7 +2632,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "LAL",
+    "lead": 22,
+    "leaderGrade": "C",
+    "leaderControl": false,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "4:00 Q4",
@@ -2053,7 +2659,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "OKC",
+    "lead": 6,
+    "leaderGrade": "C",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -2068,7 +2680,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "DET"
+    "pick": "DET",
+    "leader": "DET",
+    "lead": 23,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -2083,7 +2701,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "ATL",
+    "lead": 8,
+    "leaderGrade": "B",
+    "leaderControl": true,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "6:00 Q4",
@@ -2104,7 +2728,13 @@
    "end3": {
     "grade": "A+",
     "action": "LEAN",
-    "pick": "BKN"
+    "pick": "BKN",
+    "leader": "BKN",
+    "lead": 4,
+    "leaderGrade": "A+",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": true
    },
    "bet": {
     "at": "6:00 Q4",
@@ -2125,7 +2755,13 @@
    "end3": {
     "grade": "A+",
     "action": "LEAN",
-    "pick": "WSH"
+    "pick": "WSH",
+    "leader": "WSH",
+    "lead": 11,
+    "leaderGrade": "A+",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": true
    },
    "bet": null,
    "bet_won": null
@@ -2140,7 +2776,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "PHI"
+    "pick": "PHI",
+    "leader": "PHI",
+    "lead": 11,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -2161,7 +2803,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "SAC"
+    "pick": "SAC",
+    "leader": "SAC",
+    "lead": 7,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -2182,7 +2830,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "NO",
+    "lead": 5,
+    "leaderGrade": "C",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "6:00 Q4",
@@ -2203,7 +2857,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "MIN",
+    "lead": 4,
+    "leaderGrade": "C",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -2224,7 +2884,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "HOU",
+    "lead": 9,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -2245,7 +2911,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "SA"
+    "pick": "SA",
+    "leader": "SA",
+    "lead": 25,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "10:00 Q4",
@@ -2266,7 +2938,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "DEN",
+    "lead": 2,
+    "leaderGrade": "C",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -2281,7 +2959,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": null,
+    "lead": 0,
+    "leaderGrade": null,
+    "leaderControl": null,
+    "leaderAnswered": null,
+    "leaderCloserEdge": null
    },
    "bet": null,
    "bet_won": null
@@ -2296,7 +2980,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "LAC",
+    "lead": 13,
+    "leaderGrade": "B",
+    "leaderControl": true,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -2311,7 +3001,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "LAL",
+    "lead": 18,
+    "leaderGrade": "B",
+    "leaderControl": true,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -2332,7 +3028,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "PHI"
+    "pick": "PHI",
+    "leader": "PHI",
+    "lead": 14,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "10:00 Q4",
@@ -2353,7 +3055,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "ATL"
+    "pick": "ATL",
+    "leader": "ATL",
+    "lead": 8,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "6:00 Q4",
@@ -2374,7 +3082,13 @@
    "end3": {
     "grade": "A",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "BOS",
+    "lead": 8,
+    "leaderGrade": "C",
+    "leaderControl": false,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -2389,7 +3103,13 @@
    "end3": {
     "grade": "A",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": null,
+    "lead": 0,
+    "leaderGrade": null,
+    "leaderControl": null,
+    "leaderAnswered": null,
+    "leaderCloserEdge": null
    },
    "bet": {
     "at": "8:00 Q4",
@@ -2410,7 +3130,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "NY",
+    "lead": 34,
+    "leaderGrade": "C",
+    "leaderControl": false,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "6:00 Q4",
@@ -2431,7 +3157,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "MEM"
+    "pick": "MEM",
+    "leader": "MEM",
+    "lead": 2,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": true
    },
    "bet": null,
    "bet_won": null
@@ -2446,7 +3178,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "UTAH"
+    "pick": "UTAH",
+    "leader": "UTAH",
+    "lead": 10,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -2461,7 +3199,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "OKC",
+    "lead": 14,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "4:00 Q4",
@@ -2482,7 +3226,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "HOU",
+    "lead": 2,
+    "leaderGrade": "C",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -2497,7 +3247,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "DEN"
+    "pick": "DEN",
+    "leader": "DEN",
+    "lead": 23,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -2518,7 +3274,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "POR"
+    "pick": "POR",
+    "leader": "POR",
+    "lead": 19,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -2539,7 +3301,13 @@
    "end3": {
     "grade": "A",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "SA",
+    "lead": 10,
+    "leaderGrade": "A",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": true
    },
    "bet": null,
    "bet_won": null
@@ -2554,7 +3322,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "LAL",
+    "lead": 13,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -2569,7 +3343,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "LAC"
+    "pick": "LAC",
+    "leader": "LAC",
+    "lead": 9,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -2584,7 +3364,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "PHX",
+    "lead": 23,
+    "leaderGrade": "B",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -2599,7 +3385,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "GS"
+    "pick": "GS",
+    "leader": "GS",
+    "lead": 15,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -2620,7 +3412,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "DEN",
+    "lead": 12,
+    "leaderGrade": "B",
+    "leaderControl": true,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "4:00 Q4",
@@ -2641,7 +3439,13 @@
    "end3": {
     "grade": "B",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "BKN",
+    "lead": 7,
+    "leaderGrade": "B",
+    "leaderControl": true,
+    "leaderAnswered": false,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "4:00 Q4",
@@ -2662,7 +3466,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "NY"
+    "pick": "NY",
+    "leader": "NY",
+    "lead": 18,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": null,
    "bet_won": null
@@ -2677,7 +3487,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "OKC"
+    "pick": "OKC",
+    "leader": "OKC",
+    "lead": 31,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "6:00 Q4",
@@ -2698,7 +3514,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "ORL"
+    "pick": "ORL",
+    "leader": "ORL",
+    "lead": 1,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "4:00 Q4",
@@ -2719,7 +3541,13 @@
    "end3": {
     "grade": "C",
     "action": "NO BET",
-    "pick": null
+    "pick": null,
+    "leader": "PHX",
+    "lead": 1,
+    "leaderGrade": "C",
+    "leaderControl": false,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -2740,7 +3568,13 @@
    "end3": {
     "grade": "A",
     "action": "LEAN",
-    "pick": "SA"
+    "pick": "SA",
+    "leader": "SA",
+    "lead": 33,
+    "leaderGrade": "A",
+    "leaderControl": true,
+    "leaderAnswered": true,
+    "leaderCloserEdge": false
    },
    "bet": {
     "at": "8:00 Q4",
@@ -2750,6 +3584,63 @@
     "lead": 34
    },
    "bet_won": true
+  }
+ ],
+ "end3": [
+  {
+   "name": "any leader",
+   "n": 134,
+   "won": 107
+  },
+  {
+   "name": "lead 1-5",
+   "n": 28,
+   "won": 14
+  },
+  {
+   "name": "lead 6-9",
+   "n": 26,
+   "won": 17
+  },
+  {
+   "name": "lead 10-14",
+   "n": 29,
+   "won": 26
+  },
+  {
+   "name": "lead 15+",
+   "n": 51,
+   "won": 50
+  },
+  {
+   "name": "leader A/A+",
+   "n": 60,
+   "won": 49
+  },
+  {
+   "name": "leader B/C",
+   "n": 74,
+   "won": 58
+  },
+  {
+   "name": "leader A/A+ & lead 6-14",
+   "n": 23,
+   "won": 18
+  },
+  {
+   "name": "leader B/C & lead 6-14",
+   "n": 32,
+   "won": 25
+  },
+  {
+   "name": "leader A/A+ & lead 10+",
+   "n": 47,
+   "won": 44
+  },
+  {
+   "name": "leader control & closer edge & lead 6+",
+   "n": 5,
+   "won": 3
   }
  ]
 }
