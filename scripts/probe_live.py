@@ -25,8 +25,10 @@ ET = ZoneInfo("America/New_York")
 report: list[str] = []
 
 
-def call(url: str, origin: bool = True):
-    hdrs = {"User-Agent": UA, "Accept": "application/json"}
+def call(url: str, origin: bool = True, ua: str | None = UA):
+    hdrs = {"Accept": "application/json"}
+    if ua:
+        hdrs["User-Agent"] = ua
     if origin:
         hdrs["Origin"] = ORIGIN
     try:
@@ -40,11 +42,12 @@ def call(url: str, origin: bool = True):
         return None, str(e).encode(), {}
 
 
-def save(name: str, url: str):
-    st, body, h = call(url)
+def save(name: str, url: str, origin: bool = True, ua: str | None = UA):
+    st, body, h = call(url, origin, ua)
     cors = h.get("access-control-allow-origin", "-")
     cache = h.get("cache-control", "-")
-    report.append(f"{name}: HTTP {st}  CORS={cors}  cache={cache}  bytes={len(body)}  {url}")
+    extra = " ".join(f"{k}={h[k]}" for k in ("server", "cf-ray", "x-amzn-errortype", "content-type") if k in h)
+    report.append(f"{name}: HTTP {st}  CORS={cors}  cache={cache}  bytes={len(body)}  {extra}  {url}")
     with open(os.path.join(OUT, name), "wb") as f:
         f.write(body)
     try:
@@ -74,6 +77,21 @@ def main():
             save(f"{tag}_events_{s}.json",
                  f"{base}/events?series_ticker={s}&status=open&with_nested_markets=true&limit=50")
         save(f"{tag}_markets_KXNBAGAME.json", f"{base}/markets?series_ticker=KXNBAGAME&status=open&limit=100")
+
+    # Kalshi variants: no Origin header; plain client name; no User-Agent
+    k = KALSHI_HOSTS[1]
+    save("kv_no_origin.json", f"{k}/markets?series_ticker=KXNBAGAME&status=open&limit=5", origin=False)
+    save("kv_plain_ua.json", f"{k}/markets?series_ticker=KXNBAGAME&status=open&limit=5", origin=False,
+         ua="nba-pregame-dashboard/1.0")
+    save("kv_no_ua.json", f"{k}/exchange/status", origin=False, ua=None)
+    save("kv_status_origin.json", f"{k}/exchange/status")
+    save("kv_ext_status.json", f"{KALSHI_HOSTS[0]}/exchange/status", origin=False, ua="nba-pregame-dashboard/1.0")
+    import subprocess
+    r = subprocess.run(["curl", "-sS", "-o", "/dev/null", "-w", "%{http_code}", f"{k}/exchange/status"],
+                       capture_output=True, text=True)
+    report.append(f"curl default UA exchange/status: HTTP {r.stdout} {r.stderr.strip()}")
+    r = subprocess.run(["curl", "-sS", "https://api.ipify.org"], capture_output=True, text=True)
+    report.append(f"runner public IP: {r.stdout.strip()[:3]}.x (Azure)")
 
     with open(os.path.join(OUT, "REPORT.txt"), "w") as f:
         f.write("\n".join(report) + "\n")
