@@ -1,0 +1,19 @@
+scoreboard_today.json: HTTP 200  CORS=*  cache=max-age=7  bytes=140744  content-type=application/json;charset=UTF-8  https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261108
+summary_live_or_next.json: HTTP 200  CORS=*  cache=max-age=8  bytes=132084  content-type=application/json;charset=UTF-8  https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909945
+scoreboard_yesterday.json: HTTP 200  CORS=*  cache=max-age=10  bytes=168588  content-type=application/json;charset=UTF-8  https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261107
+summary_finished.json: HTTP 200  CORS=*  cache=max-age=1  bytes=404209  content-type=application/json;charset=UTF-8  https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401909938
+k0_series_sports.json: HTTP 403  CORS=-  cache=-  bytes=0    https://external-api.kalshi.com/trade-api/v2/series?category=Sports
+k0_events_KXNBAGAME.json: HTTP 403  CORS=-  cache=-  bytes=0    https://external-api.kalshi.com/trade-api/v2/events?series_ticker=KXNBAGAME&status=open&with_nested_markets=true&limit=50
+k0_events_KXNBA.json: HTTP 403  CORS=-  cache=-  bytes=0    https://external-api.kalshi.com/trade-api/v2/events?series_ticker=KXNBA&status=open&with_nested_markets=true&limit=50
+k0_markets_KXNBAGAME.json: HTTP 403  CORS=-  cache=-  bytes=0    https://external-api.kalshi.com/trade-api/v2/markets?series_ticker=KXNBAGAME&status=open&limit=100
+k1_series_sports.json: HTTP 403  CORS=-  cache=-  bytes=0    https://api.elections.kalshi.com/trade-api/v2/series?category=Sports
+k1_events_KXNBAGAME.json: HTTP 403  CORS=-  cache=-  bytes=0    https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXNBAGAME&status=open&with_nested_markets=true&limit=50
+k1_events_KXNBA.json: HTTP 403  CORS=-  cache=-  bytes=0    https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXNBA&status=open&with_nested_markets=true&limit=50
+k1_markets_KXNBAGAME.json: HTTP 403  CORS=-  cache=-  bytes=0    https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXNBAGAME&status=open&limit=100
+kv_no_origin.json: HTTP 200  CORS=-  cache=public, max-age=15  bytes=10444  content-type=application/json  https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXNBAGAME&status=open&limit=5
+kv_plain_ua.json: HTTP 200  CORS=-  cache=public, max-age=15  bytes=10444  content-type=application/json  https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXNBAGAME&status=open&limit=5
+kv_no_ua.json: HTTP 200  CORS=-  cache=public, max-age=1  bytes=667  content-type=application/json; charset=utf-8  https://api.elections.kalshi.com/trade-api/v2/exchange/status
+kv_status_origin.json: HTTP 403  CORS=-  cache=-  bytes=0    https://api.elections.kalshi.com/trade-api/v2/exchange/status
+kv_ext_status.json: HTTP 200  CORS=-  cache=public, max-age=1  bytes=667  content-type=application/json; charset=utf-8  https://external-api.kalshi.com/trade-api/v2/exchange/status
+curl default UA exchange/status: HTTP 200 
+runner public IP: 128.x (Azure)
