@@ -1,0 +1,25 @@
+name: Fetch samples (developer)
+
+# Saves raw responses from each data source so the parsers can be built and
+# tested against real data. Kept for 3 days.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/fetch_samples.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: samples
+          path: samples/
+          retention-days: 3
