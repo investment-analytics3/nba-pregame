@@ -41,9 +41,10 @@ def grade(log: dict, team_rows: list[dict], existing: list[dict]) -> tuple[list[
     by_game = {(r["game_id"], r["team"]): r for r in team_rows}
     added = []
     for day, entry in sorted(log.items()):
-        sent = entry.get("final") or entry.get("board")
+        sent = entry.get("final") or entry.get("board") or entry.get("retro")
         if not sent:
             continue
+        source = "Rebuilt" if sent is entry.get("retro") else "Sent"
         for gid, s in (sent.get("snapshot") or {}).items():
             if (day, gid) in done or not s.get("fav") or not s.get("dog"):
                 continue
@@ -68,6 +69,8 @@ def grade(log: dict, team_rows: list[dict], existing: list[dict]) -> tuple[list[
                 "analysis_score": s.get("score"), "band": s.get("band") or "",
                 "qualifiers": s.get("qualifiers") or [],
                 "fav_metrics": s.get("fav_metrics") or {}, "opp_metrics": s.get("dog_metrics") or {},
+                "fav_team": s.get("fav_team") or {}, "opp_team": s.get("dog_team") or {},
+                "source": source,
                 "board_page": f"{page}#g-{gid}" if page else "",
             })
     return existing + added, len(added)
@@ -79,7 +82,8 @@ def metric_color(rank, role: str) -> str:
 
 def export_csv(games: list[dict], path: str, pages_url: str = ""):
     """Two rows per game: the favorite, then the opponent."""
-    cols = ["date", "game_id", "role", "team", "favorite", "opponent", "spread", "fav_pts", "opp_pts",
+    cols = ["date", "game_id", "source", "role", "team", "record", "last3", "b2b", "power_rank",
+            "favorite", "opponent", "spread", "fav_pts", "opp_pts",
             "winner", "fav_won", "covered", "above_line", "analysis_score", "analysis_color"]
     for w, m in METRIC_COLS:
         base = f"{'season' if w == 'season' else 'last3'}_{m}"
@@ -90,9 +94,13 @@ def export_csv(games: list[dict], path: str, pages_url: str = ""):
         w_ = csv.DictWriter(f, fieldnames=cols)
         w_.writeheader()
         for g in games:
-            for role, team, mk in (("Favorite", g["favorite"], "fav_metrics"), ("Opponent", g["opponent"], "opp_metrics")):
+            for role, team, mk, tk in (("Favorite", g["favorite"], "fav_metrics", "fav_team"),
+                                       ("Opponent", g["opponent"], "opp_metrics", "opp_team")):
                 row = {k: g.get(k, "") for k in cols}
+                ti = g.get(tk) or {}
                 row.update(role=role, team=team, analysis_color=g.get("band", ""),
+                           record=ti.get("record") or "", last3=ti.get("l3") or "",
+                           b2b="Yes" if ti.get("b2b") else "No", power_rank=ti.get("pr") or "",
                            board_link=(pages_url + g["board_page"]) if g.get("board_page") else "")
                 for w, m in METRIC_COLS:
                     base = f"{'season' if w == 'season' else 'last3'}_{m}"

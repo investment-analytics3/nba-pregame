@@ -176,12 +176,15 @@ function card(g, i){
 
 function listView(){
   const q = DATA.games.filter(g=>g.scoring&&g.scoring.qualified), n = DATA.games.filter(g=>!(g.scoring&&g.scoring.qualified));
-  const kindLabel = DATA.kind==='final' ? 'Final' : (DATA.kind==='preview' ? 'Preview' : 'Pregame board');
+  const kindLabel = DATA.kind==='final' ? 'Final' : (DATA.kind==='preview' ? 'Preview' : (DATA.kind==='retro' ? 'Rebuilt board' : 'Pregame board'));
   let h = `<header class="row between" style="flex-wrap:wrap;align-items:flex-end;gap:16px"><div><div class="eyebrow">NBA · ${kindLabel}</div><h1 class="title cond">${esc(DATA.date_label)}</h1></div>
     <div style="text-align:right;font-size:13px;color:var(--muted);line-height:1.6">Data pulled ${esc(DATA.built_label)} · ${DATA.games.length} games<br>Stats through ${esc(DATA.metrics_through_label||'–')}</div></header>
     <div class="legend"><span><i class="sw" style="background:var(--green)"></i>Edge for the favorite</span><span><i class="sw" style="background:var(--yellow)"></i>Middle of the league / warning</span>
     <span><i class="sw" style="background:var(--red)"></i>Risk or threat</span><span><i class="sw" style="background:#7A0E0E;box-shadow:0 0 8px rgba(255,60,60,.8)"></i>Underdog top 5 (pulses)</span>
     <span><i class="sw" style="background:var(--amber)"></i>Power-rank split that matters</span></div>`;
+  if(DATA.kind==='retro'){
+    h += `<div class="panel final" style="border-color:rgba(233,178,58,.5)"><h2>Rebuilt after the fact</h2><div style="color:#D3D9E5;font-size:14px;line-height:1.6">This board was not sent at the time. It was rebuilt using only what was known before tip-off: stats and records through the day before, the closing DraftKings spread, the official injury report from 90 minutes before the first game, and that week's NBA.com rankings. ESPN BPI has no history, so power rank uses our own net rating plus NBA.com.</div></div>`;
+  }
   if(DATA.kind==='final' && DATA.earlier_label){
     h += `<div class="panel final"><h2>What changed since the ${esc(DATA.earlier_label)} board</h2>` +
       (DATA.changes && DATA.changes.length ? `<ul>${DATA.changes.map(c=>`<li>${esc(c)}</li>`).join('')}</ul>` : `<div style="color:#D3D9E5;font-size:14px">No changes.</div>`) + '</div>';

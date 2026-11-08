@@ -71,14 +71,14 @@ def key_players(player_rows: list[dict], team_games: dict[str, int]) -> dict[str
 # --------------------------------------------------------------------------- #
 # Injuries
 # --------------------------------------------------------------------------- #
-def load_injuries(teams: list[dict], game_day: date, playing: set[str]) -> dict:
+def load_injuries(teams: list[dict], game_day: date, playing: set[str], at=None, espn_backup: bool = True) -> dict:
     """Official PDF first; ESPN for any team the PDF doesn't cover."""
     by_key = {norm(t["display"]): t["id"] for t in teams}
     by_abbr = {t["abbr"]: t["id"] for t in teams}
     result = {"source": None, "report_time": None, "url": None, "teams": defaultdict(list),
               "covered": set()}
     try:
-        url, pdf = injury_report.latest_report()
+        url, pdf = injury_report.latest_report(at)
         if pdf:
             rep = injury_report.parse(pdf)
             day = game_day.strftime("%m/%d/%Y")
@@ -101,6 +101,8 @@ def load_injuries(teams: list[dict], game_day: date, playing: set[str]) -> dict:
     except Exception as e:  # PDF problems fall back to ESPN below
         print(f"  ! official injury report unavailable: {e}")
     try:
+        if not espn_backup:
+            return result  # rebuilding a past day: ESPN only has today's list
         espn_rows = espn.injuries()
         result["espn_ok"] = True
         used = False
@@ -122,7 +124,7 @@ def load_injuries(teams: list[dict], game_day: date, playing: set[str]) -> dict:
 # Slate
 # --------------------------------------------------------------------------- #
 def team_block(side: dict, m: dict, pw: dict, b2b: bool, injuries: list, keys: dict, power_rank,
-               injuries_known: bool = True) -> dict:
+               injuries_known: bool = True, computed_record: bool = False) -> dict:
     tid = side["id"]
     tm = m["teams"].get(tid, {})
     inj = []
@@ -135,7 +137,8 @@ def team_block(side: dict, m: dict, pw: dict, b2b: bool, injuries: list, keys: d
     p = pw.get(tid, {})
     return {
         "id": tid, "abbr": side["abbr"], "name": side["name"], "display": side["display"],
-        "record": side.get("record") or tm.get("record"), "l3_record": tm.get("l3_record"),
+        "record": (tm.get("record") if computed_record else side.get("record")) or tm.get("record"),
+        "l3_record": tm.get("l3_record"),
         "b2b": b2b,
         "season": tm.get("season"), "last3": tm.get("last3"),
         "power": {"rank": p.get("rank"), "split": p.get("split", False), "own_net": p.get("own_net"),
@@ -148,34 +151,50 @@ def team_block(side: dict, m: dict, pw: dict, b2b: bool, injuries: list, keys: d
     }
 
 
-def build(day: date) -> dict:
+def build(day: date, retro: bool = False) -> dict:
+    """Slate for `day`. retro=True rebuilds a past day from what was known before tip-off:
+    stats and records before that day, the closing spread, that day's official injury report
+    (90 min before the first tip) and that week's NBA.com rankings. ESPN BPI has no history,
+    so a rebuilt power rank uses our own net rating plus NBA.com."""
     teams = store.read_json("teams.json") or espn.teams()
     rows = store.load_team_games()
     m = metrics.compute(rows, before=day.isoformat())
-    pw = (store.read_json("power.json") or {}).get("teams", {})
+    if retro:
+        own = {tid: d["season"]["ranks"]["net"] for tid, d in m["teams"].items() if d["season"].get("ranks")}
+        nba = power.safe(power.nba_com_rankings, day, default={}) or {}
+        pw = power.consensus(teams, own, {}, nba)
+    else:
+        pw = (store.read_json("power.json") or {}).get("teams", {})
     power_rank = lambda tid: (pw.get(tid) or {}).get("rank")  # noqa: E731
     played_yesterday = {r["team_id"] for r in rows if r["game_date"] == (day - timedelta(days=1)).isoformat()}
-    try:  # also check yesterday's scoreboard in case last night's games aren't saved yet
-        for e in espn.parse_events(espn.scoreboard(day - timedelta(days=1))):
-            played_yesterday |= {e["home"]["id"], e["away"]["id"]}
-    except Exception as e:
-        print(f"  ! yesterday's scoreboard unavailable: {e}")
+    if not retro:
+        try:  # also check yesterday's scoreboard in case last night's games aren't saved yet
+            for e in espn.parse_events(espn.scoreboard(day - timedelta(days=1))):
+                played_yesterday |= {e["home"]["id"], e["away"]["id"]}
+        except Exception as e:
+            print(f"  ! yesterday's scoreboard unavailable: {e}")
     team_games = {tid: d["games"] for tid, d in m["teams"].items()}
-    keys = key_players(store.load_player_games(), team_games)
+    keys = key_players([p for p in store.load_player_games() if p["game_date"] < day.isoformat()], team_games)
     events = [e for e in espn.parse_events(espn.scoreboard(day)) if e["season_type"] == espn.REGULAR_SEASON]
+    if retro:
+        for e in events:
+            try:
+                e["odds"] = espn.parse_pickcenter(espn.summary(e["id"]), e["home"]["id"], e["away"]["id"])
+            except Exception as ex:
+                print(f"  ! closing line unavailable for {e['short']}: {ex}")
     playing = {e[s]["id"] for e in events for s in ("home", "away")}
-    inj = load_injuries(teams, day, playing)
+    tips = [datetime.fromisoformat(e["start_utc"].replace("Z", "+00:00")) for e in events]
+    as_of = (min(tips) - timedelta(minutes=90)) if (retro and tips) else None
+    inj = load_injuries(teams, day, playing, at=as_of, espn_backup=not retro)
 
     games = []
     for e in events:
-        if e["season_type"] != espn.REGULAR_SEASON:
-            continue
         tip_utc = datetime.fromisoformat(e["start_utc"].replace("Z", "+00:00"))
         known = lambda tid: tid in inj["covered"] or inj.get("espn_ok", False)  # noqa: E731
         home = team_block(e["home"], m, pw, e["home"]["id"] in played_yesterday,
-                          inj["teams"].get(e["home"]["id"], []), keys, power_rank, known(e["home"]["id"]))
+                          inj["teams"].get(e["home"]["id"], []), keys, power_rank, known(e["home"]["id"]), retro)
         away = team_block(e["away"], m, pw, e["away"]["id"] in played_yesterday,
-                          inj["teams"].get(e["away"]["id"], []), keys, power_rank, known(e["away"]["id"]))
+                          inj["teams"].get(e["away"]["id"], []), keys, power_rank, known(e["away"]["id"]), retro)
         odds = e["odds"]
         fav_id = odds["favorite_id"] if odds else None
         games.append({
@@ -190,7 +209,8 @@ def build(day: date) -> dict:
     games = scoring.order_games(games)
     return {
         "date": day.isoformat(),
-        "built_at": datetime.now(PT).isoformat(timespec="seconds"),
+        "built_at": (as_of.astimezone(PT) if as_of else datetime.now(PT)).isoformat(timespec="seconds"),
+        "retro": retro,
         "metrics_through": m["games_through"],
         "injury_source": inj["source"], "injury_report_time": inj["report_time"], "injury_url": inj["url"],
         "first_tip_utc": min((g["tip_utc"] for g in games), default=None),

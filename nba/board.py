@@ -115,6 +115,13 @@ def team_metrics(t: dict | None) -> dict:
     return out
 
 
+def team_info(t: dict | None) -> dict:
+    t = t or {}
+    p = t.get("power") or {}
+    return {"record": t.get("record"), "l3": t.get("l3_record"), "b2b": bool(t.get("b2b")),
+            "pr": p.get("rank"), "pr_split": bool(p.get("split"))}
+
+
 def snapshot(slate: dict) -> dict:
     snap = {}
     for g in slate["games"]:
@@ -128,6 +135,7 @@ def snapshot(slate: dict) -> dict:
             "qualified": sc.get("qualified"), "score": sc.get("score"), "band": sc.get("band"),
             "qualifiers": sc.get("qualifiers", []), "fails": sc.get("fails", []),
             "fav_metrics": team_metrics(fav), "dog_metrics": team_metrics(dog),
+            "fav_team": team_info(fav), "dog_team": team_info(dog),
             "spread": (g.get("spread") or {}).get("details"),
             "key_out": sorted((fav or {}).get("key_out", []) + (dog or {}).get("key_out", [])),
             "key_q": sorted((fav or {}).get("key_questionable", []) + (dog or {}).get("key_questionable", [])),
@@ -167,7 +175,7 @@ def changes(before: dict, after: dict) -> list[str]:
 # Page data
 # --------------------------------------------------------------------------- #
 def page_data(slate: dict, kind: str, change_list: list[str] | None, earlier_label: str | None) -> dict:
-    players = store.load_player_games()
+    players = [p for p in store.load_player_games() if p["game_date"] < slate["date"]]
     closers = store.read_json("closers.json", {}) or {}
     games = []
     for g in slate["games"]:

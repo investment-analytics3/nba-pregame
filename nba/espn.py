@@ -94,6 +94,23 @@ def parse_odds(comp: dict, home_id: str, away_id: str) -> dict | None:
     return None
 
 
+def parse_pickcenter(summ: dict, home_id: str, away_id: str) -> dict | None:
+    """Closing line kept on a game's page after it ends (same shape as parse_odds)."""
+    for o in summ.get("pickcenter") or []:
+        if o.get("spread") is None and not o.get("details"):
+            continue
+        ht, at = o.get("homeTeamOdds") or {}, o.get("awayTeamOdds") or {}
+        spread = abs(float(o["spread"])) if o.get("spread") is not None else None
+        ml_home, ml_away = ht.get("moneyLine"), at.get("moneyLine")
+        fav = home_id if ht.get("favorite") else (away_id if at.get("favorite") else None)
+        if spread == 0 and ml_home and ml_away:
+            fav = home_id if ml_home < ml_away else away_id
+        return {"favorite_id": fav, "spread": spread, "details": o.get("details") or "",
+                "provider": (o.get("provider") or {}).get("name"), "ml_home": ml_home, "ml_away": ml_away,
+                "closing": True}
+    return None
+
+
 def parse_events(sb: dict) -> list[dict]:
     games = []
     for ev in sb.get("events", []):

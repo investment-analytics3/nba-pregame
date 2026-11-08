@@ -17,24 +17,28 @@ from .http import get, FetchError
 from .injury_report import norm
 
 
-def nba_com_rankings() -> dict:
-    """Latest weekly NBA.com power rankings: {"published", "url", "by_name": {norm_name: rank}}."""
+def nba_com_rankings(before=None) -> dict:
+    """Latest weekly NBA.com power rankings, or the latest published before `before` (a date).
+
+    Returns {"published", "url", "title", "by_name": {norm_name: rank}}.
+    """
     page = get("https://www.nba.com/news/category/power-rankings", want="bytes")
-    weeks = re.findall(rb"/news/power-rankings-(\d{4})-(\d{2})-week-(\d+)", page or b"")
-    if not weeks:
-        return {}
-    y1, y2, wk = max(weeks, key=lambda w: (int(w[0]), int(w[2])))
-    url = f"https://www.nba.com/news/power-rankings-{y1.decode()}-{y2.decode()}-week-{wk.decode()}"
-    html = get(url, want="bytes") or b""
-    m = re.search(rb'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html, re.S)
-    if not m:
-        return {}
-    art = json.loads(m.group(1))["props"]["pageProps"]["article"]
-    by_name = {}
-    for x in art.get("powerRankings", []):
-        if x.get("currentWeekRank"):
-            by_name[norm(x["teamName"])] = int(x["currentWeekRank"])
-    return {"published": art.get("date"), "url": url, "title": art.get("title"), "by_name": by_name}
+    weeks = sorted(set(re.findall(rb"/news/power-rankings-(\d{4})-(\d{2})-week-(\d+)", page or b"")),
+                   key=lambda w: (int(w[0]), int(w[2])), reverse=True)
+    for y1, y2, wk in weeks[:6]:
+        url = f"https://www.nba.com/news/power-rankings-{y1.decode()}-{y2.decode()}-week-{wk.decode()}"
+        html = get(url, want="bytes") or b""
+        m = re.search(rb'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html, re.S)
+        if not m:
+            continue
+        art = json.loads(m.group(1))["props"]["pageProps"]["article"]
+        published = (art.get("date") or "")[:10]
+        if before is not None and published and published >= before.isoformat():
+            continue  # published on/after the date we're rebuilding
+        by_name = {norm(x["teamName"]): int(x["currentWeekRank"])
+                   for x in art.get("powerRankings", []) if x.get("currentWeekRank")}
+        return {"published": art.get("date"), "url": url, "title": art.get("title"), "by_name": by_name}
+    return {}
 
 
 def _bucket(r: float) -> str:
