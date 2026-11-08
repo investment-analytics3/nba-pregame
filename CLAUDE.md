@@ -111,7 +111,8 @@ often: always `git pull --rebase origin main` before pushing.
 
 ## Open items
 
-- Live mode built Nov 8. To confirm with the owner: trailing-A = no bet; opponent never ran = B max; 6:00-4:00 is a bet window.
+- Live mode built Nov 8. Owner confirmed Nov 8: trailing-A = no bet; opponent never ran = B max; 6:00-4:00 is a bet window.
+  Kalshi is read-only; the system never places bets (Claude can't execute trades).
 - Closers: `data/closers.json` is a draft until the owner marks teams `"source":"yours"`.
 - Live grades are logged (`data/live/<date>.json`) but not yet shown on the Results page.
 - Revisit the Analysis Score bands after 4-6 weeks of real boards (green is rarely reached early season).
