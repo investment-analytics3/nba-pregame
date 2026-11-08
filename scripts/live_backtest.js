@@ -133,7 +133,13 @@ async function main() {
       if (d.action === 'BET' || d.action === 'LEAN') {
         b[d.action][0]++; if (d.pick === winner) b[d.action][1]++;
       }
-      if (label === 'End 3rd') end3 = { grade: d.grade, action: d.action, pick: d.pick };
+      if (label === 'End 3rd') {
+        const ld = m > 0 ? r.teams.away.abbr : (m < 0 ? r.teams.home.abbr : null);
+        const ls = m > 0 ? 'away' : (m < 0 ? 'home' : null);
+        end3 = { grade: d.grade, action: d.action, pick: d.pick, leader: ld, lead: Math.abs(m),
+                 leaderGrade: ls ? r.sides[ls].grade : null, leaderControl: ls ? r.sides[ls].control : null,
+                 leaderAnswered: ls ? r.sides[ls].answered : null, leaderCloserEdge: ls ? r.sides[ls].closerEdge : null };
+      }
       if (d.action === 'BET' && !firstBet) firstBet = { at: label, grade: d.grade, pick: d.pick, score: `${r.teams.away.score}-${r.teams.home.score}`, lead: Math.abs(m) };
     }
     signals.push({ id, date: games[id].date, game: `${fin.teams.away.abbr}@${fin.teams.home.abbr}`, final: `${fin.teams.away.score}-${fin.teams.home.score}`,
@@ -150,6 +156,21 @@ async function main() {
   out.all.by_grade.forEach(g => console.log(`   ${g.grade}: ${pct(g.won, g.n)}`));
   console.log(`BET alerts, above the line: ${pct(out.above_line.bet_won, out.above_line.bet_signals)} of ${out.above_line.games} games`);
   CHECKS.forEach(([c]) => { const b = byCheck[c]; console.log(`  ${c.padEnd(9)} BET ${pct(b.BET[1], b.BET[0])}  LEAN ${pct(b.LEAN[1], b.LEAN[0])}  leader baseline ${pct(b.leader[1], b.leader[0])}  grades ${JSON.stringify(b.grades)}`); });
+  // End of 3rd: how often the leader wins, by lead size and by the leader's grade
+  const e3 = signals.filter(x => x.end3 && x.end3.leader);
+  const bucket = (name, f) => { const xs = e3.filter(f); const w = xs.filter(x => x.end3.leader === x.winner).length;
+    console.log(`  E3 ${name.padEnd(34)} ${pct(w, xs.length)}`); return { name, n: xs.length, won: w }; };
+  out.end3 = [
+    bucket('any leader', x => true),
+    bucket('lead 1-5', x => x.end3.lead <= 5), bucket('lead 6-9', x => x.end3.lead >= 6 && x.end3.lead <= 9),
+    bucket('lead 10-14', x => x.end3.lead >= 10 && x.end3.lead <= 14), bucket('lead 15+', x => x.end3.lead >= 15),
+    bucket('leader A/A+', x => ['A', 'A+'].includes(x.end3.leaderGrade)), bucket('leader B/C', x => !['A', 'A+'].includes(x.end3.leaderGrade)),
+    bucket('leader A/A+ & lead 6-14', x => ['A', 'A+'].includes(x.end3.leaderGrade) && x.end3.lead >= 6 && x.end3.lead <= 14),
+    bucket('leader B/C & lead 6-14', x => !['A', 'A+'].includes(x.end3.leaderGrade) && x.end3.lead >= 6 && x.end3.lead <= 14),
+    bucket('leader A/A+ & lead 10+', x => ['A', 'A+'].includes(x.end3.leaderGrade) && x.end3.lead >= 10),
+    bucket('leader control & closer edge & lead 6+', x => x.end3.leaderControl && x.end3.leaderCloserEdge && x.end3.lead >= 6),
+  ];
+  fs.writeFileSync(path.join(ROOT, 'data', 'live', 'backtest.json'), JSON.stringify(out, null, 1));
   const leads = signals.filter(x => x.bet).map(x => x.bet.lead).sort((a, b) => a - b);
   if (leads.length) console.log(`Lead when the BET alert fired: median ${leads[Math.floor(leads.length / 2)]}, range ${leads[0]}-${leads[leads.length - 1]}`);
   const lost = signals.filter(x => x.bet && !x.bet_won).map(x => `${x.date} ${x.game} ${x.bet.at} ${x.bet.grade} ${x.bet.pick} (${x.bet.score}), final ${x.final}`);
