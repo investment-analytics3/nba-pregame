@@ -31,19 +31,21 @@ h1{margin:4px 0 0;font-size:42px;line-height:1;font-weight:700}
 .btn{border:1px solid #26314B;border-radius:999px}
 .scroll{overflow:auto;max-height:78vh;border-radius:16px;border:1px solid var(--line)}
 table{border-collapse:separate;border-spacing:0;width:100%;min-width:1680px;font-size:13px}
-thead th{position:sticky;background:var(--head);z-index:2;text-align:left;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#9AA4BA;padding:8px 8px;white-space:nowrap;border-bottom:1px solid var(--line)}
+thead th{position:sticky;background:var(--head);z-index:2;text-align:center;border-right:1px solid rgba(255,255,255,.2);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#9AA4BA;padding:8px 8px;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,.35)}
 thead tr.g th{top:0;height:30px;text-align:center;color:#C7CEDC}
 thead tr.n th{top:30px;cursor:pointer;user-select:none;height:34px}
 thead tr.n th:hover{color:#fff}
 thead tr.f th{top:64px;padding:6px 6px 8px;cursor:default}
 select,input[type=text]{width:100%;min-width:62px;background:#0E1424;color:#DCE2EE;border:1px solid #2A3550;border-radius:8px;padding:5px 6px;font:inherit;font-size:12px}
 select.active,input.active{border-color:#E9B23A;background:#2A2410}
-td{padding:7px 8px;white-space:nowrap;vertical-align:middle;border-bottom:1px solid rgba(31,42,66,.5)}
+td{padding:7px 8px;white-space:nowrap;vertical-align:middle;text-align:center;border-bottom:1px solid rgba(255,255,255,.16);border-right:1px solid rgba(255,255,255,.2)}
+td.stick2{text-align:left}
+td[rowspan]{border-bottom:2px solid rgba(255,255,255,.65)}
 tr.fav td{background:#111a2c}
-tr.opp td{background:#0d1424;border-bottom:2px solid #26314B}
+tr.opp td{background:#0d1424;border-bottom:2px solid rgba(255,255,255,.65)}
 .stick1{position:sticky;left:0;z-index:1;width:96px;min-width:96px;max-width:96px;white-space:normal}.stick2{position:sticky;left:96px;z-index:1}
 thead .stick1,thead .stick2{z-index:3}
-td.stick1,td.stick2{box-shadow:1px 0 0 #1F2A42}
+td.stick2,thead th.stick2{border-right:2px solid rgba(255,255,255,.45)}
 .role{font-size:10.5px;color:var(--dim);margin-left:5px}
 .chip{display:inline-block;padding:2px 9px;border-radius:999px;font-size:11.5px;font-weight:700}
 .yes{background:rgba(47,195,115,.18);color:#86EFAC;border:1px solid rgba(47,195,115,.45)}
@@ -160,10 +162,10 @@ function cards(games){
     card('Below the line', blk(games.filter(g=>g.above_line==='No')), '#FF7676') + card('All shown', blk(games), '#C7CEDC');
 }
 function head(){
-  const g = `<tr class="g"><th class="stick1"></th><th class="stick2"></th><th colspan="4" style="border-left:1px solid var(--line)">Team going in</th><th colspan="6" style="border-left:1px solid var(--line)">Game</th><th colspan="4" style="border-left:1px solid var(--line)">Season</th><th colspan="4" style="border-left:1px solid var(--line)">Last 3 games</th></tr>`;
-  const n = '<tr class="n">' + COLS.map((c,i)=>`<th class="${c.cls||''}" data-k="${c.k}" style="${[2,6,12,16].includes(i)?'border-left:1px solid var(--line)':''}">${esc(c.label)}${st.sortKey===c.k?(st.asc?' ▲':' ▼'):''}</th>`).join('') + '</tr>';
+  const g = `<tr class="g"><th class="stick1"></th><th class="stick2"></th><th colspan="4" style="border-left:2px solid rgba(255,255,255,.45)">Team going in</th><th colspan="6" style="border-left:2px solid rgba(255,255,255,.45)">Game</th><th colspan="4" style="border-left:2px solid rgba(255,255,255,.45)">Season</th><th colspan="4" style="border-left:2px solid rgba(255,255,255,.45)">Last 3 games</th></tr>`;
+  const n = '<tr class="n">' + COLS.map((c,i)=>`<th class="${c.cls||''}" data-k="${c.k}" style="${[2,6,12,16].includes(i)?'border-left:2px solid rgba(255,255,255,.45)':''}">${esc(c.label)}${st.sortKey===c.k?(st.asc?' ▲':' ▼'):''}</th>`).join('') + '</tr>';
   const f = '<tr class="f">' + COLS.map((c,i)=>{
-    const v = st.f[c.k]||'', act = v ? 'active' : '', bl = [2,6,12,16].includes(i) ? 'border-left:1px solid var(--line)' : '';
+    const v = st.f[c.k]||'', act = v ? 'active' : '', bl = [2,6,12,16].includes(i) ? 'border-left:2px solid rgba(255,255,255,.45)' : '';
     if (!c.filter) return `<th class="${c.cls||''}" style="${bl}"></th>`;
     if (c.filter[0]==='text') return `<th class="${c.cls||''}"><input type="text" class="${act}" data-fk="${c.k}" placeholder="${c.filter[1]}" value="${esc(v)}" aria-label="Filter ${esc(c.label)}"></th>`;
     return `<th class="${c.cls||''}" style="${bl}"><select class="${act}" data-fk="${c.k}" aria-label="Filter ${esc(c.label)}">${c.filter[1].map(([val,l])=>`<option value="${esc(val)}"${val===v?' selected':''}>${esc(l)}</option>`).join('')}</select></th>`;
@@ -181,16 +183,16 @@ function rows(games){
   if (!games.length) return `<tr><td colspan="${COLS.length}" class="empty">${DATA.games.length ? 'No games match these filters.' : 'No graded games yet. Results are added each morning at 3 AM for the previous day\'s boards.'}</td></tr>`;
   return games.map(g => {
     const metrics = role => MCOLS.map((c,i) => { const x = cell(g, role, c.w, c.m), col = role==='Favorite' ? favColor(x.r) : oppColor(x.r);
-      return `<td style="${i===0||i===4?'border-left:1px solid var(--line)':''}"><span class="m ${col}" title="${role} ${c.w==='season'?'season':'last 3'} ${LBL[c.m]}: rank ${x.r??'n/a'}"><b>${fmt(c.m, x.v)}</b><span>#${x.r??'–'}</span></span></td>`; }).join('');
+      return `<td style="${i===0||i===4?'border-left:2px solid rgba(255,255,255,.45)':''}"><span class="m ${col}" title="${role} ${c.w==='season'?'season':'last 3'} ${LBL[c.m]}: rank ${x.r??'n/a'}"><b>${fmt(c.m, x.v)}</b><span>#${x.r??'–'}</span></span></td>`; }).join('');
     const site = g.fav_site==='home' ? 'home' : (g.fav_site==='away' ? 'away' : 'neutral');
     const info = role => { const t = tinfo(g, role);
-      return `<td style="border-left:1px solid var(--line)">${esc(t.record||'–')}</td><td>${esc(t.l3||'–')}</td>
+      return `<td style="border-left:2px solid rgba(255,255,255,.45)">${esc(t.record||'–')}</td><td>${esc(t.l3||'–')}</td>
         <td>${t.b2b ? '<span class="chip" style="background:linear-gradient(180deg,#9B5CF0,#6D28D9);color:#F5EBFF">Yes</span>' : '<span style="color:var(--dim)">No</span>'}</td>
         <td>${t.pr!=null ? '#'+t.pr : '–'}${t.pr_split ? ' <span class="chip" style="background:rgba(251,146,60,.16);color:#FDBA74;border:1px solid rgba(251,146,60,.45);padding:1px 6px" title="Power-rank sources disagree across the top/bottom-10 line">split</span>' : ''}</td>`; };
     const tag = g.source==='Rebuilt' ? '<br><span class="chip" style="margin-top:3px;background:rgba(233,178,58,.14);color:#FDE68A;border:1px solid rgba(233,178,58,.4);padding:1px 6px;font-size:10px" title="Board rebuilt after the fact from what was known before tip-off">rebuilt</span>' : '';
     return `<tr class="fav"><td class="stick1" rowspan="2">${link(g, esc(dateLabel(g.date)))}${tag}</td>
         <td class="stick2"><b>${link(g, esc(g.favorite))}</b><span class="role">Favorite · ${site}</span></td>${info('Favorite')}
-        <td rowspan="2" style="border-left:1px solid var(--line)">${esc(g.spread)}</td><td rowspan="2">${g.fav_pts}-${g.opp_pts}</td><td rowspan="2">${esc(g.winner)}</td>
+        <td rowspan="2" style="border-left:2px solid rgba(255,255,255,.45)">${esc(g.spread)}</td><td rowspan="2">${g.fav_pts}-${g.opp_pts}</td><td rowspan="2">${esc(g.winner)}</td>
         <td rowspan="2">${chip(g.covered)}</td><td rowspan="2">${chip(g.above_line)}</td>
         <td rowspan="2">${g.analysis_score!=null ? `<span class="score ${esc(g.band)}">${g.analysis_score}</span>` : '–'}</td>${metrics('Favorite')}</tr>
       <tr class="opp"><td class="stick2">${link(g, esc(g.opponent))}<span class="role">Opponent</span></td>${info('Opponent')}${metrics('Opponent')}</tr>`;
