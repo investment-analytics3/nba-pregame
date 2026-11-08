@@ -34,6 +34,15 @@ def player_key(pdf_name: str) -> str:
     return norm(pdf_name)
 
 
+def display_name(pdf_name: str) -> str:
+    """'JacksonJr.,Jaren' -> 'Jaren Jackson Jr.'"""
+    if "," not in pdf_name:
+        return pdf_name
+    last, first = pdf_name.split(",", 1)
+    last = re.sub(r"(?<=[a-z])(Jr\.|Sr\.|II|III|IV)$", r" \1", last.strip())
+    return f"{first.strip()} {last}"
+
+
 def latest_report(now: datetime | None = None, hours_back: int = 30):
     """Newest PDF within `hours_back` hours. Returns (url, pdf_bytes) or (None, None)."""
     t = (now or datetime.now(ET)).astimezone(ET)
@@ -108,7 +117,7 @@ def parse(pdf_bytes: bytes) -> dict:
                 if text["player"] and "," in text["player"] and text["status"] in STATUSES:
                     rows.append({"game_date": cur["date"], "game_time": cur["time"],
                                  "matchup": cur["matchup"], "team": cur["team"],
-                                 "team_key": norm(cur["team"]), "player": text["player"],
+                                 "team_key": norm(cur["team"]), "player": display_name(text["player"]),
                                  "player_key": player_key(text["player"]),
                                  "status": text["status"], "_parts": [(top, text["reason"])] if text["reason"] else [],
                                  "_page": page.page_number, "_top": top})

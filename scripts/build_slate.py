@@ -24,6 +24,8 @@ from nba.injury_report import norm  # noqa: E402
 PT = ZoneInfo("America/Los_Angeles")
 ET = ZoneInfo("America/New_York")
 OUT_STATUSES = {"Out", "Doubtful"}
+# NBA tricodes in the injury PDF that differ from ESPN's abbreviations
+NBA_TO_ESPN = {"NOP": "NO", "UTA": "UTAH", "GSW": "GS", "SAS": "SA", "NYK": "NY", "WAS": "WSH"}
 
 
 # --------------------------------------------------------------------------- #
@@ -72,6 +74,7 @@ def key_players(player_rows: list[dict], team_games: dict[str, int]) -> dict[str
 def load_injuries(teams: list[dict], game_day: date) -> dict:
     """Official PDF first; ESPN for any team the PDF doesn't cover."""
     by_key = {norm(t["display"]): t["id"] for t in teams}
+    by_abbr = {t["abbr"]: t["id"] for t in teams}
     result = {"source": None, "report_time": None, "url": None, "teams": defaultdict(list),
               "covered": set()}
     try:
@@ -84,10 +87,16 @@ def load_injuries(teams: list[dict], game_day: date) -> dict:
                 if tid and r["game_date"] == day:
                     result["teams"][tid].append({"player": r["player"], "key": r["player_key"],
                                                  "status": r["status"], "reason": r["reason"]})
-                    result["covered"].add(tid)
+                # a game listed in the report means BOTH teams have reported, even
+                # if one of them has nobody on it
+                if r["game_date"] == day and "@" in r["matchup"]:
+                    for tri in r["matchup"].split("@"):
+                        tid2 = by_abbr.get(NBA_TO_ESPN.get(tri.strip(), tri.strip()))
+                        if tid2:
+                            result["covered"].add(tid2)
             for ns in rep["not_submitted"]:
                 tid = by_key.get(norm(ns["team"]))
-                result["teams"].setdefault(tid, [])
+                result["covered"].discard(tid)  # not submitted yet: use ESPN for this team
             result.update(source="NBA official injury report", report_time=rep["report_time"], url=url)
     except Exception as e:  # PDF problems fall back to ESPN below
         print(f"  ! official injury report unavailable: {e}")
