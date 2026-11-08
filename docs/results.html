@@ -6,11 +6,11 @@
 <title>NBA Board Results</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
 <style>
-:root{--bg:#0A0F1C;--line:#1F2A42;--text:#E6EAF2;--muted:#8B95AB;--dim:#7C869E}
+:root{--bg:#0A0F1C;--line:#1F2A42;--text:#E6EAF2;--muted:#8B95AB;--dim:#7C869E;--head:#151C2E}
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif}
 a{color:#93C5FD}
-.wrap{max-width:1120px;margin:0 auto;padding:16px 16px 72px}
+.wrap{max-width:1500px;margin:0 auto;padding:16px 16px 72px}
 .cond{font-family:'Barlow Condensed',Inter,sans-serif}
 .nav{display:flex;gap:6px;margin-bottom:20px;border-bottom:1px solid var(--line);padding-bottom:10px}
 .nav a{padding:8px 14px;border-radius:999px;font-size:14px;font-weight:600;color:#C7CEDC;text-decoration:none}
@@ -18,26 +18,45 @@ a{color:#93C5FD}
 h1{margin:4px 0 0;font-size:42px;line-height:1;font-weight:700}
 .eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600}
 .panel{border-radius:18px;border:1px solid var(--line);background:linear-gradient(180deg,#172036,#111829);box-shadow:0 12px 30px rgba(0,0,0,.4)}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px;margin:20px 0}
-.card{padding:18px 20px}
-.card h2{margin:0 0 12px;font-size:20px;letter-spacing:.04em;text-transform:uppercase}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px;margin:20px 0 6px}
+.card{padding:16px 20px}
+.card h2{margin:0 0 10px;font-size:20px;letter-spacing:.04em;text-transform:uppercase}
 .stat{display:flex;justify-content:space-between;align-items:baseline;padding:6px 0;border-top:1px solid var(--line);font-size:14px;color:#C7CEDC}
-.stat b{font-size:22px;color:#fff}.stat span.p{font-size:13px;color:var(--muted);margin-left:6px}
-.filters{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 14px;align-items:center}
-.filters button{all:unset;cursor:pointer;padding:8px 14px;border-radius:999px;border:1px solid #26314B;background:#151C2E;color:#DCE2EE;font-size:13px;font-weight:600}
-.filters button.on{background:#2F6FE0;border-color:#2F6FE0;color:#fff}
-.scroll{overflow-x:auto;border-radius:16px;border:1px solid var(--line)}
-table{border-collapse:collapse;width:100%;min-width:860px;font-size:13.5px}
-th{position:sticky;top:0;background:#151C2E;text-align:left;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#9AA4BA;padding:10px 12px;cursor:pointer;white-space:nowrap;user-select:none}
-th:hover{color:#fff}
-td{padding:10px 12px;border-top:1px solid var(--line);white-space:nowrap}
-tr:nth-child(even) td{background:rgba(255,255,255,.015)}
+.stat b{font-size:22px;color:#fff}.stat .p{font-size:13px;color:var(--muted);margin-left:6px}
+.filtnote{font-size:12.5px;color:#FDE68A;min-height:18px;margin:6px 2px 10px}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:4px 0 12px;font-size:13px;color:#C7CEDC}
+.seg{display:inline-flex;border:1px solid #26314B;border-radius:999px;overflow:hidden}
+.seg button,.btn{all:unset;cursor:pointer;padding:7px 13px;font-size:13px;font-weight:600;color:#DCE2EE;background:#151C2E}
+.seg button.on{background:#2F6FE0;color:#fff}
+.btn{border:1px solid #26314B;border-radius:999px}
+.scroll{overflow:auto;max-height:78vh;border-radius:16px;border:1px solid var(--line)}
+table{border-collapse:separate;border-spacing:0;width:100%;min-width:1350px;font-size:13px}
+thead th{position:sticky;background:var(--head);z-index:2;text-align:left;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#9AA4BA;padding:8px 8px;white-space:nowrap;border-bottom:1px solid var(--line)}
+thead tr.g th{top:0;height:30px;text-align:center;color:#C7CEDC}
+thead tr.n th{top:30px;cursor:pointer;user-select:none;height:34px}
+thead tr.n th:hover{color:#fff}
+thead tr.f th{top:64px;padding:6px 6px 8px;cursor:default}
+select,input[type=text]{width:100%;min-width:62px;background:#0E1424;color:#DCE2EE;border:1px solid #2A3550;border-radius:8px;padding:5px 6px;font:inherit;font-size:12px}
+select.active,input.active{border-color:#E9B23A;background:#2A2410}
+td{padding:7px 8px;white-space:nowrap;vertical-align:middle;border-bottom:1px solid rgba(31,42,66,.5)}
+tr.fav td{background:#111a2c}
+tr.opp td{background:#0d1424;border-bottom:2px solid #26314B}
+.stick1{position:sticky;left:0;z-index:1;width:96px;min-width:96px;max-width:96px;white-space:normal}.stick2{position:sticky;left:96px;z-index:1}
+thead .stick1,thead .stick2{z-index:3}
+td.stick1,td.stick2{box-shadow:1px 0 0 #1F2A42}
+.role{font-size:10.5px;color:var(--dim);margin-left:5px}
 .chip{display:inline-block;padding:2px 9px;border-radius:999px;font-size:11.5px;font-weight:700}
 .yes{background:rgba(47,195,115,.18);color:#86EFAC;border:1px solid rgba(47,195,115,.45)}
 .no{background:rgba(220,50,50,.16);color:#FCA5A5;border:1px solid rgba(220,50,50,.45)}
 .push{background:rgba(233,178,58,.16);color:#FDE68A;border:1px solid rgba(233,178,58,.45)}
-.score{display:inline-block;min-width:34px;text-align:center;padding:2px 6px;border-radius:7px;font-weight:700}
-.green{background:#1F9D58;color:#fff}.yellow{background:#D9A12A;color:#2A1C00}.red{background:#B32A2A;color:#fff}
+.m{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;min-width:62px;padding:3px 6px;border-radius:8px;line-height:1.1}
+.m b{font-size:13px}.m span{font-size:10px;opacity:.85;font-weight:700}
+.green{background:linear-gradient(180deg,#43DE8F,#1F9D58);color:#03240F}
+.yellow{background:linear-gradient(180deg,#FADB80,#D9A12A);color:#2A1C00}
+.red{background:linear-gradient(180deg,#D44444,#A12222);color:#fff}
+.deep-red{background:linear-gradient(180deg,#A31818,#650909);color:#fff;box-shadow:0 0 8px rgba(255,60,60,.5)}
+.none{background:#1C2438;color:var(--dim)}
+.score{display:inline-block;min-width:36px;text-align:center;padding:3px 7px;border-radius:8px;font-weight:700;font-size:14px}
 .empty{padding:28px;text-align:center;color:var(--muted)}
 </style>
 </head>
@@ -46,49 +65,126 @@ tr:nth-child(even) td{background:rgba(255,255,255,.015)}
 <nav class="nav"><a href="https://investment-analytics3.github.io/nba-pregame/">Today's board</a><a class="on" href="https://investment-analytics3.github.io/nba-pregame/results.html">Results</a></nav>
 <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px">
   <div><div class="eyebrow">NBA · Running record</div><h1 class="cond">Results</h1></div>
-  <div style="font-size:13px;color:var(--muted);text-align:right;line-height:1.6">Updated Nov 8, 1:41 AM PT<br><a href="https://investment-analytics3.github.io/nba-pregame/results.csv" download>Download spreadsheet (CSV)</a></div>
+  <div style="font-size:13px;color:var(--muted);text-align:right;line-height:1.6">Updated Nov 8, 1:50 AM PT<br><a href="https://investment-analytics3.github.io/nba-pregame/results.csv" download>Download spreadsheet (CSV)</a></div>
 </div>
 <div class="cards" id="cards"></div>
-<div class="filters" id="filters"></div>
-<div class="scroll"><table><thead><tr id="head"></tr></thead><tbody id="body"></tbody></table></div>
-<p style="font-size:12px;color:var(--dim);line-height:1.6;margin-top:14px">Each game is graded from the last board sent before tip (the Final when there was one).
-Covered = the favorite won by more than the spread. Click a favorite to open that day's board for the game. Tap a column title to sort.</p>
+<div class="filtnote" id="filtnote"></div>
+<div class="bar"><span>Metric filters and sorting use the</span>
+  <span class="seg" id="roleSeg"><button type="button" data-role="Favorite">Favorite</button><button type="button" data-role="Opponent">Opponent</button></span>
+  <span>row</span><button type="button" class="btn" id="reset">Clear filters</button></div>
+<div class="scroll"><table><thead id="thead"></thead><tbody id="tbody"></tbody></table></div>
+<p style="font-size:12px;color:var(--dim);line-height:1.6;margin-top:14px">Each game is graded from the last board sent before tip (the Final when there was one); metrics are as they stood on that board.
+Favorite row colors: green = top 10, yellow = 11-20, red = 21-30. Opponent row colors are flipped (red = a strong opponent). Covered = the favorite won by more than the spread.
+Click a team to open that day's board for the game. Click a column title to sort.</p>
 </div>
-<script>const DATA = {"rows": [], "summary": {"above": {"games": 0, "won": 0, "lost": 0, "win_pct": null, "covered": 0, "not_covered": 0, "push": 0, "cover_pct": null}, "below": {"games": 0, "won": 0, "lost": 0, "win_pct": null, "covered": 0, "not_covered": 0, "push": 0, "cover_pct": null}, "all": {"games": 0, "won": 0, "lost": 0, "win_pct": null, "covered": 0, "not_covered": 0, "push": 0, "cover_pct": null}}, "updated": "Nov 8, 1:41 AM PT"};</script>
+<script>const DATA = {"games": [], "updated": "Nov 8, 1:50 AM PT"};</script>
 <script>
 (function(){
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const S = DATA.summary;
-const card = (t, b, col) => `<div class="panel card"><h2 class="cond" style="color:${col}">${t}</h2>
-  <div class="stat">Games<b>${b.games}</b></div>
-  <div class="stat">Favorite won<span><b>${b.won}-${b.lost}</b><span class="p">${b.win_pct==null?'–':b.win_pct+'%'}</span></span></div>
-  <div class="stat">Covered the spread<span><b>${b.covered}-${b.not_covered}${b.push?'-'+b.push:''}</b><span class="p">${b.cover_pct==null?'–':b.cover_pct+'%'}</span></span></div></div>`;
-document.getElementById('cards').innerHTML = card('Above the line', S.above, '#2FC373') + card('Below the line', S.below, '#FF7676') + card('All games', S.all, '#C7CEDC');
-const COLS = [['date','Date'],['favorite','Favorite'],['opponent','Opponent'],['spread','Spread'],['score','Score (fav-opp)'],['winner','Winner'],['covered','Spread covered'],['above_line','Above the line'],['hero_score','Hero score']];
-let filter = 'all', sortKey = 'date', asc = false;
-try { const f = localStorage.getItem('nba-results-filter'); if (f) filter = f; } catch (e) {}
-function fBtns(){
-  document.getElementById('filters').innerHTML = [['all','All games'],['Yes','Above the line'],['No','Below the line']].map(([k,l]) =>
-    `<button type="button" class="${filter===k?'on':''}" data-f="${k}">${l}</button>`).join('');
-  document.querySelectorAll('[data-f]').forEach(b => b.onclick = () => { filter = b.dataset.f; try { localStorage.setItem('nba-results-filter', filter); } catch (e) {} draw(); });
+const BASE = "https://investment-analytics3.github.io/nba-pregame/";
+const MET = ['efg','off','opp_efg','def'], LBL = {efg:'eFG%',off:'Off Eff',opp_efg:'Opp eFG%',def:'Def Eff'};
+const MCOLS = [].concat(...['season','last3'].map(w => MET.map(m => ({key:w+':'+m, w, m}))));
+const favColor = r => r==null?'none':(r<=10?'green':(r<=20?'yellow':'red'));
+const oppColor = r => r==null?'none':(r<=5?'deep-red':(r<=10?'red':(r<=20?'yellow':'green')));
+const simple = c => c==='deep-red' ? 'red' : c;
+const cell = (g, role, w, m) => ((((role==='Favorite'?g.fav_metrics:g.opp_metrics)||{})[w]||{})[m]) || {};
+const color = (g, role, w, m) => { const r = cell(g,role,w,m).r; return role==='Favorite' ? favColor(r) : oppColor(r); };
+const fmt = (m, v) => v==null ? '–' : (m.includes('efg') ? (+v).toFixed(1)+'%' : (+v).toFixed(1));
+const dateLabel = d => new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric',timeZone:'UTC'});
+
+let st = {role:'Favorite', f:{}, sortKey:'date', asc:false};
+try { const s = JSON.parse(localStorage.getItem('nba-results-state')||'null'); if (s) st = Object.assign(st, s); } catch (e) {}
+const persist = () => { try { localStorage.setItem('nba-results-state', JSON.stringify(st)); } catch (e) {} };
+
+const dates = [...new Set(DATA.games.map(g=>g.date))];
+const COLS = [
+  {k:'date', label:'Date', cls:'stick1', filter:['select', [['','All'],['7','Last 7 days'],['30','Last 30 days']].concat(dates.map(d=>[d, dateLabel(d)]))]},
+  {k:'team', label:'Team', cls:'stick2', filter:['text','Any team']},
+  {k:'spread', label:'Spread', filter:['select',[['','All'],['s','Under 4'],['m','4 to 7.5'],['l','8 or more']]]},
+  {k:'score', label:'Score (fav-opp)'},
+  {k:'winner', label:'Winner', filter:['select',[['','All'],['Yes','Favorite'],['No','Opponent']]]},
+  {k:'covered', label:'Spread covered', filter:['select',[['','All'],['Yes','Yes'],['No','No'],['Push','Push']]]},
+  {k:'above_line', label:'Above the line', filter:['select',[['','All'],['Yes','Yes'],['No','No']]]},
+  {k:'analysis', label:'Analysis Score', filter:['select',[['','All'],['green','Green'],['yellow','Yellow'],['red','Red']]]},
+].concat(MCOLS.map(c => ({k:c.key, label:LBL[c.m], metric:c, filter:['select',[['','All'],['green','Green'],['yellow','Yellow'],['red','Red']]]})));
+
+function passes(g){
+  const f = st.f, today = Date.now();
+  if (f.date) { if (f.date==='7'||f.date==='30') { if ((today - new Date(g.date+'T12:00:00Z'))/864e5 > +f.date) return false; } else if (g.date!==f.date) return false; }
+  if (f.team) { const q = f.team.trim().toUpperCase(); if (q && !(g.favorite.includes(q) || g.opponent.includes(q))) return false; }
+  if (f.spread) { const s = +g.spread_num||0; if (f.spread==='s' && !(s<4)) return false; if (f.spread==='m' && !(s>=4 && s<=7.5)) return false; if (f.spread==='l' && !(s>=8)) return false; }
+  if (f.winner && g.fav_won!==f.winner) return false;
+  if (f.covered && g.covered!==f.covered) return false;
+  if (f.above_line && g.above_line!==f.above_line) return false;
+  if (f.analysis && g.band!==f.analysis) return false;
+  for (const c of MCOLS) { const v = f[c.key]; if (v && simple(color(g, st.role, c.w, c.m))!==v) return false; }
+  return true;
 }
-const val = (r,k) => k==='score' ? (+r.fav_pts)-(+r.opp_pts) : (k==='hero_score' ? +r.hero_score : (k==='spread' ? parseFloat(r.spread)||0 : r[k]));
+function sortVal(g){
+  const k = st.sortKey;
+  if (k==='date') return g.date + (g.tip_utc||'');
+  if (k==='team') return g.favorite;
+  if (k==='spread') return +g.spread_num||0;
+  if (k==='score') return g.fav_pts - g.opp_pts;
+  if (k==='winner') return g.fav_won; if (k==='covered') return g.covered; if (k==='above_line') return g.above_line;
+  if (k==='analysis') return g.analysis_score==null ? -1 : +g.analysis_score;
+  const c = MCOLS.find(x=>x.key===k); if (c) { const r = cell(g, st.role, c.w, c.m).r; return r==null ? 99 : r; }
+  return '';
+}
+function cards(games){
+  const blk = gs => { const n=gs.length, w=gs.filter(g=>g.fav_won==='Yes').length, cov=gs.filter(g=>g.covered==='Yes').length,
+    push=gs.filter(g=>g.covered==='Push').length, ats=gs.filter(g=>g.covered==='Yes'||g.covered==='No').length;
+    return {n, w, l:n-w, wp:n?Math.round(100*w/n)+'%':'–', cov, nc:ats-cov, push, cp:ats?Math.round(100*cov/ats)+'%':'–'}; };
+  const card = (t, b, col) => `<div class="panel card"><h2 class="cond" style="color:${col}">${t}</h2>
+    <div class="stat">Games<b>${b.n}</b></div><div class="stat">Favorite won<span><b>${b.w}-${b.l}</b><span class="p">${b.wp}</span></span></div>
+    <div class="stat">Covered the spread<span><b>${b.cov}-${b.nc}${b.push?'-'+b.push:''}</b><span class="p">${b.cp}</span></span></div></div>`;
+  document.getElementById('cards').innerHTML = card('Above the line', blk(games.filter(g=>g.above_line==='Yes')), '#2FC373') +
+    card('Below the line', blk(games.filter(g=>g.above_line==='No')), '#FF7676') + card('All shown', blk(games), '#C7CEDC');
+}
+function head(){
+  const g = `<tr class="g"><th class="stick1"></th><th class="stick2"></th><th colspan="6"></th><th colspan="4" style="border-left:1px solid var(--line)">Season</th><th colspan="4" style="border-left:1px solid var(--line)">Last 3 games</th></tr>`;
+  const n = '<tr class="n">' + COLS.map((c,i)=>`<th class="${c.cls||''}" data-k="${c.k}" style="${i===8||i===12?'border-left:1px solid var(--line)':''}">${esc(c.label)}${st.sortKey===c.k?(st.asc?' ▲':' ▼'):''}</th>`).join('') + '</tr>';
+  const f = '<tr class="f">' + COLS.map((c,i)=>{
+    const v = st.f[c.k]||'', act = v ? 'active' : '', bl = i===8||i===12 ? 'border-left:1px solid var(--line)' : '';
+    if (!c.filter) return `<th class="${c.cls||''}" style="${bl}"></th>`;
+    if (c.filter[0]==='text') return `<th class="${c.cls||''}"><input type="text" class="${act}" data-fk="${c.k}" placeholder="${c.filter[1]}" value="${esc(v)}" aria-label="Filter ${esc(c.label)}"></th>`;
+    return `<th class="${c.cls||''}" style="${bl}"><select class="${act}" data-fk="${c.k}" aria-label="Filter ${esc(c.label)}">${c.filter[1].map(([val,l])=>`<option value="${esc(val)}"${val===v?' selected':''}>${esc(l)}</option>`).join('')}</select></th>`;
+  }).join('') + '</tr>';
+  document.getElementById('thead').innerHTML = g + n + f;
+  document.querySelectorAll('tr.n th[data-k]').forEach(th => th.onclick = () => {
+    const k = th.dataset.k; st.asc = st.sortKey===k ? !st.asc : !(k==='date'||k==='analysis'||k==='score'); st.sortKey = k; persist(); draw();
+  });
+  document.querySelectorAll('[data-fk]').forEach(el => { const ev = el.tagName==='INPUT' ? 'input' : 'change';
+    el.addEventListener(ev, () => { st.f[el.dataset.fk] = el.value; persist(); draw(el.tagName==='INPUT' ? el.dataset.fk : null); }); });
+}
+const link = (g, html) => g.board_page ? `<a href="${esc(BASE + g.board_page)}">${html}</a>` : html;
 const chip = v => v ? `<span class="chip ${v==='Yes'?'yes':(v==='No'?'no':'push')}">${esc(v)}</span>` : '–';
-function draw(){
-  fBtns();
-  document.getElementById('head').innerHTML = COLS.map(([k,l]) => `<th data-k="${k}">${l}${sortKey===k?(asc?' ▲':' ▼'):''}</th>`).join('');
-  document.querySelectorAll('th[data-k]').forEach(th => th.onclick = () => { const k = th.dataset.k; asc = sortKey===k ? !asc : (k!=='date' && k!=='hero_score' ? true : false); sortKey = k; draw(); });
-  let rows = DATA.rows.filter(r => filter==='all' || r.above_line===filter);
-  rows.sort((a,b) => { const x = val(a,sortKey), y = val(b,sortKey); return (x>y?1:x<y?-1:0) * (asc?1:-1); });
-  const link = (r, text) => r.board_page ? `<a href="${esc(DATA_BASE + r.board_page)}">${text}</a>` : text;
-  document.getElementById('body').innerHTML = rows.length ? rows.map(r => {
-    const d = new Date(r.date+'T12:00:00Z').toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric',timeZone:'UTC'});
-    return `<tr><td>${link(r, esc(d))}</td><td><b>${link(r, esc(r.favorite))}</b> <span style="color:var(--dim);font-size:11.5px">${r.fav_site==='home'?'home':(r.fav_site==='away'?'away':'neutral')}</span></td>
-      <td>${esc(r.opponent)}</td><td>${esc(r.spread)}</td><td>${esc(r.fav_pts)}-${esc(r.opp_pts)}</td><td>${esc(r.winner)}</td>
-      <td>${chip(r.covered)}</td><td>${chip(r.above_line)}</td><td>${r.hero_score!==''?`<span class="score ${esc(r.band)}">${esc(r.hero_score)}</span>`:'–'}</td></tr>`;
-  }).join('') : `<tr><td colspan="${COLS.length}" class="empty">No graded games yet. Results are added each morning at 3 AM for the previous day's boards.</td></tr>`;
+function rows(games){
+  if (!games.length) return `<tr><td colspan="${COLS.length}" class="empty">${DATA.games.length ? 'No games match these filters.' : 'No graded games yet. Results are added each morning at 3 AM for the previous day\'s boards.'}</td></tr>`;
+  return games.map(g => {
+    const metrics = role => MCOLS.map((c,i) => { const x = cell(g, role, c.w, c.m), col = role==='Favorite' ? favColor(x.r) : oppColor(x.r);
+      return `<td style="${i===0||i===4?'border-left:1px solid var(--line)':''}"><span class="m ${col}" title="${role} ${c.w==='season'?'season':'last 3'} ${LBL[c.m]}: rank ${x.r??'n/a'}"><b>${fmt(c.m, x.v)}</b><span>#${x.r??'–'}</span></span></td>`; }).join('');
+    const site = g.fav_site==='home' ? 'home' : (g.fav_site==='away' ? 'away' : 'neutral');
+    return `<tr class="fav"><td class="stick1" rowspan="2">${link(g, esc(dateLabel(g.date)))}</td>
+        <td class="stick2"><b>${link(g, esc(g.favorite))}</b><span class="role">Favorite · ${site}</span></td>
+        <td rowspan="2">${esc(g.spread)}</td><td rowspan="2">${g.fav_pts}-${g.opp_pts}</td><td rowspan="2">${esc(g.winner)}</td>
+        <td rowspan="2">${chip(g.covered)}</td><td rowspan="2">${chip(g.above_line)}</td>
+        <td rowspan="2">${g.analysis_score!=null ? `<span class="score ${esc(g.band)}">${g.analysis_score}</span>` : '–'}</td>${metrics('Favorite')}</tr>
+      <tr class="opp"><td class="stick2">${link(g, esc(g.opponent))}<span class="role">Opponent</span></td>${metrics('Opponent')}</tr>`;
+  }).join('');
 }
-const DATA_BASE = "https://investment-analytics3.github.io/nba-pregame/";
+function draw(keepFocus){
+  document.querySelectorAll('#roleSeg button').forEach(b => { b.classList.toggle('on', b.dataset.role===st.role); b.onclick = () => { st.role = b.dataset.role; persist(); draw(); }; });
+  const games = DATA.games.filter(passes);
+  games.sort((a,b) => { const x = sortVal(a), y = sortVal(b); return (x>y?1:x<y?-1:0) * (st.asc?1:-1); });
+  cards(games);
+  const active = Object.values(st.f).filter(Boolean).length;
+  document.getElementById('filtnote').textContent = active ? `${active} filter${active>1?'s':''} on · showing ${games.length} of ${DATA.games.length} games` : '';
+  if (!keepFocus) head();
+  document.getElementById('tbody').innerHTML = rows(games);
+  if (keepFocus) document.querySelectorAll('[data-fk]').forEach(el => el.classList.toggle('active', !!st.f[el.dataset.fk]));
+}
+document.getElementById('reset').onclick = () => { st.f = {}; persist(); draw(); };
 draw();
 })();
 </script>
