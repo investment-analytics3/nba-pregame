@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "built_at": "2026-11-08T14:00:28-05:00",
+ "built_at": "2026-11-08T14:39:52-05:00",
  "games": [
   {
    "id": "401909945",
@@ -26,6 +26,7 @@
      }
     }
    },
+   "fav_b2b": false,
    "tip_utc": "2026-11-08T20:30Z",
    "tip_pt": "12:30 PM PT",
    "fav": "PHI",
@@ -75,6 +76,7 @@
      }
     }
    },
+   "fav_b2b": false,
    "tip_utc": "2026-11-09T01:00Z",
    "tip_pt": "5:00 PM PT",
    "fav": "BOS",
@@ -103,6 +105,26 @@
   }
  ],
  "closers": {
+  "MIL": {
+   "closers": [
+    "Tyler Herro",
+    "Jaime Jaquez Jr."
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "Tyler Herro": {
+     "ppm": 0.718,
+     "ppg": 22.3,
+     "gp": 9
+    },
+    "Jaime Jaquez Jr.": {
+     "ppm": 0.58,
+     "ppg": 16.4,
+     "gp": 9
+    }
+   }
+  },
   "BOS": {
    "closers": [
     "Jayson Tatum",
@@ -140,26 +162,6 @@
      "ppm": 0.339,
      "ppg": 9.2,
      "gp": 8
-    }
-   }
-  },
-  "MIL": {
-   "closers": [
-    "Tyler Herro",
-    "Jaime Jaquez Jr."
-   ],
-   "elite": [],
-   "source": "draft",
-   "season": {
-    "Tyler Herro": {
-     "ppm": 0.718,
-     "ppg": 22.3,
-     "gp": 9
-    },
-    "Jaime Jaquez Jr.": {
-     "ppm": 0.58,
-     "ppg": 16.4,
-     "gp": 9
     }
    }
   },

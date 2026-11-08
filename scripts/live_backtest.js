@@ -170,6 +170,39 @@ async function main() {
     bucket('leader A/A+ & lead 10+', x => ['A', 'A+'].includes(x.end3.leaderGrade) && x.end3.lead >= 10),
     bucket('leader control & closer edge & lead 6+', x => x.end3.leaderControl && x.end3.leaderCloserEdge && x.end3.lead >= 6),
   ];
+  // End-of-3rd checklist score (7 checks) for games on saved slates: does a higher score win more?
+  const metrics = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'metrics.json'), 'utf8'));
+  const league = {};
+  ['opp_efg', 'def'].forEach(m => { league[m] = Object.values(metrics.teams).map(t => (t.season || {})[m]).filter(v => v != null).sort((a, b) => a - b); });
+  const slateGame = {};
+  const sdir = path.join(ROOT, 'data', 'slates');
+  fs.readdirSync(sdir).filter(f => f.endsWith('.json')).forEach(f => {
+    const sl = JSON.parse(fs.readFileSync(path.join(sdir, f), 'utf8'));
+    (sl.games || []).forEach(g => { slateGame[g.id] = g; });
+  });
+  const ck = [];
+  for (const [id, s] of Object.entries(summaries)) {
+    const sg = slateGame[id]; if (!sg || !sg.scoring || !sg.scoring.fav) continue;
+    const ft = sg.away.abbr === sg.scoring.fav ? sg.away : sg.home;
+    const fd = {}; ['season', 'last3'].forEach(w => { fd[w] = {}; ['opp_efg', 'def'].forEach(m => { fd[w][m] = { v: (ft[w] || {})[m], r: ((ft[w] || {}).ranks || {})[m] }; }); });
+    const fin = E.analyze(s, {}); if (fin.state !== 'post') continue;
+    const winner = fin.teams.away.score > fin.teams.home.score ? fin.teams.away.abbr : fin.teams.home.abbr;
+    const r = E.analyze(s, { fav: sg.scoring.fav, favB2B: ft.b2b, favDefense: fd, league, closers: ctxClosers }, { uptoT: 3 * 720 });
+    if (!r.checklist) continue;
+    ck.push({ id, date: games[id] ? games[id].date : null, game: `${fin.teams.away.abbr}@${fin.teams.home.abbr}`, fav: sg.scoring.fav,
+              above_line: !!sg.scoring.qualified, passed: r.checklist.passed, items: Object.fromEntries(r.checklist.items.map(i => [i.key, i.pass])),
+              favWon: winner === sg.scoring.fav, final: `${fin.teams.away.score}-${fin.teams.home.score}` });
+  }
+  const byScore = {};
+  ck.forEach(x => { const b = byScore[x.passed] = byScore[x.passed] || { n: 0, won: 0 }; b.n++; if (x.favWon) b.won++; });
+  const leadAnd = (keys) => { const xs = ck.filter(x => keys.every(k => x.items[k] === true)); return { n: xs.length, won: xs.filter(x => x.favWon).length }; };
+  out.checklist = { note: 'Favorite at the end of the 3rd on saved slates; tonight ranks use current season averages (approximate). No Kalshi history.',
+    by_score: byScore, lead10: leadAnd(['lead']), lead10_defense: leadAnd(['lead', 'opp_efg', 'def']), seven: leadAnd(['lead', 'opp_efg', 'def', 'closer', 'run', 'three', 'b2b']), games: ck };
+  console.log(`Checklist (favorite, end of 3rd, ${ck.length} games on saved slates):`);
+  Object.keys(byScore).sort((a, b) => b - a).forEach(k => console.log(`   ${k} of 7: favorite won ${pct(byScore[k].won, byScore[k].n)}`));
+  console.log(`   lead 10+: ${pct(out.checklist.lead10.won, out.checklist.lead10.n)} · + both defenses: ${pct(out.checklist.lead10_defense.won, out.checklist.lead10_defense.n)} · all 7: ${pct(out.checklist.seven.won, out.checklist.seven.n)}`);
+  ck.filter(x => x.items.lead && !x.favWon).forEach(x => console.log(`   lost with lead 10+: ${x.date} ${x.game} fav ${x.fav} score ${x.passed}/7 final ${x.final}`));
+
   // Separate signal: the pregame favorite leads by 10+ at the end of the 3rd
   const favOf = id => { const x = res.find(r => r.game_id === id); return x ? x.favorite : null; };
   const f10 = e3.filter(x => favOf(x.id) && x.end3.leader === favOf(x.id) && x.end3.lead >= 10);
