@@ -18,7 +18,7 @@ from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from nba import espn, injury_report, metrics, power, store  # noqa: E402
+from nba import espn, injury_report, metrics, power, scoring, store  # noqa: E402
 from nba.injury_report import norm  # noqa: E402
 
 PT = ZoneInfo("America/Los_Angeles")
@@ -102,6 +102,7 @@ def load_injuries(teams: list[dict], game_day: date, playing: set[str]) -> dict:
         print(f"  ! official injury report unavailable: {e}")
     try:
         espn_rows = espn.injuries()
+        result["espn_ok"] = True
         used = False
         for r in espn_rows:
             tid = r["team_id"] or by_key.get(norm(r["team_name"] or ""))
@@ -120,7 +121,8 @@ def load_injuries(teams: list[dict], game_day: date, playing: set[str]) -> dict:
 # --------------------------------------------------------------------------- #
 # Slate
 # --------------------------------------------------------------------------- #
-def team_block(side: dict, m: dict, pw: dict, b2b: bool, injuries: list, keys: dict, power_rank) -> dict:
+def team_block(side: dict, m: dict, pw: dict, b2b: bool, injuries: list, keys: dict, power_rank,
+               injuries_known: bool = True) -> dict:
     tid = side["id"]
     tm = m["teams"].get(tid, {})
     inj = []
@@ -140,6 +142,7 @@ def team_block(side: dict, m: dict, pw: dict, b2b: bool, injuries: list, keys: d
                   "bpi": p.get("bpi"), "nba_com": p.get("nba_com")},
         "last3_games": [{**g, "opp_power_rank": power_rank(g["opp_id"])} for g in tm.get("last3_games", [])],
         "injuries": inj,
+        "injuries_known": injuries_known,
         "key_out": [i["player"] for i in inj if i["is_key"] and i["counts_as_out"]],
         "key_questionable": [i["player"] for i in inj if i["is_key"] and i["status"] == "Questionable"],
     }
@@ -168,10 +171,11 @@ def build(day: date) -> dict:
         if e["season_type"] != espn.REGULAR_SEASON:
             continue
         tip_utc = datetime.fromisoformat(e["start_utc"].replace("Z", "+00:00"))
+        known = lambda tid: tid in inj["covered"] or inj.get("espn_ok", False)  # noqa: E731
         home = team_block(e["home"], m, pw, e["home"]["id"] in played_yesterday,
-                          inj["teams"].get(e["home"]["id"], []), keys, power_rank)
+                          inj["teams"].get(e["home"]["id"], []), keys, power_rank, known(e["home"]["id"]))
         away = team_block(e["away"], m, pw, e["away"]["id"] in played_yesterday,
-                          inj["teams"].get(e["away"]["id"], []), keys, power_rank)
+                          inj["teams"].get(e["away"]["id"], []), keys, power_rank, known(e["away"]["id"]))
         odds = e["odds"]
         fav_id = odds["favorite_id"] if odds else None
         games.append({
@@ -181,13 +185,15 @@ def build(day: date) -> dict:
             "spread": odds,
             "favorite": "home" if fav_id == e["home"]["id"] else ("away" if fav_id == e["away"]["id"] else None),
         })
-    games.sort(key=lambda g: g["tip_utc"])
+    for g in games:
+        g["scoring"] = scoring.score_game(g)
+    games = scoring.order_games(games)
     return {
         "date": day.isoformat(),
         "built_at": datetime.now(PT).isoformat(timespec="seconds"),
         "metrics_through": m["games_through"],
         "injury_source": inj["source"], "injury_report_time": inj["report_time"], "injury_url": inj["url"],
-        "first_tip_utc": games[0]["tip_utc"] if games else None,
+        "first_tip_utc": min((g["tip_utc"] for g in games), default=None),
         "games": games,
     }
 
@@ -200,15 +206,19 @@ def main() -> int:
     lines = [f"## Slate for {day:%a %b %d, %Y}", "",
              f"{len(slate['games'])} games · metrics through {slate['metrics_through']} · "
              f"injuries: {slate['injury_source']} ({slate['injury_report_time']})", "",
-             "| Tip | Matchup | Spread | Fav | B2B | Power (away/home) | Key out |", "|---|---|---|---|---|---|---|"]
+             "| Result | Score | Tip | Matchup | Spread | B2B | Power (away/home) | Notes |",
+             "|---|---|---|---|---|---|---|---|"]
     for g in slate["games"]:
         a, h = g["away"], g["home"]
         sp = g["spread"]["details"] if g["spread"] else "none"
-        fav = (a if g["favorite"] == "away" else h)["abbr"] if g["favorite"] else "?"
         b2b = ", ".join(t["abbr"] for t in (a, h) if t["b2b"]) or "-"
-        out = "; ".join(f"{t['abbr']}: {', '.join(t['key_out'])}" for t in (a, h) if t["key_out"]) or "-"
-        lines.append(f"| {g['tip_pt']} | {a['abbr']} @ {h['abbr']}{' (neutral)' if g['neutral'] else ''} | "
-                     f"{sp} | {fav} | {b2b} | #{a['power']['rank']} / #{h['power']['rank']} | {out} |")
+        sc = g["scoring"]
+        result = ("QUALIFIED on " + ", ".join(sc["qualifiers"])) if sc.get("qualified") else "No track"
+        notes = "; ".join(sc.get("fails", []) + sc.get("warnings", [])) or "-"
+        score = f"{sc['score']}/40 {sc['band']}" if sc.get("scored") else "-"
+        lines.append(f"| {result} | {score} | {g['tip_pt']} | {a['abbr']} @ {h['abbr']}"
+                     f"{' (neutral)' if g['neutral'] else ''} | {sp} | {b2b} | "
+                     f"#{a['power']['rank']} / #{h['power']['rank']} | {notes} |")
     text = "\n".join(lines) + "\n"
     print(text)
     if os.environ.get("GITHUB_STEP_SUMMARY"):

@@ -1,7 +1,7 @@
 # NBA Pregame Dashboard
 
 Daily pregame board for an NBA moneyline system: pulls free data, applies the six
-qualification rules and the 39-point hero score, and emails an HTML page with
+qualification rules and the 40-point hero score, and emails an HTML page with
 a phone alert. Everything runs on GitHub Actions at no cost; no AI is used in
 the daily runs.
 
@@ -11,8 +11,8 @@ the daily runs.
 |---|---|
 | Data sources confirmed from GitHub's servers | Done |
 | Data engine: box scores, metrics, ranks, power rank, slate | Done |
-| Scoring: six rules, hero score | Next |
-| Board: HTML page, email, phone alert, schedule | After scoring |
+| Scoring: six rules, 40-point hero score (with unit tests) | Done |
+| Board: HTML page, email, phone alert, schedule | Next |
 
 ## How the data works
 
