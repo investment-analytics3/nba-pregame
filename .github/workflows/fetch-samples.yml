@@ -1,12 +1,12 @@
 name: Fetch samples (developer)
 
-# Saves raw responses from each data source so the parsers can be built and
-# tested against real data. Kept for 3 days.
+# Saves raw responses from each data source to the "dev-samples" branch so the
+# parsers can be built and tested against real data. Does not touch main.
 on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   fetch:
@@ -18,8 +18,12 @@ jobs:
         with:
           python-version: "3.12"
       - run: python scripts/fetch_samples.py
-      - uses: actions/upload-artifact@v4
-        with:
-          name: samples
-          path: samples/
-          retention-days: 3
+      - name: Save samples to the dev-samples branch
+        run: |
+          cd samples
+          git init -q -b dev-samples
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Raw source samples $(date -u +%FT%TZ)"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" dev-samples
