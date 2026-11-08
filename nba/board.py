@@ -113,8 +113,11 @@ def snapshot(slate: dict) -> dict:
         fav, dog = _fav_dog(g)
         snap[g["id"]] = {
             "label": f"{g['away']['abbr']} @ {g['home']['abbr']}",
-            "fav": sc.get("fav"), "qualified": sc.get("qualified"), "score": sc.get("score"),
-            "fails": sc.get("fails", []),
+            "fav": sc.get("fav"), "dog": sc.get("dog"), "fav_side": g.get("favorite"),
+            "spread_num": (g.get("spread") or {}).get("spread"), "tip_utc": g.get("tip_utc"),
+            "neutral": g.get("neutral", False),
+            "qualified": sc.get("qualified"), "score": sc.get("score"), "band": sc.get("band"),
+            "qualifiers": sc.get("qualifiers", []), "fails": sc.get("fails", []),
             "spread": (g.get("spread") or {}).get("details"),
             "key_out": sorted((fav or {}).get("key_out", []) + (dog or {}).get("key_out", [])),
             "key_q": sorted((fav or {}).get("key_questionable", []) + (dog or {}).get("key_questionable", [])),
@@ -187,7 +190,7 @@ def _env():
 
 def render_page(data: dict) -> str:
     data_json = json.dumps(data).replace("</", "<\\/")  # safe inside <script>
-    return _env().get_template("board.html.j2").render(data=data, data_json=data_json)
+    return _env().get_template("board.html.j2").render(data=data, data_json=data_json, pages_url=PAGES_URL)
 
 
 def render_email(data: dict) -> str:

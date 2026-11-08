@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NBA Board Results</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+:root{--bg:#0A0F1C;--line:#1F2A42;--text:#E6EAF2;--muted:#8B95AB;--dim:#7C869E}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+a{color:#93C5FD}
+.wrap{max-width:1120px;margin:0 auto;padding:16px 16px 72px}
+.cond{font-family:'Barlow Condensed',Inter,sans-serif}
+.nav{display:flex;gap:6px;margin-bottom:20px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.nav a{padding:8px 14px;border-radius:999px;font-size:14px;font-weight:600;color:#C7CEDC;text-decoration:none}
+.nav a.on{background:#1C2640;color:#fff;border:1px solid #2E3B5C}
+h1{margin:4px 0 0;font-size:42px;line-height:1;font-weight:700}
+.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.panel{border-radius:18px;border:1px solid var(--line);background:linear-gradient(180deg,#172036,#111829);box-shadow:0 12px 30px rgba(0,0,0,.4)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px;margin:20px 0}
+.card{padding:18px 20px}
+.card h2{margin:0 0 12px;font-size:20px;letter-spacing:.04em;text-transform:uppercase}
+.stat{display:flex;justify-content:space-between;align-items:baseline;padding:6px 0;border-top:1px solid var(--line);font-size:14px;color:#C7CEDC}
+.stat b{font-size:22px;color:#fff}.stat span.p{font-size:13px;color:var(--muted);margin-left:6px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 14px;align-items:center}
+.filters button{all:unset;cursor:pointer;padding:8px 14px;border-radius:999px;border:1px solid #26314B;background:#151C2E;color:#DCE2EE;font-size:13px;font-weight:600}
+.filters button.on{background:#2F6FE0;border-color:#2F6FE0;color:#fff}
+.scroll{overflow-x:auto;border-radius:16px;border:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;min-width:860px;font-size:13.5px}
+th{position:sticky;top:0;background:#151C2E;text-align:left;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#9AA4BA;padding:10px 12px;cursor:pointer;white-space:nowrap;user-select:none}
+th:hover{color:#fff}
+td{padding:10px 12px;border-top:1px solid var(--line);white-space:nowrap}
+tr:nth-child(even) td{background:rgba(255,255,255,.015)}
+.chip{display:inline-block;padding:2px 9px;border-radius:999px;font-size:11.5px;font-weight:700}
+.yes{background:rgba(47,195,115,.18);color:#86EFAC;border:1px solid rgba(47,195,115,.45)}
+.no{background:rgba(220,50,50,.16);color:#FCA5A5;border:1px solid rgba(220,50,50,.45)}
+.push{background:rgba(233,178,58,.16);color:#FDE68A;border:1px solid rgba(233,178,58,.45)}
+.score{display:inline-block;min-width:34px;text-align:center;padding:2px 6px;border-radius:7px;font-weight:700}
+.green{background:#1F9D58;color:#fff}.yellow{background:#D9A12A;color:#2A1C00}.red{background:#B32A2A;color:#fff}
+.empty{padding:28px;text-align:center;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="nav"><a href="{{ pages_url }}">Today's board</a><a class="on" href="{{ pages_url }}results.html">Results</a></nav>
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px">
+  <div><div class="eyebrow">NBA · Running record</div><h1 class="cond">Results</h1></div>
+  <div style="font-size:13px;color:var(--muted);text-align:right;line-height:1.6">Updated {{ d.updated }}<br><a href="{{ pages_url }}results.csv" download>Download spreadsheet (CSV)</a></div>
+</div>
+<div class="cards" id="cards"></div>
+<div class="filters" id="filters"></div>
+<div class="scroll"><table><thead><tr id="head"></tr></thead><tbody id="body"></tbody></table></div>
+<p style="font-size:12px;color:var(--dim);line-height:1.6;margin-top:14px">Each game is graded from the last board sent before tip (the Final when there was one).
+Covered = the favorite won by more than the spread. Click a favorite to open that day's board for the game. Tap a column title to sort.</p>
+</div>
+<script>const DATA = {{ data_json|safe }};</script>
+<script>
+(function(){
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const S = DATA.summary;
+const card = (t, b, col) => `<div class="panel card"><h2 class="cond" style="color:${col}">${t}</h2>
+  <div class="stat">Games<b>${b.games}</b></div>
+  <div class="stat">Favorite won<span><b>${b.won}-${b.lost}</b><span class="p">${b.win_pct==null?'–':b.win_pct+'%'}</span></span></div>
+  <div class="stat">Covered the spread<span><b>${b.covered}-${b.not_covered}${b.push?'-'+b.push:''}</b><span class="p">${b.cover_pct==null?'–':b.cover_pct+'%'}</span></span></div></div>`;
+document.getElementById('cards').innerHTML = card('Above the line', S.above, '#2FC373') + card('Below the line', S.below, '#FF7676') + card('All games', S.all, '#C7CEDC');
+const COLS = [['date','Date'],['favorite','Favorite'],['opponent','Opponent'],['spread','Spread'],['score','Score (fav-opp)'],['winner','Winner'],['covered','Spread covered'],['above_line','Above the line'],['hero_score','Hero score']];
+let filter = 'all', sortKey = 'date', asc = false;
+try { const f = localStorage.getItem('nba-results-filter'); if (f) filter = f; } catch (e) {}
+function fBtns(){
+  document.getElementById('filters').innerHTML = [['all','All games'],['Yes','Above the line'],['No','Below the line']].map(([k,l]) =>
+    `<button type="button" class="${filter===k?'on':''}" data-f="${k}">${l}</button>`).join('');
+  document.querySelectorAll('[data-f]').forEach(b => b.onclick = () => { filter = b.dataset.f; try { localStorage.setItem('nba-results-filter', filter); } catch (e) {} draw(); });
+}
+const val = (r,k) => k==='score' ? (+r.fav_pts)-(+r.opp_pts) : (k==='hero_score' ? +r.hero_score : (k==='spread' ? parseFloat(r.spread)||0 : r[k]));
+const chip = v => v ? `<span class="chip ${v==='Yes'?'yes':(v==='No'?'no':'push')}">${esc(v)}</span>` : '–';
+function draw(){
+  fBtns();
+  document.getElementById('head').innerHTML = COLS.map(([k,l]) => `<th data-k="${k}">${l}${sortKey===k?(asc?' ▲':' ▼'):''}</th>`).join('');
+  document.querySelectorAll('th[data-k]').forEach(th => th.onclick = () => { const k = th.dataset.k; asc = sortKey===k ? !asc : (k!=='date' && k!=='hero_score' ? true : false); sortKey = k; draw(); });
+  let rows = DATA.rows.filter(r => filter==='all' || r.above_line===filter);
+  rows.sort((a,b) => { const x = val(a,sortKey), y = val(b,sortKey); return (x>y?1:x<y?-1:0) * (asc?1:-1); });
+  const link = (r, text) => r.board_page ? `<a href="${esc(DATA_BASE + r.board_page)}">${text}</a>` : text;
+  document.getElementById('body').innerHTML = rows.length ? rows.map(r => {
+    const d = new Date(r.date+'T12:00:00Z').toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric',timeZone:'UTC'});
+    return `<tr><td>${link(r, esc(d))}</td><td><b>${link(r, esc(r.favorite))}</b> <span style="color:var(--dim);font-size:11.5px">${r.fav_site==='home'?'home':(r.fav_site==='away'?'away':'neutral')}</span></td>
+      <td>${esc(r.opponent)}</td><td>${esc(r.spread)}</td><td>${esc(r.fav_pts)}-${esc(r.opp_pts)}</td><td>${esc(r.winner)}</td>
+      <td>${chip(r.covered)}</td><td>${chip(r.above_line)}</td><td>${r.hero_score!==''?`<span class="score ${esc(r.band)}">${esc(r.hero_score)}</span>`:'–'}</td></tr>`;
+  }).join('') : `<tr><td colspan="${COLS.length}" class="empty">No graded games yet. Results are added each morning at 3 AM for the previous day's boards.</td></tr>`;
+}
+const DATA_BASE = {{ pages_url|tojson }};
+draw();
+})();
+</script>
+</body>
+</html>

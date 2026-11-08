@@ -85,6 +85,9 @@ h3{margin:0 0 4px;font-size:16px;font-weight:700}
 .cols4{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:16px;margin-bottom:20px}
 .tbl-row{display:grid;grid-template-columns:88px minmax(0,1fr) auto;gap:8px;align-items:center;padding:9px 0;border-top:1px solid var(--line);font-size:13.5px}
 .wl{width:22px;height:22px;border-radius:6px;display:grid;place-items:center;font-size:11px;font-weight:800}
+.nav{display:flex;gap:6px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.nav a{padding:8px 14px;border-radius:999px;font-size:14px;font-weight:600;color:#C7CEDC;text-decoration:none}
+.nav a.on{background:#1C2640;color:#fff;border:1px solid #2E3B5C}
 .sec-title{margin:6px 0 12px;font-size:22px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
 </style>
 </head>
@@ -97,7 +100,8 @@ h3{margin:0 0 4px;font-size:16px;font-weight:700}
 <radialGradient id="hub" cx="50%" cy="35%" r="70%"><stop offset="0" stop-color="#222C45"/><stop offset="1" stop-color="#0D1322"/></radialGradient>
 <filter id="drop" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity=".6"/></filter>
 </defs></svg>
-<div class="wrap" id="app"></div>
+<div class="wrap" style="padding-bottom:0"><nav class="nav"><a class="on" href="{{ pages_url }}">Today's board</a><a href="{{ pages_url }}results.html">Results</a></nav></div>
+<div class="wrap" id="app" style="padding-top:18px"></div>
 <script>const DATA = {{ data_json|safe }};</script>
 <script>
 (function(){

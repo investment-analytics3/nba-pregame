@@ -64,6 +64,10 @@ jobs:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: python scripts/run_board.py --kind "${{ steps.decide.outputs.kind }}" ${{ inputs.send == false && '--no-send' || '' }}
 
+      - name: Refresh the Results page
+        if: steps.decide.outputs.kind != 'none'
+        run: python scripts/update_results.py
+
       - name: Save to the repo
         if: steps.decide.outputs.kind != 'none'
         run: |

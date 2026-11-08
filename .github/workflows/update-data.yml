@@ -34,6 +34,10 @@ jobs:
         id: update
         run: python scripts/update_data.py ${{ github.event_name == 'schedule' && '--scheduled' || '' }}
 
+      - name: Grade yesterday's boards and rebuild the Results page
+        if: steps.update.outputs.acted == 'true'
+        run: python scripts/update_results.py
+
       - name: Build today's slate (for checking)
         if: steps.update.outputs.acted == 'true'
         run: python scripts/build_slate.py
@@ -43,6 +47,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           [ -d data ] && git add data/ || true
+          [ -d docs ] && git add docs/ || true
           if git diff --cached --quiet; then echo "No data changes."; exit 0; fi
           git commit -q -m "Data update $(TZ=America/Los_Angeles date '+%Y-%m-%d %H:%M %Z')"
           git pull -q --rebase origin main

@@ -72,6 +72,7 @@ def main() -> int:
     if kind in ("board", "final"):
         today_log[kind] = {"sent_at": datetime.now(PT).isoformat(timespec="seconds"),
                            "label": datetime.now(PT).strftime("%-I:%M %p"),
+                           "page": f"boards/{day.isoformat()}-{kind}.html",
                            "snapshot": board.snapshot(slate)}
         log[day.isoformat()] = today_log
         # keep the log small: last 30 days
