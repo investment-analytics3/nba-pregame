@@ -248,7 +248,7 @@
     { key: 'quality', label: 'Shot quality', min: 0.08 },
   ];
   function tally(plays, t0, t1) {
-    const z = () => ({ reb: 0, oreb: 0, ast: 0, paint: 0, fga: 0, good: 0, trips: 0, tov: 0, fg3m: 0, fg3a: 0,
+    const z = () => ({ reb: 0, oreb: 0, ast: 0, paint: 0, fga: 0, good: 0, trips: 0, tov: 0, fg3m: 0, fg3a: 0, fta: 0,
                        fgm: 0, pts: 0, quality: null });
     const s = { away: z(), home: z() };
     plays.forEach(p => {
@@ -264,6 +264,7 @@
         if (p.made) { x.fgm++; if (p.paint) x.paint += p.pts; }
       }
       if (p.ftTrip) { x.trips++; x.good++; }
+      if (p.ft) x.fta++;
       x.pts += p.pts;
     });
     ['away', 'home'].forEach(k => {
@@ -595,8 +596,41 @@
       momentum: mom, fake, closers, lineupsConfident: { away: lu.away.confident, home: lu.home.confident },
       sides, decision, price, risk, changes, next,
     });
+    out.favorite = favoriteRead(teams, plays, nowT, ctx);
     out.logLine = logLine(out, ctx);
     return out;
+  }
+
+  // ------------------------------------------------- the favorite tonight --
+  // The pregame favorite's lead and its defense: tonight so far (opponent eFG%
+  // and points allowed per 100 possessions, ranked against every team's season
+  // average) next to its last-3 and season ranks from the board.
+  function favoriteRead(teams, plays, nowT, ctx) {
+    const fav = ctx.fav;
+    const side = teams.away.abbr === fav ? 'away' : (teams.home.abbr === fav ? 'home' : null);
+    if (!side) return null;
+    const o = other(side), all = tally(plays, -1, nowT), opp = all[o], me = all[side];
+    const poss = x => x.fga - x.oreb + x.tov + 0.44 * x.fta;
+    const p = 0.5 * (poss(opp) + poss(me));
+    const oppEfg = opp.fga ? 100 * (opp.fgm + 0.5 * opp.fg3m) / opp.fga : null;
+    const def = p > 0 ? 100 * opp.pts / p : null;
+    const league = ctx.league || {};
+    const rankOf = (v, list) => (v == null || !list || !list.length) ? null : Math.min(list.length, 1 + list.filter(x => x < v).length);
+    const lead = teams[side].score - teams[o].score;
+    // lead when the 3rd ended (the signal is defined there; the 4th can change the current lead)
+    let leadEnd3 = null;
+    if (nowT >= 3 * QLEN) {
+      const q3 = plays.filter(p => p.t <= 3 * QLEN && p.period <= 3);
+      const lp = q3[q3.length - 1];
+      if (lp) leadEnd3 = side === 'away' ? lp.away - lp.home : lp.home - lp.away;
+    }
+    return {
+      abbr: fav, side, lead, leadEnd3, up10: (leadEnd3 != null ? leadEnd3 : lead) >= 10,
+      tonight: { opp_efg: oppEfg == null ? null : Math.round(oppEfg * 10) / 10, def: def == null ? null : Math.round(def * 10) / 10,
+                 opp_efg_rank: rankOf(oppEfg, league.opp_efg), def_rank: rankOf(def, league.def), poss: Math.round(p) },
+      last3: (ctx.favDefense || {}).last3 || null, season: (ctx.favDefense || {}).season || null,
+      record: ctx.fav10 || null,
+    };
   }
 
   function toAmerican(p) {

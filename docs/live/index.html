@@ -178,6 +178,25 @@ function render(g, r){
       <div style="font-size:15px;line-height:1.5">${esc(leader)} · ${esc(r.clockLabel)}. ${esc(d.focus||'')}: ${esc(reasons.join(' · '))}.</div>
       ${fs && fs.gates.length?`<div class="warn">${fs.gates.map(x=>'Rule: '+esc(x)).join('<br>')}</div>`:''}</section>`;
 
+  // favorite: lead + defense (season, last 3, tonight)
+  const F = r.favorite;
+  if(F){
+    const rk = x => x && x.r!=null ? `#${x.r}` : '–';
+    const v = (x,pct) => x && x.v!=null ? (pct? x.v.toFixed(1)+'%' : x.v.toFixed(1)) : '–';
+    const T = F.tonight||{}, L3 = F.last3||{}, SE = F.season||{};
+    const goodRank = n => n!=null && n<=10;
+    const kFav = k0 => k0 && k0[F.abbr]!=null ? k0[F.abbr] : null;
+    const kp = kFav(kalshiNow(g));
+    const showSignal = F.up10 && (r.period>=4 || (r.period===3 && r.remain===0));
+    h += `<section class="panel pad"><h3>${esc(F.abbr)} (favorite) · ${F.lead>0?'up '+F.lead:(F.lead<0?'down '+(-F.lead):'tied')}</h3>
+      ${showSignal?`<div class="answer" style="background:rgba(47,195,115,.12);border-color:rgba(47,195,115,.45);margin-bottom:12px"><b>Favorite up ${F.leadEnd3!=null?F.leadEnd3:F.lead} at the end of the 3rd.</b> ${F.record&&F.record.n?`This season favorites in that spot won <b>${F.record.won} of ${F.record.n}</b>.`:''}${kp!=null?` Kalshi has ${esc(F.abbr)} at <b>${Math.round(kp*100)}%</b>, so the price only pays if the true win rate is above ${Math.round(kp*100)}%.`:''} Separate from your A/A+ grade.</div>`:''}
+      <div class="ctl" style="grid-template-columns:minmax(0,1fr) 1fr 1fr"><span class="h">${esc(F.abbr)} defense</span><span class="h" style="text-align:center">Opp eFG%</span><span class="h" style="text-align:center">Def Eff</span>
+        <span>Season</span><span class="cell cond ${goodRank((SE.opp_efg||{}).r)?'win':''}">${v(SE.opp_efg,1)} · ${rk(SE.opp_efg)}</span><span class="cell cond ${goodRank((SE.def||{}).r)?'win':''}">${v(SE.def)} · ${rk(SE.def)}</span>
+        <span>Last 3</span><span class="cell cond ${goodRank((L3.opp_efg||{}).r)?'win':''}">${v(L3.opp_efg,1)} · ${rk(L3.opp_efg)}</span><span class="cell cond ${goodRank((L3.def||{}).r)?'win':''}">${v(L3.def)} · ${rk(L3.def)}</span>
+        <span>Tonight</span><span class="cell cond ${goodRank(T.opp_efg_rank)?'win':''}">${T.opp_efg!=null?T.opp_efg.toFixed(1)+'%':'–'}${T.opp_efg_rank?' · #'+T.opp_efg_rank:''}</span><span class="cell cond ${goodRank(T.def_rank)?'win':''}">${T.def!=null?T.def.toFixed(1):'–'}${T.def_rank?' · #'+T.def_rank:''}</span></div>
+      <div class="dim" style="font-size:11.5px;margin-top:8px">Lower is better. Tonight's numbers are ranked against every team's season average (${T.poss||0} possessions so far, so they move a lot early). Green = top 10.</div></section>`;
+  }
+
   // 2 who answered the run
   const runs = (r.runs||[]).slice(-6).reverse();
   h += `<section class="panel pad"><h3><span class="n">2</span>Who answered the run? <b style="margin-left:auto" class="cond">${esc(r.whoAnswered||'NONE')}</b></h3>
@@ -257,7 +276,7 @@ async function refresh(forceLive){
     const g = ctx.games.find(x=>x.id===gid);
     const [summary] = await Promise.all([getJSON(`${ESPN}/summary?event=${encodeURIComponent(gid)}&t=${Date.now()}`), loadLive(forceLive)]);
     const kal = kalshiNow(g);
-    const r = LiveEngine.analyze(summary, {date: ctx.date, fav: g.fav, closers: ctx.closers, kalshi: kal});
+    const r = LiveEngine.analyze(summary, {date: ctx.date, fav: g.fav, closers: ctx.closers, kalshi: kal, favDefense: g.fav_defense, league: ctx.league, fav10: ctx.fav10});
     lastRead = r; readAt = Date.now();
     if(r.state==='in'){ const x = {clock:r.clockLabel, grade:r.decision.grade, action:r.decision.action, pick:r.decision.pick, score:`${r.teams.away.score}-${r.teams.home.score}`}; if(!session.length || session[session.length-1].clock!==x.clock) session.push(x); }
     app.innerHTML = render(g, r);

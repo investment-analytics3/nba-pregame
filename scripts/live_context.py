@@ -68,8 +68,11 @@ def build(day: date) -> dict:
         sc = g.get("scoring") or {}
         if not sc.get("qualified"):
             continue
+        fav_team = g["away"] if g["away"].get("abbr") == sc.get("fav") else g["home"]
+        fav_def = {w: {m: {"v": (fav_team.get(w) or {}).get(m), "r": ((fav_team.get(w) or {}).get("ranks") or {}).get(m)}
+                       for m in ("opp_efg", "def")} for w in ("season", "last3")}
         games.append({
-            "id": g["id"], "tip_utc": g.get("tip_utc"), "tip_pt": g.get("tip_pt"),
+            "id": g["id"], "fav_defense": fav_def, "tip_utc": g.get("tip_utc"), "tip_pt": g.get("tip_pt"),
             "fav": sc.get("fav"), "dog": sc.get("dog"), "qualifiers": sc.get("qualifiers", []),
             "score": sc.get("score"), "band": sc.get("band"),
             "spread": (g.get("spread") or {}).get("details") if isinstance(g.get("spread"), dict) else g.get("spread"),
@@ -82,8 +85,12 @@ def build(day: date) -> dict:
         c = closers.get(t)
         if c:
             ctx_closers[t] = dict(c, season={n: ppm.get(t, {}).get(n) for n in c["closers"] if ppm.get(t, {}).get(n)})
+    metrics = store.read_json("metrics.json", {}) or {}
+    league = {m: sorted(t["season"][m] for t in (metrics.get("teams") or {}).values()
+                        if (t.get("season") or {}).get(m) is not None) for m in ("opp_efg", "def")}
+    bt = store.read_json("live/backtest.json", {}) or {}
     return {"date": day.isoformat(), "built_at": datetime.now(ET).isoformat(timespec="seconds"),
-            "games": games, "closers": ctx_closers}
+            "games": games, "closers": ctx_closers, "league": league, "fav10": bt.get("fav10")}
 
 
 def main() -> int:

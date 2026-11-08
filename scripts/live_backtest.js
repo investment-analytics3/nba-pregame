@@ -170,6 +170,13 @@ async function main() {
     bucket('leader A/A+ & lead 10+', x => ['A', 'A+'].includes(x.end3.leaderGrade) && x.end3.lead >= 10),
     bucket('leader control & closer edge & lead 6+', x => x.end3.leaderControl && x.end3.leaderCloserEdge && x.end3.lead >= 6),
   ];
+  // Separate signal: the pregame favorite leads by 10+ at the end of the 3rd
+  const favOf = id => { const x = res.find(r => r.game_id === id); return x ? x.favorite : null; };
+  const f10 = e3.filter(x => favOf(x.id) && x.end3.leader === favOf(x.id) && x.end3.lead >= 10);
+  out.fav10 = { n: f10.length, won: f10.filter(x => x.winner === x.end3.leader).length,
+                from: (f10.map(x => x.date).sort()[0]) || null, to: (f10.map(x => x.date).sort().pop()) || null,
+                note: 'Pregame favorite leading by 10+ at the end of the 3rd (games on graded boards)' };
+  console.log(`  E3 favorite up 10+                    ${pct(out.fav10.won, out.fav10.n)}`);
   fs.writeFileSync(path.join(ROOT, 'data', 'live', 'backtest.json'), JSON.stringify(out, null, 1));
   const leads = signals.filter(x => x.bet).map(x => x.bet.lead).sort((a, b) => a - b);
   if (leads.length) console.log(`Lead when the BET alert fired: median ${leads[Math.floor(leads.length / 2)]}, range ${leads[0]}-${leads[leads.length - 1]}`);

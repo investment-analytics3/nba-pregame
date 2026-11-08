@@ -187,3 +187,24 @@ test('substitutions move players on and off the floor', () => {
   assert.strictEqual(byName.a1, false);
   assert.strictEqual(byName.a6, true);
 });
+
+// ---- the favorite: end-of-3rd lead and defense ---------------------------------
+test('favorite up 10+ at the end of the 3rd, with tonight\'s defense ranked', () => {
+  const plays = [];
+  for (let i = 0; i < 6; i++) plays.push([3, `${10 - i}:00`, 'A', 2]);           // AAA (fav) 12-0
+  plays.push([3, '2:00', 'H', 2]);                                                // HHH 2
+  const s = game(plays, at(3, '0.0'));
+  const r = E.analyze(s, { fav: 'AAA', league: { opp_efg: [45, 50, 55], def: [100, 110, 120] },
+                           favDefense: { last3: { opp_efg: { v: 49, r: 5 }, def: { v: 103, r: 6 } } } });
+  assert.strictEqual(r.favorite.abbr, 'AAA');
+  assert.strictEqual(r.favorite.lead, 10);
+  assert.strictEqual(r.favorite.up10, true);
+  assert.strictEqual(r.favorite.last3.def.r, 6);
+  assert.ok(r.favorite.tonight.opp_efg != null);
+});
+
+test('no favorite signal when the underdog leads', () => {
+  const s = game([[3, '5:00', 'H', 3], [3, '4:00', 'H', 3], [3, '3:00', 'H', 3], [3, '2:00', 'H', 3]], at(3, '0.0'));
+  const r = E.analyze(s, { fav: 'AAA' });
+  assert.strictEqual(r.favorite.up10, false);
+});

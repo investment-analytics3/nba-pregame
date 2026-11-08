@@ -91,6 +91,36 @@ async function alert(title, message, click, priority) {
   } catch (e) { log('alert failed:', e.message); return false; }
 }
 
+// ------------------------------------------------------ end-of-3rd message --
+// Favorite up 10+ -> its own signal with the season record, the favorite's defense
+// (last 3 ranks + tonight) and the Kalshi price. Otherwise: wait for the BET signal,
+// or likely no bet.
+function end3Message(g, r, scoreTxt) {
+  const f = r.favorite, d = r.decision;
+  const pctK = r.price || null;
+  const kal = (abbr) => (r._kalshi && r._kalshi[abbr] != null) ? ` · Kalshi ${Math.round(r._kalshi[abbr] * 100)}%` : '';
+  const defTxt = f ? defenseText(f) : '';
+  const when = r.period === 3 ? 'End of 3rd' : r.clockLabel;
+  if (f && f.up10) {
+    const rec = f.record && f.record.n ? ` · favorites up 10+ won ${f.record.won}-${f.record.n - f.record.won} this season` : '';
+    return { title: `${when}: ${f.abbr} (fav) up ${f.leadEnd3 != null ? f.leadEnd3 : f.lead}`, priority: 'high', fav10: true,
+             body: `${scoreTxt}${rec}${defTxt ? ' · ' + defTxt : ''}${kal(f.abbr)} · grade ${d.grade}` };
+  }
+  const leadSide = r.teams.away.score === r.teams.home.score ? null : (r.teams.away.score > r.teams.home.score ? 'away' : 'home');
+  const lg = leadSide ? r.sides[leadSide] : null;
+  const wait = lg && ['A+', 'A', 'B'].includes(lg.grade);
+  const lead = leadSide ? `${r.teams[leadSide].abbr} by ${Math.abs(r.teams.away.score - r.teams.home.score)}` : 'tied';
+  return { title: `${when}: ${wait ? 'wait for BET signal' : 'likely no bet'}`, priority: 'default', fav10: false,
+           body: `${scoreTxt} · ${lead}, grade ${lg ? lg.grade : d.grade}${defTxt ? ' · ' + defTxt : ''}${f ? kal(f.abbr) : ''}` };
+}
+function defenseText(f) {
+  const l3 = f.last3 || {}, t = f.tonight || {};
+  const r1 = x => (x && x.r != null ? `#${x.r}` : '–');
+  let s = `${f.abbr} D last 3: opp eFG ${r1(l3.opp_efg)}, Def ${r1(l3.def)}`;
+  if (t.opp_efg != null) s += ` · tonight opp eFG ${t.opp_efg}%${t.opp_efg_rank ? ` (#${t.opp_efg_rank})` : ''}, Def ${t.def}${t.def_rank ? ` (#${t.def_rank})` : ''}`;
+  return s;
+}
+
 // ------------------------------------------------------- live-data branch --
 function git(argsList, cwd) {
   return execFileSync('git', argsList, { cwd, stdio: ['ignore', 'pipe', 'pipe'] }).toString();
@@ -162,7 +192,9 @@ async function main() {
         if (!prev || prev[1] !== row[1] || prev[2] !== row[2]) st.kalshi.push(row);
         st.kalshiEvent = k.event;
       }
-      const r = E.analyze(summary, { date: ctx.date, fav: g.fav, closers: ctx.closers, kalshi: k });
+      const r = E.analyze(summary, { date: ctx.date, fav: g.fav, closers: ctx.closers, kalshi: k,
+                                     favDefense: g.fav_defense, league: ctx.league, fav10: ctx.fav10 });
+      r._kalshi = k;
       const cp = { at: new Date().toISOString(), clock: r.clockLabel, score: `${r.teams.away.score}-${r.teams.home.score}`,
                    phase: r.phase.key, grade: r.decision.grade, action: r.decision.action, pick: r.decision.pick,
                    focus: r.decision.focus, kalshi: r.price ? r.price.prob : null, note: r.answerNote, log: r.logLine };
@@ -179,11 +211,12 @@ async function main() {
       // Alert 1: end of the 3rd (once)
       const past3 = r.state === 'in' && (r.period > 3 || (r.period === 3 && r.remain === 0));
       if (past3 && !st.alerts.end3) {
-        const call = r.decision.action === 'LEAN' || r.decision.action === 'BET' ? `${r.decision.headline} (${r.decision.grade})`
-          : `NO BET yet (${r.decision.grade}${r.decision.focus ? ' ' + r.decision.focus : ''})`;
-        const when = r.period === 3 ? 'End of 3rd' : r.clockLabel;
-        if (await alert(`${title} - Live read ready`, `${when} · ${scoreTxt} · ${call} · Tap to open`, url, 'default')) {
-          st.alerts.end3 = { at: cp.at, clock: r.clockLabel, grade: r.decision.grade, action: r.decision.action };
+        const msg = end3Message(g, r, scoreTxt);
+        if (await alert(`${title} - ${msg.title}`, `${msg.body} · Tap to open`, url, msg.priority)) {
+          st.alerts.end3 = { at: cp.at, clock: r.clockLabel, grade: r.decision.grade, action: r.decision.action,
+                             score: cp.score, fav10: msg.fav10, favLead: r.favorite ? r.favorite.lead : null,
+                             kalshiFav: r.favorite && k ? (k[r.favorite.abbr] ?? null) : null,
+                             defense: r.favorite ? r.favorite.tonight : null };
         }
       }
       // Alert 2: first BET signal (once)
