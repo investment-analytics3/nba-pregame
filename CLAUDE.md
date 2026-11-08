@@ -55,6 +55,8 @@ often: always `git pull --rebase origin main` before pushing.
 
 - Start a run: `gh api -X POST repos/investment-analytics3/nba-pregame/actions/workflows/<file>.yml/dispatches -f ref=main [-f "inputs[kind]=preview" -F "inputs[send]=false"]`
 - Latest run of a workflow: `gh api "repos/investment-analytics3/nba-pregame/actions/workflows/<file>.yml/runs?per_page=1" --jq '.workflow_runs[0] | "\(.id) \(.status) \(.conclusion)"'`
+- Scheduled runs: `gh api "repos/investment-analytics3/nba-pregame/actions/runs?event=schedule&per_page=5"`. If none appear,
+  push an edit to the workflow files; that re-registers the crons (needed after the account rename + history rewrite).
 - Logs: `gh run view <id> -R investment-analytics3/nba-pregame --log`
 - Artifact downloads are blocked from Claude's workspace; use the `dev-samples` branch pattern instead.
 - ESPN, NBA.com and ntfy.sh are NOT reachable from Claude's workspace; test network code by running a workflow.

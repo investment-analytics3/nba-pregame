@@ -3,6 +3,8 @@ name: Overnight data update
 # 3:00 AM Pacific every day. GitHub schedules in UTC, so two times are listed
 # (one for standard time, one for daylight time); the script only acts when it
 # is the 3 AM hour in Pacific time. Can also be run by hand from the Actions tab.
+# If scheduled runs ever stop appearing (seen after an account rename and a
+# history rewrite), pushing any edit to this file re-registers the schedule.
 on:
   schedule:
     - cron: "7 10 * * *"   # 3:07 AM PDT

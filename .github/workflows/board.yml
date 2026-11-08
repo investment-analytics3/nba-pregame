@@ -8,8 +8,8 @@ name: Pregame board
 # Run by hand from the Actions tab to send a preview or force a board/final.
 on:
   schedule:
-    - cron: "4,19,34,49 14-23 * * *"
-    - cron: "4,19,34,49 0-2 * * *"
+    - cron: "4,19,34,49 14-23 * * *"   # UTC: 6 AM-3 PM PST / 7 AM-4 PM PDT
+    - cron: "4,19,34,49 0-2 * * *"     # UTC: 4-6 PM PST / 5-7 PM PDT
   workflow_dispatch:
     inputs:
       kind:
