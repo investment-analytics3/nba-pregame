@@ -91,37 +91,67 @@ def check_espn_teams():
     record("ESPN teams list", True, len(teams) == 30, f"{len(teams)} teams returned (need 30)", url)
 
 
+def _spread_from_odds(odds_list) -> str | None:
+    for o in odds_list or []:
+        if o.get("details") or o.get("spread") is not None:
+            prov = (o.get("provider") or {}).get("name")
+            return f'"{o.get("details")}" spread={o.get("spread")} provider={prov}'
+    return None
+
+
 def check_espn_scoreboard_and_odds(today: datetime):
-    """Today's slate with spreads. If no games today, look ahead up to 3 days."""
+    """Schedule today, then spreads on the next slate that hasn't tipped off yet.
+    ESPN drops odds from finished games, so only not-started games are checked."""
+    schedule_done = False
     for add in range(4):
         d = today + timedelta(days=add)
         url = f"{ESPN_SITE}/scoreboard?dates={ymd(d)}"
         st, body, _ = fetch(url)
         if st != 200 or not isinstance(body, dict):
-            record("ESPN scoreboard (schedule)", True, False, f"status {st} {body if st is None else ''}", url)
-            record("ESPN spreads (odds in scoreboard)", True, False, "not tested: scoreboard failed", url)
+            if not schedule_done:
+                record("ESPN scoreboard (schedule)", True, False, f"status {st} {body if st is None else ''}", url)
+            record("ESPN spreads", True, False, "not tested: scoreboard failed", url)
             return
         events = body.get("events", [])
-        if not events:
+        if events and not schedule_done:
+            record("ESPN scoreboard (schedule)", True, True, f"{len(events)} games on {d:%a %b %d}", url)
+            schedule_done = True
+        upcoming = [e for e in events
+                    if (e.get("status", {}).get("type", {}).get("state")) == "pre"]
+        if not upcoming:
             continue
-        record("ESPN scoreboard (schedule)", True, True,
-               f"{len(events)} games on {d:%a %b %d}", url)
-        with_spread, sample = 0, ""
-        for ev in events:
-            comp = (ev.get("competitions") or [{}])[0]
-            odds = comp.get("odds") or []
-            if odds:
-                o = odds[0]
-                if o.get("details") or o.get("spread") is not None:
-                    with_spread += 1
-                    if not sample:
-                        sample = (f'e.g. "{o.get("details")}" spread={o.get("spread")} '
-                                  f'provider={((o.get("provider") or {}).get("name"))}')
-        ok = with_spread > 0
-        record("ESPN spreads (odds in scoreboard)", True, ok,
-               f"{with_spread}/{len(events)} games have a spread. {sample}".strip(), url)
-        return
-    record("ESPN scoreboard (schedule)", True, False, "no games found in the next 4 days", "")
+        # 1) odds on the scoreboard itself
+        with_spread, sample = 0, None
+        for ev in upcoming:
+            s = _spread_from_odds(((ev.get("competitions") or [{}])[0]).get("odds"))
+            if s:
+                with_spread += 1
+                sample = sample or s
+        if with_spread:
+            return record("ESPN spreads", True, True,
+                          f"scoreboard: {with_spread}/{len(upcoming)} upcoming games on {d:%a %b %d} "
+                          f"have a spread, e.g. {sample}", url)
+        # 2) fallback: the game-detail page ("pickcenter")
+        found = 0
+        for ev in upcoming[:3]:
+            surl = f"{ESPN_SITE}/summary?event={ev['id']}"
+            st2, summ, _ = fetch(surl, retries=1)
+            if st2 == 200 and isinstance(summ, dict):
+                s = _spread_from_odds(summ.get("pickcenter")) or _spread_from_odds(summ.get("odds"))
+                if s:
+                    found += 1
+                    sample = sample or s
+        if found:
+            return record("ESPN spreads", True, True,
+                          f"game-detail page: {found}/{min(3, len(upcoming))} upcoming games on "
+                          f"{d:%a %b %d} have a spread, e.g. {sample}", url)
+        return record("ESPN spreads", True, False,
+                      f"0/{len(upcoming)} upcoming games on {d:%a %b %d} have a spread "
+                      "(scoreboard and game-detail page). Lines may not be posted yet; "
+                      "rerun the morning of a game day.", url)
+    if not schedule_done:
+        record("ESPN scoreboard (schedule)", True, False, "no games found in the next 4 days", "")
+    record("ESPN spreads", True, False, "no upcoming games found in the next 4 days", "")
 
 
 def check_espn_boxscore(today: datetime):
