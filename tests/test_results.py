@@ -57,5 +57,22 @@ class Grading(unittest.TestCase):
         self.assertEqual(s["below"]["push"], 1)
 
 
+
+class Export(unittest.TestCase):
+    def test_two_rows_per_game_with_colors(self):
+        import csv, tempfile
+        s = snap("BOS", "MIL", 10.0)
+        s["fav_metrics"] = {"season": {"efg": {"v": 56.1, "r": 3}}, "last3": {}}
+        s["dog_metrics"] = {"season": {"efg": {"v": 55.0, "r": 4}}, "last3": {}}
+        games, _ = results.grade({"2026-11-09": {"final": {"page": "p.html", "snapshot": {"1": s}}}}, GAMES, [])
+        path = os.path.join(tempfile.mkdtemp(), "r.csv")
+        results.export_csv(games, path, "https://x/")
+        rows = list(csv.DictReader(open(path)))
+        self.assertEqual([r["role"] for r in rows], ["Favorite", "Opponent"])
+        self.assertEqual((rows[0]["season_efg_color"], rows[1]["season_efg_color"]), ("green", "deep-red"))
+        self.assertEqual(rows[0]["analysis_score"], "25")
+        self.assertEqual(rows[0]["board_link"], "https://x/p.html#g-1")
+
+
 if __name__ == "__main__":
     unittest.main()

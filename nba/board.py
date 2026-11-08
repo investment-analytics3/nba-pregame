@@ -106,6 +106,15 @@ def summary_text(game: dict) -> tuple[str, str]:
 # --------------------------------------------------------------------------- #
 # Snapshots and changes (for the "Final" email)
 # --------------------------------------------------------------------------- #
+def team_metrics(t: dict | None) -> dict:
+    """Value and rank of the four metrics, season and last 3, as shown on the board."""
+    out = {}
+    for w in ("season", "last3"):
+        blk = (t or {}).get(w) or {}
+        out[w] = {m: {"v": blk.get(m), "r": (blk.get("ranks") or {}).get(m)} for m in scoring.METRICS}
+    return out
+
+
 def snapshot(slate: dict) -> dict:
     snap = {}
     for g in slate["games"]:
@@ -118,6 +127,7 @@ def snapshot(slate: dict) -> dict:
             "neutral": g.get("neutral", False),
             "qualified": sc.get("qualified"), "score": sc.get("score"), "band": sc.get("band"),
             "qualifiers": sc.get("qualifiers", []), "fails": sc.get("fails", []),
+            "fav_metrics": team_metrics(fav), "dog_metrics": team_metrics(dog),
             "spread": (g.get("spread") or {}).get("details"),
             "key_out": sorted((fav or {}).get("key_out", []) + (dog or {}).get("key_out", [])),
             "key_q": sorted((fav or {}).get("key_questionable", []) + (dog or {}).get("key_questionable", [])),
