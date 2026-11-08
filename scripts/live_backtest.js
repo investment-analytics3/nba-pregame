@@ -117,7 +117,7 @@ async function main() {
   const res = await fs.promises.readFile(path.join(ROOT, 'data', 'results.json'), 'utf8').then(JSON.parse).catch(() => []);
   const above = new Set(res.filter(r => r.above_line === 'Yes').map(r => r.game_id));
   const signals = [], byCheck = {};
-  CHECKS.forEach(([c]) => { byCheck[c] = { BET: [0, 0], LEAN: [0, 0], grades: {} }; });
+  CHECKS.forEach(([c]) => { byCheck[c] = { BET: [0, 0], LEAN: [0, 0], leader: [0, 0], grades: {} }; });
   for (const [id, s] of Object.entries(summaries)) {
     const fin = E.analyze(s, {});
     if (fin.state !== 'post') continue;
@@ -127,11 +127,14 @@ async function main() {
       const r = E.analyze(s, { closers: ctxClosers, date: games[id].date }, { uptoT: t });
       const d = r.decision, b = byCheck[label];
       b.grades[d.grade] = (b.grades[d.grade] || 0) + 1;
+      // baseline: just back whoever leads at this checkpoint
+      const m = r.teams.away.score - r.teams.home.score;
+      if (m !== 0) { b.leader[0]++; if ((m > 0 ? r.teams.away.abbr : r.teams.home.abbr) === winner) b.leader[1]++; }
       if (d.action === 'BET' || d.action === 'LEAN') {
         b[d.action][0]++; if (d.pick === winner) b[d.action][1]++;
       }
       if (label === 'End 3rd') end3 = { grade: d.grade, action: d.action, pick: d.pick };
-      if (d.action === 'BET' && !firstBet) firstBet = { at: label, grade: d.grade, pick: d.pick, score: `${r.teams.away.score}-${r.teams.home.score}` };
+      if (d.action === 'BET' && !firstBet) firstBet = { at: label, grade: d.grade, pick: d.pick, score: `${r.teams.away.score}-${r.teams.home.score}`, lead: Math.abs(m) };
     }
     signals.push({ id, date: games[id].date, game: `${fin.teams.away.abbr}@${fin.teams.home.abbr}`, final: `${fin.teams.away.score}-${fin.teams.home.score}`,
       winner, above_line: above.has(id), end3, bet: firstBet, bet_won: firstBet ? firstBet.pick === winner : null });
@@ -146,7 +149,11 @@ async function main() {
   console.log(`\nBET alerts, all games: ${pct(out.all.bet_won, out.all.bet_signals)} of ${out.all.games} games`);
   out.all.by_grade.forEach(g => console.log(`   ${g.grade}: ${pct(g.won, g.n)}`));
   console.log(`BET alerts, above the line: ${pct(out.above_line.bet_won, out.above_line.bet_signals)} of ${out.above_line.games} games`);
-  CHECKS.forEach(([c]) => { const b = byCheck[c]; console.log(`  ${c.padEnd(9)} BET ${pct(b.BET[1], b.BET[0])}  LEAN ${pct(b.LEAN[1], b.LEAN[0])}  grades ${JSON.stringify(b.grades)}`); });
+  CHECKS.forEach(([c]) => { const b = byCheck[c]; console.log(`  ${c.padEnd(9)} BET ${pct(b.BET[1], b.BET[0])}  LEAN ${pct(b.LEAN[1], b.LEAN[0])}  leader baseline ${pct(b.leader[1], b.leader[0])}  grades ${JSON.stringify(b.grades)}`); });
+  const leads = signals.filter(x => x.bet).map(x => x.bet.lead).sort((a, b) => a - b);
+  if (leads.length) console.log(`Lead when the BET alert fired: median ${leads[Math.floor(leads.length / 2)]}, range ${leads[0]}-${leads[leads.length - 1]}`);
+  const lost = signals.filter(x => x.bet && !x.bet_won).map(x => `${x.date} ${x.game} ${x.bet.at} ${x.bet.grade} ${x.bet.pick} (${x.bet.score}), final ${x.final}`);
+  if (lost.length) console.log('BET alerts that lost:\n  ' + lost.join('\n  '));
   return 0;
 }
 main().then(c => process.exit(c)).catch(e => { console.error(e); process.exit(1); });
