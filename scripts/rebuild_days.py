@@ -28,7 +28,11 @@ DOCS = os.path.join(board.ROOT, "docs")
 
 
 def main() -> int:
-    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    argv = sys.argv[1:]
+    if "--days" in argv:
+        i = argv.index("--days")
+        argv = argv[:i] + argv[i + 2:]
+    args = [a for a in argv if not a.startswith("--")]
     if args:
         days = [date.fromisoformat(a) for a in args]
     else:
