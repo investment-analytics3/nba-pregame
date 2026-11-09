@@ -228,11 +228,21 @@ def write(board: dict) -> dict:
         {"id": g["id"], "nflverse_id": g["nflverse_id"], "kick_utc": g["kick_utc"], "day_et": g["day_et"],
          "home": g["home_code"], "away": g["away_code"], "fav": g.get("fav"), "dog": g.get("dog"), "spread": g.get("spread"),
          "fav_defense_top10": g.get("fav_defense_top10"), "tracked": bool(g["scoring"].get("qualified")),
-         "kalshi_away": sources.kalshi_code(g["away_code"]), "kalshi_home": sources.kalshi_code(g["home_code"])}
+         "kalshi_away": sources.kalshi_code(g["away_code"]), "kalshi_home": sources.kalshi_code(g["home_code"]),
+         # for the live engine (ESPN abbreviations) and the Live page
+         "away_abbr": g["away"]["abbr"], "home_abbr": g["home"]["abbr"],
+         "fav_abbr": sources.espn_code(g["fav"]) if g.get("fav") else None,
+         "dog_abbr": sources.espn_code(g["dog"]) if g.get("dog") else None,
+         "qbs": {t["abbr"]: {"regular": (t.get("qb") or {}).get("regular"), "rank": (t.get("qb") or {}).get("rank")}
+                 for t in (g["away"], g["home"])},
+         "hero": (g["scoring"].get("hero") or {}).get("score"), "band": (g["scoring"].get("hero") or {}).get("band"),
+         "call": g["scoring"].get("call"), "kick_pt": g.get("kick_pt")}
         for g in board["games"]]}
     os.makedirs(DATA, exist_ok=True)
     with open(os.path.join(DATA, "context.json"), "w") as f:
         json.dump(ctx, f, indent=1)
+    with open(os.path.join(DOCS, "context.json"), "w") as f:      # the Live page reads this one
+        json.dump(_clean(ctx), f, indent=1)
     os.makedirs(os.path.join(DATA, "boards"), exist_ok=True)
     with open(os.path.join(DATA, "boards", f"{board['season']}-w{board['week']:02d}.json" if board["week"] else "none.json"), "w") as f:
         json.dump(board, f, indent=1)

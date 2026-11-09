@@ -12,7 +12,7 @@
 <body>
 <!-- Shadow log for the NFL early path: halftime and end-of-3rd checkpoints with the real
      Kalshi price, graded the next day from nflverse. Nothing here is a bet signal. -->
-<div class="wrap" style="padding-bottom:0"><nav class="nav"><a href="../">Home</a><a href="./">NFL board</a><a class="on" href="live.html">Checkpoint log</a><a href="../nba/">NBA</a></nav></div>
+<div class="wrap" style="padding-bottom:0"><nav class="nav"><a href="../">Home</a><a href="./">NFL board</a><a href="game.html">Live</a><a class="on" href="live.html">Checkpoint log</a><a href="../nba/">NBA</a></nav></div>
 <div class="wrap" id="app" style="padding-top:18px"><div class="muted">Loading…</div></div>
 <script>
 (function(){
@@ -35,12 +35,15 @@ function row(id, e, kind){
   const res = e.result ? (e.result.fav_won ? `<span class="okc">${esc(e.fav)} won by ${e.result.fav_margin}</span>` : `<span class="noc">${esc(e.fav)} lost by ${-e.result.fav_margin}</span>`)
             : (e.final ? esc(e.final.score) : '<span class="muted">in progress</span>');
   const ctl = g ? `${g.control_wins.length}/5 · QB ${g.fav_qb_score}-${g.dog_qb_score}` : '<span class="muted">next day</span>';
+  const en = r.engine;
+  const eng = en ? `<b>${esc(en.grade)}</b> ${esc(en.action === 'BET' || en.action === 'LEAN' ? en.headline : en.action)}` : '–';
+  if (kind === 'q4_10' || kind === 'q4_6') verdict = '<span class="muted">–</span>';
   return `<tr><td>${esc(e.day_et)}</td><td><b>${esc(e.away)} @ ${esc(e.home)}</b><br><span class="muted">${esc(e.fav)} ${e.spread ?? ''}</span></td>
-    <td>${kind === 'half' ? 'Halftime' : 'End of 3rd'}${r.late ? ` <span class="muted">(late, ${esc(r.clock)})</span>` : ''}</td>
+    <td>${({half: 'Halftime', q3: 'End of 3rd', q4_10: '4th 10:00', q4_6: '4th 6:00'})[kind]}${r.late ? ` <span class="muted">(late, ${esc(r.clock)})</span>` : ''}</td>
     <td>${esc(r.score)}</td><td>${r.lead > 0 ? '+' : ''}${r.lead}</td><td>${r.fav_defense_top10 ? 'Top 10' : 'No'}</td>
     <td>${ctl}</td><td><b>${c(k.prob)}</b>${k.bid != null ? `<br><span class="muted">${c(k.bid)}/${c(k.ask)}</span>` : ''}</td>
     <td>${r.espn_wp != null ? Math.round(r.espn_wp * 100) + '%' : '–'}${g && g.model_wp != null ? `<br><span class="muted">model ${Math.round(g.model_wp * 100)}%</span>` : ''}</td>
-    <td>${verdict}</td><td>${res}</td></tr>`;
+    <td>${eng}</td><td>${verdict}</td><td>${res}</td></tr>`;
 }
 
 fetch('live.json?t=' + Date.now()).then(r => r.ok ? r.json() : {games: {}}).catch(() => ({games: {}})).then(book => {
@@ -53,16 +56,16 @@ fetch('live.json?t=' + Date.now()).then(r => r.ok ? r.json() : {games: {}}).catc
     if (g.up10) up++;
   }
   const avgK = kal.length ? Math.round(100 * kal.reduce((a, b) => a + b, 0) / kal.length) + '¢' : '–';
-  const rows = entries.map(([id, e]) => row(id, e, 'half') + row(id, e, 'q3')).join('');
+  const rows = entries.map(([id, e]) => ['half', 'q3', 'q4_10', 'q4_6'].map(k => row(id, e, k)).join('')).join('');
   app.innerHTML = `<div class="eyebrow">NFL · ${esc(book.season || '')} · shadow mode</div>
     <h1 class="title cond">Checkpoint Log</h1>
     <div class="muted" style="margin-top:6px">Halftime and end of 3rd for every game on the board. Updated ${esc(book.updated || 'not yet')}.</div>
     <div class="stat" style="margin:20px 0 22px"><div><b>${full ? fullW + '-' + (full - fullW) : '–'}</b><span>full qualifier</span></div>
       <div><b>${avgK}</b><span>avg Kalshi at qualifier</span></div><div><b>${sh ? shW + '-' + (sh - shW) : '–'}</b><span>shadow (any D)</span></div><div><b>${up}</b><span>fav up 10+</span></div></div>
     ${BENCH}
-    ${rows ? `<div class="panel" style="padding:8px 12px"><div class="tw"><table><tr><th>Date</th><th>Game</th><th>Checkpoint</th><th>Score</th><th>Fav lead</th><th>Fav D</th><th>Control · QB</th><th>Kalshi fav</th><th>ESPN win %</th><th>Early path</th><th>Result</th></tr>${rows}</table></div></div>`
+    ${rows ? `<div class="panel" style="padding:8px 12px"><div class="tw"><table><tr><th>Date</th><th>Game</th><th>Checkpoint</th><th>Score</th><th>Fav lead</th><th>Fav D</th><th>Control · QB</th><th>Kalshi fav</th><th>ESPN win %</th><th>Live grade</th><th>Early path</th><th>Result</th></tr>${rows}</table></div></div>`
            : '<div class="panel final">No checkpoints logged yet. The first ones come from Thursday night\'s game.</div>'}
-    <div class="small muted foot">Kalshi = favorite's market price at the checkpoint (mid of bid/ask; bid/ask below). Control and QB are graded the next morning from nflverse play-by-play, with the same rules as the backtest. A checkpoint the logger reached late is marked with the game clock.</div>`;
+    <div class="small muted foot">Kalshi = favorite's market price at the checkpoint (mid of bid/ask; bid/ask below). "Live grade" is the live engine's read at that moment (logged, never alerted). The early path's control and QB are graded the next morning from nflverse play-by-play, with the same rules as the backtest. A checkpoint the logger reached late is marked with the game clock.</div>`;
 });
 })();
 </script>

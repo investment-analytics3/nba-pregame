@@ -2,9 +2,15 @@
 """NFL checkpoint logger (shadow mode: logs, never alerts, never bets).
 
 While NFL games are on, every ~60 s it reads ESPN's scoreboard and, for each game in
-this week's board (data/nfl/context.json), records two checkpoints once each:
-    half  at halftime
-    q3    at the end of the 3rd quarter
+this week's board (data/nfl/context.json), records four checkpoints once each:
+    half   at halftime
+    q3     at the end of the 3rd quarter
+    q4_10  4th quarter 10:00 (end of the primary window)
+    q4_6   4th quarter 6:00 (end of the confirm window)
+Each record also carries the live engine's grade (docs/nfl/engine.js, run with Node) so the
+4th-quarter grading can be reviewed against results before it is ever used for a bet.
+Every poll it also publishes the live Kalshi prices to the "nfl-live-data" branch
+(prices.json) for the Live page, which can't call Kalshi from a browser.
 Each record holds the score, the spread favorite's lead, the favorite's real Kalshi
 price at that moment, ESPN's win probability, and a preliminary early-path read
 (lead 10+ and both defensive metrics top 10). Control and the QB edge are graded the
@@ -21,6 +27,7 @@ from __future__ import annotations
 import json
 import os
 import subprocess
+import tempfile
 import sys
 import time
 from datetime import date, datetime, timedelta, timezone
@@ -83,15 +90,25 @@ def push(msg: str):
         print(f"! git: {e.stderr.decode()[:200]}")
 
 
-def win_prob(event_id: str, fav_home: bool):
+def engine_grade(summ: dict, g: dict) -> dict | None:
+    """The live engine's grade for this moment (Node); None if Node or the engine fails."""
+    if not summ:
+        return None
+    ctx = {"fav": g.get("fav_abbr"), "dog": g.get("dog_abbr"), "fav_defense_top10": g.get("fav_defense_top10"),
+           "qbs": g.get("qbs") or {}, "date": g.get("day_et")}
     try:
-        wp = (espn.summary(event_id).get("winprobability") or [])
-        if wp:
-            h = float(wp[-1]["homeWinPercentage"])
-            return round(h if fav_home else 1 - h, 3)
-    except (FetchError, KeyError, TypeError, ValueError):
-        pass
-    return None
+        with tempfile.TemporaryDirectory() as d:
+            sp, cp = os.path.join(d, "s.json"), os.path.join(d, "c.json")
+            with open(sp, "w") as f:
+                json.dump(summ, f)
+            with open(cp, "w") as f:
+                json.dump(ctx, f)
+            out = subprocess.run(["node", os.path.join(ROOT, "scripts", "nfl_engine_cli.js"), sp, cp],
+                                 capture_output=True, timeout=60, check=True)
+            return json.loads(out.stdout)
+    except Exception as e:      # the checkpoint is still logged without a grade
+        print(f"! engine: {type(e).__name__}: {str(e)[:120]}")
+        return None
 
 
 def snapshot(g: dict, ev: dict, kind: str, late: bool) -> dict:
@@ -104,7 +121,19 @@ def snapshot(g: dict, ev: dict, kind: str, late: bool) -> dict:
            "fav_defense_top10": bool(g.get("fav_defense_top10")),
            "prelim": "lead 10+ and top-10 defense" if (lead >= 10 and g.get("fav_defense_top10")) else
                      ("lead 10+, defense not top 10" if lead >= 10 else "lead under 10"),
-           "espn_wp": win_prob(ev["id"], fav_home)}
+           "espn_wp": None}
+    try:
+        summ = espn.summary(ev["id"])
+    except FetchError:
+        summ = None
+    wp = (summ or {}).get("winprobability") or []
+    if wp:
+        try:
+            h = float(wp[-1]["homeWinPercentage"])
+            rec["espn_wp"] = round(h if fav_home else 1 - h, 3)
+        except (KeyError, TypeError, ValueError):
+            pass
+    rec["engine"] = engine_grade(summ, g)
     day = datetime.fromisoformat(g["kick_utc"]).astimezone(ET).date()
     k = kalshi.game_prices(day, g["kalshi_away"], g["kalshi_home"])
     fk = g["kalshi_home"] if fav_home else g["kalshi_away"]
@@ -129,7 +158,61 @@ def due_checkpoints(ev: dict, entry: dict) -> list[tuple[str, bool]]:
             out.append(("q3", False))
         elif per == 4:
             out.append(("q3", True))
+    clock = _secs(ev.get("clock"))
+    if per == 4 and clock is not None:
+        if "q4_10" not in entry and clock <= 600:
+            out.append(("q4_10", clock < 540))
+        if "q4_6" not in entry and clock <= 360:
+            out.append(("q4_6", clock < 300))
     return out
+
+
+def _secs(c):
+    try:
+        m, s = str(c).split(":")
+        return int(m) * 60 + int(float(s))
+    except (TypeError, ValueError):
+        return None
+
+
+_published = None
+
+
+def publish_prices(season: int, games: dict, events: list):
+    """Force-push live Kalshi prices to the nfl-live-data branch (one file, one commit)."""
+    global _published
+    token = os.environ.get("GH_TOKEN")
+    out = {"updated": datetime.now(PT).isoformat(timespec="seconds"), "games": {}}
+    for ev in events:
+        g = games.get(ev["id"])
+        if not g or ev["state"] != "in":
+            continue
+        day = datetime.fromisoformat(g["kick_utc"]).astimezone(ET).date()
+        k = kalshi.game_prices(day, g["kalshi_away"], g["kalshi_home"])
+        if not k:
+            continue
+        pr = {}
+        for code, abbr in ((g["kalshi_away"], g.get("away_abbr")), (g["kalshi_home"], g.get("home_abbr"))):
+            if abbr and (k.get(code) or {}).get("prob") is not None:
+                pr[abbr] = k[code]["prob"]
+        out["games"][ev["id"]] = {"event": k["event"], "prices": pr}
+    body = json.dumps(out["games"], sort_keys=True)
+    if not token or body == _published or "--no-push" in sys.argv:
+        return
+    with tempfile.TemporaryDirectory() as d:
+        with open(os.path.join(d, "prices.json"), "w") as f:
+            json.dump(out, f, indent=1)
+        try:
+            g = lambda *a: subprocess.run(["git", *a], cwd=d, check=True, capture_output=True)  # noqa: E731
+            g("init", "-q", "-b", "nfl-live-data")
+            g("add", "prices.json")
+            g("-c", "user.name=github-actions[bot]", "-c", "user.email=41898282+github-actions[bot]@users.noreply.github.com",
+              "commit", "-q", "-m", f"prices {out['updated']}")
+            repo = os.environ.get("GITHUB_REPOSITORY", "investment-analytics3/nba-pregame")
+            g("push", "-q", "-f", f"https://x-access-token:{token}@github.com/{repo}.git", "HEAD:nfl-live-data")
+            _published = body
+        except subprocess.CalledProcessError as e:
+            print(f"! price publish failed: {e.stderr.decode()[:150]}")
 
 
 def main() -> int:
@@ -170,6 +253,7 @@ def main() -> int:
                 margin = (hs - as_) if g["fav"] == g["home"] else (as_ - hs)
                 entry["final"] = {"score": f"{g['away']} {as_} - {g['home']} {hs}", "fav_margin": margin, "fav_won": margin > 0}
                 changed.append(f"{g['away']}@{g['home']} final")
+        publish_prices(season, games, events)
         if changed:
             book["updated"] = datetime.now(PT).isoformat(timespec="seconds")
             save(season, book)

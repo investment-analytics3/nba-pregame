@@ -58,7 +58,10 @@ a phone alert. No AI runs in the daily pipeline; Claude is only used to change c
 | `nfl/early_path.py` | Early blowout path grading (halftime, end of 3rd) — same rules as the 2024-25 backtest |
 | `scripts/nfl_scheduler.py` | What's due each tick: build (hourly on game days, daily otherwise), alert (first game-day build), grade (daily), live |
 | `scripts/nfl_build.py` | Build + publish; `--alert` sends one ntfy push (game days only) |
-| `scripts/nfl_live.py` | Checkpoint logger (shadow): halftime + end of 3rd score, lead, real Kalshi price, ESPN win %; never alerts |
+| `scripts/nfl_live.py` | Checkpoint logger (shadow): halftime, end of 3rd, 4th 10:00, 4th 6:00 — score, lead, real Kalshi price, ESPN win %, live engine grade; publishes live Kalshi prices to the `nfl-live-data` branch (`prices.json`) for the Live page; never alerts |
+| `docs/nfl/engine.js` | NFL live engine (runs/answers, control 3 of 5, momentum + fake comeback, QB closer, windows, A+/A/B/C + gates, early-path read). ONE file for the Live page (browser) and the logger (`scripts/nfl_engine_cli.js`, Node). Tests: `node --test tests/nfl_engine.test.js` (fixture: CIN@ATL 2026 W9) |
+| `docs/nfl/ep.json`, `scripts/nfl_ep_table.py` | Expected points by down × distance × field position (nflverse 2024-25). ESPN has no EPA: the engine estimates EPA = EP after − EP before (TD 7, opp TD −7, safety −2); success = EPA > 0. Matches nflverse within ~0.05 EPA/play per team-half |
+| `docs/nfl/game.html` | NFL Live page (`nfl/game.html?g=<espn id>`; list without `g`): grades in the browser from ESPN, refreshes every 30 s |
 | `scripts/nfl_grade.py` | Next day: grades logged checkpoints from nflverse (control 3 of 5, QB edge, defense) + results |
 | `scripts/nfl_backtest.py` | The Nov 8 2024-25 backtest (one-off; not scheduled) |
 | `templates/nfl_board.html.j2`, `docs/nfl/live.html`, `docs/site.css` | NFL pages + shared stylesheet (landing, NFL) |
@@ -78,7 +81,14 @@ NFL rules (spec "NFL Stat Edge v2", decisions Nov 8 2026):
 - Adjusted edge = SHADOW only (10-90% WP plays, opponent-adjusted, 0.6/0.4, recency 60/40 last 4); weights not approved.
 - Early path (shadow until the owner reviews real Kalshi prices): halftime through end of 3rd (end of Q1 dropped);
   fav up 10+, both defensive metrics top 10 season AND last 3, control 3 of 5, QB edge. Also log "control + QB, any defense".
-- Not built yet: the NFL 4th-quarter live grading (runs/answers, control, QB closer) — spec "Live grading" section.
+- Live grading (spec "Live grading", built Nov 8; SHADOW: shown on the Live page and logged, no alerts): run = two straight
+  scores for 10+ unanswered, or take the lead and score again; answer = any score after it; strong answer (TD or 10+) needed for A.
+  Control = 3 of 5 from the 3rd quarter on (est. EPA/play, success, 3rd-down rate, sacks, avg start field pos). QB +2 top-10
+  EPA/db playing well, +1 starter, 0 backup or 2+ turnovers; unclear (another passer 2+ of last 8 dropbacks) caps B in the window.
+  Windows: half scout, end of 3rd lean, 4th 15:00-10:00 primary, 10:00-6:00 confirm, 6:00-5:00 last, under 5:00 read only.
+  Gates: no answered run = B max; trailing A = no bet; one-score + no QB edge + trading runs = C; 2+ 4th-quarter turnovers = down one;
+  lock = answered + lead > 8 + control. Alerts for NFL live are NOT on (owner hasn't decided).
+- Not built: expert pick counts (CBS, Bleacher Report, Covers, SI, Yahoo) — no feed; see the decision in the spec.
 
 ## Workflows (Actions)
 

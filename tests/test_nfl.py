@@ -126,6 +126,13 @@ class Checkpoints(unittest.TestCase):
         self.assertEqual(due_checkpoints({"state": "in", "status": "STATUS_END_PERIOD", "period": 3}, {"half": 1}), [("q3", False)])
         self.assertEqual(due_checkpoints({"state": "in", "status": "STATUS_IN_PROGRESS", "period": 4}, {"half": 1}), [("q3", True)])
 
+    def test_fourth_quarter_windows(self):
+        ev = {"state": "in", "status": "STATUS_IN_PROGRESS", "period": 4, "clock": "9:42"}
+        self.assertEqual(due_checkpoints(ev, {"half": 1, "q3": 1}), [("q4_10", False)])
+        ev["clock"] = "4:10"
+        self.assertEqual(due_checkpoints(ev, {"half": 1, "q3": 1}), [("q4_10", True), ("q4_6", True)])
+        self.assertEqual(due_checkpoints(ev, {"half": 1, "q3": 1, "q4_10": 1, "q4_6": 1}), [])
+
     def test_never_backfilled_from_a_final(self):
         self.assertEqual(due_checkpoints({"state": "post", "status": "STATUS_FINAL", "period": 4}, {}), [])
 

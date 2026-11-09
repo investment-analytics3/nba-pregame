@@ -1,7 +1,8 @@
 name: NFL checkpoint logger
 
-# Shadow mode: records halftime and end-of-3rd checkpoints (score, favorite's lead,
-# real Kalshi price, ESPN win probability) for every game on this week's NFL board.
+# Shadow mode: records halftime, end-of-3rd, 4th 10:00 and 4th 6:00 checkpoints (score, lead,
+# real Kalshi price, ESPN win probability, live engine grade) for every game on this week's
+# NFL board, and publishes live Kalshi prices for the Live page (nfl-live-data branch).
 # No alerts, no bets. Started by the NFL tick while games are on; stops when no game
 # is on or about to start, and the next tick restarts it for later kickoffs.
 on:
@@ -29,4 +30,6 @@ jobs:
         with:
           python-version: "3.12"
       - name: Log checkpoints
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: python scripts/nfl_live.py --max-minutes 330 ${{ inputs.once == true && '--once' || '' }}

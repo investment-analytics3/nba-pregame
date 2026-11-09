@@ -13,7 +13,7 @@
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
 <radialGradient id="hub" cx="50%" cy="35%" r="70%"><stop offset="0" stop-color="#222C45"/><stop offset="1" stop-color="#0D1322"/></radialGradient>
 </defs></svg>
-<div class="wrap" style="padding-bottom:0"><nav class="nav"><a href="{{ pages_url }}">Home</a><a class="on" href="{{ pages_url }}nfl/">NFL board</a><a href="{{ pages_url }}nfl/live.html">Checkpoint log</a><a href="{{ pages_url }}nba/">NBA</a></nav></div>
+<div class="wrap" style="padding-bottom:0"><nav class="nav"><a href="{{ pages_url }}">Home</a><a class="on" href="{{ pages_url }}nfl/">NFL board</a><a href="{{ pages_url }}nfl/game.html">Live</a><a href="{{ pages_url }}nfl/live.html">Checkpoint log</a><a href="{{ pages_url }}nba/">NBA</a></nav></div>
 <div class="wrap" id="app" style="padding-top:18px"></div>
 <script>const DATA = {{ data_json|safe }};</script>
 <script>
@@ -73,7 +73,8 @@ function card(g){
     <div class="row" style="gap:14px;align-items:center">${donut(sc.hero)}<div style="display:flex;flex-direction:column;gap:8px;min-width:0">${side(away)}${side(home)}</div></div>
     <div class="sub">${[g.total!=null?'Total '+g.total+(g.total_move? ' ('+line(g.total_move)+')':''):'', g.movement? 'Line moved '+line(g.movement)+' toward fav':'', fpi, k].filter(Boolean).join(' · ')}</div>
     ${edgeBar(sc.edge)}${pills(g)}${flags}
-    <details><summary>Rules, score and details</summary>${detail(g)}</details></article>`;
+    <div class="row between"><details style="flex:1"><summary>Rules, score and details</summary>${detail(g)}</details></div>
+    ${g.state!=='pre'?`<a class="small" style="font-weight:600" href="game.html?g=${esc(g.id)}">${g.state==='in'?'Live read ›':'Game read ›'}</a>`:''}</article>`;
 }
 
 function detail(g){
