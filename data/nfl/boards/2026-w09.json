@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 9,
- "built_at": "2026-11-09T10:00:52-08:00",
- "built_label": "Mon Nov 9, 10:00 AM PT",
+ "built_at": "2026-11-09T11:00:42-08:00",
+ "built_label": "Mon Nov 9, 11:00 AM PT",
  "games": [
   {
    "id": "401873051",
@@ -24,7 +24,7 @@
    "open_spread": -3.0,
    "total": 45.5,
    "total_open": 48.5,
-   "fav_ml": -192.0,
+   "fav_ml": -198.0,
    "favorite": "away",
    "spread": -3.5,
    "movement": 0.5,
@@ -1098,14 +1098,18 @@
     "injuries_known": true,
     "key_out": [
      "Bobby Okereke",
-     "Jaelan Phillips",
-     "Will Lee"
+     "Jaelan Phillips"
     ],
     "key_questionable": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Jonathon Brooks",
+      "pos": "RB",
+      "status": "Injured Reserve"
+     },
      {
       "name": "AJ Dillon",
       "pos": "RB",
@@ -1124,11 +1128,6 @@
      {
       "name": "Jaelan Phillips",
       "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "name": "Will Lee III",
-      "pos": "CB",
       "status": "Out"
      }
     ]
@@ -1540,6 +1539,11 @@
       "status": "Questionable"
      },
      {
+      "name": "Tyler Goodson",
+      "pos": "RB",
+      "status": "Questionable"
+     },
+     {
       "name": "P.J. Locke",
       "pos": "S",
       "status": "Questionable"
@@ -1553,11 +1557,6 @@
       "name": "Donovan Ezeiruaku",
       "pos": "LB",
       "status": "Questionable"
-     },
-     {
-      "name": "Joey Porter Jr.",
-      "pos": "CB",
-      "status": "Out"
      }
     ]
    },
@@ -1760,13 +1759,13 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Patrick Mahomes",
-      "pos": "QB",
+      "name": "Xavier Worthy",
+      "pos": "WR",
       "status": "Questionable"
      },
      {
-      "name": "Xavier Worthy",
-      "pos": "WR",
+      "name": "Patrick Mahomes",
+      "pos": "QB",
       "status": "Questionable"
      },
      {
@@ -4357,17 +4356,26 @@
     "injuries_known": true,
     "key_out": [
      "Leonard Williams",
+     "Sam Darnold",
      "Uchenna Nwosu"
     ],
     "key_questionable": [],
     "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
+    "qb_out": [
+     "Sam Darnold"
+    ],
+    "qb_active": false,
+    "qb_reset": "Sam Darnold out",
     "injury_list": [
      {
       "name": "Drew Lock",
       "pos": "QB",
       "status": "Questionable"
+     },
+     {
+      "name": "Sam Darnold",
+      "pos": "QB",
+      "status": "Out"
      },
      {
       "name": "Leonard Williams",
@@ -4382,11 +4390,6 @@
      {
       "name": "Uchenna Nwosu",
       "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "name": "Brandon Pili",
-      "pos": "DT",
       "status": "Out"
      }
     ]
@@ -4527,7 +4530,7 @@
       "n": 5,
       "ok": false,
       "text": "Favorite has no key starter out",
-      "detail": "Leonard Williams, Uchenna Nwosu"
+      "detail": "Leonard Williams, Sam Darnold, Uchenna Nwosu"
      },
      {
       "n": 6,
@@ -4543,12 +4546,12 @@
      "Rule 5: Favorite has no key starter out"
     ],
     "hero": {
-     "score": 20,
+     "score": 18,
      "band": "yellow",
      "parts": {
       "fav_strength": 6,
       "dog_weakness": 9,
-      "health": 3,
+      "health": 1,
       "home": 1,
       "rest": 0,
       "form": 1
@@ -4564,6 +4567,10 @@
      "adjusted_recent_gap": 0.075
     },
     "flags": [
+     {
+      "level": "red",
+      "text": "Favorite QB change (Sam Darnold out): call capped at Lean"
+     },
      {
       "level": "yellow",
       "text": "Line crossed key number 10"
@@ -4942,6 +4949,6 @@
   "tracked": 0,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Mon Nov 9, 10:00 AM PT"
+  "built_label": "Mon Nov 9, 11:00 AM PT"
  }
 }
