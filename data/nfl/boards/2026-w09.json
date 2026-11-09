@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 9,
- "built_at": "2026-11-09T14:00:41-08:00",
- "built_label": "Mon Nov 9, 2:00 PM PT",
+ "built_at": "2026-11-09T15:00:42-08:00",
+ "built_label": "Mon Nov 9, 3:00 PM PT",
  "games": [
   {
    "id": "401873051",
@@ -24,7 +24,7 @@
    "open_spread": -3.0,
    "total": 45.5,
    "total_open": 48.5,
-   "fav_ml": -192.0,
+   "fav_ml": -198.0,
    "favorite": "away",
    "spread": -3.5,
    "movement": 0.5,
@@ -115,7 +115,7 @@
      {
       "name": "Demond Claiborne",
       "pos": "RB",
-      "status": "Out"
+      "status": "Injured Reserve"
      },
      {
       "name": "Jauan Jennings",
@@ -218,6 +218,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Joshua Palmer",
+      "pos": "WR",
+      "status": "Injured Reserve"
+     },
+     {
       "name": "Alec Anderson",
       "pos": "OT",
       "status": "Questionable"
@@ -229,11 +234,6 @@
      },
      {
       "name": "Tyrell Shavers",
-      "pos": "WR",
-      "status": "Out"
-     },
-     {
-      "name": "Joshua Palmer",
       "pos": "WR",
       "status": "Out"
      },
@@ -1537,13 +1537,28 @@
     },
     "injuries_known": true,
     "key_out": [
-     "George Pickens"
+     "Jake Ferguson"
     ],
     "key_questionable": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Tyler Goodson",
+      "pos": "RB",
+      "status": "Out"
+     },
+     {
+      "name": "P.J. Locke",
+      "pos": "S",
+      "status": "Out"
+     },
+     {
+      "name": "Jake Ferguson",
+      "pos": "TE",
+      "status": "Out"
+     },
      {
       "name": "KaVontae Turpin",
       "pos": "WR",
@@ -1552,21 +1567,6 @@
      {
       "name": "DeMarvion Overshown",
       "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "name": "George Pickens",
-      "pos": "WR",
-      "status": "Out"
-     },
-     {
-      "name": "Joey Porter Jr.",
-      "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "name": "Luke Schoonmaker",
-      "pos": "TE",
       "status": "Out"
      }
     ]
@@ -1604,7 +1604,7 @@
       "n": 5,
       "ok": false,
       "text": "Favorite has no key starter out",
-      "detail": "George Pickens"
+      "detail": "Jake Ferguson"
      },
      {
       "n": 6,
@@ -3063,10 +3063,10 @@
     },
     "injuries_known": true,
     "key_out": [
-     "Daron Payne",
      "Treylon Burks"
     ],
     "key_questionable": [
+     "Chig Okonkwo",
      "Lucas Patrick"
     ],
     "interior_ol_out": [],
@@ -3074,29 +3074,29 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Shy Tuttle",
+      "pos": "DT",
+      "status": "Questionable"
+     },
+     {
+      "name": "Colson Yankoff",
+      "pos": "TE",
+      "status": "Questionable"
+     },
+     {
       "name": "Treylon Burks",
       "pos": "WR",
       "status": "Out"
      },
      {
-      "name": "Lucas Patrick",
-      "pos": "G",
+      "name": "Chig Okonkwo",
+      "pos": "TE",
       "status": "Questionable"
      },
      {
-      "name": "Dyami Brown",
-      "pos": "WR",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Daron Payne",
-      "pos": "DT",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Jeremy McNichols",
-      "pos": "RB",
-      "status": "Injured Reserve"
+      "name": "Lucas Patrick",
+      "pos": "G",
+      "status": "Questionable"
      }
     ]
    },
@@ -3169,16 +3169,21 @@
     },
     "injuries_known": true,
     "key_out": [
+     "Puka Nacua",
      "Trent McDuffie"
     ],
     "key_questionable": [
-     "Puka Nacua",
      "Steve Avila"
     ],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Puka Nacua",
+      "pos": "WR",
+      "status": "Doubtful"
+     },
      {
       "name": "Trent McDuffie",
       "pos": "CB",
@@ -3188,11 +3193,6 @@
       "name": "Joe Cardona",
       "pos": "LS",
       "status": "Out"
-     },
-     {
-      "name": "Puka Nacua",
-      "pos": "WR",
-      "status": "Questionable"
      },
      {
       "name": "Terrance Ferguson",
@@ -3239,7 +3239,7 @@
       "n": 5,
       "ok": false,
       "text": "Favorite has no key starter out",
-      "detail": "Trent McDuffie"
+      "detail": "Puka Nacua, Trent McDuffie"
      },
      {
       "n": 6,
@@ -3280,11 +3280,11 @@
     "flags": [
      {
       "level": "yellow",
-      "text": "Favorite questionable: Puka Nacua, Steve Avila"
+      "text": "Favorite questionable: Steve Avila"
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Lucas Patrick"
+      "text": "Underdog questionable: Chig Okonkwo, Lucas Patrick"
      }
     ],
     "under": {
@@ -3717,7 +3717,6 @@
     },
     "injuries_known": true,
     "key_out": [
-     "Gracen Halton",
      "Mike Evans"
     ],
     "key_questionable": [
@@ -3728,6 +3727,11 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Brandon Aiyuk",
+      "pos": "WR",
+      "status": "Out"
+     },
      {
       "name": "Deebo Samuel Sr.",
       "pos": "WR",
@@ -3747,11 +3751,6 @@
       "name": "Renardo Green",
       "pos": "CB",
       "status": "Questionable"
-     },
-     {
-      "name": "Gracen Halton",
-      "pos": "DT",
-      "status": "Out"
      }
     ]
    },
@@ -3889,7 +3888,7 @@
       "n": 5,
       "ok": false,
       "text": "Favorite has no key starter out",
-      "detail": "Gracen Halton, Mike Evans"
+      "detail": "Mike Evans"
      },
      {
       "n": 6,
@@ -4483,25 +4482,29 @@
     "injuries_known": true,
     "key_out": [
      "Jayden Williams",
-     "Jon Gaines",
      "Michael Wilson"
     ],
-    "key_questionable": [],
-    "interior_ol_out": [
-     "Jon Gaines"
+    "key_questionable": [
+     "Hjalte Froholdt"
     ],
+    "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Gardner Minshew II",
+      "pos": "QB",
+      "status": "Doubtful"
+     },
+     {
+      "name": "Hjalte Froholdt",
+      "pos": "C",
+      "status": "Questionable"
+     },
+     {
       "name": "Michael Wilson",
       "pos": "WR",
       "status": "Out"
-     },
-     {
-      "name": "Gardner Minshew II",
-      "pos": "QB",
-      "status": "Questionable"
      },
      {
       "name": "Jayden Williams",
@@ -4511,11 +4514,6 @@
      {
       "name": "Bam Knight",
       "pos": "RB",
-      "status": "Out"
-     },
-     {
-      "name": "Jon Gaines II",
-      "pos": "G",
       "status": "Out"
      }
     ]
@@ -4593,6 +4591,10 @@
      {
       "level": "yellow",
       "text": "Line crossed key number 10"
+     },
+     {
+      "level": "yellow",
+      "text": "Underdog questionable: Hjalte Froholdt"
      }
     ],
     "under": {
@@ -4970,6 +4972,6 @@
   "tracked": 0,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Mon Nov 9, 2:00 PM PT"
+  "built_label": "Mon Nov 9, 3:00 PM PT"
  }
 }
