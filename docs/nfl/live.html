@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NFL Checkpoint Log</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<!-- Shadow log for the NFL early path: halftime and end-of-3rd checkpoints with the real
+     Kalshi price, graded the next day from nflverse. Nothing here is a bet signal. -->
+<div class="wrap" style="padding-bottom:0"><nav class="nav"><a href="../">Home</a><a href="./">NFL board</a><a class="on" href="live.html">Checkpoint log</a><a href="../nba/">NBA</a></nav></div>
+<div class="wrap" id="app" style="padding-top:18px"><div class="muted">Loading…</div></div>
+<script>
+(function(){
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const c = p => p == null ? '–' : Math.round(p * 100) + '¢';
+const pct = (a, b) => b ? Math.round(100 * a / b) + '%' : '–';
+const app = document.getElementById('app');
+const BENCH = `<div class="panel final"><b>Backtest (2024-25), first qualifying checkpoint per game</b><ul>
+  <li>Full qualifier from halftime on: 31-0 (fair price averaged about 96¢)</li>
+  <li>Control + QB edge, any defense, halftime on (shadow line): 161-4, 97.6% (fair price about 95¢)</li>
+  <li>End of 1st quarter (dropped): 8-2</li></ul>
+  <div class="small muted" style="margin-top:8px">Early path = favorite up 10+, both defensive metrics top 10 (season and last 3), control 3 of 5, QB edge. Logged in shadow mode until you review the Kalshi prices; no alerts, no bets.</div></div>`;
+
+function row(id, e, kind){
+  const r = e[kind], g = (e.graded || {})[kind];
+  if (!r) return '';
+  const k = r.kalshi || {};
+  let verdict = `<span class="chip cn">${esc(r.prelim)}</span>`;
+  if (g) verdict = g.full ? '<span class="chip cg">Full qualifier</span>' : (g.shadow_any_d ? '<span class="chip cb">Shadow only (any D)</span>' : '<span class="chip cn">No</span>');
+  const res = e.result ? (e.result.fav_won ? `<span class="okc">${esc(e.fav)} won by ${e.result.fav_margin}</span>` : `<span class="noc">${esc(e.fav)} lost by ${-e.result.fav_margin}</span>`)
+            : (e.final ? esc(e.final.score) : '<span class="muted">in progress</span>');
+  const ctl = g ? `${g.control_wins.length}/5 · QB ${g.fav_qb_score}-${g.dog_qb_score}` : '<span class="muted">next day</span>';
+  return `<tr><td>${esc(e.day_et)}</td><td><b>${esc(e.away)} @ ${esc(e.home)}</b><br><span class="muted">${esc(e.fav)} ${e.spread ?? ''}</span></td>
+    <td>${kind === 'half' ? 'Halftime' : 'End of 3rd'}${r.late ? ` <span class="muted">(late, ${esc(r.clock)})</span>` : ''}</td>
+    <td>${esc(r.score)}</td><td>${r.lead > 0 ? '+' : ''}${r.lead}</td><td>${r.fav_defense_top10 ? 'Top 10' : 'No'}</td>
+    <td>${ctl}</td><td><b>${c(k.prob)}</b>${k.bid != null ? `<br><span class="muted">${c(k.bid)}/${c(k.ask)}</span>` : ''}</td>
+    <td>${r.espn_wp != null ? Math.round(r.espn_wp * 100) + '%' : '–'}${g && g.model_wp != null ? `<br><span class="muted">model ${Math.round(g.model_wp * 100)}%</span>` : ''}</td>
+    <td>${verdict}</td><td>${res}</td></tr>`;
+}
+
+fetch('live.json?t=' + Date.now()).then(r => r.ok ? r.json() : {games: {}}).catch(() => ({games: {}})).then(book => {
+  const entries = Object.entries(book.games || {}).sort((a, b) => (b[1].day_et || '').localeCompare(a[1].day_et || ''));
+  let full = 0, fullW = 0, sh = 0, shW = 0, up = 0, kal = [];
+  for (const [, e] of entries) for (const k of ['half', 'q3']) {
+    const g = (e.graded || {})[k]; if (!g || !e.result) continue;
+    if (g.full) { full++; fullW += e.result.fav_won ? 1 : 0; if (e[k].kalshi) kal.push(e[k].kalshi.prob); }
+    if (g.shadow_any_d) { sh++; shW += e.result.fav_won ? 1 : 0; }
+    if (g.up10) up++;
+  }
+  const avgK = kal.length ? Math.round(100 * kal.reduce((a, b) => a + b, 0) / kal.length) + '¢' : '–';
+  const rows = entries.map(([id, e]) => row(id, e, 'half') + row(id, e, 'q3')).join('');
+  app.innerHTML = `<div class="eyebrow">NFL · ${esc(book.season || '')} · shadow mode</div>
+    <h1 class="title cond">Checkpoint Log</h1>
+    <div class="muted" style="margin-top:6px">Halftime and end of 3rd for every game on the board. Updated ${esc(book.updated || 'not yet')}.</div>
+    <div class="stat" style="margin:20px 0 22px"><div><b>${full ? fullW + '-' + (full - fullW) : '–'}</b><span>full qualifier</span></div>
+      <div><b>${avgK}</b><span>avg Kalshi at qualifier</span></div><div><b>${sh ? shW + '-' + (sh - shW) : '–'}</b><span>shadow (any D)</span></div><div><b>${up}</b><span>fav up 10+</span></div></div>
+    ${BENCH}
+    ${rows ? `<div class="panel" style="padding:8px 12px"><div class="tw"><table><tr><th>Date</th><th>Game</th><th>Checkpoint</th><th>Score</th><th>Fav lead</th><th>Fav D</th><th>Control · QB</th><th>Kalshi fav</th><th>ESPN win %</th><th>Early path</th><th>Result</th></tr>${rows}</table></div></div>`
+           : '<div class="panel final">No checkpoints logged yet. The first ones come from Thursday night\'s game.</div>'}
+    <div class="small muted foot">Kalshi = favorite's market price at the checkpoint (mid of bid/ask; bid/ask below). Control and QB are graded the next morning from nflverse play-by-play, with the same rules as the backtest. A checkpoint the logger reached late is marked with the game clock.</div>`;
+});
+})();
+</script>
+</body>
+</html>

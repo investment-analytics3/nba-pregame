@@ -95,7 +95,7 @@ background:linear-gradient(180deg,#3B6FD8,#2450B0);box-shadow:0 8px 22px rgba(36
 </style>
 </head>
 <body>
-<div class="wrap" style="padding-bottom:0"><nav class="nav"><a href="../">Today's board</a><a href="../results.html">Results</a><a class="on" href="./">Live</a></nav></div>
+<div class="wrap" style="padding-bottom:0"><nav class="nav"><a href="../">Home</a><a href="../nba/">Today's board</a><a href="../results.html">Results</a><a class="on" href="./">Live</a></nav></div>
 <main class="wrap" id="app" style="padding-top:16px"><p class="muted">Loading…</p></main>
 <div class="refresh" id="bar" hidden><div class="inner"><button id="rf" type="button"><span>Refresh now</span></button><span class="upd" id="upd"></span></div></div>
 <script src="engine.js"></script>
@@ -155,8 +155,8 @@ function render(g, r){
   const lg = liveGame();
   const focusSide = d.focusSide || 'home';
   let h = `<div class="row between" style="flex-wrap:wrap;gap:10px">
-      <a class="btn" href="../" aria-label="All games"><svg viewBox="0 0 16 16" width="14" height="14" style="fill:none;stroke:currentColor;stroke-width:2" aria-hidden="true"><path d="M10 3L5 8l5 5"/></svg>All games</a>
-      <div class="tabs" role="tablist"><a href="../#g-${esc(g.id)}">Pregame</a><a class="on" aria-current="page" href="?g=${esc(g.id)}">${r.state==='in'?'<span class="livedot" style="margin-right:7px"></span>':''}Live</a></div></div>
+      <a class="btn" href="../nba/" aria-label="All games"><svg viewBox="0 0 16 16" width="14" height="14" style="fill:none;stroke:currentColor;stroke-width:2" aria-hidden="true"><path d="M10 3L5 8l5 5"/></svg>All games</a>
+      <div class="tabs" role="tablist"><a href="../nba/#g-${esc(g.id)}">Pregame</a><a class="on" aria-current="page" href="?g=${esc(g.id)}">${r.state==='in'?'<span class="livedot" style="margin-right:7px"></span>':''}Live</a></div></div>
     <h1 class="title cond">${esc(g.away.display||g.away.name)} <span class="dim">@</span> ${esc(g.home.display||g.home.name)}</h1>
     <div class="muted" style="font-size:13.5px">Above the line · qualified on ${esc((g.qualifiers||[]).join(', '))} · pregame favorite ${esc(g.fav)} ${g.spread?'('+esc(g.spread)+')':''}</div>`;
 

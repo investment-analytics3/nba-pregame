@@ -110,7 +110,7 @@ h3{margin:0 0 4px;font-size:16px;font-weight:700}
 <radialGradient id="hub" cx="50%" cy="35%" r="70%"><stop offset="0" stop-color="#222C45"/><stop offset="1" stop-color="#0D1322"/></radialGradient>
 <filter id="drop" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity=".6"/></filter>
 </defs></svg>
-<div class="wrap" style="padding-bottom:0"><nav class="nav"><a class="on" href="{{ pages_url }}">Today's board</a><a href="{{ pages_url }}results.html">Results</a><a href="{{ pages_url }}live/">Live</a></nav></div>
+<div class="wrap" style="padding-bottom:0"><nav class="nav"><a href="{{ pages_url }}">Home</a><a class="on" href="{{ pages_url }}nba/">Today's board</a><a href="{{ pages_url }}results.html">Results</a><a href="{{ pages_url }}live/">Live</a></nav></div>
 <div class="wrap" id="app" style="padding-top:18px"></div>
 <script>const DATA = {{ data_json|safe }};</script>
 <script src="{{ pages_url }}live/engine.js" defer></script>

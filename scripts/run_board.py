@@ -4,7 +4,7 @@
     python scripts/run_board.py --kind board|final|preview [--date YYYY-MM-DD] [--no-send]
 
 Reads data/slates/<date>.json (built just before by build_slate.py), then:
-  - writes the interactive page to docs/index.html (GitHub Pages) and keeps a
+  - writes the interactive page to docs/nba/index.html (GitHub Pages) and keeps a
     copy in docs/boards/
   - emails the board (summary in the email, full page attached)
   - sends a phone alert that opens the page
@@ -50,7 +50,8 @@ def main() -> int:
     page = board.render_page(data)
     os.makedirs(os.path.join(DOCS, "boards"), exist_ok=True)
     open(os.path.join(DOCS, ".nojekyll"), "w").close()
-    with open(os.path.join(DOCS, "index.html"), "w") as f:
+    os.makedirs(os.path.join(DOCS, "nba"), exist_ok=True)
+    with open(os.path.join(DOCS, "nba", "index.html"), "w") as f:   # site root = landing page
         f.write(page)
     with open(os.path.join(DOCS, "boards", f"{day.isoformat()}-{kind}.html"), "w") as f:
         f.write(page)
@@ -64,13 +65,13 @@ def main() -> int:
     title, body = board.alert_text(data)
     if "--no-send" not in sys.argv:
         subject = title.replace("NBA Pregame Board", "NBA Board") + " - " + body
-        notify.send_email(subject[:150], board.render_email(data), f"{title}\n{body}\n{board.PAGES_URL}",
+        notify.send_email(subject[:150], board.render_email(data), f"{title}\n{body}\n{board.NBA_URL}",
                           attachments=[(f"NBA-board-{day.isoformat()}.html", page.encode("utf-8"), "text/html")])
         print("Email sent.")
         try:
             if kind == "preview":
                 raise RuntimeError("previews don't send a phone alert")
-            notify.send_alert(title, body, click=board.PAGES_URL,
+            notify.send_alert(title, body, click=board.NBA_URL,
                               priority="high" if any(g["scoring"].get("qualified") for g in data["games"]) else "default")
             print("Phone alert sent.")
         except Exception as e:  # the email already went out; don't fail the run

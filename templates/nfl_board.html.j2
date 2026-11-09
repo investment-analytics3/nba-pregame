@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NFL Pregame Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="{{ pages_url }}site.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<radialGradient id="hub" cx="50%" cy="35%" r="70%"><stop offset="0" stop-color="#222C45"/><stop offset="1" stop-color="#0D1322"/></radialGradient>
+</defs></svg>
+<div class="wrap" style="padding-bottom:0"><nav class="nav"><a href="{{ pages_url }}">Home</a><a class="on" href="{{ pages_url }}nfl/">NFL board</a><a href="{{ pages_url }}nfl/live.html">Checkpoint log</a><a href="{{ pages_url }}nba/">NBA</a></nav></div>
+<div class="wrap" id="app" style="padding-top:18px"></div>
+<script>const DATA = {{ data_json|safe }};</script>
+<script>
+(function(){
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const M = ['off_epa','off_sr','def_epa','def_sr'];
+const MH = {off_epa:['OFF','EPA'], off_sr:['OFF','SR'], def_epa:['DEF','EPA'], def_sr:['DEF','SR']};
+const MN = {off_epa:'Off EPA/play', off_sr:'Off success rate', def_epa:'Def EPA allowed', def_sr:'Def success allowed'};
+const BAND = {green:['#5BEA9E','Strong edge'], yellow:['#FFD66B','Moderate'], red:['#FF7676','Risk']};
+const CALL = {'Edge clears':'cg','Track, edge short':'cb','Lean (QB cap)':'cy','No track':'cn','No line':'cn','No data':'cn'};
+const favCls = r => r==null?'pn':(r<=5?'pg':(r<=10?'pg2':(r<=22?'py':'pr')));
+const dogCls = r => r==null?'pn':(r<=5?'pd':(r<=10?'pr':(r<=22?'py':'pg')));
+const sgn = v => v==null?'–':(v>0?'+':'')+v.toFixed(2);
+const pct = v => v==null?'–':Math.round(v*100)+'%';
+const line = v => v==null?'':(v>0?'+':'')+(Math.round(v*10)/10);
+const team = (g,code) => g.home.code===code ? g.home : g.away;
+const app = document.getElementById('app');
+
+function donut(h){
+  if(!h || h.score==null) return `<div class="donut"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="46" fill="none" stroke="#1A2236" stroke-width="13"/><circle cx="60" cy="60" r="38" fill="url(#hub)"/></svg><div class="num"><b style="color:#8B95AB">–</b><span>NO LINE</span></div></div>`;
+  const C = 289.027, off = (C*(1-h.score/(h.max||40))).toFixed(1), b = BAND[h.band];
+  return `<div class="donut"><svg viewBox="0 0 120 120" role="img" aria-label="Hero score ${h.score} of 40, ${b[1]}">
+    <circle cx="60" cy="60" r="46" fill="none" stroke="#1A2236" stroke-width="13"/>
+    <circle class="arc" cx="60" cy="60" r="46" fill="none" stroke="${b[0]}" stroke-width="13" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${off}" transform="rotate(-90 60 60)"/>
+    <circle cx="60" cy="60" r="38" fill="url(#hub)"/></svg>
+    <div class="num"><b style="color:${b[0]}">${h.score}</b><span>OF 40</span></div></div>`;
+}
+
+function pills(g){
+  const fav = team(g,g.fav), dog = team(g,g.dog);
+  const row = (lbl, sub, t, w, cls) => `<div class="prow"><div class="pl"><b>${esc(lbl)}</b><span>${sub}</span></div>${M.map(m=>{const r=(t[w].ranks||{})[m];return `<div class="pill ${cls(r)}" title="${esc(MN[m])}: rank ${r??'–'} of 32">${r??'–'}</div>`;}).join('')}</div>`;
+  return `<div class="pills"><div class="prow"><div></div>${M.map(m=>`<div class="ph"><b>${MH[m][0]}</b><span>${MH[m][1]}</span></div>`).join('')}</div>
+    ${row(fav.abbr,'season',fav,'season',favCls)}${row(fav.abbr,'last 3',fav,'last3',favCls)}
+    ${row(dog.abbr,'season',dog,'season',dogCls)}${row(dog.abbr,'last 3',dog,'last3',dogCls)}</div>`;
+}
+
+function edgeBar(e){
+  if(e.gap==null) return '';
+  const w = Math.max(0, Math.min(100, e.gap/ (e.required*1.4) * 100)), mark = 100/1.4;
+  return `<div class="edge"><div class="row between"><span><b>Stat edge ${sgn(e.gap)}</b> <span class="muted">needs +${e.required.toFixed(2)}${e.large_favorite?' (large fav)':''}</span></span>
+    <span class="chip ${e.clears?'cg':'cn'}">${e.clears?'Clears':'Short '+e.short_by.toFixed(2)}</span></div>
+    <div class="bar"><i style="width:${w}%;background:${e.clears?'#2FC373':'#60A5FA'}"></i><s style="left:${mark}%"></s></div>
+    ${e.adjusted_gap!=null?`<div class="tiny">Adjusted edge (shadow, not used): ${sgn(e.adjusted_gap)} season · ${sgn(e.adjusted_recent_gap)} recent-weighted</div>`:''}</div>`;
+}
+
+function card(g){
+  const sc = g.scoring, fav = g.fav ? team(g,g.fav) : null, dog = g.dog ? team(g,g.dog) : null;
+  const state = g.state==='in' ? `<span class="chip live"><i></i>${esc(g.detail||'Live')}</span>` : (g.state==='post' ? `<span class="chip cn">Final ${g.score?esc(g.score.away+'-'+g.score.home):''}</span>` : '');
+  const head = `<div class="row between"><span class="tip">${esc(g.kick_pt)}${g.neutral?' · neutral':''}</span><span class="row" style="gap:6px">${state}<span class="chip ${CALL[sc.call]||'cn'}">${esc(sc.call)}</span></span></div>`;
+  if(!fav) return `<article class="card">${head}<div class="line">${esc(g.away.abbr)} @ ${esc(g.home.abbr)}</div><div class="muted">No betting line yet.</div></article>`;
+  const away = g.away, home = g.home;
+  const side = t => `<div class="tm ${t.code===g.fav?'fav':''}"><span class="badge">${esc(t.abbr)}</span><span><b>${esc(t.abbr)}${t.code===g.fav?' '+line(g.spread):''}</b><br><span class="muted">${esc(t.record)} · last 2 ${t.last2_results.join('') || '–'}</span></span></div>`;
+  const k = g.kalshi && g.kalshi.fav_prob!=null ? `Kalshi ${esc(fav.abbr)} ${Math.round(g.kalshi.fav_prob*100)}¢${g.kalshi.fav_prob>0.85?' <span class="warnc">priced in</span>':''}` : '';
+  const fpi = fav.fpi_win!=null ? `FPI ${pct(fav.fpi_win)}` : '';
+  const flags = (sc.flags||[]).filter(f=>f.level!=='info').slice(0,3).map(f=>`<div class="flag ${f.level}">${esc(f.text)}</div>`).join('');
+  return `<article class="card" id="g-${esc(g.id)}">${head}
+    <div class="row" style="gap:14px;align-items:center">${donut(sc.hero)}<div style="display:flex;flex-direction:column;gap:8px;min-width:0">${side(away)}${side(home)}</div></div>
+    <div class="sub">${[g.total!=null?'Total '+g.total+(g.total_move? ' ('+line(g.total_move)+')':''):'', g.movement? 'Line moved '+line(g.movement)+' toward fav':'', fpi, k].filter(Boolean).join(' · ')}</div>
+    ${edgeBar(sc.edge)}${pills(g)}${flags}
+    <details><summary>Rules, score and details</summary>${detail(g)}</details></article>`;
+}
+
+function detail(g){
+  const sc = g.scoring, fav = team(g,g.fav), dog = team(g,g.dog), p = sc.hero.parts||{};
+  const rules = (sc.rules||[]).map(r=>`<div class="rule"><span class="yn ${r.ok?'ok':'no'}">${r.ok?'✓':'✗'}</span><span>${esc(r.text)} <span class="muted">(${esc(r.detail)})</span></span></div>`).join('');
+  const parts = [['Favorite strength',p.fav_strength,16],['Underdog weakness',p.dog_weakness,16],['Health',p.health,4],['Home',p.home,1],['Rest',p.rest,1],['Recent form',p.form,2]]
+    .map(([n,v,mx])=>`<div class="kv"><span>${n}</span><b>${v??'–'} / ${mx}</b></div>`).join('');
+  const stat = t => `<tr><td><b>${esc(t.abbr)}</b></td><td>${sgn(t.season.off_epa)}</td><td>${pct(t.season.off_sr)}</td><td>${sgn(t.season.def_epa)}</td><td>${pct(t.season.def_sr)}</td><td>${sgn(t.net)}</td><td>${sgn(t.season.off_pass_epa)} / ${sgn(t.season.off_rush_epa)}</td></tr>`;
+  const qb = t => t.qb ? `${esc(t.qb.regular)} (${t.qb.dropbacks} dropbacks, EPA/db ${sgn(t.qb.epa_db)}${t.qb.rank?', rank '+t.qb.rank:''})${t.qb_active?'':' <b class="warnc">OUT</b>'}` : 'unknown';
+  const inj = t => t.injuries_known ? ((t.injury_list||[]).map(i=>`${esc(i.name)} ${esc(i.pos||'')} <span class="muted">${esc(i.status)}</span>`).join(', ') || 'none listed') : 'not available';
+  return `<div class="det"><h4>Qualification: ${sc.qualified?'<span class="okc">TRACK GAME = YES</span>':'<span class="noc">TRACK GAME = NO</span>'}</h4>${rules}
+    <h4>Hero score ${sc.hero.score} / 40</h4><div class="kvs">${parts}</div>
+    <h4>Season numbers</h4><div class="tw"><table><tr><th></th><th>Off EPA</th><th>Off SR</th><th>Def EPA</th><th>Def SR</th><th>Net</th><th>Pass / rush EPA</th></tr>${stat(fav)}${stat(dog)}</table></div>
+    <h4>Quarterbacks</h4><div class="small">${esc(fav.abbr)}: ${qb(fav)}<br>${esc(dog.abbr)}: ${qb(dog)}</div>
+    <h4>Injuries (out, doubtful, questionable)</h4><div class="small">${esc(fav.abbr)}: ${inj(fav)}<br>${esc(dog.abbr)}: ${inj(dog)}</div>
+    ${sc.under&&sc.under.passes?`<h4>Totals</h4><div class="small">${esc(sc.under.note)}</div>`:''}
+    <div class="small muted" style="margin-top:10px">Rest: ${esc(fav.abbr)} ${fav.rest??'?'} days, ${esc(dog.abbr)} ${dog.rest??'?'} days · Line: ${esc(g.line_source||'?')}${g.open_spread!=null?', opened '+line(g.open_spread):''}${g.kalshi?' · Kalshi '+esc(g.kalshi.event):''}</div></div>`;
+}
+
+const games = DATA.games||[];
+const tracked = games.filter(g=>g.state!=='post' && g.scoring.qualified), other = games.filter(g=>g.state!=='post' && !g.scoring.qualified), played = games.filter(g=>g.state==='post');
+const sec = (t, list, extra='') => list.length ? `<div class="sec-head"><h2 class="cond">${t}</h2><span class="cnt">${list.length}</span><span class="rule"></span></div>${extra}<div class="grid">${list.map(card).join('')}</div>` : '';
+app.innerHTML = `<div class="eyebrow">NFL · ${DATA.season} season · Week ${DATA.week??'–'}</div>
+  <h1 class="title cond">NFL Pregame Board</h1>
+  <div class="muted" style="margin-top:6px">Updated ${esc(DATA.built_label)} · stats through ${esc(DATA.data_through||'–')} (nflverse)</div>
+  <div class="legend"><span><i class="sw" style="background:#2FC373"></i>Favorite top 10 / underdog bottom 10</span><span><i class="sw" style="background:#E9B23A"></i>Middle</span><span><i class="sw" style="background:#C83030"></i>Favorite bottom 10 / underdog top 10</span><span>Hero score: green 28+, yellow 18-27, red 0-17</span></div>
+  ${(DATA.notes||[]).length?`<div class="panel final"><ul>${DATA.notes.map(n=>`<li>${esc(n)}</li>`).join('')}</ul></div>`:''}
+  ${sec('Tracked', tracked)}${!tracked.length && games.length?'<div class="panel final"><b>No game passes all six rules this week.</b></div>':''}
+  ${sec('Other games', other)}${sec('Played', played)}
+  <div class="small muted foot">Stat edge = favorite net EPA/play minus underdog's (all plays, nflverse = RBSDM method); needs +0.35, or +0.45 for favorites of ${DATA.large_favorite_cutoff} or more (cutoff to confirm). The adjusted edge is logged in shadow only. Kalshi and FPI are a price check and never change the call.</div>`;
+})();
+</script>
+</body>
+</html>

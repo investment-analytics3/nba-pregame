@@ -115,6 +115,20 @@ jobs:
             echo "Live tracker already running."
           fi
 
+      # ---- NFL ------------------------------------------------------------------
+      # The NFL has its own workflow (nfl.yml) and decides for itself what is due;
+      # this only gives it the same 15-minute clock. It can never fail this tick.
+      - name: "NFL: start the NFL tick"
+        if: ${{ !cancelled() && inputs.dry_run != true }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -f .github/workflows/nfl.yml ]; then
+            gh api -X POST "repos/${{ github.repository }}/actions/workflows/nfl.yml/dispatches" -f ref=main \
+              -f "inputs[source]=nba-scheduler" && echo "NFL tick started."
+          fi
+
       # ---- Health ping --------------------------------------------------------
       - name: Tell healthchecks.io this tick worked
         if: success()

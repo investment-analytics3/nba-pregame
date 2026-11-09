@@ -18,6 +18,7 @@ PT = ZoneInfo("America/Los_Angeles")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES = os.path.join(ROOT, "templates")
 PAGES_URL = "https://investment-analytics3.github.io/nba-pregame/"
+NBA_URL = PAGES_URL + "nba/"          # the NBA board (site root = landing page)
 
 
 # --------------------------------------------------------------------------- #

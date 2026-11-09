@@ -1,4 +1,4 @@
-# NBA Pregame Dashboard — project guide for Claude
+# Game Boards (NBA + NFL) — project guide for Claude
 
 Owner: the account holder (GitHub user `investment-analytics3`). Keep this repo
 anonymous: no personal names, emails or locations in code, docs, data or commits.
@@ -10,7 +10,10 @@ Actions pulls free data, scores every game (six pass/fail rules + a 40-point
 Analysis Score), publishes an interactive page on GitHub Pages, emails it and sends
 a phone alert. No AI runs in the daily pipeline; Claude is only used to change code.
 
-- Board (latest): https://investment-analytics3.github.io/nba-pregame/
+- Landing page (L0, both sports): https://investment-analytics3.github.io/nba-pregame/  (`docs/index.html`, static)
+- NBA board (latest): https://investment-analytics3.github.io/nba-pregame/nba/
+- NFL board: https://investment-analytics3.github.io/nba-pregame/nfl/ · checkpoint log: .../nfl/live.html
+- NFL design spec (Claude Doc): https://claude.ai/artifact/A4Q6Nana5hMZYbJCSVNix2
 - Results tracker: https://investment-analytics3.github.io/nba-pregame/results.html
 - Design spec (Claude Doc): https://claude.ai/artifact/TQV7dXo9KQM8aEmEEh8v8c
 - Original visual mockup (Claude Design): https://claude.ai/artifact/6NEsvvN1QmSv4QMxC2hCyu
@@ -30,7 +33,7 @@ a phone alert. No AI runs in the daily pipeline; Claude is only used to change c
 | `scripts/update_data.py` | 3 AM catch-up of box scores, metrics, power ranks |
 | `scripts/build_slate.py` | Builds + scores a day's slate (`build(day, retro=True)` rebuilds a past day from pre-tip data) |
 | `scripts/board_decide.py` | When to send: board 12 PM weekdays / 10 AM weekends, Final 90 min before first tip |
-| `scripts/run_board.py` | Publishes `docs/index.html` + `docs/boards/<date>-<kind>.html`, emails, alerts, logs snapshot |
+| `scripts/run_board.py` | Publishes `docs/nba/index.html` + `docs/boards/<date>-<kind>.html`, emails, alerts, logs snapshot (the site root is the landing page) |
 | `scripts/update_results.py` | Grades games, writes `docs/results.html` and `docs/results.csv` |
 | `scripts/rebuild_days.py` | Rebuilds unsent past days as "rebuilt" boards |
 | `scripts/scheduler.py` | The 15-minute tick's decisions: nightly (catch-up), board/final, live |
@@ -43,11 +46,45 @@ a phone alert. No AI runs in the daily pipeline; Claude is only used to change c
 | `data/` | Committed state: `team_games.csv`, `player_games.csv`, `metrics.json`, `power.json`, `slates/`, `board_log.json`, `results.json` |
 | `tests/` | `python -m unittest discover -s tests -v` (rules, schedule, grading, scheduler) and `node --test tests/engine.test.js` (live engine) |
 
+## NFL (separate pipeline: own folder, workflows and concurrency group; never touches NBA files)
+
+| Path | Purpose |
+|---|---|
+| `nfl/sources.py` | nflverse play-by-play / snap counts (GitHub releases) and schedule (`games.csv`: ESPN ids, rest, neutral, lines); team-code maps ESPN↔nflverse↔Kalshi |
+| `nfl/metrics.py` | Four core metrics (off EPA/play, off success, def EPA allowed, def success allowed), season + last 3, ranks 1-32, as of a week (no hindsight); official net EPA; SHADOW adjusted edge; records, QBs, key starters |
+| `nfl/scoring.py` | Six rules, 40-point hero score, official stat edge (+0.35 / +0.45 large fav), flags, Under gate, pregame call |
+| `nfl/espn.py`, `nfl/kalshi.py` | ESPN week scoreboard, DK open/current lines, game-day injuries, FPI; Kalshi `KXNFLGAME` prices |
+| `nfl/board.py` | Builds the week's board → `docs/nfl/index.html`, `docs/nfl/summary.json` (landing), `data/nfl/context.json` (logger), `data/nfl/boards/<season>-w<week>.json` |
+| `nfl/early_path.py` | Early blowout path grading (halftime, end of 3rd) — same rules as the 2024-25 backtest |
+| `scripts/nfl_scheduler.py` | What's due each tick: build (hourly on game days, daily otherwise), alert (first game-day build), grade (daily), live |
+| `scripts/nfl_build.py` | Build + publish; `--alert` sends one ntfy push (game days only) |
+| `scripts/nfl_live.py` | Checkpoint logger (shadow): halftime + end of 3rd score, lead, real Kalshi price, ESPN win %; never alerts |
+| `scripts/nfl_grade.py` | Next day: grades logged checkpoints from nflverse (control 3 of 5, QB edge, defense) + results |
+| `scripts/nfl_backtest.py` | The Nov 8 2024-25 backtest (one-off; not scheduled) |
+| `templates/nfl_board.html.j2`, `docs/nfl/live.html`, `docs/site.css` | NFL pages + shared stylesheet (landing, NFL) |
+
+Workflows: `nfl.yml` (the NFL tick, dispatched by the NBA Scheduler's last step every 15 min; concurrency `nfl-data`;
+inputs `force_build`, `send`), `nfl-live.yml` (logger; concurrency `nfl-live`), `nfl-probe.yml` (raw ESPN/Kalshi samples →
+`dev-nfl-samples` branch). Requirements: `requirements-nfl.txt` (pandas, pyarrow). nflverse is reachable from Claude's
+workspace; ESPN and Kalshi are not (test with workflows).
+
+NFL rules (spec "NFL Stat Edge v2", decisions Nov 8 2026):
+- Official edge unchanged: net EPA = off EPA/play − def EPA/play allowed (all scrimmage plays, nflverse = RBSDM method);
+  gap must clear +0.35, or +0.45 for large favorites. Large-favorite cutoff `LARGE_FAVORITE = 7` is ASSUMED (owner to confirm).
+  Muffed (the report's primary source) is not automated. QB reset (regular QB out or <100 dropbacks) caps at Lean.
+- Qualification = NBA six on the four NFL metrics. Hero score 40: fav 16 (top 5 = 2, 6-10 = 1), dog 16 (outside top 10 = 1,
+  ranks 23-32 = 2), health 4 (QB active 2, other key starter 1, interior OL 1; 0 without injury info), home 1, rest 1 (fav off
+  a bye, or dog on a short week while the fav isn't), form 2 (fav last 2). Bands red 0-17, yellow 18-27, green 28-40.
+- Adjusted edge = SHADOW only (10-90% WP plays, opponent-adjusted, 0.6/0.4, recency 60/40 last 4); weights not approved.
+- Early path (shadow until the owner reviews real Kalshi prices): halftime through end of 3rd (end of Q1 dropped);
+  fav up 10+, both defensive metrics top 10 season AND last 3, control 3 of 5, QB edge. Also log "control + QB, any defense".
+- Not built yet: the NFL 4th-quarter live grading (runs/answers, control, QB closer) — spec "Live grading" section.
+
 ## Workflows (Actions)
 
 | Workflow file | Trigger | Notes |
 |---|---|---|
-| `scheduler.yml` | every 15 min from cron-job.org (workflow_dispatch, input `source`) + GitHub cron backup | the only automatic trigger: nightly update (from 3 AM PT, catch-up, marker `nightly` in `data/state.json`), board/Final (`board_decide`), starts `live.yml`; pings healthchecks.io. Input `dry_run=true` decides only. Setup: `SCHEDULER.md` |
+| `scheduler.yml` | every 15 min from cron-job.org (workflow_dispatch, input `source`) + GitHub cron backup | the only automatic trigger: nightly update (from 3 AM PT, catch-up, marker `nightly` in `data/state.json`), board/Final (`board_decide`), starts `live.yml`; dispatches `nfl.yml` (continue-on-error); pings healthchecks.io. Input `dry_run=true` decides only. Setup: `SCHEDULER.md` |
 | `update-data.yml` | manual | catch-up, grading, slate; commits `data/` and `docs/` |
 | `board.yml` | manual | inputs: `kind` (preview/board/final/auto), `send` (true/false) |
 | `rebuild-days.yml` | manual, input `days` | rebuild + grade unsent past days |
