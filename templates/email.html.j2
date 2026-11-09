@@ -30,8 +30,10 @@
 </td></tr>
 
 {% set q = d.games|selectattr('scoring.qualified')|list %}
-{% set n = d.games|rejectattr('scoring.qualified')|list %}
-{% for title, list, color in [('QUALIFIED', q, '#2FC373'), ('DID NOT QUALIFY', n, '#FF7676')] %}
+{% set wl = d.games|selectattr('scoring.tier', 'equalto', 'watch')|list %}
+{% set n = d.games|rejectattr('scoring.qualified')|rejectattr('scoring.tier', 'equalto', 'watch')|list %}
+{% for title, list, color in [('QUALIFIED', q, '#2FC373'), ('WATCH LIST', wl, '#FFD66B'), ('DID NOT QUALIFY', n, '#FF7676')] %}
+{% if title != 'WATCH LIST' or list %}
 <tr><td style="padding:6px 4px 8px;">
   <div style="font-size:15px;font-weight:bold;letter-spacing:1px;color:{{ color }};">{{ title }} ({{ list|length }})</div>
   {% if title == 'DID NOT QUALIFY' %}<div style="height:5px;background:#C42B2B;border-radius:5px;margin-top:6px;"></div>{% endif %}
@@ -55,11 +57,11 @@
       <div style="font-size:11px;color:#A9B2C6;font-weight:bold;letter-spacing:1px;">{{ g.tip_pt|upper }}{% if g.neutral %} &middot; NEUTRAL{% endif %}</div>
       <div style="font-size:17px;font-weight:bold;color:#FFFFFF;margin-top:3px;">{{ g.away.abbr }} {{ g.away.spread_text }} <span style="color:#7C869E;font-weight:normal;">@</span> {{ g.home.abbr }} {{ g.home.spread_text }}</div>
       <div style="font-size:12px;color:#8B95AB;margin-top:3px;">
-        {{ g.away.abbr }} {{ g.away.record }} (L3 {{ g.away.l3_record }}, PR #{{ g.away.power.rank }}){% if g.away.b2b %} <b style="color:#C4A5F7;">B2B</b>{% endif %}
-        &middot; {{ g.home.abbr }} {{ g.home.record }} (L3 {{ g.home.l3_record }}, PR #{{ g.home.power.rank }}){% if g.home.b2b %} <b style="color:#C4A5F7;">B2B</b>{% endif %}
+        {{ g.away.abbr }} {{ g.away.record }} (L3 {{ g.away.l3_record }}, PR #{{ g.away.power.rank }}){% if g.away.b2b %} <b style="color:#FF7676;">B2B</b>{% endif %}
+        &middot; {{ g.home.abbr }} {{ g.home.record }} (L3 {{ g.home.l3_record }}, PR #{{ g.home.power.rank }}){% if g.home.b2b %} <b style="color:#FF7676;">B2B</b>{% endif %}
       </div>
-      <div style="font-size:13px;margin-top:8px;color:{{ '#86EFAC' if sc.qualified else '#FCA5A5' }};">
-        {% if not sc.scored %}No spread posted yet{% elif sc.qualified %}&#10003; Qualified on {{ sc.qualifiers|join(', ') }}{% else %}&#10007; {{ sc.fails[0] }}{% endif %}
+      <div style="font-size:13px;margin-top:8px;color:{{ '#86EFAC' if sc.qualified else ('#FCD97A' if sc.tier == 'watch' else '#FCA5A5') }};">
+        {% if not sc.scored %}No spread posted yet{% elif sc.qualified %}&#10003; Qualified: {{ sc.route or sc.qualifiers|join(', ') }}{% elif sc.tier == 'watch' %}&#9679; {{ sc.fails[0] }}{% else %}&#10007; {{ sc.fails[0] }}{% endif %}
       </div>
       {% for w in sc.warnings if 'questionable' in w|lower %}
       <div style="font-size:12px;margin-top:6px;color:#2A1C00;background:#F2C14E;border-radius:8px;padding:4px 8px;display:inline-block;">{{ w }}</div>
@@ -69,6 +71,7 @@
   </tr></table>
 </td></tr>
 {% endfor %}
+{% endif %}
 {% endfor %}
 
 <tr><td style="padding:10px 4px 0;font-size:11px;line-height:1.6;color:#7C869E;">

@@ -65,9 +65,17 @@ def summary_text(game: dict) -> tuple[str, str]:
         return "No spread has been posted yet, so there is no favorite to score.", "No lean"
     fav, dog = _fav_dog(game)
     parts = []
-    if sc["qualified"]:
-        parts.append(f"{fav['name']} qualify on {', '.join(sc['qualifiers'])}: top 10 for the season "
-                     f"and over their last 3.")
+    tier = sc.get("tier") or ("qualified" if sc["qualified"] else "out")
+    if tier == "qualified":
+        why = []
+        if any(r.startswith("Score") for r in sc.get("routes", [])):
+            why.append(f"an Analysis Score of {sc['score']}")
+        if "All-four mismatch" in sc.get("routes", []):
+            why.append(f"the all-four mismatch: {fav['abbr']} top 10 and {dog['abbr']} bottom 10 in every metric, "
+                       f"season and last 3")
+        parts.append(f"{fav['name']} qualify on {' and '.join(why)}.")
+    elif tier == "watch":
+        parts.append(f"Watch list: an Analysis Score of {sc['score']} (qualifies at {scoring.QUALIFY_SCORE}).")
     else:
         parts.append(f"No track: {sc['fails'][0][0].lower() + sc['fails'][0][1:]}.")
     # biggest last-3 mismatch among the four matchup columns
@@ -95,10 +103,10 @@ def summary_text(game: dict) -> tuple[str, str]:
             parts.append(f"{t['abbr']} will be without {', '.join(t['key_out'])}".rstrip(".") + ".")
     if fav.get("key_questionable"):
         parts.append(f"{fav['abbr']} is waiting on {', '.join(fav['key_questionable'])} (questionable)".rstrip(".") + ".")
-    if sc["qualified"]:
+    if tier == "qualified":
         lean = f"Lean: {fav['abbr']}"
-    elif sc["score"] >= 18:
-        lean = f"Lean: {fav['abbr']} (not tracked)"
+    elif tier == "watch":
+        lean = f"Lean: {fav['abbr']} (watch list, not tracked)"
     else:
         lean = "No lean"
     return " ".join(parts), lean
@@ -133,7 +141,7 @@ def snapshot(slate: dict) -> dict:
             "fav": sc.get("fav"), "dog": sc.get("dog"), "fav_side": g.get("favorite"),
             "spread_num": (g.get("spread") or {}).get("spread"), "tip_utc": g.get("tip_utc"),
             "neutral": g.get("neutral", False),
-            "qualified": sc.get("qualified"), "score": sc.get("score"), "band": sc.get("band"),
+            "qualified": sc.get("qualified"), "tier": sc.get("tier"), "score": sc.get("score"), "band": sc.get("band"),
             "qualifiers": sc.get("qualifiers", []), "fails": sc.get("fails", []),
             "fav_metrics": team_metrics(fav), "dog_metrics": team_metrics(dog),
             "fav_team": team_info(fav), "dog_team": team_info(dog),
@@ -151,9 +159,13 @@ def changes(before: dict, after: dict) -> list[str]:
         if not b:
             out.append(f"{a['label']}: new on the board")
             continue
-        if b["qualified"] != a["qualified"]:
-            if a["qualified"]:
+        bt = b.get("tier") or ("qualified" if b["qualified"] else "out")
+        at = a.get("tier") or ("qualified" if a["qualified"] else "out")
+        if bt != at:
+            if at == "qualified":
                 out.append(f"{a['label']}: now QUALIFIED ({a['fav']})")
+            elif at == "watch":
+                out.append(f"{a['label']}: moved to the Watch list ({a['fails'][0] if a['fails'] else 'see board'})")
             else:
                 out.append(f"{a['label']}: moved to No track ({a['fails'][0] if a['fails'] else 'see board'})")
         if b["score"] != a["score"] and a["score"] is not None and b["score"] is not None:
@@ -219,12 +231,15 @@ def render_email(data: dict) -> str:
 
 def alert_text(data: dict) -> tuple[str, str]:
     q = [g for g in data["games"] if g["scoring"].get("qualified")]
-    n = len(data["games"]) - len(q)
+    w = [g for g in data["games"] if g["scoring"].get("tier") == "watch"]
+    n = len(data["games"]) - len(q) - len(w)
     title = f"NBA Pregame Board{' - Final' if data['kind'] == 'final' else ''} - {data['date_label']}"
     if q:
         body = f"{len(q)} qualified: " + ", ".join(f"{g['scoring']['fav']} {g['scoring']['score']}" for g in q)
     else:
         body = "No games qualified"
+    if w:
+        body += f" | {len(w)} watch list: " + ", ".join(f"{g['scoring']['fav']} {g['scoring']['score']}" for g in w)
     body += f" | {n} no track"
     if data.get("changes"):
         body += f" | {len(data['changes'])} change(s) since {data['earlier_label']}"

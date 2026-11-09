@@ -1,16 +1,23 @@
-"""Qualification rules and the 40-point hero score.
+"""Qualification tiers and the 40-point hero score.
 
 Everything is from the favorite's point of view (favorite = spread favorite;
 moneyline breaks a pick'em). Ranks are 1-30 with 1 = best for every metric.
 
-Qualification (all six must pass):
- 1. Favorite top 10 (season) in at least one of the four metrics.
- 2. Favorite also top 10 over its last 3 in that same metric.
- 3. Underdog not top 10 in any of the four metrics over its last 3.
- 4. Underdog not 3-0 in its last 3.
- 5. Favorite has no key player Out or Doubtful. (Questionable = yellow warning.)
- 6. Injury information is available for the favorite. (Underdog injuries are
-    information only and never fail the game.)
+Tiers (since Nov 9):
+  Qualified   (A) Analysis Score 28+, or
+              (B) all-four mismatch: favorite top 10 in all four metrics AND
+                  underdog bottom 10 (rank 21-30) in all four, for both the
+                  season and the last 3.
+  Watch list  Analysis Score 18-27 and not qualified.
+  No track    everything else.
+Injury gate on every tier: the favorite has no key player Out or Doubtful
+(Questionable = yellow warning) and its injury report is available; otherwise
+No track. Underdog injuries are information only.
+
+The earlier six-rule checks (favorite top 10 in a metric for season and last 3,
+underdog not hot over its last 3, underdog not 3-0) are still reported as
+context, and "qualifiers" still lists the metrics where the favorite is top 10
+for both windows, but they no longer decide the tier.
 
 Hero score (max 40):
   Favorite metrics   4 metrics x (season, last 3): top 5 = 2, top 10 = 1   16
@@ -30,6 +37,11 @@ NAMES = {"efg": "eFG%", "off": "Off Eff", "opp_efg": "Opp eFG%", "def": "Def Eff
 MATCHUPS = [("efg", "opp_efg"), ("off", "def"), ("opp_efg", "efg"), ("def", "off")]
 MAX_SCORE = 40
 BANDS = [(28, "green"), (18, "yellow"), (0, "red")]
+QUALIFY_SCORE = 28
+WATCH_SCORE = 18
+TIER_LABEL = {"qualified": "Qualified", "watch": "Watch list", "out": "No track"}
+# Tiers the live tracker follows (end-of-3rd checklist + BET signal pushes, Live page, L1 live chips).
+LIVE_TIERS = ("qualified",)
 
 
 def _rank(team: dict, window: str, metric: str):
@@ -66,48 +78,36 @@ def dog_color(rank) -> str:
 def score_game(game: dict) -> dict:
     side = game.get("favorite")
     if side not in ("home", "away"):
-        return {"scored": False, "qualified": False, "reason": "No spread posted yet",
+        return {"scored": False, "qualified": False, "tracked": False, "tier": "out", "tier_label": TIER_LABEL["out"], "routes": [], "route": "",
+                "reason": "No spread posted yet",
                 "fails": ["No spread posted yet"], "warnings": [], "score": None}
     fav = game[side]
     dog = game["home" if side == "away" else "away"]
     fails, warnings, rules = [], [], []
 
-    # ---- qualification -----------------------------------------------------
+    # ---- context checks (the earlier six rules; no longer decide the tier) ---
     season_top10 = [m for m in METRICS if (_rank(fav, "season", m) or 99) <= 10]
     qualifiers = [m for m in season_top10 if (_rank(fav, "last3", m) or 99) <= 10]
-    rules.append({"rule": 1, "pass": bool(season_top10),
-                  "detail": "Season top 10 in " + (", ".join(NAMES[m] for m in season_top10) or "none")})
-    rules.append({"rule": 2, "pass": bool(qualifiers),
-                  "detail": "Also top 10 over last 3 in " + (", ".join(NAMES[m] for m in qualifiers) or "none")})
-    if not season_top10:
-        fails.append("Favorite not top 10 in any metric this season")
-    elif not qualifiers:
-        fails.append("Favorite not top 10 over last 3 in a season top-10 metric")
-
     hot = [m for m in METRICS if (_rank(dog, "last3", m) or 99) <= 10]
-    rules.append({"rule": 3, "pass": not hot,
-                  "detail": "Underdog last-3 top 10: " + (", ".join(NAMES[m] for m in hot) or "none")})
-    if hot:
-        fails.append(f"Underdog top 10 over last 3 in {', '.join(NAMES[m] for m in hot)}")
-
     dog_hot_streak = dog.get("l3_record") == "3-0"
-    rules.append({"rule": 4, "pass": not dog_hot_streak, "detail": f"Underdog last 3: {dog.get('l3_record')}"})
-    if dog_hot_streak:
-        fails.append("Underdog is 3-0 in its last 3")
+    context = [
+        {"check": "Favorite top 10 in a metric, season and last 3", "pass": bool(qualifiers),
+         "detail": ", ".join(NAMES[m] for m in qualifiers) or "none"},
+        {"check": "Underdog not top 10 in any metric over its last 3", "pass": not hot,
+         "detail": ", ".join(NAMES[m] for m in hot) or "none"},
+        {"check": "Underdog not 3-0 in its last 3", "pass": not dog_hot_streak, "detail": dog.get("l3_record")},
+    ]
 
+    # ---- injury gate (every tier) -------------------------------------------
     key_out = fav.get("key_out") or []
-    rules.append({"rule": 5, "pass": not key_out,
-                  "detail": "Key out: " + (", ".join(key_out) or "none")})
+    injury_known = fav.get("injuries_known", True)
+    injury_fails = []
     if key_out:
-        fails.append(f"Favorite key player out: {', '.join(key_out)}")
+        injury_fails.append(f"Favorite key player out: {', '.join(key_out)}")
+    if not injury_known:
+        injury_fails.append("Injury report unavailable for the favorite")
     for p in fav.get("key_questionable") or []:
         warnings.append(f"{fav['abbr']} key player questionable: {p}")
-
-    injury_known = fav.get("injuries_known", True)
-    rules.append({"rule": 6, "pass": injury_known,
-                  "detail": "Injury report available" if injury_known else "No injury report for the favorite"})
-    if not injury_known:
-        fails.append("Injury report unavailable for the favorite")
 
     # information-only notes
     if dog.get("key_out"):
@@ -140,6 +140,40 @@ def score_game(game: dict) -> dict:
     ]
     total = sum(p["points"] for p in parts)
 
+    # ---- tier -------------------------------------------------------------------
+    misses = [f"{fav['abbr']} {NAMES[m]} {'season' if w == 'season' else 'last 3'} #{_rank(fav, w, m) or '–'}"
+              for w in ("season", "last3") for m in METRICS if (_rank(fav, w, m) or 99) > 10]
+    misses += [f"{dog['abbr']} {NAMES[m]} {'season' if w == 'season' else 'last 3'} #{_rank(dog, w, m) or '–'}"
+               for w in ("season", "last3") for m in METRICS if (_rank(dog, w, m) or 0) < 21]
+    mismatch = not misses
+    by_score = total >= QUALIFY_SCORE
+    routes = (["Score " + str(total)] if by_score else []) + (["All-four mismatch"] if mismatch else [])
+    if injury_fails:
+        tier = "out"
+    elif routes:
+        tier = "qualified"
+    elif total >= WATCH_SCORE:
+        tier = "watch"
+    else:
+        tier = "out"
+    rules = [
+        {"rule": "A", "name": "Analysis Score 28+", "pass": by_score, "detail": f"Score {total} of {MAX_SCORE}"},
+        {"rule": "B", "name": "All-four mismatch (season and last 3)", "pass": mismatch,
+         "detail": "Favorite top 10 and underdog bottom 10 in all four" if mismatch
+                   else f"{16 - len(misses)} of 16 ranks; misses: " + ", ".join(misses[:4]) + (" …" if len(misses) > 4 else "")},
+        {"rule": "Injury", "name": "No key player out for the favorite", "pass": not injury_fails,
+         "detail": "; ".join(injury_fails) or "Clear"},
+    ]
+    if tier == "qualified":
+        fails = []
+    elif injury_fails:
+        fails = injury_fails + ([f"Would be {'qualified' if routes else 'on the watch list'} otherwise (score {total})"]
+                                if routes or total >= WATCH_SCORE else [])
+    elif tier == "watch":
+        fails = [f"Watch list: score {total} (qualifies at {QUALIFY_SCORE})"]
+    else:
+        fails = [f"Score {total} (watch list from {WATCH_SCORE}, qualifies at {QUALIFY_SCORE})"]
+
     # ---- pill grid (L1) ------------------------------------------------------
     pills = []
     for team, role, window in ((fav, "fav", "season"), (fav, "fav", "last3"),
@@ -154,15 +188,18 @@ def score_game(game: dict) -> dict:
 
     return {
         "scored": True, "favorite_side": side, "fav": fav["abbr"], "dog": dog["abbr"],
-        "qualified": not fails, "fails": fails, "warnings": warnings, "rules": rules,
+        "qualified": tier == "qualified", "tier": tier, "tier_label": TIER_LABEL[tier], "tracked": tier in LIVE_TIERS,
+        "routes": routes, "route": " + ".join(routes),
+        "fails": fails, "warnings": warnings, "rules": rules, "context": context,
         "qualifiers": [NAMES[m] for m in qualifiers],
         "score": total, "max": MAX_SCORE, "band": band(total), "parts": parts, "pills": pills,
     }
 
 
 def order_games(games: list[dict]) -> list[dict]:
-    """Qualified first, then by score (high to low), then tip time."""
+    """Qualified, then watch list, then the rest; each by score (high to low), then tip time."""
+    order = {"qualified": 0, "watch": 1, "out": 2}
     def key(g):
         s = g.get("scoring") or {}
-        return (not s.get("qualified"), -(s.get("score") or -1), g.get("tip_utc") or "")
+        return (order.get(s.get("tier"), 2), -(s.get("score") or -1), g.get("tip_utc") or "")
     return sorted(games, key=key)

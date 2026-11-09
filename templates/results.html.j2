@@ -188,7 +188,7 @@ function rows(games){
     const site = g.fav_site==='home' ? 'home' : (g.fav_site==='away' ? 'away' : 'neutral');
     const info = role => { const t = tinfo(g, role);
       return `<td style="border-left:2px solid rgba(255,255,255,.45)">${esc(t.record||'–')}</td><td>${esc(t.l3||'–')}</td>
-        <td>${t.b2b ? '<span class="chip" style="background:linear-gradient(180deg,#9B5CF0,#6D28D9);color:#F5EBFF">Yes</span>' : '<span style="color:var(--dim)">No</span>'}</td>
+        <td>${t.b2b ? '<span class="chip" style="background:linear-gradient(180deg,#D44444,#A12222);color:#fff">Yes</span>' : '<span class="chip" style="background:linear-gradient(180deg,#43DE8F,#1F9D58);color:#03240F">No</span>'}</td>
         <td>${t.pr!=null ? '#'+t.pr : '–'}${t.pr_split ? ' <span class="chip" style="background:rgba(251,146,60,.16);color:#FDBA74;border:1px solid rgba(251,146,60,.45);padding:1px 6px" title="Power-rank sources disagree across the top/bottom-10 line">split</span>' : ''}</td>`; };
     const tag = g.source==='Rebuilt' ? '<br><span class="chip" style="margin-top:3px;background:rgba(233,178,58,.14);color:#FDE68A;border:1px solid rgba(233,178,58,.4);padding:1px 6px;font-size:10px" title="Board rebuilt after the fact from what was known before tip-off">rebuilt</span>' : '';
     return `<tr class="fav"><td class="stick1" rowspan="2">${link(g, esc(dateLabel(g.date)))}${tag}</td>

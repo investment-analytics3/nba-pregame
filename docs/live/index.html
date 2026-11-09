@@ -158,7 +158,7 @@ function render(g, r){
       <a class="btn" href="../nba/" aria-label="All games"><svg viewBox="0 0 16 16" width="14" height="14" style="fill:none;stroke:currentColor;stroke-width:2" aria-hidden="true"><path d="M10 3L5 8l5 5"/></svg>All games</a>
       <div class="tabs" role="tablist"><a href="../nba/#g-${esc(g.id)}">Pregame</a><a class="on" aria-current="page" href="?g=${esc(g.id)}">${r.state==='in'?'<span class="livedot" style="margin-right:7px"></span>':''}Live</a></div></div>
     <h1 class="title cond">${esc(g.away.display||g.away.name)} <span class="dim">@</span> ${esc(g.home.display||g.home.name)}</h1>
-    <div class="muted" style="font-size:13.5px">Above the line · qualified on ${esc((g.qualifiers||[]).join(', '))} · pregame favorite ${esc(g.fav)} ${g.spread?'('+esc(g.spread)+')':''}</div>`;
+    <div class="muted" style="font-size:13.5px">${g.tier==='watch'?'Watch list':'Qualified'}${g.route?' · '+esc(g.route):''}${(g.qualifiers||[]).length?' · top 10 in '+esc(g.qualifiers.join(', ')):''} · pregame favorite ${esc(g.fav)} ${g.spread?'('+esc(g.spread)+')':''}</div>`;
 
   // decision bar
   const gradeTxt = d.grade || '–';
@@ -281,9 +281,9 @@ function render(g, r){
 }
 
 function listPage(){
-  let h = `<div class="eyebrow dim" style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:600">NBA · Live</div><h1 class="title cond">Above-the-line games</h1>`;
+  let h = `<div class="eyebrow dim" style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:600">NBA · Live</div><h1 class="title cond">Tracked games</h1>`;
   if(!ctx || !ctx.games.length) return h + '<div class="panel pad" style="margin-top:16px">No tracked games today.</div>';
-  return h + '<div class="list">' + ctx.games.map(g=>`<a class="panel game" href="?g=${esc(g.id)}"><span><b>${esc(g.away.abbr)} @ ${esc(g.home.abbr)}</b><br><span class="dim" style="font-size:13px">${esc(g.tip_pt||'')} · qualified on ${esc((g.qualifiers||[]).join(', '))}</span></span><span class="muted">Open ›</span></a>`).join('') + '</div>';
+  return h + '<div class="list">' + ctx.games.map(g=>`<a class="panel game" href="?g=${esc(g.id)}"><span><b>${esc(g.away.abbr)} @ ${esc(g.home.abbr)}</b><br><span class="dim" style="font-size:13px">${esc(g.tip_pt||'')} · ${g.tier==='watch'?'Watch list':'Qualified'}${g.route?': '+esc(g.route):''}</span></span><span class="muted">Open ›</span></a>`).join('') + '</div>';
 }
 
 function stamp(){ if(!readAt) return; const s = Math.round((Date.now()-readAt)/1000); upd.textContent = s < 60 ? `Updated ${s}s ago` : `Updated ${Math.round(s/60)} min ago`; }

@@ -66,7 +66,7 @@ def build(day: date) -> dict:
     games = []
     for g in slate.get("games", []):
         sc = g.get("scoring") or {}
-        if not sc.get("qualified"):
+        if not sc.get("tracked", sc.get("qualified")):
             continue
         fav_team = g["away"] if g["away"].get("abbr") == sc.get("fav") else g["home"]
         fav_def = {w: {m: {"v": (fav_team.get(w) or {}).get(m), "r": ((fav_team.get(w) or {}).get("ranks") or {}).get(m)}
@@ -74,6 +74,7 @@ def build(day: date) -> dict:
         games.append({
             "id": g["id"], "fav_defense": fav_def, "fav_b2b": fav_team.get("b2b"), "tip_utc": g.get("tip_utc"), "tip_pt": g.get("tip_pt"),
             "fav": sc.get("fav"), "dog": sc.get("dog"), "qualifiers": sc.get("qualifiers", []),
+            "tier": sc.get("tier"), "route": sc.get("route"),
             "score": sc.get("score"), "band": sc.get("band"),
             "spread": (g.get("spread") or {}).get("details") if isinstance(g.get("spread"), dict) else g.get("spread"),
             "away": {k: g["away"].get(k) for k in ("id", "abbr", "name", "display", "record")},

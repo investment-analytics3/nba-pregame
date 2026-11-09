@@ -40,7 +40,8 @@ def nightly_due(now_pt: datetime, state: dict) -> bool:
 def tracked_ids(day_et: date) -> set[str]:
     """Above-the-line games on a day's slate (empty if no slate yet)."""
     slate = store.read_json(f"slates/{day_et.isoformat()}.json", {}) or {}
-    return {g["id"] for g in slate.get("games", []) if (g.get("scoring") or {}).get("qualified")}
+    sc = lambda g: g.get("scoring") or {}
+    return {g["id"] for g in slate.get("games", []) if sc(g).get("tracked", sc(g).get("qualified"))}
 
 
 def live_due(now: datetime, events: list[dict], tracked: set[str]) -> bool:

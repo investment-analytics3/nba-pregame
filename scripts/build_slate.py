@@ -233,7 +233,8 @@ def main() -> int:
         sp = g["spread"]["details"] if g["spread"] else "none"
         b2b = ", ".join(t["abbr"] for t in (a, h) if t["b2b"]) or "-"
         sc = g["scoring"]
-        result = ("QUALIFIED on " + ", ".join(sc["qualifiers"])) if sc.get("qualified") else "No track"
+        result = ("QUALIFIED: " + sc.get("route", "")) if sc.get("qualified") else (
+            "Watch list" if sc.get("tier") == "watch" else "No track")
         notes = "; ".join(sc.get("fails", []) + sc.get("warnings", [])) or "-"
         score = f"{sc['score']}/40 {sc['band']}" if sc.get("scored") else "-"
         lines.append(f"| {result} | {score} | {g['tip_pt']} | {a['abbr']} @ {h['abbr']}"

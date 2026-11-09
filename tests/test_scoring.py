@@ -1,4 +1,4 @@
-"""Unit tests for the six rules and the 40-point hero score.
+"""Unit tests for the qualification tiers and the 40-point hero score.
 
 Run:  python -m unittest discover -s tests -v
 """
@@ -26,48 +26,78 @@ def game(fav, dog, fav_side="home", neutral=False):
 
 
 class Qualification(unittest.TestCase):
-    def test_clean_qualifier(self):
+    """Tiers (Nov 9): qualified = score 28+ or all-four mismatch; watch = 18-27; injury gate on all."""
+
+    def test_score_route(self):
+        # strong favorite, weak-ish underdog: score 28+ without the all-four mismatch
         fav = team("BOS", (4, 2, 7, 5), (3, 6, 9, 4), net=2, l3="3-0", power=3)
-        dog = team("WAS", (27, 28, 29, 30), (22, 25, 26, 28), l3="0-3", power=30)
+        dog = team("WAS", (27, 28, 29, 15), (22, 25, 26, 15), l3="0-3", power=30)
         r = scoring.score_game(game(fav, dog))
+        self.assertGreaterEqual(r["score"], 28)
+        self.assertEqual(r["tier"], "qualified")
         self.assertTrue(r["qualified"])
+        self.assertEqual(r["routes"], [f"Score {r['score']}"])
         self.assertEqual(r["qualifiers"], ["eFG%", "Off Eff", "Opp eFG%", "Def Eff"])
 
-    def test_rule2_needs_same_metric(self):
-        fav = team("A", (5, 15, 15, 15), (15, 5, 15, 15))  # season eFG top 10, last-3 only Off
-        r = scoring.score_game(game(fav, team("B", (20,) * 4, (20,) * 4, l3="1-2")))
-        self.assertFalse(r["qualified"])
-        self.assertIn("not top 10 over last 3", r["fails"][0])
+    def test_mismatch_route_regardless_of_score(self):
+        # all four top 10 / bottom 10 in both windows, but only 1-pointers and an away b2b favorite
+        fav = team("A", (9, 9, 9, 9), (9, 9, 9, 9), net=15, l3="0-3", power=15, b2b=True)
+        dog = team("B", (21, 21, 21, 21), (21, 21, 21, 21), l3="2-1", power=15)
+        r = scoring.score_game(game(fav, dog, "away"))
+        self.assertLess(r["score"], 28)
+        self.assertEqual(r["tier"], "qualified")
+        self.assertIn("All-four mismatch", r["routes"])
 
-    def test_rule3_hot_underdog(self):
-        fav = team("A", (5, 5, 5, 5), (5, 5, 5, 5))
-        dog = team("B", (20,) * 4, (20, 8, 20, 20), l3="1-2")
-        r = scoring.score_game(game(fav, dog))
-        self.assertFalse(r["qualified"])
-        self.assertIn("Off Eff", r["fails"][0])
+    def test_mismatch_needs_all_sixteen(self):
+        fav = team("A", (9, 9, 9, 9), (9, 9, 9, 11), l3="0-3")       # one last-3 rank misses
+        dog = team("B", (21,) * 4, (21,) * 4, l3="2-1")
+        r = scoring.score_game(game(fav, dog, "away"))
+        self.assertNotIn("All-four mismatch", r["routes"])
+        self.assertIn("misses", r["rules"][1]["detail"])
 
-    def test_rule4_underdog_three_oh(self):
-        fav = team("A", (5,) * 4, (5,) * 4)
-        r = scoring.score_game(game(fav, team("B", (20,) * 4, (20,) * 4, l3="3-0")))
-        self.assertIn("Underdog is 3-0 in its last 3", r["fails"])
-
-    def test_rule5_out_fails_questionable_warns(self):
+    def test_watch_list(self):
+        fav = team("A", (5,) * 4, (5,) * 4, l3="2-1")
         dog = team("B", (20,) * 4, (20,) * 4, l3="1-2")
-        out = scoring.score_game(game(team("A", (5,) * 4, (5,) * 4, key_out=["Star"]), dog))
-        self.assertFalse(out["qualified"])
-        q = scoring.score_game(game(team("A", (5,) * 4, (5,) * 4, key_q=["Star"]), dog))
-        self.assertTrue(q["qualified"])
+        r = scoring.score_game(game(fav, dog))
+        self.assertTrue(18 <= r["score"] < 28)
+        self.assertEqual(r["tier"], "watch")
+        self.assertFalse(r["qualified"])
+        self.assertIn("Watch list", r["fails"][0])
+
+    def test_low_score_is_no_track_even_if_old_rules_pass(self):
+        # top 10 in one metric for season and last 3 only: passed the old rules, score is low now
+        fav = team("MEM", (25, 9, 25, 25), (25, 9, 25, 25), l3="1-2", power=18)
+        dog = team("TOR", (15,) * 4, (15,) * 4, l3="1-2")
+        r = scoring.score_game(game(fav, dog, "away"))
+        self.assertLess(r["score"], 18)
+        self.assertEqual(r["tier"], "out")
+        self.assertTrue(r["context"][0]["pass"])
+
+    def test_injury_gate_on_every_route(self):
+        dog = team("B", (30,) * 4, (30,) * 4, l3="0-3", power=30)
+        out = scoring.score_game(game(team("A", (1,) * 4, (1,) * 4, net=1, l3="3-0", power=1, key_out=["Star"]), dog))
+        self.assertEqual(out["tier"], "out")
+        self.assertIn("Favorite key player out: Star", out["fails"])
+        q = scoring.score_game(game(team("A", (1,) * 4, (1,) * 4, net=1, l3="3-0", power=1, key_q=["Star"]), dog))
+        self.assertEqual(q["tier"], "qualified")
         self.assertTrue(any("questionable" in w for w in q["warnings"]))
 
     def test_underdog_injury_is_info_only(self):
-        dog = team("B", (20,) * 4, (20,) * 4, l3="1-2", key_out=["Their star"])
-        r = scoring.score_game(game(team("A", (5,) * 4, (5,) * 4), dog))
+        dog = team("B", (30,) * 4, (30,) * 4, l3="0-3", power=30, key_out=["Their star"])
+        r = scoring.score_game(game(team("A", (1,) * 4, (1,) * 4, net=1, l3="3-0", power=1), dog))
         self.assertTrue(r["qualified"])
         self.assertTrue(any(w.startswith("Info:") for w in r["warnings"]))
+
+    def test_order(self):
+        mk = lambda tier, score: {"scoring": {"tier": tier, "score": score}, "tip_utc": "x"}
+        games = [mk("out", 30), mk("watch", 20), mk("qualified", 12), mk("watch", 25)]
+        self.assertEqual([(g["scoring"]["tier"], g["scoring"]["score"]) for g in scoring.order_games(games)],
+                         [("qualified", 12), ("watch", 25), ("watch", 20), ("out", 30)])
 
     def test_no_spread(self):
         r = scoring.score_game({"favorite": None, "home": {}, "away": {}})
         self.assertFalse(r["scored"])
+        self.assertEqual(r["tier"], "out")
 
 
 class HeroScore(unittest.TestCase):

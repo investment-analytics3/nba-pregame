@@ -27,6 +27,7 @@ h1.title{margin:6px 0 0;font-size:44px;line-height:1;font-weight:700}
 .sec-head h2{margin:0;font-size:24px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
 .sec-head .cnt{font-size:12px;font-weight:700;color:#C7CEDC;background:#1A2236;border:1px solid #26314B;padding:2px 9px;border-radius:999px}
 .sec-head .rule{flex:1;height:1px;background:linear-gradient(90deg,#2A3653,rgba(42,54,83,0))}
+.amberline{height:4px;margin:-4px 0 20px;border-radius:999px;background:linear-gradient(90deg,#FADB80,#D9A12A 70%,#8A5F0E);box-shadow:0 0 12px rgba(233,178,58,.45)}
 .redline{height:6px;margin:-4px 0 20px;border-radius:999px;background:linear-gradient(90deg,#F05252,#C42B2B 70%,#8E1A1A);box-shadow:0 0 16px rgba(240,82,82,.55)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,360px),1fr));gap:20px;margin-bottom:34px}
 .card{all:unset;box-sizing:border-box;display:flex;flex-direction:column;gap:14px;padding:18px 18px 14px;cursor:pointer;
@@ -170,15 +171,19 @@ function pillGrid(sc, base){
 function card(g, i){
   const sc = g.scoring||{}, delay = i*110, fav = favOf(g);
   const keyOut = [g.away,g.home].reduce((n,t)=>n+(t.key_out||[]).length,0);
-  const qline = !sc.scored ? ['#9AA4BA','M4 8h8','No spread posted yet'] : (sc.qualified ? ['#86EFAC','M3 8.5l3.2 3L13 4.5','Qualified on '+sc.qualifiers.join(' · ')] : ['#FCA5A5','M4 4l8 8M12 4l-8 8',sc.fails[0]]);
+  const tier = sc.tier || (sc.qualified ? 'qualified' : 'out');
+  const qline = !sc.scored ? ['#9AA4BA','M4 8h8','No spread posted yet']
+    : (tier==='qualified' ? ['#86EFAC','M3 8.5l3.2 3L13 4.5','Qualified: '+(sc.route||sc.qualifiers.join(' · '))]
+    : (tier==='watch' ? ['#FCD97A','M8 3v6M8 12v.5',sc.fails[0]] : ['#FCA5A5','M4 4l8 8M12 4l-8 8',sc.fails[0]]));
   const yellows = (sc.warnings||[]).filter(w=>/questionable/i.test(w));
-  const b2b = [g.away,g.home].map(t=>`<span>${esc(t.abbr)} <span class="yn" style="${t.b2b?'color:#F5EBFF;background:linear-gradient(180deg,#9B5CF0,#6D28D9)':'color:#9AA4BA;background:rgba(255,255,255,.06)'}">${t.b2b?'Yes':'No'}</span></span>`).join('');
+  const b2b = [g.away,g.home].map(t=>`<span>${esc(t.abbr)} <span class="yn" style="${t.b2b?'color:#fff;background:linear-gradient(180deg,#D44444,#A12222)':'color:#03240F;background:linear-gradient(180deg,#43DE8F,#1F9D58)'}">${t.b2b?'Yes':'No'}</span></span>`).join('');
   return `<button type="button" class="card card-in" style="animation-delay:${delay}ms" onclick="openGame('${g.id}')" aria-label="${esc(g.away.name)} at ${esc(g.home.name)}, open full breakdown">
     <div class="row between" style="align-items:flex-start"><div style="display:flex;flex-direction:column;gap:5px"><span class="tip">${esc(g.tip_pt)}${g.neutral?' · Neutral':''}</span>
-      ${sc.qualified?`<span class="lv" data-live="${g.id}"></span>`:''}
+      ${sc.tracked?`<span class="lv" data-live="${g.id}"></span>`:''}
       <span class="b2b"><b style="letter-spacing:.08em">B2B</b>${b2b}</span></div>
       <div class="row" style="gap:6px">${keyOut?`<span class="chip" style="color:#FCA5A5;background:rgba(220,50,50,.14);border:1px solid rgba(220,50,50,.4)">+ ${keyOut} key out</span>`:''}
-      ${sc.scored && !sc.qualified?'<span class="chip" style="color:#fff;background:linear-gradient(180deg,#D44444,#A12222);letter-spacing:.08em;text-transform:uppercase">No track</span>':''}</div></div>
+      ${sc.scored && tier==='out'?'<span class="chip" style="color:#fff;background:linear-gradient(180deg,#D44444,#A12222);letter-spacing:.08em;text-transform:uppercase">No track</span>':''}
+      ${sc.scored && tier==='watch'?'<span class="chip" style="color:#2A1C00;background:linear-gradient(180deg,#FADB80,#D9A12A);letter-spacing:.08em;text-transform:uppercase">Watch list</span>':''}</div></div>
     <div class="row" style="gap:14px"><div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:12px">${teamLine(g,g.away)}${teamLine(g,g.home)}</div>${donut(sc,108,delay)}</div>
     <div class="qual" style="color:${qline[0]}"><svg viewBox="0 0 16 16" width="14" height="14" style="flex:none;margin-top:2px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" aria-hidden="true"><path d="${qline[1]}"/></svg><span>${esc(qline[2])}</span></div>
     ${yellows.map(w=>`<div class="warn">${esc(w)}</div>`).join('')}
@@ -187,7 +192,8 @@ function card(g, i){
 }
 
 function listView(){
-  const q = DATA.games.filter(g=>g.scoring&&g.scoring.qualified), n = DATA.games.filter(g=>!(g.scoring&&g.scoring.qualified));
+  const tierOf = g => (g.scoring && (g.scoring.tier || (g.scoring.qualified ? 'qualified' : 'out'))) || 'out';
+  const q = DATA.games.filter(g=>tierOf(g)==='qualified'), w = DATA.games.filter(g=>tierOf(g)==='watch'), n = DATA.games.filter(g=>tierOf(g)==='out');
   const kindLabel = DATA.kind==='final' ? 'Final' : (DATA.kind==='preview' ? 'Preview' : (DATA.kind==='retro' ? 'Rebuilt board' : 'Pregame board'));
   let h = `<header class="row between" style="flex-wrap:wrap;align-items:flex-end;gap:16px"><div><div class="eyebrow">NBA · ${kindLabel}</div><h1 class="title cond">${esc(DATA.date_label)}</h1></div>
     <div style="text-align:right;font-size:13px;color:var(--muted);line-height:1.6">Data pulled ${esc(DATA.built_label)} · ${DATA.games.length} games<br>Stats through ${esc(DATA.metrics_through_label||'–')}</div></header>
@@ -203,11 +209,15 @@ function listView(){
   }
   if(!DATA.games.length) h += '<div class="panel pad">No NBA games today.</div>';
   let i = 0;
-  [['Qualified',q,'#2FC373',false],['Did not qualify',n,'#E04848',true]].forEach(([t,list,dot,red])=>{
-    if(!list.length && !DATA.games.length) return;
+  [['Qualified',q,'#2FC373','','Score 28+ or all-four mismatch'],
+   ['Watch list',w,'#E9B23A','#FFD66B','Score 18-27'],
+   ['Did not qualify',n,'#E04848','#FF7676','']].forEach(([t,list,dot,col,sub])=>{
+    if(!DATA.games.length) return;
+    if(t==='Watch list' && !list.length) return;
+    const red = t==='Did not qualify';
     h += `<section><div class="sec-head"><span style="width:10px;height:10px;border-radius:50%;background:${dot};box-shadow:0 0 10px ${dot}"></span>
-      <h2 class="cond" style="color:${red?'#FF7676':'#E6EAF2'}">${t}</h2><span class="cnt">${list.length}</span><div class="rule"></div><span style="font-size:12px;color:var(--dim)">Sorted by hero score</span></div>
-      ${red?'<div class="redline grow"></div>':''}<div class="grid">${list.map(g=>card(g,i++)).join('') || '<div style="color:var(--muted);font-size:14px">None today.</div>'}</div></section>`;
+      <h2 class="cond" style="color:${col||'#E6EAF2'}">${t}</h2><span class="cnt">${list.length}</span><div class="rule"></div><span style="font-size:12px;color:var(--dim)">${sub?esc(sub):'Sorted by hero score'}</span></div>
+      ${red?'<div class="redline grow"></div>':''}${t==='Watch list'?'<div class="amberline grow"></div>':''}<div class="grid">${list.map(g=>card(g,i++)).join('') || '<div style="color:var(--muted);font-size:14px">None today.</div>'}</div></section>`;
   });
   h += `<p style="font-size:12px;color:var(--dim);line-height:1.6">Sources: team metrics computed from ESPN box scores · spreads via ESPN (${esc((DATA.games.find(g=>g.spread)||{spread:{}}).spread.provider||'sportsbook')}) · injuries: ${esc(DATA.injury_source||'unavailable')} · power: own net rating, ESPN BPI, NBA.com. Context only, not betting advice.</p>`;
   return h;
@@ -275,11 +285,17 @@ function detailView(g){
   const b = sc.scored ? BAND[sc.band] : {num:'#8B95AB',word:'No line'};
   let h = `<div class="row" style="flex-wrap:wrap;margin-bottom:18px"><button class="btn" onclick="location.hash=''"><svg viewBox="0 0 16 16" width="14" height="14" style="fill:none;stroke:currentColor;stroke-width:2" aria-hidden="true"><path d="M10 3L5 8l5 5"/></svg>All games</button>
     <span style="font-size:13px;color:var(--muted)">${esc(g.tip_pt)} · Data pulled ${esc(DATA.built_label)}</span>
-    ${sc.qualified && LIVE_ON?`<div class="tabs" style="margin-left:auto"><a class="on" aria-current="page" href="#g-${g.id}">Pregame</a><a href="${LIVE_URL}?g=${g.id}"><span class="lv-dot" data-livedot="${g.id}"></span>Live</a></div>`:''}</div>
+    ${sc.tracked && LIVE_ON?`<div class="tabs" style="margin-left:auto"><a class="on" aria-current="page" href="#g-${g.id}">Pregame</a><a href="${LIVE_URL}?g=${g.id}"><span class="lv-dot" data-livedot="${g.id}"></span>Live</a></div>`:''}</div>
     <h1 class="title cond" style="font-size:40px">${esc(g.away.name)} <span style="color:#7C869E">@</span> ${esc(g.home.name)}</h1>
     <div style="margin:8px 0 20px;font-size:14px;color:#9AA4BA">${g.spread?`Spread: ${esc(g.spread.details)} (${esc(g.spread.provider||'')})`:'No spread posted yet'}${g.neutral?' · Neutral site':''}${sc.scored?` · Favorite: ${esc(fav.name)}`:''}</div>`;
-  if(sc.scored && !sc.qualified) h += `<div class="banner fade" style="background:linear-gradient(180deg,rgba(212,68,68,.22),rgba(161,34,34,.16));border:1px solid rgba(220,60,60,.5)"><span class="chip" style="color:#fff;background:linear-gradient(180deg,#D44444,#A12222);text-transform:uppercase">No track</span><div style="display:flex;flex-direction:column;gap:4px;font-size:14px;color:#FECACA">${sc.fails.map(f=>`<span>${esc(f)}</span>`).join('')}</div></div>`;
-  if(sc.qualified) h += `<div class="banner fade" style="align-items:center;background:linear-gradient(180deg,rgba(47,195,115,.16),rgba(31,157,88,.08));border:1px solid rgba(47,195,115,.45)"><span class="chip" style="color:#03240F;background:linear-gradient(180deg,#43DE8F,#1F9D58);text-transform:uppercase">Track game</span><span style="font-size:14px;color:#BBF7D0">Qualified on ${esc(sc.qualifiers.join(', '))}</span></div>`;
+  const tier2 = sc.tier || (sc.qualified ? 'qualified' : 'out');
+  if(sc.scored && tier2==='watch') h += `<div class="banner fade" style="align-items:center;background:linear-gradient(180deg,rgba(233,178,58,.18),rgba(217,161,42,.08));border:1px solid rgba(233,178,58,.5)"><span class="chip" style="color:#2A1C00;background:linear-gradient(180deg,#FADB80,#D9A12A);text-transform:uppercase">Watch list</span><span style="font-size:14px;color:#FDE68A">${esc(sc.fails[0])}. Not tracked live.</span></div>`;
+  if(sc.scored && tier2==='out') h += `<div class="banner fade" style="background:linear-gradient(180deg,rgba(212,68,68,.22),rgba(161,34,34,.16));border:1px solid rgba(220,60,60,.5)"><span class="chip" style="color:#fff;background:linear-gradient(180deg,#D44444,#A12222);text-transform:uppercase">No track</span><div style="display:flex;flex-direction:column;gap:4px;font-size:14px;color:#FECACA">${sc.fails.map(f=>`<span>${esc(f)}</span>`).join('')}</div></div>`;
+  if(sc.qualified) h += `<div class="banner fade" style="align-items:center;background:linear-gradient(180deg,rgba(47,195,115,.16),rgba(31,157,88,.08));border:1px solid rgba(47,195,115,.45)"><span class="chip" style="color:#03240F;background:linear-gradient(180deg,#43DE8F,#1F9D58);text-transform:uppercase">Track game</span><span style="font-size:14px;color:#BBF7D0">Qualified: ${esc(sc.route||sc.qualifiers.join(', '))}</span></div>`;
+  if(sc.scored && sc.rules && sc.rules.length && sc.rules[0].rule==='A'){
+    h += `<div class="panel pad" style="margin-bottom:14px"><h3 style="margin:0 0 8px">How it qualifies</h3><div style="display:flex;flex-direction:column;gap:6px;font-size:14px">${sc.rules.map(r=>`<div style="display:grid;grid-template-columns:22px minmax(0,1fr);gap:8px;align-items:start"><span style="width:20px;height:20px;border-radius:6px;display:grid;place-items:center;font-weight:800;font-size:12px;${r.pass?'background:linear-gradient(180deg,#43DE8F,#1F9D58);color:#03240F':'background:#3A1E22;color:#FCA5A5;border:1px solid rgba(200,48,48,.5)'}">${r.pass?'✓':'✗'}</span><span><b>${esc(r.rule==='Injury'?'Injury gate':'Route '+r.rule)}: ${esc(r.name)}</b><br><span style="color:var(--muted);font-size:12.5px">${esc(r.detail)}</span></span></div>`).join('')}</div>
+      <div style="font-size:12px;color:var(--dim);margin-top:8px">Qualified = route A or B, with the injury gate clear. Watch list = score 18-27.</div></div>`;
+  }
   (sc.warnings||[]).forEach(w=>{ h += /^Info:/.test(w)||/Neutral/.test(w) ? `<div style="font-size:13px;color:#9AA4BA;margin:0 0 10px 4px">${esc(w.replace(/^Info: /,''))}</div>` : `<div class="warn" style="margin-bottom:10px">${esc(w)}</div>`; });
   const people = t => (t.closers&&t.closers.length? 'Closers: '+t.closers.join(', ') : 'Top scorers: '+((t.top_scorers||[]).map(p=>`${p.name} ${p.ppg}`).join(', ')||'–'));
   h += `<div class="two" style="margin-top:10px"><div class="panel pad" style="flex:1 1 240px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">${donut(sc,176,0)}<span style="font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:${b.num}">${b.word}</span></div>
@@ -345,7 +361,7 @@ async function pollLive(){
   try{
     const ymd = DATA.date.replace(/-/g,'');
     const sb = await (await fetch(`https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=${ymd}&t=${Date.now()}`)).json();
-    const tracked = new Set(DATA.games.filter(g=>g.scoring&&g.scoring.qualified).map(g=>g.id));
+    const tracked = new Set(DATA.games.filter(g=>g.scoring&&(g.scoring.tracked ?? g.scoring.qualified)).map(g=>g.id));
     let ctx = null;
     for(const e of (sb.events||[])){
       if(!tracked.has(e.id)) continue;
