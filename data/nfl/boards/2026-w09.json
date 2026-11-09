@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 9,
- "built_at": "2026-11-09T11:00:42-08:00",
- "built_label": "Mon Nov 9, 11:00 AM PT",
+ "built_at": "2026-11-09T12:00:44-08:00",
+ "built_label": "Mon Nov 9, 12:00 PM PT",
  "games": [
   {
    "id": "401873051",
@@ -20,7 +20,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -3.0,
    "total": 45.5,
    "total_open": 48.5,
@@ -347,9 +347,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV09BUFMIN",
-    "fav_prob": 0.625,
-    "bid": 0.62,
-    "ask": 0.63
+    "fav_prob": 0.635,
+    "bid": 0.63,
+    "ask": 0.64
    }
   },
   {
@@ -368,7 +368,7 @@
     "home": 10,
     "away": 33
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": 4.5,
    "total": 40.5,
    "total_open": 49.5,
@@ -701,7 +701,7 @@
     "home": 17,
     "away": 34
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -4.5,
    "total": 52.5,
    "total_open": 48.5,
@@ -887,6 +887,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Andrei Iosivas",
+      "pos": "WR",
+      "status": "Injured Reserve"
+     },
+     {
       "name": "Landon Robinson",
       "pos": "DT",
       "status": "Out"
@@ -905,11 +910,6 @@
       "name": "Kyle Dugger",
       "pos": "S",
       "status": "Out"
-     },
-     {
-      "name": "Cashius Howell",
-      "pos": "DE",
-      "status": "Injured Reserve"
      }
     ]
    },
@@ -1018,7 +1018,7 @@
     "home": 21,
     "away": 26
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -3.0,
    "total": 44.5,
    "total_open": 42.5,
@@ -1097,14 +1097,18 @@
     },
     "injuries_known": true,
     "key_out": [
-     "Bobby Okereke",
-     "Jaelan Phillips"
+     "Bobby Okereke"
     ],
     "key_questionable": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Xavier Legette",
+      "pos": "WR",
+      "status": "Injured Reserve"
+     },
      {
       "name": "Jonathon Brooks",
       "pos": "RB",
@@ -1122,11 +1126,6 @@
      },
      {
       "name": "Bobby Okereke",
-      "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "name": "Jaelan Phillips",
       "pos": "LB",
       "status": "Out"
      }
@@ -1341,7 +1340,7 @@
     "home": 23,
     "away": 27
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -1.5,
    "total": 51.5,
    "total_open": 52.5,
@@ -1534,13 +1533,13 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Jake Ferguson",
-      "pos": "TE",
-      "status": "Questionable"
-     },
-     {
       "name": "Tyler Goodson",
       "pos": "RB",
+      "status": "Doubtful"
+     },
+     {
+      "name": "Jake Ferguson",
+      "pos": "TE",
       "status": "Questionable"
      },
      {
@@ -1670,7 +1669,7 @@
     "home": 35,
     "away": 12
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -9.5,
    "total": 47.5,
    "total_open": 41.5,
@@ -1992,7 +1991,7 @@
     "home": 9,
     "away": 19
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -6.5,
    "total": 50.5,
    "total_open": 47.5,
@@ -2311,7 +2310,7 @@
     "home": 23,
     "away": 22
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -3.5,
    "total": 43.5,
    "total_open": 41.5,
@@ -2638,7 +2637,7 @@
     "home": 11,
     "away": 19
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": 5.5,
    "total": 38.5,
    "total_open": 44.5,
@@ -2969,7 +2968,7 @@
     "home": 13,
     "away": 20
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -4.5,
    "total": 47.5,
    "total_open": 50.5,
@@ -3047,7 +3046,9 @@
      "rank": 18
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Treylon Burks"
+    ],
     "key_questionable": [
      "Lucas Patrick"
     ],
@@ -3055,6 +3056,11 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Treylon Burks",
+      "pos": "WR",
+      "status": "Out"
+     },
      {
       "name": "Lucas Patrick",
       "pos": "G",
@@ -3072,11 +3078,6 @@
      },
      {
       "name": "Isaac Yiadom",
-      "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "name": "Fabian Moreau",
       "pos": "CB",
       "status": "Out"
      }
@@ -3294,7 +3295,7 @@
     "home": 22,
     "away": 44
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": 1.5,
    "total": 40.5,
    "total_open": 43.5,
@@ -3620,7 +3621,7 @@
     "home": 38,
     "away": 17
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -8.5,
    "total": 51.5,
    "total_open": 46.5,
@@ -3943,7 +3944,7 @@
     "home": 27,
     "away": 45
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -1.5,
    "total": 44.5,
    "total_open": 46.5,
@@ -4276,7 +4277,7 @@
     "home": 17,
     "away": 3
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -13.5,
    "total": 40.5,
    "total_open": 45.5,
@@ -4605,7 +4606,7 @@
     "home": 27,
     "away": 24
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -3.5,
    "total": 47.5,
    "total_open": 48.5,
@@ -4798,6 +4799,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Jalen McMillan",
+      "pos": "WR",
+      "status": "Injured Reserve"
+     },
+     {
       "name": "Antoine Winfield Jr.",
       "pos": "S",
       "status": "Questionable"
@@ -4815,11 +4821,6 @@
      {
       "name": "Trevor Keegan",
       "pos": "G",
-      "status": "Out"
-     },
-     {
-      "name": "DeMonte Capehart",
-      "pos": "DT",
       "status": "Out"
      }
     ]
@@ -4949,6 +4950,6 @@
   "tracked": 0,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Mon Nov 9, 11:00 AM PT"
+  "built_label": "Mon Nov 9, 12:00 PM PT"
  }
 }
