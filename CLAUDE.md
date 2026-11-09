@@ -134,13 +134,13 @@ often: always `git pull --rebase origin main` before pushing.
 ## Rules and decisions (keep in sync with the design spec)
 
 - Favorite = spread favorite (ESPN favorite flags; spread number is unsigned). Pick'em: moneyline decides.
-- Tiers (since Nov 9, nba/scoring.py): Qualified = Analysis Score 28+ (route A) OR all-four mismatch (route B:
-  favorite top 10 AND underdog bottom 10 = rank 21-30 in all four metrics, season and last 3). Watch list = score
-  18-27. No track = the rest. Injury gate on every tier: favorite key player Out/Doubtful or no injury report ->
+- Tiers (since Nov 9, nba/scoring.py): Qualified = Analysis Score 28+ (route A) OR last-3 mismatch (route B, revised
+  Nov 9: last 3 favorite top 10 in >= 3 of 4 AND underdog bottom 10 = rank 21-30 in >= 3 of 4; season favorite top 15
+  in all four AND underdog top 10 in none). Watch list = score 18-27. No track = the rest. Injury gate on every tier: favorite key player Out/Doubtful or no injury report ->
   No track (Questionable = yellow warning; underdog injuries info only). The earlier six checks are kept as
   `context` only; `qualifiers` still lists the favorite's top-10 (season+last 3) metrics. `qualified` stays the
   boolean every consumer reads; `tier`, `route`, `tracked` are new. `LIVE_TIERS` decides what the live tracker,
-  L1 live chips and Live page follow (default: qualified only).
+  L1 live chips and Live page follow (Qualified + Watch list since Nov 9).
 - L1: three sections (Qualified green, Watch list amber, Did not qualify red line). B2B Yes = red, No = green.
 - Key player = started at least half of the team's games, or top 5 on the team in minutes per game.
 - Analysis Score (max 40): favorite metrics 16 (season+last 3; top 5 = 2, top 10 = 1), underdog
@@ -153,7 +153,7 @@ often: always `git pull --rebase origin main` before pushing.
 - Metrics are box-score based (TeamRankings-style possessions), validated against NBA.com:
   ranks match closely; values run ~2 points lower than NBA.com's play-by-play ratings.
 - Not used: TeamRankings (terms unclear), stats.nba.com (blocks cloud servers). BPI has no history.
-- Live mode (full table in the design spec "Live mode" section): tracks `LIVE_TIERS` games (Qualified by default); BET only
+- Live mode (full table in the design spec "Live mode" section): tracks `LIVE_TIERS` games (Qualified + Watch list); BET only
   4th 10:00-4:00 for an A/A+ team that is LEADING (trailing A = comeback signal, not a bet); LEAN = same in the
   3rd / before 10:00; under 4:00 and OT read only. Alerts: phone only, end of 3rd (always) + first BET signal.
   End-of-3rd push = the 7-item checklist verdict (engine `checklist()`): lead 10+ at end of 3rd; opp eFG% top 10
@@ -170,7 +170,8 @@ often: always `git pull --rebase origin main` before pushing.
 ## Privacy
 
 - Every page carries `<meta name="robots" content="noindex, ...">`; keep it on all templates.
-- No personal names/emails anywhere. History was rewritten once to remove them.
+- No personal names/emails anywhere. History was rewritten once to remove them, and the 32 Actions runs whose
+  logs showed the pre-rename username were deleted Nov 9 (owner approved).
 
 ## Open items
 
