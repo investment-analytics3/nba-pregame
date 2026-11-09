@@ -68,10 +68,11 @@ function card(g){
   const side = t => `<div class="tm ${t.code===g.fav?'fav':''}"><span class="badge">${esc(t.abbr)}</span><span><b>${esc(t.abbr)}${t.code===g.fav?' '+line(g.spread):''}</b><br><span class="muted">${esc(t.record)} · last 2 ${t.last2_results.join('') || '–'}</span></span></div>`;
   const k = g.kalshi && g.kalshi.fav_prob!=null ? `Kalshi ${esc(fav.abbr)} ${Math.round(g.kalshi.fav_prob*100)}¢${g.kalshi.fav_prob>0.85?' <span class="warnc">priced in</span>':''}` : '';
   const fpi = fav.fpi_win!=null ? `FPI ${pct(fav.fpi_win)}` : '';
+  const ex = g.votes && g.votes.support!=null ? `Experts ${esc(fav.abbr)} ${g.votes.fav}-${g.votes.dog} ATS (${pct(g.votes.support)})` : '';
   const flags = (sc.flags||[]).filter(f=>f.level!=='info').slice(0,3).map(f=>`<div class="flag ${f.level}">${esc(f.text)}</div>`).join('');
   return `<article class="card" id="g-${esc(g.id)}">${head}
     <div class="row" style="gap:14px;align-items:center">${donut(sc.hero)}<div style="display:flex;flex-direction:column;gap:8px;min-width:0">${side(away)}${side(home)}</div></div>
-    <div class="sub">${[g.total!=null?'Total '+g.total+(g.total_move? ' ('+line(g.total_move)+')':''):'', g.movement? 'Line moved '+line(g.movement)+' toward fav':'', fpi, k].filter(Boolean).join(' · ')}</div>
+    <div class="sub">${[g.total!=null?'Total '+g.total+(g.total_move? ' ('+line(g.total_move)+')':''):'', g.movement? 'Line moved '+line(g.movement)+' toward fav':'', fpi, ex, k].filter(Boolean).join(' · ')}</div>
     ${edgeBar(sc.edge)}${pills(g)}${flags}
     <div class="row between"><details style="flex:1"><summary>Rules, score and details</summary>${detail(g)}</details></div>
     ${g.state!=='pre'?`<a class="small" style="font-weight:600" href="game.html?g=${esc(g.id)}">${g.state==='in'?'Live read ›':'Game read ›'}</a>`:''}</article>`;
@@ -88,6 +89,7 @@ function detail(g){
   return `<div class="det"><h4>Qualification: ${sc.qualified?'<span class="okc">TRACK GAME = YES</span>':'<span class="noc">TRACK GAME = NO</span>'}</h4>${rules}
     <h4>Hero score ${sc.hero.score} / 40</h4><div class="kvs">${parts}</div>
     <h4>Season numbers</h4><div class="tw"><table><tr><th></th><th>Off EPA</th><th>Off SR</th><th>Def EPA</th><th>Def SR</th><th>Net</th><th>Pass / rush EPA</th></tr>${stat(fav)}${stat(dog)}</table></div>
+    ${g.votes?`<h4>Expert picks (against the spread)</h4><div class="small">${(g.votes.sources||[]).map(s=>`${s.url?`<a href="${esc(s.url)}" rel="noreferrer">${esc(s.site)}</a>`:esc(s.site)}: ${esc(fav.abbr)} ${s.fav}-${s.dog}`).join(' · ')}${g.votes.notes?`<br><span class="muted">${esc(g.votes.notes)}</span>`:''}</div>`:''}
     <h4>Quarterbacks</h4><div class="small">${esc(fav.abbr)}: ${qb(fav)}<br>${esc(dog.abbr)}: ${qb(dog)}</div>
     <h4>Injuries (out, doubtful, questionable)</h4><div class="small">${esc(fav.abbr)}: ${inj(fav)}<br>${esc(dog.abbr)}: ${inj(dog)}</div>
     ${sc.under&&sc.under.passes?`<h4>Totals</h4><div class="small">${esc(sc.under.note)}</div>`:''}
@@ -99,7 +101,7 @@ const tracked = games.filter(g=>g.state!=='post' && g.scoring.qualified), other 
 const sec = (t, list, extra='') => list.length ? `<div class="sec-head"><h2 class="cond">${t}</h2><span class="cnt">${list.length}</span><span class="rule"></span></div>${extra}<div class="grid">${list.map(card).join('')}</div>` : '';
 app.innerHTML = `<div class="eyebrow">NFL · ${DATA.season} season · Week ${DATA.week??'–'}</div>
   <h1 class="title cond">NFL Pregame Board</h1>
-  <div class="muted" style="margin-top:6px">Updated ${esc(DATA.built_label)} · stats through ${esc(DATA.data_through||'–')} (nflverse)</div>
+  <div class="muted" style="margin-top:6px">Updated ${esc(DATA.built_label)} · stats through ${esc(DATA.data_through||'–')} (nflverse) · expert picks ${esc(DATA.votes_status||'not gathered yet')}</div>
   <div class="legend"><span><i class="sw" style="background:#2FC373"></i>Favorite top 10 / underdog bottom 10</span><span><i class="sw" style="background:#E9B23A"></i>Middle</span><span><i class="sw" style="background:#C83030"></i>Favorite bottom 10 / underdog top 10</span><span>Hero score: green 28+, yellow 18-27, red 0-17</span></div>
   ${(DATA.notes||[]).length?`<div class="panel final"><ul>${DATA.notes.map(n=>`<li>${esc(n)}</li>`).join('')}</ul></div>`:''}
   ${sec('Tracked', tracked)}${!tracked.length && games.length?'<div class="panel final"><b>No game passes all six rules this week.</b></div>':''}

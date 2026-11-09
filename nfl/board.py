@@ -110,6 +110,7 @@ def build(today_et: date | None = None, refresh: bool = True) -> dict:
 
     for row in games.itertuples():
         board["games"].append(_game(row, events, wm, recs, qbs, keys, board))
+    attach_votes(board)
     board["games"].sort(key=lambda g: (g["state"] == "post", g["kick_utc"]))
     tracked = [g for g in board["games"] if g["scoring"].get("qualified") and g["state"] != "post"]   # still to play
     board["summary"] = {"season": season, "week": week, "games": len(board["games"]),
@@ -118,6 +119,32 @@ def build(today_et: date | None = None, refresh: bool = True) -> dict:
                         "edge_clears": sum(1 for g in board["games"] if g["scoring"].get("edge", {}).get("clears")),
                         "built_label": board["built_label"]}
     return board
+
+
+def attach_votes(board: dict):
+    """Expert ATS picks gathered by the weekly Claude scheduled task (data/nfl/votes/<season>-w<WW>.json).
+
+    Information only: the votes never change the rules, the score or the call. A large favorite
+    whose support is under 70% gets a flag (the Week 9 report's rule).
+    """
+    path = os.path.join(DATA, "votes", f"{board['season']}-w{board['week']:02d}.json")
+    if not os.path.exists(path):
+        board["votes_status"] = "not gathered yet"
+        return
+    with open(path) as f:
+        v = json.load(f)
+    board["votes_status"] = f"gathered {v.get('updated', '?')}"
+    board["votes_missing"] = v.get("missing_sources", [])
+    for g in board["games"]:
+        e = (v.get("games") or {}).get(str(g["id"]))
+        if not e or not g.get("fav"):
+            continue
+        fv, dv = int(e.get("fav_votes") or 0), int(e.get("dog_votes") or 0)
+        g["votes"] = {"fav": fv, "dog": dv, "support": round(fv / (fv + dv), 3) if fv + dv else None,
+                      "sources": e.get("sources", []), "notes": e.get("notes", "")}
+        if g["votes"]["support"] is not None and (g["scoring"].get("edge") or {}).get("large_favorite") \
+                and g["votes"]["support"] < 0.70:
+            g["scoring"]["flags"].append({"level": "yellow", "text": f"Large favorite with expert ATS support under 70% ({fv}-{dv})"})
 
 
 def _game(row, events, wm, recs, qbs, keys, board) -> dict:
