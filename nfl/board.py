@@ -111,7 +111,7 @@ def build(today_et: date | None = None, refresh: bool = True) -> dict:
     for row in games.itertuples():
         board["games"].append(_game(row, events, wm, recs, qbs, keys, board))
     board["games"].sort(key=lambda g: (g["state"] == "post", g["kick_utc"]))
-    tracked = [g for g in board["games"] if g["scoring"].get("qualified")]
+    tracked = [g for g in board["games"] if g["scoring"].get("qualified") and g["state"] != "post"]   # still to play
     board["summary"] = {"season": season, "week": week, "games": len(board["games"]),
                         "upcoming": sum(1 for g in board["games"] if g["state"] == "pre"),
                         "tracked": len(tracked), "green": sum(1 for g in tracked if g["scoring"]["hero"]["band"] == "green"),
