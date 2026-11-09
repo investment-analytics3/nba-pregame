@@ -52,7 +52,7 @@ a phone alert. No AI runs in the daily pipeline; Claude is only used to change c
 |---|---|
 | `nfl/sources.py` | nflverse play-by-play / snap counts (GitHub releases) and schedule (`games.csv`: ESPN ids, rest, neutral, lines); team-code maps ESPN↔nflverse↔Kalshi |
 | `nfl/metrics.py` | Four core metrics (off EPA/play, off success, def EPA allowed, def success allowed), season + last 3, ranks 1-32, as of a week (no hindsight); official net EPA; SHADOW adjusted edge; records, QBs, key starters |
-| `nfl/scoring.py` | Six rules, 40-point hero score, official stat edge (+0.35 / +0.45 large fav), flags, Under gate, pregame call |
+| `nfl/scoring.py` | Six rules, 40-point hero score, official stat edge (one +0.35 bar), flags, Under gate, pregame call |
 | `nfl/espn.py`, `nfl/kalshi.py` | ESPN week scoreboard, DK open/current lines, game-day injuries, FPI; Kalshi `KXNFLGAME` prices |
 | `nfl/board.py` | Builds the week's board → `docs/nfl/index.html`, `docs/nfl/summary.json` (landing), `data/nfl/context.json` (logger), `data/nfl/boards/<season>-w<week>.json` |
 | `nfl/early_path.py` | Early blowout path grading (halftime, end of 3rd) — same rules as the 2024-25 backtest |
@@ -73,8 +73,8 @@ workspace; ESPN and Kalshi are not (test with workflows).
 
 NFL rules (spec "NFL Stat Edge v2", decisions Nov 8 2026):
 - Official edge unchanged: net EPA = off EPA/play − def EPA/play allowed (all scrimmage plays, nflverse = RBSDM method);
-  gap must clear +0.35, or +0.45 for large favorites. Large-favorite cutoff `LARGE_FAVORITE = 7` is ASSUMED (owner to confirm).
-  Muffed (the report's primary source) is not automated. QB reset (regular QB out or <100 dropbacks) caps at Lean.
+  gap must clear +0.35 for EVERY favorite, whatever the spread (owner Nov 9: no large-favorite bar, no max spread).
+  nflverse replaces Muffed as the source (owner approved Nov 9). QB reset (regular QB out or <100 dropbacks) caps at Lean.
 - Qualification = NBA six on the four NFL metrics. Hero score 40: fav 16 (top 5 = 2, 6-10 = 1), dog 16 (outside top 10 = 1,
   ranks 23-32 = 2), health 4 (QB active 2, other key starter 1, interior OL 1; 0 without injury info), home 1, rest 1 (fav off
   a bye, or dog on a short week while the fav isn't), form 2 (fav last 2). Bands red 0-17, yellow 18-27, green 28-40.
@@ -87,11 +87,13 @@ NFL rules (spec "NFL Stat Edge v2", decisions Nov 8 2026):
   EPA/db playing well, +1 starter, 0 backup or 2+ turnovers; unclear (another passer 2+ of last 8 dropbacks) caps B in the window.
   Windows: half scout, end of 3rd lean, 4th 15:00-10:00 primary, 10:00-6:00 confirm, 6:00-5:00 last, under 5:00 read only.
   Gates: no answered run = B max; trailing A = no bet; one-score + no QB edge + trading runs = C; 2+ 4th-quarter turnovers = down one;
-  lock = answered + lead > 8 + control. Alerts for NFL live are NOT on (owner hasn't decided).
+  lock = answered + lead > 8 + control. Phone alerts ON (owner Nov 9), tracked games only, max two per game: end of 3rd
+  (engine read + Kalshi) and the first BET signal in 4th 15:00-5:00 (`nfl_live.py` `end3_alert`/`bet_check`; `entry.alerts`
+  stops repeats across restarts; `nfl-live.yml` input `send=false` or `--no-alert` silences tests). Early path stays unalerted.
+- Owner confirmed Nov 9: rest point only when the favorite has more rest than a short-week underdog; no injury info = 0 health.
 - Expert ATS picks (CBS, Bleacher Report, Covers, SI, Yahoo): no feed and no scraping in the pipeline. The owner's Claude
   scheduled task "NFL expert picks" (Thu + Sat 9:43 AM PT) reads the week's articles, writes `data/nfl/votes/<season>-w<WW>.json`
-  (format: `data/nfl/votes/README.md`) and dispatches `nfl.yml`. The board shows them as information only; a large favorite
-  under 70% support gets a flag.
+  (format: `data/nfl/votes/README.md`) and dispatches `nfl.yml`. The board shows them as information only.
 
 ## Workflows (Actions)
 

@@ -19,16 +19,15 @@ Hero score (max 40), bands red 0-17 / yellow 18-27 / green 28-40:
   rest 1                 favorite off a bye, or underdog on a short week while the favorite isn't
   recent form 2          favorite's last 2: 2-0 = 2, 1-1 = 1
 
-Official edge: gap = favorite net EPA - underdog net EPA; must clear +0.35, or +0.45 for
-a large favorite. QB reset caps the call at Lean.
+Official edge: gap = favorite net EPA - underdog net EPA; must clear +0.35 for every
+favorite, whatever the spread (owner decision Nov 9: no large-favorite bar, no max spread).
+QB reset caps the call at Lean.
 """
 from __future__ import annotations
 
 from .metrics import LABELS, METRICS, wl
 
-EDGE_REQUIRED = 0.35
-EDGE_REQUIRED_LARGE = 0.45
-LARGE_FAVORITE = 7.0      # ASSUMED cutoff (report: between -6 and -8.5); confirm with owner
+EDGE_REQUIRED = 0.35       # one bar for every spread
 BYE_REST = 13             # days of rest that means the favorite is coming off a bye
 SHORT_WEEK = 5            # days of rest at or under this = short week
 UNDER_RANK = 21           # Under gate: both offenses ranked 21st or worse (season off EPA)
@@ -103,9 +102,8 @@ def stat_edge(fav: dict, dog: dict, spread: float | None) -> dict:
     if fav.get("net") is None or dog.get("net") is None:
         return {"gap": None}
     gap = fav["net"] - dog["net"]
-    large = spread is not None and abs(spread) >= LARGE_FAVORITE
-    need = EDGE_REQUIRED_LARGE if large else EDGE_REQUIRED
-    out = {"gap": round(gap, 3), "required": need, "large_favorite": large, "clears": gap >= need,
+    need = EDGE_REQUIRED
+    out = {"gap": round(gap, 3), "required": need, "clears": gap >= need,
            "short_by": round(need - gap, 3) if gap < need else 0}
     fa, da = fav.get("adjusted") or {}, dog.get("adjusted") or {}
     if fa.get("net") is not None and da.get("net") is not None:
@@ -137,8 +135,6 @@ def flags(game: dict, fav: dict, dog: dict, edge: dict) -> list[dict]:
     keys = crosses_key(game.get("open_spread"), game.get("spread"))
     if keys:
         f.append({"level": "yellow", "text": "Line crossed key number " + ", ".join(map(str, keys))})
-    if edge.get("large_favorite"):
-        f.append({"level": "info", "text": f"Large favorite (-{LARGE_FAVORITE:g} or more): needs +{EDGE_REQUIRED_LARGE}"})
     for side, t in (("Favorite", fav), ("Underdog", dog)):
         if t.get("key_questionable"):
             f.append({"level": "yellow", "text": f"{side} questionable: " + ", ".join(t["key_questionable"][:4])})

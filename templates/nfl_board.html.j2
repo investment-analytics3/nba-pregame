@@ -52,8 +52,8 @@ function pills(g){
 
 function edgeBar(e){
   if(e.gap==null) return '';
-  const w = Math.max(0, Math.min(100, e.gap/ (e.required*1.4) * 100)), mark = 100/1.4;
-  return `<div class="edge"><div class="row between"><span><b>Stat edge ${sgn(e.gap)}</b> <span class="muted">needs +${e.required.toFixed(2)}${e.large_favorite?' (large fav)':''}</span></span>
+  const w = Math.max(0, Math.min(100, e.gap/ (e.required*1.4) * 100)), mark = 100/1.4;   // bar: 0 to 1.4x the requirement
+  return `<div class="edge"><div class="row between"><span><b>Stat edge ${sgn(e.gap)}</b> <span class="muted">needs +${e.required.toFixed(2)}</span></span>
     <span class="chip ${e.clears?'cg':'cn'}">${e.clears?'Clears':'Short '+e.short_by.toFixed(2)}</span></div>
     <div class="bar"><i style="width:${w}%;background:${e.clears?'#2FC373':'#60A5FA'}"></i><s style="left:${mark}%"></s></div>
     ${e.adjusted_gap!=null?`<div class="tiny">Adjusted edge (shadow, not used): ${sgn(e.adjusted_gap)} season · ${sgn(e.adjusted_recent_gap)} recent-weighted</div>`:''}</div>`;
@@ -106,7 +106,7 @@ app.innerHTML = `<div class="eyebrow">NFL · ${DATA.season} season · Week ${DAT
   ${(DATA.notes||[]).length?`<div class="panel final"><ul>${DATA.notes.map(n=>`<li>${esc(n)}</li>`).join('')}</ul></div>`:''}
   ${sec('Tracked', tracked)}${!tracked.length && games.length?'<div class="panel final"><b>No game passes all six rules this week.</b></div>':''}
   ${sec('Other games', other)}${sec('Played', played)}
-  <div class="small muted foot">Stat edge = favorite net EPA/play minus underdog's (all plays, nflverse = RBSDM method); needs +0.35, or +0.45 for favorites of ${DATA.large_favorite_cutoff} or more (cutoff to confirm). The adjusted edge is logged in shadow only. Kalshi and FPI are a price check and never change the call.</div>`;
+  <div class="small muted foot">Stat edge = favorite net EPA/play minus underdog's (all plays, nflverse = RBSDM method); needs +0.35 for every favorite, whatever the spread. The adjusted edge is logged in shadow only. Kalshi and FPI are a price check and never change the call.</div>`;
 })();
 </script>
 </body>

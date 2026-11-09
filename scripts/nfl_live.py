@@ -18,9 +18,15 @@ next day from nflverse play-by-play (scripts/nfl_grade.py), with the same rules 
 backtest. If a poll misses the exact moment, the first poll after it is used and the
 record is marked "late" with the game clock.
 
+Phone alerts (owner decision Nov 9; same pattern as the NBA): tracked games only (the six
+pregame rules passed), at most two per game, never repeated across restarts:
+    end3  end of the 3rd quarter: the live grade, score, lead, Kalshi price, early-path read
+    bet   the first BET signal in the 4th (15:00-5:00) from the live engine
+The early path itself stays shadow (logged, not alerted) until the Kalshi review.
+
 Writes data/nfl/live/<season>.json and docs/nfl/live.json, committed to main.
 
-    python scripts/nfl_live.py [--max-minutes 330] [--once] [--no-push]
+    python scripts/nfl_live.py [--max-minutes 330] [--once] [--no-push] [--no-alert]
 """
 from __future__ import annotations
 
@@ -34,6 +40,7 @@ from datetime import date, datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from nba import notify  # noqa: E402
 from nba.http import FetchError  # noqa: E402
 from nfl import espn, kalshi  # noqa: E402
 
@@ -42,6 +49,7 @@ ET = ZoneInfo("America/New_York")
 PT = ZoneInfo("America/Los_Angeles")
 CTX = os.path.join(ROOT, "data", "nfl", "context.json")
 POLL = 60
+PAGES = "https://investment-analytics3.github.io/nba-pregame/"
 
 
 def arg(name, default=None):
@@ -140,6 +148,70 @@ def snapshot(g: dict, ev: dict, kind: str, late: bool) -> dict:
     if k and k.get(fk):
         rec["kalshi"] = {"event": k["event"], **k[fk]}
     return rec
+
+
+def alert(entry: dict, g: dict, kind: str, title: str, body: str, priority: str = "default") -> bool:
+    """One push per (game, kind), tracked games only. Returns True if sent."""
+    sent = entry.setdefault("alerts", {})
+    if kind in sent or not g.get("tracked") or "--no-alert" in sys.argv:
+        return False
+    try:
+        notify.send_alert(title, body, click=f"{PAGES}nfl/game.html?g={g['id']}", priority=priority, tags="football")
+    except Exception as e:      # logged either way; never retried into a flood
+        print(f"! alert not sent ({kind}): {e}")
+        sent[kind] = {"at": datetime.now(PT).isoformat(timespec="seconds"), "error": str(e)[:120]}
+        return False
+    sent[kind] = {"at": datetime.now(PT).isoformat(timespec="seconds"), "title": title}
+    print(f"  ALERT {kind}: {title} | {body}")
+    return True
+
+
+def fav_price_text(g: dict, abbr: str | None) -> str:
+    if not abbr:
+        return ""
+    day = datetime.fromisoformat(g["kick_utc"]).astimezone(ET).date()
+    k = kalshi.game_prices(day, g["kalshi_away"], g["kalshi_home"]) or {}
+    code = g["kalshi_away"] if abbr == g.get("away_abbr") else g["kalshi_home"]
+    p = (k.get(code) or {}).get("prob")
+    if p is None:
+        return ""
+    return f" · Kalshi {abbr} {round(p * 100)}¢" + (" (85%+: mostly priced in)" if p >= 0.85 else "")
+
+
+def end3_alert(entry: dict, g: dict, rec: dict):
+    en = rec.get("engine") or {}
+    k = rec.get("kalshi") or {}
+    early = (en.get("early") or {}).get("full")
+    title = f"NFL end of 3rd: {rec['score']}"
+    body = (f"{en.get('headline') or 'No read'} (grade {en.get('grade', '–')}). {g['fav_abbr']} lead {rec['lead']:+d}."
+            + (f" Kalshi {g['fav_abbr']} {round(k['prob'] * 100)}¢." if k.get("prob") else "")
+            + (" Early path: full qualifier (shadow)." if early else "")
+            + (f" {en['gates'][0]}." if en.get("gates") else ""))
+    alert(entry, g, "end3", title, body, "high" if en.get("action") == "LEAN" else "default")
+
+
+def bet_check(entry: dict, g: dict, ev: dict) -> bool:
+    """4th quarter 15:00-5:00, tracked games: run the engine; push the first BET signal."""
+    if not g.get("tracked") or "bet" in entry.get("alerts", {}) or ev.get("period") != 4:
+        return False
+    clock = _secs(ev.get("clock"))
+    if clock is None or clock < 300:
+        return False
+    try:
+        summ = espn.summary(ev["id"])
+    except FetchError:
+        return False
+    en = engine_grade(summ, g)
+    if not en or en.get("action") != "BET":
+        return False
+    hs, as_ = ev["home"]["score"] or 0, ev["away"]["score"] or 0
+    entry["bet_signal"] = {"at": datetime.now(PT).isoformat(timespec="seconds"), "clock": en.get("clock"),
+                           "score": f"{g['away_abbr']} {as_} - {g['home_abbr']} {hs}", "engine": en}
+    title = f"NFL BET {en['pick']} ML ({en['grade']}) · {en.get('clock', '')}"
+    body = (f"{g['away_abbr']} {as_} - {g['home_abbr']} {hs}. {en.get('answer', '')}."
+            f" Control: {en.get('control') or 'none'}." + fav_price_text(g, en["pick"]))
+    alert(entry, g, "bet", title, body, "high")
+    return True
 
 
 def due_checkpoints(ev: dict, entry: dict) -> list[tuple[str, bool]]:
@@ -248,6 +320,10 @@ def main() -> int:
                 changed.append(f"{g['away']}@{g['home']} {kind}")
                 print(f"{datetime.now(PT):%-I:%M %p} {g['away']}@{g['home']} {kind}{' (late)' if late else ''}: "
                       f"{entry[kind]['score']} lead {entry[kind]['lead']} kalshi {(entry[kind].get('kalshi') or {}).get('prob')}")
+                if kind == "q3" and not (late and (_secs(ev.get("clock")) or 0) < 600):   # skip a stale end-of-3rd push
+                    end3_alert(entry, g, entry[kind])
+            if ev["state"] == "in" and bet_check(entry, g, ev):
+                changed.append(f"{g['away']}@{g['home']} bet signal")
             if ev["state"] == "post" and "final" not in entry:
                 hs, as_ = ev["home"]["score"] or 0, ev["away"]["score"] or 0
                 margin = (hs - as_) if g["fav"] == g["home"] else (as_ - hs)

@@ -10,6 +10,7 @@ from datetime import datetime, timedelta, timezone
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from nfl import scoring  # noqa: E402
 from scripts import nfl_scheduler as sch  # noqa: E402
+from scripts import nfl_live  # noqa: E402
 from scripts.nfl_live import due_checkpoints  # noqa: E402
 
 M = scoring.METRICS
@@ -77,10 +78,11 @@ class Hero(unittest.TestCase):
 class Edge(unittest.TestCase):
     def test_thresholds(self):
         fav, dog = team((1,) * 4, (1,) * 4, net=0.30), team((1,) * 4, (1,) * 4, net=-0.06)
-        e = scoring.stat_edge(fav, dog, -6.5)
-        self.assertTrue(e["clears"]) ; self.assertEqual(e["required"], 0.35)
-        e = scoring.stat_edge(fav, dog, -7.0)
-        self.assertFalse(e["clears"]); self.assertEqual(e["required"], 0.45)
+        for spread in (-3.0, -7.0, -14.0):            # one +0.35 bar, no max spread
+            e = scoring.stat_edge(fav, dog, spread)
+            self.assertTrue(e["clears"]); self.assertEqual(e["required"], 0.35)
+        e = scoring.stat_edge(team((1,) * 4, (1,) * 4, net=0.20), dog, -10.0)
+        self.assertFalse(e["clears"]); self.assertEqual(e["short_by"], 0.09)
 
     def test_key_numbers_and_movement_flag(self):
         self.assertEqual(scoring.crosses_key(-2.5, -3.5), [3])
@@ -135,6 +137,51 @@ class Checkpoints(unittest.TestCase):
 
     def test_never_backfilled_from_a_final(self):
         self.assertEqual(due_checkpoints({"state": "post", "status": "STATUS_FINAL", "period": 4}, {}), [])
+
+
+class Alerts(unittest.TestCase):
+    G = {"id": "1", "tracked": True, "fav_abbr": "BUF", "away_abbr": "BUF", "home_abbr": "MIN", "kalshi_away": "BUF",
+         "kalshi_home": "MIN", "kick_utc": "2026-11-10T01:15:00+00:00", "day_et": "2026-11-09", "fav": "BUF", "away": "BUF", "home": "MIN"}
+
+    def setUp(self):
+        self.sent = []
+        self._orig = (nfl_live.notify.send_alert, nfl_live.engine_grade, nfl_live.espn.summary, nfl_live.kalshi.game_prices)
+        nfl_live.notify.send_alert = lambda title, body, **k: self.sent.append((title, body, k))
+        nfl_live.espn.summary = lambda eid: {}
+        nfl_live.kalshi.game_prices = lambda *a: {"BUF": {"prob": 0.88}}
+
+    def tearDown(self):
+        nfl_live.notify.send_alert, nfl_live.engine_grade, nfl_live.espn.summary, nfl_live.kalshi.game_prices = self._orig
+
+    def ev(self, clock, period=4):
+        return {"id": "1", "state": "in", "period": period, "clock": clock, "home": {"score": 10}, "away": {"score": 24}}
+
+    def test_bet_signal_once_tracked_only(self):
+        nfl_live.engine_grade = lambda s, g: {"action": "BET", "pick": "BUF", "grade": "A", "clock": "4th 9:30",
+                                              "answer": "BUF answered", "control": "BUF"}
+        entry = {}
+        self.assertTrue(nfl_live.bet_check(entry, self.G, self.ev("9:30")))
+        self.assertFalse(nfl_live.bet_check(entry, self.G, self.ev("8:00")))        # never twice
+        self.assertEqual(len(self.sent), 1)
+        self.assertIn("NFL BET BUF ML (A)", self.sent[0][0]); self.assertIn("priced in", self.sent[0][1])
+        self.assertFalse(nfl_live.bet_check({}, dict(self.G, tracked=False), self.ev("9:30")))
+        self.assertFalse(nfl_live.bet_check({}, self.G, self.ev("4:59")))            # under 5:00: no new bets
+        self.assertEqual(len(self.sent), 1)
+
+    def test_no_alert_without_bet(self):
+        nfl_live.engine_grade = lambda s, g: {"action": "NO BET", "grade": "B"}
+        self.assertFalse(nfl_live.bet_check({}, self.G, self.ev("9:30")))
+        self.assertEqual(self.sent, [])
+
+    def test_end3_push(self):
+        entry = {}
+        rec = {"score": "BUF 24 - MIN 10", "lead": 14, "kalshi": {"prob": 0.91},
+               "engine": {"headline": "LEAN BUF", "grade": "A", "action": "LEAN", "early": {"full": True}, "gates": []}}
+        nfl_live.end3_alert(entry, self.G, rec)
+        nfl_live.end3_alert(entry, self.G, rec)
+        self.assertEqual(len(self.sent), 1)
+        self.assertIn("LEAN BUF (grade A)", self.sent[0][1]); self.assertIn("Kalshi BUF 91¢", self.sent[0][1])
+        self.assertEqual(self.sent[0][2]["priority"], "high")
 
 
 if __name__ == "__main__":

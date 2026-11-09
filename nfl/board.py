@@ -86,7 +86,7 @@ def build(today_et: date | None = None, refresh: bool = True) -> dict:
     week, games = target_week(sched, season, today_et)
     board = {"season": season, "week": week, "built_at": now.isoformat(timespec="seconds"),
              "built_label": now.strftime("%a %b %-d, %-I:%M %p PT"), "games": [], "notes": [],
-             "benchmark": BENCHMARK, "large_favorite_cutoff": scoring.LARGE_FAVORITE}
+             "benchmark": BENCHMARK, "edge_required": scoring.EDGE_REQUIRED}
     if week is None:
         board["notes"].append("No upcoming NFL games on the schedule.")
         return board
@@ -124,8 +124,7 @@ def build(today_et: date | None = None, refresh: bool = True) -> dict:
 def attach_votes(board: dict):
     """Expert ATS picks gathered by the weekly Claude scheduled task (data/nfl/votes/<season>-w<WW>.json).
 
-    Information only: the votes never change the rules, the score or the call. A large favorite
-    whose support is under 70% gets a flag (the Week 9 report's rule).
+    Information only: the votes never change the rules, the score or the call.
     """
     path = os.path.join(DATA, "votes", f"{board['season']}-w{board['week']:02d}.json")
     if not os.path.exists(path):
@@ -142,9 +141,6 @@ def attach_votes(board: dict):
         fv, dv = int(e.get("fav_votes") or 0), int(e.get("dog_votes") or 0)
         g["votes"] = {"fav": fv, "dog": dv, "support": round(fv / (fv + dv), 3) if fv + dv else None,
                       "sources": e.get("sources", []), "notes": e.get("notes", "")}
-        if g["votes"]["support"] is not None and (g["scoring"].get("edge") or {}).get("large_favorite") \
-                and g["votes"]["support"] < 0.70:
-            g["scoring"]["flags"].append({"level": "yellow", "text": f"Large favorite with expert ATS support under 70% ({fv}-{dv})"})
 
 
 def _game(row, events, wm, recs, qbs, keys, board) -> dict:
