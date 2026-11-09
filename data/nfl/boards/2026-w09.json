@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 9,
- "built_at": "2026-11-09T08:00:47-08:00",
- "built_label": "Mon Nov 9, 8:00 AM PT",
+ "built_at": "2026-11-09T08:52:41-08:00",
+ "built_label": "Mon Nov 9, 8:52 AM PT",
  "games": [
   {
    "id": "401873051",
@@ -310,7 +310,6 @@
     "edge": {
      "gap": -0.013,
      "required": 0.35,
-     "large_favorite": false,
      "clears": false,
      "short_by": 0.363,
      "adjusted_gap": 0.061,
@@ -649,10 +648,9 @@
     },
     "edge": {
      "gap": 0.206,
-     "required": 0.45,
-     "large_favorite": true,
+     "required": 0.35,
      "clears": false,
-     "short_by": 0.244,
+     "short_by": 0.144,
      "adjusted_gap": 0.028,
      "adjusted_recent_gap": 0.038
     },
@@ -664,10 +662,6 @@
      {
       "level": "yellow",
       "text": "Line crossed key number 3, 7"
-     },
-     {
-      "level": "info",
-      "text": "Large favorite (-7 or more): needs +0.45"
      },
      {
       "level": "yellow",
@@ -980,7 +974,6 @@
     "edge": {
      "gap": 0.16,
      "required": 0.35,
-     "large_favorite": false,
      "clears": false,
      "short_by": 0.19,
      "adjusted_gap": 0.077,
@@ -1305,7 +1298,6 @@
     "edge": {
      "gap": 0.035,
      "required": 0.35,
-     "large_favorite": false,
      "clears": false,
      "short_by": 0.315,
      "adjusted_gap": 0.031,
@@ -1627,7 +1619,6 @@
     "edge": {
      "gap": 0.145,
      "required": 0.35,
-     "large_favorite": false,
      "clears": false,
      "short_by": 0.205,
      "adjusted_gap": 0.073,
@@ -1957,18 +1948,13 @@
     },
     "edge": {
      "gap": 0.13,
-     "required": 0.45,
-     "large_favorite": true,
+     "required": 0.35,
      "clears": false,
-     "short_by": 0.32,
+     "short_by": 0.22,
      "adjusted_gap": 0.088,
      "adjusted_recent_gap": 0.087
     },
     "flags": [
-     {
-      "level": "info",
-      "text": "Large favorite (-7 or more): needs +0.45"
-     },
      {
       "level": "yellow",
       "text": "Favorite questionable: Jaylon Moore, Patrick Mahomes, Xavier Worthy"
@@ -2282,7 +2268,6 @@
     "edge": {
      "gap": 0.166,
      "required": 0.35,
-     "large_favorite": false,
      "clears": false,
      "short_by": 0.184,
      "adjusted_gap": 0.073,
@@ -2606,7 +2591,6 @@
     "edge": {
      "gap": -0.061,
      "required": 0.35,
-     "large_favorite": false,
      "clears": false,
      "short_by": 0.411,
      "adjusted_gap": -0.026,
@@ -2844,6 +2828,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "J.J. McCarthy",
+      "pos": "QB",
+      "status": "Questionable"
+     },
+     {
       "name": "Thomas Fidone II",
       "pos": "TE",
       "status": "Out"
@@ -2861,11 +2850,6 @@
      {
       "name": "Nikko Reed",
       "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "name": "Josh Sills",
-      "pos": "G",
       "status": "Out"
      }
     ]
@@ -2934,7 +2918,6 @@
     "edge": {
      "gap": 0.199,
      "required": 0.35,
-     "large_favorite": false,
      "clears": false,
      "short_by": 0.151,
      "adjusted_gap": 0.034,
@@ -3264,7 +3247,6 @@
     "edge": {
      "gap": 0.157,
      "required": 0.35,
-     "large_favorite": false,
      "clears": false,
      "short_by": 0.193,
      "adjusted_gap": 0.094,
@@ -3587,7 +3569,6 @@
     "edge": {
      "gap": 0.179,
      "required": 0.35,
-     "large_favorite": false,
      "clears": false,
      "short_by": 0.171,
      "adjusted_gap": 0.137,
@@ -3918,18 +3899,13 @@
     },
     "edge": {
      "gap": 0.215,
-     "required": 0.45,
-     "large_favorite": true,
+     "required": 0.35,
      "clears": false,
-     "short_by": 0.235,
+     "short_by": 0.135,
      "adjusted_gap": 0.129,
      "adjusted_recent_gap": 0.148
     },
     "flags": [
-     {
-      "level": "info",
-      "text": "Large favorite (-7 or more): needs +0.45"
-     },
      {
       "level": "yellow",
       "text": "Favorite questionable: Deommodore Lenoir, Renardo Green"
@@ -4054,6 +4030,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Rhamondre Stevenson",
+      "pos": "RB",
+      "status": "Questionable"
+     },
+     {
       "name": "Ben Brown",
       "pos": "C",
       "status": "Questionable"
@@ -4066,11 +4047,6 @@
      {
       "name": "Will Campbell",
       "pos": "OT",
-      "status": "Questionable"
-     },
-     {
-      "name": "Rhamondre Stevenson",
-      "pos": "RB",
       "status": "Questionable"
      },
      {
@@ -4246,7 +4222,6 @@
     "edge": {
      "gap": -0.002,
      "required": 0.35,
-     "large_favorite": false,
      "clears": false,
      "short_by": 0.352,
      "adjusted_gap": 0.006,
@@ -4571,10 +4546,9 @@
     },
     "edge": {
      "gap": 0.12,
-     "required": 0.45,
-     "large_favorite": true,
+     "required": 0.35,
      "clears": false,
-     "short_by": 0.33,
+     "short_by": 0.23,
      "adjusted_gap": 0.068,
      "adjusted_recent_gap": 0.075
     },
@@ -4582,10 +4556,6 @@
      {
       "level": "yellow",
       "text": "Line crossed key number 10"
-     },
-     {
-      "level": "info",
-      "text": "Large favorite (-7 or more): needs +0.45"
      }
     ],
     "under": {
@@ -4903,7 +4873,6 @@
     "edge": {
      "gap": 0.03,
      "required": 0.35,
-     "large_favorite": false,
      "clears": false,
      "short_by": 0.32,
      "adjusted_gap": 0.092,
@@ -4951,7 +4920,7 @@
    "model": 0.952
   }
  },
- "large_favorite_cutoff": 7.0,
+ "edge_required": 0.35,
  "data_through": "Week 9",
  "votes_status": "not gathered yet",
  "summary": {
@@ -4962,6 +4931,6 @@
   "tracked": 0,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Mon Nov 9, 8:00 AM PT"
+  "built_label": "Mon Nov 9, 8:52 AM PT"
  }
 }
