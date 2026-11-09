@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 9,
- "built_at": "2026-11-09T12:00:44-08:00",
- "built_label": "Mon Nov 9, 12:00 PM PT",
+ "built_at": "2026-11-09T13:00:44-08:00",
+ "built_label": "Mon Nov 9, 1:00 PM PT",
  "games": [
   {
    "id": "401873051",
@@ -20,7 +20,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -3.0,
    "total": 45.5,
    "total_open": 48.5,
@@ -368,7 +368,7 @@
     "home": 10,
     "away": 33
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 4.5,
    "total": 40.5,
    "total_open": 49.5,
@@ -701,7 +701,7 @@
     "home": 17,
     "away": 34
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -4.5,
    "total": 52.5,
    "total_open": 48.5,
@@ -779,35 +779,37 @@
      "rank": 17
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Samson Ebukam"
+    ],
     "key_questionable": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Billy Bowman Jr.",
-      "pos": "CB",
+      "name": "Zachariah Branch",
+      "pos": "WR",
       "status": "Out"
      },
      {
-      "name": "Andy Dalton",
-      "pos": "QB",
-      "status": "Out"
+      "name": "Cameron Williams",
+      "pos": "OL",
+      "status": "Injured Reserve"
      },
      {
-      "name": "Jack Strand",
-      "pos": "QB",
-      "status": "Out"
+      "name": "Brian Robinson Jr.",
+      "pos": "RB",
+      "status": "Injured Reserve"
      },
      {
-      "name": "Drake Jackson",
+      "name": "Samson Ebukam",
       "pos": "DE",
-      "status": "Out"
+      "status": "Injured Reserve"
      },
      {
-      "name": "Robert Longerbeam",
-      "pos": "CB",
+      "name": "Anterio Thompson",
+      "pos": "DT",
       "status": "Out"
      }
     ]
@@ -1018,7 +1020,7 @@
     "home": 21,
     "away": 26
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -3.0,
    "total": 44.5,
    "total_open": 42.5,
@@ -1097,37 +1099,42 @@
     },
     "injuries_known": true,
     "key_out": [
-     "Bobby Okereke"
+     "Bobby Okereke",
+     "Damien Lewis",
+     "Jaelan Phillips",
+     "Will Lee"
     ],
     "key_questionable": [],
-    "interior_ol_out": [],
+    "interior_ol_out": [
+     "Damien Lewis"
+    ],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Xavier Legette",
-      "pos": "WR",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Jonathon Brooks",
-      "pos": "RB",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "AJ Dillon",
-      "pos": "RB",
+      "name": "Jaelan Phillips",
+      "pos": "LB",
       "status": "Out"
      },
      {
-      "name": "Haynes King",
-      "pos": "QB",
+      "name": "Will Lee III",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "name": "Damien Lewis",
+      "pos": "G",
       "status": "Out"
      },
      {
       "name": "Bobby Okereke",
       "pos": "LB",
       "status": "Out"
+     },
+     {
+      "name": "Xavier Legette",
+      "pos": "WR",
+      "status": "Injured Reserve"
      }
     ]
    },
@@ -1340,7 +1347,7 @@
     "home": 23,
     "away": 27
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 51.5,
    "total_open": 52.5,
@@ -1669,7 +1676,7 @@
     "home": 35,
     "away": 12
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -9.5,
    "total": 47.5,
    "total_open": 41.5,
@@ -1991,7 +1998,7 @@
     "home": 9,
     "away": 19
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -6.5,
    "total": 50.5,
    "total_open": 47.5,
@@ -2310,7 +2317,7 @@
     "home": 23,
     "away": 22
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -3.5,
    "total": 43.5,
    "total_open": 41.5,
@@ -2388,18 +2395,20 @@
      "rank": 19
     },
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
+    "key_out": [
      "Erik McCoy"
     ],
-    "interior_ol_out": [],
+    "key_questionable": [],
+    "interior_ol_out": [
+     "Erik McCoy"
+    ],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
       "name": "Erik McCoy",
       "pos": "C",
-      "status": "Questionable"
+      "status": "Doubtful"
      },
      {
       "name": "Zach Wilson",
@@ -2560,9 +2569,9 @@
      },
      {
       "n": 5,
-      "ok": true,
+      "ok": false,
       "text": "Favorite has no key starter out",
-      "detail": "none"
+      "detail": "Erik McCoy"
      },
      {
       "n": 6,
@@ -2575,15 +2584,16 @@
     "failed": [
      "Rule 1: Favorite top 10 (season) in a core metric",
      "Rule 2: Also top 10 over its last 3 in that same metric",
-     "Rule 3: Underdog not top 10 in any metric over its last 3"
+     "Rule 3: Underdog not top 10 in any metric over its last 3",
+     "Rule 5: Favorite has no key starter out"
     ],
     "hero": {
-     "score": 15,
+     "score": 13,
      "band": "red",
      "parts": {
       "fav_strength": 0,
       "dog_weakness": 8,
-      "health": 4,
+      "health": 2,
       "home": 1,
       "rest": 1,
       "form": 1
@@ -2605,7 +2615,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Erik McCoy"
+      "text": "Favorite interior OL out: Erik McCoy"
      }
     ],
     "under": {
@@ -2637,7 +2647,7 @@
     "home": 11,
     "away": 19
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 5.5,
    "total": 38.5,
    "total_open": 44.5,
@@ -2968,7 +2978,7 @@
     "home": 13,
     "away": 20
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -4.5,
    "total": 47.5,
    "total_open": 50.5,
@@ -3295,7 +3305,7 @@
     "home": 22,
     "away": 44
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 1.5,
    "total": 40.5,
    "total_open": 43.5,
@@ -3621,7 +3631,7 @@
     "home": 38,
     "away": 17
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -8.5,
    "total": 51.5,
    "total_open": 46.5,
@@ -3944,7 +3954,7 @@
     "home": 27,
     "away": 45
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 44.5,
    "total_open": 46.5,
@@ -4139,7 +4149,7 @@
      {
       "name": "Josh Jacobs",
       "pos": "RB",
-      "status": "Questionable"
+      "status": "Doubtful"
      },
      {
       "name": "Bo Melton",
@@ -4277,7 +4287,7 @@
     "home": 17,
     "away": 3
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -13.5,
    "total": 40.5,
    "total_open": 45.5,
@@ -4464,37 +4474,40 @@
     },
     "injuries_known": true,
     "key_out": [
-     "Jayden Williams"
+     "Jayden Williams",
+     "Jon Gaines"
     ],
     "key_questionable": [],
-    "interior_ol_out": [],
+    "interior_ol_out": [
+     "Jon Gaines"
+    ],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
-     {
-      "name": "Roy Lopez",
-      "pos": "DT",
-      "status": "Questionable"
-     },
      {
       "name": "Jayden Williams",
       "pos": "OT",
       "status": "Out"
      },
      {
-      "name": "Albert Reese IV",
-      "pos": "OT",
-      "status": "Out"
-     },
-     {
-      "name": "Starling Thomas V",
-      "pos": "CB",
-      "status": "Out"
-     },
-     {
       "name": "Bam Knight",
       "pos": "RB",
       "status": "Out"
+     },
+     {
+      "name": "Jon Gaines II",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "name": "Roy Lopez",
+      "pos": "DT",
+      "status": "Questionable"
+     },
+     {
+      "name": "James Conner",
+      "pos": "RB",
+      "status": "Injured Reserve"
      }
     ]
    },
@@ -4606,7 +4619,7 @@
     "home": 27,
     "away": 24
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -3.5,
    "total": 47.5,
    "total_open": 48.5,
@@ -4950,6 +4963,6 @@
   "tracked": 0,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Mon Nov 9, 12:00 PM PT"
+  "built_label": "Mon Nov 9, 1:00 PM PT"
  }
 }
