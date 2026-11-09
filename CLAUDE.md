@@ -26,7 +26,7 @@ a phone alert. No AI runs in the daily pipeline; Claude is only used to change c
 | `nba/injury_report.py` | Official NBA injury report PDF (ak-static.cms.nba.com), parsed by column x-position |
 | `nba/metrics.py` | eFG%, opp eFG%, off/def efficiency, net rating from box scores; season + last-3; ranks 1-30 |
 | `nba/power.py` | Power-rank consensus: own net-rating rank + ESPN BPI (daily) + NBA.com weekly (half weight) |
-| `nba/scoring.py` | Six qualification rules and the 40-point Analysis Score; pill colors |
+| `nba/scoring.py` | Qualification tiers (Qualified / Watch list / No track), the 40-point Analysis Score, pill colors, `LIVE_TIERS` |
 | `nba/board.py` | Page data, rule-based written summaries, snapshots, "what changed", rendering |
 | `nba/results.py` | Grades sent boards into `data/results.json`; CSV export (2 rows per game) |
 | `nba/notify.py` | Gmail SMTP (app password) and ntfy.sh phone alerts |
@@ -134,10 +134,14 @@ often: always `git pull --rebase origin main` before pushing.
 ## Rules and decisions (keep in sync with the design spec)
 
 - Favorite = spread favorite (ESPN favorite flags; spread number is unsigned). Pick'em: moneyline decides.
-- Qualification (all must pass): (1) favorite season top 10 in eFG%, Off Eff, Opp eFG% or Def Eff;
-  (2) also last-3 top 10 in that same metric; (3) underdog not last-3 top 10 in any of the four;
-  (4) underdog not 3-0 in last 3; (5) favorite has no key player Out/Doubtful (Questionable = yellow
-  warning only); (6) injury info available for the favorite. Underdog injuries are information only.
+- Tiers (since Nov 9, nba/scoring.py): Qualified = Analysis Score 28+ (route A) OR all-four mismatch (route B:
+  favorite top 10 AND underdog bottom 10 = rank 21-30 in all four metrics, season and last 3). Watch list = score
+  18-27. No track = the rest. Injury gate on every tier: favorite key player Out/Doubtful or no injury report ->
+  No track (Questionable = yellow warning; underdog injuries info only). The earlier six checks are kept as
+  `context` only; `qualifiers` still lists the favorite's top-10 (season+last 3) metrics. `qualified` stays the
+  boolean every consumer reads; `tier`, `route`, `tracked` are new. `LIVE_TIERS` decides what the live tracker,
+  L1 live chips and Live page follow (default: qualified only).
+- L1: three sections (Qualified green, Watch list amber, Did not qualify red line). B2B Yes = red, No = green.
 - Key player = started at least half of the team's games, or top 5 on the team in minutes per game.
 - Analysis Score (max 40): favorite metrics 16 (season+last 3; top 5 = 2, top 10 = 1), underdog
   metrics 16 (bottom 5 = 2, bottom 10 = 1), net rating 2, last-3 form 2 (3-0 = 2, 2-1 = 1),
@@ -149,7 +153,7 @@ often: always `git pull --rebase origin main` before pushing.
 - Metrics are box-score based (TeamRankings-style possessions), validated against NBA.com:
   ranks match closely; values run ~2 points lower than NBA.com's play-by-play ratings.
 - Not used: TeamRankings (terms unclear), stats.nba.com (blocks cloud servers). BPI has no history.
-- Live mode (full table in the design spec "Live mode" section): tracks above-the-line games only; BET only
+- Live mode (full table in the design spec "Live mode" section): tracks `LIVE_TIERS` games (Qualified by default); BET only
   4th 10:00-4:00 for an A/A+ team that is LEADING (trailing A = comeback signal, not a bet); LEAN = same in the
   3rd / before 10:00; under 4:00 and OT read only. Alerts: phone only, end of 3rd (always) + first BET signal.
   End-of-3rd push = the 7-item checklist verdict (engine `checklist()`): lead 10+ at end of 3rd; opp eFG% top 10
