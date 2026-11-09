@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "built_at": "2026-11-09T13:34:09-05:00",
+ "built_at": "2026-11-09T17:30:25-05:00",
  "games": [
   {
    "id": "401909954",
@@ -143,7 +143,7 @@
    "route": "",
    "score": 19,
    "band": "yellow",
-   "spread": "GS -9.5",
+   "spread": "GS -11.5",
    "away": {
     "id": "3",
     "abbr": "NO",
@@ -158,83 +158,9 @@
     "display": "Golden State Warriors",
     "record": "7-3"
    }
-  },
-  {
-   "id": "401909958",
-   "fav_defense": {
-    "season": {
-     "opp_efg": {
-      "v": 50.39,
-      "r": 4
-     },
-     "def": {
-      "v": 104.62,
-      "r": 4
-     }
-    },
-    "last3": {
-     "opp_efg": {
-      "v": 49.81,
-      "r": 9
-     },
-     "def": {
-      "v": 106.1,
-      "r": 8
-     }
-    }
-   },
-   "fav_b2b": false,
-   "tip_utc": "2026-11-10T02:00Z",
-   "tip_pt": "6:00 PM PT",
-   "fav": "SA",
-   "dog": "PHX",
-   "qualifiers": [
-    "Off Eff",
-    "Opp eFG%",
-    "Def Eff"
-   ],
-   "tier": "watch",
-   "route": "",
-   "score": 18,
-   "band": "yellow",
-   "spread": "SA -8.5",
-   "away": {
-    "id": "24",
-    "abbr": "SA",
-    "name": "Spurs",
-    "display": "San Antonio Spurs",
-    "record": "8-2"
-   },
-   "home": {
-    "id": "21",
-    "abbr": "PHX",
-    "name": "Suns",
-    "display": "Phoenix Suns",
-    "record": "3-5"
-   }
   }
  ],
  "closers": {
-  "SA": {
-   "closers": [
-    "Victor Wembanyama",
-    "Dylan Harper"
-   ],
-   "elite": [],
-   "source": "draft",
-   "season": {
-    "Victor Wembanyama": {
-     "ppm": 0.96,
-     "ppg": 29.1,
-     "gp": 10
-    },
-    "Dylan Harper": {
-     "ppm": 0.567,
-     "ppg": 18.1,
-     "gp": 10
-    }
-   }
-  },
   "WSH": {
    "closers": [
     "Trae Young",
@@ -275,46 +201,6 @@
     }
    }
   },
-  "PHX": {
-   "closers": [
-    "Devin Booker",
-    "Miles Bridges"
-   ],
-   "elite": [],
-   "source": "draft",
-   "season": {
-    "Devin Booker": {
-     "ppm": 0.721,
-     "ppg": 25.2,
-     "gp": 8
-    },
-    "Miles Bridges": {
-     "ppm": 0.521,
-     "ppg": 16.9,
-     "gp": 8
-    }
-   }
-  },
-  "DET": {
-   "closers": [
-    "Cade Cunningham",
-    "Duncan Robinson"
-   ],
-   "elite": [],
-   "source": "draft",
-   "season": {
-    "Cade Cunningham": {
-     "ppm": 0.673,
-     "ppg": 22.9,
-     "gp": 9
-    },
-    "Duncan Robinson": {
-     "ppm": 0.596,
-     "ppg": 18.2,
-     "gp": 9
-    }
-   }
-  },
   "CLE": {
    "closers": [
     "Donovan Mitchell",
@@ -332,6 +218,26 @@
      "ppm": 0.471,
      "ppg": 15.7,
      "gp": 10
+    }
+   }
+  },
+  "CHA": {
+   "closers": [
+    "Brandon Miller",
+    "Dennis Schroder"
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "Brandon Miller": {
+     "ppm": 0.665,
+     "ppg": 20.6,
+     "gp": 10
+    },
+    "Dennis Schroder": {
+     "ppm": 0.341,
+     "ppg": 10.2,
+     "gp": 9
     }
    }
   },
@@ -355,22 +261,22 @@
     }
    }
   },
-  "CHA": {
+  "DET": {
    "closers": [
-    "Brandon Miller",
-    "Dennis Schroder"
+    "Cade Cunningham",
+    "Duncan Robinson"
    ],
    "elite": [],
    "source": "draft",
    "season": {
-    "Brandon Miller": {
-     "ppm": 0.665,
-     "ppg": 20.6,
-     "gp": 10
+    "Cade Cunningham": {
+     "ppm": 0.673,
+     "ppg": 22.9,
+     "gp": 9
     },
-    "Dennis Schroder": {
-     "ppm": 0.341,
-     "ppg": 10.2,
+    "Duncan Robinson": {
+     "ppm": 0.596,
+     "ppg": 18.2,
      "gp": 9
     }
    }
