@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 9,
- "built_at": "2026-11-09T08:52:41-08:00",
- "built_label": "Mon Nov 9, 8:52 AM PT",
+ "built_at": "2026-11-09T10:00:52-08:00",
+ "built_label": "Mon Nov 9, 10:00 AM PT",
  "games": [
   {
    "id": "401873051",
@@ -22,13 +22,13 @@
    },
    "line_source": "DraftKings",
    "open_spread": -3.0,
-   "total": 44.5,
+   "total": 45.5,
    "total_open": 48.5,
-   "fav_ml": -185.0,
+   "fav_ml": -192.0,
    "favorite": "away",
-   "spread": -3.0,
-   "movement": 0.0,
-   "total_move": -4.0,
+   "spread": -3.5,
+   "movement": 0.5,
+   "total_move": -3.0,
    "fav_home": false,
    "home": {
     "code": "MIN",
@@ -322,6 +322,10 @@
      },
      {
       "level": "yellow",
+      "text": "Line crossed key number 3"
+     },
+     {
+      "level": "yellow",
       "text": "Favorite questionable: Alec Anderson, Dion Dawkins"
      },
      {
@@ -335,7 +339,7 @@
       1,
       29
      ],
-     "total_move": -4.0,
+     "total_move": -3.0,
      "note": ""
     },
     "call": "No track"
@@ -1209,13 +1213,13 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Riley Moss",
-      "pos": "CB",
+      "name": "Jaylen Waddle",
+      "pos": "WR",
       "status": "Questionable"
      },
      {
-      "name": "Jaylen Waddle",
-      "pos": "WR",
+      "name": "Riley Moss",
+      "pos": "CB",
       "status": "Questionable"
      },
      {
@@ -2501,12 +2505,12 @@
     "qb_reset": "Deshaun Watson out",
     "injury_list": [
      {
-      "name": "Taylen Green",
+      "name": "Deshaun Watson",
       "pos": "QB",
       "status": "Out"
      },
      {
-      "name": "Deshaun Watson",
+      "name": "Taylen Green",
       "pos": "QB",
       "status": "Out"
      },
@@ -2828,6 +2832,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Cam Skattebo",
+      "pos": "RB",
+      "status": "Out"
+     },
+     {
       "name": "J.J. McCarthy",
       "pos": "QB",
       "status": "Questionable"
@@ -2835,11 +2844,6 @@
      {
       "name": "Thomas Fidone II",
       "pos": "TE",
-      "status": "Out"
-     },
-     {
-      "name": "Cam Skattebo",
-      "pos": "RB",
       "status": "Out"
      },
      {
@@ -4018,25 +4022,32 @@
      "rank": 9
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Ben Brown"
+    ],
     "key_questionable": [
-     "Ben Brown",
-     "Carlton Davis",
      "Rhamondre Stevenson",
      "Will Campbell"
     ],
-    "interior_ol_out": [],
+    "interior_ol_out": [
+     "Ben Brown"
+    ],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Rhamondre Stevenson",
-      "pos": "RB",
-      "status": "Questionable"
-     },
-     {
       "name": "Ben Brown",
       "pos": "C",
+      "status": "Doubtful"
+     },
+     {
+      "name": "A.J. Brown",
+      "pos": "WR",
+      "status": "Out"
+     },
+     {
+      "name": "Rhamondre Stevenson",
+      "pos": "RB",
       "status": "Questionable"
      },
      {
@@ -4047,11 +4058,6 @@
      {
       "name": "Will Campbell",
       "pos": "OT",
-      "status": "Questionable"
-     },
-     {
-      "name": "Carlton Davis III",
-      "pos": "CB",
       "status": "Questionable"
      }
     ]
@@ -4188,9 +4194,9 @@
      },
      {
       "n": 5,
-      "ok": true,
+      "ok": false,
       "text": "Favorite has no key starter out",
-      "detail": "none"
+      "detail": "Ben Brown"
      },
      {
       "n": 6,
@@ -4204,15 +4210,16 @@
      "off_sr"
     ],
     "failed": [
-     "Rule 3: Underdog not top 10 in any metric over its last 3"
+     "Rule 3: Underdog not top 10 in any metric over its last 3",
+     "Rule 5: Favorite has no key starter out"
     ],
     "hero": {
-     "score": 18,
-     "band": "yellow",
+     "score": 16,
+     "band": "red",
      "parts": {
       "fav_strength": 4,
       "dog_weakness": 8,
-      "health": 4,
+      "health": 2,
       "home": 1,
       "rest": 0,
       "form": 1
@@ -4230,11 +4237,15 @@
     "flags": [
      {
       "level": "yellow",
+      "text": "Favorite interior OL out: Ben Brown"
+     },
+     {
+      "level": "yellow",
       "text": "Line crossed key number 3"
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Ben Brown, Carlton Davis, Rhamondre Stevenson, Will Campbell"
+      "text": "Favorite questionable: Rhamondre Stevenson, Will Campbell"
      }
     ],
     "under": {
@@ -4931,6 +4942,6 @@
   "tracked": 0,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Mon Nov 9, 8:52 AM PT"
+  "built_label": "Mon Nov 9, 10:00 AM PT"
  }
 }
