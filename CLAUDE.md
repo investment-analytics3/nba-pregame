@@ -88,7 +88,10 @@ NFL rules (spec "NFL Stat Edge v2", decisions Nov 8 2026):
   Windows: half scout, end of 3rd lean, 4th 15:00-10:00 primary, 10:00-6:00 confirm, 6:00-5:00 last, under 5:00 read only.
   Gates: no answered run = B max; trailing A = no bet; one-score + no QB edge + trading runs = C; 2+ 4th-quarter turnovers = down one;
   lock = answered + lead > 8 + control. Alerts for NFL live are NOT on (owner hasn't decided).
-- Not built: expert pick counts (CBS, Bleacher Report, Covers, SI, Yahoo) — no feed; see the decision in the spec.
+- Expert ATS picks (CBS, Bleacher Report, Covers, SI, Yahoo): no feed and no scraping in the pipeline. The owner's Claude
+  scheduled task "NFL expert picks" (Thu + Sat 9:43 AM PT) reads the week's articles, writes `data/nfl/votes/<season>-w<WW>.json`
+  (format: `data/nfl/votes/README.md`) and dispatches `nfl.yml`. The board shows them as information only; a large favorite
+  under 70% support gets a flag.
 
 ## Workflows (Actions)
 
