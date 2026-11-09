@@ -31,7 +31,7 @@ class Qualification(unittest.TestCase):
     def test_score_route(self):
         # strong favorite, weak-ish underdog: score 28+ without the all-four mismatch
         fav = team("BOS", (4, 2, 7, 5), (3, 6, 9, 4), net=2, l3="3-0", power=3)
-        dog = team("WAS", (27, 28, 29, 15), (22, 25, 26, 15), l3="0-3", power=30)
+        dog = team("WAS", (27, 28, 29, 8), (22, 25, 26, 15), l3="0-3", power=30)   # season top 10 once: no route B
         r = scoring.score_game(game(fav, dog))
         self.assertGreaterEqual(r["score"], 28)
         self.assertEqual(r["tier"], "qualified")
@@ -39,21 +39,33 @@ class Qualification(unittest.TestCase):
         self.assertEqual(r["routes"], [f"Score {r['score']}"])
         self.assertEqual(r["qualifiers"], ["eFG%", "Off Eff", "Opp eFG%", "Def Eff"])
 
-    def test_mismatch_route_regardless_of_score(self):
-        # all four top 10 / bottom 10 in both windows, but only 1-pointers and an away b2b favorite
-        fav = team("A", (9, 9, 9, 9), (9, 9, 9, 9), net=15, l3="0-3", power=15, b2b=True)
-        dog = team("B", (21, 21, 21, 21), (21, 21, 21, 21), l3="2-1", power=15)
+    def test_last3_mismatch_route_regardless_of_score(self):
+        # last 3: fav top 10 in 3 of 4, dog bottom 10 in 3 of 4; season: fav top 15 in all, dog top 10 in none
+        fav = team("A", (12, 14, 15, 13), (9, 9, 9, 18), l3="0-3", power=15, b2b=True)
+        dog = team("B", (11, 18, 20, 16), (21, 22, 15, 21), l3="2-1", power=15)
         r = scoring.score_game(game(fav, dog, "away"))
         self.assertLess(r["score"], 28)
         self.assertEqual(r["tier"], "qualified")
-        self.assertIn("All-four mismatch", r["routes"])
+        self.assertIn("Last-3 mismatch", r["routes"])
 
-    def test_mismatch_needs_all_sixteen(self):
-        fav = team("A", (9, 9, 9, 9), (9, 9, 9, 11), l3="0-3")       # one last-3 rank misses
-        dog = team("B", (21,) * 4, (21,) * 4, l3="2-1")
+    def test_last3_mismatch_season_floors(self):
+        dog = team("B", (11, 18, 20, 16), (21, 22, 15, 21), l3="2-1")
+        fav_weak_season = team("A", (12, 14, 16, 13), (9, 9, 9, 18), l3="0-3")       # one season rank 16
+        r = scoring.score_game(game(fav_weak_season, dog, "away"))
+        self.assertNotIn("Last-3 mismatch", r["routes"])
+        self.assertIn("outside top 15", r["rules"][1]["detail"])
+        dog_top10 = team("B", (10, 18, 20, 16), (21, 22, 15, 21), l3="2-1")            # dog season top 10 once
+        r2 = scoring.score_game(game(team("A", (12, 14, 15, 13), (9, 9, 9, 18), l3="0-3"), dog_top10, "away"))
+        self.assertNotIn("Last-3 mismatch", r2["routes"])
+
+    def test_last3_mismatch_needs_three_of_four(self):
+        fav = team("A", (12, 14, 15, 13), (9, 9, 11, 18), l3="0-3")                   # only 2 of 4 last-3 top 10
+        dog = team("B", (11, 18, 20, 16), (21, 22, 15, 21), l3="2-1")
         r = scoring.score_game(game(fav, dog, "away"))
-        self.assertNotIn("All-four mismatch", r["routes"])
-        self.assertIn("misses", r["rules"][1]["detail"])
+        self.assertNotIn("Last-3 mismatch", r["routes"])
+
+    def test_watch_list_is_tracked_live(self):
+        self.assertIn("watch", scoring.LIVE_TIERS)
 
     def test_watch_list(self):
         fav = team("A", (5,) * 4, (5,) * 4, l3="2-1")

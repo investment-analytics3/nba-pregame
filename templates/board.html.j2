@@ -209,7 +209,7 @@ function listView(){
   }
   if(!DATA.games.length) h += '<div class="panel pad">No NBA games today.</div>';
   let i = 0;
-  [['Qualified',q,'#2FC373','','Score 28+ or all-four mismatch'],
+  [['Qualified',q,'#2FC373','','Score 28+ or last-3 mismatch'],
    ['Watch list',w,'#E9B23A','#FFD66B','Score 18-27'],
    ['Did not qualify',n,'#E04848','#FF7676','']].forEach(([t,list,dot,col,sub])=>{
     if(!DATA.games.length) return;
@@ -294,7 +294,7 @@ function detailView(g){
   if(sc.qualified) h += `<div class="banner fade" style="align-items:center;background:linear-gradient(180deg,rgba(47,195,115,.16),rgba(31,157,88,.08));border:1px solid rgba(47,195,115,.45)"><span class="chip" style="color:#03240F;background:linear-gradient(180deg,#43DE8F,#1F9D58);text-transform:uppercase">Track game</span><span style="font-size:14px;color:#BBF7D0">Qualified: ${esc(sc.route||sc.qualifiers.join(', '))}</span></div>`;
   if(sc.scored && sc.rules && sc.rules.length && sc.rules[0].rule==='A'){
     h += `<div class="panel pad" style="margin-bottom:14px"><h3 style="margin:0 0 8px">How it qualifies</h3><div style="display:flex;flex-direction:column;gap:6px;font-size:14px">${sc.rules.map(r=>`<div style="display:grid;grid-template-columns:22px minmax(0,1fr);gap:8px;align-items:start"><span style="width:20px;height:20px;border-radius:6px;display:grid;place-items:center;font-weight:800;font-size:12px;${r.pass?'background:linear-gradient(180deg,#43DE8F,#1F9D58);color:#03240F':'background:#3A1E22;color:#FCA5A5;border:1px solid rgba(200,48,48,.5)'}">${r.pass?'✓':'✗'}</span><span><b>${esc(r.rule==='Injury'?'Injury gate':'Route '+r.rule)}: ${esc(r.name)}</b><br><span style="color:var(--muted);font-size:12.5px">${esc(r.detail)}</span></span></div>`).join('')}</div>
-      <div style="font-size:12px;color:var(--dim);margin-top:8px">Qualified = route A or B, with the injury gate clear. Watch list = score 18-27.</div></div>`;
+      <div style="font-size:12px;color:var(--dim);margin-top:8px">Qualified = route A or B, with the injury gate clear. Watch list = score 18-27. Qualified and Watch list games are tracked live.</div></div>`;
   }
   (sc.warnings||[]).forEach(w=>{ h += /^Info:/.test(w)||/Neutral/.test(w) ? `<div style="font-size:13px;color:#9AA4BA;margin:0 0 10px 4px">${esc(w.replace(/^Info: /,''))}</div>` : `<div class="warn" style="margin-bottom:10px">${esc(w)}</div>`; });
   const people = t => (t.closers&&t.closers.length? 'Closers: '+t.closers.join(', ') : 'Top scorers: '+((t.top_scorers||[]).map(p=>`${p.name} ${p.ppg}`).join(', ')||'–'));

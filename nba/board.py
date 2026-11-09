@@ -70,9 +70,9 @@ def summary_text(game: dict) -> tuple[str, str]:
         why = []
         if any(r.startswith("Score") for r in sc.get("routes", [])):
             why.append(f"an Analysis Score of {sc['score']}")
-        if "All-four mismatch" in sc.get("routes", []):
-            why.append(f"the all-four mismatch: {fav['abbr']} top 10 and {dog['abbr']} bottom 10 in every metric, "
-                       f"season and last 3")
+        if "Last-3 mismatch" in sc.get("routes", []):
+            why.append(f"the last-3 mismatch: {fav['abbr']} top 10 and {dog['abbr']} bottom 10 in at least 3 of 4 "
+                       f"metrics over the last 3, with {fav['abbr']} top 15 in all four for the season")
         parts.append(f"{fav['name']} qualify on {' and '.join(why)}.")
     elif tier == "watch":
         parts.append(f"Watch list: an Analysis Score of {sc['score']} (qualifies at {scoring.QUALIFY_SCORE}).")

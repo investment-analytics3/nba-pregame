@@ -3,11 +3,12 @@
 Everything is from the favorite's point of view (favorite = spread favorite;
 moneyline breaks a pick'em). Ranks are 1-30 with 1 = best for every metric.
 
-Tiers (since Nov 9):
+Tiers (since Nov 9; route B revised Nov 9):
   Qualified   (A) Analysis Score 28+, or
-              (B) all-four mismatch: favorite top 10 in all four metrics AND
-                  underdog bottom 10 (rank 21-30) in all four, for both the
-                  season and the last 3.
+              (B) last-3 mismatch: over the last 3 the favorite is top 10 in at
+                  least 3 of the 4 metrics AND the underdog is bottom 10 (rank
+                  21-30) in at least 3 of the 4; and for the season the favorite
+                  is top 15 in all four AND the underdog is top 10 in none.
   Watch list  Analysis Score 18-27 and not qualified.
   No track    everything else.
 Injury gate on every tier: the favorite has no key player Out or Doubtful
@@ -41,7 +42,7 @@ QUALIFY_SCORE = 28
 WATCH_SCORE = 18
 TIER_LABEL = {"qualified": "Qualified", "watch": "Watch list", "out": "No track"}
 # Tiers the live tracker follows (end-of-3rd checklist + BET signal pushes, Live page, L1 live chips).
-LIVE_TIERS = ("qualified",)
+LIVE_TIERS = ("qualified", "watch")
 
 
 def _rank(team: dict, window: str, metric: str):
@@ -141,13 +142,22 @@ def score_game(game: dict) -> dict:
     total = sum(p["points"] for p in parts)
 
     # ---- tier -------------------------------------------------------------------
-    misses = [f"{fav['abbr']} {NAMES[m]} {'season' if w == 'season' else 'last 3'} #{_rank(fav, w, m) or '–'}"
-              for w in ("season", "last3") for m in METRICS if (_rank(fav, w, m) or 99) > 10]
-    misses += [f"{dog['abbr']} {NAMES[m]} {'season' if w == 'season' else 'last 3'} #{_rank(dog, w, m) or '–'}"
-               for w in ("season", "last3") for m in METRICS if (_rank(dog, w, m) or 0) < 21]
-    mismatch = not misses
+    # Route B: last-3 mismatch with a season floor
+    f3 = [m for m in METRICS if (_rank(fav, "last3", m) or 99) <= 10]
+    d3 = [m for m in METRICS if (_rank(dog, "last3", m) or 0) >= 21]
+    f_season_miss = [m for m in METRICS if (_rank(fav, "season", m) or 99) > 15]
+    d_season_top10 = [m for m in METRICS if (_rank(dog, "season", m) or 99) <= 10]
+    checks_b = [
+        (len(f3) >= 3, f"{fav['abbr']} last-3 top 10 in {len(f3)} of 4"),
+        (len(d3) >= 3, f"{dog['abbr']} last-3 bottom 10 in {len(d3)} of 4"),
+        (not f_season_miss, f"{fav['abbr']} season top 15 in all four" if not f_season_miss
+         else f"{fav['abbr']} season outside top 15: " + ", ".join(f"{NAMES[m]} #{_rank(fav, 'season', m) or '–'}" for m in f_season_miss)),
+        (not d_season_top10, f"{dog['abbr']} season top 10 in none" if not d_season_top10
+         else f"{dog['abbr']} season top 10: " + ", ".join(f"{NAMES[m]} #{_rank(dog, 'season', m)}" for m in d_season_top10)),
+    ]
+    mismatch = all(ok for ok, _ in checks_b)
     by_score = total >= QUALIFY_SCORE
-    routes = (["Score " + str(total)] if by_score else []) + (["All-four mismatch"] if mismatch else [])
+    routes = (["Score " + str(total)] if by_score else []) + (["Last-3 mismatch"] if mismatch else [])
     if injury_fails:
         tier = "out"
     elif routes:
@@ -158,9 +168,8 @@ def score_game(game: dict) -> dict:
         tier = "out"
     rules = [
         {"rule": "A", "name": "Analysis Score 28+", "pass": by_score, "detail": f"Score {total} of {MAX_SCORE}"},
-        {"rule": "B", "name": "All-four mismatch (season and last 3)", "pass": mismatch,
-         "detail": "Favorite top 10 and underdog bottom 10 in all four" if mismatch
-                   else f"{16 - len(misses)} of 16 ranks; misses: " + ", ".join(misses[:4]) + (" …" if len(misses) > 4 else "")},
+        {"rule": "B", "name": "Last-3 mismatch (3 of 4) with a season floor", "pass": mismatch,
+         "detail": " · ".join(("✓ " if ok else "✗ ") + txt for ok, txt in checks_b)},
         {"rule": "Injury", "name": "No key player out for the favorite", "pass": not injury_fails,
          "detail": "; ".join(injury_fails) or "Clear"},
     ]
