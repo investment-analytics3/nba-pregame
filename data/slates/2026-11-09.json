@@ -1,11 +1,11 @@
 {
  "date": "2026-11-09",
- "built_at": "2026-11-09T10:26:16-08:00",
+ "built_at": "2026-11-09T10:34:08-08:00",
  "retro": false,
  "metrics_through": "2026-11-08",
  "injury_source": "NBA official injury report",
- "injury_report_time": "2026-11-09T13:15:00-05:00",
- "injury_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_01_15PM.pdf",
+ "injury_report_time": "2026-11-09T13:30:00-05:00",
+ "injury_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_01_30PM.pdf",
  "first_tip_utc": "2026-11-10T00:00Z",
  "games": [
   {
@@ -276,7 +276,7 @@
     "favorite_id": "8",
     "spread": 10.5,
     "details": "DET -10.5",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -490,
     "ml_away": 376
    },
@@ -289,7 +289,7 @@
     "qualified": false,
     "tier": "watch",
     "tier_label": "Watch list",
-    "tracked": false,
+    "tracked": true,
     "routes": [],
     "route": "",
     "fails": [
@@ -305,9 +305,9 @@
      },
      {
       "rule": "B",
-      "name": "All-four mismatch (season and last 3)",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
       "pass": false,
-      "detail": "11 of 16 ranks; misses: DET Off Eff season #15, DET Off Eff last 3 #12, DET Opp eFG% last 3 #11, WSH Opp eFG% season #9 \u2026"
+      "detail": "\u2717 DET last-3 top 10 in 2 of 4 \u00b7 \u2713 WSH last-3 bottom 10 in 4 of 4 \u00b7 \u2713 DET season top 15 in all four \u00b7 \u2717 WSH season top 10: Opp eFG% #9"
      },
      {
       "rule": "Injury",
@@ -868,7 +868,7 @@
     "favorite_id": "5",
     "spread": 8.5,
     "details": "CLE -8.5",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": 270,
     "ml_away": -337
    },
@@ -881,7 +881,7 @@
     "qualified": false,
     "tier": "watch",
     "tier_label": "Watch list",
-    "tracked": false,
+    "tracked": true,
     "routes": [],
     "route": "",
     "fails": [
@@ -900,9 +900,9 @@
      },
      {
       "rule": "B",
-      "name": "All-four mismatch (season and last 3)",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
       "pass": false,
-      "detail": "10 of 16 ranks; misses: CLE Off Eff season #11, CLE Def Eff season #13, CLE eFG% last 3 #15, CLE Off Eff last 3 #17 \u2026"
+      "detail": "\u2717 CLE last-3 top 10 in 1 of 4 \u00b7 \u2713 CHA last-3 bottom 10 in 4 of 4 \u00b7 \u2713 CLE season top 15 in all four \u00b7 \u2713 CHA season top 10 in none"
      },
      {
       "rule": "Injury",
@@ -1362,7 +1362,7 @@
     "favorite_id": "9",
     "spread": 9.5,
     "details": "GS -9.5",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -382,
     "ml_away": 303
    },
@@ -1375,7 +1375,7 @@
     "qualified": false,
     "tier": "watch",
     "tier_label": "Watch list",
-    "tracked": false,
+    "tracked": true,
     "routes": [],
     "route": "",
     "fails": [
@@ -1391,9 +1391,9 @@
      },
      {
       "rule": "B",
-      "name": "All-four mismatch (season and last 3)",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
       "pass": false,
-      "detail": "9 of 16 ranks; misses: GS Opp eFG% season #16, GS Def Eff season #14, GS Off Eff last 3 #13, NO eFG% season #15 \u2026"
+      "detail": "\u2713 GS last-3 top 10 in 3 of 4 \u00b7 \u2717 NO last-3 bottom 10 in 2 of 4 \u00b7 \u2717 GS season outside top 15: Opp eFG% #16 \u00b7 \u2713 NO season top 10 in none"
      },
      {
       "rule": "Injury",
@@ -1872,7 +1872,7 @@
     "favorite_id": "24",
     "spread": 8.5,
     "details": "SA -8.5",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": 296,
     "ml_away": -373
    },
@@ -1885,7 +1885,7 @@
     "qualified": false,
     "tier": "watch",
     "tier_label": "Watch list",
-    "tracked": false,
+    "tracked": true,
     "routes": [],
     "route": "",
     "fails": [
@@ -1903,9 +1903,9 @@
      },
      {
       "rule": "B",
-      "name": "All-four mismatch (season and last 3)",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
       "pass": false,
-      "detail": "8 of 16 ranks; misses: SA eFG% season #20, SA eFG% last 3 #25, PHX eFG% season #8, PHX Off Eff season #17 \u2026"
+      "detail": "\u2713 SA last-3 top 10 in 3 of 4 \u00b7 \u2717 PHX last-3 bottom 10 in 0 of 4 \u00b7 \u2717 SA season outside top 15: eFG% #20 \u00b7 \u2717 PHX season top 10: eFG% #8"
      },
      {
       "rule": "Injury",
@@ -2361,7 +2361,7 @@
     "favorite_id": "6",
     "spread": 3.5,
     "details": "DAL -3.5",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -156,
     "ml_away": 131
    },
@@ -2392,9 +2392,9 @@
      },
      {
       "rule": "B",
-      "name": "All-four mismatch (season and last 3)",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
       "pass": false,
-      "detail": "7 of 16 ranks; misses: DAL eFG% season #12, DAL Off Eff season #14, DAL eFG% last 3 #21, IND eFG% season #16 \u2026"
+      "detail": "\u2713 DAL last-3 top 10 in 3 of 4 \u00b7 \u2717 IND last-3 bottom 10 in 1 of 4 \u00b7 \u2713 DAL season top 15 in all four \u00b7 \u2713 IND season top 10 in none"
      },
      {
       "rule": "Injury",
@@ -2698,7 +2698,7 @@
      {
       "player": "Aaron Gordon",
       "status": "Questionable",
-      "reason": "Injury: Lower Body Injury",
+      "reason": "Injury: Lower Body Injury Management",
       "is_key": true,
       "key_info": {
        "name": "Aaron Gordon",
@@ -2944,9 +2944,9 @@
    },
    "spread": {
     "favorite_id": "10",
-    "spread": 9.5,
-    "details": "HOU -9.5",
-    "provider": "Draft Kings",
+    "spread": 8.5,
+    "details": "HOU -8.5",
+    "provider": "DraftKings",
     "ml_home": -344,
     "ml_away": 276
    },
@@ -2975,9 +2975,9 @@
      },
      {
       "rule": "B",
-      "name": "All-four mismatch (season and last 3)",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
       "pass": false,
-      "detail": "5 of 16 ranks; misses: HOU Opp eFG% season #14, HOU eFG% last 3 #18, HOU Off Eff last 3 #20, HOU Opp eFG% last 3 #17 \u2026"
+      "detail": "\u2717 HOU last-3 top 10 in 1 of 4 \u00b7 \u2717 DEN last-3 bottom 10 in 0 of 4 \u00b7 \u2713 HOU season top 15 in all four \u00b7 \u2717 DEN season top 10: eFG% #4, Off Eff #6"
      },
      {
       "rule": "Injury",
@@ -3475,6 +3475,14 @@
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
+     },
+     {
+      "player": "Collin Murray-Boyles",
+      "status": "Questionable",
+      "reason": "Injury: Illness",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": false
      }
     ],
     "injuries_known": true,
@@ -3486,11 +3494,11 @@
    },
    "spread": {
     "favorite_id": "28",
-    "spread": 2.5,
-    "details": "TOR -2.5",
-    "provider": "Draft Kings",
-    "ml_home": -148,
-    "ml_away": 125
+    "spread": 3.5,
+    "details": "TOR -3.5",
+    "provider": "DraftKings",
+    "ml_home": -155,
+    "ml_away": 130
    },
    "favorite": "home",
    "scoring": {
@@ -3520,9 +3528,9 @@
      },
      {
       "rule": "B",
-      "name": "All-four mismatch (season and last 3)",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
       "pass": false,
-      "detail": "6 of 16 ranks; misses: TOR eFG% season #21, TOR Opp eFG% season #21, TOR Def Eff season #11, TOR eFG% last 3 #11 \u2026"
+      "detail": "\u2717 TOR last-3 top 10 in 1 of 4 \u00b7 \u2713 MEM last-3 bottom 10 in 4 of 4 \u00b7 \u2717 TOR season outside top 15: eFG% #21, Opp eFG% #21 \u00b7 \u2717 MEM season top 10: Off Eff #10, Def Eff #10"
      },
      {
       "rule": "Injury",
@@ -4041,8 +4049,8 @@
     "favorite_id": "1",
     "spread": 1.5,
     "details": "ATL -1.5",
-    "provider": "Draft Kings",
-    "ml_home": -125,
+    "provider": "DraftKings",
+    "ml_home": -124,
     "ml_away": 105
    },
    "favorite": "home",
@@ -4072,9 +4080,9 @@
      },
      {
       "rule": "B",
-      "name": "All-four mismatch (season and last 3)",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
       "pass": false,
-      "detail": "2 of 16 ranks; misses: ATL eFG% season #17, ATL Off Eff season #13, ATL Opp eFG% season #20, ATL Def Eff season #12 \u2026"
+      "detail": "\u2717 ATL last-3 top 10 in 2 of 4 \u00b7 \u2717 LAL last-3 bottom 10 in 0 of 4 \u00b7 \u2717 ATL season outside top 15: eFG% #17, Opp eFG% #20 \u00b7 \u2717 LAL season top 10: eFG% #1, Off Eff #1"
      },
      {
       "rule": "Injury",
