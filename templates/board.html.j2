@@ -146,13 +146,30 @@ function donut(sc, size, delay){
     <div class="num"><b class="cond" data-count="${sc.score}" data-delay="${delay}" style="font-size:${size*.33}px;color:${b.num}">${sc.score}</b><span>/ ${MAX}</span></div></div>`;
 }
 
+// Power rank and last-3 pills (Nov 10). Favorite: top 10 / 3-0 green, 11-20 / 2-1 yellow,
+// bottom 10 / 1-2, 0-3 red. Underdog: the same, flipped (strong underdog = red).
+const FORM = {g:'color:#03240F;background:linear-gradient(180deg,#43DE8F,#1F9D58)',
+              y:'color:#2A1C00;background:linear-gradient(180deg,#FADB80,#D9A12A)',
+              r:'color:#fff;background:linear-gradient(180deg,#D44444,#A12222)'};
+const flip = c => c==='g' ? 'r' : (c==='r' ? 'g' : c);
+function prPill(rank, isFav){
+  if(rank==null) return '#–';
+  const c = rank<=10 ? 'g' : (rank<=20 ? 'y' : 'r');
+  return `<span class="yn" style="${FORM[isFav?c:flip(c)]}">#${rank}</span>`;
+}
+function formPill(rec, isFav){
+  if(!rec) return '–';
+  const c = rec==='3-0' ? 'g' : (rec==='2-1' ? 'y' : 'r');
+  return `<span class="yn" style="${FORM[isFav?c:flip(c)]}">${esc(rec)}</span>`;
+}
+
 function teamLine(g, t){
   const isFav = t.is_fav, p = t.power||{};
   return `<div class="row">
     <span class="badge cond" style="font-size:${t.abbr.length>3?12:15}px;background:${isFav?'linear-gradient(180deg,#2E4170,#1C2845)':'linear-gradient(180deg,#252E45,#181F31)'}">${esc(t.abbr)}</span>
     <div style="min-width:0;flex:1"><div class="row" style="gap:6px;flex-wrap:wrap"><span style="font-weight:600;font-size:15px">${t===g.home?'<span style="color:#7C869E">@ </span>':''}${esc(t.name)}</span>
       ${isFav?'<span class="tag" style="color:#BFDBFE;background:rgba(96,165,250,.16);border:1px solid rgba(96,165,250,.4)">FAV</span>':''}</div>
-      <div class="sub"><span>${esc(t.record||'')} · L3 ${esc(t.l3_record||'–')} · PR #${p.rank??'–'}</span>
+      <div class="sub"><span>${esc(t.record||'')} · L3 ${formPill(t.l3_record, isFav)} · PR ${prPill(p.rank, isFav)}</span>
       ${p.split?'<span class="tag" style="color:#FDBA74;background:rgba(251,146,60,.14);border:1px solid rgba(251,146,60,.45)">SPLIT</span>':''}
       ${isFav && rk(t,'season','net')!=null && rk(t,'season','net')<=10?`<span class="tag" style="color:#A7F3D0;background:rgba(47,195,115,.14);border:1px solid rgba(47,195,115,.4)">NET #${rk(t,'season','net')}</span>`:''}</div></div>
     <span class="line cond" style="color:${isFav?'#F3F6FB':'#8B95AB'}">${esc(t.spread_text||'')}</span></div>`;
@@ -293,8 +310,8 @@ function detailView(g){
   if(sc.scored && tier2==='out') h += `<div class="banner fade" style="background:linear-gradient(180deg,rgba(212,68,68,.22),rgba(161,34,34,.16));border:1px solid rgba(220,60,60,.5)"><span class="chip" style="color:#fff;background:linear-gradient(180deg,#D44444,#A12222);text-transform:uppercase">No track</span><div style="display:flex;flex-direction:column;gap:4px;font-size:14px;color:#FECACA">${sc.fails.map(f=>`<span>${esc(f)}</span>`).join('')}</div></div>`;
   if(sc.qualified) h += `<div class="banner fade" style="align-items:center;background:linear-gradient(180deg,rgba(47,195,115,.16),rgba(31,157,88,.08));border:1px solid rgba(47,195,115,.45)"><span class="chip" style="color:#03240F;background:linear-gradient(180deg,#43DE8F,#1F9D58);text-transform:uppercase">Track game</span><span style="font-size:14px;color:#BBF7D0">Qualified: ${esc(sc.route||sc.qualifiers.join(', '))}</span></div>`;
   if(sc.scored && sc.rules && sc.rules.length && sc.rules[0].rule==='A'){
-    h += `<div class="panel pad" style="margin-bottom:14px"><h3 style="margin:0 0 8px">How it qualifies</h3><div style="display:flex;flex-direction:column;gap:6px;font-size:14px">${sc.rules.map(r=>`<div style="display:grid;grid-template-columns:22px minmax(0,1fr);gap:8px;align-items:start"><span style="width:20px;height:20px;border-radius:6px;display:grid;place-items:center;font-weight:800;font-size:12px;${r.pass?'background:linear-gradient(180deg,#43DE8F,#1F9D58);color:#03240F':'background:#3A1E22;color:#FCA5A5;border:1px solid rgba(200,48,48,.5)'}">${r.pass?'✓':'✗'}</span><span><b>${esc(r.rule==='Injury'?'Injury gate':'Route '+r.rule)}: ${esc(r.name)}</b><br><span style="color:var(--muted);font-size:12.5px">${esc(r.detail)}</span></span></div>`).join('')}</div>
-      <div style="font-size:12px;color:var(--dim);margin-top:8px">Qualified = route A or B, with the injury gate clear. Watch list = score 18-27. Qualified and Watch list games are tracked live.</div></div>`;
+    h += `<div class="panel pad" style="margin-bottom:14px"><h3 style="margin:0 0 8px">How it qualifies</h3><div style="display:flex;flex-direction:column;gap:6px;font-size:14px">${sc.rules.map(r=>`<div style="display:grid;grid-template-columns:22px minmax(0,1fr);gap:8px;align-items:start"><span style="width:20px;height:20px;border-radius:6px;display:grid;place-items:center;font-weight:800;font-size:12px;${r.pass?'background:linear-gradient(180deg,#43DE8F,#1F9D58);color:#03240F':'background:#3A1E22;color:#FCA5A5;border:1px solid rgba(200,48,48,.5)'}">${r.pass?'✓':'✗'}</span><span><b>${esc(r.rule==='Injury'?'Injury gate':(r.rule==='Power'?'Power gate':'Route '+r.rule))}: ${esc(r.name)}</b><br><span style="color:var(--muted);font-size:12.5px">${esc(r.detail)}</span></span></div>`).join('')}</div>
+      <div style="font-size:12px;color:var(--dim);margin-top:8px">Qualified = route A or B, with both gates clear. Watch list = score 18-27 with both gates clear. Qualified and Watch list games are tracked live.</div></div>`;
   }
   (sc.warnings||[]).forEach(w=>{ h += /^Info:/.test(w)||/Neutral/.test(w) ? `<div style="font-size:13px;color:#9AA4BA;margin:0 0 10px 4px">${esc(w.replace(/^Info: /,''))}</div>` : `<div class="warn" style="margin-bottom:10px">${esc(w)}</div>`; });
   const people = t => (t.closers&&t.closers.length? 'Closers: '+t.closers.join(', ') : 'Top scorers: '+((t.top_scorers||[]).map(p=>`${p.name} ${p.ppg}`).join(', ')||'–'));
@@ -314,7 +331,7 @@ function detailView(g){
     h += `<div class="cols2"><div class="panel pad"><h3>Metric heat map</h3><p class="note">Value and league rank. Underdog colors are flipped, so green is always good for the bet.</p>${heat(fav,dog)}</div>
       <div class="panel pad"><h3>Head-to-head, last 3</h3><p class="note">Longer bar = stronger rank. ${esc(fav.abbr)} extends left, ${esc(dog.abbr)} right.</p>${butterfly(fav,dog)}</div></div>`;
   }
-  h += `<div class="cols2">${[fav,dog].map(t=>`<div class="panel pad"><div class="row between" style="margin-bottom:10px"><h3 style="margin:0">${esc(t.name)} · last 3 games</h3><span style="font-size:12px;font-weight:700;color:#C7CEDC">L3 ${esc(t.l3_record||'–')}${t.b2b?' · B2B tonight':''}</span></div>
+  h += `<div class="cols2">${[fav,dog].map(t=>`<div class="panel pad"><div class="row between" style="margin-bottom:10px"><h3 style="margin:0">${esc(t.name)} · last 3 games</h3><span style="font-size:12px;font-weight:700;color:#C7CEDC">L3 ${formPill(t.l3_record, t.is_fav)}${t.b2b?' · B2B tonight':''}</span></div>
     <div class="tbl-row" style="border-top:0;font-size:11px;color:var(--dim);padding:0 0 6px"><span>Date</span><span>Opponent (power rank)</span><span>Score</span></div>
     ${(t.last3_games||[]).map((x,j)=>{const w=x.pts>x.opp_pts; const dt=new Date(x.date+'T12:00:00Z'); return `<div class="tbl-row fade" style="animation-delay:${250+j*90}ms"><span style="color:#9AA4BA">${dt.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric',timeZone:'UTC'})}</span>
       <span><span style="color:#7C869E">${x.site==='home'?'vs':(x.site==='away'?'@':'vs')}</span> ${esc(x.opp)} <span style="color:#8B95AB">(#${x.opp_power_rank??'–'})</span></span>

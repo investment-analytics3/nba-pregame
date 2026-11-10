@@ -11,6 +11,9 @@ Tiers (since Nov 9; route B revised Nov 9):
                   is top 15 in all four AND the underdog is top 10 in none.
   Watch list  Analysis Score 18-27 and not qualified.
   No track    everything else.
+Opponent power gate on every tier (Nov 10): an underdog ranked top 10 in ANY power
+ranking (the consensus shown on the board, our net-rating rank, ESPN BPI or NBA.com)
+means No track, with a note naming the ranking(s).
 Injury gate on every tier: the favorite has no key player Out or Doubtful
 (Questionable = yellow warning) and its injury report is available; otherwise
 No track. Underdog injuries are information only.
@@ -107,6 +110,13 @@ def score_game(game: dict) -> dict:
         injury_fails.append(f"Favorite key player out: {', '.join(key_out)}")
     if not injury_known:
         injury_fails.append("Injury report unavailable for the favorite")
+    # ---- opponent power gate (every tier) --------------------------------------
+    dp_all = dog.get("power") or {}
+    power_src = [("consensus", "rank"), ("our net rating", "own_net"), ("ESPN BPI", "bpi"), ("NBA.com", "nba_com")]
+    dog_top10 = [(label, dp_all.get(k)) for label, k in power_src if dp_all.get(k) is not None and dp_all.get(k) <= 10]
+    power_fails = ([f"{dog['abbr']} top 10 in power ranking: " + ", ".join(f"{l} #{r}" for l, r in dog_top10)]
+                   if dog_top10 else [])
+
     for p in fav.get("key_questionable") or []:
         warnings.append(f"{fav['abbr']} key player questionable: {p}")
 
@@ -158,7 +168,7 @@ def score_game(game: dict) -> dict:
     mismatch = all(ok for ok, _ in checks_b)
     by_score = total >= QUALIFY_SCORE
     routes = (["Score " + str(total)] if by_score else []) + (["Last-3 mismatch"] if mismatch else [])
-    if injury_fails:
+    if injury_fails or power_fails:
         tier = "out"
     elif routes:
         tier = "qualified"
@@ -172,12 +182,15 @@ def score_game(game: dict) -> dict:
          "detail": " · ".join(("✓ " if ok else "✗ ") + txt for ok, txt in checks_b)},
         {"rule": "Injury", "name": "No key player out for the favorite", "pass": not injury_fails,
          "detail": "; ".join(injury_fails) or "Clear"},
+        {"rule": "Power", "name": "Underdog not top 10 in any power ranking", "pass": not power_fails,
+         "detail": "; ".join(power_fails) or ("Underdog: " + ", ".join(f"{l} #{dp_all.get(k)}" for l, k in power_src
+                                                                    if dp_all.get(k) is not None))},
     ]
     if tier == "qualified":
         fails = []
-    elif injury_fails:
-        fails = injury_fails + ([f"Would be {'qualified' if routes else 'on the watch list'} otherwise (score {total})"]
-                                if routes or total >= WATCH_SCORE else [])
+    elif injury_fails or power_fails:
+        fails = power_fails + injury_fails + ([f"Would be {'qualified' if routes else 'on the watch list'} otherwise (score {total})"]
+                                              if routes or total >= WATCH_SCORE else [])
     elif tier == "watch":
         fails = [f"Watch list: score {total} (qualifies at {QUALIFY_SCORE})"]
     else:

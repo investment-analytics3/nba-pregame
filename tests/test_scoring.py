@@ -64,6 +64,17 @@ class Qualification(unittest.TestCase):
         r = scoring.score_game(game(fav, dog, "away"))
         self.assertNotIn("Last-3 mismatch", r["routes"])
 
+    def test_opponent_power_gate(self):
+        fav = team("BOS", (4, 2, 7, 5), (3, 6, 9, 4), net=2, l3="3-0", power=3)
+        dog = team("PHI", (27, 28, 29, 8), (22, 25, 26, 15), l3="0-3", power=11)
+        dog["power"].update({"own_net": 14, "bpi": 9, "nba_com": 5})       # consensus 11, but BPI 9 and NBA.com 5
+        r = scoring.score_game(game(fav, dog))
+        self.assertEqual(r["tier"], "out")
+        self.assertIn("PHI top 10 in power ranking: ESPN BPI #9, NBA.com #5", r["fails"][0])
+        self.assertFalse([x for x in r["rules"] if x["rule"] == "Power"][0]["pass"])
+        dog["power"].update({"bpi": 12, "nba_com": 13})                     # no source top 10 -> gate clear
+        self.assertNotEqual(scoring.score_game(game(fav, dog))["tier"], "out")
+
     def test_watch_list_is_tracked_live(self):
         self.assertIn("watch", scoring.LIVE_TIERS)
 
