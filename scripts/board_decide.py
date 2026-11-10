@@ -30,11 +30,14 @@ ET = ZoneInfo("America/New_York")
 MERGE_WINDOW = timedelta(minutes=45)
 
 
-def decide(now: datetime, tips: list[datetime], log_today: dict) -> tuple[str, str]:
+def decide(now: datetime, tips: list[datetime], log_today: dict, day=None) -> tuple[str, str]:
+    """`day` = the slate date (ET game date) the log entry belongs to. The board time is on that
+    date: from 9 PM PT the ET date is already tomorrow, and without this the next day's board
+    went out at 9 PM the night before (Nov 9 and 10, 2026)."""
     if not tips:
         return "none", "no games today"
     first_tip = min(tips)
-    day = now.astimezone(PT).date()
+    day = day or now.astimezone(PT).date()
     board_t = datetime.combine(day, time(10 if day.weekday() >= 5 else 12, 0), PT)
     final_t = first_tip - timedelta(minutes=90)
     sent_final, sent_board = "final" in log_today, "board" in log_today
@@ -67,7 +70,7 @@ def main() -> int:
         tips = [datetime.fromisoformat(e["start_utc"].replace("Z", "+00:00")) for e in events
                 if e["state"] == "pre" or e["completed"] or e["state"] == "in"]
         log_today = (store.read_json("board_log.json", {}) or {}).get(today.isoformat(), {})
-        kind, why = decide(now, tips, log_today)
+        kind, why = decide(now, tips, log_today, today)
     print(f"{now:%a %-I:%M %p} PT: {kind} ({why})")
     out = os.environ.get("GITHUB_OUTPUT")
     if out:

@@ -72,7 +72,7 @@ def decide(dry_run: bool = False) -> dict:
 
     tips = [datetime.fromisoformat(e["start_utc"].replace("Z", "+00:00")) for e in events]
     log_today = (store.read_json("board_log.json", {}) or {}).get(today_et.isoformat(), {})
-    out["board"], why = board_decide(now, tips, log_today)
+    out["board"], why = board_decide(now, tips, log_today, today_et)
     out["note"] = why
 
     live = live_due(now, events, tracked_ids(today_et))

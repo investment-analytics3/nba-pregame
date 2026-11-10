@@ -26,6 +26,14 @@ class Schedule(unittest.TestCase):
         self.assertEqual(decide(at(10, "14:34"), tips, {"board": {}})[0], "final")   # 90 min before 4:00
         self.assertEqual(decide(at(10, "15:00"), tips, {"board": {}, "final": {}})[0], "none")
 
+    def test_no_board_the_evening_before(self):
+        # 9 PM PT on Nov 9 is already Nov 10 in the East; the Nov 10 board waits for noon Nov 10
+        from datetime import date
+        tips = [at(10, "16:30"), at(10, "19:00")]
+        self.assertEqual(decide(at(9, "21:00"), tips, {}, date(2026, 11, 10))[0], "none")
+        self.assertEqual(decide(at(9, "23:45"), tips, {}, date(2026, 11, 10))[0], "none")
+        self.assertEqual(decide(at(10, "12:04"), tips, {}, date(2026, 11, 10))[0], "board")
+
     def test_weekend_board_at_10(self):
         tips = [at(8, "12:30"), at(8, "18:00")]                # first tip 12:30, final at 11:00
         self.assertEqual(decide(at(8, "10:04"), tips, {})[0], "board")
