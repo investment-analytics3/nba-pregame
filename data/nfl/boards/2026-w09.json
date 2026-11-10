@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 9,
- "built_at": "2026-11-09T15:00:42-08:00",
- "built_label": "Mon Nov 9, 3:00 PM PT",
+ "built_at": "2026-11-09T16:00:42-08:00",
+ "built_label": "Mon Nov 9, 4:00 PM PT",
  "games": [
   {
    "id": "401873051",
@@ -24,7 +24,7 @@
    "open_spread": -3.0,
    "total": 45.5,
    "total_open": 48.5,
-   "fav_ml": -198.0,
+   "fav_ml": -192.0,
    "favorite": "away",
    "spread": -3.5,
    "movement": 0.5,
@@ -1101,7 +1101,6 @@
     },
     "injuries_known": true,
     "key_out": [
-     "Bobby Okereke",
      "Damien Lewis",
      "Jaelan Phillips",
      "Will Lee"
@@ -1113,6 +1112,16 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Jaycee Horn",
+      "pos": "CB",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Mike Jackson",
+      "pos": "CB",
+      "status": "Injured Reserve"
+     },
      {
       "name": "Jaelan Phillips",
       "pos": "LB",
@@ -1127,16 +1136,6 @@
       "name": "Damien Lewis",
       "pos": "G",
       "status": "Out"
-     },
-     {
-      "name": "Bobby Okereke",
-      "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "name": "Xavier Legette",
-      "pos": "WR",
-      "status": "Injured Reserve"
      }
     ]
    },
@@ -3728,17 +3727,17 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Brandon Aiyuk",
-      "pos": "WR",
-      "status": "Out"
-     },
-     {
       "name": "Deebo Samuel Sr.",
       "pos": "WR",
       "status": "Out"
      },
      {
       "name": "Mike Evans",
+      "pos": "WR",
+      "status": "Out"
+     },
+     {
+      "name": "Brandon Aiyuk",
       "pos": "WR",
       "status": "Out"
      },
@@ -4972,6 +4971,6 @@
   "tracked": 0,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Mon Nov 9, 3:00 PM PT"
+  "built_label": "Mon Nov 9, 4:00 PM PT"
  }
 }
