@@ -146,6 +146,12 @@ often: always `git pull --rebase origin main` before pushing.
 - L1: three sections (Qualified green, Watch list amber, Did not qualify red line). B2B Yes = red, No = green.
   Power rank + L3 record are pills (`prPill`/`formPill`): favorite top 10 / 3-0 green, 11-20 / 2-1 yellow, else red;
   underdog flipped (top 10 / 3-0 red, 11-20 / 2-1 yellow, 21-30 / 1-2 / 0-3 green).
+- Analyst readout (Nov 10): L2 bottom panel for tracked games (`readoutPanel`), from `data/readouts/<date>.json`
+  (format + rules: `data/readouts/README.md`; loaded by `board.load_readouts`). Written by the owner's Claude scheduled
+  task "NBA analyst readouts" (daily 9:41 AM PT), which commits only that file and dispatches `board.yml` preview with
+  send=false. Information only.
+- Board timing: `board_decide.decide(..., day)` puts the board time on the slate's ET date (fixed Nov 10: from 9 PM PT
+  the next day's board used to go out the night before).
 - Key player = started at least half of the team's games, or top 5 on the team in minutes per game.
 - Analysis Score (max 40): favorite metrics 16 (season+last 3; top 5 = 2, top 10 = 1), underdog
   metrics 16 (bottom 5 = 2, bottom 10 = 1), net rating 2, last-3 form 2 (3-0 = 2, 2-1 = 1),
