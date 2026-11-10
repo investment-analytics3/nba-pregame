@@ -1,0 +1,236 @@
+{
+ "$ref": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/events/401873037/competitions/401873037/predictor?lang=en&region=us",
+ "name": "Jacksonville Jaguars at Baltimore Ravens",
+ "shortName": "JAX @ BAL",
+ "lastModified": "2026-11-10T10:00Z",
+ "homeTeam": {
+  "team": {
+   "$ref": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2026/teams/33?lang=en&region=us"
+  },
+  "statistics": [
+   {
+    "name": "gameProjection",
+    "displayName": "WIN PROB",
+    "shortDisplayName": "GP",
+    "description": "Team's predicted win percentage in this game at time of given BPI run",
+    "abbreviation": "GP",
+    "value": 18.849,
+    "displayValue": "18.8"
+   },
+   {
+    "name": "matchupQuality",
+    "displayName": "Matchup Quality",
+    "shortDisplayName": "MQ",
+    "description": "A measure of projected competitiveness and excitement in the game, using a 0 to 100 scale, with 100 as the most exciting",
+    "abbreviation": "MQ",
+    "value": 78.739,
+    "displayValue": "78.7"
+   },
+   {
+    "name": "oppSeasonStrengthFbsRank",
+    "displayName": "Opponent Seasson Strength FBS Rank",
+    "shortDisplayName": "OSS FBS RK",
+    "description": "",
+    "abbreviation": "OSS FBS RK",
+    "value": 0.0,
+    "displayValue": "0"
+   },
+   {
+    "name": "oppSeasonStrengthRating",
+    "displayName": "Opponent Seasson Strength Rating",
+    "shortDisplayName": "OSS RT",
+    "description": "",
+    "abbreviation": "OSS RT",
+    "value": 5.063,
+    "displayValue": "5.1"
+   },
+   {
+    "name": "teamAvgWp",
+    "displayName": "Team Average Win Percentage",
+    "shortDisplayName": "TAW%",
+    "description": "",
+    "abbreviation": "TAW%",
+    "value": 18.4,
+    "displayValue": "18.4"
+   },
+   {
+    "name": "teamChanceLoss",
+    "displayName": "Team Chance Loss",
+    "shortDisplayName": "TCL",
+    "description": "",
+    "abbreviation": "TCL",
+    "value": 80.999,
+    "displayValue": "81.0"
+   },
+   {
+    "name": "teamChanceTie",
+    "displayName": "Team Chance Tie",
+    "shortDisplayName": "TCT",
+    "description": "",
+    "abbreviation": "TCT",
+    "value": 0.151,
+    "displayValue": ".2"
+   },
+   {
+    "name": "teamDefEff",
+    "displayName": "Team Defensive Efficiency",
+    "shortDisplayName": "TDE",
+    "description": "",
+    "abbreviation": "TDE",
+    "value": 38.541,
+    "displayValue": "38.5"
+   },
+   {
+    "name": "teamOffEff",
+    "displayName": "Team Offensive Efficiency",
+    "shortDisplayName": "TOE",
+    "description": "",
+    "abbreviation": "TOE",
+    "value": 4.185,
+    "displayValue": "4.2"
+   },
+   {
+    "name": "teamPredPtDiff",
+    "displayName": "Team Pred. Point Difference",
+    "shortDisplayName": "TPPD",
+    "description": "",
+    "abbreviation": "TPPD",
+    "value": -8.984,
+    "displayValue": "-9"
+   },
+   {
+    "name": "teamSTEff",
+    "displayName": "Team ST Efficiency",
+    "shortDisplayName": "TSTE",
+    "description": "",
+    "abbreviation": "TSTE",
+    "value": 29.535,
+    "displayValue": "29.5"
+   },
+   {
+    "name": "teamTotEff",
+    "displayName": "Team Total Efficiency",
+    "shortDisplayName": "TTE",
+    "description": "",
+    "abbreviation": "TTE",
+    "value": 6.44,
+    "displayValue": "6.4"
+   }
+  ]
+ },
+ "awayTeam": {
+  "team": {
+   "$ref": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2026/teams/30?lang=en&region=us"
+  },
+  "statistics": [
+   {
+    "name": "gameProjection",
+    "displayName": "WIN PROB",
+    "shortDisplayName": "GP",
+    "description": "Team's predicted win percentage in this game at time of given BPI run",
+    "abbreviation": "GP",
+    "value": 80.999,
+    "displayValue": "81.0"
+   },
+   {
+    "name": "matchupQuality",
+    "displayName": "Matchup Quality",
+    "shortDisplayName": "MQ",
+    "description": "A measure of projected competitiveness and excitement in the game, using a 0 to 100 scale, with 100 as the most exciting",
+    "abbreviation": "MQ",
+    "value": 78.739,
+    "displayValue": "78.7"
+   },
+   {
+    "name": "oppSeasonStrengthFbsRank",
+    "displayName": "Opponent Seasson Strength FBS Rank",
+    "shortDisplayName": "OSS FBS RK",
+    "description": "",
+    "abbreviation": "OSS FBS RK",
+    "value": 0.0,
+    "displayValue": "0"
+   },
+   {
+    "name": "oppSeasonStrengthRating",
+    "displayName": "Opponent Seasson Strength Rating",
+    "shortDisplayName": "OSS RT",
+    "description": "",
+    "abbreviation": "OSS RT",
+    "value": -5.175,
+    "displayValue": "-5.2"
+   },
+   {
+    "name": "teamAvgWp",
+    "displayName": "Team Average Win Percentage",
+    "shortDisplayName": "TAW%",
+    "description": "",
+    "abbreviation": "TAW%",
+    "value": 81.6,
+    "displayValue": "81.6"
+   },
+   {
+    "name": "teamChanceLoss",
+    "displayName": "Team Chance Loss",
+    "shortDisplayName": "TCL",
+    "description": "",
+    "abbreviation": "TCL",
+    "value": 18.849,
+    "displayValue": "18.8"
+   },
+   {
+    "name": "teamChanceTie",
+    "displayName": "Team Chance Tie",
+    "shortDisplayName": "TCT",
+    "description": "",
+    "abbreviation": "TCT",
+    "value": 0.151,
+    "displayValue": ".2"
+   },
+   {
+    "name": "teamDefEff",
+    "displayName": "Team Defensive Efficiency",
+    "shortDisplayName": "TDE",
+    "description": "",
+    "abbreviation": "TDE",
+    "value": 95.815,
+    "displayValue": "95.8"
+   },
+   {
+    "name": "teamOffEff",
+    "displayName": "Team Offensive Efficiency",
+    "shortDisplayName": "TOE",
+    "description": "",
+    "abbreviation": "TOE",
+    "value": 61.459,
+    "displayValue": "61.5"
+   },
+   {
+    "name": "teamPredPtDiff",
+    "displayName": "Team Pred. Point Difference",
+    "shortDisplayName": "TPPD",
+    "description": "",
+    "abbreviation": "TPPD",
+    "value": 8.984,
+    "displayValue": "9"
+   },
+   {
+    "name": "teamSTEff",
+    "displayName": "Team ST Efficiency",
+    "shortDisplayName": "TSTE",
+    "description": "",
+    "abbreviation": "TSTE",
+    "value": 70.465,
+    "displayValue": "70.5"
+   },
+   {
+    "name": "teamTotEff",
+    "displayName": "Team Total Efficiency",
+    "shortDisplayName": "TTE",
+    "description": "",
+    "abbreviation": "TTE",
+    "value": 93.56,
+    "displayValue": "93.6"
+   }
+  ]
+ }
+}

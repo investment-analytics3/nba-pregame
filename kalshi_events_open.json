@@ -1,0 +1,3462 @@
+{
+ "cursor": "",
+ "events": [
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV12WASNYG",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-03T05:02:34.566509Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-15T01:15:00Z",
+     "created_time": "2026-11-03T05:01:42.940802Z",
+     "custom_strike": {
+      "football_team": "4fa3f3ec-f7e7-41ec-9383-a40af2d26297"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV12WASNYG",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-13T04:15:00Z",
+     "expiration_time": "2026-11-15T01:15:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.5700",
+     "latest_expiration_time": "2026-11-15T01:15:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.4400",
+     "no_bid_dollars": "0.4300",
+     "no_sub_title": "New York G",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-13T04:15:00Z",
+     "open_interest_fp": "317716.46",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.5500",
+     "previous_yes_ask_dollars": "0.5500",
+     "previous_yes_bid_dollars": "0.5400",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If New York G wins the Washington vs New York G Pro Football game originally scheduled for Nov 12, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Washington vs New York G Pro Football game originally scheduled for Nov 12, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV12WASNYG-NYG",
+     "title": "New York G wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "273085.75",
+     "volume_fp": "552732.08",
+     "yes_ask_dollars": "0.5700",
+     "yes_ask_size_fp": "776770.91",
+     "yes_bid_dollars": "0.5600",
+     "yes_bid_size_fp": "66137.48",
+     "yes_sub_title": "New York G"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-15T01:15:00Z",
+     "created_time": "2026-11-03T05:01:42.940802Z",
+     "custom_strike": {
+      "football_team": "aa65dda6-9cb8-4c8b-812b-d0c1feaae54f"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV12WASNYG",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-13T04:15:00Z",
+     "expiration_time": "2026-11-15T01:15:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.4300",
+     "latest_expiration_time": "2026-11-15T01:15:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.5700",
+     "no_bid_dollars": "0.5600",
+     "no_sub_title": "Washington",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-13T04:15:00Z",
+     "open_interest_fp": "129177.04",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.4700",
+     "previous_yes_ask_dollars": "0.4700",
+     "previous_yes_bid_dollars": "0.4600",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Washington wins the Washington vs New York G Pro Football game originally scheduled for Nov 12, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Washington vs New York G Pro Football game originally scheduled for Nov 12, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV12WASNYG-WAS",
+     "title": "Washington wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "92915.19",
+     "volume_fp": "148296.98",
+     "yes_ask_dollars": "0.4400",
+     "yes_ask_size_fp": "459073.95",
+     "yes_bid_dollars": "0.4300",
+     "yes_bid_size_fp": "389149.69",
+     "yes_sub_title": "Washington"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "WAS vs NYG (Nov 12)",
+   "title": "Washington vs New York G"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV15NEDET",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-03T05:04:25.946449Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-17T14:30:00Z",
+     "created_time": "2026-11-03T05:01:57.980144Z",
+     "custom_strike": {
+      "football_team": "f95a55a7-8472-4ffa-be20-14547e3c32ff"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15NEDET",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-15T17:30:00Z",
+     "expiration_time": "2026-11-17T14:30:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.5800",
+     "latest_expiration_time": "2026-11-17T14:30:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.4300",
+     "no_bid_dollars": "0.4200",
+     "no_sub_title": "Detroit",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-15T17:30:00Z",
+     "open_interest_fp": "109295.09",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.5900",
+     "previous_yes_ask_dollars": "0.5900",
+     "previous_yes_bid_dollars": "0.5800",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Detroit wins the New England vs Detroit Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the New England vs Detroit Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15NEDET-DET",
+     "title": "Detroit wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "59684.61",
+     "volume_fp": "141300.71",
+     "yes_ask_dollars": "0.5800",
+     "yes_ask_size_fp": "82031.93",
+     "yes_bid_dollars": "0.5700",
+     "yes_bid_size_fp": "128170.91",
+     "yes_sub_title": "Detroit"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-17T14:30:00Z",
+     "created_time": "2026-11-03T05:01:57.980144Z",
+     "custom_strike": {
+      "football_team": "d1d64188-5cd5-4feb-97ff-8542c9dbeb43"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15NEDET",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-15T17:30:00Z",
+     "expiration_time": "2026-11-17T14:30:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.4300",
+     "latest_expiration_time": "2026-11-17T14:30:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.5800",
+     "no_bid_dollars": "0.5700",
+     "no_sub_title": "New England",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-15T17:30:00Z",
+     "open_interest_fp": "101009.06",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.4100",
+     "previous_yes_ask_dollars": "0.4100",
+     "previous_yes_bid_dollars": "0.4000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If New England wins the New England vs Detroit Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the New England vs Detroit Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15NEDET-NE",
+     "title": "New England wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "24339.99",
+     "volume_fp": "110614.87",
+     "yes_ask_dollars": "0.4300",
+     "yes_ask_size_fp": "397335.77",
+     "yes_bid_dollars": "0.4200",
+     "yes_bid_size_fp": "60759.15",
+     "yes_sub_title": "New England"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "NE vs DET (Nov 15)",
+   "title": "New England vs Detroit"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV15BUFNYJ",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-03T05:06:13.672537Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-17T18:00:00Z",
+     "created_time": "2026-11-03T05:03:43.648343Z",
+     "custom_strike": {
+      "football_team": "ccc2af2d-5c4d-4717-8036-5ba6bec5cfbd"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15BUFNYJ",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-15T21:00:00Z",
+     "expiration_time": "2026-11-17T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.2000",
+     "latest_expiration_time": "2026-11-17T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.8100",
+     "no_bid_dollars": "0.8000",
+     "no_sub_title": "New York J",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-15T21:00:00Z",
+     "open_interest_fp": "19013.52",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.2000",
+     "previous_yes_ask_dollars": "0.2000",
+     "previous_yes_bid_dollars": "0.1900",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If New York J wins the Buffalo vs New York J Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Buffalo vs New York J Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15BUFNYJ-NYJ",
+     "title": "New York J wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "8253.35",
+     "volume_fp": "25347.10",
+     "yes_ask_dollars": "0.2000",
+     "yes_ask_size_fp": "365907.81",
+     "yes_bid_dollars": "0.1900",
+     "yes_bid_size_fp": "1930.59",
+     "yes_sub_title": "New York J"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-17T18:00:00Z",
+     "created_time": "2026-11-03T05:03:43.648343Z",
+     "custom_strike": {
+      "football_team": "f9acd396-ba35-4cae-a431-a44b2af707b0"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15BUFNYJ",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-15T21:00:00Z",
+     "expiration_time": "2026-11-17T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.8000",
+     "latest_expiration_time": "2026-11-17T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.2000",
+     "no_bid_dollars": "0.1900",
+     "no_sub_title": "Buffalo",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-15T21:00:00Z",
+     "open_interest_fp": "103157.81",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.8000",
+     "previous_yes_ask_dollars": "0.8000",
+     "previous_yes_bid_dollars": "0.7900",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Buffalo wins the Buffalo vs New York J Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Buffalo vs New York J Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15BUFNYJ-BUF",
+     "title": "Buffalo wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "96331.66",
+     "volume_fp": "122492.72",
+     "yes_ask_dollars": "0.8100",
+     "yes_ask_size_fp": "3492.60",
+     "yes_bid_dollars": "0.8000",
+     "yes_bid_size_fp": "344912.15",
+     "yes_sub_title": "Buffalo"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "BUF vs NYJ (Nov 15)",
+   "title": "Buffalo vs New York J"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV15CARNO",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-03T05:04:25.892222Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-17T18:00:00Z",
+     "created_time": "2026-11-03T05:02:28.383205Z",
+     "custom_strike": {
+      "football_team": "f7c2cd06-61bf-469e-984f-3ef56cb8f3d7"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15CARNO",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-15T21:00:00Z",
+     "expiration_time": "2026-11-17T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.5200",
+     "latest_expiration_time": "2026-11-17T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.4900",
+     "no_bid_dollars": "0.4800",
+     "no_sub_title": "New Orleans",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-15T21:00:00Z",
+     "open_interest_fp": "21431.18",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.5200",
+     "previous_yes_ask_dollars": "0.5200",
+     "previous_yes_bid_dollars": "0.5100",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If New Orleans wins the Carolina vs New Orleans Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Carolina vs New Orleans Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15CARNO-NO",
+     "title": "New Orleans wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "4168.01",
+     "volume_fp": "24585.85",
+     "yes_ask_dollars": "0.5200",
+     "yes_ask_size_fp": "347560.31",
+     "yes_bid_dollars": "0.5100",
+     "yes_bid_size_fp": "1538.30",
+     "yes_sub_title": "New Orleans"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-17T18:00:00Z",
+     "created_time": "2026-11-03T05:02:28.383205Z",
+     "custom_strike": {
+      "football_team": "e37050ce-354f-4dd0-b2d8-0bd1e9650eb7"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15CARNO",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-15T21:00:00Z",
+     "expiration_time": "2026-11-17T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.4800",
+     "latest_expiration_time": "2026-11-17T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.5200",
+     "no_bid_dollars": "0.5100",
+     "no_sub_title": "Carolina",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-15T21:00:00Z",
+     "open_interest_fp": "50610.08",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.4900",
+     "previous_yes_ask_dollars": "0.4900",
+     "previous_yes_bid_dollars": "0.4800",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Carolina wins the Carolina vs New Orleans Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Carolina vs New Orleans Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15CARNO-CAR",
+     "title": "Carolina wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "21756.27",
+     "volume_fp": "52206.45",
+     "yes_ask_dollars": "0.4900",
+     "yes_ask_size_fp": "64782.68",
+     "yes_bid_dollars": "0.4800",
+     "yes_bid_size_fp": "40652.55",
+     "yes_sub_title": "Carolina"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "CAR vs NO (Nov 15)",
+   "title": "Carolina vs New Orleans"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV15HOUCLE",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-03T05:04:26.146451Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-17T18:00:00Z",
+     "created_time": "2026-11-03T05:03:13.366956Z",
+     "custom_strike": {
+      "football_team": "05cc62a4-bd74-4b2c-ab7b-1b177b9f6790"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15HOUCLE",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-15T21:00:00Z",
+     "expiration_time": "2026-11-17T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.3300",
+     "latest_expiration_time": "2026-11-17T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.6700",
+     "no_bid_dollars": "0.6600",
+     "no_sub_title": "Cleveland",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-15T21:00:00Z",
+     "open_interest_fp": "26108.36",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.3400",
+     "previous_yes_ask_dollars": "0.3400",
+     "previous_yes_bid_dollars": "0.3300",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Cleveland wins the Houston vs Cleveland Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Houston vs Cleveland Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15HOUCLE-CLE",
+     "title": "Cleveland wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "16497.40",
+     "volume_fp": "34383.69",
+     "yes_ask_dollars": "0.3400",
+     "yes_ask_size_fp": "402619.40",
+     "yes_bid_dollars": "0.3300",
+     "yes_bid_size_fp": "15566.01",
+     "yes_sub_title": "Cleveland"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-17T18:00:00Z",
+     "created_time": "2026-11-03T05:03:13.366956Z",
+     "custom_strike": {
+      "football_team": "96edbad3-1be5-4528-a3ed-c6e0c28c5fa0"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15HOUCLE",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-15T21:00:00Z",
+     "expiration_time": "2026-11-17T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.6800",
+     "latest_expiration_time": "2026-11-17T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.3300",
+     "no_bid_dollars": "0.3200",
+     "no_sub_title": "Houston",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-15T21:00:00Z",
+     "open_interest_fp": "15742.30",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.6700",
+     "previous_yes_ask_dollars": "0.6700",
+     "previous_yes_bid_dollars": "0.6600",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Houston wins the Houston vs Cleveland Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Houston vs Cleveland Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15HOUCLE-HOU",
+     "title": "Houston wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "10027.64",
+     "volume_fp": "21627.24",
+     "yes_ask_dollars": "0.6800",
+     "yes_ask_size_fp": "15458.41",
+     "yes_bid_dollars": "0.6700",
+     "yes_bid_size_fp": "342152.58",
+     "yes_sub_title": "Houston"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "HOU vs CLE (Nov 15)",
+   "title": "Houston vs Cleveland"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV15JACTEN",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-03T05:04:25.911225Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-17T18:00:00Z",
+     "created_time": "2026-11-03T05:02:43.393375Z",
+     "custom_strike": {
+      "football_team": "7c86629b-eafc-47b4-9204-b46a2d0e9cbb"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15JACTEN",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-15T21:00:00Z",
+     "expiration_time": "2026-11-17T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.1700",
+     "latest_expiration_time": "2026-11-17T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.8400",
+     "no_bid_dollars": "0.8300",
+     "no_sub_title": "Tennessee",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-15T21:00:00Z",
+     "open_interest_fp": "34680.94",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.1800",
+     "previous_yes_ask_dollars": "0.1800",
+     "previous_yes_bid_dollars": "0.1700",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Tennessee wins the Jacksonville vs Tennessee Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Jacksonville vs Tennessee Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15JACTEN-TEN",
+     "title": "Tennessee wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "10449.86",
+     "volume_fp": "40240.80",
+     "yes_ask_dollars": "0.1700",
+     "yes_ask_size_fp": "425866.73",
+     "yes_bid_dollars": "0.1600",
+     "yes_bid_size_fp": "486.51",
+     "yes_sub_title": "Tennessee"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-17T18:00:00Z",
+     "created_time": "2026-11-03T05:02:43.393375Z",
+     "custom_strike": {
+      "football_team": "61a75ab7-eaf0-4601-b920-86b1e165007d"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15JACTEN",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-15T21:00:00Z",
+     "expiration_time": "2026-11-17T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.8400",
+     "latest_expiration_time": "2026-11-17T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.1700",
+     "no_bid_dollars": "0.1600",
+     "no_sub_title": "Jacksonville",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-15T21:00:00Z",
+     "open_interest_fp": "145135.24",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.8300",
+     "previous_yes_ask_dollars": "0.8300",
+     "previous_yes_bid_dollars": "0.8200",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Jacksonville wins the Jacksonville vs Tennessee Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Jacksonville vs Tennessee Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15JACTEN-JAC",
+     "title": "Jacksonville wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "68708.92",
+     "volume_fp": "160153.98",
+     "yes_ask_dollars": "0.8400",
+     "yes_ask_size_fp": "4915.83",
+     "yes_bid_dollars": "0.8300",
+     "yes_bid_size_fp": "385650.35",
+     "yes_sub_title": "Jacksonville"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "JAC vs TEN (Nov 15)",
+   "title": "Jacksonville vs Tennessee"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV15KCATL",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-03T05:04:26.180606Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-17T18:00:00Z",
+     "created_time": "2026-11-03T05:02:58.314408Z",
+     "custom_strike": {
+      "football_team": "75685be6-4388-4bba-8bcb-d0b0c24feb50"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15KCATL",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-15T21:00:00Z",
+     "expiration_time": "2026-11-17T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.3700",
+     "latest_expiration_time": "2026-11-17T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.6300",
+     "no_bid_dollars": "0.6200",
+     "no_sub_title": "Atlanta",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-15T21:00:00Z",
+     "open_interest_fp": "12285.31",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.3700",
+     "previous_yes_ask_dollars": "0.3700",
+     "previous_yes_bid_dollars": "0.3600",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Atlanta wins the Kansas City vs Atlanta Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Kansas City vs Atlanta Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15KCATL-ATL",
+     "title": "Atlanta wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "6772.27",
+     "volume_fp": "20211.15",
+     "yes_ask_dollars": "0.3800",
+     "yes_ask_size_fp": "74545.19",
+     "yes_bid_dollars": "0.3700",
+     "yes_bid_size_fp": "176.78",
+     "yes_sub_title": "Atlanta"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-17T18:00:00Z",
+     "created_time": "2026-11-03T05:02:58.314408Z",
+     "custom_strike": {
+      "football_team": "64f72720-2e4a-4cc8-a39b-ca148aecb389"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15KCATL",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-15T21:00:00Z",
+     "expiration_time": "2026-11-17T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.6400",
+     "latest_expiration_time": "2026-11-17T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.3700",
+     "no_bid_dollars": "0.3600",
+     "no_sub_title": "Kansas City",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-15T21:00:00Z",
+     "open_interest_fp": "66549.80",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.6400",
+     "previous_yes_ask_dollars": "0.6400",
+     "previous_yes_bid_dollars": "0.6300",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Kansas City wins the Kansas City vs Atlanta Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Kansas City vs Atlanta Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15KCATL-KC",
+     "title": "Kansas City wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "32921.23",
+     "volume_fp": "91857.49",
+     "yes_ask_dollars": "0.6400",
+     "yes_ask_size_fp": "366570.86",
+     "yes_bid_dollars": "0.6300",
+     "yes_bid_size_fp": "154.93",
+     "yes_sub_title": "Kansas City"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "KC vs ATL (Nov 15)",
+   "title": "Kansas City vs Atlanta"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV15MIAIND",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-03T05:06:13.729514Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-17T18:00:00Z",
+     "created_time": "2026-11-03T05:03:28.327912Z",
+     "custom_strike": {
+      "football_team": "fe5f8219-fef4-4498-83d5-f6cc6f2cb7bf"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15MIAIND",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-15T21:00:00Z",
+     "expiration_time": "2026-11-17T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.6500",
+     "latest_expiration_time": "2026-11-17T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.3600",
+     "no_bid_dollars": "0.3500",
+     "no_sub_title": "Indianapolis",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-15T21:00:00Z",
+     "open_interest_fp": "421811.05",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.5600",
+     "previous_yes_ask_dollars": "0.5600",
+     "previous_yes_bid_dollars": "0.5500",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Indianapolis wins the Miami vs Indianapolis Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Miami vs Indianapolis Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15MIAIND-IND",
+     "title": "Indianapolis wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "417480.40",
+     "volume_fp": "425013.29",
+     "yes_ask_dollars": "0.6500",
+     "yes_ask_size_fp": "272.56",
+     "yes_bid_dollars": "0.6400",
+     "yes_bid_size_fp": "91173.64",
+     "yes_sub_title": "Indianapolis"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-17T18:00:00Z",
+     "created_time": "2026-11-03T05:03:28.327912Z",
+     "custom_strike": {
+      "football_team": "4cba614d-2d32-48ef-a066-1524437fbaff"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15MIAIND",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-15T21:00:00Z",
+     "expiration_time": "2026-11-17T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.3600",
+     "latest_expiration_time": "2026-11-17T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.6500",
+     "no_bid_dollars": "0.6400",
+     "no_sub_title": "Miami",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-15T21:00:00Z",
+     "open_interest_fp": "35510.38",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.4500",
+     "previous_yes_ask_dollars": "0.4500",
+     "previous_yes_bid_dollars": "0.4400",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Miami wins the Miami vs Indianapolis Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Miami vs Indianapolis Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15MIAIND-MIA",
+     "title": "Miami wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "32833.36",
+     "volume_fp": "39146.97",
+     "yes_ask_dollars": "0.3600",
+     "yes_ask_size_fp": "137229.36",
+     "yes_bid_dollars": "0.3500",
+     "yes_bid_size_fp": "70.48",
+     "yes_sub_title": "Miami"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "MIA vs IND (Nov 15)",
+   "title": "Miami vs Indianapolis"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV15MINGB",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-03T05:04:25.929567Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-17T18:00:00Z",
+     "created_time": "2026-11-03T05:02:12.970042Z",
+     "custom_strike": {
+      "football_team": "08c52d1f-7ce1-445f-be72-97de0554ecc8"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15MINGB",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-15T21:00:00Z",
+     "expiration_time": "2026-11-17T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.6000",
+     "latest_expiration_time": "2026-11-17T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.4000",
+     "no_bid_dollars": "0.3900",
+     "no_sub_title": "Green Bay",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-15T21:00:00Z",
+     "open_interest_fp": "416449.87",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.6200",
+     "previous_yes_ask_dollars": "0.6200",
+     "previous_yes_bid_dollars": "0.6100",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Green Bay wins the Minnesota vs Green Bay Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Minnesota vs Green Bay Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15MINGB-GB",
+     "title": "Green Bay wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "418569.19",
+     "volume_fp": "441631.62",
+     "yes_ask_dollars": "0.6100",
+     "yes_ask_size_fp": "93127.73",
+     "yes_bid_dollars": "0.6000",
+     "yes_bid_size_fp": "33373.72",
+     "yes_sub_title": "Green Bay"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-17T18:00:00Z",
+     "created_time": "2026-11-03T05:02:12.970042Z",
+     "custom_strike": {
+      "football_team": "2279efa0-9284-4224-9647-09b14f6983ce"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15MINGB",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-15T21:00:00Z",
+     "expiration_time": "2026-11-17T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.4000",
+     "latest_expiration_time": "2026-11-17T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.6100",
+     "no_bid_dollars": "0.6000",
+     "no_sub_title": "Minnesota",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-15T21:00:00Z",
+     "open_interest_fp": "236408.07",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.4000",
+     "previous_yes_ask_dollars": "0.4000",
+     "previous_yes_bid_dollars": "0.3900",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Minnesota wins the Minnesota vs Green Bay Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Minnesota vs Green Bay Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15MINGB-MIN",
+     "title": "Minnesota wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "229515.45",
+     "volume_fp": "255609.35",
+     "yes_ask_dollars": "0.4000",
+     "yes_ask_size_fp": "76969.20",
+     "yes_bid_dollars": "0.3900",
+     "yes_bid_size_fp": "88261.46",
+     "yes_sub_title": "Minnesota"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "MIN vs GB (Nov 15)",
+   "title": "Minnesota vs Green Bay"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV15LARARI",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-03T05:06:13.711074Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-17T21:05:00Z",
+     "created_time": "2026-11-03T05:04:13.78578Z",
+     "custom_strike": {
+      "football_team": "d73dae4f-1f08-4b5e-bf23-4e25e9b6a69c"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15LARARI",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-16T00:05:00Z",
+     "expiration_time": "2026-11-17T21:05:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.2200",
+     "latest_expiration_time": "2026-11-17T21:05:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.7900",
+     "no_bid_dollars": "0.7800",
+     "no_sub_title": "Arizona",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-16T00:05:00Z",
+     "open_interest_fp": "21110.53",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.2400",
+     "previous_yes_ask_dollars": "0.2400",
+     "previous_yes_bid_dollars": "0.2300",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Arizona wins the Los Angeles R vs Arizona Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Los Angeles R vs Arizona Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15LARARI-ARI",
+     "title": "Arizona wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "18017.91",
+     "volume_fp": "29904.87",
+     "yes_ask_dollars": "0.2200",
+     "yes_ask_size_fp": "457726.93",
+     "yes_bid_dollars": "0.2100",
+     "yes_bid_size_fp": "6697.17",
+     "yes_sub_title": "Arizona"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-17T21:05:00Z",
+     "created_time": "2026-11-03T05:04:13.78578Z",
+     "custom_strike": {
+      "football_team": "422d5fd7-ad18-4c96-902d-6f7c50e4660f"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15LARARI",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-16T00:05:00Z",
+     "expiration_time": "2026-11-17T21:05:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.8000",
+     "latest_expiration_time": "2026-11-17T21:05:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.2100",
+     "no_bid_dollars": "0.2000",
+     "no_sub_title": "Los Angeles R",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-16T00:05:00Z",
+     "open_interest_fp": "49055.30",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.7700",
+     "previous_yes_ask_dollars": "0.7700",
+     "previous_yes_bid_dollars": "0.7600",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Los Angeles R wins the Los Angeles R vs Arizona Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Los Angeles R vs Arizona Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15LARARI-LAR",
+     "title": "Los Angeles R wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "47620.25",
+     "volume_fp": "53842.83",
+     "yes_ask_dollars": "0.8000",
+     "yes_ask_size_fp": "15637.73",
+     "yes_bid_dollars": "0.7900",
+     "yes_bid_size_fp": "343938.12",
+     "yes_sub_title": "Los Angeles R"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "LAR vs ARI (Nov 15)",
+   "title": "Los Angeles R vs Arizona"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV15SEALV",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-03T05:06:13.767102Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-17T21:05:00Z",
+     "created_time": "2026-11-03T05:03:58.646862Z",
+     "custom_strike": {
+      "football_team": "8b1ce23e-7d64-4213-85e9-7d12bc8c4d85"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15SEALV",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-16T00:05:00Z",
+     "expiration_time": "2026-11-17T21:05:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.2700",
+     "latest_expiration_time": "2026-11-17T21:05:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.7400",
+     "no_bid_dollars": "0.7300",
+     "no_sub_title": "Las Vegas",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-16T00:05:00Z",
+     "open_interest_fp": "55382.51",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.3800",
+     "previous_yes_ask_dollars": "0.3900",
+     "previous_yes_bid_dollars": "0.3700",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Las Vegas wins the Seattle vs Las Vegas Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Seattle vs Las Vegas Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15SEALV-LV",
+     "title": "Las Vegas wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "27458.97",
+     "volume_fp": "187302.80",
+     "yes_ask_dollars": "0.2700",
+     "yes_ask_size_fp": "367757.99",
+     "yes_bid_dollars": "0.2600",
+     "yes_bid_size_fp": "751.15",
+     "yes_sub_title": "Las Vegas"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-17T21:05:00Z",
+     "created_time": "2026-11-03T05:03:58.646862Z",
+     "custom_strike": {
+      "football_team": "8e52cc75-cba8-4373-9b62-b535b53b3be8"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15SEALV",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-16T00:05:00Z",
+     "expiration_time": "2026-11-17T21:05:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.7400",
+     "latest_expiration_time": "2026-11-17T21:05:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.2700",
+     "no_bid_dollars": "0.2600",
+     "no_sub_title": "Seattle",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-16T00:05:00Z",
+     "open_interest_fp": "457737.14",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.6300",
+     "previous_yes_ask_dollars": "0.6300",
+     "previous_yes_bid_dollars": "0.6200",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Seattle wins the Seattle vs Las Vegas Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Seattle vs Las Vegas Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15SEALV-SEA",
+     "title": "Seattle wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "386876.25",
+     "volume_fp": "474524.36",
+     "yes_ask_dollars": "0.7400",
+     "yes_ask_size_fp": "981.36",
+     "yes_bid_dollars": "0.7300",
+     "yes_bid_size_fp": "360932.40",
+     "yes_sub_title": "Seattle"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "SEA vs LV (Nov 15)",
+   "title": "Seattle vs Las Vegas"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV15SFDAL",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-03T05:06:13.784186Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-17T21:25:00Z",
+     "created_time": "2026-11-03T05:04:28.813902Z",
+     "custom_strike": {
+      "football_team": "62b97b7c-5503-461c-b328-fd8543219b22"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15SFDAL",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-16T00:25:00Z",
+     "expiration_time": "2026-11-17T21:25:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.3400",
+     "latest_expiration_time": "2026-11-17T21:25:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.6700",
+     "no_bid_dollars": "0.6600",
+     "no_sub_title": "Dallas",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-16T00:25:00Z",
+     "open_interest_fp": "65649.63",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.3300",
+     "previous_yes_ask_dollars": "0.3300",
+     "previous_yes_bid_dollars": "0.3200",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Dallas wins the San Francisco vs Dallas Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the San Francisco vs Dallas Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15SFDAL-DAL",
+     "title": "Dallas wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "46255.30",
+     "volume_fp": "73724.51",
+     "yes_ask_dollars": "0.3400",
+     "yes_ask_size_fp": "5218.52",
+     "yes_bid_dollars": "0.3300",
+     "yes_bid_size_fp": "69074.05",
+     "yes_sub_title": "Dallas"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-17T21:25:00Z",
+     "created_time": "2026-11-03T05:04:28.813902Z",
+     "custom_strike": {
+      "football_team": "bfaa7639-8bdf-47b2-8d28-98d2cdbefbcb"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15SFDAL",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-16T00:25:00Z",
+     "expiration_time": "2026-11-17T21:25:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.6700",
+     "latest_expiration_time": "2026-11-17T21:25:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.3400",
+     "no_bid_dollars": "0.3300",
+     "no_sub_title": "San Francisco",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-16T00:25:00Z",
+     "open_interest_fp": "182074.15",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.6800",
+     "previous_yes_ask_dollars": "0.6800",
+     "previous_yes_bid_dollars": "0.6700",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If San Francisco wins the San Francisco vs Dallas Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the San Francisco vs Dallas Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15SFDAL-SF",
+     "title": "San Francisco wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "146626.73",
+     "volume_fp": "231979.45",
+     "yes_ask_dollars": "0.6700",
+     "yes_ask_size_fp": "67909.29",
+     "yes_bid_dollars": "0.6600",
+     "yes_bid_size_fp": "1277.95",
+     "yes_sub_title": "San Francisco"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "SF vs DAL (Nov 15)",
+   "title": "San Francisco vs Dallas"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV15PITCIN",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-03T05:06:13.748638Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-18T01:20:00Z",
+     "created_time": "2026-11-03T05:04:43.788594Z",
+     "custom_strike": {
+      "football_team": "b007a1ab-bca6-42c7-8706-62607a605866"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15PITCIN",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-16T04:20:00Z",
+     "expiration_time": "2026-11-18T01:20:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.6400",
+     "latest_expiration_time": "2026-11-18T01:20:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.3700",
+     "no_bid_dollars": "0.3600",
+     "no_sub_title": "Cincinnati",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-16T04:20:00Z",
+     "open_interest_fp": "63804.13",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.6400",
+     "previous_yes_ask_dollars": "0.6500",
+     "previous_yes_bid_dollars": "0.6400",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Cincinnati wins the Pittsburgh vs Cincinnati Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Pittsburgh vs Cincinnati Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15PITCIN-CIN",
+     "title": "Cincinnati wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "43160.73",
+     "volume_fp": "68252.95",
+     "yes_ask_dollars": "0.6400",
+     "yes_ask_size_fp": "144.04",
+     "yes_bid_dollars": "0.6300",
+     "yes_bid_size_fp": "344775.08",
+     "yes_sub_title": "Cincinnati"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-18T01:20:00Z",
+     "created_time": "2026-11-03T05:04:43.788594Z",
+     "custom_strike": {
+      "football_team": "6aa76797-7833-45e1-85e3-96e0122801e1"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV15PITCIN",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-16T04:20:00Z",
+     "expiration_time": "2026-11-18T01:20:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.3700",
+     "latest_expiration_time": "2026-11-18T01:20:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.6400",
+     "no_bid_dollars": "0.6300",
+     "no_sub_title": "Pittsburgh",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-16T04:20:00Z",
+     "open_interest_fp": "91019.70",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.3700",
+     "previous_yes_ask_dollars": "0.3700",
+     "previous_yes_bid_dollars": "0.3500",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Pittsburgh wins the Pittsburgh vs Cincinnati Pro Football game originally scheduled for Nov 15, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Pittsburgh vs Cincinnati Pro Football game originally scheduled for Nov 15, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV15PITCIN-PIT",
+     "title": "Pittsburgh wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "42655.58",
+     "volume_fp": "101910.31",
+     "yes_ask_dollars": "0.3700",
+     "yes_ask_size_fp": "351578.85",
+     "yes_bid_dollars": "0.3600",
+     "yes_bid_size_fp": "557.82",
+     "yes_sub_title": "Pittsburgh"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "PIT vs CIN (Nov 15)",
+   "title": "Pittsburgh vs Cincinnati"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV16LACBAL",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-03T05:06:13.939717Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-19T01:15:00Z",
+     "created_time": "2026-11-03T05:04:58.890913Z",
+     "custom_strike": {
+      "football_team": "a69a57af-f1a1-4d44-ab62-e220ebaa2a5c"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV16LACBAL",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-17T04:15:00Z",
+     "expiration_time": "2026-11-19T01:15:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.6700",
+     "latest_expiration_time": "2026-11-19T01:15:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.3300",
+     "no_bid_dollars": "0.3200",
+     "no_sub_title": "Baltimore",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-17T04:15:00Z",
+     "open_interest_fp": "24252.72",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.6700",
+     "previous_yes_ask_dollars": "0.6900",
+     "previous_yes_bid_dollars": "0.6700",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Baltimore wins the Los Angeles C vs Baltimore Pro Football game originally scheduled for Nov 16, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Los Angeles C vs Baltimore Pro Football game originally scheduled for Nov 16, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV16LACBAL-BAL",
+     "title": "Baltimore wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "12126.88",
+     "volume_fp": "38992.33",
+     "yes_ask_dollars": "0.6800",
+     "yes_ask_size_fp": "3907.62",
+     "yes_bid_dollars": "0.6700",
+     "yes_bid_size_fp": "349141.95",
+     "yes_sub_title": "Baltimore"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-19T01:15:00Z",
+     "created_time": "2026-11-03T05:04:58.890913Z",
+     "custom_strike": {
+      "football_team": "611e3786-3bfe-4919-bbd5-bc70fc13d827"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV16LACBAL",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-17T04:15:00Z",
+     "expiration_time": "2026-11-19T01:15:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.3300",
+     "latest_expiration_time": "2026-11-19T01:15:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.6800",
+     "no_bid_dollars": "0.6700",
+     "no_sub_title": "Los Angeles C",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-17T04:15:00Z",
+     "open_interest_fp": "27796.94",
+     "open_time": "2026-11-03T05:06:00Z",
+     "previous_price_dollars": "0.3300",
+     "previous_yes_ask_dollars": "0.3300",
+     "previous_yes_bid_dollars": "0.3100",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Los Angeles C wins the Los Angeles C vs Baltimore Pro Football game originally scheduled for Nov 16, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Los Angeles C vs Baltimore Pro Football game originally scheduled for Nov 16, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV16LACBAL-LAC",
+     "title": "Los Angeles C wins",
+     "updated_time": "2026-11-03T05:06:00.278681Z",
+     "volume_24h_fp": "14615.60",
+     "volume_fp": "41931.51",
+     "yes_ask_dollars": "0.3300",
+     "yes_ask_size_fp": "376842.82",
+     "yes_bid_dollars": "0.3200",
+     "yes_bid_size_fp": "68.48",
+     "yes_sub_title": "Los Angeles C"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "LAC vs BAL (Nov 16)",
+   "title": "Los Angeles C vs Baltimore"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV19INDHOU",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-10T05:03:26.756094Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-22T01:15:00Z",
+     "created_time": "2026-11-10T05:01:38.128422Z",
+     "custom_strike": {
+      "football_team": "96edbad3-1be5-4528-a3ed-c6e0c28c5fa0"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV19INDHOU",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-20T04:15:00Z",
+     "expiration_time": "2026-11-22T01:15:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.8300",
+     "latest_expiration_time": "2026-11-22T01:15:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.1800",
+     "no_bid_dollars": "0.1700",
+     "no_sub_title": "Houston",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-20T04:15:00Z",
+     "open_interest_fp": "684.16",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Houston wins the Indianapolis vs Houston Pro Football game originally scheduled for Nov 19, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Indianapolis vs Houston Pro Football game originally scheduled for Nov 19, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV19INDHOU-HOU",
+     "title": "Houston wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "723.97",
+     "volume_fp": "725.16",
+     "yes_ask_dollars": "0.8300",
+     "yes_ask_size_fp": "6.81",
+     "yes_bid_dollars": "0.8200",
+     "yes_bid_size_fp": "7.39",
+     "yes_sub_title": "Houston"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-22T01:15:00Z",
+     "created_time": "2026-11-10T05:01:38.128422Z",
+     "custom_strike": {
+      "football_team": "fe5f8219-fef4-4498-83d5-f6cc6f2cb7bf"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV19INDHOU",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-20T04:15:00Z",
+     "expiration_time": "2026-11-22T01:15:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.1900",
+     "latest_expiration_time": "2026-11-22T01:15:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.8300",
+     "no_bid_dollars": "0.8100",
+     "no_sub_title": "Indianapolis",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-20T04:15:00Z",
+     "open_interest_fp": "643.57",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Indianapolis wins the Indianapolis vs Houston Pro Football game originally scheduled for Nov 19, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Indianapolis vs Houston Pro Football game originally scheduled for Nov 19, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV19INDHOU-IND",
+     "title": "Indianapolis wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "510.28",
+     "volume_fp": "667.64",
+     "yes_ask_dollars": "0.1900",
+     "yes_ask_size_fp": "3661.35",
+     "yes_bid_dollars": "0.1700",
+     "yes_bid_size_fp": "147.00",
+     "yes_sub_title": "Indianapolis"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "IND vs HOU (Nov 19)",
+   "title": "Indianapolis vs Houston"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV22ARIKC",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-10T05:05:15.101586Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-24T18:00:00Z",
+     "created_time": "2026-11-10T05:02:23.668313Z",
+     "custom_strike": {
+      "football_team": "64f72720-2e4a-4cc8-a39b-ca148aecb389"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV22ARIKC",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-22T21:00:00Z",
+     "expiration_time": "2026-11-24T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.8800",
+     "latest_expiration_time": "2026-11-24T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.1300",
+     "no_bid_dollars": "0.1200",
+     "no_sub_title": "Kansas City",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-22T21:00:00Z",
+     "open_interest_fp": "1043.88",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Kansas City wins the Arizona vs Kansas City Pro Football game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Arizona vs Kansas City Pro Football game originally scheduled for Nov 22, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV22ARIKC-KC",
+     "title": "Kansas City wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "1043.88",
+     "volume_fp": "1043.88",
+     "yes_ask_dollars": "0.8800",
+     "yes_ask_size_fp": "442.21",
+     "yes_bid_dollars": "0.8700",
+     "yes_bid_size_fp": "496.00",
+     "yes_sub_title": "Kansas City"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-24T18:00:00Z",
+     "created_time": "2026-11-10T05:02:23.668313Z",
+     "custom_strike": {
+      "football_team": "d73dae4f-1f08-4b5e-bf23-4e25e9b6a69c"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV22ARIKC",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-22T21:00:00Z",
+     "expiration_time": "2026-11-24T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.1400",
+     "latest_expiration_time": "2026-11-24T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.8700",
+     "no_bid_dollars": "0.8600",
+     "no_sub_title": "Arizona",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-22T21:00:00Z",
+     "open_interest_fp": "1023.48",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Arizona wins the Arizona vs Kansas City Pro Football game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Arizona vs Kansas City Pro Football game originally scheduled for Nov 22, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV22ARIKC-ARI",
+     "title": "Arizona wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "1049.75",
+     "volume_fp": "1049.75",
+     "yes_ask_dollars": "0.1400",
+     "yes_ask_size_fp": "16605.32",
+     "yes_bid_dollars": "0.1300",
+     "yes_bid_size_fp": "1.00",
+     "yes_sub_title": "Arizona"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "ARI vs KC (Nov 22)",
+   "title": "Arizona vs Kansas City"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV22BALCAR",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-10T05:05:15.136303Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-24T18:00:00Z",
+     "created_time": "2026-11-10T05:02:54.039281Z",
+     "custom_strike": {
+      "football_team": "e37050ce-354f-4dd0-b2d8-0bd1e9650eb7"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV22BALCAR",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-22T21:00:00Z",
+     "expiration_time": "2026-11-24T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.7300",
+     "latest_expiration_time": "2026-11-24T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.4800",
+     "no_bid_dollars": "0.4400",
+     "no_sub_title": "Carolina",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-22T21:00:00Z",
+     "open_interest_fp": "3.69",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Carolina wins the Baltimore vs Carolina Pro Football game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Baltimore vs Carolina Pro Football game originally scheduled for Nov 22, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV22BALCAR-CAR",
+     "title": "Carolina wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "3.69",
+     "volume_fp": "3.69",
+     "yes_ask_dollars": "0.5600",
+     "yes_ask_size_fp": "640.00",
+     "yes_bid_dollars": "0.5200",
+     "yes_bid_size_fp": "1.69",
+     "yes_sub_title": "Carolina"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-24T18:00:00Z",
+     "created_time": "2026-11-10T05:02:54.039281Z",
+     "custom_strike": {
+      "football_team": "a69a57af-f1a1-4d44-ab62-e220ebaa2a5c"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV22BALCAR",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-22T21:00:00Z",
+     "expiration_time": "2026-11-24T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.4800",
+     "latest_expiration_time": "2026-11-24T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.5600",
+     "no_bid_dollars": "0.5200",
+     "no_sub_title": "Baltimore",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-22T21:00:00Z",
+     "open_interest_fp": "41.58",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Baltimore wins the Baltimore vs Carolina Pro Football game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Baltimore vs Carolina Pro Football game originally scheduled for Nov 22, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV22BALCAR-BAL",
+     "title": "Baltimore wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "41.58",
+     "volume_fp": "41.58",
+     "yes_ask_dollars": "0.4800",
+     "yes_ask_size_fp": "1.00",
+     "yes_bid_dollars": "0.4400",
+     "yes_bid_size_fp": "561.10",
+     "yes_sub_title": "Baltimore"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "BAL vs CAR (Nov 22)",
+   "title": "Baltimore vs Carolina"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV22MIABUF",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-10T05:05:15.173234Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-24T18:00:00Z",
+     "created_time": "2026-11-10T05:02:38.969463Z",
+     "custom_strike": {
+      "football_team": "f9acd396-ba35-4cae-a431-a44b2af707b0"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV22MIABUF",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-22T21:00:00Z",
+     "expiration_time": "2026-11-24T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.9200",
+     "latest_expiration_time": "2026-11-24T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.0900",
+     "no_bid_dollars": "0.0800",
+     "no_sub_title": "Buffalo",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-22T21:00:00Z",
+     "open_interest_fp": "2227.04",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Buffalo wins the Miami vs Buffalo Pro Football game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Miami vs Buffalo Pro Football game originally scheduled for Nov 22, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV22MIABUF-BUF",
+     "title": "Buffalo wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "2250.34",
+     "volume_fp": "2251.42",
+     "yes_ask_dollars": "0.9200",
+     "yes_ask_size_fp": "3.26",
+     "yes_bid_dollars": "0.9100",
+     "yes_bid_size_fp": "435.60",
+     "yes_sub_title": "Buffalo"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-24T18:00:00Z",
+     "created_time": "2026-11-10T05:02:38.969463Z",
+     "custom_strike": {
+      "football_team": "4cba614d-2d32-48ef-a066-1524437fbaff"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV22MIABUF",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-22T21:00:00Z",
+     "expiration_time": "2026-11-24T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.0900",
+     "latest_expiration_time": "2026-11-24T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.9200",
+     "no_bid_dollars": "0.9100",
+     "no_sub_title": "Miami",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-22T21:00:00Z",
+     "open_interest_fp": "1936.49",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Miami wins the Miami vs Buffalo Pro Football game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Miami vs Buffalo Pro Football game originally scheduled for Nov 22, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV22MIABUF-MIA",
+     "title": "Miami wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "1943.60",
+     "volume_fp": "1943.60",
+     "yes_ask_dollars": "0.0900",
+     "yes_ask_size_fp": "428.10",
+     "yes_bid_dollars": "0.0800",
+     "yes_bid_size_fp": "11.00",
+     "yes_sub_title": "Miami"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "MIA vs BUF (Nov 22)",
+   "title": "Miami vs Buffalo"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV22NOCHI",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-10T05:03:27.645007Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-24T18:00:00Z",
+     "created_time": "2026-11-10T05:01:53.176271Z",
+     "custom_strike": {
+      "football_team": "9a77500a-1945-495e-b6f5-5c35bedaa8b9"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV22NOCHI",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-22T21:00:00Z",
+     "expiration_time": "2026-11-24T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.8200",
+     "latest_expiration_time": "2026-11-24T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.1900",
+     "no_bid_dollars": "0.1800",
+     "no_sub_title": "Chicago",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-22T21:00:00Z",
+     "open_interest_fp": "3074.17",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Chicago wins the New Orleans vs Chicago Pro Football game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the New Orleans vs Chicago Pro Football game originally scheduled for Nov 22, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV22NOCHI-CHI",
+     "title": "Chicago wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "3242.98",
+     "volume_fp": "3250.20",
+     "yes_ask_dollars": "0.8200",
+     "yes_ask_size_fp": "5655.13",
+     "yes_bid_dollars": "0.8100",
+     "yes_bid_size_fp": "838.85",
+     "yes_sub_title": "Chicago"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-24T18:00:00Z",
+     "created_time": "2026-11-10T05:01:53.176271Z",
+     "custom_strike": {
+      "football_team": "f7c2cd06-61bf-469e-984f-3ef56cb8f3d7"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV22NOCHI",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-22T21:00:00Z",
+     "expiration_time": "2026-11-24T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.1900",
+     "latest_expiration_time": "2026-11-24T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.8300",
+     "no_bid_dollars": "0.8200",
+     "no_sub_title": "New Orleans",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-22T21:00:00Z",
+     "open_interest_fp": "614.62",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If New Orleans wins the New Orleans vs Chicago Pro Football game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the New Orleans vs Chicago Pro Football game originally scheduled for Nov 22, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV22NOCHI-NO",
+     "title": "New Orleans wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "634.97",
+     "volume_fp": "634.97",
+     "yes_ask_dollars": "0.1800",
+     "yes_ask_size_fp": "134.00",
+     "yes_bid_dollars": "0.1700",
+     "yes_bid_size_fp": "10646.23",
+     "yes_sub_title": "New Orleans"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "NO vs CHI (Nov 22)",
+   "title": "New Orleans vs Chicago"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV22PITPHI",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-10T05:05:15.260421Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-24T18:00:00Z",
+     "created_time": "2026-11-10T05:03:24.189961Z",
+     "custom_strike": {
+      "football_team": "bc65405b-5bda-425c-b7c5-681c382e6a5a"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV22PITPHI",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-22T21:00:00Z",
+     "expiration_time": "2026-11-24T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.4000",
+     "latest_expiration_time": "2026-11-24T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.6800",
+     "no_bid_dollars": "0.6300",
+     "no_sub_title": "Philadelphia",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-22T21:00:00Z",
+     "open_interest_fp": "52.81",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Philadelphia wins the Pittsburgh vs Philadelphia Pro Football game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Pittsburgh vs Philadelphia Pro Football game originally scheduled for Nov 22, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV22PITPHI-PHI",
+     "title": "Philadelphia wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "60.30",
+     "volume_fp": "60.30",
+     "yes_ask_dollars": "0.3700",
+     "yes_ask_size_fp": "540.00",
+     "yes_bid_dollars": "0.3200",
+     "yes_bid_size_fp": "10.92",
+     "yes_sub_title": "Philadelphia"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-24T18:00:00Z",
+     "created_time": "2026-11-10T05:03:24.189961Z",
+     "custom_strike": {
+      "football_team": "6aa76797-7833-45e1-85e3-96e0122801e1"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV22PITPHI",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-22T21:00:00Z",
+     "expiration_time": "2026-11-24T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.6900",
+     "latest_expiration_time": "2026-11-24T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.3500",
+     "no_bid_dollars": "0.3100",
+     "no_sub_title": "Pittsburgh",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-22T21:00:00Z",
+     "open_interest_fp": "94.98",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Pittsburgh wins the Pittsburgh vs Philadelphia Pro Football game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Pittsburgh vs Philadelphia Pro Football game originally scheduled for Nov 22, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV22PITPHI-PIT",
+     "title": "Pittsburgh wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "97.21",
+     "volume_fp": "97.21",
+     "yes_ask_dollars": "0.6900",
+     "yes_ask_size_fp": "4450.08",
+     "yes_bid_dollars": "0.6500",
+     "yes_bid_size_fp": "6.00",
+     "yes_sub_title": "Pittsburgh"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "PIT vs PHI (Nov 22)",
+   "title": "Pittsburgh vs Philadelphia"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV22TBDET",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-10T05:05:15.292153Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-24T18:00:00Z",
+     "created_time": "2026-11-10T05:03:09.091525Z",
+     "custom_strike": {
+      "football_team": "f95a55a7-8472-4ffa-be20-14547e3c32ff"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV22TBDET",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-22T21:00:00Z",
+     "expiration_time": "2026-11-24T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.6600",
+     "latest_expiration_time": "2026-11-24T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.3600",
+     "no_bid_dollars": "0.3400",
+     "no_sub_title": "Detroit",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-22T21:00:00Z",
+     "open_interest_fp": "210.23",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Detroit wins the Tampa Bay vs Detroit Pro Football game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Tampa Bay vs Detroit Pro Football game originally scheduled for Nov 22, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV22TBDET-DET",
+     "title": "Detroit wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "211.23",
+     "volume_fp": "211.23",
+     "yes_ask_dollars": "0.6600",
+     "yes_ask_size_fp": "130.00",
+     "yes_bid_dollars": "0.6400",
+     "yes_bid_size_fp": "50.00",
+     "yes_sub_title": "Detroit"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-24T18:00:00Z",
+     "created_time": "2026-11-10T05:03:09.091525Z",
+     "custom_strike": {
+      "football_team": "1105fa0d-c798-4020-9e24-f377a334b3d9"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV22TBDET",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-22T21:00:00Z",
+     "expiration_time": "2026-11-24T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.3800",
+     "latest_expiration_time": "2026-11-24T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.6500",
+     "no_bid_dollars": "0.6200",
+     "no_sub_title": "Tampa Bay",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-22T21:00:00Z",
+     "open_interest_fp": "177.51",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Tampa Bay wins the Tampa Bay vs Detroit Pro Football game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Tampa Bay vs Detroit Pro Football game originally scheduled for Nov 22, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV22TBDET-TB",
+     "title": "Tampa Bay wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "157.74",
+     "volume_fp": "177.74",
+     "yes_ask_dollars": "0.3800",
+     "yes_ask_size_fp": "252.19",
+     "yes_bid_dollars": "0.3500",
+     "yes_bid_size_fp": "22.00",
+     "yes_sub_title": "Tampa Bay"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "TB vs DET (Nov 22)",
+   "title": "Tampa Bay vs Detroit"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV22TENDAL",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-10T05:03:27.454745Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-24T18:00:00Z",
+     "created_time": "2026-11-10T05:02:08.222093Z",
+     "custom_strike": {
+      "football_team": "62b97b7c-5503-461c-b328-fd8543219b22"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV22TENDAL",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-22T21:00:00Z",
+     "expiration_time": "2026-11-24T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.8200",
+     "latest_expiration_time": "2026-11-24T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.2100",
+     "no_bid_dollars": "0.1900",
+     "no_sub_title": "Dallas",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-22T21:00:00Z",
+     "open_interest_fp": "523.74",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Dallas wins the Tennessee vs Dallas Pro Football game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Tennessee vs Dallas Pro Football game originally scheduled for Nov 22, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV22TENDAL-DAL",
+     "title": "Dallas wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "517.69",
+     "volume_fp": "523.74",
+     "yes_ask_dollars": "0.8100",
+     "yes_ask_size_fp": "3.59",
+     "yes_bid_dollars": "0.7900",
+     "yes_bid_size_fp": "219.00",
+     "yes_sub_title": "Dallas"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-24T18:00:00Z",
+     "created_time": "2026-11-10T05:02:08.222093Z",
+     "custom_strike": {
+      "football_team": "7c86629b-eafc-47b4-9204-b46a2d0e9cbb"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV22TENDAL",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-22T21:00:00Z",
+     "expiration_time": "2026-11-24T18:00:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.2100",
+     "latest_expiration_time": "2026-11-24T18:00:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.8100",
+     "no_bid_dollars": "0.7900",
+     "no_sub_title": "Tennessee",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-22T21:00:00Z",
+     "open_interest_fp": "388.41",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Tennessee wins the Tennessee vs Dallas Pro Football game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Tennessee vs Dallas Pro Football game originally scheduled for Nov 22, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV22TENDAL-TEN",
+     "title": "Tennessee wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "393.04",
+     "volume_fp": "393.04",
+     "yes_ask_dollars": "0.2100",
+     "yes_ask_size_fp": "419.00",
+     "yes_bid_dollars": "0.1900",
+     "yes_bid_size_fp": "4.37",
+     "yes_sub_title": "Tennessee"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "TEN vs DAL (Nov 22)",
+   "title": "Tennessee vs Dallas"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV22NYJLAC",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-10T05:05:15.224441Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-24T21:05:00Z",
+     "created_time": "2026-11-10T05:03:39.250971Z",
+     "custom_strike": {
+      "football_team": "611e3786-3bfe-4919-bbd5-bc70fc13d827"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV22NYJLAC",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-23T00:05:00Z",
+     "expiration_time": "2026-11-24T21:05:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.4000",
+     "latest_expiration_time": "2026-11-24T21:05:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.4800",
+     "no_bid_dollars": "0.4400",
+     "no_sub_title": "Los Angeles C",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-23T00:05:00Z",
+     "open_interest_fp": "16.32",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Los Angeles C wins the New York J vs Los Angeles C Pro Football game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the New York J vs Los Angeles C Pro Football game originally scheduled for Nov 22, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV22NYJLAC-LAC",
+     "title": "Los Angeles C wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "17.32",
+     "volume_fp": "17.32",
+     "yes_ask_dollars": "0.5600",
+     "yes_ask_size_fp": "215.00",
+     "yes_bid_dollars": "0.5200",
+     "yes_bid_size_fp": "15727.00",
+     "yes_sub_title": "Los Angeles C"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-24T21:05:00Z",
+     "created_time": "2026-11-10T05:03:39.250971Z",
+     "custom_strike": {
+      "football_team": "ccc2af2d-5c4d-4717-8036-5ba6bec5cfbd"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV22NYJLAC",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-23T00:05:00Z",
+     "expiration_time": "2026-11-24T21:05:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.6400",
+     "latest_expiration_time": "2026-11-24T21:05:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.5400",
+     "no_bid_dollars": "0.5300",
+     "no_sub_title": "New York J",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-23T00:05:00Z",
+     "open_interest_fp": "80.28",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If New York J wins the New York J vs Los Angeles C Pro Football game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the New York J vs Los Angeles C Pro Football game originally scheduled for Nov 22, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV22NYJLAC-NYJ",
+     "title": "New York J wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "80.28",
+     "volume_fp": "80.28",
+     "yes_ask_dollars": "0.4700",
+     "yes_ask_size_fp": "1.00",
+     "yes_bid_dollars": "0.4600",
+     "yes_bid_size_fp": "1.00",
+     "yes_sub_title": "New York J"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "NYJ vs LAC (Nov 22)",
+   "title": "New York J vs Los Angeles C"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV22JACNYG",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-10T05:05:16.296822Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-24T21:25:00Z",
+     "created_time": "2026-11-10T05:04:09.44436Z",
+     "custom_strike": {
+      "football_team": "4fa3f3ec-f7e7-41ec-9383-a40af2d26297"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV22JACNYG",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-23T00:25:00Z",
+     "expiration_time": "2026-11-24T21:25:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.3200",
+     "latest_expiration_time": "2026-11-24T21:25:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.7100",
+     "no_bid_dollars": "0.6800",
+     "no_sub_title": "New York G",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-23T00:25:00Z",
+     "open_interest_fp": "294.39",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If New York G wins the Jacksonville vs New York G Pro Football game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Jacksonville vs New York G Pro Football game originally scheduled for Nov 22, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV22JACNYG-NYG",
+     "title": "New York G wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "294.39",
+     "volume_fp": "294.39",
+     "yes_ask_dollars": "0.3200",
+     "yes_ask_size_fp": "488.17",
+     "yes_bid_dollars": "0.2900",
+     "yes_bid_size_fp": "3305.00",
+     "yes_sub_title": "New York G"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-24T21:25:00Z",
+     "created_time": "2026-11-10T05:04:09.44436Z",
+     "custom_strike": {
+      "football_team": "61a75ab7-eaf0-4601-b920-86b1e165007d"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV22JACNYG",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-23T00:25:00Z",
+     "expiration_time": "2026-11-24T21:25:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.7100",
+     "latest_expiration_time": "2026-11-24T21:25:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.3100",
+     "no_bid_dollars": "0.3000",
+     "no_sub_title": "Jacksonville",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-23T00:25:00Z",
+     "open_interest_fp": "160.35",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Jacksonville wins the Jacksonville vs New York G Pro Football game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Jacksonville vs New York G Pro Football game originally scheduled for Nov 22, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV22JACNYG-JAC",
+     "title": "Jacksonville wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "160.35",
+     "volume_fp": "160.35",
+     "yes_ask_dollars": "0.7000",
+     "yes_ask_size_fp": "3000.00",
+     "yes_bid_dollars": "0.6900",
+     "yes_bid_size_fp": "111.00",
+     "yes_sub_title": "Jacksonville"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "JAC vs NYG (Nov 22)",
+   "title": "Jacksonville vs New York G"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV22LVDEN",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-10T05:05:16.328055Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-24T21:25:00Z",
+     "created_time": "2026-11-10T05:03:54.346519Z",
+     "custom_strike": {
+      "football_team": "0aa02fd7-1bb1-474b-98e1-5379d0a191e3"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV22LVDEN",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-23T00:25:00Z",
+     "expiration_time": "2026-11-24T21:25:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.7800",
+     "latest_expiration_time": "2026-11-24T21:25:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.2300",
+     "no_bid_dollars": "0.2200",
+     "no_sub_title": "Denver",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-23T00:25:00Z",
+     "open_interest_fp": "826.43",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Denver wins the Las Vegas vs Denver Pro Football game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Las Vegas vs Denver Pro Football game originally scheduled for Nov 22, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV22LVDEN-DEN",
+     "title": "Denver wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "807.37",
+     "volume_fp": "832.62",
+     "yes_ask_dollars": "0.7800",
+     "yes_ask_size_fp": "177.08",
+     "yes_bid_dollars": "0.7700",
+     "yes_bid_size_fp": "27.00",
+     "yes_sub_title": "Denver"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-24T21:25:00Z",
+     "created_time": "2026-11-10T05:03:54.346519Z",
+     "custom_strike": {
+      "football_team": "8b1ce23e-7d64-4213-85e9-7d12bc8c4d85"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV22LVDEN",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-23T00:25:00Z",
+     "expiration_time": "2026-11-24T21:25:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.2300",
+     "latest_expiration_time": "2026-11-24T21:25:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.7700",
+     "no_bid_dollars": "0.7500",
+     "no_sub_title": "Las Vegas",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-23T00:25:00Z",
+     "open_interest_fp": "58.32",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Las Vegas wins the Las Vegas vs Denver Pro Football game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Las Vegas vs Denver Pro Football game originally scheduled for Nov 22, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV22LVDEN-LV",
+     "title": "Las Vegas wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "33.32",
+     "volume_fp": "58.32",
+     "yes_ask_dollars": "0.2500",
+     "yes_ask_size_fp": "4008.30",
+     "yes_bid_dollars": "0.2300",
+     "yes_bid_size_fp": "271.43",
+     "yes_sub_title": "Las Vegas"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "LV vs DEN (Nov 22)",
+   "title": "Las Vegas vs Denver"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV22MINSF",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-10T05:07:06.548807Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-25T01:20:00Z",
+     "created_time": "2026-11-10T05:04:24.578417Z",
+     "custom_strike": {
+      "football_team": "bfaa7639-8bdf-47b2-8d28-98d2cdbefbcb"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV22MINSF",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-23T04:20:00Z",
+     "expiration_time": "2026-11-25T01:20:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.6500",
+     "latest_expiration_time": "2026-11-25T01:20:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.3500",
+     "no_bid_dollars": "0.3400",
+     "no_sub_title": "San Francisco",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-23T04:20:00Z",
+     "open_interest_fp": "571.73",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If San Francisco wins the Minnesota vs San Francisco Pro Football game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Minnesota vs San Francisco Pro Football game originally scheduled for Nov 22, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV22MINSF-SF",
+     "title": "San Francisco wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "683.73",
+     "volume_fp": "683.73",
+     "yes_ask_dollars": "0.6600",
+     "yes_ask_size_fp": "8.00",
+     "yes_bid_dollars": "0.6500",
+     "yes_bid_size_fp": "215.00",
+     "yes_sub_title": "San Francisco"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-25T01:20:00Z",
+     "created_time": "2026-11-10T05:04:24.578417Z",
+     "custom_strike": {
+      "football_team": "2279efa0-9284-4224-9647-09b14f6983ce"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV22MINSF",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-23T04:20:00Z",
+     "expiration_time": "2026-11-25T01:20:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.3400",
+     "latest_expiration_time": "2026-11-25T01:20:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.6700",
+     "no_bid_dollars": "0.6600",
+     "no_sub_title": "Minnesota",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-23T04:20:00Z",
+     "open_interest_fp": "784.12",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Minnesota wins the Minnesota vs San Francisco Pro Football game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Minnesota vs San Francisco Pro Football game originally scheduled for Nov 22, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV22MINSF-MIN",
+     "title": "Minnesota wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "936.74",
+     "volume_fp": "936.74",
+     "yes_ask_dollars": "0.3400",
+     "yes_ask_size_fp": "130.00",
+     "yes_bid_dollars": "0.3300",
+     "yes_bid_size_fp": "9.00",
+     "yes_sub_title": "Minnesota"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "MIN vs SF (Nov 22)",
+   "title": "Minnesota vs San Francisco"
+  },
+  {
+   "category": "Sports",
+   "collateral_return_type": "MECNET",
+   "event_ticker": "KXNFLGAME-26NOV23CINWAS",
+   "exchange_index": 0,
+   "last_updated_ts": "2026-11-10T05:07:06.586499Z",
+   "markets": [
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-26T01:15:00Z",
+     "created_time": "2026-11-10T05:04:39.642978Z",
+     "custom_strike": {
+      "football_team": "aa65dda6-9cb8-4c8b-812b-d0c1feaae54f"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV23CINWAS",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-24T04:15:00Z",
+     "expiration_time": "2026-11-26T01:15:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.3200",
+     "latest_expiration_time": "2026-11-26T01:15:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.6800",
+     "no_bid_dollars": "0.6200",
+     "no_sub_title": "Washington",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-24T04:15:00Z",
+     "open_interest_fp": "1.00",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Washington wins the Cincinnati vs Washington Pro Football game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Cincinnati vs Washington Pro Football game originally scheduled for Nov 23, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV23CINWAS-WAS",
+     "title": "Washington wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "1.00",
+     "volume_fp": "1.00",
+     "yes_ask_dollars": "0.3800",
+     "yes_ask_size_fp": "410.00",
+     "yes_bid_dollars": "0.3200",
+     "yes_bid_size_fp": "130.00",
+     "yes_sub_title": "Washington"
+    },
+    {
+     "can_close_early": true,
+     "close_time": "2026-11-26T01:15:00Z",
+     "created_time": "2026-11-10T05:04:39.642978Z",
+     "custom_strike": {
+      "football_team": "b007a1ab-bca6-42c7-8706-62607a605866"
+     },
+     "early_close_condition": "This market will close and expire after a winner is declared.",
+     "event_ticker": "KXNFLGAME-26NOV23CINWAS",
+     "exchange_index": 0,
+     "expected_expiration_time": "2026-11-24T04:15:00Z",
+     "expiration_time": "2026-11-26T01:15:00Z",
+     "expiration_value": "",
+     "last_price_dollars": "0.6800",
+     "latest_expiration_time": "2026-11-26T01:15:00Z",
+     "market_type": "binary",
+     "no_ask_dollars": "0.3800",
+     "no_bid_dollars": "0.3200",
+     "no_sub_title": "Cincinnati",
+     "notional_value_dollars": "1.0000",
+     "occurrence_datetime": "2026-11-24T04:15:00Z",
+     "open_interest_fp": "38.22",
+     "open_time": "2026-11-10T05:06:00Z",
+     "previous_price_dollars": "0.0000",
+     "previous_yes_ask_dollars": "0.0000",
+     "previous_yes_bid_dollars": "0.0000",
+     "price_level_structure": "linear_cent",
+     "price_ranges": [
+      {
+       "end": "1.0000",
+       "start": "0.0000",
+       "step": "0.0100"
+      }
+     ],
+     "result": "",
+     "rules_primary": "If Cincinnati wins the Cincinnati vs Washington Pro Football game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+     "rules_secondary": "The following market refers to the team who wins the Cincinnati vs Washington Pro Football game originally scheduled for Nov 23, 2026. If the game ends in a tie, the market will resolve to $0.50 for each team. If the game is postponed but begins within 48 hours from its originally scheduled start time, the market will remain open and resolve based on the official final result. If the game is not started within 48 hours, the market will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
+     "settlement_bounds_type": "default",
+     "settlement_timer_seconds": 60,
+     "status": "active",
+     "strike_type": "structured",
+     "ticker": "KXNFLGAME-26NOV23CINWAS-CIN",
+     "title": "Cincinnati wins",
+     "updated_time": "2026-11-10T05:06:00.243247Z",
+     "volume_24h_fp": "38.22",
+     "volume_fp": "38.22",
+     "yes_ask_dollars": "0.6800",
+     "yes_ask_size_fp": "222.81",
+     "yes_bid_dollars": "0.6200",
+     "yes_bid_size_fp": "1.00",
+     "yes_sub_title": "Cincinnati"
+    }
+   ],
+   "mutually_exclusive": true,
+   "product_metadata": {
+    "competition": "Pro Football",
+    "competition_scope": "Game"
+   },
+   "series_ticker": "KXNFLGAME",
+   "settlement_sources": [
+    {
+     "name": "the Governing League",
+     "url": "https://www.nfl.com/"
+    }
+   ],
+   "strike_period": "",
+   "sub_title": "CIN vs WAS (Nov 23)",
+   "title": "Cincinnati vs Washington"
+  }
+ ],
+ "milestones": []
+}
