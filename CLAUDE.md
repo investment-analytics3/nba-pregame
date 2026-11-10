@@ -53,6 +53,7 @@ a phone alert. No AI runs in the daily pipeline; Claude is only used to change c
 | `nfl/sources.py` | nflverse play-by-play / snap counts (GitHub releases) and schedule (`games.csv`: ESPN ids, rest, neutral, lines); team-code maps ESPN↔nflverse↔Kalshi |
 | `nfl/metrics.py` | Four core metrics (off EPA/play, off success, def EPA allowed, def success allowed), season + last 3, ranks 1-32, as of a week (no hindsight); official net EPA; SHADOW adjusted edge; records, QBs, key starters |
 | `nfl/scoring.py` | Six rules, 40-point hero score, official stat edge (one +0.35 bar), flags, Under gate, pregame call |
+| `nfl/power.py` | Power rankings: ESPN FPI (daily, FITT powerindex) + NFL.com weekly article (`rankedCards` JSON), consensus = average re-ranked 1-32; opponent power gate |
 | `nfl/espn.py`, `nfl/kalshi.py` | ESPN week scoreboard, DK open/current lines, game-day injuries, FPI; Kalshi `KXNFLGAME` prices |
 | `nfl/board.py` | Builds the week's board → `docs/nfl/index.html`, `docs/nfl/summary.json` (landing), `data/nfl/context.json` (logger), `data/nfl/boards/<season>-w<week>.json` |
 | `nfl/early_path.py` | Early blowout path grading (halftime, end of 3rd) — same rules as the 2024-25 backtest |
@@ -75,7 +76,10 @@ NFL rules (spec "NFL Stat Edge v2", decisions Nov 8 2026):
 - Official edge unchanged: net EPA = off EPA/play − def EPA/play allowed (all scrimmage plays, nflverse = RBSDM method);
   gap must clear +0.35 for EVERY favorite, whatever the spread (owner Nov 9: no large-favorite bar, no max spread).
   nflverse replaces Muffed as the source (owner approved Nov 9). QB reset (regular QB out or <100 dropbacks) caps at Lean.
-- Qualification = NBA six on the four NFL metrics. Hero score 40: fav 16 (top 5 = 2, 6-10 = 1), dog 16 (outside top 10 = 1,
+- Qualification = NBA six on the four NFL metrics, plus rule 7 (owner Nov 10): opponent power gate = underdog top 10 in
+  ANY power ranking (consensus, ESPN FPI, NFL.com) -> No track; the fail note and a red flag name the ranking(s).
+  No power data at all = the gate passes. Board pills (Nov 10, as NBA): L2 WW green / split yellow / LL red and PR
+  (consensus) 1-10 green / 11-22 yellow / 23-32 red for the favorite; flipped for the underdog. Hero score 40: fav 16 (top 5 = 2, 6-10 = 1), dog 16 (outside top 10 = 1,
   ranks 23-32 = 2), health 4 (QB active 2, other key starter 1, interior OL 1; 0 without injury info), home 1, rest 1 (fav off
   a bye, or dog on a short week while the fav isn't), form 2 (fav last 2). Bands red 0-17, yellow 18-27, green 28-40.
 - Adjusted edge = SHADOW only (10-90% WP plays, opponent-adjusted, 0.6/0.4, recency 60/40 last 4); weights not approved.

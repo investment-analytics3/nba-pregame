@@ -26,6 +26,25 @@ const BAND = {green:['#5BEA9E','Strong edge'], yellow:['#FFD66B','Moderate'], re
 const CALL = {'Edge clears':'cg','Track, edge short':'cb','Lean (QB cap)':'cy','No track':'cn','No line':'cn','No data':'cn'};
 const favCls = r => r==null?'pn':(r<=5?'pg':(r<=10?'pg2':(r<=22?'py':'pr')));
 const dogCls = r => r==null?'pn':(r<=5?'pd':(r<=10?'pr':(r<=22?'py':'pg')));
+// Power rank + last-2 pills (owner Nov 10, as on the NBA board). Favorite: PR 1-10 green, 11-22 yellow,
+// 23-32 red; last 2 WW green, WL/LW yellow, LL red. Underdog: flipped (a strong underdog = red).
+const FORM = {g:'color:#fff;background:linear-gradient(180deg,#34C77B,#1A8A4C);text-shadow:0 1px 1px rgba(0,0,0,.25)',
+              y:'color:#2A1C00;background:linear-gradient(180deg,#FADB80,#D9A12A)',
+              r:'color:#fff;background:linear-gradient(180deg,#D44444,#A12222)'};
+const PS = 'padding:1px 6px;border-radius:5px;font-size:11px;font-weight:700;';
+const flip = c => c==='g' ? 'r' : (c==='r' ? 'g' : c);
+const pwTitle = p => [p.consensus!=null?'Consensus #'+p.consensus:'', p.fpi!=null?'ESPN FPI #'+p.fpi:'', p.nfl_com!=null?'NFL.com #'+p.nfl_com:''].filter(Boolean).join(' · ');
+function prPill(p, isFav){
+  p = p || {}; const r = p.consensus;
+  if(r==null) return '#–';
+  const c = r<=10 ? 'g' : (r<=22 ? 'y' : 'r');
+  return `<span style="${PS}${FORM[isFav?c:flip(c)]}" title="${esc(pwTitle(p))}">#${r}</span>`;
+}
+function formPill(l2, isFav){
+  if(!l2 || !l2.length) return '–';
+  const w = l2.filter(x=>x==='W').length, c = l2.length===2 ? (w===2?'g':(w===1?'y':'r')) : (w?'y':'r');
+  return `<span style="${PS}${FORM[isFav?c:flip(c)]}">${esc(l2.join(''))}</span>`;
+}
 const sgn = v => v==null?'–':(v>0?'+':'')+v.toFixed(2);
 const pct = v => v==null?'–':Math.round(v*100)+'%';
 const line = v => v==null?'':(v>0?'+':'')+(Math.round(v*10)/10);
@@ -65,7 +84,7 @@ function card(g){
   const head = `<div class="row between"><span class="tip">${esc(g.kick_pt)}${g.neutral?' · neutral':''}</span><span class="row" style="gap:6px">${state}<span class="chip ${CALL[sc.call]||'cn'}">${esc(sc.call)}</span></span></div>`;
   if(!fav) return `<article class="card">${head}<div class="line">${esc(g.away.abbr)} @ ${esc(g.home.abbr)}</div><div class="muted">No betting line yet.</div></article>`;
   const away = g.away, home = g.home;
-  const side = t => `<div class="tm ${t.code===g.fav?'fav':''}"><span class="badge">${esc(t.abbr)}</span><span><b>${esc(t.abbr)}${t.code===g.fav?' '+line(g.spread):''}</b><br><span class="muted">${esc(t.record)} · last 2 ${t.last2_results.join('') || '–'}</span></span></div>`;
+  const side = t => `<div class="tm ${t.code===g.fav?'fav':''}"><span class="badge">${esc(t.abbr)}</span><span><b>${esc(t.abbr)}${t.code===g.fav?' '+line(g.spread):''}</b><br><span class="muted">${esc(t.record)} · L2 ${formPill(t.last2_results, t.code===g.fav)} · PR ${prPill(t.power, t.code===g.fav)}</span></span></div>`;
   const k = g.kalshi && g.kalshi.fav_prob!=null ? `Kalshi ${esc(fav.abbr)} ${Math.round(g.kalshi.fav_prob*100)}¢${g.kalshi.fav_prob>0.85?' <span class="warnc">priced in</span>':''}` : '';
   const fpi = fav.fpi_win!=null ? `FPI ${pct(fav.fpi_win)}` : '';
   const ex = g.votes && g.votes.support!=null ? `Experts ${esc(fav.abbr)} ${g.votes.fav}-${g.votes.dog} ATS (${pct(g.votes.support)})` : '';
@@ -93,6 +112,7 @@ function detail(g){
     <h4>Quarterbacks</h4><div class="small">${esc(fav.abbr)}: ${qb(fav)}<br>${esc(dog.abbr)}: ${qb(dog)}</div>
     <h4>Injuries (out, doubtful, questionable)</h4><div class="small">${esc(fav.abbr)}: ${inj(fav)}<br>${esc(dog.abbr)}: ${inj(dog)}</div>
     ${sc.under&&sc.under.passes?`<h4>Totals</h4><div class="small">${esc(sc.under.note)}</div>`:''}
+    <h4>Power rankings</h4><div class="small">${[fav,dog].map(t=>`${esc(t.abbr)}: ${esc(pwTitle(t.power||{})||'unavailable')}`).join('<br>')}${DATA.power_sources&&DATA.power_sources.nfl_com_url?`<br><a href="${esc(DATA.power_sources.nfl_com_url)}" rel="noreferrer">NFL.com power rankings</a>`:''}</div>
     <div class="small muted" style="margin-top:10px">Rest: ${esc(fav.abbr)} ${fav.rest??'?'} days, ${esc(dog.abbr)} ${dog.rest??'?'} days · Line: ${esc(g.line_source||'?')}${g.open_spread!=null?', opened '+line(g.open_spread):''}${g.kalshi?' · Kalshi '+esc(g.kalshi.event):''}</div></div>`;
 }
 
@@ -102,9 +122,9 @@ const sec = (t, list, extra='') => list.length ? `<div class="sec-head"><h2 clas
 app.innerHTML = `<div class="eyebrow">NFL · ${DATA.season} season · Week ${DATA.week??'–'}</div>
   <h1 class="title cond">NFL Pregame Board</h1>
   <div class="muted" style="margin-top:6px">Updated ${esc(DATA.built_label)} · stats through ${esc(DATA.data_through||'–')} (nflverse) · expert picks ${esc(DATA.votes_status||'not gathered yet')}</div>
-  <div class="legend"><span><i class="sw" style="background:#2FC373"></i>Favorite top 10 / underdog bottom 10</span><span><i class="sw" style="background:#E9B23A"></i>Middle</span><span><i class="sw" style="background:#C83030"></i>Favorite bottom 10 / underdog top 10</span><span>Hero score: green 28+, yellow 18-27, red 0-17</span></div>
+  <div class="legend"><span><i class="sw" style="background:#2FC373"></i>Favorite top 10 / underdog bottom 10</span><span><i class="sw" style="background:#E9B23A"></i>Middle</span><span><i class="sw" style="background:#C83030"></i>Favorite bottom 10 / underdog top 10</span><span>Hero score: green 28+, yellow 18-27, red 0-17</span><span>L2 = last 2 results · PR = power rank (consensus of ESPN FPI and NFL.com)</span></div>
   ${(DATA.notes||[]).length?`<div class="panel final"><ul>${DATA.notes.map(n=>`<li>${esc(n)}</li>`).join('')}</ul></div>`:''}
-  ${sec('Tracked', tracked)}${!tracked.length && games.length?'<div class="panel final"><b>No game passes all six rules this week.</b></div>':''}
+  ${sec('Tracked', tracked)}${!tracked.length && games.length?'<div class="panel final"><b>No game passes all seven rules this week.</b></div>':''}
   ${sec('Other games', other)}${sec('Played', played)}
   <div class="small muted foot">Stat edge = favorite net EPA/play minus underdog's (all plays, nflverse = RBSDM method); needs +0.35 for every favorite, whatever the spread. The adjusted edge is logged in shadow only. Kalshi and FPI are a price check and never change the call.</div>`;
 })();

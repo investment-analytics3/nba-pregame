@@ -10,6 +10,8 @@ Qualification (mirrors the NBA six; all must pass):
   4. underdog not 3-0 in its last 3
   5. favorite has no key starter Out or Doubtful
   6. injury information available for the favorite
+  7. opponent power gate (owner Nov 10, as on the NBA board): underdog not top 10 in ANY
+     power ranking (consensus, ESPN FPI, NFL.com); the note names the ranking(s)
 
 Hero score (max 40), bands red 0-17 / yellow 18-27 / green 28-40:
   favorite strength 16   4 metrics x (season, last 3): top 5 = 2, ranks 6-10 = 1
@@ -26,6 +28,7 @@ QB reset caps the call at Lean.
 from __future__ import annotations
 
 from .metrics import LABELS, METRICS, wl
+from .power import gate as power_gate
 
 EDGE_REQUIRED = 0.35       # one bar for every spread
 BYE_REST = 13             # days of rest that means the favorite is coming off a bye
@@ -71,9 +74,15 @@ def qualification(fav: dict, dog: dict) -> dict:
                   "detail": ", ".join(out) or "none"})
     rules.append({"n": 6, "ok": bool(fav.get("injuries_known")), "text": "Injury info available for the favorite",
                   "detail": "yes" if fav.get("injuries_known") else "missing"})
+    pw = power_gate(dog.get("power"))
+    has_power = any((dog.get("power") or {}).get(k) is not None for k in ("consensus", "fpi", "nfl_com"))
+    rules.append({"n": 7, "ok": not pw, "text": "Underdog not top 10 in any power ranking",
+                  "detail": ", ".join(pw) if pw else ("none" if has_power else "no power rankings available"),
+                  "fail": f"{dog.get('abbr', 'Underdog')} top 10 in power ranking: " + ", ".join(pw) if pw else None})
     failed = [r for r in rules if not r["ok"]]
     return {"qualified": not failed, "rules": rules, "qualifiers": qualifiers,
-            "failed": [f"Rule {r['n']}: {r['text']}" for r in failed]}
+            "failed": [r.get("fail") or f"Rule {r['n']}: {r['text']}" for r in failed],
+            "power_fail": next((r["fail"] for r in failed if r["n"] == 7), None)}
 
 
 def hero_score(game: dict, fav: dict, dog: dict) -> dict:
@@ -122,8 +131,8 @@ def crosses_key(open_line: float | None, cur: float | None) -> list[int]:
     return [k for k in KEY_NUMBERS if lo <= -k <= hi]   # moved onto, off or through 3, 7 or 10
 
 
-def flags(game: dict, fav: dict, dog: dict, edge: dict) -> list[dict]:
-    f = []
+def flags(game: dict, fav: dict, dog: dict, edge: dict, power_fail: str | None = None) -> list[dict]:
+    f = [{"level": "red", "text": power_fail + " (no track)"}] if power_fail else []
     for side, t in (("Favorite", fav), ("Underdog", dog)):
         if t.get("qb_reset"):
             f.append({"level": "red", "text": f"{side} QB change ({t['qb_reset']}): call capped at Lean"})
@@ -166,5 +175,5 @@ def score_game(game: dict, fav: dict, dog: dict) -> dict:
     hs = hero_score(game, fav, dog)
     e = stat_edge(fav, dog, game.get("spread"))
     return {"qualified": q["qualified"], "rules": q["rules"], "qualifiers": q["qualifiers"], "failed": q["failed"],
-            "hero": hs, "edge": e, "flags": flags(game, fav, dog, e), "under": under_gate(game, fav, dog),
+            "hero": hs, "edge": e, "flags": flags(game, fav, dog, e, q.get("power_fail")), "under": under_gate(game, fav, dog),
             "call": call(q, e, fav, dog)}

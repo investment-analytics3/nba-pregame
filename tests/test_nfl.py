@@ -47,6 +47,27 @@ class Rules(unittest.TestCase):
         q = scoring.qualification(fav, team((20,) * 4, (20,) * 4))
         self.assertEqual([f[:6] for f in q["failed"]], ["Rule 5", "Rule 6"])
 
+    def test_opponent_power_gate(self):
+        fav = team((1,) * 4, (1,) * 4)
+        dog = team((20,) * 4, (20,) * 4, abbr="WSH", power={"consensus": 12, "fpi": 9, "nfl_com": 14})
+        q = scoring.qualification(fav, dog)
+        self.assertFalse(q["qualified"])
+        self.assertEqual(q["failed"], ["WSH top 10 in power ranking: ESPN FPI #9"])
+        r = scoring.score_game({"spread": -3}, fav, dog)
+        self.assertEqual(r["call"], "No track")
+        self.assertEqual(r["flags"][0], {"level": "red", "text": "WSH top 10 in power ranking: ESPN FPI #9 (no track)"})
+        dog["power"] = {"consensus": 11, "fpi": 12, "nfl_com": 11}
+        self.assertTrue(scoring.qualification(fav, dog)["qualified"])
+        dog["power"] = {}                                  # no rankings at all: the gate passes
+        self.assertTrue(scoring.qualification(fav, dog)["qualified"])
+
+    def test_power_consensus(self):
+        from nfl import power
+        c = power.consensus({"A": 1, "B": 2, "C": 3}, {"A": 3, "B": 1})
+        self.assertEqual((c["B"]["consensus"], c["A"]["consensus"], c["C"]["consensus"]), (1, 2, 3))
+        self.assertEqual(power.team_code("Los Angeles Rams"), "LA")
+        self.assertEqual(power.team_code("San Francisco 49ers"), "SF")
+
 
 class Hero(unittest.TestCase):
     def test_max_is_40(self):

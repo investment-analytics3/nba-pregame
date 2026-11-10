@@ -13,7 +13,7 @@ import pandas as pd
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from nba.http import FetchError
-from . import espn, kalshi, metrics, scoring, sources
+from . import espn, kalshi, metrics, power, scoring, sources
 from .early_path import BENCHMARK, defense_top10
 
 PT = ZoneInfo("America/Los_Angeles")
@@ -100,6 +100,9 @@ def build(today_et: date | None = None, refresh: bool = True) -> dict:
     board["data_through"] = f"Week {int(tg.week.max())}" if len(tg) else "none"
     if snaps is None or snaps.empty:
         board["notes"].append("Snap counts unavailable: key starters unknown.")
+    pw = power.load(board["notes"])
+    board["power_sources"] = {"nfl_com_url": pw.get("nfl_com_url")}
+    board["_power"] = pw["teams"]
 
     st, ew = (2, week) if week <= 18 else (3, week - 18)
     try:
@@ -110,6 +113,7 @@ def build(today_et: date | None = None, refresh: bool = True) -> dict:
 
     for row in games.itertuples():
         board["games"].append(_game(row, events, wm, recs, qbs, keys, board))
+    board.pop("_power", None)
     attach_votes(board)
     board["games"].sort(key=lambda g: (g["state"] == "post", g["kick_utc"]))
     tracked = [g for g in board["games"] if g["scoring"].get("qualified") and g["state"] != "post"]   # still to play
@@ -193,6 +197,8 @@ def _game(row, events, wm, recs, qbs, keys, board) -> dict:
     home = _team_block(row.home_team, wm, recs, qbs, keys, home_inj, row.home_rest)
     away = _team_block(row.away_team, wm, recs, qbs, keys, away_inj, row.away_rest)
     g["home"], g["away"] = home, away
+    for t in (home, away):
+        t["power"] = (board.get("_power") or {}).get(t["code"]) or {}
     if pred:
         home["fpi_win"], away["fpi_win"] = round(pred["home"], 3), round(pred["away"], 3)
     if not fav_side:
