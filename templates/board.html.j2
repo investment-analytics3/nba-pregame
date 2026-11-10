@@ -148,7 +148,7 @@ function donut(sc, size, delay){
 
 // Power rank and last-3 pills (Nov 10). Favorite: top 10 / 3-0 green, 11-20 / 2-1 yellow,
 // bottom 10 / 1-2, 0-3 red. Underdog: the same, flipped (strong underdog = red).
-const FORM = {g:'color:#03240F;background:linear-gradient(180deg,#43DE8F,#1F9D58)',
+const FORM = {g:'color:#fff;background:linear-gradient(180deg,#34C77B,#1A8A4C);text-shadow:0 1px 1px rgba(0,0,0,.25)',
               y:'color:#2A1C00;background:linear-gradient(180deg,#FADB80,#D9A12A)',
               r:'color:#fff;background:linear-gradient(180deg,#D44444,#A12222)'};
 const flip = c => c==='g' ? 'r' : (c==='r' ? 'g' : c);
@@ -193,7 +193,7 @@ function card(g, i){
     : (tier==='qualified' ? ['#86EFAC','M3 8.5l3.2 3L13 4.5','Qualified: '+(sc.route||sc.qualifiers.join(' · '))]
     : (tier==='watch' ? ['#FCD97A','M8 3v6M8 12v.5',sc.fails[0]] : ['#FCA5A5','M4 4l8 8M12 4l-8 8',sc.fails[0]]));
   const yellows = (sc.warnings||[]).filter(w=>/questionable/i.test(w));
-  const b2b = [g.away,g.home].map(t=>`<span>${esc(t.abbr)} <span class="yn" style="${t.b2b?'color:#fff;background:linear-gradient(180deg,#D44444,#A12222)':'color:#03240F;background:linear-gradient(180deg,#43DE8F,#1F9D58)'}">${t.b2b?'Yes':'No'}</span></span>`).join('');
+  const b2b = [g.away,g.home].map(t=>`<span>${esc(t.abbr)} <span class="yn" style="${t.b2b?'color:#fff;background:linear-gradient(180deg,#D44444,#A12222)':'color:#fff;background:linear-gradient(180deg,#34C77B,#1A8A4C);text-shadow:0 1px 1px rgba(0,0,0,.25)'}">${t.b2b?'Yes':'No'}</span></span>`).join('');
   return `<button type="button" class="card card-in" style="animation-delay:${delay}ms" onclick="openGame('${g.id}')" aria-label="${esc(g.away.name)} at ${esc(g.home.name)}, open full breakdown">
     <div class="row between" style="align-items:flex-start"><div style="display:flex;flex-direction:column;gap:5px"><span class="tip">${esc(g.tip_pt)}${g.neutral?' · Neutral':''}</span>
       ${sc.tracked?`<span class="lv" data-live="${g.id}"></span>`:''}
