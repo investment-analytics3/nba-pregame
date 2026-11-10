@@ -346,7 +346,24 @@ function detailView(g){
       <span>Metrics: computed from ESPN box scores through ${esc(DATA.metrics_through||'–')}</span><span>Spread: ${esc(g.spread?g.spread.provider:'none')} via ESPN, pulled ${esc(DATA.built_label)}</span>
       <span>Injuries: ${esc(DATA.injury_source||'unavailable')}${DATA.injury_report_time?` (${esc(new Date(DATA.injury_report_time).toLocaleString('en-US',{timeZone:'America/Los_Angeles',hour:'numeric',minute:'2-digit',month:'short',day:'numeric'}))} PT)`:''}</span>
       <span>Power ranks: own net rating, ESPN BPI, NBA.com weekly</span></div></div></div>`;
+  h += readoutPanel(g);
   return h;
+}
+
+// Analyst readout (Qualified + Watch list games): what published previews say. Information only.
+function readoutPanel(g){
+  const sc = g.scoring||{};
+  if(!(sc.tracked ?? sc.qualified)) return '';
+  const r = g.readout;
+  if(!r) return `<div class="panel pad" style="margin-top:16px"><h3 style="margin:0 0 6px">Analyst readout</h3><div style="font-size:13.5px;color:var(--muted)">Not gathered yet. It's added each morning before the board.</div></div>`;
+  const when = r.updated ? new Date(r.updated).toLocaleString('en-US',{timeZone:'America/Los_Angeles',hour:'numeric',minute:'2-digit',month:'short',day:'numeric'})+' PT' : '';
+  const row = (k,v) => v ? `<div style="display:grid;grid-template-columns:110px minmax(0,1fr);gap:10px;padding:8px 0;border-top:1px solid var(--line);font-size:13.5px"><span style="color:var(--dim);font-weight:600">${k}</span><span style="color:#D3D9E5">${esc(v)}</span></div>` : '';
+  const src = (r.sources||[]).filter(x=>x && x.url && /^https?:\/\//.test(x.url)).map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener noreferrer">${esc(x.site||'source')}</a>`).join(' · ');
+  return `<div class="panel pad" style="margin-top:16px"><div class="row between" style="margin-bottom:10px;gap:10px;flex-wrap:wrap"><h3 style="margin:0">Analyst readout</h3><span style="font-size:12px;color:var(--dim)">${esc(when)}</span></div>
+    <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#E6EAF2">${esc(r.summary)}</p>
+    ${row('Pick',r.pick)}${row('Predicted score',r.predicted_score)}${row('Injuries',r.injuries)}
+    ${src?`<div style="padding-top:8px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)">Sources: ${src}</div>`:''}
+    <div style="font-size:11.5px;color:var(--dim);margin-top:6px">From published previews; information only, never changes the tier or grade.</div></div>`;
 }
 
 function countUp(){

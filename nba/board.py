@@ -190,6 +190,7 @@ def changes(before: dict, after: dict) -> list[str]:
 def page_data(slate: dict, kind: str, change_list: list[str] | None, earlier_label: str | None) -> dict:
     players = [p for p in store.load_player_games() if p["game_date"] < slate["date"]]
     closers = store.read_json("closers.json", {}) or {}
+    readouts = load_readouts(slate["date"])
     games = []
     for g in slate["games"]:
         sc = g["scoring"]
@@ -202,7 +203,8 @@ def page_data(slate: dict, kind: str, change_list: list[str] | None, earlier_lab
             t["top_scorers"] = top_scorers(players, t["id"], out)
             c = closers.get(t["abbr"], [])
             t["closers"] = c.get("closers", []) if isinstance(c, dict) else c
-        games.append({**g, "summary": text, "lean": lean})
+        ro = readouts.get(str(g["id"])) if sc.get("tracked", sc.get("qualified")) else None
+        games.append({**g, "summary": text, "lean": lean, "readout": ro})
     built = datetime.fromisoformat(slate["built_at"])
     return {
         "date": slate["date"], "date_label": datetime.fromisoformat(slate["date"]).strftime("%A, %b %-d"),
@@ -214,6 +216,18 @@ def page_data(slate: dict, kind: str, change_list: list[str] | None, earlier_lab
         "changes": change_list, "earlier_label": earlier_label,
         "games": games, "max": scoring.MAX_SCORE,
     }
+
+
+def load_readouts(day: str) -> dict:
+    """Analyst readouts for a day (data/readouts/<date>.json, written by the owner's daily
+    Claude scheduled task "NBA analyst readouts"). {espn game id: readout}; {} if none."""
+    raw = store.read_json(f"readouts/{day}.json", {}) or {}
+    upd = raw.get("updated")
+    out = {}
+    for gid, r in (raw.get("games") or {}).items():
+        if isinstance(r, dict) and r.get("summary"):
+            out[str(gid)] = {**r, "updated": r.get("updated") or upd}
+    return out
 
 
 def _env():
