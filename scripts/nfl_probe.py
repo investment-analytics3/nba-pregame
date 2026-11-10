@@ -67,7 +67,7 @@ def save_raw(name, url):
 # NFL.com weekly power rankings: the series index, then the newest article it links to.
 import re  # noqa: E402
 idx = save_raw("nflcom_power_index.html", "https://www.nfl.com/news/series/power-rankings-news")
-links = list(dict.fromkeys(re.findall(rb'href="(/news/[a-z0-9-]*power-rankings[a-z0-9-]*)"', idx)))
-print("NFL.com power-ranking links:", [l.decode() for l in links[:8]])
-if links:
-    save_raw("nflcom_power_latest.html", "https://www.nfl.com" + links[0].decode())
+wk = sorted({(int(y), int(w)) for w, y in re.findall(rb'nfl-power-rankings-week-(\d+)-(\d{4})-nfl-season', idx)}, reverse=True)
+print("NFL.com power-ranking weeks:", wk[:4])
+if wk:
+    save_raw("nflcom_power_latest.html", f"https://www.nfl.com/news/nfl-power-rankings-week-{wk[0][1]}-{wk[0][0]}-nfl-season")
