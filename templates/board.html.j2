@@ -50,7 +50,7 @@ box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 3px 8px rgba(0,0,0,.35)}
 .ph{display:flex;flex-direction:column;align-items:center;line-height:1.15}.ph b{font-size:10.5px;color:#C7CEDC}.ph span{font-size:9.5px;color:var(--dim)}
 .pl{display:flex;flex-direction:column;line-height:1.1}.pl b{font-size:12px;color:#DCE2EE}.pl span{font-size:10px;color:var(--dim)}
 .pill{display:flex;align-items:center;justify-content:center;white-space:nowrap;height:30px;border-radius:9px;font-weight:700;font-size:16px;animation:pop .45s cubic-bezier(.34,1.56,.64,1) both}
-.pg{background:linear-gradient(180deg,#43DE8F,#1F9D58);color:#03240F;box-shadow:inset 0 1px 0 rgba(255,255,255,.4),inset 0 -2px 0 rgba(0,0,0,.2),0 3px 8px rgba(20,140,75,.35)}
+.pg{background:linear-gradient(180deg,#34C77B,#1A8A4C);color:#fff;text-shadow:0 1px 1px rgba(0,0,0,.25);box-shadow:inset 0 1px 0 rgba(255,255,255,.4),inset 0 -2px 0 rgba(0,0,0,.2),0 3px 8px rgba(20,140,75,.35)}
 .py{background:linear-gradient(180deg,#FADB80,#D9A12A);color:#2A1C00;box-shadow:inset 0 1px 0 rgba(255,255,255,.45),inset 0 -2px 0 rgba(0,0,0,.18),0 3px 8px rgba(200,150,30,.3)}
 .pr{background:linear-gradient(180deg,#D44444,#A12222);color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.25),inset 0 -2px 0 rgba(0,0,0,.25),0 3px 8px rgba(190,40,40,.35)}
 .pd{background:linear-gradient(180deg,#A31818,#650909);color:#fff;animation:pop .45s cubic-bezier(.34,1.56,.64,1) both,pulse 2.4s ease-in-out infinite}
@@ -97,7 +97,7 @@ h3{margin:0 0 4px;font-size:16px;font-weight:700}
 .tabs a.on{background:linear-gradient(180deg,#2E4170,#1C2845);color:#fff}
 .lv:empty{display:none}
 .lv{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;letter-spacing:.04em;padding:3px 9px;border-radius:999px;background:#121A2C;border:1px solid #26314B;color:#DCE2EE;width:fit-content}
-.lv .g{padding:0 6px;border-radius:5px;font-size:11px;color:#03240F;background:#43DE8F}.lv .g.B{background:#FADB80;color:#2A1C00}.lv .g.C{background:#D44444;color:#fff}
+.lv .g{padding:0 6px;border-radius:5px;font-size:11px;background:linear-gradient(180deg,#34C77B,#1A8A4C);color:#fff;text-shadow:0 1px 1px rgba(0,0,0,.25)}.lv .g.B{background:#FADB80;color:#2A1C00}.lv .g.C{background:#D44444;color:#fff}
 .lv-dot:not(:empty),.lv i{width:7px;height:7px;border-radius:50%;background:#F05252;box-shadow:0 0 6px #F05252;display:inline-block;animation:blink 1.6s ease-in-out infinite}
 @keyframes blink{50%{opacity:.35}}
 </style>
@@ -171,7 +171,7 @@ function teamLine(g, t){
       ${isFav?'<span class="tag" style="color:#BFDBFE;background:rgba(96,165,250,.16);border:1px solid rgba(96,165,250,.4)">FAV</span>':''}</div>
       <div class="sub"><span>${esc(t.record||'')} · L3 ${formPill(t.l3_record, isFav)} · PR ${prPill(p.rank, isFav)}</span>
       ${p.split?'<span class="tag" style="color:#FDBA74;background:rgba(251,146,60,.14);border:1px solid rgba(251,146,60,.45)">SPLIT</span>':''}
-      ${isFav && rk(t,'season','net')!=null && rk(t,'season','net')<=10?`<span class="tag" style="color:#A7F3D0;background:rgba(47,195,115,.14);border:1px solid rgba(47,195,115,.4)">NET #${rk(t,'season','net')}</span>`:''}</div></div>
+      ${isFav && rk(t,'season','net')!=null && rk(t,'season','net')<=10?`<span class="tag" style="color:#fff;background:rgba(47,195,115,.14);border:1px solid rgba(47,195,115,.4)">NET #${rk(t,'season','net')}</span>`:''}</div></div>
     <span class="line cond" style="color:${isFav?'#F3F6FB':'#8B95AB'}">${esc(t.spread_text||'')}</span></div>`;
 }
 
@@ -308,9 +308,9 @@ function detailView(g){
   const tier2 = sc.tier || (sc.qualified ? 'qualified' : 'out');
   if(sc.scored && tier2==='watch') h += `<div class="banner fade" style="align-items:center;background:linear-gradient(180deg,rgba(233,178,58,.18),rgba(217,161,42,.08));border:1px solid rgba(233,178,58,.5)"><span class="chip" style="color:#2A1C00;background:linear-gradient(180deg,#FADB80,#D9A12A);text-transform:uppercase">Watch list</span><span style="font-size:14px;color:#FDE68A">${esc(sc.fails[0])}. Not tracked live.</span></div>`;
   if(sc.scored && tier2==='out') h += `<div class="banner fade" style="background:linear-gradient(180deg,rgba(212,68,68,.22),rgba(161,34,34,.16));border:1px solid rgba(220,60,60,.5)"><span class="chip" style="color:#fff;background:linear-gradient(180deg,#D44444,#A12222);text-transform:uppercase">No track</span><div style="display:flex;flex-direction:column;gap:4px;font-size:14px;color:#FECACA">${sc.fails.map(f=>`<span>${esc(f)}</span>`).join('')}</div></div>`;
-  if(sc.qualified) h += `<div class="banner fade" style="align-items:center;background:linear-gradient(180deg,rgba(47,195,115,.16),rgba(31,157,88,.08));border:1px solid rgba(47,195,115,.45)"><span class="chip" style="color:#03240F;background:linear-gradient(180deg,#43DE8F,#1F9D58);text-transform:uppercase">Track game</span><span style="font-size:14px;color:#BBF7D0">Qualified: ${esc(sc.route||sc.qualifiers.join(', '))}</span></div>`;
+  if(sc.qualified) h += `<div class="banner fade" style="align-items:center;background:linear-gradient(180deg,rgba(47,195,115,.16),rgba(31,157,88,.08));border:1px solid rgba(47,195,115,.45)"><span class="chip" style="background:linear-gradient(180deg,#34C77B,#1A8A4C);color:#fff;text-shadow:0 1px 1px rgba(0,0,0,.25);text-transform:uppercase">Track game</span><span style="font-size:14px;color:#BBF7D0">Qualified: ${esc(sc.route||sc.qualifiers.join(', '))}</span></div>`;
   if(sc.scored && sc.rules && sc.rules.length && sc.rules[0].rule==='A'){
-    h += `<div class="panel pad" style="margin-bottom:14px"><h3 style="margin:0 0 8px">How it qualifies</h3><div style="display:flex;flex-direction:column;gap:6px;font-size:14px">${sc.rules.map(r=>`<div style="display:grid;grid-template-columns:22px minmax(0,1fr);gap:8px;align-items:start"><span style="width:20px;height:20px;border-radius:6px;display:grid;place-items:center;font-weight:800;font-size:12px;${r.pass?'background:linear-gradient(180deg,#43DE8F,#1F9D58);color:#03240F':'background:#3A1E22;color:#FCA5A5;border:1px solid rgba(200,48,48,.5)'}">${r.pass?'✓':'✗'}</span><span><b>${esc(r.rule==='Injury'?'Injury gate':(r.rule==='Power'?'Power gate':'Route '+r.rule))}: ${esc(r.name)}</b><br><span style="color:var(--muted);font-size:12.5px">${esc(r.detail)}</span></span></div>`).join('')}</div>
+    h += `<div class="panel pad" style="margin-bottom:14px"><h3 style="margin:0 0 8px">How it qualifies</h3><div style="display:flex;flex-direction:column;gap:6px;font-size:14px">${sc.rules.map(r=>`<div style="display:grid;grid-template-columns:22px minmax(0,1fr);gap:8px;align-items:start"><span style="width:20px;height:20px;border-radius:6px;display:grid;place-items:center;font-weight:800;font-size:12px;${r.pass?'background:linear-gradient(180deg,#34C77B,#1A8A4C);color:#fff;text-shadow:0 1px 1px rgba(0,0,0,.25)':'background:#3A1E22;color:#FCA5A5;border:1px solid rgba(200,48,48,.5)'}">${r.pass?'✓':'✗'}</span><span><b>${esc(r.rule==='Injury'?'Injury gate':(r.rule==='Power'?'Power gate':'Route '+r.rule))}: ${esc(r.name)}</b><br><span style="color:var(--muted);font-size:12.5px">${esc(r.detail)}</span></span></div>`).join('')}</div>
       <div style="font-size:12px;color:var(--dim);margin-top:8px">Qualified = route A or B, with both gates clear. Watch list = score 18-27 with both gates clear. Qualified and Watch list games are tracked live.</div></div>`;
   }
   (sc.warnings||[]).forEach(w=>{ h += /^Info:/.test(w)||/Neutral/.test(w) ? `<div style="font-size:13px;color:#9AA4BA;margin:0 0 10px 4px">${esc(w.replace(/^Info: /,''))}</div>` : `<div class="warn" style="margin-bottom:10px">${esc(w)}</div>`; });
