@@ -315,8 +315,56 @@
      "prob": 0.885
     }
    },
-   "alerts": {}
+   "alerts": {},
+   "q4_10": {
+    "at": "2026-11-09T20:01:38-08:00",
+    "late": false,
+    "clock": "Q4 9:35",
+    "status": "STATUS_IN_PROGRESS",
+    "score": "BUF 13 - MIN 6",
+    "lead": 7,
+    "up10": false,
+    "fav_defense_top10": false,
+    "prelim": "lead under 10",
+    "espn_wp": 0.925,
+    "engine": {
+     "clock": "4th 9:35",
+     "phase": "confirm",
+     "grade": "B",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "MIN",
+     "headline": "NO BET",
+     "who_answered": null,
+     "answer": "No run yet",
+     "control": "MIN",
+     "control_wins": {
+      "away": 1,
+      "home": 4
+     },
+     "qb": {
+      "BUF": 1,
+      "MIN": 0
+     },
+     "gates": [
+      "No answered run = B maximum"
+     ],
+     "fake": null,
+     "early": {
+      "full": false,
+      "any_d": false
+     },
+     "log": "2026-11-09 | BUF @ MIN | 4th 9:35 | 13-6 | B | no bet | \u2013 | No answered run = B maximum"
+    },
+    "kalshi": {
+     "event": "KXNFLGAME-26NOV09BUFMIN",
+     "bid": 0.95,
+     "ask": 0.96,
+     "last": 0.96,
+     "prob": 0.955
+    }
+   }
   }
  },
- "updated": "2026-11-09T19:46:17-08:00"
+ "updated": "2026-11-09T20:01:38-08:00"
 }
