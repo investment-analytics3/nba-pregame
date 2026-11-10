@@ -50,3 +50,24 @@ if evs:
 save("kalshi_events_open.json", lambda: get(f"{KALSHI}/events?series_ticker=KXNFLGAME&status=open&with_nested_markets=true&limit=40", headers=KH))
 save("kalshi_markets_settled.json", lambda: get(f"{KALSHI}/markets?series_ticker=KXNFLGAME&status=settled&limit=20", headers=KH))
 save("kalshi_series.json", lambda: get(f"{KALSHI}/series/KXNFLGAME", headers=KH))
+
+
+def save_raw(name, url):
+    try:
+        b = get(url, want="bytes") or b""
+        with open(os.path.join(OUT, name), "wb") as f:
+            f.write(b)
+        print(f"ok   {name} ({len(b) // 1024} KB)")
+        return b
+    except FetchError as e:
+        print(f"FAIL {name}: {e}")
+        return b""
+
+
+# NFL.com weekly power rankings: the series index, then the newest article it links to.
+import re  # noqa: E402
+idx = save_raw("nflcom_power_index.html", "https://www.nfl.com/news/series/power-rankings-news")
+links = list(dict.fromkeys(re.findall(rb'href="(/news/[a-z0-9-]*power-rankings[a-z0-9-]*)"', idx)))
+print("NFL.com power-ranking links:", [l.decode() for l in links[:8]])
+if links:
+    save_raw("nflcom_power_latest.html", "https://www.nfl.com" + links[0].decode())
