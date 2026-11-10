@@ -136,12 +136,16 @@ often: always `git pull --rebase origin main` before pushing.
 - Favorite = spread favorite (ESPN favorite flags; spread number is unsigned). Pick'em: moneyline decides.
 - Tiers (since Nov 9, nba/scoring.py): Qualified = Analysis Score 28+ (route A) OR last-3 mismatch (route B, revised
   Nov 9: last 3 favorite top 10 in >= 3 of 4 AND underdog bottom 10 = rank 21-30 in >= 3 of 4; season favorite top 15
-  in all four AND underdog top 10 in none). Watch list = score 18-27. No track = the rest. Injury gate on every tier: favorite key player Out/Doubtful or no injury report ->
+  in all four AND underdog top 10 in none). Watch list = score 18-27. No track = the rest. Opponent power gate on every
+  tier (Nov 10): underdog top 10 in ANY power ranking (consensus `rank`, `own_net`, `bpi`, `nba_com`) -> No track, fail
+  note names the ranking(s). Injury gate on every tier: favorite key player Out/Doubtful or no injury report ->
   No track (Questionable = yellow warning; underdog injuries info only). The earlier six checks are kept as
   `context` only; `qualifiers` still lists the favorite's top-10 (season+last 3) metrics. `qualified` stays the
   boolean every consumer reads; `tier`, `route`, `tracked` are new. `LIVE_TIERS` decides what the live tracker,
   L1 live chips and Live page follow (Qualified + Watch list since Nov 9).
 - L1: three sections (Qualified green, Watch list amber, Did not qualify red line). B2B Yes = red, No = green.
+  Power rank + L3 record are pills (`prPill`/`formPill`): favorite top 10 / 3-0 green, 11-20 / 2-1 yellow, else red;
+  underdog flipped (top 10 / 3-0 red, 11-20 / 2-1 yellow, 21-30 / 1-2 / 0-3 green).
 - Key player = started at least half of the team's games, or top 5 on the team in minutes per game.
 - Analysis Score (max 40): favorite metrics 16 (season+last 3; top 5 = 2, top 10 = 1), underdog
   metrics 16 (bottom 5 = 2, bottom 10 = 1), net rating 2, last-3 form 2 (3-0 = 2, 2-1 = 1),
