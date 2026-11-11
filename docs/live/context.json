@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "built_at": "2026-11-11T06:00:26-05:00",
+ "built_at": "2026-11-11T12:47:14-05:00",
  "games": [
   {
    "id": "401909969",
@@ -95,7 +95,7 @@
    "route": "",
    "score": 24,
    "band": "yellow",
-   "spread": "BOS -7.5",
+   "spread": "BOS -5.5",
    "away": {
     "id": "2",
     "abbr": "BOS",
@@ -148,7 +148,7 @@
    "route": "",
    "score": 24,
    "band": "yellow",
-   "spread": "LAL -12.5",
+   "spread": "LAL -14.5",
    "away": {
     "id": "13",
     "abbr": "LAL",
@@ -166,6 +166,26 @@
   }
  ],
  "closers": {
+  "MIL": {
+   "closers": [
+    "Tyler Herro",
+    "Jaime Jaquez Jr."
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "Tyler Herro": {
+     "ppm": 0.697,
+     "ppg": 21.4,
+     "gp": 10
+    },
+    "Jaime Jaquez Jr.": {
+     "ppm": 0.554,
+     "ppg": 15.3,
+     "gp": 11
+    }
+   }
+  },
   "CHI": {
    "closers": [
     "Caleb Wilson",
@@ -182,6 +202,46 @@
     "Josh Giddey": {
      "ppm": 0.369,
      "ppg": 10.3,
+     "gp": 9
+    }
+   }
+  },
+  "SA": {
+   "closers": [
+    "Victor Wembanyama",
+    "Dylan Harper"
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "Victor Wembanyama": {
+     "ppm": 1.009,
+     "ppg": 30.1,
+     "gp": 11
+    },
+    "Dylan Harper": {
+     "ppm": 0.574,
+     "ppg": 18.0,
+     "gp": 11
+    }
+   }
+  },
+  "TOR": {
+   "closers": [
+    "RJ Barrett",
+    "Collin Murray-Boyles"
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "RJ Barrett": {
+     "ppm": 0.64,
+     "ppg": 21.3,
+     "gp": 10
+    },
+    "Collin Murray-Boyles": {
+     "ppm": 0.48,
+     "ppg": 10.7,
      "gp": 9
     }
    }
@@ -206,46 +266,6 @@
     }
    }
   },
-  "TOR": {
-   "closers": [
-    "RJ Barrett",
-    "Collin Murray-Boyles"
-   ],
-   "elite": [],
-   "source": "draft",
-   "season": {
-    "RJ Barrett": {
-     "ppm": 0.64,
-     "ppg": 21.3,
-     "gp": 10
-    },
-    "Collin Murray-Boyles": {
-     "ppm": 0.48,
-     "ppg": 10.7,
-     "gp": 9
-    }
-   }
-  },
-  "MIL": {
-   "closers": [
-    "Tyler Herro",
-    "Jaime Jaquez Jr."
-   ],
-   "elite": [],
-   "source": "draft",
-   "season": {
-    "Tyler Herro": {
-     "ppm": 0.697,
-     "ppg": 21.4,
-     "gp": 10
-    },
-    "Jaime Jaquez Jr.": {
-     "ppm": 0.554,
-     "ppg": 15.3,
-     "gp": 11
-    }
-   }
-  },
   "LAL": {
    "closers": [
     "Luka Doncic",
@@ -262,26 +282,6 @@
     "Austin Reaves": {
      "ppm": 0.698,
      "ppg": 25.3,
-     "gp": 11
-    }
-   }
-  },
-  "SA": {
-   "closers": [
-    "Victor Wembanyama",
-    "Dylan Harper"
-   ],
-   "elite": [],
-   "source": "draft",
-   "season": {
-    "Victor Wembanyama": {
-     "ppm": 1.009,
-     "ppg": 30.1,
-     "gp": 11
-    },
-    "Dylan Harper": {
-     "ppm": 0.574,
-     "ppg": 18.0,
      "gp": 11
     }
    }
