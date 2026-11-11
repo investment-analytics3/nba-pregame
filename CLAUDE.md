@@ -14,6 +14,7 @@ a phone alert. No AI runs in the daily pipeline; Claude is only used to change c
 - NBA board (latest): https://investment-analytics3.github.io/nba-pregame/nba/
 - NFL board: https://investment-analytics3.github.io/nba-pregame/nfl/ · checkpoint log: .../nfl/live.html
 - NFL design spec (Claude Doc): https://claude.ai/artifact/A4Q6Nana5hMZYbJCSVNix2
+- College basketball board: https://investment-analytics3.github.io/nba-pregame/cbb/ · live: .../cbb/game.html · price log: .../cbb/live.html · spec (Claude Doc): https://claude.ai/artifact/1Kbd5AT6nBPU8ep6hph434 · backtest: `scripts/cbb_backtest.py` → `data/cbb/backtest.json`
 - College football board: https://investment-analytics3.github.io/nba-pregame/cfb/ · price log: .../cfb/live.html · spec (Claude Doc): https://claude.ai/artifact/GjAffxfWQBwayGjJ4s4gGc · backtest: `scripts/cfb_backtest.py` → `data/cfb/backtest.json` (+ `_games.csv`); early entry (end Q1 / half / end Q3 vs in-game WP, Nov 10: no edge vs a fair price; next = log real Kalshi prices): `scripts/cfb_early_backtest.py` → `data/cfb/early_backtest.json`; data = sportsdataverse `espn_cfb_pbp` release (reachable from the workspace) + cfbfastR-data schedules
 - Results tracker: https://investment-analytics3.github.io/nba-pregame/results.html
 - Design spec (Claude Doc): https://claude.ai/artifact/TQV7dXo9KQM8aEmEEh8v8c
@@ -144,11 +145,51 @@ College rules (owner decisions Nov 10 2026, spec "College Football Board"):
   Backtest: pregame tiers ~ spread-implied win rate; at every checkpoint win rate ~ fair price (in-game WP); the price log
   is there to find out whether Kalshi sells these leads below fair. Review after 3-4 weekends.
 
+## College basketball (separate pipeline like the NFL/CFB: own folder, workflows, concurrency groups `cbb-data`, `cbb-live`)
+
+| Path | Purpose |
+|---|---|
+| `cbb/sources.py` | sportsdataverse team/player box-score releases (file year = season end: 2026-27 = 2027; cached in `data/cbb/cache/`, git-ignored) + ESPN catch-up for games the release lacks (`data/cbb/catchup/<date>.json`, committed); D-I teams from ESPN `groups=50` (`data/cbb/d1.json`) |
+| `cbb/metrics.py` | NBA metrics (eFG%, Off/Def Eff, Opp eFG%, net; possessions with FT factor 0.475), D-I vs D-I games only, ranked among D-I (365); records/last 3 count every game; key players (as NBA); `b2b` = played yesterday |
+| `cbb/scoring.py` | Analysis Score, tiers, gates, early-season cap (rules below) |
+| `cbb/espn.py`, `cbb/kalshi.py` | ESPN D-I scoreboard/summaries/BPI (FITT powerindex, limit=400)/AP poll; Kalshi `KXNCAAMBGAME` (event `KXNCAAMBGAME-26NOV11FDUETAM`, codes = ESPN abbrs, else date + names) |
+| `cbb/board.py` | Daily board → `docs/cbb/index.html`, `summary.json`, `context.json` (also `data/cbb/`), `data/cbb/boards/<date>.json`, tier locks `data/cbb/locks.json` |
+| `scripts/cbb_scheduler.py`, `cbb_build.py`, `cbb_live.py`, `cbb_engine_cli.js` | Tick decisions; build (+ daily push); checkpoint logger (halftime, 2nd half 10:00; Kalshi + ESPN WP) + pushes |
+| `docs/cbb/engine.js` | Live engine = the NBA engine adapted to two 20-min halves (`CbbEngine`); Live page `docs/cbb/game.html`, price log `docs/cbb/live.html`, prices on the `cbb-live-data` branch |
+| `scripts/cbb_backtest.py`, `cbb_odds_history.py`, `cbb_probe.py` | One-off backtest (2025-26; closing DK lines from archived ESPN summaries in hoopR-mbb-raw, `data/cbb/backtest_odds_2026.csv`) → `data/cbb/backtest.json`; probe → `dev-cbb-samples` (`cbb-probe.yml`) |
+
+Workflows: `cbb.yml` (tick, dispatched by the NBA Scheduler after the college football step; inputs `force_build`, `send`),
+`cbb-live.yml` (logger; inputs `once`, `send`). Tests: `tests/test_cbb.py`, `node --test tests/cbb_engine.test.js`.
+
+College basketball rules (owner decisions Nov 11 2026; spec "College Basketball Board"):
+- Games: men's D-I vs D-I, spread favorite -10 to -20 inclusive (ESPN/DraftKings). Daily board: today's games (ET) until
+  every in-range game today is final (from 12 PM PT), then tomorrow's as a preview; hourly on game days, every 15 min when
+  an unlocked game tips within 75 min; tier LOCKS 1 h before tip. One phone push a day at board time (weekdays 12 PM PT,
+  weekends 8 AM PT), only when a game today is Qualified.
+- Ranks of ~365: strong 1-50 (elite 1-20), weak = bottom 50 (316+). Analysis Score 40 (NBA parts): fav metrics 16 (1-20 = 2,
+  21-50 = 1), dog metrics 16 (outside top 50 = 1, 316+ = 2), net 2, last-3 form 2, power 1 (fav consensus top 50 and dog
+  bottom 50), home 1, health 1, rest 1 (fav didn't play yesterday). Qualified = 28+ OR last-3 mismatch (fav last-3 top 50 in
+  >= 3 of 4, dog last-3 316+ in >= 3 of 4, fav season top half 1-182 in all four, dog season top 50 in none). Watch list 18-27.
+- Early season (owner Nov 11): until Dec 15 (`scoring.CUTOVER`, from the backtest: net-rank correlation with the final ranks
+  reaches ~0.85 by mid-December) every game that would qualify is held on the Watch list (`would_qualify`).
+- Gates: power = dog in the AP Top 25 or ESPN BPI top 50 → No track. Injury: ESPN has no college injury lists, so no list =
+  yellow warning only (health assumed full); a key player listed Out/Doubtful would block. PR pill = consensus of BPI + own net.
+- Live: Qualified + Watch list tracked; logger records halftime and 2nd half 10:00 (the NBA's end of the 3rd) with REAL
+  Kalshi price + ESPN WP (`data/cbb/live/<season>.json`, `docs/cbb/live.json`); engine windows: 1st half scout, 2H 10:00-8:00
+  lean (checklist: lead 10+, opp eFG/Def Eff top 50 last 3 + tonight, closer active < 4 fouls, no unanswered dog run, dog not
+  hot from 3, fav didn't play yesterday), 8:00-6:00 primary, 6:00-4:00 confirm, under 4:00/OT read only. Closers = auto.
+  Pushes Qualified only: 2H 10:00 + first BET.
+- Backtest 2025-26 (894 games): favorites won 90.4% vs DK price 91.2%; Qualified 10-0 (price ~94%); Watch list 92% vs 92%;
+  tracked favorites up 10+ at 2H 10:00 won 200/200 (ESPN WP ~98.5%). Review Kalshi price logs after a few weeks.
+- Analyst readouts: `data/cbb/readouts/<date>.json` (format: README there), owner's Claude scheduled task "College hoops
+  analyst readouts" (daily 6:13 AM PT, tracked games, max 12), commits only that file and dispatches `cbb.yml`
+  force_build=true, send=false. The readout's injury line is the only injury check.
+
 ## Workflows (Actions)
 
 | Workflow file | Trigger | Notes |
 |---|---|---|
-| `scheduler.yml` | every 15 min from cron-job.org (workflow_dispatch, input `source`) + GitHub cron backup | the only automatic trigger: nightly update (from 3 AM PT, catch-up, marker `nightly` in `data/state.json`), board/Final (`board_decide`), starts `live.yml`; dispatches `nfl.yml` (continue-on-error); pings healthchecks.io. Input `dry_run=true` decides only. Setup: `SCHEDULER.md` |
+| `scheduler.yml` | every 15 min from cron-job.org (workflow_dispatch, input `source`) + GitHub cron backup | the only automatic trigger: nightly update (from 3 AM PT, catch-up, marker `nightly` in `data/state.json`), board/Final (`board_decide`), starts `live.yml`; dispatches `nfl.yml`, `cfb.yml`, `cbb.yml` (continue-on-error); pings healthchecks.io. Input `dry_run=true` decides only. Setup: `SCHEDULER.md` |
 | `update-data.yml` | manual | catch-up, grading, slate; commits `data/` and `docs/` |
 | `board.yml` | manual | inputs: `kind` (preview/board/final/auto), `send` (true/false) |
 | `rebuild-days.yml` | manual, input `days` | rebuild + grade unsent past days |
