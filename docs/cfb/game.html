@@ -87,9 +87,9 @@ async function game() {
   h += `<div class="panel sec"><h3>4. Risk flags</h3><div class="small">${(r.risk || []).map(esc).join('<br>') || 'None'}</div></div>`;
   h += `<div class="panel sec"><h3>5. What changes it</h3><div class="small">${(r.changes || []).map(esc).join('<br>')}<br><span class="muted">${esc(r.next)}</span></div></div>`;
   const lg = book && book.games ? book.games[gid] : null;
-  const cp = k => { const x = lg && lg[k]; if (!x) return `<tr><td>${({q1: 'End of 1st', half: 'Halftime', q3: 'End of 3rd'})[k]}</td><td colspan="4" class="muted">not logged yet</td></tr>`;
+  const cpRow = k => { const x = lg && lg[k]; if (!x) return `<tr><td>${({q1: 'End of 1st', half: 'Halftime', q3: 'End of 3rd'})[k]}</td><td colspan="4" class="muted">not logged yet</td></tr>`;
     const kk = x.kalshi || {}; return `<tr><td>${({q1: 'End of 1st', half: 'Halftime', q3: 'End of 3rd'})[k]}${x.late ? ' <span class="muted">(late)</span>' : ''}</td><td>${esc(x.score)}</td><td>${x.lead > 0 ? '+' : ''}${x.lead}</td><td><b>${kk.prob != null ? Math.round(kk.prob * 100) + '¢' : '–'}</b></td><td>${x.espn_wp != null ? Math.round(x.espn_wp * 100) + '%' : '–'}</td></tr>`; };
-  h += `<div class="panel sec"><h3>Checkpoint prices (logged)</h3><div class="tw"><table><tr><th>When</th><th>Score</th><th>Fav lead</th><th>Kalshi fav</th><th>ESPN win %</th></tr>${['q1', 'half', 'q3'].map(cp).join('')}</table></div>
+  h += `<div class="panel sec"><h3>Checkpoint prices (logged)</h3><div class="tw"><table><tr><th>When</th><th>Score</th><th>Fav lead</th><th>Kalshi fav</th><th>ESPN win %</th></tr>${['q1', 'half', 'q3'].map(cpRow).join('')}</table></div>
       <div class="tiny">Backtest (2022-26, 793 games): fair price ≈ win rate at every checkpoint (end of 1st 10+: won 93%, fair 95¢; halftime 10+: 96%, 97¢; end of 3rd 14+: 99.4%, 99¢). Value only if Kalshi is below fair.</div></div>`;
   h += `<div class="panel sec"><h3>Tracker log line <button class="copy" id="cp">Copy</button></h3><code id="ll">${esc(r.logLine)}</code></div>`;
   app.innerHTML = h;
