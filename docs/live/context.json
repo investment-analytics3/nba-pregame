@@ -1,71 +1,355 @@
 {
- "date": "2026-11-10",
- "built_at": "2026-11-10T19:10:26-05:00",
- "games": [],
- "closers": {},
+ "date": "2026-11-11",
+ "built_at": "2026-11-11T02:30:30-05:00",
+ "games": [
+  {
+   "id": "401909969",
+   "fav_defense": {
+    "season": {
+     "opp_efg": {
+      "v": 49.85,
+      "r": 4
+     },
+     "def": {
+      "v": 104.31,
+      "r": 5
+     }
+    },
+    "last3": {
+     "opp_efg": {
+      "v": 49.8,
+      "r": 7
+     },
+     "def": {
+      "v": 103.43,
+      "r": 6
+     }
+    }
+   },
+   "fav_b2b": false,
+   "tip_utc": "2026-11-12T01:00Z",
+   "tip_pt": "5:00 PM PT",
+   "fav": "SA",
+   "dog": "CHI",
+   "qualifiers": [
+    "Off Eff",
+    "Opp eFG%",
+    "Def Eff"
+   ],
+   "tier": "qualified",
+   "route": "Score 29",
+   "score": 29,
+   "band": "green",
+   "spread": "SA -15.5",
+   "away": {
+    "id": "24",
+    "abbr": "SA",
+    "name": "Spurs",
+    "display": "San Antonio Spurs",
+    "record": "9-2"
+   },
+   "home": {
+    "id": "4",
+    "abbr": "CHI",
+    "name": "Bulls",
+    "display": "Chicago Bulls",
+    "record": "1-8"
+   }
+  },
+  {
+   "id": "401909968",
+   "fav_defense": {
+    "season": {
+     "opp_efg": {
+      "v": 50.8,
+      "r": 5
+     },
+     "def": {
+      "v": 104.63,
+      "r": 6
+     }
+    },
+    "last3": {
+     "opp_efg": {
+      "v": 45.4,
+      "r": 3
+     },
+     "def": {
+      "v": 96.96,
+      "r": 2
+     }
+    }
+   },
+   "fav_b2b": true,
+   "tip_utc": "2026-11-12T00:00Z",
+   "tip_pt": "4:00 PM PT",
+   "fav": "BOS",
+   "dog": "TOR",
+   "qualifiers": [
+    "eFG%",
+    "Off Eff",
+    "Opp eFG%",
+    "Def Eff"
+   ],
+   "tier": "watch",
+   "route": "",
+   "score": 24,
+   "band": "yellow",
+   "spread": "BOS -7.5",
+   "away": {
+    "id": "2",
+    "abbr": "BOS",
+    "name": "Celtics",
+    "display": "Boston Celtics",
+    "record": "9-2"
+   },
+   "home": {
+    "id": "28",
+    "abbr": "TOR",
+    "name": "Raptors",
+    "display": "Toronto Raptors",
+    "record": "5-5"
+   }
+  },
+  {
+   "id": "401909971",
+   "fav_defense": {
+    "season": {
+     "opp_efg": {
+      "v": 54.5,
+      "r": 19
+     },
+     "def": {
+      "v": 111.34,
+      "r": 17
+     }
+    },
+    "last3": {
+     "opp_efg": {
+      "v": 57.74,
+      "r": 24
+     },
+     "def": {
+      "v": 113.15,
+      "r": 18
+     }
+    }
+   },
+   "fav_b2b": false,
+   "tip_utc": "2026-11-12T01:00Z",
+   "tip_pt": "5:00 PM PT",
+   "fav": "LAL",
+   "dog": "MIL",
+   "qualifiers": [
+    "eFG%",
+    "Off Eff"
+   ],
+   "tier": "watch",
+   "route": "",
+   "score": 24,
+   "band": "yellow",
+   "spread": "LAL -11.5",
+   "away": {
+    "id": "13",
+    "abbr": "LAL",
+    "name": "Lakers",
+    "display": "Los Angeles Lakers",
+    "record": "10-2"
+   },
+   "home": {
+    "id": "15",
+    "abbr": "MIL",
+    "name": "Bucks",
+    "display": "Milwaukee Bucks",
+    "record": "1-10"
+   }
+  }
+ ],
+ "closers": {
+  "MIL": {
+   "closers": [
+    "Tyler Herro",
+    "Jaime Jaquez Jr."
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "Tyler Herro": {
+     "ppm": 0.697,
+     "ppg": 21.4,
+     "gp": 10
+    },
+    "Jaime Jaquez Jr.": {
+     "ppm": 0.554,
+     "ppg": 15.3,
+     "gp": 11
+    }
+   }
+  },
+  "SA": {
+   "closers": [
+    "Victor Wembanyama",
+    "Dylan Harper"
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "Victor Wembanyama": {
+     "ppm": 1.009,
+     "ppg": 30.1,
+     "gp": 11
+    },
+    "Dylan Harper": {
+     "ppm": 0.574,
+     "ppg": 18.0,
+     "gp": 11
+    }
+   }
+  },
+  "TOR": {
+   "closers": [
+    "RJ Barrett",
+    "Collin Murray-Boyles"
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "RJ Barrett": {
+     "ppm": 0.64,
+     "ppg": 21.3,
+     "gp": 10
+    },
+    "Collin Murray-Boyles": {
+     "ppm": 0.48,
+     "ppg": 10.7,
+     "gp": 9
+    }
+   }
+  },
+  "CHI": {
+   "closers": [
+    "Caleb Wilson",
+    "Josh Giddey"
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "Caleb Wilson": {
+     "ppm": 0.596,
+     "ppg": 19.3,
+     "gp": 9
+    },
+    "Josh Giddey": {
+     "ppm": 0.369,
+     "ppg": 10.3,
+     "gp": 9
+    }
+   }
+  },
+  "LAL": {
+   "closers": [
+    "Luka Doncic",
+    "Austin Reaves"
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "Luka Doncic": {
+     "ppm": 1.086,
+     "ppg": 39.3,
+     "gp": 10
+    },
+    "Austin Reaves": {
+     "ppm": 0.698,
+     "ppg": 25.3,
+     "gp": 11
+    }
+   }
+  },
+  "BOS": {
+   "closers": [
+    "Jayson Tatum",
+    "Paul George"
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "Jayson Tatum": {
+     "ppm": 0.789,
+     "ppg": 26.5,
+     "gp": 10
+    },
+    "Paul George": {
+     "ppm": 0.731,
+     "ppg": 22.0,
+     "gp": 10
+    }
+   }
+  }
+ },
  "league": {
   "opp_efg": [
-   48.45,
+   48.99,
    49.71,
    49.74,
    49.85,
-   50.99,
-   50.99,
+   50.8,
+   50.94,
    51.16,
-   51.23,
-   51.52,
+   51.26,
    51.79,
    51.79,
+   51.82,
    51.9,
-   52.4,
+   52.0,
    52.4,
    52.7,
    53.51,
    54.05,
-   54.22,
+   54.24,
    54.5,
    54.82,
+   55.2,
    55.32,
+   55.52,
    55.59,
-   55.6,
-   55.73,
-   55.82,
    56.07,
    56.35,
    56.48,
-   57.93,
-   57.97
+   57.07,
+   57.18,
+   57.85
   ],
   "def": [
-   102.13,
    103.22,
    103.31,
+   103.75,
+   104.12,
    104.31,
-   104.76,
-   104.88,
-   105.27,
+   104.63,
    106.36,
+   106.91,
    107.13,
    107.85,
    108.45,
    109.33,
+   109.9,
    110.0,
-   110.48,
    110.9,
    111.03,
    111.34,
    111.64,
    111.87,
    112.02,
+   112.46,
+   112.57,
    112.63,
-   112.82,
-   112.87,
-   113.92,
-   114.08,
+   113.15,
+   114.1,
    115.18,
-   117.85,
-   118.2,
-   118.35,
+   116.36,
+   117.27,
+   118.97,
    120.47
   ]
  },
