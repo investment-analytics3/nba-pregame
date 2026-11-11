@@ -8,7 +8,7 @@
    "tip_pt": "8:30 AM PT",
    "day_et": "2026-11-11",
    "state": "in",
-   "detail": "14:47 - 2nd",
+   "detail": "11:36 - 2nd",
    "neutral": false,
    "venue": "The Field House",
    "favorite": "home",
@@ -479,9 +479,489 @@
    },
    "locked_at": "2026-11-11T07:30:44-08:00",
    "score": {
-    "home": 47,
-    "away": 43
+    "home": 53,
+    "away": 49
    }
+  }
+ },
+ "401911519": {
+  "at": "2026-11-11T10:00:51-08:00",
+  "day": "2026-11-11",
+  "game": {
+   "id": "401911519",
+   "tip_utc": "2026-11-11T19:00:00+00:00",
+   "tip_pt": "11:00 AM PT",
+   "day_et": "2026-11-11",
+   "state": "pre",
+   "detail": "11/11 - 2:00 PM EST",
+   "neutral": false,
+   "venue": "University Credit Union Center",
+   "favorite": "home",
+   "spread": {
+    "spread": 11.5,
+    "details": "UCD -11.5",
+    "provider": "DraftKings",
+    "ml_home": -800,
+    "ml_away": 550
+   },
+   "home": {
+    "id": "302",
+    "abbr": "UCD",
+    "name": "UC Davis",
+    "display": "UC Davis Aggies",
+    "mascot": "Aggies",
+    "record": "1-1",
+    "l3_record": "1-1",
+    "games": 1,
+    "season": {
+     "efg": 47.37,
+     "opp_efg": 59.18,
+     "off": 98.98,
+     "def": 104.26,
+     "net": -5.28,
+     "poss_per_game": 75.8,
+     "ranks": {
+      "efg": 240,
+      "off": 235,
+      "opp_efg": 320,
+      "def": 156,
+      "net": 191
+     }
+    },
+    "last3": {
+     "efg": 47.37,
+     "opp_efg": 59.18,
+     "off": 98.98,
+     "def": 104.26,
+     "net": -5.28,
+     "poss_per_game": 75.8,
+     "ranks": {
+      "efg": 240,
+      "off": 235,
+      "opp_efg": 320,
+      "def": 156,
+      "net": 192
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401911518,
+      "date": "2026-11-05",
+      "site": "home",
+      "opp_id": 2381,
+      "opp": "MNLO",
+      "d1_opp": false,
+      "pts": 65,
+      "opp_pts": 52,
+      "metrics": {
+       "efg": 40.35,
+       "opp_efg": 34.21,
+       "off": 89.58,
+       "def": 71.66,
+       "net": 17.92
+      },
+      "opp_power_rank": null
+     },
+     {
+      "game_id": 401911517,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 2453,
+      "opp": "UNA",
+      "d1_opp": true,
+      "pts": 75,
+      "opp_pts": 79,
+      "metrics": {
+       "efg": 47.37,
+       "opp_efg": 59.18,
+       "off": 98.98,
+       "def": 104.26,
+       "net": -5.28
+      },
+      "opp_power_rank": 250
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-11.5",
+    "b2b": false,
+    "power": {
+     "rank": 227,
+     "bpi": 256,
+     "own_net": 191
+    },
+    "key_players": [
+     "Brayden Fagbemi",
+     "Isaiah Chappell",
+     "Connor Sevilla",
+     "Jalen Stokes",
+     "Omer Suljanovic"
+    ],
+    "top_scorers": [
+     {
+      "name": "Veniamin Abosi",
+      "ppg": 14.0
+     },
+     {
+      "name": "Jalen Stokes",
+      "ppg": 13.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "2916",
+    "abbr": "UIW",
+    "name": "Incarnate Word",
+    "display": "Incarnate Word Cardinals",
+    "mascot": "Cardinals",
+    "record": "0-3",
+    "l3_record": "0-3",
+    "games": 3,
+    "season": {
+     "efg": 41.72,
+     "opp_efg": 53.09,
+     "off": 80.72,
+     "def": 109.48,
+     "net": -28.76,
+     "poss_per_game": 71.9,
+     "ranks": {
+      "efg": 312,
+      "off": 337,
+      "opp_efg": 226,
+      "def": 215,
+      "net": 305
+     }
+    },
+    "last3": {
+     "efg": 41.72,
+     "opp_efg": 53.09,
+     "off": 80.72,
+     "def": 109.48,
+     "net": -28.76,
+     "poss_per_game": 71.9,
+     "ranks": {
+      "efg": 311,
+      "off": 335,
+      "opp_efg": 225,
+      "def": 213,
+      "net": 304
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401929352,
+      "date": "2026-11-08",
+      "site": "away",
+      "opp_id": 2638,
+      "opp": "UTEP",
+      "d1_opp": true,
+      "pts": 60,
+      "opp_pts": 79,
+      "metrics": {
+       "efg": 46.23,
+       "opp_efg": 60.53,
+       "off": 90.84,
+       "def": 119.61,
+       "net": -28.77
+      },
+      "opp_power_rank": 153
+     },
+     {
+      "game_id": 401919732,
+      "date": "2026-11-05",
+      "site": "home",
+      "opp_id": 2130,
+      "opp": "CHST",
+      "d1_opp": true,
+      "pts": 54,
+      "opp_pts": 66,
+      "metrics": {
+       "efg": 29.25,
+       "opp_efg": 45.54,
+       "off": 71.71,
+       "def": 87.65,
+       "net": -15.94
+      },
+      "opp_power_rank": 333
+     },
+     {
+      "game_id": 401919039,
+      "date": "2026-11-02",
+      "site": "away",
+      "opp_id": 197,
+      "opp": "OKST",
+      "d1_opp": true,
+      "pts": 60,
+      "opp_pts": 91,
+      "metrics": {
+       "efg": 50.0,
+       "opp_efg": 53.08,
+       "off": 80.85,
+       "def": 122.62,
+       "net": -41.77
+      },
+      "opp_power_rank": 11
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+11.5",
+    "b2b": false,
+    "power": {
+     "rank": 334,
+     "bpi": 337,
+     "own_net": 305
+    },
+    "key_players": [
+     "Mekhi Conner",
+     "Brandon McCreesh",
+     "Ismail Habib",
+     "Godswill Erheriene",
+     "D'Arrae Goodwin"
+    ],
+    "top_scorers": [
+     {
+      "name": "Godswill Erheriene",
+      "ppg": 12.3
+     },
+     {
+      "name": "Mekhi Conner",
+      "ppg": 11.5
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "UCD",
+    "dog": "UIW",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 13 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 UCD last-3 top 50 in 0 of 4 \u00b7 \u2717 UIW last-3 bottom 50 (316+) in 1 of 4 \u00b7 \u2717 UCD season outside 1-182: eFG% #240, Off Eff #235, Opp eFG% #320 \u00b7 \u2713 UIW season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "UIW: consensus #334, BPI #337, our net #305"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 13 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for UCD: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 13,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 0,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 10,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "UCD",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 240,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 235,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 320,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 156,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "UCD",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 240,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 235,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 320,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 156,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "UIW",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 226,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 215,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 312,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 337,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "UIW",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 225,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 213,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 311,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 335,
+        "color": "green"
+       }
+      ]
+     }
+    ]
+   },
+   "summary": "No track: score 13 (watch list from 18, qualifies at 28). Biggest edge over the last 3: UCD Def Eff (#156) against UIW Off Eff (#335). UCD 1-1 in its last 3, UIW 0-3. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV11IWUCD",
+    "fav_prob": 0.865,
+    "bid": 0.86,
+    "ask": 0.87
+   },
+   "locked_at": "2026-11-11T10:00:51-08:00"
   }
  }
 }
