@@ -59,7 +59,7 @@ jobs:
         run: |
           python scripts/cfb_build.py ${{ (steps.due.outputs.alert == 'true' && inputs.send != false) && '--alert' || '' }}
           python scripts/cfb_scheduler.py mark built
-          if [ "${{ steps.due.outputs.alert }}" = "true" ]; then python scripts/cfb_scheduler.py mark alerted; fi
+          if [ "${{ steps.due.outputs.alert }}" = "true" ] && [ "${{ inputs.send }}" != "false" ]; then python scripts/cfb_scheduler.py mark alerted; fi
 
       - name: Save to the repo
         if: steps.due.outputs.build == 'true'

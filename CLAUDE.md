@@ -103,6 +103,11 @@ NFL rules (spec "NFL Stat Edge v2", decisions Nov 8 2026):
   (engine read + Kalshi) and the first BET signal in 4th 15:00-5:00 (`nfl_live.py` `end3_alert`/`bet_check`; `entry.alerts`
   stops repeats across restarts; `nfl-live.yml` input `send=false` or `--no-alert` silences tests). Early path stays unalerted.
 - Owner confirmed Nov 9: rest point only when the favorite has more rest than a short-week underdog; no injury info = 0 health.
+- Analyst readouts (Nov 10, NFL + college, as NBA): L2 bottom panel for tracked games (`readoutPanel`), from
+  `data/nfl/readouts/<date>.json` / `data/cfb/readouts/<date>.json` (format: the README in each; loaded by `attach_readouts`).
+  Written by the owner's Claude scheduled task "Football analyst readouts" (daily 5:43 AM PT, does nothing without a tracked
+  game that day), which commits only those files and dispatches `nfl.yml` / `cfb.yml` with force_build=true, send=false.
+  `send=false` runs never mark the game-day push as sent (nfl.yml/cfb.yml). Information only.
 - Expert ATS picks (CBS, Bleacher Report, Covers, SI, Yahoo): no feed and no scraping in the pipeline. The owner's Claude
   scheduled task "NFL expert picks" (Thu + Sat 9:43 AM PT) reads the week's articles, writes `data/nfl/votes/<season>-w<WW>.json`
   (format: `data/nfl/votes/README.md`) and dispatches `nfl.yml`. The board shows them as information only.

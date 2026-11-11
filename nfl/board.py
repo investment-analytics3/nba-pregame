@@ -121,6 +121,7 @@ def build(today_et: date | None = None, refresh: bool = True) -> dict:
         board["games"].append(_game(row, events, wm, recs, qbs, keys, board))
     board.pop("_power", None)
     attach_votes(board)
+    attach_readouts(board, DATA)
     board["games"].sort(key=lambda g: (g["state"] == "post", g["kick_utc"]))
     ahead = [g for g in board["games"] if g["state"] != "post"]                                     # still to play
     tracked = [g for g in ahead if g["scoring"].get("tier") == "qualified"]
@@ -131,6 +132,30 @@ def build(today_et: date | None = None, refresh: bool = True) -> dict:
                         "edge_clears": sum(1 for g in board["games"] if g["scoring"].get("edge", {}).get("clears")),
                         "built_label": board["built_label"]}
     return board
+
+
+def attach_readouts(board: dict, data_dir: str):
+    """Analyst readouts (owner Nov 10), written on game-day mornings by the owner's Claude scheduled task
+    "Football analyst readouts" into <data_dir>/readouts/<Eastern date>.json. Attached to tracked games
+    (Qualified + Watch list) only; information only, never changes a tier or call."""
+    cache = {}
+    for g in board.get("games", []):
+        if not (g.get("scoring") or {}).get("tracked"):
+            g.pop("readout", None)
+            continue
+        day = g.get("day_et")
+        if day not in cache:
+            try:
+                with open(os.path.join(data_dir, "readouts", f"{day}.json")) as f:
+                    cache[day] = json.load(f)
+            except (OSError, ValueError):
+                cache[day] = {}
+        raw = cache[day]
+        r = (raw.get("games") or {}).get(str(g["id"]))
+        if isinstance(r, dict) and r.get("summary"):
+            g["readout"] = {**r, "updated": r.get("updated") or raw.get("updated")}
+        else:
+            g.pop("readout", None)
 
 
 def attach_votes(board: dict):

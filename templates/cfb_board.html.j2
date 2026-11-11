@@ -118,6 +118,22 @@ function detail(g){
     <div class="small muted" style="margin-top:10px">Rest: ${esc(fav.abbr)} ${fav.rest??'?'} days, ${esc(dog.abbr)} ${dog.rest??'?'} days · Line: ${esc(g.line_source||'?')}${g.open_spread!=null?', opened '+line(g.open_spread):''}${g.kalshi?' · Kalshi '+esc(g.kalshi.event):''}${g.locked_at?' · Tier locked '+esc(g.locked_at.slice(5,16).replace('T',' '))+' PT':''}</div></div>`;
 }
 
+// Analyst readout (owner Nov 10): written on game-day mornings for Qualified + Watch list games; information only.
+function readoutPanel(g){
+  const sc = g.scoring||{};
+  if(!sc.tracked) return '';
+  const r = g.readout;
+  if(!r) return `<div class="panel" style="padding:16px 18px;margin-top:14px"><h3 style="margin:0 0 6px">Analyst readout</h3><div class="small muted">Not gathered yet. It's added on the morning of game day.</div></div>`;
+  const when = r.updated ? new Date(r.updated).toLocaleString('en-US',{timeZone:'America/Los_Angeles',hour:'numeric',minute:'2-digit',month:'short',day:'numeric'})+' PT' : '';
+  const row = (k,v) => v ? `<div style="display:grid;grid-template-columns:110px minmax(0,1fr);gap:10px;padding:8px 0;border-top:1px solid var(--line);font-size:13.5px"><span style="color:var(--dim);font-weight:600">${k}</span><span style="color:#D3D9E5">${esc(v)}</span></div>` : '';
+  const src = (r.sources||[]).filter(x=>x && x.url && /^https?:\/\//.test(x.url)).map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener noreferrer">${esc(x.site||'source')}</a>`).join(' · ');
+  return `<div class="panel" style="padding:16px 18px;margin-top:14px"><div class="row between" style="margin-bottom:10px;gap:10px;flex-wrap:wrap"><h3 style="margin:0">Analyst readout</h3><span style="font-size:12px;color:var(--dim)">${esc(when)}</span></div>
+    <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#E6EAF2">${esc(r.summary)}</p>
+    ${row('Pick',r.pick)}${row('Predicted score',r.predicted_score)}${row('Injuries',r.injuries)}
+    ${src?`<div style="padding-top:8px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)">Sources: ${src}</div>`:''}
+    <div style="font-size:11.5px;color:var(--dim);margin-top:6px">From published previews; information only, never changes the tier or call.</div></div>`;
+}
+
 // ---- L2: one game (owner Nov 10: same structure as the NBA board) ----
 const BTN = 'all:unset;display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid #26314B;background:#151C2E;color:#DCE2EE;font-size:14px;font-weight:600;cursor:pointer';
 const TABS = 'display:inline-flex;padding:4px;border-radius:999px;background:#121A2C;border:1px solid #26314B;gap:4px;margin-left:auto';
@@ -149,6 +165,7 @@ function detailView(g){
     <span class="chip ${CALL[sc.call]||'cn'}" style="margin-left:auto">${esc(sc.call)}</span></div>
     <div class="sub">${subLine(g,fav,k,fpi,ex)}</div>${edgeBar(sc.edge)}${pills(g)}${flags}</div>
     <div class="panel" style="padding:4px 18px 18px">${detail(g)}</div>
+    ${readoutPanel(g)}
     <div class="small muted foot">The pregame call is context only; the bet decision is yours. Live grading runs on the Live tab from ESPN play-by-play.</div>`;
   return h;
 }

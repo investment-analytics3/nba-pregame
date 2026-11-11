@@ -60,7 +60,7 @@ jobs:
         run: |
           python scripts/nfl_build.py ${{ (steps.due.outputs.alert == 'true' && inputs.send != false) && '--alert' || '' }}
           python scripts/nfl_scheduler.py mark built
-          if [ "${{ steps.due.outputs.alert }}" = "true" ]; then python scripts/nfl_scheduler.py mark alerted; fi
+          if [ "${{ steps.due.outputs.alert }}" = "true" ] && [ "${{ inputs.send }}" != "false" ]; then python scripts/nfl_scheduler.py mark alerted; fi
 
       - name: Grade logged checkpoints (nflverse)
         if: steps.due.outputs.grade == 'true'
