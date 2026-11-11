@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 10,
- "built_at": "2026-11-10T23:15:08-08:00",
- "built_label": "Tue Nov 10, 11:15 PM PT",
+ "built_at": "2026-11-11T07:00:45-08:00",
+ "built_label": "Wed Nov 11, 7:00 AM PT",
  "games": [
   {
    "id": "401873052",
@@ -20,11 +20,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 41.5,
    "total_open": 47.5,
-   "fav_ml": -135.0,
+   "fav_ml": -142.0,
    "favorite": "home",
    "spread": -2.5,
    "movement": 1.0,
@@ -402,7 +402,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 51.5,
    "total_open": 48.5,
@@ -771,7 +771,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -4.5,
    "total": 45.5,
    "total_open": 45.5,
@@ -1136,14 +1136,14 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -4.5,
    "total": 39.5,
    "total_open": 38.5,
    "fav_ml": -230.0,
    "favorite": "away",
-   "spread": -4.5,
-   "movement": 0.0,
+   "spread": -5.5,
+   "movement": 1.0,
    "total_move": 1.0,
    "fav_home": false,
    "home": {
@@ -1214,20 +1214,24 @@
      "rank": 22
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Deshaun Watson"
+    ],
     "key_questionable": [
-     "Deshaun Watson",
      "Maliek Collins"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
+    "qb_out": [
+     "Deshaun Watson"
+    ],
+    "qb_active": false,
+    "qb_reset": "Deshaun Watson out",
     "injury_list": [
      {
       "name": "Deshaun Watson",
       "pos": "QB",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
       "name": "Maliek Collins",
@@ -1461,12 +1465,16 @@
     },
     "flags": [
      {
+      "level": "red",
+      "text": "Underdog QB change (Deshaun Watson out): call capped at Lean"
+     },
+     {
       "level": "yellow",
       "text": "Favorite questionable: Reed Blankenship"
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Deshaun Watson, Maliek Collins"
+      "text": "Underdog questionable: Maliek Collins"
      }
     ],
     "under": {
@@ -1504,7 +1512,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -4.5,
    "total": 41.5,
    "total_open": 45.5,
@@ -1872,9 +1880,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV15MINGB",
-    "fav_prob": 0.615,
-    "bid": 0.61,
-    "ask": 0.62
+    "fav_prob": 0.625,
+    "bid": 0.62,
+    "ask": 0.63
    }
   },
   {
@@ -1893,7 +1901,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -6.5,
    "total": 38.5,
    "total_open": 47.5,
@@ -2268,11 +2276,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 48.5,
    "total_open": 43.5,
-   "fav_ml": -130.0,
+   "fav_ml": -135.0,
    "favorite": "home",
    "spread": -2.5,
    "movement": 1.0,
@@ -2640,11 +2648,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -7.0,
    "total": 50.5,
    "total_open": 46.5,
-   "fav_ml": -410.0,
+   "fav_ml": -395.0,
    "favorite": "away",
    "spread": -8.5,
    "movement": 1.5,
@@ -3010,7 +3018,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -2.5,
    "total": 46.5,
    "total_open": 45.5,
@@ -3383,7 +3391,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -10.5,
    "total": 39.5,
    "total_open": 47.5,
@@ -3583,14 +3591,14 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Jordan Whittington",
-      "pos": "WR",
-      "status": "Injured Reserve"
-     },
-     {
       "name": "Puka Nacua",
       "pos": "WR",
       "status": "Doubtful"
+     },
+     {
+      "name": "Jordan Whittington",
+      "pos": "WR",
+      "status": "Injured Reserve"
      },
      {
       "name": "Trent McDuffie",
@@ -3756,11 +3764,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -7.0,
    "total": 40.5,
    "total_open": 43.5,
-   "fav_ml": -290.0,
+   "fav_ml": -298.0,
    "favorite": "away",
    "spread": -6.5,
    "movement": -0.5,
@@ -4119,7 +4127,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 1.5,
    "total": 55.5,
    "total_open": 52.5,
@@ -4498,11 +4506,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -3.5,
    "total": 49.5,
    "total_open": 47.5,
-   "fav_ml": -180.0,
+   "fav_ml": -175.0,
    "favorite": "home",
    "spread": -3.5,
    "movement": 0.0,
@@ -4853,7 +4861,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -2.5,
    "total": 38.5,
    "total_open": 48.5,
@@ -5243,6 +5251,6 @@
   "watch": 8,
   "green": 1,
   "edge_clears": 1,
-  "built_label": "Tue Nov 10, 11:15 PM PT"
+  "built_label": "Wed Nov 11, 7:00 AM PT"
  }
 }
