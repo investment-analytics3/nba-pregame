@@ -1,7 +1,8 @@
 # College football analyst readouts, one file per game day
 
 Written by the owner's Claude scheduled task "Football analyst readouts" (every morning at 5:43 AM PT; it
-does nothing on days without a tracked game). A Claude session reads `data/cfb/context.json`, and for each game that
+does nothing on days without a tracked game). Fridays it also writes Saturday's college readouts a day early; the game-day run then refreshes that file
+(updates remaining games, adds newly tracked ones). Files are named by game day, not by the day written. A Claude session reads `data/cfb/context.json`, and for each game that
 kicks off today (Eastern date `day_et`) and is tracked (`tracked`: Qualified or Watch list), searches
 published previews and predictions, writes a short readout, saves `<date>.json` here, commits only
 that file and rebuilds the board (`cfb.yml`, `force_build=true`, `send=false`). Shown at the bottom of
