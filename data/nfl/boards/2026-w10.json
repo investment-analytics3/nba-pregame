@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 10,
- "built_at": "2026-11-10T13:02:00-08:00",
- "built_label": "Tue Nov 10, 1:02 PM PT",
+ "built_at": "2026-11-10T16:10:30-08:00",
+ "built_label": "Tue Nov 10, 4:10 PM PT",
  "games": [
   {
    "id": "401873052",
@@ -20,11 +20,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -1.5,
    "total": 41.5,
    "total_open": 47.5,
-   "fav_ml": -130.0,
+   "fav_ml": -135.0,
    "favorite": "home",
    "spread": -2.5,
    "movement": 1.0,
@@ -98,10 +98,11 @@
      "rank": null
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Cam Skattebo"
+    ],
     "key_questionable": [
-     "Cam Skattebo",
-     "Darnell Mooney"
+     "Abdul Carter"
     ],
     "interior_ol_out": [],
     "qb_out": [],
@@ -109,8 +110,8 @@
     "qb_reset": "J.McCarthy, 74 dropbacks this season",
     "injury_list": [
      {
-      "name": "Cam Skattebo",
-      "pos": "RB",
+      "name": "Colton Hood",
+      "pos": "CB",
       "status": "Questionable"
      },
      {
@@ -119,24 +120,24 @@
       "status": "Questionable"
      },
      {
-      "name": "Darnell Mooney",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "name": "Charlie Jones",
-      "pos": "WR",
-      "status": "Questionable"
+      "name": "Cam Skattebo",
+      "pos": "RB",
+      "status": "Out"
      },
      {
       "name": "Malik Harrison",
+      "pos": "LB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Abdul Carter",
       "pos": "LB",
       "status": "Questionable"
      }
     ],
     "power": {
      "consensus": 18,
-     "fpi": 24,
+     "fpi": 23,
      "nfl_com": 13
     },
     "fpi_win": 0.501
@@ -210,10 +211,10 @@
     },
     "injuries_known": true,
     "key_out": [
+     "Daron Payne",
      "Lucas Patrick"
     ],
     "key_questionable": [
-     "Chig Okonkwo",
      "Treylon Burks"
     ],
     "interior_ol_out": [
@@ -233,19 +234,19 @@
       "status": "Questionable"
      },
      {
-      "name": "Chig Okonkwo",
-      "pos": "TE",
-      "status": "Questionable"
-     },
-     {
-      "name": "Shy Tuttle",
-      "pos": "DT",
-      "status": "Questionable"
-     },
-     {
       "name": "Colson Yankoff",
       "pos": "TE",
       "status": "Questionable"
+     },
+     {
+      "name": "Dyami Brown",
+      "pos": "WR",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Daron Payne",
+      "pos": "DT",
+      "status": "Injured Reserve"
      }
     ],
     "power": {
@@ -258,8 +259,40 @@
    "fav": "NYG",
    "dog": "WAS",
    "scoring": {
-    "qualified": true,
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
     "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 22 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2713 NYG last-3 top 10 in 3 of 4 \u00b7 \u2717 WSH last-3 bottom 10 (23-32) in 0 of 4 \u00b7 \u2717 NYG season outside top 15: Off success #24 \u00b7 \u2713 WSH season top 10 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter out for the favorite",
+      "pass": false,
+      "detail": "NYG key starter out: Cam Skattebo"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": true,
+      "detail": "WSH: consensus #24, ESPN FPI #20, NFL.com #26"
+     }
+    ],
+    "context": [
      {
       "n": 1,
       "ok": true,
@@ -283,38 +316,26 @@
       "ok": true,
       "text": "Underdog not 3-0 in its last 3",
       "detail": "1-2"
-     },
-     {
-      "n": 5,
-      "ok": true,
-      "text": "Favorite has no key starter out",
-      "detail": "none"
-     },
-     {
-      "n": 6,
-      "ok": true,
-      "text": "Injury info available for the favorite",
-      "detail": "yes"
-     },
-     {
-      "n": 7,
-      "ok": true,
-      "text": "Underdog not top 10 in any power ranking",
-      "detail": "none",
-      "fail": null
      }
     ],
     "qualifiers": [
      "def_sr"
     ],
-    "failed": [],
+    "fails": [
+     "NYG key starter out: Cam Skattebo",
+     "Would be on the watch list otherwise (score 22)"
+    ],
+    "failed": [
+     "NYG key starter out: Cam Skattebo",
+     "Would be on the watch list otherwise (score 22)"
+    ],
     "hero": {
-     "score": 23,
+     "score": 22,
      "band": "yellow",
      "parts": {
       "fav_strength": 6,
       "dog_weakness": 10,
-      "health": 4,
+      "health": 3,
       "home": 1,
       "rest": 0,
       "form": 2
@@ -336,11 +357,11 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Cam Skattebo, Darnell Mooney"
+      "text": "Favorite questionable: Abdul Carter"
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Chig Okonkwo, Treylon Burks"
+      "text": "Underdog questionable: Treylon Burks"
      }
     ],
     "under": {
@@ -352,7 +373,7 @@
      "total_move": -6.0,
      "note": ""
     },
-    "call": "Lean (QB cap)"
+    "call": "No track"
    },
    "fav_defense_top10": false,
    "kalshi": {
@@ -378,7 +399,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -1.5,
    "total": 51.5,
    "total_open": 48.5,
@@ -456,9 +477,7 @@
      "rank": 5
     },
     "injuries_known": true,
-    "key_out": [
-     "Jack Campbell"
-    ],
+    "key_out": [],
     "key_questionable": [
      "D.J. Reed"
     ],
@@ -466,6 +485,11 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Kerby Joseph",
+      "pos": "S",
+      "status": "Out"
+     },
      {
       "name": "DJ Wonnum",
       "pos": "LB",
@@ -485,16 +509,11 @@
       "name": "Cade Mays",
       "pos": "C",
       "status": "Questionable"
-     },
-     {
-      "name": "Jack Campbell",
-      "pos": "LB",
-      "status": "Injured Reserve"
      }
     ],
     "power": {
      "consensus": 9,
-     "fpi": 12,
+     "fpi": 13,
      "nfl_com": 7
     },
     "fpi_win": 0.526
@@ -605,7 +624,7 @@
     ],
     "power": {
      "consensus": 16,
-     "fpi": 14,
+     "fpi": 15,
      "nfl_com": 15
     },
     "fpi_win": 0.47
@@ -614,7 +633,39 @@
    "dog": "NE",
    "scoring": {
     "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
     "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 20 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2713 DET last-3 top 10 in 3 of 4 \u00b7 \u2717 NE last-3 bottom 10 (23-32) in 1 of 4 \u00b7 \u2717 DET season outside top 15: Def EPA allowed #30, Def success allowed #20 \u00b7 \u2717 NE season top 10: Off EPA/play #10, Off success #10"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter out for the favorite",
+      "pass": true,
+      "detail": "Clear"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": true,
+      "detail": "NE: consensus #16, ESPN FPI #15, NFL.com #15"
+     }
+    ],
+    "context": [
      {
       "n": 1,
       "ok": true,
@@ -638,41 +689,24 @@
       "ok": true,
       "text": "Underdog not 3-0 in its last 3",
       "detail": "1-2"
-     },
-     {
-      "n": 5,
-      "ok": false,
-      "text": "Favorite has no key starter out",
-      "detail": "Jack Campbell"
-     },
-     {
-      "n": 6,
-      "ok": true,
-      "text": "Injury info available for the favorite",
-      "detail": "yes"
-     },
-     {
-      "n": 7,
-      "ok": true,
-      "text": "Underdog not top 10 in any power ranking",
-      "detail": "none",
-      "fail": null
      }
     ],
     "qualifiers": [
      "off_sr"
     ],
+    "fails": [
+     "Watch list: score 20 (qualifies at 28)"
+    ],
     "failed": [
-     "Rule 3: Underdog not top 10 in any metric over its last 3",
-     "Rule 5: Favorite has no key starter out"
+     "Watch list: score 20 (qualifies at 28)"
     ],
     "hero": {
-     "score": 19,
+     "score": 20,
      "band": "yellow",
      "parts": {
       "fav_strength": 8,
       "dog_weakness": 6,
-      "health": 3,
+      "health": 4,
       "home": 0,
       "rest": 0,
       "form": 2
@@ -706,7 +740,7 @@
      "total_move": 3.0,
      "note": ""
     },
-    "call": "No track"
+    "call": "Watch list"
    },
    "fav_defense_top10": false,
    "kalshi": {
@@ -732,11 +766,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -4.5,
    "total": 45.5,
    "total_open": 45.5,
-   "fav_ml": -180.0,
+   "fav_ml": -185.0,
    "favorite": "away",
    "spread": -3.5,
    "movement": -1.0,
@@ -843,11 +877,11 @@
      }
     ],
     "power": {
-     "consensus": 21,
-     "fpi": 25,
+     "consensus": 20,
+     "fpi": 24,
      "nfl_com": 18
     },
-    "fpi_win": 0.235
+    "fpi_win": 0.217
    },
    "away": {
     "code": "KC",
@@ -959,13 +993,45 @@
      "fpi": 5,
      "nfl_com": 10
     },
-    "fpi_win": 0.763
+    "fpi_win": 0.781
    },
    "fav": "KC",
    "dog": "ATL",
    "scoring": {
-    "qualified": true,
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
     "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 25 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 KC last-3 top 10 in 2 of 4 \u00b7 \u2717 ATL last-3 bottom 10 (23-32) in 2 of 4 \u00b7 \u2713 KC season top 15 in all four \u00b7 \u2713 ATL season top 10 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter out for the favorite",
+      "pass": true,
+      "detail": "Clear"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": true,
+      "detail": "ATL: consensus #20, ESPN FPI #24, NFL.com #18"
+     }
+    ],
+    "context": [
      {
       "n": 1,
       "ok": true,
@@ -989,32 +1055,18 @@
       "ok": true,
       "text": "Underdog not 3-0 in its last 3",
       "detail": "1-2"
-     },
-     {
-      "n": 5,
-      "ok": true,
-      "text": "Favorite has no key starter out",
-      "detail": "none"
-     },
-     {
-      "n": 6,
-      "ok": true,
-      "text": "Injury info available for the favorite",
-      "detail": "yes"
-     },
-     {
-      "n": 7,
-      "ok": true,
-      "text": "Underdog not top 10 in any power ranking",
-      "detail": "none",
-      "fail": null
      }
     ],
     "qualifiers": [
      "off_epa",
      "off_sr"
     ],
-    "failed": [],
+    "fails": [
+     "Watch list: score 25 (qualifies at 28)"
+    ],
+    "failed": [
+     "Watch list: score 25 (qualifies at 28)"
+    ],
     "hero": {
      "score": 25,
      "band": "yellow",
@@ -1051,7 +1103,7 @@
      "total_move": 0.0,
      "note": ""
     },
-    "call": "Track, edge short"
+    "call": "Watch list"
    },
    "fav_defense_top10": false,
    "kalshi": {
@@ -1077,7 +1129,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -4.5,
    "total": 39.5,
    "total_open": 38.5,
@@ -1191,8 +1243,8 @@
      }
     ],
     "power": {
-     "consensus": 25,
-     "fpi": 27,
+     "consensus": 23,
+     "fpi": 26,
      "nfl_com": 19
     },
     "fpi_win": 0.237
@@ -1300,7 +1352,7 @@
      }
     ],
     "power": {
-     "consensus": 11,
+     "consensus": 12,
      "fpi": 8,
      "nfl_com": 16
     },
@@ -1309,8 +1361,40 @@
    "fav": "HOU",
    "dog": "CLE",
    "scoring": {
-    "qualified": true,
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
     "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 19 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 HOU last-3 top 10 in 1 of 4 \u00b7 \u2717 CLE last-3 bottom 10 (23-32) in 1 of 4 \u00b7 \u2717 HOU season outside top 15: Def EPA allowed #18 \u00b7 \u2713 CLE season top 10 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter out for the favorite",
+      "pass": true,
+      "detail": "Clear"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": true,
+      "detail": "CLE: consensus #23, ESPN FPI #26, NFL.com #19"
+     }
+    ],
+    "context": [
      {
       "n": 1,
       "ok": true,
@@ -1334,31 +1418,17 @@
       "ok": true,
       "text": "Underdog not 3-0 in its last 3",
       "detail": "1-2"
-     },
-     {
-      "n": 5,
-      "ok": true,
-      "text": "Favorite has no key starter out",
-      "detail": "none"
-     },
-     {
-      "n": 6,
-      "ok": true,
-      "text": "Injury info available for the favorite",
-      "detail": "yes"
-     },
-     {
-      "n": 7,
-      "ok": true,
-      "text": "Underdog not top 10 in any power ranking",
-      "detail": "none",
-      "fail": null
      }
     ],
     "qualifiers": [
      "off_epa"
     ],
-    "failed": [],
+    "fails": [
+     "Watch list: score 19 (qualifies at 28)"
+    ],
+    "failed": [
+     "Watch list: score 19 (qualifies at 28)"
+    ],
     "hero": {
      "score": 19,
      "band": "yellow",
@@ -1399,7 +1469,7 @@
      "total_move": 1.0,
      "note": ""
     },
-    "call": "Track, edge short"
+    "call": "Watch list"
    },
    "fav_defense_top10": false,
    "kalshi": {
@@ -1425,7 +1495,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -4.5,
    "total": 41.5,
    "total_open": 45.5,
@@ -1544,7 +1614,7 @@
      "fpi": 9,
      "nfl_com": 8
     },
-    "fpi_win": 0.697
+    "fpi_win": 0.557
    },
    "away": {
     "code": "MIN",
@@ -1632,7 +1702,7 @@
      {
       "name": "Kyler Murray",
       "pos": "QB",
-      "status": "Out"
+      "status": "Doubtful"
      },
      {
       "name": "Jauan Jennings",
@@ -1656,17 +1726,49 @@
      }
     ],
     "power": {
-     "consensus": 15,
-     "fpi": 17,
+     "consensus": 10,
+     "fpi": 10,
      "nfl_com": 11
     },
-    "fpi_win": 0.3
+    "fpi_win": 0.439
    },
    "fav": "GB",
    "dog": "MIN",
    "scoring": {
     "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
     "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 20 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 GB last-3 top 10 in 2 of 4 \u00b7 \u2717 MIN last-3 bottom 10 (23-32) in 2 of 4 \u00b7 \u2717 GB season outside top 15: Off success #27, Def success allowed #19 \u00b7 \u2717 MIN season top 10: Def EPA allowed #1, Def success allowed #1"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter out for the favorite",
+      "pass": false,
+      "detail": "GB key starter out: Zaire Franklin"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": false,
+      "detail": "MIN top 10 in power ranking: consensus #10, ESPN FPI #10"
+     }
+    ],
+    "context": [
      {
       "n": 1,
       "ok": true,
@@ -1690,34 +1792,21 @@
       "ok": true,
       "text": "Underdog not 3-0 in its last 3",
       "detail": "1-2"
-     },
-     {
-      "n": 5,
-      "ok": false,
-      "text": "Favorite has no key starter out",
-      "detail": "Zaire Franklin"
-     },
-     {
-      "n": 6,
-      "ok": true,
-      "text": "Injury info available for the favorite",
-      "detail": "yes"
-     },
-     {
-      "n": 7,
-      "ok": true,
-      "text": "Underdog not top 10 in any power ranking",
-      "detail": "none",
-      "fail": null
      }
     ],
     "qualifiers": [
      "off_epa",
      "def_epa"
     ],
+    "fails": [
+     "MIN top 10 in power ranking: consensus #10, ESPN FPI #10",
+     "GB key starter out: Zaire Franklin",
+     "Would be on the watch list otherwise (score 20)"
+    ],
     "failed": [
-     "Rule 3: Underdog not top 10 in any metric over its last 3",
-     "Rule 5: Favorite has no key starter out"
+     "MIN top 10 in power ranking: consensus #10, ESPN FPI #10",
+     "GB key starter out: Zaire Franklin",
+     "Would be on the watch list otherwise (score 20)"
     ],
     "hero": {
      "score": 20,
@@ -1741,6 +1830,10 @@
      "adjusted_recent_gap": 0.133
     },
     "flags": [
+     {
+      "level": "red",
+      "text": "MIN top 10 in power ranking: consensus #10, ESPN FPI #10 (no track)"
+     },
      {
       "level": "red",
       "text": "Underdog QB change (Kyler Murray out): call capped at Lean"
@@ -1768,9 +1861,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV15MINGB",
-    "fav_prob": 0.605,
-    "bid": 0.6,
-    "ask": 0.61
+    "fav_prob": 0.615,
+    "bid": 0.61,
+    "ask": 0.62
    }
   },
   {
@@ -1789,15 +1882,15 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -6.5,
-   "total": 39.5,
+   "total": 38.5,
    "total_open": 47.5,
-   "fav_ml": -162.0,
+   "fav_ml": -192.0,
    "favorite": "home",
-   "spread": -3.0,
-   "movement": -3.5,
-   "total_move": -8.0,
+   "spread": -3.5,
+   "movement": -3.0,
+   "total_move": -9.0,
    "fav_home": true,
    "home": {
     "code": "IND",
@@ -1906,11 +1999,11 @@
      }
     ],
     "power": {
-     "consensus": 22,
+     "consensus": 21,
      "fpi": 19,
      "nfl_com": 25
     },
-    "fpi_win": 0.716
+    "fpi_win": 0.819
    },
    "away": {
     "code": "MIA",
@@ -1995,12 +2088,12 @@
      {
       "name": "Malik Willis",
       "pos": "QB",
-      "status": "Doubtful"
+      "status": "Injured Reserve"
      },
      {
       "name": "Zach Sieler",
       "pos": "DT",
-      "status": "Out"
+      "status": "Injured Reserve"
      },
      {
       "name": "Jaylen Wright",
@@ -2019,17 +2112,49 @@
      }
     ],
     "power": {
-     "consensus": 31,
-     "fpi": 31,
+     "consensus": 32,
+     "fpi": 32,
      "nfl_com": 29
     },
-    "fpi_win": 0.281
+    "fpi_win": 0.18
    },
    "fav": "IND",
    "dog": "MIA",
    "scoring": {
     "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
     "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 19 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 IND last-3 top 10 in 0 of 4 \u00b7 \u2713 MIA last-3 bottom 10 (23-32) in 3 of 4 \u00b7 \u2717 IND season outside top 15: Off EPA/play #30, Off success #19, Def EPA allowed #22 \u00b7 \u2713 MIA season top 10 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter out for the favorite",
+      "pass": false,
+      "detail": "IND key starter out: Jalen Travis"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": true,
+      "detail": "MIA: consensus #32, ESPN FPI #32, NFL.com #29"
+     }
+    ],
+    "context": [
      {
       "n": 1,
       "ok": false,
@@ -2053,32 +2178,16 @@
       "ok": true,
       "text": "Underdog not 3-0 in its last 3",
       "detail": "1-2"
-     },
-     {
-      "n": 5,
-      "ok": false,
-      "text": "Favorite has no key starter out",
-      "detail": "Jalen Travis"
-     },
-     {
-      "n": 6,
-      "ok": true,
-      "text": "Injury info available for the favorite",
-      "detail": "yes"
-     },
-     {
-      "n": 7,
-      "ok": true,
-      "text": "Underdog not top 10 in any power ranking",
-      "detail": "none",
-      "fail": null
      }
     ],
     "qualifiers": [],
+    "fails": [
+     "IND key starter out: Jalen Travis",
+     "Would be on the watch list otherwise (score 19)"
+    ],
     "failed": [
-     "Rule 1: Favorite top 10 (season) in a core metric",
-     "Rule 2: Also top 10 over its last 3 in that same metric",
-     "Rule 5: Favorite has no key starter out"
+     "IND key starter out: Jalen Travis",
+     "Would be on the watch list otherwise (score 19)"
     ],
     "hero": {
      "score": 19,
@@ -2108,10 +2217,6 @@
      },
      {
       "level": "yellow",
-      "text": "Line crossed key number 3"
-     },
-     {
-      "level": "yellow",
       "text": "Favorite questionable: A.J. Haulcy, Akeem Davis-Gaither, Justin Walley"
      }
     ],
@@ -2121,7 +2226,7 @@
       30,
       26
      ],
-     "total_move": -8.0,
+     "total_move": -9.0,
      "note": ""
     },
     "call": "No track"
@@ -2150,14 +2255,14 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -1.5,
    "total": 48.5,
    "total_open": 43.5,
-   "fav_ml": -122.0,
+   "fav_ml": -130.0,
    "favorite": "home",
-   "spread": -1.5,
-   "movement": 0.0,
+   "spread": -2.5,
+   "movement": 1.0,
    "total_move": 5.0,
    "fav_home": true,
    "home": {
@@ -2239,6 +2344,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Stone Smartt",
+      "pos": "TE",
+      "status": "Out"
+     },
+     {
       "name": "Erik McCoy",
       "pos": "C",
       "status": "Doubtful"
@@ -2257,15 +2367,10 @@
       "name": "Dillon Radunz",
       "pos": "G",
       "status": "Injured Reserve"
-     },
-     {
-      "name": "Mason Tipton",
-      "pos": "WR",
-      "status": "Out"
      }
     ],
     "power": {
-     "consensus": 23,
+     "consensus": 22,
      "fpi": 21,
      "nfl_com": 23
     },
@@ -2387,7 +2492,39 @@
    "dog": "CAR",
    "scoring": {
     "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
     "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 18 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 NO last-3 top 10 in 0 of 4 \u00b7 \u2713 CAR last-3 bottom 10 (23-32) in 4 of 4 \u00b7 \u2717 NO season outside top 15: Off EPA/play #22, Off success #20, Def EPA allowed #24, Def success allowed #29 \u00b7 \u2713 CAR season top 10 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter out for the favorite",
+      "pass": false,
+      "detail": "NO key starter out: Erik McCoy"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": true,
+      "detail": "CAR: consensus #19, ESPN FPI #18, NFL.com #20"
+     }
+    ],
+    "context": [
      {
       "n": 1,
       "ok": false,
@@ -2411,32 +2548,16 @@
       "ok": true,
       "text": "Underdog not 3-0 in its last 3",
       "detail": "0-3"
-     },
-     {
-      "n": 5,
-      "ok": false,
-      "text": "Favorite has no key starter out",
-      "detail": "Erik McCoy"
-     },
-     {
-      "n": 6,
-      "ok": true,
-      "text": "Injury info available for the favorite",
-      "detail": "yes"
-     },
-     {
-      "n": 7,
-      "ok": true,
-      "text": "Underdog not top 10 in any power ranking",
-      "detail": "none",
-      "fail": null
      }
     ],
     "qualifiers": [],
+    "fails": [
+     "NO key starter out: Erik McCoy",
+     "Would be on the watch list otherwise (score 18)"
+    ],
     "failed": [
-     "Rule 1: Favorite top 10 (season) in a core metric",
-     "Rule 2: Also top 10 over its last 3 in that same metric",
-     "Rule 5: Favorite has no key starter out"
+     "NO key starter out: Erik McCoy",
+     "Would be on the watch list otherwise (score 18)"
     ],
     "hero": {
      "score": 18,
@@ -2483,9 +2604,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV15CARNO",
-    "fav_prob": 0.515,
-    "bid": 0.51,
-    "ask": 0.52
+    "fav_prob": 0.555,
+    "bid": 0.55,
+    "ask": 0.56
    }
   },
   {
@@ -2504,11 +2625,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -7.0,
    "total": 50.5,
    "total_open": 46.5,
-   "fav_ml": -485.0,
+   "fav_ml": -455.0,
    "favorite": "away",
    "spread": -8.5,
    "movement": 1.5,
@@ -2618,7 +2739,7 @@
     ],
     "power": {
      "consensus": 28,
-     "fpi": 26,
+     "fpi": 25,
      "nfl_com": 30
     },
     "fpi_win": 0.171
@@ -2737,7 +2858,39 @@
    "dog": "NYJ",
    "scoring": {
     "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
     "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 23 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 BUF last-3 top 10 in 2 of 4 \u00b7 \u2717 NYJ last-3 bottom 10 (23-32) in 2 of 4 \u00b7 \u2717 BUF season outside top 15: Def EPA allowed #17, Def success allowed #25 \u00b7 \u2713 NYJ season top 10 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter out for the favorite",
+      "pass": true,
+      "detail": "Clear"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": true,
+      "detail": "NYJ: consensus #28, ESPN FPI #25, NFL.com #30"
+     }
+    ],
+    "context": [
      {
       "n": 1,
       "ok": true,
@@ -2761,31 +2914,14 @@
       "ok": true,
       "text": "Underdog not 3-0 in its last 3",
       "detail": "0-3"
-     },
-     {
-      "n": 5,
-      "ok": true,
-      "text": "Favorite has no key starter out",
-      "detail": "none"
-     },
-     {
-      "n": 6,
-      "ok": true,
-      "text": "Injury info available for the favorite",
-      "detail": "yes"
-     },
-     {
-      "n": 7,
-      "ok": true,
-      "text": "Underdog not top 10 in any power ranking",
-      "detail": "none",
-      "fail": null
      }
     ],
     "qualifiers": [],
+    "fails": [
+     "Watch list: score 23 (qualifies at 28)"
+    ],
     "failed": [
-     "Rule 2: Also top 10 over its last 3 in that same metric",
-     "Rule 3: Underdog not top 10 in any metric over its last 3"
+     "Watch list: score 23 (qualifies at 28)"
     ],
     "hero": {
      "score": 23,
@@ -2831,7 +2967,7 @@
      "total_move": 4.0,
      "note": ""
     },
-    "call": "No track"
+    "call": "Watch list"
    },
    "fav_defense_top10": false,
    "kalshi": {
@@ -2857,7 +2993,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -2.5,
    "total": 46.5,
    "total_open": 45.5,
@@ -2971,7 +3107,7 @@
     ],
     "power": {
      "consensus": 26,
-     "fpi": 29,
+     "fpi": 28,
      "nfl_com": 24
     },
     "fpi_win": 0.159
@@ -3090,7 +3226,41 @@
    "dog": "TEN",
    "scoring": {
     "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [
+     "Score 28"
+    ],
+    "route": "Score 28",
     "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": true,
+      "detail": "Score 28 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2713 JAX last-3 top 10 in 4 of 4 \u00b7 \u2717 TEN last-3 bottom 10 (23-32) in 1 of 4 \u00b7 \u2713 JAX season top 15 in all four \u00b7 \u2713 TEN season top 10 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter out for the favorite",
+      "pass": false,
+      "detail": "JAX key starter out: Anton Harrison, Eric Murray"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": true,
+      "detail": "TEN: consensus #26, ESPN FPI #28, NFL.com #24"
+     }
+    ],
+    "context": [
      {
       "n": 1,
       "ok": true,
@@ -3114,25 +3284,6 @@
       "ok": true,
       "text": "Underdog not 3-0 in its last 3",
       "detail": "1-2"
-     },
-     {
-      "n": 5,
-      "ok": false,
-      "text": "Favorite has no key starter out",
-      "detail": "Anton Harrison, Eric Murray"
-     },
-     {
-      "n": 6,
-      "ok": true,
-      "text": "Injury info available for the favorite",
-      "detail": "yes"
-     },
-     {
-      "n": 7,
-      "ok": true,
-      "text": "Underdog not top 10 in any power ranking",
-      "detail": "none",
-      "fail": null
      }
     ],
     "qualifiers": [
@@ -3141,8 +3292,13 @@
      "def_epa",
      "def_sr"
     ],
+    "fails": [
+     "JAX key starter out: Anton Harrison, Eric Murray",
+     "Would be qualified otherwise (score 28)"
+    ],
     "failed": [
-     "Rule 5: Favorite has no key starter out"
+     "JAX key starter out: Anton Harrison, Eric Murray",
+     "Would be qualified otherwise (score 28)"
     ],
     "hero": {
      "score": 28,
@@ -3214,15 +3370,15 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -10.5,
-   "total": 40.5,
+   "total": 39.5,
    "total_open": 47.5,
-   "fav_ml": -455.0,
+   "fav_ml": -425.0,
    "favorite": "away",
    "spread": -9.5,
    "movement": -1.0,
-   "total_move": -7.0,
+   "total_move": -8.0,
    "fav_home": false,
    "home": {
     "code": "ARI",
@@ -3292,14 +3448,24 @@
      "rank": 24
     },
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
-     "Hjalte Froholdt"
+    "key_out": [
+     "Michael Wilson"
     ],
+    "key_questionable": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Michael Wilson",
+      "pos": "WR",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Gardner Minshew II",
+      "pos": "QB",
+      "status": "Injured Reserve"
+     },
      {
       "name": "Jayden Williams",
       "pos": "OT",
@@ -3314,21 +3480,11 @@
       "name": "Jon Gaines II",
       "pos": "G",
       "status": "Questionable"
-     },
-     {
-      "name": "Hjalte Froholdt",
-      "pos": "C",
-      "status": "Questionable"
-     },
-     {
-      "name": "Gardner Minshew II",
-      "pos": "QB",
-      "status": "Doubtful"
      }
     ],
     "power": {
      "consensus": 30,
-     "fpi": 32,
+     "fpi": 31,
      "nfl_com": 27
     },
     "fpi_win": 0.125
@@ -3412,14 +3568,14 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Jordan Whittington",
+      "pos": "WR",
+      "status": "Injured Reserve"
+     },
+     {
       "name": "Puka Nacua",
       "pos": "WR",
       "status": "Doubtful"
-     },
-     {
-      "name": "Jordan Whittington",
-      "pos": "WR",
-      "status": "Questionable"
      },
      {
       "name": "Trent McDuffie",
@@ -3438,7 +3594,7 @@
      }
     ],
     "power": {
-     "consensus": 10,
+     "consensus": 11,
      "fpi": 7,
      "nfl_com": 17
     },
@@ -3448,7 +3604,39 @@
    "dog": "ARI",
    "scoring": {
     "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
     "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 26 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2713 LAR last-3 top 10 in 3 of 4 \u00b7 \u2717 ARI last-3 bottom 10 (23-32) in 2 of 4 \u00b7 \u2713 LAR season top 15 in all four \u00b7 \u2713 ARI season top 10 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter out for the favorite",
+      "pass": false,
+      "detail": "LAR key starter out: Puka Nacua"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": true,
+      "detail": "ARI: consensus #30, ESPN FPI #31, NFL.com #27"
+     }
+    ],
+    "context": [
      {
       "n": 1,
       "ok": true,
@@ -3472,25 +3660,6 @@
       "ok": true,
       "text": "Underdog not 3-0 in its last 3",
       "detail": "1-2"
-     },
-     {
-      "n": 5,
-      "ok": false,
-      "text": "Favorite has no key starter out",
-      "detail": "Puka Nacua"
-     },
-     {
-      "n": 6,
-      "ok": true,
-      "text": "Injury info available for the favorite",
-      "detail": "yes"
-     },
-     {
-      "n": 7,
-      "ok": true,
-      "text": "Underdog not top 10 in any power ranking",
-      "detail": "none",
-      "fail": null
      }
     ],
     "qualifiers": [
@@ -3498,9 +3667,13 @@
      "def_epa",
      "def_sr"
     ],
+    "fails": [
+     "LAR key starter out: Puka Nacua",
+     "Would be on the watch list otherwise (score 26)"
+    ],
     "failed": [
-     "Rule 3: Underdog not top 10 in any metric over its last 3",
-     "Rule 5: Favorite has no key starter out"
+     "LAR key starter out: Puka Nacua",
+     "Would be on the watch list otherwise (score 26)"
     ],
     "hero": {
      "score": 26,
@@ -3531,10 +3704,6 @@
      {
       "level": "yellow",
       "text": "Favorite questionable: Trent McDuffie"
-     },
-     {
-      "level": "yellow",
-      "text": "Underdog questionable: Hjalte Froholdt"
      }
     ],
     "under": {
@@ -3543,7 +3712,7 @@
       11,
       20
      ],
-     "total_move": -7.0,
+     "total_move": -8.0,
      "note": ""
     },
     "call": "No track"
@@ -3572,14 +3741,14 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -7.0,
    "total": 40.5,
    "total_open": 43.5,
    "fav_ml": -285.0,
    "favorite": "away",
-   "spread": -6.0,
-   "movement": -1.0,
+   "spread": -6.5,
+   "movement": -0.5,
    "total_move": -3.0,
    "fav_home": false,
    "home": {
@@ -3683,11 +3852,11 @@
      }
     ],
     "power": {
-     "consensus": 20,
-     "fpi": 22,
+     "consensus": 25,
+     "fpi": 30,
      "nfl_com": 21
     },
-    "fpi_win": 0.394
+    "fpi_win": 0.259
    },
    "away": {
     "code": "SEA",
@@ -3792,17 +3961,49 @@
      }
     ],
     "power": {
-     "consensus": 13,
-     "fpi": 15,
+     "consensus": 14,
+     "fpi": 16,
      "nfl_com": 9
     },
-    "fpi_win": 0.603
+    "fpi_win": 0.739
    },
    "fav": "SEA",
    "dog": "LV",
    "scoring": {
     "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
     "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 22 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 SEA last-3 top 10 in 0 of 4 \u00b7 \u2713 LV last-3 bottom 10 (23-32) in 3 of 4 \u00b7 \u2717 SEA season outside top 15: Off EPA/play #23, Off success #23 \u00b7 \u2713 LV season top 10 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter out for the favorite",
+      "pass": true,
+      "detail": "Clear"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": true,
+      "detail": "LV: consensus #25, ESPN FPI #30, NFL.com #21"
+     }
+    ],
+    "context": [
      {
       "n": 1,
       "ok": true,
@@ -3826,30 +4027,14 @@
       "ok": true,
       "text": "Underdog not 3-0 in its last 3",
       "detail": "1-2"
-     },
-     {
-      "n": 5,
-      "ok": true,
-      "text": "Favorite has no key starter out",
-      "detail": "none"
-     },
-     {
-      "n": 6,
-      "ok": true,
-      "text": "Injury info available for the favorite",
-      "detail": "yes"
-     },
-     {
-      "n": 7,
-      "ok": true,
-      "text": "Underdog not top 10 in any power ranking",
-      "detail": "none",
-      "fail": null
      }
     ],
     "qualifiers": [],
+    "fails": [
+     "Watch list: score 22 (qualifies at 28)"
+    ],
     "failed": [
-     "Rule 2: Also top 10 over its last 3 in that same metric"
+     "Watch list: score 22 (qualifies at 28)"
     ],
     "hero": {
      "score": 22,
@@ -3891,7 +4076,7 @@
      "total_move": -3.0,
      "note": ""
     },
-    "call": "No track"
+    "call": "Watch list"
    },
    "fav_defense_top10": false,
    "kalshi": {
@@ -3917,14 +4102,14 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": 1.5,
    "total": 55.5,
    "total_open": 52.5,
    "fav_ml": -205.0,
    "favorite": "away",
-   "spread": -3.5,
-   "movement": 5.0,
+   "spread": -4.5,
+   "movement": 6.0,
    "total_move": 3.0,
    "fav_home": false,
    "home": {
@@ -4031,7 +4216,7 @@
     ],
     "power": {
      "consensus": 17,
-     "fpi": 13,
+     "fpi": 14,
      "nfl_com": 22
     },
     "fpi_win": 0.36
@@ -4104,16 +4289,22 @@
      "rank": 4
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Gracen Halton"
+    ],
     "key_questionable": [
      "Deommodore Lenoir",
-     "Mike Evans",
-     "Renardo Green"
+     "Mike Evans"
     ],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Gracen Halton",
+      "pos": "DT",
+      "status": "Injured Reserve"
+     },
      {
       "name": "Mike Evans",
       "pos": "WR",
@@ -4133,11 +4324,6 @@
       "name": "Deommodore Lenoir",
       "pos": "CB",
       "status": "Questionable"
-     },
-     {
-      "name": "Renardo Green",
-      "pos": "CB",
-      "status": "Questionable"
      }
     ],
     "power": {
@@ -4151,7 +4337,39 @@
    "dog": "DAL",
    "scoring": {
     "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
     "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 18 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 SF last-3 top 10 in 2 of 4 \u00b7 \u2717 DAL last-3 bottom 10 (23-32) in 0 of 4 \u00b7 \u2713 SF season top 15 in all four \u00b7 \u2717 DAL season top 10: Off EPA/play #6, Off success #8"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter out for the favorite",
+      "pass": false,
+      "detail": "SF key starter out: Gracen Halton"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": true,
+      "detail": "DAL: consensus #17, ESPN FPI #14, NFL.com #22"
+     }
+    ],
+    "context": [
      {
       "n": 1,
       "ok": true,
@@ -4175,41 +4393,27 @@
       "ok": true,
       "text": "Underdog not 3-0 in its last 3",
       "detail": "2-1"
-     },
-     {
-      "n": 5,
-      "ok": true,
-      "text": "Favorite has no key starter out",
-      "detail": "none"
-     },
-     {
-      "n": 6,
-      "ok": true,
-      "text": "Injury info available for the favorite",
-      "detail": "yes"
-     },
-     {
-      "n": 7,
-      "ok": true,
-      "text": "Underdog not top 10 in any power ranking",
-      "detail": "none",
-      "fail": null
      }
     ],
     "qualifiers": [
      "off_epa",
      "off_sr"
     ],
+    "fails": [
+     "SF key starter out: Gracen Halton",
+     "Would be on the watch list otherwise (score 18)"
+    ],
     "failed": [
-     "Rule 3: Underdog not top 10 in any metric over its last 3"
+     "SF key starter out: Gracen Halton",
+     "Would be on the watch list otherwise (score 18)"
     ],
     "hero": {
-     "score": 19,
+     "score": 18,
      "band": "yellow",
      "parts": {
       "fav_strength": 9,
       "dog_weakness": 5,
-      "health": 4,
+      "health": 3,
       "home": 0,
       "rest": 0,
       "form": 1
@@ -4227,7 +4431,7 @@
     "flags": [
      {
       "level": "yellow",
-      "text": "Line moved +5 toward the favorite (4+): downgrade"
+      "text": "Line moved +6 toward the favorite (4+): downgrade"
      },
      {
       "level": "yellow",
@@ -4235,7 +4439,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Deommodore Lenoir, Mike Evans, Renardo Green"
+      "text": "Favorite questionable: Deommodore Lenoir, Mike Evans"
      },
      {
       "level": "yellow",
@@ -4277,7 +4481,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -3.5,
    "total": 49.5,
    "total_open": 47.5,
@@ -4495,8 +4699,8 @@
      }
     ],
     "power": {
-     "consensus": 14,
-     "fpi": 16,
+     "consensus": 15,
+     "fpi": 17,
      "nfl_com": 12
     },
     "fpi_win": 0.293
@@ -4505,7 +4709,39 @@
    "dog": "PIT",
    "scoring": {
     "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
     "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 20 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 CIN last-3 top 10 in 2 of 4 \u00b7 \u2717 PIT last-3 bottom 10 (23-32) in 0 of 4 \u00b7 \u2717 CIN season outside top 15: Def EPA allowed #16, Def success allowed #24 \u00b7 \u2717 PIT season top 10: Def EPA allowed #6"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter out for the favorite",
+      "pass": true,
+      "detail": "Clear"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": true,
+      "detail": "PIT: consensus #15, ESPN FPI #17, NFL.com #12"
+     }
+    ],
+    "context": [
      {
       "n": 1,
       "ok": true,
@@ -4529,34 +4765,17 @@
       "ok": false,
       "text": "Underdog not 3-0 in its last 3",
       "detail": "3-0"
-     },
-     {
-      "n": 5,
-      "ok": true,
-      "text": "Favorite has no key starter out",
-      "detail": "none"
-     },
-     {
-      "n": 6,
-      "ok": true,
-      "text": "Injury info available for the favorite",
-      "detail": "yes"
-     },
-     {
-      "n": 7,
-      "ok": true,
-      "text": "Underdog not top 10 in any power ranking",
-      "detail": "none",
-      "fail": null
      }
     ],
     "qualifiers": [
      "off_epa",
      "off_sr"
     ],
+    "fails": [
+     "Watch list: score 20 (qualifies at 28)"
+    ],
     "failed": [
-     "Rule 3: Underdog not top 10 in any metric over its last 3",
-     "Rule 4: Underdog not 3-0 in its last 3"
+     "Watch list: score 20 (qualifies at 28)"
     ],
     "hero": {
      "score": 20,
@@ -4589,7 +4808,7 @@
      "total_move": 2.0,
      "note": ""
     },
-    "call": "No track"
+    "call": "Watch list"
    },
    "fav_defense_top10": false,
    "kalshi": {
@@ -4615,14 +4834,14 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -2.5,
    "total": 38.5,
    "total_open": 48.5,
-   "fav_ml": -218.0,
+   "fav_ml": -205.0,
    "favorite": "home",
-   "spread": -5.5,
-   "movement": 3.0,
+   "spread": -4.5,
+   "movement": 2.0,
    "total_move": -10.0,
    "fav_home": true,
    "home": {
@@ -4731,10 +4950,10 @@
     ],
     "power": {
      "consensus": 29,
-     "fpi": 28,
+     "fpi": 27,
      "nfl_com": 28
     },
-    "fpi_win": 0.441
+    "fpi_win": 0.451
    },
    "away": {
     "code": "LAC",
@@ -4840,16 +5059,48 @@
     ],
     "power": {
      "consensus": 27,
-     "fpi": 23,
+     "fpi": 22,
      "nfl_com": 32
     },
-    "fpi_win": 0.556
+    "fpi_win": 0.545
    },
    "fav": "BAL",
    "dog": "LAC",
    "scoring": {
     "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
     "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 19 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 BAL last-3 top 10 in 0 of 4 \u00b7 \u2713 LAC last-3 bottom 10 (23-32) in 4 of 4 \u00b7 \u2717 BAL season outside top 15: Off EPA/play #19, Def EPA allowed #19, Def success allowed #22 \u00b7 \u2713 LAC season top 10 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter out for the favorite",
+      "pass": true,
+      "detail": "Clear"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": true,
+      "detail": "LAC: consensus #27, ESPN FPI #22, NFL.com #32"
+     }
+    ],
+    "context": [
      {
       "n": 1,
       "ok": false,
@@ -4873,31 +5124,14 @@
       "ok": true,
       "text": "Underdog not 3-0 in its last 3",
       "detail": "0-3"
-     },
-     {
-      "n": 5,
-      "ok": true,
-      "text": "Favorite has no key starter out",
-      "detail": "none"
-     },
-     {
-      "n": 6,
-      "ok": true,
-      "text": "Injury info available for the favorite",
-      "detail": "yes"
-     },
-     {
-      "n": 7,
-      "ok": true,
-      "text": "Underdog not top 10 in any power ranking",
-      "detail": "none",
-      "fail": null
      }
     ],
     "qualifiers": [],
+    "fails": [
+     "Watch list: score 19 (qualifies at 28)"
+    ],
     "failed": [
-     "Rule 1: Favorite top 10 (season) in a core metric",
-     "Rule 2: Also top 10 over its last 3 in that same metric"
+     "Watch list: score 19 (qualifies at 28)"
     ],
     "hero": {
      "score": 19,
@@ -4943,7 +5177,7 @@
      "total_move": -10.0,
      "note": ""
     },
-    "call": "No track"
+    "call": "Watch list"
    },
    "fav_defense_top10": false,
    "kalshi": {
@@ -4983,9 +5217,11 @@
   "week": 10,
   "games": 14,
   "upcoming": 14,
-  "tracked": 3,
+  "tracked": 0,
+  "qualified": 0,
+  "watch": 7,
   "green": 0,
   "edge_clears": 1,
-  "built_label": "Tue Nov 10, 1:02 PM PT"
+  "built_label": "Tue Nov 10, 4:10 PM PT"
  }
 }
