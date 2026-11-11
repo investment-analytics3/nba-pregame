@@ -1462,7 +1462,7 @@
    "tip_pt": "1:00 PM PT",
    "day_et": "2026-11-11",
    "state": "in",
-   "detail": "11:25 - 2nd",
+   "detail": "6:04 - 2nd",
    "neutral": false,
    "venue": "Williams Arena at Minges Coliseum",
    "favorite": "home",
@@ -1899,8 +1899,8 @@
    },
    "locked_at": "2026-11-11T12:00:57-08:00",
    "score": {
-    "home": 51,
-    "away": 40
+    "home": 60,
+    "away": 53
    }
   }
  },
@@ -1913,7 +1913,7 @@
    "tip_pt": "2:00 PM PT",
    "day_et": "2026-11-11",
    "state": "in",
-   "detail": "0:23 - 1st",
+   "detail": "Halftime",
    "neutral": false,
    "venue": "Viejas Arena",
    "favorite": "home",
@@ -2386,8 +2386,490 @@
    "locked_at": "2026-11-11T13:00:52-08:00",
    "score": {
     "home": 36,
-    "away": 33
+    "away": 35
    }
+  }
+ },
+ "401921286": {
+  "at": "2026-11-11T15:00:42-08:00",
+  "day": "2026-11-11",
+  "game": {
+   "id": "401921286",
+   "tip_utc": "2026-11-12T00:00:00+00:00",
+   "tip_pt": "4:00 PM PT",
+   "day_et": "2026-11-11",
+   "state": "pre",
+   "detail": "11/11 - 7:00 PM EST",
+   "neutral": false,
+   "venue": "Hart Center Arena",
+   "favorite": "away",
+   "spread": {
+    "spread": 12.5,
+    "details": "FUR -12.5",
+    "provider": "DraftKings",
+    "ml_home": 575,
+    "ml_away": -850
+   },
+   "home": {
+    "id": "107",
+    "abbr": "HC",
+    "name": "Holy Cross",
+    "display": "Holy Cross Crusaders",
+    "mascot": "Crusaders",
+    "record": "0-2",
+    "l3_record": "0-2",
+    "games": 2,
+    "season": {
+     "efg": 42.11,
+     "opp_efg": 60.99,
+     "off": 87.41,
+     "def": 138.46,
+     "net": -51.05,
+     "poss_per_game": 71.5,
+     "ranks": {
+      "efg": 306,
+      "off": 312,
+      "opp_efg": 338,
+      "def": 356,
+      "net": 349
+     }
+    },
+    "last3": {
+     "efg": 42.11,
+     "opp_efg": 60.99,
+     "off": 87.41,
+     "def": 138.46,
+     "net": -51.05,
+     "poss_per_game": 71.5,
+     "ranks": {
+      "efg": 306,
+      "off": 313,
+      "opp_efg": 337,
+      "def": 356,
+      "net": 349
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401921285,
+      "date": "2026-11-06",
+      "site": "away",
+      "opp_id": 222,
+      "opp": "VILL",
+      "d1_opp": true,
+      "pts": 66,
+      "opp_pts": 95,
+      "metrics": {
+       "efg": 39.83,
+       "opp_efg": 58.11,
+       "off": 93.3,
+       "def": 134.3,
+       "net": -41.0
+      },
+      "opp_power_rank": 54
+     },
+     {
+      "game_id": 401920061,
+      "date": "2026-11-03",
+      "site": "away",
+      "opp_id": 227,
+      "opp": "URI",
+      "d1_opp": true,
+      "pts": 59,
+      "opp_pts": 103,
+      "metrics": {
+       "efg": 44.55,
+       "opp_efg": 64.18,
+       "off": 81.65,
+       "def": 142.54,
+       "net": -60.89
+      },
+      "opp_power_rank": 81
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+12.5",
+    "b2b": false,
+    "power": {
+     "rank": 360,
+     "bpi": 352,
+     "own_net": 349
+    },
+    "key_players": [
+     "Aidan Richard",
+     "Tristen Wilson",
+     "Chuck Hare",
+     "Kole Hanson",
+     "Jaelon Germany",
+     "Jude Haigh",
+     "John St. Germain III"
+    ],
+    "top_scorers": [
+     {
+      "name": "Tristen Wilson",
+      "ppg": 13.0
+     },
+     {
+      "name": "Chuck Hare",
+      "ppg": 10.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "231",
+    "abbr": "FUR",
+    "name": "Furman",
+    "display": "Furman Paladins",
+    "mascot": "Paladins",
+    "record": "3-0",
+    "l3_record": "3-0",
+    "games": 2,
+    "season": {
+     "efg": 58.02,
+     "opp_efg": 49.21,
+     "off": 124.31,
+     "def": 107.45,
+     "net": 16.86,
+     "poss_per_game": 71.2,
+     "ranks": {
+      "efg": 50,
+      "off": 44,
+      "opp_efg": 149,
+      "def": 191,
+      "net": 99
+     }
+    },
+    "last3": {
+     "efg": 58.02,
+     "opp_efg": 49.21,
+     "off": 124.31,
+     "def": 107.45,
+     "net": 16.86,
+     "poss_per_game": 71.2,
+     "ranks": {
+      "efg": 50,
+      "off": 44,
+      "opp_efg": 146,
+      "def": 189,
+      "net": 99
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401926112,
+      "date": "2026-11-07",
+      "site": "home",
+      "opp_id": 2460,
+      "opp": "UNI",
+      "d1_opp": true,
+      "pts": 98,
+      "opp_pts": 83,
+      "metrics": {
+       "efg": 62.04,
+       "opp_efg": 48.55,
+       "off": 130.73,
+       "def": 110.72,
+       "net": 20.01
+      },
+      "opp_power_rank": 145
+     },
+     {
+      "game_id": 401926111,
+      "date": "2026-11-04",
+      "site": "home",
+      "opp_id": 3243,
+      "opp": "BOBJ",
+      "d1_opp": false,
+      "pts": 121,
+      "opp_pts": 52,
+      "metrics": {
+       "efg": 64.81,
+       "opp_efg": 31.82,
+       "off": 157.96,
+       "def": 67.89,
+       "net": 90.08
+      },
+      "opp_power_rank": null
+     },
+     {
+      "game_id": 401921424,
+      "date": "2026-11-02",
+      "site": "away",
+      "opp_id": 2065,
+      "opp": "BCU",
+      "d1_opp": true,
+      "pts": 79,
+      "opp_pts": 70,
+      "metrics": {
+       "efg": 53.85,
+       "opp_efg": 50.0,
+       "off": 117.17,
+       "def": 103.82,
+       "net": 13.35
+      },
+      "opp_power_rank": 249
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-12.5",
+    "b2b": false,
+    "power": {
+     "rank": 106,
+     "bpi": 109,
+     "own_net": 99
+    },
+    "key_players": [
+     "Luka Toews",
+     "Tom House",
+     "Charles Johnston",
+     "Abijah Franklin",
+     "Marcus Kell"
+    ],
+    "top_scorers": [
+     {
+      "name": "Tom House",
+      "ppg": 23.0
+     },
+     {
+      "name": "Charles Johnston",
+      "ppg": 13.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "FUR",
+    "dog": "HC",
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 20 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 FUR last-3 top 50 in 2 of 4 \u00b7 \u2717 HC last-3 bottom 50 (316+) in 2 of 4 \u00b7 \u2717 FUR season outside 1-182: Def Eff #191 \u00b7 \u2713 HC season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "HC: consensus #360, BPI #352, our net #349"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Watch list: score 20 (qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for FUR: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 20,
+    "max": 40,
+    "band": "yellow",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 4,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 12,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 2,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "FUR",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 50,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 44,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 149,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 191,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "FUR",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 50,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 44,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 146,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 189,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "HC",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 338,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 356,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 306,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 312,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "HC",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 337,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 356,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 306,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 313,
+        "color": "green"
+       }
+      ]
+     }
+    ]
+   },
+   "summary": "Watch list: score 20 (qualifies at 28). Biggest edge over the last 3: FUR Off Eff (#44) against HC Def Eff (#356). FUR 3-0 in its last 3, HC 0-2. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "Lean: FUR (watch list)",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV11FURHC",
+    "fav_prob": 0.875,
+    "bid": 0.87,
+    "ask": 0.88
+   },
+   "locked_at": "2026-11-11T15:00:42-08:00"
   }
  }
 }
