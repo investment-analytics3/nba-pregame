@@ -1,0 +1,29 @@
+name: College basketball probe (developer)
+
+# Saves raw college basketball source responses (ESPN, Kalshi) to the "dev-cbb-samples" branch
+# so the college basketball parsers can be built against real data. Does not touch main.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/cbb_probe.py
+      - name: Save samples to the dev-cbb-samples branch
+        run: |
+          cd samples/cbb
+          git init -q -b dev-cbb-samples
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Raw college basketball source samples $(date -u +%FT%TZ)"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" dev-cbb-samples
