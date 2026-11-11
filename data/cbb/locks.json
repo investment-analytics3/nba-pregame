@@ -7,8 +7,8 @@
    "tip_utc": "2026-11-11T16:30:00+00:00",
    "tip_pt": "8:30 AM PT",
    "day_et": "2026-11-11",
-   "state": "in",
-   "detail": "2:06 - OT",
+   "state": "post",
+   "detail": "Final/OT",
    "neutral": false,
    "venue": "The Field House",
    "favorite": "home",
@@ -479,8 +479,8 @@
    },
    "locked_at": "2026-11-11T07:30:44-08:00",
    "score": {
-    "home": 74,
-    "away": 76
+    "home": 76,
+    "away": 80
    }
   }
  },
@@ -966,6 +966,487 @@
     "home": 0,
     "away": 0
    }
+  }
+ },
+ "401911230": {
+  "at": "2026-11-11T11:00:43-08:00",
+  "day": "2026-11-11",
+  "game": {
+   "id": "401911230",
+   "tip_utc": "2026-11-11T20:00:00+00:00",
+   "tip_pt": "12:00 PM PT",
+   "day_et": "2026-11-11",
+   "state": "pre",
+   "detail": "11/11 - 3:00 PM EST",
+   "neutral": false,
+   "venue": "Clune Arena",
+   "favorite": "away",
+   "spread": {
+    "spread": 10.5,
+    "details": "LUC -10.5",
+    "provider": "Draft Kings",
+    "ml_home": 410,
+    "ml_away": -550
+   },
+   "home": {
+    "id": "2005",
+    "abbr": "AF",
+    "name": "Air Force",
+    "display": "Air Force Falcons",
+    "mascot": "Falcons",
+    "record": "2-1",
+    "l3_record": "2-1",
+    "games": 2,
+    "season": {
+     "efg": 39.26,
+     "opp_efg": 54.78,
+     "off": 104.56,
+     "def": 120.24,
+     "net": -15.68,
+     "poss_per_game": 76.5,
+     "ranks": {
+      "efg": 334,
+      "off": 183,
+      "opp_efg": 258,
+      "def": 298,
+      "net": 252
+     }
+    },
+    "last3": {
+     "efg": 39.26,
+     "opp_efg": 54.78,
+     "off": 104.56,
+     "def": 120.24,
+     "net": -15.68,
+     "poss_per_game": 76.5,
+     "ranks": {
+      "efg": 334,
+      "off": 184,
+      "opp_efg": 258,
+      "def": 298,
+      "net": 251
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401911335,
+      "date": "2026-11-08",
+      "site": "home",
+      "opp_id": 304,
+      "opp": "IDST",
+      "d1_opp": true,
+      "pts": 89,
+      "opp_pts": 82,
+      "metrics": {
+       "efg": 41.04,
+       "opp_efg": 43.75,
+       "off": 112.75,
+       "def": 103.88,
+       "net": 8.87
+      },
+      "opp_power_rank": 335
+     },
+     {
+      "game_id": 401911334,
+      "date": "2026-11-05",
+      "site": "home",
+      "opp_id": 502,
+      "opp": "CSJ",
+      "d1_opp": false,
+      "pts": 107,
+      "opp_pts": 58,
+      "metrics": {
+       "efg": 50.0,
+       "opp_efg": 46.49,
+       "off": 123.33,
+       "def": 66.85,
+       "net": 56.48
+      },
+      "opp_power_rank": null
+     },
+     {
+      "game_id": 401911333,
+      "date": "2026-11-02",
+      "site": "away",
+      "opp_id": 2750,
+      "opp": "WRST",
+      "d1_opp": true,
+      "pts": 71,
+      "opp_pts": 102,
+      "metrics": {
+       "efg": 37.5,
+       "opp_efg": 67.19,
+       "off": 95.83,
+       "def": 137.68,
+       "net": -41.84
+      },
+      "opp_power_rank": 76
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+10.5",
+    "b2b": false,
+    "power": {
+     "rank": 305,
+     "bpi": 331,
+     "own_net": 252
+    },
+    "key_players": [
+     "Grant Best",
+     "Kam Sanders",
+     "Caleb Walker",
+     "Lucas Hobin",
+     "A.J. Patterson",
+     "Brendan Martin"
+    ],
+    "top_scorers": [
+     {
+      "name": "Grant Best",
+      "ppg": 19.7
+     },
+     {
+      "name": "Kam Sanders",
+      "ppg": 18.7
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "2350",
+    "abbr": "LUC",
+    "name": "Loyola Chicago",
+    "display": "Loyola Chicago Ramblers",
+    "mascot": "Ramblers",
+    "record": "2-0",
+    "l3_record": "2-0",
+    "games": 2,
+    "season": {
+     "efg": 54.07,
+     "opp_efg": 36.92,
+     "off": 117.04,
+     "def": 80.32,
+     "net": 36.72,
+     "poss_per_game": 65.4,
+     "ranks": {
+      "efg": 119,
+      "off": 90,
+      "opp_efg": 10,
+      "def": 13,
+      "net": 33
+     }
+    },
+    "last3": {
+     "efg": 54.07,
+     "opp_efg": 36.92,
+     "off": 117.04,
+     "def": 80.32,
+     "net": 36.72,
+     "poss_per_game": 65.4,
+     "ranks": {
+      "efg": 119,
+      "off": 90,
+      "opp_efg": 10,
+      "def": 13,
+      "net": 32
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401911229,
+      "date": "2026-11-05",
+      "site": "home",
+      "opp_id": 2698,
+      "opp": "WGA",
+      "d1_opp": true,
+      "pts": 76,
+      "opp_pts": 53,
+      "metrics": {
+       "efg": 57.27,
+       "opp_efg": 31.67,
+       "off": 112.03,
+       "def": 78.13,
+       "net": 33.9
+      },
+      "opp_power_rank": 329
+     },
+     {
+      "game_id": 401911228,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 2643,
+      "opp": "CIT",
+      "d1_opp": true,
+      "pts": 77,
+      "opp_pts": 52,
+      "metrics": {
+       "efg": 51.47,
+       "opp_efg": 43.62,
+       "off": 122.44,
+       "def": 82.69,
+       "net": 39.75
+      },
+      "opp_power_rank": 332
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-10.5",
+    "b2b": false,
+    "power": {
+     "rank": 82,
+     "bpi": 128,
+     "own_net": 33
+    },
+    "key_players": [
+     "Dayan Nessah",
+     "Jason Schofield",
+     "Guillaume Grotzinger",
+     "Ryan Agarwal",
+     "Jayden Dawson"
+    ],
+    "top_scorers": [
+     {
+      "name": "Dayan Nessah",
+      "ppg": 17.0
+     },
+     {
+      "name": "Jason Schofield",
+      "ppg": 11.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "LUC",
+    "dog": "AF",
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 21 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 LUC last-3 top 50 in 2 of 4 \u00b7 \u2717 AF last-3 bottom 50 (316+) in 1 of 4 \u00b7 \u2713 LUC season top half (1-182) in all four \u00b7 \u2713 AF season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "AF: consensus #305, BPI #331, our net #252"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Watch list: score 21 (qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for LUC: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 21,
+    "max": 40,
+    "band": "yellow",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 8,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 10,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "LUC",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 119,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 90,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 10,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 13,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "LUC",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 119,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 90,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 10,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 13,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "AF",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 258,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 298,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 334,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 183,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "AF",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 258,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 298,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 334,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 184,
+        "color": "green"
+       }
+      ]
+     }
+    ]
+   },
+   "summary": "Watch list: score 21 (qualifies at 28). Biggest edge over the last 3: LUC Opp eFG% (#10) against AF eFG% (#334). LUC 2-0 in its last 3, AF 2-1. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "Lean: LUC (watch list)",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV11LCHIAFA",
+    "fav_prob": 0.825,
+    "bid": 0.82,
+    "ask": 0.83
+   },
+   "locked_at": "2026-11-11T11:00:43-08:00"
   }
  }
 }
