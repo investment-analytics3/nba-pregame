@@ -1,0 +1,241 @@
+{
+ "seasons": [
+  2024,
+  2025,
+  2026
+ ],
+ "rules": "with the owner (spec \"College Football Board\"):\n  metrics      off EPA/play, off success, def EPA/play allowed, def success allowed (scrimmage rush +\n               pass plays; success = EPA > 0), season + last 3 games, ranked among FBS teams (138)\n  hero score   40: fav 16 (top 10 = 2, 11-25 = 1), dog 16 (ranks 26+ = 1, 114+ = 2), health 4, home 1,\n               rest 1, form 2 (fav last 2)\n  tiers        Qualified = score 28+ OR last-3 mismatch (fav last-3 top 25 in >= 3 of 4, dog last-3\n               rank 114+ in >= 3 of 4, fav season top half in all four, dog season top 25 in none);\n               Watch list = 18-27; No track = the rest\n  power gate   opponent top 25 in any ranking -> No track. Backtest proxy (no historical AP/CFP/FPI\n               in the free data): opponent top 25 in pregame Elo (CFBD, in cfbfastR schedules) or in our\n               own season net EPA\n  injury gate  no historical injury data: assumed clear, health = 4 (overstates scores slightly)",
+ "summary": {
+  "all_band_games": {
+   "games": 444,
+   "wins": 364,
+   "win_pct": 0.82,
+   "expected_pct": 0.822,
+   "edge_pts": -0.2,
+   "avg_spread": 13.8,
+   "cover_pct": 0.471
+  },
+  "by_tier": {
+   "qualified": {
+    "games": 5,
+    "wins": 4,
+    "win_pct": 0.8,
+    "expected_pct": 0.866,
+    "edge_pts": -6.6,
+    "avg_spread": 16.0,
+    "cover_pct": 0.2
+   },
+   "watch": {
+    "games": 246,
+    "wins": 201,
+    "win_pct": 0.817,
+    "expected_pct": 0.826,
+    "edge_pts": -0.9,
+    "avg_spread": 14.0,
+    "cover_pct": 0.467
+   },
+   "out": {
+    "games": 193,
+    "wins": 159,
+    "win_pct": 0.824,
+    "expected_pct": 0.814,
+    "edge_pts": 1.0,
+    "avg_spread": 13.4,
+    "cover_pct": 0.482
+   }
+  },
+  "by_tier_without_power_gate": {
+   "qualified": {
+    "games": 9,
+    "wins": 7,
+    "win_pct": 0.778,
+    "expected_pct": 0.863,
+    "edge_pts": -8.5,
+    "avg_spread": 15.7,
+    "cover_pct": 0.222
+   },
+   "watch": {
+    "games": 266,
+    "wins": 218,
+    "win_pct": 0.82,
+    "expected_pct": 0.825,
+    "edge_pts": -0.6,
+    "avg_spread": 14.0,
+    "cover_pct": 0.481
+   },
+   "out": {
+    "games": 169,
+    "wins": 139,
+    "win_pct": 0.822,
+    "expected_pct": 0.814,
+    "edge_pts": 0.9,
+    "avg_spread": 13.4,
+    "cover_pct": 0.467
+   }
+  },
+  "power_gate_blocked": {
+   "games": 24,
+   "wins": 20,
+   "win_pct": 0.833,
+   "expected_pct": 0.817,
+   "edge_pts": 1.6,
+   "avg_spread": 13.6,
+   "cover_pct": 0.583
+  },
+  "qualified_routes": {
+   "score_28": {
+    "games": 5,
+    "wins": 4,
+    "win_pct": 0.8,
+    "expected_pct": 0.866,
+    "edge_pts": -6.6,
+    "avg_spread": 16.0,
+    "cover_pct": 0.2
+   },
+   "last3_mismatch_only": {
+    "games": 0
+   }
+  },
+  "by_season": {
+   "2024": {
+    "qualified": {
+     "games": 3,
+     "wins": 3,
+     "win_pct": 1.0,
+     "expected_pct": 0.896,
+     "edge_pts": 10.4,
+     "avg_spread": 17.3,
+     "cover_pct": 0.333
+    },
+    "watch": {
+     "games": 78,
+     "wins": 60,
+     "win_pct": 0.769,
+     "expected_pct": 0.83,
+     "edge_pts": -6.1,
+     "avg_spread": 14.2,
+     "cover_pct": 0.372
+    },
+    "out": {
+     "games": 80,
+     "wins": 68,
+     "win_pct": 0.85,
+     "expected_pct": 0.814,
+     "edge_pts": 3.6,
+     "avg_spread": 13.5,
+     "cover_pct": 0.487
+    }
+   },
+   "2025": {
+    "qualified": {
+     "games": 1,
+     "wins": 0,
+     "win_pct": 0.0,
+     "expected_pct": 0.744,
+     "edge_pts": -74.4,
+     "avg_spread": 10.5,
+     "cover_pct": 0.0
+    },
+    "watch": {
+     "games": 97,
+     "wins": 86,
+     "win_pct": 0.887,
+     "expected_pct": 0.829,
+     "edge_pts": 5.8,
+     "avg_spread": 14.1,
+     "cover_pct": 0.495
+    },
+    "out": {
+     "games": 68,
+     "wins": 53,
+     "win_pct": 0.779,
+     "expected_pct": 0.812,
+     "edge_pts": -3.3,
+     "avg_spread": 13.3,
+     "cover_pct": 0.5
+    }
+   },
+   "2026": {
+    "qualified": {
+     "games": 1,
+     "wins": 1,
+     "win_pct": 1.0,
+     "expected_pct": 0.899,
+     "edge_pts": 10.1,
+     "avg_spread": 17.5,
+     "cover_pct": 0.0
+    },
+    "watch": {
+     "games": 71,
+     "wins": 55,
+     "win_pct": 0.775,
+     "expected_pct": 0.82,
+     "edge_pts": -4.5,
+     "avg_spread": 13.7,
+     "cover_pct": 0.535
+    },
+    "out": {
+     "games": 45,
+     "wins": 38,
+     "win_pct": 0.844,
+     "expected_pct": 0.817,
+     "edge_pts": 2.8,
+     "avg_spread": 13.5,
+     "cover_pct": 0.444
+    }
+   }
+  },
+  "by_score_band": {
+   "0-17": {
+    "games": 169,
+    "wins": 139,
+    "win_pct": 0.822,
+    "expected_pct": 0.814,
+    "edge_pts": 0.9,
+    "avg_spread": 13.4,
+    "cover_pct": 0.467
+   },
+   "18-22": {
+    "games": 199,
+    "wins": 163,
+    "win_pct": 0.819,
+    "expected_pct": 0.82,
+    "edge_pts": -0.1,
+    "avg_spread": 13.7,
+    "cover_pct": 0.487
+   },
+   "23-27": {
+    "games": 67,
+    "wins": 55,
+    "win_pct": 0.821,
+    "expected_pct": 0.839,
+    "edge_pts": -1.9,
+    "avg_spread": 14.6,
+    "cover_pct": 0.463
+   },
+   "28-31": {
+    "games": 9,
+    "wins": 7,
+    "win_pct": 0.778,
+    "expected_pct": 0.863,
+    "edge_pts": -8.5,
+    "avg_spread": 15.7,
+    "cover_pct": 0.222
+   },
+   "32-40": {
+    "games": 0
+   }
+  },
+  "losses_qualified": [
+   {
+    "season": 2025,
+    "week": 11,
+    "fav": "WASH",
+    "dog": "WIS",
+    "spread": 10.5,
+    "score": 28,
+    "margin": -3.0
+   }
+  ]
+ }
+}
