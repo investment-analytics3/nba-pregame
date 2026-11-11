@@ -1,6 +1,6 @@
 # College basketball analyst readouts, one file per game day
 
-Written by the owner's Claude scheduled task "College hoops analyst readouts" (every morning at 6:13 AM PT;
+Written by the owner's Claude scheduled task "College hoops analyst readouts" (every morning at 5:13 AM PT;
 it does nothing on days without a tracked game). A Claude session reads `data/cbb/context.json`, and for
 each game that tips today (Eastern date `day_et`) and is tracked (`tracked`: Qualified or Watch list),
 searches published previews, predictions and injury news, writes a short readout, saves `<date>.json`

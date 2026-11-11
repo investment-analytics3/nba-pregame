@@ -182,7 +182,7 @@ College basketball rules (owner decisions Nov 11 2026; spec "College Basketball 
 - Backtest 2025-26 (894 games): favorites won 90.4% vs DK price 91.2%; Qualified 10-0 (price ~94%); Watch list 92% vs 92%;
   tracked favorites up 10+ at 2H 10:00 won 200/200 (ESPN WP ~98.5%). Review Kalshi price logs after a few weeks.
 - Analyst readouts: `data/cbb/readouts/<date>.json` (format: README there), owner's Claude scheduled task "College hoops
-  analyst readouts" (daily 6:13 AM PT, tracked games, max 12), commits only that file and dispatches `cbb.yml`
+  analyst readouts" (daily 5:13 AM PT, tracked games, max 12), commits only that file and dispatches `cbb.yml`
   force_build=true, send=false. The readout's injury line is the only injury check.
 
 ## Workflows (Actions)
