@@ -1,0 +1,40 @@
+name: College checkpoint logger
+
+# Records the end of the 1st, halftime and the end of the 3rd (score, lead, REAL Kalshi price, ESPN
+# win probability; engine read at the end of the 3rd) for every tracked college game (Qualified +
+# Watch list), and publishes live Kalshi prices for the Live page (cfb-live-data branch).
+# Phone pushes: Qualified games only, end of 3rd + first BET signal (max two per game).
+# Started by the college tick while tracked games are on; stops when none is on or about to start.
+on:
+  workflow_dispatch:
+    inputs:
+      once:
+        description: "One poll only (test)"
+        type: boolean
+        default: false
+      send:
+        description: "Send phone pushes (Qualified games: end of 3rd + first BET signal)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cfb-live
+  cancel-in-progress: false
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    timeout-minutes: 345
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Log checkpoints
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: python scripts/cfb_live.py --max-minutes 330 ${{ inputs.once == true && '--once' || '' }} ${{ inputs.send == false && '--no-alert' || '' }}

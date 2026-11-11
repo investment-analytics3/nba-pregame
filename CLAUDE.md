@@ -14,7 +14,7 @@ a phone alert. No AI runs in the daily pipeline; Claude is only used to change c
 - NBA board (latest): https://investment-analytics3.github.io/nba-pregame/nba/
 - NFL board: https://investment-analytics3.github.io/nba-pregame/nfl/ · checkpoint log: .../nfl/live.html
 - NFL design spec (Claude Doc): https://claude.ai/artifact/A4Q6Nana5hMZYbJCSVNix2
-- College football spec (Claude Doc, DRAFT, not built yet): https://claude.ai/artifact/GjAffxfWQBwayGjJ4s4gGc · backtest: `scripts/cfb_backtest.py` → `data/cfb/backtest.json` (+ `_games.csv`); early entry (end Q1 / half / end Q3 vs in-game WP, Nov 10: no edge vs a fair price; next = log real Kalshi prices): `scripts/cfb_early_backtest.py` → `data/cfb/early_backtest.json`; data = sportsdataverse `espn_cfb_pbp` release (reachable from the workspace) + cfbfastR-data schedules
+- College football board: https://investment-analytics3.github.io/nba-pregame/cfb/ · price log: .../cfb/live.html · spec (Claude Doc): https://claude.ai/artifact/GjAffxfWQBwayGjJ4s4gGc · backtest: `scripts/cfb_backtest.py` → `data/cfb/backtest.json` (+ `_games.csv`); early entry (end Q1 / half / end Q3 vs in-game WP, Nov 10: no edge vs a fair price; next = log real Kalshi prices): `scripts/cfb_early_backtest.py` → `data/cfb/early_backtest.json`; data = sportsdataverse `espn_cfb_pbp` release (reachable from the workspace) + cfbfastR-data schedules
 - Results tracker: https://investment-analytics3.github.io/nba-pregame/results.html
 - Design spec (Claude Doc): https://claude.ai/artifact/TQV7dXo9KQM8aEmEEh8v8c
 - Original visual mockup (Claude Design): https://claude.ai/artifact/6NEsvvN1QmSv4QMxC2hCyu
@@ -106,6 +106,38 @@ NFL rules (spec "NFL Stat Edge v2", decisions Nov 8 2026):
 - Expert ATS picks (CBS, Bleacher Report, Covers, SI, Yahoo): no feed and no scraping in the pipeline. The owner's Claude
   scheduled task "NFL expert picks" (Thu + Sat 9:43 AM PT) reads the week's articles, writes `data/nfl/votes/<season>-w<WW>.json`
   (format: `data/nfl/votes/README.md`) and dispatches `nfl.yml`. The board shows them as information only.
+
+## College football (separate pipeline like the NFL: own folder, workflows, concurrency groups `cfb-data`, `cfb-live`)
+
+| Path | Purpose |
+|---|---|
+| `cfb/sources.py` | sportsdataverse `espn_cfb_pbp` release (ESPN plays with EPA, weekly) + cfbfastR-data schedules (FBS flags); cached in `data/cfb/cache/` (git-ignored) |
+| `cfb/metrics.py` | Four metrics season + last 3, ranked among FBS (138), as of a week; records/last results; regular QB (most dropbacks) + key players (QB, top rusher, top 2 targets) |
+| `cfb/scoring.py` | Hero score, tiers, gates, call (rules below) |
+| `cfb/espn.py`, `cfb/kalshi.py` | ESPN college scoreboard (`groups=80`), summaries, FPI (FITT powerindex), AP/CFP rankings; Kalshi `KXNCAAFGAME` (match by ESPN codes, else date + team names) |
+| `cfb/board.py` | Weekly board → `docs/cfb/index.html`, `summary.json`, `context.json` (also `data/cfb/`), `data/cfb/boards/`, tier locks `data/cfb/locks.json` |
+| `scripts/cfb_scheduler.py`, `cfb_build.py`, `cfb_live.py` | Tick decisions; build (+ game-day push); checkpoint logger (Kalshi prices) + pushes |
+| `templates/cfb_board.html.j2`, `docs/cfb/game.html`, `docs/cfb/live.html` | Board (L1 + L2), Live page (uses `docs/nfl/engine.js` + `ep.json`), price log |
+| `scripts/cfb_backtest.py`, `scripts/cfb_early_backtest.py`, `scripts/cfb_probe.py` | One-off backtests; probe (raw ESPN/Kalshi → `dev-cfb-samples` branch, `cfb-probe.yml`) |
+
+Workflows: `cfb.yml` (tick, dispatched by the NBA Scheduler after the NFL step; inputs `force_build`, `send`), `cfb-live.yml`
+(logger; inputs `once`, `send`). Tests: `tests/test_cfb.py`.
+
+College rules (owner decisions Nov 10 2026, spec "College Football Board"):
+- Games: FBS vs FBS, spread favorite -10 to -20 inclusive (ESPN/DraftKings line). Weekly board from Sunday (spreads settle
+  by Tuesday), refreshed morning (7 AM PT) + evening (6 PM PT), hourly on game days, every 15 min when an unlocked game kicks
+  off within 75 min; tier LOCKS 1 h before kickoff (`locks.json`); games leaving the range drop off unless locked.
+- Ranks among 138 FBS: strong 1-25 (elite 1-10), weak 114-138. Hero 40: fav 16 (1-10 = 2, 11-25 = 1), dog 16 (26-113 = 1,
+  114+ = 2), health 4 (QB 2, other key player 1, OL 1 always: no OL data), home 1, rest 1, form 2. Qualified = 28+ OR last-3
+  mismatch (fav last-3 top 25 in >= 3 of 4, dog last-3 114+ in >= 3 of 4, fav season top half 1-69 in all four, dog season
+  top 25 in none). Watch list 18-27. Gates: injury = fav key player newly Out/Doubtful (out for season/IR/suspension never
+  count); NO injury report = yellow warning only, health assumed full (ESPN shows no college injury lists); power = dog in
+  AP Top 25, CFP or FPI top 25. PR pill = consensus of ESPN FPI + our net EPA rank (owner chose this over SP+; no key).
+  Call: Qualified / Lean (QB cap) / Watch list / No track.
+- Live: Qualified + Watch list tracked; logger records end of 1st, halftime, end of 3rd with REAL Kalshi price + ESPN WP,
+  then the final (`data/cfb/live/<season>.json`, `docs/cfb/live.json`); pushes Qualified only: end of 3rd + first BET.
+  Backtest: pregame tiers ~ spread-implied win rate; at every checkpoint win rate ~ fair price (in-game WP); the price log
+  is there to find out whether Kalshi sells these leads below fair. Review after 3-4 weekends.
 
 ## Workflows (Actions)
 

@@ -11,7 +11,7 @@
 </head>
 <body>
 <!-- Landing page (L0). Static: each sport's pipeline publishes its own pages and a small
-     JSON this page reads (NBA: live/context.json, NFL: nfl/summary.json). -->
+     JSON this page reads (NBA: live/context.json, NFL: nfl/summary.json, college: cfb/summary.json). -->
 <div class="wrap">
   <div class="eyebrow">Moneyline system · pregame and live</div>
   <h1 class="title cond">Game Boards</h1>
@@ -30,8 +30,15 @@
       <div class="small muted" data-k="list"></div>
       <div class="small"><span style="color:#8FB8F5;font-weight:600">Open the NFL board ›</span></div>
     </a>
+    <a class="panel sport" href="cfb/" id="cfb">
+      <div class="row between"><h2 class="cond">College football</h2><span class="chip cn" data-k="date">this week</span></div>
+      <div class="big" data-k="head">Loading…</div>
+      <div class="stat" data-k="stat"></div>
+      <div class="small muted" data-k="list"></div>
+      <div class="small"><span style="color:#8FB8F5;font-weight:600">Open the college board ›</span></div>
+    </a>
   </div>
-  <div class="small muted" style="margin-top:22px">More: <a href="results.html">NBA results</a> · <a href="live/">NBA live</a> · <a href="nfl/game.html">NFL live</a> · <a href="nfl/live.html">NFL checkpoint log</a></div>
+  <div class="small muted" style="margin-top:22px">More: <a href="results.html">NBA results</a> · <a href="live/">NBA live</a> · <a href="nfl/game.html">NFL live</a> · <a href="nfl/live.html">NFL checkpoint log</a> · <a href="cfb/game.html">College live</a> · <a href="cfb/live.html">College price log</a></div>
 </div>
 <script>
 (function(){
@@ -56,6 +63,14 @@ get('nfl/summary.json').then(s => {
   set('nfl', 'stat', stat([[s.upcoming ?? s.games, 'to play'], [q, 'qualified'], [w, 'watch list']]));
   set('nfl', 'list', `Updated ${esc(s.built_label || '')}`);
 }).catch(() => set('nfl', 'head', 'NFL board not built yet'));
+
+get('cfb/summary.json').then(s => {
+  set('cfb', 'date', `Week ${esc(s.week ?? '–')}`);
+  const q = s.qualified ?? 0, w = s.watch ?? 0;
+  set('cfb', 'head', q ? `${q} game${q > 1 ? 's' : ''} qualified` : (w ? `${w} on the watch list` : 'No game qualifies yet'));
+  set('cfb', 'stat', stat([[s.games ?? 0, 'at −10 to −20'], [q, 'qualified'], [w, 'watch list']]));
+  set('cfb', 'list', `Updated ${esc(s.built_label || '')}`);
+}).catch(() => set('cfb', 'head', 'College board not built yet'));
 })();
 </script>
 </body>

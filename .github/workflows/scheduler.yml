@@ -129,6 +129,19 @@ jobs:
               -f "inputs[source]=nba-scheduler" && echo "NFL tick started."
           fi
 
+      # ---- College football -----------------------------------------------------
+      # Same pattern as the NFL: cfb.yml decides for itself what is due. Can never fail this tick.
+      - name: "College: start the college football tick"
+        if: ${{ !cancelled() && inputs.dry_run != true }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -f .github/workflows/cfb.yml ]; then
+            gh api -X POST "repos/${{ github.repository }}/actions/workflows/cfb.yml/dispatches" -f ref=main \
+              -f "inputs[source]=nba-scheduler" && echo "College tick started."
+          fi
+
       # ---- Health ping --------------------------------------------------------
       - name: Tell healthchecks.io this tick worked
         if: success()
