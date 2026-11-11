@@ -1,0 +1,5940 @@
+{
+ "boxscore": {
+  "teams": [
+   {
+    "team": {
+     "id": "161",
+     "uid": "s:40~l:41~t:161",
+     "slug": "fairleigh-dickinson-knights",
+     "location": "Fairleigh Dickinson",
+     "name": "Knights",
+     "abbreviation": "FDU",
+     "displayName": "Fairleigh Dickinson Knights",
+     "shortDisplayName": "FDU",
+     "color": "72293c",
+     "alternateColor": "28334a",
+     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/161.png"
+    },
+    "statistics": [
+     {
+      "name": "streak",
+      "displayValue": "W1",
+      "abbreviation": "STRK",
+      "label": "Streak"
+     },
+     {
+      "name": "avgPointsAgainst",
+      "displayValue": "91.7",
+      "abbreviation": "OPP PPG",
+      "label": "Points Against"
+     },
+     {
+      "name": "avgPoints",
+      "displayValue": "67.7",
+      "abbreviation": "PTS",
+      "label": "Points Per Game"
+     },
+     {
+      "name": "fieldGoalPct",
+      "displayValue": "41",
+      "abbreviation": "FG%",
+      "label": "Field Goal %"
+     },
+     {
+      "name": "threePointFieldGoalPct",
+      "displayValue": "24",
+      "abbreviation": "3P%",
+      "label": "Three Point %"
+     },
+     {
+      "name": "avgRebounds",
+      "displayValue": "25.7",
+      "abbreviation": "REB",
+      "label": "Rebounds Per Game"
+     },
+     {
+      "name": "avgAssists",
+      "displayValue": "14.3",
+      "abbreviation": "AST",
+      "label": "Assists Per Game"
+     },
+     {
+      "name": "avgBlocks",
+      "displayValue": "1.7",
+      "abbreviation": "BLK",
+      "label": "Blocks Per Game"
+     },
+     {
+      "name": "avgSteals",
+      "displayValue": "8.3",
+      "abbreviation": "STL",
+      "label": "Steals Per Game"
+     },
+     {
+      "name": "avgTeamTurnovers",
+      "displayValue": "0.7",
+      "abbreviation": "TTO",
+      "label": "Team Turnovers Per Game"
+     },
+     {
+      "name": "avgTotalTurnovers",
+      "displayValue": "10.0",
+      "abbreviation": "ToTO",
+      "label": "Total Turnovers Per Game"
+     },
+     {
+      "name": "avgPointsAgainst",
+      "displayValue": "91.7",
+      "abbreviation": "PA",
+      "label": "Points Against"
+     }
+    ],
+    "displayOrder": 1,
+    "homeAway": "away"
+   },
+   {
+    "team": {
+     "id": "2837",
+     "uid": "s:40~l:41~t:2837",
+     "slug": "east-texas-am-lions",
+     "location": "East Texas A&M",
+     "name": "Lions",
+     "abbreviation": "ETAM",
+     "displayName": "East Texas A&M Lions",
+     "shortDisplayName": "East Texas A&M",
+     "color": "000000",
+     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2837.png"
+    },
+    "statistics": [
+     {
+      "name": "streak",
+      "displayValue": "W2",
+      "abbreviation": "STRK",
+      "label": "Streak"
+     },
+     {
+      "name": "avgPointsAgainst",
+      "displayValue": "67.5",
+      "abbreviation": "OPP PPG",
+      "label": "Points Against"
+     },
+     {
+      "name": "avgPoints",
+      "displayValue": "70.0",
+      "abbreviation": "PTS",
+      "label": "Points Per Game"
+     },
+     {
+      "name": "fieldGoalPct",
+      "displayValue": "40",
+      "abbreviation": "FG%",
+      "label": "Field Goal %"
+     },
+     {
+      "name": "threePointFieldGoalPct",
+      "displayValue": "38",
+      "abbreviation": "3P%",
+      "label": "Three Point %"
+     },
+     {
+      "name": "avgRebounds",
+      "displayValue": "43.5",
+      "abbreviation": "REB",
+      "label": "Rebounds Per Game"
+     },
+     {
+      "name": "avgAssists",
+      "displayValue": "18.5",
+      "abbreviation": "AST",
+      "label": "Assists Per Game"
+     },
+     {
+      "name": "avgBlocks",
+      "displayValue": "2.5",
+      "abbreviation": "BLK",
+      "label": "Blocks Per Game"
+     },
+     {
+      "name": "avgSteals",
+      "displayValue": "9.0",
+      "abbreviation": "STL",
+      "label": "Steals Per Game"
+     },
+     {
+      "name": "avgTeamTurnovers",
+      "displayValue": "1.0",
+      "abbreviation": "TTO",
+      "label": "Team Turnovers Per Game"
+     },
+     {
+      "name": "avgTotalTurnovers",
+      "displayValue": "16.0",
+      "abbreviation": "ToTO",
+      "label": "Total Turnovers Per Game"
+     },
+     {
+      "name": "avgPointsAgainst",
+      "displayValue": "67.5",
+      "abbreviation": "PA",
+      "label": "Points Against"
+     }
+    ],
+    "displayOrder": 2,
+    "homeAway": "home"
+   }
+  ]
+ },
+ "format": {
+  "regulation": {
+   "periods": 2,
+   "displayName": "Half",
+   "slug": "half",
+   "clock": 1200.0
+  },
+  "overtime": {
+   "displayName": "Half",
+   "slug": "half",
+   "clock": 300.0
+  }
+ },
+ "gameInfo": {
+  "venue": {
+   "id": "7339",
+   "guid": "5d6f4b82-d9cc-3437-ac94-2da8e5175188",
+   "fullName": "The Field House",
+   "address": {
+    "city": "Commerce",
+    "state": "TX",
+    "zipCode": "75428"
+   },
+   "grass": false,
+   "images": []
+  },
+  "weather": {
+   "temperature": 58,
+   "highTemperature": 58,
+   "lowTemperature": 58,
+   "conditionId": "Clear",
+   "gust": 4,
+   "precipitation": 3,
+   "link": {
+    "language": "en-US",
+    "rel": [
+     "75428"
+    ],
+    "href": "http://www.accuweather.com/en/us/memorial-stadium-commerce-tx-tx/75428/current-weather/209787_poi?lang=en-us",
+    "text": "Weather",
+    "shortText": "Weather",
+    "isExternal": true,
+    "isPremium": false
+   }
+  }
+ },
+ "lastFiveGames": [
+  {
+   "displayOrder": 2,
+   "team": {
+    "id": "2837",
+    "uid": "s:40~l:41~t:2837",
+    "displayName": "East Texas A&M Lions",
+    "abbreviation": "ETAM",
+    "links": [
+     {
+      "href": "https://www.espn.com/mens-college-basketball/team/_/id/2837/east-texas-am-lions",
+      "text": "Clubhouse"
+     },
+     {
+      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/2837",
+      "text": "Schedule"
+     }
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2837.png",
+    "logos": [
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2837.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "default"
+      ],
+      "lastUpdated": "2026-09-29T14:44Z"
+     },
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2837.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "dark"
+      ],
+      "lastUpdated": "2026-09-29T14:44Z"
+     }
+    ]
+   },
+   "events": [
+    {
+     "id": "401808721",
+     "links": [
+      {
+       "href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401808721/hou-christian-east-texas-am",
+       "text": "Gamecast"
+      }
+     ],
+     "week": 17,
+     "atVs": "vs",
+     "gameDate": "2026-02-24T00:30Z",
+     "score": "69-68",
+     "homeTeamId": "2837",
+     "awayTeamId": "2277",
+     "homeTeamScore": "68",
+     "awayTeamScore": "69",
+     "homeAggregateScore": "0",
+     "awayAggregateScore": "0",
+     "homeShootoutScore": "0",
+     "awayShootoutScore": "0",
+     "gameResult": "L",
+     "leagueName": "NCAA Men's Basketball",
+     "leagueAbbreviation": "NCAAM",
+     "opponent": {
+      "id": "2277",
+      "uid": "s:40~l:41~t:2277",
+      "displayName": "Houston Christian Huskies",
+      "abbreviation": "HCU",
+      "links": [
+       {
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/2277/houston-christian-huskies",
+        "text": "Clubhouse"
+       },
+       {
+        "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/2277",
+        "text": "Schedule"
+       }
+      ],
+      "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2277.png",
+      "logos": [
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2277.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+         "full",
+         "default"
+        ],
+        "lastUpdated": "2023-11-21T19:01Z"
+       },
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2277.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+         "full",
+         "dark"
+        ],
+        "lastUpdated": "2023-11-21T19:01Z"
+       }
+      ]
+     },
+     "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2277.png"
+    },
+    {
+     "id": "401808722",
+     "links": [
+      {
+       "href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401808722/east-texas-am-ut-rio-grande",
+       "text": "Gamecast"
+      }
+     ],
+     "week": 17,
+     "atVs": "@",
+     "gameDate": "2026-02-28T22:30Z",
+     "score": "63-55",
+     "homeTeamId": "292",
+     "awayTeamId": "2837",
+     "homeTeamScore": "63",
+     "awayTeamScore": "55",
+     "homeAggregateScore": "0",
+     "awayAggregateScore": "0",
+     "homeShootoutScore": "0",
+     "awayShootoutScore": "0",
+     "gameResult": "L",
+     "leagueName": "NCAA Men's Basketball",
+     "leagueAbbreviation": "NCAAM",
+     "opponent": {
+      "id": "292",
+      "uid": "s:40~l:41~t:292",
+      "displayName": "UT Rio Grande Valley Vaqueros",
+      "abbreviation": "RGV",
+      "links": [
+       {
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/292/ut-rio-grande-valley-vaqueros",
+        "text": "Clubhouse"
+       },
+       {
+        "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/292",
+        "text": "Schedule"
+       }
+      ],
+      "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/292.png",
+      "logos": [
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/292.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+         "full",
+         "default"
+        ],
+        "lastUpdated": "2023-01-23T21:39Z"
+       },
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/292.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+         "full",
+         "dark"
+        ],
+        "lastUpdated": "2023-01-23T21:39Z"
+       }
+      ]
+     },
+     "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/292.png"
+    },
+    {
+     "id": "401808723",
+     "links": [
+      {
+       "href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401808723/east-texas-am-texas-am-cc",
+       "text": "Gamecast"
+      }
+     ],
+     "week": 18,
+     "atVs": "@",
+     "gameDate": "2026-03-03T01:00Z",
+     "score": "84-71",
+     "homeTeamId": "357",
+     "awayTeamId": "2837",
+     "homeTeamScore": "84",
+     "awayTeamScore": "71",
+     "homeAggregateScore": "0",
+     "awayAggregateScore": "0",
+     "homeShootoutScore": "0",
+     "awayShootoutScore": "0",
+     "gameResult": "L",
+     "leagueName": "NCAA Men's Basketball",
+     "leagueAbbreviation": "NCAAM",
+     "opponent": {
+      "id": "357",
+      "uid": "s:40~l:41~t:357",
+      "displayName": "Texas A&M-Corpus Christi Islanders",
+      "abbreviation": "AMCC",
+      "links": [
+       {
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/357/texas-am-corpus-christi-islanders",
+        "text": "Clubhouse"
+       },
+       {
+        "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/357",
+        "text": "Schedule"
+       }
+      ],
+      "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/357.png",
+      "logos": [
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/357.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+         "full",
+         "default"
+        ],
+        "lastUpdated": "2023-03-17T13:35Z"
+       },
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/357.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+         "full",
+         "dark"
+        ],
+        "lastUpdated": "2023-03-17T13:36Z"
+       }
+      ]
+     },
+     "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/357.png"
+    },
+    {
+     "id": "401906801",
+     "links": [
+      {
+       "href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401906801/east-texas-am-oklahoma",
+       "text": "Gamecast"
+      }
+     ],
+     "week": 1,
+     "atVs": "@",
+     "gameDate": "2026-11-03T01:00Z",
+     "score": "68-64",
+     "homeTeamId": "201",
+     "awayTeamId": "2837",
+     "homeTeamScore": "64",
+     "awayTeamScore": "68",
+     "homeAggregateScore": "0",
+     "awayAggregateScore": "0",
+     "homeShootoutScore": "0",
+     "awayShootoutScore": "0",
+     "gameResult": "W",
+     "leagueName": "NCAA Men's Basketball",
+     "leagueAbbreviation": "NCAAM",
+     "opponent": {
+      "id": "201",
+      "uid": "s:40~l:41~t:201",
+      "displayName": "Oklahoma Sooners",
+      "abbreviation": "OU",
+      "links": [
+       {
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/201/oklahoma-sooners",
+        "text": "Clubhouse"
+       },
+       {
+        "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/201",
+        "text": "Schedule"
+       }
+      ],
+      "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png",
+      "logos": [
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+         "full",
+         "default"
+        ],
+        "lastUpdated": "2025-12-19T23:48Z"
+       },
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/201.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+         "full",
+         "dark"
+        ],
+        "lastUpdated": "2025-12-19T23:47Z"
+       }
+      ]
+     },
+     "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png"
+    },
+    {
+     "id": "401921094",
+     "links": [
+      {
+       "href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401921094/east-texas-am-rice",
+       "text": "Gamecast"
+      }
+     ],
+     "week": 1,
+     "atVs": "@",
+     "gameDate": "2026-11-06T01:00Z",
+     "score": "72-71",
+     "homeTeamId": "242",
+     "awayTeamId": "2837",
+     "homeTeamScore": "71",
+     "awayTeamScore": "72",
+     "homeAggregateScore": "0",
+     "awayAggregateScore": "0",
+     "homeShootoutScore": "0",
+     "awayShootoutScore": "0",
+     "gameResult": "W",
+     "leagueName": "NCAA Men's Basketball",
+     "leagueAbbreviation": "NCAAM",
+     "opponent": {
+      "id": "242",
+      "uid": "s:40~l:41~t:242",
+      "displayName": "Rice Owls",
+      "abbreviation": "RICE",
+      "links": [
+       {
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/242/rice-owls",
+        "text": "Clubhouse"
+       },
+       {
+        "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/242",
+        "text": "Schedule"
+       }
+      ],
+      "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/242.png",
+      "logos": [
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/242.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+         "full",
+         "default"
+        ],
+        "lastUpdated": "2026-07-01T04:35Z"
+       },
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/242.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+         "full",
+         "dark"
+        ],
+        "lastUpdated": "2026-07-01T04:34Z"
+       }
+      ]
+     },
+     "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/242.png"
+    }
+   ]
+  },
+  {
+   "displayOrder": 1,
+   "team": {
+    "id": "161",
+    "uid": "s:40~l:41~t:161",
+    "displayName": "Fairleigh Dickinson Knights",
+    "abbreviation": "FDU",
+    "links": [
+     {
+      "href": "https://www.espn.com/mens-college-basketball/team/_/id/161/fairleigh-dickinson-knights",
+      "text": "Clubhouse"
+     },
+     {
+      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/161",
+      "text": "Schedule"
+     }
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/161.png",
+    "logos": [
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/161.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "default"
+      ],
+      "lastUpdated": "2023-07-14T19:30Z"
+     },
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/161.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "dark"
+      ],
+      "lastUpdated": "2023-07-14T19:30Z"
+     }
+    ]
+   },
+   "events": [
+    {
+     "id": "401812332",
+     "links": [
+      {
+       "href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401812332/fdu-long-island",
+       "text": "Gamecast"
+      }
+     ],
+     "week": 17,
+     "atVs": "@",
+     "gameDate": "2026-02-28T18:00Z",
+     "score": "74-60",
+     "homeTeamId": "112358",
+     "awayTeamId": "161",
+     "homeTeamScore": "74",
+     "awayTeamScore": "60",
+     "homeAggregateScore": "0",
+     "awayAggregateScore": "0",
+     "homeShootoutScore": "0",
+     "awayShootoutScore": "0",
+     "gameResult": "L",
+     "leagueName": "NCAA Men's Basketball",
+     "leagueAbbreviation": "NCAAM",
+     "opponent": {
+      "id": "112358",
+      "uid": "s:40~l:41~t:112358",
+      "displayName": "Long Island University Sharks",
+      "abbreviation": "LIU",
+      "links": [
+       {
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/112358/long-island-university-sharks",
+        "text": "Clubhouse"
+       },
+       {
+        "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/112358",
+        "text": "Schedule"
+       }
+      ],
+      "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/112358.png",
+      "logos": [
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/112358.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+         "full",
+         "default"
+        ],
+        "lastUpdated": "2026-07-01T04:35Z"
+       },
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/112358.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+         "full",
+         "dark"
+        ],
+        "lastUpdated": "2026-07-01T04:34Z"
+       }
+      ]
+     },
+     "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/112358.png"
+    },
+    {
+     "id": "401851515",
+     "links": [
+      {
+       "href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401851515/fdu-mercyhurst",
+       "text": "Gamecast"
+      }
+     ],
+     "week": 18,
+     "atVs": "@",
+     "gameDate": "2026-03-05T00:00Z",
+     "score": "70-61",
+     "homeTeamId": "2385",
+     "awayTeamId": "161",
+     "homeTeamScore": "70",
+     "awayTeamScore": "61",
+     "homeAggregateScore": "0",
+     "awayAggregateScore": "0",
+     "homeShootoutScore": "0",
+     "awayShootoutScore": "0",
+     "gameResult": "L",
+     "leagueName": "NCAA Men's Basketball",
+     "leagueAbbreviation": "NCAAM",
+     "opponent": {
+      "id": "2385",
+      "uid": "s:40~l:41~t:2385",
+      "displayName": "Mercyhurst Lakers",
+      "abbreviation": "MERC",
+      "links": [
+       {
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/2385/mercyhurst-lakers",
+        "text": "Clubhouse"
+       },
+       {
+        "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/2385",
+        "text": "Schedule"
+       }
+      ],
+      "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2385.png",
+      "logos": [
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2385.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+         "full",
+         "default"
+        ],
+        "lastUpdated": "2018-06-05T12:08Z"
+       },
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2385.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+         "full",
+         "dark"
+        ],
+        "lastUpdated": "2018-06-05T12:08Z"
+       }
+      ]
+     },
+     "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2385.png"
+    },
+    {
+     "id": "401913525",
+     "links": [
+      {
+       "href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401913525/fdu-illinois",
+       "text": "Gamecast"
+      }
+     ],
+     "week": 1,
+     "atVs": "@",
+     "gameDate": "2026-11-03T01:00Z",
+     "score": "120-45",
+     "homeTeamId": "356",
+     "awayTeamId": "161",
+     "homeTeamScore": "120",
+     "awayTeamScore": "45",
+     "homeAggregateScore": "0",
+     "awayAggregateScore": "0",
+     "homeShootoutScore": "0",
+     "awayShootoutScore": "0",
+     "gameResult": "L",
+     "leagueName": "NCAA Men's Basketball",
+     "leagueAbbreviation": "NCAAM",
+     "opponent": {
+      "id": "356",
+      "uid": "s:40~l:41~t:356",
+      "displayName": "Illinois Fighting Illini",
+      "abbreviation": "ILL",
+      "links": [
+       {
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/356/illinois-fighting-illini",
+        "text": "Clubhouse"
+       },
+       {
+        "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/356",
+        "text": "Schedule"
+       }
+      ],
+      "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png",
+      "logos": [
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+         "full",
+         "default"
+        ],
+        "lastUpdated": "2025-12-23T01:44Z"
+       },
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/356.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+         "full",
+         "dark"
+        ],
+        "lastUpdated": "2025-12-23T01:44Z"
+       }
+      ]
+     },
+     "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png"
+    },
+    {
+     "id": "401902276",
+     "links": [
+      {
+       "href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401902276/fdu-butler",
+       "text": "Gamecast"
+      }
+     ],
+     "week": 1,
+     "atVs": "@",
+     "gameDate": "2026-11-05T00:00Z",
+     "score": "99-65",
+     "homeTeamId": "2086",
+     "awayTeamId": "161",
+     "homeTeamScore": "99",
+     "awayTeamScore": "65",
+     "homeAggregateScore": "0",
+     "awayAggregateScore": "0",
+     "homeShootoutScore": "0",
+     "awayShootoutScore": "0",
+     "gameResult": "L",
+     "leagueName": "NCAA Men's Basketball",
+     "leagueAbbreviation": "NCAAM",
+     "opponent": {
+      "id": "2086",
+      "uid": "s:40~l:41~t:2086",
+      "displayName": "Butler Bulldogs",
+      "abbreviation": "BTLR",
+      "links": [
+       {
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/2086/butler-bulldogs",
+        "text": "Clubhouse"
+       },
+       {
+        "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/2086",
+        "text": "Schedule"
+       }
+      ],
+      "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2086.png",
+      "logos": [
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2086.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+         "full",
+         "default"
+        ],
+        "lastUpdated": "2018-06-05T12:08Z"
+       },
+       {
+        "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2086.png",
+        "width": 500,
+        "height": 500,
+        "alt": "",
+        "rel": [
+         "full",
+         "dark"
+        ],
+        "lastUpdated": "2018-06-05T12:08Z"
+       }
+      ]
+     },
+     "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2086.png"
+    },
+    {
+     "id": "401919758",
+     "links": [
+      {
+       "href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401919758/city-ny-fdu",
+       "text": "Gamecast"
+      }
+     ],
+     "week": 1,
+     "atVs": "vs",
+     "gameDate": "2026-11-07T17:00Z",
+     "score": "93-56",
+     "homeTeamId": "161",
+     "awayTeamId": "170",
+     "homeTeamScore": "93",
+     "awayTeamScore": "56",
+     "homeAggregateScore": "0",
+     "awayAggregateScore": "0",
+     "homeShootoutScore": "0",
+     "awayShootoutScore": "0",
+     "gameResult": "W",
+     "leagueName": "NCAA Men's Basketball",
+     "leagueAbbreviation": "NCAAM",
+     "opponent": {
+      "id": "170",
+      "uid": "s:40~l:41~t:170",
+      "displayName": "City College NY Beavers",
+      "abbreviation": "CCNY",
+      "logos": []
+     }
+    }
+   ]
+  }
+ ],
+ "leaders": [
+  {
+   "team": {
+    "id": "2837",
+    "uid": "s:40~l:41~t:2837",
+    "displayName": "East Texas A&M Lions",
+    "abbreviation": "ETAM",
+    "links": [
+     {
+      "href": "https://www.espn.com/mens-college-basketball/team/_/id/2837/east-texas-am-lions",
+      "text": "Clubhouse"
+     },
+     {
+      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/2837",
+      "text": "Schedule"
+     }
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2837.png",
+    "logos": [
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2837.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "default"
+      ],
+      "lastUpdated": "2026-09-29T14:44Z"
+     },
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2837.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "dark"
+      ],
+      "lastUpdated": "2026-09-29T14:44Z"
+     }
+    ]
+   },
+   "leaders": [
+    {
+     "name": "pointsPerGame",
+     "displayName": "Points",
+     "leaders": [
+      {
+       "displayValue": "19.0",
+       "value": 19.0,
+       "athlete": {
+        "id": "5460717",
+        "uid": "s:40~l:41~a:5460717",
+        "guid": "90bbec3f-b4f6-3d7a-9c59-6796282713f7",
+        "lastName": "Aldridge",
+        "fullName": "Bo Aldridge",
+        "displayName": "Bo Aldridge",
+        "shortName": "B. Aldridge",
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5460717/bo-aldridge",
+          "text": "Player Card"
+         }
+        ],
+        "headshot": {
+         "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5460717.png",
+         "alt": "Bo Aldridge"
+        },
+        "jersey": "1",
+        "position": {
+         "name": "Forward",
+         "displayName": "Forward",
+         "abbreviation": "F"
+        },
+        "team": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2027/teams/2837?lang=en&region=us",
+         "id": "2837"
+        },
+        "status": {
+         "id": "1",
+         "name": "Active",
+         "type": "active",
+         "abbreviation": "Active"
+        }
+       },
+       "statistics": [
+        {
+         "name": "avgPoints",
+         "displayName": "Points Per Game",
+         "shortDisplayName": "PPG",
+         "description": "The average number of points scored per game.",
+         "abbreviation": "PTS",
+         "value": 19.0,
+         "displayValue": "19.0"
+        },
+        {
+         "name": "fieldGoalPct",
+         "displayName": "Field Goal Percentage",
+         "shortDisplayName": "FG%",
+         "description": "The ratio of field goals made to field goals attempted: FGM / FGA",
+         "abbreviation": "FG%",
+         "value": 41.37931168079376,
+         "displayValue": "41.4"
+        },
+        {
+         "name": "freeThrowPct",
+         "displayName": "Free Throw Percentage",
+         "shortDisplayName": "FT%",
+         "description": "The ratio of free throws made to free throws attempted: FTM / FTA",
+         "abbreviation": "FT%",
+         "value": 81.81818127632141,
+         "displayValue": "81.8"
+        }
+       ],
+       "mainStat": {
+        "value": "19.0",
+        "label": "PPG"
+       },
+       "summary": "41.4 FG%, 81.8 FT%"
+      }
+     ]
+    },
+    {
+     "name": "assistsPerGame",
+     "displayName": "Assists",
+     "leaders": [
+      {
+       "displayValue": "4.5",
+       "value": 4.5,
+       "athlete": {
+        "id": "5460717",
+        "uid": "s:40~l:41~a:5460717",
+        "guid": "90bbec3f-b4f6-3d7a-9c59-6796282713f7",
+        "lastName": "Aldridge",
+        "fullName": "Bo Aldridge",
+        "displayName": "Bo Aldridge",
+        "shortName": "B. Aldridge",
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5460717/bo-aldridge",
+          "text": "Player Card"
+         }
+        ],
+        "headshot": {
+         "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5460717.png",
+         "alt": "Bo Aldridge"
+        },
+        "jersey": "1",
+        "position": {
+         "name": "Forward",
+         "displayName": "Forward",
+         "abbreviation": "F"
+        },
+        "team": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2027/teams/2837?lang=en&region=us",
+         "id": "2837"
+        },
+        "status": {
+         "id": "1",
+         "name": "Active",
+         "type": "active",
+         "abbreviation": "Active"
+        }
+       },
+       "statistics": [
+        {
+         "name": "avgAssists",
+         "displayName": "Assists Per Game",
+         "shortDisplayName": "APG",
+         "description": "The average assists per game.",
+         "abbreviation": "AST",
+         "value": 4.5,
+         "displayValue": "4.5"
+        },
+        {
+         "name": "avgTurnovers",
+         "displayName": "Turnovers Per Game",
+         "shortDisplayName": "TOPG",
+         "description": "The average turnovers committed per game.",
+         "abbreviation": "TO",
+         "value": 3.5,
+         "displayValue": "3.5"
+        },
+        {
+         "name": "avgMinutes",
+         "displayName": "Minutes Per Game",
+         "shortDisplayName": "MPG",
+         "description": "The average number of minutes per game.",
+         "abbreviation": "MIN",
+         "value": 26.0,
+         "displayValue": "26.0"
+        }
+       ],
+       "mainStat": {
+        "value": "4.5",
+        "label": "APG"
+       },
+       "summary": "3.5 TOPG, 26.0 MPG"
+      }
+     ]
+    },
+    {
+     "name": "reboundsPerGame",
+     "displayName": "Rebounds",
+     "leaders": [
+      {
+       "displayValue": "7.5",
+       "value": 7.5,
+       "athlete": {
+        "id": "5460724",
+        "uid": "s:40~l:41~a:5460724",
+        "guid": "508de88f-3aa7-3a1f-884a-1dca3958688e",
+        "lastName": "Hot",
+        "fullName": "Amar Hot",
+        "displayName": "Amar Hot",
+        "shortName": "A. Hot",
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5460724/amar-hot",
+          "text": "Player Card"
+         }
+        ],
+        "headshot": {
+         "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5460724.png",
+         "alt": "Amar Hot"
+        },
+        "jersey": "21",
+        "position": {
+         "name": "Forward",
+         "displayName": "Forward",
+         "abbreviation": "F"
+        },
+        "team": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2027/teams/2837?lang=en&region=us",
+         "id": "2837"
+        },
+        "status": {
+         "id": "1",
+         "name": "Active",
+         "type": "active",
+         "abbreviation": "Active"
+        }
+       },
+       "statistics": [
+        {
+         "name": "avgRebounds",
+         "displayName": "Rebounds Per Game",
+         "shortDisplayName": "RPG",
+         "description": "The average rebounds per game.",
+         "abbreviation": "REB",
+         "value": 7.5,
+         "displayValue": "7.5"
+        },
+        {
+         "name": "avgDefensiveRebounds",
+         "displayName": "Defensive Rebounds Per Game",
+         "shortDisplayName": "DRPG",
+         "description": "The average defensive rebounds per game.",
+         "abbreviation": "DR",
+         "value": 3.5,
+         "displayValue": "3.5"
+        },
+        {
+         "name": "avgOffensiveRebounds",
+         "displayName": "Offensive Rebounds Per Game",
+         "shortDisplayName": "ORPG",
+         "description": "The average offensive rebounds per game.",
+         "abbreviation": "OR",
+         "value": 4.0,
+         "displayValue": "4.0"
+        }
+       ],
+       "mainStat": {
+        "value": "7.5",
+        "label": "RPG"
+       },
+       "summary": "3.5 DRPG, 4.0 ORPG"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": {
+    "id": "161",
+    "uid": "s:40~l:41~t:161",
+    "displayName": "Fairleigh Dickinson Knights",
+    "abbreviation": "FDU",
+    "links": [
+     {
+      "href": "https://www.espn.com/mens-college-basketball/team/_/id/161/fairleigh-dickinson-knights",
+      "text": "Clubhouse"
+     },
+     {
+      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/161",
+      "text": "Schedule"
+     }
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/161.png",
+    "logos": [
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/161.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "default"
+      ],
+      "lastUpdated": "2023-07-14T19:30Z"
+     },
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/161.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "dark"
+      ],
+      "lastUpdated": "2023-07-14T19:30Z"
+     }
+    ]
+   },
+   "leaders": [
+    {
+     "name": "pointsPerGame",
+     "displayName": "Points",
+     "leaders": [
+      {
+       "displayValue": "13.0",
+       "value": 13.0,
+       "athlete": {
+        "id": "5313937",
+        "uid": "s:40~l:41~a:5313937",
+        "guid": "e4f6ee93-4670-3ac8-bf51-ac1777d18fea",
+        "lastName": "Jevtic",
+        "fullName": "David Jevtic",
+        "displayName": "David Jevtic",
+        "shortName": "D. Jevtic",
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5313937/david-jevtic",
+          "text": "Player Card"
+         }
+        ],
+        "headshot": {
+         "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5313937.png",
+         "alt": "David Jevtic"
+        },
+        "jersey": "35",
+        "position": {
+         "name": "Guard",
+         "displayName": "Guard",
+         "abbreviation": "G"
+        },
+        "team": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2027/teams/161?lang=en&region=us",
+         "id": "161"
+        },
+        "status": {
+         "id": "1",
+         "name": "Active",
+         "type": "active",
+         "abbreviation": "Active"
+        }
+       },
+       "statistics": [
+        {
+         "name": "avgPoints",
+         "displayName": "Points Per Game",
+         "shortDisplayName": "PPG",
+         "description": "The average number of points scored per game.",
+         "abbreviation": "PTS",
+         "value": 13.0,
+         "displayValue": "13.0"
+        },
+        {
+         "name": "fieldGoalPct",
+         "displayName": "Field Goal Percentage",
+         "shortDisplayName": "FG%",
+         "description": "The ratio of field goals made to field goals attempted: FGM / FGA",
+         "abbreviation": "FG%",
+         "value": 51.724135875701904,
+         "displayValue": "51.7"
+        },
+        {
+         "name": "freeThrowPct",
+         "displayName": "Free Throw Percentage",
+         "shortDisplayName": "FT%",
+         "description": "The ratio of free throws made to free throws attempted: FTM / FTA",
+         "abbreviation": "FT%",
+         "value": 60.00000238418579,
+         "displayValue": "60.0"
+        }
+       ],
+       "mainStat": {
+        "value": "13.0",
+        "label": "PPG"
+       },
+       "summary": "51.7 FG%, 60.0 FT%"
+      }
+     ]
+    },
+    {
+     "name": "assistsPerGame",
+     "displayName": "Assists",
+     "leaders": [
+      {
+       "displayValue": "4.3",
+       "value": 4.333333492279053,
+       "athlete": {
+        "id": "5176260",
+        "uid": "s:40~l:41~a:5176260",
+        "guid": "8f7425c2-a67c-3f1b-bf6e-ab4e4713b895",
+        "lastName": "Stosic",
+        "fullName": "Pavle Stosic",
+        "displayName": "Pavle Stosic",
+        "shortName": "P. Stosic",
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5176260/pavle-stosic",
+          "text": "Player Card"
+         }
+        ],
+        "headshot": {
+         "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5176260.png",
+         "alt": "Pavle Stosic"
+        },
+        "jersey": "6",
+        "position": {
+         "name": "Forward",
+         "displayName": "Forward",
+         "abbreviation": "F"
+        },
+        "team": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2027/teams/161?lang=en&region=us",
+         "id": "161"
+        },
+        "status": {
+         "id": "1",
+         "name": "Active",
+         "type": "active",
+         "abbreviation": "Active"
+        }
+       },
+       "statistics": [
+        {
+         "name": "avgAssists",
+         "displayName": "Assists Per Game",
+         "shortDisplayName": "APG",
+         "description": "The average assists per game.",
+         "abbreviation": "AST",
+         "value": 4.3333335,
+         "displayValue": "4.3"
+        },
+        {
+         "name": "avgTurnovers",
+         "displayName": "Turnovers Per Game",
+         "shortDisplayName": "TOPG",
+         "description": "The average turnovers committed per game.",
+         "abbreviation": "TO",
+         "value": 2.0,
+         "displayValue": "2.0"
+        },
+        {
+         "name": "avgMinutes",
+         "displayName": "Minutes Per Game",
+         "shortDisplayName": "MPG",
+         "description": "The average number of minutes per game.",
+         "abbreviation": "MIN",
+         "value": 21.333334,
+         "displayValue": "21.3"
+        }
+       ],
+       "mainStat": {
+        "value": "4.3",
+        "label": "APG"
+       },
+       "summary": "2.0 TOPG, 21.3 MPG"
+      }
+     ]
+    },
+    {
+     "name": "reboundsPerGame",
+     "displayName": "Rebounds",
+     "leaders": [
+      {
+       "displayValue": "5.0",
+       "value": 5.0,
+       "athlete": {
+        "id": "5313937",
+        "uid": "s:40~l:41~a:5313937",
+        "guid": "e4f6ee93-4670-3ac8-bf51-ac1777d18fea",
+        "lastName": "Jevtic",
+        "fullName": "David Jevtic",
+        "displayName": "David Jevtic",
+        "shortName": "D. Jevtic",
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5313937/david-jevtic",
+          "text": "Player Card"
+         }
+        ],
+        "headshot": {
+         "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5313937.png",
+         "alt": "David Jevtic"
+        },
+        "jersey": "35",
+        "position": {
+         "name": "Guard",
+         "displayName": "Guard",
+         "abbreviation": "G"
+        },
+        "team": {
+         "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2027/teams/161?lang=en&region=us",
+         "id": "161"
+        },
+        "status": {
+         "id": "1",
+         "name": "Active",
+         "type": "active",
+         "abbreviation": "Active"
+        }
+       },
+       "statistics": [
+        {
+         "name": "avgRebounds",
+         "displayName": "Rebounds Per Game",
+         "shortDisplayName": "RPG",
+         "description": "The average rebounds per game.",
+         "abbreviation": "REB",
+         "value": 5.0,
+         "displayValue": "5.0"
+        },
+        {
+         "name": "avgDefensiveRebounds",
+         "displayName": "Defensive Rebounds Per Game",
+         "shortDisplayName": "DRPG",
+         "description": "The average defensive rebounds per game.",
+         "abbreviation": "DR",
+         "value": 4.3333335,
+         "displayValue": "4.3"
+        },
+        {
+         "name": "avgOffensiveRebounds",
+         "displayName": "Offensive Rebounds Per Game",
+         "shortDisplayName": "ORPG",
+         "description": "The average offensive rebounds per game.",
+         "abbreviation": "OR",
+         "value": 0.6666667,
+         "displayValue": "0.7"
+        }
+       ],
+       "mainStat": {
+        "value": "5.0",
+        "label": "RPG"
+       },
+       "summary": "4.3 DRPG, 0.7 ORPG"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "broadcasts": [
+  {
+   "type": {
+    "id": "4",
+    "shortName": "Streaming",
+    "longName": "Streaming",
+    "slug": "streaming"
+   },
+   "station": "ESPN+",
+   "market": {
+    "id": "1",
+    "type": "National"
+   },
+   "media": {
+    "callLetters": "ESPN+",
+    "name": "ESPN+",
+    "shortName": "ESPN+"
+   },
+   "lang": "en",
+   "region": "us",
+   "isNational": true
+  }
+ ],
+ "pickcenter": [
+  {
+   "provider": {
+    "id": "100",
+    "name": "DraftKings",
+    "priority": 1,
+    "logos": [
+     {
+      "href": "https://a.espncdn.com/i/betting/Draftkings_Light.svg",
+      "rel": [
+       "light"
+      ]
+     },
+     {
+      "href": "https://a.espncdn.com/i/betting/Draftkings_Dark.svg",
+      "rel": [
+       "dark"
+      ]
+     }
+    ]
+   },
+   "details": "ETAM -10.5",
+   "overUnder": 137.5,
+   "spread": -10.5,
+   "overOdds": -115.0,
+   "underOdds": -105.0,
+   "awayTeamOdds": {
+    "favorite": false,
+    "underdog": true,
+    "moneyLine": 390,
+    "spreadOdds": -110.0,
+    "team": {
+     "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2027/teams/161?lang=en&region=us"
+    },
+    "teamId": "161",
+    "favoriteAtOpen": false
+   },
+   "homeTeamOdds": {
+    "favorite": true,
+    "underdog": false,
+    "moneyLine": -520,
+    "spreadOdds": -110.0,
+    "team": {
+     "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2027/teams/2837?lang=en&region=us"
+    },
+    "teamId": "2837",
+    "favoriteAtOpen": true
+   },
+   "links": [
+    {
+     "language": "en-US",
+     "rel": [
+      "home",
+      "desktop",
+      "bets",
+      "draftkings"
+     ],
+     "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34998862%3Foutcomes%3D0ML87189131_1",
+     "text": "Home Bet",
+     "shortText": "Home Bet",
+     "isExternal": true,
+     "isPremium": false,
+     "tracking": {
+      "campaign": "betting-integrations",
+      "tags": {
+       "league": "mens-college-basketball",
+       "sport": "basketball",
+       "gameId": 401919759,
+       "betSide": "home",
+       "betType": "straight"
+      }
+     }
+    },
+    {
+     "language": "en-US",
+     "rel": [
+      "away",
+      "desktop",
+      "bets",
+      "draftkings"
+     ],
+     "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34998862%3Foutcomes%3D0ML87189131_3",
+     "text": "Away Bet",
+     "shortText": "Away Bet",
+     "isExternal": true,
+     "isPremium": false,
+     "tracking": {
+      "campaign": "betting-integrations",
+      "tags": {
+       "league": "mens-college-basketball",
+       "sport": "basketball",
+       "gameId": 401919759,
+       "betSide": "away",
+       "betType": "straight"
+      }
+     }
+    },
+    {
+     "language": "en-US",
+     "rel": [
+      "homeSpread",
+      "desktop",
+      "bets"
+     ],
+     "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34998862%3Foutcomes%3D0HC87189131N1050_1",
+     "text": "Home Point Spread",
+     "shortText": "Home Point Spread",
+     "isExternal": true,
+     "isPremium": false,
+     "tracking": {
+      "campaign": "betting-integrations",
+      "tags": {
+       "league": "mens-college-basketball",
+       "sport": "basketball",
+       "gameId": 401919759,
+       "betSide": "none",
+       "betType": "straight",
+       "betDetails": "Spread:ETAM-10.5"
+      }
+     }
+    },
+    {
+     "language": "en-US",
+     "rel": [
+      "awaySpread",
+      "desktop",
+      "bets"
+     ],
+     "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34998862%3Foutcomes%3D0HC87189131P1050_3",
+     "text": "Away Point Spread",
+     "shortText": "Away Point Spread",
+     "isExternal": true,
+     "isPremium": false,
+     "tracking": {
+      "campaign": "betting-integrations",
+      "tags": {
+       "league": "mens-college-basketball",
+       "sport": "basketball",
+       "gameId": 401919759,
+       "betSide": "none",
+       "betType": "straight",
+       "betDetails": "Spread:FDU+10.5"
+      }
+     }
+    },
+    {
+     "language": "en-US",
+     "rel": [
+      "over",
+      "desktop",
+      "bets"
+     ],
+     "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34998862%3Foutcomes%3D0OU87189131O13750_1",
+     "text": "Over Odds",
+     "shortText": "Over Odds",
+     "isExternal": true,
+     "isPremium": false,
+     "tracking": {
+      "campaign": "betting-integrations",
+      "tags": {
+       "league": "mens-college-basketball",
+       "sport": "basketball",
+       "gameId": 401919759,
+       "betSide": "over",
+       "betType": "straight",
+       "betDetails": "Over:137.5"
+      }
+     }
+    },
+    {
+     "language": "en-US",
+     "rel": [
+      "under",
+      "desktop",
+      "bets"
+     ],
+     "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34998862%3Foutcomes%3D0OU87189131U13750_3",
+     "text": "Under Odds",
+     "shortText": "Under Odds",
+     "isExternal": true,
+     "isPremium": false,
+     "tracking": {
+      "campaign": "betting-integrations",
+      "tags": {
+       "league": "mens-college-basketball",
+       "sport": "basketball",
+       "gameId": 401919759,
+       "betSide": "under",
+       "betType": "straight",
+       "betDetails": "Under:137.5"
+      }
+     }
+    },
+    {
+     "language": "en-US",
+     "rel": [
+      "game",
+      "desktop",
+      "bets"
+     ],
+     "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34998862",
+     "text": "See More Odds",
+     "shortText": "Game",
+     "isExternal": true,
+     "isPremium": false,
+     "tracking": {
+      "campaign": "betting-integrations",
+      "tags": {
+       "league": "mens-college-basketball",
+       "sport": "basketball",
+       "gameId": 401919759,
+       "betSide": "none",
+       "betType": "straight"
+      }
+     }
+    }
+   ],
+   "moneyline": {
+    "displayName": "Moneyline",
+    "shortDisplayName": "ML",
+    "home": {
+     "close": {
+      "odds": "-520",
+      "link": {
+       "language": "en-US",
+       "rel": [
+        "home",
+        "desktop",
+        "bets",
+        "draftkings"
+       ],
+       "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34998862%3Foutcomes%3D0ML87189131_1",
+       "text": "Home Bet",
+       "shortText": "Home Bet",
+       "isExternal": true,
+       "isPremium": false,
+       "tracking": {
+        "campaign": "betting-integrations",
+        "tags": {
+         "league": "mens-college-basketball",
+         "sport": "basketball",
+         "gameId": 401919759,
+         "betSide": "home",
+         "betType": "straight"
+        }
+       }
+      }
+     },
+     "open": {
+      "odds": "-520"
+     }
+    },
+    "away": {
+     "close": {
+      "odds": "+390",
+      "link": {
+       "language": "en-US",
+       "rel": [
+        "away",
+        "desktop",
+        "bets",
+        "draftkings"
+       ],
+       "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34998862%3Foutcomes%3D0ML87189131_3",
+       "text": "Away Bet",
+       "shortText": "Away Bet",
+       "isExternal": true,
+       "isPremium": false,
+       "tracking": {
+        "campaign": "betting-integrations",
+        "tags": {
+         "league": "mens-college-basketball",
+         "sport": "basketball",
+         "gameId": 401919759,
+         "betSide": "away",
+         "betType": "straight"
+        }
+       }
+      }
+     },
+     "open": {
+      "odds": "+390"
+     }
+    }
+   },
+   "pointSpread": {
+    "displayName": "Spread",
+    "shortDisplayName": "Spread",
+    "home": {
+     "close": {
+      "line": "-10.5",
+      "odds": "-110",
+      "link": {
+       "language": "en-US",
+       "rel": [
+        "homeSpread",
+        "desktop",
+        "bets"
+       ],
+       "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34998862%3Foutcomes%3D0HC87189131N1050_1",
+       "text": "Home Point Spread",
+       "shortText": "Home Point Spread",
+       "isExternal": true,
+       "isPremium": false,
+       "tracking": {
+        "campaign": "betting-integrations",
+        "tags": {
+         "league": "mens-college-basketball",
+         "sport": "basketball",
+         "gameId": 401919759,
+         "betSide": "none",
+         "betType": "straight",
+         "betDetails": "Spread:ETAM-10.5"
+        }
+       }
+      }
+     },
+     "open": {
+      "line": "-10.5",
+      "odds": "-110"
+     }
+    },
+    "away": {
+     "close": {
+      "line": "+10.5",
+      "odds": "-110",
+      "link": {
+       "language": "en-US",
+       "rel": [
+        "awaySpread",
+        "desktop",
+        "bets"
+       ],
+       "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34998862%3Foutcomes%3D0HC87189131P1050_3",
+       "text": "Away Point Spread",
+       "shortText": "Away Point Spread",
+       "isExternal": true,
+       "isPremium": false,
+       "tracking": {
+        "campaign": "betting-integrations",
+        "tags": {
+         "league": "mens-college-basketball",
+         "sport": "basketball",
+         "gameId": 401919759,
+         "betSide": "none",
+         "betType": "straight",
+         "betDetails": "Spread:FDU+10.5"
+        }
+       }
+      }
+     },
+     "open": {
+      "line": "+10.5",
+      "odds": "-110"
+     }
+    }
+   },
+   "total": {
+    "displayName": "Total",
+    "shortDisplayName": "Total",
+    "over": {
+     "close": {
+      "line": "o137.5",
+      "odds": "-115",
+      "link": {
+       "language": "en-US",
+       "rel": [
+        "over",
+        "desktop",
+        "bets"
+       ],
+       "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34998862%3Foutcomes%3D0OU87189131O13750_1",
+       "text": "Over Odds",
+       "shortText": "Over Odds",
+       "isExternal": true,
+       "isPremium": false,
+       "tracking": {
+        "campaign": "betting-integrations",
+        "tags": {
+         "league": "mens-college-basketball",
+         "sport": "basketball",
+         "gameId": 401919759,
+         "betSide": "over",
+         "betType": "straight",
+         "betDetails": "Over:137.5"
+        }
+       }
+      }
+     },
+     "open": {
+      "line": "o140.5",
+      "odds": "-105"
+     }
+    },
+    "under": {
+     "close": {
+      "line": "u137.5",
+      "odds": "-105",
+      "link": {
+       "language": "en-US",
+       "rel": [
+        "under",
+        "desktop",
+        "bets"
+       ],
+       "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34998862%3Foutcomes%3D0OU87189131U13750_3",
+       "text": "Under Odds",
+       "shortText": "Under Odds",
+       "isExternal": true,
+       "isPremium": false,
+       "tracking": {
+        "campaign": "betting-integrations",
+        "tags": {
+         "league": "mens-college-basketball",
+         "sport": "basketball",
+         "gameId": 401919759,
+         "betSide": "under",
+         "betType": "straight",
+         "betDetails": "Under:137.5"
+        }
+       }
+      }
+     },
+     "open": {
+      "line": "u140.5",
+      "odds": "-115"
+     }
+    }
+   },
+   "link": {
+    "language": "en-US",
+    "rel": [
+     "game",
+     "desktop",
+     "bets"
+    ],
+    "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34998862",
+    "text": "See More Odds",
+    "shortText": "Game",
+    "isExternal": true,
+    "isPremium": false,
+    "tracking": {
+     "campaign": "betting-integrations",
+     "tags": {
+      "league": "mens-college-basketball",
+      "sport": "basketball",
+      "gameId": 401919759,
+      "betSide": "none",
+      "betType": "straight"
+     }
+    }
+   },
+   "header": {
+    "logo": {
+     "dark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-square-off.svg",
+     "light": "https://a.espncdn.com/i/espnbet/espn-bet-square-off.svg",
+     "exclusivesLogoDark": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg",
+     "exclusivesLogoLight": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg"
+    },
+    "text": "Game Odds"
+   },
+   "footer": {
+    "disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
+   }
+  }
+ ],
+ "odds": [],
+ "againstTheSpread": [
+  {
+   "team": {
+    "id": "161",
+    "uid": "s:40~l:41~t:161",
+    "displayName": "Fairleigh Dickinson Knights",
+    "abbreviation": "FDU",
+    "links": [
+     {
+      "href": "https://www.espn.com/mens-college-basketball/team/_/id/161/fairleigh-dickinson-knights",
+      "text": "Clubhouse"
+     },
+     {
+      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/161",
+      "text": "Schedule"
+     }
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/161.png",
+    "logos": [
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/161.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "default"
+      ],
+      "lastUpdated": "2023-07-14T19:30Z"
+     },
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/161.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "dark"
+      ],
+      "lastUpdated": "2023-07-14T19:30Z"
+     }
+    ]
+   },
+   "records": []
+  },
+  {
+   "team": {
+    "id": "2837",
+    "uid": "s:40~l:41~t:2837",
+    "displayName": "East Texas A&M Lions",
+    "abbreviation": "ETAM",
+    "links": [
+     {
+      "href": "https://www.espn.com/mens-college-basketball/team/_/id/2837/east-texas-am-lions",
+      "text": "Clubhouse"
+     },
+     {
+      "href": "https://www.espn.com/mens-college-basketball/team/schedule/_/id/2837",
+      "text": "Schedule"
+     }
+    ],
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2837.png",
+    "logos": [
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2837.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "default"
+      ],
+      "lastUpdated": "2026-09-29T14:44Z"
+     },
+     {
+      "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2837.png",
+      "width": 500,
+      "height": 500,
+      "alt": "",
+      "rel": [
+       "full",
+       "dark"
+      ],
+      "lastUpdated": "2026-09-29T14:44Z"
+     }
+    ]
+   },
+   "records": []
+  }
+ ],
+ "news": {
+  "header": "Men's College Basketball News",
+  "link": {
+   "language": "en",
+   "rel": [
+    "index",
+    "desktop",
+    "league"
+   ],
+   "href": "https://www.espn.com/mens-college-basketball/",
+   "text": "All NCAAM News",
+   "shortText": "All News",
+   "isExternal": false,
+   "isPremium": false
+  },
+  "articles": [
+   {
+    "id": 50451653,
+    "nowId": "1-50451653",
+    "contentKey": "50451653-1-22-1",
+    "dataSourceIdentifier": "d89272f425182",
+    "type": "Preview",
+    "headline": "Sacred Heart hosts Cent. Conn. St. following Robinson's 21-point outing",
+    "description": "Central Connecticut State Blue Devils (1-2) at Sacred Heart Pioneers (2-1)",
+    "lastModified": "2026-11-11T09:46:36Z",
+    "published": "2026-11-11T09:46:36Z",
+    "images": [
+     {
+      "type": "stitcher",
+      "name": "espn.applewatch.awayhome.1",
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401924876.png?templateId=espn.applewatch.awayhome.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.applewatch.homeaway.1",
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401924876.png?templateId=espn.applewatch.homeaway.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.16x9.1",
+      "ratio": "16x9",
+      "height": 173,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401924876.png?templateId=espn.all.awayhome.16x9.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.16x9.1",
+      "ratio": "16x9",
+      "height": 173,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401924876.png?templateId=espn.all.homeaway.16x9.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.1x1.1",
+      "ratio": "1x1",
+      "height": 308,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401924876.png?templateId=espn.all.awayhome.1x1.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.1x1.1",
+      "ratio": "1x1",
+      "height": 308,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401924876.png?templateId=espn.all.homeaway.1x1.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.5x2.1",
+      "ratio": "5x2",
+      "height": 124,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401924876.png?templateId=espn.all.awayhome.5x2.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.5x2.1",
+      "ratio": "5x2",
+      "height": 124,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401924876.png?templateId=espn.all.homeaway.5x2.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.16x9.2",
+      "ratio": "16x9",
+      "height": 353,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401924876.png?templateId=espn.all.awayhome.16x9.2"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.16x9.2",
+      "ratio": "16x9",
+      "height": 353,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401924876.png?templateId=espn.all.homeaway.16x9.2"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.5x2.2",
+      "ratio": "5x2",
+      "height": 251,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401924876.png?templateId=espn.all.awayhome.5x2.2"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.5x2.2",
+      "ratio": "5x2",
+      "height": 251,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401924876.png?templateId=espn.all.homeaway.5x2.2"
+     }
+    ],
+    "categories": [
+     {
+      "id": 9576,
+      "type": "league",
+      "uid": "s:40~l:41",
+      "guid": "11965179-4504-3b99-983e-83ea0e36d5f3",
+      "description": "NCAA Men's Basketball",
+      "sportId": 41,
+      "leagueId": 41,
+      "league": {
+       "id": 41,
+       "description": "NCAA Men's Basketball",
+       "abbreviation": "NCAAM",
+       "links": {
+        "mobile": {
+         "leagues": {
+          "href": "https://www.espn.com/mens-college-basketball/"
+         }
+        },
+        "web": {
+         "leagues": {
+          "href": "https://www.espn.com/mens-college-basketball/"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 3329,
+      "type": "team",
+      "uid": "s:40~l:41~t:2529",
+      "guid": "a981a8a9-051d-63df-d165-414e3a40f5da",
+      "description": "Sacred Heart Pioneers",
+      "sportId": 41,
+      "teamId": 2529,
+      "team": {
+       "id": 2529,
+       "description": "Sacred Heart Pioneers",
+       "abbreviation": "SHU",
+       "shortDisplayName": "Sacred Heart",
+       "links": {
+        "mobile": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/2529/sacred-heart-pioneers"
+         }
+        },
+        "web": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/2529/sacred-heart-pioneers"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 2529,
+      "type": "team",
+      "guid": "5008ea76-e7e7-34af-b64e-bd4e4aaeeabb",
+      "description": "Sacred Heart University",
+      "sportId": 3170,
+      "teamId": 2529,
+      "team": {
+       "id": 2529,
+       "description": "Sacred Heart University",
+       "abbreviation": "Sacred Heart",
+       "shortDisplayName": "Sacred Heart"
+      }
+     },
+     {
+      "id": 3323,
+      "type": "team",
+      "uid": "s:40~l:41~t:2115",
+      "guid": "be6f01da-dd8d-4d41-c706-c53b40b45c42",
+      "description": "Central Connecticut Blue Devils",
+      "sportId": 41,
+      "teamId": 2115,
+      "team": {
+       "id": 2115,
+       "description": "Central Connecticut Blue Devils",
+       "abbreviation": "CCSU",
+       "shortDisplayName": "C Connecticut",
+       "links": {
+        "mobile": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/2115/central-connecticut-blue-devils"
+         }
+        },
+        "web": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/2115/central-connecticut-blue-devils"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 2115,
+      "type": "team",
+      "guid": "cb48fb25-d275-3425-9579-c6350d98dd36",
+      "description": "Central Connecticut State University",
+      "sportId": 3170,
+      "teamId": 2115,
+      "team": {
+       "id": 2115,
+       "description": "Central Connecticut State University",
+       "abbreviation": "Central Connecticut",
+       "shortDisplayName": "Central Connecticut"
+      }
+     },
+     {
+      "type": "event",
+      "uid": "s:40~l:41~e:401924876",
+      "guid": "15fced00-57f2-392c-bca2-8655914b4be5",
+      "description": "Central Connecticut Blue Devils @ Sacred Heart Pioneers",
+      "eventId": 401924876,
+      "event": {
+       "id": 401924876,
+       "sport": "basketball",
+       "league": "mens-college-basketball",
+       "description": "Central Connecticut Blue Devils @ Sacred Heart Pioneers"
+      }
+     }
+    ],
+    "links": {
+     "api": {
+      "self": {
+       "href": "https://content.core.api.espn.com/v1/sports/news/50451653"
+      }
+     },
+     "app": {
+      "sportscenter": {
+       "href": "sportscenter://x-callback-url/showStory?uid=50451653"
+      }
+     },
+     "mobile": {
+      "href": "http://m.espn.go.com/ncb/story?storyId=50451653"
+     },
+     "web": {
+      "href": "http://www.espn.com/ncb/preview?gameId=401924876"
+     }
+    },
+    "premium": false
+   },
+   {
+    "id": 50451652,
+    "nowId": "1-50451652",
+    "contentKey": "50451652-1-22-1",
+    "dataSourceIdentifier": "495cc37e17679",
+    "type": "Preview",
+    "headline": "Loyola (MD) plays Towson following Ricketts' 28-point outing",
+    "description": "Loyola (MD) Greyhounds (1-2) at Towson Tigers (1-2)",
+    "lastModified": "2026-11-11T09:45:57Z",
+    "published": "2026-11-11T09:45:57Z",
+    "images": [
+     {
+      "type": "stitcher",
+      "name": "espn.applewatch.awayhome.1",
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920566.png?templateId=espn.applewatch.awayhome.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.applewatch.homeaway.1",
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920566.png?templateId=espn.applewatch.homeaway.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.16x9.1",
+      "ratio": "16x9",
+      "height": 173,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920566.png?templateId=espn.all.awayhome.16x9.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.16x9.1",
+      "ratio": "16x9",
+      "height": 173,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920566.png?templateId=espn.all.homeaway.16x9.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.1x1.1",
+      "ratio": "1x1",
+      "height": 308,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920566.png?templateId=espn.all.awayhome.1x1.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.1x1.1",
+      "ratio": "1x1",
+      "height": 308,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920566.png?templateId=espn.all.homeaway.1x1.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.5x2.1",
+      "ratio": "5x2",
+      "height": 124,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920566.png?templateId=espn.all.awayhome.5x2.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.5x2.1",
+      "ratio": "5x2",
+      "height": 124,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920566.png?templateId=espn.all.homeaway.5x2.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.16x9.2",
+      "ratio": "16x9",
+      "height": 353,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920566.png?templateId=espn.all.awayhome.16x9.2"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.16x9.2",
+      "ratio": "16x9",
+      "height": 353,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920566.png?templateId=espn.all.homeaway.16x9.2"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.5x2.2",
+      "ratio": "5x2",
+      "height": 251,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920566.png?templateId=espn.all.awayhome.5x2.2"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.5x2.2",
+      "ratio": "5x2",
+      "height": 251,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920566.png?templateId=espn.all.homeaway.5x2.2"
+     }
+    ],
+    "categories": [
+     {
+      "id": 9576,
+      "type": "league",
+      "uid": "s:40~l:41",
+      "guid": "11965179-4504-3b99-983e-83ea0e36d5f3",
+      "description": "NCAA Men's Basketball",
+      "sportId": 41,
+      "leagueId": 41,
+      "league": {
+       "id": 41,
+       "description": "NCAA Men's Basketball",
+       "abbreviation": "NCAAM",
+       "links": {
+        "mobile": {
+         "leagues": {
+          "href": "https://www.espn.com/mens-college-basketball/"
+         }
+        },
+        "web": {
+         "leagues": {
+          "href": "https://www.espn.com/mens-college-basketball/"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 3238,
+      "type": "team",
+      "uid": "s:40~l:41~t:119",
+      "guid": "8c669884-472b-386b-32f6-ade63db439f2",
+      "description": "Towson Tigers",
+      "sportId": 41,
+      "teamId": 119,
+      "team": {
+       "id": 119,
+       "description": "Towson Tigers",
+       "abbreviation": "TOW",
+       "shortDisplayName": "Towson",
+       "links": {
+        "mobile": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/119/towson-tigers"
+         }
+        },
+        "web": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/119/towson-tigers"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 119,
+      "type": "team",
+      "guid": "c6387367-091d-38b1-9e3a-71eb45adbbcd",
+      "description": "Towson University",
+      "sportId": 3170,
+      "teamId": 119,
+      "team": {
+       "id": 119,
+       "description": "Towson University",
+       "abbreviation": "Towson",
+       "shortDisplayName": "Towson"
+      }
+     },
+     {
+      "id": 23095,
+      "type": "team",
+      "uid": "s:40~l:41~t:2352",
+      "guid": "cd43320d-3a58-381d-59e8-6c88f80f2605",
+      "description": "Loyola Maryland Greyhounds",
+      "sportId": 41,
+      "teamId": 2352,
+      "team": {
+       "id": 2352,
+       "description": "Loyola Maryland Greyhounds",
+       "abbreviation": "L-MD",
+       "shortDisplayName": "Loyola MD",
+       "links": {
+        "mobile": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/2352/loyola-maryland-greyhounds"
+         }
+        },
+        "web": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/2352/loyola-maryland-greyhounds"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 2352,
+      "type": "team",
+      "guid": "445310aa-1b55-350e-b35b-b7d612c8fce9",
+      "description": "Loyola Maryland",
+      "sportId": 3170,
+      "teamId": 2352,
+      "team": {
+       "id": 2352,
+       "description": "Loyola Maryland",
+       "abbreviation": "Loyola Maryland",
+       "shortDisplayName": "Loyola Maryland"
+      }
+     },
+     {
+      "type": "event",
+      "uid": "s:40~l:41~e:401920566",
+      "guid": "343f36d7-872b-3b15-92c9-019bbb8cc1f8",
+      "description": "Loyola Maryland Greyhounds @ Towson Tigers",
+      "eventId": 401920566,
+      "event": {
+       "id": 401920566,
+       "sport": "basketball",
+       "league": "mens-college-basketball",
+       "description": "Loyola Maryland Greyhounds @ Towson Tigers"
+      }
+     }
+    ],
+    "links": {
+     "api": {
+      "self": {
+       "href": "https://content.core.api.espn.com/v1/sports/news/50451652"
+      }
+     },
+     "app": {
+      "sportscenter": {
+       "href": "sportscenter://x-callback-url/showStory?uid=50451652"
+      }
+     },
+     "mobile": {
+      "href": "http://m.espn.go.com/ncb/story?storyId=50451652"
+     },
+     "web": {
+      "href": "http://www.espn.com/ncb/preview?gameId=401920566"
+     }
+    },
+    "premium": false
+   },
+   {
+    "id": 50451651,
+    "nowId": "1-50451651",
+    "contentKey": "50451651-1-22-1",
+    "dataSourceIdentifier": "1dcfe8eb95adc",
+    "type": "Preview",
+    "headline": "Montana State visits No. 23 BYU following Wright's 21-point outing",
+    "description": "Montana State Bobcats (1-1) at BYU Cougars (3-0)",
+    "lastModified": "2026-11-11T09:45:44Z",
+    "published": "2026-11-11T09:45:44Z",
+    "images": [
+     {
+      "type": "stitcher",
+      "name": "espn.applewatch.awayhome.1",
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921741.png?templateId=espn.applewatch.awayhome.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.applewatch.homeaway.1",
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921741.png?templateId=espn.applewatch.homeaway.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.16x9.1",
+      "ratio": "16x9",
+      "height": 173,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921741.png?templateId=espn.all.awayhome.16x9.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.16x9.1",
+      "ratio": "16x9",
+      "height": 173,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921741.png?templateId=espn.all.homeaway.16x9.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.1x1.1",
+      "ratio": "1x1",
+      "height": 308,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921741.png?templateId=espn.all.awayhome.1x1.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.1x1.1",
+      "ratio": "1x1",
+      "height": 308,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921741.png?templateId=espn.all.homeaway.1x1.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.5x2.1",
+      "ratio": "5x2",
+      "height": 124,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921741.png?templateId=espn.all.awayhome.5x2.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.5x2.1",
+      "ratio": "5x2",
+      "height": 124,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921741.png?templateId=espn.all.homeaway.5x2.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.16x9.2",
+      "ratio": "16x9",
+      "height": 353,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921741.png?templateId=espn.all.awayhome.16x9.2"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.16x9.2",
+      "ratio": "16x9",
+      "height": 353,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921741.png?templateId=espn.all.homeaway.16x9.2"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.5x2.2",
+      "ratio": "5x2",
+      "height": 251,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921741.png?templateId=espn.all.awayhome.5x2.2"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.5x2.2",
+      "ratio": "5x2",
+      "height": 251,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921741.png?templateId=espn.all.homeaway.5x2.2"
+     }
+    ],
+    "categories": [
+     {
+      "id": 9576,
+      "type": "league",
+      "uid": "s:40~l:41",
+      "guid": "11965179-4504-3b99-983e-83ea0e36d5f3",
+      "description": "NCAA Men's Basketball",
+      "sportId": 41,
+      "leagueId": 41,
+      "league": {
+       "id": 41,
+       "description": "NCAA Men's Basketball",
+       "abbreviation": "NCAAM",
+       "links": {
+        "mobile": {
+         "leagues": {
+          "href": "https://www.espn.com/mens-college-basketball/"
+         }
+        },
+        "web": {
+         "leagues": {
+          "href": "https://www.espn.com/mens-college-basketball/"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 3444,
+      "type": "team",
+      "uid": "s:40~l:41~t:252",
+      "guid": "7210b206-5e6b-954e-d90b-1558b8a92335",
+      "description": "BYU Cougars",
+      "sportId": 41,
+      "teamId": 252,
+      "team": {
+       "id": 252,
+       "description": "BYU Cougars",
+       "abbreviation": "BYU",
+       "shortDisplayName": "BYU",
+       "links": {
+        "mobile": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/252/byu-cougars"
+         }
+        },
+        "web": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/252/byu-cougars"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 252,
+      "type": "team",
+      "guid": "964df5a0-509d-3a82-8241-98e96986bcf9",
+      "description": "Brigham Young University",
+      "sportId": 3170,
+      "teamId": 252,
+      "team": {
+       "id": 252,
+       "description": "Brigham Young University",
+       "abbreviation": "BYU",
+       "shortDisplayName": "BYU"
+      }
+     },
+     {
+      "id": 3188,
+      "type": "team",
+      "uid": "s:40~l:41~t:147",
+      "guid": "b587fbea-8fc4-2b7a-fffb-e077cf178c04",
+      "description": "Montana State Bobcats",
+      "sportId": 41,
+      "teamId": 147,
+      "team": {
+       "id": 147,
+       "description": "Montana State Bobcats",
+       "abbreviation": "MTST",
+       "shortDisplayName": "Montana St",
+       "links": {
+        "mobile": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/147/montana-state-bobcats"
+         }
+        },
+        "web": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/147/montana-state-bobcats"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 147,
+      "type": "team",
+      "guid": "81848e2f-c11e-3166-8312-96a36397ae77",
+      "description": "Montana State University",
+      "sportId": 3170,
+      "teamId": 147,
+      "team": {
+       "id": 147,
+       "description": "Montana State University",
+       "abbreviation": "Montana State",
+       "shortDisplayName": "Montana State"
+      }
+     },
+     {
+      "type": "event",
+      "uid": "s:40~l:41~e:401921741",
+      "guid": "72c975b0-9ea9-35ca-8634-424e759b686c",
+      "description": "Montana State Bobcats @ BYU Cougars",
+      "eventId": 401921741,
+      "event": {
+       "id": 401921741,
+       "sport": "basketball",
+       "league": "mens-college-basketball",
+       "description": "Montana State Bobcats @ BYU Cougars"
+      }
+     }
+    ],
+    "links": {
+     "api": {
+      "self": {
+       "href": "https://content.core.api.espn.com/v1/sports/news/50451651"
+      }
+     },
+     "app": {
+      "sportscenter": {
+       "href": "sportscenter://x-callback-url/showStory?uid=50451651"
+      }
+     },
+     "mobile": {
+      "href": "http://m.espn.go.com/ncb/story?storyId=50451651"
+     },
+     "web": {
+      "href": "http://www.espn.com/ncb/preview?gameId=401921741"
+     }
+    },
+    "premium": false
+   },
+   {
+    "id": 50451650,
+    "nowId": "1-50451650",
+    "contentKey": "50451650-1-22-1",
+    "dataSourceIdentifier": "651f92e9a01cc",
+    "type": "Preview",
+    "headline": "Bradley Braves and the Coppin State Eagles meet",
+    "description": "Coppin State Eagles (1-2) vs. Bradley Braves (1-2)",
+    "lastModified": "2026-11-11T09:45:41Z",
+    "published": "2026-11-11T09:45:41Z",
+    "images": [
+     {
+      "type": "stitcher",
+      "name": "espn.applewatch.awayhome.1",
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401925631.png?templateId=espn.applewatch.awayhome.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.applewatch.homeaway.1",
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401925631.png?templateId=espn.applewatch.homeaway.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.16x9.1",
+      "ratio": "16x9",
+      "height": 173,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401925631.png?templateId=espn.all.awayhome.16x9.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.16x9.1",
+      "ratio": "16x9",
+      "height": 173,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401925631.png?templateId=espn.all.homeaway.16x9.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.1x1.1",
+      "ratio": "1x1",
+      "height": 308,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401925631.png?templateId=espn.all.awayhome.1x1.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.1x1.1",
+      "ratio": "1x1",
+      "height": 308,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401925631.png?templateId=espn.all.homeaway.1x1.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.5x2.1",
+      "ratio": "5x2",
+      "height": 124,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401925631.png?templateId=espn.all.awayhome.5x2.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.5x2.1",
+      "ratio": "5x2",
+      "height": 124,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401925631.png?templateId=espn.all.homeaway.5x2.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.16x9.2",
+      "ratio": "16x9",
+      "height": 353,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401925631.png?templateId=espn.all.awayhome.16x9.2"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.16x9.2",
+      "ratio": "16x9",
+      "height": 353,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401925631.png?templateId=espn.all.homeaway.16x9.2"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.5x2.2",
+      "ratio": "5x2",
+      "height": 251,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401925631.png?templateId=espn.all.awayhome.5x2.2"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.5x2.2",
+      "ratio": "5x2",
+      "height": 251,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401925631.png?templateId=espn.all.homeaway.5x2.2"
+     }
+    ],
+    "categories": [
+     {
+      "id": 9576,
+      "type": "league",
+      "uid": "s:40~l:41",
+      "guid": "11965179-4504-3b99-983e-83ea0e36d5f3",
+      "description": "NCAA Men's Basketball",
+      "sportId": 41,
+      "leagueId": 41,
+      "league": {
+       "id": 41,
+       "description": "NCAA Men's Basketball",
+       "abbreviation": "NCAAM",
+       "links": {
+        "mobile": {
+         "leagues": {
+          "href": "https://www.espn.com/mens-college-basketball/"
+         }
+        },
+        "web": {
+         "leagues": {
+          "href": "https://www.espn.com/mens-college-basketball/"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 3303,
+      "type": "team",
+      "uid": "s:40~l:41~t:2154",
+      "guid": "858f3199-966f-dcf0-b340-11faede3301d",
+      "description": "Coppin State Eagles",
+      "sportId": 41,
+      "teamId": 2154,
+      "team": {
+       "id": 2154,
+       "description": "Coppin State Eagles",
+       "abbreviation": "COPP",
+       "shortDisplayName": "Coppin St",
+       "links": {
+        "mobile": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/2154/coppin-state-eagles"
+         }
+        },
+        "web": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/2154/coppin-state-eagles"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 2154,
+      "type": "team",
+      "guid": "702313a3-ddb0-3dd5-a706-db18f5be2c9e",
+      "description": "Coppin State College",
+      "sportId": 3170,
+      "teamId": 2154,
+      "team": {
+       "id": 2154,
+       "description": "Coppin State College",
+       "abbreviation": "Coppin State",
+       "shortDisplayName": "Coppin State"
+      }
+     },
+     {
+      "id": 3311,
+      "type": "team",
+      "uid": "s:40~l:41~t:71",
+      "guid": "37ab89ca-ee32-d4c3-ce1f-7e10d571783c",
+      "description": "Bradley Braves",
+      "sportId": 41,
+      "teamId": 71,
+      "team": {
+       "id": 71,
+       "description": "Bradley Braves",
+       "abbreviation": "BRAD",
+       "shortDisplayName": "Bradley",
+       "links": {
+        "mobile": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/71/bradley-braves"
+         }
+        },
+        "web": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/71/bradley-braves"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 71,
+      "type": "team",
+      "guid": "5212590f-6f67-3217-a418-978a0bd1528b",
+      "description": "Bradley University",
+      "sportId": 3170,
+      "teamId": 71,
+      "team": {
+       "id": 71,
+       "description": "Bradley University",
+       "abbreviation": "Bradley",
+       "shortDisplayName": "Bradley"
+      }
+     },
+     {
+      "type": "event",
+      "uid": "s:40~l:41~e:401925631",
+      "guid": "9fa850af-113f-3c48-a685-c687575c55d0",
+      "description": "Bradley Braves @ Coppin State Eagles",
+      "eventId": 401925631,
+      "event": {
+       "id": 401925631,
+       "sport": "basketball",
+       "league": "mens-college-basketball",
+       "description": "Bradley Braves @ Coppin State Eagles"
+      }
+     }
+    ],
+    "links": {
+     "api": {
+      "self": {
+       "href": "https://content.core.api.espn.com/v1/sports/news/50451650"
+      }
+     },
+     "app": {
+      "sportscenter": {
+       "href": "sportscenter://x-callback-url/showStory?uid=50451650"
+      }
+     },
+     "mobile": {
+      "href": "http://m.espn.go.com/ncb/story?storyId=50451650"
+     },
+     "web": {
+      "href": "http://www.espn.com/ncb/preview?gameId=401925631"
+     }
+    },
+    "premium": false
+   },
+   {
+    "id": 50451649,
+    "nowId": "1-50451649",
+    "contentKey": "50451649-1-22-1",
+    "dataSourceIdentifier": "67b4e9d0cf478",
+    "type": "Preview",
+    "headline": "Perkins leads Mercer against West Virginia after 23-point game",
+    "description": "Mercer Bears (2-2) at West Virginia Mountaineers (2-0)",
+    "lastModified": "2026-11-11T09:45:38Z",
+    "published": "2026-11-11T09:45:38Z",
+    "images": [
+     {
+      "type": "stitcher",
+      "name": "espn.applewatch.awayhome.1",
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921768.png?templateId=espn.applewatch.awayhome.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.applewatch.homeaway.1",
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921768.png?templateId=espn.applewatch.homeaway.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.16x9.1",
+      "ratio": "16x9",
+      "height": 173,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921768.png?templateId=espn.all.awayhome.16x9.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.16x9.1",
+      "ratio": "16x9",
+      "height": 173,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921768.png?templateId=espn.all.homeaway.16x9.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.1x1.1",
+      "ratio": "1x1",
+      "height": 308,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921768.png?templateId=espn.all.awayhome.1x1.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.1x1.1",
+      "ratio": "1x1",
+      "height": 308,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921768.png?templateId=espn.all.homeaway.1x1.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.5x2.1",
+      "ratio": "5x2",
+      "height": 124,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921768.png?templateId=espn.all.awayhome.5x2.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.5x2.1",
+      "ratio": "5x2",
+      "height": 124,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921768.png?templateId=espn.all.homeaway.5x2.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.16x9.2",
+      "ratio": "16x9",
+      "height": 353,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921768.png?templateId=espn.all.awayhome.16x9.2"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.16x9.2",
+      "ratio": "16x9",
+      "height": 353,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921768.png?templateId=espn.all.homeaway.16x9.2"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.5x2.2",
+      "ratio": "5x2",
+      "height": 251,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921768.png?templateId=espn.all.awayhome.5x2.2"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.5x2.2",
+      "ratio": "5x2",
+      "height": 251,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401921768.png?templateId=espn.all.homeaway.5x2.2"
+     }
+    ],
+    "categories": [
+     {
+      "id": 9576,
+      "type": "league",
+      "uid": "s:40~l:41",
+      "guid": "11965179-4504-3b99-983e-83ea0e36d5f3",
+      "description": "NCAA Men's Basketball",
+      "sportId": 41,
+      "leagueId": 41,
+      "league": {
+       "id": 41,
+       "description": "NCAA Men's Basketball",
+       "abbreviation": "NCAAM",
+       "links": {
+        "mobile": {
+         "leagues": {
+          "href": "https://www.espn.com/mens-college-basketball/"
+         }
+        },
+        "web": {
+         "leagues": {
+          "href": "https://www.espn.com/mens-college-basketball/"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 3185,
+      "type": "team",
+      "uid": "s:40~l:41~t:277",
+      "guid": "252a0df1-ef81-7f35-588b-0c2acc7ebc5c",
+      "description": "West Virginia Mountaineers",
+      "sportId": 41,
+      "teamId": 277,
+      "team": {
+       "id": 277,
+       "description": "West Virginia Mountaineers",
+       "abbreviation": "WVU",
+       "shortDisplayName": "West Virginia",
+       "links": {
+        "mobile": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/277/west-virginia-mountaineers"
+         }
+        },
+        "web": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/277/west-virginia-mountaineers"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 277,
+      "type": "team",
+      "guid": "43bd91d4-e724-310e-a22b-9c4ab331e7b5",
+      "description": "West Virginia University",
+      "sportId": 3170,
+      "teamId": 277,
+      "team": {
+       "id": 277,
+       "description": "West Virginia University",
+       "abbreviation": "West Virginia",
+       "shortDisplayName": "West Virginia"
+      }
+     },
+     {
+      "id": 3467,
+      "type": "team",
+      "uid": "s:40~l:41~t:2382",
+      "guid": "c3d81bed-5899-ba35-c76d-ce1cb07857b1",
+      "description": "Mercer Bears",
+      "sportId": 41,
+      "teamId": 2382,
+      "team": {
+       "id": 2382,
+       "description": "Mercer Bears",
+       "abbreviation": "MER",
+       "shortDisplayName": "Mercer",
+       "links": {
+        "mobile": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/2382/mercer-bears"
+         }
+        },
+        "web": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/2382/mercer-bears"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 2382,
+      "type": "team",
+      "guid": "05baad08-873a-3ae6-93d4-ed37e72c1a6a",
+      "description": "Mercer University",
+      "sportId": 3170,
+      "teamId": 2382,
+      "team": {
+       "id": 2382,
+       "description": "Mercer University",
+       "abbreviation": "Mercer",
+       "shortDisplayName": "Mercer"
+      }
+     },
+     {
+      "type": "event",
+      "uid": "s:40~l:41~e:401921768",
+      "guid": "9766db89-984b-3dda-81ed-b8d67537f3e6",
+      "description": "Mercer Bears @ West Virginia Mountaineers",
+      "eventId": 401921768,
+      "event": {
+       "id": 401921768,
+       "sport": "basketball",
+       "league": "mens-college-basketball",
+       "description": "Mercer Bears @ West Virginia Mountaineers"
+      }
+     }
+    ],
+    "links": {
+     "api": {
+      "self": {
+       "href": "https://content.core.api.espn.com/v1/sports/news/50451649"
+      }
+     },
+     "app": {
+      "sportscenter": {
+       "href": "sportscenter://x-callback-url/showStory?uid=50451649"
+      }
+     },
+     "mobile": {
+      "href": "http://m.espn.go.com/ncb/story?storyId=50451649"
+     },
+     "web": {
+      "href": "http://www.espn.com/ncb/preview?gameId=401921768"
+     }
+    },
+    "premium": false
+   },
+   {
+    "id": 50451648,
+    "nowId": "1-50451648",
+    "contentKey": "50451648-1-22-1",
+    "dataSourceIdentifier": "83f857fa21c4a",
+    "type": "Preview",
+    "headline": "Maryland-Eastern Shore takes on Rhode Island after Griffin's 23-point game",
+    "description": "Maryland-Eastern Shore Hawks (1-3) at Rhode Island Rams (3-0)",
+    "lastModified": "2026-11-11T09:45:03Z",
+    "published": "2026-11-11T09:45:03Z",
+    "images": [
+     {
+      "type": "stitcher",
+      "name": "espn.applewatch.awayhome.1",
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920064.png?templateId=espn.applewatch.awayhome.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.applewatch.homeaway.1",
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920064.png?templateId=espn.applewatch.homeaway.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.16x9.1",
+      "ratio": "16x9",
+      "height": 173,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920064.png?templateId=espn.all.awayhome.16x9.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.16x9.1",
+      "ratio": "16x9",
+      "height": 173,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920064.png?templateId=espn.all.homeaway.16x9.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.1x1.1",
+      "ratio": "1x1",
+      "height": 308,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920064.png?templateId=espn.all.awayhome.1x1.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.1x1.1",
+      "ratio": "1x1",
+      "height": 308,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920064.png?templateId=espn.all.homeaway.1x1.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.5x2.1",
+      "ratio": "5x2",
+      "height": 124,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920064.png?templateId=espn.all.awayhome.5x2.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.5x2.1",
+      "ratio": "5x2",
+      "height": 124,
+      "width": 308,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920064.png?templateId=espn.all.homeaway.5x2.1"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.16x9.2",
+      "ratio": "16x9",
+      "height": 353,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920064.png?templateId=espn.all.awayhome.16x9.2"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.16x9.2",
+      "ratio": "16x9",
+      "height": 353,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920064.png?templateId=espn.all.homeaway.16x9.2"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.awayhome.5x2.2",
+      "ratio": "5x2",
+      "height": 251,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920064.png?templateId=espn.all.awayhome.5x2.2"
+     },
+     {
+      "type": "stitcher",
+      "name": "espn.all.homeaway.5x2.2",
+      "ratio": "5x2",
+      "height": 251,
+      "width": 628,
+      "url": "https://s.espncdn.com/stitcher/sports/basketball/mens-college-basketball/events/401920064.png?templateId=espn.all.homeaway.5x2.2"
+     }
+    ],
+    "categories": [
+     {
+      "id": 9576,
+      "type": "league",
+      "uid": "s:40~l:41",
+      "guid": "11965179-4504-3b99-983e-83ea0e36d5f3",
+      "description": "NCAA Men's Basketball",
+      "sportId": 41,
+      "leagueId": 41,
+      "league": {
+       "id": 41,
+       "description": "NCAA Men's Basketball",
+       "abbreviation": "NCAAM",
+       "links": {
+        "mobile": {
+         "leagues": {
+          "href": "https://www.espn.com/mens-college-basketball/"
+         }
+        },
+        "web": {
+         "leagues": {
+          "href": "https://www.espn.com/mens-college-basketball/"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 3164,
+      "type": "team",
+      "uid": "s:40~l:41~t:227",
+      "guid": "36dbd54f-2374-a8ab-ddea-ecd94bbdae9e",
+      "description": "Rhode Island Rams",
+      "sportId": 41,
+      "teamId": 227,
+      "team": {
+       "id": 227,
+       "description": "Rhode Island Rams",
+       "abbreviation": "URI",
+       "shortDisplayName": "Rhode Island",
+       "links": {
+        "mobile": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/227/rhode-island-rams"
+         }
+        },
+        "web": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/227/rhode-island-rams"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 227,
+      "type": "team",
+      "guid": "66d30e04-aca8-3361-914e-8001983ab25f",
+      "description": "University of Rhode Island",
+      "sportId": 3170,
+      "teamId": 227,
+      "team": {
+       "id": 227,
+       "description": "University of Rhode Island",
+       "abbreviation": "Rhode Island",
+       "shortDisplayName": "Rhode Island"
+      }
+     },
+     {
+      "id": 23097,
+      "type": "team",
+      "uid": "s:40~l:41~t:2379",
+      "guid": "ae96e6d1-a951-c450-5a0c-f63add246096",
+      "description": "Maryland Eastern Shore Hawks",
+      "sportId": 41,
+      "teamId": 2379,
+      "team": {
+       "id": 2379,
+       "description": "Maryland Eastern Shore Hawks",
+       "abbreviation": "UMES",
+       "shortDisplayName": "MD Eastern",
+       "links": {
+        "mobile": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/2379/maryland-eastern-shore-hawks"
+         }
+        },
+        "web": {
+         "teams": {
+          "href": "https://www.espn.com/mens-college-basketball/team/_/id/2379/maryland-eastern-shore-hawks"
+         }
+        }
+       }
+      }
+     },
+     {
+      "id": 2379,
+      "type": "team",
+      "guid": "a92e32ea-8022-3361-a87c-b44289bc0346",
+      "description": "University of Maryland-Eastern Shore",
+      "sportId": 3170,
+      "teamId": 2379,
+      "team": {
+       "id": 2379,
+       "description": "University of Maryland-Eastern Shore",
+       "abbreviation": "Maryland Eastern Shore",
+       "shortDisplayName": "Maryland Eastern Shore"
+      }
+     },
+     {
+      "type": "event",
+      "uid": "s:40~l:41~e:401920064",
+      "guid": "9ac4f627-02e3-3a7d-aab4-94dda4123df8",
+      "description": "Maryland Eastern Shore Hawks @ Rhode Island Rams",
+      "eventId": 401920064,
+      "event": {
+       "id": 401920064,
+       "sport": "basketball",
+       "league": "mens-college-basketball",
+       "description": "Maryland Eastern Shore Hawks @ Rhode Island Rams"
+      }
+     }
+    ],
+    "links": {
+     "api": {
+      "self": {
+       "href": "https://content.core.api.espn.com/v1/sports/news/50451648"
+      }
+     },
+     "app": {
+      "sportscenter": {
+       "href": "sportscenter://x-callback-url/showStory?uid=50451648"
+      }
+     },
+     "mobile": {
+      "href": "http://m.espn.go.com/ncb/story?storyId=50451648"
+     },
+     "web": {
+      "href": "http://www.espn.com/ncb/preview?gameId=401920064"
+     }
+    },
+    "premium": false
+   }
+  ]
+ },
+ "header": {
+  "id": "401919759",
+  "uid": "s:40~l:41~e:401919759",
+  "season": {
+   "year": 2027,
+   "current": true,
+   "type": 2
+  },
+  "timeValid": true,
+  "competitions": [
+   {
+    "id": "401919759",
+    "uid": "s:40~l:41~e:401919759~c:401919759",
+    "date": "2026-11-11T16:30Z",
+    "neutralSite": false,
+    "conferenceCompetition": false,
+    "boxscoreAvailable": false,
+    "commentaryAvailable": false,
+    "liveAvailable": false,
+    "onWatchESPN": true,
+    "recent": false,
+    "wallclockAvailable": false,
+    "boxscoreSource": "none",
+    "playByPlaySource": "none",
+    "competitors": [
+     {
+      "id": "2837",
+      "uid": "s:40~l:41~t:2837",
+      "order": 0,
+      "homeAway": "home",
+      "team": {
+       "id": "2837",
+       "guid": "92f9f065-3388-3e7e-af0a-df832801ab8c",
+       "uid": "s:40~l:41~t:2837",
+       "location": "East Texas A&M",
+       "name": "Lions",
+       "nickname": "East Texas A&M",
+       "abbreviation": "ETAM",
+       "displayName": "East Texas A&M Lions",
+       "color": "000000",
+       "logos": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2837.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2026-09-29T14:44Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2837.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2026-09-29T14:44Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/92f9f065-3388-3e7e-af0a-df832801ab8c/logos/primary_logo_on_white_color.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "primary_logo_on_white_color"
+         ],
+         "lastUpdated": "2026-07-23T17:24Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/92f9f065-3388-3e7e-af0a-df832801ab8c/logos/primary_logo_on_black_color.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "primary_logo_on_black_color"
+         ],
+         "lastUpdated": "2026-09-29T17:40Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/92f9f065-3388-3e7e-af0a-df832801ab8c/logos/primary_logo_on_primary_color.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+         ],
+         "lastUpdated": "2026-09-29T14:47Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/92f9f065-3388-3e7e-af0a-df832801ab8c/logos/primary_logo_on_secondary_color.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+         ],
+         "lastUpdated": "2026-09-29T14:47Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/92f9f065-3388-3e7e-af0a-df832801ab8c/logos/primary_logo_black.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "primary_logo_black"
+         ],
+         "lastUpdated": "2026-07-23T17:24Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/92f9f065-3388-3e7e-af0a-df832801ab8c/logos/primary_logo_white.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "primary_logo_white"
+         ],
+         "lastUpdated": "2026-07-23T17:24Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/92f9f065-3388-3e7e-af0a-df832801ab8c/logos/secondary_logo_on_white_color.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+         ],
+         "lastUpdated": "2026-07-23T17:24Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/92f9f065-3388-3e7e-af0a-df832801ab8c/logos/secondary_logo_on_black_color.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+         ],
+         "lastUpdated": "2026-07-23T17:24Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/92f9f065-3388-3e7e-af0a-df832801ab8c/logos/secondary_logo_on_primary_color.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+         ],
+         "lastUpdated": "2026-07-23T17:24Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/92f9f065-3388-3e7e-af0a-df832801ab8c/logos/secondary_logo_on_secondary_color.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+         ],
+         "lastUpdated": "2026-07-23T17:24Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/92f9f065-3388-3e7e-af0a-df832801ab8c/logos/secondary_logo_black.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "secondary_logo_black"
+         ],
+         "lastUpdated": "2026-07-23T17:24Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/92f9f065-3388-3e7e-af0a-df832801ab8c/logos/secondary_logo_white.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "secondary_logo_white"
+         ],
+         "lastUpdated": "2026-07-23T17:24Z"
+        }
+       ],
+       "groups": {
+        "id": "25"
+       },
+       "links": [
+        {
+         "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+         ],
+         "href": "https://www.espn.com/mens-college-basketball/team/_/id/2837/east-texas-am-lions",
+         "text": "Clubhouse"
+        }
+       ]
+      },
+      "record": [
+       {
+        "type": "total",
+        "summary": "2-0",
+        "displayValue": "2-0"
+       },
+       {
+        "type": "home",
+        "summary": "0-0",
+        "displayValue": "0-0"
+       },
+       {
+        "type": "vsconf",
+        "summary": "0-0",
+        "displayValue": "0-0"
+       }
+      ],
+      "possession": false
+     },
+     {
+      "id": "161",
+      "uid": "s:40~l:41~t:161",
+      "order": 1,
+      "homeAway": "away",
+      "team": {
+       "id": "161",
+       "guid": "e60b21f8-8c44-e7b9-263b-c9072ff6bb94",
+       "uid": "s:40~l:41~t:161",
+       "location": "Fairleigh Dickinson",
+       "name": "Knights",
+       "nickname": "FDU",
+       "abbreviation": "FDU",
+       "displayName": "Fairleigh Dickinson Knights",
+       "color": "72293c",
+       "alternateColor": "28334a",
+       "logos": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/161.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2023-07-14T19:30Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/161.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2023-07-14T19:30Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/e60b21f8-8c44-e7b9-263b-c9072ff6bb94/logos/primary_logo_on_white_color.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "primary_logo_on_white_color"
+         ],
+         "lastUpdated": "2026-07-23T17:25Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/e60b21f8-8c44-e7b9-263b-c9072ff6bb94/logos/primary_logo_on_black_color.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "primary_logo_on_black_color"
+         ],
+         "lastUpdated": "2026-07-23T17:25Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/e60b21f8-8c44-e7b9-263b-c9072ff6bb94/logos/primary_logo_on_primary_color.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "primary_logo_on_primary_color"
+         ],
+         "lastUpdated": "2026-07-23T17:25Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/e60b21f8-8c44-e7b9-263b-c9072ff6bb94/logos/primary_logo_on_secondary_color.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "primary_logo_on_secondary_color"
+         ],
+         "lastUpdated": "2026-07-23T17:25Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/e60b21f8-8c44-e7b9-263b-c9072ff6bb94/logos/primary_logo_black.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "primary_logo_black"
+         ],
+         "lastUpdated": "2026-07-23T17:25Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/e60b21f8-8c44-e7b9-263b-c9072ff6bb94/logos/primary_logo_white.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "primary_logo_white"
+         ],
+         "lastUpdated": "2026-07-23T17:25Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/e60b21f8-8c44-e7b9-263b-c9072ff6bb94/logos/secondary_logo_on_white_color.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "secondary_logo_on_white_color"
+         ],
+         "lastUpdated": "2026-07-23T17:25Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/e60b21f8-8c44-e7b9-263b-c9072ff6bb94/logos/secondary_logo_on_black_color.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "secondary_logo_on_black_color"
+         ],
+         "lastUpdated": "2026-07-23T17:25Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/e60b21f8-8c44-e7b9-263b-c9072ff6bb94/logos/secondary_logo_on_primary_color.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "secondary_logo_on_primary_color"
+         ],
+         "lastUpdated": "2026-07-23T17:25Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/e60b21f8-8c44-e7b9-263b-c9072ff6bb94/logos/secondary_logo_on_secondary_color.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "secondary_logo_on_secondary_color"
+         ],
+         "lastUpdated": "2026-07-23T17:25Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/e60b21f8-8c44-e7b9-263b-c9072ff6bb94/logos/secondary_logo_black.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "secondary_logo_black"
+         ],
+         "lastUpdated": "2026-07-23T17:25Z"
+        },
+        {
+         "href": "https://a.espncdn.com/guid/e60b21f8-8c44-e7b9-263b-c9072ff6bb94/logos/secondary_logo_white.png",
+         "width": 4096,
+         "height": 4096,
+         "alt": "",
+         "rel": [
+          "full",
+          "secondary_logo_white"
+         ],
+         "lastUpdated": "2026-07-23T17:25Z"
+        }
+       ],
+       "groups": {
+        "id": "19"
+       },
+       "links": [
+        {
+         "rel": [
+          "clubhouse",
+          "desktop",
+          "team"
+         ],
+         "href": "https://www.espn.com/mens-college-basketball/team/_/id/161/fairleigh-dickinson-knights",
+         "text": "Clubhouse"
+        }
+       ]
+      },
+      "record": [
+       {
+        "type": "total",
+        "summary": "1-2",
+        "displayValue": "1-2"
+       },
+       {
+        "type": "road",
+        "summary": "0-2",
+        "displayValue": "0-2"
+       },
+       {
+        "type": "vsconf",
+        "summary": "0-0",
+        "displayValue": "0-0"
+       }
+      ],
+      "possession": false
+     }
+    ],
+    "status": {
+     "type": {
+      "id": "1",
+      "name": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "description": "Scheduled",
+      "detail": "Wed, November 11th at 11:30 AM EST",
+      "shortDetail": "11/11 - 11:30 AM EST"
+     }
+    },
+    "broadcasts": [
+     {
+      "type": {
+       "id": "4",
+       "shortName": "Streaming"
+      },
+      "market": {
+       "id": "1",
+       "type": "National"
+      },
+      "media": {
+       "shortName": "ESPN+"
+      },
+      "lang": "en",
+      "region": "us",
+      "isNational": true
+     }
+    ],
+    "boxscoreMinutes": false
+   }
+  ],
+  "links": [
+   {
+    "rel": [
+     "summary",
+     "desktop",
+     "event"
+    ],
+    "href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401919759/fdu-east-texas-am",
+    "text": "Gamecast",
+    "shortText": "Summary",
+    "isExternal": false,
+    "isPremium": false
+   },
+   {
+    "rel": [
+     "preview",
+     "desktop",
+     "event"
+    ],
+    "href": "https://www.espn.com/mens-college-basketball/preview/_/gameId/401919759",
+    "text": "Preview",
+    "shortText": "Preview",
+    "isExternal": false,
+    "isPremium": false
+   }
+  ],
+  "week": 2,
+  "league": {
+   "id": "41",
+   "uid": "s:40~l:41",
+   "name": "NCAA Men's Basketball",
+   "abbreviation": "NCAAM",
+   "shortName": "NCAAM",
+   "midsizeName": "NCAAM Basketball",
+   "slug": "mens-college-basketball",
+   "isTournament": false,
+   "links": [
+    {
+     "rel": [
+      "index",
+      "desktop",
+      "league"
+     ],
+     "href": "https://www.espn.com/mens-college-basketball/",
+     "text": "Index"
+    },
+    {
+     "rel": [
+      "index",
+      "sportscenter",
+      "app",
+      "league"
+     ],
+     "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41",
+     "text": "Index"
+    },
+    {
+     "rel": [
+      "schedule",
+      "desktop",
+      "league"
+     ],
+     "href": "https://www.espn.com/mens-college-basketball/schedule",
+     "text": "Schedule"
+    },
+    {
+     "rel": [
+      "schedule",
+      "sportscenter",
+      "app",
+      "league"
+     ],
+     "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=scores",
+     "text": "Schedule"
+    },
+    {
+     "rel": [
+      "standings",
+      "desktop",
+      "league"
+     ],
+     "href": "https://www.espn.com/mens-college-basketball/standings",
+     "text": "Standings"
+    },
+    {
+     "rel": [
+      "standings",
+      "sportscenter",
+      "app",
+      "league"
+     ],
+     "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
+     "text": "Standings"
+    },
+    {
+     "rel": [
+      "rankings",
+      "desktop",
+      "league"
+     ],
+     "href": "https://www.espn.com/mens-college-basketball/rankings",
+     "text": "Rankings"
+    },
+    {
+     "rel": [
+      "rankings",
+      "sportscenter",
+      "app",
+      "league"
+     ],
+     "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
+     "text": "Rankings"
+    },
+    {
+     "rel": [
+      "scores",
+      "desktop",
+      "league"
+     ],
+     "href": "https://www.espn.com/mens-college-basketball/scoreboard",
+     "text": "Scores"
+    },
+    {
+     "rel": [
+      "scores",
+      "sportscenter",
+      "app",
+      "league"
+     ],
+     "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=scores",
+     "text": "Scores"
+    },
+    {
+     "rel": [
+      "stats",
+      "desktop",
+      "league"
+     ],
+     "href": "https://www.espn.com/mens-college-basketball/stats",
+     "text": "Stats"
+    },
+    {
+     "rel": [
+      "stats",
+      "sportscenter",
+      "app",
+      "league"
+     ],
+     "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
+     "text": "Stats"
+    },
+    {
+     "rel": [
+      "teams",
+      "desktop",
+      "league"
+     ],
+     "href": "https://www.espn.com/mens-college-basketball/teams",
+     "text": "Teams"
+    },
+    {
+     "rel": [
+      "injuries",
+      "desktop",
+      "league"
+     ],
+     "href": "https://www.espn.com/mens-college-basketball/injuries",
+     "text": "Injuries"
+    },
+    {
+     "rel": [
+      "odds",
+      "desktop",
+      "league"
+     ],
+     "href": "https://www.espn.com/mens-college-basketball/odds",
+     "text": "Odds"
+    },
+    {
+     "rel": [
+      "odds",
+      "sportscenter",
+      "app",
+      "league"
+     ],
+     "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
+     "text": "Odds"
+    },
+    {
+     "rel": [
+      "playoff-bracket",
+      "desktop",
+      "league"
+     ],
+     "href": "https://www.espn.com/mens-college-basketball/bracket",
+     "text": "Bracket"
+    },
+    {
+     "rel": [
+      "playoff-bracket",
+      "sportscenter",
+      "app",
+      "league"
+     ],
+     "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+     "text": "Bracket"
+    },
+    {
+     "rel": [
+      "bpi_overview",
+      "desktop",
+      "league"
+     ],
+     "href": "https://www.espn.com/mens-college-basketball/bpi",
+     "text": "Overview"
+    },
+    {
+     "rel": [
+      "bpi_bpi",
+      "desktop",
+      "league"
+     ],
+     "href": "https://www.espn.com/mens-college-basketball/bpi/_/view/bpi",
+     "text": "BPI"
+    },
+    {
+     "rel": [
+      "bpi_resume",
+      "desktop",
+      "league"
+     ],
+     "href": "https://www.espn.com/mens-college-basketball/bpi/_/view/resume",
+     "text": "Resume"
+    },
+    {
+     "rel": [
+      "bpi_projections",
+      "desktop",
+      "league"
+     ],
+     "href": "https://www.espn.com/mens-college-basketball/bpi/_/view/projections",
+     "text": "Projections"
+    },
+    {
+     "rel": [
+      "bpi_predictions",
+      "desktop",
+      "league"
+     ],
+     "href": "https://www.espn.com/mens-college-basketball/bpi/_/view/predictions",
+     "text": "Daily Predictions"
+    },
+    {
+     "rel": [
+      "bpi_tournament",
+      "desktop",
+      "league"
+     ],
+     "href": "https://www.espn.com/mens-college-basketball/bpi/_/view/tournament",
+     "text": "Tournament"
+    }
+   ],
+   "logos": [
+    {
+     "href": "https://a.espncdn.com/redesign/assets/img/icons/NCAASports_MensBasketball.png",
+     "rel": [
+      "full",
+      "default"
+     ]
+    },
+    {
+     "href": "https://a.espncdn.com/redesign/assets/img/icons/NCAASports_MensBasketball.png",
+     "rel": [
+      "full",
+      "dark"
+     ]
+    }
+   ]
+  }
+ },
+ "article": {
+  "id": 50440890,
+  "nowId": "1-50440890",
+  "contentKey": "50440890-1-22-1",
+  "dataSourceIdentifier": "9c4f81a446111",
+  "publishedkey": "ncb401919759",
+  "type": "Preview",
+  "gameId": "401919759",
+  "headline": "Diakite leads East Texas A&M against Fairleigh Dickinson after 23-point game",
+  "description": "Fairleigh Dickinson Knights (1-2) at East Texas A&M Lions (2-0)",
+  "title": "Diakite leads East Texas A&M against Fairleigh Dickinson after 23-point game",
+  "linkText": "Diakite leads East Texas A&M against Fairleigh Dickinson after 23-point game",
+  "categorized": "2026-11-11T09:43:56Z",
+  "originallyPosted": "2026-11-10T09:47:46Z",
+  "lastModified": "2026-11-11T09:43:56Z",
+  "published": "2026-11-10T09:47:46Z",
+  "root": "ncb",
+  "section": "Men's College Basketball",
+  "source": "Data Skrive",
+  "images": [],
+  "video": [],
+  "categories": [
+   {
+    "id": 9576,
+    "type": "league",
+    "uid": "s:40~l:41",
+    "guid": "11965179-4504-3b99-983e-83ea0e36d5f3",
+    "description": "NCAA Men's Basketball",
+    "sportId": 41,
+    "leagueId": 41,
+    "league": {
+     "id": 41,
+     "description": "NCAA Men's Basketball",
+     "abbreviation": "NCAAM",
+     "links": {
+      "mobile": {
+       "leagues": {
+        "href": "https://www.espn.com/mens-college-basketball/"
+       }
+      },
+      "web": {
+       "leagues": {
+        "href": "https://www.espn.com/mens-college-basketball/"
+       }
+      }
+     }
+    }
+   },
+   {
+    "id": 160327,
+    "type": "team",
+    "uid": "s:40~l:41~t:2837",
+    "guid": "92f9f065-3388-3e7e-af0a-df832801ab8c",
+    "description": "East Texas A&M Lions",
+    "sportId": 41,
+    "teamId": 2837,
+    "team": {
+     "id": 2837,
+     "description": "East Texas A&M Lions",
+     "abbreviation": "ETAM",
+     "shortDisplayName": "East Texas A&M",
+     "links": {
+      "mobile": {
+       "teams": {
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/2837/east-texas-am-lions"
+       }
+      },
+      "web": {
+       "teams": {
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/2837/east-texas-am-lions"
+       }
+      }
+     }
+    }
+   },
+   {
+    "id": 2837,
+    "type": "team",
+    "guid": "5483a280-8ef3-3d7b-9256-e19cf8adf68f",
+    "description": "East Texas A&M University",
+    "sportId": 3170,
+    "teamId": 2837,
+    "team": {
+     "id": 2837,
+     "description": "East Texas A&M University",
+     "abbreviation": "East Texas A&M",
+     "shortDisplayName": "East Texas A&M"
+    }
+   },
+   {
+    "id": 3322,
+    "type": "team",
+    "uid": "s:40~l:41~t:161",
+    "guid": "e60b21f8-8c44-e7b9-263b-c9072ff6bb94",
+    "description": "Fairleigh Dickinson Knights",
+    "sportId": 41,
+    "teamId": 161,
+    "team": {
+     "id": 161,
+     "description": "Fairleigh Dickinson Knights",
+     "abbreviation": "FDU",
+     "shortDisplayName": "FDU",
+     "links": {
+      "mobile": {
+       "teams": {
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/161/fairleigh-dickinson-knights"
+       }
+      },
+      "web": {
+       "teams": {
+        "href": "https://www.espn.com/mens-college-basketball/team/_/id/161/fairleigh-dickinson-knights"
+       }
+      }
+     }
+    }
+   },
+   {
+    "id": 161,
+    "type": "team",
+    "guid": "15bc65cf-76f0-37b2-9b23-f78c73789941",
+    "description": "Fairleigh Dickinson University",
+    "sportId": 3170,
+    "teamId": 161,
+    "team": {
+     "id": 161,
+     "description": "Fairleigh Dickinson University",
+     "abbreviation": "Fairleigh Dickinson",
+     "shortDisplayName": "Fairleigh Dickinson"
+    }
+   },
+   {
+    "type": "event",
+    "uid": "s:40~l:41~e:401919759",
+    "guid": "927f6888-a3b3-36ae-a0b8-59ef0231ee36",
+    "description": "Fairleigh Dickinson Knights @ East Texas A&M Lions",
+    "eventId": 401919759,
+    "event": {
+     "id": 401919759,
+     "sport": "basketball",
+     "league": "mens-college-basketball",
+     "description": "Fairleigh Dickinson Knights @ East Texas A&M Lions"
+    }
+   }
+  ],
+  "keywords": [
+   "NCAA Men's Basketball",
+   "East Texas A&M Lions",
+   "East Texas A&M University",
+   "Fairleigh Dickinson Knights",
+   "Fairleigh Dickinson University",
+   "Fairleigh Dickinson Knights @ East Texas A&M Lions"
+  ],
+  "story": "<a href=\"http://www.espn.com/mens-college-basketball/team/_/id/161/fairleigh-dickinson-knights\">Fairleigh Dickinson Knights</a> (1-2) at East Texas A&M Lions (2-0)\n\n\r\n              Commerce, Texas; Wednesday, 11:30 a.m. EST\n\n\r\n              BOTTOM LINE: East Texas A&M hosts Fairleigh Dickinson after <a href=\"http://www.espn.com/mens-college-basketball/player/_/id/5460720/mohamed-diakite\">Mohamed Diakite</a> scored 23 points in East Texas A&M's 72-71 victory against the <a href=\"http://www.espn.com/mens-college-basketball/team/_/id/242/rice-owls\">Rice Owls</a>.\n\n\r\n              East Texas A&M went 11-21 overall last season while going 6-8 at home. The Lions averaged 70.2 points per game while shooting 43.3% from the field and 32.3% from deep last season.\n\n\r\n              Fairleigh Dickinson finished 11-21 overall a season ago while going 3-15 on the road. The Knights averaged 5.1 steals, 1.5 blocks and 10.9 turnovers per game last season.\n\n\r\n              ------\n\n\r\n              The Associated Press created this story using technology provided by <a href=\"https://www.dataskrive.com/\">Data Skrive</a> and data from <a href=\"https://www.sportradar.com\">Sportradar</a>.",
+  "allowContentReactions": false,
+  "allowSearch": true,
+  "isLiveBlog": false,
+  "links": {
+   "api": {
+    "self": {
+     "href": "https://content.core.api.espn.com/v1/sports/news/50440890"
+    }
+   },
+   "app": {
+    "sportscenter": {
+     "href": "sportscenter://x-callback-url/showStory?uid=50440890"
+    }
+   },
+   "mobile": {
+    "href": "http://m.espn.go.com/ncb/story?storyId=50440890"
+   },
+   "web": {
+    "href": "http://www.espn.com/ncb/preview?gameId=401919759"
+   }
+  },
+  "premium": false
+ },
+ "videos": [],
+ "wallclockAvailable": false,
+ "predictor": {
+  "header": "Matchup Predictor",
+  "homeTeam": {
+   "id": "2837",
+   "gameProjection": "87.5",
+   "teamChanceLoss": "12.5"
+  },
+  "awayTeam": {
+   "id": "161",
+   "gameProjection": "12.5",
+   "teamChanceLoss": "87.5"
+  }
+ },
+ "winprobability": [],
+ "meta": {
+  "group": "25",
+  "gp_topic": "gp-basketball-mens-college-basketball-401919759",
+  "gameSwitcherEnabled": true,
+  "picker_topic": "picker-basketball-mens-college-basketball-25",
+  "gameState": "pre"
+ },
+ "standings": {
+  "fullViewLink": {
+   "text": "Full Standings",
+   "href": "https://www.espn.com/mens-college-basketball/standings"
+  },
+  "header": "2026-27 Standings",
+  "groups": [
+   {
+    "standings": {
+     "entries": [
+      {
+       "team": "Central Connecticut",
+       "link": "https://www.espn.com/mens-college-basketball/team/_/id/2115/central-connecticut-blue-devils",
+       "id": "2115",
+       "uid": "s:40~l:41~t:2115",
+       "stats": [
+        {
+         "id": "0",
+         "name": "overall",
+         "abbreviation": "Season",
+         "displayName": "Team Season Record",
+         "shortDisplayName": "Season",
+         "description": "Overall Record",
+         "type": "total",
+         "summary": "1-2",
+         "displayValue": "1-2"
+        },
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "vsconf_gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "id": "9",
+         "name": "vs. Conf.",
+         "abbreviation": "VS CONF",
+         "displayName": "CONF",
+         "shortDisplayName": "CONF",
+         "description": "Conference Record",
+         "type": "vsconf",
+         "summary": "0-0",
+         "displayValue": "0-0"
+        }
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2115.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2018-06-05T12:08Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2115.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2018-06-05T12:08Z"
+        }
+       ]
+      },
+      {
+       "team": "Chicago State",
+       "link": "https://www.espn.com/mens-college-basketball/team/_/id/2130/chicago-state-cougars",
+       "id": "2130",
+       "uid": "s:40~l:41~t:2130",
+       "stats": [
+        {
+         "id": "0",
+         "name": "overall",
+         "abbreviation": "Season",
+         "displayName": "Team Season Record",
+         "shortDisplayName": "Season",
+         "description": "Overall Record",
+         "type": "total",
+         "summary": "1-2",
+         "displayValue": "1-2"
+        },
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "vsconf_gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "id": "9",
+         "name": "vs. Conf.",
+         "abbreviation": "VS CONF",
+         "displayName": "CONF",
+         "shortDisplayName": "CONF",
+         "description": "Conference Record",
+         "type": "vsconf",
+         "summary": "0-0",
+         "displayValue": "0-0"
+        }
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2130.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2023-01-27T21:14Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2130.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2023-01-27T21:14Z"
+        }
+       ]
+      },
+      {
+       "team": "Fairleigh Dickinson",
+       "link": "https://www.espn.com/mens-college-basketball/team/_/id/161/fairleigh-dickinson-knights",
+       "id": "161",
+       "uid": "s:40~l:41~t:161",
+       "stats": [
+        {
+         "id": "0",
+         "name": "overall",
+         "abbreviation": "Season",
+         "displayName": "Team Season Record",
+         "shortDisplayName": "Season",
+         "description": "Overall Record",
+         "type": "total",
+         "summary": "1-2",
+         "displayValue": "1-2"
+        },
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "vsconf_gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "id": "9",
+         "name": "vs. Conf.",
+         "abbreviation": "VS CONF",
+         "displayName": "CONF",
+         "shortDisplayName": "CONF",
+         "description": "Conference Record",
+         "type": "vsconf",
+         "summary": "0-0",
+         "displayValue": "0-0"
+        }
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/161.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2023-07-14T19:30Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/161.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2023-07-14T19:30Z"
+        }
+       ]
+      },
+      {
+       "team": "Le Moyne",
+       "link": "https://www.espn.com/mens-college-basketball/team/_/id/2330/le-moyne-dolphins",
+       "id": "2330",
+       "uid": "s:40~l:41~t:2330",
+       "stats": [
+        {
+         "id": "0",
+         "name": "overall",
+         "abbreviation": "Season",
+         "displayName": "Team Season Record",
+         "shortDisplayName": "Season",
+         "description": "Overall Record",
+         "type": "total",
+         "summary": "1-2",
+         "displayValue": "1-2"
+        },
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "vsconf_gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "id": "9",
+         "name": "vs. Conf.",
+         "abbreviation": "VS CONF",
+         "displayName": "CONF",
+         "shortDisplayName": "CONF",
+         "description": "Conference Record",
+         "type": "vsconf",
+         "summary": "0-0",
+         "displayValue": "0-0"
+        }
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2330.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2023-08-23T21:03Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2330.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2023-08-23T21:03Z"
+        }
+       ]
+      },
+      {
+       "team": "Mercyhurst",
+       "link": "https://www.espn.com/mens-college-basketball/team/_/id/2385/mercyhurst-lakers",
+       "id": "2385",
+       "uid": "s:40~l:41~t:2385",
+       "stats": [
+        {
+         "id": "0",
+         "name": "overall",
+         "abbreviation": "Season",
+         "displayName": "Team Season Record",
+         "shortDisplayName": "Season",
+         "description": "Overall Record",
+         "type": "total",
+         "summary": "1-2",
+         "displayValue": "1-2"
+        },
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "vsconf_gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "id": "9",
+         "name": "vs. Conf.",
+         "abbreviation": "VS CONF",
+         "displayName": "CONF",
+         "shortDisplayName": "CONF",
+         "description": "Conference Record",
+         "type": "vsconf",
+         "summary": "0-0",
+         "displayValue": "0-0"
+        }
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2385.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2018-06-05T12:08Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2385.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2018-06-05T12:08Z"
+        }
+       ]
+      },
+      {
+       "team": "New Haven",
+       "link": "https://www.espn.com/mens-college-basketball/team/_/id/2441/new-haven-chargers",
+       "id": "2441",
+       "uid": "s:40~l:41~t:2441",
+       "stats": [
+        {
+         "id": "0",
+         "name": "overall",
+         "abbreviation": "Season",
+         "displayName": "Team Season Record",
+         "shortDisplayName": "Season",
+         "description": "Overall Record",
+         "type": "total",
+         "summary": "1-2",
+         "displayValue": "1-2"
+        },
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "vsconf_gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "id": "9",
+         "name": "vs. Conf.",
+         "abbreviation": "VS CONF",
+         "displayName": "CONF",
+         "shortDisplayName": "CONF",
+         "description": "Conference Record",
+         "type": "vsconf",
+         "summary": "0-0",
+         "displayValue": "0-0"
+        }
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2441.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2026-07-01T04:35Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2441.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2026-07-01T04:34Z"
+        }
+       ]
+      },
+      {
+       "team": "Stonehill",
+       "link": "https://www.espn.com/mens-college-basketball/team/_/id/284/stonehill-skyhawks",
+       "id": "284",
+       "uid": "s:40~l:41~t:284",
+       "stats": [
+        {
+         "id": "0",
+         "name": "overall",
+         "abbreviation": "Season",
+         "displayName": "Team Season Record",
+         "shortDisplayName": "Season",
+         "description": "Overall Record",
+         "type": "total",
+         "summary": "1-2",
+         "displayValue": "1-2"
+        },
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "vsconf_gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "id": "9",
+         "name": "vs. Conf.",
+         "abbreviation": "VS CONF",
+         "displayName": "CONF",
+         "shortDisplayName": "CONF",
+         "description": "Conference Record",
+         "type": "vsconf",
+         "summary": "0-0",
+         "displayValue": "0-0"
+        }
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/284.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2023-01-25T21:35Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/284.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2023-01-25T21:35Z"
+        }
+       ]
+      },
+      {
+       "team": "Wagner",
+       "link": "https://www.espn.com/mens-college-basketball/team/_/id/2681/wagner-seahawks",
+       "id": "2681",
+       "uid": "s:40~l:41~t:2681",
+       "stats": [
+        {
+         "id": "0",
+         "name": "overall",
+         "abbreviation": "Season",
+         "displayName": "Team Season Record",
+         "shortDisplayName": "Season",
+         "description": "Overall Record",
+         "type": "total",
+         "summary": "0-3",
+         "displayValue": "0-3"
+        },
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "vsconf_gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "id": "9",
+         "name": "vs. Conf.",
+         "abbreviation": "VS CONF",
+         "displayName": "CONF",
+         "shortDisplayName": "CONF",
+         "description": "Conference Record",
+         "type": "vsconf",
+         "summary": "0-0",
+         "displayValue": "0-0"
+        }
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2681.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2018-06-05T12:08Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2681.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2018-06-05T12:08Z"
+        }
+       ]
+      },
+      {
+       "team": "Long Island University",
+       "link": "https://www.espn.com/mens-college-basketball/team/_/id/112358/long-island-university-sharks",
+       "id": "112358",
+       "uid": "s:40~l:41~t:112358",
+       "stats": [
+        {
+         "id": "0",
+         "name": "overall",
+         "abbreviation": "Season",
+         "displayName": "Team Season Record",
+         "shortDisplayName": "Season",
+         "description": "Overall Record",
+         "type": "total",
+         "summary": "0-4",
+         "displayValue": "0-4"
+        },
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "vsconf_gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "id": "9",
+         "name": "vs. Conf.",
+         "abbreviation": "VS CONF",
+         "displayName": "CONF",
+         "shortDisplayName": "CONF",
+         "description": "Conference Record",
+         "type": "vsconf",
+         "summary": "0-0",
+         "displayValue": "0-0"
+        }
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/112358.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2026-07-01T04:35Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/112358.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2026-07-01T04:34Z"
+        }
+       ]
+      }
+     ]
+    },
+    "header": "2026-27 Northeast Conference Standings",
+    "href": "https://www.espn.com/mens-college-basketball/standings/_/group/19",
+    "conferenceHeader": "NCAA Division I",
+    "divisionHeader": "Northeast Conference",
+    "shortDivisionHeader": "NEC"
+   },
+   {
+    "standings": {
+     "entries": [
+      {
+       "team": "Houston Christian",
+       "link": "https://www.espn.com/mens-college-basketball/team/_/id/2277/houston-christian-huskies",
+       "id": "2277",
+       "uid": "s:40~l:41~t:2277",
+       "stats": [
+        {
+         "id": "0",
+         "name": "overall",
+         "abbreviation": "Season",
+         "displayName": "Team Season Record",
+         "shortDisplayName": "Season",
+         "description": "Overall Record",
+         "type": "total",
+         "summary": "3-0",
+         "displayValue": "3-0"
+        },
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "vsconf_gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "id": "9",
+         "name": "vs. Conf.",
+         "abbreviation": "VS CONF",
+         "displayName": "CONF",
+         "shortDisplayName": "CONF",
+         "description": "Conference Record",
+         "type": "vsconf",
+         "summary": "0-0",
+         "displayValue": "0-0"
+        }
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2277.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2023-11-21T19:01Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2277.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2023-11-21T19:01Z"
+        }
+       ]
+      },
+      {
+       "team": "East Texas A&M",
+       "link": "https://www.espn.com/mens-college-basketball/team/_/id/2837/east-texas-am-lions",
+       "id": "2837",
+       "uid": "s:40~l:41~t:2837",
+       "stats": [
+        {
+         "id": "0",
+         "name": "overall",
+         "abbreviation": "Season",
+         "displayName": "Team Season Record",
+         "shortDisplayName": "Season",
+         "description": "Overall Record",
+         "type": "total",
+         "summary": "2-0",
+         "displayValue": "2-0"
+        },
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "vsconf_gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "id": "9",
+         "name": "vs. Conf.",
+         "abbreviation": "VS CONF",
+         "displayName": "CONF",
+         "shortDisplayName": "CONF",
+         "description": "Conference Record",
+         "type": "vsconf",
+         "summary": "0-0",
+         "displayValue": "0-0"
+        }
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2837.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2026-09-29T14:44Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2837.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2026-09-29T14:44Z"
+        }
+       ]
+      },
+      {
+       "team": "Stephen F. Austin",
+       "link": "https://www.espn.com/mens-college-basketball/team/_/id/2617/stephen-f-austin-lumberjacks",
+       "id": "2617",
+       "uid": "s:40~l:41~t:2617",
+       "stats": [
+        {
+         "id": "0",
+         "name": "overall",
+         "abbreviation": "Season",
+         "displayName": "Team Season Record",
+         "shortDisplayName": "Season",
+         "description": "Overall Record",
+         "type": "total",
+         "summary": "2-0",
+         "displayValue": "2-0"
+        },
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "vsconf_gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "id": "9",
+         "name": "vs. Conf.",
+         "abbreviation": "VS CONF",
+         "displayName": "CONF",
+         "shortDisplayName": "CONF",
+         "description": "Conference Record",
+         "type": "vsconf",
+         "summary": "0-0",
+         "displayValue": "0-0"
+        }
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2617.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2026-07-01T04:35Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2617.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2026-07-01T04:34Z"
+        }
+       ]
+      },
+      {
+       "team": "McNeese",
+       "link": "https://www.espn.com/mens-college-basketball/team/_/id/2377/mcneese-cowboys",
+       "id": "2377",
+       "uid": "s:40~l:41~t:2377",
+       "stats": [
+        {
+         "id": "0",
+         "name": "overall",
+         "abbreviation": "Season",
+         "displayName": "Team Season Record",
+         "shortDisplayName": "Season",
+         "description": "Overall Record",
+         "type": "total",
+         "summary": "2-1",
+         "displayValue": "2-1"
+        },
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "vsconf_gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "id": "9",
+         "name": "vs. Conf.",
+         "abbreviation": "VS CONF",
+         "displayName": "CONF",
+         "shortDisplayName": "CONF",
+         "description": "Conference Record",
+         "type": "vsconf",
+         "summary": "0-0",
+         "displayValue": "0-0"
+        }
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2377.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2023-01-23T22:21Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2377.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2023-01-23T22:21Z"
+        }
+       ]
+      },
+      {
+       "team": "Texas A&M-Corpus Christi",
+       "link": "https://www.espn.com/mens-college-basketball/team/_/id/357/texas-am-corpus-christi-islanders",
+       "id": "357",
+       "uid": "s:40~l:41~t:357",
+       "stats": [
+        {
+         "id": "0",
+         "name": "overall",
+         "abbreviation": "Season",
+         "displayName": "Team Season Record",
+         "shortDisplayName": "Season",
+         "description": "Overall Record",
+         "type": "total",
+         "summary": "2-1",
+         "displayValue": "2-1"
+        },
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "vsconf_gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "id": "9",
+         "name": "vs. Conf.",
+         "abbreviation": "VS CONF",
+         "displayName": "CONF",
+         "shortDisplayName": "CONF",
+         "description": "Conference Record",
+         "type": "vsconf",
+         "summary": "0-0",
+         "displayValue": "0-0"
+        }
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/357.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2023-03-17T13:35Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/357.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2023-03-17T13:36Z"
+        }
+       ]
+      },
+      {
+       "team": "UT Rio Grande Valley",
+       "link": "https://www.espn.com/mens-college-basketball/team/_/id/292/ut-rio-grande-valley-vaqueros",
+       "id": "292",
+       "uid": "s:40~l:41~t:292",
+       "stats": [
+        {
+         "id": "0",
+         "name": "overall",
+         "abbreviation": "Season",
+         "displayName": "Team Season Record",
+         "shortDisplayName": "Season",
+         "description": "Overall Record",
+         "type": "total",
+         "summary": "2-1",
+         "displayValue": "2-1"
+        },
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "vsconf_gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "id": "9",
+         "name": "vs. Conf.",
+         "abbreviation": "VS CONF",
+         "displayName": "CONF",
+         "shortDisplayName": "CONF",
+         "description": "Conference Record",
+         "type": "vsconf",
+         "summary": "0-0",
+         "displayValue": "0-0"
+        }
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/292.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2023-01-23T21:39Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/292.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2023-01-23T21:39Z"
+        }
+       ]
+      },
+      {
+       "team": "LSU New Orleans",
+       "link": "https://www.espn.com/mens-college-basketball/team/_/id/2443/lsu-new-orleans-privateers",
+       "id": "2443",
+       "uid": "s:40~l:41~t:2443",
+       "stats": [
+        {
+         "id": "0",
+         "name": "overall",
+         "abbreviation": "Season",
+         "displayName": "Team Season Record",
+         "shortDisplayName": "Season",
+         "description": "Overall Record",
+         "type": "total",
+         "summary": "1-1",
+         "displayValue": "1-1"
+        },
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "vsconf_gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "id": "9",
+         "name": "vs. Conf.",
+         "abbreviation": "VS CONF",
+         "displayName": "CONF",
+         "shortDisplayName": "CONF",
+         "description": "Conference Record",
+         "type": "vsconf",
+         "summary": "0-0",
+         "displayValue": "0-0"
+        }
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2443.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2026-08-19T20:39Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2443.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2026-08-19T20:39Z"
+        }
+       ]
+      },
+      {
+       "team": "Lamar",
+       "link": "https://www.espn.com/mens-college-basketball/team/_/id/2320/lamar-cardinals",
+       "id": "2320",
+       "uid": "s:40~l:41~t:2320",
+       "stats": [
+        {
+         "id": "0",
+         "name": "overall",
+         "abbreviation": "Season",
+         "displayName": "Team Season Record",
+         "shortDisplayName": "Season",
+         "description": "Overall Record",
+         "type": "total",
+         "summary": "1-1",
+         "displayValue": "1-1"
+        },
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "vsconf_gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "id": "9",
+         "name": "vs. Conf.",
+         "abbreviation": "VS CONF",
+         "displayName": "CONF",
+         "shortDisplayName": "CONF",
+         "description": "Conference Record",
+         "type": "vsconf",
+         "summary": "0-0",
+         "displayValue": "0-0"
+        }
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2320.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2018-06-05T12:08Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2320.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2018-06-05T12:08Z"
+        }
+       ]
+      },
+      {
+       "team": "Nicholls",
+       "link": "https://www.espn.com/mens-college-basketball/team/_/id/2447/nicholls-colonels",
+       "id": "2447",
+       "uid": "s:40~l:41~t:2447",
+       "stats": [
+        {
+         "id": "0",
+         "name": "overall",
+         "abbreviation": "Season",
+         "displayName": "Team Season Record",
+         "shortDisplayName": "Season",
+         "description": "Overall Record",
+         "type": "total",
+         "summary": "1-2",
+         "displayValue": "1-2"
+        },
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "vsconf_gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "id": "9",
+         "name": "vs. Conf.",
+         "abbreviation": "VS CONF",
+         "displayName": "CONF",
+         "shortDisplayName": "CONF",
+         "description": "Conference Record",
+         "type": "vsconf",
+         "summary": "0-0",
+         "displayValue": "0-0"
+        }
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2447.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2018-06-05T12:08Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2447.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2018-06-05T12:08Z"
+        }
+       ]
+      },
+      {
+       "team": "SE Louisiana",
+       "link": "https://www.espn.com/mens-college-basketball/team/_/id/2545/se-louisiana-lions",
+       "id": "2545",
+       "uid": "s:40~l:41~t:2545",
+       "stats": [
+        {
+         "id": "0",
+         "name": "overall",
+         "abbreviation": "Season",
+         "displayName": "Team Season Record",
+         "shortDisplayName": "Season",
+         "description": "Overall Record",
+         "type": "total",
+         "summary": "1-2",
+         "displayValue": "1-2"
+        },
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "vsconf_gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "id": "9",
+         "name": "vs. Conf.",
+         "abbreviation": "VS CONF",
+         "displayName": "CONF",
+         "shortDisplayName": "CONF",
+         "description": "Conference Record",
+         "type": "vsconf",
+         "summary": "0-0",
+         "displayValue": "0-0"
+        }
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2545.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2023-03-17T13:35Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2545.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2023-03-17T13:36Z"
+        }
+       ]
+      },
+      {
+       "team": "Northwestern State",
+       "link": "https://www.espn.com/mens-college-basketball/team/_/id/2466/northwestern-state-demons",
+       "id": "2466",
+       "uid": "s:40~l:41~t:2466",
+       "stats": [
+        {
+         "id": "0",
+         "name": "overall",
+         "abbreviation": "Season",
+         "displayName": "Team Season Record",
+         "shortDisplayName": "Season",
+         "description": "Overall Record",
+         "type": "total",
+         "summary": "1-3",
+         "displayValue": "1-3"
+        },
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "vsconf_gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "id": "9",
+         "name": "vs. Conf.",
+         "abbreviation": "VS CONF",
+         "displayName": "CONF",
+         "shortDisplayName": "CONF",
+         "description": "Conference Record",
+         "type": "vsconf",
+         "summary": "0-0",
+         "displayValue": "0-0"
+        }
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2466.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2018-06-05T12:08Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2466.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2018-06-05T12:08Z"
+        }
+       ]
+      },
+      {
+       "team": "Incarnate Word",
+       "link": "https://www.espn.com/mens-college-basketball/team/_/id/2916/incarnate-word-cardinals",
+       "id": "2916",
+       "uid": "s:40~l:41~t:2916",
+       "stats": [
+        {
+         "id": "0",
+         "name": "overall",
+         "abbreviation": "Season",
+         "displayName": "Team Season Record",
+         "shortDisplayName": "Season",
+         "description": "Overall Record",
+         "type": "total",
+         "summary": "0-3",
+         "displayValue": "0-3"
+        },
+        {
+         "name": "gamesBehind",
+         "displayName": "Games Back",
+         "shortDisplayName": "GB",
+         "description": "Games Back",
+         "abbreviation": "GB",
+         "type": "vsconf_gamesbehind",
+         "value": 0.0,
+         "displayValue": "-"
+        },
+        {
+         "id": "9",
+         "name": "vs. Conf.",
+         "abbreviation": "VS CONF",
+         "displayName": "CONF",
+         "shortDisplayName": "CONF",
+         "description": "Conference Record",
+         "type": "vsconf",
+         "summary": "0-0",
+         "displayValue": "0-0"
+        }
+       ],
+       "logo": [
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2916.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "default"
+         ],
+         "lastUpdated": "2023-01-23T22:21Z"
+        },
+        {
+         "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2916.png",
+         "width": 500,
+         "height": 500,
+         "alt": "",
+         "rel": [
+          "full",
+          "dark"
+         ],
+         "lastUpdated": "2023-01-23T22:21Z"
+        }
+       ]
+      }
+     ]
+    },
+    "header": "2026-27 Southland Conference Standings",
+    "href": "https://www.espn.com/mens-college-basketball/standings/_/group/25",
+    "conferenceHeader": "NCAA Division I",
+    "divisionHeader": "Southland Conference",
+    "shortDivisionHeader": "Southland"
+   }
+  ],
+  "isSameConference": true
+ }
+}
