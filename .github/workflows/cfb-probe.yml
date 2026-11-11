@@ -1,0 +1,29 @@
+name: College football probe (developer)
+
+# Saves raw college football source responses (ESPN, Kalshi) to the "dev-cfb-samples" branch
+# so the college parsers can be built against real data. Does not touch main.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/cfb_probe.py
+      - name: Save samples to the dev-cfb-samples branch
+        run: |
+          cd samples/cfb
+          git init -q -b dev-cfb-samples
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Raw college football source samples $(date -u +%FT%TZ)"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" dev-cfb-samples
