@@ -123,6 +123,22 @@ def load_injuries(teams: list[dict], game_day: date, playing: set[str], at=None,
 # --------------------------------------------------------------------------- #
 # Slate
 # --------------------------------------------------------------------------- #
+B2B_RECORDS: dict = {}
+
+
+def b2b_records(rows: list[dict], before: date) -> dict:
+    """{team_id: "W-L"} this season in the second game of a back-to-back, from games before `before`."""
+    days = {}
+    for r in rows:
+        if r["game_date"] < before.isoformat():
+            days.setdefault(r["team_id"], {})[r["game_date"]] = int(r["pts"]) > int(r["opp_pts"])
+    out = {}
+    for tid, d in days.items():
+        res = [won for gd, won in d.items() if (date.fromisoformat(gd) - timedelta(days=1)).isoformat() in d]
+        out[tid] = f"{sum(res)}-{len(res) - sum(res)}"
+    return out
+
+
 def team_block(side: dict, m: dict, pw: dict, b2b: bool, injuries: list, keys: dict, power_rank,
                injuries_known: bool = True, computed_record: bool = False) -> dict:
     tid = side["id"]
@@ -139,7 +155,7 @@ def team_block(side: dict, m: dict, pw: dict, b2b: bool, injuries: list, keys: d
         "id": tid, "abbr": side["abbr"], "name": side["name"], "display": side["display"],
         "record": (tm.get("record") if computed_record else side.get("record")) or tm.get("record"),
         "l3_record": tm.get("l3_record"), "games_played": tm.get("games", 0),
-        "b2b": b2b,
+        "b2b": b2b, "b2b_record": B2B_RECORDS.get(tid),
         "season": tm.get("season"), "last3": tm.get("last3"),
         "power": {"rank": p.get("rank"), "split": p.get("split", False), "own_net": p.get("own_net"),
                   "bpi": p.get("bpi"), "nba_com": p.get("nba_com")},
@@ -167,6 +183,8 @@ def build(day: date, retro: bool = False) -> dict:
         pw = (store.read_json("power.json") or {}).get("teams", {})
     power_rank = lambda tid: (pw.get(tid) or {}).get("rank")  # noqa: E731
     played_yesterday = {r["team_id"] for r in rows if r["game_date"] == (day - timedelta(days=1)).isoformat()}
+    B2B_RECORDS.clear()
+    B2B_RECORDS.update(b2b_records(rows, day))
     if not retro:
         try:  # also check yesterday's scoreboard in case last night's games aren't saved yet
             for e in espn.parse_events(espn.scoreboard(day - timedelta(days=1))):

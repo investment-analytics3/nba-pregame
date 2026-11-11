@@ -192,7 +192,9 @@ often: always `git pull --rebase origin main` before pushing.
   `context` only; `qualifiers` still lists the favorite's top-10 (season+last 3) metrics. `qualified` stays the
   boolean every consumer reads; `tier`, `route`, `tracked` are new. `LIVE_TIERS` decides what the live tracker,
   L1 live chips and Live page follow (Qualified + Watch list since Nov 9).
-- L1: three sections (Qualified green, Watch list amber, Did not qualify red line). B2B Yes = red, No = green.
+- L1: three sections (Qualified green, Watch list amber, Did not qualify red line). B2B pills by role (owner Nov 11):
+  favorite Yes = red, No = green; underdog Yes = green (tired opponent), No = yellow (board, Results page, email text).
+  L2 shows the favorite's season record in the second game of back-to-backs (`b2b_record`, build_slate `b2b_records`).
   Power rank + L3 record are pills (`prPill`/`formPill`): favorite top 10 / 3-0 green, 11-20 / 2-1 yellow, else red;
   underdog flipped (top 10 / 3-0 red, 11-20 / 2-1 yellow, 21-30 / 1-2 / 0-3 green).
 - Analyst readout (Nov 10): L2 bottom panel for tracked games (`readoutPanel`), from `data/readouts/<date>.json`

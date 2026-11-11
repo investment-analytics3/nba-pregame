@@ -57,8 +57,8 @@
       <div style="font-size:11px;color:#A9B2C6;font-weight:bold;letter-spacing:1px;">{{ g.tip_pt|upper }}{% if g.neutral %} &middot; NEUTRAL{% endif %}</div>
       <div style="font-size:17px;font-weight:bold;color:#FFFFFF;margin-top:3px;">{{ g.away.abbr }} {{ g.away.spread_text }} <span style="color:#7C869E;font-weight:normal;">@</span> {{ g.home.abbr }} {{ g.home.spread_text }}</div>
       <div style="font-size:12px;color:#8B95AB;margin-top:3px;">
-        {{ g.away.abbr }} {{ g.away.record }} (L3 {{ g.away.l3_record }}, PR #{{ g.away.power.rank }}){% if g.away.b2b %} <b style="color:#FF7676;">B2B</b>{% endif %}
-        &middot; {{ g.home.abbr }} {{ g.home.record }} (L3 {{ g.home.l3_record }}, PR #{{ g.home.power.rank }}){% if g.home.b2b %} <b style="color:#FF7676;">B2B</b>{% endif %}
+        {{ g.away.abbr }} {{ g.away.record }} (L3 {{ g.away.l3_record }}, PR #{{ g.away.power.rank }}){% if g.away.b2b %} <b style="color:{{ '#FF7676' if g.favorite == 'away' else '#43DE8F' }};">B2B</b>{% endif %}
+        &middot; {{ g.home.abbr }} {{ g.home.record }} (L3 {{ g.home.l3_record }}, PR #{{ g.home.power.rank }}){% if g.home.b2b %} <b style="color:{{ '#FF7676' if g.favorite == 'home' else '#43DE8F' }};">B2B</b>{% endif %}
       </div>
       <div style="font-size:13px;margin-top:8px;color:{{ '#86EFAC' if sc.qualified else ('#FCD97A' if sc.tier == 'watch' else '#FCA5A5') }};">
         {% if not sc.scored %}No spread posted yet{% elif sc.qualified %}&#10003; Qualified: {{ sc.route or sc.qualifiers|join(', ') }}{% elif sc.tier == 'watch' %}&#9679; {{ sc.fails[0] }}{% else %}&#10007; {{ sc.fails[0] }}{% endif %}

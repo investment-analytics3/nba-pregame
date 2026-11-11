@@ -152,6 +152,7 @@ const FORM = {g:'color:#fff;background:linear-gradient(180deg,#34C77B,#1A8A4C);t
               y:'color:#2A1C00;background:linear-gradient(180deg,#FADB80,#D9A12A)',
               r:'color:#fff;background:linear-gradient(180deg,#D44444,#A12222)'};
 const flip = c => c==='g' ? 'r' : (c==='r' ? 'g' : c);
+const B2B_G = 'color:#fff;background:linear-gradient(180deg,#34C77B,#1A8A4C);text-shadow:0 1px 1px rgba(0,0,0,.25)', B2B_Y = 'color:#2A1C00;background:linear-gradient(180deg,#FADB80,#D9A12A)', B2B_R = 'color:#fff;background:linear-gradient(180deg,#D44444,#A12222)';
 function prPill(rank, isFav){
   if(rank==null) return '#–';
   const c = rank<=10 ? 'g' : (rank<=20 ? 'y' : 'r');
@@ -193,7 +194,9 @@ function card(g, i){
     : (tier==='qualified' ? ['#86EFAC','M3 8.5l3.2 3L13 4.5','Qualified: '+(sc.route||sc.qualifiers.join(' · '))]
     : (tier==='watch' ? ['#FCD97A','M8 3v6M8 12v.5',sc.fails[0]] : ['#FCA5A5','M4 4l8 8M12 4l-8 8',sc.fails[0]]));
   const yellows = (sc.warnings||[]).filter(w=>/questionable/i.test(w));
-  const b2b = [g.away,g.home].map(t=>`<span>${esc(t.abbr)} <span class="yn" style="${t.b2b?'color:#fff;background:linear-gradient(180deg,#D44444,#A12222)':'color:#fff;background:linear-gradient(180deg,#34C77B,#1A8A4C);text-shadow:0 1px 1px rgba(0,0,0,.25)'}">${t.b2b?'Yes':'No'}</span></span>`).join('');
+  // B2B pills (owner Nov 11): favorite Yes = red, No = green; underdog Yes = green (tired opponent), No = yellow
+  const b2bStyle = t => t.is_fav===false ? (t.b2b ? B2B_G : B2B_Y) : (t.b2b ? B2B_R : B2B_G);
+  const b2b = [g.away,g.home].map(t=>`<span>${esc(t.abbr)} <span class="yn" style="${b2bStyle(t)}">${t.b2b?'Yes':'No'}</span></span>`).join('');
   return `<button type="button" class="card card-in" style="animation-delay:${delay}ms" onclick="openGame('${g.id}')" aria-label="${esc(g.away.name)} at ${esc(g.home.name)}, open full breakdown">
     <div class="row between" style="align-items:flex-start"><div style="display:flex;flex-direction:column;gap:5px"><span class="tip">${esc(g.tip_pt)}${g.neutral?' · Neutral':''}</span>
       ${sc.tracked?`<span class="lv" data-live="${g.id}"></span>`:''}
@@ -331,7 +334,7 @@ function detailView(g){
     h += `<div class="cols2"><div class="panel pad"><h3>Metric heat map</h3><p class="note">Value and league rank. Underdog colors are flipped, so green is always good for the bet.</p>${heat(fav,dog)}</div>
       <div class="panel pad"><h3>Head-to-head, last 3</h3><p class="note">Longer bar = stronger rank. ${esc(fav.abbr)} extends left, ${esc(dog.abbr)} right.</p>${butterfly(fav,dog)}</div></div>`;
   }
-  h += `<div class="cols2">${[fav,dog].map(t=>`<div class="panel pad"><div class="row between" style="margin-bottom:10px"><h3 style="margin:0">${esc(t.name)} · last 3 games</h3><span style="font-size:12px;font-weight:700;color:#C7CEDC">L3 ${formPill(t.l3_record, t.is_fav)}${t.b2b?' · B2B tonight':''}</span></div>
+  h += `<div class="cols2">${[fav,dog].map(t=>`<div class="panel pad"><div class="row between" style="margin-bottom:10px"><h3 style="margin:0">${esc(t.name)} · last 3 games</h3><span style="font-size:12px;font-weight:700;color:#C7CEDC">L3 ${formPill(t.l3_record, t.is_fav)}${t.b2b?' · B2B tonight':''}${t.is_fav && t.b2b_record ? ` · <span title="Season record in the second game of a back-to-back">${esc(t.b2b_record)} on back-to-backs</span>`:''}</span></div>
     <div class="tbl-row" style="border-top:0;font-size:11px;color:var(--dim);padding:0 0 6px"><span>Date</span><span>Opponent (power rank)</span><span>Score</span></div>
     ${(t.last3_games||[]).map((x,j)=>{const w=x.pts>x.opp_pts; const dt=new Date(x.date+'T12:00:00Z'); return `<div class="tbl-row fade" style="animation-delay:${250+j*90}ms"><span style="color:#9AA4BA">${dt.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric',timeZone:'UTC'})}</span>
       <span><span style="color:#7C869E">${x.site==='home'?'vs':(x.site==='away'?'@':'vs')}</span> ${esc(x.opp)} <span style="color:#8B95AB">(#${x.opp_power_rank??'–'})</span></span>
