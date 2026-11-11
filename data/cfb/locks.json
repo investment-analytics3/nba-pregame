@@ -1,1 +1,462 @@
-{}
+{
+ "401866462": {
+  "at": "2026-11-11T15:30:39-08:00",
+  "week": 11,
+  "game": {
+   "id": "401866462",
+   "kick_utc": "2026-11-12T00:30:00+00:00",
+   "kick_pt": "Wed 4:30 PM PT",
+   "day_et": "2026-11-11",
+   "state": "pre",
+   "detail": "11/11 - 7:30 PM EST",
+   "neutral": false,
+   "venue": "Kelly/Shorts Stadium",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -17.5,
+   "open_spread": -15.5,
+   "line_source": "DraftKings",
+   "total": 42.5,
+   "fav_ml": -1050.0,
+   "movement": 2.0,
+   "home": {
+    "code": 2117,
+    "abbr": "CMU",
+    "name": "C Michigan",
+    "display": "Central Michigan Chippewas",
+    "season": {
+     "off_epa": 0.0496,
+     "off_sr": 0.426,
+     "def_epa": 0.0251,
+     "def_sr": 0.4749,
+     "games": 9,
+     "ranks": {
+      "off_epa": 80,
+      "off_sr": 99,
+      "def_epa": 61,
+      "def_sr": 126
+     }
+    },
+    "last3": {
+     "off_epa": 0.0921,
+     "off_sr": 0.4444,
+     "def_epa": 0.024,
+     "def_sr": 0.4667,
+     "games": 3,
+     "ranks": {
+      "off_epa": 44,
+      "off_sr": 56,
+      "def_epa": 59,
+      "def_sr": 98
+     }
+    },
+    "net": 0.0245,
+    "net_rank": 70,
+    "record": "4-5",
+    "last2_results": [
+     "L",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "W"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Angel Flores",
+     "dropbacks": 104,
+     "epa_db": -0.228,
+     "rank": 133
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 94,
+     "fpi": 113,
+     "own_net": 70
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.929
+   },
+   "away": {
+    "code": 16,
+    "abbr": "SAC",
+    "name": "Sacramento St",
+    "display": "Sacramento State Hornets",
+    "season": {
+     "off_epa": -0.1278,
+     "off_sr": 0.3997,
+     "def_epa": -0.02,
+     "def_sr": 0.3987,
+     "games": 10,
+     "ranks": {
+      "off_epa": 135,
+      "off_sr": 124,
+      "def_epa": 44,
+      "def_sr": 30
+     }
+    },
+    "last3": {
+     "off_epa": -0.1905,
+     "off_sr": 0.3081,
+     "def_epa": -0.1347,
+     "def_sr": 0.3692,
+     "games": 3,
+     "ranks": {
+      "off_epa": 131,
+      "off_sr": 136,
+      "def_epa": 15,
+      "def_sr": 15
+     }
+    },
+    "net": -0.1078,
+    "net_rank": 118,
+    "record": "2-8",
+    "last2_results": [
+     "W",
+     "L"
+    ],
+    "last3_results": [
+     "L",
+     "W",
+     "L"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Jackson Sharman",
+     "dropbacks": 274,
+     "epa_db": -0.114,
+     "rank": 124
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 131,
+     "fpi": 138,
+     "own_net": 118
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.071
+   },
+   "fav": 2117,
+   "dog": 16,
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 16 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 CMU last-3 top 25 in 0 of 4 \u00b7 \u2717 SAC last-3 bottom 25 (114+) in 2 of 4 \u00b7 \u2717 CMU season outside 1-69: Off EPA/play #80, Off success #99, Def success allowed #126 \u00b7 \u2713 SAC season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "SAC: consensus #131, ESPN FPI #138"
+     }
+    ],
+    "fails": [
+     "Score 16 (watch list from 18, qualifies at 28)"
+    ],
+    "hero": {
+     "score": 16,
+     "band": "red",
+     "parts": {
+      "fav_strength": 0,
+      "dog_weakness": 10,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 1
+     },
+     "max": 40
+    },
+    "call": "No track",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for CMU yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV11SACCMU",
+    "fav_prob": 0.895,
+    "bid": 0.89,
+    "ask": 0.9
+   },
+   "locked_at": "2026-11-11T15:30:39-08:00"
+  }
+ },
+ "401866463": {
+  "at": "2026-11-11T15:30:39-08:00",
+  "week": 11,
+  "game": {
+   "id": "401866463",
+   "kick_utc": "2026-11-12T00:30:00+00:00",
+   "kick_pt": "Wed 4:30 PM PT",
+   "day_et": "2026-11-11",
+   "state": "pre",
+   "detail": "11/11 - 7:30 PM EST",
+   "neutral": false,
+   "venue": "Glass Bowl",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -14.0,
+   "open_spread": -14.0,
+   "line_source": "DraftKings",
+   "total": 52.5,
+   "fav_ml": -600.0,
+   "movement": 0.0,
+   "home": {
+    "code": 2649,
+    "abbr": "TOL",
+    "name": "Toledo",
+    "display": "Toledo Rockets",
+    "season": {
+     "off_epa": 0.1211,
+     "off_sr": 0.4554,
+     "def_epa": -0.0554,
+     "def_sr": 0.3697,
+     "games": 9,
+     "ranks": {
+      "off_epa": 42,
+      "off_sr": 49,
+      "def_epa": 33,
+      "def_sr": 10
+     }
+    },
+    "last3": {
+     "off_epa": 0.0558,
+     "off_sr": 0.4434,
+     "def_epa": -0.1293,
+     "def_sr": 0.3503,
+     "games": 3,
+     "ranks": {
+      "off_epa": 66,
+      "off_sr": 58,
+      "def_epa": 17,
+      "def_sr": 8
+     }
+    },
+    "net": 0.1765,
+    "net_rank": 20,
+    "record": "7-2",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "W"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "John Alan Richter",
+     "dropbacks": 286,
+     "epa_db": 0.257,
+     "rank": 23
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 53,
+     "fpi": 86,
+     "own_net": 20
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.842
+   },
+   "away": {
+    "code": 113,
+    "abbr": "MASS",
+    "name": "UMass",
+    "display": "Massachusetts Minutemen",
+    "season": {
+     "off_epa": 0.06,
+     "off_sr": 0.4243,
+     "def_epa": -0.0226,
+     "def_sr": 0.4118,
+     "games": 9,
+     "ranks": {
+      "off_epa": 75,
+      "off_sr": 102,
+      "def_epa": 43,
+      "def_sr": 46
+     }
+    },
+    "last3": {
+     "off_epa": 0.0443,
+     "off_sr": 0.4138,
+     "def_epa": 0.0212,
+     "def_sr": 0.4038,
+     "games": 3,
+     "ranks": {
+      "off_epa": 68,
+      "off_sr": 100,
+      "def_epa": 57,
+      "def_sr": 37
+     }
+    },
+    "net": 0.0826,
+    "net_rank": 52,
+    "record": "5-4",
+    "last2_results": [
+     "L",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "W"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "William Watson III",
+     "dropbacks": 171,
+     "epa_db": 0.135,
+     "rank": 53
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 86,
+     "fpi": 123,
+     "own_net": 52
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.158
+   },
+   "fav": 2649,
+   "dog": 113,
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 20 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 TOL last-3 top 25 in 2 of 4 \u00b7 \u2717 MASS last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2713 TOL season top half (1-69) in all four \u00b7 \u2713 MASS season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "MASS: consensus #86, ESPN FPI #123"
+     }
+    ],
+    "fails": [
+     "Watch list: score 20 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 20,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 5,
+      "dog_weakness": 8,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "call": "Watch list",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for TOL yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV11MASSTOL",
+    "fav_prob": 0.835,
+    "bid": 0.83,
+    "ask": 0.84
+   },
+   "locked_at": "2026-11-11T15:30:39-08:00",
+   "readout": {
+    "matchup": "MASS @ TOL",
+    "summary": "Toledo (7-2) is the clear favorite at home over UMass (5-4). numberFire gives Toledo a 78.4% win chance. Pick Dawgz takes Toledo -14.5, citing its 7-1 run and UMass's 1-4 slide; Sports Chat Place takes UMass +14.5, expecting a competitive game. Split on the spread.",
+    "pick": "Toledo to win (all sources); split on the spread (1 Toledo -14.5, 1 UMass +14.5)",
+    "predicted_score": "None published (no source gave a final score)",
+    "moneyline": "Toledo -581 / UMass +440 (FanDuel); Toledo -600 / UMass +440 (Pick Dawgz)",
+    "win_probability": "Toledo 78.4% (numberFire, via FanDuel Research)",
+    "injuries": "No injury news for either team in any preview found; no official availability report found",
+    "sources": [
+     {
+      "site": "FanDuel Research (numberFire)",
+      "url": "https://fanduel.com/research/toledo-vs-umass-college-football-odds-picks-best-bets-for-11-11-2026"
+     },
+     {
+      "site": "Pick Dawgz",
+      "url": "https://pickdawgz.com/college-football-picks/massachusetts-vs-toledo-prediction-11-11-2026-todays-college-football-picks/"
+     },
+     {
+      "site": "Sports Chat Place",
+      "url": "https://sportschatplace.com/?p=7563994"
+     }
+    ],
+    "updated": "2026-11-11T05:55-08:00"
+   }
+  }
+ }
+}
