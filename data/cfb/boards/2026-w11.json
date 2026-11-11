@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 11,
- "built_at": "2026-11-11T11:45:53-08:00",
- "built_label": "Wed Nov 11, 11:45 AM PT",
+ "built_at": "2026-11-11T13:00:51-08:00",
+ "built_label": "Wed Nov 11, 1:00 PM PT",
  "games": [
   {
    "id": "401866462",
@@ -231,7 +231,7 @@
    "spread": -14.0,
    "open_spread": -14.0,
    "line_source": "DraftKings",
-   "total": 51.5,
+   "total": 52.5,
    "fav_ml": -600.0,
    "movement": 0.0,
    "home": {
@@ -871,9 +871,9 @@
    "fav_defense_top25": true,
    "kalshi": {
     "event": "KXNCAAFGAME-26NOV13ILLUCLA",
-    "fav_prob": 0.785,
-    "bid": 0.78,
-    "ask": 0.79
+    "fav_prob": 0.775,
+    "bid": 0.77,
+    "ask": 0.78
    }
   },
   {
@@ -1530,12 +1530,12 @@
    "venue": "SHI Stadium",
    "favorite": "away",
    "fav_home": false,
-   "spread": -13.5,
+   "spread": -14.0,
    "open_spread": -12.5,
    "line_source": "DraftKings",
    "total": 52.5,
    "fav_ml": -575.0,
-   "movement": 1.0,
+   "movement": 1.5,
    "home": {
     "code": 164,
     "abbr": "RUTG",
@@ -2592,6 +2592,228 @@
     "fav_prob": 0.865,
     "bid": 0.86,
     "ask": 0.87
+   }
+  },
+  {
+   "id": "401858518",
+   "kick_utc": "2026-11-14T20:30:00+00:00",
+   "kick_pt": "Sat 12:30 PM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 3:30 PM EST",
+   "neutral": false,
+   "venue": "Memorial Stadium (Bloomington, IN)",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -10.0,
+   "open_spread": -10.5,
+   "line_source": "DraftKings",
+   "total": 50.5,
+   "fav_ml": -380.0,
+   "movement": -0.5,
+   "home": {
+    "code": 84,
+    "abbr": "IU",
+    "name": "Indiana",
+    "display": "Indiana Hoosiers",
+    "season": {
+     "off_epa": 0.1875,
+     "off_sr": 0.4594,
+     "def_epa": -0.1159,
+     "def_sr": 0.3574,
+     "games": 9,
+     "ranks": {
+      "off_epa": 18,
+      "off_sr": 45,
+      "def_epa": 8,
+      "def_sr": 3
+     }
+    },
+    "last3": {
+     "off_epa": -0.0475,
+     "off_sr": 0.3874,
+     "def_epa": -0.2043,
+     "def_sr": 0.37,
+     "games": 3,
+     "ranks": {
+      "off_epa": 106,
+      "off_sr": 120,
+      "def_epa": 8,
+      "def_sr": 17
+     }
+    },
+    "net": 0.3034,
+    "net_rank": 4,
+    "record": "8-1",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "W",
+     "W"
+    ],
+    "rest": 14,
+    "qb": {
+     "regular": "Josh Hoover",
+     "dropbacks": 216,
+     "epa_db": 0.254,
+     "rank": 24
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 4,
+     "fpi": 8,
+     "own_net": 4,
+     "ap": 6,
+     "cfp": 9
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.782
+   },
+   "away": {
+    "code": 30,
+    "abbr": "USC",
+    "name": "USC",
+    "display": "USC Trojans",
+    "season": {
+     "off_epa": 0.1761,
+     "off_sr": 0.5182,
+     "def_epa": 0.1629,
+     "def_sr": 0.4614,
+     "games": 9,
+     "ranks": {
+      "off_epa": 22,
+      "off_sr": 6,
+      "def_epa": 125,
+      "def_sr": 117
+     }
+    },
+    "last3": {
+     "off_epa": 0.0787,
+     "off_sr": 0.5,
+     "def_epa": 0.0445,
+     "def_sr": 0.4328,
+     "games": 3,
+     "ranks": {
+      "off_epa": 55,
+      "off_sr": 20,
+      "def_epa": 70,
+      "def_sr": 64
+     }
+    },
+    "net": 0.0132,
+    "net_rank": 78,
+    "record": "7-2",
+    "last2_results": [
+     "L",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "L",
+     "W"
+    ],
+    "rest": 13,
+    "qb": {
+     "regular": "Jayden Maiava",
+     "dropbacks": 310,
+     "epa_db": 0.326,
+     "rank": 11
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 46,
+     "fpi": 16,
+     "own_net": 78,
+     "ap": 15,
+     "cfp": 18
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.218
+   },
+   "fav": 84,
+   "dog": 30,
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 23 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 IU last-3 top 25 in 2 of 4 \u00b7 \u2717 USC last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2713 IU season top half (1-69) in all four \u00b7 \u2717 USC season top 25: Off EPA/play #22, Off success #6"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": false,
+      "detail": "USC ranked: AP Top 25 #15, CFP #18, ESPN FPI #16"
+     }
+    ],
+    "fails": [
+     "USC ranked: AP Top 25 #15, CFP #18, ESPN FPI #16",
+     "Would be on the watch list otherwise (score 23)"
+    ],
+    "hero": {
+     "score": 23,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 8,
+      "dog_weakness": 7,
+      "health": 4,
+      "home": 1,
+      "rest": 1,
+      "form": 2
+     },
+     "max": 40
+    },
+    "call": "No track",
+    "flags": [
+     {
+      "level": "red",
+      "text": "USC ranked: AP Top 25 #15, CFP #18, ESPN FPI #16 (no track)"
+     },
+     {
+      "level": "yellow",
+      "text": "No injury report for IU yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": true,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV14USCIND",
+    "fav_prob": 0.765,
+    "bid": 0.76,
+    "ask": 0.77
    }
   },
   {
@@ -3891,12 +4113,12 @@
    "venue": "Kinnick Stadium",
    "favorite": "home",
    "fav_home": true,
-   "spread": -16.5,
+   "spread": -17.5,
    "open_spread": -16.5,
    "line_source": "DraftKings",
    "total": 47.5,
-   "fav_ml": -950.0,
-   "movement": 0.0,
+   "fav_ml": -900.0,
+   "movement": 1.0,
    "home": {
     "code": 2294,
     "abbr": "IOWA",
@@ -4106,12 +4328,12 @@
    "venue": "Lane Stadium",
    "favorite": "home",
    "fav_home": true,
-   "spread": -15.5,
+   "spread": -14.5,
    "open_spread": -16.5,
    "line_source": "DraftKings",
    "total": 58.5,
    "fav_ml": -700.0,
-   "movement": -1.0,
+   "movement": -2.0,
    "home": {
     "code": 259,
     "abbr": "VT",
@@ -4530,15 +4752,15 @@
  ],
  "data_through": "Week 10",
  "n_fbs": 138,
- "other_fbs_games": 43,
+ "other_fbs_games": 42,
  "summary": {
   "season": 2026,
   "week": 11,
-  "games": 21,
-  "upcoming": 21,
+  "games": 22,
+  "upcoming": 22,
   "qualified": 0,
   "watch": 13,
-  "other_fbs_games": 43,
-  "built_label": "Wed Nov 11, 11:45 AM PT"
+  "other_fbs_games": 42,
+  "built_label": "Wed Nov 11, 1:00 PM PT"
  }
 }
