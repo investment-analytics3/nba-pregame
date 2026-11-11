@@ -79,7 +79,8 @@ NFL rules (spec "NFL Stat Edge v2", decisions Nov 8 2026):
 - Tiers (owner Nov 10, same as NBA; nfl/scoring.py `qualification(fav, dog, score)`): Qualified = hero score 28+ (route A)
   OR last-3 mismatch (route B: last 3 fav top 10 in >= 3 of 4 AND dog ranks 23-32 in >= 3 of 4; season fav top 15 in all
   four AND dog top 10 in none). Watch list = 18-27. No track = the rest. Gates on every tier: injury (fav key starter
-  Out/Doubtful/IR, or no injury info) and power (underdog top 10 in ANY power ranking: consensus, ESPN FPI, NFL.com; the
+  Out/Doubtful, or no injury info; owner Nov 10: injured reserve / PUP / NFI / suspension = `scoring.LONG_TERM`, never
+  blocks or costs health points, listed as `key_long_term`; a regular QB there still triggers the QB reset) and power (underdog top 10 in ANY power ranking: consensus, ESPN FPI, NFL.com; the
   fail note and a red flag name it; no power data = passes). The old six checks are `context` only. `tracked` =
   Qualified + Watch list (Live page, checkpoint log); `alerts` = Qualified only (phone pushes, `nfl_live.push_ok`).
   Call: Qualified -> Edge clears / Track, edge short / Lean (QB cap); Watch list -> "Watch list"; else No track.

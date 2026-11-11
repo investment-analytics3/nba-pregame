@@ -52,24 +52,30 @@ def _team_block(code: str, wm: dict, recs: dict, qbs: dict, keys: dict, inj: lis
          "rest": None if pd.isna(rest) else int(rest), "qb": qbs.get(code), "injuries_known": inj is not None}
     inj = inj or []
     out_names = {metrics.norm_name(i["name"]): i for i in inj if i["status"] in scoring.OUT}
+    lt_names = {metrics.norm_name(i["name"]): i for i in inj if i["status"] in scoring.LONG_TERM}
     q_names = {metrics.norm_name(i["name"]): i for i in inj if i["status"] == "Questionable"}
     key = keys.get(code, [])
     t["key_out"] = [k["name"] for k in key if metrics.norm_name(k["name"]) in out_names]
     t["key_questionable"] = [k["name"] for k in key if metrics.norm_name(k["name"]) in q_names]
+    t["key_long_term"] = [k["name"] for k in key if metrics.norm_name(k["name"]) in lt_names]   # IR etc.: info only
     t["interior_ol_out"] = [k["name"] for k in key if metrics.norm_name(k["name"]) in out_names and
                             (k["pos"] in scoring.INTERIOR_OL or out_names[metrics.norm_name(k["name"])]["pos"] in scoring.INTERIOR_OL)]
     qb = t["qb"] or {}
     # nflverse QB names are "J.Goff"; match ESPN's "Jared Goff" on first initial + last name.
-    qb_out = [i["name"] for i in inj if i["status"] in scoring.OUT and i.get("pos") == "QB"
+    qb_all = [i for i in inj if i["status"] in (scoring.OUT | scoring.LONG_TERM) and i.get("pos") == "QB"
               and _same_qb(i["name"], qb.get("regular", ""))]
+    qb_out = [i["name"] for i in qb_all]
     t["qb_out"] = qb_out
     t["qb_active"] = not qb_out
+    new_qb = [i["name"] for i in qb_all if i["status"] in scoring.OUT]     # only a new QB injury blocks the game
+    if new_qb:
+        t["key_out"] = sorted(set(t["key_out"]) | set(new_qb))
     if qb_out:
-        t["key_out"] = sorted(set(t["key_out"]) | set(qb_out))
         t["qb_reset"] = f"{qb_out[0]} out"
     elif qb and qb.get("dropbacks", 999) < 100:
         t["qb_reset"] = f"{qb.get('regular')}, {qb.get('dropbacks')} dropbacks this season"
-    t["injury_list"] = [i for i in inj if i["status"] in scoring.OUT or i["status"] == "Questionable"][:12]
+    t["injury_list"] = [i for i in inj if i["status"] in scoring.OUT or i["status"] == "Questionable"
+                        or i["status"] in scoring.LONG_TERM][:16]
     return t
 
 

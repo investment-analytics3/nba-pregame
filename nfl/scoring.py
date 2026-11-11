@@ -38,7 +38,10 @@ SHORT_WEEK = 5            # days of rest at or under this = short week
 UNDER_RANK = 21           # Under gate: both offenses ranked 21st or worse (season off EPA)
 UNDER_MOVE = 3.0          # ...and the total moved by less than 3 points
 INTERIOR_OL = {"G", "C", "OG"}
-OUT = {"Out", "Doubtful", "Injured Reserve", "Suspension", "Physically Unable to Perform"}
+OUT = {"Out", "Doubtful"}               # new injuries: block the game (injury gate) and cost health points
+# Long-term absences (owner Nov 10): already reflected in the team's stats, so they never block a game
+# or cost health points. They're listed on the game page; a regular QB here still triggers the QB reset.
+LONG_TERM = {"Injured Reserve", "Physically Unable to Perform", "Suspension", "Non-Football Injury"}
 KEY_NUMBERS = (3, 7, 10)
 QUALIFY_SCORE = 28
 WATCH_SCORE = 18
@@ -110,6 +113,8 @@ def qualification(fav: dict, dog: dict, score: int | None = None) -> dict:
         injury_fails.append(f"No injury report for {fa} yet")
     if fav.get("key_out"):
         injury_fails.append(f"{fa} key starter out: " + ", ".join(fav["key_out"]))
+    lt = fav.get("key_long_term") or []
+    lt_note = f" (on injured reserve, not counted: {', '.join(lt)})" if lt else ""
     pw = power_gate(dog.get("power"))
     power_fail = f"{da} top 10 in power ranking: " + ", ".join(pw) if pw else None
     dp = dog.get("power") or {}
@@ -127,8 +132,8 @@ def qualification(fav: dict, dog: dict, score: int | None = None) -> dict:
         {"rule": "A", "name": f"Hero score {QUALIFY_SCORE}+", "pass": by_score, "detail": f"Score {score} of 40"},
         {"rule": "B", "name": "Last-3 mismatch (3 of 4) with a season floor", "pass": mismatch,
          "detail": " · ".join(("✓ " if ok else "✗ ") + txt for ok, txt in checks_b)},
-        {"rule": "Injury", "name": "No key starter out for the favorite", "pass": not injury_fails,
-         "detail": "; ".join(injury_fails) or "Clear"},
+        {"rule": "Injury", "name": "No key starter newly out or doubtful for the favorite", "pass": not injury_fails,
+         "detail": ("; ".join(injury_fails) or "Clear") + lt_note},
         {"rule": "Power", "name": "Underdog not top 10 in any power ranking", "pass": not power_fail,
          "detail": power_fail or (f"{da}: {power_info}" if power_info else "No power rankings available (gate passes)")},
     ]

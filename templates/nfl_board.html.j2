@@ -111,7 +111,7 @@ function detail(g){
     <h4>Season numbers</h4><div class="tw"><table><tr><th></th><th>Off EPA</th><th>Off SR</th><th>Def EPA</th><th>Def SR</th><th>Net</th><th>Pass / rush EPA</th></tr>${stat(fav)}${stat(dog)}</table></div>
     ${g.votes?`<h4>Expert picks (against the spread)</h4><div class="small">${(g.votes.sources||[]).map(s=>`${s.url?`<a href="${esc(s.url)}" rel="noreferrer">${esc(s.site)}</a>`:esc(s.site)}: ${esc(fav.abbr)} ${s.fav}-${s.dog}`).join(' · ')}${g.votes.notes?`<br><span class="muted">${esc(g.votes.notes)}</span>`:''}</div>`:''}
     <h4>Quarterbacks</h4><div class="small">${esc(fav.abbr)}: ${qb(fav)}<br>${esc(dog.abbr)}: ${qb(dog)}</div>
-    <h4>Injuries (out, doubtful, questionable)</h4><div class="small">${esc(fav.abbr)}: ${inj(fav)}<br>${esc(dog.abbr)}: ${inj(dog)}</div>
+    <h4>Injuries (out, doubtful, questionable, injured reserve)</h4><div class="small">${esc(fav.abbr)}: ${inj(fav)}<br>${esc(dog.abbr)}: ${inj(dog)}</div>
     ${sc.under&&sc.under.passes?`<h4>Totals</h4><div class="small">${esc(sc.under.note)}</div>`:''}
     <h4>Power rankings</h4><div class="small">${[fav,dog].map(t=>`${esc(t.abbr)}: ${esc(pwTitle(t.power||{})||'unavailable')}`).join('<br>')}${DATA.power_sources&&DATA.power_sources.nfl_com_url?`<br><a href="${esc(DATA.power_sources.nfl_com_url)}" rel="noreferrer">NFL.com power rankings</a>`:''}</div>
     ${ctx?`<h4>Earlier six-rule checks (context only)</h4>${ctx}`:''}

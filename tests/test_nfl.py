@@ -58,6 +58,25 @@ class Rules(unittest.TestCase):
         self.assertEqual(q["tier"], "out")
         self.assertIn("No injury report for JAX yet", q["fails"])
 
+    def test_injured_reserve_does_not_block(self):
+        # owner Nov 10: IR is long term (already in the stats); only new Out/Doubtful blocks a game
+        from nfl import board
+        keys = {"JAX": [{"name": "Anton Harrison", "pos": "T"}, {"name": "Eric Murray", "pos": "S"},
+                        {"name": "Travis Hunter", "pos": "WR"}]}
+        qbs = {"JAX": {"regular": "T.Lawrence", "dropbacks": 300}}
+        inj = [{"name": "Anton Harrison", "pos": "T", "status": "Injured Reserve"},
+               {"name": "Eric Murray", "pos": "S", "status": "Injured Reserve"}]
+        t = board._team_block("JAX", {}, {}, qbs, keys, inj, 7)
+        self.assertEqual((t["key_out"], t["key_long_term"]), ([], ["Anton Harrison", "Eric Murray"]))
+        t.update(abbr="JAX", season={"ranks": {m: 1 for m in scoring.METRICS}}, last3={"ranks": {m: 1 for m in scoring.METRICS}})
+        q = scoring.qualification(t, team((20,) * 4, (20,) * 4), 28)
+        self.assertEqual(q["tier"], "qualified")
+        self.assertIn("not counted: Anton Harrison, Eric Murray", q["rules"][2]["detail"])
+        t2 = board._team_block("JAX", {}, {}, qbs, keys, inj + [{"name": "Travis Hunter", "pos": "WR", "status": "Doubtful"}], 7)
+        self.assertEqual(t2["key_out"], ["Travis Hunter"])                     # a new injury still blocks
+        qb_ir = board._team_block("JAX", {}, {}, qbs, keys, [{"name": "Trevor Lawrence", "pos": "QB", "status": "Injured Reserve"}], 7)
+        self.assertEqual((qb_ir["key_out"], qb_ir["qb_reset"]), ([], "Trevor Lawrence out"))   # QB reset still applies
+
     def test_context_checks_kept(self):
         q = scoring.qualification(team((3, 12, 15, 20), (8, 1, 30, 30)), team((20,) * 4, (15, 14, 25, 11)), 20)
         self.assertEqual(q["qualifiers"], ["off_epa"])
