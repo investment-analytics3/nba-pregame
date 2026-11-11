@@ -13,7 +13,7 @@ from __future__ import annotations
 
 import os
 import sys
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -79,7 +79,8 @@ def main() -> int:
         _output("acted", "false")
         return 0
     _output("acted", "true")
-    today = datetime.now(ET).date()
+    # --before YYYY-MM-DD: the evening preview (owner Nov 10) catches up tonight's finished games too
+    today = date.fromisoformat(sys.argv[sys.argv.index("--before") + 1]) if "--before" in sys.argv else datetime.now(ET).date()
     print(f"Overnight update for games before {today} (ET), run at {now_pt:%Y-%m-%d %H:%M} PT")
 
     result = catch_up(today)

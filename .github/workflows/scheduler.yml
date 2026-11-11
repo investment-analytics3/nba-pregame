@@ -54,7 +54,7 @@ jobs:
           python scripts/scheduler.py decide ${{ inputs.dry_run == true && '--dry-run' || '' }}
 
       - name: Install
-        if: steps.due.outputs.nightly == 'true' || steps.due.outputs.board != 'none'
+        if: steps.due.outputs.nightly == 'true' || steps.due.outputs.board != 'none' || steps.due.outputs.preview != ''
         run: pip install -q -r requirements.txt
 
       # ---- Overnight data update (once a day, from 3 AM Pacific) ------------
@@ -71,6 +71,21 @@ jobs:
         run: |
           python scripts/build_slate.py
           python scripts/scheduler.py mark-nightly
+
+      - name: "Nightly: refresh today's page as a preview (no email, no push)"
+        if: steps.due.outputs.nightly == 'true'
+        run: |
+          if python scripts/scheduler.py can-preview; then python scripts/run_board.py --kind preview --no-send; fi
+
+      # ---- Evening: tomorrow's games once tonight's are all final (owner Nov 10) ----
+      - name: "Evening: grade tonight, post tomorrow's games as a preview (no email, no push)"
+        if: steps.due.outputs.preview != ''
+        run: |
+          python scripts/update_data.py --before "${{ steps.due.outputs.preview }}"
+          python scripts/update_results.py
+          python scripts/build_slate.py "${{ steps.due.outputs.preview }}"
+          python scripts/run_board.py --kind preview --date "${{ steps.due.outputs.preview }}" --no-send
+          python scripts/scheduler.py mark-preview "${{ steps.due.outputs.preview }}"
 
       # ---- Board / Final -----------------------------------------------------
       - name: "Board: catch up and build today's slate"
@@ -90,7 +105,7 @@ jobs:
           python scripts/update_results.py
 
       - name: Save to the repo
-        if: steps.due.outputs.nightly == 'true' || steps.due.outputs.board != 'none'
+        if: steps.due.outputs.nightly == 'true' || steps.due.outputs.board != 'none' || steps.due.outputs.preview != ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

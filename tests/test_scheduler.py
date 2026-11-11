@@ -7,7 +7,7 @@ from zoneinfo import ZoneInfo
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
-from scripts.scheduler import live_due, nightly_due  # noqa: E402
+from scripts.scheduler import live_due, nightly_due, preview_due  # noqa: E402
 
 PT = ZoneInfo("America/Los_Angeles")
 
@@ -20,6 +20,27 @@ def pt(day, hhmm):
 def ev(gid, state, tip_pt, completed=False):
     return {"id": gid, "state": state, "completed": completed,
             "start_utc": tip_pt.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")}
+
+
+class EveningPreview(unittest.TestCase):
+    """Owner Nov 10: tomorrow's games go up once every game tonight is final (no email, no push)."""
+
+    def test_waits_for_the_last_game(self):
+        tonight = [ev("1", "post", pt(10, "16:00"), True), ev("2", "in", pt(10, "19:30"))]
+        self.assertIsNone(preview_due(pt(10, "22:15"), tonight, {}))
+
+    def test_posts_tomorrow_once_all_final(self):
+        tonight = [ev("1", "post", pt(10, "16:00"), True), ev("2", "post", pt(10, "19:30"), True)]
+        self.assertEqual(preview_due(pt(10, "22:15"), tonight, {}).isoformat(), "2026-11-11")
+        self.assertIsNone(preview_due(pt(10, "22:30"), tonight, {"preview": "2026-11-11"}))   # once per date
+
+    def test_after_midnight_is_still_last_night(self):
+        tonight = [ev("1", "post", pt(10, "19:30"), True)]
+        self.assertEqual(preview_due(pt(11, "00:20"), tonight, {}).isoformat(), "2026-11-11")
+
+    def test_not_during_the_day(self):
+        self.assertIsNone(preview_due(pt(10, "13:00"), [], {}))
+        self.assertEqual(preview_due(pt(10, "17:00"), [], {}).isoformat(), "2026-11-11")   # no games tonight
 
 
 class Nightly(unittest.TestCase):

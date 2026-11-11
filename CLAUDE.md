@@ -37,7 +37,7 @@ a phone alert. No AI runs in the daily pipeline; Claude is only used to change c
 | `scripts/run_board.py` | Publishes `docs/nba/index.html` + `docs/boards/<date>-<kind>.html`, emails, alerts, logs snapshot (the site root is the landing page) |
 | `scripts/update_results.py` | Grades games, writes `docs/results.html` and `docs/results.csv` |
 | `scripts/rebuild_days.py` | Rebuilds unsent past days as "rebuilt" boards |
-| `scripts/scheduler.py` | The 15-minute tick's decisions: nightly (catch-up), board/final, live |
+| `scripts/scheduler.py` | The 15-minute tick's decisions: nightly (catch-up), board/final, live, evening preview of tomorrow |
 | `docs/live/engine.js` | Live grading engine (runs, answers, control, closers, A+/A/B/C, gates). ONE file used by the Live page (browser) and the tracker/backtest (Node) |
 | `docs/live/index.html` | Live L2 page (`live/?g=<id>`): grades in the browser from ESPN (CORS open); Kalshi comes from `live.json` |
 | `docs/live/context.json` | Today's tracked games + closers (+ season pts/min), written by `scripts/live_context.py` (called by run_board) |
@@ -201,6 +201,11 @@ often: always `git pull --rebase origin main` before pushing.
   send=false. Information only.
 - Board timing: `board_decide.decide(..., day)` puts the board time on the slate's ET date (fixed Nov 10: from 9 PM PT
   the next day's board used to go out the night before).
+- Evening preview (owner Nov 10): once every game tonight is final (scheduler `preview_due`, from 5 PM PT or before 5 AM
+  PT for the night just past; a night without games posts from 5 PM), the next tick catches up tonight's box scores
+  (`update_data.py --before <tomorrow>`), grades them (`update_results.py`), builds tomorrow's slate and publishes it as a
+  preview with `--no-send` (no email, no push); marker `preview` in `data/state.json`. The 3 AM nightly also republishes
+  today's page as a preview (`--no-send`) unless the board/Final already went out (`scheduler.py can-preview`).
 - Key player = started at least half of the team's games, or top 5 on the team in minutes per game.
 - Analysis Score (max 40): favorite metrics 16 (season+last 3; top 5 = 2, top 10 = 1), underdog
   metrics 16 (bottom 5 = 2, bottom 10 = 1), net rating 2, last-3 form 2 (3-0 = 2, 2-1 = 1),
