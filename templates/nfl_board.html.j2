@@ -95,7 +95,7 @@ function card(g){
     ${edgeBar(sc.edge)}${pills(g)}${flags}
     <div class="row between small"><span class="muted">${why}</span><span style="font-weight:600;color:#9CC6FF;white-space:nowrap">${g.state==='in'?'Live read ›':'Details ›'}</span></div></article>`;
 }
-const side = (g,t) => `<div class="tm ${t.code===g.fav?'fav':''}"><span class="badge">${esc(t.abbr)}</span><span><b>${esc(t.abbr)}${t.code===g.fav?' '+line(g.spread):''}</b><br><span class="muted">${esc(t.record)} · L2 ${formPill(t.last2_results, t.code===g.fav)} · PR ${prPill(t.power, t.code===g.fav)}</span></span></div>`;
+const side = (g,t) => `<div class="tm ${t.code===g.fav?'fav':''}"><span class="badge">${esc(t.abbr)}</span><span><b>${t===g.home?'<span style="color:#7C869E">@ </span>':''}${esc(t.abbr)}${t.code===g.fav?' '+line(g.spread):''}</b><br><span class="muted">${esc(t.record)} · L2 ${formPill(t.last2_results, t.code===g.fav)} · PR ${prPill(t.power, t.code===g.fav)}</span></span></div>`;
 const subLine = (g,fav,k,fpi,ex) => [g.total!=null?'Total '+g.total+(g.total_move? ' ('+line(g.total_move)+')':''):'', g.movement? 'Line moved '+line(g.movement)+' toward fav':'', fpi, ex, k].filter(Boolean).join(' · ');
 
 function detail(g){
