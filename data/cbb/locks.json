@@ -493,7 +493,7 @@
    "tip_pt": "11:00 AM PT",
    "day_et": "2026-11-11",
    "state": "in",
-   "detail": "7:59 - 1st",
+   "detail": "3:10 - 1st",
    "neutral": false,
    "venue": "University Credit Union Center",
    "favorite": "home",
@@ -963,8 +963,8 @@
    },
    "locked_at": "2026-11-11T10:00:51-08:00",
    "score": {
-    "home": 27,
-    "away": 23
+    "home": 40,
+    "away": 27
    }
   }
  },
@@ -1451,6 +1451,453 @@
     "home": 0,
     "away": 0
    }
+  }
+ },
+ "401918978": {
+  "at": "2026-11-11T12:00:57-08:00",
+  "day": "2026-11-11",
+  "game": {
+   "id": "401918978",
+   "tip_utc": "2026-11-11T21:00:00+00:00",
+   "tip_pt": "1:00 PM PT",
+   "day_et": "2026-11-11",
+   "state": "pre",
+   "detail": "11/11 - 4:00 PM EST",
+   "neutral": false,
+   "venue": "Williams Arena at Minges Coliseum",
+   "favorite": "home",
+   "spread": {
+    "spread": 11.5,
+    "details": "ECU -11.5",
+    "provider": "DraftKings",
+    "ml_home": -700,
+    "ml_away": 500
+   },
+   "home": {
+    "id": "151",
+    "abbr": "ECU",
+    "name": "East Carolina",
+    "display": "East Carolina Pirates",
+    "mascot": "Pirates",
+    "record": "1-1",
+    "l3_record": "1-1",
+    "games": 2,
+    "season": {
+     "efg": 50.84,
+     "opp_efg": 52.99,
+     "off": 105.44,
+     "def": 98.77,
+     "net": 6.67,
+     "poss_per_game": 74.9,
+     "ranks": {
+      "efg": 168,
+      "off": 178,
+      "opp_efg": 224,
+      "def": 114,
+      "net": 136
+     }
+    },
+    "last3": {
+     "efg": 50.84,
+     "opp_efg": 52.99,
+     "off": 105.44,
+     "def": 98.77,
+     "net": 6.67,
+     "poss_per_game": 74.9,
+     "ranks": {
+      "efg": 169,
+      "off": 178,
+      "opp_efg": 223,
+      "def": 113,
+      "net": 136
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401918977,
+      "date": "2026-11-07",
+      "site": "home",
+      "opp_id": 350,
+      "opp": "UNCW",
+      "d1_opp": true,
+      "pts": 75,
+      "opp_pts": 78,
+      "metrics": {
+       "efg": 44.35,
+       "opp_efg": 50.86,
+       "off": 94.92,
+       "def": 98.72,
+       "net": -3.8
+      },
+      "opp_power_rank": 136
+     },
+     {
+      "game_id": 401918976,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 2908,
+      "opp": "UPST",
+      "d1_opp": true,
+      "pts": 83,
+      "opp_pts": 70,
+      "metrics": {
+       "efg": 57.89,
+       "opp_efg": 55.08,
+       "off": 117.17,
+       "def": 98.82,
+       "net": 18.35
+      },
+      "opp_power_rank": 302
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-11.5",
+    "b2b": false,
+    "power": {
+     "rank": 159,
+     "bpi": 206,
+     "own_net": 136
+    },
+    "key_players": [
+     "Cian Medley",
+     "Kaseem Watson",
+     "Brycen Blaine",
+     "Kaden Cooper",
+     "Trevor Best",
+     "Eli DeLaurier",
+     "Maxim Klitschko"
+    ],
+    "top_scorers": [
+     {
+      "name": "Cian Medley",
+      "ppg": 18.5
+     },
+     {
+      "name": "Trevor Best",
+      "ppg": 18.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "2448",
+    "abbr": "NCAT",
+    "name": "North Carolina A&T",
+    "display": "North Carolina A&T Aggies",
+    "mascot": "Aggies",
+    "record": "1-1",
+    "l3_record": "0-1",
+    "games": 1,
+    "season": {
+     "efg": 42.5,
+     "opp_efg": 56.36,
+     "off": 98.77,
+     "def": 112.87,
+     "net": -14.11,
+     "poss_per_game": 70.9,
+     "ranks": {
+      "efg": 298,
+      "off": 236,
+      "opp_efg": 288,
+      "def": 246,
+      "net": 244
+     }
+    },
+    "last3": {
+     "efg": 42.5,
+     "opp_efg": 56.36,
+     "off": 98.77,
+     "def": 112.87,
+     "net": -14.11,
+     "poss_per_game": 70.9,
+     "ranks": {
+      "efg": 298,
+      "off": 236,
+      "opp_efg": 288,
+      "def": 247,
+      "net": 242
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401921154,
+      "date": "2026-11-07",
+      "site": "away",
+      "opp_id": 195,
+      "opp": "OHIO",
+      "d1_opp": true,
+      "pts": 70,
+      "opp_pts": 80,
+      "metrics": {
+       "efg": 42.5,
+       "opp_efg": 56.36,
+       "off": 98.77,
+       "def": 112.87,
+       "net": -14.11
+      },
+      "opp_power_rank": 126
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+11.5",
+    "b2b": false,
+    "power": {
+     "rank": 277,
+     "bpi": 298,
+     "own_net": 244
+    },
+    "key_players": [
+     "Ponce James",
+     "Danny Delgardo III",
+     "Will Felton",
+     "Matthew Webster",
+     "Mujahiid Burton",
+     "Shane Lancaster"
+    ],
+    "top_scorers": [
+     {
+      "name": "Ponce James",
+      "ppg": 21.0
+     },
+     {
+      "name": "Will Felton",
+      "ppg": 10.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "ECU",
+    "dog": "NCAT",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 11 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 ECU last-3 top 50 in 0 of 4 \u00b7 \u2717 NCAT last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2717 ECU season outside 1-182: Opp eFG% #224 \u00b7 \u2713 NCAT season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "NCAT: consensus #277, BPI #298, our net #244"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 11 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for ECU: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 11,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 0,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 8,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "ECU",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 168,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 178,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 224,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 114,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "ECU",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 169,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 178,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 223,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 113,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "NCAT",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 288,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 246,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 298,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 236,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "NCAT",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 288,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 247,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 298,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 236,
+        "color": "green"
+       }
+      ]
+     }
+    ]
+   },
+   "summary": "No track: score 11 (watch list from 18, qualifies at 28). Biggest edge over the last 3: ECU Def Eff (#113) against NCAT Off Eff (#236). ECU 1-1 in its last 3, NCAT 0-1. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV11NCATECU",
+    "fav_prob": 0.845,
+    "bid": 0.84,
+    "ask": 0.85
+   },
+   "locked_at": "2026-11-11T12:00:57-08:00"
   }
  }
 }
