@@ -1,11 +1,11 @@
 {
  "date": "2026-11-11",
- "built_at": "2026-11-11T09:47:14-08:00",
+ "built_at": "2026-11-11T12:00:29-08:00",
  "retro": false,
  "metrics_through": "2026-11-10",
  "injury_source": "NBA official injury report + ESPN backup",
- "injury_report_time": "2026-11-11T12:45:00-05:00",
- "injury_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_12_45PM.pdf",
+ "injury_report_time": "2026-11-11T15:00:00-05:00",
+ "injury_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_03_00PM.pdf",
  "first_tip_utc": "2026-11-12T00:00Z",
  "games": [
   {
@@ -118,7 +118,7 @@
      {
       "player": "Devin Vassell",
       "status": "Questionable",
-      "reason": "Injury: Left Adductor",
+      "reason": "Injury: Left Adductor Tightness",
       "is_key": true,
       "key_info": {
        "name": "Devin Vassell",
@@ -271,6 +271,21 @@
     ],
     "injuries": [
      {
+      "player": "Caleb Wilson",
+      "status": "Questionable",
+      "reason": "Injury: Right Hip Soreness/Tightness",
+      "is_key": true,
+      "key_info": {
+       "name": "Caleb Wilson",
+       "starts": 9,
+       "team_games": 9,
+       "mpg": 32.4,
+       "ppg": 19.3,
+       "why": "starter"
+      },
+      "counts_as_out": false
+     },
+     {
       "player": "Norman Powell",
       "status": "Questionable",
       "reason": "Injury: Low Back Spasms",
@@ -295,11 +310,11 @@
      },
      {
       "player": "Tobe Awaka",
-      "status": "Questionable",
+      "status": "Out",
       "reason": "Injury: Low Back Tightness",
       "is_key": false,
       "key_info": null,
-      "counts_as_out": false
+      "counts_as_out": true
      },
      {
       "player": "Zach Collins",
@@ -313,6 +328,7 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
+     "Caleb Wilson",
      "Norman Powell"
     ]
    },
@@ -661,9 +677,43 @@
       "opp_power_rank": 27
      }
     ],
-    "injuries": [],
+    "injuries": [
+     {
+      "player": "Paul George",
+      "status": "Out",
+      "reason": "Injury: Illness",
+      "is_key": true,
+      "key_info": {
+       "name": "Paul George",
+       "starts": 10,
+       "team_games": 11,
+       "mpg": 30.1,
+       "ppg": 22.0,
+       "why": "starter"
+      },
+      "counts_as_out": true
+     },
+     {
+      "player": "Amari Williams",
+      "status": "Out",
+      "reason": "G League two-way",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Devin Carter",
+      "status": "Out",
+      "reason": "G League two-way",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     }
+    ],
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Paul George"
+    ],
     "key_questionable": []
    },
    "home": {
@@ -843,8 +893,8 @@
     "spread": 5.5,
     "details": "BOS -5.5",
     "provider": "Draft Kings",
-    "ml_home": 200,
-    "ml_away": -243
+    "ml_home": 184,
+    "ml_away": -222
    },
    "favorite": "away",
    "scoring": {
@@ -853,13 +903,14 @@
     "fav": "BOS",
     "dog": "TOR",
     "qualified": false,
-    "tier": "watch",
-    "tier_label": "Watch list",
-    "tracked": true,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
     "routes": [],
     "route": "",
     "fails": [
-     "Watch list: score 24 (qualifies at 28)"
+     "Favorite key player out: Paul George",
+     "Would be on the watch list otherwise (score 23)"
     ],
     "warnings": [
      "Info: TOR without Scottie Barnes"
@@ -869,7 +920,7 @@
       "rule": "A",
       "name": "Analysis Score 28+",
       "pass": false,
-      "detail": "Score 24 of 40"
+      "detail": "Score 23 of 40"
      },
      {
       "rule": "B",
@@ -880,8 +931,8 @@
      {
       "rule": "Injury",
       "name": "No key player out for the favorite",
-      "pass": true,
-      "detail": "Clear"
+      "pass": false,
+      "detail": "Favorite key player out: Paul George"
      },
      {
       "rule": "Power",
@@ -913,7 +964,7 @@
      "Opp eFG%",
      "Def Eff"
     ],
-    "score": 24,
+    "score": 23,
     "max": 40,
     "band": "yellow",
     "parts": [
@@ -956,7 +1007,7 @@
      {
       "key": "health",
       "label": "Health",
-      "points": 1,
+      "points": 0,
       "max": 1
      },
      {
@@ -1187,7 +1238,7 @@
     "injuries": [
      {
       "player": "Quentin Grimes",
-      "status": "Questionable",
+      "status": "Out",
       "reason": "Injury: Right Finger Sprain",
       "is_key": true,
       "key_info": {
@@ -1198,7 +1249,7 @@
        "ppg": 8.0,
        "why": "top-5 minutes"
       },
-      "counts_as_out": false
+      "counts_as_out": true
      },
      {
       "player": "Walker Kessler",
@@ -1217,10 +1268,10 @@
      }
     ],
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
+    "key_out": [
      "Quentin Grimes"
-    ]
+    ],
+    "key_questionable": []
    },
    "home": {
     "id": "15",
@@ -1322,10 +1373,45 @@
       "opp_power_rank": 17
      }
     ],
-    "injuries": [],
+    "injuries": [
+     {
+      "player": "Myles Turner",
+      "status": "Out",
+      "reason": "Rest",
+      "is_key": true,
+      "key_info": {
+       "name": "Myles Turner",
+       "starts": 11,
+       "team_games": 11,
+       "mpg": 27.1,
+       "ppg": 6.7,
+       "why": "starter"
+      },
+      "counts_as_out": true
+     },
+     {
+      "player": "Tyler Herro",
+      "status": "Questionable",
+      "reason": "Injury: Right Knee Contusion",
+      "is_key": true,
+      "key_info": {
+       "name": "Tyler Herro",
+       "starts": 10,
+       "team_games": 11,
+       "mpg": 30.7,
+       "ppg": 21.4,
+       "why": "starter"
+      },
+      "counts_as_out": false
+     }
+    ],
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": []
+    "key_out": [
+     "Myles Turner"
+    ],
+    "key_questionable": [
+     "Tyler Herro"
+    ]
    },
    "spread": {
     "favorite_id": "13",
@@ -1342,23 +1428,24 @@
     "fav": "LAL",
     "dog": "MIL",
     "qualified": false,
-    "tier": "watch",
-    "tier_label": "Watch list",
-    "tracked": true,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
     "routes": [],
     "route": "",
     "fails": [
-     "Watch list: score 24 (qualifies at 28)"
+     "Favorite key player out: Quentin Grimes",
+     "Would be on the watch list otherwise (score 23)"
     ],
     "warnings": [
-     "LAL key player questionable: Quentin Grimes"
+     "Info: MIL without Myles Turner"
     ],
     "rules": [
      {
       "rule": "A",
       "name": "Analysis Score 28+",
       "pass": false,
-      "detail": "Score 24 of 40"
+      "detail": "Score 23 of 40"
      },
      {
       "rule": "B",
@@ -1369,8 +1456,8 @@
      {
       "rule": "Injury",
       "name": "No key player out for the favorite",
-      "pass": true,
-      "detail": "Clear"
+      "pass": false,
+      "detail": "Favorite key player out: Quentin Grimes"
      },
      {
       "rule": "Power",
@@ -1400,7 +1487,7 @@
      "eFG%",
      "Off Eff"
     ],
-    "score": 24,
+    "score": 23,
     "max": 40,
     "band": "yellow",
     "parts": [
@@ -1443,7 +1530,7 @@
      {
       "key": "health",
       "label": "Health",
-      "points": 1,
+      "points": 0,
       "max": 1
      },
      {
@@ -1817,18 +1904,51 @@
       "opp_power_rank": 28
      }
     ],
-    "injuries": [],
+    "injuries": [
+     {
+      "player": "Josh Hart",
+      "status": "Probable",
+      "reason": "Injury: Illness",
+      "is_key": true,
+      "key_info": {
+       "name": "Josh Hart",
+       "starts": 7,
+       "team_games": 10,
+       "mpg": 31.7,
+       "ppg": 8.6,
+       "why": "starter"
+      },
+      "counts_as_out": false
+     },
+     {
+      "player": "Karl-Anthony Towns",
+      "status": "Questionable",
+      "reason": "Injury: Left Sore Calf",
+      "is_key": true,
+      "key_info": {
+       "name": "Karl-Anthony Towns",
+       "starts": 10,
+       "team_games": 10,
+       "mpg": 31.1,
+       "ppg": 20.9,
+       "why": "starter"
+      },
+      "counts_as_out": false
+     }
+    ],
     "injuries_known": true,
     "key_out": [],
-    "key_questionable": []
+    "key_questionable": [
+     "Karl-Anthony Towns"
+    ]
    },
    "spread": {
     "favorite_id": "18",
-    "spread": 4.5,
-    "details": "NY -4.5",
+    "spread": 3.5,
+    "details": "NY -3.5",
     "provider": "Draft Kings",
-    "ml_home": -180,
-    "ml_away": 151
+    "ml_home": -179,
+    "ml_away": 150
    },
    "favorite": "home",
    "scoring": {
@@ -1845,7 +1965,9 @@
     "fails": [
      "CLE top 10 in power ranking: ESPN BPI #10"
     ],
-    "warnings": [],
+    "warnings": [
+     "NY key player questionable: Karl-Anthony Towns"
+    ],
     "rules": [
      {
       "rule": "A",
@@ -2354,8 +2476,8 @@
     "spread": 2.5,
     "details": "IND -2.5",
     "provider": "Draft Kings",
-    "ml_home": -143,
-    "ml_away": 121
+    "ml_home": -148,
+    "ml_away": 124
    },
    "favorite": "home",
    "scoring": {
@@ -2731,7 +2853,7 @@
      },
      {
       "player": "Will Richard",
-      "status": "Questionable",
+      "status": "Probable",
       "reason": "Injury: Left Thumb UCLTear",
       "is_key": false,
       "key_info": null,
@@ -2885,8 +3007,8 @@
     "spread": 6.5,
     "details": "HOU -6.5",
     "provider": "Draft Kings",
-    "ml_home": -249,
-    "ml_away": 205
+    "ml_home": -264,
+    "ml_away": 217
    },
    "favorite": "home",
    "scoring": {
@@ -3949,8 +4071,8 @@
     "spread": 3.5,
     "details": "DEN -3.5",
     "provider": "Draft Kings",
-    "ml_home": 140,
-    "ml_away": -167
+    "ml_home": 139,
+    "ml_away": -166
    },
    "favorite": "away",
    "scoring": {
@@ -4490,14 +4612,6 @@
       "counts_as_out": true
      },
      {
-      "player": "Jaron Pierre Jr.",
-      "status": "Doubtful",
-      "reason": "G League two-way",
-      "is_key": false,
-      "key_info": null,
-      "counts_as_out": true
-     },
-     {
       "player": "Malik Dia",
       "status": "Doubtful",
       "reason": "G League two-way",
@@ -4520,6 +4634,14 @@
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
+     },
+     {
+      "player": "Jaron Pierre Jr.",
+      "status": "Probable",
+      "reason": "G League two-way",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": false
      }
     ],
     "injuries_known": true,
@@ -4873,8 +4995,7 @@
      {
       "player": "Jalen Suggs",
       "status": "Out",
-      "reason": "Suggs (knee) has been ruled out for Tuesday's game against the Kings.",
-      "source": "ESPN",
+      "reason": "Injury: Right Knee Contusion/Bone Bruise",
       "is_key": true,
       "key_info": {
        "name": "Jalen Suggs",
@@ -4889,8 +5010,7 @@
      {
       "player": "Izaiyah Nelson",
       "status": "Out",
-      "reason": "Team president Jeff Weltman said Monday that Nelson (ankle) remains about a month away from returning to the court after offseason surgery, per Philip Rossman-Reich of OrlandoMagicDaily.com.",
-      "source": "ESPN",
+      "reason": "Injury: Left Ankle Injury Recovery",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -4898,8 +5018,7 @@
      {
       "player": "Jonathan Isaac",
       "status": "Out",
-      "reason": "Isaac (knee) is out for Tuesday's game against Sacramento.",
-      "source": "ESPN",
+      "reason": "Injury: Left Knee Injury Management",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -4907,8 +5026,7 @@
      {
       "player": "Noah Penda",
       "status": "Out",
-      "reason": "Penda was diagnosed with a partially torn right hamstring Saturday, Jason Beede of the Orlando Sentinel reports.",
-      "source": "ESPN",
+      "reason": "Injury: Right Partially Torn Hamstring",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -4916,17 +5034,23 @@
      {
       "player": "Paolo Banchero",
       "status": "Out",
-      "reason": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports.",
-      "source": "ESPN",
+      "reason": "Injury: Right High Ankle Sprain",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
      },
      {
-      "player": "Tristan da Silva",
-      "status": "Day-To-Day",
-      "reason": "Da Silva (calf) has been ruled out for Tuesday's game against the Kings, Jason Beede of the Orlando Sentinel reports.",
-      "source": "ESPN",
+      "player": "Jamal Cain",
+      "status": "Questionable",
+      "reason": "Injury: Left Shoulder Contusion",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": false
+     },
+     {
+      "player": "Tristan daSilva",
+      "status": "Questionable",
+      "reason": "Injury: Left Calf Strain",
       "is_key": false,
       "key_info": null,
       "counts_as_out": false
@@ -5042,8 +5166,7 @@
      {
       "player": "Jaren Jackson Jr.",
       "status": "Out",
-      "reason": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN.",
-      "source": "ESPN",
+      "reason": "Injury: Right MCLTear",
       "is_key": true,
       "key_info": {
        "name": "Jaren Jackson Jr.",
@@ -5056,10 +5179,24 @@
       "counts_as_out": true
      },
      {
+      "player": "Lauri Markkanen",
+      "status": "Out",
+      "reason": "Injury: Right Hand Fracture",
+      "is_key": true,
+      "key_info": {
+       "name": "Lauri Markkanen",
+       "starts": 8,
+       "team_games": 11,
+       "mpg": 30.9,
+       "ppg": 18.0,
+       "why": "starter"
+      },
+      "counts_as_out": true
+     },
+     {
       "player": "Keyonte George",
-      "status": "Day-To-Day",
-      "reason": "George (ankle) has been ruled out for Tuesday's game against the Heat.",
-      "source": "ESPN",
+      "status": "Questionable",
+      "reason": "Injury: Right Ankle Sprain",
       "is_key": true,
       "key_info": {
        "name": "Keyonte George",
@@ -5072,26 +5209,17 @@
       "counts_as_out": false
      },
      {
-      "player": "Lauri Markkanen",
-      "status": "Day-To-Day",
-      "reason": "Markkanen is out for Tuesday's game versus the Heat with a right wrist sprain.",
-      "source": "ESPN",
-      "is_key": true,
-      "key_info": {
-       "name": "Lauri Markkanen",
-       "starts": 8,
-       "team_games": 11,
-       "mpg": 30.9,
-       "ppg": 18.0,
-       "why": "starter"
-      },
-      "counts_as_out": false
-     },
-     {
       "player": "Jusuf Nurkic",
       "status": "Out",
-      "reason": "Nurkic (toe) has begun participating in on-court activities as he continues recovering from a right foot injury sustained during an Oct. 4 preseason game against Denver. He will be re-evaluated in two weeks, the Jazz announced Friday.",
-      "source": "ESPN",
+      "reason": "Injury: Right2nd Plantar Plate Tear",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Trey Alexander",
+      "status": "Out",
+      "reason": "G League two-way",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -5099,17 +5227,20 @@
     ],
     "injuries_known": true,
     "key_out": [
-     "Jaren Jackson Jr."
+     "Jaren Jackson Jr.",
+     "Lauri Markkanen"
     ],
-    "key_questionable": []
+    "key_questionable": [
+     "Keyonte George"
+    ]
    },
    "spread": {
     "favorite_id": "19",
-    "spread": 2.5,
-    "details": "ORL -2.5",
+    "spread": 3.5,
+    "details": "ORL -3.5",
     "provider": "Draft Kings",
-    "ml_home": 125,
-    "ml_away": -148
+    "ml_home": 150,
+    "ml_away": -179
    },
    "favorite": "away",
    "scoring": {
@@ -5127,7 +5258,7 @@
      "Favorite key player out: Jalen Suggs"
     ],
     "warnings": [
-     "Info: UTAH without Jaren Jackson Jr."
+     "Info: UTAH without Jaren Jackson Jr., Lauri Markkanen"
     ],
     "rules": [
      {
