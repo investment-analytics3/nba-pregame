@@ -23,7 +23,7 @@ const M = ['off_epa','off_sr','def_epa','def_sr'];
 const MH = {off_epa:['OFF','EPA'], off_sr:['OFF','SR'], def_epa:['DEF','EPA'], def_sr:['DEF','SR']};
 const MN = {off_epa:'Off EPA/play', off_sr:'Off success rate', def_epa:'Def EPA allowed', def_sr:'Def success allowed'};
 const BAND = {green:['#5BEA9E','Strong edge'], yellow:['#FFD66B','Moderate'], red:['#FF7676','Risk']};
-const CALL = {'Edge clears':'cg','Track, edge short':'cb','Lean (QB cap)':'cy','No track':'cn','No line':'cn','No data':'cn'};
+const CALL = {'Edge clears':'cg','Track, edge short':'cb','Lean (QB cap)':'cy','Watch list':'cy','No track':'cn','No line':'cn','No data':'cn'};
 const favCls = r => r==null?'pn':(r<=5?'pg':(r<=10?'pg2':(r<=22?'py':'pr')));
 const dogCls = r => r==null?'pn':(r<=5?'pd':(r<=10?'pr':(r<=22?'py':'pg')));
 // Power rank + last-2 pills (owner Nov 10, as on the NBA board). Favorite: PR 1-10 green, 11-22 yellow,
@@ -82,30 +82,31 @@ function card(g){
   const sc = g.scoring, fav = g.fav ? team(g,g.fav) : null, dog = g.dog ? team(g,g.dog) : null;
   const state = g.state==='in' ? `<span class="chip live"><i></i>${esc(g.detail||'Live')}</span>` : (g.state==='post' ? `<span class="chip cn">Final ${g.score?esc(g.score.away+'-'+g.score.home):''}</span>` : '');
   const head = `<div class="row between"><span class="tip">${esc(g.kick_pt)}${g.neutral?' · neutral':''}</span><span class="row" style="gap:6px">${state}<span class="chip ${CALL[sc.call]||'cn'}">${esc(sc.call)}</span></span></div>`;
-  if(!fav) return `<article class="card">${head}<div class="line">${esc(g.away.abbr)} @ ${esc(g.home.abbr)}</div><div class="muted">No betting line yet.</div></article>`;
-  const away = g.away, home = g.home;
-  const side = t => `<div class="tm ${t.code===g.fav?'fav':''}"><span class="badge">${esc(t.abbr)}</span><span><b>${esc(t.abbr)}${t.code===g.fav?' '+line(g.spread):''}</b><br><span class="muted">${esc(t.record)} · L2 ${formPill(t.last2_results, t.code===g.fav)} · PR ${prPill(t.power, t.code===g.fav)}</span></span></div>`;
+  const open = `role="link" tabindex="0" onclick="openGame('${esc(g.id)}')" onkeydown="if(event.key==='Enter')openGame('${esc(g.id)}')" style="cursor:pointer"`;
+  if(!fav) return `<article class="card" ${open}>${head}<div class="line">${esc(g.away.abbr)} @ ${esc(g.home.abbr)}</div><div class="muted">No betting line yet.</div></article>`;
   const k = g.kalshi && g.kalshi.fav_prob!=null ? `Kalshi ${esc(fav.abbr)} ${Math.round(g.kalshi.fav_prob*100)}¢${g.kalshi.fav_prob>0.85?' <span class="warnc">priced in</span>':''}` : '';
   const fpi = fav.fpi_win!=null ? `FPI ${pct(fav.fpi_win)}` : '';
   const ex = g.votes && g.votes.support!=null ? `Experts ${esc(fav.abbr)} ${g.votes.fav}-${g.votes.dog} ATS (${pct(g.votes.support)})` : '';
   const flags = (sc.flags||[]).filter(f=>f.level!=='info').slice(0,3).map(f=>`<div class="flag ${f.level}">${esc(f.text)}</div>`).join('');
-  return `<article class="card" id="g-${esc(g.id)}">${head}
-    <div class="row" style="gap:14px;align-items:center">${donut(sc.hero)}<div style="display:flex;flex-direction:column;gap:8px;min-width:0">${side(away)}${side(home)}</div></div>
-    <div class="sub">${[g.total!=null?'Total '+g.total+(g.total_move? ' ('+line(g.total_move)+')':''):'', g.movement? 'Line moved '+line(g.movement)+' toward fav':'', fpi, ex, k].filter(Boolean).join(' · ')}</div>
+  const why = sc.tier==='qualified' ? `<span class="okc">Qualified: ${esc(sc.route)}</span>` : esc((sc.fails||[])[0]||'');
+  return `<article class="card" id="g-${esc(g.id)}" ${open}>${head}
+    <div class="row" style="gap:14px;align-items:center">${donut(sc.hero)}<div style="display:flex;flex-direction:column;gap:8px;min-width:0">${side(g,g.away)}${side(g,g.home)}</div></div>
+    <div class="sub">${subLine(g,fav,k,fpi,ex)}</div>
     ${edgeBar(sc.edge)}${pills(g)}${flags}
-    <div class="row between"><details style="flex:1"><summary>Rules, score and details</summary>${detail(g)}</details></div>
-    ${g.state!=='pre'?`<a class="small" style="font-weight:600" href="game.html?g=${esc(g.id)}">${g.state==='in'?'Live read ›':'Game read ›'}</a>`:''}</article>`;
+    <div class="row between small"><span class="muted">${why}</span><span style="font-weight:600;color:#9CC6FF;white-space:nowrap">${g.state==='in'?'Live read ›':'Details ›'}</span></div></article>`;
 }
+const side = (g,t) => `<div class="tm ${t.code===g.fav?'fav':''}"><span class="badge">${esc(t.abbr)}</span><span><b>${esc(t.abbr)}${t.code===g.fav?' '+line(g.spread):''}</b><br><span class="muted">${esc(t.record)} · L2 ${formPill(t.last2_results, t.code===g.fav)} · PR ${prPill(t.power, t.code===g.fav)}</span></span></div>`;
+const subLine = (g,fav,k,fpi,ex) => [g.total!=null?'Total '+g.total+(g.total_move? ' ('+line(g.total_move)+')':''):'', g.movement? 'Line moved '+line(g.movement)+' toward fav':'', fpi, ex, k].filter(Boolean).join(' · ');
 
 function detail(g){
   const sc = g.scoring, fav = team(g,g.fav), dog = team(g,g.dog), p = sc.hero.parts||{};
-  const rules = (sc.rules||[]).map(r=>`<div class="rule"><span class="yn ${r.ok?'ok':'no'}">${r.ok?'✓':'✗'}</span><span>${esc(r.text)} <span class="muted">(${esc(r.detail)})</span></span></div>`).join('');
+  const ctx = (sc.context||[]).map(r=>`<div class="rule"><span class="yn ${r.ok?'ok':'no'}">${r.ok?'✓':'✗'}</span><span>${esc(r.text)} <span class="muted">(${esc(r.detail)})</span></span></div>`).join('');
   const parts = [['Favorite strength',p.fav_strength,16],['Underdog weakness',p.dog_weakness,16],['Health',p.health,4],['Home',p.home,1],['Rest',p.rest,1],['Recent form',p.form,2]]
     .map(([n,v,mx])=>`<div class="kv"><span>${n}</span><b>${v??'–'} / ${mx}</b></div>`).join('');
   const stat = t => `<tr><td><b>${esc(t.abbr)}</b></td><td>${sgn(t.season.off_epa)}</td><td>${pct(t.season.off_sr)}</td><td>${sgn(t.season.def_epa)}</td><td>${pct(t.season.def_sr)}</td><td>${sgn(t.net)}</td><td>${sgn(t.season.off_pass_epa)} / ${sgn(t.season.off_rush_epa)}</td></tr>`;
   const qb = t => t.qb ? `${esc(t.qb.regular)} (${t.qb.dropbacks} dropbacks, EPA/db ${sgn(t.qb.epa_db)}${t.qb.rank?', rank '+t.qb.rank:''})${t.qb_active?'':' <b class="warnc">OUT</b>'}` : 'unknown';
   const inj = t => t.injuries_known ? ((t.injury_list||[]).map(i=>`${esc(i.name)} ${esc(i.pos||'')} <span class="muted">${esc(i.status)}</span>`).join(', ') || 'none listed') : 'not available';
-  return `<div class="det"><h4>Qualification: ${sc.qualified?'<span class="okc">TRACK GAME = YES</span>':'<span class="noc">TRACK GAME = NO</span>'}</h4>${rules}
+  return `<div class="det">
     <h4>Hero score ${sc.hero.score} / 40</h4><div class="kvs">${parts}</div>
     <h4>Season numbers</h4><div class="tw"><table><tr><th></th><th>Off EPA</th><th>Off SR</th><th>Def EPA</th><th>Def SR</th><th>Net</th><th>Pass / rush EPA</th></tr>${stat(fav)}${stat(dog)}</table></div>
     ${g.votes?`<h4>Expert picks (against the spread)</h4><div class="small">${(g.votes.sources||[]).map(s=>`${s.url?`<a href="${esc(s.url)}" rel="noreferrer">${esc(s.site)}</a>`:esc(s.site)}: ${esc(fav.abbr)} ${s.fav}-${s.dog}`).join(' · ')}${g.votes.notes?`<br><span class="muted">${esc(g.votes.notes)}</span>`:''}</div>`:''}
@@ -113,20 +114,80 @@ function detail(g){
     <h4>Injuries (out, doubtful, questionable)</h4><div class="small">${esc(fav.abbr)}: ${inj(fav)}<br>${esc(dog.abbr)}: ${inj(dog)}</div>
     ${sc.under&&sc.under.passes?`<h4>Totals</h4><div class="small">${esc(sc.under.note)}</div>`:''}
     <h4>Power rankings</h4><div class="small">${[fav,dog].map(t=>`${esc(t.abbr)}: ${esc(pwTitle(t.power||{})||'unavailable')}`).join('<br>')}${DATA.power_sources&&DATA.power_sources.nfl_com_url?`<br><a href="${esc(DATA.power_sources.nfl_com_url)}" rel="noreferrer">NFL.com power rankings</a>`:''}</div>
+    ${ctx?`<h4>Earlier six-rule checks (context only)</h4>${ctx}`:''}
     <div class="small muted" style="margin-top:10px">Rest: ${esc(fav.abbr)} ${fav.rest??'?'} days, ${esc(dog.abbr)} ${dog.rest??'?'} days · Line: ${esc(g.line_source||'?')}${g.open_spread!=null?', opened '+line(g.open_spread):''}${g.kalshi?' · Kalshi '+esc(g.kalshi.event):''}</div></div>`;
 }
 
+// ---- L2: one game (owner Nov 10: same structure as the NBA board) ----
+const BTN = 'all:unset;display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid #26314B;background:#151C2E;color:#DCE2EE;font-size:14px;font-weight:600;cursor:pointer';
+const TABS = 'display:inline-flex;padding:4px;border-radius:999px;background:#121A2C;border:1px solid #26314B;gap:4px;margin-left:auto';
+const TAB = on => `min-height:36px;display:inline-flex;align-items:center;padding:0 16px;border-radius:999px;font-size:14px;font-weight:600;text-decoration:none;${on?'background:linear-gradient(180deg,#2E4170,#1C2845);color:#fff':'color:#9AA4BA'}`;
+const BANNER = 'display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:14px 16px;border-radius:14px;margin-bottom:14px';
+const GREEN = 'background:linear-gradient(180deg,#34C77B,#1A8A4C);color:#fff;text-shadow:0 1px 1px rgba(0,0,0,.25)';
+function detailView(g){
+  const sc = g.scoring||{}, fav = g.fav ? team(g,g.fav) : null;
+  const live = `game.html?g=${esc(g.id)}`;
+  let h = `<div class="row" style="flex-wrap:wrap;margin-bottom:18px;gap:10px"><button style="${BTN}" onclick="location.hash=''">‹ All games</button>
+    <span class="small muted">${esc(g.kick_pt)} · Data pulled ${esc(DATA.built_label)}</span>
+    <div style="${TABS}"><a style="${TAB(true)}" aria-current="page" href="#g-${esc(g.id)}">Pregame</a><a style="${TAB(false)}" href="${live}">${g.state==='in'?'<span class="chip live" style="padding:0 6px 0 0;border:0;background:none"><i></i></span>':''}Live</a></div></div>
+    <h1 class="title cond" style="font-size:40px">${esc(g.away.abbr)} <span style="color:#7C869E">@</span> ${esc(g.home.abbr)}</h1>
+    <div class="muted" style="margin:8px 0 18px">${fav?`Spread: ${esc(fav.abbr)} ${line(g.spread)} · Favorite: ${esc(fav.abbr)}`:'No betting line yet'}${g.neutral?' · Neutral site':''}</div>`;
+  if(!fav) return h + `<div class="panel final">No betting line yet, so the game isn't scored.</div>`;
+  if(sc.tier==='qualified') h += `<div style="${BANNER};background:linear-gradient(180deg,rgba(47,195,115,.16),rgba(31,157,88,.08));border:1px solid rgba(47,195,115,.45)"><span class="chip" style="${GREEN};text-transform:uppercase">Track game</span><span style="color:#BBF7D0">Qualified: ${esc(sc.route)}. Live read + phone pushes (end of 3rd, first BET signal).</span></div>`;
+  else if(sc.tier==='watch') h += `<div style="${BANNER};background:linear-gradient(180deg,rgba(233,178,58,.18),rgba(217,161,42,.08));border:1px solid rgba(233,178,58,.5)"><span class="chip" style="color:#2A1C00;background:linear-gradient(180deg,#FADB80,#D9A12A);text-transform:uppercase">Watch list</span><span style="color:#FDE68A">${esc((sc.fails||[])[0]||'')}. Live read on the Live tab; no phone pushes.</span></div>`;
+  else h += `<div style="${BANNER};background:linear-gradient(180deg,rgba(212,68,68,.22),rgba(161,34,34,.16));border:1px solid rgba(220,60,60,.5)"><span class="chip" style="color:#fff;background:linear-gradient(180deg,#D44444,#A12222);text-transform:uppercase">No track</span><div style="display:flex;flex-direction:column;gap:4px;color:#FECACA">${(sc.fails||[]).map(f=>`<span>${esc(f)}</span>`).join('')}</div></div>`;
+  if(sc.rules && sc.rules.length && sc.rules[0].rule==='A'){
+    h += `<div class="panel" style="padding:16px 18px;margin-bottom:14px"><h3 style="margin:0 0 8px">How it qualifies</h3><div style="display:flex;flex-direction:column;gap:6px;font-size:14px">${sc.rules.map(r=>`<div style="display:grid;grid-template-columns:22px minmax(0,1fr);gap:8px;align-items:start"><span style="width:20px;height:20px;border-radius:6px;display:grid;place-items:center;font-weight:800;font-size:12px;${r.pass?GREEN:'background:#3A1E22;color:#FCA5A5;border:1px solid rgba(200,48,48,.5)'}">${r.pass?'✓':'✗'}</span><span><b>${esc(r.rule==='Injury'?'Injury gate':(r.rule==='Power'?'Power gate':'Route '+r.rule))}: ${esc(r.name)}</b><br><span class="muted" style="font-size:12.5px">${esc(r.detail)}</span></span></div>`).join('')}</div>
+      <div class="small muted" style="margin-top:8px">Qualified = route A or B, with both gates clear. Watch list = score 18-27 with both gates clear. Both are followed live; phone pushes are for Qualified games only.</div></div>`;
+  }
+  const k = g.kalshi && g.kalshi.fav_prob!=null ? `Kalshi ${esc(fav.abbr)} ${Math.round(g.kalshi.fav_prob*100)}¢${g.kalshi.fav_prob>0.85?' <span class="warnc">priced in</span>':''}` : '';
+  const fpi = fav.fpi_win!=null ? `FPI ${pct(fav.fpi_win)}` : '';
+  const ex = g.votes && g.votes.support!=null ? `Experts ${esc(fav.abbr)} ${g.votes.fav}-${g.votes.dog} ATS (${pct(g.votes.support)})` : '';
+  const flags = (sc.flags||[]).filter(f=>f.level!=='info').map(f=>`<div class="flag ${f.level}">${esc(f.text)}</div>`).join('');
+  h += `<div class="panel" style="padding:18px;display:flex;flex-direction:column;gap:12px;margin-bottom:14px">
+    <div class="row" style="gap:14px;align-items:center;flex-wrap:wrap">${donut(sc.hero)}<div style="display:flex;flex-direction:column;gap:8px;min-width:0">${side(g,g.away)}${side(g,g.home)}</div>
+    <span class="chip ${CALL[sc.call]||'cn'}" style="margin-left:auto">${esc(sc.call)}</span></div>
+    <div class="sub">${subLine(g,fav,k,fpi,ex)}</div>${edgeBar(sc.edge)}${pills(g)}${flags}</div>
+    <div class="panel" style="padding:4px 18px 18px">${detail(g)}</div>
+    <div class="small muted foot">The pregame call is context only; the bet decision is yours. Live grading runs on the Live tab from ESPN play-by-play.</div>`;
+  return h;
+}
+
+// ---- L1: the week ----
 const games = DATA.games||[];
-const tracked = games.filter(g=>g.state!=='post' && g.scoring.qualified), other = games.filter(g=>g.state!=='post' && !g.scoring.qualified), played = games.filter(g=>g.state==='post');
-const sec = (t, list, extra='') => list.length ? `<div class="sec-head"><h2 class="cond">${t}</h2><span class="cnt">${list.length}</span><span class="rule"></span></div>${extra}<div class="grid">${list.map(card).join('')}</div>` : '';
-app.innerHTML = `<div class="eyebrow">NFL · ${DATA.season} season · Week ${DATA.week??'–'}</div>
+const ahead = games.filter(g=>g.state!=='post'), played = games.filter(g=>g.state==='post');
+const byScore = (a,b) => ((b.scoring.hero||{}).score??-1) - ((a.scoring.hero||{}).score??-1) || a.kick_utc.localeCompare(b.kick_utc);
+const q = ahead.filter(g=>g.scoring.tier==='qualified').sort(byScore), w = ahead.filter(g=>g.scoring.tier==='watch').sort(byScore),
+      n = ahead.filter(g=>g.scoring.tier!=='qualified' && g.scoring.tier!=='watch').sort(byScore);
+const LINES = {'Watch list':'height:4px;margin:-4px 0 20px;border-radius:999px;background:linear-gradient(90deg,#FADB80,#D9A12A 70%,#8A5F0E);box-shadow:0 0 12px rgba(233,178,58,.45)',
+               'Did not qualify':'height:6px;margin:-4px 0 20px;border-radius:999px;background:linear-gradient(90deg,#F05252,#C42B2B 70%,#8E1A1A);box-shadow:0 0 16px rgba(240,82,82,.55)'};
+function sec(t, list, dot, col, sub, empty){
+  if(!list.length && !empty) return '';
+  return `<section><div class="sec-head"><span style="width:10px;height:10px;border-radius:50%;background:${dot};box-shadow:0 0 10px ${dot}"></span>
+    <h2 class="cond" style="color:${col}">${t}</h2><span class="cnt">${list.length}</span><span class="rule"></span><span class="small muted">${esc(sub)}</span></div>
+    ${LINES[t]?`<div style="${LINES[t]}"></div>`:''}<div class="grid">${list.map(card).join('') || `<div class="muted small">${esc(empty)}</div>`}</div></section>`;
+}
+function listView(){
+  return `<div class="eyebrow">NFL · ${DATA.season} season · Week ${DATA.week??'–'}</div>
   <h1 class="title cond">NFL Pregame Board</h1>
   <div class="muted" style="margin-top:6px">Updated ${esc(DATA.built_label)} · stats through ${esc(DATA.data_through||'–')} (nflverse) · expert picks ${esc(DATA.votes_status||'not gathered yet')}</div>
   <div class="legend"><span><i class="sw" style="background:#2FC373"></i>Favorite top 10 / underdog bottom 10</span><span><i class="sw" style="background:#E9B23A"></i>Middle</span><span><i class="sw" style="background:#C83030"></i>Favorite bottom 10 / underdog top 10</span><span>Hero score: green 28+, yellow 18-27, red 0-17</span><span>L2 = last 2 results · PR = power rank (consensus of ESPN FPI and NFL.com)</span></div>
-  ${(DATA.notes||[]).length?`<div class="panel final"><ul>${DATA.notes.map(n=>`<li>${esc(n)}</li>`).join('')}</ul></div>`:''}
-  ${sec('Tracked', tracked)}${!tracked.length && games.length?'<div class="panel final"><b>No game passes all seven rules this week.</b></div>':''}
-  ${sec('Other games', other)}${sec('Played', played)}
-  <div class="small muted foot">Stat edge = favorite net EPA/play minus underdog's (all plays, nflverse = RBSDM method); needs +0.35 for every favorite, whatever the spread. The adjusted edge is logged in shadow only. Kalshi and FPI are a price check and never change the call.</div>`;
+  ${(DATA.notes||[]).length?`<div class="panel final"><ul>${DATA.notes.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:''}
+  ${games.length?sec('Qualified', q, '#2FC373', '#E6EAF2', 'Score 28+ or last-3 mismatch · live read + phone pushes', 'No game qualifies this week.'):''}
+  ${sec('Watch list', w, '#E9B23A', '#FFD66B', 'Score 18-27 · live read, no pushes')}
+  ${sec('Did not qualify', n, '#E04848', '#FF7676', 'Sorted by hero score')}
+  ${sec('Played', played, '#7C869E', '#9AA4BA', 'Final')}
+  <div class="small muted foot">Every tier needs both gates clear: no key starter out for the favorite, and the underdog not top 10 in any power ranking. Stat edge = favorite net EPA/play minus underdog's (all plays, nflverse = RBSDM method); needs +0.35 for every favorite, whatever the spread. The adjusted edge is logged in shadow only. Kalshi and FPI are a price check and never change the call.</div>`;
+}
+window.openGame = id => { location.hash = 'g-' + id; };
+function render(){
+  const id = (location.hash||'').replace(/^#g-/,'');
+  const g = games.find(x=>String(x.id)===id);
+  app.innerHTML = g ? detailView(g) : listView();
+  if(g) window.scrollTo(0,0);
+}
+window.addEventListener('hashchange', render);
+render();
 })();
 </script>
 </body>

@@ -25,41 +25,69 @@ def team(season, last3, net=0.1, last2=("W", "W"), last3r=("W", "L", "W"), rest=
 
 
 class Rules(unittest.TestCase):
-    def test_qualifies_on_same_metric(self):
-        fav = team((3, 12, 15, 20), (8, 1, 30, 30))
-        dog = team((20, 20, 20, 20), (15, 14, 25, 11))
-        q = scoring.qualification(fav, dog)
-        self.assertTrue(q["qualified"], q["failed"])
+    """Tiers (owner Nov 10, as on the NBA board): qualified = score 28+ or last-3 mismatch; watch = 18-27;
+    injury + power gates on every tier."""
+
+    def test_score_route_and_watch_list(self):
+        fav, dog = team((1,) * 4, (1,) * 4, abbr="KC"), team((20,) * 4, (20,) * 4, abbr="ATL")
+        q = scoring.qualification(fav, dog, 30)
+        self.assertEqual((q["tier"], q["routes"], q["tracked"], q["alerts"]), ("qualified", ["Score 30"], True, True))
+        q = scoring.qualification(fav, dog, 23)
+        self.assertEqual((q["tier"], q["tracked"], q["alerts"]), ("watch", True, False))      # live read, no pushes
+        self.assertEqual(q["fails"], ["Watch list: score 23 (qualifies at 28)"])
+        self.assertEqual(scoring.qualification(fav, dog, 17)["tier"], "out")
+
+    def test_last3_mismatch_route(self):
+        fav = team((12, 14, 15, 13), (9, 9, 9, 18), abbr="A")
+        dog = team((11, 18, 20, 16), (23, 25, 15, 30), abbr="B")
+        q = scoring.qualification(fav, dog, 12)
+        self.assertEqual((q["tier"], q["routes"]), ("qualified", ["Last-3 mismatch"]))
+        dog22 = team((11, 18, 20, 16), (22, 25, 15, 30), abbr="B")                      # 22 is not bottom 10 of 32
+        self.assertNotIn("Last-3 mismatch", scoring.qualification(fav, dog22, 12)["routes"])
+        weak_season = team((12, 14, 16, 13), (9, 9, 9, 18), abbr="A")                     # one season rank 16
+        self.assertNotIn("Last-3 mismatch", scoring.qualification(weak_season, dog, 12)["routes"])
+        dog_top10 = team((10, 18, 20, 16), (23, 25, 15, 30), abbr="B")
+        self.assertNotIn("Last-3 mismatch", scoring.qualification(fav, dog_top10, 12)["routes"])
+
+    def test_injury_gate(self):
+        dog = team((20,) * 4, (20,) * 4)
+        q = scoring.qualification(team((1,) * 4, (1,) * 4, abbr="JAX", key_out=["A Player"]), dog, 30)
+        self.assertEqual(q["tier"], "out")
+        self.assertEqual(q["fails"], ["JAX key starter out: A Player", "Would be qualified otherwise (score 30)"])
+        q = scoring.qualification(team((1,) * 4, (1,) * 4, abbr="JAX", injuries_known=False), dog, 20)
+        self.assertEqual(q["tier"], "out")
+        self.assertIn("No injury report for JAX yet", q["fails"])
+
+    def test_context_checks_kept(self):
+        q = scoring.qualification(team((3, 12, 15, 20), (8, 1, 30, 30)), team((20,) * 4, (15, 14, 25, 11)), 20)
         self.assertEqual(q["qualifiers"], ["off_epa"])
-
-    def test_metric_must_match_between_windows(self):
-        fav = team((3, 12, 15, 20), (14, 1, 30, 30))      # season top 10 in off_epa, last 3 top 10 only in off_sr
-        q = scoring.qualification(fav, team((20,) * 4, (20,) * 4))
-        self.assertIn("Rule 2: Also top 10 over its last 3 in that same metric", q["failed"])
-
-    def test_dog_rules(self):
-        fav = team((1,) * 4, (1,) * 4)
-        q = scoring.qualification(fav, team((20,) * 4, (20, 20, 9, 20), last3r=("W", "W", "W")))
-        self.assertEqual([f[:6] for f in q["failed"]], ["Rule 3", "Rule 4"])
-
-    def test_key_starter_out_and_injuries_missing(self):
-        fav = team((1,) * 4, (1,) * 4, key_out=["A Player"], injuries_known=False)
-        q = scoring.qualification(fav, team((20,) * 4, (20,) * 4))
-        self.assertEqual([f[:6] for f in q["failed"]], ["Rule 5", "Rule 6"])
+        self.assertEqual([r["ok"] for r in q["context"]], [True, True, True, True])
 
     def test_opponent_power_gate(self):
         fav = team((1,) * 4, (1,) * 4)
         dog = team((20,) * 4, (20,) * 4, abbr="WSH", power={"consensus": 12, "fpi": 9, "nfl_com": 14})
-        q = scoring.qualification(fav, dog)
-        self.assertFalse(q["qualified"])
-        self.assertEqual(q["failed"], ["WSH top 10 in power ranking: ESPN FPI #9"])
+        q = scoring.qualification(fav, dog, 30)
+        self.assertEqual(q["tier"], "out")
+        self.assertEqual(q["fails"][0], "WSH top 10 in power ranking: ESPN FPI #9")
         r = scoring.score_game({"spread": -3}, fav, dog)
         self.assertEqual(r["call"], "No track")
         self.assertEqual(r["flags"][0], {"level": "red", "text": "WSH top 10 in power ranking: ESPN FPI #9 (no track)"})
         dog["power"] = {"consensus": 11, "fpi": 12, "nfl_com": 11}
-        self.assertTrue(scoring.qualification(fav, dog)["qualified"])
+        self.assertEqual(scoring.qualification(fav, dog, 30)["tier"], "qualified")
         dog["power"] = {}                                  # no rankings at all: the gate passes
-        self.assertTrue(scoring.qualification(fav, dog)["qualified"])
+        self.assertEqual(scoring.qualification(fav, dog, 30)["tier"], "qualified")
+
+    def test_calls_by_tier(self):
+        fav, dog = team((1,) * 4, (1,) * 4, net=0.6), team((30,) * 4, (30,) * 4, net=0.0, last3r=("L", "L", "L"))
+        self.assertEqual(scoring.score_game({"spread": -3}, fav, dog)["call"], "Edge clears")
+        mid = team((8,) * 4, (8,) * 4, net=0.2)                                   # score in the watch band
+        r = scoring.score_game({"spread": -3}, mid, team((15,) * 4, (15,) * 4))
+        self.assertEqual((r["tier"], r["call"]), ("watch", "Watch list"))
+
+    def test_logger_pushes_qualified_only(self):
+        self.assertTrue(nfl_live.push_ok({"tracked": True, "alerts": True}))
+        self.assertFalse(nfl_live.push_ok({"tracked": True, "alerts": False}))     # watch list
+        self.assertTrue(nfl_live.push_ok({"tracked": True}))                       # older context
 
     def test_power_consensus(self):
         from nfl import power

@@ -116,10 +116,12 @@ def build(today_et: date | None = None, refresh: bool = True) -> dict:
     board.pop("_power", None)
     attach_votes(board)
     board["games"].sort(key=lambda g: (g["state"] == "post", g["kick_utc"]))
-    tracked = [g for g in board["games"] if g["scoring"].get("qualified") and g["state"] != "post"]   # still to play
+    ahead = [g for g in board["games"] if g["state"] != "post"]                                     # still to play
+    tracked = [g for g in ahead if g["scoring"].get("tier") == "qualified"]
     board["summary"] = {"season": season, "week": week, "games": len(board["games"]),
                         "upcoming": sum(1 for g in board["games"] if g["state"] == "pre"),
-                        "tracked": len(tracked), "green": sum(1 for g in tracked if g["scoring"]["hero"]["band"] == "green"),
+                        "tracked": len(tracked), "qualified": len(tracked),
+                        "watch": sum(1 for g in ahead if g["scoring"].get("tier") == "watch"), "green": sum(1 for g in tracked if g["scoring"]["hero"]["band"] == "green"),
                         "edge_clears": sum(1 for g in board["games"] if g["scoring"].get("edge", {}).get("clears")),
                         "built_label": board["built_label"]}
     return board
@@ -202,7 +204,8 @@ def _game(row, events, wm, recs, qbs, keys, board) -> dict:
     if pred:
         home["fpi_win"], away["fpi_win"] = round(pred["home"], 3), round(pred["away"], 3)
     if not fav_side:
-        g["scoring"] = {"qualified": False, "call": "No line", "hero": {"score": None, "band": None, "parts": {}, "max": 40},
+        g["scoring"] = {"qualified": False, "tier": "out", "tier_label": "No track", "tracked": False, "alerts": False,
+                        "routes": [], "route": "", "fails": ["No betting line yet"], "context": [], "call": "No line", "hero": {"score": None, "band": None, "parts": {}, "max": 40},
                         "edge": {"gap": None}, "flags": [], "rules": [], "failed": ["No betting line yet"], "under": {}}
         return g
     fav, dog = (home, away) if fav_side == "home" else (away, home)
@@ -256,7 +259,9 @@ def write(board: dict) -> dict:
     ctx = {"season": board["season"], "week": board["week"], "built_at": board["built_at"], "games": [
         {"id": g["id"], "nflverse_id": g["nflverse_id"], "kick_utc": g["kick_utc"], "day_et": g["day_et"],
          "home": g["home_code"], "away": g["away_code"], "fav": g.get("fav"), "dog": g.get("dog"), "spread": g.get("spread"),
-         "fav_defense_top10": g.get("fav_defense_top10"), "tracked": bool(g["scoring"].get("qualified")),
+         "fav_defense_top10": g.get("fav_defense_top10"), "tracked": bool(g["scoring"].get("tracked")),
+         "alerts": bool(g["scoring"].get("alerts")), "tier": g["scoring"].get("tier"),
+         "tier_label": g["scoring"].get("tier_label"),
          "kalshi_away": sources.kalshi_code(g["away_code"]), "kalshi_home": sources.kalshi_code(g["home_code"]),
          # for the live engine (ESPN abbreviations) and the Live page
          "away_abbr": g["away"]["abbr"], "home_abbr": g["home"]["abbr"],

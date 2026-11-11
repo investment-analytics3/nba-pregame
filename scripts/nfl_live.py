@@ -18,8 +18,9 @@ next day from nflverse play-by-play (scripts/nfl_grade.py), with the same rules 
 backtest. If a poll misses the exact moment, the first poll after it is used and the
 record is marked "late" with the game clock.
 
-Phone alerts (owner decision Nov 9; same pattern as the NBA): tracked games only (the six
-pregame rules passed), at most two per game, never repeated across restarts:
+Phone alerts (owner decisions Nov 9 + Nov 10): Qualified games only (context "alerts"; Watch
+list games are logged and shown on the Live page, but not pushed), at most two per game,
+never repeated across restarts:
     end3  end of the 3rd quarter: the live grade, score, lead, Kalshi price, early-path read
     bet   the first BET signal in the 4th (15:00-5:00) from the live engine
 The early path itself stays shadow (logged, not alerted) until the Kalshi review.
@@ -150,10 +151,15 @@ def snapshot(g: dict, ev: dict, kind: str, late: bool) -> dict:
     return rec
 
 
+def push_ok(g: dict) -> bool:
+    """Phone pushes: Qualified only. Older contexts (no "alerts" key) fall back to "tracked"."""
+    return bool(g.get("alerts", g.get("tracked")))
+
+
 def alert(entry: dict, g: dict, kind: str, title: str, body: str, priority: str = "default") -> bool:
-    """One push per (game, kind), tracked games only. Returns True if sent."""
+    """One push per (game, kind), Qualified games only (not the watch list). Returns True if sent."""
     sent = entry.setdefault("alerts", {})
-    if kind in sent or not g.get("tracked") or "--no-alert" in sys.argv:
+    if kind in sent or not push_ok(g) or "--no-alert" in sys.argv:
         return False
     try:
         notify.send_alert(title, body, click=f"{PAGES}nfl/game.html?g={g['id']}", priority=priority, tags="football")
@@ -191,8 +197,8 @@ def end3_alert(entry: dict, g: dict, rec: dict):
 
 
 def bet_check(entry: dict, g: dict, ev: dict) -> bool:
-    """4th quarter 15:00-5:00, tracked games: run the engine; push the first BET signal."""
-    if not g.get("tracked") or "bet" in entry.get("alerts", {}) or ev.get("period") != 4:
+    """4th quarter 15:00-5:00, Qualified games: run the engine; push the first BET signal."""
+    if not push_ok(g) or "bet" in entry.get("alerts", {}) or ev.get("period") != 4:
         return False
     clock = _secs(ev.get("clock"))
     if clock is None or clock < 300:
@@ -314,7 +320,8 @@ def main() -> int:
                 continue
             entry = book["games"].setdefault(ev["id"], {
                 "week": ctx["week"], "nflverse_id": g["nflverse_id"], "day_et": g["day_et"], "away": g["away"],
-                "home": g["home"], "fav": g["fav"], "dog": g["dog"], "spread": g["spread"], "tracked": g["tracked"]})
+                "home": g["home"], "fav": g["fav"], "dog": g["dog"], "spread": g["spread"], "tracked": g["tracked"],
+                "tier": g.get("tier")})
             for kind, late in due_checkpoints(ev, entry):
                 entry[kind] = snapshot(g, ev, kind, late)
                 changed.append(f"{g['away']}@{g['home']} {kind}")

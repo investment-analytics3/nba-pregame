@@ -51,8 +51,9 @@ get('live/context.json').then(c => {
 
 get('nfl/summary.json').then(s => {
   set('nfl', 'date', `Week ${esc(s.week ?? '–')}`);
-  set('nfl', 'head', s.tracked ? `${s.tracked} game${s.tracked > 1 ? 's' : ''} tracked` : 'No game passes the six rules yet');
-  set('nfl', 'stat', stat([[s.upcoming ?? s.games, 'to play'], [s.tracked ?? 0, 'tracked'], [s.edge_clears ?? 0, 'edge clears']]));
+  const q = s.qualified ?? s.tracked ?? 0, w = s.watch ?? 0;
+  set('nfl', 'head', q ? `${q} game${q > 1 ? 's' : ''} qualified` : (w ? `${w} on the watch list` : 'No game qualifies yet'));
+  set('nfl', 'stat', stat([[s.upcoming ?? s.games, 'to play'], [q, 'qualified'], [w, 'watch list']]));
   set('nfl', 'list', `Updated ${esc(s.built_label || '')}`);
 }).catch(() => set('nfl', 'head', 'NFL board not built yet'));
 })();
