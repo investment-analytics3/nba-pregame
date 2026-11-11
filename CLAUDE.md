@@ -14,7 +14,7 @@ a phone alert. No AI runs in the daily pipeline; Claude is only used to change c
 - NBA board (latest): https://investment-analytics3.github.io/nba-pregame/nba/
 - NFL board: https://investment-analytics3.github.io/nba-pregame/nfl/ · checkpoint log: .../nfl/live.html
 - NFL design spec (Claude Doc): https://claude.ai/artifact/A4Q6Nana5hMZYbJCSVNix2
-- College football spec (Claude Doc, DRAFT, not built yet): https://claude.ai/artifact/GjAffxfWQBwayGjJ4s4gGc · backtest: `scripts/cfb_backtest.py` → `data/cfb/backtest.json` (+ `_games.csv`); data = sportsdataverse `espn_cfb_pbp` release (reachable from the workspace) + cfbfastR-data schedules
+- College football spec (Claude Doc, DRAFT, not built yet): https://claude.ai/artifact/GjAffxfWQBwayGjJ4s4gGc · backtest: `scripts/cfb_backtest.py` → `data/cfb/backtest.json` (+ `_games.csv`); early entry (end Q1 / half / end Q3 vs in-game WP, Nov 10: no edge vs a fair price; next = log real Kalshi prices): `scripts/cfb_early_backtest.py` → `data/cfb/early_backtest.json`; data = sportsdataverse `espn_cfb_pbp` release (reachable from the workspace) + cfbfastR-data schedules
 - Results tracker: https://investment-analytics3.github.io/nba-pregame/results.html
 - Design spec (Claude Doc): https://claude.ai/artifact/TQV7dXo9KQM8aEmEEh8v8c
 - Original visual mockup (Claude Design): https://claude.ai/artifact/6NEsvvN1QmSv4QMxC2hCyu

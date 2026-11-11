@@ -1,0 +1,934 @@
+{
+ "seasons": [
+  2022,
+  2023,
+  2024,
+  2025,
+  2026
+ ],
+ "games": 793,
+ "checkpoints": {
+  "end_q1": {
+   "all_games": {
+    "games": 793,
+    "wins": 656,
+    "win_pct": 0.827,
+    "price_proxy": 0.821,
+    "edge_pts": 0.7,
+    "losses": 137
+   },
+   "by_lead": {
+    "7+": {
+     "all": {
+      "games": 333,
+      "wins": 303,
+      "win_pct": 0.91,
+      "price_proxy": 0.921,
+      "edge_pts": -1.1,
+      "losses": 30
+     },
+     "control": {
+      "games": 282,
+      "wins": 257,
+      "win_pct": 0.911,
+      "price_proxy": 0.927,
+      "edge_pts": -1.5,
+      "losses": 25
+     },
+     "no_control": {
+      "games": 51,
+      "wins": 46,
+      "win_pct": 0.902,
+      "price_proxy": 0.889,
+      "edge_pts": 1.3,
+      "losses": 5
+     },
+     "control_and_defense": {
+      "games": 32,
+      "wins": 29,
+      "win_pct": 0.906,
+      "price_proxy": 0.929,
+      "edge_pts": -2.2,
+      "losses": 3
+     },
+     "tracked_pregame": {
+      "games": 177,
+      "wins": 161,
+      "win_pct": 0.91,
+      "price_proxy": 0.925,
+      "edge_pts": -1.5,
+      "losses": 16
+     }
+    },
+    "10+": {
+     "all": {
+      "games": 189,
+      "wins": 175,
+      "win_pct": 0.926,
+      "price_proxy": 0.947,
+      "edge_pts": -2.1,
+      "losses": 14
+     },
+     "control": {
+      "games": 173,
+      "wins": 159,
+      "win_pct": 0.919,
+      "price_proxy": 0.949,
+      "edge_pts": -3.0,
+      "losses": 14
+     },
+     "no_control": {
+      "games": 16,
+      "wins": 16,
+      "win_pct": 1.0,
+      "price_proxy": 0.926,
+      "edge_pts": 7.4,
+      "losses": 0
+     },
+     "control_and_defense": {
+      "games": 21,
+      "wins": 19,
+      "win_pct": 0.905,
+      "price_proxy": 0.94,
+      "edge_pts": -3.5,
+      "losses": 2
+     },
+     "tracked_pregame": {
+      "games": 104,
+      "wins": 98,
+      "win_pct": 0.942,
+      "price_proxy": 0.948,
+      "edge_pts": -0.6,
+      "losses": 6
+     }
+    },
+    "14+": {
+     "all": {
+      "games": 128,
+      "wins": 118,
+      "win_pct": 0.922,
+      "price_proxy": 0.962,
+      "edge_pts": -4.0,
+      "losses": 10
+     },
+     "control": {
+      "games": 119,
+      "wins": 109,
+      "win_pct": 0.916,
+      "price_proxy": 0.963,
+      "edge_pts": -4.7,
+      "losses": 10
+     },
+     "no_control": {
+      "games": 9,
+      "wins": 9,
+      "win_pct": 1.0,
+      "price_proxy": 0.939,
+      "edge_pts": 6.1,
+      "losses": 0
+     },
+     "control_and_defense": {
+      "games": 13,
+      "wins": 12,
+      "win_pct": 0.923,
+      "price_proxy": 0.953,
+      "edge_pts": -3.0,
+      "losses": 1
+     },
+     "tracked_pregame": {
+      "games": 71,
+      "wins": 68,
+      "win_pct": 0.958,
+      "price_proxy": 0.963,
+      "edge_pts": -0.5,
+      "losses": 3
+     }
+    },
+    "17+": {
+     "all": {
+      "games": 35,
+      "wins": 34,
+      "win_pct": 0.971,
+      "price_proxy": 0.981,
+      "edge_pts": -1.0,
+      "losses": 1
+     },
+     "control": {
+      "games": 35,
+      "wins": 34,
+      "win_pct": 0.971,
+      "price_proxy": 0.981,
+      "edge_pts": -1.0,
+      "losses": 1
+     },
+     "no_control": {
+      "games": 0
+     },
+     "control_and_defense": {
+      "games": 1,
+      "wins": 1,
+      "win_pct": 1.0,
+      "price_proxy": 0.981,
+      "edge_pts": 1.9,
+      "losses": 0
+     },
+     "tracked_pregame": {
+      "games": 17,
+      "wins": 17,
+      "win_pct": 1.0,
+      "price_proxy": 0.981,
+      "edge_pts": 1.9,
+      "losses": 0
+     }
+    },
+    "21+": {
+     "all": {
+      "games": 21,
+      "wins": 20,
+      "win_pct": 0.952,
+      "price_proxy": 0.987,
+      "edge_pts": -3.4,
+      "losses": 1
+     },
+     "control": {
+      "games": 21,
+      "wins": 20,
+      "win_pct": 0.952,
+      "price_proxy": 0.987,
+      "edge_pts": -3.4,
+      "losses": 1
+     },
+     "no_control": {
+      "games": 0
+     },
+     "control_and_defense": {
+      "games": 0
+     },
+     "tracked_pregame": {
+      "games": 10,
+      "wins": 10,
+      "win_pct": 1.0,
+      "price_proxy": 0.988,
+      "edge_pts": 1.2,
+      "losses": 0
+     }
+    }
+   },
+   "lead_bands": {
+    "7-9": {
+     "all": {
+      "games": 144,
+      "wins": 128,
+      "win_pct": 0.889,
+      "price_proxy": 0.886,
+      "edge_pts": 0.3,
+      "losses": 16
+     },
+     "control": {
+      "games": 109,
+      "wins": 98,
+      "win_pct": 0.899,
+      "price_proxy": 0.891,
+      "edge_pts": 0.8,
+      "losses": 11
+     }
+    },
+    "10-13": {
+     "all": {
+      "games": 61,
+      "wins": 57,
+      "win_pct": 0.934,
+      "price_proxy": 0.917,
+      "edge_pts": 1.7,
+      "losses": 4
+     },
+     "control": {
+      "games": 54,
+      "wins": 50,
+      "win_pct": 0.926,
+      "price_proxy": 0.918,
+      "edge_pts": 0.8,
+      "losses": 4
+     }
+    },
+    "14-16": {
+     "all": {
+      "games": 93,
+      "wins": 84,
+      "win_pct": 0.903,
+      "price_proxy": 0.954,
+      "edge_pts": -5.1,
+      "losses": 9
+     },
+     "control": {
+      "games": 84,
+      "wins": 75,
+      "win_pct": 0.893,
+      "price_proxy": 0.956,
+      "edge_pts": -6.3,
+      "losses": 9
+     }
+    },
+    "17-20": {
+     "all": {
+      "games": 14,
+      "wins": 14,
+      "win_pct": 1.0,
+      "price_proxy": 0.973,
+      "edge_pts": 2.7,
+      "losses": 0
+     },
+     "control": {
+      "games": 14,
+      "wins": 14,
+      "win_pct": 1.0,
+      "price_proxy": 0.973,
+      "edge_pts": 2.7,
+      "losses": 0
+     }
+    },
+    "21-99": {
+     "all": {
+      "games": 21,
+      "wins": 20,
+      "win_pct": 0.952,
+      "price_proxy": 0.987,
+      "edge_pts": -3.4,
+      "losses": 1
+     },
+     "control": {
+      "games": 21,
+      "wins": 20,
+      "win_pct": 0.952,
+      "price_proxy": 0.987,
+      "edge_pts": -3.4,
+      "losses": 1
+     }
+    }
+   }
+  },
+  "half": {
+   "all_games": {
+    "games": 793,
+    "wins": 656,
+    "win_pct": 0.827,
+    "price_proxy": 0.821,
+    "edge_pts": 0.6,
+    "losses": 137
+   },
+   "by_lead": {
+    "7+": {
+     "all": {
+      "games": 432,
+      "wins": 405,
+      "win_pct": 0.938,
+      "price_proxy": 0.952,
+      "edge_pts": -1.4,
+      "losses": 27
+     },
+     "control": {
+      "games": 398,
+      "wins": 374,
+      "win_pct": 0.94,
+      "price_proxy": 0.955,
+      "edge_pts": -1.6,
+      "losses": 24
+     },
+     "no_control": {
+      "games": 34,
+      "wins": 31,
+      "win_pct": 0.912,
+      "price_proxy": 0.908,
+      "edge_pts": 0.4,
+      "losses": 3
+     },
+     "control_and_defense": {
+      "games": 34,
+      "wins": 33,
+      "win_pct": 0.971,
+      "price_proxy": 0.951,
+      "edge_pts": 2.0,
+      "losses": 1
+     },
+     "tracked_pregame": {
+      "games": 231,
+      "wins": 216,
+      "win_pct": 0.935,
+      "price_proxy": 0.952,
+      "edge_pts": -1.7,
+      "losses": 15
+     }
+    },
+    "10+": {
+     "all": {
+      "games": 350,
+      "wins": 337,
+      "win_pct": 0.963,
+      "price_proxy": 0.969,
+      "edge_pts": -0.6,
+      "losses": 13
+     },
+     "control": {
+      "games": 333,
+      "wins": 320,
+      "win_pct": 0.961,
+      "price_proxy": 0.97,
+      "edge_pts": -0.9,
+      "losses": 13
+     },
+     "no_control": {
+      "games": 17,
+      "wins": 17,
+      "win_pct": 1.0,
+      "price_proxy": 0.943,
+      "edge_pts": 5.7,
+      "losses": 0
+     },
+     "control_and_defense": {
+      "games": 28,
+      "wins": 27,
+      "win_pct": 0.964,
+      "price_proxy": 0.966,
+      "edge_pts": -0.2,
+      "losses": 1
+     },
+     "tracked_pregame": {
+      "games": 185,
+      "wins": 178,
+      "win_pct": 0.962,
+      "price_proxy": 0.97,
+      "edge_pts": -0.8,
+      "losses": 7
+     }
+    },
+    "14+": {
+     "all": {
+      "games": 265,
+      "wins": 256,
+      "win_pct": 0.966,
+      "price_proxy": 0.981,
+      "edge_pts": -1.5,
+      "losses": 9
+     },
+     "control": {
+      "games": 260,
+      "wins": 251,
+      "win_pct": 0.965,
+      "price_proxy": 0.982,
+      "edge_pts": -1.6,
+      "losses": 9
+     },
+     "no_control": {
+      "games": 5,
+      "wins": 5,
+      "win_pct": 1.0,
+      "price_proxy": 0.962,
+      "edge_pts": 3.8,
+      "losses": 0
+     },
+     "control_and_defense": {
+      "games": 21,
+      "wins": 20,
+      "win_pct": 0.952,
+      "price_proxy": 0.981,
+      "edge_pts": -2.8,
+      "losses": 1
+     },
+     "tracked_pregame": {
+      "games": 141,
+      "wins": 136,
+      "win_pct": 0.965,
+      "price_proxy": 0.982,
+      "edge_pts": -1.7,
+      "losses": 5
+     }
+    },
+    "17+": {
+     "all": {
+      "games": 197,
+      "wins": 193,
+      "win_pct": 0.98,
+      "price_proxy": 0.989,
+      "edge_pts": -0.9,
+      "losses": 4
+     },
+     "control": {
+      "games": 196,
+      "wins": 192,
+      "win_pct": 0.98,
+      "price_proxy": 0.989,
+      "edge_pts": -0.9,
+      "losses": 4
+     },
+     "no_control": {
+      "games": 1,
+      "wins": 1,
+      "win_pct": 1.0,
+      "price_proxy": 0.987,
+      "edge_pts": 1.3,
+      "losses": 0
+     },
+     "control_and_defense": {
+      "games": 15,
+      "wins": 15,
+      "win_pct": 1.0,
+      "price_proxy": 0.99,
+      "edge_pts": 1.0,
+      "losses": 0
+     },
+     "tracked_pregame": {
+      "games": 103,
+      "wins": 101,
+      "win_pct": 0.981,
+      "price_proxy": 0.989,
+      "edge_pts": -0.9,
+      "losses": 2
+     }
+    },
+    "21+": {
+     "all": {
+      "games": 121,
+      "wins": 119,
+      "win_pct": 0.983,
+      "price_proxy": 0.994,
+      "edge_pts": -1.1,
+      "losses": 2
+     },
+     "control": {
+      "games": 121,
+      "wins": 119,
+      "win_pct": 0.983,
+      "price_proxy": 0.994,
+      "edge_pts": -1.1,
+      "losses": 2
+     },
+     "no_control": {
+      "games": 0
+     },
+     "control_and_defense": {
+      "games": 12,
+      "wins": 12,
+      "win_pct": 1.0,
+      "price_proxy": 0.992,
+      "edge_pts": 0.8,
+      "losses": 0
+     },
+     "tracked_pregame": {
+      "games": 62,
+      "wins": 61,
+      "win_pct": 0.984,
+      "price_proxy": 0.995,
+      "edge_pts": -1.2,
+      "losses": 1
+     }
+    }
+   },
+   "lead_bands": {
+    "7-9": {
+     "all": {
+      "games": 82,
+      "wins": 68,
+      "win_pct": 0.829,
+      "price_proxy": 0.878,
+      "edge_pts": -4.9,
+      "losses": 14
+     },
+     "control": {
+      "games": 65,
+      "wins": 54,
+      "win_pct": 0.831,
+      "price_proxy": 0.879,
+      "edge_pts": -4.8,
+      "losses": 11
+     }
+    },
+    "10-13": {
+     "all": {
+      "games": 85,
+      "wins": 81,
+      "win_pct": 0.953,
+      "price_proxy": 0.93,
+      "edge_pts": 2.3,
+      "losses": 4
+     },
+     "control": {
+      "games": 73,
+      "wins": 69,
+      "win_pct": 0.945,
+      "price_proxy": 0.929,
+      "edge_pts": 1.6,
+      "losses": 4
+     }
+    },
+    "14-16": {
+     "all": {
+      "games": 68,
+      "wins": 63,
+      "win_pct": 0.926,
+      "price_proxy": 0.96,
+      "edge_pts": -3.4,
+      "losses": 5
+     },
+     "control": {
+      "games": 64,
+      "wins": 59,
+      "win_pct": 0.922,
+      "price_proxy": 0.961,
+      "edge_pts": -3.9,
+      "losses": 5
+     }
+    },
+    "17-20": {
+     "all": {
+      "games": 76,
+      "wins": 74,
+      "win_pct": 0.974,
+      "price_proxy": 0.98,
+      "edge_pts": -0.6,
+      "losses": 2
+     },
+     "control": {
+      "games": 75,
+      "wins": 73,
+      "win_pct": 0.973,
+      "price_proxy": 0.979,
+      "edge_pts": -0.6,
+      "losses": 2
+     }
+    },
+    "21-99": {
+     "all": {
+      "games": 121,
+      "wins": 119,
+      "win_pct": 0.983,
+      "price_proxy": 0.994,
+      "edge_pts": -1.1,
+      "losses": 2
+     },
+     "control": {
+      "games": 121,
+      "wins": 119,
+      "win_pct": 0.983,
+      "price_proxy": 0.994,
+      "edge_pts": -1.1,
+      "losses": 2
+     }
+    }
+   }
+  },
+  "end_q3": {
+   "all_games": {
+    "games": 793,
+    "wins": 656,
+    "win_pct": 0.827,
+    "price_proxy": 0.802,
+    "edge_pts": 2.5,
+    "losses": 137
+   },
+   "by_lead": {
+    "7+": {
+     "all": {
+      "games": 479,
+      "wins": 465,
+      "win_pct": 0.971,
+      "price_proxy": 0.966,
+      "edge_pts": 0.5,
+      "losses": 14
+     },
+     "control": {
+      "games": 419,
+      "wins": 408,
+      "win_pct": 0.974,
+      "price_proxy": 0.973,
+      "edge_pts": 0.1,
+      "losses": 11
+     },
+     "no_control": {
+      "games": 60,
+      "wins": 57,
+      "win_pct": 0.95,
+      "price_proxy": 0.916,
+      "edge_pts": 3.4,
+      "losses": 3
+     },
+     "control_and_defense": {
+      "games": 33,
+      "wins": 32,
+      "win_pct": 0.97,
+      "price_proxy": 0.968,
+      "edge_pts": 0.2,
+      "losses": 1
+     },
+     "tracked_pregame": {
+      "games": 251,
+      "wins": 245,
+      "win_pct": 0.976,
+      "price_proxy": 0.965,
+      "edge_pts": 1.1,
+      "losses": 6
+     }
+    },
+    "10+": {
+     "all": {
+      "games": 413,
+      "wins": 407,
+      "win_pct": 0.985,
+      "price_proxy": 0.98,
+      "edge_pts": 0.6,
+      "losses": 6
+     },
+     "control": {
+      "games": 376,
+      "wins": 370,
+      "win_pct": 0.984,
+      "price_proxy": 0.983,
+      "edge_pts": 0.2,
+      "losses": 6
+     },
+     "no_control": {
+      "games": 37,
+      "wins": 37,
+      "win_pct": 1.0,
+      "price_proxy": 0.953,
+      "edge_pts": 4.7,
+      "losses": 0
+     },
+     "control_and_defense": {
+      "games": 28,
+      "wins": 28,
+      "win_pct": 1.0,
+      "price_proxy": 0.98,
+      "edge_pts": 2.0,
+      "losses": 0
+     },
+     "tracked_pregame": {
+      "games": 214,
+      "wins": 213,
+      "win_pct": 0.995,
+      "price_proxy": 0.98,
+      "edge_pts": 1.5,
+      "losses": 1
+     }
+    },
+    "14+": {
+     "all": {
+      "games": 342,
+      "wins": 340,
+      "win_pct": 0.994,
+      "price_proxy": 0.989,
+      "edge_pts": 0.5,
+      "losses": 2
+     },
+     "control": {
+      "games": 321,
+      "wins": 319,
+      "win_pct": 0.994,
+      "price_proxy": 0.99,
+      "edge_pts": 0.4,
+      "losses": 2
+     },
+     "no_control": {
+      "games": 21,
+      "wins": 21,
+      "win_pct": 1.0,
+      "price_proxy": 0.977,
+      "edge_pts": 2.3,
+      "losses": 0
+     },
+     "control_and_defense": {
+      "games": 23,
+      "wins": 23,
+      "win_pct": 1.0,
+      "price_proxy": 0.99,
+      "edge_pts": 1.0,
+      "losses": 0
+     },
+     "tracked_pregame": {
+      "games": 180,
+      "wins": 180,
+      "win_pct": 1.0,
+      "price_proxy": 0.99,
+      "edge_pts": 1.0,
+      "losses": 0
+     }
+    },
+    "17+": {
+     "all": {
+      "games": 279,
+      "wins": 277,
+      "win_pct": 0.993,
+      "price_proxy": 0.994,
+      "edge_pts": -0.2,
+      "losses": 2
+     },
+     "control": {
+      "games": 266,
+      "wins": 264,
+      "win_pct": 0.992,
+      "price_proxy": 0.995,
+      "edge_pts": -0.2,
+      "losses": 2
+     },
+     "no_control": {
+      "games": 13,
+      "wins": 13,
+      "win_pct": 1.0,
+      "price_proxy": 0.991,
+      "edge_pts": 0.9,
+      "losses": 0
+     },
+     "control_and_defense": {
+      "games": 22,
+      "wins": 22,
+      "win_pct": 1.0,
+      "price_proxy": 0.991,
+      "edge_pts": 0.9,
+      "losses": 0
+     },
+     "tracked_pregame": {
+      "games": 150,
+      "wins": 150,
+      "win_pct": 1.0,
+      "price_proxy": 0.994,
+      "edge_pts": 0.6,
+      "losses": 0
+     }
+    },
+    "21+": {
+     "all": {
+      "games": 209,
+      "wins": 207,
+      "win_pct": 0.99,
+      "price_proxy": 0.997,
+      "edge_pts": -0.7,
+      "losses": 2
+     },
+     "control": {
+      "games": 201,
+      "wins": 199,
+      "win_pct": 0.99,
+      "price_proxy": 0.997,
+      "edge_pts": -0.7,
+      "losses": 2
+     },
+     "no_control": {
+      "games": 8,
+      "wins": 8,
+      "win_pct": 1.0,
+      "price_proxy": 0.995,
+      "edge_pts": 0.5,
+      "losses": 0
+     },
+     "control_and_defense": {
+      "games": 14,
+      "wins": 14,
+      "win_pct": 1.0,
+      "price_proxy": 0.995,
+      "edge_pts": 0.5,
+      "losses": 0
+     },
+     "tracked_pregame": {
+      "games": 112,
+      "wins": 112,
+      "win_pct": 1.0,
+      "price_proxy": 0.997,
+      "edge_pts": 0.3,
+      "losses": 0
+     }
+    }
+   },
+   "lead_bands": {
+    "7-9": {
+     "all": {
+      "games": 66,
+      "wins": 58,
+      "win_pct": 0.879,
+      "price_proxy": 0.876,
+      "edge_pts": 0.3,
+      "losses": 8
+     },
+     "control": {
+      "games": 43,
+      "wins": 38,
+      "win_pct": 0.884,
+      "price_proxy": 0.885,
+      "edge_pts": -0.2,
+      "losses": 5
+     }
+    },
+    "10-13": {
+     "all": {
+      "games": 71,
+      "wins": 67,
+      "win_pct": 0.944,
+      "price_proxy": 0.935,
+      "edge_pts": 0.9,
+      "losses": 4
+     },
+     "control": {
+      "games": 55,
+      "wins": 51,
+      "win_pct": 0.927,
+      "price_proxy": 0.939,
+      "edge_pts": -1.2,
+      "losses": 4
+     }
+    },
+    "14-16": {
+     "all": {
+      "games": 63,
+      "wins": 63,
+      "win_pct": 1.0,
+      "price_proxy": 0.966,
+      "edge_pts": 3.4,
+      "losses": 0
+     },
+     "control": {
+      "games": 55,
+      "wins": 55,
+      "win_pct": 1.0,
+      "price_proxy": 0.968,
+      "edge_pts": 3.2,
+      "losses": 0
+     }
+    },
+    "17-20": {
+     "all": {
+      "games": 70,
+      "wins": 70,
+      "win_pct": 1.0,
+      "price_proxy": 0.986,
+      "edge_pts": 1.4,
+      "losses": 0
+     },
+     "control": {
+      "games": 65,
+      "wins": 65,
+      "win_pct": 1.0,
+      "price_proxy": 0.986,
+      "edge_pts": 1.4,
+      "losses": 0
+     }
+    },
+    "21-99": {
+     "all": {
+      "games": 209,
+      "wins": 207,
+      "win_pct": 0.99,
+      "price_proxy": 0.997,
+      "edge_pts": -0.7,
+      "losses": 2
+     },
+     "control": {
+      "games": 201,
+      "wins": 199,
+      "win_pct": 0.99,
+      "price_proxy": 0.997,
+      "edge_pts": -0.7,
+      "losses": 2
+     }
+    }
+   }
+  }
+ }
+}

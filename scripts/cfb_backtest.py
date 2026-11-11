@@ -193,7 +193,9 @@ def season_rows(y: int, cache: str) -> list[dict]:
         tier = "qualified" if (sc >= QUALIFY or rb) else ("watch" if sc >= WATCH else "out")
         hp, ap = s["home_points"], s["away_points"]
         fav_pts_, dog_pts_ = (hp, ap) if home_fav else (ap, hp)
-        rows.append({"season": y, "week": wk, "game_id": int(gid), "fav": g["homeTeamAbbrev"] if home_fav else g["awayTeamAbbrev"],
+        rows.append({"fav_id": int(fav), "dog_id": int(dog), "home_fav": home_fav,
+                     "fav_def_ranks": {w: {m: f["ranks"][w][m] for m in ("def_epa", "def_sr")} for w in ("season", "last3")},
+                     "season": y, "week": wk, "game_id": int(gid), "fav": g["homeTeamAbbrev"] if home_fav else g["awayTeamAbbrev"],
                      "dog": g["awayTeamAbbrev"] if home_fav else g["homeTeamAbbrev"], "spread": spread, "score": sc,
                      "route_b": rb, "tier_raw": tier, "power_fail": bool(power_fail), "dog_elo_rank": dog_elo,
                      "dog_net_rank": dog_net, "tier": "out" if power_fail else tier,
