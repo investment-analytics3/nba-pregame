@@ -1,0 +1,40 @@
+name: College basketball checkpoint logger
+
+# Records halftime and 10:00 of the 2nd half (score, lead, REAL Kalshi price, ESPN win probability;
+# engine read + checklist at 10:00) for every tracked college basketball game (Qualified + Watch list),
+# and publishes live Kalshi prices for the Live page (cbb-live-data branch).
+# Phone pushes: Qualified games only, 2nd half 10:00 + first BET signal (max two per game).
+# Started by the college basketball tick while tracked games are on; stops when none is on or about to start.
+on:
+  workflow_dispatch:
+    inputs:
+      once:
+        description: "One poll only (test)"
+        type: boolean
+        default: false
+      send:
+        description: "Send phone pushes (Qualified games: 2nd half 10:00 + first BET signal)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cbb-live
+  cancel-in-progress: false
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    timeout-minutes: 345
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Log checkpoints
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: python scripts/cbb_live.py --max-minutes 330 ${{ inputs.once == true && '--once' || '' }} ${{ inputs.send == false && '--no-alert' || '' }}

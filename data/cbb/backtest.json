@@ -1,0 +1,993 @@
+{
+ "seasons": [
+  2026
+ ],
+ "all": {
+  "games": {
+   "n": 894,
+   "win": 0.904,
+   "fair": 0.877,
+   "edge": 0.027,
+   "cover": 0.462,
+   "price": 0.912,
+   "edge_vs_price": -0.008
+  },
+  "by_tier": {
+   "qualified": {
+    "n": 10,
+    "win": 1.0,
+    "fair": 0.904,
+    "edge": 0.096,
+    "cover": 0.5,
+    "price": 0.939,
+    "edge_vs_price": 0.061
+   },
+   "watch": {
+    "n": 361,
+    "win": 0.92,
+    "fair": 0.884,
+    "edge": 0.036,
+    "cover": 0.46,
+    "price": 0.92,
+    "edge_vs_price": -0.0
+   },
+   "out": {
+    "n": 523,
+    "win": 0.891,
+    "fair": 0.871,
+    "edge": 0.02,
+    "cover": 0.463,
+    "price": 0.906,
+    "edge_vs_price": -0.015
+   }
+  },
+  "power_gated": {
+   "n": 12,
+   "win": 0.917,
+   "fair": 0.858,
+   "edge": 0.059,
+   "cover": 0.167,
+   "price": 0.893,
+   "edge_vs_price": 0.023
+  },
+  "qualified_by_month": {
+   "01": {
+    "n": 5,
+    "win": 1.0,
+    "fair": 0.889,
+    "edge": 0.111,
+    "cover": 0.4,
+    "price": 0.924,
+    "edge_vs_price": 0.076
+   },
+   "02": {
+    "n": 3,
+    "win": 1.0,
+    "fair": 0.913,
+    "edge": 0.087,
+    "cover": 0.667,
+    "price": 0.948,
+    "edge_vs_price": 0.052
+   },
+   "03": {
+    "n": 0
+   },
+   "11": {
+    "n": 0
+   },
+   "12": {
+    "n": 2,
+    "win": 1.0,
+    "fair": 0.928,
+    "edge": 0.072,
+    "cover": 0.5,
+    "price": 0.963,
+    "edge_vs_price": 0.037
+   }
+  },
+  "all_by_month": {
+   "01": {
+    "n": 276,
+    "win": 0.895,
+    "fair": 0.874,
+    "edge": 0.021,
+    "cover": 0.409,
+    "price": 0.91,
+    "edge_vs_price": -0.015
+   },
+   "02": {
+    "n": 239,
+    "win": 0.887,
+    "fair": 0.872,
+    "edge": 0.015,
+    "cover": 0.469,
+    "price": 0.908,
+    "edge_vs_price": -0.021
+   },
+   "03": {
+    "n": 80,
+    "win": 0.925,
+    "fair": 0.875,
+    "edge": 0.05,
+    "cover": 0.462,
+    "price": 0.91,
+    "edge_vs_price": 0.015
+   },
+   "11": {
+    "n": 43,
+    "win": 0.953,
+    "fair": 0.879,
+    "edge": 0.074,
+    "cover": 0.581,
+    "price": 0.915,
+    "edge_vs_price": 0.039
+   },
+   "12": {
+    "n": 256,
+    "win": 0.914,
+    "fair": 0.884,
+    "edge": 0.03,
+    "cover": 0.492,
+    "price": 0.919,
+    "edge_vs_price": -0.005
+   }
+  },
+  "qualified_by_half_month": {
+   "01-01": {
+    "n": 2,
+    "win": 1.0,
+    "fair": 0.916,
+    "edge": 0.084,
+    "cover": 0.5,
+    "price": 0.951,
+    "edge_vs_price": 0.049
+   },
+   "01-16": {
+    "n": 3,
+    "win": 1.0,
+    "fair": 0.871,
+    "edge": 0.129,
+    "cover": 0.333,
+    "price": 0.906,
+    "edge_vs_price": 0.094
+   },
+   "02-01": {
+    "n": 3,
+    "win": 1.0,
+    "fair": 0.913,
+    "edge": 0.087,
+    "cover": 0.667,
+    "price": 0.948,
+    "edge_vs_price": 0.052
+   },
+   "02-16": {
+    "n": 0
+   },
+   "03-01": {
+    "n": 0
+   },
+   "11-16": {
+    "n": 0
+   },
+   "12-01": {
+    "n": 1,
+    "win": 1.0,
+    "fair": 0.926,
+    "edge": 0.074,
+    "cover": 0.0,
+    "price": 0.96,
+    "edge_vs_price": 0.04
+   },
+   "12-16": {
+    "n": 1,
+    "win": 1.0,
+    "fair": 0.931,
+    "edge": 0.069,
+    "cover": 1.0,
+    "price": 0.966,
+    "edge_vs_price": 0.034
+   }
+  },
+  "qualified_by_min_games": {
+   "1-4": {
+    "n": 0
+   },
+   "5-7": {
+    "n": 0
+   },
+   "8-10": {
+    "n": 1,
+    "win": 1.0,
+    "fair": 0.926,
+    "edge": 0.074,
+    "cover": 0.0,
+    "price": 0.96,
+    "edge_vs_price": 0.04
+   },
+   "11-13": {
+    "n": 1,
+    "win": 1.0,
+    "fair": 0.931,
+    "edge": 0.069,
+    "cover": 1.0,
+    "price": 0.966,
+    "edge_vs_price": 0.034
+   },
+   "14+": {
+    "n": 8,
+    "win": 1.0,
+    "fair": 0.898,
+    "edge": 0.102,
+    "cover": 0.5,
+    "price": 0.933,
+    "edge_vs_price": 0.067
+   }
+  },
+  "score_bands": {
+   "0-17": {
+    "n": 513,
+    "win": 0.889,
+    "fair": 0.871,
+    "edge": 0.018,
+    "cover": 0.468,
+    "price": 0.907,
+    "edge_vs_price": -0.018
+   },
+   "18-23": {
+    "n": 317,
+    "win": 0.921,
+    "fair": 0.881,
+    "edge": 0.04,
+    "cover": 0.476,
+    "price": 0.917,
+    "edge_vs_price": 0.004
+   },
+   "24-27": {
+    "n": 53,
+    "win": 0.925,
+    "fair": 0.897,
+    "edge": 0.027,
+    "cover": 0.321,
+    "price": 0.933,
+    "edge_vs_price": -0.008
+   },
+   "28-31": {
+    "n": 11,
+    "win": 1.0,
+    "fair": 0.907,
+    "edge": 0.093,
+    "cover": 0.455,
+    "price": 0.942,
+    "edge_vs_price": 0.058
+   },
+   "32+": {
+    "n": 0
+   }
+  },
+  "route_b_only": {
+   "n": 0
+  },
+  "checkpoints": {
+   "half": {
+    "trail": {
+     "n": 179,
+     "win": 0.682,
+     "wp": 0.643
+    },
+    "0-4": {
+     "n": 193,
+     "win": 0.907,
+     "wp": 0.86
+    },
+    "5-9": {
+     "n": 183,
+     "win": 0.951,
+     "wp": 0.909
+    },
+    "10-14": {
+     "n": 161,
+     "win": 0.988,
+     "wp": 0.959
+    },
+    "15+": {
+     "n": 178,
+     "win": 1.0,
+     "wp": 0.988
+    },
+    "10+_tracked": {
+     "n": 136,
+     "win": 1.0,
+     "wp": 0.976
+    }
+   },
+   "h2_10": {
+    "trail": {
+     "n": 128,
+     "win": 0.562,
+     "wp": 0.497
+    },
+    "0-4": {
+     "n": 134,
+     "win": 0.881,
+     "wp": 0.834
+    },
+    "5-9": {
+     "n": 163,
+     "win": 0.945,
+     "wp": 0.915
+    },
+    "10-14": {
+     "n": 148,
+     "win": 0.966,
+     "wp": 0.965
+    },
+    "15+": {
+     "n": 321,
+     "win": 1.0,
+     "wp": 0.995
+    },
+    "10+_tracked": {
+     "n": 200,
+     "win": 1.0,
+     "wp": 0.985
+    }
+   },
+   "h2_4": {
+    "trail": {
+     "n": 95,
+     "win": 0.379,
+     "wp": 0.366
+    },
+    "0-4": {
+     "n": 129,
+     "win": 0.814,
+     "wp": 0.847
+    },
+    "5-9": {
+     "n": 147,
+     "win": 0.986,
+     "wp": 0.945
+    },
+    "10-14": {
+     "n": 124,
+     "win": 0.992,
+     "wp": 0.987
+    },
+    "15+": {
+     "n": 399,
+     "win": 1.0,
+     "wp": 0.998
+    },
+    "10+_tracked": {
+     "n": 229,
+     "win": 1.0,
+     "wp": 0.995
+    }
+   }
+  }
+ },
+ "by_season": {
+  "2026": {
+   "games": {
+    "n": 894,
+    "win": 0.904,
+    "fair": 0.877,
+    "edge": 0.027,
+    "cover": 0.462,
+    "price": 0.912,
+    "edge_vs_price": -0.008
+   },
+   "by_tier": {
+    "qualified": {
+     "n": 10,
+     "win": 1.0,
+     "fair": 0.904,
+     "edge": 0.096,
+     "cover": 0.5,
+     "price": 0.939,
+     "edge_vs_price": 0.061
+    },
+    "watch": {
+     "n": 361,
+     "win": 0.92,
+     "fair": 0.884,
+     "edge": 0.036,
+     "cover": 0.46,
+     "price": 0.92,
+     "edge_vs_price": -0.0
+    },
+    "out": {
+     "n": 523,
+     "win": 0.891,
+     "fair": 0.871,
+     "edge": 0.02,
+     "cover": 0.463,
+     "price": 0.906,
+     "edge_vs_price": -0.015
+    }
+   },
+   "power_gated": {
+    "n": 12,
+    "win": 0.917,
+    "fair": 0.858,
+    "edge": 0.059,
+    "cover": 0.167,
+    "price": 0.893,
+    "edge_vs_price": 0.023
+   },
+   "qualified_by_month": {
+    "01": {
+     "n": 5,
+     "win": 1.0,
+     "fair": 0.889,
+     "edge": 0.111,
+     "cover": 0.4,
+     "price": 0.924,
+     "edge_vs_price": 0.076
+    },
+    "02": {
+     "n": 3,
+     "win": 1.0,
+     "fair": 0.913,
+     "edge": 0.087,
+     "cover": 0.667,
+     "price": 0.948,
+     "edge_vs_price": 0.052
+    },
+    "03": {
+     "n": 0
+    },
+    "11": {
+     "n": 0
+    },
+    "12": {
+     "n": 2,
+     "win": 1.0,
+     "fair": 0.928,
+     "edge": 0.072,
+     "cover": 0.5,
+     "price": 0.963,
+     "edge_vs_price": 0.037
+    }
+   },
+   "all_by_month": {
+    "01": {
+     "n": 276,
+     "win": 0.895,
+     "fair": 0.874,
+     "edge": 0.021,
+     "cover": 0.409,
+     "price": 0.91,
+     "edge_vs_price": -0.015
+    },
+    "02": {
+     "n": 239,
+     "win": 0.887,
+     "fair": 0.872,
+     "edge": 0.015,
+     "cover": 0.469,
+     "price": 0.908,
+     "edge_vs_price": -0.021
+    },
+    "03": {
+     "n": 80,
+     "win": 0.925,
+     "fair": 0.875,
+     "edge": 0.05,
+     "cover": 0.462,
+     "price": 0.91,
+     "edge_vs_price": 0.015
+    },
+    "11": {
+     "n": 43,
+     "win": 0.953,
+     "fair": 0.879,
+     "edge": 0.074,
+     "cover": 0.581,
+     "price": 0.915,
+     "edge_vs_price": 0.039
+    },
+    "12": {
+     "n": 256,
+     "win": 0.914,
+     "fair": 0.884,
+     "edge": 0.03,
+     "cover": 0.492,
+     "price": 0.919,
+     "edge_vs_price": -0.005
+    }
+   },
+   "qualified_by_half_month": {
+    "01-01": {
+     "n": 2,
+     "win": 1.0,
+     "fair": 0.916,
+     "edge": 0.084,
+     "cover": 0.5,
+     "price": 0.951,
+     "edge_vs_price": 0.049
+    },
+    "01-16": {
+     "n": 3,
+     "win": 1.0,
+     "fair": 0.871,
+     "edge": 0.129,
+     "cover": 0.333,
+     "price": 0.906,
+     "edge_vs_price": 0.094
+    },
+    "02-01": {
+     "n": 3,
+     "win": 1.0,
+     "fair": 0.913,
+     "edge": 0.087,
+     "cover": 0.667,
+     "price": 0.948,
+     "edge_vs_price": 0.052
+    },
+    "02-16": {
+     "n": 0
+    },
+    "03-01": {
+     "n": 0
+    },
+    "11-16": {
+     "n": 0
+    },
+    "12-01": {
+     "n": 1,
+     "win": 1.0,
+     "fair": 0.926,
+     "edge": 0.074,
+     "cover": 0.0,
+     "price": 0.96,
+     "edge_vs_price": 0.04
+    },
+    "12-16": {
+     "n": 1,
+     "win": 1.0,
+     "fair": 0.931,
+     "edge": 0.069,
+     "cover": 1.0,
+     "price": 0.966,
+     "edge_vs_price": 0.034
+    }
+   },
+   "qualified_by_min_games": {
+    "1-4": {
+     "n": 0
+    },
+    "5-7": {
+     "n": 0
+    },
+    "8-10": {
+     "n": 1,
+     "win": 1.0,
+     "fair": 0.926,
+     "edge": 0.074,
+     "cover": 0.0,
+     "price": 0.96,
+     "edge_vs_price": 0.04
+    },
+    "11-13": {
+     "n": 1,
+     "win": 1.0,
+     "fair": 0.931,
+     "edge": 0.069,
+     "cover": 1.0,
+     "price": 0.966,
+     "edge_vs_price": 0.034
+    },
+    "14+": {
+     "n": 8,
+     "win": 1.0,
+     "fair": 0.898,
+     "edge": 0.102,
+     "cover": 0.5,
+     "price": 0.933,
+     "edge_vs_price": 0.067
+    }
+   },
+   "score_bands": {
+    "0-17": {
+     "n": 513,
+     "win": 0.889,
+     "fair": 0.871,
+     "edge": 0.018,
+     "cover": 0.468,
+     "price": 0.907,
+     "edge_vs_price": -0.018
+    },
+    "18-23": {
+     "n": 317,
+     "win": 0.921,
+     "fair": 0.881,
+     "edge": 0.04,
+     "cover": 0.476,
+     "price": 0.917,
+     "edge_vs_price": 0.004
+    },
+    "24-27": {
+     "n": 53,
+     "win": 0.925,
+     "fair": 0.897,
+     "edge": 0.027,
+     "cover": 0.321,
+     "price": 0.933,
+     "edge_vs_price": -0.008
+    },
+    "28-31": {
+     "n": 11,
+     "win": 1.0,
+     "fair": 0.907,
+     "edge": 0.093,
+     "cover": 0.455,
+     "price": 0.942,
+     "edge_vs_price": 0.058
+    },
+    "32+": {
+     "n": 0
+    }
+   },
+   "route_b_only": {
+    "n": 0
+   },
+   "checkpoints": {
+    "half": {
+     "trail": {
+      "n": 179,
+      "win": 0.682,
+      "wp": 0.643
+     },
+     "0-4": {
+      "n": 193,
+      "win": 0.907,
+      "wp": 0.86
+     },
+     "5-9": {
+      "n": 183,
+      "win": 0.951,
+      "wp": 0.909
+     },
+     "10-14": {
+      "n": 161,
+      "win": 0.988,
+      "wp": 0.959
+     },
+     "15+": {
+      "n": 178,
+      "win": 1.0,
+      "wp": 0.988
+     },
+     "10+_tracked": {
+      "n": 136,
+      "win": 1.0,
+      "wp": 0.976
+     }
+    },
+    "h2_10": {
+     "trail": {
+      "n": 128,
+      "win": 0.562,
+      "wp": 0.497
+     },
+     "0-4": {
+      "n": 134,
+      "win": 0.881,
+      "wp": 0.834
+     },
+     "5-9": {
+      "n": 163,
+      "win": 0.945,
+      "wp": 0.915
+     },
+     "10-14": {
+      "n": 148,
+      "win": 0.966,
+      "wp": 0.965
+     },
+     "15+": {
+      "n": 321,
+      "win": 1.0,
+      "wp": 0.995
+     },
+     "10+_tracked": {
+      "n": 200,
+      "win": 1.0,
+      "wp": 0.985
+     }
+    },
+    "h2_4": {
+     "trail": {
+      "n": 95,
+      "win": 0.379,
+      "wp": 0.366
+     },
+     "0-4": {
+      "n": 129,
+      "win": 0.814,
+      "wp": 0.847
+     },
+     "5-9": {
+      "n": 147,
+      "win": 0.986,
+      "wp": 0.945
+     },
+     "10-14": {
+      "n": 124,
+      "win": 0.992,
+      "wp": 0.987
+     },
+     "15+": {
+      "n": 399,
+      "win": 1.0,
+      "wp": 0.998
+     },
+     "10+_tracked": {
+      "n": 229,
+      "win": 1.0,
+      "wp": 0.995
+     }
+    }
+   }
+  }
+ },
+ "rank_stability": {
+  "2025": {
+   "2024-11-18": {
+    "spearman": 0.658,
+    "teams": 364,
+    "median_d1_games": 3.0,
+    "top50_final_in_top50_now": 0.5
+   },
+   "2024-11-25": {
+    "spearman": 0.721,
+    "teams": 364,
+    "median_d1_games": 5.0,
+    "top50_final_in_top50_now": 0.5
+   },
+   "2024-12-02": {
+    "spearman": 0.763,
+    "teams": 364,
+    "median_d1_games": 7.0,
+    "top50_final_in_top50_now": 0.52
+   },
+   "2024-12-09": {
+    "spearman": 0.802,
+    "teams": 364,
+    "median_d1_games": 9.0,
+    "top50_final_in_top50_now": 0.58
+   },
+   "2024-12-16": {
+    "spearman": 0.81,
+    "teams": 364,
+    "median_d1_games": 10.0,
+    "top50_final_in_top50_now": 0.54
+   },
+   "2024-12-23": {
+    "spearman": 0.822,
+    "teams": 364,
+    "median_d1_games": 11.0,
+    "top50_final_in_top50_now": 0.54
+   },
+   "2024-12-30": {
+    "spearman": 0.827,
+    "teams": 364,
+    "median_d1_games": 12.0,
+    "top50_final_in_top50_now": 0.52
+   },
+   "2025-01-06": {
+    "spearman": 0.859,
+    "teams": 364,
+    "median_d1_games": 13.5,
+    "top50_final_in_top50_now": 0.56
+   },
+   "2025-01-13": {
+    "spearman": 0.891,
+    "teams": 364,
+    "median_d1_games": 15.0,
+    "top50_final_in_top50_now": 0.6
+   },
+   "2025-01-20": {
+    "spearman": 0.92,
+    "teams": 364,
+    "median_d1_games": 17.0,
+    "top50_final_in_top50_now": 0.7
+   },
+   "2025-01-27": {
+    "spearman": 0.942,
+    "teams": 364,
+    "median_d1_games": 19.0,
+    "top50_final_in_top50_now": 0.76
+   },
+   "2025-02-03": {
+    "spearman": 0.953,
+    "teams": 364,
+    "median_d1_games": 21.0,
+    "top50_final_in_top50_now": 0.82
+   },
+   "2025-02-10": {
+    "spearman": 0.966,
+    "teams": 364,
+    "median_d1_games": 23.0,
+    "top50_final_in_top50_now": 0.82
+   },
+   "2025-02-17": {
+    "spearman": 0.976,
+    "teams": 364,
+    "median_d1_games": 25.0,
+    "top50_final_in_top50_now": 0.88
+   },
+   "2025-02-24": {
+    "spearman": 0.985,
+    "teams": 364,
+    "median_d1_games": 27.0,
+    "top50_final_in_top50_now": 0.9
+   },
+   "2025-03-03": {
+    "spearman": 0.994,
+    "teams": 364,
+    "median_d1_games": 29.0,
+    "top50_final_in_top50_now": 0.9
+   },
+   "2025-03-10": {
+    "spearman": 0.998,
+    "teams": 364,
+    "median_d1_games": 30.0,
+    "top50_final_in_top50_now": 0.94
+   },
+   "2025-03-17": {
+    "spearman": 0.999,
+    "teams": 364,
+    "median_d1_games": 31.0,
+    "top50_final_in_top50_now": 0.96
+   },
+   "2025-03-24": {
+    "spearman": 1.0,
+    "teams": 364,
+    "median_d1_games": 31.0,
+    "top50_final_in_top50_now": 0.96
+   },
+   "2025-03-31": {
+    "spearman": 1.0,
+    "teams": 364,
+    "median_d1_games": 31.0,
+    "top50_final_in_top50_now": 1.0
+   },
+   "2025-04-07": {
+    "spearman": 1.0,
+    "teams": 364,
+    "median_d1_games": 31.0,
+    "top50_final_in_top50_now": 1.0
+   }
+  },
+  "2026": {
+   "2025-11-17": {
+    "spearman": 0.734,
+    "teams": 365,
+    "median_d1_games": 3.0,
+    "top50_final_in_top50_now": 0.44
+   },
+   "2025-11-24": {
+    "spearman": 0.78,
+    "teams": 365,
+    "median_d1_games": 5.0,
+    "top50_final_in_top50_now": 0.54
+   },
+   "2025-12-01": {
+    "spearman": 0.827,
+    "teams": 365,
+    "median_d1_games": 7.0,
+    "top50_final_in_top50_now": 0.66
+   },
+   "2025-12-08": {
+    "spearman": 0.851,
+    "teams": 365,
+    "median_d1_games": 9.0,
+    "top50_final_in_top50_now": 0.66
+   },
+   "2025-12-15": {
+    "spearman": 0.858,
+    "teams": 365,
+    "median_d1_games": 10.0,
+    "top50_final_in_top50_now": 0.68
+   },
+   "2025-12-22": {
+    "spearman": 0.869,
+    "teams": 365,
+    "median_d1_games": 11.0,
+    "top50_final_in_top50_now": 0.7
+   },
+   "2025-12-29": {
+    "spearman": 0.87,
+    "teams": 365,
+    "median_d1_games": 12.0,
+    "top50_final_in_top50_now": 0.7
+   },
+   "2026-01-05": {
+    "spearman": 0.884,
+    "teams": 365,
+    "median_d1_games": 14.0,
+    "top50_final_in_top50_now": 0.7
+   },
+   "2026-01-12": {
+    "spearman": 0.905,
+    "teams": 365,
+    "median_d1_games": 15.0,
+    "top50_final_in_top50_now": 0.76
+   },
+   "2026-01-19": {
+    "spearman": 0.921,
+    "teams": 365,
+    "median_d1_games": 17.0,
+    "top50_final_in_top50_now": 0.8
+   },
+   "2026-01-26": {
+    "spearman": 0.943,
+    "teams": 365,
+    "median_d1_games": 19.0,
+    "top50_final_in_top50_now": 0.82
+   },
+   "2026-02-02": {
+    "spearman": 0.956,
+    "teams": 365,
+    "median_d1_games": 21.0,
+    "top50_final_in_top50_now": 0.84
+   },
+   "2026-02-09": {
+    "spearman": 0.972,
+    "teams": 365,
+    "median_d1_games": 23.0,
+    "top50_final_in_top50_now": 0.84
+   },
+   "2026-02-16": {
+    "spearman": 0.983,
+    "teams": 365,
+    "median_d1_games": 25.0,
+    "top50_final_in_top50_now": 0.86
+   },
+   "2026-02-23": {
+    "spearman": 0.988,
+    "teams": 365,
+    "median_d1_games": 27.0,
+    "top50_final_in_top50_now": 0.88
+   },
+   "2026-03-02": {
+    "spearman": 0.994,
+    "teams": 365,
+    "median_d1_games": 28.0,
+    "top50_final_in_top50_now": 0.92
+   },
+   "2026-03-09": {
+    "spearman": 0.999,
+    "teams": 365,
+    "median_d1_games": 30.0,
+    "top50_final_in_top50_now": 0.94
+   },
+   "2026-03-16": {
+    "spearman": 0.999,
+    "teams": 365,
+    "median_d1_games": 31.0,
+    "top50_final_in_top50_now": 0.92
+   },
+   "2026-03-23": {
+    "spearman": 1.0,
+    "teams": 365,
+    "median_d1_games": 31.0,
+    "top50_final_in_top50_now": 0.98
+   },
+   "2026-03-30": {
+    "spearman": 1.0,
+    "teams": 365,
+    "median_d1_games": 31.0,
+    "top50_final_in_top50_now": 1.0
+   },
+   "2026-04-06": {
+    "spearman": 1.0,
+    "teams": 365,
+    "median_d1_games": 31.0,
+    "top50_final_in_top50_now": 1.0
+   }
+  }
+ }
+}

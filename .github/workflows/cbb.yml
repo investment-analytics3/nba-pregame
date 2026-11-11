@@ -1,0 +1,96 @@
+name: College basketball
+
+# The college basketball tick. Started every 15 minutes by the NBA Scheduler (one dispatch step at
+# the end of scheduler.yml), or by hand. Own concurrency group; only writes data/cbb/ and docs/cbb/.
+# What's due is decided by scripts/cbb_scheduler.py: daily board builds (hourly on game days, every
+# 15 min before an unlocked tip, then tomorrow's preview), one phone push per day when a game is
+# Qualified, and starting the checkpoint logger (cbb-live.yml) while tracked games are on.
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "Who started this tick"
+        type: string
+        default: manual
+      force_build:
+        description: "Rebuild the board now"
+        type: boolean
+        default: false
+      send:
+        description: "Allow the daily phone push (Qualified games only)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: cbb-data
+  cancel-in-progress: false
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-nfl.txt
+
+      - name: What's due?
+        id: due
+        run: |
+          echo "Started by: ${{ inputs.source || github.event_name }}"
+          python scripts/cbb_scheduler.py decide ${{ inputs.force_build == true && '--force-build' || '' }}
+
+      - name: Install
+        if: steps.due.outputs.build == 'true'
+        run: pip install -q -r requirements-nfl.txt
+
+      - name: Build the board
+        if: steps.due.outputs.build == 'true'
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          python scripts/cbb_build.py ${{ (steps.due.outputs.alert == 'true' && inputs.send != false) && '--alert' || '' }}
+          python scripts/cbb_scheduler.py mark built
+          if [ "${{ steps.due.outputs.alert }}" = "true" ] && [ "${{ inputs.send }}" != "false" ]; then python scripts/cbb_scheduler.py mark alerted; fi
+
+      - name: Save to the repo
+        if: steps.due.outputs.build == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/cbb/ docs/cbb/
+          if git diff --cached --quiet; then echo "Nothing to save."; exit 0; fi
+          git commit -q -m "College hoops: board $(TZ=America/Los_Angeles date '+%Y-%m-%d %H:%M %Z')"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep 5; done
+          exit 1
+
+      - name: "Live: make sure the checkpoint logger is running"
+        if: steps.due.outputs.live == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          running=$(gh api "repos/${{ github.repository }}/actions/workflows/cbb-live.yml/runs?per_page=10" \
+            --jq '[.workflow_runs[] | select(.status=="in_progress" or .status=="queued")] | length')
+          if [ "$running" = "0" ]; then
+            gh api -X POST "repos/${{ github.repository }}/actions/workflows/cbb-live.yml/dispatches" -f ref=main
+            echo "Checkpoint logger started."
+          else
+            echo "Checkpoint logger already running."
+          fi
+
+      - name: Phone alert if a board build failed
+        if: failure() && steps.due.outputs.build == 'true'
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          curl -fsS -H "Title: College hoops board run FAILED" -H "Tags: warning" \
+            -H "Click: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            -d "The college basketball board build failed. Tap to see the details." "https://ntfy.sh/$NTFY_TOPIC" > /dev/null || true
