@@ -1,86 +1,8 @@
 {
  "season": 2026,
  "week": 11,
- "built_at": "2026-11-11T15:30:39-08:00",
+ "built_at": "2026-11-11T21:00:42-08:00",
  "games": [
-  {
-   "id": "401866462",
-   "kick_utc": "2026-11-12T00:30:00+00:00",
-   "kick_pt": "Wed 4:30 PM PT",
-   "day_et": "2026-11-11",
-   "away_abbr": "SAC",
-   "home_abbr": "CMU",
-   "fav_abbr": "CMU",
-   "dog_abbr": "SAC",
-   "fav_home": true,
-   "spread": -17.5,
-   "away_names": [
-    "Sacramento State Hornets",
-    "Sacramento St"
-   ],
-   "home_names": [
-    "Central Michigan Chippewas",
-    "C Michigan"
-   ],
-   "tier": "out",
-   "tier_label": "No track",
-   "tracked": false,
-   "alerts": false,
-   "call": "No track",
-   "hero": 16,
-   "fav_defense_top10": false,
-   "qbs": {
-    "SAC": {
-     "regular": "Jackson Sharman",
-     "rank": 124
-    },
-    "CMU": {
-     "regular": "Angel Flores",
-     "rank": 133
-    }
-   },
-   "kalshi_event": "KXNCAAFGAME-26NOV11SACCMU",
-   "locked": true
-  },
-  {
-   "id": "401866463",
-   "kick_utc": "2026-11-12T00:30:00+00:00",
-   "kick_pt": "Wed 4:30 PM PT",
-   "day_et": "2026-11-11",
-   "away_abbr": "MASS",
-   "home_abbr": "TOL",
-   "fav_abbr": "TOL",
-   "dog_abbr": "MASS",
-   "fav_home": true,
-   "spread": -14.0,
-   "away_names": [
-    "Massachusetts Minutemen",
-    "UMass"
-   ],
-   "home_names": [
-    "Toledo Rockets",
-    "Toledo"
-   ],
-   "tier": "watch",
-   "tier_label": "Watch list",
-   "tracked": true,
-   "alerts": false,
-   "call": "Watch list",
-   "hero": 20,
-   "fav_defense_top10": false,
-   "qbs": {
-    "MASS": {
-     "regular": "William Watson III",
-     "rank": 53
-    },
-    "TOL": {
-     "regular": "John Alan Richter",
-     "rank": 23
-    }
-   },
-   "kalshi_event": "KXNCAAFGAME-26NOV11MASSTOL",
-   "locked": true
-  },
   {
    "id": "401869969",
    "kick_utc": "2026-11-13T02:00:00+00:00",
@@ -208,7 +130,7 @@
    "fav_abbr": "OSU",
    "dog_abbr": "NU",
    "fav_home": true,
-   "spread": -12.5,
+   "spread": -14.0,
    "away_names": [
     "Northwestern Wildcats",
     "Northwestern"
@@ -286,7 +208,7 @@
    "fav_abbr": "NEB",
    "dog_abbr": "RUTG",
    "fav_home": false,
-   "spread": -14.0,
+   "spread": -15.5,
    "away_names": [
     "Nebraska Cornhuskers",
     "Nebraska"
@@ -403,7 +325,7 @@
    "fav_abbr": "TCU",
    "dog_abbr": "KSU",
    "fav_home": true,
-   "spread": -10.0,
+   "spread": -10.5,
    "away_names": [
     "Kansas State Wildcats",
     "Kansas St"
@@ -637,7 +559,7 @@
    "fav_abbr": "BOIS",
    "dog_abbr": "ORST",
    "fav_home": true,
-   "spread": -13.5,
+   "spread": -15.5,
    "away_names": [
     "Oregon State Beavers",
     "Oregon St"
@@ -821,6 +743,84 @@
    },
    "kalshi_event": "KXNCAAFGAME-26NOV14UNLVUNM",
    "locked": false
+  },
+  {
+   "id": "401866462",
+   "kick_utc": "2026-11-12T00:30:00+00:00",
+   "kick_pt": "Wed 4:30 PM PT",
+   "day_et": "2026-11-11",
+   "away_abbr": "SAC",
+   "home_abbr": "CMU",
+   "fav_abbr": "CMU",
+   "dog_abbr": "SAC",
+   "fav_home": true,
+   "spread": -17.5,
+   "away_names": [
+    "Sacramento State Hornets",
+    "Sacramento St"
+   ],
+   "home_names": [
+    "Central Michigan Chippewas",
+    "C Michigan"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "alerts": false,
+   "call": "No track",
+   "hero": 16,
+   "fav_defense_top10": false,
+   "qbs": {
+    "SAC": {
+     "regular": "Jackson Sharman",
+     "rank": 124
+    },
+    "CMU": {
+     "regular": "Angel Flores",
+     "rank": 133
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV11SACCMU",
+   "locked": true
+  },
+  {
+   "id": "401866463",
+   "kick_utc": "2026-11-12T00:30:00+00:00",
+   "kick_pt": "Wed 4:30 PM PT",
+   "day_et": "2026-11-11",
+   "away_abbr": "MASS",
+   "home_abbr": "TOL",
+   "fav_abbr": "TOL",
+   "dog_abbr": "MASS",
+   "fav_home": true,
+   "spread": -14.0,
+   "away_names": [
+    "Massachusetts Minutemen",
+    "UMass"
+   ],
+   "home_names": [
+    "Toledo Rockets",
+    "Toledo"
+   ],
+   "tier": "watch",
+   "tier_label": "Watch list",
+   "tracked": true,
+   "alerts": false,
+   "call": "Watch list",
+   "hero": 20,
+   "fav_defense_top10": false,
+   "qbs": {
+    "MASS": {
+     "regular": "William Watson III",
+     "rank": 53
+    },
+    "TOL": {
+     "regular": "John Alan Richter",
+     "rank": 23
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV11MASSTOL",
+   "locked": true
   }
  ]
 }
