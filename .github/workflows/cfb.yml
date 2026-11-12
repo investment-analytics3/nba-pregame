@@ -35,6 +35,8 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # the latest main when the job starts, not when it was queued (Nov 12 fix)
 
       - uses: actions/setup-python@v5
         with:
@@ -69,7 +71,7 @@ jobs:
           git add data/cfb/ docs/cfb/
           if git diff --cached --quiet; then echo "Nothing to save."; exit 0; fi
           git commit -q -m "College: board $(TZ=America/Los_Angeles date '+%Y-%m-%d %H:%M %Z')"
-          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep 5; done
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; git rebase --abort 2>/dev/null; sleep 5; done
           exit 1
 
       - name: "Live: make sure the checkpoint logger is running"
