@@ -5731,8 +5731,8 @@
    "tip_utc": "2026-11-12T20:00:00+00:00",
    "tip_pt": "12:00 PM PT",
    "day_et": "2026-11-12",
-   "state": "in",
-   "detail": "3:39 - 2nd",
+   "state": "post",
+   "detail": "Final",
    "neutral": true,
    "venue": "McArthur Center",
    "favorite": "home",
@@ -6227,9 +6227,512 @@
     "updated": "2026-11-12T05:19-08:00"
    },
    "score": {
-    "home": 71,
-    "away": 58
+    "home": 76,
+    "away": 68
    }
+  }
+ },
+ "401925631": {
+  "at": "2026-11-12T14:00:44-08:00",
+  "day": "2026-11-12",
+  "game": {
+   "id": "401925631",
+   "tip_utc": "2026-11-12T23:00:00+00:00",
+   "tip_pt": "3:00 PM PT",
+   "day_et": "2026-11-12",
+   "state": "pre",
+   "detail": "11/12 - 6:00 PM EST",
+   "neutral": true,
+   "venue": "McArthur Center",
+   "favorite": "away",
+   "spread": {
+    "spread": 12.5,
+    "details": "BRAD -12.5",
+    "provider": "DraftKings",
+    "ml_home": 550,
+    "ml_away": -800
+   },
+   "home": {
+    "id": "2154",
+    "abbr": "COPP",
+    "name": "Coppin State",
+    "display": "Coppin State Eagles",
+    "mascot": "Eagles",
+    "record": "1-2",
+    "l3_record": "1-2",
+    "games": 2,
+    "season": {
+     "efg": 40.4,
+     "opp_efg": 55.05,
+     "off": 76.29,
+     "def": 113.34,
+     "net": -37.05,
+     "poss_per_game": 68.8,
+     "ranks": {
+      "efg": 331,
+      "off": 352,
+      "opp_efg": 276,
+      "def": 251,
+      "net": 333
+     }
+    },
+    "last3": {
+     "efg": 40.4,
+     "opp_efg": 55.05,
+     "off": 76.29,
+     "def": 113.34,
+     "net": -37.05,
+     "poss_per_game": 68.8,
+     "ranks": {
+      "efg": 331,
+      "off": 352,
+      "opp_efg": 276,
+      "def": 251,
+      "net": 331
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401925630,
+      "date": "2026-11-09",
+      "site": "home",
+      "opp_id": 2129,
+      "opp": "CHEY",
+      "d1_opp": false,
+      "pts": 90,
+      "opp_pts": 53,
+      "metrics": {
+       "efg": 62.1,
+       "opp_efg": 26.98,
+       "off": 128.71,
+       "def": 75.8,
+       "net": 52.91
+      },
+      "opp_power_rank": null
+     },
+     {
+      "game_id": 401920072,
+      "date": "2026-11-06",
+      "site": "away",
+      "opp_id": 2244,
+      "opp": "GMU",
+      "d1_opp": true,
+      "pts": 51,
+      "opp_pts": 68,
+      "metrics": {
+       "efg": 42.55,
+       "opp_efg": 48.04,
+       "off": 78.15,
+       "def": 104.19,
+       "net": -26.05
+      },
+      "opp_power_rank": 68
+     },
+     {
+      "game_id": 401920376,
+      "date": "2026-11-03",
+      "site": "away",
+      "opp_id": 259,
+      "opp": "VT",
+      "d1_opp": true,
+      "pts": 54,
+      "opp_pts": 88,
+      "metrics": {
+       "efg": 38.46,
+       "opp_efg": 61.21,
+       "off": 74.61,
+       "def": 121.59,
+       "net": -46.98
+      },
+      "opp_power_rank": 43
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+12.5",
+    "b2b": false,
+    "power": {
+     "rank": 354,
+     "bpi": 361,
+     "own_net": 333
+    },
+    "key_players": [
+     "Brendan Johnson",
+     "Camaren Sparrow",
+     "Baasil Saunders",
+     "Hussain Williams",
+     "Malik Shackleford",
+     "Favour Aire",
+     "Tafara Gapare"
+    ],
+    "top_scorers": [
+     {
+      "name": "Brendan Johnson",
+      "ppg": 9.7
+     },
+     {
+      "name": "Malik Shackleford",
+      "ppg": 9.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "71",
+    "abbr": "BRAD",
+    "name": "Bradley",
+    "display": "Bradley Braves",
+    "mascot": "Braves",
+    "record": "1-2",
+    "l3_record": "1-2",
+    "games": 2,
+    "season": {
+     "efg": 35.4,
+     "opp_efg": 45.95,
+     "off": 73.9,
+     "def": 95.24,
+     "net": -21.33,
+     "poss_per_game": 65.6,
+     "ranks": {
+      "efg": 358,
+      "off": 356,
+      "opp_efg": 81,
+      "def": 77,
+      "net": 283
+     }
+    },
+    "last3": {
+     "efg": 35.4,
+     "opp_efg": 45.95,
+     "off": 73.9,
+     "def": 95.24,
+     "net": -21.33,
+     "poss_per_game": 65.6,
+     "ranks": {
+      "efg": 358,
+      "off": 356,
+      "opp_efg": 81,
+      "def": 76,
+      "net": 283
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401925773,
+      "date": "2026-11-10",
+      "site": "away",
+      "opp_id": 2166,
+      "opp": "DAV",
+      "d1_opp": true,
+      "pts": 45,
+      "opp_pts": 62,
+      "metrics": {
+       "efg": 36.11,
+       "opp_efg": 44.07,
+       "off": 66.26,
+       "def": 91.29,
+       "net": -25.03
+      },
+      "opp_power_rank": 94
+     },
+     {
+      "game_id": 401917518,
+      "date": "2026-11-07",
+      "site": "home",
+      "opp_id": 279,
+      "opp": "PAC",
+      "d1_opp": true,
+      "pts": 52,
+      "opp_pts": 63,
+      "metrics": {
+       "efg": 34.75,
+       "opp_efg": 48.08,
+       "off": 82.1,
+       "def": 99.47,
+       "net": -17.37
+      },
+      "opp_power_rank": 139
+     },
+     {
+      "game_id": 401927360,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 2919,
+      "opp": "MNIL",
+      "d1_opp": false,
+      "pts": 85,
+      "opp_pts": 41,
+      "metrics": {
+       "efg": 56.72,
+       "opp_efg": 36.96,
+       "off": 129.01,
+       "def": 62.23,
+       "net": 66.78
+      },
+      "opp_power_rank": null
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-12.5",
+    "b2b": false,
+    "power": {
+     "rank": 238,
+     "bpi": 189,
+     "own_net": 283
+    },
+    "key_players": [
+     "Trevon Payton",
+     "Josh Ibukunoluwa",
+     "Noah Williams",
+     "Dietrich Richardson",
+     "Timoty van der Knaap",
+     "Xander Alarie",
+     "Max Gaspa"
+    ],
+    "top_scorers": [
+     {
+      "name": "Trevon Payton",
+      "ppg": 13.0
+     },
+     {
+      "name": "Josh Ibukunoluwa",
+      "ppg": 10.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "BRAD",
+    "dog": "COPP",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 14 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 BRAD last-3 top 50 in 0 of 4 \u00b7 \u2717 COPP last-3 bottom 50 (316+) in 2 of 4 \u00b7 \u2717 BRAD season outside 1-182: eFG% #358, Off Eff #356 \u00b7 \u2713 COPP season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "COPP: consensus #354, BPI #361, our net #333"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 14 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for BRAD: check news before betting",
+     "Neutral-site game: no home-court point",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 14,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 0,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 12,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "BRAD",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 358,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 356,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 81,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 77,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "BRAD",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 358,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 356,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 81,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 76,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "COPP",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 276,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 251,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 331,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 352,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "COPP",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 276,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 251,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 331,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 352,
+        "color": "green"
+       }
+      ]
+     }
+    ]
+   },
+   "summary": "No track: score 14 (watch list from 18, qualifies at 28). Biggest edge over the last 3: BRAD Def Eff (#76) against COPP Off Eff (#352). BRAD 1-2 in its last 3, COPP 1-2. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV12COPPBRAD",
+    "fav_prob": 0.865,
+    "bid": 0.86,
+    "ask": 0.87
+   },
+   "locked_at": "2026-11-12T14:00:44-08:00"
   }
  }
 }
