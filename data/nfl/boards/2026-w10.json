@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 10,
- "built_at": "2026-11-12T08:05:45-08:00",
- "built_label": "Thu Nov 12, 8:05 AM PT",
+ "built_at": "2026-11-12T09:15:38-08:00",
+ "built_label": "Thu Nov 12, 9:15 AM PT",
  "games": [
   {
    "id": "401873052",
@@ -579,10 +579,11 @@
      "rank": 13
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Rhamondre Stevenson"
+    ],
     "key_questionable": [
-     "Charles Woods",
-     "Will Campbell"
+     "Charles Woods"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -590,14 +591,19 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "TreVeyon Henderson",
+      "name": "Rhamondre Stevenson",
       "pos": "RB",
-      "status": "Out"
+      "status": "Doubtful"
      },
      {
       "name": "A.J. Brown",
       "pos": "WR",
       "status": "Questionable"
+     },
+     {
+      "name": "TreVeyon Henderson",
+      "pos": "RB",
+      "status": "Out"
      },
      {
       "name": "Charles Woods",
@@ -608,11 +614,6 @@
       "name": "Ben Brown",
       "pos": "C",
       "status": "Out"
-     },
-     {
-      "name": "Will Campbell",
-      "pos": "OT",
-      "status": "Questionable"
      }
     ],
     "power": {
@@ -721,7 +722,7 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Charles Woods, Will Campbell"
+      "text": "Underdog questionable: Charles Woods"
      }
     ],
     "under": {
@@ -1116,9 +1117,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV15KCATL",
-    "fav_prob": 0.635,
-    "bid": 0.63,
-    "ask": 0.64
+    "fav_prob": 0.625,
+    "bid": 0.62,
+    "ask": 0.63
    }
   },
   {
@@ -1141,7 +1142,7 @@
    "open_spread": -4.5,
    "total": 40.5,
    "total_open": 38.5,
-   "fav_ml": -230.0,
+   "fav_ml": -225.0,
    "favorite": "away",
    "spread": -4.5,
    "movement": 0.0,
@@ -1218,15 +1219,20 @@
     "key_out": [],
     "key_questionable": [
      "Carson Schwesinger",
+     "Denzel Boston",
      "Denzel Ward",
-     "Quincy Williams",
-     "Tytus Howard"
+     "Quincy Williams"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Denzel Boston",
+      "pos": "WR",
+      "status": "Questionable"
+     },
      {
       "name": "Carson Schwesinger",
       "pos": "LB",
@@ -1245,11 +1251,6 @@
      {
       "name": "Michael Burton",
       "pos": "FB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Tytus Howard",
-      "pos": "OT",
       "status": "Questionable"
      }
     ],
@@ -1469,7 +1470,7 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Carson Schwesinger, Denzel Ward, Quincy Williams, Tytus Howard"
+      "text": "Underdog questionable: Carson Schwesinger, Denzel Boston, Denzel Ward, Quincy Williams"
      }
     ],
     "under": {
@@ -1589,14 +1590,23 @@
      "Zaire Franklin"
     ],
     "key_questionable": [
-     "Javon Bullard",
-     "Lukas Van Ness"
+     "Javon Bullard"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Josh Jacobs",
+      "pos": "RB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Trey Smack",
+      "pos": "PK",
+      "status": "Questionable"
+     },
      {
       "name": "Ty'Ron Hopper",
       "pos": "LB",
@@ -1611,16 +1621,6 @@
       "name": "Zaire Franklin",
       "pos": "LB",
       "status": "Doubtful"
-     },
-     {
-      "name": "Lukas Van Ness",
-      "pos": "DE",
-      "status": "Questionable"
-     },
-     {
-      "name": "Bo Melton",
-      "pos": "WR",
-      "status": "Questionable"
      }
     ],
     "power": {
@@ -1850,7 +1850,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Javon Bullard, Lukas Van Ness"
+      "text": "Favorite questionable: Javon Bullard"
      },
      {
       "level": "yellow",
@@ -3019,7 +3019,7 @@
    "open_spread": -2.5,
    "total": 46.5,
    "total_open": 45.5,
-   "fav_ml": -535.0,
+   "fav_ml": -600.0,
    "favorite": "away",
    "spread": -10.5,
    "movement": 8.0,
@@ -4490,8 +4490,8 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV15SFDAL",
-    "fav_prob": 0.665,
-    "bid": 0.66,
+    "fav_prob": 0.66,
+    "bid": 0.65,
     "ask": 0.67
    }
   },
@@ -4600,6 +4600,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Andrei Iosivas",
+      "pos": "WR",
+      "status": "Injured Reserve"
+     },
+     {
       "name": "Kyle Dugger",
       "pos": "S",
       "status": "Questionable"
@@ -4613,11 +4618,6 @@
       "name": "Dylan Fairchild",
       "pos": "G",
       "status": "Questionable"
-     },
-     {
-      "name": "Andrei Iosivas",
-      "pos": "WR",
-      "status": "Injured Reserve"
      },
      {
       "name": "Cashius Howell",
@@ -5264,6 +5264,6 @@
   "watch": 8,
   "green": 1,
   "edge_clears": 1,
-  "built_label": "Thu Nov 12, 8:05 AM PT"
+  "built_label": "Thu Nov 12, 9:15 AM PT"
  }
 }
