@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NBA Pregame Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+:root{--bg:#0A0F1C;--card1:#172036;--card2:#111829;--line:#1F2A42;--text:#E6EAF2;--muted:#8B95AB;--dim:#7C869E;
+--green:#2FC373;--yellow:#E9B23A;--red:#C83030;--amber:#FB923C;--blue:#60A5FA;--orange:#FB923C}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+a{color:#93C5FD}
+.wrap{max-width:1120px;margin:0 auto;padding:24px 16px 72px}
+.cond{font-family:'Barlow Condensed',Inter,sans-serif}
+.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600}
+h1.title{margin:6px 0 0;font-size:44px;line-height:1;font-weight:700}
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;white-space:nowrap}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;margin:16px 0 28px;font-size:12.5px;color:#9AA4BA}
+.legend span{display:inline-flex;align-items:center;gap:6px}.sw{width:10px;height:10px;border-radius:3px;display:inline-block}
+.panel{border-radius:18px;border:1px solid var(--line);background:linear-gradient(180deg,var(--card1),var(--card2));box-shadow:0 12px 30px rgba(0,0,0,.4)}
+.final{padding:16px 18px;margin-bottom:26px;border-color:rgba(96,165,250,.45)}
+.final h2{margin:0 0 8px;font-size:15px}.final ul{margin:0;padding-left:18px;color:#D3D9E5;font-size:14px;line-height:1.6}
+.sec-head{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.sec-head h2{margin:0;font-size:24px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.sec-head .cnt{font-size:12px;font-weight:700;color:#C7CEDC;background:#1A2236;border:1px solid #26314B;padding:2px 9px;border-radius:999px}
+.sec-head .rule{flex:1;height:1px;background:linear-gradient(90deg,#2A3653,rgba(42,54,83,0))}
+.amberline{height:4px;margin:-4px 0 20px;border-radius:999px;background:linear-gradient(90deg,#FADB80,#D9A12A 70%,#8A5F0E);box-shadow:0 0 12px rgba(233,178,58,.45)}
+.redline{height:6px;margin:-4px 0 20px;border-radius:999px;background:linear-gradient(90deg,#F05252,#C42B2B 70%,#8E1A1A);box-shadow:0 0 16px rgba(240,82,82,.55)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,360px),1fr));gap:20px;margin-bottom:34px}
+.card{all:unset;box-sizing:border-box;display:flex;flex-direction:column;gap:14px;padding:18px 18px 14px;cursor:pointer;
+border-radius:18px;border:1px solid var(--line);background:linear-gradient(180deg,var(--card1),var(--card2));
+box-shadow:0 12px 30px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.05);transition:transform .18s,box-shadow .18s,border-color .18s}
+.card:hover{transform:translateY(-3px);border-color:#34415F}.card:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.row{display:flex;align-items:center;gap:10px}.between{justify-content:space-between}
+.tip{font-size:12px;font-weight:700;letter-spacing:.1em;color:#A9B2C6;text-transform:uppercase}
+.b2b{display:flex;align-items:center;gap:8px;font-size:11.5px;color:var(--muted)}
+.yn{padding:1px 6px;border-radius:5px;font-size:11px;font-weight:700}
+.badge{flex:none;width:38px;height:38px;border-radius:11px;display:grid;place-items:center;font-weight:700;font-size:15px;color:#F3F6FB;
+box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 3px 8px rgba(0,0,0,.35)}
+.tag{font-size:9.5px;font-weight:800;letter-spacing:.08em;padding:1px 6px;border-radius:5px}
+.sub{font-size:12.5px;color:var(--muted);margin-top:3px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.line{font-size:19px;font-weight:600}
+.qual{display:flex;gap:7px;font-size:12.5px;line-height:1.4}
+.warn{font-size:12px;line-height:1.4;color:#FDE68A;background:rgba(233,178,58,.12);border:1px solid rgba(233,178,58,.4);border-radius:10px;padding:6px 10px}
+.pills{display:flex;flex-direction:column;gap:6px;padding:12px 10px 10px;border-radius:14px;background:rgba(6,10,20,.45);box-shadow:inset 0 1px 3px rgba(0,0,0,.5)}
+.prow{display:grid;grid-template-columns:56px repeat(4,minmax(0,1fr));gap:6px;align-items:center}
+.ph{display:flex;flex-direction:column;align-items:center;line-height:1.15}.ph b{font-size:10.5px;color:#C7CEDC}.ph span{font-size:9.5px;color:var(--dim)}
+.pl{display:flex;flex-direction:column;line-height:1.1}.pl b{font-size:12px;color:#DCE2EE}.pl span{font-size:10px;color:var(--dim)}
+.pill{display:flex;align-items:center;justify-content:center;white-space:nowrap;height:30px;border-radius:9px;font-weight:700;font-size:16px;animation:pop .45s cubic-bezier(.34,1.56,.64,1) both}
+.pg{background:linear-gradient(180deg,#34C77B,#1A8A4C);color:#fff;text-shadow:0 1px 1px rgba(0,0,0,.25);box-shadow:inset 0 1px 0 rgba(255,255,255,.4),inset 0 -2px 0 rgba(0,0,0,.2),0 3px 8px rgba(20,140,75,.35)}
+.py{background:linear-gradient(180deg,#FADB80,#D9A12A);color:#2A1C00;box-shadow:inset 0 1px 0 rgba(255,255,255,.45),inset 0 -2px 0 rgba(0,0,0,.18),0 3px 8px rgba(200,150,30,.3)}
+.pr{background:linear-gradient(180deg,#D44444,#A12222);color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.25),inset 0 -2px 0 rgba(0,0,0,.25),0 3px 8px rgba(190,40,40,.35)}
+.pd{background:linear-gradient(180deg,#A31818,#650909);color:#fff;animation:pop .45s cubic-bezier(.34,1.56,.64,1) both,pulse 2.4s ease-in-out infinite}
+.pn{background:#1C2438;color:var(--dim)}
+.more{display:flex;justify-content:flex-end;align-items:center;gap:4px;font-size:12px;font-weight:600;color:#8FB8F5}
+.donut{position:relative;flex:none}.donut svg{width:100%;height:100%;overflow:visible}
+.donut .num{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;pointer-events:none}
+.donut .num b{font-weight:700;line-height:.9;text-shadow:0 2px 8px rgba(0,0,0,.5)}.donut .num span{font-size:10px;font-weight:600;letter-spacing:.08em;color:var(--dim)}
+.arc{animation:sweep 1.2s cubic-bezier(.33,1,.68,1) both}
+.card-in{animation:cardIn .6s cubic-bezier(.22,1,.36,1) both}
+.grow{transform-origin:left center;animation:grow .9s cubic-bezier(.33,1,.68,1) both}
+.grow-r{transform-origin:right center;animation:grow .9s cubic-bezier(.33,1,.68,1) both}
+.draw{animation:draw 1.1s cubic-bezier(.33,1,.68,1) both}.fade{animation:fade .5s ease both}
+@keyframes cardIn{from{opacity:0;transform:translateY(16px)}}
+@keyframes pop{from{opacity:0;transform:scale(.55)}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,70,70,0)}50%{box-shadow:0 0 0 4px rgba(255,70,70,.28),0 0 16px rgba(255,60,60,.6)}}
+@keyframes sweep{from{stroke-dashoffset:289.027}}
+@keyframes grow{from{transform:scaleX(0)}}
+@keyframes draw{from{stroke-dashoffset:1}}
+@keyframes fade{from{opacity:0}}
+@media (max-width:420px){.card .donut{width:88px!important;height:88px!important}.card .donut .num b{font-size:30px!important}h1.title{font-size:36px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* detail */
+.btn{all:unset;display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid #26314B;background:#151C2E;color:#DCE2EE;font-size:14px;font-weight:600;cursor:pointer}
+.banner{display:flex;gap:12px;align-items:flex-start;padding:14px 18px;margin-bottom:16px;border-radius:14px}
+.two{display:flex;flex-wrap:wrap;gap:20px;margin-bottom:20px}
+.pad{padding:22px}
+h3{margin:0 0 4px;font-size:16px;font-weight:700}
+.note{margin:0 0 14px;font-size:12.5px;color:var(--muted)}
+.hm{display:grid;grid-template-columns:76px repeat(4,minmax(0,1fr));gap:6px;align-items:center;margin-bottom:6px}
+.hm .cell{display:flex;flex-direction:column;align-items:center;justify-content:center;height:48px;border-radius:10px;animation:pop .45s cubic-bezier(.34,1.56,.64,1) both}
+.cols2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:20px;margin-bottom:20px}
+.cols3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+.cols4{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:16px;margin-bottom:20px}
+.tbl-row{display:grid;grid-template-columns:88px minmax(0,1fr) auto;gap:8px;align-items:center;padding:9px 0;border-top:1px solid var(--line);font-size:13.5px}
+.wl{width:22px;height:22px;border-radius:6px;display:grid;place-items:center;font-size:11px;font-weight:800}
+.nav{display:flex;gap:6px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.nav a{padding:8px 14px;border-radius:999px;font-size:14px;font-weight:600;color:#C7CEDC;text-decoration:none}
+.nav a.on{background:#1C2640;color:#fff;border:1px solid #2E3B5C}
+.sec-title{margin:6px 0 12px;font-size:22px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+/* live */
+.tabs{display:inline-flex;padding:4px;border-radius:999px;background:#121A2C;border:1px solid #26314B;gap:4px}
+.tabs a{min-height:36px;display:inline-flex;align-items:center;gap:7px;padding:0 16px;border-radius:999px;font-size:14px;font-weight:600;color:#9AA4BA;text-decoration:none}
+.tabs a.on{background:linear-gradient(180deg,#2E4170,#1C2845);color:#fff}
+.lv:empty{display:none}
+.lv{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;letter-spacing:.04em;padding:3px 9px;border-radius:999px;background:#121A2C;border:1px solid #26314B;color:#DCE2EE;width:fit-content}
+.lv .g{padding:0 6px;border-radius:5px;font-size:11px;background:linear-gradient(180deg,#34C77B,#1A8A4C);color:#fff;text-shadow:0 1px 1px rgba(0,0,0,.25)}.lv .g.B{background:#FADB80;color:#2A1C00}.lv .g.C{background:#D44444;color:#fff}
+.lv-dot:not(:empty),.lv i{width:7px;height:7px;border-radius:50%;background:#F05252;box-shadow:0 0 6px #F05252;display:inline-block;animation:blink 1.6s ease-in-out infinite}
+@keyframes blink{50%{opacity:.35}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<radialGradient id="ringgreen" cx="60" cy="60" r="53" gradientUnits="userSpaceOnUse"><stop offset=".74" stop-color="#0F7A3F"/><stop offset=".83" stop-color="#6BF0AA"/><stop offset=".92" stop-color="#2BBE6E"/><stop offset="1" stop-color="#0C5C31"/></radialGradient>
+<radialGradient id="ringyellow" cx="60" cy="60" r="53" gradientUnits="userSpaceOnUse"><stop offset=".74" stop-color="#9A6E0E"/><stop offset=".83" stop-color="#FFE596"/><stop offset=".92" stop-color="#EDB53A"/><stop offset="1" stop-color="#7F5A09"/></radialGradient>
+<radialGradient id="ringred" cx="60" cy="60" r="53" gradientUnits="userSpaceOnUse"><stop offset=".74" stop-color="#861818"/><stop offset=".83" stop-color="#FF8A8A"/><stop offset=".92" stop-color="#DD3E3E"/><stop offset="1" stop-color="#6E1010"/></radialGradient>
+<radialGradient id="ringtrack" cx="60" cy="60" r="53" gradientUnits="userSpaceOnUse"><stop offset=".74" stop-color="#1A2236"/><stop offset=".83" stop-color="#3A4562"/><stop offset=".92" stop-color="#2B3550"/><stop offset="1" stop-color="#161D2E"/></radialGradient>
+<radialGradient id="hub" cx="50%" cy="35%" r="70%"><stop offset="0" stop-color="#222C45"/><stop offset="1" stop-color="#0D1322"/></radialGradient>
+<filter id="drop" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity=".6"/></filter>
+</defs></svg>
+<div class="wrap" style="padding-bottom:0"><nav class="nav"><a href="https://investment-analytics3.github.io/nba-pregame/">Home</a><a class="on" href="https://investment-analytics3.github.io/nba-pregame/nba/">Today's board</a><a href="https://investment-analytics3.github.io/nba-pregame/results.html">Results</a><a href="https://investment-analytics3.github.io/nba-pregame/live/">Live</a></nav></div>
+<div class="wrap" id="app" style="padding-top:18px"></div>
+<script>const DATA = {"date": "2026-11-12", "date_label": "Thursday, Nov 12", "kind": "preview", "built_label": "9:40 PM PT", "metrics_through": "2026-11-11", "metrics_through_label": "Nov 11", "injury_source": "NBA official injury report", "injury_report_time": "2026-11-12T00:30:00-05:00", "changes": null, "earlier_label": null, "games": [{"id": "401909979", "state": "pre", "neutral": false, "tip_utc": "2026-11-13T02:00Z", "tip_pt": "6:00 PM PT", "away": {"id": "30", "abbr": "CHA", "name": "Hornets", "display": "Charlotte Hornets", "record": "4-7", "l3_record": "1-2", "games_played": 11, "b2b": false, "b2b_record": "1-1", "season": {"efg": 47.91, "opp_efg": 56.35, "off": 100.17, "def": 111.87, "net": -11.7, "poss_per_game": 98.7, "ranks": {"efg": 30, "opp_efg": 25, "off": 30, "def": 20, "net": 27}}, "last3": {"efg": 47.71, "opp_efg": 59.84, "off": 103.93, "def": 116.41, "net": -12.48, "poss_per_game": 98.8, "ranks": {"efg": 29, "opp_efg": 29, "off": 27, "def": 21, "net": 25}}, "power": {"rank": 26, "split": false, "own_net": 27, "bpi": 25, "nba_com": 27}, "last3_games": [{"game_id": "401909953", "date": "2026-11-09", "site": "home", "opp_id": "5", "opp": "CLE", "pts": 124, "opp_pts": 112, "metrics": {"efg": 59.68, "opp_efg": 59.76, "off": 124.02, "def": 112.02, "net": 12.0}, "opp_power_rank": 11}, {"game_id": "401909288", "date": "2026-11-06", "site": "home", "opp_id": "2", "opp": "BOS", "pts": 80, "opp_pts": 119, "metrics": {"efg": 35.33, "opp_efg": 60.24, "off": 81.8, "def": 121.68, "net": -39.88}, "opp_power_rank": 2}, {"game_id": "401909925", "date": "2026-11-04", "site": "away", "opp_id": "17", "opp": "BKN", "pts": 104, "opp_pts": 114, "metrics": {"efg": 48.05, "opp_efg": 59.49, "off": 105.5, "def": 115.64, "net": -10.14}, "opp_power_rank": 25}], "injuries": [{"player": "Brandon Miller", "status": "Out", "reason": "Injury: Right Hip Strain", "is_key": true, "key_info": {"name": "Brandon Miller", "starts": 10, "team_games": 11, "mpg": 31.0, "ppg": 20.6, "why": "starter"}, "counts_as_out": true}, {"player": "Dennis Schroder", "status": "Out", "reason": "Injury: Left Hamstring Strain", "is_key": true, "key_info": {"name": "Dennis Schroder", "starts": 7, "team_games": 11, "mpg": 30.0, "ppg": 10.2, "why": "starter"}, "counts_as_out": true}, {"player": "Moussa Diabate", "status": "Probable", "reason": "Injury: Right Quadriceps Tendinopathy", "is_key": true, "key_info": {"name": "Moussa Diabate", "starts": 9, "team_games": 11, "mpg": 28.8, "ppg": 8.9, "why": "starter"}, "counts_as_out": false}, {"player": "Hannes Steinbach", "status": "Out", "reason": "GLeague-On Assignment", "is_key": false, "key_info": null, "counts_as_out": true}, {"player": "Kon Knueppel", "status": "Out", "reason": "Injury: Left Hamstring Strain", "is_key": false, "key_info": null, "counts_as_out": true}, {"player": "Kylan Boswell", "status": "Out", "reason": "G League two-way", "is_key": false, "key_info": null, "counts_as_out": true}, {"player": "Michael Ajayi", "status": "Out", "reason": "G League two-way", "is_key": false, "key_info": null, "counts_as_out": true}, {"player": "Grant Williams", "status": "Probable", "reason": "Injury: Right Hamstring Strain", "is_key": false, "key_info": null, "counts_as_out": false}], "injuries_known": true, "key_out": ["Brandon Miller", "Dennis Schroder"], "key_questionable": [], "spread_text": "+7.5", "is_fav": false, "top_scorers": [{"name": "Naz Reid", "ppg": 17.4}, {"name": "Grayson Allen", "ppg": 15.3}], "closers": ["Brandon Miller", "Dennis Schroder"]}, "home": {"id": "21", "abbr": "PHX", "name": "Suns", "display": "Phoenix Suns", "record": "4-6", "l3_record": "2-1", "games_played": 10, "b2b": false, "b2b_record": "2-0", "season": {"efg": 54.99, "opp_efg": 55.2, "off": 111.14, "def": 116.36, "net": -5.22, "poss_per_game": 101.5, "ranks": {"efg": 9, "opp_efg": 23, "off": 16, "def": 26, "net": 21}}, "last3": {"efg": 55.92, "opp_efg": 50.55, "off": 110.19, "def": 110.19, "net": 0.0, "poss_per_game": 100.1, "ranks": {"efg": 10, "opp_efg": 6, "off": 20, "def": 13, "net": 13}}, "power": {"rank": 20, "split": false, "own_net": 21, "bpi": 20, "nba_com": 20}, "last3_games": [{"game_id": "401909962", "date": "2026-11-10", "site": "home", "opp_id": "12", "opp": "LAC", "pts": 133, "opp_pts": 110, "metrics": {"efg": 68.18, "opp_efg": 50.56, "off": 125.33, "def": 103.66, "net": 21.67}, "opp_power_rank": 23}, {"game_id": "401909958", "date": "2026-11-09", "site": "home", "opp_id": "24", "opp": "SA", "pts": 96, "opp_pts": 122, "metrics": {"efg": 44.38, "opp_efg": 57.22, "off": 100.86, "def": 128.18, "net": -27.32}, "opp_power_rank": 1}, {"game_id": "401909943", "date": "2026-11-07", "site": "home", "opp_id": "10", "opp": "HOU", "pts": 102, "opp_pts": 99, "metrics": {"efg": 55.29, "opp_efg": 44.09, "off": 102.93, "def": 99.9, "net": 3.03}, "opp_power_rank": 3}], "injuries": [{"player": "Mark Williams", "status": "Out", "reason": "Injury: Left Shoulder Surgery", "is_key": false, "key_info": null, "counts_as_out": true}], "injuries_known": true, "key_out": [], "key_questionable": [], "spread_text": "-7.5", "is_fav": true, "top_scorers": [{"name": "Devin Booker", "ppg": 25.1}, {"name": "Miles Bridges", "ppg": 15.0}], "closers": ["Devin Booker", "Miles Bridges"]}, "spread": {"favorite_id": "21", "spread": 7.5, "details": "PHX -7.5", "provider": "Draft Kings", "ml_home": -229, "ml_away": 190}, "favorite": "home", "scoring": {"scored": true, "favorite_side": "home", "fav": "PHX", "dog": "CHA", "qualified": false, "tier": "watch", "tier_label": "Watch list", "tracked": true, "routes": [], "route": "", "fails": ["Watch list: score 19 (qualifies at 28)"], "warnings": ["Info: CHA without Brandon Miller, Dennis Schroder"], "rules": [{"rule": "A", "name": "Analysis Score 28+", "pass": false, "detail": "Score 19 of 40"}, {"rule": "B", "name": "Last-3 mismatch (3 of 4) with a season floor", "pass": false, "detail": "\u2717 PHX last-3 top 10 in 2 of 4 \u00b7 \u2713 CHA last-3 bottom 10 in 4 of 4 \u00b7 \u2717 PHX season outside top 15: Off Eff #16, Opp eFG% #23, Def Eff #26 \u00b7 \u2713 CHA season top 10 in none"}, {"rule": "Injury", "name": "No key player out for the favorite", "pass": true, "detail": "Clear"}, {"rule": "Power", "name": "Underdog not top 10 in any power ranking", "pass": true, "detail": "Underdog: consensus #26, our net rating #27, ESPN BPI #25, NBA.com #27"}], "context": [{"check": "Favorite top 10 in a metric, season and last 3", "pass": true, "detail": "eFG%"}, {"check": "Underdog not top 10 in any metric over its last 3", "pass": true, "detail": "none"}, {"check": "Underdog not 3-0 in its last 3", "pass": true, "detail": "1-2"}], "qualifiers": ["eFG%"], "score": 19, "max": 40, "band": "yellow", "parts": [{"key": "fav_metrics", "label": "Favorite metrics", "points": 3, "max": 16}, {"key": "dog_metrics", "label": "Underdog metrics", "points": 12, "max": 16}, {"key": "net", "label": "Net rating", "points": 0, "max": 2}, {"key": "form", "label": "Last-3 form", "points": 1, "max": 2}, {"key": "power", "label": "Power rank", "points": 0, "max": 1}, {"key": "home", "label": "Home court", "points": 1, "max": 1}, {"key": "health", "label": "Health", "points": 1, "max": 1}, {"key": "rest", "label": "Rest", "points": 1, "max": 1}], "pills": [{"team": "PHX", "role": "fav", "window": "season", "cells": [{"metric": "efg", "rank": 9, "color": "green"}, {"metric": "off", "rank": 16, "color": "yellow"}, {"metric": "opp_efg", "rank": 23, "color": "red"}, {"metric": "def", "rank": 26, "color": "red"}]}, {"team": "PHX", "role": "fav", "window": "last3", "cells": [{"metric": "efg", "rank": 10, "color": "green"}, {"metric": "off", "rank": 20, "color": "yellow"}, {"metric": "opp_efg", "rank": 6, "color": "green"}, {"metric": "def", "rank": 13, "color": "yellow"}]}, {"team": "CHA", "role": "dog", "window": "season", "cells": [{"metric": "opp_efg", "rank": 25, "color": "green"}, {"metric": "def", "rank": 20, "color": "yellow"}, {"metric": "efg", "rank": 30, "color": "green"}, {"metric": "off", "rank": 30, "color": "green"}]}, {"team": "CHA", "role": "dog", "window": "last3", "cells": [{"metric": "opp_efg", "rank": 29, "color": "green"}, {"metric": "def", "rank": 21, "color": "green"}, {"metric": "efg", "rank": 29, "color": "green"}, {"metric": "off", "rank": 27, "color": "green"}]}]}, "summary": "Watch list: an Analysis Score of 19 (qualifies at 28). Biggest edge over the last 3: PHX Opp eFG% (#6) against CHA eFG% (#29). PHX 2-1 in its last 3, CHA 1-2. CHA will be without Brandon Miller, Dennis Schroder.", "lean": "Lean: PHX (watch list, not tracked)", "readout": null}, {"id": "401909978", "state": "pre", "neutral": false, "tip_utc": "2026-11-13T01:00Z", "tip_pt": "5:00 PM PT", "away": {"id": "6", "abbr": "DAL", "name": "Mavericks", "display": "Dallas Mavericks", "record": "7-4", "l3_record": "3-0", "games_played": 11, "b2b": false, "b2b_record": "1-1", "season": {"efg": 54.81, "opp_efg": 51.9, "off": 112.39, "def": 107.85, "net": 4.53, "poss_per_game": 102.2, "ranks": {"efg": 10, "opp_efg": 9, "off": 11, "def": 9, "net": 11}}, "last3": {"efg": 57.12, "opp_efg": 53.48, "off": 119.53, "def": 102.59, "net": 16.94, "poss_per_game": 102.3, "ranks": {"efg": 3, "opp_efg": 14, "off": 4, "def": 2, "net": 2}}, "power": {"rank": 13, "split": false, "own_net": 11, "bpi": 15, "nba_com": 14}, "last3_games": [{"game_id": "401909956", "date": "2026-11-09", "site": "home", "opp_id": "11", "opp": "IND", "pts": 125, "opp_pts": 122, "metrics": {"efg": 60.24, "opp_efg": 61.59, "off": 119.46, "def": 116.59, "net": 2.87}, "opp_power_rank": 21}, {"game_id": "401909948", "date": "2026-11-08", "site": "home", "opp_id": "17", "opp": "BKN", "pts": 130, "opp_pts": 93, "metrics": {"efg": 65.48, "opp_efg": 45.62, "off": 128.71, "def": 92.08, "net": 36.63}, "opp_power_rank": 25}, {"game_id": "401909290", "date": "2026-11-06", "site": "home", "opp_id": "26", "opp": "UTAH", "pts": 112, "opp_pts": 100, "metrics": {"efg": 46.77, "opp_efg": 53.05, "off": 110.45, "def": 98.62, "net": 11.83}, "opp_power_rank": 27}], "injuries": [{"player": "Dereck Lively II", "status": "Out", "reason": "Injury: Right Foot Surgery", "is_key": false, "key_info": null, "counts_as_out": true}, {"player": "Sergio deLarrea", "status": "Out", "reason": "Injury: Right Knee Sprain", "is_key": false, "key_info": null, "counts_as_out": true}, {"player": "Tarik Biberovic", "status": "Out", "reason": "Injury: Right Heel Bursitis", "is_key": false, "key_info": null, "counts_as_out": true}, {"player": "Caleb Martin", "status": "Available", "reason": "Injury: Right Thumb Splint", "is_key": false, "key_info": null, "counts_as_out": false}, {"player": "Morez Johnson Jr.", "status": "Probable", "reason": "Injury: Left Shin/Tibia Contusion", "is_key": false, "key_info": null, "counts_as_out": false}], "injuries_known": true, "key_out": [], "key_questionable": [], "spread_text": "+5.5", "is_fav": false, "top_scorers": [{"name": "Cooper Flagg", "ppg": 25.9}, {"name": "Kyrie Irving", "ppg": 22.9}], "closers": ["Cooper Flagg", "Kyrie Irving"]}, "home": {"id": "16", "abbr": "MIN", "name": "Timberwolves", "display": "Minnesota Timberwolves", "record": "8-3", "l3_record": "3-0", "games_played": 11, "b2b": false, "b2b_record": "0-2", "season": {"efg": 55.34, "opp_efg": 49.74, "off": 113.92, "def": 103.22, "net": 10.7, "poss_per_game": 103.7, "ranks": {"efg": 4, "opp_efg": 3, "off": 9, "def": 1, "net": 3}}, "last3": {"efg": 56.15, "opp_efg": 49.41, "off": 114.92, "def": 104.65, "net": 10.27, "poss_per_game": 100.7, "ranks": {"efg": 7, "opp_efg": 3, "off": 8, "def": 4, "net": 6}}, "power": {"rank": 4, "split": false, "own_net": 3, "bpi": 8, "nba_com": 3}, "last3_games": [{"game_id": "401909947", "date": "2026-11-08", "site": "home", "opp_id": "26", "opp": "UTAH", "pts": 115, "opp_pts": 100, "metrics": {"efg": 57.14, "opp_efg": 46.55, "off": 112.94, "def": 98.21, "net": 14.73}, "opp_power_rank": 27}, {"game_id": "401909293", "date": "2026-11-06", "site": "away", "opp_id": "3", "opp": "NO", "pts": 115, "opp_pts": 109, "metrics": {"efg": 50.0, "opp_efg": 51.16, "off": 115.16, "def": 109.15, "net": 6.01}, "opp_power_rank": 24}, {"game_id": "401909930", "date": "2026-11-04", "site": "away", "opp_id": "10", "opp": "HOU", "pts": 117, "opp_pts": 107, "metrics": {"efg": 61.49, "opp_efg": 50.61, "off": 116.67, "def": 106.7, "net": 9.97}, "opp_power_rank": 3}], "injuries": [{"player": "Anthony Edwards", "status": "Out", "reason": "Injury: Right Knee Arthroscopy", "is_key": true, "key_info": {"name": "Anthony Edwards", "starts": 4, "team_games": 11, "mpg": 33.8, "ppg": 33.2, "why": "top-5 minutes"}, "counts_as_out": true}, {"player": "Donte DiVincenzo", "status": "Out", "reason": "Injury: Right Achilles Tendon Repair/Surgery", "is_key": false, "key_info": null, "counts_as_out": true}, {"player": "Joan Beringer", "status": "Available", "reason": "Injury: Face Mask", "is_key": false, "key_info": null, "counts_as_out": false}], "injuries_known": true, "key_out": ["Anthony Edwards"], "key_questionable": [], "spread_text": "-5.5", "is_fav": true, "top_scorers": [{"name": "LaMelo Ball", "ppg": 18.3}, {"name": "Ayo Dosunmu", "ppg": 18.1}], "closers": ["LaMelo Ball", "Ayo Dosunmu"]}, "spread": {"favorite_id": "16", "spread": 5.5, "details": "MIN -5.5", "provider": "Draft Kings", "ml_home": -222, "ml_away": 184}, "favorite": "home", "scoring": {"scored": true, "favorite_side": "home", "fav": "MIN", "dog": "DAL", "qualified": false, "tier": "out", "tier_label": "No track", "tracked": false, "routes": [], "route": "", "fails": ["Favorite key player out: Anthony Edwards", "Would be on the watch list otherwise (score 19)"], "warnings": [], "rules": [{"rule": "A", "name": "Analysis Score 28+", "pass": false, "detail": "Score 19 of 40"}, {"rule": "B", "name": "Last-3 mismatch (3 of 4) with a season floor", "pass": false, "detail": "\u2713 MIN last-3 top 10 in 4 of 4 \u00b7 \u2717 DAL last-3 bottom 10 in 0 of 4 \u00b7 \u2713 MIN season top 15 in all four \u00b7 \u2717 DAL season top 10: eFG% #10, Opp eFG% #9, Def Eff #9"}, {"rule": "Injury", "name": "No key player out for the favorite", "pass": false, "detail": "Favorite key player out: Anthony Edwards"}, {"rule": "Power", "name": "Underdog not top 10 in any power ranking", "pass": true, "detail": "Underdog: consensus #13, our net rating #11, ESPN BPI #15, NBA.com #14"}], "context": [{"check": "Favorite top 10 in a metric, season and last 3", "pass": true, "detail": "eFG%, Off Eff, Opp eFG%, Def Eff"}, {"check": "Underdog not top 10 in any metric over its last 3", "pass": false, "detail": "eFG%, Off Eff, Def Eff"}, {"check": "Underdog not 3-0 in its last 3", "pass": false, "detail": "3-0"}], "qualifiers": ["eFG%", "Off Eff", "Opp eFG%", "Def Eff"], "score": 19, "max": 40, "band": "yellow", "parts": [{"key": "fav_metrics", "label": "Favorite metrics", "points": 13, "max": 16}, {"key": "dog_metrics", "label": "Underdog metrics", "points": 0, "max": 16}, {"key": "net", "label": "Net rating", "points": 2, "max": 2}, {"key": "form", "label": "Last-3 form", "points": 2, "max": 2}, {"key": "power", "label": "Power rank", "points": 0, "max": 1}, {"key": "home", "label": "Home court", "points": 1, "max": 1}, {"key": "health", "label": "Health", "points": 0, "max": 1}, {"key": "rest", "label": "Rest", "points": 1, "max": 1}], "pills": [{"team": "MIN", "role": "fav", "window": "season", "cells": [{"metric": "efg", "rank": 4, "color": "green"}, {"metric": "off", "rank": 9, "color": "green"}, {"metric": "opp_efg", "rank": 3, "color": "green"}, {"metric": "def", "rank": 1, "color": "green"}]}, {"team": "MIN", "role": "fav", "window": "last3", "cells": [{"metric": "efg", "rank": 7, "color": "green"}, {"metric": "off", "rank": 8, "color": "green"}, {"metric": "opp_efg", "rank": 3, "color": "green"}, {"metric": "def", "rank": 4, "color": "green"}]}, {"team": "DAL", "role": "dog", "window": "season", "cells": [{"metric": "opp_efg", "rank": 9, "color": "red"}, {"metric": "def", "rank": 9, "color": "red"}, {"metric": "efg", "rank": 10, "color": "red"}, {"metric": "off", "rank": 11, "color": "yellow"}]}, {"team": "DAL", "role": "dog", "window": "last3", "cells": [{"metric": "opp_efg", "rank": 14, "color": "yellow"}, {"metric": "def", "rank": 2, "color": "deep-red"}, {"metric": "efg", "rank": 3, "color": "deep-red"}, {"metric": "off", "rank": 4, "color": "deep-red"}]}]}, "summary": "No track: favorite key player out: Anthony Edwards. MIN 3-0 in its last 3, DAL 3-0. MIN will be without Anthony Edwards.", "lean": "No lean", "readout": null}, {"id": "401909977", "state": "pre", "neutral": false, "tip_utc": "2026-11-13T00:00Z", "tip_pt": "4:00 PM PT", "away": {"id": "8", "abbr": "DET", "name": "Pistons", "display": "Detroit Pistons", "record": "7-3", "l3_record": "1-2", "games_played": 10, "b2b": false, "b2b_record": "2-0", "season": {"efg": 54.57, "opp_efg": 49.71, "off": 111.31, "def": 103.31, "net": 8.0, "poss_per_game": 101.3, "ranks": {"efg": 12, "opp_efg": 2, "off": 14, "def": 2, "net": 5}}, "last3": {"efg": 53.17, "opp_efg": 52.7, "off": 111.74, "def": 111.74, "net": 0.0, "poss_per_game": 102.6, "ranks": {"efg": 16, "opp_efg": 11, "off": 15, "def": 16, "net": 13}}, "power": {"rank": 8, "split": false, "own_net": 5, "bpi": 11, "nba_com": 9}, "last3_games": [{"game_id": "401909954", "date": "2026-11-09", "site": "home", "opp_id": "27", "opp": "WSH", "pts": 122, "opp_pts": 111, "metrics": {"efg": 51.65, "opp_efg": 51.12, "off": 115.66, "def": 105.23, "net": 10.43}, "opp_power_rank": 22}, {"game_id": "401909946", "date": "2026-11-08", "site": "home", "opp_id": "13", "opp": "LAL", "pts": 116, "opp_pts": 121, "metrics": {"efg": 54.79, "opp_efg": 56.55, "off": 115.81, "def": 120.81, "net": -4.99}, "opp_power_rank": 5}, {"game_id": "401909922", "date": "2026-11-04", "site": "home", "opp_id": "20", "opp": "PHI", "pts": 106, "opp_pts": 112, "metrics": {"efg": 53.01, "opp_efg": 50.58, "off": 103.7, "def": 109.57, "net": -5.87}, "opp_power_rank": 14}], "injuries": [{"player": "Chaz Lanier", "status": "Out", "reason": "GLeague-On Assignment", "is_key": false, "key_info": null, "counts_as_out": true}, {"player": "Ebuka Okorie", "status": "Out", "reason": "GLeague-On Assignment", "is_key": false, "key_info": null, "counts_as_out": true}, {"player": "Isaiah Joe", "status": "Out", "reason": "Injury: Right Hip Contusion", "is_key": false, "key_info": null, "counts_as_out": true}, {"player": "Jalen Duren", "status": "Out", "reason": "Injury: Right Hamstring Strain", "is_key": false, "key_info": null, "counts_as_out": true}, {"player": "Ugonna Onyenso", "status": "Out", "reason": "G League two-way", "is_key": false, "key_info": null, "counts_as_out": true}, {"player": "Elijah Harkless", "status": "Questionable", "reason": "G League two-way", "is_key": false, "key_info": null, "counts_as_out": false}, {"player": "Isaac Jones", "status": "Questionable", "reason": "G League two-way", "is_key": false, "key_info": null, "counts_as_out": false}], "injuries_known": true, "key_out": [], "key_questionable": [], "spread_text": "-9.5", "is_fav": true, "top_scorers": [{"name": "Cade Cunningham", "ppg": 22.3}, {"name": "Duncan Robinson", "ppg": 18.6}], "closers": ["Cade Cunningham", "Duncan Robinson"]}, "home": {"id": "27", "abbr": "WSH", "name": "Wizards", "display": "Washington Wizards", "record": "4-8", "l3_record": "0-3", "games_played": 12, "b2b": true, "b2b_record": "1-1", "season": {"efg": 51.02, "opp_efg": 51.24, "off": 105.52, "def": 111.33, "net": -5.81, "poss_per_game": 101.9, "ranks": {"efg": 26, "opp_efg": 7, "off": 26, "def": 18, "net": 24}}, "last3": {"efg": 43.5, "opp_efg": 52.76, "off": 93.83, "def": 114.43, "net": -20.6, "poss_per_game": 102.0, "ranks": {"efg": 30, "opp_efg": 12, "off": 30, "def": 18, "net": 28}}, "power": {"rank": 22, "split": false, "own_net": 24, "bpi": 21, "nba_com": 19}, "last3_games": [{"game_id": "401909966", "date": "2026-11-11", "site": "away", "opp_id": "11", "opp": "IND", "pts": 101, "opp_pts": 114, "metrics": {"efg": 47.22, "opp_efg": 52.25, "off": 102.94, "def": 116.18, "net": -13.25}, "opp_power_rank": 21}, {"game_id": "401909954", "date": "2026-11-09", "site": "away", "opp_id": "8", "opp": "DET", "pts": 111, "opp_pts": 122, "metrics": {"efg": 51.12, "opp_efg": 51.65, "off": 105.23, "def": 115.66, "net": -10.43}, "opp_power_rank": 8}, {"game_id": "401909941", "date": "2026-11-07", "site": "away", "opp_id": "25", "opp": "OKC", "pts": 75, "opp_pts": 114, "metrics": {"efg": 33.16, "opp_efg": 54.35, "off": 73.34, "def": 111.48, "net": -38.14}, "opp_power_rank": 7}], "injuries": [], "injuries_known": true, "key_out": [], "key_questionable": [], "spread_text": "+9.5", "is_fav": false, "top_scorers": [{"name": "Anthony Davis", "ppg": 25.2}, {"name": "Kyshawn George", "ppg": 18.5}], "closers": ["Trae Young", "Kyshawn George"]}, "spread": {"favorite_id": "8", "spread": 9.5, "details": "DET -9.5", "provider": "Draft Kings", "ml_home": 331, "ml_away": -423}, "favorite": "away", "scoring": {"scored": true, "favorite_side": "away", "fav": "DET", "dog": "WSH", "qualified": false, "tier": "out", "tier_label": "No track", "tracked": false, "routes": [], "route": "", "fails": ["Score 17 (watch list from 18, qualifies at 28)"], "warnings": [], "rules": [{"rule": "A", "name": "Analysis Score 28+", "pass": false, "detail": "Score 17 of 40"}, {"rule": "B", "name": "Last-3 mismatch (3 of 4) with a season floor", "pass": false, "detail": "\u2717 DET last-3 top 10 in 0 of 4 \u00b7 \u2717 WSH last-3 bottom 10 in 2 of 4 \u00b7 \u2713 DET season top 15 in all four \u00b7 \u2717 WSH season top 10: Opp eFG% #7"}, {"rule": "Injury", "name": "No key player out for the favorite", "pass": true, "detail": "Clear"}, {"rule": "Power", "name": "Underdog not top 10 in any power ranking", "pass": true, "detail": "Underdog: consensus #22, our net rating #24, ESPN BPI #21, NBA.com #19"}], "context": [{"check": "Favorite top 10 in a metric, season and last 3", "pass": false, "detail": "none"}, {"check": "Underdog not top 10 in any metric over its last 3", "pass": true, "detail": "none"}, {"check": "Underdog not 3-0 in its last 3", "pass": true, "detail": "0-3"}], "qualifiers": [], "score": 17, "max": 40, "band": "red", "parts": [{"key": "fav_metrics", "label": "Favorite metrics", "points": 4, "max": 16}, {"key": "dog_metrics", "label": "Underdog metrics", "points": 8, "max": 16}, {"key": "net", "label": "Net rating", "points": 2, "max": 2}, {"key": "form", "label": "Last-3 form", "points": 0, "max": 2}, {"key": "power", "label": "Power rank", "points": 1, "max": 1}, {"key": "home", "label": "Home court", "points": 0, "max": 1}, {"key": "health", "label": "Health", "points": 1, "max": 1}, {"key": "rest", "label": "Rest", "points": 1, "max": 1}], "pills": [{"team": "DET", "role": "fav", "window": "season", "cells": [{"metric": "efg", "rank": 12, "color": "yellow"}, {"metric": "off", "rank": 14, "color": "yellow"}, {"metric": "opp_efg", "rank": 2, "color": "green"}, {"metric": "def", "rank": 2, "color": "green"}]}, {"team": "DET", "role": "fav", "window": "last3", "cells": [{"metric": "efg", "rank": 16, "color": "yellow"}, {"metric": "off", "rank": 15, "color": "yellow"}, {"metric": "opp_efg", "rank": 11, "color": "yellow"}, {"metric": "def", "rank": 16, "color": "yellow"}]}, {"team": "WSH", "role": "dog", "window": "season", "cells": [{"metric": "opp_efg", "rank": 7, "color": "red"}, {"metric": "def", "rank": 18, "color": "yellow"}, {"metric": "efg", "rank": 26, "color": "green"}, {"metric": "off", "rank": 26, "color": "green"}]}, {"team": "WSH", "role": "dog", "window": "last3", "cells": [{"metric": "opp_efg", "rank": 12, "color": "yellow"}, {"metric": "def", "rank": 18, "color": "yellow"}, {"metric": "efg", "rank": 30, "color": "green"}, {"metric": "off", "rank": 30, "color": "green"}]}]}, "summary": "No track: score 17 (watch list from 18, qualifies at 28). Biggest edge over the last 3: DET Opp eFG% (#11) against WSH eFG% (#30). DET 1-2 in its last 3, WSH 0-3; WSH on a back-to-back.", "lean": "No lean", "readout": null}, {"id": "401909976", "state": "pre", "neutral": false, "tip_utc": "2026-11-13T00:00Z", "tip_pt": "4:00 PM PT", "away": {"id": "28", "abbr": "TOR", "name": "Raptors", "display": "Toronto Raptors", "record": "5-6", "l3_record": "1-2", "games_played": 11, "b2b": true, "b2b_record": "1-0", "season": {"efg": 51.58, "opp_efg": 55.18, "off": 111.27, "def": 108.8, "net": 2.47, "poss_per_game": 102.9, "ranks": {"efg": 23, "opp_efg": 22, "off": 15, "def": 11, "net": 13}}, "last3": {"efg": 50.0, "opp_efg": 55.56, "off": 107.53, "def": 109.92, "net": -2.38, "poss_per_game": 98.0, "ranks": {"efg": 26, "opp_efg": 18, "off": 21, "def": 12, "net": 18}}, "power": {"rank": 16, "split": false, "own_net": 13, "bpi": 16, "nba_com": 16}, "last3_games": [{"game_id": "401909968", "date": "2026-11-11", "site": "home", "opp_id": "2", "opp": "BOS", "pts": 93, "opp_pts": 98, "metrics": {"efg": 47.06, "opp_efg": 50.68, "off": 97.77, "def": 103.03, "net": -5.26}, "opp_power_rank": 2}, {"game_id": "401909955", "date": "2026-11-09", "site": "home", "opp_id": "29", "opp": "MEM", "pts": 102, "opp_pts": 118, "metrics": {"efg": 50.56, "opp_efg": 63.29, "off": 107.46, "def": 124.32, "net": -16.86}, "opp_power_rank": 15}, {"game_id": "401909292", "date": "2026-11-06", "site": "away", "opp_id": "15", "opp": "MIL", "pts": 121, "opp_pts": 107, "metrics": {"efg": 52.15, "opp_efg": 52.44, "off": 116.55, "def": 103.06, "net": 13.48}, "opp_power_rank": 30}], "injuries": [], "injuries_known": true, "key_out": [], "key_questionable": [], "spread_text": "+9.5", "is_fav": false, "top_scorers": [{"name": "Scottie Barnes", "ppg": 23.5}, {"name": "RJ Barrett", "ppg": 20.5}], "closers": ["RJ Barrett", "Collin Murray-Boyles"]}, "home": {"id": "20", "abbr": "PHI", "name": "76ers", "display": "Philadelphia 76ers", "record": "9-3", "l3_record": "1-2", "games_played": 12, "b2b": false, "b2b_record": "1-1", "season": {"efg": 50.9, "opp_efg": 52.0, "off": 107.88, "def": 106.91, "net": 0.98, "poss_per_game": 102.1, "ranks": {"efg": 27, "opp_efg": 10, "off": 22, "def": 8, "net": 17}}, "last3": {"efg": 48.48, "opp_efg": 57.75, "off": 106.89, "def": 120.13, "net": -13.24, "poss_per_game": 100.7, "ranks": {"efg": 28, "opp_efg": 27, "off": 24, "def": 27, "net": 26}}, "power": {"rank": 14, "split": false, "own_net": 17, "bpi": 12, "nba_com": 5}, "last3_games": [{"game_id": "401909961", "date": "2026-11-10", "site": "home", "opp_id": "2", "opp": "BOS", "pts": 101, "opp_pts": 123, "metrics": {"efg": 48.73, "opp_efg": 62.11, "off": 103.31, "def": 125.82, "net": -22.5}, "opp_power_rank": 2}, {"game_id": "401909945", "date": "2026-11-08", "site": "away", "opp_id": "4", "opp": "CHI", "pts": 127, "opp_pts": 121, "metrics": {"efg": 53.54, "opp_efg": 57.95, "off": 126.29, "def": 120.33, "net": 5.97}, "opp_power_rank": 28}, {"game_id": "401909289", "date": "2026-11-06", "site": "away", "opp_id": "5", "opp": "CLE", "pts": 95, "opp_pts": 119, "metrics": {"efg": 42.35, "opp_efg": 52.84, "off": 91.47, "def": 114.58, "net": -23.11}, "opp_power_rank": 11}], "injuries": [{"player": "Joel Embiid", "status": "Questionable", "reason": "Injury: Right Foot Plantar Fascia Injury Management", "is_key": true, "key_info": {"name": "Joel Embiid", "starts": 10, "team_games": 12, "mpg": 31.8, "ppg": 17.7, "why": "starter"}, "counts_as_out": false}, {"player": "LeBron James", "status": "Questionable", "reason": "Injury: Low Back/Sciatica Management", "is_key": true, "key_info": {"name": "LeBron James", "starts": 10, "team_games": 12, "mpg": 32.5, "ppg": 15.1, "why": "starter"}, "counts_as_out": false}, {"player": "Adem Bona", "status": "Out", "reason": "Injury: Cervical Spine Sprain", "is_key": false, "key_info": null, "counts_as_out": true}, {"player": "Ariel Hukporti", "status": "Out", "reason": "Injury: Right Achilles Tendon Rupture/Tear", "is_key": false, "key_info": null, "counts_as_out": true}, {"player": "Dominick Barlow", "status": "Out", "reason": "Injury: Low Back Stress Reaction", "is_key": false, "key_info": null, "counts_as_out": true}], "injuries_known": true, "key_out": [], "key_questionable": ["Joel Embiid", "LeBron James"], "spread_text": "-9.5", "is_fav": true, "top_scorers": [{"name": "Tyrese Maxey", "ppg": 26.7}, {"name": "Jaylen Brown", "ppg": 21.5}], "closers": ["Tyrese Maxey", "VJ Edgecombe"]}, "spread": {"favorite_id": "20", "spread": 9.5, "details": "PHI -9.5", "provider": "Draft Kings", "ml_home": -410, "ml_away": 322}, "favorite": "home", "scoring": {"scored": true, "favorite_side": "home", "fav": "PHI", "dog": "TOR", "qualified": false, "tier": "out", "tier_label": "No track", "tracked": false, "routes": [], "route": "", "fails": ["Score 10 (watch list from 18, qualifies at 28)"], "warnings": ["PHI key player questionable: Joel Embiid", "PHI key player questionable: LeBron James"], "rules": [{"rule": "A", "name": "Analysis Score 28+", "pass": false, "detail": "Score 10 of 40"}, {"rule": "B", "name": "Last-3 mismatch (3 of 4) with a season floor", "pass": false, "detail": "\u2717 PHI last-3 top 10 in 0 of 4 \u00b7 \u2717 TOR last-3 bottom 10 in 2 of 4 \u00b7 \u2717 PHI season outside top 15: eFG% #27, Off Eff #22 \u00b7 \u2713 TOR season top 10 in none"}, {"rule": "Injury", "name": "No key player out for the favorite", "pass": true, "detail": "Clear"}, {"rule": "Power", "name": "Underdog not top 10 in any power ranking", "pass": true, "detail": "Underdog: consensus #16, our net rating #13, ESPN BPI #16, NBA.com #16"}], "context": [{"check": "Favorite top 10 in a metric, season and last 3", "pass": false, "detail": "none"}, {"check": "Underdog not top 10 in any metric over its last 3", "pass": true, "detail": "none"}, {"check": "Underdog not 3-0 in its last 3", "pass": true, "detail": "1-2"}], "qualifiers": [], "score": 10, "max": 40, "band": "red", "parts": [{"key": "fav_metrics", "label": "Favorite metrics", "points": 2, "max": 16}, {"key": "dog_metrics", "label": "Underdog metrics", "points": 5, "max": 16}, {"key": "net", "label": "Net rating", "points": 0, "max": 2}, {"key": "form", "label": "Last-3 form", "points": 0, "max": 2}, {"key": "power", "label": "Power rank", "points": 0, "max": 1}, {"key": "home", "label": "Home court", "points": 1, "max": 1}, {"key": "health", "label": "Health", "points": 1, "max": 1}, {"key": "rest", "label": "Rest", "points": 1, "max": 1}], "pills": [{"team": "PHI", "role": "fav", "window": "season", "cells": [{"metric": "efg", "rank": 27, "color": "red"}, {"metric": "off", "rank": 22, "color": "red"}, {"metric": "opp_efg", "rank": 10, "color": "green"}, {"metric": "def", "rank": 8, "color": "green"}]}, {"team": "PHI", "role": "fav", "window": "last3", "cells": [{"metric": "efg", "rank": 28, "color": "red"}, {"metric": "off", "rank": 24, "color": "red"}, {"metric": "opp_efg", "rank": 27, "color": "red"}, {"metric": "def", "rank": 27, "color": "red"}]}, {"team": "TOR", "role": "dog", "window": "season", "cells": [{"metric": "opp_efg", "rank": 22, "color": "green"}, {"metric": "def", "rank": 11, "color": "yellow"}, {"metric": "efg", "rank": 23, "color": "green"}, {"metric": "off", "rank": 15, "color": "yellow"}]}, {"team": "TOR", "role": "dog", "window": "last3", "cells": [{"metric": "opp_efg", "rank": 18, "color": "yellow"}, {"metric": "def", "rank": 12, "color": "yellow"}, {"metric": "efg", "rank": 26, "color": "green"}, {"metric": "off", "rank": 21, "color": "green"}]}]}, "summary": "No track: score 10 (watch list from 18, qualifies at 28). PHI 1-2 in its last 3, TOR 1-2; TOR on a back-to-back. PHI is waiting on Joel Embiid, LeBron James (questionable).", "lean": "No lean", "readout": null}], "max": 40};</script>
+<script src="https://investment-analytics3.github.io/nba-pregame/live/engine.js" defer></script>
+<script>
+(function(){
+const C = 289.027, MAX = DATA.max || 40;
+const NAMES = {efg:'eFG%', off:'Off Eff', opp_efg:'Opp eFG%', def:'Def Eff'};
+const COLS = [{f:'efg',d:'opp_efg',top:'eFG%',sub:'vs D eFG',fly:'Shooting'},{f:'off',d:'def',top:'OFF',sub:'vs DEF',fly:'Scoring'},
+              {f:'opp_efg',d:'efg',top:'D eFG',sub:'vs eFG',fly:'Shot defense'},{f:'def',d:'off',top:'DEF',sub:'vs OFF',fly:'Stops'}];
+const BAND = {green:{num:'#5BEA9E',word:'Strong edge'},yellow:{num:'#FFD66B',word:'Moderate'},red:{num:'#FF7676',word:'Risk'}};
+const PILL = {green:'pg',yellow:'py',red:'pr','deep-red':'pd',none:'pn'};
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt = (m,v) => v==null ? '–' : (m==='efg'||m==='opp_efg' ? v.toFixed(1)+'%' : v.toFixed(1));
+const favOf = g => g.favorite==='home' ? g.home : (g.favorite==='away' ? g.away : null);
+const dogOf = g => g.favorite==='home' ? g.away : (g.favorite==='away' ? g.home : null);
+const rk = (t,w,m) => (((t||{})[w]||{}).ranks||{})[m];
+const favCls = r => r==null?'pn':(r<=10?'pg':(r<=20?'py':'pr'));
+const dogCls = r => r==null?'pn':(r<=5?'pd':(r<=10?'pr':(r<=20?'py':'pg')));
+const app = document.getElementById('app');
+
+function donut(sc, size, delay){
+  if(!sc || !sc.scored) return `<div class="donut" style="width:${size}px;height:${size}px"><svg viewBox="0 0 120 120" aria-hidden="true">
+    <circle cx="60" cy="60" r="46" fill="none" stroke="url(#ringtrack)" stroke-width="13"/><circle cx="60" cy="60" r="38" fill="url(#hub)"/></svg>
+    <div class="num"><b class="cond" style="font-size:${size*.3}px;color:#8B95AB">–</b><span>NO LINE</span></div></div>`;
+  const b = BAND[sc.band], off = (C*(1-sc.score/MAX)).toFixed(2);
+  return `<div class="donut" style="width:${size}px;height:${size}px"><svg viewBox="0 0 120 120" role="img" aria-label="Hero score ${sc.score} of ${MAX}, ${b.word}">
+    <circle cx="60" cy="60" r="46" fill="none" stroke="#070B15" stroke-width="16"/>
+    <circle cx="60" cy="60" r="46" fill="none" stroke="url(#ringtrack)" stroke-width="13"/>
+    <circle cx="60" cy="60" r="38" fill="url(#hub)" stroke="rgba(255,255,255,.05)"/>
+    <g transform="rotate(-90 60 60)"><circle class="arc" cx="60" cy="60" r="46" fill="none" stroke="url(#ring${sc.band})" stroke-width="13" stroke-linecap="round"
+      style="stroke-dasharray:${C};stroke-dashoffset:${off};filter:url(#drop);animation-delay:${delay}ms"/></g></svg>
+    <div class="num"><b class="cond" data-count="${sc.score}" data-delay="${delay}" style="font-size:${size*.33}px;color:${b.num}">${sc.score}</b><span>/ ${MAX}</span></div></div>`;
+}
+
+// Power rank and last-3 pills (Nov 10). Favorite: top 10 / 3-0 green, 11-20 / 2-1 yellow,
+// bottom 10 / 1-2, 0-3 red. Underdog: the same, flipped (strong underdog = red).
+const FORM = {g:'color:#fff;background:linear-gradient(180deg,#34C77B,#1A8A4C);text-shadow:0 1px 1px rgba(0,0,0,.25)',
+              y:'color:#2A1C00;background:linear-gradient(180deg,#FADB80,#D9A12A)',
+              r:'color:#fff;background:linear-gradient(180deg,#D44444,#A12222)'};
+const flip = c => c==='g' ? 'r' : (c==='r' ? 'g' : c);
+const B2B_G = 'color:#fff;background:linear-gradient(180deg,#34C77B,#1A8A4C);text-shadow:0 1px 1px rgba(0,0,0,.25)', B2B_Y = 'color:#2A1C00;background:linear-gradient(180deg,#FADB80,#D9A12A)', B2B_R = 'color:#fff;background:linear-gradient(180deg,#D44444,#A12222)';
+function prPill(rank, isFav){
+  if(rank==null) return '#–';
+  const c = rank<=10 ? 'g' : (rank<=20 ? 'y' : 'r');
+  return `<span class="yn" style="${FORM[isFav?c:flip(c)]}">#${rank}</span>`;
+}
+function formPill(rec, isFav){
+  if(!rec) return '–';
+  const c = rec==='3-0' ? 'g' : (rec==='2-1' ? 'y' : 'r');
+  return `<span class="yn" style="${FORM[isFav?c:flip(c)]}">${esc(rec)}</span>`;
+}
+
+function teamLine(g, t){
+  const isFav = t.is_fav, p = t.power||{};
+  return `<div class="row">
+    <span class="badge cond" style="font-size:${t.abbr.length>3?12:15}px;background:${isFav?'linear-gradient(180deg,#2E4170,#1C2845)':'linear-gradient(180deg,#252E45,#181F31)'}">${esc(t.abbr)}</span>
+    <div style="min-width:0;flex:1"><div class="row" style="gap:6px;flex-wrap:wrap"><span style="font-weight:600;font-size:15px">${t===g.home?'<span style="color:#7C869E">@ </span>':''}${esc(t.name)}</span>
+      ${isFav?'<span class="tag" style="color:#BFDBFE;background:rgba(96,165,250,.16);border:1px solid rgba(96,165,250,.4)">FAV</span>':''}</div>
+      <div class="sub"><span>${esc(t.record||'')} · L3 ${formPill(t.l3_record, isFav)} · PR ${prPill(p.rank, isFav)}</span>
+      ${p.split?'<span class="tag" style="color:#FDBA74;background:rgba(251,146,60,.14);border:1px solid rgba(251,146,60,.45)">SPLIT</span>':''}
+      ${isFav && rk(t,'season','net')!=null && rk(t,'season','net')<=10?`<span class="tag" style="color:#fff;background:rgba(47,195,115,.14);border:1px solid rgba(47,195,115,.4)">NET #${rk(t,'season','net')}</span>`:''}</div></div>
+    <span class="line cond" style="color:${isFav?'#F3F6FB':'#8B95AB'}">${esc(t.spread_text||'')}</span></div>`;
+}
+
+function pillGrid(sc, base){
+  if(!sc || !sc.pills) return '';
+  let h = `<div class="pills"><div class="prow" style="align-items:end"><span></span>${COLS.map(c=>`<span class="ph"><b>${c.top}</b><span>${c.sub}</span></span>`).join('')}</div>`;
+  sc.pills.forEach((r,ri)=>{
+    h += `<div class="prow" style="margin-top:${ri===2?8:0}px"><span class="pl"><b>${esc(r.team)}</b><span>${r.window==='season'?'Season':'Last 3'}</span></span>` +
+      r.cells.map((c,ci)=>`<span class="pill cond ${PILL[c.color]}" title="${esc(r.team)} ${r.window==='season'?'season':'last 3'} ${NAMES[c.metric]}: rank ${c.rank??'n/a'}" style="animation-delay:${base+ri*90+ci*45}ms"><span>#${c.rank??'–'}</span></span>`).join('') + '</div>';
+  });
+  return h + '</div>';
+}
+
+function card(g, i){
+  const sc = g.scoring||{}, delay = i*110, fav = favOf(g);
+  const keyOut = [g.away,g.home].reduce((n,t)=>n+(t.key_out||[]).length,0);
+  const tier = sc.tier || (sc.qualified ? 'qualified' : 'out');
+  const qline = !sc.scored ? ['#9AA4BA','M4 8h8','No spread posted yet']
+    : (tier==='qualified' ? ['#86EFAC','M3 8.5l3.2 3L13 4.5','Qualified: '+(sc.route||sc.qualifiers.join(' · '))]
+    : (tier==='watch' ? ['#FCD97A','M8 3v6M8 12v.5',sc.fails[0]] : ['#FCA5A5','M4 4l8 8M12 4l-8 8',sc.fails[0]]));
+  const yellows = (sc.warnings||[]).filter(w=>/questionable/i.test(w));
+  // B2B pills (owner Nov 11): favorite Yes = red, No = green; underdog Yes = green (tired opponent), No = yellow
+  const b2bStyle = t => t.is_fav===false ? (t.b2b ? B2B_G : B2B_Y) : (t.b2b ? B2B_R : B2B_G);
+  const b2b = [g.away,g.home].map(t=>`<span>${esc(t.abbr)} <span class="yn" style="${b2bStyle(t)}">${t.b2b?'Yes':'No'}</span></span>`).join('');
+  return `<button type="button" class="card card-in" style="animation-delay:${delay}ms" onclick="openGame('${g.id}')" aria-label="${esc(g.away.name)} at ${esc(g.home.name)}, open full breakdown">
+    <div class="row between" style="align-items:flex-start"><div style="display:flex;flex-direction:column;gap:5px"><span class="tip">${esc(g.tip_pt)}${g.neutral?' · Neutral':''}</span>
+      ${sc.tracked?`<span class="lv" data-live="${g.id}"></span>`:''}
+      <span class="b2b"><b style="letter-spacing:.08em">B2B</b>${b2b}</span></div>
+      <div class="row" style="gap:6px">${keyOut?`<span class="chip" style="color:#FCA5A5;background:rgba(220,50,50,.14);border:1px solid rgba(220,50,50,.4)">+ ${keyOut} key out</span>`:''}
+      ${sc.scored && tier==='out'?'<span class="chip" style="color:#fff;background:linear-gradient(180deg,#D44444,#A12222);letter-spacing:.08em;text-transform:uppercase">No track</span>':''}
+      ${sc.scored && tier==='watch'?'<span class="chip" style="color:#2A1C00;background:linear-gradient(180deg,#FADB80,#D9A12A);letter-spacing:.08em;text-transform:uppercase">Watch list</span>':''}</div></div>
+    <div class="row" style="gap:14px"><div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:12px">${teamLine(g,g.away)}${teamLine(g,g.home)}</div>${donut(sc,108,delay)}</div>
+    <div class="qual" style="color:${qline[0]}"><svg viewBox="0 0 16 16" width="14" height="14" style="flex:none;margin-top:2px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" aria-hidden="true"><path d="${qline[1]}"/></svg><span>${esc(qline[2])}</span></div>
+    ${yellows.map(w=>`<div class="warn">${esc(w)}</div>`).join('')}
+    ${pillGrid(sc, 380+delay)}
+    <div class="more">Full breakdown <svg viewBox="0 0 16 16" width="13" height="13" style="fill:none;stroke:currentColor;stroke-width:2" aria-hidden="true"><path d="M6 3l5 5-5 5"/></svg></div></button>`;
+}
+
+function listView(){
+  const tierOf = g => (g.scoring && (g.scoring.tier || (g.scoring.qualified ? 'qualified' : 'out'))) || 'out';
+  const q = DATA.games.filter(g=>tierOf(g)==='qualified'), w = DATA.games.filter(g=>tierOf(g)==='watch'), n = DATA.games.filter(g=>tierOf(g)==='out');
+  const kindLabel = DATA.kind==='final' ? 'Final' : (DATA.kind==='preview' ? 'Preview' : (DATA.kind==='retro' ? 'Rebuilt board' : 'Pregame board'));
+  let h = `<header class="row between" style="flex-wrap:wrap;align-items:flex-end;gap:16px"><div><div class="eyebrow">NBA · ${kindLabel}</div><h1 class="title cond">${esc(DATA.date_label)}</h1></div>
+    <div style="text-align:right;font-size:13px;color:var(--muted);line-height:1.6">Data pulled ${esc(DATA.built_label)} · ${DATA.games.length} games<br>Stats through ${esc(DATA.metrics_through_label||'–')}</div></header>
+    <div class="legend"><span><i class="sw" style="background:var(--green)"></i>Edge for the favorite</span><span><i class="sw" style="background:var(--yellow)"></i>Middle of the league / warning</span>
+    <span><i class="sw" style="background:var(--red)"></i>Risk or threat</span><span><i class="sw" style="background:#7A0E0E;box-shadow:0 0 8px rgba(255,60,60,.8)"></i>Underdog top 5 (pulses)</span>
+    <span><i class="sw" style="background:var(--amber)"></i>Power-rank split that matters</span></div>`;
+  if(DATA.kind==='retro'){
+    h += `<div class="panel final" style="border-color:rgba(233,178,58,.5)"><h2>Rebuilt after the fact</h2><div style="color:#D3D9E5;font-size:14px;line-height:1.6">This board was not sent at the time. It was rebuilt using only what was known before tip-off: stats and records through the day before, the closing DraftKings spread, the official injury report from 90 minutes before the first game, and that week's NBA.com rankings. ESPN BPI has no history, so power rank uses our own net rating plus NBA.com.</div></div>`;
+  }
+  if(DATA.kind==='final' && DATA.earlier_label){
+    h += `<div class="panel final"><h2>What changed since the ${esc(DATA.earlier_label)} board</h2>` +
+      (DATA.changes && DATA.changes.length ? `<ul>${DATA.changes.map(c=>`<li>${esc(c)}</li>`).join('')}</ul>` : `<div style="color:#D3D9E5;font-size:14px">No changes.</div>`) + '</div>';
+  }
+  if(!DATA.games.length) h += '<div class="panel pad">No NBA games today.</div>';
+  let i = 0;
+  [['Qualified',q,'#2FC373','','Score 28+ or last-3 mismatch'],
+   ['Watch list',w,'#E9B23A','#FFD66B','Score 18-27'],
+   ['Did not qualify',n,'#E04848','#FF7676','']].forEach(([t,list,dot,col,sub])=>{
+    if(!DATA.games.length) return;
+    if(t==='Watch list' && !list.length) return;
+    const red = t==='Did not qualify';
+    h += `<section><div class="sec-head"><span style="width:10px;height:10px;border-radius:50%;background:${dot};box-shadow:0 0 10px ${dot}"></span>
+      <h2 class="cond" style="color:${col||'#E6EAF2'}">${t}</h2><span class="cnt">${list.length}</span><div class="rule"></div><span style="font-size:12px;color:var(--dim)">${sub?esc(sub):'Sorted by hero score'}</span></div>
+      ${red?'<div class="redline grow"></div>':''}${t==='Watch list'?'<div class="amberline grow"></div>':''}<div class="grid">${list.map(g=>card(g,i++)).join('') || '<div style="color:var(--muted);font-size:14px">None today.</div>'}</div></section>`;
+  });
+  h += `<p style="font-size:12px;color:var(--dim);line-height:1.6">Sources: team metrics computed from ESPN box scores · spreads via ESPN (${esc((DATA.games.find(g=>g.spread)||{spread:{}}).spread.provider||'sportsbook')}) · injuries: ${esc(DATA.injury_source||'unavailable')} · power: own net rating, ESPN BPI, NBA.com. Context only, not betting advice.</p>`;
+  return h;
+}
+
+function heat(fav, dog){
+  const head = [[fav.abbr,'Season'],[fav.abbr,'Last 3'],[dog.abbr,'Season'],[dog.abbr,'Last 3']];
+  let h = `<div class="hm" style="align-items:end"><span></span>${head.map(x=>`<span style="text-align:center;font-size:11px;font-weight:700;color:#C7CEDC">${esc(x[0])}<br><span style="font-weight:500;color:#7C869E">${x[1]}</span></span>`).join('')}</div>`;
+  ['efg','off','opp_efg','def'].forEach((m,ri)=>{
+    h += `<div class="hm"><span style="font-size:12.5px;font-weight:600">${NAMES[m]}</span>` +
+      [[fav,'season',1],[fav,'last3',1],[dog,'season',0],[dog,'last3',0]].map(([t,w,isF],ci)=>{
+        const r = rk(t,w,m), v = (t[w]||{})[m];
+        return `<span class="cell ${isF?favCls(r):dogCls(r)}" style="animation-delay:${250+ri*80+ci*40}ms"><b class="cond" style="font-size:17px;line-height:1">${fmt(m,v)}</b><span style="font-size:10.5px;font-weight:700;opacity:.85">#${r??'–'}</span></span>`;
+      }).join('') + '</div>';
+  });
+  return h;
+}
+
+function butterfly(fav, dog){
+  let h = `<div style="display:grid;grid-template-columns:minmax(0,1fr) 96px minmax(0,1fr);gap:4px 10px;margin-bottom:8px;font-size:12px;font-weight:700;color:#C7CEDC"><span style="text-align:right">${esc(fav.abbr)}</span><span></span><span>${esc(dog.abbr)}</span></div>`;
+  COLS.forEach((c,i)=>{
+    const fr = rk(fav,'last3',c.f), dr = rk(dog,'last3',c.d);
+    const w = r => r==null?18:Math.max(18,(31-r)/30*100);
+    h += `<div style="display:grid;grid-template-columns:minmax(0,1fr) 96px minmax(0,1fr);gap:10px;align-items:center;margin-bottom:12px">
+      <div style="display:flex;justify-content:flex-end;height:26px;border-radius:8px;background:rgba(6,10,20,.45)"><span class="grow-r cond ${favCls(fr)}" style="width:${w(fr)}%;border-radius:8px;display:flex;align-items:center;padding-left:8px;font-weight:700;font-size:14px;animation-delay:${300+i*90}ms">#${fr??'–'}</span></div>
+      <span style="text-align:center;font-size:11.5px;line-height:1.2;color:#C7CEDC"><b>${c.fly}</b><br><span style="color:#7C869E">${NAMES[c.f]} vs ${NAMES[c.d]}</span></span>
+      <div style="display:flex;height:26px;border-radius:8px;background:rgba(6,10,20,.45)"><span class="grow cond ${dogCls(dr)}" style="width:${w(dr)}%;border-radius:8px;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;font-weight:700;font-size:14px;animation-delay:${300+i*90}ms">#${dr??'–'}</span></div></div>`;
+  });
+  return h;
+}
+
+function trend(fav, dog, m, i){
+  const day = d => Math.round(new Date(d+'T12:00:00Z').getTime()/864e5);
+  const end = day(DATA.date) - 1;
+  const games = t => (t.last3_games||[]).filter(x=>x.metrics && x.metrics[m]!=null).map(x=>({d:day(x.date), v:x.metrics[m]})).sort((a,b)=>a.d-b.d);
+  const fg = games(fav), dg = games(dog), fs = (fav.season||{})[m], ds = (dog.season||{})[m];
+  const start = Math.min(end-6, ...fg.map(x=>x.d), ...dg.map(x=>x.d));
+  const vals = fg.concat(dg).map(x=>x.v).concat([fs,ds].filter(v=>v!=null));
+  if(!vals.length) return '';
+  let mn = Math.min(...vals), mx = Math.max(...vals); const pad = (mx-mn)*.15 || 1; mn -= pad; mx += pad;
+  const lower = (m==='opp_efg'||m==='def');
+  const W=300,H=150,pl=36,pr=10,pt=12,pb=14;
+  const X = d => pl + (d-start)*(W-pl-pr)/Math.max(1,end-start);
+  const Y = v => lower ? pt+(v-mn)/(mx-mn)*(H-pt-pb) : pt+(mx-v)/(mx-mn)*(H-pt-pb);
+  const path = a => a.map((p,j)=>(j?'L':'M')+X(p.d).toFixed(1)+' '+Y(p.v).toFixed(1)).join(' ');
+  const dots = (a,col) => a.map(p=>`<circle class="fade" cx="${X(p.d).toFixed(1)}" cy="${Y(p.v).toFixed(1)}" r="4.5" fill="${col}" stroke="#0F1626" stroke-width="2" style="animation-delay:${1100+i*120}ms"><title>${fmt(m,p.v)}</title></circle>`).join('');
+  const hl = (v,col) => v==null?'':`<path d="M${pl} ${Y(v).toFixed(1)} L${W-pr} ${Y(v).toFixed(1)}" fill="none" stroke="${col}" stroke-width="1.3" stroke-dasharray="4 4" opacity=".5"/>`;
+  const dir = a => a.length<2?'→ flat':(Math.abs(a[a.length-1].v-a[0].v)<(m.includes('efg')?1:2)?'→ flat':((a[a.length-1].v>a[0].v)!==lower?'↑ improving':'↓ slipping'));
+  const ticks = []; for(let d=start; d<=end; d++){ const dt=new Date(d*864e5); ticks.push(`<text x="${X(d).toFixed(1)}" y="${H+6}" font-size="9.5" fill="#7C869E" text-anchor="middle" font-family="Inter,sans-serif">${['Su','Mo','Tu','We','Th','Fr','Sa'][dt.getUTCDay()]}</text>`); }
+  const grid = [0,.5,1].map(f=>`M${pl} ${(pt+f*(H-pt-pb)).toFixed(1)} L${W-pr} ${(pt+f*(H-pt-pb)).toFixed(1)}`).join(' ');
+  return `<div class="panel" style="padding:16px 16px 12px"><div class="row between"><b style="font-size:14px">${NAMES[m]}</b><span style="font-size:10.5px;color:var(--dim)">${lower?'↑ better (lower value)':'↑ better'}</span></div>
+    <div class="row" style="gap:14px;font-size:11.5px;margin:6px 0 2px;color:#9AA4BA"><span><i class="sw" style="background:#60A5FA;border-radius:50%"></i> ${esc(fav.abbr)} ${dir(fg)}</span><span><i class="sw" style="background:#FB923C;border-radius:50%"></i> ${esc(dog.abbr)} ${dir(dg)}</span></div>
+    <svg viewBox="0 0 ${W} ${H+12}" role="img" aria-label="${NAMES[m]} over the last 3 games" style="width:100%;height:auto;display:block;overflow:visible">
+      <path d="${grid}" fill="none" stroke="#1F2A42"/>${hl(fs,'#60A5FA')}${hl(ds,'#FB923C')}
+      <path class="draw" pathLength="1" d="${path(fg)}" fill="none" stroke="#60A5FA" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray:1;animation-delay:${300+i*120}ms"/>
+      <path class="draw" pathLength="1" d="${path(dg)}" fill="none" stroke="#FB923C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray:1;animation-delay:${300+i*120}ms"/>
+      ${dots(fg,'#60A5FA')}${dots(dg,'#FB923C')}
+      <text x="${pl-5}" y="${pt+3}" font-size="9.5" fill="#7C869E" text-anchor="end" font-family="Inter,sans-serif">${fmt(m,lower?mn:mx)}</text>
+      <text x="${pl-5}" y="${H-pb+3}" font-size="9.5" fill="#7C869E" text-anchor="end" font-family="Inter,sans-serif">${fmt(m,lower?mx:mn)}</text>${ticks.join('')}</svg>
+    <div style="margin-top:8px;font-size:10.5px;color:var(--dim)">Dashed = season average · dots = game days</div></div>`;
+}
+
+function detailView(g){
+  const sc = g.scoring||{}, fav = favOf(g)||g.home, dog = dogOf(g)||g.away;
+  const b = sc.scored ? BAND[sc.band] : {num:'#8B95AB',word:'No line'};
+  let h = `<div class="row" style="flex-wrap:wrap;margin-bottom:18px"><button class="btn" onclick="location.hash=''"><svg viewBox="0 0 16 16" width="14" height="14" style="fill:none;stroke:currentColor;stroke-width:2" aria-hidden="true"><path d="M10 3L5 8l5 5"/></svg>All games</button>
+    <span style="font-size:13px;color:var(--muted)">${esc(g.tip_pt)} · Data pulled ${esc(DATA.built_label)}</span>
+    ${sc.tracked && LIVE_ON?`<div class="tabs" style="margin-left:auto"><a class="on" aria-current="page" href="#g-${g.id}">Pregame</a><a href="${LIVE_URL}?g=${g.id}"><span class="lv-dot" data-livedot="${g.id}"></span>Live</a></div>`:''}</div>
+    <h1 class="title cond" style="font-size:40px">${esc(g.away.name)} <span style="color:#7C869E">@</span> ${esc(g.home.name)}</h1>
+    <div style="margin:8px 0 20px;font-size:14px;color:#9AA4BA">${g.spread?`Spread: ${esc(g.spread.details)} (${esc(g.spread.provider||'')})`:'No spread posted yet'}${g.neutral?' · Neutral site':''}${sc.scored?` · Favorite: ${esc(fav.name)}`:''}</div>`;
+  const tier2 = sc.tier || (sc.qualified ? 'qualified' : 'out');
+  if(sc.scored && tier2==='watch') h += `<div class="banner fade" style="align-items:center;background:linear-gradient(180deg,rgba(233,178,58,.18),rgba(217,161,42,.08));border:1px solid rgba(233,178,58,.5)"><span class="chip" style="color:#2A1C00;background:linear-gradient(180deg,#FADB80,#D9A12A);text-transform:uppercase">Watch list</span><span style="font-size:14px;color:#FDE68A">${esc(sc.fails[0])}. Tracked live.</span></div>`;
+  if(sc.scored && tier2==='out') h += `<div class="banner fade" style="background:linear-gradient(180deg,rgba(212,68,68,.22),rgba(161,34,34,.16));border:1px solid rgba(220,60,60,.5)"><span class="chip" style="color:#fff;background:linear-gradient(180deg,#D44444,#A12222);text-transform:uppercase">No track</span><div style="display:flex;flex-direction:column;gap:4px;font-size:14px;color:#FECACA">${sc.fails.map(f=>`<span>${esc(f)}</span>`).join('')}</div></div>`;
+  if(sc.qualified) h += `<div class="banner fade" style="align-items:center;background:linear-gradient(180deg,rgba(47,195,115,.16),rgba(31,157,88,.08));border:1px solid rgba(47,195,115,.45)"><span class="chip" style="background:linear-gradient(180deg,#34C77B,#1A8A4C);color:#fff;text-shadow:0 1px 1px rgba(0,0,0,.25);text-transform:uppercase">Track game</span><span style="font-size:14px;color:#BBF7D0">Qualified: ${esc(sc.route||sc.qualifiers.join(', '))}</span></div>`;
+  if(sc.scored && sc.rules && sc.rules.length && sc.rules[0].rule==='A'){
+    h += `<div class="panel pad" style="margin-bottom:14px"><h3 style="margin:0 0 8px">How it qualifies</h3><div style="display:flex;flex-direction:column;gap:6px;font-size:14px">${sc.rules.map(r=>`<div style="display:grid;grid-template-columns:22px minmax(0,1fr);gap:8px;align-items:start"><span style="width:20px;height:20px;border-radius:6px;display:grid;place-items:center;font-weight:800;font-size:12px;${r.pass?'background:linear-gradient(180deg,#34C77B,#1A8A4C);color:#fff;text-shadow:0 1px 1px rgba(0,0,0,.25)':'background:#3A1E22;color:#FCA5A5;border:1px solid rgba(200,48,48,.5)'}">${r.pass?'✓':'✗'}</span><span><b>${esc(r.rule==='Injury'?'Injury gate':(r.rule==='Power'?'Power gate':'Route '+r.rule))}: ${esc(r.name)}</b><br><span style="color:var(--muted);font-size:12.5px">${esc(r.detail)}</span></span></div>`).join('')}</div>
+      <div style="font-size:12px;color:var(--dim);margin-top:8px">Qualified = route A or B, with both gates clear. Watch list = score 18-27 with both gates clear. Qualified and Watch list games are tracked live.</div></div>`;
+  }
+  (sc.warnings||[]).forEach(w=>{ h += /^Info:/.test(w)||/Neutral/.test(w) ? `<div style="font-size:13px;color:#9AA4BA;margin:0 0 10px 4px">${esc(w.replace(/^Info: /,''))}</div>` : `<div class="warn" style="margin-bottom:10px">${esc(w)}</div>`; });
+  const people = t => (t.closers&&t.closers.length? 'Closers: '+t.closers.join(', ') : 'Top scorers: '+((t.top_scorers||[]).map(p=>`${p.name} ${p.ppg}`).join(', ')||'–'));
+  h += `<div class="two" style="margin-top:10px"><div class="panel pad" style="flex:1 1 240px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">${donut(sc,176,0)}<span style="font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:${b.num}">${b.word}</span></div>
+    <div class="panel pad" style="flex:999 1 340px;min-width:0;display:flex;flex-direction:column;gap:12px"><div class="row"><h3 style="margin:0">Matchup summary</h3><span class="tag" style="color:#C4B5FD;background:rgba(139,92,246,.15);border:1px solid rgba(139,92,246,.4)">FROM THE NUMBERS</span></div>
+      <p style="margin:0;font-size:15px;line-height:1.6;color:#D3D9E5">${esc(g.summary)}</p>
+      <div style="font-size:13px;color:#9AA4BA;line-height:1.6"><b style="color:#DCE2EE">${esc(fav.abbr)}</b> ${esc(people(fav))}<br><b style="color:#DCE2EE">${esc(dog.abbr)}</b> ${esc(people(dog))}</div>
+      <div class="row" style="flex-wrap:wrap;padding-top:10px;border-top:1px solid #222C44"><b style="font-size:14px">${esc(g.lean)}</b><span class="chip" style="color:#8B95AB;border:1px solid #2A3550;font-weight:600">Context only, not a bet</span></div></div></div>`;
+  if(sc.scored){
+    const segCol = {fav_metrics:'#3B82F6',dog_metrics:'#8B5CF6',net:'#22D3EE',form:'#2DD4BF',power:'#818CF8',home:'#38BDF8',health:'#C4B5FD',rest:'#A3E635'};
+    h += `<div class="panel pad" style="margin-bottom:20px"><div class="row between" style="margin-bottom:14px"><h3 style="margin:0">Score breakdown</h3><span style="font-size:13px;color:#9AA4BA"><b style="color:${b.num};font-size:15px">${sc.score}</b> of ${MAX}</span></div>
+      <div style="display:flex;height:22px;border-radius:999px;overflow:hidden;background:#141B2C;box-shadow:inset 0 2px 4px rgba(0,0,0,.6)">${sc.parts.map((p,i)=>`<span class="grow" title="${esc(p.label)}: ${p.points} of ${p.max}" style="width:${(p.points/MAX*100).toFixed(2)}%;background:${segCol[p.key]};box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset -1px 0 0 rgba(0,0,0,.35);animation-delay:${200+i*90}ms"></span>`).join('')}</div>
+      <div style="position:relative;margin-top:10px"><div style="display:flex;height:6px;border-radius:999px;overflow:hidden"><span style="width:${18/MAX*100}%;background:#C83030"></span><span style="width:${10/MAX*100}%;background:#E9B23A"></span><span style="flex:1;background:#2FC373"></span></div>
+      <div class="fade" style="position:absolute;top:-5px;left:${sc.score/MAX*100}%;width:3px;height:16px;margin-left:-1.5px;border-radius:2px;background:#fff;box-shadow:0 0 6px rgba(255,255,255,.8);animation-delay:900ms"></div>
+      <div style="position:relative;height:16px;margin-top:4px;font-size:10.5px;color:var(--dim)"><span style="position:absolute;left:0">0 · Risk</span><span style="position:absolute;left:${18/MAX*100}%">18 · Moderate</span><span style="position:absolute;left:${28/MAX*100}%">28 · Strong</span><span style="position:absolute;right:0">${MAX}</span></div></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px 20px;margin-top:16px">${sc.parts.map(p=>`<div class="row" style="gap:8px;font-size:13px;color:#C7CEDC"><i class="sw" style="background:${segCol[p.key]}"></i><span style="flex:1">${esc(p.label)}</span><b class="cond" style="font-size:15px">${p.points}<span style="color:#7C869E;font-weight:500"> / ${p.max}</span></b></div>`).join('')}</div></div>`;
+    h += `<div class="cols2"><div class="panel pad"><h3>Metric heat map</h3><p class="note">Value and league rank. Underdog colors are flipped, so green is always good for the bet.</p>${heat(fav,dog)}</div>
+      <div class="panel pad"><h3>Head-to-head, last 3</h3><p class="note">Longer bar = stronger rank. ${esc(fav.abbr)} extends left, ${esc(dog.abbr)} right.</p>${butterfly(fav,dog)}</div></div>`;
+  }
+  h += `<div class="cols2">${[fav,dog].map(t=>`<div class="panel pad"><div class="row between" style="margin-bottom:10px"><h3 style="margin:0">${esc(t.name)} · last 3 games</h3><span style="font-size:12px;font-weight:700;color:#C7CEDC">L3 ${formPill(t.l3_record, t.is_fav)}${t.b2b?' · B2B tonight':''}${t.b2b_record ? ` · <span title="Season record in the second game of a back-to-back">${esc(t.b2b_record)} on back-to-backs</span>`:''}</span></div>
+    <div class="tbl-row" style="border-top:0;font-size:11px;color:var(--dim);padding:0 0 6px"><span>Date</span><span>Opponent (power rank)</span><span>Score</span></div>
+    ${(t.last3_games||[]).map((x,j)=>{const w=x.pts>x.opp_pts; const dt=new Date(x.date+'T12:00:00Z'); return `<div class="tbl-row fade" style="animation-delay:${250+j*90}ms"><span style="color:#9AA4BA">${dt.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric',timeZone:'UTC'})}</span>
+      <span><span style="color:#7C869E">${x.site==='home'?'vs':(x.site==='away'?'@':'vs')}</span> ${esc(x.opp)} <span style="color:#8B95AB">(#${x.opp_power_rank??'–'})</span></span>
+      <span class="row" style="gap:8px"><span class="wl ${w?'pg':'pr'}">${w?'W':'L'}</span><b class="cond" style="font-size:16px;font-weight:600">${x.pts}-${x.opp_pts}</b></span></div>`;}).join('')}</div>`).join('')}</div>`;
+  if(sc.scored) h += `<h2 class="sec-title cond">Last 3 trend</h2><div class="cols4">${['efg','off','opp_efg','def'].map((m,i)=>trend(fav,dog,m,i)).join('')}</div>`;
+  const inj = t => (t.injuries||[]).length ? t.injuries.map(i=>`<div class="row" style="padding:8px 0;border-top:1px solid var(--line);font-size:13.5px"><b style="width:44px">${esc(t.abbr)}</b><span style="flex:1;color:#D3D9E5">${esc(i.player)}${i.is_key?' <span class="tag" style="color:#FDE68A;border:1px solid rgba(233,178,58,.5)">KEY</span>':''}<br><span style="font-size:11.5px;color:var(--dim)">${esc(i.reason||'')}</span></span><span class="chip ${i.counts_as_out?'pr':(i.status==='Questionable'?'py':'pn')}">${esc(i.status)}</span></div>`).join('') : `<div style="padding:8px 0;border-top:1px solid var(--line);font-size:13.5px;color:#9AA4BA"><b>${esc(t.abbr)}</b> · nobody listed</div>`;
+  const pw = t => { const p=t.power||{}; return `<div style="display:grid;grid-template-columns:44px repeat(4,minmax(0,1fr));gap:6px;padding:7px 0;border-top:1px solid var(--line);font-size:13.5px"><b>${esc(t.abbr)}</b><span>#${p.own_net??'–'}</span><span>#${p.bpi??'–'}</span><span style="color:${p.split?'#FDBA74':'#D3D9E5'}">#${p.nba_com??'–'}</span><b>#${p.rank??'–'}</b></div>`; };
+  h += `<div class="cols3"><div class="panel pad"><h3 style="margin-bottom:12px">Injury report</h3>${inj(fav)}${inj(dog)}<p style="margin:10px 0 0;font-size:11.5px;color:var(--dim)">KEY = started half the team's games or top 5 in minutes. Out/Doubtful count as out; Questionable is a warning.</p></div>
+    <div class="panel pad"><h3 style="margin-bottom:12px">Power rank sources</h3><div style="display:grid;grid-template-columns:44px repeat(4,minmax(0,1fr));gap:6px;font-size:11px;color:var(--dim);margin-bottom:6px"><span></span><span>Own NR</span><span>BPI</span><span>NBA.com</span><span style="color:#C7CEDC;font-weight:700">Consensus</span></div>${pw(fav)}${pw(dog)}
+      <p style="margin:10px 0 0;font-size:12px;line-height:1.5;color:#9AA4BA">NBA.com is weekly and counts half. Amber = it disagrees enough to move a team into or out of the top or bottom 10.</p></div>
+    <div class="panel pad"><h3 style="margin-bottom:12px">Sources and timestamps</h3><div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:#C7CEDC;line-height:1.4">
+      <span>Metrics: computed from ESPN box scores through ${esc(DATA.metrics_through||'–')}</span><span>Spread: ${esc(g.spread?g.spread.provider:'none')} via ESPN, pulled ${esc(DATA.built_label)}</span>
+      <span>Injuries: ${esc(DATA.injury_source||'unavailable')}${DATA.injury_report_time?` (${esc(new Date(DATA.injury_report_time).toLocaleString('en-US',{timeZone:'America/Los_Angeles',hour:'numeric',minute:'2-digit',month:'short',day:'numeric'}))} PT)`:''}</span>
+      <span>Power ranks: own net rating, ESPN BPI, NBA.com weekly</span></div></div></div>`;
+  h += readoutPanel(g);
+  return h;
+}
+
+// Analyst readout (Qualified + Watch list games): what published previews say. Information only.
+function readoutPanel(g){
+  const sc = g.scoring||{};
+  if(!(sc.tracked ?? sc.qualified)) return '';
+  const r = g.readout;
+  if(!r) return `<div class="panel pad" style="margin-top:16px"><h3 style="margin:0 0 6px">Analyst readout</h3><div style="font-size:13.5px;color:var(--muted)">Not gathered yet. It's added each morning before the board.</div></div>`;
+  const when = r.updated ? new Date(r.updated).toLocaleString('en-US',{timeZone:'America/Los_Angeles',hour:'numeric',minute:'2-digit',month:'short',day:'numeric'})+' PT' : '';
+  const row = (k,v) => v ? `<div style="display:grid;grid-template-columns:110px minmax(0,1fr);gap:10px;padding:8px 0;border-top:1px solid var(--line);font-size:13.5px"><span style="color:var(--dim);font-weight:600">${k}</span><span style="color:#D3D9E5">${esc(v)}</span></div>` : '';
+  const src = (r.sources||[]).filter(x=>x && x.url && /^https?:\/\//.test(x.url)).map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener noreferrer">${esc(x.site||'source')}</a>`).join(' · ');
+  return `<div class="panel pad" style="margin-top:16px"><div class="row between" style="margin-bottom:10px;gap:10px;flex-wrap:wrap"><h3 style="margin:0">Analyst readout</h3><span style="font-size:12px;color:var(--dim)">${esc(when)}</span></div>
+    <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#E6EAF2">${esc(r.summary)}</p>
+    ${row('Pick',r.pick)}${row('Predicted score',r.predicted_score)}${row('Injuries',r.injuries)}
+    ${src?`<div style="padding-top:8px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)">Sources: ${src}</div>`:''}
+    <div style="font-size:11.5px;color:var(--dim);margin-top:6px">From published previews; information only, never changes the tier or grade.</div></div>`;
+}
+
+function countUp(){
+  if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  document.querySelectorAll('[data-count]').forEach(el=>{
+    const target = +el.dataset.count, delay = +el.dataset.delay||0, t0 = performance.now()+delay;
+    el.textContent = '0';
+    const step = now => { const p = Math.min(1, Math.max(0,(now-t0)/1200)); el.textContent = Math.round(target*(1-Math.pow(1-p,3))); if(p<1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  });
+}
+
+// ---- live status on today's board (tracked games only) ----
+const LIVE_URL = 'https://investment-analytics3.github.io/nba-pregame/live/';
+const ET_TODAY = new Intl.DateTimeFormat('en-CA',{timeZone:'America/New_York'}).format(new Date());
+const LIVE_ON = DATA.kind !== 'retro' && DATA.date === ET_TODAY;
+const LIVE = {};
+window.openGame = id => { const s = LIVE[id]; if(s && s.state !== 'pre') location.href = LIVE_URL + '?g=' + id; else location.hash = 'g-' + id; };
+function paintLive(){
+  document.querySelectorAll('[data-live]').forEach(el=>{
+    const s = LIVE[el.dataset.live]; if(!s || s.state==='pre'){ el.innerHTML=''; return; }
+    if(s.state==='post'){ el.innerHTML = `Final · ${esc(s.score)}`; return; }
+    el.innerHTML = `<i></i>LIVE ${esc(s.clock)} · ${esc(s.lead)}${s.grade&&s.grade!=='–'?` <span class="g ${s.grade[0]==='A'?'':esc(s.grade)}">${esc(s.grade)}</span>`:''}`;
+  });
+  document.querySelectorAll('[data-livedot]').forEach(el=>{ const s = LIVE[el.dataset.livedot]; el.textContent = s && s.state==='in' ? ' ' : ''; });
+}
+async function pollLive(){
+  if(!LIVE_ON) return;
+  try{
+    const ymd = DATA.date.replace(/-/g,'');
+    const sb = await (await fetch(`https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=${ymd}&t=${Date.now()}`)).json();
+    const tracked = new Set(DATA.games.filter(g=>g.scoring&&(g.scoring.tracked ?? g.scoring.qualified)).map(g=>g.id));
+    let ctx = null;
+    for(const e of (sb.events||[])){
+      if(!tracked.has(e.id)) continue;
+      const c = e.competitions[0], st = c.status, ab = x => c.competitors.find(t=>t.homeAway===x);
+      const a = ab('away'), h = ab('home'), m = (+a.score||0) - (+h.score||0);
+      const s = LIVE[e.id] = {state: st.type.state, clock: `Q${st.period>4?'OT':st.period} ${st.displayClock}`,
+        score: `${a.team.abbreviation} ${a.score}-${h.score} ${h.team.abbreviation}`,
+        lead: m===0?'Tied':`${m>0?a.team.abbreviation:h.team.abbreviation} +${Math.abs(m)}`, grade: (LIVE[e.id]||{}).grade};
+      if(s.state==='in' && window.LiveEngine){
+        try{
+          ctx = ctx || await (await fetch(LIVE_URL + 'context.json?t=' + Date.now())).json();
+          const summ = await (await fetch(`https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=${e.id}`)).json();
+          s.grade = LiveEngine.analyze(summ, {date: DATA.date, closers: (ctx||{}).closers||{}}).decision.grade;
+        }catch(err){}
+      }
+    }
+    paintLive();
+    if(Object.values(LIVE).some(s=>s.state!=='post')) setTimeout(pollLive, 60000);
+  }catch(err){ setTimeout(pollLive, 120000); }
+}
+
+function render(){
+  const id = (location.hash||'').replace(/^#g-/,'');
+  const g = DATA.games.find(x=>x.id===id);
+  app.innerHTML = g ? detailView(g) : listView();
+  paintLive();
+  countUp();
+  window.scrollTo(0,0);
+}
+window.addEventListener('hashchange', render);
+render();
+pollLive();
+})();
+</script>
+</body>
+</html>
