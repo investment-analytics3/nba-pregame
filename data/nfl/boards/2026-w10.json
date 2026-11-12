@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 10,
- "built_at": "2026-11-11T23:45:36-08:00",
- "built_label": "Wed Nov 11, 11:45 PM PT",
+ "built_at": "2026-11-12T06:00:28-08:00",
+ "built_label": "Thu Nov 12, 6:00 AM PT",
  "games": [
   {
    "id": "401873052",
@@ -24,7 +24,7 @@
    "open_spread": -1.5,
    "total": 40.5,
    "total_open": 47.5,
-   "fav_ml": -142.0,
+   "fav_ml": -135.0,
    "favorite": "home",
    "spread": -2.5,
    "movement": 1.0,
@@ -395,7 +395,7 @@
    "open_spread": -1.5,
    "total": 51.5,
    "total_open": 48.5,
-   "fav_ml": -148.0,
+   "fav_ml": -155.0,
    "favorite": "home",
    "spread": -2.5,
    "movement": 1.0,
@@ -579,12 +579,9 @@
      "rank": 13
     },
     "injuries_known": true,
-    "key_out": [
-     "Carlton Davis"
-    ],
+    "key_out": [],
     "key_questionable": [
      "Charles Woods",
-     "Kevin Byard",
      "Will Campbell"
     ],
     "key_long_term": [],
@@ -592,6 +589,16 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "TreVeyon Henderson",
+      "pos": "RB",
+      "status": "Out"
+     },
+     {
+      "name": "A.J. Brown",
+      "pos": "WR",
+      "status": "Questionable"
+     },
      {
       "name": "Charles Woods",
       "pos": "CB",
@@ -605,16 +612,6 @@
      {
       "name": "Will Campbell",
       "pos": "OT",
-      "status": "Questionable"
-     },
-     {
-      "name": "Carlton Davis III",
-      "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "name": "Kevin Byard",
-      "pos": "S",
       "status": "Questionable"
      }
     ],
@@ -724,7 +721,7 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Charles Woods, Kevin Byard, Will Campbell"
+      "text": "Underdog questionable: Charles Woods, Will Campbell"
      }
     ],
     "under": {
@@ -741,9 +738,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV15NEDET",
-    "fav_prob": 0.575,
-    "bid": 0.57,
-    "ask": 0.58
+    "fav_prob": 0.585,
+    "bid": 0.58,
+    "ask": 0.59
    }
   },
   {
@@ -1144,7 +1141,7 @@
    "open_spread": -4.5,
    "total": 41.5,
    "total_open": 38.5,
-   "fav_ml": -225.0,
+   "fav_ml": -230.0,
    "favorite": "away",
    "spread": -4.5,
    "movement": 0.0,
@@ -1701,10 +1698,11 @@
      "rank": 28
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Jauan Jennings"
+    ],
     "key_questionable": [
      "Blake Cashman",
-     "Jauan Jennings",
      "T.J. Hockenson"
     ],
     "key_long_term": [],
@@ -1723,14 +1721,14 @@
       "status": "Questionable"
      },
      {
-      "name": "Jauan Jennings",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
       "name": "Blake Cashman",
       "pos": "LB",
       "status": "Questionable"
+     },
+     {
+      "name": "Jauan Jennings",
+      "pos": "WR",
+      "status": "Out"
      },
      {
       "name": "T.J. Hockenson",
@@ -1857,7 +1855,7 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Blake Cashman, Jauan Jennings, T.J. Hockenson"
+      "text": "Underdog questionable: Blake Cashman, T.J. Hockenson"
      }
     ],
     "under": {
@@ -3782,7 +3780,7 @@
    "open_spread": -7.0,
    "total": 40.5,
    "total_open": 43.5,
-   "fav_ml": -290.0,
+   "fav_ml": -298.0,
    "favorite": "away",
    "spread": -6.5,
    "movement": -0.5,
@@ -5227,9 +5225,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV16LACBAL",
-    "fav_prob": 0.655,
-    "bid": 0.65,
-    "ask": 0.66
+    "fav_prob": 0.665,
+    "bid": 0.66,
+    "ask": 0.67
    }
   }
  ],
@@ -5267,6 +5265,6 @@
   "watch": 8,
   "green": 1,
   "edge_clears": 1,
-  "built_label": "Wed Nov 11, 11:45 PM PT"
+  "built_label": "Thu Nov 12, 6:00 AM PT"
  }
 }
