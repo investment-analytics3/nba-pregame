@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 10,
- "built_at": "2026-11-12T11:45:36-08:00",
- "built_label": "Thu Nov 12, 11:45 AM PT",
+ "built_at": "2026-11-12T12:45:38-08:00",
+ "built_label": "Thu Nov 12, 12:45 PM PT",
  "games": [
   {
    "id": "401873052",
@@ -20,7 +20,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 40.5,
    "total_open": 47.5,
@@ -429,7 +429,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 51.5,
    "total_open": 48.5,
@@ -617,10 +617,11 @@
      "rank": 13
     },
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
-     "Charles Woods",
+    "key_out": [
      "Rhamondre Stevenson"
+    ],
+    "key_questionable": [
+     "Charles Woods"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -628,13 +629,13 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "A.J. Brown",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
       "name": "Rhamondre Stevenson",
       "pos": "RB",
+      "status": "Doubtful"
+     },
+     {
+      "name": "A.J. Brown",
+      "pos": "WR",
       "status": "Questionable"
      },
      {
@@ -759,7 +760,7 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Charles Woods, Rhamondre Stevenson"
+      "text": "Underdog questionable: Charles Woods"
      }
     ],
     "under": {
@@ -829,7 +830,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -4.5,
    "total": 46.5,
    "total_open": 45.5,
@@ -1245,7 +1246,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -4.5,
    "total": 40.5,
    "total_open": 38.5,
@@ -1654,7 +1655,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -4.5,
    "total": 41.5,
    "total_open": 45.5,
@@ -1744,12 +1745,12 @@
      {
       "name": "Josh Whyle",
       "pos": "TE",
-      "status": "Out"
+      "status": "Questionable"
      },
      {
       "name": "Zaire Franklin",
       "pos": "LB",
-      "status": "Out"
+      "status": "Doubtful"
      },
      {
       "name": "Josh Jacobs",
@@ -2070,7 +2071,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -6.5,
    "total": 38.5,
    "total_open": 47.5,
@@ -2152,7 +2153,6 @@
      "Justin Walley"
     ],
     "key_questionable": [
-     "A.J. Haulcy",
      "Akeem Davis-Gaither"
     ],
     "key_long_term": [],
@@ -2161,8 +2161,8 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "A.J. Haulcy",
-      "pos": "S",
+      "name": "Jerry Tillery",
+      "pos": "DT",
       "status": "Questionable"
      },
      {
@@ -2407,7 +2407,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: A.J. Haulcy, Akeem Davis-Gaither"
+      "text": "Favorite questionable: Akeem Davis-Gaither"
      },
      {
       "level": "yellow",
@@ -2487,7 +2487,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 48.5,
    "total_open": 43.5,
@@ -2890,7 +2890,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -7.0,
    "total": 50.5,
    "total_open": 46.5,
@@ -3300,7 +3300,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -2.5,
    "total": 46.5,
    "total_open": 45.5,
@@ -3380,7 +3380,7 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
-     "Anthony Hill",
+     "Carnell Tate",
      "Cody Barton",
      "JC Latham"
     ],
@@ -3389,6 +3389,11 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Carnell Tate",
+      "pos": "WR",
+      "status": "Questionable"
+     },
      {
       "name": "JC Latham",
       "pos": "OT",
@@ -3406,11 +3411,6 @@
      },
      {
       "name": "Cody Barton",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Anthony Hill Jr.",
       "pos": "LB",
       "status": "Questionable"
      }
@@ -3642,7 +3642,7 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Anthony Hill, Cody Barton, JC Latham"
+      "text": "Underdog questionable: Carnell Tate, Cody Barton, JC Latham"
      }
     ],
     "under": {
@@ -3718,7 +3718,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -10.5,
    "total": 39.5,
    "total_open": 47.5,
@@ -3808,6 +3808,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Bam Knight",
+      "pos": "RB",
+      "status": "Questionable"
+     },
+     {
       "name": "Zachary Carter",
       "pos": "DT",
       "status": "Injured Reserve"
@@ -3825,11 +3830,6 @@
      {
       "name": "Max Melton",
       "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Bam Knight",
-      "pos": "RB",
       "status": "Questionable"
      }
     ],
@@ -4136,7 +4136,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -7.0,
    "total": 40.5,
    "total_open": 43.5,
@@ -4532,7 +4532,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 1.5,
    "total": 55.5,
    "total_open": 52.5,
@@ -4610,10 +4610,10 @@
      "rank": 9
     },
     "injuries_known": true,
-    "key_out": [
+    "key_out": [],
+    "key_questionable": [
      "George Pickens"
     ],
-    "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
@@ -4622,7 +4622,7 @@
      {
       "name": "George Pickens",
       "pos": "WR",
-      "status": "Out"
+      "status": "Questionable"
      },
      {
       "name": "Joey Porter Jr.",
@@ -4869,6 +4869,10 @@
      {
       "level": "yellow",
       "text": "Favorite questionable: Deommodore Lenoir, Mike Evans, Renardo Green"
+     },
+     {
+      "level": "yellow",
+      "text": "Underdog questionable: George Pickens"
      }
     ],
     "under": {
@@ -4944,7 +4948,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -3.5,
    "total": 49.5,
    "total_open": 47.5,
@@ -5286,9 +5290,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV15PITCIN",
-    "fav_prob": 0.635,
-    "bid": 0.63,
-    "ask": 0.64
+    "fav_prob": 0.625,
+    "bid": 0.62,
+    "ask": 0.63
    },
    "votes": {
     "fav": 6,
@@ -5345,11 +5349,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -2.5,
    "total": 38.5,
    "total_open": 48.5,
-   "fav_ml": -225.0,
+   "fav_ml": -230.0,
    "favorite": "home",
    "spread": -4.5,
    "movement": 2.0,
@@ -5768,6 +5772,6 @@
   "watch": 8,
   "green": 1,
   "edge_clears": 1,
-  "built_label": "Thu Nov 12, 11:45 AM PT"
+  "built_label": "Thu Nov 12, 12:45 PM PT"
  }
 }
