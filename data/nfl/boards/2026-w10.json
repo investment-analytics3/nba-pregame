@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 10,
- "built_at": "2026-11-12T10:45:48-08:00",
- "built_label": "Thu Nov 12, 10:45 AM PT",
+ "built_at": "2026-11-12T11:45:36-08:00",
+ "built_label": "Thu Nov 12, 11:45 AM PT",
  "games": [
   {
    "id": "401873052",
@@ -24,7 +24,7 @@
    "open_spread": -1.5,
    "total": 40.5,
    "total_open": 47.5,
-   "fav_ml": -135.0,
+   "fav_ml": -130.0,
    "favorite": "home",
    "spread": -2.5,
    "movement": 1.0,
@@ -370,9 +370,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV12WASNYG",
-    "fav_prob": 0.555,
-    "bid": 0.55,
-    "ask": 0.56
+    "fav_prob": 0.545,
+    "bid": 0.54,
+    "ask": 0.55
    },
    "votes": {
     "fav": 12,
@@ -617,11 +617,10 @@
      "rank": 13
     },
     "injuries_known": true,
-    "key_out": [
-     "Rhamondre Stevenson"
-    ],
+    "key_out": [],
     "key_questionable": [
-     "Charles Woods"
+     "Charles Woods",
+     "Rhamondre Stevenson"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -629,13 +628,13 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Rhamondre Stevenson",
-      "pos": "RB",
-      "status": "Doubtful"
-     },
-     {
       "name": "A.J. Brown",
       "pos": "WR",
+      "status": "Questionable"
+     },
+     {
+      "name": "Rhamondre Stevenson",
+      "pos": "RB",
       "status": "Questionable"
      },
      {
@@ -760,7 +759,7 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Charles Woods"
+      "text": "Underdog questionable: Charles Woods, Rhamondre Stevenson"
      }
     ],
     "under": {
@@ -1448,6 +1447,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Azeez Al-Shaair",
+      "pos": "LB",
+      "status": "Questionable"
+     },
+     {
       "name": "David Montgomery",
       "pos": "RB",
       "status": "Questionable"
@@ -1466,11 +1470,6 @@
       "name": "Jake Hummel",
       "pos": "LB",
       "status": "Injured Reserve"
-     },
-     {
-      "name": "Azeez Al-Shaair",
-      "pos": "LB",
-      "status": "Questionable"
      }
     ],
     "power": {
@@ -1736,14 +1735,22 @@
     "key_out": [
      "Zaire Franklin"
     ],
-    "key_questionable": [
-     "Javon Bullard"
-    ],
+    "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Josh Whyle",
+      "pos": "TE",
+      "status": "Out"
+     },
+     {
+      "name": "Zaire Franklin",
+      "pos": "LB",
+      "status": "Out"
+     },
      {
       "name": "Josh Jacobs",
       "pos": "RB",
@@ -1758,16 +1765,6 @@
       "name": "Ty'Ron Hopper",
       "pos": "LB",
       "status": "Questionable"
-     },
-     {
-      "name": "Javon Bullard",
-      "pos": "S",
-      "status": "Questionable"
-     },
-     {
-      "name": "Zaire Franklin",
-      "pos": "LB",
-      "status": "Doubtful"
      }
     ],
     "power": {
@@ -1997,10 +1994,6 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Javon Bullard"
-     },
-     {
-      "level": "yellow",
       "text": "Underdog questionable: Blake Cashman, Jauan Jennings, T.J. Hockenson"
      }
     ],
@@ -2018,9 +2011,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV15MINGB",
-    "fav_prob": 0.605,
-    "bid": 0.6,
-    "ask": 0.61
+    "fav_prob": 0.595,
+    "bid": 0.59,
+    "ask": 0.6
    },
    "votes": {
     "fav": 9,
@@ -2977,14 +2970,18 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
-     "Garrett Wilson",
-     "Harrison Phillips"
+     "Garrett Wilson"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Omar Cooper Jr.",
+      "pos": "WR",
+      "status": "Questionable"
+     },
      {
       "name": "Garrett Wilson",
       "pos": "WR",
@@ -3003,11 +3000,6 @@
      {
       "name": "Joseph Ossai",
       "pos": "DE",
-      "status": "Questionable"
-     },
-     {
-      "name": "Harrison Phillips",
-      "pos": "DT",
       "status": "Questionable"
      }
     ],
@@ -3232,7 +3224,7 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Garrett Wilson, Harrison Phillips"
+      "text": "Underdog questionable: Garrett Wilson"
      }
     ],
     "under": {
@@ -4148,7 +4140,7 @@
    "open_spread": -7.0,
    "total": 40.5,
    "total_open": 43.5,
-   "fav_ml": -290.0,
+   "fav_ml": -298.0,
    "favorite": "away",
    "spread": -6.5,
    "movement": -0.5,
@@ -4618,13 +4610,20 @@
      "rank": 9
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "George Pickens"
+    ],
     "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "George Pickens",
+      "pos": "WR",
+      "status": "Out"
+     },
      {
       "name": "Joey Porter Jr.",
       "pos": "CB",
@@ -4644,11 +4643,6 @@
       "name": "Luke Schoonmaker",
       "pos": "TE",
       "status": "Out"
-     },
-     {
-      "name": "Devin Moore",
-      "pos": "CB",
-      "status": "Injured Reserve"
      }
     ],
     "power": {
@@ -4891,9 +4885,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV15SFDAL",
-    "fav_prob": 0.665,
-    "bid": 0.66,
-    "ask": 0.67
+    "fav_prob": 0.655,
+    "bid": 0.65,
+    "ask": 0.66
    },
    "votes": {
     "fav": 12,
@@ -5441,6 +5435,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Gerad Lichtenhan",
+      "pos": "OT",
+      "status": "Out"
+     },
+     {
       "name": "Kyle Hamilton",
       "pos": "S",
       "status": "Questionable"
@@ -5459,11 +5458,6 @@
       "name": "Lamar Jackson",
       "pos": "QB",
       "status": "Injured Reserve"
-     },
-     {
-      "name": "Adisa Isaac",
-      "pos": "LB",
-      "status": "Questionable"
      }
     ],
     "power": {
@@ -5774,6 +5768,6 @@
   "watch": 8,
   "green": 1,
   "edge_clears": 1,
-  "built_label": "Thu Nov 12, 10:45 AM PT"
+  "built_label": "Thu Nov 12, 11:45 AM PT"
  }
 }
