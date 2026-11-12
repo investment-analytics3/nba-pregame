@@ -86,7 +86,9 @@ NFL rules (spec "NFL Stat Edge v2", decisions Nov 8 2026):
   fail note and a red flag name it; no power data = passes). The old six checks are `context` only. `tracked` =
   Qualified + Watch list (Live page, checkpoint log); `alerts` = Qualified only (phone pushes, `nfl_live.push_ok`).
   Call: Qualified -> Edge clears / Track, edge short / Lean (QB cap); Watch list -> "Watch list"; else No track.
-  Board (Nov 10): L1 sections Qualified / Watch list / Did not qualify / Played; cards open an L2 view (`#g-<id>`) with
+  Board (Nov 10; grouped by day Nov 11, owner): L1 = one header per day (Pacific date of kickoff, earliest first), each with
+  Qualified / Watch list / Did not qualify; then one Played section at the bottom, also by day, earliest first (same on the
+  college football board); cards open an L2 view (`#g-<id>`) with
   Pregame/Live tabs (Live = `nfl/game.html?g=<id>`), "How it qualifies", score, pills, details. Board pills (Nov 10, as NBA): L2 WW green / split yellow / LL red and PR
   (consensus) 1-10 green / 11-22 yellow / 23-32 red for the favorite; flipped for the underdog. Hero score 40: fav 16 (top 5 = 2, 6-10 = 1), dog 16 (outside top 10 = 1,
   ranks 23-32 = 2), health 4 (QB active 2, other key starter 1, interior OL 1; 0 without injury info), home 1, rest 1 (fav off

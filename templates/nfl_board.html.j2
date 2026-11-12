@@ -8,6 +8,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="{{ pages_url }}site.css">
+<style>
+/* day grouping (owner Nov 11) */
+.day{margin-top:26px}
+.day-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:8px 0 6px;padding:10px 14px;border-radius:12px;background:linear-gradient(90deg,rgba(91,140,255,.16),rgba(91,140,255,0));border-left:4px solid #5B8CFF}
+.day-head h2{margin:0;font-size:24px;color:#E6EAF2;letter-spacing:.01em}
+.day-head .rule{flex:1;height:1px;background:rgba(255,255,255,.08)}
+.day-head.small-day{margin:18px 0 10px;padding:6px 12px;border-left-color:#7C869E;background:linear-gradient(90deg,rgba(124,134,158,.14),rgba(124,134,158,0))}
+.day-head.small-day h2{font-size:18px;color:#C7CEDC}
+.played{margin-top:34px}
+</style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
@@ -184,16 +194,43 @@ function sec(t, list, dot, col, sub, empty){
     <h2 class="cond" style="color:${col}">${t}</h2><span class="cnt">${list.length}</span><span class="rule"></span><span class="small muted">${esc(sub)}</span></div>
     ${LINES[t]?`<div style="${LINES[t]}"></div>`:''}<div class="grid">${list.map(card).join('') || `<div class="muted small">${esc(empty)}</div>`}</div></section>`;
 }
+// Owner Nov 11: the board is grouped by day (Pacific date of kickoff), earliest first; under each day the
+// Qualified / Watch list / Did not qualify sections. Finished games go to one Played section at the bottom,
+// also grouped by day, earliest first.
+const PTD = new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles',year:'numeric',month:'2-digit',day:'2-digit'});
+const dayKey = g => PTD.format(new Date(g.kick_utc));
+const dayLabel = k => new Date(k+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});
+const byKick = (a,b) => a.kick_utc.localeCompare(b.kick_utc) || String(a.id).localeCompare(String(b.id));
+function byDay(list){ const m = {}; list.forEach(g => { (m[dayKey(g)] = m[dayKey(g)] || []).push(g); }); return Object.keys(m).sort().map(k => [k, m[k]]); }
+function dayHead(k, list, small){
+  const t = ['qualified','watch'].map(x=>list.filter(g=>g.scoring.tier===x).length);
+  return `<div class="day-head${small?' small-day':''}"><h2 class="cond">${esc(dayLabel(k))}</h2><span class="cnt">${list.length} game${list.length===1?'':'s'}</span>
+    ${small?'':`<span class="small muted">${t[0]} qualified · ${t[1]} watch list</span>`}<span class="rule"></span></div>`;
+}
+function upcoming(){
+  return byDay(ahead).map(([k, list]) => {
+    const tier = x => list.filter(g=>g.scoring.tier===x).sort(byScore);
+    const qq = tier('qualified'), ww = tier('watch'), nn = list.filter(g=>g.scoring.tier!=='qualified' && g.scoring.tier!=='watch').sort(byScore);
+    return `<div class="day">${dayHead(k, list)}
+      ${sec('Qualified', qq, '#2FC373', '#E6EAF2', 'Score 28+ or last-3 mismatch · live read + phone pushes', 'No game qualifies this day.')}
+      ${sec('Watch list', ww, '#E9B23A', '#FFD66B', 'Score 18-27 · live read, no pushes')}
+      ${sec('Did not qualify', nn, '#E04848', '#FF7676', 'Sorted by hero score')}</div>`;
+  }).join('');
+}
+function playedSection(){
+  if(!played.length) return '';
+  return `<section class="played"><div class="sec-head"><span style="width:10px;height:10px;border-radius:50%;background:#7C869E;box-shadow:0 0 10px #7C869E"></span>
+    <h2 class="cond" style="color:#9AA4BA">Played</h2><span class="cnt">${played.length}</span><span class="rule"></span><span class="small muted">Final scores, by day played</span></div>
+    ${byDay(played).map(([k, list]) => `${dayHead(k, list, true)}<div class="grid">${list.sort(byKick).map(card).join('')}</div>`).join('')}</section>`;
+}
 function listView(){
   return `<div class="eyebrow">NFL · ${DATA.season} season · Week ${DATA.week??'–'}</div>
   <h1 class="title cond">NFL Pregame Board</h1>
   <div class="muted" style="margin-top:6px">Updated ${esc(DATA.built_label)} · stats through ${esc(DATA.data_through||'–')} (nflverse) · expert picks ${esc(DATA.votes_status||'not gathered yet')}</div>
   <div class="legend"><span><i class="sw" style="background:#2FC373"></i>Favorite top 10 / underdog bottom 10</span><span><i class="sw" style="background:#E9B23A"></i>Middle</span><span><i class="sw" style="background:#C83030"></i>Favorite bottom 10 / underdog top 10</span><span>Hero score: green 28+, yellow 18-27, red 0-17</span><span>L2 = last 2 results · PR = power rank (consensus of ESPN FPI and NFL.com)</span></div>
   ${(DATA.notes||[]).length?`<div class="panel final"><ul>${DATA.notes.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:''}
-  ${games.length?sec('Qualified', q, '#2FC373', '#E6EAF2', 'Score 28+ or last-3 mismatch · live read + phone pushes', 'No game qualifies this week.'):''}
-  ${sec('Watch list', w, '#E9B23A', '#FFD66B', 'Score 18-27 · live read, no pushes')}
-  ${sec('Did not qualify', n, '#E04848', '#FF7676', 'Sorted by hero score')}
-  ${sec('Played', played, '#7C869E', '#9AA4BA', 'Final')}
+  ${upcoming()}
+  ${playedSection()}
   <div class="small muted foot">Every tier needs both gates clear: no key starter out for the favorite, and the underdog not top 10 in any power ranking. Stat edge = favorite net EPA/play minus underdog's (all plays, nflverse = RBSDM method); needs +0.35 for every favorite, whatever the spread. The adjusted edge is logged in shadow only. Kalshi and FPI are a price check and never change the call.</div>`;
 }
 window.openGame = id => { location.hash = 'g-' + id; };
