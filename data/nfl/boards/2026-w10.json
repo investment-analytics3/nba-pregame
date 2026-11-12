@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 10,
- "built_at": "2026-11-12T09:47:33-08:00",
- "built_label": "Thu Nov 12, 9:47 AM PT",
+ "built_at": "2026-11-12T10:45:48-08:00",
+ "built_label": "Thu Nov 12, 10:45 AM PT",
  "games": [
   {
    "id": "401873052",
@@ -834,7 +834,7 @@
    "open_spread": -4.5,
    "total": 46.5,
    "total_open": 45.5,
-   "fav_ml": -185.0,
+   "fav_ml": -180.0,
    "favorite": "away",
    "spread": -3.0,
    "movement": -1.5,
@@ -1448,14 +1448,14 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Woody Marks",
+      "name": "David Montgomery",
       "pos": "RB",
       "status": "Questionable"
      },
      {
-      "name": "David Montgomery",
+      "name": "Woody Marks",
       "pos": "RB",
-      "status": "Out"
+      "status": "Questionable"
      },
      {
       "name": "Jaylin Smith",
@@ -1657,13 +1657,13 @@
    },
    "line_source": "Draft Kings",
    "open_spread": -4.5,
-   "total": 42.5,
+   "total": 41.5,
    "total_open": 45.5,
-   "fav_ml": -162.0,
+   "fav_ml": -155.0,
    "favorite": "home",
    "spread": -3.0,
    "movement": -1.5,
-   "total_move": -3.0,
+   "total_move": -4.0,
    "fav_home": true,
    "home": {
     "code": "GB",
@@ -1747,7 +1747,7 @@
      {
       "name": "Josh Jacobs",
       "pos": "RB",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
       "name": "Trey Smack",
@@ -2010,7 +2010,7 @@
       9,
       31
      ],
-     "total_move": -3.0,
+     "total_move": -4.0,
      "note": ""
     },
     "call": "No track"
@@ -2283,6 +2283,11 @@
     "qb_reset": "Malik Willis out",
     "injury_list": [
      {
+      "name": "Chris Bell",
+      "pos": "WR",
+      "status": "Questionable"
+     },
+     {
       "name": "Darrell Baker Jr.",
       "pos": "CB",
       "status": "Out"
@@ -2301,11 +2306,6 @@
       "name": "Jaylen Wright",
       "pos": "RB",
       "status": "Out"
-     },
-     {
-      "name": "Chris Bell",
-      "pos": "WR",
-      "status": "Questionable"
      }
     ],
     "power": {
@@ -2986,6 +2986,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Garrett Wilson",
+      "pos": "WR",
+      "status": "Questionable"
+     },
+     {
       "name": "Nahshon Wright",
       "pos": "CB",
       "status": "Questionable"
@@ -3003,11 +3008,6 @@
      {
       "name": "Harrison Phillips",
       "pos": "DT",
-      "status": "Questionable"
-     },
-     {
-      "name": "Garrett Wilson",
-      "pos": "WR",
       "status": "Questionable"
      }
     ],
@@ -4148,7 +4148,7 @@
    "open_spread": -7.0,
    "total": 40.5,
    "total_open": 43.5,
-   "fav_ml": -298.0,
+   "fav_ml": -290.0,
    "favorite": "away",
    "spread": -6.5,
    "movement": -0.5,
@@ -4891,9 +4891,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV15SFDAL",
-    "fav_prob": 0.655,
-    "bid": 0.65,
-    "ask": 0.66
+    "fav_prob": 0.665,
+    "bid": 0.66,
+    "ask": 0.67
    },
    "votes": {
     "fav": 12,
@@ -5147,6 +5147,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Michael Pittman Jr.",
+      "pos": "WR",
+      "status": "Injured Reserve"
+     },
+     {
       "name": "Brandin Echols",
       "pos": "CB",
       "status": "Out"
@@ -5165,11 +5170,6 @@
       "name": "Ben Skowronek",
       "pos": "WR",
       "status": "Out"
-     },
-     {
-      "name": "Derrick Harmon",
-      "pos": "DT",
-      "status": "Injured Reserve"
      }
     ],
     "power": {
@@ -5774,6 +5774,6 @@
   "watch": 8,
   "green": 1,
   "edge_clears": 1,
-  "built_label": "Thu Nov 12, 9:47 AM PT"
+  "built_label": "Thu Nov 12, 10:45 AM PT"
  }
 }
