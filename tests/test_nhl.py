@@ -106,6 +106,9 @@ class Metrics(unittest.TestCase):
                          "season_type": "R", "game_date": d, "home_abbr": h, "away_abbr": a, "home_score": 0, "away_score": 0})
         r = metrics.game_rows(pd.DataFrame(rows))
         home = r[r["team"] == "AAA"].iloc[0]
+        self.assertEqual(home["toi5"], 30)            # three 10-second stretches at 5-on-5
+        away = r[r["team"] == "BBB"].iloc[0]
+        self.assertAlmostEqual(away["xga"], 0.4)       # the home team's two 5v5 shots on goal
         self.assertEqual(home["cf"], 2)
         self.assertEqual(home["ca"], 1)
         self.assertEqual(home["ppo"], 1)
@@ -115,6 +118,8 @@ class Metrics(unittest.TestCase):
         tm = metrics.compute(res, before="2026-10-11")
         self.assertEqual(tm["AAA"]["record"], "1-0-0")
         self.assertEqual(tm["AAA"]["season"]["ranks"]["xgf"], 1)
+        self.assertEqual(tm["BBB"]["season"]["xga60"], 48.0)     # 0.4 xG against in 30 s of 5v5
+        self.assertEqual(tm["AAA"]["season"]["ranks"]["xga60"], 1)   # lower is better
         self.assertNotIn("AAA", metrics.compute(res, before="2026-10-10"))
 
 

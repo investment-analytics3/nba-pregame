@@ -120,13 +120,13 @@ h3{margin:0 0 4px;font-size:16px;font-weight:700}
 const C = 289.027, MAX = DATA.max || 40, N = 32, TOP = DATA.top || 7, BOT = DATA.bottom_from || 26;
 const QS = 22, WS = 18;   // Qualified cutoff and the yellow ring band (nhl/scoring.py)
 // NHL (owner Nov 12-13): four metrics ranked 1-32, season and last 5. Strong = top 10 (elite top 5), weak = 23-32.
-const NAMES = {xgf:'xGF% 5v5', cf:'Corsi 5v5', gsax:'GSAx / game', st:'PP% + PK%'};
-const COLS = [{f:'xgf',d:'xgf',top:'xGF%',sub:'5v5',fly:'Chance share'},{f:'cf',d:'cf',top:'CF%',sub:'5v5',fly:'Shot attempts'},
+const NAMES = {xgf:'xGF% 5v5', xga60:'xGA / 60 at 5v5', gsax:'GSAx / game', st:'PP% + PK%'};
+const COLS = [{f:'xgf',d:'xgf',top:'xGF%',sub:'5v5',fly:'Chance share'},{f:'xga60',d:'xga60',top:'xGA/60',sub:'5v5 defense',fly:'Chances allowed'},
               {f:'gsax',d:'gsax',top:'GSAx',sub:'goalie',fly:'Goaltending'},{f:'st',d:'st',top:'ST',sub:'PP+PK',fly:'Special teams'}];
 const BAND = {green:{num:'#5BEA9E',word:'Strong edge'},yellow:{num:'#FFD66B',word:'Moderate'},red:{num:'#FF7676',word:'Risk'}};
 const PILL = {green:'pg',yellow:'py',red:'pr','deep-red':'pd',none:'pn'};
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const fmt = (m,v) => v==null ? '–' : (m==='xgf'||m==='cf' ? v.toFixed(1)+'%' : (m==='gsax' ? (v>0?'+':'')+v.toFixed(2) : v.toFixed(1)));
+const fmt = (m,v) => v==null ? '–' : (m==='xgf' ? v.toFixed(1)+'%' : (m==='gsax' ? (v>0?'+':'')+v.toFixed(2) : (m==='xga60' ? v.toFixed(2) : v.toFixed(1))));
 const favOf = g => g.favorite==='home' ? g.home : (g.favorite==='away' ? g.away : null);
 const dogOf = g => g.favorite==='home' ? g.away : (g.favorite==='away' ? g.home : null);
 const rk = (t,w,m) => (((t||{})[w]||{}).ranks||{})[m];
@@ -265,7 +265,7 @@ function powerTable(){
 function heat(fav, dog){
   const head = [[fav.abbr,'Season'],[fav.abbr,'Last 5'],[dog.abbr,'Season'],[dog.abbr,'Last 5']];
   let h = `<div class="hm" style="align-items:end"><span></span>${head.map(x=>`<span style="text-align:center;font-size:11px;font-weight:700;color:#C7CEDC">${esc(x[0])}<br><span style="font-weight:500;color:#7C869E">${x[1]}</span></span>`).join('')}</div>`;
-  ['xgf','cf','gsax','st'].forEach((m,ri)=>{
+  ['xgf','xga60','gsax','st'].forEach((m,ri)=>{
     h += `<div class="hm"><span style="font-size:12.5px;font-weight:600">${NAMES[m]}</span>` +
       [[fav,'season',1],[fav,'last5',1],[dog,'season',0],[dog,'last5',0]].map(([t,w,isF],ci)=>{
         const r = rk(t,w,m), v = (t[w]||{})[m];
@@ -297,14 +297,14 @@ function trend(fav, dog, m, i){
   const vals = fg.concat(dg).map(x=>x.v).concat([fs,ds].filter(v=>v!=null));
   if(!vals.length) return '';
   let mn = Math.min(...vals), mx = Math.max(...vals); const pad = (mx-mn)*.15 || 1; mn -= pad; mx += pad;
-  const lower = false;
+  const lower = m==='xga60';
   const W=300,H=150,pl=36,pr=10,pt=12,pb=14;
   const X = d => pl + (d-start)*(W-pl-pr)/Math.max(1,end-start);
   const Y = v => lower ? pt+(v-mn)/(mx-mn)*(H-pt-pb) : pt+(mx-v)/(mx-mn)*(H-pt-pb);
   const path = a => a.map((p,j)=>(j?'L':'M')+X(p.d).toFixed(1)+' '+Y(p.v).toFixed(1)).join(' ');
   const dots = (a,col) => a.map(p=>`<circle class="fade" cx="${X(p.d).toFixed(1)}" cy="${Y(p.v).toFixed(1)}" r="4.5" fill="${col}" stroke="#0F1626" stroke-width="2" style="animation-delay:${1100+i*120}ms"><title>${fmt(m,p.v)}</title></circle>`).join('');
   const hl = (v,col) => v==null?'':`<path d="M${pl} ${Y(v).toFixed(1)} L${W-pr} ${Y(v).toFixed(1)}" fill="none" stroke="${col}" stroke-width="1.3" stroke-dasharray="4 4" opacity=".5"/>`;
-  const dir = a => a.length<2?'→ flat':(Math.abs(a[a.length-1].v-a[0].v)<({xgf:2,cf:2,gsax:0.3,st:5}[m]||1)?'→ flat':((a[a.length-1].v>a[0].v)!==lower?'↑ improving':'↓ slipping'));
+  const dir = a => a.length<2?'→ flat':(Math.abs(a[a.length-1].v-a[0].v)<({xgf:2,xga60:0.2,gsax:0.3,st:5}[m]||1)?'→ flat':((a[a.length-1].v>a[0].v)!==lower?'↑ improving':'↓ slipping'));
   const ticks = []; for(let d=start; d<=end; d++){ const dt=new Date(d*864e5); ticks.push(`<text x="${X(d).toFixed(1)}" y="${H+6}" font-size="9.5" fill="#7C869E" text-anchor="middle" font-family="Inter,sans-serif">${['Su','Mo','Tu','We','Th','Fr','Sa'][dt.getUTCDay()]}</text>`); }
   const grid = [0,.5,1].map(f=>`M${pl} ${(pt+f*(H-pt-pb)).toFixed(1)} L${W-pr} ${(pt+f*(H-pt-pb)).toFixed(1)}`).join(' ');
   return `<div class="panel" style="padding:16px 16px 12px"><div class="row between"><b style="font-size:14px">${NAMES[m]}</b><span style="font-size:10.5px;color:var(--dim)">${lower?'↑ better (lower value)':'↑ better'}</span></div>
@@ -358,7 +358,7 @@ function detailView(g){
     ${(t.last3_games||[]).map((x,j)=>{const w=x.pts>x.opp_pts; const dt=new Date(x.date+'T12:00:00Z'); return `<div class="tbl-row fade" style="animation-delay:${250+j*90}ms"><span style="color:#9AA4BA">${dt.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric',timeZone:'UTC'})}</span>
       <span><span style="color:#7C869E">${x.site==='home'?'vs':(x.site==='away'?'@':'vs')}</span> ${esc(x.opp)} <span style="color:#8B95AB">(#${x.opp_power_rank??'–'})</span></span>
       <span class="row" style="gap:8px"><span class="wl ${w?'pg':'pr'}">${w?'W':(x.extra?'OTL':'L')}</span><b class="cond" style="font-size:16px;font-weight:600">${x.pts}-${x.opp_pts}</b></span></div>`;}).join('')}</div>`).join('')}</div>`;
-  if(sc.scored) h += `<h2 class="sec-title cond">Last 5 trend</h2><div class="cols4">${['xgf','cf','gsax','st'].map((m,i)=>trend(fav,dog,m,i)).join('')}</div>`;
+  if(sc.scored) h += `<h2 class="sec-title cond">Last 5 trend</h2><div class="cols4">${['xgf','xga60','gsax','st'].map((m,i)=>trend(fav,dog,m,i)).join('')}</div>`;
   const inj = t => `<div style="padding:8px 0;border-top:1px solid var(--line);font-size:13.5px"><b>${esc(t.abbr)}</b> <span style="color:#D3D9E5">${esc((t.key_skaters||[]).join(', ')||'–')}</span>
     ${(t.injuries||[]).length?`<div style="font-size:12.5px;color:#9AA4BA;margin-top:4px">${t.injuries.map(i=>`${esc(i.name)} <span style="color:${/Out/.test(i.status)?'#FCA5A5':(/Day/.test(i.status)?'#FCD97A':'#7C869E')}">${esc(i.status)}</span>`).join(' · ')}</div>`:''}</div>`;
   const pw = t => { const p=t.power||{}; return `<div style="display:grid;grid-template-columns:52px repeat(4,minmax(0,1fr));gap:6px;padding:7px 0;border-top:1px solid var(--line);font-size:13.5px"><b>${esc(t.abbr)}</b><span>#${p.own??'–'}</span><span>${p.espn?'#'+p.espn:'–'}</span><span>${p.nhl_com?'#'+p.nhl_com:'–'}</span><b>#${p.rank??'–'}</b></div>`; };

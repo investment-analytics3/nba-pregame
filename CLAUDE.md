@@ -193,7 +193,7 @@ College basketball rules (owner decisions Nov 11 2026; spec "College Basketball 
 | Path | Purpose |
 |---|---|
 | `nhl/sources.py` | sportsdataverse fastRhockey releases (`nhl_pbp_full` play-by-play with expected goals per shot, `nhl_schedules`, player boxes; file year = season end), cached in `data/nhl/cache/` (git-ignored) |
-| `nhl/metrics.py` | Four metrics, season + last 5, ranked 1-32, as of a date: 5v5 expected-goals share (xGF%), 5v5 shot-attempt share (CF%), goaltending (goals saved above expected), special teams (PP% + PK%); records, L3, regular goalie, key skaters; own daily rank (xGF% rank + points-% rank) |
+| `nhl/metrics.py` | Four metrics, season + last 5, ranked 1-32, as of a date: 5v5 expected-goals share (xGF%), 5v5 expected goals against per 60 (xGA/60, team defense apart from the goalie; lower = better; owner Nov 13 replaced Corsi), goaltending (goals saved above expected), special teams (PP% + PK%); records, L3, regular goalie, key skaters; own daily rank (xGF% rank + points-% rank) |
 | `nhl/power.py` | Consensus power rank = average of own daily rank + ESPN weekly + NHL.com weekly (`data/nhl/power/<date>.json`, written by the owner's Claude task "NHL power rankings", Tue 10:47 AM PT; a list older than 10 days is dropped), ranks logged daily (`data/nhl/power_log.json`) |
 | `nhl/scoring.py` | Range filter, Analysis Score, tiers, goalie/back-to-back caps (rules below) |
 | `nhl/espn.py`, `nhl/kalshi.py` | ESPN scoreboard (moneyline text, probable goalies), summaries, injuries; Kalshi `KXNHLGAME` |

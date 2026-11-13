@@ -3,22 +3,25 @@ on every unblocked shot), as of a date (no hindsight).
 
 Four metrics (owner Nov 12-13, spec "NHL Board"), each ranked 1-32 for the season and the last 5 games:
     xgf    5-on-5 expected-goals share  xGF / (xGF + xGA), unblocked shots, both goalies in
-    cf     5-on-5 shot-attempt share (Corsi)  attempts incl. blocked shots
+    xga60  5-on-5 expected goals AGAINST per 60 minutes: team defense, separate from the goalie (owner Nov 13:
+           replaced Corsi, which overlapped with xGF%); lower is better. 5v5 time = clock time between events
+           while both teams have 5 skaters and a goalie
     gsax   goaltending: goals saved above expected per game  (xG against - goals against, goalie in net,
            all strengths, no shootout)
     st     special teams: power-play % + penalty-kill %  (opportunity = each new stretch with more
            skaters than the opponent, both goalies in)
 Last 5 for the metrics (hockey is noisy; three games say little), last 3 for the form record.
-Higher is better for all four, so rank 1 = best.
+Rank 1 = best for all four (highest xGF%, GSAx and special teams; LOWEST xGA/60).
 """
 from __future__ import annotations
 
 import numpy as np
 import pandas as pd
 
-METRICS = ("xgf", "cf", "gsax", "st")
-LABELS = {"xgf": "xGF% 5v5", "cf": "Corsi 5v5", "gsax": "GSAx/gm", "st": "PP%+PK%", "pts": "Points %"}
-SHORT = {"xgf": "xGF%", "cf": "CF%", "gsax": "GSAx", "st": "ST"}
+METRICS = ("xgf", "xga60", "gsax", "st")
+LOWER_IS_BETTER = {"xga60"}
+LABELS = {"xgf": "xGF% 5v5", "xga60": "xGA/60 5v5", "gsax": "GSAx/gm", "st": "PP%+PK%", "pts": "Points %"}
+SHORT = {"xgf": "xGF%", "xga60": "xGA/60", "gsax": "GSAx", "st": "ST"}
 RECENT = 5
 UNBLOCKED = {"SHOT", "MISSED_SHOT", "GOAL"}
 ATTEMPTS = UNBLOCKED | {"BLOCKED_SHOT"}
@@ -52,6 +55,10 @@ def game_rows(pbp: pd.DataFrame) -> pd.DataFrame:
         "h_ga_net": (in_net & goal & ~home_ev).astype(int), "a_ga_net": (in_net & goal & home_ev).astype(int),
     })
     g = f.groupby("game_id").sum()
+    # 5v5 time on ice: clock seconds from each event to the next, counted while the game is 5-on-5 with both goalies in
+    q = p[["game_id", "game_seconds"]].assign(five=five.values).sort_values(["game_id", "game_seconds"], kind="stable")
+    dt = (q.groupby("game_id")["game_seconds"].shift(-1) - q["game_seconds"]).clip(lower=0, upper=600).fillna(0)
+    g = g.join((dt * q["five"]).groupby(q["game_id"]).sum().rename("toi5"))
     # special teams: stretches with a skater advantage (both goalies in)
     p = p.sort_values(["game_id", "game_seconds"], kind="stable")
     h_adv = (p["home_skaters"] > p["away_skaters"]) & goalies_in
@@ -78,7 +85,7 @@ def game_rows(pbp: pd.DataFrame) -> pd.DataFrame:
         for side, o in (("h", "a"), ("a", "h")):
             rows.append({"game_id": gid, "date": str(r.date)[:10], "team": r.home if side == "h" else r.away,
                          "opp": r.away if side == "h" else r.home, "site": "home" if side == "h" else "away",
-                         "cf": r[f"{side}_cf"], "ca": r[f"{o}_cf"], "xgf": r[f"{side}_xgf"], "xga": r[f"{o}_xgf"],
+                         "cf": r[f"{side}_cf"], "ca": r[f"{o}_cf"], "xgf": r[f"{side}_xgf"], "xga": r[f"{o}_xgf"], "toi5": r.toi5,
                          "xga_net": r[f"{side}_xga_net"], "ga_net": r[f"{side}_ga_net"],
                          "ppo": r[f"{side}_ppo"], "ppg": r[f"{side}_ppg"], "pko": r[f"{o}_ppo"], "pkga": r[f"{o}_ppg"],
                          "goalie": r[f"{side}_goalie"], "extra": r.last_period > 3})
@@ -101,17 +108,18 @@ def attach_results(rows: pd.DataFrame, sched: pd.DataFrame) -> pd.DataFrame:
 def _calc(g: pd.DataFrame) -> dict:
     if not len(g):
         return {m: None for m in METRICS}
-    s = g[["cf", "ca", "xgf", "xga", "xga_net", "ga_net", "ppo", "ppg", "pko", "pkga"]].sum()
+    s = g[["cf", "ca", "xgf", "xga", "toi5", "xga_net", "ga_net", "ppo", "ppg", "pko", "pkga"]].sum()
     pp = s.ppg / s.ppo if s.ppo else 0.0
     pk = 1 - s.pkga / s.pko if s.pko else 1.0
     return {"xgf": round(100 * s.xgf / (s.xgf + s.xga), 2) if s.xgf + s.xga else None,
+            "xga60": round(3600 * s.xga / s.toi5, 3) if s.toi5 > 0 else None,
             "cf": round(100 * s.cf / (s.cf + s.ca), 2) if s.cf + s.ca else None,
             "gsax": round((s.xga_net - s.ga_net) / len(g), 3),
             "st": round(100 * (pp + pk), 1), "pp": round(100 * pp, 1), "pk": round(100 * pk, 1)}
 
 
-def _rank(values: dict) -> dict:
-    order = sorted(values, key=lambda t: (-values[t], t))
+def _rank(values: dict, lower: bool = False) -> dict:
+    order = sorted(values, key=lambda t: ((values[t] if lower else -values[t]), t))
     return {t: i + 1 for i, t in enumerate(order)}
 
 
@@ -142,7 +150,7 @@ def compute(rows: pd.DataFrame, before: str | None = None) -> dict:
     for w in ("season", "last5"):
         for m in METRICS:
             vals = {t: v[w][m] for t, v in teams.items() if v[w][m] is not None}
-            for t, rk in _rank(vals).items():
+            for t, rk in _rank(vals, m in LOWER_IS_BETTER).items():
                 teams[t][w].setdefault("ranks", {})[m] = rk
     pts = _rank({t: v["pts_pct"] for t, v in teams.items()})
     for t in teams:
