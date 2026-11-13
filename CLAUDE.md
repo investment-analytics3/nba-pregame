@@ -212,7 +212,7 @@ NHL rules (owner decisions Nov 12-13 2026; spec "NHL Board"):
   goalies + health 4 (fav regular goalie starts 2, dog starts its backup 1, no fav key skater out 1), home 1, rest 1 (fav
   didn't play yesterday), last-3 form 2 (3 wins = 2, 2 = 1). Ring bands: green 22+, yellow 18-21, red under 18.
 - Tiers (backtest Nov 13): Qualified = in range, score 22+, fav's regular goalie starts, fav rested. Watch list = in range, 22+
-  but a backup goalie or a back-to-back (red flag / red pill). Under 22 = No track (18-21 won 52% vs a 64% price).
+  but a backup goalie or a back-to-back (red flag / red pill). Under 22 = No track (18-21 won 54% vs a 64% price).
   No early-season hold. Goalie not posted = yellow warning. B2B pills as the NBA.
 - Board: daily like the NBA (today's games, then tomorrow's preview once today's are final), tier locks 1 h before puck drop;
   one phone push a day (weekdays 1 PM PT after goalies post, weekends 9 AM PT) only when a game today is Qualified.
@@ -221,7 +221,7 @@ NHL rules (owner decisions Nov 12-13 2026; spec "NHL Board"):
   94.5%), under 5:00 and OT read only. Pushes Qualified only: 3rd 10:00 + first BET. ESPN has no hockey win probability:
   the Kalshi price log is the only check of value.
 - Backtest 2024-26: 246 range games, favorite won 65% (priced 2025-26: 71% vs a 67% moneyline); score 22+ with regular goalie
-  and rested 74% (85 games; priced 81% vs 69%, 31 games); small samples, review after a month of real boards.
+  and rested 71% (94 games; priced 76% vs 69%, 33 games; re-run Nov 13 after the xGA/60 swap); small samples, review after a month.
 
 ## Workflows (Actions)
 

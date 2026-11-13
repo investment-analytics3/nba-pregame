@@ -12,9 +12,9 @@ Analysis Score (max 40), built like the NFL hero score (32 teams):
   Last-3 form        2  favorite won 3 = 2, won 2 = 1
 Tiers (range games only; cutoffs from the 2024-26 backtest, data/nhl/backtest.json, Nov 13):
   Qualified   score 22+, the favorite's regular goalie starts, and the favorite didn't play yesterday
-              (range favorites 22+ with both: 74% won, 85 games; priced 2025-26: 81% vs a 69% moneyline, 31 games)
-  Watch list  score 22+ but the favorite starts its backup goalie or is on a back-to-back (70% won, 73 games)
-  No track    score under 22 (18-21 won 52% vs a 64% price; under 18 won 52%)
+              (range favorites 22+ with both: 71% won, 94 games; priced 2025-26: 76% vs a 69% moneyline, 33 games)
+  Watch list  score 22+ but the favorite starts its backup goalie or is on a back-to-back (72% won, 60 games)
+  No track    score under 22 (18-21 won 54% vs a 64% price; under 18 won 56%)
 Goalie flag (owner: like the NFL quarterback): the favorite's regular goalie not listed as the probable starter = red
 flag and the game is capped at the Watch list. No probable starter posted yet = yellow warning.
 Back-to-back (owner: NBA pill rules): favorite on a back-to-back = red pill and capped at the Watch list (range
