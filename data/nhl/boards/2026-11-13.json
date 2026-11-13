@@ -3,8 +3,8 @@
  "date_label": "Friday, November 13",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-13T09:26:04-08:00",
- "built_label": "Fri Nov 13, 9:26 AM PT",
+ "built_at": "2026-11-13T10:30:47-08:00",
+ "built_label": "Fri Nov 13, 10:30 AM PT",
  "metrics_through": "2026-11-12",
  "metrics_through_label": "Nov 12",
  "max": 40,
@@ -33,7 +33,7 @@
    "favorite": "away",
    "line": {
     "details": "NYR -225",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": null,
     "ml_away": -225,
     "puck_line": 1.5,
@@ -42,7 +42,7 @@
    },
    "spread": {
     "details": "NYR -225",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": 1.5
    },
    "home": {
@@ -57,6 +57,7 @@
     "pts_pct": 0.175,
     "season": {
      "xgf": 40.48,
+     "xga60": 3.104,
      "cf": 45.79,
      "gsax": -0.754,
      "st": 83.8,
@@ -64,13 +65,14 @@
      "pk": 65.1,
      "ranks": {
       "xgf": 31,
-      "cf": 31,
+      "xga60": 29,
       "gsax": 32,
       "st": 32
      }
     },
     "last5": {
      "xgf": 43.51,
+     "xga60": 2.523,
      "cf": 47.28,
      "gsax": -1.018,
      "st": 80.5,
@@ -78,7 +80,7 @@
      "pk": 53.8,
      "ranks": {
       "xgf": 30,
-      "cf": 26,
+      "xga60": 9,
       "gsax": 31,
       "st": 25
      }
@@ -121,7 +123,7 @@
       "opp": "TOR",
       "metrics": {
        "xgf": 44.72,
-       "cf": 40.0,
+       "xga60": 2.831,
        "gsax": 0.274,
        "st": 125.0
       }
@@ -131,7 +133,7 @@
       "opp": "ANA",
       "metrics": {
        "xgf": 54.05,
-       "cf": 49.44,
+       "xga60": 2.179,
        "gsax": -2.505,
        "st": 50.0
       }
@@ -141,7 +143,7 @@
       "opp": "WPG",
       "metrics": {
        "xgf": 34.29,
-       "cf": 44.57,
+       "xga60": 3.304,
        "gsax": -2.543,
        "st": 75.0
       }
@@ -151,7 +153,7 @@
       "opp": "EDM",
       "metrics": {
        "xgf": 41.48,
-       "cf": 47.89,
+       "xga60": 1.925,
        "gsax": -0.565,
        "st": 66.7
       }
@@ -161,7 +163,7 @@
       "opp": "PHI",
       "metrics": {
        "xgf": 43.81,
-       "cf": 55.56,
+       "xga60": 2.304,
        "gsax": 0.25,
        "st": 70.0
       }
@@ -254,6 +256,7 @@
     "pts_pct": 0.575,
     "season": {
      "xgf": 51.38,
+     "xga60": 2.696,
      "cf": 48.44,
      "gsax": 0.418,
      "st": 107.1,
@@ -261,13 +264,14 @@
      "pk": 88.1,
      "ranks": {
       "xgf": 15,
-      "cf": 25,
+      "xga60": 13,
       "gsax": 8,
       "st": 8
      }
     },
     "last5": {
      "xgf": 54.24,
+     "xga60": 2.494,
      "cf": 47.72,
      "gsax": 0.807,
      "st": 104.3,
@@ -275,7 +279,7 @@
      "pk": 86.7,
      "ranks": {
       "xgf": 7,
-      "cf": 25,
+      "xga60": 8,
       "gsax": 6,
       "st": 14
      }
@@ -318,7 +322,7 @@
       "opp": "STL",
       "metrics": {
        "xgf": 59.91,
-       "cf": 46.67,
+       "xga60": 2.529,
        "gsax": 1.958,
        "st": 100.0
       }
@@ -328,7 +332,7 @@
       "opp": "PHI",
       "metrics": {
        "xgf": 53.51,
-       "cf": 47.92,
+       "xga60": 2.914,
        "gsax": 0.931,
        "st": 150.0
       }
@@ -338,7 +342,7 @@
       "opp": "SEA",
       "metrics": {
        "xgf": 55.26,
-       "cf": 48.48,
+       "xga60": 2.777,
        "gsax": -0.096,
        "st": 83.3
       }
@@ -348,7 +352,7 @@
       "opp": "EDM",
       "metrics": {
        "xgf": 53.97,
-       "cf": 55.41,
+       "xga60": 1.836,
        "gsax": -0.382,
        "st": 100.0
       }
@@ -358,7 +362,7 @@
       "opp": "CGY",
       "metrics": {
        "xgf": 46.88,
-       "cf": 40.51,
+       "xga60": 2.255,
        "gsax": 1.621,
        "st": 83.3
       }
@@ -483,7 +487,7 @@
       "rule": "A",
       "name": "Analysis Score 22+",
       "pass": true,
-      "detail": "Score 26 of 40"
+      "detail": "Score 25 of 40"
      },
      {
       "rule": "Goalie",
@@ -505,20 +509,20 @@
      "Info: VAN starting its backup goalie (Leevi Merilainen)"
     ],
     "flags": [],
-    "score": 26,
+    "score": 25,
     "max": 40,
     "band": "green",
     "parts": [
      {
       "key": "fav_metrics",
       "label": "Favorite metrics",
-      "points": 4,
+      "points": 5,
       "max": 16
      },
      {
       "key": "dog_metrics",
       "label": "Underdog metrics",
-      "points": 16,
+      "points": 14,
       "max": 16
      },
      {
@@ -558,9 +562,9 @@
         "color": "yellow"
        },
        {
-        "metric": "cf",
-        "rank": 25,
-        "color": "red"
+        "metric": "xga60",
+        "rank": 13,
+        "color": "yellow"
        },
        {
         "metric": "gsax",
@@ -585,9 +589,9 @@
         "color": "green"
        },
        {
-        "metric": "cf",
-        "rank": 25,
-        "color": "red"
+        "metric": "xga60",
+        "rank": 8,
+        "color": "green"
        },
        {
         "metric": "gsax",
@@ -612,8 +616,8 @@
         "color": "green"
        },
        {
-        "metric": "cf",
-        "rank": 31,
+        "metric": "xga60",
+        "rank": 29,
         "color": "green"
        },
        {
@@ -639,9 +643,9 @@
         "color": "green"
        },
        {
-        "metric": "cf",
-        "rank": 26,
-        "color": "green"
+        "metric": "xga60",
+        "rank": 9,
+        "color": "red"
        },
        {
         "metric": "gsax",
@@ -658,7 +662,7 @@
     ],
     "labels": {
      "xgf": "xGF% 5v5",
-     "cf": "Corsi 5v5",
+     "xga60": "xGA/60 5v5",
      "gsax": "GSAx/gm",
      "st": "PP%+PK%",
      "pts": "Points %"
@@ -668,9 +672,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV13NYRVAN",
-    "fav_prob": 0.675,
-    "bid": 0.67,
-    "ask": 0.68
+    "fav_prob": 0.655,
+    "bid": 0.65,
+    "ask": 0.66
    }
   },
   {
@@ -685,7 +689,7 @@
    "favorite": "home",
    "line": {
     "details": "VGK -162",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": -162,
     "ml_away": null,
     "puck_line": -1.5,
@@ -694,7 +698,7 @@
    },
    "spread": {
     "details": "VGK -162",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": -1.5
    },
    "home": {
@@ -709,6 +713,7 @@
     "pts_pct": 0.7,
     "season": {
      "xgf": 53.13,
+     "xga60": 2.544,
      "cf": 52.14,
      "gsax": 0.345,
      "st": 105.4,
@@ -716,13 +721,14 @@
      "pk": 74.5,
      "ranks": {
       "xgf": 6,
-      "cf": 4,
+      "xga60": 8,
       "gsax": 12,
       "st": 11
      }
     },
     "last5": {
      "xgf": 45.18,
+     "xga60": 2.883,
      "cf": 49.42,
      "gsax": 1.589,
      "st": 124.1,
@@ -730,7 +736,7 @@
      "pk": 92.9,
      "ranks": {
       "xgf": 26,
-      "cf": 19,
+      "xga60": 22,
       "gsax": 2,
       "st": 2
      }
@@ -773,7 +779,7 @@
       "opp": "BOS",
       "metrics": {
        "xgf": 54.47,
-       "cf": 52.7,
+       "xga60": 1.559,
        "gsax": 1.279,
        "st": 100.0
       }
@@ -783,7 +789,7 @@
       "opp": "PIT",
       "metrics": {
        "xgf": 39.57,
-       "cf": 46.27,
+       "xga60": 2.969,
        "gsax": 0.967,
        "st": 150.0
       }
@@ -793,7 +799,7 @@
       "opp": "DET",
       "metrics": {
        "xgf": 53.53,
-       "cf": 46.32,
+       "xga60": 2.528,
        "gsax": 2.001,
        "st": 100.0
       }
@@ -803,7 +809,7 @@
       "opp": "BUF",
       "metrics": {
        "xgf": 36.36,
-       "cf": 50.96,
+       "xga60": 4.293,
        "gsax": 3.445,
        "st": 100.0
       }
@@ -813,7 +819,7 @@
       "opp": "UTA",
       "metrics": {
        "xgf": 46.65,
-       "cf": 50.56,
+       "xga60": 2.97,
        "gsax": 0.253,
        "st": 166.7
       }
@@ -885,6 +891,7 @@
     "pts_pct": 0.658,
     "season": {
      "xgf": 46.25,
+     "xga60": 3.093,
      "cf": 49.62,
      "gsax": 0.839,
      "st": 118.9,
@@ -892,13 +899,14 @@
      "pk": 91.5,
      "ranks": {
       "xgf": 26,
-      "cf": 17,
+      "xga60": 27,
       "gsax": 3,
       "st": 1
      }
     },
     "last5": {
      "xgf": 47.69,
+     "xga60": 2.879,
      "cf": 51.98,
      "gsax": 2.364,
      "st": 111.1,
@@ -906,7 +914,7 @@
      "pk": 100.0,
      "ranks": {
       "xgf": 19,
-      "cf": 8,
+      "xga60": 21,
       "gsax": 1,
       "st": 9
      }
@@ -949,7 +957,7 @@
       "opp": "CAR",
       "metrics": {
        "xgf": 40.54,
-       "cf": 44.44,
+       "xga60": 3.195,
        "gsax": 3.098,
        "st": 100.0
       }
@@ -959,7 +967,7 @@
       "opp": "COL",
       "metrics": {
        "xgf": 53.74,
-       "cf": 57.45,
+       "xga60": 2.151,
        "gsax": 1.27,
        "st": 120.0
       }
@@ -969,7 +977,7 @@
       "opp": "STL",
       "metrics": {
        "xgf": 46.45,
-       "cf": 49.04,
+       "xga60": 2.472,
        "gsax": 1.618,
        "st": 133.3
       }
@@ -979,7 +987,7 @@
       "opp": "LAK",
       "metrics": {
        "xgf": 49.47,
-       "cf": 56.38,
+       "xga60": 3.015,
        "gsax": 3.206,
        "st": 100.0
       }
@@ -989,7 +997,7 @@
       "opp": "ANA",
       "metrics": {
        "xgf": 49.05,
-       "cf": 53.33,
+       "xga60": 3.506,
        "gsax": 2.63,
        "st": 100.0
       }
@@ -1077,7 +1085,7 @@
       "rule": "A",
       "name": "Analysis Score 22+",
       "pass": false,
-      "detail": "Score 15 of 40"
+      "detail": "Score 16 of 40"
      },
      {
       "rule": "Goalie",
@@ -1101,20 +1109,20 @@
     "flags": [
      "VGK backup goalie starting (Adin Hill)"
     ],
-    "score": 15,
+    "score": 16,
     "max": 40,
     "band": "red",
     "parts": [
      {
       "key": "fav_metrics",
       "label": "Favorite metrics",
-      "points": 7,
+      "points": 6,
       "max": 16
      },
      {
       "key": "dog_metrics",
       "label": "Underdog metrics",
-      "points": 4,
+      "points": 6,
       "max": 16
      },
      {
@@ -1154,8 +1162,8 @@
         "color": "green"
        },
        {
-        "metric": "cf",
-        "rank": 4,
+        "metric": "xga60",
+        "rank": 8,
         "color": "green"
        },
        {
@@ -1181,8 +1189,8 @@
         "color": "red"
        },
        {
-        "metric": "cf",
-        "rank": 19,
+        "metric": "xga60",
+        "rank": 22,
         "color": "yellow"
        },
        {
@@ -1208,9 +1216,9 @@
         "color": "green"
        },
        {
-        "metric": "cf",
-        "rank": 17,
-        "color": "yellow"
+        "metric": "xga60",
+        "rank": 27,
+        "color": "green"
        },
        {
         "metric": "gsax",
@@ -1235,9 +1243,9 @@
         "color": "yellow"
        },
        {
-        "metric": "cf",
-        "rank": 8,
-        "color": "red"
+        "metric": "xga60",
+        "rank": 21,
+        "color": "yellow"
        },
        {
         "metric": "gsax",
@@ -1254,7 +1262,7 @@
     ],
     "labels": {
      "xgf": "xGF% 5v5",
-     "cf": "Corsi 5v5",
+     "xga60": "xGA/60 5v5",
      "gsax": "GSAx/gm",
      "st": "PP%+PK%",
      "pts": "Points %"
@@ -1279,7 +1287,7 @@
   "in_range": 0,
   "qualified": 0,
   "watch": 0,
-  "built_label": "Fri Nov 13, 9:26 AM PT"
+  "built_label": "Fri Nov 13, 10:30 AM PT"
  },
  "power_table": [
   {
