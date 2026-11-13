@@ -1,0 +1,207 @@
+{
+ "seasonSeries": [
+  {
+   "id": 2026020085,
+   "season": 20262027,
+   "gameType": 2,
+   "gameDate": "2026-10-11",
+   "startTimeUTC": "2026-10-11T22:00:00Z",
+   "easternUTCOffset": "-04:00",
+   "venueUTCOffset": "-04:00",
+   "gameState": "OFF",
+   "gameScheduleState": "OK",
+   "awayTeam": {
+    "id": 23,
+    "abbrev": "VAN",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
+    "score": 2
+   },
+   "homeTeam": {
+    "id": 3,
+    "abbrev": "NYR",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg",
+    "score": 6
+   },
+   "periodDescriptor": {
+    "number": 3,
+    "periodType": "REG",
+    "maxRegulationPeriods": 3
+   },
+   "gameCenterLink": "/gamecenter/nyr-vs-van/2026/10/11/2026020085",
+   "gameOutcome": {
+    "lastPeriodType": "REG"
+   }
+  },
+  {
+   "id": 2026020310,
+   "season": 20262027,
+   "gameType": 2,
+   "gameDate": "2026-11-13",
+   "startTimeUTC": "2026-11-14T02:00:00Z",
+   "easternUTCOffset": "-05:00",
+   "venueUTCOffset": "-07:00",
+   "gameState": "FUT",
+   "gameScheduleState": "OK",
+   "awayTeam": {
+    "id": 3,
+    "abbrev": "NYR",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg"
+   },
+   "homeTeam": {
+    "id": 23,
+    "abbrev": "VAN",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg"
+   },
+   "gameCenterLink": "/gamecenter/van-vs-nyr/2026/11/13/2026020310",
+   "gameOutcome": {
+    "lastPeriodType": "REG"
+   }
+  }
+ ],
+ "seasonSeriesWins": {
+  "awayTeamWins": 1,
+  "homeTeamWins": 0
+ },
+ "gameInfo": {
+  "referees": [],
+  "linesmen": [],
+  "awayTeam": {
+   "headCoach": {
+    "default": "Mike Sullivan"
+   },
+   "scratches": []
+  },
+  "homeTeam": {
+   "headCoach": {
+    "default": "Manny Malhotra"
+   },
+   "scratches": []
+  }
+ },
+ "teamSeasonStats": {
+  "contextLabel": "regular_season",
+  "contextSeason": 20262027,
+  "awayTeam": {
+   "ppPctg": 0.196429,
+   "pkPctg": 0.883333,
+   "faceoffWinningPctg": 0.544666,
+   "goalsForPerGamePlayed": 2.95,
+   "goalsAgainstPerGamePlayed": 2.8,
+   "ppPctgRank": 21,
+   "pkPctgRank": 3,
+   "faceoffWinningPctgRank": 4,
+   "goalsForPerGamePlayedRank": 20,
+   "goalsAgainstPerGamePlayedRank": 7
+  },
+  "homeTeam": {
+   "ppPctg": 0.206349,
+   "pkPctg": 0.630769,
+   "faceoffWinningPctg": 0.470755,
+   "goalsForPerGamePlayed": 2.8,
+   "goalsAgainstPerGamePlayed": 4.5,
+   "ppPctgRank": 18,
+   "pkPctgRank": 32,
+   "faceoffWinningPctgRank": 26,
+   "goalsForPerGamePlayedRank": 24,
+   "goalsAgainstPerGamePlayedRank": 32
+  }
+ },
+ "last10Record": {
+  "contextLabel": "last_10_games",
+  "contextSeason": 20262027,
+  "awayTeam": {
+   "record": "5-5-0",
+   "streakType": "W",
+   "streak": 1,
+   "pastGameResults": [
+    {
+     "opponentAbbrev": "CGY",
+     "gameResult": "W"
+    },
+    {
+     "opponentAbbrev": "EDM",
+     "gameResult": "L"
+    },
+    {
+     "opponentAbbrev": "SEA",
+     "gameResult": "W"
+    },
+    {
+     "opponentAbbrev": "PHI",
+     "gameResult": "W"
+    },
+    {
+     "opponentAbbrev": "STL",
+     "gameResult": "W"
+    },
+    {
+     "opponentAbbrev": "EDM",
+     "gameResult": "L"
+    },
+    {
+     "opponentAbbrev": "LAK",
+     "gameResult": "L"
+    },
+    {
+     "opponentAbbrev": "OTT",
+     "gameResult": "L"
+    },
+    {
+     "opponentAbbrev": "TOR",
+     "gameResult": "L"
+    },
+    {
+     "opponentAbbrev": "ANA",
+     "gameResult": "W"
+    }
+   ]
+  },
+  "homeTeam": {
+   "record": "1-9-0",
+   "streakType": "L",
+   "streak": 6,
+   "pastGameResults": [
+    {
+     "opponentAbbrev": "PHI",
+     "gameResult": "L"
+    },
+    {
+     "opponentAbbrev": "EDM",
+     "gameResult": "L"
+    },
+    {
+     "opponentAbbrev": "WPG",
+     "gameResult": "L"
+    },
+    {
+     "opponentAbbrev": "ANA",
+     "gameResult": "L"
+    },
+    {
+     "opponentAbbrev": "TOR",
+     "gameResult": "L"
+    },
+    {
+     "opponentAbbrev": "SJS",
+     "gameResult": "L"
+    },
+    {
+     "opponentAbbrev": "ANA",
+     "gameResult": "OTW"
+    },
+    {
+     "opponentAbbrev": "MIN",
+     "gameResult": "L"
+    },
+    {
+     "opponentAbbrev": "DET",
+     "gameResult": "L"
+    },
+    {
+     "opponentAbbrev": "CAR",
+     "gameResult": "L"
+    }
+   ]
+  }
+ }
+}
