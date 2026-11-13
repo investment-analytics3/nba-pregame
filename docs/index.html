@@ -12,7 +12,7 @@
 <body>
 <!-- Landing page (L0). Static: each sport's pipeline publishes its own pages and a small
      JSON this page reads (NBA: live/context.json, NFL: nfl/summary.json, college football: cfb/summary.json,
-     college basketball: cbb/summary.json). -->
+     college basketball: cbb/summary.json, NHL: nhl/summary.json). -->
 <div class="wrap">
   <div class="eyebrow">Moneyline system · pregame and live</div>
   <h1 class="title cond">Game Boards</h1>
@@ -45,8 +45,15 @@
       <div class="small muted" data-k="list"></div>
       <div class="small"><span style="color:#8FB8F5;font-weight:600">Open the college hoops board ›</span></div>
     </a>
+    <a class="panel sport" href="nhl/" id="nhl">
+      <div class="row between"><h2 class="cond">NHL</h2><span class="chip cn" data-k="date">today</span></div>
+      <div class="big" data-k="head">Loading…</div>
+      <div class="stat" data-k="stat"></div>
+      <div class="small muted" data-k="list"></div>
+      <div class="small"><span style="color:#8FB8F5;font-weight:600">Open the NHL board ›</span></div>
+    </a>
   </div>
-  <div class="small muted" style="margin-top:22px">More: <a href="results.html">NBA results</a> · <a href="live/">NBA live</a> · <a href="nfl/game.html">NFL live</a> · <a href="nfl/live.html">NFL checkpoint log</a> · <a href="cfb/game.html">College football live</a> · <a href="cfb/live.html">College football price log</a> · <a href="cbb/game.html">College hoops live</a> · <a href="cbb/live.html">College hoops price log</a></div>
+  <div class="small muted" style="margin-top:22px">More: <a href="results.html">NBA results</a> · <a href="live/">NBA live</a> · <a href="nfl/game.html">NFL live</a> · <a href="nfl/live.html">NFL checkpoint log</a> · <a href="cfb/game.html">College football live</a> · <a href="cfb/live.html">College football price log</a> · <a href="cbb/game.html">College hoops live</a> · <a href="cbb/live.html">College hoops price log</a> · <a href="nhl/game.html">NHL live</a> · <a href="nhl/live.html">NHL price log</a></div>
 </div>
 <script>
 (function(){
@@ -88,6 +95,15 @@ get('cbb/summary.json').then(s => {
   set('cbb', 'stat', stat([[s.games ?? 0, 'at −10 to −20'], [q, 'qualified'], [w, 'watch list']]));
   set('cbb', 'list', (s.early ? `Early season: qualifiers held on the watch list until ${esc(s.cutover)}<br>` : '') + `Updated ${esc(s.built_label || '')}`);
 }).catch(() => set('cbb', 'head', 'College hoops board not built yet'));
+
+get('nhl/summary.json').then(s => {
+  const d = new Date(s.date + 'T12:00:00');
+  set('nhl', 'date', (s.kind === 'preview' ? 'Preview · ' : '') + d.toLocaleDateString('en-US', {weekday: 'short', month: 'short', day: 'numeric'}));
+  const q = s.qualified ?? 0, w = s.watch ?? 0;
+  set('nhl', 'head', q ? `${q} game${q > 1 ? 's' : ''} qualified` : (w ? `${w} on the watch list` : 'No top-7 vs bottom-7 game qualifies'));
+  set('nhl', 'stat', stat([[s.games ?? 0, 'games'], [s.in_range ?? 0, 'top 7 vs bottom 7'], [q, 'qualified']]));
+  set('nhl', 'list', `Updated ${esc(s.built_label || '')}`);
+}).catch(() => set('nhl', 'head', 'NHL board not built yet'));
 })();
 </script>
 </body>

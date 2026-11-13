@@ -15,6 +15,7 @@ a phone alert. No AI runs in the daily pipeline; Claude is only used to change c
 - NFL board: https://investment-analytics3.github.io/nba-pregame/nfl/ · checkpoint log: .../nfl/live.html
 - NFL design spec (Claude Doc): https://claude.ai/artifact/A4Q6Nana5hMZYbJCSVNix2
 - College basketball board: https://investment-analytics3.github.io/nba-pregame/cbb/ · live: .../cbb/game.html · price log: .../cbb/live.html · spec (Claude Doc): https://claude.ai/artifact/1Kbd5AT6nBPU8ep6hph434 · backtest: `scripts/cbb_backtest.py` → `data/cbb/backtest.json`
+- NHL board: https://investment-analytics3.github.io/nba-pregame/nhl/ · live: .../nhl/game.html · price log: .../nhl/live.html · spec (Claude Doc): https://claude.ai/artifact/KnjF51pVAexeZGvjUrMCNX · backtest: `scripts/nhl_backtest.py` → `data/nhl/backtest.json`
 - College football board: https://investment-analytics3.github.io/nba-pregame/cfb/ · price log: .../cfb/live.html · spec (Claude Doc): https://claude.ai/artifact/GjAffxfWQBwayGjJ4s4gGc · backtest: `scripts/cfb_backtest.py` → `data/cfb/backtest.json` (+ `_games.csv`); early entry (end Q1 / half / end Q3 vs in-game WP, Nov 10: no edge vs a fair price; next = log real Kalshi prices): `scripts/cfb_early_backtest.py` → `data/cfb/early_backtest.json`; data = sportsdataverse `espn_cfb_pbp` release (reachable from the workspace) + cfbfastR-data schedules
 - Results tracker: https://investment-analytics3.github.io/nba-pregame/results.html
 - Design spec (Claude Doc): https://claude.ai/artifact/TQV7dXo9KQM8aEmEEh8v8c
@@ -187,11 +188,46 @@ College basketball rules (owner decisions Nov 11 2026; spec "College Basketball 
   analyst readouts" (daily 5:13 AM PT, tracked games, max 12), commits only that file and dispatches `cbb.yml`
   force_build=true, send=false. The readout's injury line is the only injury check.
 
+## NHL (separate pipeline like the others: own folder, workflows, concurrency groups `nhl-data`, `nhl-live`)
+
+| Path | Purpose |
+|---|---|
+| `nhl/sources.py` | sportsdataverse fastRhockey releases (`nhl_pbp_full` play-by-play with expected goals per shot, `nhl_schedules`, player boxes; file year = season end), cached in `data/nhl/cache/` (git-ignored) |
+| `nhl/metrics.py` | Four metrics, season + last 5, ranked 1-32, as of a date: 5v5 expected-goals share (xGF%), 5v5 shot-attempt share (CF%), goaltending (goals saved above expected), special teams (PP% + PK%); records, L3, regular goalie, key skaters; own daily rank (xGF% rank + points-% rank) |
+| `nhl/power.py` | Consensus power rank = average of own daily rank + ESPN weekly + NHL.com weekly (`data/nhl/power/<date>.json`, written by the owner's Claude task "NHL power rankings", Tue 10:47 AM PT; a list older than 10 days is dropped), ranks logged daily (`data/nhl/power_log.json`) |
+| `nhl/scoring.py` | Range filter, Analysis Score, tiers, goalie/back-to-back caps (rules below) |
+| `nhl/espn.py`, `nhl/kalshi.py` | ESPN scoreboard (moneyline text, probable goalies), summaries, injuries; Kalshi `KXNHLGAME` |
+| `nhl/board.py` | Daily board → `docs/nhl/index.html`, `summary.json`, `context.json` (also `data/nhl/`), `data/nhl/boards/<date>.json`, tier locks `data/nhl/locks.json` |
+| `scripts/nhl_scheduler.py`, `nhl_build.py`, `nhl_live.py`, `nhl_engine_cli.js` | Tick decisions; build (+ daily push); checkpoint logger (end of 1st, end of 2nd, 3rd 10:00; Kalshi price) + pushes |
+| `docs/nhl/engine.js` | Live engine (`NhlEngine`): period readouts, control = expected-goals/shot-attempt share over the last 20 min (small xG model fitted on 2025-26 shots, run on ESPN shot coordinates), runs/answers, decision window; Live page `docs/nhl/game.html`, price log `docs/nhl/live.html`, prices on the `nhl-live-data` branch |
+| `scripts/nhl_backtest.py`, `scripts/nhl_probe.py` | One-off backtest 2024-26 (closing DraftKings moneylines via ESPN for 2025-26, from the probe's `dev-nhl-samples` branch) → `data/nhl/backtest.json`; probe (`nhl-probe.yml`) |
+
+Workflows: `nhl.yml` (tick, dispatched by the NBA Scheduler after college basketball; inputs `force_build`, `send`), `nhl-live.yml`
+(logger; inputs `once`, `send`). Tests: `tests/test_nhl.py`, `node --test tests/nhl_engine.test.js` (fixture CAR@SEA 2026-11-12).
+
+NHL rules (owner decisions Nov 12-13 2026; spec "NHL Board"):
+- Range: only a top-7 team in the consensus power rank against a bottom-7 team (26-32) can qualify; every other game is listed
+  under Did not qualify. Favorite = moneyline favorite.
+- Analysis Score 40: fav metrics 16 (season + last 5; rank 1-5 = 2, 6-10 = 1), dog metrics 16 (outside top 10 = 1, 23-32 = 2),
+  goalies + health 4 (fav regular goalie starts 2, dog starts its backup 1, no fav key skater out 1), home 1, rest 1 (fav
+  didn't play yesterday), last-3 form 2 (3 wins = 2, 2 = 1). Ring bands: green 22+, yellow 18-21, red under 18.
+- Tiers (backtest Nov 13): Qualified = in range, score 22+, fav's regular goalie starts, fav rested. Watch list = in range, 22+
+  but a backup goalie or a back-to-back (red flag / red pill). Under 22 = No track (18-21 won 52% vs a 64% price).
+  No early-season hold. Goalie not posted = yellow warning. B2B pills as the NBA.
+- Board: daily like the NBA (today's games, then tomorrow's preview once today's are final), tier locks 1 h before puck drop;
+  one phone push a day (weekdays 1 PM PT after goalies post, weekends 9 AM PT) only when a game today is Qualified.
+- Live: Qualified + Watch list tracked. Readouts at the end of the 1st and 2nd (Live page + log), 3rd period before 10:00
+  lean only, 10:00-5:00 DECISION window (BET needs a 2+ goal lead: range favorites up 2+ at 10:00 won 74 of 74; up 1 won
+  94.5%), under 5:00 and OT read only. Pushes Qualified only: 3rd 10:00 + first BET. ESPN has no hockey win probability:
+  the Kalshi price log is the only check of value.
+- Backtest 2024-26: 246 range games, favorite won 65% (priced 2025-26: 71% vs a 67% moneyline); score 22+ with regular goalie
+  and rested 74% (85 games; priced 81% vs 69%, 31 games); small samples, review after a month of real boards.
+
 ## Workflows (Actions)
 
 | Workflow file | Trigger | Notes |
 |---|---|---|
-| `scheduler.yml` | every 15 min from cron-job.org (workflow_dispatch, input `source`) + GitHub cron backup | the only automatic trigger: nightly update (from 3 AM PT, catch-up, marker `nightly` in `data/state.json`), board/Final (`board_decide`), starts `live.yml`; dispatches `nfl.yml`, `cfb.yml`, `cbb.yml` (continue-on-error); pings healthchecks.io. Input `dry_run=true` decides only. Setup: `SCHEDULER.md` |
+| `scheduler.yml` | every 15 min from cron-job.org (workflow_dispatch, input `source`) + GitHub cron backup | the only automatic trigger: nightly update (from 3 AM PT, catch-up, marker `nightly` in `data/state.json`), board/Final (`board_decide`), starts `live.yml`; dispatches `nfl.yml`, `cfb.yml`, `cbb.yml`, `nhl.yml` (continue-on-error); pings healthchecks.io. Input `dry_run=true` decides only. Setup: `SCHEDULER.md` |
 | `update-data.yml` | manual | catch-up, grading, slate; commits `data/` and `docs/` |
 | `board.yml` | manual | inputs: `kind` (preview/board/final/auto), `send` (true/false) |
 | `rebuild-days.yml` | manual, input `days` | rebuild + grade unsent past days |

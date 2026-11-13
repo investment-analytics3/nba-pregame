@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NHL Price Log</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<!-- NHL Kalshi price log (owner Nov 13): real Kalshi prices at the end of the 1st and 2nd periods and at 10:00
+     of the 3rd for every tracked game, next to the result, to check what Kalshi charges for leads that held in
+     the backtest. Nothing here is a bet signal. -->
+<div class="wrap" style="padding-bottom:0"><nav class="nav" style="flex-wrap:wrap"><a href="../">Home</a><a href="./">NHL board</a><a href="game.html">Live</a><a class="on" href="live.html">Price log</a><a href="../nba/">NBA</a></nav></div>
+<div class="wrap" id="app" style="padding-top:18px"><div class="muted">Loading…</div></div>
+<script>
+(function(){
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const c = p => p == null ? '–' : Math.round(p * 100) + '¢';
+const app = document.getElementById('app');
+const KIND = {end1: 'End of 1st', end2: 'End of 2nd', p3_10: '3rd period 10:00'};
+// Backtest 2024-26 (top-7 vs bottom-7 games): how often the favorite won when up 2+ (no in-game fair price for hockey)
+const BT = {end1: {won: '95% up 2+ (37 games)'}, end2: {won: '99% up 2+ (72 games)'}, p3_10: {won: '100% up 2+ (74 games)'}};
+
+function row(e, kind){
+  const r = e[kind]; if (!r) return '';
+  const k = r.kalshi || {}, res = e.final ? (e.final.fav_won ? `<span class="okc">${esc(e.fav)} won by ${e.final.fav_margin}</span>` : `<span class="noc">${esc(e.fav)} lost by ${-e.final.fav_margin}</span>`) : '<span class="muted">in progress</span>';
+  return `<tr><td>${esc(e.day_et)}</td><td><b>${esc(e.away)} @ ${esc(e.home)}</b><br><span class="muted">${esc(e.fav)} ${e.spread ?? ''} · ${esc(e.tier === 'qualified' ? 'Qualified' : 'Watch list')}</span></td>
+    <td>${KIND[kind]}${r.late ? ` <span class="muted">(late, ${esc(r.clock)})</span>` : ''}</td><td>${esc(r.score)}</td><td>${r.lead > 0 ? '+' : ''}${r.lead}</td>
+    <td><b>${c(k.prob)}</b>${k.bid != null ? `<br><span class="muted">${c(k.bid)}/${c(k.ask)}</span>` : ''}</td>
+    <td>${r.engine && r.engine.grade ? esc(r.engine.grade + ' ' + (r.engine.action || '')) : '–'}</td><td>${res}</td></tr>`;
+}
+
+fetch('live.json?t=' + Date.now()).then(r => r.ok ? r.json() : {games: {}}).catch(() => ({games: {}})).then(book => {
+  const entries = Object.values(book.games || {}).sort((a, b) => (b.day_et || '').localeCompare(a.day_et || ''));
+  // summary: fav up 2+ goals at each checkpoint, finished games with a Kalshi price
+  const stat = {};
+  for (const kind of ['end1', 'end2', 'p3_10']) {
+    const xs = entries.filter(e => e.final && e[kind] && e[kind].lead >= 2 && (e[kind].kalshi || {}).prob != null);
+    const won = xs.filter(e => e.final.fav_won).length;
+    const avg = xs.length ? xs.reduce((a, e) => a + e[kind].kalshi.prob, 0) / xs.length : null;
+    stat[kind] = {n: xs.length, won, avg};
+  }
+  const tiles = ['end1', 'end2', 'p3_10'].map(k => `<div><b>${stat[k].n ? stat[k].won + '-' + (stat[k].n - stat[k].won) : '–'}</b><span>${KIND[k]}, up 2+ · avg Kalshi ${c(stat[k].avg)}</span></div>`).join('');
+  const rows = entries.map(e => ['end1', 'end2', 'p3_10'].map(k => row(e, k)).join('')).join('');
+  app.innerHTML = `<div class="eyebrow">NHL · ${esc(book.season || '')} · price log</div>
+    <h1 class="title cond">Price Log</h1>
+    <div class="muted" style="margin-top:6px">Real Kalshi prices at the end of the 1st and 2nd and at 10:00 of the 3rd for every tracked game. Updated ${esc(book.updated || 'not yet')}.</div>
+    <div class="stat" style="margin:20px 0 22px">${tiles}</div>
+    <div class="panel final"><b>What to compare against (backtest 2024-26, top-7 favorite up 2+ goals)</b><ul>
+      ${['end1', 'end2', 'p3_10'].map(k => `<li>${KIND[k]}: won ${BT[k].won}</li>`).join('')}</ul>
+      <div class="small muted" style="margin-top:8px">If Kalshi's average price at a checkpoint sits well below the win rate over a few weeks, that checkpoint has value. Up to now it is only a price log; no bet signal comes from it.</div></div>
+    ${rows ? `<div class="panel" style="padding:8px 12px"><div class="tw"><table><tr><th>Date</th><th>Game</th><th>Checkpoint</th><th>Score</th><th>Fav lead</th><th>Kalshi fav</th><th>Engine read</th><th>Result</th></tr>${rows}</table></div></div>`
+           : '<div class="panel final">No checkpoints logged yet. The first ones come from today\'s tracked games.</div>'}
+    <div class="small muted foot">Kalshi = favorite's market price at the checkpoint (mid of bid/ask; bid/ask below). Read-only: the system never trades.</div>`;
+});
+})();
+</script>
+</body>
+</html>

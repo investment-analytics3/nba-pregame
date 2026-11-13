@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NHL Live</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../site.css">
+<style>
+.grade{flex:none;width:64px;height:64px;border-radius:16px;display:grid;place-items:center;font-family:'Barlow Condensed',Inter,sans-serif;font-size:34px;font-weight:700}
+.gA{background:linear-gradient(180deg,#34C77B,#1A8A4C);color:#fff;text-shadow:0 1px 1px rgba(0,0,0,.25)}.gB{background:linear-gradient(180deg,#FADB80,#D9A12A);color:#2A1C00}
+.gC{background:linear-gradient(180deg,#D44444,#A12222);color:#fff}.gN{background:#1C2438;color:#8B95AB}
+.sec{padding:16px 18px;margin-bottom:16px}.sec h3{margin:0 0 10px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#C7CEDC}
+.score{font-family:'Barlow Condensed',Inter,sans-serif;font-size:40px;font-weight:700;line-height:1}
+td.win{color:#6EF0A8;font-weight:700}
+.sec td:first-child{white-space:normal}
+.copy{all:unset;cursor:pointer;font-size:12px;font-weight:600;color:#8FB8F5;margin-left:8px}
+.list a.game{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;margin-bottom:10px;text-decoration:none;color:var(--text)}
+code{font-size:12px;background:#121A2C;padding:6px 8px;border-radius:8px;display:block;white-space:pre-wrap;word-break:break-word}
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin:0 0 16px}
+.steps span{padding:8px 6px;border-radius:10px;background:#141B2C;font-size:11.5px;line-height:1.3;color:#7C869E;text-align:center}
+.steps span.on{background:linear-gradient(180deg,#2E4170,#1C2845);color:#E6EAF2;font-weight:700}.steps span.done{color:#9AA4BA}
+.ro{padding:10px 0;border-top:1px solid var(--line);font-size:14px}.ro b{color:#E6EAF2}
+</style>
+</head>
+<body>
+<!-- NHL Live (L2): reads a game in the browser from ESPN with docs/nhl/engine.js. Kalshi prices come from
+     the checkpoint logger (nhl-live-data branch); they never change the grade. -->
+<div class="wrap" style="padding-bottom:0"><nav class="nav" style="flex-wrap:wrap"><a href="../">Home</a><a href="./">NHL board</a><a class="on" href="game.html">Live</a><a href="live.html">Price log</a><a href="../nba/">NBA</a></nav></div>
+<div class="wrap" id="app" style="padding-top:18px"><div class="muted">Loading…</div></div>
+<script src="engine.js"></script>
+<script>
+(function(){
+const ESPN = 'https://site.api.espn.com/apis/site/v2/sports/hockey/nhl';
+const PRICES = 'https://raw.githubusercontent.com/investment-analytics3/nba-pregame/nhl-live-data/prices.json';
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const app = document.getElementById('app');
+const gid = new URLSearchParams(location.search).get('g');
+const get = async (u, bust = true) => { const r = await fetch(bust ? u + (u.includes('?') ? '&' : '?') + 't=' + Date.now() : u); if (!r.ok) throw new Error(r.status); return r.json(); };
+const gcls = g => g && g[0] === 'A' ? 'gA' : (g === 'B' ? 'gB' : (g === 'C' ? 'gC' : 'gN'));
+let timer = null, ctx = null;
+const tierChip = g => g.tier === 'qualified' ? '<span class="chip cg">Qualified</span>'
+  : (g.tier === 'watch' ? '<span class="chip cy" title="Live read here; no phone pushes">Watch list</span>' : '');
+const STEPS = [['p1','1st period','scouting',['p1','end1']],['p2','2nd period','readout',['p2','end2']],['p3early','3rd, before 10:00','lean only',['p3early']],
+               ['decide','3rd 10:00–5:00','decide',['decide']],['late','Under 5:00 / OT','read only',['late','ot']]];
+
+async function list() {
+  const sb = await get(`${ESPN}/scoreboard`).catch(() => ({ events: [] }));
+  const st = {}; (sb.events || []).forEach(e => { st[e.id] = e.status; });
+  const games = (ctx.games || []).filter(g => g.tracked).sort((a, b) => (a.tier === 'qualified' ? 0 : 1) - (b.tier === 'qualified' ? 0 : 1) || a.tip_utc.localeCompare(b.tip_utc));
+  app.innerHTML = `<div class="eyebrow">NHL · ${esc(ctx.date)} · live</div><h1 class="title cond">Tracked games</h1>
+    <div class="muted" style="margin:6px 0 18px">Qualified + Watch list games, read in your browser from ESPN play-by-play. Readouts at the end of the 1st and 2nd; bets only in the 3rd, 10:00–5:00 left, with a lead of 2+.</div>
+    ${games.length ? '' : '<div class="panel final">No tracked games on the current board.</div>'}
+    <div class="list">${games.map(g => { const s = st[g.id] || {}, state = (s.type || {}).state;
+      return `<a class="panel game" href="?g=${esc(g.id)}"><span><b>${esc(g.away_abbr)} @ ${esc(g.home_abbr)}</b> ${tierChip(g)}<br>
+      <span class="muted small">${state === 'in' ? '<span class="chip live"><i></i>' + esc((s.type || {}).shortDetail) + '</span>' : esc(state === 'post' ? 'Final' : g.tip_pt)} · ${esc(g.fav_abbr)} #${g.fav_rank ?? '–'} vs ${esc(g.dog_abbr)} #${g.dog_rank ?? '–'}</span></span><span class="muted">Open ›</span></a>`; }).join('')}</div>`;
+}
+
+async function game() {
+  const g = (ctx.games || []).find(x => String(x.id) === gid);
+  const [summ, prices] = await Promise.all([get(`${ESPN}/summary?event=${encodeURIComponent(gid)}`), get(PRICES).catch(() => null)]);
+  const kal = prices && prices.games && prices.games[gid] ? prices.games[gid].prices : null;
+  const st = g ? g.fav_goalie_status : null;
+  const c = g ? { fav: g.fav_espn || g.fav_abbr, date: g.day_et, kalshi: kal, favB2B: g.fav_b2b, favGoalieOk: st && st !== 'unknown' ? st === 'regular' : null, favGoalieName: g.fav_goalie } : { kalshi: kal };
+  const r = NhlEngine.analyze(summ, c);
+  const d = r.decision || {}, T = r.teams, A = T.away.abbr, H = T.home.abbr;
+  let h = `<div class="row" style="flex-wrap:wrap;margin-bottom:14px"><a class="btn chip cn" href="game.html">‹ All games</a><a class="btn chip cn" href="./#g-${esc(gid)}">Pregame page</a>${g ? tierChip(g) : ''}${g ? `<span class="chip cn">Pregame: ${esc(g.fav_abbr)} #${g.fav_rank ?? '–'} vs ${esc(g.dog_abbr)} #${g.dog_rank ?? '–'} · score ${g.score ?? '–'}/40</span>` : ''}${g && g.fav_goalie ? `<span class="chip ${g.fav_goalie_status === 'backup' ? 'cr' : 'cn'}">${esc(g.fav_abbr)} G ${esc(g.fav_goalie)}${g.fav_goalie_status === 'backup' ? ' (backup)' : ''}</span>` : ''}</div>
+    <div class="eyebrow">NHL live · ${esc(r.phase.label)}</div>
+    <div class="row between" style="margin:8px 0 14px;flex-wrap:wrap"><div class="score">${esc(A)} ${T.away.score} – ${esc(H)} ${T.home.score}</div><div class="muted">${esc(r.clockLabel)}${r.state === 'in' ? ' · refreshes every 30 s' : ''}</div></div>`;
+  const keys = STEPS.map(s => s[3]), cur = STEPS.findIndex(s => s[3].includes(r.phase.key));
+  h += `<div class="steps">${STEPS.map((s, i) => `<span class="${i === cur ? 'on' : (cur > i || r.state === 'post' ? 'done' : '')}">${s[1]}<br><b style="font-weight:600">${s[2]}</b></span>`).join('')}</div>`;
+  if (r.state === 'pre') { app.innerHTML = h + `<div class="panel final">Not started. Puck drop ${esc(g ? g.tip_pt : '')}.</div>`; return; }
+  const price = r.price ? `Kalshi ${esc(r.price.abbr)} ${Math.round(r.price.prob * 100)}¢ (${r.price.american > 0 ? '+' : ''}${r.price.american})${r.price.pricedIn ? ' · above 85%: edge mostly priced in' : ''}` : 'No Kalshi price (the logger publishes it while games are on)';
+  h += `<div class="panel sec"><div class="row" style="gap:14px"><div class="grade ${gcls(d.grade)}">${esc(d.grade)}</div>
+      <div><div class="line">${esc(d.headline)}</div><div class="small muted">${esc((d.reasons || []).join(' · '))}</div><div class="small muted">${esc(price)}</div></div></div>
+      ${(d.gates || []).map(x => `<div class="flag yellow" style="margin-top:8px">${esc(x)}</div>`).join('')}</div>`;
+  if (r.readouts.length) h += `<div class="panel sec"><h3>Period readouts</h3>${r.readouts.map(x => `<div class="ro"><b>${esc(x.text)}</b><br><span class="muted">${esc(x.trend)}</span></div>`).join('')}</div>`;
+  h += `<div class="panel sec"><h3>1. Who answered the run?</h3><div class="small"><b>${esc(r.whoAnswered)}</b>${r.run ? ` · last run: ${esc(r.run.side === 'home' ? H : A)} ${r.run.n} straight (P${r.run.start.per} ${esc(r.run.start.clock)} → P${r.run.end.per} ${esc(r.run.end.clock)})` : ''}</div>
+      <div class="small muted" style="margin-top:8px">Goals: ${r.goals.map(x => `P${x.per} ${esc(x.clock)} ${esc(x.team)}${x.en ? ' (EN)' : ''}`).join(' · ') || 'none yet'}</div></div>`;
+  h += `<div class="panel sec"><h3>2. Control vs momentum (${esc(r.control.window)})</h3><div class="tw"><table><tr><th></th><th>${esc(A)}</th><th>${esc(H)}</th></tr>
+      ${r.control.rows.map(x => `<tr><td>${esc(x.label)}</td><td class="${x.winner === 'away' ? 'win' : ''}">${esc(x.away)}</td><td class="${x.winner === 'home' ? 'win' : ''}">${esc(x.home)}</td></tr>`).join('')}
+      <tr><td>Full game: shots · xG</td><td>${r.game.away.sog} · ${r.game.away.xg.toFixed(2)}</td><td>${r.game.home.sog} · ${r.game.home.xg.toFixed(2)}</td></tr></table></div>
+      <div class="small" style="margin-top:8px">${r.control.team ? `<b>${esc(r.control.team)}</b> controls play (${r.control.xgShare}% of expected goals for ${esc(r.focus)}).` : `No team controls play (${esc(r.focus)} ${r.control.xgShare ?? '–'}% of expected goals).`}
+      ${r.momentum.pressure ? `<span class="warnc">${esc(r.momentum.side)} pressing: ${r.momentum.last5[r.momentum.side === H ? 'home' : 'away'].sog} shots in the last 5 min.</span>` : ''}</div>
+      <div class="tiny">Expected goals estimated from ESPN shot locations with a model fitted on last season's NHL shots.</div></div>`;
+  if (r.checklist) h += `<div class="panel sec"><h3>3. Checklist at 10:00 of the 3rd · ${esc(r.checklist.verdict)}</h3>
+      ${r.checklist.items.map(i => `<div class="rule"><span class="yn ${i.ok === true ? 'ok' : (i.ok === false ? 'no' : '')}">${i.ok === true ? '✓' : (i.ok === false ? '✗' : '?')}</span><span>${esc(i.label)} <span class="muted">(${esc(i.detail)})</span></span></div>`).join('')}</div>`;
+  h += `<div class="panel sec"><h3>What changes it</h3><div class="small">${r.state === 'in' ? `Next check: ${esc(r.next)}.` : 'Final.'} BET needs a lead of 2+ in the 3rd, 10:00–5:00 left, without the trailing team controlling play or on an unanswered run.</div></div>`;
+  h += `<div class="panel sec"><h3>Tracker log line <button class="copy" id="cp">Copy</button></h3><code id="ll">${esc(r.logLine)}</code></div>`;
+  app.innerHTML = h;
+  const cpb = document.getElementById('cp');
+  if (cpb) cpb.onclick = () => navigator.clipboard && navigator.clipboard.writeText(document.getElementById('ll').textContent).then(() => { cpb.textContent = 'Copied'; });
+  clearTimeout(timer);
+  if (r.state === 'in') timer = setTimeout(() => game().catch(show), 30000);
+}
+
+const show = e => { app.innerHTML = `<div class="panel final">Couldn't load the game (${esc(e.message)}). Try again in a minute.</div>`; };
+get('context.json').then(c => { ctx = c; return gid ? game() : list(); }).catch(show);
+})();
+</script>
+</body>
+</html>

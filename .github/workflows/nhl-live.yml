@@ -1,0 +1,42 @@
+name: NHL checkpoint logger
+
+# Records the end of the 1st and 2nd periods and 10:00 of the 3rd (score, lead, REAL Kalshi price, the engine's
+# readout; checklist at 10:00) for every tracked NHL game (Qualified + Watch list), and publishes live Kalshi
+# prices for the Live page (nhl-live-data branch).
+# Phone pushes: Qualified games only, 3rd period 10:00 + first BET signal (max two per game).
+# Started by the NHL tick while tracked games are on; stops when none is on or about to start.
+on:
+  workflow_dispatch:
+    inputs:
+      once:
+        description: "One poll only (test)"
+        type: boolean
+        default: false
+      send:
+        description: "Send phone pushes (Qualified games: 2nd half 10:00 + first BET signal)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nhl-live
+  cancel-in-progress: false
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    timeout-minutes: 345
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main   # the latest main when the job starts, not when it was queued (Nov 12 fix)
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Log checkpoints
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: python scripts/nhl_live.py --max-minutes 330 ${{ inputs.once == true && '--once' || '' }} ${{ inputs.send == false && '--no-alert' || '' }}
