@@ -1,44 +1,8 @@
 {
  "season": 2026,
  "week": 10,
- "built_at": "2026-11-12T16:45:37-08:00",
+ "built_at": "2026-11-13T07:00:38-08:00",
  "games": [
-  {
-   "id": "401873052",
-   "nflverse_id": "2026_10_WAS_NYG",
-   "kick_utc": "2026-11-13T01:15:00+00:00",
-   "day_et": "2026-11-12",
-   "home": "NYG",
-   "away": "WAS",
-   "fav": "NYG",
-   "dog": "WAS",
-   "spread": -1.5,
-   "fav_defense_top10": false,
-   "tracked": true,
-   "alerts": false,
-   "tier": "watch",
-   "tier_label": "Watch list",
-   "kalshi_away": "WAS",
-   "kalshi_home": "NYG",
-   "away_abbr": "WSH",
-   "home_abbr": "NYG",
-   "fav_abbr": "NYG",
-   "dog_abbr": "WSH",
-   "qbs": {
-    "WSH": {
-     "regular": "J.Daniels",
-     "rank": 20
-    },
-    "NYG": {
-     "regular": "J.McCarthy",
-     "rank": null
-    }
-   },
-   "hero": 23,
-   "band": "yellow",
-   "call": "Watch list",
-   "kick_pt": "Thu 5:15 PM PT"
-  },
   {
    "id": "401873053",
    "nflverse_id": "2026_10_NE_DET",
@@ -178,7 +142,7 @@
      "rank": 7
     }
    },
-   "hero": 20,
+   "hero": 21,
    "band": "yellow",
    "call": "No track",
    "kick_pt": "Sun 10:00 AM PT"
@@ -374,10 +338,10 @@
    "dog": "LV",
    "spread": -6.5,
    "fav_defense_top10": false,
-   "tracked": true,
+   "tracked": false,
    "alerts": false,
-   "tier": "watch",
-   "tier_label": "Watch list",
+   "tier": "out",
+   "tier_label": "No track",
    "kalshi_away": "SEA",
    "kalshi_home": "LV",
    "away_abbr": "SEA",
@@ -394,9 +358,9 @@
      "rank": 12
     }
    },
-   "hero": 22,
+   "hero": 21,
    "band": "yellow",
-   "call": "Watch list",
+   "call": "No track",
    "kick_pt": "Sun 1:05 PM PT"
   },
   {
@@ -506,6 +470,42 @@
    "band": "yellow",
    "call": "Watch list",
    "kick_pt": "Mon 5:15 PM PT"
+  },
+  {
+   "id": "401873052",
+   "nflverse_id": "2026_10_WAS_NYG",
+   "kick_utc": "2026-11-13T01:15:00+00:00",
+   "day_et": "2026-11-12",
+   "home": "NYG",
+   "away": "WAS",
+   "fav": "NYG",
+   "dog": "WAS",
+   "spread": -1.5,
+   "fav_defense_top10": false,
+   "tracked": true,
+   "alerts": false,
+   "tier": "watch",
+   "tier_label": "Watch list",
+   "kalshi_away": "WAS",
+   "kalshi_home": "NYG",
+   "away_abbr": "WSH",
+   "home_abbr": "NYG",
+   "fav_abbr": "NYG",
+   "dog_abbr": "WSH",
+   "qbs": {
+    "WSH": {
+     "regular": "J.Daniels",
+     "rank": 20
+    },
+    "NYG": {
+     "regular": "J.McCarthy",
+     "rank": null
+    }
+   },
+   "hero": 23,
+   "band": "yellow",
+   "call": "Watch list",
+   "kick_pt": "Thu 5:15 PM PT"
   }
  ]
 }
