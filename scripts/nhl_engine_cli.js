@@ -15,5 +15,7 @@ process.stdout.write(JSON.stringify({
   att_share: r.control ? r.control.attShare : null, gates: r.decision.gates || [], reason: (r.decision.reasons || []).join('; '),
   readouts: r.readouts || [], shots: r.game ? { home: r.game.home.sog, away: r.game.away.sog } : null,
   xg: r.game ? { home: +r.game.home.xg.toFixed(2), away: +r.game.away.xg.toFixed(2) } : null,
+  hold1: r.hold1 ? { level: r.hold1.level, applies: r.hold1.applies, lead: r.hold1.lead, text: r.hold1.text,
+          items: (r.hold1.items || []).map(i => ({ key: i.key, ok: i.ok, detail: i.detail })) } : null,
   checklist: ck ? { passed: ck.passed, total: ck.total, verdict: ck.verdict, reasons: ck.reasons } : null, log: r.logLine || '',
 }));

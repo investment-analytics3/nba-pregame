@@ -3,7 +3,8 @@
 
 While games are on, every ~60 s it reads ESPN's NHL scoreboard and, for each tracked game on today's board
 (Qualified + Watch list, data/nhl/context.json), records once each:
-    end1   end of the 1st period: the engine's readout (score, shots, expected goals, who controls play)
+    end1   end of the 1st period: the engine's readout (score, shots, expected goals, who controls play) and,
+           for a one-goal lead, the 1st-period hold check level (strong / meets / none; information only)
     end2   end of the 2nd period: second readout
     p3_10  10:00 left in the 3rd: the decision point, with the engine's read and checklist
 Each record holds the score, the favorite's lead, the favorite's REAL Kalshi price at that moment
@@ -137,6 +138,8 @@ def engine_grade(summ: dict, g: dict) -> dict | None:
         return None
     st = g.get("fav_goalie_status")
     ctx = {"fav": g.get("fav_espn") or g.get("fav_abbr"), "date": g.get("day_et"), "favB2B": g.get("fav_b2b"),
+           "score": g.get("score"), "favDefRank": g.get("fav_def_rank"), "dogDefRank": g.get("dog_def_rank"),
+           "score": g.get("score"), "favDefRank": g.get("fav_def_rank"), "dogDefRank": g.get("dog_def_rank"),
            "favGoalieOk": None if st in (None, "unknown") else st == "regular", "favGoalieName": g.get("fav_goalie")}
     try:
         with tempfile.TemporaryDirectory() as d:
@@ -189,6 +192,8 @@ def snapshot(g: dict, ev: dict, kind: str, late: bool) -> dict:
     k = fav_price(g, kalshi_prices(g))
     if k:
         rec["kalshi"] = k
+    if kind == "end1" and (rec["engine"] or {}).get("hold1"):
+        rec["hold1"] = rec["engine"]["hold1"]["level"]      # 1st-period hold check (information only)
     return rec
 
 

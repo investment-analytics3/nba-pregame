@@ -63,7 +63,7 @@ async function game() {
   const [summ, prices] = await Promise.all([get(`${ESPN}/summary?event=${encodeURIComponent(gid)}`), get(PRICES).catch(() => null)]);
   const kal = prices && prices.games && prices.games[gid] ? prices.games[gid].prices : null;
   const st = g ? g.fav_goalie_status : null;
-  const c = g ? { fav: g.fav_espn || g.fav_abbr, date: g.day_et, kalshi: kal, favB2B: g.fav_b2b, favGoalieOk: st && st !== 'unknown' ? st === 'regular' : null, favGoalieName: g.fav_goalie } : { kalshi: kal };
+  const c = g ? { fav: g.fav_espn || g.fav_abbr, date: g.day_et, kalshi: kal, favB2B: g.fav_b2b, favGoalieOk: st && st !== 'unknown' ? st === 'regular' : null, favGoalieName: g.fav_goalie, score: g.score, favDefRank: g.fav_def_rank, dogDefRank: g.dog_def_rank } : { kalshi: kal };
   const r = NhlEngine.analyze(summ, c);
   const d = r.decision || {}, T = r.teams, A = T.away.abbr, H = T.home.abbr;
   let h = `<div class="row" style="flex-wrap:wrap;margin-bottom:14px"><a class="btn chip cn" href="game.html">‹ All games</a><a class="btn chip cn" href="./#g-${esc(gid)}">Pregame page</a>${g ? tierChip(g) : ''}${g ? `<span class="chip cn">Pregame: ${esc(g.fav_abbr)} #${g.fav_rank ?? '–'} vs ${esc(g.dog_abbr)} #${g.dog_rank ?? '–'} · score ${g.score ?? '–'}/40</span>` : ''}${g && g.fav_goalie ? `<span class="chip ${g.fav_goalie_status === 'backup' ? 'cr' : 'cn'}">${esc(g.fav_abbr)} G ${esc(g.fav_goalie)}${g.fav_goalie_status === 'backup' ? ' (backup)' : ''}</span>` : ''}</div>
@@ -76,7 +76,11 @@ async function game() {
   h += `<div class="panel sec"><div class="row" style="gap:14px"><div class="grade ${gcls(d.grade)}">${esc(d.grade)}</div>
       <div><div class="line">${esc(d.headline)}</div><div class="small muted">${esc((d.reasons || []).join(' · '))}</div><div class="small muted">${esc(price)}</div></div></div>
       ${(d.gates || []).map(x => `<div class="flag yellow" style="margin-top:8px">${esc(x)}</div>`).join('')}</div>`;
-  if (r.readouts.length) h += `<div class="panel sec"><h3>Period readouts</h3>${r.readouts.map(x => `<div class="ro"><b>${esc(x.text)}</b><br><span class="muted">${esc(x.trend)}</span></div>`).join('')}</div>`;
+  const hc = r.hold1, hcCls = hc && hc.level === 'strong' ? 'okc' : (hc && hc.level === 'meets' ? 'warnc' : 'muted');
+  const hold = hc ? `<div class="ro"><b>1st-period hold check${hc.applies ? ` · <span class="${hcCls}">${esc({strong: 'strong', meets: 'meets', none: "doesn't meet"}[hc.level])}</span>` : ''}</b><br>
+      ${(hc.items || []).map(i => `<div class="rule"><span class="yn ${i.ok === true ? 'ok' : (i.ok === false ? 'no' : '')}">${i.ok === true ? '✓' : (i.ok === false ? '✗' : '?')}</span><span>${esc(i.label)} <span class="muted">(${esc(i.detail)})</span></span></div>`).join('')}
+      <span class="muted small">${esc(hc.text)}${hc.applies ? ' Needs score 22+ and one of outshot / weak defense; strong adds a top-5 defense.' : ''}</span></div>` : '';
+  if (r.readouts.length) h += `<div class="panel sec"><h3>Period readouts</h3>${r.readouts.map(x => `<div class="ro"><b>${esc(x.text)}</b><br><span class="muted">${esc(x.trend)}</span></div>${x.key === 'end1' ? hold : ''}`).join('')}</div>`;
   h += `<div class="panel sec"><h3>1. Who answered the run?</h3><div class="small"><b>${esc(r.whoAnswered)}</b>${r.run ? ` · last run: ${esc(r.run.side === 'home' ? H : A)} ${r.run.n} straight (P${r.run.start.per} ${esc(r.run.start.clock)} → P${r.run.end.per} ${esc(r.run.end.clock)})` : ''}</div>
       <div class="small muted" style="margin-top:8px">Goals: ${r.goals.map(x => `P${x.per} ${esc(x.clock)} ${esc(x.team)}${x.en ? ' (EN)' : ''}`).join(' · ') || 'none yet'}</div></div>`;
   h += `<div class="panel sec"><h3>2. Control vs momentum (${esc(r.control.window)})</h3><div class="tw"><table><tr><th></th><th>${esc(A)}</th><th>${esc(H)}</th></tr>

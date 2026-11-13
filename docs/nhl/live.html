@@ -22,13 +22,16 @@ const c = p => p == null ? '–' : Math.round(p * 100) + '¢';
 const app = document.getElementById('app');
 const KIND = {end1: 'End of 1st', end2: 'End of 2nd', p3_10: '3rd period 10:00'};
 // Backtest 2024-26 (top-7 vs bottom-7 games): how often the favorite won when up 2+ (no in-game fair price for hockey)
+const HOLD = {strong: 'strong', meets: 'meets', none: "doesn't meet"};
+// 1st-period hold check (owner Nov 13): favorite up exactly one after the 1st; backtest held strong 84% (61), meets 74% (70), doesn't meet 69% (438)
+const HBT = {strong: 84, meets: 74, none: 69};
 const BT = {end1: {won: '95% up 2+ (37 games)'}, end2: {won: '99% up 2+ (72 games)'}, p3_10: {won: '100% up 2+ (74 games)'}};
 
 function row(e, kind){
   const r = e[kind]; if (!r) return '';
   const k = r.kalshi || {}, res = e.final ? (e.final.fav_won ? `<span class="okc">${esc(e.fav)} won by ${e.final.fav_margin}</span>` : `<span class="noc">${esc(e.fav)} lost by ${-e.final.fav_margin}</span>`) : '<span class="muted">in progress</span>';
   return `<tr><td>${esc(e.day_et)}</td><td><b>${esc(e.away)} @ ${esc(e.home)}</b><br><span class="muted">${esc(e.fav)} ${e.spread ?? ''} · ${esc(e.tier === 'qualified' ? 'Qualified' : 'Watch list')}</span></td>
-    <td>${KIND[kind]}${r.late ? ` <span class="muted">(late, ${esc(r.clock)})</span>` : ''}</td><td>${esc(r.score)}</td><td>${r.lead > 0 ? '+' : ''}${r.lead}</td>
+    <td>${KIND[kind]}${r.late ? ` <span class="muted">(late, ${esc(r.clock)})</span>` : ''}${kind === 'end1' && HOLD[r.hold1] ? `<br><span class="${r.hold1 === 'strong' ? 'okc' : (r.hold1 === 'meets' ? 'warnc' : 'muted')}">hold check: ${HOLD[r.hold1]}</span>` : ''}</td><td>${esc(r.score)}</td><td>${r.lead > 0 ? '+' : ''}${r.lead}</td>
     <td><b>${c(k.prob)}</b>${k.bid != null ? `<br><span class="muted">${c(k.bid)}/${c(k.ask)}</span>` : ''}</td>
     <td>${r.engine && r.engine.grade ? esc(r.engine.grade + ' ' + (r.engine.action || '')) : '–'}</td><td>${res}</td></tr>`;
 }
@@ -44,6 +47,10 @@ fetch('live.json?t=' + Date.now()).then(r => r.ok ? r.json() : {games: {}}).catc
     stat[kind] = {n: xs.length, won, avg};
   }
   const tiles = ['end1', 'end2', 'p3_10'].map(k => `<div><b>${stat[k].n ? stat[k].won + '-' + (stat[k].n - stat[k].won) : '–'}</b><span>${KIND[k]}, up 2+ · avg Kalshi ${c(stat[k].avg)}</span></div>`).join('');
+  const hold = ['strong', 'meets', 'none'].map(lv => {
+    const xs = entries.filter(e => e.final && e.end1 && e.end1.lead === 1 && e.end1.hold1 === lv && (e.end1.kalshi || {}).prob != null);
+    const won = xs.filter(e => e.final.fav_won).length, avg = xs.length ? xs.reduce((a, e) => a + e.end1.kalshi.prob, 0) / xs.length : null;
+    return `<li>Up 1 after the 1st, hold check ${HOLD[lv]}: ${xs.length ? `${won}-${xs.length - won}, avg Kalshi ${c(avg)}` : 'none yet'} <span class="muted">(backtest held ${HBT[lv]}%)</span></li>`; }).join('');
   const rows = entries.map(e => ['end1', 'end2', 'p3_10'].map(k => row(e, k)).join('')).join('');
   app.innerHTML = `<div class="eyebrow">NHL · ${esc(book.season || '')} · price log</div>
     <h1 class="title cond">Price Log</h1>
@@ -51,6 +58,7 @@ fetch('live.json?t=' + Date.now()).then(r => r.ok ? r.json() : {games: {}}).catc
     <div class="stat" style="margin:20px 0 22px">${tiles}</div>
     <div class="panel final"><b>What to compare against (backtest 2024-26, top-7 favorite up 2+ goals)</b><ul>
       ${['end1', 'end2', 'p3_10'].map(k => `<li>${KIND[k]}: won ${BT[k].won}</li>`).join('')}</ul>
+      <div style="margin-top:10px"><b>1st-period hold check</b> <span class="muted">(favorite up exactly one after the 1st; score 22+ and outshot or weak opponent defense; strong adds a top-5 defense)</span><ul>${hold}</ul></div>
       <div class="small muted" style="margin-top:8px">If Kalshi's average price at a checkpoint sits well below the win rate over a few weeks, that checkpoint has value. Up to now it is only a price log; no bet signal comes from it.</div></div>
     ${rows ? `<div class="panel" style="padding:8px 12px"><div class="tw"><table><tr><th>Date</th><th>Game</th><th>Checkpoint</th><th>Score</th><th>Fav lead</th><th>Kalshi fav</th><th>Engine read</th><th>Result</th></tr>${rows}</table></div></div>`
            : '<div class="panel final">No checkpoints logged yet. The first ones come from today\'s tracked games.</div>'}

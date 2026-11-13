@@ -59,3 +59,26 @@ test('expected goals: close shots worth more than far ones', () => {
   const far = E.xg({ coordinate: { x: 30, y: 20 }, text: 'Slap Shot' }, false);
   assert.ok(near > 0.1 && far < 0.05, `${near} ${far}`);
 });
+
+test('1st-period hold check: one-goal leads only, information only', () => {
+  assert.strictEqual(at(1200).hold1.level, 'up2');               // CAR 2-0 after one
+  assert.strictEqual(at(1200).hold1.applies, false);
+  assert.strictEqual(at(600).hold1, null);                      // before the end of the 1st
+  const g1 = S.plays.findIndex(p => p.type.text === 'Goal');
+  const g = S.plays[g1];
+  const rest = S.plays.slice(g1 + 1).filter(p => p.type.text !== 'Goal').map(p => ({ ...p, awayScore: g.awayScore, homeScore: g.homeScore }));
+  const S1 = { header: S.header, plays: S.plays.slice(0, g1 + 1).concat(rest) };
+  const run = c => E.analyze(S1, { ...ctx, ...c }, { uptoT: 1200 }).hold1;
+  const h = run({ score: 24, favDefRank: 3, dogDefRank: 27 });
+  assert.strictEqual(h.lead, 1);
+  assert.strictEqual(h.level, 'strong');
+  assert.match(h.text, /84%/);
+  assert.match(h.text, /never a bet/);
+  assert.strictEqual(run({ score: 24, favDefRank: 12, dogDefRank: 27 }).level, 'meets');
+  assert.strictEqual(run({ score: 20, favDefRank: 3, dogDefRank: 27 }).level, 'none');
+  const unknown = run({});
+  assert.strictEqual(unknown.level, 'none');
+  assert.strictEqual(unknown.items[0].ok, null);
+  // the read itself is unchanged: a one-goal lead never becomes a bet
+  assert.notStrictEqual(E.analyze(S1, { ...ctx, score: 30, favDefRank: 1, dogDefRank: 32 }, { uptoT: 3100 }).decision.action, 'BET');
+});

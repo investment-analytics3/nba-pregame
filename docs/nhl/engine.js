@@ -8,6 +8,10 @@
  *   - under 5:00 and overtime: read only, no new bets
  *   - control = expected-goals share (and shot-attempt share) over the last 20 game minutes
  *   - run = 2+ unanswered goals; answer = the other team scores next
+ *   - end of the 1st, favorite up exactly one (owner Nov 13, information only, never a bet): the "1st-period hold
+ *     check" = pregame score 22+ AND (outshot the opponent in the 1st OR opponent defense xGA/60 ranked 23-32);
+ *     with a top-5 defense too = strong. Backtest 2024-26 (all moneyline favorites up 1 after the 1st, 569 games,
+ *     71% held): strong 84% (61 games), meets without a top-5 defense 74% (70), doesn't meet 69% (438)
  * Expected goals: a small model fitted on 2025-26 NHL shots (distance, angle, shot type, power play) applied to
  * ESPN's live shot coordinates (log loss 0.227 vs 0.218 for the full release model).
  *
@@ -25,6 +29,8 @@
   const CONTROL_WINDOW = 1200;                  // last 20 game minutes
   const XG = { c: -0.97679, dist: -0.06226, ldist: 0.19682, ang: -0.0157, tip: -0.92067, wrap: -1.06997, slap: 0.32029, back: -0.51162, pp: 0.22408 };
   const SHOTS = { 'Shot': 'sog', 'Goal': 'goal', 'Missed': 'miss', 'Blocked': 'block' };
+  const HOLD1 = { score: 22, weakDef: 23, topDef: 5,           // 1st-period hold check (backtest 2024-26, see header)
+                  strong: { pct: 84, n: 61 }, meets: { pct: 74, n: 70 }, none: { pct: 69, n: 438 }, up2: { pct: 95, n: 37 } };
 
   const secs = s => { const m = String(s || '0:00').split(':'); return (+m[0] || 0) * 60 + (+m[1] || 0); };
   const fmt = t => { t = Math.max(0, Math.round(t)); return `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`; };
@@ -231,6 +237,8 @@
       checklist = { items, passed, total: items.length, verdict, reasons: items.filter(i => i.ok === false).map(i => i.label) };
     }
 
+    const hold1 = favSide && S.nowT >= PLEN ? holdCheck(per[0], favSide, ctx, k, abbr) : null;
+
     const nextCheck = S.state !== 'in' ? '' : (S.period < 3 ? `End of the ${pName(S.period)}` : (S.period === 3 && S.remain > DECIDE_FROM ? '10:00 of the 3rd'
       : (S.period === 3 && S.remain >= DECIDE_TO ? 'Every minute until 5:00' : 'Final')));
     const date = ctx.date || '';
@@ -245,8 +253,33 @@
                                              winner: key === 'pen' ? (cw.away[key] < cw.home[key] ? 'away' : (cw.home[key] < cw.away[key] ? 'home' : null))
                                                : (cw.away[key] > cw.home[key] ? 'away' : (cw.home[key] > cw.away[key] ? 'home' : null)) })) },
       game, periods: per, goals: goals.map(g => ({ ...g, team: abbr(g.side) })), run, whoAnswered: answered,
-      momentum: { last5, pressure, side: abbr(other) }, price, readouts, checklist, next: nextCheck, logLine,
+      momentum: { last5, pressure, side: abbr(other) }, price, readouts, checklist, hold1, next: nextCheck, logLine,
     };
+  }
+
+  // end of the 1st, favorite up one: does the lead look like the ones that held? (information only, never a bet)
+  function holdCheck(p1, favSide, ctx, k, abbr) {
+    const fo = favSide === 'home' ? 'away' : 'home';
+    const lead = p1[favSide].goals - p1[fo].goals;
+    const kp = k && k[abbr(favSide)] != null ? k[abbr(favSide)] : null;
+    const base = { lead, fav: abbr(favSide), kalshi: kp };
+    if (lead >= 2) return { ...base, applies: false, level: 'up2', text: `Up ${lead} after the 1st: range favorites up 2+ won ${HOLD1.up2.pct}% in the backtest (${HOLD1.up2.n} games).` };
+    if (lead !== 1) return { ...base, applies: false, level: 'n/a', text: `${abbr(favSide)} ${lead === 0 ? 'tied' : 'trailing'} after the 1st: the hold check is for one-goal leads.` };
+    const has = v => v != null && v !== '';
+    const outshot = p1[favSide].sog > p1[fo].sog;
+    const items = [
+      { key: 'score', label: `Pregame score ${HOLD1.score}+`, ok: has(ctx.score) ? ctx.score >= HOLD1.score : null, detail: has(ctx.score) ? `${ctx.score}/40` : 'unknown' },
+      { key: 'outshot', label: `${abbr(favSide)} outshot ${abbr(fo)} in the 1st`, ok: outshot, detail: `shots ${p1[favSide].sog}-${p1[fo].sog}` },
+      { key: 'weakdef', label: `${abbr(fo)} defense ranked ${HOLD1.weakDef}-32 (xGA/60)`, ok: has(ctx.dogDefRank) ? ctx.dogDefRank >= HOLD1.weakDef : null, detail: has(ctx.dogDefRank) ? `#${ctx.dogDefRank}` : 'unknown' },
+      { key: 'topdef', label: `${abbr(favSide)} defense top ${HOLD1.topDef} (xGA/60)`, ok: has(ctx.favDefRank) ? ctx.favDefRank <= HOLD1.topDef : null, detail: has(ctx.favDefRank) ? `#${ctx.favDefRank}` : 'unknown' },
+    ];
+    const meets = items[0].ok === true && (items[1].ok === true || items[2].ok === true);
+    const level = meets && items[3].ok === true ? 'strong' : (meets ? 'meets' : 'none');
+    const bt = HOLD1[level];
+    const head = { strong: 'Strong', meets: 'Meets', none: "Doesn't meet" }[level];
+    const vs = kp != null ? ` Kalshi ${abbr(favSide)} ${Math.round(kp * 100)}¢ vs ${bt.pct}%.` : '';
+    return { ...base, applies: true, level, meets, items, outshot, backtest: bt,
+             text: `${head}: one-goal leads like this held ${bt.pct}% in the backtest (${bt.n} games).${vs} Information only, a one-goal lead is never a bet.` };
   }
 
   function trendText(t, H, A, cumulative) {
@@ -259,5 +292,5 @@
     return (cumulative ? 'Through two: ' : '') + bits.join('; ') + '.';
   }
 
-  return { analyze, toAmerican, xg, DECIDE_FROM, DECIDE_TO, MIN_LEAD };
+  return { analyze, toAmerican, xg, DECIDE_FROM, DECIDE_TO, MIN_LEAD, HOLD1 };
 });
