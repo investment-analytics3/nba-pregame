@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 11,
- "built_at": "2026-11-13T14:15:41-08:00",
- "built_label": "Fri Nov 13, 2:15 PM PT",
+ "built_at": "2026-11-13T15:15:36-08:00",
+ "built_label": "Fri Nov 13, 3:15 PM PT",
  "games": [
   {
    "id": "401858526",
@@ -262,7 +262,7 @@
    "open_spread": -20.5,
    "line_source": "Draft Kings",
    "total": 54.5,
-   "fav_ml": -550.0,
+   "fav_ml": -575.0,
    "movement": -7.0,
    "home": {
     "code": 2390,
@@ -1166,12 +1166,12 @@
    "venue": "FirstBank Stadium",
    "favorite": "away",
    "fav_home": false,
-   "spread": -14.5,
+   "spread": -14.0,
    "open_spread": -19.5,
    "line_source": "Draft Kings",
-   "total": 49.5,
+   "total": 47.5,
    "fav_ml": -700.0,
-   "movement": -5.0,
+   "movement": -5.5,
    "home": {
     "code": 238,
     "abbr": "VAN",
@@ -1365,9 +1365,9 @@
    "fav_defense_top25": false,
    "kalshi": {
     "event": "KXNCAAFGAME-26NOV14ALAVAN",
-    "fav_prob": 0.865,
-    "bid": 0.86,
-    "ask": 0.87
+    "fav_prob": 0.855,
+    "bid": 0.85,
+    "ask": 0.86
    }
   },
   {
@@ -1618,12 +1618,12 @@
    "venue": "Amon G. Carter Stadium",
    "favorite": "home",
    "fav_home": true,
-   "spread": -11.5,
+   "spread": -12.5,
    "open_spread": -9.5,
    "line_source": "Draft Kings",
    "total": 44.5,
    "fav_ml": -485.0,
-   "movement": 2.0,
+   "movement": 3.0,
    "home": {
     "code": 2628,
     "abbr": "TCU",
@@ -1815,9 +1815,9 @@
    "fav_defense_top25": false,
    "kalshi": {
     "event": "KXNCAAFGAME-26NOV14KSUTCU",
-    "fav_prob": 0.795,
-    "bid": 0.79,
-    "ask": 0.8
+    "fav_prob": 0.805,
+    "bid": 0.8,
+    "ask": 0.81
    },
    "readout": {
     "matchup": "KSU @ TCU",
@@ -3010,6 +3010,219 @@
    }
   },
   {
+   "id": "401858524",
+   "kick_utc": "2026-11-15T00:00:00+00:00",
+   "kick_pt": "Sat 4:00 PM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 7:00 PM EST",
+   "neutral": false,
+   "venue": "Beaver Stadium",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -10.5,
+   "open_spread": -7.0,
+   "line_source": "Draft Kings",
+   "total": 42.5,
+   "fav_ml": -410.0,
+   "movement": 3.5,
+   "home": {
+    "code": 213,
+    "abbr": "PSU",
+    "name": "Penn State",
+    "display": "Penn State Nittany Lions",
+    "season": {
+     "off_epa": 0.0753,
+     "off_sr": 0.4387,
+     "def_epa": -0.0361,
+     "def_sr": 0.417,
+     "games": 9,
+     "ranks": {
+      "off_epa": 64,
+      "off_sr": 84,
+      "def_epa": 42,
+      "def_sr": 51
+     }
+    },
+    "last3": {
+     "off_epa": 0.1048,
+     "off_sr": 0.4476,
+     "def_epa": 0.0046,
+     "def_sr": 0.4221,
+     "games": 3,
+     "ranks": {
+      "off_epa": 41,
+      "off_sr": 52,
+      "def_epa": 51,
+      "def_sr": 54
+     }
+    },
+    "net": 0.1115,
+    "net_rank": 44,
+    "record": "5-4",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "W",
+     "W"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Rocco Becht",
+     "dropbacks": 277,
+     "epa_db": 0.157,
+     "rank": 48
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 33,
+     "fpi": 30,
+     "own_net": 44
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.835
+   },
+   "away": {
+    "code": 135,
+    "abbr": "MINN",
+    "name": "Minnesota",
+    "display": "Minnesota Golden Gophers",
+    "season": {
+     "off_epa": -0.0743,
+     "off_sr": 0.3911,
+     "def_epa": -0.0428,
+     "def_sr": 0.4057,
+     "games": 9,
+     "ranks": {
+      "off_epa": 129,
+      "off_sr": 129,
+      "def_epa": 40,
+      "def_sr": 37
+     }
+    },
+    "last3": {
+     "off_epa": -0.1768,
+     "off_sr": 0.328,
+     "def_epa": 0.0121,
+     "def_sr": 0.4118,
+     "games": 3,
+     "ranks": {
+      "off_epa": 129,
+      "off_sr": 134,
+      "def_epa": 54,
+      "def_sr": 43
+     }
+    },
+    "net": -0.0315,
+    "net_rank": 98,
+    "record": "5-4",
+    "last2_results": [
+     "L",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "L",
+     "L"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Drake Lindsey",
+     "dropbacks": 304,
+     "epa_db": -0.015,
+     "rank": 104
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 80,
+     "fpi": 63,
+     "own_net": 98
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.165
+   },
+   "fav": 213,
+   "dog": 135,
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 19 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 PSU last-3 top 25 in 0 of 4 \u00b7 \u2717 MINN last-3 bottom 25 (114+) in 2 of 4 \u00b7 \u2717 PSU season outside 1-69: Off success #84 \u00b7 \u2713 MINN season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "MINN: consensus #80, ESPN FPI #63"
+     }
+    ],
+    "fails": [
+     "Watch list: score 19 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 19,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 0,
+      "dog_weakness": 12,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "call": "Watch list",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for PSU yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV14MINNPSU",
+    "fav_prob": 0.775,
+    "bid": 0.77,
+    "ask": 0.78
+   }
+  },
+  {
    "id": "401864538",
    "kick_utc": "2026-11-15T00:00:00+00:00",
    "kick_pt": "Sat 4:00 PM PT",
@@ -3023,7 +3236,7 @@
    "spread": -12.5,
    "open_spread": -10.5,
    "line_source": "Draft Kings",
-   "total": 47.5,
+   "total": 48.5,
    "fav_ml": -470.0,
    "movement": 2.0,
    "home": {
@@ -3943,8 +4156,8 @@
    "fav_defense_top25": true,
    "kalshi": {
     "event": "KXNCAAFGAME-26NOV14UNLVUNM",
-    "fav_prob": 0.85,
-    "bid": 0.84,
+    "fav_prob": 0.855,
+    "bid": 0.85,
     "ask": 0.86
    },
    "readout": {
@@ -4656,15 +4869,15 @@
  ],
  "data_through": "Week 11",
  "n_fbs": 138,
- "other_fbs_games": 42,
+ "other_fbs_games": 41,
  "summary": {
   "season": 2026,
   "week": 11,
-  "games": 20,
-  "upcoming": 17,
+  "games": 21,
+  "upcoming": 18,
   "qualified": 0,
-  "watch": 12,
-  "other_fbs_games": 42,
-  "built_label": "Fri Nov 13, 2:15 PM PT"
+  "watch": 13,
+  "other_fbs_games": 41,
+  "built_label": "Fri Nov 13, 3:15 PM PT"
  }
 }
