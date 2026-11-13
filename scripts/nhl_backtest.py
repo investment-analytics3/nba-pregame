@@ -114,6 +114,10 @@ def season(d: str, y: int) -> pd.DataFrame:
                "fav_price": (ph if fav_home else pa) if ok_ml else None,
                "fav_fair": ((ph if fav_home else pa) / (ph + pa)) if ok_ml else None,
                "ml_fav_is_fav": (((ph >= pa) == fav_home) if ok_ml else None)}
+        for side, t in (("fav", ft), ("dog", dt)):            # metric ranks as of the game day (season and last 5)
+            for w, tag in (("season", ""), ("last5", "_l5")):
+                for m in M.METRICS:
+                    row[f"{side}_{m}{tag}"] = ((t.get(w) or {}).get("ranks") or {}).get(m)
         if gid in lead.index:
             for k in MARKS:
                 row[f"{k}_lead"] = int(lead.loc[gid, k]) * (1 if fav_home else -1)
@@ -169,6 +173,26 @@ def stability(d: str, y: int) -> dict:
     return out
 
 
+def holds_by_defense(df: pd.DataFrame) -> dict:
+    """Owner Nov 13: does the favorite's team defense (5v5 xGA/60 rank, season, as of the game) help a lead hold?
+    Up 1 / up 2+ at the end of the 1st, end of the 2nd and 10:00 of the 3rd, by defense group."""
+    out = {}
+    groups = (("top 5", 1, 5), ("6-10", 6, 10), ("11-32", 11, 32))
+    for k in ("end1", "end2", "p3_10"):
+        col = f"{k}_lead"
+        if col not in df:
+            continue
+        c = {}
+        for lead_lab, lo, hi in (("up 1", 1, 1), ("up 2+", 2, 99)):
+            x = df[(df[col] >= lo) & (df[col] <= hi)]
+            for g_lab, a, b in groups:
+                y = x[(x["fav_xga60"] >= a) & (x["fav_xga60"] <= b)]
+                c[f"{lead_lab} · D {g_lab}"] = {"n": int(len(y)), "won": int(y["fav_won"].sum()),
+                                                "win": round(float(y["fav_won"].mean()), 3) if len(y) else None}
+        out[k] = c
+    return out
+
+
 def main(d: str) -> None:
     df = pd.concat([season(d, y) for y in SEASONS if os.path.exists(os.path.join(d, f"pbp_{y}.parquet"))], ignore_index=True)
     os.makedirs(OUT, exist_ok=True)
@@ -184,6 +208,8 @@ def main(d: str) -> None:
            "range_dog_b2b": {str(k): stat(rng[rng["dog_b2b"] == k]) for k in (True, False)},
            "range_by_month": {m: stat(g) for m, g in rng.assign(m=pd.to_datetime(rng["date"]).dt.strftime("%m")).groupby("m")},
            "holds_range": holds(rng), "holds_all_favorites": holds(df),
+           "holds_by_defense": {"range": holds_by_defense(rng), "qualified": holds_by_defense(rng[rng["tier"] == "qualified"]),
+                                "all_favorites": holds_by_defense(df)},
            "by_season": {str(y): {"range": stat(g[g["in_range"]]), "all": stat(g)} for y, g in df.groupby("season")},
            "rank_stability": {str(y): stability(d, y) for y in SEASONS if os.path.exists(os.path.join(d, f"pbp_{y}.parquet"))}}
     with open(os.path.join(OUT, "backtest.json"), "w") as f:
