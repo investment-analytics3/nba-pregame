@@ -1,0 +1,34 @@
+name: Hockey probe (developer)
+
+# Saves raw hockey source responses (ESPN, NHL, Kalshi) and the backtest odds history to the "dev-nhl-samples" branch
+# so the hockey parsers can be built against real data. Does not touch main.
+on:
+  workflow_dispatch:
+    inputs:
+      odds:
+        description: "Also pull two seasons of closing moneylines (slow, ~25 min)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/nhl_probe.py ${{ inputs.odds && '--odds' || '' }}
+      - name: Save samples to the dev-nhl-samples branch
+        run: |
+          cd samples/nhl
+          git init -q -b dev-nhl-samples
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Raw hockey source samples $(date -u +%FT%TZ)"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" dev-nhl-samples
