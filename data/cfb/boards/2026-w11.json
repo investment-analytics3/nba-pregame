@@ -1,221 +1,9 @@
 {
  "season": 2026,
  "week": 11,
- "built_at": "2026-11-12T21:00:36-08:00",
- "built_label": "Thu Nov 12, 9:00 PM PT",
+ "built_at": "2026-11-12T22:00:41-08:00",
+ "built_label": "Thu Nov 12, 10:00 PM PT",
  "games": [
-  {
-   "id": "401869969",
-   "kick_utc": "2026-11-13T02:00:00+00:00",
-   "kick_pt": "Thu 6:00 PM PT",
-   "day_et": "2026-11-12",
-   "state": "in",
-   "detail": "15:00 - 4th",
-   "neutral": false,
-   "venue": "Malone Stadium",
-   "favorite": "away",
-   "fav_home": false,
-   "spread": -10.0,
-   "open_spread": -10.5,
-   "line_source": "Draft Kings",
-   "total": 47.5,
-   "fav_ml": -395.0,
-   "movement": -0.5,
-   "home": {
-    "code": 2433,
-    "abbr": "ULM",
-    "name": "UL Monroe",
-    "display": "UL Monroe Warhawks",
-    "season": {
-     "off_epa": 0.0229,
-     "off_sr": 0.4418,
-     "def_epa": 0.1672,
-     "def_sr": 0.4515,
-     "games": 9,
-     "ranks": {
-      "off_epa": 95,
-      "off_sr": 77,
-      "def_epa": 126,
-      "def_sr": 99
-     }
-    },
-    "last3": {
-     "off_epa": -0.0059,
-     "off_sr": 0.4098,
-     "def_epa": -0.0164,
-     "def_sr": 0.3704,
-     "games": 3,
-     "ranks": {
-      "off_epa": 90,
-      "off_sr": 106,
-      "def_epa": 46,
-      "def_sr": 19
-     }
-    },
-    "net": -0.1443,
-    "net_rank": 129,
-    "record": "2-7",
-    "last2_results": [
-     "L",
-     "W"
-    ],
-    "last3_results": [
-     "W",
-     "L",
-     "W"
-    ],
-    "rest": 5,
-    "qb": {
-     "regular": "Aidan Armenta",
-     "dropbacks": 206,
-     "epa_db": 0.102,
-     "rank": 65
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 134,
-     "fpi": 136,
-     "own_net": 129
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.091
-   },
-   "away": {
-    "code": 309,
-    "abbr": "UL",
-    "name": "Louisiana",
-    "display": "Louisiana Ragin' Cajuns",
-    "season": {
-     "off_epa": 0.0644,
-     "off_sr": 0.4609,
-     "def_epa": -0.0181,
-     "def_sr": 0.4368,
-     "games": 9,
-     "ranks": {
-      "off_epa": 68,
-      "off_sr": 42,
-      "def_epa": 45,
-      "def_sr": 76
-     }
-    },
-    "last3": {
-     "off_epa": -0.0038,
-     "off_sr": 0.4571,
-     "def_epa": -0.0164,
-     "def_sr": 0.4286,
-     "games": 3,
-     "ranks": {
-      "off_epa": 88,
-      "off_sr": 43,
-      "def_epa": 45,
-      "def_sr": 60
-     }
-    },
-    "net": 0.0825,
-    "net_rank": 53,
-    "record": "6-3",
-    "last2_results": [
-     "L",
-     "W"
-    ],
-    "last3_results": [
-     "W",
-     "L",
-     "W"
-    ],
-    "rest": 5,
-    "qb": {
-     "regular": "Lunch Winfield",
-     "dropbacks": 227,
-     "epa_db": -0.008,
-     "rank": 102
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 70,
-     "fpi": 83,
-     "own_net": 53
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.909
-   },
-   "fav": 309,
-   "dog": 2433,
-   "scoring": {
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 13 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 UL last-3 top 25 in 0 of 4 \u00b7 \u2717 ULM last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2717 UL season outside 1-69: Def success allowed #76 \u00b7 \u2713 ULM season top 25 in none"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key player newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "No injury report (warning only; health assumed full)"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
-      "pass": true,
-      "detail": "ULM: consensus #134, ESPN FPI #136"
-     }
-    ],
-    "fails": [
-     "Score 13 (watch list from 18, qualifies at 28)"
-    ],
-    "hero": {
-     "score": 13,
-     "band": "red",
-     "parts": {
-      "fav_strength": 0,
-      "dog_weakness": 8,
-      "health": 4,
-      "home": 0,
-      "rest": 0,
-      "form": 1
-     },
-     "max": 40
-    },
-    "call": "No track",
-    "flags": [
-     {
-      "level": "yellow",
-      "text": "No injury report for UL yet: check before betting"
-     }
-    ]
-   },
-   "fav_defense_top25": false,
-   "locked_at": "2026-11-12T17:00:56-08:00",
-   "score": {
-    "home": 14,
-    "away": 28
-   }
-  },
   {
    "id": "401858526",
    "kick_utc": "2026-11-14T02:00:00+00:00",
@@ -4323,6 +4111,218 @@
     "home": 24,
     "away": 0
    }
+  },
+  {
+   "id": "401869969",
+   "kick_utc": "2026-11-13T02:00:00+00:00",
+   "kick_pt": "Thu 6:00 PM PT",
+   "day_et": "2026-11-12",
+   "state": "post",
+   "detail": "Final",
+   "neutral": false,
+   "venue": "Malone Stadium",
+   "favorite": "away",
+   "fav_home": false,
+   "spread": -10.0,
+   "open_spread": -10.5,
+   "line_source": "Draft Kings",
+   "total": 47.5,
+   "fav_ml": -395.0,
+   "movement": -0.5,
+   "home": {
+    "code": 2433,
+    "abbr": "ULM",
+    "name": "UL Monroe",
+    "display": "UL Monroe Warhawks",
+    "season": {
+     "off_epa": 0.0229,
+     "off_sr": 0.4418,
+     "def_epa": 0.1672,
+     "def_sr": 0.4515,
+     "games": 9,
+     "ranks": {
+      "off_epa": 95,
+      "off_sr": 77,
+      "def_epa": 126,
+      "def_sr": 99
+     }
+    },
+    "last3": {
+     "off_epa": -0.0059,
+     "off_sr": 0.4098,
+     "def_epa": -0.0164,
+     "def_sr": 0.3704,
+     "games": 3,
+     "ranks": {
+      "off_epa": 90,
+      "off_sr": 106,
+      "def_epa": 46,
+      "def_sr": 19
+     }
+    },
+    "net": -0.1443,
+    "net_rank": 129,
+    "record": "2-7",
+    "last2_results": [
+     "L",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "L",
+     "W"
+    ],
+    "rest": 5,
+    "qb": {
+     "regular": "Aidan Armenta",
+     "dropbacks": 206,
+     "epa_db": 0.102,
+     "rank": 65
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 134,
+     "fpi": 136,
+     "own_net": 129
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.091
+   },
+   "away": {
+    "code": 309,
+    "abbr": "UL",
+    "name": "Louisiana",
+    "display": "Louisiana Ragin' Cajuns",
+    "season": {
+     "off_epa": 0.0644,
+     "off_sr": 0.4609,
+     "def_epa": -0.0181,
+     "def_sr": 0.4368,
+     "games": 9,
+     "ranks": {
+      "off_epa": 68,
+      "off_sr": 42,
+      "def_epa": 45,
+      "def_sr": 76
+     }
+    },
+    "last3": {
+     "off_epa": -0.0038,
+     "off_sr": 0.4571,
+     "def_epa": -0.0164,
+     "def_sr": 0.4286,
+     "games": 3,
+     "ranks": {
+      "off_epa": 88,
+      "off_sr": 43,
+      "def_epa": 45,
+      "def_sr": 60
+     }
+    },
+    "net": 0.0825,
+    "net_rank": 53,
+    "record": "6-3",
+    "last2_results": [
+     "L",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "L",
+     "W"
+    ],
+    "rest": 5,
+    "qb": {
+     "regular": "Lunch Winfield",
+     "dropbacks": 227,
+     "epa_db": -0.008,
+     "rank": 102
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 70,
+     "fpi": 83,
+     "own_net": 53
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.909
+   },
+   "fav": 309,
+   "dog": 2433,
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 13 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 UL last-3 top 25 in 0 of 4 \u00b7 \u2717 ULM last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2717 UL season outside 1-69: Def success allowed #76 \u00b7 \u2713 ULM season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "ULM: consensus #134, ESPN FPI #136"
+     }
+    ],
+    "fails": [
+     "Score 13 (watch list from 18, qualifies at 28)"
+    ],
+    "hero": {
+     "score": 13,
+     "band": "red",
+     "parts": {
+      "fav_strength": 0,
+      "dog_weakness": 8,
+      "health": 4,
+      "home": 0,
+      "rest": 0,
+      "form": 1
+     },
+     "max": 40
+    },
+    "call": "No track",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for UL yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "locked_at": "2026-11-12T17:00:56-08:00",
+   "score": {
+    "home": 21,
+    "away": 42
+   }
   }
  ],
  "notes": [],
@@ -4341,6 +4341,6 @@
   "qualified": 0,
   "watch": 12,
   "other_fbs_games": 42,
-  "built_label": "Thu Nov 12, 9:00 PM PT"
+  "built_label": "Thu Nov 12, 10:00 PM PT"
  }
 }
