@@ -220,11 +220,16 @@ NHL rules (owner decisions Nov 12-13 2026; spec "NHL Board"):
   lean only, 10:00-5:00 DECISION window (BET needs a 2+ goal lead: range favorites up 2+ at 10:00 won 74 of 74; up 1 won
   94.5%), under 5:00 and OT read only. Pushes Qualified only: 3rd 10:00 + first BET. ESPN has no hockey
   win probability: the Kalshi price log is the only check of value.
-- 1st-period hold check (owner Nov 13, information only, never a bet, no push): favorite up exactly one after the 1st;
+- 1st-period hold check (owner Nov 13, information only, never a bet): favorite up exactly one after the 1st;
   meets = pregame score 22+ AND (outshot in the 1st OR dog xGA/60 rank 23-32); strong = meets + fav xGA/60 top 5.
   Backtest (all favorites up 1 after the 1st, 569 games, 71%): strong 84% (61), meets 74% (70), doesn't meet 69% (438).
   Engine `hold1` (Live page under the 1st-period readout); logger stores the level in `end1.hold1`; price log compares
   each level's record with the average Kalshi price. Context rows carry `fav_def_rank` / `dog_def_rank` (season xGA/60).
+  End of the 2nd (engine `hold2`): check met and lead still 1 or 2 held 89% (71; strong 90% of 31, meets 88% of 40); tied or
+  behind 47%; winning the 2nd's shots made no difference. Pushes (owner Nov 13, Qualified AND Watch list, `nhl_live.py`
+  `hold_alerts`, kinds `hold1`/`hold2`, never repeated): end of 1st when up 1 and meets/strong; end of 2nd when that check
+  met and the lead is 1 or 2. Each push: level, period shots, both defense ranks, control (xG share), Kalshi vs backtest.
+  Late checkpoints (logger started after the period ended) don't push.
 - Backtest 2024-26: 246 range games, favorite won 65% (priced 2025-26: 71% vs a 67% moneyline); score 22+ with regular goalie
   and rested 71% (94 games; priced 76% vs 69%, 33 games; re-run Nov 13 after the xGA/60 swap); small samples, review after a month.
 

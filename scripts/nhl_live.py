@@ -12,7 +12,11 @@ Each record holds the score, the favorite's lead, the favorite's REAL Kalshi pri
 only market check: the backtest (Nov 13) says top-7 favorites up 2+ at 10:00 of the 3rd won 74 of 74,
 the log shows what Kalshi charges for that. The final score is recorded too.
 
-Phone pushes: Qualified games only (Watch list = logged + Live page, no pushes), at most two per game,
+Hold-check pushes (owner Nov 13): Qualified AND Watch list games, information only (never a bet signal):
+    hold1  end of the 1st: favorite up exactly one and the 1st-period hold check meets or is strong (score 22+ and
+           outshot or opponent defense 23-32; strong adds a top-5 defense): shots, both defense ranks, control, Kalshi
+    hold2  end of the 2nd: the check met and the lead is still 1 or 2: 2nd-period shots, the same facts, Kalshi
+Phone pushes for the decision: Qualified games only (Watch list = logged + Live page, no pushes), at most two per game,
 never repeated across restarts:
     p3_10  10:00 of the 3rd: score, lead, Kalshi price, the engine's read and checklist
     bet    the first BET signal (3rd period 10:00-5:00, lead 2+) from the live engine (docs/nhl/engine.js)
@@ -202,9 +206,9 @@ def push_ok(g: dict) -> bool:
     return bool(g.get("alerts"))
 
 
-def alert(entry: dict, g: dict, kind: str, title: str, body: str, priority: str = "default") -> bool:
+def alert(entry: dict, g: dict, kind: str, title: str, body: str, priority: str = "default", ok: bool | None = None) -> bool:
     sent = entry.setdefault("alerts", {})
-    if kind in sent or not push_ok(g) or "--no-alert" in sys.argv:
+    if kind in sent or not (push_ok(g) if ok is None else ok) or "--no-alert" in sys.argv:
         return False
     try:
         notify.send_alert(title, body, click=f"{PAGES}nhl/game.html?g={g['id']}", priority=priority, tags="hockey")
@@ -229,6 +233,59 @@ def p3_alert(entry: dict, g: dict, rec: dict):
             + (f" Checklist {ck['verdict']}." if ck.get("verdict") else "")
             + (f" Read: {en['headline']} ({en.get('grade', '–')})." if en.get("headline") else ""))
     alert(entry, g, "p3_10", title, body, "high" if rec["lead"] >= 2 else "default")
+
+
+def _hold_facts(g: dict, en: dict, kind: str) -> str:
+    """Shots, both defense ranks and who controls play, for the hold-check pushes."""
+    fav, dog = g["fav_abbr"], g["dog_abbr"]
+    side, other = ("home", "away") if g["fav_home"] else ("away", "home")
+    ps = en.get("period_shots") or []
+    bits = []
+    if kind == "end1" and ps:
+        bits.append(f"1st-period shots {fav} {ps[0].get(side, 0)}-{ps[0].get(other, 0)} {dog}.")
+    elif kind == "end2" and len(ps) >= 2:
+        s2 = (ps[1].get(side, 0), ps[1].get(other, 0))
+        won = "won the 2nd" if s2[0] > s2[1] else ("lost the 2nd" if s2[0] < s2[1] else "even in the 2nd")
+        bits.append(f"2nd-period shots {fav} {s2[0]}-{s2[1]} {dog} ({fav} {won}); game {ps[0].get(side, 0) + s2[0]}-{ps[0].get(other, 0) + s2[1]}.")
+    bits.append(f"{dog} defense #{g.get('dog_def_rank') or '?'}, {fav} #{g.get('fav_def_rank') or '?'} (xGA/60).")
+    if en.get("control"):
+        bits.append(f"{en['control']} controls play ({en['xg_share']}% of xG, last 20 min)." if en["control"] == en.get("focus")
+                    else f"{en['control']} controls play.")
+    else:
+        bits.append("Even play by expected goals.")
+    return " ".join(bits)
+
+
+def hold_alerts(entry: dict, g: dict, rec: dict, kind: str):
+    """1st-period hold check pushes (owner Nov 13), Qualified + Watch list, information only:
+    end1 = favorite up exactly one and the check meets or is strong; end2 = the check met and the lead is still 1 or 2."""
+    en = rec.get("engine") or {}
+    h1 = en.get("hold1") or {}
+    if rec.get("late") or not h1.get("meets"):
+        return
+    k = (rec.get("kalshi") or {}).get("prob")
+    fav = g["fav_abbr"]
+    level = {"strong": "strong", "meets": "meets"}.get(h1.get("level"), "meets")
+    tier = "Qualified" if g.get("tier") == "qualified" else "Watch list"
+    if kind == "end1" and h1.get("lead") == 1:
+        bt = h1.get("backtest") or {}
+        title = f"NHL hold check ({level}): {rec['score']} after the 1st"
+        body = (f"{fav} up 1 · {level} · {tier}, pregame score {g.get('score')}. " + _hold_facts(g, en, "end1")
+                + (f" Kalshi {fav} {round(k * 100)}¢ vs {bt.get('pct')}% backtest ({bt.get('n')} games)." if k else
+                   f" Backtest held {bt.get('pct')}% ({bt.get('n')} games); no Kalshi price.")
+                + " Information only, not a bet.")
+        alert(entry, g, "hold1", title, body, ok=bool(g.get("tracked")))
+    elif kind == "end2":
+        h2 = en.get("hold2") or {}
+        if not h2.get("holds"):
+            return
+        bt = h2.get("backtest") or {}
+        title = f"NHL hold check, still holding: {rec['score']} after two"
+        body = (f"{fav} up {h2['lead']} ({level} after the 1st). " + _hold_facts(g, en, "end2")
+                + (f" Kalshi {fav} {round(k * 100)}¢ vs {bt.get('pct')}% backtest ({bt.get('n')} games)." if k else
+                   f" Backtest held {bt.get('pct')}% ({bt.get('n')} games); no Kalshi price.")
+                + " Information only, not a bet.")
+        alert(entry, g, "hold2", title, body, ok=bool(g.get("tracked")))
 
 
 def bet_check(entry: dict, g: dict, ev: dict) -> bool:
@@ -334,6 +391,8 @@ def main() -> int:
                 r = entry[kind]
                 print(f"{datetime.now(PT):%-I:%M %p} {g['away_abbr']}@{g['home_abbr']} {kind}{' (late)' if late else ''}: "
                       f"{r['score']} lead {r['lead']} kalshi {(r.get('kalshi') or {}).get('prob')}")
+                if kind in ("end1", "end2"):
+                    hold_alerts(entry, g, r, kind)
                 if kind == "p3_10" and not (late and ((ev.get("period") or 0) > 3 or (_secs(ev.get("clock")) or 0) < 420)):
                     p3_alert(entry, g, r)                    # skip a stale push
             if ev["state"] == "in" and bet_check(entry, g, ev):

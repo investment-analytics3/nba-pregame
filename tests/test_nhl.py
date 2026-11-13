@@ -176,3 +176,53 @@ class Checkpoints(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class HoldPushes(unittest.TestCase):
+    def setUp(self):
+        import scripts.nhl_live as L
+        self.L = L
+        self.sent = []
+        self._orig = L.notify.send_alert
+        L.notify.send_alert = lambda title, body, **kw: self.sent.append((title, body))
+        self._argv = list(L.sys.argv)
+        L.sys.argv[:] = ["x"]
+        self.g = {"id": "1", "fav_abbr": "CAR", "dog_abbr": "SEA", "fav_home": False, "tier": "watch", "tracked": True,
+                  "alerts": False, "score": 24, "fav_def_rank": 4, "dog_def_rank": 26}
+
+    def tearDown(self):
+        self.L.notify.send_alert = self._orig
+        self.L.sys.argv[:] = self._argv
+
+    def rec(self, **en):
+        base = {"period_shots": [{"away": 14, "home": 6}, {"away": 10, "home": 7}], "control": "CAR", "focus": "CAR", "xg_share": 65,
+                "hold1": {"meets": True, "level": "strong", "lead": 1, "backtest": {"pct": 84, "n": 61}}}
+        base.update(en)
+        return {"late": False, "score": "CAR 1 - SEA 0", "lead": 1, "kalshi": {"prob": 0.78}, "engine": base}
+
+    def test_end1_push_includes_watch_list_and_facts(self):
+        entry = {}
+        self.L.hold_alerts(entry, self.g, self.rec(), "end1")
+        self.assertEqual(len(self.sent), 1)
+        title, body = self.sent[0]
+        self.assertIn("strong", title)
+        for bit in ("1st-period shots CAR 14-6 SEA", "SEA defense #26", "CAR #4", "65% of xG", "78¢ vs 84%", "not a bet"):
+            self.assertIn(bit, body)
+        self.L.hold_alerts(entry, self.g, self.rec(), "end1")      # never twice
+        self.assertEqual(len(self.sent), 1)
+
+    def test_no_push_when_check_not_met_late_or_untracked(self):
+        self.L.hold_alerts({}, self.g, self.rec(hold1={"meets": False, "level": "none", "lead": 1}), "end1")
+        r = self.rec(); r["late"] = True
+        self.L.hold_alerts({}, self.g, r, "end1")
+        self.L.hold_alerts({}, {**self.g, "tracked": False}, self.rec(), "end1")
+        self.L.hold_alerts({}, self.g, self.rec(hold1={"meets": True, "level": "meets", "lead": 2}), "end1")
+        self.assertEqual(self.sent, [])
+
+    def test_end2_push_only_while_lead_is_1_or_2(self):
+        h2 = {"lead": 2, "holds": True, "backtest": {"pct": 90, "n": 31}, "shots2": [10, 7], "won2": "CAR won the 2nd's shots"}
+        self.L.hold_alerts({}, self.g, self.rec(hold2=h2), "end2")
+        self.assertEqual(len(self.sent), 1)
+        self.assertIn("2nd-period shots CAR 10-7 SEA (CAR won the 2nd); game 24-13", self.sent[0][1])
+        self.L.hold_alerts({}, self.g, self.rec(hold2={**h2, "lead": 0, "holds": False}), "end2")
+        self.assertEqual(len(self.sent), 1)

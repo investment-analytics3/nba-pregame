@@ -82,3 +82,20 @@ test('1st-period hold check: one-goal leads only, information only', () => {
   // the read itself is unchanged: a one-goal lead never becomes a bet
   assert.notStrictEqual(E.analyze(S1, { ...ctx, score: 30, favDefRank: 1, dogDefRank: 32 }, { uptoT: 3100 }).decision.action, 'BET');
 });
+
+test('hold check after two: met check, lead still 1 or 2', () => {
+  assert.strictEqual(at(2400).hold2, null);                     // CAR led 2-0 after one: check didn't apply
+  const g1 = S.plays.findIndex(p => p.type.text === 'Goal');
+  const g = S.plays[g1];
+  const rest = S.plays.slice(g1 + 1).filter(p => p.type.text !== 'Goal').map(p => ({ ...p, awayScore: g.awayScore, homeScore: g.homeScore }));
+  const S1 = { header: S.header, plays: S.plays.slice(0, g1 + 1).concat(rest) };
+  const c = { ...ctx, score: 24, favDefRank: 3, dogDefRank: 27 };
+  assert.strictEqual(E.analyze(S1, c, { uptoT: 1200 }).hold2, null);   // not before the end of the 2nd
+  const h = E.analyze(S1, c, { uptoT: 2400 }).hold2;
+  assert.strictEqual(h.lead, 1);
+  assert.strictEqual(h.holds, true);
+  assert.strictEqual(h.backtest.pct, 90);
+  assert.strictEqual(h.shots2.length, 2);
+  assert.match(h.text, /Still holding/);
+  assert.strictEqual(E.analyze(S1, { ...c, score: 18 }, { uptoT: 2400 }).hold2, null);   // check not met: no follow-up
+});
