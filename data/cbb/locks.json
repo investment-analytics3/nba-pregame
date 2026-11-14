@@ -7097,7 +7097,7 @@
    "tip_pt": "1:00 PM PT",
    "day_et": "2026-11-14",
    "state": "in",
-   "detail": "0:06 - 1st",
+   "detail": "Halftime",
    "neutral": false,
    "venue": "Calihan Hall",
    "favorite": "away",
@@ -7583,7 +7583,7 @@
    "tip_pt": "1:00 PM PT",
    "day_et": "2026-11-14",
    "state": "in",
-   "detail": "1:58 - 1st",
+   "detail": "Halftime",
    "neutral": false,
    "venue": "McCamish Pavilion",
    "favorite": "home",
@@ -8071,8 +8071,8 @@
    },
    "locked_at": "2026-11-14T12:00:42-08:00",
    "score": {
-    "home": 23,
-    "away": 29
+    "home": 25,
+    "away": 32
    }
   }
  },
@@ -8085,7 +8085,7 @@
    "tip_pt": "1:00 PM PT",
    "day_et": "2026-11-14",
    "state": "in",
-   "detail": "0:50 - 1st",
+   "detail": "Halftime",
    "neutral": false,
    "venue": "Williams Arena at Minges Coliseum",
    "favorite": "home",
@@ -8576,7 +8576,7 @@
    },
    "locked_at": "2026-11-14T12:00:42-08:00",
    "score": {
-    "home": 31,
+    "home": 33,
     "away": 21
    }
   }
@@ -8590,7 +8590,7 @@
    "tip_pt": "1:00 PM PT",
    "day_et": "2026-11-14",
    "state": "in",
-   "detail": "0:21 - 1st",
+   "detail": "Halftime",
    "neutral": false,
    "venue": "Reilly Center",
    "favorite": "home",
@@ -9101,7 +9101,7 @@
    },
    "score": {
     "home": 35,
-    "away": 26
+    "away": 29
    }
   }
  },
@@ -9114,7 +9114,7 @@
    "tip_pt": "1:00 PM PT",
    "day_et": "2026-11-14",
    "state": "in",
-   "detail": "3:34 - 1st",
+   "detail": "Halftime",
    "neutral": false,
    "venue": "LJVM Coliseum",
    "favorite": "home",
@@ -9605,8 +9605,8 @@
    },
    "locked_at": "2026-11-14T12:00:42-08:00",
    "score": {
-    "home": 37,
-    "away": 25
+    "home": 46,
+    "away": 28
    }
   }
  },
@@ -10112,6 +10112,507 @@
     "home": 0,
     "away": 0
    }
+  }
+ },
+ "401909534": {
+  "at": "2026-11-14T14:00:43-08:00",
+  "day": "2026-11-14",
+  "game": {
+   "id": "401909534",
+   "tip_utc": "2026-11-14T23:00:00+00:00",
+   "tip_pt": "3:00 PM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 6:00 PM EST",
+   "neutral": false,
+   "venue": "Amica Mutual Pavilion",
+   "favorite": "home",
+   "spread": {
+    "spread": 11.5,
+    "details": "PROV -11.5",
+    "provider": "DraftKings",
+    "ml_home": -675,
+    "ml_away": 490
+   },
+   "home": {
+    "id": "2507",
+    "abbr": "PROV",
+    "name": "Providence",
+    "display": "Providence Friars",
+    "mascot": "Friars",
+    "record": "2-1",
+    "l3_record": "2-1",
+    "games": 3,
+    "season": {
+     "efg": 48.18,
+     "opp_efg": 47.48,
+     "off": 102.77,
+     "def": 83.53,
+     "net": 19.24,
+     "poss_per_game": 71.0,
+     "ranks": {
+      "efg": 231,
+      "off": 206,
+      "opp_efg": 106,
+      "def": 19,
+      "net": 79
+     }
+    },
+    "last3": {
+     "efg": 48.18,
+     "opp_efg": 47.48,
+     "off": 102.77,
+     "def": 83.53,
+     "net": 19.24,
+     "poss_per_game": 71.0,
+     "ranks": {
+      "efg": 231,
+      "off": 211,
+      "opp_efg": 107,
+      "def": 16,
+      "net": 81
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401909533,
+      "date": "2026-11-10",
+      "site": "home",
+      "opp_id": 2803,
+      "opp": "BRY",
+      "d1_opp": true,
+      "pts": 78,
+      "opp_pts": 55,
+      "metrics": {
+       "efg": 54.84,
+       "opp_efg": 47.87,
+       "off": 106.98,
+       "def": 75.43,
+       "net": 31.54
+      },
+      "opp_power_rank": 299
+     },
+     {
+      "game_id": 401909532,
+      "date": "2026-11-07",
+      "site": "away",
+      "opp_id": 158,
+      "opp": "NEB",
+      "d1_opp": true,
+      "pts": 58,
+      "opp_pts": 67,
+      "metrics": {
+       "efg": 36.29,
+       "opp_efg": 50.0,
+       "off": 82.83,
+       "def": 95.68,
+       "net": -12.85
+      },
+      "opp_power_rank": 13
+     },
+     {
+      "game_id": 401909531,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 311,
+      "opp": "ME",
+      "d1_opp": true,
+      "pts": 83,
+      "opp_pts": 56,
+      "metrics": {
+       "efg": 52.94,
+       "opp_efg": 44.19,
+       "off": 118.3,
+       "def": 79.81,
+       "net": 38.48
+      },
+      "opp_power_rank": 282
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-11.5",
+    "b2b": false,
+    "power": {
+     "rank": 68,
+     "bpi": 56,
+     "own_net": 79
+    },
+    "key_players": [
+     "Gavin Hightower",
+     "Malik Mack",
+     "Miles Byrd",
+     "Jacob Bannarbie",
+     "Devin Vanterpool",
+     "Ryan Mela",
+     "Leonardo Marangon"
+    ],
+    "top_scorers": [
+     {
+      "name": "Devin Vanterpool",
+      "ppg": 16.0
+     },
+     {
+      "name": "Malik Mack",
+      "ppg": 13.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "38",
+    "abbr": "COLO",
+    "name": "Colorado",
+    "display": "Colorado Buffaloes",
+    "mascot": "Buffaloes",
+    "record": "2-1",
+    "l3_record": "2-1",
+    "games": 3,
+    "season": {
+     "efg": 59.04,
+     "opp_efg": 48.54,
+     "off": 112.44,
+     "def": 97.63,
+     "net": 14.81,
+     "poss_per_game": 72.0,
+     "ranks": {
+      "efg": 39,
+      "off": 117,
+      "opp_efg": 135,
+      "def": 90,
+      "net": 96
+     }
+    },
+    "last3": {
+     "efg": 59.04,
+     "opp_efg": 48.54,
+     "off": 112.44,
+     "def": 97.63,
+     "net": 14.81,
+     "poss_per_game": 72.0,
+     "ranks": {
+      "efg": 37,
+      "off": 114,
+      "opp_efg": 138,
+      "def": 85,
+      "net": 95
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401909761,
+      "date": "2026-11-10",
+      "site": "home",
+      "opp_id": 301,
+      "opp": "USD",
+      "d1_opp": true,
+      "pts": 83,
+      "opp_pts": 75,
+      "metrics": {
+       "efg": 63.73,
+       "opp_efg": 47.76,
+       "off": 114.44,
+       "def": 103.41,
+       "net": 11.03
+      },
+      "opp_power_rank": 165
+     },
+     {
+      "game_id": 401909760,
+      "date": "2026-11-07",
+      "site": "home",
+      "opp_id": 21,
+      "opp": "SDSU",
+      "d1_opp": true,
+      "pts": 66,
+      "opp_pts": 77,
+      "metrics": {
+       "efg": 44.74,
+       "opp_efg": 57.45,
+       "off": 88.83,
+       "def": 103.63,
+       "net": -14.8
+      },
+      "opp_power_rank": 72
+     },
+     {
+      "game_id": 401909759,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 2000,
+      "opp": "ACU",
+      "d1_opp": true,
+      "pts": 94,
+      "opp_pts": 59,
+      "metrics": {
+       "efg": 68.97,
+       "opp_efg": 42.11,
+       "off": 135.67,
+       "def": 85.15,
+       "net": 50.51
+      },
+      "opp_power_rank": 291
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+11.5",
+    "b2b": false,
+    "power": {
+     "rank": 84,
+     "bpi": 80,
+     "own_net": 96
+    },
+    "key_players": [
+     "Barrington Hargress",
+     "Noah Feddersen",
+     "Ian Inman",
+     "Josiah Sanders",
+     "Alex Dickeson",
+     "Jalin Holland"
+    ],
+    "top_scorers": [
+     {
+      "name": "Barrington Hargress",
+      "ppg": 20.0
+     },
+     {
+      "name": "Ian Inman",
+      "ppg": 13.7
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "PROV",
+    "dog": "COLO",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 14 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 PROV last-3 top 50 in 1 of 4 \u00b7 \u2717 COLO last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2717 PROV season outside 1-182: eFG% #231, Off Eff #206 \u00b7 \u2717 COLO season top 50: eFG% #39"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "COLO: consensus #84, BPI #80, our net #96"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 14 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for PROV: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 14,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 4,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 6,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "PROV",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 231,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 206,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 106,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 19,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "PROV",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 231,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 211,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 107,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 16,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "COLO",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 135,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 90,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 39,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 117,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "COLO",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 138,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 85,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 37,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 114,
+        "color": "yellow"
+       }
+      ]
+     }
+    ]
+   },
+   "summary": "No track: score 14 (watch list from 18, qualifies at 28). PROV 2-1 in its last 3, COLO 2-1. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV14COLOPROV",
+    "fav_prob": 0.855,
+    "bid": 0.85,
+    "ask": 0.86
+   },
+   "locked_at": "2026-11-14T14:00:43-08:00"
   }
  }
 }
