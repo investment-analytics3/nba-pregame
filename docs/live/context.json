@@ -1,99 +1,190 @@
 {
- "date": "2026-11-13",
- "built_at": "2026-11-13T17:30:28-05:00",
+ "date": "2026-11-14",
+ "built_at": "2026-11-14T01:00:31-05:00",
  "games": [
   {
-   "id": "401909301",
+   "id": "401909980",
    "fav_defense": {
     "season": {
      "opp_efg": {
-      "v": 52.25,
-      "r": 10
+      "v": 54.26,
+      "r": 18
      },
      "def": {
-      "v": 106.73,
-      "r": 7
+      "v": 113.27,
+      "r": 22
      }
     },
     "last3": {
      "opp_efg": {
-      "v": 51.76,
-      "r": 6
+      "v": 53.87,
+      "r": 16
      },
      "def": {
-      "v": 105.72,
-      "r": 5
+      "v": 111.64,
+      "r": 16
      }
     }
    },
    "fav_b2b": false,
-   "tip_utc": "2026-11-14T01:30Z",
-   "tip_pt": "5:30 PM PT",
-   "fav": "HOU",
-   "dog": "UTAH",
+   "tip_utc": "2026-11-15T00:00Z",
+   "tip_pt": "4:00 PM PT",
+   "fav": "DEN",
+   "dog": "NO",
+   "qualifiers": [],
+   "tier": "watch",
+   "route": "",
+   "score": 18,
+   "band": "yellow",
+   "spread": "DEN -10.5",
+   "away": {
+    "id": "7",
+    "abbr": "DEN",
+    "name": "Nuggets",
+    "display": "Denver Nuggets",
+    "record": "6-4"
+   },
+   "home": {
+    "id": "3",
+    "abbr": "NO",
+    "name": "Pelicans",
+    "display": "New Orleans Pelicans",
+    "record": "4-9"
+   }
+  },
+  {
+   "id": "401909983",
+   "fav_defense": {
+    "season": {
+     "opp_efg": {
+      "v": 51.81,
+      "r": 9
+     },
+     "def": {
+      "v": 108.0,
+      "r": 9
+     }
+    },
+    "last3": {
+     "opp_efg": {
+      "v": 51.46,
+      "r": 7
+     },
+     "def": {
+      "v": 110.81,
+      "r": 11
+     }
+    }
+   },
+   "fav_b2b": true,
+   "tip_utc": "2026-11-15T01:00Z",
+   "tip_pt": "5:00 PM PT",
+   "fav": "MEM",
+   "dog": "BKN",
    "qualifiers": [
-    "Opp eFG%",
-    "Def Eff"
+    "eFG%",
+    "Off Eff",
+    "Opp eFG%"
    ],
    "tier": "watch",
    "route": "",
-   "score": 25,
+   "score": 18,
    "band": "yellow",
-   "spread": "HOU -15.5",
+   "spread": "MEM -5.5",
    "away": {
-    "id": "26",
-    "abbr": "UTAH",
-    "name": "Jazz",
-    "display": "Utah Jazz",
-    "record": "1-11"
+    "id": "17",
+    "abbr": "BKN",
+    "name": "Nets",
+    "display": "Brooklyn Nets",
+    "record": "3-8"
    },
    "home": {
-    "id": "10",
-    "abbr": "HOU",
-    "name": "Rockets",
-    "display": "Houston Rockets",
-    "record": "9-3"
+    "id": "29",
+    "abbr": "MEM",
+    "name": "Grizzlies",
+    "display": "Memphis Grizzlies",
+    "record": "8-4"
    }
   }
  ],
  "closers": {
-  "HOU": {
+  "MEM": {
    "closers": [
-    "Kevin Durant",
-    "Alperen Sengun"
+    "Ty Jerome",
+    "Cameron Boozer"
    ],
    "elite": [],
    "source": "draft",
    "season": {
-    "Kevin Durant": {
-     "ppm": 0.609,
-     "ppg": 20.9,
-     "gp": 12
+    "Ty Jerome": {
+     "ppm": 0.828,
+     "ppg": 25.4,
+     "gp": 11
     },
-    "Alperen Sengun": {
-     "ppm": 0.603,
-     "ppg": 21.1,
-     "gp": 10
+    "Cameron Boozer": {
+     "ppm": 0.493,
+     "ppg": 15.6,
+     "gp": 12
     }
    }
   },
-  "UTAH": {
+  "BKN": {
    "closers": [
-    "Keyonte George",
-    "Darryn Peterson"
+    "Julius Randle",
+    "Mikel Brown Jr."
    ],
    "elite": [],
    "source": "draft",
    "season": {
-    "Keyonte George": {
-     "ppm": 0.633,
-     "ppg": 20.4,
+    "Julius Randle": {
+     "ppm": 0.598,
+     "ppg": 19.7,
      "gp": 11
     },
-    "Darryn Peterson": {
-     "ppm": 0.526,
-     "ppg": 16.2,
+    "Mikel Brown Jr.": {
+     "ppm": 0.552,
+     "ppg": 12.9,
+     "gp": 7
+    }
+   }
+  },
+  "NO": {
+   "closers": [
+    "Zion Williamson",
+    "Jeremiah Fears"
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "Zion Williamson": {
+     "ppm": 0.662,
+     "ppg": 21.8,
      "gp": 12
+    },
+    "Jeremiah Fears": {
+     "ppm": 0.529,
+     "ppg": 15.5,
+     "gp": 13
+    }
+   }
+  },
+  "DEN": {
+   "closers": [
+    "Jamal Murray",
+    "Nikola Jokic"
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "Jamal Murray": {
+     "ppm": 0.722,
+     "ppg": 26.2,
+     "gp": 10
+    },
+    "Nikola Jokic": {
+     "ppm": 0.647,
+     "ppg": 23.5,
+     "gp": 10
     }
    }
   }
@@ -101,67 +192,67 @@
  "league": {
   "opp_efg": [
    49.25,
-   49.63,
+   50.0,
+   50.34,
    50.36,
    50.49,
-   50.99,
-   51.12,
-   51.39,
+   51.05,
+   51.17,
    51.63,
-   52.24,
-   52.25,
+   51.81,
    52.29,
-   52.29,
-   52.32,
-   52.98,
+   52.41,
+   52.42,
+   52.75,
+   52.88,
    53.1,
-   53.14,
-   54.24,
+   53.36,
+   54.18,
    54.26,
    54.26,
+   54.54,
    54.58,
    54.76,
-   54.99,
-   55.32,
+   55.59,
    55.59,
    55.61,
-   56.5,
-   57.07,
-   57.08,
-   57.18,
-   57.85
+   55.73,
+   56.64,
+   57.17,
+   57.32,
+   57.97
   ],
   "def": [
    101.96,
+   103.97,
    104.08,
    105.0,
-   105.14,
-   105.37,
-   105.64,
-   106.73,
+   105.13,
+   105.63,
    107.38,
-   108.61,
-   109.21,
+   107.75,
+   108.0,
+   109.26,
    109.35,
-   109.59,
-   110.0,
+   109.69,
    110.05,
-   110.95,
+   110.13,
+   110.15,
+   110.99,
    111.03,
    111.24,
-   111.25,
    111.82,
-   112.0,
    112.36,
-   113.15,
+   112.87,
    113.27,
-   113.34,
-   114.1,
+   113.76,
+   113.79,
+   114.36,
    114.62,
-   117.27,
-   117.43,
-   119.12,
-   120.98
+   117.36,
+   118.26,
+   118.43,
+   118.85
   ]
  },
  "fav10": {
