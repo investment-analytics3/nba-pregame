@@ -1382,5 +1382,513 @@
     "away": 0
    }
   }
+ },
+ "401858297": {
+  "at": "2026-11-14T08:30:42-08:00",
+  "week": 11,
+  "game": {
+   "id": "401858297",
+   "kick_utc": "2026-11-14T17:30:00+00:00",
+   "kick_pt": "Sat 9:30 AM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 12:30 PM EST",
+   "neutral": false,
+   "venue": "Memorial Stadium (Clemson, SC)",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -15.5,
+   "open_spread": -13.5,
+   "line_source": "DraftKings",
+   "total": 47.5,
+   "fav_ml": -675.0,
+   "movement": 2.0,
+   "home": {
+    "code": 228,
+    "abbr": "CLEM",
+    "name": "Clemson",
+    "display": "Clemson Tigers",
+    "season": {
+     "off_epa": -0.1012,
+     "off_sr": 0.3937,
+     "def_epa": -0.0982,
+     "def_sr": 0.3977,
+     "games": 9,
+     "ranks": {
+      "off_epa": 132,
+      "off_sr": 126,
+      "def_epa": 17,
+      "def_sr": 27
+     }
+    },
+    "last3": {
+     "off_epa": -0.0707,
+     "off_sr": 0.3641,
+     "def_epa": -0.1124,
+     "def_sr": 0.3793,
+     "games": 3,
+     "ranks": {
+      "off_epa": 113,
+      "off_sr": 126,
+      "def_epa": 21,
+      "def_sr": 23
+     }
+    },
+    "net": -0.0031,
+    "net_rank": 86,
+    "record": "6-3",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "W",
+     "W"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Tait Reynolds",
+     "dropbacks": 268,
+     "epa_db": -0.177,
+     "rank": 128
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 66,
+     "fpi": 45,
+     "own_net": 86
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.842
+   },
+   "away": {
+    "code": 59,
+    "abbr": "GT",
+    "name": "Georgia Tech",
+    "display": "Georgia Tech Yellow Jackets",
+    "season": {
+     "off_epa": -0.0225,
+     "off_sr": 0.4425,
+     "def_epa": 0.1348,
+     "def_sr": 0.4434,
+     "games": 9,
+     "ranks": {
+      "off_epa": 113,
+      "off_sr": 75,
+      "def_epa": 116,
+      "def_sr": 82
+     }
+    },
+    "last3": {
+     "off_epa": -0.2206,
+     "off_sr": 0.3692,
+     "def_epa": 0.1244,
+     "def_sr": 0.4787,
+     "games": 3,
+     "ranks": {
+      "off_epa": 133,
+      "off_sr": 124,
+      "def_epa": 100,
+      "def_sr": 110
+     }
+    },
+    "net": -0.1573,
+    "net_rank": 131,
+    "record": "2-7",
+    "last2_results": [
+     "L",
+     "L"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "L"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Alberto Mendoza",
+     "dropbacks": 287,
+     "epa_db": 0.006,
+     "rank": 95
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 114,
+     "fpi": 88,
+     "own_net": 131
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.158
+   },
+   "fav": 228,
+   "dog": 59,
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 21 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 CLEM last-3 top 25 in 2 of 4 \u00b7 \u2717 GT last-3 bottom 25 (114+) in 2 of 4 \u00b7 \u2717 CLEM season outside 1-69: Off EPA/play #132, Off success #126 \u00b7 \u2713 GT season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "GT: consensus #114, ESPN FPI #88"
+     }
+    ],
+    "fails": [
+     "Watch list: score 21 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 21,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 3,
+      "dog_weakness": 11,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "call": "Watch list",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for CLEM yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV14GTCLEM",
+    "fav_prob": 0.855,
+    "bid": 0.85,
+    "ask": 0.86
+   },
+   "locked_at": "2026-11-14T08:30:42-08:00",
+   "readout": {
+    "matchup": "GT @ CLEM",
+    "summary": "Every source picks Clemson (6-3) at home over Georgia Tech (2-7), which has lost four straight and lists 19 players out. Clemson is short too: WR Tyler Brown and RB Gideon Davidson were ruled out Friday, leaving it without four offensive starters. Spread split: Doc's Sports and Pick Dawgz lay the points; Athlon takes Georgia Tech.",
+    "pick": "Clemson to win (all sources); spread split: Doc's Sports and Pick Dawgz CLEM -13.5; Athlon GT +14; Bang the Book moneyline only",
+    "predicted_score": "Clemson 31-17 (Dimers model); Clemson 31-20 (Athlon, Nov 14)",
+    "moneyline": "CLEM -575 / GT +425 (DraftKings via Bang the Book, Nov 13); CLEM -621 / GT +440 (Athlon, lines as of Nov 12, book not named)",
+    "win_probability": "Clemson 85.5% (Dimers, updated Nov 13)",
+    "injuries": "Clemson (final ACC report Friday Nov 13, ClutchPoints): WR Tyler Brown out (ankle), RB Gideon Davidson out (ankle); OL Elyjah Thurmon and OL Harris Sewell out; also out CB Donovan Starr, CB Corian Gipson, S Polo Anderson, CB Shavar Young Jr., WR Cole Turner, RB David Eziomume, OL Mason Wade, OL Braden Wilmes, DT Markus Strong (ACC report Thu Nov 12). WR Gordon Sellars III off the report. Georgia Tech (Thu Nov 12): 19 out incl. RB Malachi Hosley, DE Jordan Boyd, LB Kyle Efford, four OL; WR Rahkeem Smith, RB Shane Marshall, TE Kevin Roche Jr. questionable",
+    "sources": [
+     {
+      "site": "Doc's Sports",
+      "url": "https://www.docsports.com/free-picks/football/2026/georgia-tech-yellow-jackets-vs-clemson-tigers-prediction-11-14-2026-college-football-picks-best-bets-odds.html"
+     },
+     {
+      "site": "Pick Dawgz",
+      "url": "https://pickdawgz.com/college-football-picks/georgia-tech-vs-clemson-prediction-11-14-2026-todays-college-football-picks/"
+     },
+     {
+      "site": "Bang the Book",
+      "url": "https://bangthebook.com/georgia-tech-yellow-jackets-vs-clemson-tigers-prediction-2026-11-14/"
+     },
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/cfb/predictions/2026_11_clem_gt"
+     },
+     {
+      "site": "Athlon Sports",
+      "url": "https://athlonsports.com/college-football/georgia-tech-yellow-jackets-at-clemson-tigers-ncaaf-prediction-picks-odds-week11-2026"
+     },
+     {
+      "site": "ClutchPoints (Friday report)",
+      "url": "https://clutchpoints.com/ncaa-football/clemson-football-news-tyler-brown-gideon-davidson-ruled-out-for-georgia-tech-clash"
+     },
+     {
+      "site": "ACC Sports Journal (injury report)",
+      "url": "https://accsports.com/news/acc-injury-report-week-11/"
+     }
+    ],
+    "updated": "2026-11-14T05:56-08:00"
+   }
+  }
+ },
+ "401858525": {
+  "at": "2026-11-14T08:30:42-08:00",
+  "week": 11,
+  "game": {
+   "id": "401858525",
+   "kick_utc": "2026-11-14T17:30:00+00:00",
+   "kick_pt": "Sat 9:30 AM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 12:30 PM EST",
+   "neutral": false,
+   "venue": "SHI Stadium",
+   "favorite": "away",
+   "fav_home": false,
+   "spread": -15.5,
+   "open_spread": -12.5,
+   "line_source": "DraftKings",
+   "total": 51.5,
+   "fav_ml": -675.0,
+   "movement": 3.0,
+   "home": {
+    "code": 164,
+    "abbr": "RUTG",
+    "name": "Rutgers",
+    "display": "Rutgers Scarlet Knights",
+    "season": {
+     "off_epa": 0.0868,
+     "off_sr": 0.4458,
+     "def_epa": 0.1839,
+     "def_sr": 0.4681,
+     "games": 9,
+     "ranks": {
+      "off_epa": 60,
+      "off_sr": 68,
+      "def_epa": 131,
+      "def_sr": 121
+     }
+    },
+    "last3": {
+     "off_epa": -0.0532,
+     "off_sr": 0.3735,
+     "def_epa": 0.2538,
+     "def_sr": 0.5185,
+     "games": 3,
+     "ranks": {
+      "off_epa": 108,
+      "off_sr": 123,
+      "def_epa": 130,
+      "def_sr": 129
+     }
+    },
+    "net": -0.0971,
+    "net_rank": 114,
+    "record": "2-7",
+    "last2_results": [
+     "L",
+     "L"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "L"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Dylan Lonergan",
+     "dropbacks": 132,
+     "epa_db": 0.311,
+     "rank": 13
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 105,
+     "fpi": 91,
+     "own_net": 114
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.128
+   },
+   "away": {
+    "code": 158,
+    "abbr": "NEB",
+    "name": "Nebraska",
+    "display": "Nebraska Cornhuskers",
+    "season": {
+     "off_epa": 0.095,
+     "off_sr": 0.46,
+     "def_epa": -0.1059,
+     "def_sr": 0.3692,
+     "games": 9,
+     "ranks": {
+      "off_epa": 56,
+      "off_sr": 44,
+      "def_epa": 15,
+      "def_sr": 9
+     }
+    },
+    "last3": {
+     "off_epa": -0.1327,
+     "off_sr": 0.4206,
+     "def_epa": -0.0582,
+     "def_sr": 0.392,
+     "games": 3,
+     "ranks": {
+      "off_epa": 124,
+      "off_sr": 88,
+      "def_epa": 33,
+      "def_sr": 32
+     }
+    },
+    "net": 0.2009,
+    "net_rank": 16,
+    "record": "5-4",
+    "last2_results": [
+     "L",
+     "L"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "L"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Anthony Colandrea",
+     "dropbacks": 325,
+     "epa_db": 0.076,
+     "rank": 76
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 15,
+     "fpi": 22,
+     "own_net": 16
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.872
+   },
+   "fav": 158,
+   "dog": 164,
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 20 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 NEB last-3 top 25 in 0 of 4 \u00b7 \u2713 RUTG last-3 bottom 25 (114+) in 3 of 4 \u00b7 \u2713 NEB season top half (1-69) in all four \u00b7 \u2713 RUTG season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "RUTG: consensus #105, ESPN FPI #91"
+     }
+    ],
+    "fails": [
+     "Watch list: score 20 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 20,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 3,
+      "dog_weakness": 13,
+      "health": 4,
+      "home": 0,
+      "rest": 0,
+      "form": 0
+     },
+     "max": 40
+    },
+    "call": "Watch list",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for NEB yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV14NEBRUTG",
+    "fav_prob": 0.855,
+    "bid": 0.85,
+    "ask": 0.86
+   },
+   "locked_at": "2026-11-14T08:30:42-08:00",
+   "readout": {
+    "matchup": "NEB @ RUTG",
+    "summary": "All sources pick Nebraska (5-4) at Rutgers (2-7). Rutgers' QB is uncertain: AJ Surace is questionable and Dylan Lonergan out. Nebraska is without LB Owen Chambliss and CB Andrew Marshall. Spread split: Athlon (35-20) and Dimers cover 14.5; SI (21-14) and Beatline (24-17) do not.",
+    "pick": "Nebraska to win (all sources); spread: Athlon NEB -14.5 (1 source); SI and Beatline scores fall short of the spread",
+    "predicted_score": "Nebraska 35-20 (Athlon, Nov 14); Nebraska 21-14 (SI); Nebraska 24-17 (Beatline); Nebraska 33-18 (Dimers model)",
+    "moneyline": "NEB -590 / RUTG +550 (Dimers, book not named); NEB -769 / RUTG +507 (Athlon, lines as of Nov 12, book not named)",
+    "win_probability": "Nebraska 86.0% (Dimers, updated Nov 12)",
+    "injuries": "Nebraska (Big Ten report, Nov 12): LB Owen Chambliss out, CB Andrew Marshall out (Athlon Nov 14), S Dwayne McDougle questionable, S Jamir Conn probable; QB Anthony Colandrea no status listed. Rutgers: QB AJ Surace questionable (expected starter; Sean Ashenfelder next), QB Dylan Lonergan out, WR KJ Duff out for the season (ankle surgery) (SI Nebraska site, Nov 12; Athlon Nov 14)",
+    "sources": [
+     {
+      "site": "SI (Rutgers On SI)",
+      "url": "https://www.si.com/college/rutgers/nebraska-vs-rutgers-preview-dave-feit-analyzes-huskers-reset-01m799vbahhc"
+     },
+     {
+      "site": "Beatline Sports",
+      "url": "https://www.beatlinesports.com/2026/11/07/beatline-cfb-neb-at-rutg-2026-11-14/"
+     },
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/cfb/predictions/2026_11_rutg_neb"
+     },
+     {
+      "site": "Athlon Sports",
+      "url": "https://athlonsports.com/college-football/nebraska-cornhuskers-at-rutgers-scarlet-knights-ncaaf-prediction-picks-odds-week11-2026"
+     },
+     {
+      "site": "SI (Nebraska site, availability report)",
+      "url": "https://www.si.com/college/nebraska/football/owen-chambliss-andrew-marshall-kj-duff-headline-nebraska-rutgers-wednesday-availability-report-2026"
+     }
+    ],
+    "updated": "2026-11-14T05:56-08:00"
+   }
+  }
  }
 }
