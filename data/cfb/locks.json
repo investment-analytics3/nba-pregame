@@ -1638,6 +1638,10 @@
      }
     ],
     "updated": "2026-11-14T05:56-08:00"
+   },
+   "score": {
+    "home": 0,
+    "away": 0
    }
   }
  },
@@ -1885,6 +1889,500 @@
      {
       "site": "SI (Nebraska site, availability report)",
       "url": "https://www.si.com/college/nebraska/football/owen-chambliss-andrew-marshall-kj-duff-headline-nebraska-rutgers-wednesday-availability-report-2026"
+     }
+    ],
+    "updated": "2026-11-14T05:56-08:00"
+   },
+   "score": {
+    "home": 0,
+    "away": 0
+   }
+  }
+ },
+ "401856889": {
+  "at": "2026-11-14T09:00:43-08:00",
+  "week": 11,
+  "game": {
+   "id": "401856889",
+   "kick_utc": "2026-11-14T17:45:00+00:00",
+   "kick_pt": "Sat 9:45 AM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 12:45 PM EST",
+   "neutral": false,
+   "venue": "FirstBank Stadium",
+   "favorite": "away",
+   "fav_home": false,
+   "spread": -14.0,
+   "open_spread": -19.5,
+   "line_source": "Draft Kings",
+   "total": 48.5,
+   "fav_ml": -700.0,
+   "movement": -5.5,
+   "home": {
+    "code": 238,
+    "abbr": "VAN",
+    "name": "Vanderbilt",
+    "display": "Vanderbilt Commodores",
+    "season": {
+     "off_epa": 0.0462,
+     "off_sr": 0.4378,
+     "def_epa": 0.0923,
+     "def_sr": 0.4478,
+     "games": 9,
+     "ranks": {
+      "off_epa": 82,
+      "off_sr": 86,
+      "def_epa": 102,
+      "def_sr": 88
+     }
+    },
+    "last3": {
+     "off_epa": -0.0501,
+     "off_sr": 0.4105,
+     "def_epa": 0.1018,
+     "def_sr": 0.474,
+     "games": 3,
+     "ranks": {
+      "off_epa": 107,
+      "off_sr": 105,
+      "def_epa": 96,
+      "def_sr": 106
+     }
+    },
+    "net": -0.0461,
+    "net_rank": 101,
+    "record": "4-5",
+    "last2_results": [
+     "L",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "W"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Jared Curtis",
+     "dropbacks": 238,
+     "epa_db": 0.078,
+     "rank": 74
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 83,
+     "fpi": 68,
+     "own_net": 101
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.053
+   },
+   "away": {
+    "code": 333,
+    "abbr": "ALA",
+    "name": "Alabama",
+    "display": "Alabama Crimson Tide",
+    "season": {
+     "off_epa": 0.1497,
+     "off_sr": 0.4917,
+     "def_epa": -0.0652,
+     "def_sr": 0.4259,
+     "games": 9,
+     "ranks": {
+      "off_epa": 30,
+      "off_sr": 25,
+      "def_epa": 25,
+      "def_sr": 64
+     }
+    },
+    "last3": {
+     "off_epa": -0.0341,
+     "off_sr": 0.4136,
+     "def_epa": -0.0777,
+     "def_sr": 0.4882,
+     "games": 3,
+     "ranks": {
+      "off_epa": 100,
+      "off_sr": 101,
+      "def_epa": 26,
+      "def_sr": 118
+     }
+    },
+    "net": 0.2149,
+    "net_rank": 15,
+    "record": "7-2",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "W",
+     "W"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Keelon Russell",
+     "dropbacks": 273,
+     "epa_db": 0.231,
+     "rank": 29
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 8,
+     "fpi": 3,
+     "own_net": 15,
+     "ap": 7,
+     "cfp": 3
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.947
+   },
+   "fav": 333,
+   "dog": 238,
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 16 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 ALA last-3 top 25 in 0 of 4 \u00b7 \u2717 VAN last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2713 ALA season top half (1-69) in all four \u00b7 \u2713 VAN season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "VAN: consensus #83, ESPN FPI #68"
+     }
+    ],
+    "fails": [
+     "Score 16 (watch list from 18, qualifies at 28)"
+    ],
+    "hero": {
+     "score": 16,
+     "band": "red",
+     "parts": {
+      "fav_strength": 2,
+      "dog_weakness": 8,
+      "health": 4,
+      "home": 0,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "call": "No track",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for ALA yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV14ALAVAN",
+    "fav_prob": 0.855,
+    "bid": 0.85,
+    "ask": 0.86
+   },
+   "locked_at": "2026-11-14T09:00:43-08:00"
+  }
+ },
+ "401862825": {
+  "at": "2026-11-14T09:00:43-08:00",
+  "week": 11,
+  "game": {
+   "id": "401862825",
+   "kick_utc": "2026-11-14T18:00:00+00:00",
+   "kick_pt": "Sat 10:00 AM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 1:00 PM EST",
+   "neutral": false,
+   "venue": "Jerry Richardson Stadium",
+   "favorite": "away",
+   "fav_home": false,
+   "spread": -10.5,
+   "open_spread": -13.5,
+   "line_source": "Draft Kings",
+   "total": 45.5,
+   "fav_ml": -410.0,
+   "movement": -3.0,
+   "home": {
+    "code": 2429,
+    "abbr": "CLT",
+    "name": "Charlotte",
+    "display": "Charlotte 49ers",
+    "season": {
+     "off_epa": -0.0326,
+     "off_sr": 0.3915,
+     "def_epa": 0.1795,
+     "def_sr": 0.5208,
+     "games": 9,
+     "ranks": {
+      "off_epa": 119,
+      "off_sr": 128,
+      "def_epa": 130,
+      "def_sr": 137
+     }
+    },
+    "last3": {
+     "off_epa": 0.0807,
+     "off_sr": 0.4067,
+     "def_epa": 0.1819,
+     "def_sr": 0.55,
+     "games": 3,
+     "ranks": {
+      "off_epa": 54,
+      "off_sr": 112,
+      "def_epa": 115,
+      "def_sr": 137
+     }
+    },
+    "net": -0.2121,
+    "net_rank": 136,
+    "record": "1-8",
+    "last2_results": [
+     "L",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "L",
+     "L"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Conner Harrell",
+     "dropbacks": 151,
+     "epa_db": 0.029,
+     "rank": 88
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 136,
+     "fpi": 133,
+     "own_net": 136
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.122
+   },
+   "away": {
+    "code": 151,
+    "abbr": "ECU",
+    "name": "East Carolina",
+    "display": "East Carolina Pirates",
+    "season": {
+     "off_epa": -0.0539,
+     "off_sr": 0.4026,
+     "def_epa": -0.0679,
+     "def_sr": 0.3891,
+     "games": 9,
+     "ranks": {
+      "off_epa": 125,
+      "off_sr": 121,
+      "def_epa": 24,
+      "def_sr": 20
+     }
+    },
+    "last3": {
+     "off_epa": 0.011,
+     "off_sr": 0.4163,
+     "def_epa": 0.0406,
+     "def_sr": 0.4171,
+     "games": 3,
+     "ranks": {
+      "off_epa": 84,
+      "off_sr": 97,
+      "def_epa": 66,
+      "def_sr": 52
+     }
+    },
+    "net": 0.014,
+    "net_rank": 76,
+    "record": "5-4",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "W",
+     "W"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Emory Williams",
+     "dropbacks": 155,
+     "epa_db": -0.074,
+     "rank": 116
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 80,
+     "fpi": 84,
+     "own_net": 76
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.878
+   },
+   "fav": 151,
+   "dog": 2429,
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 22 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 ECU last-3 top 25 in 0 of 4 \u00b7 \u2717 CLT last-3 bottom 25 (114+) in 2 of 4 \u00b7 \u2717 ECU season outside 1-69: Off EPA/play #125, Off success #121 \u00b7 \u2713 CLT season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "CLT: consensus #136, ESPN FPI #133"
+     }
+    ],
+    "fails": [
+     "Watch list: score 22 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 22,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 2,
+      "dog_weakness": 14,
+      "health": 4,
+      "home": 0,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "call": "Watch list",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for ECU yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV14ECUCHAR",
+    "fav_prob": 0.785,
+    "bid": 0.78,
+    "ask": 0.79
+   },
+   "locked_at": "2026-11-14T09:00:43-08:00",
+   "readout": {
+    "matchup": "ECU @ CLT",
+    "summary": "Every source expects East Carolina (5-4) to beat Charlotte (1-8), which allows 38.3 points per game. ECU QB Mitch Griffis is in concussion protocol, so Emory Williams (19 of 27, 2 TD in relief vs USF) likely starts. Doc's Sports lays ECU -11; Pirate Media staff pick ECU by 21-25.",
+    "pick": "ECU to win (all sources); spread: Doc's Sports ECU -11 (1 source)",
+    "predicted_score": "ECU 28-18 (Dimers model); ECU 35-14, 31-6, 31-10 (Pirate Media staff, Nov 12)",
+    "moneyline": "ECU -450 / CLT +340 (FanDuel, Nov 11); ECU -426 / CLT +400 (Dimers, book not named); ECU -470 / CLT +360 (YouWager, Nov 10)",
+    "win_probability": "ECU 81% (numberFire via FanDuel Research, Nov 11); ECU 79.4% (Dimers, updated Nov 12)",
+    "injuries": "ECU: QB Mitch Griffis concussion, in protocol, 'legitimate chance' he sits (RotoWire, Nov 10; Bonesville Nov 10: Williams likely starts); RB TJ Engleman Jr. knee, MRI scheduled (Bonesville, Nov 10); DB Ayden Duncanson hoped to return (NCFootballNews, Nov 11). AAC report expected only on game day. Charlotte: QB Connor Harrell starting; Covers lists WRs T. Boston, J. Hoffman, S. Golliday questionable (undisclosed, mid-October entries, may be stale)",
+    "sources": [
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/cfb/predictions/2026_11_char_ecu"
+     },
+     {
+      "site": "Sports Chat Place",
+      "url": "https://sportschatplace.com/college-football-picks/charlotte-vs-east-carolina-prediction-football-picks-today-11-14-26/amp/"
+     },
+     {
+      "site": "YouWager blog",
+      "url": "https://blog.youwager.lv/?p=926111315"
+     },
+     {
+      "site": "FanDuel Research",
+      "url": "https://www.fanduel.com/research/east-carolina-vs-charlotte-college-football-odds-picks-best-bets-for-11-14-2026"
+     },
+     {
+      "site": "Doc's Sports",
+      "url": "https://www.docsports.com/free-picks/football/2026/east-carolina-pirates-vs-charlotte-49ers-prediction-11-14-2026-college-football-picks-best-bets-odds.html"
+     },
+     {
+      "site": "Pirate Media 1",
+      "url": "https://www.piratemedia1.com/article_684f6e38-2c6d-4f83-8801-6e3d1c3ded81.html"
+     },
+     {
+      "site": "Bonesville",
+      "url": "https://bonesville.net/2026/11/10/next-man-up-took-down-south-florida/"
+     },
+     {
+      "site": "RotoWire (Griffis)",
+      "url": "https://www.rotowire.com/cfootball/headlines/mitch-griffis-injury-dealing-with-concussion-239315"
+     },
+     {
+      "site": "NCFootballNews",
+      "url": "https://ncfootballnews.com/east-carolina-at-charlotte-football-2026/"
+     },
+     {
+      "site": "Covers (injuries)",
+      "url": "https://www.covers.com/sport/football/ncaaf/matchup/378914"
      }
     ],
     "updated": "2026-11-14T05:56-08:00"
