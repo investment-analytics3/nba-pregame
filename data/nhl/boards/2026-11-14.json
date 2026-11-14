@@ -3,8 +3,8 @@
  "date_label": "Saturday, November 14",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-14T07:00:45-08:00",
- "built_label": "Sat Nov 14, 7:00 AM PT",
+ "built_at": "2026-11-14T08:00:44-08:00",
+ "built_label": "Sat Nov 14, 8:00 AM PT",
  "metrics_through": "2026-11-13",
  "metrics_through_label": "Nov 13",
  "max": 40,
@@ -206,15 +206,7 @@
      "S. Aho",
      "J. Blake"
     ],
-    "injuries": [
-     {
-      "name": "Jordan Staal",
-      "last": "Staal",
-      "status": "Injured Reserve",
-      "date": "2026-11-13T14:30Z",
-      "comment": "Staal (calf) will be a game-time decision versus the Kraken on Saturday after head coach Rod Brind'Amour told reporters, \"So, we'll find out probably tomorrow after you know gets through the morning, and hopefully he does play,\" per Tom Gulitti of NHL.com."
-     }
-    ],
+    "injuries": [],
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [],
@@ -389,13 +381,6 @@
       "status": "Injured Reserve",
       "date": "2026-11-13T14:39Z",
       "comment": "Melanson (chest) will be a game-time call for Saturday's clash with the Hurricanes, Tom Gulitti of NHL.com reports."
-     },
-     {
-      "name": "Ryan Lindgren",
-      "last": "Lindgren",
-      "status": "Injured Reserve",
-      "date": "2026-11-13T14:36Z",
-      "comment": "Lindgren (upper body) will be a game-time decision ahead of Saturday's matchup with Carolina, Tom Gulitti of NHL.com reports."
      },
      {
       "name": "Nikke Kokko",
@@ -2553,6 +2538,697 @@
    }
   },
   {
+   "id": "401892710",
+   "tip_utc": "2026-11-15T00:00:00+00:00",
+   "tip_pt": "4:00 PM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 7:00 PM EST",
+   "neutral": false,
+   "venue": "Scotiabank Arena",
+   "favorite": "away",
+   "line": {
+    "details": "EDM -148",
+    "provider": "DraftKings",
+    "ml_home": null,
+    "ml_away": -148,
+    "puck_line": 1.5,
+    "total": 6.5,
+    "fav_price": 0.5968
+   },
+   "spread": {
+    "details": "EDM -148",
+    "provider": "DraftKings",
+    "puck_line": 1.5
+   },
+   "home": {
+    "id": "21",
+    "abbr": "TOR",
+    "espn_abbr": "TOR",
+    "name": "Toronto",
+    "display": "Toronto Maple Leafs",
+    "record": "8-11-2",
+    "l3_record": "0-3-0",
+    "games": 21,
+    "pts_pct": 0.429,
+    "season": {
+     "xgf": 46.74,
+     "xga60": 2.597,
+     "cf": 51.41,
+     "gsax": -0.251,
+     "st": 113.8,
+     "pp": 28.1,
+     "pk": 85.7,
+     "ranks": {
+      "xgf": 26,
+      "xga60": 20,
+      "gsax": 21,
+      "st": 3
+     }
+    },
+    "last5": {
+     "xgf": 47.53,
+     "xga60": 2.504,
+     "cf": 52.45,
+     "gsax": -0.987,
+     "st": 76.8,
+     "pp": 12.5,
+     "pk": 64.3,
+     "ranks": {
+      "xgf": 22,
+      "xga60": 15,
+      "gsax": 29,
+      "st": 26
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 2026020300,
+      "date": "2026-11-12",
+      "site": "home",
+      "opp": "MIN",
+      "pts": 2,
+      "opp_pts": 5,
+      "extra": false,
+      "opp_power_rank": 2
+     },
+     {
+      "game_id": 2026020286,
+      "date": "2026-11-10",
+      "site": "home",
+      "opp": "COL",
+      "pts": 3,
+      "opp_pts": 6,
+      "extra": false,
+      "opp_power_rank": 9
+     },
+     {
+      "game_id": 2026020279,
+      "date": "2026-11-08",
+      "site": "home",
+      "opp": "NJD",
+      "pts": 0,
+      "opp_pts": 4,
+      "extra": false,
+      "opp_power_rank": 5
+     }
+    ],
+    "trend_games": [
+     {
+      "date": "2026-11-03",
+      "opp": "UTA",
+      "metrics": {
+       "xgf": 36.19,
+       "xga60": 2.698,
+       "gsax": 0.728,
+       "st": 33.3
+      }
+     },
+     {
+      "date": "2026-11-07",
+      "opp": "MTL",
+      "metrics": {
+       "xgf": 53.68,
+       "xga60": 2.279,
+       "gsax": -1.706,
+       "st": 83.3
+      }
+     },
+     {
+      "date": "2026-11-08",
+      "opp": "NJD",
+      "metrics": {
+       "xgf": 52.88,
+       "xga60": 1.715,
+       "gsax": -0.863,
+       "st": 66.7
+      }
+     },
+     {
+      "date": "2026-11-10",
+      "opp": "COL",
+      "metrics": {
+       "xgf": 47.34,
+       "xga60": 3.118,
+       "gsax": -1.787,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-12",
+      "opp": "MIN",
+      "metrics": {
+       "xgf": 47.17,
+       "xga60": 2.726,
+       "gsax": -1.31,
+       "st": 75.0
+      }
+     }
+    ],
+    "is_fav": false,
+    "b2b": false,
+    "power": {
+     "rank": 26,
+     "own": 27,
+     "avg": 25.0,
+     "espn": 23,
+     "nhl_com": null
+    },
+    "goalie": {
+     "name": "Anthony Stolarz",
+     "last": "Stolarz",
+     "espn_id": "3067313",
+     "confirmed": false
+    },
+    "goalie_status": "backup",
+    "regular_goalie_name": "S. Bobrovsky",
+    "goalies": [
+     {
+      "id": "8475683",
+      "name": "S. Bobrovsky",
+      "starts": 13
+     },
+     {
+      "id": "8476932",
+      "name": "A. Stolarz",
+      "starts": 8
+     }
+    ],
+    "key_skaters": [
+     "D. Raddysh",
+     "A. Matthews",
+     "J. McCabe",
+     "W. Nylander",
+     "T. Stecher",
+     "M. Rielly"
+    ],
+    "injuries": [
+     {
+      "name": "Morgan Rielly",
+      "last": "Rielly",
+      "status": "Day-To-Day",
+      "date": "2026-11-13T13:57Z",
+      "comment": "day-to-day"
+     },
+     {
+      "name": "Colton Sissons",
+      "last": "Sissons",
+      "status": "Injured Reserve",
+      "date": "2026-11-12T15:24Z",
+      "comment": "ir"
+     },
+     {
+      "name": "Kirill Marchenko",
+      "last": "Marchenko",
+      "status": "Injured Reserve",
+      "date": "2026-10-29T17:28Z",
+      "comment": "ir"
+     },
+     {
+      "name": "Miles Wood",
+      "last": "Wood",
+      "status": "Injured Reserve",
+      "date": "2026-10-29T00:11Z",
+      "comment": "Wood (undisclosed) was transferred to long-term injured reserve Wednesday, David Alter of The Hockey News reports."
+     },
+     {
+      "name": "Nick Blankenburg",
+      "last": "Blankenburg",
+      "status": "Injured Reserve",
+      "date": "2026-10-23T15:29Z",
+      "comment": "Blankenburg (undisclosed) was placed on injured reserve by the Maple Leafs on Friday, David Alter of The Hockey News reports."
+     },
+     {
+      "name": "Marshall Rifai",
+      "last": "Rifai",
+      "status": "Injured Reserve",
+      "date": "2026-10-23T02:22Z",
+      "comment": "ir"
+     },
+     {
+      "name": "Max Domi",
+      "last": "Domi",
+      "status": "Injured Reserve",
+      "date": "2026-09-30T18:51Z",
+      "comment": "Domi (back) was transferred from the non-roster list to long-term injured reserve Wednesday, per PuckPedia."
+     },
+     {
+      "name": "Cade Webber",
+      "last": "Webber",
+      "status": "Injured Reserve",
+      "date": "2026-09-29T14:55Z",
+      "comment": "ir-nr"
+     },
+     {
+      "name": "Elvis Merzlikins",
+      "last": "Merzlikins",
+      "status": "Injured Reserve",
+      "date": "2026-09-29T14:24Z",
+      "comment": "Merzlikins is expected to miss 4-6 months to begin the 2026-27 regular season while recovering from a shoulder injury, per Luke Fox of Sportsnet."
+     },
+     {
+      "name": "William Villeneuve",
+      "last": "Villeneuve",
+      "status": "Injured Reserve",
+      "date": "2026-09-29T04:30Z",
+      "comment": "ir-nr"
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [
+     "Morgan Rielly"
+    ],
+    "key_long_term": [],
+    "spread_text": ""
+   },
+   "away": {
+    "id": "6",
+    "abbr": "EDM",
+    "espn_abbr": "EDM",
+    "name": "Edmonton",
+    "display": "Edmonton Oilers",
+    "record": "14-3-3",
+    "l3_record": "3-0-0",
+    "games": 20,
+    "pts_pct": 0.775,
+    "season": {
+     "xgf": 48.15,
+     "xga60": 2.306,
+     "cf": 48.14,
+     "gsax": -0.004,
+     "st": 106.8,
+     "pp": 31.8,
+     "pk": 75.0,
+     "ranks": {
+      "xgf": 22,
+      "xga60": 8,
+      "gsax": 14,
+      "st": 9
+     }
+    },
+    "last5": {
+     "xgf": 44.67,
+     "xga60": 2.169,
+     "cf": 45.38,
+     "gsax": 0.347,
+     "st": 112.6,
+     "pp": 35.3,
+     "pk": 77.3,
+     "ranks": {
+      "xgf": 28,
+      "xga60": 5,
+      "gsax": 9,
+      "st": 7
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 2026020295,
+      "date": "2026-11-11",
+      "site": "home",
+      "opp": "PHI",
+      "pts": 3,
+      "opp_pts": 2,
+      "extra": true,
+      "opp_power_rank": 30
+     },
+     {
+      "game_id": 2026020283,
+      "date": "2026-11-09",
+      "site": "home",
+      "opp": "NYR",
+      "pts": 3,
+      "opp_pts": 1,
+      "extra": false,
+      "opp_power_rank": 16
+     },
+     {
+      "game_id": 2026020276,
+      "date": "2026-11-07",
+      "site": "home",
+      "opp": "VAN",
+      "pts": 4,
+      "opp_pts": 2,
+      "extra": false,
+      "opp_power_rank": 32
+     }
+    ],
+    "trend_games": [
+     {
+      "date": "2026-11-03",
+      "opp": "NJD",
+      "metrics": {
+       "xgf": 30.51,
+       "xga60": 1.949,
+       "gsax": 0.096,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-05",
+      "opp": "ANA",
+      "metrics": {
+       "xgf": 53.98,
+       "xga60": 2.523,
+       "gsax": -1.742,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-07",
+      "opp": "VAN",
+      "metrics": {
+       "xgf": 58.69,
+       "xga60": 1.279,
+       "gsax": 0.122,
+       "st": 133.3
+      }
+     },
+     {
+      "date": "2026-11-09",
+      "opp": "NYR",
+      "metrics": {
+       "xgf": 43.61,
+       "xga60": 2.071,
+       "gsax": 2.125,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-11",
+      "opp": "PHI",
+      "metrics": {
+       "xgf": 38.16,
+       "xga60": 3.054,
+       "gsax": 1.132,
+       "st": 175.0
+      }
+     }
+    ],
+    "is_fav": true,
+    "b2b": false,
+    "power": {
+     "rank": 6,
+     "own": 12,
+     "avg": 6.33,
+     "espn": 4,
+     "nhl_com": 3
+    },
+    "goalie": {
+     "name": "Devon Levi",
+     "last": "Levi",
+     "espn_id": "4894487",
+     "confirmed": false
+    },
+    "goalie_status": "backup",
+    "regular_goalie_name": "T. Jarry",
+    "goalies": [
+     {
+      "id": "8477465",
+      "name": "T. Jarry",
+      "starts": 9
+     },
+     {
+      "id": "8482221",
+      "name": "D. Levi",
+      "starts": 9
+     },
+     {
+      "id": "8477035",
+      "name": "M. Tomkins",
+      "starts": 2
+     }
+    ],
+    "key_skaters": [
+     "E. Bouchard",
+     "C. McDavid",
+     "R. Shea",
+     "L. Draisaitl",
+     "M. Ekholm",
+     "C. Murphy"
+    ],
+    "injuries": [
+     {
+      "name": "Isaac Howard",
+      "last": "Howard",
+      "status": "Injured Reserve",
+      "date": "2026-11-06T00:04Z",
+      "comment": "ir"
+     },
+     {
+      "name": "Alec Regula",
+      "last": "Regula",
+      "status": "Injured Reserve",
+      "date": "2026-10-01T14:11Z",
+      "comment": "Regula (undisclosed) was designated for long-term injured reserve Thursday."
+     },
+     {
+      "name": "Matt Savoie",
+      "last": "Savoie",
+      "status": "Injured Reserve",
+      "date": "2026-10-01T14:05Z",
+      "comment": "Savoie (lower body) was shifted to long-term injured reserve Thursday."
+     },
+     {
+      "name": "Frederik Andersen",
+      "last": "Andersen",
+      "status": "Injured Reserve",
+      "date": "2026-09-29T17:53Z",
+      "comment": "Andersen (knee) isn't expected back until \"maybe\" December, head coach Mike Babcock told NHL.com on Tuesday."
+     },
+     {
+      "name": "Mattias Janmark",
+      "last": "Janmark",
+      "status": "Injured Reserve",
+      "date": "2026-09-29T17:52Z",
+      "comment": "Janmark (undisclosed) does not have a timetable for his return from injury."
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [],
+    "key_long_term": [],
+    "spread_text": "-148"
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "EDM",
+    "dog": "TOR",
+    "in_range": true,
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "rules": [
+     {
+      "rule": "Range",
+      "name": "Top-7 team vs bottom-7 team (consensus power rank)",
+      "pass": true,
+      "detail": "EDM #6 vs TOR #26"
+     },
+     {
+      "rule": "A",
+      "name": "Analysis Score 22+",
+      "pass": false,
+      "detail": "Score 21 of 40"
+     },
+     {
+      "rule": "Goalie",
+      "name": "EDM's regular goalie starts",
+      "pass": false,
+      "detail": "Devon Levi listed instead of T. Jarry: capped at the Watch list"
+     },
+     {
+      "rule": "Rest",
+      "name": "EDM didn't play yesterday",
+      "pass": true,
+      "detail": "Rested"
+     }
+    ],
+    "fails": [
+     "Score 21 (qualifies at 22)"
+    ],
+    "warnings": [
+     "Info: TOR starting its backup goalie (Anthony Stolarz)"
+    ],
+    "flags": [
+     "EDM backup goalie starting (Devon Levi)"
+    ],
+    "score": 21,
+    "max": 40,
+    "band": "yellow",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 6,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 10,
+      "max": 16
+     },
+     {
+      "key": "goalies",
+      "label": "Goalies + health",
+      "points": 2,
+      "max": 4
+     },
+     {
+      "key": "home",
+      "label": "Home ice",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 2,
+      "max": 2
+     }
+    ],
+    "pills": [
+     {
+      "team": "EDM",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "xgf",
+        "rank": 22,
+        "color": "yellow"
+       },
+       {
+        "metric": "xga60",
+        "rank": 8,
+        "color": "green"
+       },
+       {
+        "metric": "gsax",
+        "rank": 14,
+        "color": "yellow"
+       },
+       {
+        "metric": "st",
+        "rank": 9,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "EDM",
+      "role": "fav",
+      "window": "last5",
+      "cells": [
+       {
+        "metric": "xgf",
+        "rank": 28,
+        "color": "red"
+       },
+       {
+        "metric": "xga60",
+        "rank": 5,
+        "color": "green"
+       },
+       {
+        "metric": "gsax",
+        "rank": 9,
+        "color": "green"
+       },
+       {
+        "metric": "st",
+        "rank": 7,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "TOR",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "xgf",
+        "rank": 26,
+        "color": "green"
+       },
+       {
+        "metric": "xga60",
+        "rank": 20,
+        "color": "yellow"
+       },
+       {
+        "metric": "gsax",
+        "rank": 21,
+        "color": "yellow"
+       },
+       {
+        "metric": "st",
+        "rank": 3,
+        "color": "deep-red"
+       }
+      ]
+     },
+     {
+      "team": "TOR",
+      "role": "dog",
+      "window": "last5",
+      "cells": [
+       {
+        "metric": "xgf",
+        "rank": 22,
+        "color": "yellow"
+       },
+       {
+        "metric": "xga60",
+        "rank": 15,
+        "color": "yellow"
+       },
+       {
+        "metric": "gsax",
+        "rank": 29,
+        "color": "green"
+       },
+       {
+        "metric": "st",
+        "rank": 26,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "labels": {
+     "xgf": "xGF% 5v5",
+     "xga60": "xGA/60 5v5",
+     "gsax": "GSAx/gm",
+     "st": "PP%+PK%",
+     "pts": "Points %"
+    }
+   },
+   "summary": "Score 21 (qualifies at 22). EDM start their backup goalie, Devon Levi (regular: T. Jarry). Biggest edge over the last 5: GSAx/gm (EDM #9, TOR #29). EDM 3-0-0 in its last 3, TOR 0-3-0.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNHLGAME-26NOV14EDMTOR",
+    "fav_prob": 0.585,
+    "bid": 0.58,
+    "ask": 0.59
+   }
+  },
+  {
    "id": "401892717",
    "tip_utc": "2026-11-15T01:00:00+00:00",
    "tip_pt": "5:00 PM PT",
@@ -2563,16 +3239,16 @@
    "venue": "American Airlines Center",
    "favorite": "home",
    "line": {
-    "details": "DAL -142",
+    "details": "DAL -135",
     "provider": "DraftKings",
-    "ml_home": -142,
+    "ml_home": -135,
     "ml_away": null,
     "puck_line": -1.5,
     "total": 6.5,
-    "fav_price": 0.5868
+    "fav_price": 0.5745
    },
    "spread": {
-    "details": "DAL -142",
+    "details": "DAL -135",
     "provider": "DraftKings",
     "puck_line": -1.5
    },
@@ -2739,11 +3415,18 @@
     ],
     "injuries": [
      {
+      "name": "Kyle Capobianco",
+      "last": "Capobianco",
+      "status": "Injured Reserve",
+      "date": "2026-11-14T15:14Z",
+      "comment": "Capobianco (leg) was moved to long-term injured reserve Saturday."
+     },
+     {
       "name": "Lian Bichsel",
       "last": "Bichsel",
-      "status": "Out",
-      "date": "2026-11-13T17:41Z",
-      "comment": "Head coach Glen Gulutzan said Friday that Bichsel (lower body) will be out for \"a couple weeks,\" Stars TV host Brien Rea reports."
+      "status": "Injured Reserve",
+      "date": "2026-11-14T15:10Z",
+      "comment": "Bichsel (lower body) was placed on injured reserve Saturday."
      },
      {
       "name": "Miro Heiskanen",
@@ -2751,13 +3434,6 @@
       "status": "Out",
       "date": "2026-11-13T17:41Z",
       "comment": "Heiskanen (upper body) has been ruled out against the Sabres on Saturday, Stars TV host Brien Rea reports."
-     },
-     {
-      "name": "Kyle Capobianco",
-      "last": "Capobianco",
-      "status": "Injured Reserve",
-      "date": "2026-10-31T16:54Z",
-      "comment": "ir"
      },
      {
       "name": "Oskar Back",
@@ -2780,7 +3456,7 @@
     ],
     "key_questionable": [],
     "key_long_term": [],
-    "spread_text": "-142"
+    "spread_text": "-135"
    },
    "away": {
     "id": "2",
@@ -3187,698 +3863,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV14BUFDAL",
-    "fav_prob": 0.555,
-    "bid": 0.55,
-    "ask": 0.56
-   }
-  },
-  {
-   "id": "401892710",
-   "tip_utc": "2026-11-15T00:00:00+00:00",
-   "tip_pt": "4:00 PM PT",
-   "day_et": "2026-11-14",
-   "state": "pre",
-   "detail": "11/14 - 7:00 PM EST",
-   "neutral": false,
-   "venue": "Scotiabank Arena",
-   "favorite": "away",
-   "line": {
-    "details": "EDM -148",
-    "provider": "DraftKings",
-    "ml_home": null,
-    "ml_away": -148,
-    "puck_line": 1.5,
-    "total": 6.5,
-    "fav_price": 0.5968
-   },
-   "spread": {
-    "details": "EDM -148",
-    "provider": "DraftKings",
-    "puck_line": 1.5
-   },
-   "home": {
-    "id": "21",
-    "abbr": "TOR",
-    "espn_abbr": "TOR",
-    "name": "Toronto",
-    "display": "Toronto Maple Leafs",
-    "record": "8-11-2",
-    "l3_record": "0-3-0",
-    "games": 21,
-    "pts_pct": 0.429,
-    "season": {
-     "xgf": 46.74,
-     "xga60": 2.597,
-     "cf": 51.41,
-     "gsax": -0.251,
-     "st": 113.8,
-     "pp": 28.1,
-     "pk": 85.7,
-     "ranks": {
-      "xgf": 26,
-      "xga60": 20,
-      "gsax": 21,
-      "st": 3
-     }
-    },
-    "last5": {
-     "xgf": 47.53,
-     "xga60": 2.504,
-     "cf": 52.45,
-     "gsax": -0.987,
-     "st": 76.8,
-     "pp": 12.5,
-     "pk": 64.3,
-     "ranks": {
-      "xgf": 22,
-      "xga60": 15,
-      "gsax": 29,
-      "st": 26
-     }
-    },
-    "last3_games": [
-     {
-      "game_id": 2026020300,
-      "date": "2026-11-12",
-      "site": "home",
-      "opp": "MIN",
-      "pts": 2,
-      "opp_pts": 5,
-      "extra": false,
-      "opp_power_rank": 2
-     },
-     {
-      "game_id": 2026020286,
-      "date": "2026-11-10",
-      "site": "home",
-      "opp": "COL",
-      "pts": 3,
-      "opp_pts": 6,
-      "extra": false,
-      "opp_power_rank": 9
-     },
-     {
-      "game_id": 2026020279,
-      "date": "2026-11-08",
-      "site": "home",
-      "opp": "NJD",
-      "pts": 0,
-      "opp_pts": 4,
-      "extra": false,
-      "opp_power_rank": 5
-     }
-    ],
-    "trend_games": [
-     {
-      "date": "2026-11-03",
-      "opp": "UTA",
-      "metrics": {
-       "xgf": 36.19,
-       "xga60": 2.698,
-       "gsax": 0.728,
-       "st": 33.3
-      }
-     },
-     {
-      "date": "2026-11-07",
-      "opp": "MTL",
-      "metrics": {
-       "xgf": 53.68,
-       "xga60": 2.279,
-       "gsax": -1.706,
-       "st": 83.3
-      }
-     },
-     {
-      "date": "2026-11-08",
-      "opp": "NJD",
-      "metrics": {
-       "xgf": 52.88,
-       "xga60": 1.715,
-       "gsax": -0.863,
-       "st": 66.7
-      }
-     },
-     {
-      "date": "2026-11-10",
-      "opp": "COL",
-      "metrics": {
-       "xgf": 47.34,
-       "xga60": 3.118,
-       "gsax": -1.787,
-       "st": 100.0
-      }
-     },
-     {
-      "date": "2026-11-12",
-      "opp": "MIN",
-      "metrics": {
-       "xgf": 47.17,
-       "xga60": 2.726,
-       "gsax": -1.31,
-       "st": 75.0
-      }
-     }
-    ],
-    "is_fav": false,
-    "b2b": false,
-    "power": {
-     "rank": 26,
-     "own": 27,
-     "avg": 25.0,
-     "espn": 23,
-     "nhl_com": null
-    },
-    "goalie": {
-     "name": "Sergei Bobrovsky",
-     "last": "Bobrovsky",
-     "espn_id": "5571",
-     "confirmed": false
-    },
-    "goalie_status": "regular",
-    "regular_goalie_name": "S. Bobrovsky",
-    "goalies": [
-     {
-      "id": "8475683",
-      "name": "S. Bobrovsky",
-      "starts": 13
-     },
-     {
-      "id": "8476932",
-      "name": "A. Stolarz",
-      "starts": 8
-     }
-    ],
-    "key_skaters": [
-     "D. Raddysh",
-     "A. Matthews",
-     "J. McCabe",
-     "W. Nylander",
-     "T. Stecher",
-     "M. Rielly"
-    ],
-    "injuries": [
-     {
-      "name": "Morgan Rielly",
-      "last": "Rielly",
-      "status": "Day-To-Day",
-      "date": "2026-11-13T13:57Z",
-      "comment": "day-to-day"
-     },
-     {
-      "name": "Colton Sissons",
-      "last": "Sissons",
-      "status": "Injured Reserve",
-      "date": "2026-11-12T15:24Z",
-      "comment": "ir"
-     },
-     {
-      "name": "Kirill Marchenko",
-      "last": "Marchenko",
-      "status": "Injured Reserve",
-      "date": "2026-10-29T17:28Z",
-      "comment": "ir"
-     },
-     {
-      "name": "Miles Wood",
-      "last": "Wood",
-      "status": "Injured Reserve",
-      "date": "2026-10-29T00:11Z",
-      "comment": "Wood (undisclosed) was transferred to long-term injured reserve Wednesday, David Alter of The Hockey News reports."
-     },
-     {
-      "name": "Nick Blankenburg",
-      "last": "Blankenburg",
-      "status": "Injured Reserve",
-      "date": "2026-10-23T15:29Z",
-      "comment": "Blankenburg (undisclosed) was placed on injured reserve by the Maple Leafs on Friday, David Alter of The Hockey News reports."
-     },
-     {
-      "name": "Marshall Rifai",
-      "last": "Rifai",
-      "status": "Injured Reserve",
-      "date": "2026-10-23T02:22Z",
-      "comment": "ir"
-     },
-     {
-      "name": "Max Domi",
-      "last": "Domi",
-      "status": "Injured Reserve",
-      "date": "2026-09-30T18:51Z",
-      "comment": "Domi (back) was transferred from the non-roster list to long-term injured reserve Wednesday, per PuckPedia."
-     },
-     {
-      "name": "Cade Webber",
-      "last": "Webber",
-      "status": "Injured Reserve",
-      "date": "2026-09-29T14:55Z",
-      "comment": "ir-nr"
-     },
-     {
-      "name": "Elvis Merzlikins",
-      "last": "Merzlikins",
-      "status": "Injured Reserve",
-      "date": "2026-09-29T14:24Z",
-      "comment": "Merzlikins is expected to miss 4-6 months to begin the 2026-27 regular season while recovering from a shoulder injury, per Luke Fox of Sportsnet."
-     },
-     {
-      "name": "William Villeneuve",
-      "last": "Villeneuve",
-      "status": "Injured Reserve",
-      "date": "2026-09-29T04:30Z",
-      "comment": "ir-nr"
-     }
-    ],
-    "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
-     "Morgan Rielly"
-    ],
-    "key_long_term": [],
-    "spread_text": ""
-   },
-   "away": {
-    "id": "6",
-    "abbr": "EDM",
-    "espn_abbr": "EDM",
-    "name": "Edmonton",
-    "display": "Edmonton Oilers",
-    "record": "14-3-3",
-    "l3_record": "3-0-0",
-    "games": 20,
-    "pts_pct": 0.775,
-    "season": {
-     "xgf": 48.15,
-     "xga60": 2.306,
-     "cf": 48.14,
-     "gsax": -0.004,
-     "st": 106.8,
-     "pp": 31.8,
-     "pk": 75.0,
-     "ranks": {
-      "xgf": 22,
-      "xga60": 8,
-      "gsax": 14,
-      "st": 9
-     }
-    },
-    "last5": {
-     "xgf": 44.67,
-     "xga60": 2.169,
-     "cf": 45.38,
-     "gsax": 0.347,
-     "st": 112.6,
-     "pp": 35.3,
-     "pk": 77.3,
-     "ranks": {
-      "xgf": 28,
-      "xga60": 5,
-      "gsax": 9,
-      "st": 7
-     }
-    },
-    "last3_games": [
-     {
-      "game_id": 2026020295,
-      "date": "2026-11-11",
-      "site": "home",
-      "opp": "PHI",
-      "pts": 3,
-      "opp_pts": 2,
-      "extra": true,
-      "opp_power_rank": 30
-     },
-     {
-      "game_id": 2026020283,
-      "date": "2026-11-09",
-      "site": "home",
-      "opp": "NYR",
-      "pts": 3,
-      "opp_pts": 1,
-      "extra": false,
-      "opp_power_rank": 16
-     },
-     {
-      "game_id": 2026020276,
-      "date": "2026-11-07",
-      "site": "home",
-      "opp": "VAN",
-      "pts": 4,
-      "opp_pts": 2,
-      "extra": false,
-      "opp_power_rank": 32
-     }
-    ],
-    "trend_games": [
-     {
-      "date": "2026-11-03",
-      "opp": "NJD",
-      "metrics": {
-       "xgf": 30.51,
-       "xga60": 1.949,
-       "gsax": 0.096,
-       "st": 100.0
-      }
-     },
-     {
-      "date": "2026-11-05",
-      "opp": "ANA",
-      "metrics": {
-       "xgf": 53.98,
-       "xga60": 2.523,
-       "gsax": -1.742,
-       "st": 100.0
-      }
-     },
-     {
-      "date": "2026-11-07",
-      "opp": "VAN",
-      "metrics": {
-       "xgf": 58.69,
-       "xga60": 1.279,
-       "gsax": 0.122,
-       "st": 133.3
-      }
-     },
-     {
-      "date": "2026-11-09",
-      "opp": "NYR",
-      "metrics": {
-       "xgf": 43.61,
-       "xga60": 2.071,
-       "gsax": 2.125,
-       "st": 100.0
-      }
-     },
-     {
-      "date": "2026-11-11",
-      "opp": "PHI",
-      "metrics": {
-       "xgf": 38.16,
-       "xga60": 3.054,
-       "gsax": 1.132,
-       "st": 175.0
-      }
-     }
-    ],
-    "is_fav": true,
-    "b2b": false,
-    "power": {
-     "rank": 6,
-     "own": 12,
-     "avg": 6.33,
-     "espn": 4,
-     "nhl_com": 3
-    },
-    "goalie": {
-     "name": "Devon Levi",
-     "last": "Levi",
-     "espn_id": "4894487",
-     "confirmed": false
-    },
-    "goalie_status": "backup",
-    "regular_goalie_name": "T. Jarry",
-    "goalies": [
-     {
-      "id": "8477465",
-      "name": "T. Jarry",
-      "starts": 9
-     },
-     {
-      "id": "8482221",
-      "name": "D. Levi",
-      "starts": 9
-     },
-     {
-      "id": "8477035",
-      "name": "M. Tomkins",
-      "starts": 2
-     }
-    ],
-    "key_skaters": [
-     "E. Bouchard",
-     "C. McDavid",
-     "R. Shea",
-     "L. Draisaitl",
-     "M. Ekholm",
-     "C. Murphy"
-    ],
-    "injuries": [
-     {
-      "name": "Isaac Howard",
-      "last": "Howard",
-      "status": "Injured Reserve",
-      "date": "2026-11-06T00:04Z",
-      "comment": "ir"
-     },
-     {
-      "name": "Alec Regula",
-      "last": "Regula",
-      "status": "Injured Reserve",
-      "date": "2026-10-01T14:11Z",
-      "comment": "Regula (undisclosed) was designated for long-term injured reserve Thursday."
-     },
-     {
-      "name": "Matt Savoie",
-      "last": "Savoie",
-      "status": "Injured Reserve",
-      "date": "2026-10-01T14:05Z",
-      "comment": "Savoie (lower body) was shifted to long-term injured reserve Thursday."
-     },
-     {
-      "name": "Frederik Andersen",
-      "last": "Andersen",
-      "status": "Injured Reserve",
-      "date": "2026-09-29T17:53Z",
-      "comment": "Andersen (knee) isn't expected back until \"maybe\" December, head coach Mike Babcock told NHL.com on Tuesday."
-     },
-     {
-      "name": "Mattias Janmark",
-      "last": "Janmark",
-      "status": "Injured Reserve",
-      "date": "2026-09-29T17:52Z",
-      "comment": "Janmark (undisclosed) does not have a timetable for his return from injury."
-     }
-    ],
-    "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [],
-    "key_long_term": [],
-    "spread_text": "-148"
-   },
-   "scoring": {
-    "scored": true,
-    "fav": "EDM",
-    "dog": "TOR",
-    "in_range": true,
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "qualifiers": [],
-    "would_qualify": false,
-    "rules": [
-     {
-      "rule": "Range",
-      "name": "Top-7 team vs bottom-7 team (consensus power rank)",
-      "pass": true,
-      "detail": "EDM #6 vs TOR #26"
-     },
-     {
-      "rule": "A",
-      "name": "Analysis Score 22+",
-      "pass": false,
-      "detail": "Score 20 of 40"
-     },
-     {
-      "rule": "Goalie",
-      "name": "EDM's regular goalie starts",
-      "pass": false,
-      "detail": "Devon Levi listed instead of T. Jarry: capped at the Watch list"
-     },
-     {
-      "rule": "Rest",
-      "name": "EDM didn't play yesterday",
-      "pass": true,
-      "detail": "Rested"
-     }
-    ],
-    "fails": [
-     "Score 20 (qualifies at 22)"
-    ],
-    "warnings": [],
-    "flags": [
-     "EDM backup goalie starting (Devon Levi)"
-    ],
-    "score": 20,
-    "max": 40,
-    "band": "yellow",
-    "parts": [
-     {
-      "key": "fav_metrics",
-      "label": "Favorite metrics",
-      "points": 6,
-      "max": 16
-     },
-     {
-      "key": "dog_metrics",
-      "label": "Underdog metrics",
-      "points": 10,
-      "max": 16
-     },
-     {
-      "key": "goalies",
-      "label": "Goalies + health",
-      "points": 1,
-      "max": 4
-     },
-     {
-      "key": "home",
-      "label": "Home ice",
-      "points": 0,
-      "max": 1
-     },
-     {
-      "key": "rest",
-      "label": "Rest",
-      "points": 1,
-      "max": 1
-     },
-     {
-      "key": "form",
-      "label": "Last-3 form",
-      "points": 2,
-      "max": 2
-     }
-    ],
-    "pills": [
-     {
-      "team": "EDM",
-      "role": "fav",
-      "window": "season",
-      "cells": [
-       {
-        "metric": "xgf",
-        "rank": 22,
-        "color": "yellow"
-       },
-       {
-        "metric": "xga60",
-        "rank": 8,
-        "color": "green"
-       },
-       {
-        "metric": "gsax",
-        "rank": 14,
-        "color": "yellow"
-       },
-       {
-        "metric": "st",
-        "rank": 9,
-        "color": "green"
-       }
-      ]
-     },
-     {
-      "team": "EDM",
-      "role": "fav",
-      "window": "last5",
-      "cells": [
-       {
-        "metric": "xgf",
-        "rank": 28,
-        "color": "red"
-       },
-       {
-        "metric": "xga60",
-        "rank": 5,
-        "color": "green"
-       },
-       {
-        "metric": "gsax",
-        "rank": 9,
-        "color": "green"
-       },
-       {
-        "metric": "st",
-        "rank": 7,
-        "color": "green"
-       }
-      ]
-     },
-     {
-      "team": "TOR",
-      "role": "dog",
-      "window": "season",
-      "cells": [
-       {
-        "metric": "xgf",
-        "rank": 26,
-        "color": "green"
-       },
-       {
-        "metric": "xga60",
-        "rank": 20,
-        "color": "yellow"
-       },
-       {
-        "metric": "gsax",
-        "rank": 21,
-        "color": "yellow"
-       },
-       {
-        "metric": "st",
-        "rank": 3,
-        "color": "deep-red"
-       }
-      ]
-     },
-     {
-      "team": "TOR",
-      "role": "dog",
-      "window": "last5",
-      "cells": [
-       {
-        "metric": "xgf",
-        "rank": 22,
-        "color": "yellow"
-       },
-       {
-        "metric": "xga60",
-        "rank": 15,
-        "color": "yellow"
-       },
-       {
-        "metric": "gsax",
-        "rank": 29,
-        "color": "green"
-       },
-       {
-        "metric": "st",
-        "rank": 26,
-        "color": "green"
-       }
-      ]
-     }
-    ],
-    "labels": {
-     "xgf": "xGF% 5v5",
-     "xga60": "xGA/60 5v5",
-     "gsax": "GSAx/gm",
-     "st": "PP%+PK%",
-     "pts": "Points %"
-    }
-   },
-   "summary": "Score 20 (qualifies at 22). EDM start their backup goalie, Devon Levi (regular: T. Jarry). Biggest edge over the last 5: GSAx/gm (EDM #9, TOR #29). EDM 3-0-0 in its last 3, TOR 0-3-0.",
-   "lean": "No lean",
-   "kalshi": {
-    "event": "KXNHLGAME-26NOV14EDMTOR",
-    "fav_prob": 0.585,
-    "bid": 0.58,
-    "ask": 0.59
+    "fav_prob": 0.545,
+    "bid": 0.54,
+    "ask": 0.55
    }
   },
   {
@@ -5309,7 +5296,7 @@
      "name": "Jeremy Swayman",
      "last": "Swayman",
      "espn_id": "4712036",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "regular",
     "regular_goalie_name": "J. Swayman",
@@ -6368,9 +6355,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV14FLASTL",
-    "fav_prob": 0.515,
+    "fav_prob": 0.52,
     "bid": 0.51,
-    "ask": 0.52
+    "ask": 0.53
    }
   },
   {
@@ -6996,9 +6983,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV14NJWSH",
-    "fav_prob": 0.515,
-    "bid": 0.51,
-    "ask": 0.52
+    "fav_prob": 0.525,
+    "bid": 0.52,
+    "ask": 0.53
    }
   },
   {
@@ -7785,9 +7772,9 @@
      {
       "name": "Chris Kreider",
       "last": "Kreider",
-      "status": "Day-To-Day",
-      "date": "2026-11-13T03:37Z",
-      "comment": "day-to-day"
+      "status": "Out",
+      "date": "2026-11-14T15:51Z",
+      "comment": "out"
      },
      {
       "name": "Ivan Demidov",
@@ -8857,7 +8844,7 @@
   "in_range": 1,
   "qualified": 0,
   "watch": 0,
-  "built_label": "Sat Nov 14, 7:00 AM PT"
+  "built_label": "Sat Nov 14, 8:00 AM PT"
  },
  "power_table": [
   {
