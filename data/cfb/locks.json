@@ -944,7 +944,7 @@
    "kick_pt": "Sat 9:00 AM PT",
    "day_et": "2026-11-14",
    "state": "in",
-   "detail": "15:00 - 1st",
+   "detail": "10:14 - 2nd",
    "neutral": false,
    "venue": "Hard Rock Stadium",
    "favorite": "home",
@@ -1154,7 +1154,7 @@
    },
    "locked_at": "2026-11-14T08:00:53-08:00",
    "score": {
-    "home": 0,
+    "home": 3,
     "away": 0
    }
   }
@@ -1168,7 +1168,7 @@
    "kick_pt": "Sat 9:00 AM PT",
    "day_et": "2026-11-14",
    "state": "in",
-   "detail": "15:00 - 2nd",
+   "detail": "9:20 - 2nd",
    "neutral": false,
    "venue": "Ohio Stadium",
    "favorite": "home",
@@ -1378,8 +1378,8 @@
    },
    "locked_at": "2026-11-14T08:00:53-08:00",
    "score": {
-    "home": 0,
-    "away": 3
+    "home": 7,
+    "away": 6
    }
   }
  },
@@ -1392,7 +1392,7 @@
    "kick_pt": "Sat 9:30 AM PT",
    "day_et": "2026-11-14",
    "state": "in",
-   "detail": "13:31 - 1st",
+   "detail": "7:30 - 1st",
    "neutral": false,
    "venue": "Memorial Stadium (Clemson, SC)",
    "favorite": "home",
@@ -1654,7 +1654,7 @@
    "kick_pt": "Sat 9:30 AM PT",
    "day_et": "2026-11-14",
    "state": "in",
-   "detail": "7:41 - 1st",
+   "detail": "0:20 - 1st",
    "neutral": false,
    "venue": "SHI Stadium",
    "favorite": "away",
@@ -1907,8 +1907,8 @@
    "kick_utc": "2026-11-14T17:45:00+00:00",
    "kick_pt": "Sat 9:45 AM PT",
    "day_et": "2026-11-14",
-   "state": "pre",
-   "detail": "11/14 - 12:45 PM EST",
+   "state": "in",
+   "detail": "8:45 - 1st",
    "neutral": false,
    "venue": "FirstBank Stadium",
    "favorite": "away",
@@ -2394,6 +2394,276 @@
    "score": {
     "home": 0,
     "away": 0
+   }
+  }
+ },
+ "401856862": {
+  "at": "2026-11-14T10:01:01-08:00",
+  "week": 11,
+  "game": {
+   "id": "401856862",
+   "kick_utc": "2026-11-14T19:00:00+00:00",
+   "kick_pt": "Sat 11:00 AM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 2:00 PM EST",
+   "neutral": false,
+   "venue": "Amon G. Carter Stadium",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -13.5,
+   "open_spread": -9.5,
+   "line_source": "DraftKings",
+   "total": 44.5,
+   "fav_ml": -520.0,
+   "movement": 4.0,
+   "home": {
+    "code": 2628,
+    "abbr": "TCU",
+    "name": "TCU",
+    "display": "TCU Horned Frogs",
+    "season": {
+     "off_epa": 0.0161,
+     "off_sr": 0.4266,
+     "def_epa": -0.1054,
+     "def_sr": 0.3667,
+     "games": 9,
+     "ranks": {
+      "off_epa": 98,
+      "off_sr": 98,
+      "def_epa": 16,
+      "def_sr": 8
+     }
+    },
+    "last3": {
+     "off_epa": 0.0246,
+     "off_sr": 0.4179,
+     "def_epa": -0.041,
+     "def_sr": 0.3592,
+     "games": 3,
+     "ranks": {
+      "off_epa": 78,
+      "off_sr": 94,
+      "def_epa": 41,
+      "def_sr": 10
+     }
+    },
+    "net": 0.1215,
+    "net_rank": 40,
+    "record": "4-5",
+    "last2_results": [
+     "W",
+     "L"
+    ],
+    "last3_results": [
+     "L",
+     "W",
+     "L"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Jaden Craig",
+     "dropbacks": 332,
+     "epa_db": 0.102,
+     "rank": 66
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 37,
+     "fpi": 42,
+     "own_net": 40
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.742
+   },
+   "away": {
+    "code": 2306,
+    "abbr": "KSU",
+    "name": "Kansas St",
+    "display": "Kansas State Wildcats",
+    "season": {
+     "off_epa": 0.1073,
+     "off_sr": 0.4669,
+     "def_epa": 0.0405,
+     "def_sr": 0.4033,
+     "games": 9,
+     "ranks": {
+      "off_epa": 49,
+      "off_sr": 39,
+      "def_epa": 76,
+      "def_sr": 35
+     }
+    },
+    "last3": {
+     "off_epa": -0.0778,
+     "off_sr": 0.4047,
+     "def_epa": 0.1262,
+     "def_sr": 0.4564,
+     "games": 3,
+     "ranks": {
+      "off_epa": 117,
+      "off_sr": 113,
+      "def_epa": 103,
+      "def_sr": 88
+     }
+    },
+    "net": 0.0669,
+    "net_rank": 60,
+    "record": "4-5",
+    "last2_results": [
+     "L",
+     "L"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "L"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Avery Johnson",
+     "dropbacks": 191,
+     "epa_db": 0.189,
+     "rank": 39
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 63,
+     "fpi": 66,
+     "own_net": 60
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.258
+   },
+   "fav": 2628,
+   "dog": 2306,
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 20 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 TCU last-3 top 25 in 1 of 4 \u00b7 \u2717 KSU last-3 bottom 25 (114+) in 1 of 4 \u00b7 \u2717 TCU season outside 1-69: Off EPA/play #98, Off success #98 \u00b7 \u2713 KSU season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "KSU: consensus #63, ESPN FPI #66"
+     }
+    ],
+    "fails": [
+     "Watch list: score 20 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 20,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 5,
+      "dog_weakness": 9,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 1
+     },
+     "max": 40
+    },
+    "call": "Watch list",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for TCU yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV14KSUTCU",
+    "fav_prob": 0.815,
+    "bid": 0.81,
+    "ask": 0.82
+   },
+   "locked_at": "2026-11-14T10:01:01-08:00",
+   "readout": {
+    "matchup": "KSU @ TCU",
+    "summary": "Every source favors TCU (4-5), whose five losses were all by one score. Kansas State (4-5, 0-3 since Avery Johnson's injury) has no named starter: Blake Barnett and Dillon Duff may both play. TCU is missing several skill players. Most books list TCU -10.5, below the board's 13.5; Heartland takes KSU +10.5.",
+    "pick": "TCU to win (all sources); spread split: Sports Chat Place TCU -9.5; Heartland College Sports KSU +10.5",
+    "predicted_score": "TCU 28-17 (Dimers model); TCU 24-17 (Heartland College Sports, Nov 11)",
+    "moneyline": "TCU -410 / KSU +320 (FanDuel, Nov 11); TCU -395 / KSU +310 (DraftKings via Bang the Book, Nov 13); TCU -376 / KSU +355 (Dimers, book not named)",
+    "win_probability": "TCU 84% (numberFire via FanDuel Research, Nov 11); TCU 80.9% (Dimers, updated Nov 12)",
+    "injuries": "KSU: QB Avery Johnson out, fourth straight game (neck/shoulder, likely out for the season per Wichita Eagle Nov 9); QB Jacob Knuth out (ankle, third straight game, NFP Nov 13); starter not named, Barnett or Duff, possibly both (Klein, Nov 13). TCU (Big 12 Wednesday report via FanRecap): out RB Jon Denman, WRs Ace Theus, Keagan Cunningham, Cooper Reid, CB Devondre McGee, OL Cade Bennett, TE Braden Back; S Julius Simms and S Devyn Hidrogo questionable; RB Jeremy Payne practiced, status monitored (Heartland, Nov 11); QB Jaden Craig starts",
+    "sources": [
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/cfb/predictions/2026_11_tcu_ksu"
+     },
+     {
+      "site": "Sports Chat Place",
+      "url": "https://sportschatplace.com/college-football-picks/tcu-vs-kansas-state-prediction-football-picks-today-11-14-26/"
+     },
+     {
+      "site": "AP preview (ABC News)",
+      "url": "https://abcnews.com/Sports/wireStory/tcu-takes-kansas-state-big-12-action-137965011"
+     },
+     {
+      "site": "National Football Post (Field Level Media)",
+      "url": "https://www.nationalfootballpost.com/2026/11/13/k-states-quarterback-quandary-continues-with-tcu-on-tap"
+     },
+     {
+      "site": "Wichita Eagle via Yahoo Sports",
+      "url": "https://sports.yahoo.com/articles/why-collin-klein-expects-k-205202171.html"
+     },
+     {
+      "site": "Roundtable Sports via Yahoo Sports",
+      "url": "https://sports.yahoo.com/articles/tcu-vs-kansas-state-quarterback-130042673.html"
+     },
+     {
+      "site": "FanRecap (availability report)",
+      "url": "https://fanrecap.com/kansas-state-wildcats/kansas-state-heads-to-tcu-with-a-major-quarterback-problem--GHFlJ"
+     },
+     {
+      "site": "FanDuel Research",
+      "url": "https://www.fanduel.com/research/tcu-vs-kansas-state-college-football-odds-picks-best-bets-for-11-14-2026"
+     },
+     {
+      "site": "Heartland College Sports",
+      "url": "https://www.heartlandcollegesports.com/2026/11/11/kansas-state-vs-tcu-prediction-pick-odds-week-11-2026/"
+     },
+     {
+      "site": "Bang the Book",
+      "url": "https://bangthebook.com/kansas-state-wildcats-vs-tcu-horned-frogs-prediction-2026-11-14/"
+     }
+    ],
+    "updated": "2026-11-14T05:56-08:00"
    }
   }
  }
