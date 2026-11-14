@@ -1,257 +1,9 @@
 {
  "season": 2026,
  "week": 11,
- "built_at": "2026-11-13T21:00:42-08:00",
- "built_label": "Fri Nov 13, 9:00 PM PT",
+ "built_at": "2026-11-13T22:15:39-08:00",
+ "built_label": "Fri Nov 13, 10:15 PM PT",
  "games": [
-  {
-   "id": "401858526",
-   "kick_utc": "2026-11-14T02:00:00+00:00",
-   "kick_pt": "Fri 6:00 PM PT",
-   "day_et": "2026-11-13",
-   "state": "in",
-   "detail": "7:44 - 4th",
-   "neutral": false,
-   "venue": "Rose Bowl",
-   "favorite": "home",
-   "fav_home": true,
-   "spread": -10.0,
-   "open_spread": -12.5,
-   "line_source": "DraftKings",
-   "total": 48.5,
-   "fav_ml": -425.0,
-   "movement": -2.5,
-   "home": {
-    "code": 26,
-    "abbr": "UCLA",
-    "name": "UCLA",
-    "display": "UCLA Bruins",
-    "season": {
-     "off_epa": 0.0881,
-     "off_sr": 0.4471,
-     "def_epa": -0.2258,
-     "def_sr": 0.3369,
-     "games": 9,
-     "ranks": {
-      "off_epa": 59,
-      "off_sr": 65,
-      "def_epa": 2,
-      "def_sr": 2
-     }
-    },
-    "last3": {
-     "off_epa": 0.0229,
-     "off_sr": 0.4385,
-     "def_epa": -0.2898,
-     "def_sr": 0.2881,
-     "games": 3,
-     "ranks": {
-      "off_epa": 79,
-      "off_sr": 63,
-      "def_epa": 2,
-      "def_sr": 2
-     }
-    },
-    "net": 0.314,
-    "net_rank": 2,
-    "record": "9-0",
-    "last2_results": [
-     "W",
-     "W"
-    ],
-    "last3_results": [
-     "W",
-     "W",
-     "W"
-    ],
-    "rest": 6,
-    "qb": {
-     "regular": "Nico Iamaleava",
-     "dropbacks": 123,
-     "epa_db": 0.007,
-     "rank": 94
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 12,
-     "fpi": 27,
-     "own_net": 2,
-     "ap": 4,
-     "cfp": 4
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.738
-   },
-   "away": {
-    "code": 356,
-    "abbr": "ILL",
-    "name": "Illinois",
-    "display": "Illinois Fighting Illini",
-    "season": {
-     "off_epa": 0.1475,
-     "off_sr": 0.4659,
-     "def_epa": 0.1312,
-     "def_sr": 0.476,
-     "games": 9,
-     "ranks": {
-      "off_epa": 32,
-      "off_sr": 40,
-      "def_epa": 113,
-      "def_sr": 127
-     }
-    },
-    "last3": {
-     "off_epa": 0.0826,
-     "off_sr": 0.4216,
-     "def_epa": -0.0381,
-     "def_sr": 0.4488,
-     "games": 3,
-     "ranks": {
-      "off_epa": 53,
-      "off_sr": 82,
-      "def_epa": 42,
-      "def_sr": 80
-     }
-    },
-    "net": 0.0162,
-    "net_rank": 74,
-    "record": "6-3",
-    "last2_results": [
-     "W",
-     "W"
-    ],
-    "last3_results": [
-     "W",
-     "W",
-     "W"
-    ],
-    "rest": 7,
-    "qb": {
-     "regular": "Katin Houser",
-     "dropbacks": 263,
-     "epa_db": 0.222,
-     "rank": 31
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 57,
-     "fpi": 43,
-     "own_net": 74
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.262
-   },
-   "fav": 26,
-   "dog": 356,
-   "scoring": {
-    "qualified": false,
-    "tier": "watch",
-    "tier_label": "Watch list",
-    "tracked": true,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 24 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 UCLA last-3 top 25 in 2 of 4 \u00b7 \u2717 ILL last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2713 UCLA season top half (1-69) in all four \u00b7 \u2713 ILL season top 25 in none"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key player newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "No injury report (warning only; health assumed full)"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
-      "pass": true,
-      "detail": "ILL: consensus #57, ESPN FPI #43"
-     }
-    ],
-    "fails": [
-     "Watch list: score 24 (qualifies at 28)"
-    ],
-    "hero": {
-     "score": 24,
-     "band": "yellow",
-     "parts": {
-      "fav_strength": 8,
-      "dog_weakness": 9,
-      "health": 4,
-      "home": 1,
-      "rest": 0,
-      "form": 2
-     },
-     "max": 40
-    },
-    "call": "Watch list",
-    "flags": [
-     {
-      "level": "yellow",
-      "text": "No injury report for UCLA yet: check before betting"
-     }
-    ]
-   },
-   "fav_defense_top25": true,
-   "kalshi": {
-    "event": "KXNCAAFGAME-26NOV13ILLUCLA",
-    "fav_prob": 0.795,
-    "bid": 0.79,
-    "ask": 0.8
-   },
-   "locked_at": "2026-11-13T17:00:41-08:00",
-   "readout": {
-    "matchup": "ILL @ UCLA",
-    "summary": "Every source expects unbeaten UCLA (9-0) to win at the Rose Bowl. Action Network picks UCLA -10, citing UCLA's havoc and turnover edge and Illinois' weak pass rush. PredictEm expects a low-scoring game and takes the Under. Illinois (6-3) has won four straight.",
-    "pick": "UCLA to win (all sources); spread: Action Network UCLA -10; PredictEm no side (Under 47.5)",
-    "predicted_score": "UCLA 29-19 (Dimers model); UCLA 24-16 (PredictEm)",
-    "moneyline": "UCLA -375 / ILL +300 (BetMGM via Action Network, Nov 10); UCLA -365 / ILL +355 (Dimers, book not named)",
-    "win_probability": "UCLA 79.3% (Dimers, updated Nov 13)",
-    "injuries": "Illinois: RB Javari Barnett out for the season (lower leg); backup QB Michael Clayton II out (hand bone bruise) (AP via ABC7, updated Nov 12). UCLA: QB Nico Iamaleava out for the season (knee), Ty Dieffenbach starts (PredictEm, Nov 10); also without RT Hall Schmidt, WR Jalen Saint Paul, DL Ashton Sanders, edge Ryan McCulloch (AP via ABC7).",
-    "sources": [
-     {
-      "site": "Action Network",
-      "url": "https://www.actionnetwork.com/ncaaf/college-football-picks-havoc-rankings-prediction-illinois-vs-ucla-week-11"
-     },
-     {
-      "site": "PredictEm",
-      "url": "https://www.predictem.com/?p=215442"
-     },
-     {
-      "site": "Dimers",
-      "url": "https://www.dimers.com/cfb/predictions/2026_11_ucla_ill"
-     },
-     {
-      "site": "ABC7 (AP preview)",
-      "url": "https://abc7.com/post/illinois-visits-no-4-ucla-big-ten-matchup/20024712"
-     }
-    ],
-    "updated": "2026-11-13T07:15-08:00"
-   },
-   "score": {
-    "home": 19,
-    "away": 7
-   }
-  },
   {
    "id": "401858296",
    "kick_utc": "2026-11-14T17:00:00+00:00",
@@ -263,12 +15,12 @@
    "venue": "Hard Rock Stadium",
    "favorite": "home",
    "fav_home": true,
-   "spread": -13.5,
+   "spread": -14.0,
    "open_spread": -20.5,
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "total": 54.5,
    "fav_ml": -575.0,
-   "movement": -7.0,
+   "movement": -6.5,
    "home": {
     "code": 2390,
     "abbr": "MIA",
@@ -462,9 +214,9 @@
    "fav_defense_top25": false,
    "kalshi": {
     "event": "KXNCAAFGAME-26NOV14DUKEMIA",
-    "fav_prob": 0.825,
+    "fav_prob": 0.83,
     "bid": 0.82,
-    "ask": 0.83
+    "ask": 0.84
    }
   },
   {
@@ -480,7 +232,7 @@
    "fav_home": true,
    "spread": -14.0,
    "open_spread": -9.5,
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "total": 44.5,
    "fav_ml": -550.0,
    "movement": 4.5,
@@ -695,7 +447,7 @@
    "fav_home": true,
    "spread": -15.5,
    "open_spread": -13.5,
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "total": 47.5,
    "fav_ml": -625.0,
    "movement": 2.0,
@@ -936,7 +688,7 @@
    "fav_home": false,
    "spread": -14.5,
    "open_spread": -12.5,
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "total": 51.5,
    "fav_ml": -675.0,
    "movement": 2.0,
@@ -1173,7 +925,7 @@
    "fav_home": false,
    "spread": -14.0,
    "open_spread": -19.5,
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "total": 47.5,
    "fav_ml": -675.0,
    "movement": -5.5,
@@ -1388,7 +1140,7 @@
    "fav_home": false,
    "spread": -11.5,
    "open_spread": -13.5,
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "total": 45.5,
    "fav_ml": -455.0,
    "movement": -2.0,
@@ -1625,7 +1377,7 @@
    "fav_home": true,
    "spread": -13.5,
    "open_spread": -9.5,
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "total": 44.5,
    "fav_ml": -520.0,
    "movement": 4.0,
@@ -1866,7 +1618,7 @@
    "fav_home": true,
    "spread": -16.5,
    "open_spread": -12.5,
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "total": 47.5,
    "fav_ml": -750.0,
    "movement": 4.0,
@@ -2087,7 +1839,7 @@
    "fav_home": true,
    "spread": -10.5,
    "open_spread": -13.5,
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "total": 38.5,
    "fav_ml": -425.0,
    "movement": -3.0,
@@ -2302,7 +2054,7 @@
    "fav_home": true,
    "spread": -11.5,
    "open_spread": -12.5,
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "total": 46.5,
    "fav_ml": -470.0,
    "movement": -1.0,
@@ -2539,7 +2291,7 @@
    "fav_home": true,
    "spread": -17.5,
    "open_spread": -18.5,
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "total": 56.5,
    "fav_ml": -950.0,
    "movement": -1.0,
@@ -2784,7 +2536,7 @@
    "fav_home": true,
    "spread": -16.5,
    "open_spread": -4.5,
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "total": 63.5,
    "fav_ml": -675.0,
    "movement": 12.0,
@@ -3027,7 +2779,7 @@
    "fav_home": true,
    "spread": -11.5,
    "open_spread": -7.0,
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "total": 42.5,
    "fav_ml": -455.0,
    "movement": 4.5,
@@ -3240,7 +2992,7 @@
    "fav_home": true,
    "spread": -13.5,
    "open_spread": -10.5,
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "total": 48.5,
    "fav_ml": -575.0,
    "movement": 3.0,
@@ -3481,7 +3233,7 @@
    "fav_home": true,
    "spread": -17.5,
    "open_spread": -16.5,
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "total": 47.5,
    "fav_ml": -950.0,
    "movement": 1.0,
@@ -3724,7 +3476,7 @@
    "fav_home": true,
    "spread": -15.5,
    "open_spread": -16.5,
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "total": 57.5,
    "fav_ml": -750.0,
    "movement": -1.0,
@@ -3965,7 +3717,7 @@
    "fav_home": true,
    "spread": -16.5,
    "open_spread": -13.5,
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "total": 46.5,
    "fav_ml": -800.0,
    "movement": 3.0,
@@ -4865,6 +4617,254 @@
     "home": 21,
     "away": 42
    }
+  },
+  {
+   "id": "401858526",
+   "kick_utc": "2026-11-14T02:00:00+00:00",
+   "kick_pt": "Fri 6:00 PM PT",
+   "day_et": "2026-11-13",
+   "state": "post",
+   "detail": "Final",
+   "neutral": false,
+   "venue": "Rose Bowl",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -10.0,
+   "open_spread": -12.5,
+   "line_source": "DraftKings",
+   "total": 48.5,
+   "fav_ml": -425.0,
+   "movement": -2.5,
+   "home": {
+    "code": 26,
+    "abbr": "UCLA",
+    "name": "UCLA",
+    "display": "UCLA Bruins",
+    "season": {
+     "off_epa": 0.0881,
+     "off_sr": 0.4471,
+     "def_epa": -0.2258,
+     "def_sr": 0.3369,
+     "games": 9,
+     "ranks": {
+      "off_epa": 59,
+      "off_sr": 65,
+      "def_epa": 2,
+      "def_sr": 2
+     }
+    },
+    "last3": {
+     "off_epa": 0.0229,
+     "off_sr": 0.4385,
+     "def_epa": -0.2898,
+     "def_sr": 0.2881,
+     "games": 3,
+     "ranks": {
+      "off_epa": 79,
+      "off_sr": 63,
+      "def_epa": 2,
+      "def_sr": 2
+     }
+    },
+    "net": 0.314,
+    "net_rank": 2,
+    "record": "9-0",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "W"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Nico Iamaleava",
+     "dropbacks": 123,
+     "epa_db": 0.007,
+     "rank": 94
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 12,
+     "fpi": 27,
+     "own_net": 2,
+     "ap": 4,
+     "cfp": 4
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.738
+   },
+   "away": {
+    "code": 356,
+    "abbr": "ILL",
+    "name": "Illinois",
+    "display": "Illinois Fighting Illini",
+    "season": {
+     "off_epa": 0.1475,
+     "off_sr": 0.4659,
+     "def_epa": 0.1312,
+     "def_sr": 0.476,
+     "games": 9,
+     "ranks": {
+      "off_epa": 32,
+      "off_sr": 40,
+      "def_epa": 113,
+      "def_sr": 127
+     }
+    },
+    "last3": {
+     "off_epa": 0.0826,
+     "off_sr": 0.4216,
+     "def_epa": -0.0381,
+     "def_sr": 0.4488,
+     "games": 3,
+     "ranks": {
+      "off_epa": 53,
+      "off_sr": 82,
+      "def_epa": 42,
+      "def_sr": 80
+     }
+    },
+    "net": 0.0162,
+    "net_rank": 74,
+    "record": "6-3",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "W"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Katin Houser",
+     "dropbacks": 263,
+     "epa_db": 0.222,
+     "rank": 31
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 57,
+     "fpi": 43,
+     "own_net": 74
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.262
+   },
+   "fav": 26,
+   "dog": 356,
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 24 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 UCLA last-3 top 25 in 2 of 4 \u00b7 \u2717 ILL last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2713 UCLA season top half (1-69) in all four \u00b7 \u2713 ILL season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "ILL: consensus #57, ESPN FPI #43"
+     }
+    ],
+    "fails": [
+     "Watch list: score 24 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 24,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 8,
+      "dog_weakness": 9,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "call": "Watch list",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for UCLA yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": true,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV13ILLUCLA",
+    "fav_prob": 0.795,
+    "bid": 0.79,
+    "ask": 0.8
+   },
+   "locked_at": "2026-11-13T17:00:41-08:00",
+   "readout": {
+    "matchup": "ILL @ UCLA",
+    "summary": "Every source expects unbeaten UCLA (9-0) to win at the Rose Bowl. Action Network picks UCLA -10, citing UCLA's havoc and turnover edge and Illinois' weak pass rush. PredictEm expects a low-scoring game and takes the Under. Illinois (6-3) has won four straight.",
+    "pick": "UCLA to win (all sources); spread: Action Network UCLA -10; PredictEm no side (Under 47.5)",
+    "predicted_score": "UCLA 29-19 (Dimers model); UCLA 24-16 (PredictEm)",
+    "moneyline": "UCLA -375 / ILL +300 (BetMGM via Action Network, Nov 10); UCLA -365 / ILL +355 (Dimers, book not named)",
+    "win_probability": "UCLA 79.3% (Dimers, updated Nov 13)",
+    "injuries": "Illinois: RB Javari Barnett out for the season (lower leg); backup QB Michael Clayton II out (hand bone bruise) (AP via ABC7, updated Nov 12). UCLA: QB Nico Iamaleava out for the season (knee), Ty Dieffenbach starts (PredictEm, Nov 10); also without RT Hall Schmidt, WR Jalen Saint Paul, DL Ashton Sanders, edge Ryan McCulloch (AP via ABC7).",
+    "sources": [
+     {
+      "site": "Action Network",
+      "url": "https://www.actionnetwork.com/ncaaf/college-football-picks-havoc-rankings-prediction-illinois-vs-ucla-week-11"
+     },
+     {
+      "site": "PredictEm",
+      "url": "https://www.predictem.com/?p=215442"
+     },
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/cfb/predictions/2026_11_ucla_ill"
+     },
+     {
+      "site": "ABC7 (AP preview)",
+      "url": "https://abc7.com/post/illinois-visits-no-4-ucla-big-ten-matchup/20024712"
+     }
+    ],
+    "updated": "2026-11-13T07:15-08:00"
+   },
+   "score": {
+    "home": 22,
+    "away": 14
+   }
   }
  ],
  "notes": [],
@@ -4881,8 +4881,8 @@
   "games": 21,
   "upcoming": 17,
   "qualified": 0,
-  "watch": 13,
+  "watch": 12,
   "other_fbs_games": 40,
-  "built_label": "Fri Nov 13, 9:00 PM PT"
+  "built_label": "Fri Nov 13, 10:15 PM PT"
  }
 }
