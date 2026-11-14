@@ -3,8 +3,8 @@
  "date_label": "Saturday, November 14",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-14T11:30:52-08:00",
- "built_label": "Sat Nov 14, 11:30 AM PT",
+ "built_at": "2026-11-14T12:30:43-08:00",
+ "built_label": "Sat Nov 14, 12:30 PM PT",
  "metrics_through": "2026-11-13",
  "metrics_through_label": "Nov 13",
  "max": 40,
@@ -27,7 +27,7 @@
    "tip_pt": "10:00 AM PT",
    "day_et": "2026-11-14",
    "state": "in",
-   "detail": "9:54 - 2nd",
+   "detail": "5:51 - 3rd",
    "neutral": true,
    "venue": "Veikkaus Arena",
    "favorite": "home",
@@ -633,7 +633,7 @@
    },
    "locked_at": "2026-11-14T09:00:39-08:00",
    "score": {
-    "home": 4,
+    "home": 5,
     "away": 1
    }
   },
@@ -649,7 +649,7 @@
    "favorite": "home",
    "line": {
     "details": "TB -225",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -225,
     "ml_away": null,
     "puck_line": -1.5,
@@ -658,7 +658,7 @@
    },
    "spread": {
     "details": "TB -225",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -1902,7 +1902,7 @@
    "favorite": "home",
    "line": {
     "details": "UTAH -185",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -185,
     "ml_away": null,
     "puck_line": -1.5,
@@ -1911,7 +1911,7 @@
    },
    "spread": {
     "details": "UTAH -185",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -2294,9 +2294,9 @@
      {
       "name": "Alexander Wennberg",
       "last": "Wennberg",
-      "status": "Day-To-Day",
-      "date": "2026-11-13T20:30Z",
-      "comment": "day-to-day"
+      "status": "Out",
+      "date": "2026-11-14T19:54Z",
+      "comment": "out"
      },
      {
       "name": "Igor Chernyshov",
@@ -2321,10 +2321,10 @@
      }
     ],
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
+    "key_out": [
      "Alexander Wennberg"
     ],
+    "key_questionable": [],
     "key_long_term": [],
     "spread_text": ""
    },
@@ -2538,9 +2538,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV14SJUTA",
-    "fav_prob": 0.615,
-    "bid": 0.61,
-    "ask": 0.62
+    "fav_prob": 0.625,
+    "bid": 0.62,
+    "ask": 0.63
    }
   },
   {
@@ -2555,7 +2555,7 @@
    "favorite": "away",
    "line": {
     "details": "OTT -135",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": null,
     "ml_away": -135,
     "puck_line": 1.5,
@@ -2564,7 +2564,7 @@
    },
    "spread": {
     "details": "OTT -135",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": 1.5
    },
    "home": {
@@ -3193,7 +3193,7 @@
    "favorite": "home",
    "line": {
     "details": "DAL -135",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -135,
     "ml_away": null,
     "puck_line": -1.5,
@@ -3202,7 +3202,7 @@
    },
    "spread": {
     "details": "DAL -135",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -3394,6 +3394,13 @@
       "status": "Injured Reserve",
       "date": "2026-10-24T18:32Z",
       "comment": "Back was placed on long-term injured reserve on Saturday."
+     },
+     {
+      "name": "Matt Duchene",
+      "last": "Duchene",
+      "status": "Injured Reserve",
+      "date": "2026-10-12T16:46Z",
+      "comment": "Duchene will be out for approximately three months after undergoing surgery to repair a core injury, the team announced Monday."
      }
     ],
     "injuries_known": true,
@@ -3827,7 +3834,7 @@
    "favorite": "away",
    "line": {
     "details": "EDM -148",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": null,
     "ml_away": -148,
     "puck_line": 1.5,
@@ -3836,7 +3843,7 @@
    },
    "spread": {
     "details": "EDM -148",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": 1.5
    },
    "home": {
@@ -4518,7 +4525,7 @@
    "favorite": "away",
    "line": {
     "details": "MIN -130",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": null,
     "ml_away": -130,
     "puck_line": 1.5,
@@ -4527,7 +4534,7 @@
    },
    "spread": {
     "details": "MIN -130",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": 1.5
    },
    "home": {
@@ -5107,7 +5114,7 @@
    "favorite": "home",
    "line": {
     "details": "CBJ -135",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -135,
     "ml_away": null,
     "puck_line": -1.5,
@@ -5116,7 +5123,7 @@
    },
    "spread": {
     "details": "CBJ -135",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -5697,7 +5704,7 @@
    "favorite": "away",
    "line": {
     "details": "NJ -135",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": null,
     "ml_away": -135,
     "puck_line": 1.5,
@@ -5706,7 +5713,7 @@
    },
    "spread": {
     "details": "NJ -135",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": 1.5
    },
    "home": {
@@ -6324,628 +6331,6 @@
    }
   },
   {
-   "id": "401892719",
-   "tip_utc": "2026-11-15T03:00:00+00:00",
-   "tip_pt": "7:00 PM PT",
-   "day_et": "2026-11-14",
-   "state": "pre",
-   "detail": "11/14 - 10:00 PM EST",
-   "neutral": false,
-   "venue": "Honda Center",
-   "favorite": "away",
-   "line": {
-    "details": "NYI -118",
-    "provider": "Draft Kings",
-    "ml_home": null,
-    "ml_away": -118,
-    "puck_line": 1.5,
-    "total": 6.5,
-    "fav_price": 0.5413
-   },
-   "spread": {
-    "details": "NYI -118",
-    "provider": "Draft Kings",
-    "puck_line": 1.5
-   },
-   "home": {
-    "id": "25",
-    "abbr": "ANA",
-    "espn_abbr": "ANA",
-    "name": "Anaheim",
-    "display": "Anaheim Ducks",
-    "record": "10-8-1",
-    "l3_record": "2-1-0",
-    "games": 19,
-    "pts_pct": 0.553,
-    "season": {
-     "xgf": 44.88,
-     "xga60": 2.926,
-     "cf": 48.97,
-     "gsax": -0.329,
-     "st": 116.5,
-     "pp": 40.0,
-     "pk": 76.5,
-     "ranks": {
-      "xgf": 28,
-      "xga60": 30,
-      "gsax": 24,
-      "st": 2
-     }
-    },
-    "last5": {
-     "xgf": 46.66,
-     "xga60": 2.816,
-     "cf": 49.76,
-     "gsax": -0.291,
-     "st": 122.2,
-     "pp": 50.0,
-     "pk": 72.2,
-     "ranks": {
-      "xgf": 24,
-      "xga60": 25,
-      "gsax": 20,
-      "st": 3
-     }
-    },
-    "last3_games": [
-     {
-      "game_id": 2026020297,
-      "date": "2026-11-11",
-      "site": "home",
-      "opp": "NSH",
-      "pts": 2,
-      "opp_pts": 4,
-      "extra": false,
-      "opp_power_rank": 13
-     },
-     {
-      "game_id": 2026020282,
-      "date": "2026-11-08",
-      "site": "home",
-      "opp": "PIT",
-      "pts": 5,
-      "opp_pts": 2,
-      "extra": false,
-      "opp_power_rank": 24
-     },
-     {
-      "game_id": 2026020264,
-      "date": "2026-11-06",
-      "site": "away",
-      "opp": "CGY",
-      "pts": 5,
-      "opp_pts": 3,
-      "extra": false,
-      "opp_power_rank": 25
-     }
-    ],
-    "trend_games": [
-     {
-      "date": "2026-11-03",
-      "opp": "VAN",
-      "metrics": {
-       "xgf": 42.88,
-       "xga60": 2.306,
-       "gsax": -1.319,
-       "st": 150.0
-      }
-     },
-     {
-      "date": "2026-11-05",
-      "opp": "EDM",
-      "metrics": {
-       "xgf": 46.02,
-       "xga60": 2.959,
-       "gsax": -0.744,
-       "st": 100.0
-      }
-     },
-     {
-      "date": "2026-11-06",
-      "opp": "CGY",
-      "metrics": {
-       "xgf": 54.45,
-       "xga60": 2.288,
-       "gsax": -0.627,
-       "st": 100.0
-      }
-     },
-     {
-      "date": "2026-11-08",
-      "opp": "PIT",
-      "metrics": {
-       "xgf": 40.99,
-       "xga60": 3.063,
-       "gsax": 2.254,
-       "st": 175.0
-      }
-     },
-     {
-      "date": "2026-11-11",
-      "opp": "NSH",
-      "metrics": {
-       "xgf": 47.05,
-       "xga60": 3.544,
-       "gsax": -1.017,
-       "st": 100.0
-      }
-     }
-    ],
-    "is_fav": false,
-    "b2b": false,
-    "power": {
-     "rank": 19,
-     "own": 25,
-     "avg": 19.0,
-     "espn": 16,
-     "nhl_com": 16
-    },
-    "goalie": {
-     "name": "Lukas Dostal",
-     "last": "Dostal",
-     "espn_id": "4588165",
-     "confirmed": false
-    },
-    "goalie_status": "regular",
-    "regular_goalie_name": "L. Dostal",
-    "goalies": [
-     {
-      "id": "8480843",
-      "name": "L. Dostal",
-      "starts": 10
-     },
-     {
-      "id": "8476316",
-      "name": "L. Brossoit",
-      "starts": 5
-     },
-     {
-      "id": "8478024",
-      "name": "V. Husso",
-      "starts": 4
-     }
-    ],
-    "key_skaters": [
-     "J. LaCombe",
-     "M. Granlund",
-     "B. Sennecke",
-     "L. Carlsson",
-     "D. Helleson",
-     "T. Luneau"
-    ],
-    "injuries": [
-     {
-      "name": "Ryan Poehling",
-      "last": "Poehling",
-      "status": "Injured Reserve",
-      "date": "2026-11-11T22:59Z",
-      "comment": "Poehling (lower body) was placed on long-term injured reserve by the Ducks on Wednesday."
-     },
-     {
-      "name": "Ian Moore",
-      "last": "Moore",
-      "status": "Injured Reserve",
-      "date": "2026-11-11T18:59Z",
-      "comment": "Moore (lower body) might be an option to play by the end of the week, Derek Lee of The Hockey News reports Wednesday."
-     },
-     {
-      "name": "A.J. Greer",
-      "last": "Greer",
-      "status": "Injured Reserve",
-      "date": "2026-11-02T18:46Z",
-      "comment": "Greer (upper body) was placed on injured reserve Monday."
-     }
-    ],
-    "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [],
-    "key_long_term": [],
-    "spread_text": ""
-   },
-   "away": {
-    "id": "12",
-    "abbr": "NYI",
-    "espn_abbr": "NYI",
-    "name": "New York",
-    "display": "New York Islanders",
-    "record": "8-6-4",
-    "l3_record": "1-0-2",
-    "games": 18,
-    "pts_pct": 0.556,
-    "season": {
-     "xgf": 49.37,
-     "xga60": 2.651,
-     "cf": 49.0,
-     "gsax": 0.523,
-     "st": 102.9,
-     "pp": 16.4,
-     "pk": 86.6,
-     "ranks": {
-      "xgf": 20,
-      "xga60": 23,
-      "gsax": 4,
-      "st": 14
-     }
-    },
-    "last5": {
-     "xgf": 47.8,
-     "xga60": 2.952,
-     "cf": 45.18,
-     "gsax": 0.298,
-     "st": 98.7,
-     "pp": 15.4,
-     "pk": 83.3,
-     "ranks": {
-      "xgf": 21,
-      "xga60": 28,
-      "gsax": 11,
-      "st": 18
-     }
-    },
-    "last3_games": [
-     {
-      "game_id": 2026020308,
-      "date": "2026-11-12",
-      "site": "away",
-      "opp": "LAK",
-      "pts": 5,
-      "opp_pts": 2,
-      "extra": false,
-      "opp_power_rank": 27
-     },
-     {
-      "game_id": 2026020285,
-      "date": "2026-11-09",
-      "site": "away",
-      "opp": "SJS",
-      "pts": 2,
-      "opp_pts": 3,
-      "extra": true,
-      "opp_power_rank": 29
-     },
-     {
-      "game_id": 2026020270,
-      "date": "2026-11-07",
-      "site": "home",
-      "opp": "NJD",
-      "pts": 4,
-      "opp_pts": 5,
-      "extra": true,
-      "opp_power_rank": 5
-     }
-    ],
-    "trend_games": [
-     {
-      "date": "2026-10-31",
-      "opp": "EDM",
-      "metrics": {
-       "xgf": 49.6,
-       "xga60": 2.143,
-       "gsax": -0.347,
-       "st": 83.3
-      }
-     },
-     {
-      "date": "2026-11-05",
-      "opp": "CAR",
-      "metrics": {
-       "xgf": 48.15,
-       "xga60": 3.57,
-       "gsax": -0.995,
-       "st": 100.0
-      }
-     },
-     {
-      "date": "2026-11-07",
-      "opp": "NJD",
-      "metrics": {
-       "xgf": 46.41,
-       "xga60": 4.09,
-       "gsax": 0.228,
-       "st": 75.0
-      }
-     },
-     {
-      "date": "2026-11-09",
-      "opp": "SJS",
-      "metrics": {
-       "xgf": 52.38,
-       "xga60": 2.561,
-       "gsax": 1.751,
-       "st": 133.3
-      }
-     },
-     {
-      "date": "2026-11-12",
-      "opp": "LAK",
-      "metrics": {
-       "xgf": 42.4,
-       "xga60": 2.169,
-       "gsax": 0.852,
-       "st": 100.0
-      }
-     }
-    ],
-    "is_fav": true,
-    "b2b": false,
-    "power": {
-     "rank": 17,
-     "own": 17,
-     "avg": 18.5,
-     "espn": 20,
-     "nhl_com": null
-    },
-    "goalie": {
-     "name": "Ilya Sorokin",
-     "last": "Sorokin",
-     "espn_id": "3151981",
-     "confirmed": false
-    },
-    "goalie_status": "regular",
-    "regular_goalie_name": "I. Sorokin",
-    "goalies": [
-     {
-      "id": "8478009",
-      "name": "I. Sorokin",
-      "starts": 13
-     },
-     {
-      "id": "8473575",
-      "name": "S. Varlamov",
-      "starts": 5
-     }
-    ],
-    "key_skaters": [
-     "M. Schaefer",
-     "L. Stanley",
-     "B. Horvat",
-     "A. Pelech",
-     "S. Holmstrom",
-     "R. Pulock"
-    ],
-    "injuries": [
-     {
-      "name": "Jean-Gabriel Pageau",
-      "last": "Pageau",
-      "status": "Day-To-Day",
-      "date": "2026-11-13T13:57Z",
-      "comment": "day-to-day"
-     },
-     {
-      "name": "Calum Ritchie",
-      "last": "Ritchie",
-      "status": "Injured Reserve",
-      "date": "2026-10-26T17:28Z",
-      "comment": "ir"
-     },
-     {
-      "name": "Alexander Romanov",
-      "last": "Romanov",
-      "status": "Injured Reserve",
-      "date": "2026-10-19T13:56Z",
-      "comment": "ir"
-     }
-    ],
-    "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [],
-    "key_long_term": [],
-    "spread_text": "-118"
-   },
-   "scoring": {
-    "scored": true,
-    "fav": "NYI",
-    "dog": "ANA",
-    "in_range": false,
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "qualifiers": [],
-    "would_qualify": false,
-    "rules": [
-     {
-      "rule": "Range",
-      "name": "Top-7 team vs bottom-7 team (consensus power rank)",
-      "pass": false,
-      "detail": "NYI #17 vs ANA #19"
-     },
-     {
-      "rule": "A",
-      "name": "Analysis Score 22+",
-      "pass": false,
-      "detail": "Score 17 of 40"
-     },
-     {
-      "rule": "Goalie",
-      "name": "NYI's regular goalie starts",
-      "pass": true,
-      "detail": "Ilya Sorokin (probable)"
-     },
-     {
-      "rule": "Rest",
-      "name": "NYI didn't play yesterday",
-      "pass": true,
-      "detail": "Rested"
-     }
-    ],
-    "fails": [
-     "Not a top-7 vs bottom-7 matchup (NYI #17, ANA #19)"
-    ],
-    "warnings": [],
-    "flags": [],
-    "score": 17,
-    "max": 40,
-    "band": "red",
-    "parts": [
-     {
-      "key": "fav_metrics",
-      "label": "Favorite metrics",
-      "points": 2,
-      "max": 16
-     },
-     {
-      "key": "dog_metrics",
-      "label": "Underdog metrics",
-      "points": 11,
-      "max": 16
-     },
-     {
-      "key": "goalies",
-      "label": "Goalies + health",
-      "points": 3,
-      "max": 4
-     },
-     {
-      "key": "home",
-      "label": "Home ice",
-      "points": 0,
-      "max": 1
-     },
-     {
-      "key": "rest",
-      "label": "Rest",
-      "points": 1,
-      "max": 1
-     },
-     {
-      "key": "form",
-      "label": "Last-3 form",
-      "points": 0,
-      "max": 2
-     }
-    ],
-    "pills": [
-     {
-      "team": "NYI",
-      "role": "fav",
-      "window": "season",
-      "cells": [
-       {
-        "metric": "xgf",
-        "rank": 20,
-        "color": "yellow"
-       },
-       {
-        "metric": "xga60",
-        "rank": 23,
-        "color": "red"
-       },
-       {
-        "metric": "gsax",
-        "rank": 4,
-        "color": "green"
-       },
-       {
-        "metric": "st",
-        "rank": 14,
-        "color": "yellow"
-       }
-      ]
-     },
-     {
-      "team": "NYI",
-      "role": "fav",
-      "window": "last5",
-      "cells": [
-       {
-        "metric": "xgf",
-        "rank": 21,
-        "color": "yellow"
-       },
-       {
-        "metric": "xga60",
-        "rank": 28,
-        "color": "red"
-       },
-       {
-        "metric": "gsax",
-        "rank": 11,
-        "color": "yellow"
-       },
-       {
-        "metric": "st",
-        "rank": 18,
-        "color": "yellow"
-       }
-      ]
-     },
-     {
-      "team": "ANA",
-      "role": "dog",
-      "window": "season",
-      "cells": [
-       {
-        "metric": "xgf",
-        "rank": 28,
-        "color": "green"
-       },
-       {
-        "metric": "xga60",
-        "rank": 30,
-        "color": "green"
-       },
-       {
-        "metric": "gsax",
-        "rank": 24,
-        "color": "green"
-       },
-       {
-        "metric": "st",
-        "rank": 2,
-        "color": "deep-red"
-       }
-      ]
-     },
-     {
-      "team": "ANA",
-      "role": "dog",
-      "window": "last5",
-      "cells": [
-       {
-        "metric": "xgf",
-        "rank": 24,
-        "color": "green"
-       },
-       {
-        "metric": "xga60",
-        "rank": 25,
-        "color": "green"
-       },
-       {
-        "metric": "gsax",
-        "rank": 20,
-        "color": "yellow"
-       },
-       {
-        "metric": "st",
-        "rank": 3,
-        "color": "deep-red"
-       }
-      ]
-     }
-    ],
-    "labels": {
-     "xgf": "xGF% 5v5",
-     "xga60": "xGA/60 5v5",
-     "gsax": "GSAx/gm",
-     "st": "PP%+PK%",
-     "pts": "Points %"
-    }
-   },
-   "summary": "Not a top-7 vs bottom-7 matchup (NYI #17, ANA #19). Ilya Sorokin in goal for NYI (probable). NYI 1-0-2 in its last 3, ANA 2-1-0.",
-   "lean": "No lean",
-   "kalshi": {
-    "event": "KXNHLGAME-26NOV14NYIANA",
-    "fav_prob": 0.505,
-    "bid": 0.5,
-    "ask": 0.51
-   }
-  },
-  {
    "id": "401892716",
    "tip_utc": "2026-11-15T00:00:00+00:00",
    "tip_pt": "4:00 PM PT",
@@ -6957,7 +6342,7 @@
    "favorite": "home",
    "line": {
     "details": "STL -112",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -112,
     "ml_away": null,
     "puck_line": -1.5,
@@ -6966,7 +6351,7 @@
    },
    "spread": {
     "details": "STL -112",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -7568,6 +6953,630 @@
    }
   },
   {
+   "id": "401892719",
+   "tip_utc": "2026-11-15T03:00:00+00:00",
+   "tip_pt": "7:00 PM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 10:00 PM EST",
+   "neutral": false,
+   "venue": "Honda Center",
+   "favorite": "away",
+   "line": {
+    "details": "NYI -112",
+    "provider": "DraftKings",
+    "ml_home": null,
+    "ml_away": -112,
+    "puck_line": 1.5,
+    "total": 6.5,
+    "fav_price": 0.5283
+   },
+   "spread": {
+    "details": "NYI -112",
+    "provider": "DraftKings",
+    "puck_line": 1.5
+   },
+   "home": {
+    "id": "25",
+    "abbr": "ANA",
+    "espn_abbr": "ANA",
+    "name": "Anaheim",
+    "display": "Anaheim Ducks",
+    "record": "10-8-1",
+    "l3_record": "2-1-0",
+    "games": 19,
+    "pts_pct": 0.553,
+    "season": {
+     "xgf": 44.88,
+     "xga60": 2.926,
+     "cf": 48.97,
+     "gsax": -0.329,
+     "st": 116.5,
+     "pp": 40.0,
+     "pk": 76.5,
+     "ranks": {
+      "xgf": 28,
+      "xga60": 30,
+      "gsax": 24,
+      "st": 2
+     }
+    },
+    "last5": {
+     "xgf": 46.66,
+     "xga60": 2.816,
+     "cf": 49.76,
+     "gsax": -0.291,
+     "st": 122.2,
+     "pp": 50.0,
+     "pk": 72.2,
+     "ranks": {
+      "xgf": 24,
+      "xga60": 25,
+      "gsax": 20,
+      "st": 3
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 2026020297,
+      "date": "2026-11-11",
+      "site": "home",
+      "opp": "NSH",
+      "pts": 2,
+      "opp_pts": 4,
+      "extra": false,
+      "opp_power_rank": 13
+     },
+     {
+      "game_id": 2026020282,
+      "date": "2026-11-08",
+      "site": "home",
+      "opp": "PIT",
+      "pts": 5,
+      "opp_pts": 2,
+      "extra": false,
+      "opp_power_rank": 24
+     },
+     {
+      "game_id": 2026020264,
+      "date": "2026-11-06",
+      "site": "away",
+      "opp": "CGY",
+      "pts": 5,
+      "opp_pts": 3,
+      "extra": false,
+      "opp_power_rank": 25
+     }
+    ],
+    "trend_games": [
+     {
+      "date": "2026-11-03",
+      "opp": "VAN",
+      "metrics": {
+       "xgf": 42.88,
+       "xga60": 2.306,
+       "gsax": -1.319,
+       "st": 150.0
+      }
+     },
+     {
+      "date": "2026-11-05",
+      "opp": "EDM",
+      "metrics": {
+       "xgf": 46.02,
+       "xga60": 2.959,
+       "gsax": -0.744,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-06",
+      "opp": "CGY",
+      "metrics": {
+       "xgf": 54.45,
+       "xga60": 2.288,
+       "gsax": -0.627,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-08",
+      "opp": "PIT",
+      "metrics": {
+       "xgf": 40.99,
+       "xga60": 3.063,
+       "gsax": 2.254,
+       "st": 175.0
+      }
+     },
+     {
+      "date": "2026-11-11",
+      "opp": "NSH",
+      "metrics": {
+       "xgf": 47.05,
+       "xga60": 3.544,
+       "gsax": -1.017,
+       "st": 100.0
+      }
+     }
+    ],
+    "is_fav": false,
+    "b2b": false,
+    "power": {
+     "rank": 19,
+     "own": 25,
+     "avg": 19.0,
+     "espn": 16,
+     "nhl_com": 16
+    },
+    "goalie": {
+     "name": "Lukas Dostal",
+     "last": "Dostal",
+     "espn_id": "4588165",
+     "confirmed": false
+    },
+    "goalie_status": "regular",
+    "regular_goalie_name": "L. Dostal",
+    "goalies": [
+     {
+      "id": "8480843",
+      "name": "L. Dostal",
+      "starts": 10
+     },
+     {
+      "id": "8476316",
+      "name": "L. Brossoit",
+      "starts": 5
+     },
+     {
+      "id": "8478024",
+      "name": "V. Husso",
+      "starts": 4
+     }
+    ],
+    "key_skaters": [
+     "J. LaCombe",
+     "M. Granlund",
+     "B. Sennecke",
+     "L. Carlsson",
+     "D. Helleson",
+     "T. Luneau"
+    ],
+    "injuries": [
+     {
+      "name": "Ryan Poehling",
+      "last": "Poehling",
+      "status": "Injured Reserve",
+      "date": "2026-11-11T22:59Z",
+      "comment": "Poehling (lower body) was placed on long-term injured reserve by the Ducks on Wednesday."
+     },
+     {
+      "name": "Ian Moore",
+      "last": "Moore",
+      "status": "Injured Reserve",
+      "date": "2026-11-11T18:59Z",
+      "comment": "Moore (lower body) might be an option to play by the end of the week, Derek Lee of The Hockey News reports Wednesday."
+     },
+     {
+      "name": "A.J. Greer",
+      "last": "Greer",
+      "status": "Injured Reserve",
+      "date": "2026-11-02T18:46Z",
+      "comment": "Greer (upper body) was placed on injured reserve Monday."
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [],
+    "key_long_term": [],
+    "spread_text": ""
+   },
+   "away": {
+    "id": "12",
+    "abbr": "NYI",
+    "espn_abbr": "NYI",
+    "name": "New York",
+    "display": "New York Islanders",
+    "record": "8-6-4",
+    "l3_record": "1-0-2",
+    "games": 18,
+    "pts_pct": 0.556,
+    "season": {
+     "xgf": 49.37,
+     "xga60": 2.651,
+     "cf": 49.0,
+     "gsax": 0.523,
+     "st": 102.9,
+     "pp": 16.4,
+     "pk": 86.6,
+     "ranks": {
+      "xgf": 20,
+      "xga60": 23,
+      "gsax": 4,
+      "st": 14
+     }
+    },
+    "last5": {
+     "xgf": 47.8,
+     "xga60": 2.952,
+     "cf": 45.18,
+     "gsax": 0.298,
+     "st": 98.7,
+     "pp": 15.4,
+     "pk": 83.3,
+     "ranks": {
+      "xgf": 21,
+      "xga60": 28,
+      "gsax": 11,
+      "st": 18
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 2026020308,
+      "date": "2026-11-12",
+      "site": "away",
+      "opp": "LAK",
+      "pts": 5,
+      "opp_pts": 2,
+      "extra": false,
+      "opp_power_rank": 27
+     },
+     {
+      "game_id": 2026020285,
+      "date": "2026-11-09",
+      "site": "away",
+      "opp": "SJS",
+      "pts": 2,
+      "opp_pts": 3,
+      "extra": true,
+      "opp_power_rank": 29
+     },
+     {
+      "game_id": 2026020270,
+      "date": "2026-11-07",
+      "site": "home",
+      "opp": "NJD",
+      "pts": 4,
+      "opp_pts": 5,
+      "extra": true,
+      "opp_power_rank": 5
+     }
+    ],
+    "trend_games": [
+     {
+      "date": "2026-10-31",
+      "opp": "EDM",
+      "metrics": {
+       "xgf": 49.6,
+       "xga60": 2.143,
+       "gsax": -0.347,
+       "st": 83.3
+      }
+     },
+     {
+      "date": "2026-11-05",
+      "opp": "CAR",
+      "metrics": {
+       "xgf": 48.15,
+       "xga60": 3.57,
+       "gsax": -0.995,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-07",
+      "opp": "NJD",
+      "metrics": {
+       "xgf": 46.41,
+       "xga60": 4.09,
+       "gsax": 0.228,
+       "st": 75.0
+      }
+     },
+     {
+      "date": "2026-11-09",
+      "opp": "SJS",
+      "metrics": {
+       "xgf": 52.38,
+       "xga60": 2.561,
+       "gsax": 1.751,
+       "st": 133.3
+      }
+     },
+     {
+      "date": "2026-11-12",
+      "opp": "LAK",
+      "metrics": {
+       "xgf": 42.4,
+       "xga60": 2.169,
+       "gsax": 0.852,
+       "st": 100.0
+      }
+     }
+    ],
+    "is_fav": true,
+    "b2b": false,
+    "power": {
+     "rank": 17,
+     "own": 17,
+     "avg": 18.5,
+     "espn": 20,
+     "nhl_com": null
+    },
+    "goalie": {
+     "name": "Semyon Varlamov",
+     "last": "Varlamov",
+     "espn_id": "3759",
+     "confirmed": false
+    },
+    "goalie_status": "backup",
+    "regular_goalie_name": "I. Sorokin",
+    "goalies": [
+     {
+      "id": "8478009",
+      "name": "I. Sorokin",
+      "starts": 13
+     },
+     {
+      "id": "8473575",
+      "name": "S. Varlamov",
+      "starts": 5
+     }
+    ],
+    "key_skaters": [
+     "M. Schaefer",
+     "L. Stanley",
+     "B. Horvat",
+     "A. Pelech",
+     "S. Holmstrom",
+     "R. Pulock"
+    ],
+    "injuries": [
+     {
+      "name": "Jean-Gabriel Pageau",
+      "last": "Pageau",
+      "status": "Day-To-Day",
+      "date": "2026-11-13T13:57Z",
+      "comment": "day-to-day"
+     },
+     {
+      "name": "Calum Ritchie",
+      "last": "Ritchie",
+      "status": "Injured Reserve",
+      "date": "2026-10-26T17:28Z",
+      "comment": "ir"
+     },
+     {
+      "name": "Alexander Romanov",
+      "last": "Romanov",
+      "status": "Injured Reserve",
+      "date": "2026-10-19T13:56Z",
+      "comment": "ir"
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [],
+    "key_long_term": [],
+    "spread_text": "-112"
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "NYI",
+    "dog": "ANA",
+    "in_range": false,
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "rules": [
+     {
+      "rule": "Range",
+      "name": "Top-7 team vs bottom-7 team (consensus power rank)",
+      "pass": false,
+      "detail": "NYI #17 vs ANA #19"
+     },
+     {
+      "rule": "A",
+      "name": "Analysis Score 22+",
+      "pass": false,
+      "detail": "Score 15 of 40"
+     },
+     {
+      "rule": "Goalie",
+      "name": "NYI's regular goalie starts",
+      "pass": false,
+      "detail": "Semyon Varlamov listed instead of I. Sorokin: capped at the Watch list"
+     },
+     {
+      "rule": "Rest",
+      "name": "NYI didn't play yesterday",
+      "pass": true,
+      "detail": "Rested"
+     }
+    ],
+    "fails": [
+     "Not a top-7 vs bottom-7 matchup (NYI #17, ANA #19)"
+    ],
+    "warnings": [],
+    "flags": [
+     "NYI backup goalie starting (Semyon Varlamov)"
+    ],
+    "score": 15,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 2,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 11,
+      "max": 16
+     },
+     {
+      "key": "goalies",
+      "label": "Goalies + health",
+      "points": 1,
+      "max": 4
+     },
+     {
+      "key": "home",
+      "label": "Home ice",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 0,
+      "max": 2
+     }
+    ],
+    "pills": [
+     {
+      "team": "NYI",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "xgf",
+        "rank": 20,
+        "color": "yellow"
+       },
+       {
+        "metric": "xga60",
+        "rank": 23,
+        "color": "red"
+       },
+       {
+        "metric": "gsax",
+        "rank": 4,
+        "color": "green"
+       },
+       {
+        "metric": "st",
+        "rank": 14,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "NYI",
+      "role": "fav",
+      "window": "last5",
+      "cells": [
+       {
+        "metric": "xgf",
+        "rank": 21,
+        "color": "yellow"
+       },
+       {
+        "metric": "xga60",
+        "rank": 28,
+        "color": "red"
+       },
+       {
+        "metric": "gsax",
+        "rank": 11,
+        "color": "yellow"
+       },
+       {
+        "metric": "st",
+        "rank": 18,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "ANA",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "xgf",
+        "rank": 28,
+        "color": "green"
+       },
+       {
+        "metric": "xga60",
+        "rank": 30,
+        "color": "green"
+       },
+       {
+        "metric": "gsax",
+        "rank": 24,
+        "color": "green"
+       },
+       {
+        "metric": "st",
+        "rank": 2,
+        "color": "deep-red"
+       }
+      ]
+     },
+     {
+      "team": "ANA",
+      "role": "dog",
+      "window": "last5",
+      "cells": [
+       {
+        "metric": "xgf",
+        "rank": 24,
+        "color": "green"
+       },
+       {
+        "metric": "xga60",
+        "rank": 25,
+        "color": "green"
+       },
+       {
+        "metric": "gsax",
+        "rank": 20,
+        "color": "yellow"
+       },
+       {
+        "metric": "st",
+        "rank": 3,
+        "color": "deep-red"
+       }
+      ]
+     }
+    ],
+    "labels": {
+     "xgf": "xGF% 5v5",
+     "xga60": "xGA/60 5v5",
+     "gsax": "GSAx/gm",
+     "st": "PP%+PK%",
+     "pts": "Points %"
+    }
+   },
+   "summary": "Not a top-7 vs bottom-7 matchup (NYI #17, ANA #19). NYI start their backup goalie, Semyon Varlamov (regular: I. Sorokin). NYI 1-0-2 in its last 3, ANA 2-1-0.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNHLGAME-26NOV14NYIANA",
+    "fav_prob": 0.505,
+    "bid": 0.5,
+    "ask": 0.51
+   }
+  },
+  {
    "id": "401892711",
    "tip_utc": "2026-11-15T00:00:00+00:00",
    "tip_pt": "4:00 PM PT",
@@ -7578,17 +7587,17 @@
    "venue": "Bell Centre",
    "favorite": "home",
    "line": {
-    "details": "MTL -135",
-    "provider": "Draft Kings",
-    "ml_home": -135,
+    "details": "MTL -142",
+    "provider": "DraftKings",
+    "ml_home": -142,
     "ml_away": null,
     "puck_line": -1.5,
     "total": 6.5,
-    "fav_price": 0.5745
+    "fav_price": 0.5868
    },
    "spread": {
-    "details": "MTL -135",
-    "provider": "Draft Kings",
+    "details": "MTL -142",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -7800,7 +7809,7 @@
     "key_out": [],
     "key_questionable": [],
     "key_long_term": [],
-    "spread_text": "-135"
+    "spread_text": "-142"
    },
    "away": {
     "id": "17",
@@ -8229,7 +8238,7 @@
    "favorite": "home",
    "line": {
     "details": "LA -175",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -175,
     "ml_away": null,
     "puck_line": -1.5,
@@ -8238,7 +8247,7 @@
    },
    "spread": {
     "details": "LA -175",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -8404,6 +8413,13 @@
     ],
     "injuries": [
      {
+      "name": "Artemi Panarin",
+      "last": "Panarin",
+      "status": "Out",
+      "date": "2026-11-14T19:34Z",
+      "comment": "out"
+     },
+     {
       "name": "Jakub Dvorak",
       "last": "Dvorak",
       "status": "Injured Reserve",
@@ -8412,7 +8428,9 @@
      }
     ],
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Artemi Panarin"
+    ],
     "key_questionable": [],
     "key_long_term": [],
     "spread_text": "-175"
@@ -8639,7 +8657,7 @@
       "rule": "A",
       "name": "Analysis Score 22+",
       "pass": false,
-      "detail": "Score 13 of 40"
+      "detail": "Score 12 of 40"
      },
      {
       "rule": "Goalie",
@@ -8657,11 +8675,13 @@
     "fails": [
      "Not a top-7 vs bottom-7 matchup (LAK #27, CGY #25)"
     ],
-    "warnings": [],
+    "warnings": [
+     "LAK key skater out: Artemi Panarin"
+    ],
     "flags": [
      "LAK backup goalie starting (Anton Forsberg)"
     ],
-    "score": 13,
+    "score": 12,
     "max": 40,
     "band": "red",
     "parts": [
@@ -8680,7 +8700,7 @@
      {
       "key": "goalies",
       "label": "Goalies + health",
-      "points": 1,
+      "points": 0,
       "max": 4
      },
      {
@@ -8839,7 +8859,7 @@
   "in_range": 1,
   "qualified": 0,
   "watch": 0,
-  "built_label": "Sat Nov 14, 11:30 AM PT"
+  "built_label": "Sat Nov 14, 12:30 PM PT"
  },
  "power_table": [
   {
