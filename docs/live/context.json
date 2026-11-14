@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "built_at": "2026-11-14T01:00:31-05:00",
+ "built_at": "2026-11-14T06:00:28-05:00",
  "games": [
   {
    "id": "401909980",
@@ -36,7 +36,7 @@
    "route": "",
    "score": 18,
    "band": "yellow",
-   "spread": "DEN -10.5",
+   "spread": "DEN -12.5",
    "away": {
     "id": "7",
     "abbr": "DEN",
@@ -90,7 +90,7 @@
    "route": "",
    "score": 18,
    "band": "yellow",
-   "spread": "MEM -5.5",
+   "spread": "MEM -4.5",
    "away": {
     "id": "17",
     "abbr": "BKN",
@@ -108,46 +108,6 @@
   }
  ],
  "closers": {
-  "MEM": {
-   "closers": [
-    "Ty Jerome",
-    "Cameron Boozer"
-   ],
-   "elite": [],
-   "source": "draft",
-   "season": {
-    "Ty Jerome": {
-     "ppm": 0.828,
-     "ppg": 25.4,
-     "gp": 11
-    },
-    "Cameron Boozer": {
-     "ppm": 0.493,
-     "ppg": 15.6,
-     "gp": 12
-    }
-   }
-  },
-  "BKN": {
-   "closers": [
-    "Julius Randle",
-    "Mikel Brown Jr."
-   ],
-   "elite": [],
-   "source": "draft",
-   "season": {
-    "Julius Randle": {
-     "ppm": 0.598,
-     "ppg": 19.7,
-     "gp": 11
-    },
-    "Mikel Brown Jr.": {
-     "ppm": 0.552,
-     "ppg": 12.9,
-     "gp": 7
-    }
-   }
-  },
   "NO": {
    "closers": [
     "Zion Williamson",
@@ -185,6 +145,46 @@
      "ppm": 0.647,
      "ppg": 23.5,
      "gp": 10
+    }
+   }
+  },
+  "BKN": {
+   "closers": [
+    "Julius Randle",
+    "Mikel Brown Jr."
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "Julius Randle": {
+     "ppm": 0.598,
+     "ppg": 19.7,
+     "gp": 11
+    },
+    "Mikel Brown Jr.": {
+     "ppm": 0.552,
+     "ppg": 12.9,
+     "gp": 7
+    }
+   }
+  },
+  "MEM": {
+   "closers": [
+    "Ty Jerome",
+    "Cameron Boozer"
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "Ty Jerome": {
+     "ppm": 0.828,
+     "ppg": 25.4,
+     "gp": 11
+    },
+    "Cameron Boozer": {
+     "ppm": 0.493,
+     "ppg": 15.6,
+     "gp": 12
     }
    }
   }
