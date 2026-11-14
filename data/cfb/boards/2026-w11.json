@@ -1,16 +1,16 @@
 {
  "season": 2026,
  "week": 11,
- "built_at": "2026-11-14T09:00:43-08:00",
- "built_label": "Sat Nov 14, 9:00 AM PT",
+ "built_at": "2026-11-14T09:45:45-08:00",
+ "built_label": "Sat Nov 14, 9:45 AM PT",
  "games": [
   {
    "id": "401858296",
    "kick_utc": "2026-11-14T17:00:00+00:00",
    "kick_pt": "Sat 9:00 AM PT",
    "day_et": "2026-11-14",
-   "state": "pre",
-   "detail": "11/14 - 12:00 PM EST",
+   "state": "in",
+   "detail": "15:00 - 1st",
    "neutral": false,
    "venue": "Hard Rock Stadium",
    "favorite": "home",
@@ -229,8 +229,8 @@
    "kick_utc": "2026-11-14T17:00:00+00:00",
    "kick_pt": "Sat 9:00 AM PT",
    "day_et": "2026-11-14",
-   "state": "pre",
-   "detail": "11/14 - 12:00 PM EST",
+   "state": "in",
+   "detail": "15:00 - 2nd",
    "neutral": false,
    "venue": "Ohio Stadium",
    "favorite": "home",
@@ -441,6 +441,256 @@
    "locked_at": "2026-11-14T08:00:53-08:00",
    "score": {
     "home": 0,
+    "away": 3
+   }
+  },
+  {
+   "id": "401858525",
+   "kick_utc": "2026-11-14T17:30:00+00:00",
+   "kick_pt": "Sat 9:30 AM PT",
+   "day_et": "2026-11-14",
+   "state": "in",
+   "detail": "7:41 - 1st",
+   "neutral": false,
+   "venue": "SHI Stadium",
+   "favorite": "away",
+   "fav_home": false,
+   "spread": -15.5,
+   "open_spread": -12.5,
+   "line_source": "DraftKings",
+   "total": 51.5,
+   "fav_ml": -675.0,
+   "movement": 3.0,
+   "home": {
+    "code": 164,
+    "abbr": "RUTG",
+    "name": "Rutgers",
+    "display": "Rutgers Scarlet Knights",
+    "season": {
+     "off_epa": 0.0868,
+     "off_sr": 0.4458,
+     "def_epa": 0.1839,
+     "def_sr": 0.4681,
+     "games": 9,
+     "ranks": {
+      "off_epa": 60,
+      "off_sr": 68,
+      "def_epa": 131,
+      "def_sr": 121
+     }
+    },
+    "last3": {
+     "off_epa": -0.0532,
+     "off_sr": 0.3735,
+     "def_epa": 0.2538,
+     "def_sr": 0.5185,
+     "games": 3,
+     "ranks": {
+      "off_epa": 108,
+      "off_sr": 123,
+      "def_epa": 130,
+      "def_sr": 129
+     }
+    },
+    "net": -0.0971,
+    "net_rank": 114,
+    "record": "2-7",
+    "last2_results": [
+     "L",
+     "L"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "L"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Dylan Lonergan",
+     "dropbacks": 132,
+     "epa_db": 0.311,
+     "rank": 13
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 105,
+     "fpi": 91,
+     "own_net": 114
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.128
+   },
+   "away": {
+    "code": 158,
+    "abbr": "NEB",
+    "name": "Nebraska",
+    "display": "Nebraska Cornhuskers",
+    "season": {
+     "off_epa": 0.095,
+     "off_sr": 0.46,
+     "def_epa": -0.1059,
+     "def_sr": 0.3692,
+     "games": 9,
+     "ranks": {
+      "off_epa": 56,
+      "off_sr": 44,
+      "def_epa": 15,
+      "def_sr": 9
+     }
+    },
+    "last3": {
+     "off_epa": -0.1327,
+     "off_sr": 0.4206,
+     "def_epa": -0.0582,
+     "def_sr": 0.392,
+     "games": 3,
+     "ranks": {
+      "off_epa": 124,
+      "off_sr": 88,
+      "def_epa": 33,
+      "def_sr": 32
+     }
+    },
+    "net": 0.2009,
+    "net_rank": 16,
+    "record": "5-4",
+    "last2_results": [
+     "L",
+     "L"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "L"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Anthony Colandrea",
+     "dropbacks": 325,
+     "epa_db": 0.076,
+     "rank": 76
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 15,
+     "fpi": 22,
+     "own_net": 16
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.872
+   },
+   "fav": 158,
+   "dog": 164,
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 20 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 NEB last-3 top 25 in 0 of 4 \u00b7 \u2713 RUTG last-3 bottom 25 (114+) in 3 of 4 \u00b7 \u2713 NEB season top half (1-69) in all four \u00b7 \u2713 RUTG season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "RUTG: consensus #105, ESPN FPI #91"
+     }
+    ],
+    "fails": [
+     "Watch list: score 20 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 20,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 3,
+      "dog_weakness": 13,
+      "health": 4,
+      "home": 0,
+      "rest": 0,
+      "form": 0
+     },
+     "max": 40
+    },
+    "call": "Watch list",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for NEB yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV14NEBRUTG",
+    "fav_prob": 0.855,
+    "bid": 0.85,
+    "ask": 0.86
+   },
+   "locked_at": "2026-11-14T08:30:42-08:00",
+   "readout": {
+    "matchup": "NEB @ RUTG",
+    "summary": "All sources pick Nebraska (5-4) at Rutgers (2-7). Rutgers' QB is uncertain: AJ Surace is questionable and Dylan Lonergan out. Nebraska is without LB Owen Chambliss and CB Andrew Marshall. Spread split: Athlon (35-20) and Dimers cover 14.5; SI (21-14) and Beatline (24-17) do not.",
+    "pick": "Nebraska to win (all sources); spread: Athlon NEB -14.5 (1 source); SI and Beatline scores fall short of the spread",
+    "predicted_score": "Nebraska 35-20 (Athlon, Nov 14); Nebraska 21-14 (SI); Nebraska 24-17 (Beatline); Nebraska 33-18 (Dimers model)",
+    "moneyline": "NEB -590 / RUTG +550 (Dimers, book not named); NEB -769 / RUTG +507 (Athlon, lines as of Nov 12, book not named)",
+    "win_probability": "Nebraska 86.0% (Dimers, updated Nov 12)",
+    "injuries": "Nebraska (Big Ten report, Nov 12): LB Owen Chambliss out, CB Andrew Marshall out (Athlon Nov 14), S Dwayne McDougle questionable, S Jamir Conn probable; QB Anthony Colandrea no status listed. Rutgers: QB AJ Surace questionable (expected starter; Sean Ashenfelder next), QB Dylan Lonergan out, WR KJ Duff out for the season (ankle surgery) (SI Nebraska site, Nov 12; Athlon Nov 14)",
+    "sources": [
+     {
+      "site": "SI (Rutgers On SI)",
+      "url": "https://www.si.com/college/rutgers/nebraska-vs-rutgers-preview-dave-feit-analyzes-huskers-reset-01m799vbahhc"
+     },
+     {
+      "site": "Beatline Sports",
+      "url": "https://www.beatlinesports.com/2026/11/07/beatline-cfb-neb-at-rutg-2026-11-14/"
+     },
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/cfb/predictions/2026_11_rutg_neb"
+     },
+     {
+      "site": "Athlon Sports",
+      "url": "https://athlonsports.com/college-football/nebraska-cornhuskers-at-rutgers-scarlet-knights-ncaaf-prediction-picks-odds-week11-2026"
+     },
+     {
+      "site": "SI (Nebraska site, availability report)",
+      "url": "https://www.si.com/college/nebraska/football/owen-chambliss-andrew-marshall-kj-duff-headline-nebraska-rutgers-wednesday-availability-report-2026"
+     }
+    ],
+    "updated": "2026-11-14T05:56-08:00"
+   },
+   "score": {
+    "home": 0,
     "away": 0
    }
   },
@@ -449,8 +699,8 @@
    "kick_utc": "2026-11-14T17:30:00+00:00",
    "kick_pt": "Sat 9:30 AM PT",
    "day_et": "2026-11-14",
-   "state": "pre",
-   "detail": "11/14 - 12:30 PM EST",
+   "state": "in",
+   "detail": "13:31 - 1st",
    "neutral": false,
    "venue": "Memorial Stadium (Clemson, SC)",
    "favorite": "home",
@@ -703,256 +953,6 @@
    }
   },
   {
-   "id": "401858525",
-   "kick_utc": "2026-11-14T17:30:00+00:00",
-   "kick_pt": "Sat 9:30 AM PT",
-   "day_et": "2026-11-14",
-   "state": "pre",
-   "detail": "11/14 - 12:30 PM EST",
-   "neutral": false,
-   "venue": "SHI Stadium",
-   "favorite": "away",
-   "fav_home": false,
-   "spread": -15.5,
-   "open_spread": -12.5,
-   "line_source": "DraftKings",
-   "total": 51.5,
-   "fav_ml": -675.0,
-   "movement": 3.0,
-   "home": {
-    "code": 164,
-    "abbr": "RUTG",
-    "name": "Rutgers",
-    "display": "Rutgers Scarlet Knights",
-    "season": {
-     "off_epa": 0.0868,
-     "off_sr": 0.4458,
-     "def_epa": 0.1839,
-     "def_sr": 0.4681,
-     "games": 9,
-     "ranks": {
-      "off_epa": 60,
-      "off_sr": 68,
-      "def_epa": 131,
-      "def_sr": 121
-     }
-    },
-    "last3": {
-     "off_epa": -0.0532,
-     "off_sr": 0.3735,
-     "def_epa": 0.2538,
-     "def_sr": 0.5185,
-     "games": 3,
-     "ranks": {
-      "off_epa": 108,
-      "off_sr": 123,
-      "def_epa": 130,
-      "def_sr": 129
-     }
-    },
-    "net": -0.0971,
-    "net_rank": 114,
-    "record": "2-7",
-    "last2_results": [
-     "L",
-     "L"
-    ],
-    "last3_results": [
-     "L",
-     "L",
-     "L"
-    ],
-    "rest": 6,
-    "qb": {
-     "regular": "Dylan Lonergan",
-     "dropbacks": 132,
-     "epa_db": 0.311,
-     "rank": 13
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 105,
-     "fpi": 91,
-     "own_net": 114
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.128
-   },
-   "away": {
-    "code": 158,
-    "abbr": "NEB",
-    "name": "Nebraska",
-    "display": "Nebraska Cornhuskers",
-    "season": {
-     "off_epa": 0.095,
-     "off_sr": 0.46,
-     "def_epa": -0.1059,
-     "def_sr": 0.3692,
-     "games": 9,
-     "ranks": {
-      "off_epa": 56,
-      "off_sr": 44,
-      "def_epa": 15,
-      "def_sr": 9
-     }
-    },
-    "last3": {
-     "off_epa": -0.1327,
-     "off_sr": 0.4206,
-     "def_epa": -0.0582,
-     "def_sr": 0.392,
-     "games": 3,
-     "ranks": {
-      "off_epa": 124,
-      "off_sr": 88,
-      "def_epa": 33,
-      "def_sr": 32
-     }
-    },
-    "net": 0.2009,
-    "net_rank": 16,
-    "record": "5-4",
-    "last2_results": [
-     "L",
-     "L"
-    ],
-    "last3_results": [
-     "L",
-     "L",
-     "L"
-    ],
-    "rest": 7,
-    "qb": {
-     "regular": "Anthony Colandrea",
-     "dropbacks": 325,
-     "epa_db": 0.076,
-     "rank": 76
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 15,
-     "fpi": 22,
-     "own_net": 16
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.872
-   },
-   "fav": 158,
-   "dog": 164,
-   "scoring": {
-    "qualified": false,
-    "tier": "watch",
-    "tier_label": "Watch list",
-    "tracked": true,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 20 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 NEB last-3 top 25 in 0 of 4 \u00b7 \u2713 RUTG last-3 bottom 25 (114+) in 3 of 4 \u00b7 \u2713 NEB season top half (1-69) in all four \u00b7 \u2713 RUTG season top 25 in none"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key player newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "No injury report (warning only; health assumed full)"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
-      "pass": true,
-      "detail": "RUTG: consensus #105, ESPN FPI #91"
-     }
-    ],
-    "fails": [
-     "Watch list: score 20 (qualifies at 28)"
-    ],
-    "hero": {
-     "score": 20,
-     "band": "yellow",
-     "parts": {
-      "fav_strength": 3,
-      "dog_weakness": 13,
-      "health": 4,
-      "home": 0,
-      "rest": 0,
-      "form": 0
-     },
-     "max": 40
-    },
-    "call": "Watch list",
-    "flags": [
-     {
-      "level": "yellow",
-      "text": "No injury report for NEB yet: check before betting"
-     }
-    ]
-   },
-   "fav_defense_top25": false,
-   "kalshi": {
-    "event": "KXNCAAFGAME-26NOV14NEBRUTG",
-    "fav_prob": 0.855,
-    "bid": 0.85,
-    "ask": 0.86
-   },
-   "locked_at": "2026-11-14T08:30:42-08:00",
-   "readout": {
-    "matchup": "NEB @ RUTG",
-    "summary": "All sources pick Nebraska (5-4) at Rutgers (2-7). Rutgers' QB is uncertain: AJ Surace is questionable and Dylan Lonergan out. Nebraska is without LB Owen Chambliss and CB Andrew Marshall. Spread split: Athlon (35-20) and Dimers cover 14.5; SI (21-14) and Beatline (24-17) do not.",
-    "pick": "Nebraska to win (all sources); spread: Athlon NEB -14.5 (1 source); SI and Beatline scores fall short of the spread",
-    "predicted_score": "Nebraska 35-20 (Athlon, Nov 14); Nebraska 21-14 (SI); Nebraska 24-17 (Beatline); Nebraska 33-18 (Dimers model)",
-    "moneyline": "NEB -590 / RUTG +550 (Dimers, book not named); NEB -769 / RUTG +507 (Athlon, lines as of Nov 12, book not named)",
-    "win_probability": "Nebraska 86.0% (Dimers, updated Nov 12)",
-    "injuries": "Nebraska (Big Ten report, Nov 12): LB Owen Chambliss out, CB Andrew Marshall out (Athlon Nov 14), S Dwayne McDougle questionable, S Jamir Conn probable; QB Anthony Colandrea no status listed. Rutgers: QB AJ Surace questionable (expected starter; Sean Ashenfelder next), QB Dylan Lonergan out, WR KJ Duff out for the season (ankle surgery) (SI Nebraska site, Nov 12; Athlon Nov 14)",
-    "sources": [
-     {
-      "site": "SI (Rutgers On SI)",
-      "url": "https://www.si.com/college/rutgers/nebraska-vs-rutgers-preview-dave-feit-analyzes-huskers-reset-01m799vbahhc"
-     },
-     {
-      "site": "Beatline Sports",
-      "url": "https://www.beatlinesports.com/2026/11/07/beatline-cfb-neb-at-rutg-2026-11-14/"
-     },
-     {
-      "site": "Dimers",
-      "url": "https://www.dimers.com/cfb/predictions/2026_11_rutg_neb"
-     },
-     {
-      "site": "Athlon Sports",
-      "url": "https://athlonsports.com/college-football/nebraska-cornhuskers-at-rutgers-scarlet-knights-ncaaf-prediction-picks-odds-week11-2026"
-     },
-     {
-      "site": "SI (Nebraska site, availability report)",
-      "url": "https://www.si.com/college/nebraska/football/owen-chambliss-andrew-marshall-kj-duff-headline-nebraska-rutgers-wednesday-availability-report-2026"
-     }
-    ],
-    "updated": "2026-11-14T05:56-08:00"
-   },
-   "score": {
-    "home": 0,
-    "away": 0
-   }
-  },
-  {
    "id": "401856889",
    "kick_utc": "2026-11-14T17:45:00+00:00",
    "kick_pt": "Sat 9:45 AM PT",
@@ -1166,7 +1166,11 @@
     "bid": 0.85,
     "ask": 0.86
    },
-   "locked_at": "2026-11-14T09:00:43-08:00"
+   "locked_at": "2026-11-14T09:00:43-08:00",
+   "score": {
+    "home": 0,
+    "away": 0
+   }
   },
   {
    "id": "401862825",
@@ -1432,6 +1436,10 @@
      }
     ],
     "updated": "2026-11-14T05:56-08:00"
+   },
+   "score": {
+    "home": 0,
+    "away": 0
    }
   },
   {
@@ -1714,7 +1722,7 @@
    "open_spread": -12.5,
    "line_source": "Draft Kings",
    "total": 48.5,
-   "fav_ml": -750.0,
+   "fav_ml": -800.0,
    "movement": 4.0,
    "home": {
     "code": 61,
@@ -3401,7 +3409,7 @@
    "open_spread": -10.5,
    "line_source": "Draft Kings",
    "total": 48.5,
-   "fav_ml": -575.0,
+   "fav_ml": -600.0,
    "movement": 3.5,
    "home": {
     "code": 2005,
@@ -3909,12 +3917,12 @@
    "venue": "Lane Stadium",
    "favorite": "home",
    "fav_home": true,
-   "spread": -16.5,
+   "spread": -17.5,
    "open_spread": -16.5,
    "line_source": "Draft Kings",
    "total": 57.5,
    "fav_ml": -800.0,
-   "movement": 0.0,
+   "movement": 1.0,
    "home": {
     "code": 259,
     "abbr": "VT",
@@ -5346,10 +5354,10 @@
   "season": 2026,
   "week": 11,
   "games": 22,
-  "upcoming": 18,
+  "upcoming": 14,
   "qualified": 0,
   "watch": 12,
   "other_fbs_games": 38,
-  "built_label": "Sat Nov 14, 9:00 AM PT"
+  "built_label": "Sat Nov 14, 9:45 AM PT"
  }
 }
