@@ -2680,7 +2680,7 @@
    "kick_pt": "Sat 12:30 PM PT",
    "day_et": "2026-11-14",
    "state": "in",
-   "detail": "12:01 - 3rd",
+   "detail": "6:15 - 3rd",
    "neutral": false,
    "venue": "Sanford Stadium",
    "favorite": "home",
@@ -2896,7 +2896,7 @@
    },
    "locked_at": "2026-11-14T11:30:44-08:00",
    "score": {
-    "home": 31,
+    "home": 40,
     "away": 7
    }
   }
@@ -2910,7 +2910,7 @@
    "kick_pt": "Sat 12:30 PM PT",
    "day_et": "2026-11-14",
    "state": "in",
-   "detail": "8:06 - 3rd",
+   "detail": "15:00 - 3rd",
    "neutral": false,
    "venue": "Autzen Stadium",
    "favorite": "home",
@@ -3134,7 +3134,7 @@
    "kick_pt": "Sat 12:30 PM PT",
    "day_et": "2026-11-14",
    "state": "in",
-   "detail": "4:24 - 3rd",
+   "detail": "13:06 - 4th",
    "neutral": false,
    "venue": "Scott Stadium",
    "favorite": "home",
@@ -3382,7 +3382,7 @@
     "updated": "2026-11-14T05:56-08:00"
    },
    "score": {
-    "home": 19,
+    "home": 26,
     "away": 7
    }
   }
@@ -3618,7 +3618,7 @@
    "kick_pt": "Sat 2:00 PM PT",
    "day_et": "2026-11-14",
    "state": "in",
-   "detail": "2:18 - 1st",
+   "detail": "15:00 - 2nd",
    "neutral": false,
    "venue": "Joe Aillet Stadium",
    "favorite": "home",
@@ -3878,7 +3878,7 @@
     "updated": "2026-11-14T05:56-08:00"
    },
    "score": {
-    "home": 14,
+    "home": 21,
     "away": 3
    }
   }
@@ -4152,6 +4152,530 @@
    "score": {
     "home": 0,
     "away": 0
+   }
+  }
+ },
+ "401858524": {
+  "at": "2026-11-14T15:00:47-08:00",
+  "week": 11,
+  "game": {
+   "id": "401858524",
+   "kick_utc": "2026-11-15T00:00:00+00:00",
+   "kick_pt": "Sat 4:00 PM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 7:00 PM EST",
+   "neutral": false,
+   "venue": "Beaver Stadium",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -12.5,
+   "open_spread": -7.0,
+   "line_source": "DraftKings",
+   "total": 42.5,
+   "fav_ml": -500.0,
+   "movement": 5.5,
+   "home": {
+    "code": 213,
+    "abbr": "PSU",
+    "name": "Penn State",
+    "display": "Penn State Nittany Lions",
+    "season": {
+     "off_epa": 0.0753,
+     "off_sr": 0.4387,
+     "def_epa": -0.0361,
+     "def_sr": 0.417,
+     "games": 9,
+     "ranks": {
+      "off_epa": 64,
+      "off_sr": 84,
+      "def_epa": 42,
+      "def_sr": 51
+     }
+    },
+    "last3": {
+     "off_epa": 0.1048,
+     "off_sr": 0.4476,
+     "def_epa": 0.0046,
+     "def_sr": 0.4221,
+     "games": 3,
+     "ranks": {
+      "off_epa": 41,
+      "off_sr": 52,
+      "def_epa": 51,
+      "def_sr": 54
+     }
+    },
+    "net": 0.1115,
+    "net_rank": 44,
+    "record": "5-4",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "W",
+     "W"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Rocco Becht",
+     "dropbacks": 277,
+     "epa_db": 0.157,
+     "rank": 48
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 32,
+     "fpi": 30,
+     "own_net": 44
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.835
+   },
+   "away": {
+    "code": 135,
+    "abbr": "MINN",
+    "name": "Minnesota",
+    "display": "Minnesota Golden Gophers",
+    "season": {
+     "off_epa": -0.0743,
+     "off_sr": 0.3911,
+     "def_epa": -0.0428,
+     "def_sr": 0.4057,
+     "games": 9,
+     "ranks": {
+      "off_epa": 129,
+      "off_sr": 129,
+      "def_epa": 40,
+      "def_sr": 37
+     }
+    },
+    "last3": {
+     "off_epa": -0.1768,
+     "off_sr": 0.328,
+     "def_epa": 0.0121,
+     "def_sr": 0.4118,
+     "games": 3,
+     "ranks": {
+      "off_epa": 129,
+      "off_sr": 134,
+      "def_epa": 54,
+      "def_sr": 43
+     }
+    },
+    "net": -0.0315,
+    "net_rank": 98,
+    "record": "5-4",
+    "last2_results": [
+     "L",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "L",
+     "L"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Drake Lindsey",
+     "dropbacks": 304,
+     "epa_db": -0.015,
+     "rank": 104
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 79,
+     "fpi": 62,
+     "own_net": 98
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.165
+   },
+   "fav": 213,
+   "dog": 135,
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 19 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 PSU last-3 top 25 in 0 of 4 \u00b7 \u2717 MINN last-3 bottom 25 (114+) in 2 of 4 \u00b7 \u2717 PSU season outside 1-69: Off success #84 \u00b7 \u2713 MINN season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "MINN: consensus #79, ESPN FPI #62"
+     }
+    ],
+    "fails": [
+     "Watch list: score 19 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 19,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 0,
+      "dog_weakness": 12,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "call": "Watch list",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for PSU yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV14MINNPSU",
+    "fav_prob": 0.805,
+    "bid": 0.8,
+    "ask": 0.81
+   },
+   "locked_at": "2026-11-14T15:00:47-08:00",
+   "readout": {
+    "matchup": "MINN @ PSU",
+    "summary": "Sources favor Penn State (5-4) at home over Minnesota (5-4), but call it close: Penn State's defense is 19th in yards allowed, Minnesota's offense 129th. The line has climbed from 7 to 11.5 and no source has picked a spread at that number. Minnesota's flight was grounded Friday; the team was due to fly Saturday morning, kickoff unchanged.",
+    "pick": "PSU to win (Dimers model, YouWager, Sports Chat Place); spread: Sports Chat Place PSU -7.5 (older line); no pick at -11.5",
+    "predicted_score": "PSU 27-17 (Dimers model, Nov 13)",
+    "moneyline": "MINN +350 (DraftKings), PSU -450 (FanDuel) per SportsLine; PSU -340 / MINN +270 (YouWager); PSU -326 / MINN +317 (Dimers, book not named)",
+    "win_probability": "PSU 77.9% (Dimers, updated Nov 13)",
+    "injuries": "PSU (Friday availability, Onward State Nov 13): out WR Koby Howard, DE Max Granville, LB Alex Tatsch, CB Tyler Armstead, DT Alijah Carnell; questionable DBs Jahmir Joseph and Jeremiah Cooper, Caleb Bacon; OL Malachi Goodman probable. MINN (Yahoo Sports, Nov 13): DT Jaylin Hicks out; TE Pierce Walsh out; TE Julian Johnson (concussion per SportsLine) status not stated; DTs Riley Sunram and Theorin Randle questionable. QBs Rocco Becht and Drake Lindsey not listed",
+    "sources": [
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/cfb/predictions/2026_11_psu_minn"
+     },
+     {
+      "site": "YouWager blog",
+      "url": "https://blog.youwager.lv/?p=926111345"
+     },
+     {
+      "site": "Sports Chat Place",
+      "url": "https://sportschatplace.com/?p=7564006"
+     },
+     {
+      "site": "AP preview (6abc)",
+      "url": "https://6abc.com/post/penn-state-minnesota-meet-big-ten-action/20024734/"
+     },
+     {
+      "site": "SportsLine (odds/injuries)",
+      "url": "https://www.sportsline.com/college-football/game-forecast/NCAAF_20261114_MINN@PSU/"
+     },
+     {
+      "site": "Onward State (PSU availability)",
+      "url": "https://onwardstate.com/2026/11/13/penn-state-football-defensive-backs-jahmir-joseph-jeremiah-cooper-xxx-to-xxx/"
+     },
+     {
+      "site": "Yahoo Sports (MINN availability)",
+      "url": "https://sports.yahoo.com/articles/gophers-could-without-several-key-020356430.html"
+     },
+     {
+      "site": "ClutchPoints (travel)",
+      "url": "https://clutchpoints.com/ncaa-football/minnesota-football-news-golden-gophers-move-flight-to-saturday-morning-before-penn-state-showdown"
+     }
+    ],
+    "updated": "2026-11-14T05:56-08:00"
+   }
+  }
+ },
+ "401864538": {
+  "at": "2026-11-14T15:00:47-08:00",
+  "week": 11,
+  "game": {
+   "id": "401864538",
+   "kick_utc": "2026-11-15T00:00:00+00:00",
+   "kick_pt": "Sat 4:00 PM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 7:00 PM EST",
+   "neutral": false,
+   "venue": "Falcon Stadium",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -14.0,
+   "open_spread": -10.5,
+   "line_source": "DraftKings",
+   "total": 50.5,
+   "fav_ml": -600.0,
+   "movement": 3.5,
+   "home": {
+    "code": 2005,
+    "abbr": "AFA",
+    "name": "Air Force",
+    "display": "Air Force Falcons",
+    "season": {
+     "off_epa": 0.1908,
+     "off_sr": 0.5335,
+     "def_epa": 0.0726,
+     "def_sr": 0.447,
+     "games": 9,
+     "ranks": {
+      "off_epa": 17,
+      "off_sr": 2,
+      "def_epa": 95,
+      "def_sr": 87
+     }
+    },
+    "last3": {
+     "off_epa": 0.1443,
+     "off_sr": 0.5094,
+     "def_epa": 0.2196,
+     "def_sr": 0.4899,
+     "games": 3,
+     "ranks": {
+      "off_epa": 26,
+      "off_sr": 15,
+      "def_epa": 123,
+      "def_sr": 120
+     }
+    },
+    "net": 0.1182,
+    "net_rank": 42,
+    "record": "7-2",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "W",
+     "W"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Liam Szarka",
+     "dropbacks": 42,
+     "epa_db": 0.049
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 61,
+     "fpi": 80,
+     "own_net": 42
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "qb_reset": "Liam Szarka, 42 dropbacks this season",
+    "injury_list": [],
+    "fpi_win": 0.807
+   },
+   "away": {
+    "code": 23,
+    "abbr": "SJSU",
+    "name": "San Jos\u00e9 St",
+    "display": "San Jos\u00e9 State Spartans",
+    "season": {
+     "off_epa": -0.032,
+     "off_sr": 0.4129,
+     "def_epa": -0.0003,
+     "def_sr": 0.453,
+     "games": 10,
+     "ranks": {
+      "off_epa": 118,
+      "off_sr": 115,
+      "def_epa": 51,
+      "def_sr": 101
+     }
+    },
+    "last3": {
+     "off_epa": -0.2345,
+     "off_sr": 0.3237,
+     "def_epa": -0.0677,
+     "def_sr": 0.4627,
+     "games": 3,
+     "ranks": {
+      "off_epa": 135,
+      "off_sr": 135,
+      "def_epa": 31,
+      "def_sr": 94
+     }
+    },
+    "net": -0.0317,
+    "net_rank": 100,
+    "record": "5-5",
+    "last2_results": [
+     "L",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "W"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Luke Weaver",
+     "dropbacks": 258,
+     "epa_db": 0.117,
+     "rank": 62
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 111,
+     "fpi": 114,
+     "own_net": 100
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.193
+   },
+   "fav": 2005,
+   "dog": 23,
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 23 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 AFA last-3 top 25 in 1 of 4 \u00b7 \u2717 SJSU last-3 bottom 25 (114+) in 2 of 4 \u00b7 \u2717 AFA season outside 1-69: Def EPA allowed #95, Def success allowed #87 \u00b7 \u2713 SJSU season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "SJSU: consensus #111, ESPN FPI #114"
+     }
+    ],
+    "fails": [
+     "Watch list: score 23 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 23,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 4,
+      "dog_weakness": 12,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "call": "Watch list",
+    "flags": [
+     {
+      "level": "red",
+      "text": "Favorite QB change (Liam Szarka, 42 dropbacks this season): call capped at Lean"
+     },
+     {
+      "level": "yellow",
+      "text": "No injury report for AFA yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV14SJSUAFA",
+    "fav_prob": 0.835,
+    "bid": 0.83,
+    "ask": 0.84
+   },
+   "locked_at": "2026-11-14T15:00:47-08:00",
+   "readout": {
+    "matchup": "SJSU @ AFA",
+    "summary": "All four picking sources take Air Force (7-2), the nation's top rushing offense (332 yards per game), over San Jose State (5-5). Bleacher Nation takes SJSU +13.5 and Action Network takes Air Force's team total Under 30.5: Niumatalolo's defense has held Air Force to 4.1 and 3.0 yards per play the last two years, and Air Force is coming off its win over Army.",
+    "pick": "AFA to win (Dimers model, YouWager, MWC Connection, Bleacher Nation); spread: Bleacher Nation SJSU +13.5; Action Network AFA team total Under 30.5",
+    "predicted_score": "AFA 30-17 (Dimers model); AFA 28-14 (MWC Connection/SB Nation, Nov 13)",
+    "moneyline": "AFA -575 (Bleacher Nation, Nov 12-13, book not named); AFA -456 / SJSU +420 (Dimers, book not named); AFA -469 (DraftKings), SJSU +390 (FanDuel) per SportsLine",
+    "win_probability": "AFA 83.7% (Dimers, updated Nov 12)",
+    "injuries": "AFA: uses a QB rotation of Kemper Hodges (started vs Army) and Evan Medders (turf toe in late October, returned vs Army) (Colorado Springs Gazette, Nov 11); Liam Szarka broke his arm earlier, current status not stated; no starter named as of Nov 13 (Gazette); SportsLine also lists an unnamed QB with a lower-leg injury (Oct 4). SJSU: TE Ryan Boultwood, undisclosed (SportsLine, Nov 11)",
+    "sources": [
+     {
+      "site": "MWC Connection (SB Nation, via Yahoo Sports)",
+      "url": "https://sports.yahoo.com/articles/2026-mountain-west-football-week-150000396.html"
+     },
+     {
+      "site": "Bleacher Nation",
+      "url": "https://www.bleachernation.com/picks/2026/11/12/air-force-vs-san-jose-state-football-best-bets-computer-predictions-nov-14/"
+     },
+     {
+      "site": "Action Network (via Yahoo Sports)",
+      "url": "https://sports.yahoo.com/articles/ncaaf-week-11-predictions-picks-120012210.html"
+     },
+     {
+      "site": "Colorado Springs Gazette",
+      "url": "https://gazette.com/2026/11/11/air-force-qb-rotation-could-provide-solution-to-injury-usage-issue/"
+     },
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/cfb/predictions/2026_11_afa_sjsu"
+     },
+     {
+      "site": "YouWager blog",
+      "url": "https://blog.youwager.lv/?p=926111346"
+     },
+     {
+      "site": "SportsLine (odds/injuries)",
+      "url": "https://www.sportsline.com/college-football/game-forecast/NCAAF_20261114_SJST@AF/"
+     }
+    ],
+    "updated": "2026-11-14T05:56-08:00"
    }
   }
  }
