@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "built_at": "2026-11-14T13:00:27-05:00",
+ "built_at": "2026-11-14T17:30:25-05:00",
  "games": [
   {
    "id": "401909980",
@@ -51,80 +51,26 @@
     "display": "New Orleans Pelicans",
     "record": "4-9"
    }
-  },
-  {
-   "id": "401909983",
-   "fav_defense": {
-    "season": {
-     "opp_efg": {
-      "v": 51.81,
-      "r": 9
-     },
-     "def": {
-      "v": 108.0,
-      "r": 9
-     }
-    },
-    "last3": {
-     "opp_efg": {
-      "v": 51.46,
-      "r": 7
-     },
-     "def": {
-      "v": 110.81,
-      "r": 11
-     }
-    }
-   },
-   "fav_b2b": true,
-   "tip_utc": "2026-11-15T01:00Z",
-   "tip_pt": "5:00 PM PT",
-   "fav": "MEM",
-   "dog": "BKN",
-   "qualifiers": [
-    "eFG%",
-    "Off Eff",
-    "Opp eFG%"
-   ],
-   "tier": "watch",
-   "route": "",
-   "score": 18,
-   "band": "yellow",
-   "spread": "MEM -2.5",
-   "away": {
-    "id": "17",
-    "abbr": "BKN",
-    "name": "Nets",
-    "display": "Brooklyn Nets",
-    "record": "3-8"
-   },
-   "home": {
-    "id": "29",
-    "abbr": "MEM",
-    "name": "Grizzlies",
-    "display": "Memphis Grizzlies",
-    "record": "8-4"
-   }
   }
  ],
  "closers": {
-  "BKN": {
+  "DEN": {
    "closers": [
-    "Julius Randle",
-    "Mikel Brown Jr."
+    "Jamal Murray",
+    "Nikola Jokic"
    ],
    "elite": [],
    "source": "draft",
    "season": {
-    "Julius Randle": {
-     "ppm": 0.598,
-     "ppg": 19.7,
-     "gp": 11
+    "Jamal Murray": {
+     "ppm": 0.722,
+     "ppg": 26.2,
+     "gp": 10
     },
-    "Mikel Brown Jr.": {
-     "ppm": 0.552,
-     "ppg": 12.9,
-     "gp": 7
+    "Nikola Jokic": {
+     "ppm": 0.647,
+     "ppg": 23.5,
+     "gp": 10
     }
    }
   },
@@ -145,46 +91,6 @@
      "ppm": 0.529,
      "ppg": 15.5,
      "gp": 13
-    }
-   }
-  },
-  "MEM": {
-   "closers": [
-    "Ty Jerome",
-    "Cameron Boozer"
-   ],
-   "elite": [],
-   "source": "draft",
-   "season": {
-    "Ty Jerome": {
-     "ppm": 0.828,
-     "ppg": 25.4,
-     "gp": 11
-    },
-    "Cameron Boozer": {
-     "ppm": 0.493,
-     "ppg": 15.6,
-     "gp": 12
-    }
-   }
-  },
-  "DEN": {
-   "closers": [
-    "Jamal Murray",
-    "Nikola Jokic"
-   ],
-   "elite": [],
-   "source": "draft",
-   "season": {
-    "Jamal Murray": {
-     "ppm": 0.722,
-     "ppg": 26.2,
-     "gp": 10
-    },
-    "Nikola Jokic": {
-     "ppm": 0.647,
-     "ppg": 23.5,
-     "gp": 10
     }
    }
   }
