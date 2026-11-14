@@ -1273,7 +1273,7 @@
    "tip_pt": "10:00 AM PT",
    "day_et": "2026-11-14",
    "state": "in",
-   "detail": "16:10 - 2nd",
+   "detail": "9:54 - 2nd",
    "neutral": true,
    "venue": "Veikkaus Arena",
    "favorite": "home",
@@ -1879,9 +1879,638 @@
    },
    "locked_at": "2026-11-14T09:00:39-08:00",
    "score": {
-    "home": 3,
-    "away": 0
+    "home": 4,
+    "away": 1
    }
+  }
+ },
+ "401892708": {
+  "at": "2026-11-14T11:30:52-08:00",
+  "day": "2026-11-14",
+  "game": {
+   "id": "401892708",
+   "tip_utc": "2026-11-14T20:30:00+00:00",
+   "tip_pt": "12:30 PM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 3:30 PM EST",
+   "neutral": false,
+   "venue": "United Center",
+   "favorite": "away",
+   "line": {
+    "details": "WPG -162",
+    "provider": "Draft Kings",
+    "ml_home": null,
+    "ml_away": -162,
+    "puck_line": 1.5,
+    "total": 6.5,
+    "fav_price": 0.6183
+   },
+   "spread": {
+    "details": "WPG -162",
+    "provider": "Draft Kings",
+    "puck_line": 1.5
+   },
+   "home": {
+    "id": "4",
+    "abbr": "CHI",
+    "espn_abbr": "CHI",
+    "name": "Chicago",
+    "display": "Chicago Blackhawks",
+    "record": "5-13-1",
+    "l3_record": "1-2-0",
+    "games": 19,
+    "pts_pct": 0.289,
+    "season": {
+     "xgf": 39.73,
+     "xga60": 3.021,
+     "cf": 45.57,
+     "gsax": -0.509,
+     "st": 91.9,
+     "pp": 10.9,
+     "pk": 81.0,
+     "ranks": {
+      "xgf": 32,
+      "xga60": 31,
+      "gsax": 30,
+      "st": 22
+     }
+    },
+    "last5": {
+     "xgf": 39.08,
+     "xga60": 2.755,
+     "cf": 45.32,
+     "gsax": -1.477,
+     "st": 81.0,
+     "pp": 7.7,
+     "pk": 73.3,
+     "ranks": {
+      "xgf": 32,
+      "xga60": 22,
+      "gsax": 32,
+      "st": 24
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 2026020305,
+      "date": "2026-11-12",
+      "site": "home",
+      "opp": "BUF",
+      "pts": 3,
+      "opp_pts": 2,
+      "extra": true,
+      "opp_power_rank": 18
+     },
+     {
+      "game_id": 2026020271,
+      "date": "2026-11-07",
+      "site": "away",
+      "opp": "CAR",
+      "pts": 2,
+      "opp_pts": 9,
+      "extra": false,
+      "opp_power_rank": 1
+     },
+     {
+      "game_id": 2026020253,
+      "date": "2026-11-05",
+      "site": "away",
+      "opp": "TBL",
+      "pts": 1,
+      "opp_pts": 4,
+      "extra": false,
+      "opp_power_rank": 4
+     }
+    ],
+    "trend_games": [
+     {
+      "date": "2026-11-02",
+      "opp": "COL",
+      "metrics": {
+       "xgf": 33.09,
+       "xga60": 2.939,
+       "gsax": -1.012,
+       "st": 75.0
+      }
+     },
+     {
+      "date": "2026-11-04",
+      "opp": "FLA",
+      "metrics": {
+       "xgf": 45.08,
+       "xga60": 2.146,
+       "gsax": -0.696,
+       "st": 66.7
+      }
+     },
+     {
+      "date": "2026-11-05",
+      "opp": "TBL",
+      "metrics": {
+       "xgf": 47.91,
+       "xga60": 2.118,
+       "gsax": -1.259,
+       "st": 66.7
+      }
+     },
+     {
+      "date": "2026-11-07",
+      "opp": "CAR",
+      "metrics": {
+       "xgf": 30.7,
+       "xga60": 4.389,
+       "gsax": -4.5,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-12",
+      "opp": "BUF",
+      "metrics": {
+       "xgf": 46.5,
+       "xga60": 1.86,
+       "gsax": 0.082,
+       "st": 95.0
+      }
+     }
+    ],
+    "is_fav": false,
+    "b2b": false,
+    "power": {
+     "rank": 31,
+     "own": 31,
+     "avg": 31.0,
+     "espn": 31,
+     "nhl_com": null
+    },
+    "goalie": {
+     "name": "Spencer Knight",
+     "last": "Knight",
+     "espn_id": "4565234",
+     "confirmed": false
+    },
+    "goalie_status": "regular",
+    "regular_goalie_name": "S. Knight",
+    "goalies": [
+     {
+      "id": "8481519",
+      "name": "S. Knight",
+      "starts": 15
+     },
+     {
+      "id": "8482821",
+      "name": "A. Soderblom",
+      "starts": 4
+     }
+    ],
+    "key_skaters": [
+     "A. Vlasic",
+     "A. Levshunov",
+     "C. Bedard",
+     "W. Kaiser",
+     "I. Cole",
+     "R. Kantserov"
+    ],
+    "injuries": [
+     {
+      "name": "Bowen Byram",
+      "last": "Byram",
+      "status": "Injured Reserve",
+      "date": "2026-11-03T17:31Z",
+      "comment": "Byram (upper body) was placed on injured reserve Tuesday."
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [],
+    "key_long_term": [],
+    "spread_text": ""
+   },
+   "away": {
+    "id": "28",
+    "abbr": "WPG",
+    "espn_abbr": "WPG",
+    "name": "Winnipeg",
+    "display": "Winnipeg Jets",
+    "record": "9-8-3",
+    "l3_record": "3-0-0",
+    "games": 20,
+    "pts_pct": 0.525,
+    "season": {
+     "xgf": 47.48,
+     "xga60": 2.572,
+     "cf": 49.55,
+     "gsax": -0.175,
+     "st": 101.3,
+     "pp": 23.0,
+     "pk": 78.3,
+     "ranks": {
+      "xgf": 23,
+      "xga60": 18,
+      "gsax": 20,
+      "st": 16
+     }
+    },
+    "last5": {
+     "xgf": 56.92,
+     "xga60": 2.091,
+     "cf": 52.02,
+     "gsax": -0.378,
+     "st": 127.8,
+     "pp": 41.2,
+     "pk": 86.7,
+     "ranks": {
+      "xgf": 5,
+      "xga60": 4,
+      "gsax": 22,
+      "st": 2
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 2026020306,
+      "date": "2026-11-12",
+      "site": "away",
+      "opp": "DAL",
+      "pts": 8,
+      "opp_pts": 3,
+      "extra": false,
+      "opp_power_rank": 11
+     },
+     {
+      "game_id": 2026020291,
+      "date": "2026-11-10",
+      "site": "home",
+      "opp": "NJD",
+      "pts": 4,
+      "opp_pts": 2,
+      "extra": false,
+      "opp_power_rank": 5
+     },
+     {
+      "game_id": 2026020280,
+      "date": "2026-11-08",
+      "site": "home",
+      "opp": "TBL",
+      "pts": 4,
+      "opp_pts": 3,
+      "extra": false,
+      "opp_power_rank": 4
+     }
+    ],
+    "trend_games": [
+     {
+      "date": "2026-11-03",
+      "opp": "MTL",
+      "metrics": {
+       "xgf": 62.65,
+       "xga60": 1.977,
+       "gsax": -1.062,
+       "st": 33.3
+      }
+     },
+     {
+      "date": "2026-11-05",
+      "opp": "VAN",
+      "metrics": {
+       "xgf": 67.97,
+       "xga60": 1.436,
+       "gsax": -0.545,
+       "st": 125.0
+      }
+     },
+     {
+      "date": "2026-11-08",
+      "opp": "TBL",
+      "metrics": {
+       "xgf": 52.21,
+       "xga60": 1.97,
+       "gsax": -1.29,
+       "st": 200.0
+      }
+     },
+     {
+      "date": "2026-11-10",
+      "opp": "NJD",
+      "metrics": {
+       "xgf": 49.46,
+       "xga60": 1.799,
+       "gsax": 0.118,
+       "st": 166.7
+      }
+     },
+     {
+      "date": "2026-11-12",
+      "opp": "DAL",
+      "metrics": {
+       "xgf": 51.32,
+       "xga60": 3.268,
+       "gsax": 0.888,
+       "st": 133.3
+      }
+     }
+    ],
+    "is_fav": true,
+    "b2b": false,
+    "power": {
+     "rank": 23,
+     "own": 24,
+     "avg": 23.0,
+     "espn": 22,
+     "nhl_com": null
+    },
+    "goalie": {
+     "name": "Stuart Skinner",
+     "last": "Skinner",
+     "espn_id": "4268767",
+     "confirmed": false
+    },
+    "goalie_status": "regular",
+    "regular_goalie_name": "S. Skinner",
+    "goalies": [
+     {
+      "id": "8479973",
+      "name": "S. Skinner",
+      "starts": 14
+     },
+     {
+      "id": "8483532",
+      "name": "C. Stevenson",
+      "starts": 4
+     },
+     {
+      "id": "8482076",
+      "name": "N. Daws",
+      "starts": 2
+     }
+    ],
+    "key_skaters": [
+     "N. Pionk",
+     "D. Samberg",
+     "K. Connor",
+     "M. Scheifele",
+     "M. Ferraro",
+     "D. DeMelo"
+    ],
+    "injuries": [
+     {
+      "name": "Isak Rosen",
+      "last": "Rosen",
+      "status": "Out",
+      "date": "2026-11-13T19:25Z",
+      "comment": "Rosen (undisclosed) has been ruled out for Saturday's game against the Blackhawks, Ken Wiebe of The Winnipeg Free Press reports."
+     },
+     {
+      "name": "Dylan DeMelo",
+      "last": "DeMelo",
+      "status": "Injured Reserve",
+      "date": "2026-11-13T16:33Z",
+      "comment": "DeMelo (lower body) was placed on injured reserve Friday."
+     },
+     {
+      "name": "Elias Salomonsson",
+      "last": "Salomonsson",
+      "status": "Injured Reserve",
+      "date": "2026-11-08T00:05Z",
+      "comment": "ir-nr"
+     },
+     {
+      "name": "Vladislav Namestnikov",
+      "last": "Namestnikov",
+      "status": "Injured Reserve",
+      "date": "2026-10-23T18:11Z",
+      "comment": "ir"
+     },
+     {
+      "name": "Nick Bjugstad",
+      "last": "Bjugstad",
+      "status": "Injured Reserve",
+      "date": "2026-10-23T16:48Z",
+      "comment": "Bjugstad (pectoral), Dawson Mercer, Nico Daws, Alexander Command and a pair of draft picks were traded to the Jets from the Devils on Friday in exchange for Connor Hellebuyck."
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [],
+    "key_long_term": [
+     "Dylan DeMelo"
+    ],
+    "spread_text": "-162"
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "WPG",
+    "dog": "CHI",
+    "in_range": false,
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "rules": [
+     {
+      "rule": "Range",
+      "name": "Top-7 team vs bottom-7 team (consensus power rank)",
+      "pass": false,
+      "detail": "WPG #23 vs CHI #31"
+     },
+     {
+      "rule": "A",
+      "name": "Analysis Score 22+",
+      "pass": true,
+      "detail": "Score 26 of 40"
+     },
+     {
+      "rule": "Goalie",
+      "name": "WPG's regular goalie starts",
+      "pass": true,
+      "detail": "Stuart Skinner (probable)"
+     },
+     {
+      "rule": "Rest",
+      "name": "WPG didn't play yesterday",
+      "pass": true,
+      "detail": "Rested"
+     }
+    ],
+    "fails": [
+     "Not a top-7 vs bottom-7 matchup (WPG #23, CHI #31)"
+    ],
+    "warnings": [],
+    "flags": [],
+    "score": 26,
+    "max": 40,
+    "band": "green",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 6,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 14,
+      "max": 16
+     },
+     {
+      "key": "goalies",
+      "label": "Goalies + health",
+      "points": 3,
+      "max": 4
+     },
+     {
+      "key": "home",
+      "label": "Home ice",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 2,
+      "max": 2
+     }
+    ],
+    "pills": [
+     {
+      "team": "WPG",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "xgf",
+        "rank": 23,
+        "color": "red"
+       },
+       {
+        "metric": "xga60",
+        "rank": 18,
+        "color": "yellow"
+       },
+       {
+        "metric": "gsax",
+        "rank": 20,
+        "color": "yellow"
+       },
+       {
+        "metric": "st",
+        "rank": 16,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "WPG",
+      "role": "fav",
+      "window": "last5",
+      "cells": [
+       {
+        "metric": "xgf",
+        "rank": 5,
+        "color": "green"
+       },
+       {
+        "metric": "xga60",
+        "rank": 4,
+        "color": "green"
+       },
+       {
+        "metric": "gsax",
+        "rank": 22,
+        "color": "yellow"
+       },
+       {
+        "metric": "st",
+        "rank": 2,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "CHI",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "xgf",
+        "rank": 32,
+        "color": "green"
+       },
+       {
+        "metric": "xga60",
+        "rank": 31,
+        "color": "green"
+       },
+       {
+        "metric": "gsax",
+        "rank": 30,
+        "color": "green"
+       },
+       {
+        "metric": "st",
+        "rank": 22,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "CHI",
+      "role": "dog",
+      "window": "last5",
+      "cells": [
+       {
+        "metric": "xgf",
+        "rank": 32,
+        "color": "green"
+       },
+       {
+        "metric": "xga60",
+        "rank": 22,
+        "color": "yellow"
+       },
+       {
+        "metric": "gsax",
+        "rank": 32,
+        "color": "green"
+       },
+       {
+        "metric": "st",
+        "rank": 24,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "labels": {
+     "xgf": "xGF% 5v5",
+     "xga60": "xGA/60 5v5",
+     "gsax": "GSAx/gm",
+     "st": "PP%+PK%",
+     "pts": "Points %"
+    }
+   },
+   "summary": "Not a top-7 vs bottom-7 matchup (WPG #23, CHI #31). Stuart Skinner in goal for WPG (probable). Biggest edge over the last 5: xGF% 5v5 (WPG #5, CHI #32). WPG 3-0-0 in its last 3, CHI 1-2-0.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNHLGAME-26NOV14WPGCHI",
+    "fav_prob": 0.595,
+    "bid": 0.59,
+    "ask": 0.6
+   },
+   "locked_at": "2026-11-14T11:30:52-08:00"
   }
  }
 }
