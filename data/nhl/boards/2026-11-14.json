@@ -3,8 +3,8 @@
  "date_label": "Saturday, November 14",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-14T12:30:43-08:00",
- "built_label": "Sat Nov 14, 12:30 PM PT",
+ "built_at": "2026-11-14T13:30:42-08:00",
+ "built_label": "Sat Nov 14, 1:30 PM PT",
  "metrics_through": "2026-11-13",
  "metrics_through_label": "Nov 13",
  "max": 40,
@@ -26,8 +26,8 @@
    "tip_utc": "2026-11-14T18:00:00+00:00",
    "tip_pt": "10:00 AM PT",
    "day_et": "2026-11-14",
-   "state": "in",
-   "detail": "5:51 - 3rd",
+   "state": "post",
+   "detail": "Final",
    "neutral": true,
    "venue": "Veikkaus Arena",
    "favorite": "home",
@@ -1270,8 +1270,8 @@
    "tip_utc": "2026-11-14T20:30:00+00:00",
    "tip_pt": "12:30 PM PT",
    "day_et": "2026-11-14",
-   "state": "pre",
-   "detail": "11/14 - 3:30 PM EST",
+   "state": "in",
+   "detail": "End of 1st",
    "neutral": false,
    "venue": "United Center",
    "favorite": "away",
@@ -1888,7 +1888,11 @@
     "bid": 0.59,
     "ask": 0.6
    },
-   "locked_at": "2026-11-14T11:30:52-08:00"
+   "locked_at": "2026-11-14T11:30:52-08:00",
+   "score": {
+    "home": 3,
+    "away": 0
+   }
   },
   {
    "id": "401892718",
@@ -5459,9 +5463,9 @@
      {
       "name": "Erik Gustafsson",
       "last": "Gustafsson",
-      "status": "Day-To-Day",
-      "date": "2026-11-13T13:57Z",
-      "comment": "day-to-day"
+      "status": "Out",
+      "date": "2026-11-14T20:41Z",
+      "comment": "out"
      },
      {
       "name": "Nikita Grebenkin",
@@ -8572,7 +8576,7 @@
      "name": "Dustin Wolf",
      "last": "Wolf",
      "espn_id": "4587952",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "regular",
     "regular_goalie_name": "D. Wolf",
@@ -8844,9 +8848,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV14CGYLA",
-    "fav_prob": 0.625,
-    "bid": 0.62,
-    "ask": 0.63
+    "fav_prob": 0.605,
+    "bid": 0.6,
+    "ask": 0.61
    }
   }
  ],
@@ -8859,7 +8863,7 @@
   "in_range": 1,
   "qualified": 0,
   "watch": 0,
-  "built_label": "Sat Nov 14, 12:30 PM PT"
+  "built_label": "Sat Nov 14, 1:30 PM PT"
  },
  "power_table": [
   {

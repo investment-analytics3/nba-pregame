@@ -1272,8 +1272,8 @@
    "tip_utc": "2026-11-14T18:00:00+00:00",
    "tip_pt": "10:00 AM PT",
    "day_et": "2026-11-14",
-   "state": "in",
-   "detail": "5:51 - 3rd",
+   "state": "post",
+   "detail": "Final",
    "neutral": true,
    "venue": "Veikkaus Arena",
    "favorite": "home",
@@ -1892,8 +1892,8 @@
    "tip_utc": "2026-11-14T20:30:00+00:00",
    "tip_pt": "12:30 PM PT",
    "day_et": "2026-11-14",
-   "state": "pre",
-   "detail": "11/14 - 3:30 PM EST",
+   "state": "in",
+   "detail": "End of 1st",
    "neutral": false,
    "venue": "United Center",
    "favorite": "away",
@@ -2510,7 +2510,11 @@
     "bid": 0.59,
     "ask": 0.6
    },
-   "locked_at": "2026-11-14T11:30:52-08:00"
+   "locked_at": "2026-11-14T11:30:52-08:00",
+   "score": {
+    "home": 3,
+    "away": 0
+   }
   }
  }
 }
