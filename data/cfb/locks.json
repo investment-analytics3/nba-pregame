@@ -934,5 +934,445 @@
     "away": 14
    }
   }
+ },
+ "401858296": {
+  "at": "2026-11-14T08:00:53-08:00",
+  "week": 11,
+  "game": {
+   "id": "401858296",
+   "kick_utc": "2026-11-14T17:00:00+00:00",
+   "kick_pt": "Sat 9:00 AM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 12:00 PM EST",
+   "neutral": false,
+   "venue": "Hard Rock Stadium",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -14.0,
+   "open_spread": -20.5,
+   "line_source": "Draft Kings",
+   "total": 54.5,
+   "fav_ml": -600.0,
+   "movement": -6.5,
+   "home": {
+    "code": 2390,
+    "abbr": "MIA",
+    "name": "Miami",
+    "display": "Miami Hurricanes",
+    "season": {
+     "off_epa": 0.2952,
+     "off_sr": 0.5316,
+     "def_epa": 0.0225,
+     "def_sr": 0.4025,
+     "games": 9,
+     "ranks": {
+      "off_epa": 3,
+      "off_sr": 3,
+      "def_epa": 60,
+      "def_sr": 33
+     }
+    },
+    "last3": {
+     "off_epa": 0.276,
+     "off_sr": 0.4976,
+     "def_epa": 0.215,
+     "def_sr": 0.4712,
+     "games": 3,
+     "ranks": {
+      "off_epa": 11,
+      "off_sr": 21,
+      "def_epa": 121,
+      "def_sr": 103
+     }
+    },
+    "net": 0.2727,
+    "net_rank": 6,
+    "record": "8-1",
+    "last2_results": [
+     "W",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "L"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Darian Mensah",
+     "dropbacks": 288,
+     "epa_db": 0.491,
+     "rank": 1
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 2,
+     "fpi": 4,
+     "own_net": 6,
+     "ap": 5,
+     "cfp": 7
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.879
+   },
+   "away": {
+    "code": 150,
+    "abbr": "DUKE",
+    "name": "Duke",
+    "display": "Duke Blue Devils",
+    "season": {
+     "off_epa": 0.131,
+     "off_sr": 0.4415,
+     "def_epa": -0.1107,
+     "def_sr": 0.3993,
+     "games": 9,
+     "ranks": {
+      "off_epa": 40,
+      "off_sr": 78,
+      "def_epa": 13,
+      "def_sr": 31
+     }
+    },
+    "last3": {
+     "off_epa": 0.0681,
+     "off_sr": 0.4365,
+     "def_epa": -0.2262,
+     "def_sr": 0.3802,
+     "games": 3,
+     "ranks": {
+      "off_epa": 60,
+      "off_sr": 64,
+      "def_epa": 6,
+      "def_sr": 24
+     }
+    },
+    "net": 0.2417,
+    "net_rank": 11,
+    "record": "7-2",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "W"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Walker Eget",
+     "dropbacks": 246,
+     "epa_db": 0.231,
+     "rank": 28
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 16,
+     "fpi": 28,
+     "own_net": 11
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.121
+   },
+   "fav": 2390,
+   "dog": 150,
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 17 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 MIA last-3 top 25 in 2 of 4 \u00b7 \u2717 DUKE last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2713 MIA season top half (1-69) in all four \u00b7 \u2717 DUKE season top 25: Def EPA allowed #13"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "DUKE: consensus #16, ESPN FPI #28"
+     }
+    ],
+    "fails": [
+     "Score 17 (watch list from 18, qualifies at 28)"
+    ],
+    "hero": {
+     "score": 17,
+     "band": "red",
+     "parts": {
+      "fav_strength": 6,
+      "dog_weakness": 5,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 1
+     },
+     "max": 40
+    },
+    "call": "No track",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for MIA yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV14DUKEMIA",
+    "fav_prob": 0.835,
+    "bid": 0.83,
+    "ask": 0.84
+   },
+   "locked_at": "2026-11-14T08:00:53-08:00"
+  }
+ },
+ "401858522": {
+  "at": "2026-11-14T08:00:53-08:00",
+  "week": 11,
+  "game": {
+   "id": "401858522",
+   "kick_utc": "2026-11-14T17:00:00+00:00",
+   "kick_pt": "Sat 9:00 AM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 12:00 PM EST",
+   "neutral": false,
+   "venue": "Ohio Stadium",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -14.0,
+   "open_spread": -9.5,
+   "line_source": "Draft Kings",
+   "total": 45.5,
+   "fav_ml": -600.0,
+   "movement": 4.5,
+   "home": {
+    "code": 194,
+    "abbr": "OSU",
+    "name": "Ohio State",
+    "display": "Ohio State Buckeyes",
+    "season": {
+     "off_epa": 0.1677,
+     "off_sr": 0.4889,
+     "def_epa": -0.073,
+     "def_sr": 0.3703,
+     "games": 9,
+     "ranks": {
+      "off_epa": 25,
+      "off_sr": 26,
+      "def_epa": 22,
+      "def_sr": 11
+     }
+    },
+    "last3": {
+     "off_epa": 0.03,
+     "off_sr": 0.4541,
+     "def_epa": 0.0536,
+     "def_sr": 0.3874,
+     "games": 3,
+     "ranks": {
+      "off_epa": 75,
+      "off_sr": 45,
+      "def_epa": 73,
+      "def_sr": 29
+     }
+    },
+    "net": 0.2407,
+    "net_rank": 12,
+    "record": "6-3",
+    "last2_results": [
+     "L",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "L",
+     "L"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Julian Sayin",
+     "dropbacks": 206,
+     "epa_db": 0.364,
+     "rank": 6
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 6,
+     "fpi": 5,
+     "own_net": 12,
+     "ap": 21,
+     "cfp": 20
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.85
+   },
+   "away": {
+    "code": 77,
+    "abbr": "NU",
+    "name": "Northwestern",
+    "display": "Northwestern Wildcats",
+    "season": {
+     "off_epa": 0.1819,
+     "off_sr": 0.4819,
+     "def_epa": 0.0257,
+     "def_sr": 0.4441,
+     "games": 9,
+     "ranks": {
+      "off_epa": 21,
+      "off_sr": 31,
+      "def_epa": 62,
+      "def_sr": 83
+     }
+    },
+    "last3": {
+     "off_epa": 0.1328,
+     "off_sr": 0.476,
+     "def_epa": 0.0805,
+     "def_sr": 0.4302,
+     "games": 3,
+     "ranks": {
+      "off_epa": 29,
+      "off_sr": 29,
+      "def_epa": 85,
+      "def_sr": 62
+     }
+    },
+    "net": 0.1561,
+    "net_rank": 25,
+    "record": "6-3",
+    "last2_results": [
+     "L",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "L",
+     "L"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Aidan Chiles",
+     "dropbacks": 222,
+     "epa_db": 0.287,
+     "rank": 17
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 22,
+     "fpi": 29,
+     "own_net": 25
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.15
+   },
+   "fav": 194,
+   "dog": 77,
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 15 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 OSU last-3 top 25 in 0 of 4 \u00b7 \u2717 NU last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2713 OSU season top half (1-69) in all four \u00b7 \u2717 NU season top 25: Off EPA/play #21"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "NU: consensus #22, ESPN FPI #29"
+     }
+    ],
+    "fails": [
+     "Score 15 (watch list from 18, qualifies at 28)"
+    ],
+    "hero": {
+     "score": 15,
+     "band": "red",
+     "parts": {
+      "fav_strength": 3,
+      "dog_weakness": 7,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 0
+     },
+     "max": 40
+    },
+    "call": "No track",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for OSU yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV14NWOSU",
+    "fav_prob": 0.835,
+    "bid": 0.83,
+    "ask": 0.84
+   },
+   "locked_at": "2026-11-14T08:00:53-08:00"
+  }
  }
 }
