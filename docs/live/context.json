@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "built_at": "2026-11-14T06:00:28-05:00",
+ "built_at": "2026-11-14T12:43:55-05:00",
  "games": [
   {
    "id": "401909980",
@@ -90,7 +90,7 @@
    "route": "",
    "score": 18,
    "band": "yellow",
-   "spread": "MEM -4.5",
+   "spread": "MEM -2.5",
    "away": {
     "id": "17",
     "abbr": "BKN",
@@ -108,6 +108,26 @@
   }
  ],
  "closers": {
+  "MEM": {
+   "closers": [
+    "Ty Jerome",
+    "Cameron Boozer"
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "Ty Jerome": {
+     "ppm": 0.828,
+     "ppg": 25.4,
+     "gp": 11
+    },
+    "Cameron Boozer": {
+     "ppm": 0.493,
+     "ppg": 15.6,
+     "gp": 12
+    }
+   }
+  },
   "NO": {
    "closers": [
     "Zion Williamson",
@@ -125,26 +145,6 @@
      "ppm": 0.529,
      "ppg": 15.5,
      "gp": 13
-    }
-   }
-  },
-  "DEN": {
-   "closers": [
-    "Jamal Murray",
-    "Nikola Jokic"
-   ],
-   "elite": [],
-   "source": "draft",
-   "season": {
-    "Jamal Murray": {
-     "ppm": 0.722,
-     "ppg": 26.2,
-     "gp": 10
-    },
-    "Nikola Jokic": {
-     "ppm": 0.647,
-     "ppg": 23.5,
-     "gp": 10
     }
    }
   },
@@ -168,23 +168,23 @@
     }
    }
   },
-  "MEM": {
+  "DEN": {
    "closers": [
-    "Ty Jerome",
-    "Cameron Boozer"
+    "Jamal Murray",
+    "Nikola Jokic"
    ],
    "elite": [],
    "source": "draft",
    "season": {
-    "Ty Jerome": {
-     "ppm": 0.828,
-     "ppg": 25.4,
-     "gp": 11
+    "Jamal Murray": {
+     "ppm": 0.722,
+     "ppg": 26.2,
+     "gp": 10
     },
-    "Cameron Boozer": {
-     "ppm": 0.493,
-     "ppg": 15.6,
-     "gp": 12
+    "Nikola Jokic": {
+     "ppm": 0.647,
+     "ppg": 23.5,
+     "gp": 10
     }
    }
   }
