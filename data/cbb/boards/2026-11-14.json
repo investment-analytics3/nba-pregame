@@ -1,0 +1,7421 @@
+{
+ "date": "2026-11-14",
+ "date_label": "Saturday, November 14",
+ "kind": "board",
+ "season": 2027,
+ "built_at": "2026-11-13T21:00:48-08:00",
+ "built_label": "Fri Nov 13, 9:00 PM PT",
+ "metrics_through": "2026-11-13",
+ "metrics_through_label": "Nov 13",
+ "n_d1": 365,
+ "max": 40,
+ "early": true,
+ "cutover": "Dec 15",
+ "spread_band": [
+  10.0,
+  20.0
+ ],
+ "games": [
+  {
+   "id": "401920074",
+   "tip_utc": "2026-11-14T18:00:00+00:00",
+   "tip_pt": "10:00 AM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 1:00 PM EST",
+   "neutral": true,
+   "venue": "McArthur Center",
+   "favorite": "home",
+   "spread": {
+    "spread": 13.5,
+    "details": "GMU -13.5",
+    "provider": "DraftKings",
+    "ml_home": null,
+    "ml_away": null
+   },
+   "home": {
+    "id": "2244",
+    "abbr": "GMU",
+    "name": "George Mason",
+    "display": "George Mason Patriots",
+    "mascot": "Patriots",
+    "record": "3-0",
+    "l3_record": "3-0",
+    "games": 3,
+    "season": {
+     "efg": 50.3,
+     "opp_efg": 42.01,
+     "off": 110.87,
+     "def": 84.87,
+     "net": 26.0,
+     "poss_per_game": 67.9,
+     "ranks": {
+      "efg": 180,
+      "off": 136,
+      "opp_efg": 31,
+      "def": 24,
+      "net": 62
+     }
+    },
+    "last3": {
+     "efg": 50.3,
+     "opp_efg": 42.01,
+     "off": 110.87,
+     "def": 84.87,
+     "net": 26.0,
+     "poss_per_game": 67.9,
+     "ranks": {
+      "efg": 181,
+      "off": 132,
+      "opp_efg": 29,
+      "def": 23,
+      "net": 58
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401920073,
+      "date": "2026-11-12",
+      "site": "home",
+      "opp_id": 140,
+      "opp": "KC",
+      "d1_opp": true,
+      "pts": 76,
+      "opp_pts": 68,
+      "metrics": {
+       "efg": 56.25,
+       "opp_efg": 54.0,
+       "off": 113.96,
+       "def": 101.97,
+       "net": 12.0
+      },
+      "opp_power_rank": 201
+     },
+     {
+      "game_id": 401920072,
+      "date": "2026-11-06",
+      "site": "home",
+      "opp_id": 2154,
+      "opp": "COPP",
+      "d1_opp": true,
+      "pts": 68,
+      "opp_pts": 51,
+      "metrics": {
+       "efg": 48.04,
+       "opp_efg": 42.55,
+       "off": 104.19,
+       "def": 78.15,
+       "net": 26.05
+      },
+      "opp_power_rank": 342
+     },
+     {
+      "game_id": 401920071,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 2378,
+      "opp": "UMBC",
+      "d1_opp": true,
+      "pts": 82,
+      "opp_pts": 54,
+      "metrics": {
+       "efg": 47.79,
+       "opp_efg": 33.33,
+       "off": 114.07,
+       "def": 75.12,
+       "net": 38.95
+      },
+      "opp_power_rank": 259
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-13.5",
+    "b2b": false,
+    "power": {
+     "rank": 76,
+     "bpi": 96,
+     "own_net": 62
+    },
+    "key_players": [
+     "Baraka Okojie",
+     "Brayden O'Connor",
+     "Makhai Valentine",
+     "Emmanuel Kanga",
+     "Efeosa Oliogu-Elabor",
+     "Elijah Jones"
+    ],
+    "top_scorers": [
+     {
+      "name": "Shane Pendergrass",
+      "ppg": 13.3
+     },
+     {
+      "name": "Baraka Okojie",
+      "ppg": 11.3
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "71",
+    "abbr": "BRAD",
+    "name": "Bradley",
+    "display": "Bradley Braves",
+    "mascot": "Braves",
+    "record": "2-2",
+    "l3_record": "1-2",
+    "games": 3,
+    "season": {
+     "efg": 37.66,
+     "opp_efg": 43.98,
+     "off": 79.56,
+     "def": 93.08,
+     "net": -13.52,
+     "poss_per_game": 64.1,
+     "ranks": {
+      "efg": 351,
+      "off": 352,
+      "opp_efg": 51,
+      "def": 56,
+      "net": 240
+     }
+    },
+    "last3": {
+     "efg": 37.66,
+     "opp_efg": 43.98,
+     "off": 79.56,
+     "def": 93.08,
+     "net": -13.52,
+     "poss_per_game": 64.1,
+     "ranks": {
+      "efg": 351,
+      "off": 353,
+      "opp_efg": 48,
+      "def": 53,
+      "net": 244
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401925631,
+      "date": "2026-11-12",
+      "site": "away",
+      "opp_id": 2154,
+      "opp": "COPP",
+      "d1_opp": true,
+      "pts": 56,
+      "opp_pts": 54,
+      "metrics": {
+       "efg": 43.33,
+       "opp_efg": 40.0,
+       "off": 91.73,
+       "def": 88.45,
+       "net": 3.28
+      },
+      "opp_power_rank": 342
+     },
+     {
+      "game_id": 401925773,
+      "date": "2026-11-10",
+      "site": "away",
+      "opp_id": 2166,
+      "opp": "DAV",
+      "d1_opp": true,
+      "pts": 45,
+      "opp_pts": 62,
+      "metrics": {
+       "efg": 36.11,
+       "opp_efg": 44.07,
+       "off": 66.26,
+       "def": 91.29,
+       "net": -25.03
+      },
+      "opp_power_rank": 86
+     },
+     {
+      "game_id": 401917518,
+      "date": "2026-11-07",
+      "site": "home",
+      "opp_id": 279,
+      "opp": "PAC",
+      "d1_opp": true,
+      "pts": 52,
+      "opp_pts": 63,
+      "metrics": {
+       "efg": 34.75,
+       "opp_efg": 48.08,
+       "off": 82.1,
+       "def": 99.47,
+       "net": -17.37
+      },
+      "opp_power_rank": 144
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+13.5",
+    "b2b": false,
+    "power": {
+     "rank": 218,
+     "bpi": 201,
+     "own_net": 240
+    },
+    "key_players": [
+     "Trevon Payton",
+     "Josh Ibukunoluwa",
+     "Dietrich Richardson",
+     "Noah Williams",
+     "Ben Thornbrue",
+     "Timoty van der Knaap",
+     "Xander Alarie"
+    ],
+    "top_scorers": [
+     {
+      "name": "Trevon Payton",
+      "ppg": 13.8
+     },
+     {
+      "name": "Josh Ibukunoluwa",
+      "ppg": 10.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "GMU",
+    "dog": "BRAD",
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 19 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 GMU last-3 top 50 in 2 of 4 \u00b7 \u2717 BRAD last-3 bottom 50 (316+) in 2 of 4 \u00b7 \u2713 GMU season top half (1-182) in all four \u00b7 \u2713 BRAD season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "BRAD: consensus #218, BPI #201, our net #240"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Watch list: score 19 (qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for GMU: check news before betting",
+     "Neutral-site game: no home-court point",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 19,
+    "max": 40,
+    "band": "yellow",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 4,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 11,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 2,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "GMU",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 180,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 136,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 31,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 24,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "GMU",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 181,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 132,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 29,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 23,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "BRAD",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 51,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 56,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 351,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 352,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "BRAD",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 48,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 53,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 351,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 353,
+        "color": "green"
+       }
+      ]
+     }
+    ]
+   },
+   "summary": "Watch list: score 19 (qualifies at 28). Biggest edge over the last 3: GMU Def Eff (#23) against BRAD Off Eff (#353). GMU 3-0 in its last 3, BRAD 1-2. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "Lean: GMU (watch list)",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV14BRADGMU",
+    "fav_prob": 0.885,
+    "bid": 0.88,
+    "ask": 0.89
+   }
+  },
+  {
+   "id": "401911264",
+   "tip_utc": "2026-11-14T21:00:00+00:00",
+   "tip_pt": "1:00 PM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 4:00 PM EST",
+   "neutral": false,
+   "venue": "Reilly Center",
+   "favorite": "home",
+   "spread": {
+    "spread": 15.5,
+    "details": "SBU -15.5",
+    "provider": "DraftKings",
+    "ml_home": -1200,
+    "ml_away": 750
+   },
+   "home": {
+    "id": "179",
+    "abbr": "SBU",
+    "name": "St. Bonaventure",
+    "display": "St. Bonaventure Bonnies",
+    "mascot": "Bonnies",
+    "record": "2-1",
+    "l3_record": "2-1",
+    "games": 3,
+    "season": {
+     "efg": 56.32,
+     "opp_efg": 43.75,
+     "off": 118.37,
+     "def": 92.01,
+     "net": 26.36,
+     "poss_per_game": 69.6,
+     "ranks": {
+      "efg": 70,
+      "off": 77,
+      "opp_efg": 45,
+      "def": 52,
+      "net": 60
+     }
+    },
+    "last3": {
+     "efg": 56.32,
+     "opp_efg": 43.75,
+     "off": 118.37,
+     "def": 92.01,
+     "net": 26.36,
+     "poss_per_game": 69.6,
+     "ranks": {
+      "efg": 66,
+      "off": 72,
+      "opp_efg": 43,
+      "def": 48,
+      "net": 56
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401911263,
+      "date": "2026-11-11",
+      "site": "home",
+      "opp_id": 172,
+      "opp": "COR",
+      "d1_opp": true,
+      "pts": 88,
+      "opp_pts": 64,
+      "metrics": {
+       "efg": 54.76,
+       "opp_efg": 46.15,
+       "off": 123.03,
+       "def": 89.48,
+       "net": 33.55
+      },
+      "opp_power_rank": 220
+     },
+     {
+      "game_id": 401911262,
+      "date": "2026-11-07",
+      "site": "away",
+      "opp_id": 2099,
+      "opp": "CAN",
+      "d1_opp": true,
+      "pts": 88,
+      "opp_pts": 49,
+      "metrics": {
+       "efg": 62.71,
+       "opp_efg": 35.58,
+       "off": 133.01,
+       "def": 74.06,
+       "net": 58.95
+      },
+      "opp_power_rank": 354
+     },
+     {
+      "game_id": 401911261,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 2754,
+      "opp": "YSU",
+      "d1_opp": true,
+      "pts": 71,
+      "opp_pts": 79,
+      "metrics": {
+       "efg": 51.67,
+       "opp_efg": 47.76,
+       "off": 100.04,
+       "def": 111.31,
+       "net": -11.27
+      },
+      "opp_power_rank": 216
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-15.5",
+    "b2b": false,
+    "power": {
+     "rank": 100,
+     "bpi": 135,
+     "own_net": 60
+    },
+    "key_players": [
+     "Ari Fulton",
+     "Zach Philipkoski",
+     "Taj Au-Duke",
+     "Benjamin Bill",
+     "Ilia Ermakov"
+    ],
+    "top_scorers": [
+     {
+      "name": "Benjamin Bill",
+      "ppg": 17.7
+     },
+     {
+      "name": "Zach Philipkoski",
+      "ppg": 16.7
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "322",
+    "abbr": "LAF",
+    "name": "Lafayette",
+    "display": "Lafayette Leopards",
+    "mascot": "Leopards",
+    "record": "2-2",
+    "l3_record": "2-1",
+    "games": 2,
+    "season": {
+     "efg": 41.06,
+     "opp_efg": 48.5,
+     "off": 73.65,
+     "def": 102.6,
+     "net": -28.96,
+     "poss_per_game": 79.4,
+     "ranks": {
+      "efg": 332,
+      "off": 359,
+      "opp_efg": 135,
+      "def": 138,
+      "net": 315
+     }
+    },
+    "last3": {
+     "efg": 41.06,
+     "opp_efg": 48.5,
+     "off": 73.65,
+     "def": 102.6,
+     "net": -28.96,
+     "poss_per_game": 79.4,
+     "ranks": {
+      "efg": 331,
+      "off": 359,
+      "opp_efg": 138,
+      "def": 137,
+      "net": 314
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401924949,
+      "date": "2026-11-10",
+      "site": "home",
+      "opp_id": 135043,
+      "opp": "PEN",
+      "d1_opp": false,
+      "pts": 89,
+      "opp_pts": 46,
+      "metrics": {
+       "efg": 60.45,
+       "opp_efg": 37.5,
+       "off": 128.75,
+       "def": 66.55,
+       "net": 62.21
+      },
+      "opp_power_rank": null
+     },
+     {
+      "game_id": 401920192,
+      "date": "2026-11-07",
+      "site": "away",
+      "opp_id": 2603,
+      "opp": "JOES",
+      "d1_opp": true,
+      "pts": 57,
+      "opp_pts": 67,
+      "metrics": {
+       "efg": 41.96,
+       "opp_efg": 37.12,
+       "off": 70.39,
+       "def": 82.74,
+       "net": -12.35
+      },
+      "opp_power_rank": 126
+     },
+     {
+      "game_id": 401924948,
+      "date": "2026-11-05",
+      "site": "home",
+      "opp_id": 247,
+      "opp": "KNGS",
+      "d1_opp": false,
+      "pts": 104,
+      "opp_pts": 67,
+      "metrics": {
+       "efg": 66.67,
+       "opp_efg": 50.88,
+       "off": 137.57,
+       "def": 88.62,
+       "net": 48.94
+      },
+      "opp_power_rank": null
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+15.5",
+    "b2b": false,
+    "power": {
+     "rank": 327,
+     "bpi": 321,
+     "own_net": 315
+    },
+    "key_players": [
+     "Cooper Kesler",
+     "Beckett Currie",
+     "Jasraj Gill",
+     "Owen Kelly",
+     "Shareef Jackson"
+    ],
+    "top_scorers": [
+     {
+      "name": "Cooper Kesler",
+      "ppg": 15.8
+     },
+     {
+      "name": "Beckett Currie",
+      "ppg": 12.2
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "SBU",
+    "dog": "LAF",
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 19 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 SBU last-3 top 50 in 2 of 4 \u00b7 \u2717 LAF last-3 bottom 50 (316+) in 2 of 4 \u00b7 \u2713 SBU season top half (1-182) in all four \u00b7 \u2713 LAF season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "LAF: consensus #327, BPI #321, our net #315"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Watch list: score 19 (qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for SBU: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 19,
+    "max": 40,
+    "band": "yellow",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 3,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 12,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "SBU",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 70,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 77,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 45,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 52,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "SBU",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 66,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 72,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 43,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 48,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "LAF",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 135,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 138,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 332,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 359,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "LAF",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 138,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 137,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 331,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 359,
+        "color": "green"
+       }
+      ]
+     }
+    ]
+   },
+   "summary": "Watch list: score 19 (qualifies at 28). Biggest edge over the last 3: SBU Def Eff (#48) against LAF Off Eff (#359). SBU 2-1 in its last 3, LAF 2-1. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "Lean: SBU (watch list)",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV14LAFSBON",
+    "fav_prob": 0.925,
+    "bid": 0.91,
+    "ask": 0.94
+   }
+  },
+  {
+   "id": "401919004",
+   "tip_utc": "2026-11-14T17:00:00+00:00",
+   "tip_pt": "9:00 AM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 12:00 PM EST",
+   "neutral": false,
+   "venue": "James A. Rhodes Arena",
+   "favorite": "home",
+   "spread": {
+    "spread": 12.5,
+    "details": "AKR -12.5",
+    "provider": "DraftKings",
+    "ml_home": -800,
+    "ml_away": 550
+   },
+   "home": {
+    "id": "2006",
+    "abbr": "AKR",
+    "name": "Akron",
+    "display": "Akron Zips",
+    "mascot": "Zips",
+    "record": "2-0",
+    "l3_record": "2-0",
+    "games": 1,
+    "season": {
+     "efg": 56.0,
+     "opp_efg": 35.71,
+     "off": 110.8,
+     "def": 90.12,
+     "net": 20.68,
+     "poss_per_game": 67.7,
+     "ranks": {
+      "efg": 76,
+      "off": 137,
+      "opp_efg": 5,
+      "def": 42,
+      "net": 74
+     }
+    },
+    "last3": {
+     "efg": 56.0,
+     "opp_efg": 35.71,
+     "off": 110.8,
+     "def": 90.12,
+     "net": 20.68,
+     "poss_per_game": 67.7,
+     "ranks": {
+      "efg": 72,
+      "off": 133,
+      "opp_efg": 4,
+      "def": 41,
+      "net": 74
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401928833,
+      "date": "2026-11-09",
+      "site": "home",
+      "opp_id": 332,
+      "opp": "MSK",
+      "d1_opp": false,
+      "pts": 112,
+      "opp_pts": 64,
+      "metrics": {
+       "efg": 64.67,
+       "opp_efg": 45.28,
+       "off": 144.12,
+       "def": 82.35,
+       "net": 61.77
+      },
+      "opp_power_rank": null
+     },
+     {
+      "game_id": 401910993,
+      "date": "2026-11-02",
+      "site": "away",
+      "opp_id": 309,
+      "opp": "UL",
+      "d1_opp": true,
+      "pts": 75,
+      "opp_pts": 61,
+      "metrics": {
+       "efg": 56.0,
+       "opp_efg": 35.71,
+       "off": 110.8,
+       "def": 90.12,
+       "net": 20.68
+      },
+      "opp_power_rank": 279
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-12.5",
+    "b2b": false,
+    "power": {
+     "rank": 89,
+     "bpi": 104,
+     "own_net": 74
+    },
+    "key_players": [
+     "Tahj Staveskie",
+     "Evan Mahaffey",
+     "Ty Pence",
+     "Zach Halligan",
+     "Buddy Hammer Jr.",
+     "Colin White",
+     "Chabi Barre"
+    ],
+    "top_scorers": [
+     {
+      "name": "Tahj Staveskie",
+      "ppg": 19.0
+     },
+     {
+      "name": "Ty Pence",
+      "ppg": 16.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "2655",
+    "abbr": "TULN",
+    "name": "Tulane",
+    "display": "Tulane Green Wave",
+    "mascot": "Green Wave",
+    "record": "2-1",
+    "l3_record": "2-1",
+    "games": 3,
+    "season": {
+     "efg": 52.96,
+     "opp_efg": 54.14,
+     "off": 115.08,
+     "def": 108.93,
+     "net": 6.15,
+     "poss_per_game": 75.9,
+     "ranks": {
+      "efg": 127,
+      "off": 92,
+      "opp_efg": 261,
+      "def": 204,
+      "net": 141
+     }
+    },
+    "last3": {
+     "efg": 52.96,
+     "opp_efg": 54.14,
+     "off": 115.08,
+     "def": 108.93,
+     "net": 6.15,
+     "poss_per_game": 75.9,
+     "ranks": {
+      "efg": 127,
+      "off": 92,
+      "opp_efg": 256,
+      "def": 204,
+      "net": 138
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401919003,
+      "date": "2026-11-10",
+      "site": "home",
+      "opp_id": 2447,
+      "opp": "NICH",
+      "d1_opp": true,
+      "pts": 77,
+      "opp_pts": 63,
+      "metrics": {
+       "efg": 53.41,
+       "opp_efg": 47.17,
+       "off": 118.35,
+       "def": 96.83,
+       "net": 21.52
+      },
+      "opp_power_rank": 264
+     },
+     {
+      "game_id": 401919002,
+      "date": "2026-11-05",
+      "site": "home",
+      "opp_id": 2296,
+      "opp": "JKST",
+      "d1_opp": true,
+      "pts": 85,
+      "opp_pts": 87,
+      "metrics": {
+       "efg": 54.24,
+       "opp_efg": 54.03,
+       "off": 109.93,
+       "def": 112.51,
+       "net": -2.59
+      },
+      "opp_power_rank": 325
+     },
+     {
+      "game_id": 401919001,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 2630,
+      "opp": "UTM",
+      "d1_opp": true,
+      "pts": 100,
+      "opp_pts": 98,
+      "metrics": {
+       "efg": 51.52,
+       "opp_efg": 59.85,
+       "off": 117.25,
+       "def": 114.91,
+       "net": 2.35
+      },
+      "opp_power_rank": 170
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+12.5",
+    "b2b": false,
+    "power": {
+     "rank": 160,
+     "bpi": 196,
+     "own_net": 141
+    },
+    "key_players": [
+     "Krystian Lewis",
+     "KJ Greene",
+     "Tyler Ringgold",
+     "Carson Schwieger",
+     "TJ Nadeau"
+    ],
+    "top_scorers": [
+     {
+      "name": "Krystian Lewis",
+      "ppg": 28.3
+     },
+     {
+      "name": "Tyler Ringgold",
+      "ppg": 13.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "AKR",
+    "dog": "TULN",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 17 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 AKR last-3 top 50 in 2 of 4 \u00b7 \u2717 TULN last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2713 AKR season top half (1-182) in all four \u00b7 \u2713 TULN season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "TULN: consensus #160, BPI #196, our net #141"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 17 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for AKR: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 17,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 6,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 8,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "AKR",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 76,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 137,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 5,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 42,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "AKR",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 72,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 133,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 4,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 41,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "TULN",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 261,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 204,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 127,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 92,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "TULN",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 256,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 204,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 127,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 92,
+        "color": "yellow"
+       }
+      ]
+     }
+    ]
+   },
+   "summary": "No track: score 17 (watch list from 18, qualifies at 28). Biggest edge over the last 3: AKR eFG% (#72) against TULN Opp eFG% (#256). AKR 2-0 in its last 3, TULN 2-1. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV14TULNAKR",
+    "fav_prob": 0.87,
+    "bid": 0.86,
+    "ask": 0.88
+   }
+  },
+  {
+   "id": "401920307",
+   "tip_utc": "2026-11-14T21:00:00+00:00",
+   "tip_pt": "1:00 PM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 4:00 PM EST",
+   "neutral": false,
+   "venue": "McCamish Pavilion",
+   "favorite": "home",
+   "spread": {
+    "spread": 16.5,
+    "details": "GT -16.5",
+    "provider": "DraftKings",
+    "ml_home": null,
+    "ml_away": null
+   },
+   "home": {
+    "id": "59",
+    "abbr": "GT",
+    "name": "Georgia Tech",
+    "display": "Georgia Tech Yellow Jackets",
+    "mascot": "Yellow Jackets",
+    "record": "3-0",
+    "l3_record": "3-0",
+    "games": 3,
+    "season": {
+     "efg": 50.28,
+     "opp_efg": 42.13,
+     "off": 110.97,
+     "def": 90.95,
+     "net": 20.02,
+     "poss_per_game": 76.6,
+     "ranks": {
+      "efg": 181,
+      "off": 135,
+      "opp_efg": 32,
+      "def": 49,
+      "net": 76
+     }
+    },
+    "last3": {
+     "efg": 50.28,
+     "opp_efg": 42.13,
+     "off": 110.97,
+     "def": 90.95,
+     "net": 20.02,
+     "poss_per_game": 76.6,
+     "ranks": {
+      "efg": 182,
+      "off": 131,
+      "opp_efg": 30,
+      "def": 46,
+      "net": 77
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401920306,
+      "date": "2026-11-10",
+      "site": "home",
+      "opp_id": 2198,
+      "opp": "EKU",
+      "d1_opp": true,
+      "pts": 85,
+      "opp_pts": 71,
+      "metrics": {
+       "efg": 48.46,
+       "opp_efg": 49.21,
+       "off": 111.88,
+       "def": 93.45,
+       "net": 18.43
+      },
+      "opp_power_rank": 274
+     },
+     {
+      "game_id": 401920305,
+      "date": "2026-11-06",
+      "site": "home",
+      "opp_id": 290,
+      "opp": "GASO",
+      "d1_opp": true,
+      "pts": 95,
+      "opp_pts": 83,
+      "metrics": {
+       "efg": 60.2,
+       "opp_efg": 45.21,
+       "off": 123.76,
+       "def": 108.13,
+       "net": 15.63
+      },
+      "opp_power_rank": 240
+     },
+     {
+      "game_id": 401920304,
+      "date": "2026-11-03",
+      "site": "home",
+      "opp_id": 2261,
+      "opp": "HAMP",
+      "d1_opp": true,
+      "pts": 75,
+      "opp_pts": 55,
+      "metrics": {
+       "efg": 44.78,
+       "opp_efg": 31.15,
+       "off": 97.32,
+       "def": 71.37,
+       "net": 25.95
+      },
+      "opp_power_rank": 312
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-16.5",
+    "b2b": false,
+    "power": {
+     "rank": 101,
+     "bpi": 123,
+     "own_net": 76
+    },
+    "key_players": [
+     "Tylis Jordan",
+     "Colby Garland",
+     "Nasir Whitlock",
+     "Kam Craft",
+     "Jackson Fields"
+    ],
+    "top_scorers": [
+     {
+      "name": "Tylis Jordan",
+      "ppg": 15.7
+     },
+     {
+      "name": "Colby Garland",
+      "ppg": 14.7
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "2427",
+    "abbr": "UNCA",
+    "name": "UNC Asheville",
+    "display": "UNC Asheville Bulldogs",
+    "mascot": "Bulldogs",
+    "record": "2-2",
+    "l3_record": "2-1",
+    "games": 3,
+    "season": {
+     "efg": 53.18,
+     "opp_efg": 52.99,
+     "off": 103.03,
+     "def": 115.85,
+     "net": -12.82,
+     "poss_per_game": 72.8,
+     "ranks": {
+      "efg": 123,
+      "off": 204,
+      "opp_efg": 239,
+      "def": 268,
+      "net": 233
+     }
+    },
+    "last3": {
+     "efg": 53.18,
+     "opp_efg": 52.99,
+     "off": 103.03,
+     "def": 115.85,
+     "net": -12.82,
+     "poss_per_game": 72.8,
+     "ranks": {
+      "efg": 123,
+      "off": 206,
+      "opp_efg": 234,
+      "def": 269,
+      "net": 235
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401917901,
+      "date": "2026-11-11",
+      "site": "away",
+      "opp_id": 2698,
+      "opp": "WGA",
+      "d1_opp": true,
+      "pts": 73,
+      "opp_pts": 70,
+      "metrics": {
+       "efg": 54.9,
+       "opp_efg": 39.44,
+       "off": 101.2,
+       "def": 97.04,
+       "net": 4.16
+      },
+      "opp_power_rank": 318
+     },
+     {
+      "game_id": 401922291,
+      "date": "2026-11-07",
+      "site": "home",
+      "opp_id": 2717,
+      "opp": "WCU",
+      "d1_opp": true,
+      "pts": 75,
+      "opp_pts": 83,
+      "metrics": {
+       "efg": 52.59,
+       "opp_efg": 51.92,
+       "off": 109.13,
+       "def": 120.77,
+       "net": -11.64
+      },
+      "opp_power_rank": 141
+     },
+     {
+      "game_id": 401922290,
+      "date": "2026-11-04",
+      "site": "home",
+      "opp_id": 2215,
+      "opp": "ERSK",
+      "d1_opp": false,
+      "pts": 101,
+      "opp_pts": 74,
+      "metrics": {
+       "efg": 66.95,
+       "opp_efg": 50.0,
+       "off": 132.37,
+       "def": 96.99,
+       "net": 35.39
+      },
+      "opp_power_rank": null
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+16.5",
+    "b2b": false,
+    "power": {
+     "rank": 261,
+     "bpi": 279,
+     "own_net": 233
+    },
+    "key_players": [
+     "Ja'Corey Lipkins",
+     "Daniel Thomas",
+     "Myles Mayfield",
+     "Tylon Chatman",
+     "Kelcy Phipps"
+    ],
+    "top_scorers": [
+     {
+      "name": "Connor Dubsky",
+      "ppg": 13.0
+     },
+     {
+      "name": "Ja'Corey Lipkins",
+      "ppg": 12.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "GT",
+    "dog": "UNCA",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 17 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 GT last-3 top 50 in 2 of 4 \u00b7 \u2717 UNCA last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2713 GT season top half (1-182) in all four \u00b7 \u2713 UNCA season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "UNCA: consensus #261, BPI #279, our net #233"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 17 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for GT: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 17,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 4,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 8,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 2,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "GT",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 181,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 135,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 32,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 49,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "GT",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 182,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 131,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 30,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 46,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "UNCA",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 239,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 268,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 123,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 204,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "UNCA",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 234,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 269,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 123,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 206,
+        "color": "green"
+       }
+      ]
+     }
+    ]
+   },
+   "summary": "No track: score 17 (watch list from 18, qualifies at 28). Biggest edge over the last 3: GT Def Eff (#46) against UNCA Off Eff (#206). GT 3-0 in its last 3, UNCA 2-1. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV14UNCAGT",
+    "fav_prob": 0.93,
+    "bid": 0.92,
+    "ask": 0.94
+   }
+  },
+  {
+   "id": "401917951",
+   "tip_utc": "2026-11-15T00:00:00+00:00",
+   "tip_pt": "4:00 PM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 7:00 PM EST",
+   "neutral": false,
+   "venue": "Charles Koch Arena",
+   "favorite": "home",
+   "spread": {
+    "spread": 12.5,
+    "details": "WICH -12.5",
+    "provider": "DraftKings",
+    "ml_home": -800,
+    "ml_away": 550
+   },
+   "home": {
+    "id": "2724",
+    "abbr": "WICH",
+    "name": "Wichita State",
+    "display": "Wichita State Shockers",
+    "mascot": "Shockers",
+    "record": "2-1",
+    "l3_record": "2-1",
+    "games": 2,
+    "season": {
+     "efg": 48.45,
+     "opp_efg": 42.91,
+     "off": 106.31,
+     "def": 103.08,
+     "net": 3.22,
+     "poss_per_game": 77.6,
+     "ranks": {
+      "efg": 228,
+      "off": 180,
+      "opp_efg": 39,
+      "def": 145,
+      "net": 156
+     }
+    },
+    "last3": {
+     "efg": 48.45,
+     "opp_efg": 42.91,
+     "off": 106.31,
+     "def": 103.08,
+     "net": 3.22,
+     "poss_per_game": 77.6,
+     "ranks": {
+      "efg": 225,
+      "off": 179,
+      "opp_efg": 37,
+      "def": 146,
+      "net": 157
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401919030,
+      "date": "2026-11-11",
+      "site": "home",
+      "opp_id": 128218,
+      "opp": "FRU",
+      "d1_opp": false,
+      "pts": 113,
+      "opp_pts": 60,
+      "metrics": {
+       "efg": 83.9,
+       "opp_efg": 43.4,
+       "off": 172.52,
+       "def": 91.6,
+       "net": 80.92
+      },
+      "opp_power_rank": null
+     },
+     {
+      "game_id": 401919029,
+      "date": "2026-11-08",
+      "site": "away",
+      "opp_id": 30,
+      "opp": "USC",
+      "d1_opp": true,
+      "pts": 86,
+      "opp_pts": 93,
+      "metrics": {
+       "efg": 56.48,
+       "opp_efg": 45.9,
+       "off": 108.14,
+       "def": 116.94,
+       "net": -8.8
+      },
+      "opp_power_rank": 51
+     },
+     {
+      "game_id": 401919028,
+      "date": "2026-11-04",
+      "site": "home",
+      "opp_id": 2463,
+      "opp": "CSUN",
+      "d1_opp": true,
+      "pts": 79,
+      "opp_pts": 67,
+      "metrics": {
+       "efg": 42.67,
+       "opp_efg": 40.15,
+       "off": 104.38,
+       "def": 88.52,
+       "net": 15.85
+      },
+      "opp_power_rank": 230
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-12.5",
+    "b2b": false,
+    "power": {
+     "rank": 120,
+     "bpi": 82,
+     "own_net": 156
+    },
+    "key_players": [
+     "Jahari Long",
+     "Kenyon Giles",
+     "Dillon Battie",
+     "William Berg",
+     "Bryce Heard"
+    ],
+    "top_scorers": [
+     {
+      "name": "William Berg",
+      "ppg": 21.5
+     },
+     {
+      "name": "Kenyon Giles",
+      "ppg": 16.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "2046",
+    "abbr": "APSU",
+    "name": "Austin Peay",
+    "display": "Austin Peay Governors",
+    "mascot": "Governors",
+    "record": "2-1",
+    "l3_record": "2-1",
+    "games": 1,
+    "season": {
+     "efg": 40.68,
+     "opp_efg": 47.37,
+     "off": 91.98,
+     "def": 94.65,
+     "net": -2.67,
+     "poss_per_game": 75.0,
+     "ranks": {
+      "efg": 336,
+      "off": 295,
+      "opp_efg": 105,
+      "def": 71,
+      "net": 182
+     }
+    },
+    "last3": {
+     "efg": 40.68,
+     "opp_efg": 47.37,
+     "off": 91.98,
+     "def": 94.65,
+     "net": -2.67,
+     "poss_per_game": 75.0,
+     "ranks": {
+      "efg": 335,
+      "off": 298,
+      "opp_efg": 105,
+      "def": 69,
+      "net": 183
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401917950,
+      "date": "2026-11-10",
+      "site": "home",
+      "opp_id": 2940,
+      "opp": "LIV",
+      "d1_opp": false,
+      "pts": 82,
+      "opp_pts": 61,
+      "metrics": {
+       "efg": 51.69,
+       "opp_efg": 35.0,
+       "off": 99.64,
+       "def": 74.12,
+       "net": 25.52
+      },
+      "opp_power_rank": null
+     },
+     {
+      "game_id": 401917949,
+      "date": "2026-11-06",
+      "site": "away",
+      "opp_id": 338,
+      "opp": "KENN",
+      "d1_opp": true,
+      "pts": 69,
+      "opp_pts": 71,
+      "metrics": {
+       "efg": 40.68,
+       "opp_efg": 47.37,
+       "off": 91.98,
+       "def": 94.65,
+       "net": -2.67
+      },
+      "opp_power_rank": 129
+     },
+     {
+      "game_id": 401917948,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 6371,
+      "opp": "LANE",
+      "d1_opp": false,
+      "pts": 109,
+      "opp_pts": 65,
+      "metrics": {
+       "efg": 57.69,
+       "opp_efg": 43.75,
+       "off": 133.52,
+       "def": 79.62,
+       "net": 53.9
+      },
+      "opp_power_rank": null
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+12.5",
+    "b2b": false,
+    "power": {
+     "rank": 181,
+     "bpi": 194,
+     "own_net": 182
+    },
+    "key_players": [
+     "Zyree Collins",
+     "Felipe Minzer",
+     "Cam Ryans",
+     "Chuck Love III",
+     "Rashaud Marshall",
+     "Bradley Floyd"
+    ],
+    "top_scorers": [
+     {
+      "name": "Zyree Collins",
+      "ppg": 18.3
+     },
+     {
+      "name": "Chuck Love III",
+      "ppg": 11.7
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "WICH",
+    "dog": "APSU",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 16 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 WICH last-3 top 50 in 1 of 4 \u00b7 \u2717 APSU last-3 bottom 50 (316+) in 1 of 4 \u00b7 \u2717 WICH season outside 1-182: eFG% #228 \u00b7 \u2713 APSU season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "APSU: consensus #181, BPI #194, our net #182"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 16 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for WICH: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 16,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 2,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 10,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "WICH",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 228,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 180,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 39,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 145,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "WICH",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 225,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 179,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 37,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 146,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "APSU",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 105,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 71,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 336,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 295,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "APSU",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 105,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 69,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 335,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 298,
+        "color": "green"
+       }
+      ]
+     }
+    ]
+   },
+   "summary": "No track: score 16 (watch list from 18, qualifies at 28). Biggest edge over the last 3: WICH Opp eFG% (#37) against APSU eFG% (#335). WICH 2-1 in its last 3, APSU 2-1. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV14PEAYWICH",
+    "fav_prob": 0.88,
+    "bid": 0.87,
+    "ask": 0.89
+   }
+  },
+  {
+   "id": "401918055",
+   "tip_utc": "2026-11-14T22:00:00+00:00",
+   "tip_pt": "2:00 PM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 5:00 PM EST",
+   "neutral": false,
+   "venue": "Haas Pavilion",
+   "favorite": "home",
+   "spread": {
+    "spread": 16.5,
+    "details": "CAL -16.5",
+    "provider": "DraftKings",
+    "ml_home": -1800,
+    "ml_away": 1000
+   },
+   "home": {
+    "id": "25",
+    "abbr": "CAL",
+    "name": "California",
+    "display": "California Golden Bears",
+    "mascot": "Golden Bears",
+    "record": "2-2",
+    "l3_record": "1-2",
+    "games": 3,
+    "season": {
+     "efg": 50.55,
+     "opp_efg": 49.49,
+     "off": 102.72,
+     "def": 110.3,
+     "net": -7.57,
+     "poss_per_game": 70.4,
+     "ranks": {
+      "efg": 176,
+      "off": 207,
+      "opp_efg": 153,
+      "def": 217,
+      "net": 212
+     }
+    },
+    "last3": {
+     "efg": 50.55,
+     "opp_efg": 49.49,
+     "off": 102.72,
+     "def": 110.3,
+     "net": -7.57,
+     "poss_per_game": 70.4,
+     "ranks": {
+      "efg": 177,
+      "off": 211,
+      "opp_efg": 156,
+      "def": 216,
+      "net": 212
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401918054,
+      "date": "2026-11-11",
+      "site": "home",
+      "opp_id": 30,
+      "opp": "USC",
+      "d1_opp": true,
+      "pts": 65,
+      "opp_pts": 77,
+      "metrics": {
+       "efg": 37.88,
+       "opp_efg": 45.31,
+       "off": 94.31,
+       "def": 111.72,
+       "net": -17.41
+      },
+      "opp_power_rank": 51
+     },
+     {
+      "game_id": 401918053,
+      "date": "2026-11-08",
+      "site": "away",
+      "opp_id": 248,
+      "opp": "HOU",
+      "d1_opp": true,
+      "pts": 68,
+      "opp_pts": 86,
+      "metrics": {
+       "efg": 51.75,
+       "opp_efg": 55.88,
+       "off": 97.23,
+       "def": 122.97,
+       "net": -25.74
+      },
+      "opp_power_rank": 2
+     },
+     {
+      "game_id": 401918052,
+      "date": "2026-11-04",
+      "site": "home",
+      "opp_id": 2515,
+      "opp": "RAD",
+      "d1_opp": true,
+      "pts": 84,
+      "opp_pts": 70,
+      "metrics": {
+       "efg": 63.56,
+       "opp_efg": 46.92,
+       "off": 116.04,
+       "def": 96.7,
+       "net": 19.34
+      },
+      "opp_power_rank": 263
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-16.5",
+    "b2b": false,
+    "power": {
+     "rank": 158,
+     "bpi": 122,
+     "own_net": 212
+    },
+    "key_players": [
+     "Nojus Indrusaitis",
+     "Jordan Ross",
+     "Michael Cooper",
+     "Jake Wilkins",
+     "Mantas Kocanas",
+     "Sammie Yeanay"
+    ],
+    "top_scorers": [
+     {
+      "name": "Nojus Indrusaitis",
+      "ppg": 17.2
+     },
+     {
+      "name": "Michael Cooper",
+      "ppg": 16.5
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "3101",
+    "abbr": "UTU",
+    "name": "Utah Tech",
+    "display": "Utah Tech Trailblazers",
+    "mascot": "Trailblazers",
+    "record": "1-2",
+    "l3_record": "1-2",
+    "games": 2,
+    "season": {
+     "efg": 48.85,
+     "opp_efg": 61.3,
+     "off": 93.09,
+     "def": 139.0,
+     "net": -45.91,
+     "poss_per_game": 78.4,
+     "ranks": {
+      "efg": 215,
+      "off": 283,
+      "opp_efg": 351,
+      "def": 364,
+      "net": 355
+     }
+    },
+    "last3": {
+     "efg": 48.85,
+     "opp_efg": 61.3,
+     "off": 93.09,
+     "def": 139.0,
+     "net": -45.91,
+     "poss_per_game": 78.4,
+     "ranks": {
+      "efg": 213,
+      "off": 288,
+      "opp_efg": 349,
+      "def": 363,
+      "net": 355
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401925940,
+      "date": "2026-11-10",
+      "site": "away",
+      "opp_id": 328,
+      "opp": "USU",
+      "d1_opp": true,
+      "pts": 86,
+      "opp_pts": 118,
+      "metrics": {
+       "efg": 55.07,
+       "opp_efg": 56.98,
+       "off": 107.08,
+       "def": 146.93,
+       "net": -39.84
+      },
+      "opp_power_rank": 24
+     },
+     {
+      "game_id": 401925939,
+      "date": "2026-11-04",
+      "site": "home",
+      "opp_id": 134743,
+      "opp": "GRCU",
+      "d1_opp": false,
+      "pts": 103,
+      "opp_pts": 52,
+      "metrics": {
+       "efg": 59.38,
+       "opp_efg": 38.28,
+       "off": 138.88,
+       "def": 70.12,
+       "net": 68.77
+      },
+      "opp_power_rank": null
+     },
+     {
+      "game_id": 401924894,
+      "date": "2026-11-02",
+      "site": "away",
+      "opp_id": 167,
+      "opp": "UNM",
+      "d1_opp": true,
+      "pts": 60,
+      "opp_pts": 100,
+      "metrics": {
+       "efg": 41.8,
+       "opp_efg": 67.5,
+       "off": 78.41,
+       "def": 130.68,
+       "net": -52.27
+      },
+      "opp_power_rank": 27
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+16.5",
+    "b2b": false,
+    "power": {
+     "rank": 307,
+     "bpi": 240,
+     "own_net": 355
+    },
+    "key_players": [
+     "Owen Mackay",
+     "Mark Brown Jr.",
+     "Christian Gibson",
+     "Aris Rodriguez",
+     "Ethan Potter",
+     "Preston Vandermyde"
+    ],
+    "top_scorers": [
+     {
+      "name": "Christian Gibson",
+      "ppg": 19.0
+     },
+     {
+      "name": "Ethan Potter",
+      "ppg": 14.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "CAL",
+    "dog": "UTU",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 15 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 CAL last-3 top 50 in 0 of 4 \u00b7 \u2717 UTU last-3 bottom 50 (316+) in 2 of 4 \u00b7 \u2717 CAL season outside 1-182: Off Eff #207, Def Eff #217 \u00b7 \u2713 UTU season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "UTU: consensus #307, BPI #240, our net #355"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 15 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for CAL: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 15,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 0,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 12,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "CAL",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 176,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 207,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 153,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 217,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "CAL",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 177,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 211,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 156,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 216,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "UTU",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 351,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 364,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 215,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 283,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "UTU",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 349,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 363,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 213,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 288,
+        "color": "green"
+       }
+      ]
+     }
+    ]
+   },
+   "summary": "No track: score 15 (watch list from 18, qualifies at 28). Biggest edge over the last 3: CAL eFG% (#177) against UTU Opp eFG% (#349). CAL 1-2 in its last 3, UTU 1-2. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV14UTUCAL",
+    "fav_prob": 0.925,
+    "bid": 0.92,
+    "ask": 0.93
+   }
+  },
+  {
+   "id": "401921063",
+   "tip_utc": "2026-11-15T00:00:00+00:00",
+   "tip_pt": "4:00 PM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 7:00 PM EST",
+   "neutral": false,
+   "venue": "The Sobrato Center",
+   "favorite": "home",
+   "spread": {
+    "spread": 11.5,
+    "details": "SF -11.5",
+    "provider": "DraftKings",
+    "ml_home": null,
+    "ml_away": null
+   },
+   "home": {
+    "id": "2539",
+    "abbr": "SF",
+    "name": "San Francisco",
+    "display": "San Francisco Dons",
+    "mascot": "Dons",
+    "record": "3-0",
+    "l3_record": "3-0",
+    "games": 3,
+    "season": {
+     "efg": 51.27,
+     "opp_efg": 45.29,
+     "off": 107.52,
+     "def": 93.71,
+     "net": 13.81,
+     "poss_per_game": 67.6,
+     "ranks": {
+      "efg": 158,
+      "off": 164,
+      "opp_efg": 69,
+      "def": 61,
+      "net": 102
+     }
+    },
+    "last3": {
+     "efg": 51.27,
+     "opp_efg": 45.29,
+     "off": 107.52,
+     "def": 93.71,
+     "net": 13.81,
+     "poss_per_game": 67.6,
+     "ranks": {
+      "efg": 157,
+      "off": 165,
+      "opp_efg": 69,
+      "def": 60,
+      "net": 102
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401921062,
+      "date": "2026-11-10",
+      "site": "home",
+      "opp_id": 149,
+      "opp": "MONT",
+      "d1_opp": true,
+      "pts": 63,
+      "opp_pts": 58,
+      "metrics": {
+       "efg": 45.1,
+       "opp_efg": 41.0,
+       "off": 93.47,
+       "def": 86.05,
+       "net": 7.42
+      },
+      "opp_power_rank": 204
+     },
+     {
+      "game_id": 401921061,
+      "date": "2026-11-06",
+      "site": "home",
+      "opp_id": 2449,
+      "opp": "NDSU",
+      "d1_opp": true,
+      "pts": 79,
+      "opp_pts": 70,
+      "metrics": {
+       "efg": 61.22,
+       "opp_efg": 44.29,
+       "off": 116.63,
+       "def": 103.34,
+       "net": 13.29
+      },
+      "opp_power_rank": 277
+     },
+     {
+      "game_id": 401921060,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 2515,
+      "opp": "RAD",
+      "d1_opp": true,
+      "pts": 76,
+      "opp_pts": 62,
+      "metrics": {
+       "efg": 48.25,
+       "opp_efg": 51.0,
+       "off": 112.41,
+       "def": 91.7,
+       "net": 20.71
+      },
+      "opp_power_rank": 263
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-11.5",
+    "b2b": false,
+    "power": {
+     "rank": 116,
+     "bpi": 132,
+     "own_net": 102
+    },
+    "key_players": [
+     "Ben Oosterbaan",
+     "Gustav Knudsen",
+     "Dylan Bordon",
+     "Ismaila Diagne",
+     "Yoav Vitlem"
+    ],
+    "top_scorers": [
+     {
+      "name": "Ben Oosterbaan",
+      "ppg": 16.0
+     },
+     {
+      "name": "Dylan Bordon",
+      "ppg": 12.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "2502",
+    "abbr": "PRST",
+    "name": "Portland State",
+    "display": "Portland State Vikings",
+    "mascot": "Vikings",
+    "record": "1-2",
+    "l3_record": "1-2",
+    "games": 2,
+    "season": {
+     "efg": 43.04,
+     "opp_efg": 59.22,
+     "off": 93.45,
+     "def": 118.42,
+     "net": -24.97,
+     "poss_per_game": 70.1,
+     "ranks": {
+      "efg": 312,
+      "off": 280,
+      "opp_efg": 328,
+      "def": 290,
+      "net": 302
+     }
+    },
+    "last3": {
+     "efg": 43.04,
+     "opp_efg": 59.22,
+     "off": 93.45,
+     "def": 118.42,
+     "net": -24.97,
+     "poss_per_game": 70.1,
+     "ranks": {
+      "efg": 313,
+      "off": 284,
+      "opp_efg": 327,
+      "def": 288,
+      "net": 304
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401925915,
+      "date": "2026-11-11",
+      "site": "away",
+      "opp_id": 36,
+      "opp": "CSU",
+      "d1_opp": true,
+      "pts": 71,
+      "opp_pts": 87,
+      "metrics": {
+       "efg": 46.55,
+       "opp_efg": 62.75,
+       "off": 98.82,
+       "def": 121.09,
+       "net": -22.27
+      },
+      "opp_power_rank": 79
+     },
+     {
+      "game_id": 401917517,
+      "date": "2026-11-07",
+      "site": "away",
+      "opp_id": 2547,
+      "opp": "SEA",
+      "d1_opp": true,
+      "pts": 60,
+      "opp_pts": 79,
+      "metrics": {
+       "efg": 39.47,
+       "opp_efg": 55.77,
+       "off": 87.82,
+       "def": 115.62,
+       "net": -27.81
+      },
+      "opp_power_rank": 162
+     },
+     {
+      "game_id": 401925914,
+      "date": "2026-11-03",
+      "site": "home",
+      "opp_id": 2333,
+      "opp": "LC",
+      "d1_opp": false,
+      "pts": 111,
+      "opp_pts": 59,
+      "metrics": {
+       "efg": 67.46,
+       "opp_efg": 35.29,
+       "off": 145.17,
+       "def": 77.16,
+       "net": 68.01
+      },
+      "opp_power_rank": null
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+11.5",
+    "b2b": false,
+    "power": {
+     "rank": 280,
+     "bpi": 235,
+     "own_net": 302
+    },
+    "key_players": [
+     "Jaquay Randolph",
+     "Yaroslav Nikonov",
+     "Gantas Krianauskas",
+     "Luke Kearney",
+     "Emil Skytt",
+     "Trevor Frank",
+     "KC Ibekwe"
+    ],
+    "top_scorers": [
+     {
+      "name": "Jaquay Randolph",
+      "ppg": 16.5
+     },
+     {
+      "name": "Yaroslav Nikonov",
+      "ppg": 14.7
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "SF",
+    "dog": "PRST",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 15 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 SF last-3 top 50 in 0 of 4 \u00b7 \u2717 PRST last-3 bottom 50 (316+) in 1 of 4 \u00b7 \u2713 SF season top half (1-182) in all four \u00b7 \u2713 PRST season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "PRST: consensus #280, BPI #235, our net #302"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 15 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for SF: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 15,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 0,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 10,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 2,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "SF",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 158,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 164,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 69,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 61,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "SF",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 157,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 165,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 69,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 60,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "PRST",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 328,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 290,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 312,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 280,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "PRST",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 327,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 288,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 313,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 284,
+        "color": "green"
+       }
+      ]
+     }
+    ]
+   },
+   "summary": "No track: score 15 (watch list from 18, qualifies at 28). Biggest edge over the last 3: SF Opp eFG% (#69) against PRST eFG% (#313). SF 3-0 in its last 3, PRST 1-2. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV14PRSTSF",
+    "fav_prob": 0.845,
+    "bid": 0.84,
+    "ask": 0.85
+   }
+  },
+  {
+   "id": "401920867",
+   "tip_utc": "2026-11-15T00:00:00+00:00",
+   "tip_pt": "4:00 PM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 7:00 PM EST",
+   "neutral": false,
+   "venue": "Leo D. Mahoney Arena",
+   "favorite": "home",
+   "spread": {
+    "spread": 11.5,
+    "details": "FAIR -11.5",
+    "provider": "DraftKings",
+    "ml_home": -575,
+    "ml_away": 425
+   },
+   "home": {
+    "id": "2217",
+    "abbr": "FAIR",
+    "name": "Fairfield",
+    "display": "Fairfield Stags",
+    "mascot": "Stags",
+    "record": "1-2",
+    "l3_record": "1-2",
+    "games": 3,
+    "season": {
+     "efg": 34.74,
+     "opp_efg": 56.55,
+     "off": 84.4,
+     "def": 108.24,
+     "net": -23.84,
+     "poss_per_game": 69.9,
+     "ranks": {
+      "efg": 362,
+      "off": 338,
+      "opp_efg": 293,
+      "def": 196,
+      "net": 296
+     }
+    },
+    "last3": {
+     "efg": 34.74,
+     "opp_efg": 56.55,
+     "off": 84.4,
+     "def": 108.24,
+     "net": -23.84,
+     "poss_per_game": 69.9,
+     "ranks": {
+      "efg": 362,
+      "off": 338,
+      "opp_efg": 295,
+      "def": 195,
+      "net": 298
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401920895,
+      "date": "2026-11-10",
+      "site": "away",
+      "opp_id": 275,
+      "opp": "WIS",
+      "d1_opp": true,
+      "pts": 42,
+      "opp_pts": 89,
+      "metrics": {
+       "efg": 20.14,
+       "opp_efg": 61.61,
+       "off": 57.82,
+       "def": 122.53,
+       "net": -64.7
+      },
+      "opp_power_rank": 40
+     },
+     {
+      "game_id": 401921683,
+      "date": "2026-11-08",
+      "site": "away",
+      "opp_id": 2803,
+      "opp": "BRY",
+      "d1_opp": true,
+      "pts": 68,
+      "opp_pts": 59,
+      "metrics": {
+       "efg": 44.74,
+       "opp_efg": 47.22,
+       "off": 95.84,
+       "def": 83.16,
+       "net": 12.68
+      },
+      "opp_power_rank": 297
+     },
+     {
+      "game_id": 401920691,
+      "date": "2026-11-05",
+      "site": "home",
+      "opp_id": 261,
+      "opp": "UVM",
+      "d1_opp": true,
+      "pts": 67,
+      "opp_pts": 79,
+      "metrics": {
+       "efg": 42.62,
+       "opp_efg": 60.34,
+       "off": 101.32,
+       "def": 119.47,
+       "net": -18.15
+      },
+      "opp_power_rank": 155
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-11.5",
+    "b2b": false,
+    "power": {
+     "rank": 282,
+     "bpi": 246,
+     "own_net": 296
+    },
+    "key_players": [
+     "Declan Wucherpfennig",
+     "Halon Rawlins",
+     "Jah Hatchett",
+     "Tony Williams",
+     "Peyton Smith",
+     "Eric Mejia"
+    ],
+    "top_scorers": [
+     {
+      "name": "Declan Wucherpfennig",
+      "ppg": 15.7
+     },
+     {
+      "name": "Cole Edelen",
+      "ppg": 9.7
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "2885",
+    "abbr": "NJIT",
+    "name": "NJIT",
+    "display": "NJIT Highlanders",
+    "mascot": "Highlanders",
+    "record": "1-4",
+    "l3_record": "1-2",
+    "games": 5,
+    "season": {
+     "efg": 35.82,
+     "opp_efg": 53.9,
+     "off": 81.31,
+     "def": 119.0,
+     "net": -37.69,
+     "poss_per_game": 67.4,
+     "ranks": {
+      "efg": 360,
+      "off": 347,
+      "opp_efg": 254,
+      "def": 298,
+      "net": 341
+     }
+    },
+    "last3": {
+     "efg": 36.65,
+     "opp_efg": 51.13,
+     "off": 82.56,
+     "def": 118.64,
+     "net": -36.09,
+     "poss_per_game": 67.4,
+     "ranks": {
+      "efg": 356,
+      "off": 343,
+      "opp_efg": 193,
+      "def": 291,
+      "net": 338
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401920202,
+      "date": "2026-11-11",
+      "site": "away",
+      "opp_id": 2670,
+      "opp": "VCU",
+      "d1_opp": true,
+      "pts": 49,
+      "opp_pts": 87,
+      "metrics": {
+       "efg": 29.17,
+       "opp_efg": 55.08,
+       "off": 72.24,
+       "def": 128.27,
+       "net": -56.03
+      },
+      "opp_power_rank": 58
+     },
+     {
+      "game_id": 401920866,
+      "date": "2026-11-10",
+      "site": "away",
+      "opp_id": 164,
+      "opp": "RUTG",
+      "d1_opp": true,
+      "pts": 64,
+      "opp_pts": 101,
+      "metrics": {
+       "efg": 34.85,
+       "opp_efg": 58.33,
+       "off": 83.47,
+       "def": 131.72,
+       "net": -48.26
+      },
+      "opp_power_rank": 37
+     },
+     {
+      "game_id": 401920865,
+      "date": "2026-11-08",
+      "site": "home",
+      "opp_id": 2612,
+      "opp": "SPU",
+      "d1_opp": true,
+      "pts": 54,
+      "opp_pts": 52,
+      "metrics": {
+       "efg": 52.86,
+       "opp_efg": 39.66,
+       "off": 93.45,
+       "def": 89.98,
+       "net": 3.46
+      },
+      "opp_power_rank": 329
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+11.5",
+    "b2b": false,
+    "power": {
+     "rank": 359,
+     "bpi": 361,
+     "own_net": 341
+    },
+    "key_players": [
+     "David Bolden",
+     "Victor Vanderstraeten",
+     "Matheo Coffi",
+     "Mario Tatum Jr.",
+     "Brandon Stores Jr."
+    ],
+    "top_scorers": [
+     {
+      "name": "David Bolden",
+      "ppg": 9.4
+     },
+     {
+      "name": "Victor Vanderstraeten",
+      "ppg": 9.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "FAIR",
+    "dog": "NJIT",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 15 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 FAIR last-3 top 50 in 0 of 4 \u00b7 \u2717 NJIT last-3 bottom 50 (316+) in 2 of 4 \u00b7 \u2717 FAIR season outside 1-182: eFG% #362, Off Eff #338, Opp eFG% #293, Def Eff #196 \u00b7 \u2713 NJIT season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "NJIT: consensus #359, BPI #361, our net #341"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 15 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for FAIR: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 15,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 0,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 12,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "FAIR",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 362,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 338,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 293,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 196,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "FAIR",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 362,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 338,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 295,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 195,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "NJIT",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 254,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 298,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 360,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 347,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "NJIT",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 193,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 291,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 356,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 343,
+        "color": "green"
+       }
+      ]
+     }
+    ]
+   },
+   "summary": "No track: score 15 (watch list from 18, qualifies at 28). Biggest edge over the last 3: FAIR Def Eff (#195) against NJIT Off Eff (#343). FAIR 1-2 in its last 3, NJIT 1-2. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV14NJITFAIR",
+    "fav_prob": 0.835,
+    "bid": 0.83,
+    "ask": 0.84
+   }
+  },
+  {
+   "id": "401909728",
+   "tip_utc": "2026-11-14T21:00:00+00:00",
+   "tip_pt": "1:00 PM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 4:00 PM EST",
+   "neutral": false,
+   "venue": "LJVM Coliseum",
+   "favorite": "home",
+   "spread": {
+    "spread": 18.5,
+    "details": "WAKE -18.5",
+    "provider": "DraftKings",
+    "ml_home": -3600,
+    "ml_away": 1500
+   },
+   "home": {
+    "id": "154",
+    "abbr": "WAKE",
+    "name": "Wake Forest",
+    "display": "Wake Forest Demon Deacons",
+    "mascot": "Demon Deacons",
+    "record": "2-1",
+    "l3_record": "2-1",
+    "games": 3,
+    "season": {
+     "efg": 49.72,
+     "opp_efg": 48.59,
+     "off": 104.1,
+     "def": 96.39,
+     "net": 7.71,
+     "poss_per_game": 69.2,
+     "ranks": {
+      "efg": 191,
+      "off": 199,
+      "opp_efg": 137,
+      "def": 84,
+      "net": 130
+     }
+    },
+    "last3": {
+     "efg": 49.72,
+     "opp_efg": 48.59,
+     "off": 104.1,
+     "def": 96.39,
+     "net": 7.71,
+     "poss_per_game": 69.2,
+     "ranks": {
+      "efg": 192,
+      "off": 202,
+      "opp_efg": 140,
+      "def": 81,
+      "net": 129
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401909727,
+      "date": "2026-11-10",
+      "site": "home",
+      "opp_id": 2127,
+      "opp": "CHSO",
+      "d1_opp": true,
+      "pts": 82,
+      "opp_pts": 64,
+      "metrics": {
+       "efg": 49.25,
+       "opp_efg": 57.78,
+       "off": 116.71,
+       "def": 91.09,
+       "net": 25.62
+      },
+      "opp_power_rank": 319
+     },
+     {
+      "game_id": 401909726,
+      "date": "2026-11-05",
+      "site": "away",
+      "opp_id": 238,
+      "opp": "VAN",
+      "d1_opp": true,
+      "pts": 51,
+      "opp_pts": 74,
+      "metrics": {
+       "efg": 40.74,
+       "opp_efg": 45.83,
+       "off": 76.76,
+       "def": 111.38,
+       "net": -34.62
+      },
+      "opp_power_rank": 10
+     },
+     {
+      "game_id": 401909725,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 2379,
+      "opp": "UMES",
+      "d1_opp": true,
+      "pts": 83,
+      "opp_pts": 62,
+      "metrics": {
+       "efg": 58.77,
+       "opp_efg": 45.0,
+       "off": 117.25,
+       "def": 87.59,
+       "net": 29.67
+      },
+      "opp_power_rank": 350
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-18.5",
+    "b2b": false,
+    "power": {
+     "rank": 112,
+     "bpi": 97,
+     "own_net": 130
+    },
+    "key_players": [
+     "Kevair Kennedy",
+     "Gavin Placide",
+     "Jamari McDowell",
+     "Isaac Carr",
+     "Justin Ray",
+     "Xander Pintelon"
+    ],
+    "top_scorers": [
+     {
+      "name": "Kevair Kennedy",
+      "ppg": 16.3
+     },
+     {
+      "name": "Gavin Placide",
+      "ppg": 14.7
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "253",
+    "abbr": "SUU",
+    "name": "Southern Utah",
+    "display": "Southern Utah Thunderbirds",
+    "mascot": "Thunderbirds",
+    "record": "3-1",
+    "l3_record": "2-1",
+    "games": 1,
+    "season": {
+     "efg": 43.86,
+     "opp_efg": 50.69,
+     "off": 78.44,
+     "def": 117.0,
+     "net": -38.56,
+     "poss_per_game": 75.2,
+     "ranks": {
+      "efg": 304,
+      "off": 355,
+      "opp_efg": 179,
+      "def": 281,
+      "net": 346
+     }
+    },
+    "last3": {
+     "efg": 43.86,
+     "opp_efg": 50.69,
+     "off": 78.44,
+     "def": 117.0,
+     "net": -38.56,
+     "poss_per_game": 75.2,
+     "ranks": {
+      "efg": 304,
+      "off": 356,
+      "opp_efg": 180,
+      "def": 280,
+      "net": 345
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401920412,
+      "date": "2026-11-12",
+      "site": "away",
+      "opp_id": 2272,
+      "opp": "HPU",
+      "d1_opp": true,
+      "pts": 59,
+      "opp_pts": 88,
+      "metrics": {
+       "efg": 43.86,
+       "opp_efg": 50.69,
+       "off": 78.44,
+       "def": 117.0,
+       "net": -38.56
+      },
+      "opp_power_rank": 60
+     },
+     {
+      "game_id": 401931055,
+      "date": "2026-11-07",
+      "site": "home",
+      "opp_id": 3246,
+      "opp": "BTHS",
+      "d1_opp": false,
+      "pts": 143,
+      "opp_pts": 49,
+      "metrics": {
+       "efg": 74.12,
+       "opp_efg": 31.45,
+       "off": 179.23,
+       "def": 61.41,
+       "net": 117.81
+      },
+      "opp_power_rank": null
+     },
+     {
+      "game_id": 401925922,
+      "date": "2026-11-05",
+      "site": "home",
+      "opp_id": 134743,
+      "opp": "GRCU",
+      "d1_opp": false,
+      "pts": 97,
+      "opp_pts": 53,
+      "metrics": {
+       "efg": 55.63,
+       "opp_efg": 38.89,
+       "off": 131.3,
+       "def": 71.74,
+       "net": 59.56
+      },
+      "opp_power_rank": null
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+18.5",
+    "b2b": false,
+    "power": {
+     "rank": 270,
+     "bpi": 177,
+     "own_net": 346
+    },
+    "key_players": [
+     "Jaiden Feroah",
+     "Rashaad Davis",
+     "Dylan Sanders",
+     "Cale Barclay",
+     "Juok Riak",
+     "Chase Degraffenried",
+     "JaJuan Nicholls"
+    ],
+    "top_scorers": [
+     {
+      "name": "Anthony Breland",
+      "ppg": 14.2
+     },
+     {
+      "name": "JaJuan Nicholls",
+      "ppg": 11.2
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "WAKE",
+    "dog": "SUU",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 14 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 WAKE last-3 top 50 in 0 of 4 \u00b7 \u2717 SUU last-3 bottom 50 (316+) in 1 of 4 \u00b7 \u2717 WAKE season outside 1-182: eFG% #191, Off Eff #199 \u00b7 \u2713 SUU season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "SUU: consensus #270, BPI #177, our net #346"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 14 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for WAKE: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 14,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 0,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 10,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "WAKE",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 191,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 199,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 137,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 84,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "WAKE",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 192,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 202,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 140,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 81,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "SUU",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 179,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 281,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 304,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 355,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "SUU",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 180,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 280,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 304,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 356,
+        "color": "green"
+       }
+      ]
+     }
+    ]
+   },
+   "summary": "No track: score 14 (watch list from 18, qualifies at 28). Biggest edge over the last 3: WAKE Def Eff (#81) against SUU Off Eff (#356). WAKE 2-1 in its last 3, SUU 2-1. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV14SUUWAKE",
+    "fav_prob": 0.945,
+    "bid": 0.94,
+    "ask": 0.95
+   }
+  },
+  {
+   "id": "401909534",
+   "tip_utc": "2026-11-14T23:00:00+00:00",
+   "tip_pt": "3:00 PM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 6:00 PM EST",
+   "neutral": false,
+   "venue": "Amica Mutual Pavilion",
+   "favorite": "home",
+   "spread": {
+    "spread": 11.5,
+    "details": "PROV -11.5",
+    "provider": "DraftKings",
+    "ml_home": null,
+    "ml_away": null
+   },
+   "home": {
+    "id": "2507",
+    "abbr": "PROV",
+    "name": "Providence",
+    "display": "Providence Friars",
+    "mascot": "Friars",
+    "record": "2-1",
+    "l3_record": "2-1",
+    "games": 3,
+    "season": {
+     "efg": 48.18,
+     "opp_efg": 47.48,
+     "off": 102.77,
+     "def": 83.53,
+     "net": 19.24,
+     "poss_per_game": 71.0,
+     "ranks": {
+      "efg": 231,
+      "off": 206,
+      "opp_efg": 107,
+      "def": 19,
+      "net": 80
+     }
+    },
+    "last3": {
+     "efg": 48.18,
+     "opp_efg": 47.48,
+     "off": 102.77,
+     "def": 83.53,
+     "net": 19.24,
+     "poss_per_game": 71.0,
+     "ranks": {
+      "efg": 230,
+      "off": 210,
+      "opp_efg": 109,
+      "def": 16,
+      "net": 82
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401909533,
+      "date": "2026-11-10",
+      "site": "home",
+      "opp_id": 2803,
+      "opp": "BRY",
+      "d1_opp": true,
+      "pts": 78,
+      "opp_pts": 55,
+      "metrics": {
+       "efg": 54.84,
+       "opp_efg": 47.87,
+       "off": 106.98,
+       "def": 75.43,
+       "net": 31.54
+      },
+      "opp_power_rank": 297
+     },
+     {
+      "game_id": 401909532,
+      "date": "2026-11-07",
+      "site": "away",
+      "opp_id": 158,
+      "opp": "NEB",
+      "d1_opp": true,
+      "pts": 58,
+      "opp_pts": 67,
+      "metrics": {
+       "efg": 36.29,
+       "opp_efg": 50.0,
+       "off": 82.83,
+       "def": 95.68,
+       "net": -12.85
+      },
+      "opp_power_rank": 13
+     },
+     {
+      "game_id": 401909531,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 311,
+      "opp": "ME",
+      "d1_opp": true,
+      "pts": 83,
+      "opp_pts": 56,
+      "metrics": {
+       "efg": 52.94,
+       "opp_efg": 44.19,
+       "off": 118.3,
+       "def": 79.81,
+       "net": 38.48
+      },
+      "opp_power_rank": 283
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-11.5",
+    "b2b": false,
+    "power": {
+     "rank": 68,
+     "bpi": 56,
+     "own_net": 80
+    },
+    "key_players": [
+     "Gavin Hightower",
+     "Malik Mack",
+     "Miles Byrd",
+     "Jacob Bannarbie",
+     "Devin Vanterpool",
+     "Ryan Mela",
+     "Leonardo Marangon"
+    ],
+    "top_scorers": [
+     {
+      "name": "Devin Vanterpool",
+      "ppg": 16.0
+     },
+     {
+      "name": "Malik Mack",
+      "ppg": 13.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "38",
+    "abbr": "COLO",
+    "name": "Colorado",
+    "display": "Colorado Buffaloes",
+    "mascot": "Buffaloes",
+    "record": "2-1",
+    "l3_record": "2-1",
+    "games": 3,
+    "season": {
+     "efg": 59.04,
+     "opp_efg": 48.54,
+     "off": 112.44,
+     "def": 97.63,
+     "net": 14.81,
+     "poss_per_game": 72.0,
+     "ranks": {
+      "efg": 40,
+      "off": 118,
+      "opp_efg": 136,
+      "def": 91,
+      "net": 97
+     }
+    },
+    "last3": {
+     "efg": 59.04,
+     "opp_efg": 48.54,
+     "off": 112.44,
+     "def": 97.63,
+     "net": 14.81,
+     "poss_per_game": 72.0,
+     "ranks": {
+      "efg": 38,
+      "off": 115,
+      "opp_efg": 139,
+      "def": 86,
+      "net": 96
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401909761,
+      "date": "2026-11-10",
+      "site": "home",
+      "opp_id": 301,
+      "opp": "USD",
+      "d1_opp": true,
+      "pts": 83,
+      "opp_pts": 75,
+      "metrics": {
+       "efg": 63.73,
+       "opp_efg": 47.76,
+       "off": 114.44,
+       "def": 103.41,
+       "net": 11.03
+      },
+      "opp_power_rank": 174
+     },
+     {
+      "game_id": 401909760,
+      "date": "2026-11-07",
+      "site": "home",
+      "opp_id": 21,
+      "opp": "SDSU",
+      "d1_opp": true,
+      "pts": 66,
+      "opp_pts": 77,
+      "metrics": {
+       "efg": 44.74,
+       "opp_efg": 57.45,
+       "off": 88.83,
+       "def": 103.63,
+       "net": -14.8
+      },
+      "opp_power_rank": 72
+     },
+     {
+      "game_id": 401909759,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 2000,
+      "opp": "ACU",
+      "d1_opp": true,
+      "pts": 94,
+      "opp_pts": 59,
+      "metrics": {
+       "efg": 68.97,
+       "opp_efg": 42.11,
+       "off": 135.67,
+       "def": 85.15,
+       "net": 50.51
+      },
+      "opp_power_rank": 291
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+11.5",
+    "b2b": false,
+    "power": {
+     "rank": 88,
+     "bpi": 81,
+     "own_net": 97
+    },
+    "key_players": [
+     "Barrington Hargress",
+     "Noah Feddersen",
+     "Ian Inman",
+     "Josiah Sanders",
+     "Alex Dickeson",
+     "Jalin Holland"
+    ],
+    "top_scorers": [
+     {
+      "name": "Barrington Hargress",
+      "ppg": 20.0
+     },
+     {
+      "name": "Ian Inman",
+      "ppg": 13.7
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "PROV",
+    "dog": "COLO",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 14 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 PROV last-3 top 50 in 1 of 4 \u00b7 \u2717 COLO last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2717 PROV season outside 1-182: eFG% #231, Off Eff #206 \u00b7 \u2717 COLO season top 50: eFG% #40"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "COLO: consensus #88, BPI #81, our net #97"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 14 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for PROV: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 14,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 4,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 6,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "PROV",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 231,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 206,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 107,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 19,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "PROV",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 230,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 210,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 109,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 16,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "COLO",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 136,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 91,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 40,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 118,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "COLO",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 139,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 86,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 38,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 115,
+        "color": "yellow"
+       }
+      ]
+     }
+    ]
+   },
+   "summary": "No track: score 14 (watch list from 18, qualifies at 28). PROV 2-1 in its last 3, COLO 2-1. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV14COLOPROV",
+    "fav_prob": 0.84,
+    "bid": 0.83,
+    "ask": 0.85
+   }
+  },
+  {
+   "id": "401920568",
+   "tip_utc": "2026-11-15T00:30:00+00:00",
+   "tip_pt": "4:30 PM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 7:30 PM EST",
+   "neutral": false,
+   "venue": "SECU Arena",
+   "favorite": "home",
+   "spread": {
+    "spread": 10.5,
+    "details": "TOW -10.5",
+    "provider": "DraftKings",
+    "ml_home": -440,
+    "ml_away": 340
+   },
+   "home": {
+    "id": "119",
+    "abbr": "TOW",
+    "name": "Towson",
+    "display": "Towson Tigers",
+    "mascot": "Tigers",
+    "record": "2-2",
+    "l3_record": "2-1",
+    "games": 4,
+    "season": {
+     "efg": 50.64,
+     "opp_efg": 46.59,
+     "off": 103.2,
+     "def": 95.54,
+     "net": 7.66,
+     "poss_per_game": 68.6,
+     "ranks": {
+      "efg": 173,
+      "off": 203,
+      "opp_efg": 92,
+      "def": 77,
+      "net": 131
+     }
+    },
+    "last3": {
+     "efg": 53.8,
+     "opp_efg": 42.72,
+     "off": 106.04,
+     "def": 86.13,
+     "net": 19.91,
+     "poss_per_game": 67.0,
+     "ranks": {
+      "efg": 112,
+      "off": 183,
+      "opp_efg": 35,
+      "def": 27,
+      "net": 78
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401920566,
+      "date": "2026-11-12",
+      "site": "home",
+      "opp_id": 2352,
+      "opp": "L-MD",
+      "d1_opp": true,
+      "pts": 90,
+      "opp_pts": 60,
+      "metrics": {
+       "efg": 62.5,
+       "opp_efg": 45.0,
+       "off": 129.17,
+       "def": 86.11,
+       "net": 43.06
+      },
+      "opp_power_rank": 339
+     },
+     {
+      "game_id": 401919806,
+      "date": "2026-11-09",
+      "site": "home",
+      "opp_id": 112358,
+      "opp": "LIU",
+      "d1_opp": true,
+      "pts": 66,
+      "opp_pts": 46,
+      "metrics": {
+       "efg": 52.94,
+       "opp_efg": 30.56,
+       "off": 100.48,
+       "def": 70.03,
+       "net": 30.45
+      },
+      "opp_power_rank": 295
+     },
+     {
+      "game_id": 401921698,
+      "date": "2026-11-05",
+      "site": "away",
+      "opp_id": 254,
+      "opp": "UTAH",
+      "d1_opp": true,
+      "pts": 57,
+      "opp_pts": 67,
+      "metrics": {
+       "efg": 44.64,
+       "opp_efg": 54.55,
+       "off": 87.02,
+       "def": 102.29,
+       "net": -15.27
+      },
+      "opp_power_rank": 91
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-10.5",
+    "b2b": false,
+    "power": {
+     "rank": 130,
+     "bpi": 141,
+     "own_net": 131
+    },
+    "key_players": [
+     "Zion Stanford",
+     "Jaquan Womack",
+     "Ben Roseborough",
+     "Christian Doerr",
+     "Caleb Embeya",
+     "Jon Barton"
+    ],
+    "top_scorers": [
+     {
+      "name": "Ben Roseborough",
+      "ppg": 14.0
+     },
+     {
+      "name": "Zion Stanford",
+      "ppg": 13.2
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "2378",
+    "abbr": "UMBC",
+    "name": "UMBC",
+    "display": "UMBC Retrievers",
+    "mascot": "Retrievers",
+    "record": "2-2",
+    "l3_record": "2-1",
+    "games": 3,
+    "season": {
+     "efg": 47.57,
+     "opp_efg": 47.83,
+     "off": 96.24,
+     "def": 105.47,
+     "net": -9.23,
+     "poss_per_game": 75.9,
+     "ranks": {
+      "efg": 242,
+      "off": 259,
+      "opp_efg": 118,
+      "def": 167,
+      "net": 221
+     }
+    },
+    "last3": {
+     "efg": 47.57,
+     "opp_efg": 47.83,
+     "off": 96.24,
+     "def": 105.47,
+     "net": -9.23,
+     "poss_per_game": 75.9,
+     "ranks": {
+      "efg": 240,
+      "off": 261,
+      "opp_efg": 119,
+      "def": 166,
+      "net": 224
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401921086,
+      "date": "2026-11-12",
+      "site": "home",
+      "opp_id": 2415,
+      "opp": "MORG",
+      "d1_opp": true,
+      "pts": 85,
+      "opp_pts": 70,
+      "metrics": {
+       "efg": 58.06,
+       "opp_efg": 42.59,
+       "off": 110.84,
+       "def": 91.28,
+       "net": 19.56
+      },
+      "opp_power_rank": 276
+     },
+     {
+      "game_id": 401921085,
+      "date": "2026-11-09",
+      "site": "home",
+      "opp_id": 14632,
+      "opp": "MCD",
+      "d1_opp": false,
+      "pts": 91,
+      "opp_pts": 61,
+      "metrics": {
+       "efg": 51.92,
+       "opp_efg": 41.91,
+       "off": 118.9,
+       "def": 79.7,
+       "net": 39.2
+      },
+      "opp_power_rank": null
+     },
+     {
+      "game_id": 401921084,
+      "date": "2026-11-05",
+      "site": "away",
+      "opp_id": 2368,
+      "opp": "MRST",
+      "d1_opp": true,
+      "pts": 80,
+      "opp_pts": 88,
+      "metrics": {
+       "efg": 54.9,
+       "opp_efg": 52.42,
+       "off": 101.28,
+       "def": 111.41,
+       "net": -10.13
+      },
+      "opp_power_rank": 215
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+10.5",
+    "b2b": false,
+    "power": {
+     "rank": 259,
+     "bpi": 288,
+     "own_net": 221
+    },
+    "key_players": [
+     "Flash Burton",
+     "Devin Ceaser",
+     "Aidan Able",
+     "Jovan Ristic",
+     "Riley Jacobs"
+    ],
+    "top_scorers": [
+     {
+      "name": "Devin Ceaser",
+      "ppg": 17.5
+     },
+     {
+      "name": "Aidan Able",
+      "ppg": 12.8
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "TOW",
+    "dog": "UMBC",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 14 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 TOW last-3 top 50 in 2 of 4 \u00b7 \u2717 UMBC last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2717 TOW season outside 1-182: Off Eff #203 \u00b7 \u2713 UMBC season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "UMBC: consensus #259, BPI #288, our net #221"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 14 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for TOW: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 14,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 2,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 8,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "TOW",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 173,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 203,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 92,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 77,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "TOW",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 112,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 183,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 35,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 27,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "UMBC",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 118,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 167,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 242,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 259,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "UMBC",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 119,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 166,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 240,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 261,
+        "color": "green"
+       }
+      ]
+     }
+    ]
+   },
+   "summary": "No track: score 14 (watch list from 18, qualifies at 28). Biggest edge over the last 3: TOW Def Eff (#27) against UMBC Off Eff (#261). TOW 2-1 in its last 3, UMBC 2-1. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV14UMBCTOWS",
+    "fav_prob": 0.815,
+    "bid": 0.8,
+    "ask": 0.83
+   }
+  },
+  {
+   "id": "401921096",
+   "tip_utc": "2026-11-14T19:00:00+00:00",
+   "tip_pt": "11:00 AM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 2:00 PM EST",
+   "neutral": false,
+   "venue": "William R. Johnson Coliseum",
+   "favorite": "home",
+   "spread": {
+    "spread": 11.5,
+    "details": "SFA -11.5",
+    "provider": "DraftKings",
+    "ml_home": null,
+    "ml_away": null
+   },
+   "home": {
+    "id": "2617",
+    "abbr": "SFA",
+    "name": "Stephen F. Austin",
+    "display": "Stephen F. Austin Lumberjacks",
+    "mascot": "Lumberjacks",
+    "record": "3-0",
+    "l3_record": "3-0",
+    "games": 1,
+    "season": {
+     "efg": 54.46,
+     "opp_efg": 46.36,
+     "off": 119.03,
+     "def": 111.2,
+     "net": 7.83,
+     "poss_per_game": 63.8,
+     "ranks": {
+      "efg": 99,
+      "off": 69,
+      "opp_efg": 89,
+      "def": 228,
+      "net": 129
+     }
+    },
+    "last3": {
+     "efg": 54.46,
+     "opp_efg": 46.36,
+     "off": 119.03,
+     "def": 111.2,
+     "net": 7.83,
+     "poss_per_game": 63.8,
+     "ranks": {
+      "efg": 96,
+      "off": 67,
+      "opp_efg": 89,
+      "def": 227,
+      "net": 128
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401917963,
+      "date": "2026-11-11",
+      "site": "away",
+      "opp_id": 2000,
+      "opp": "ACU",
+      "d1_opp": true,
+      "pts": 76,
+      "opp_pts": 71,
+      "metrics": {
+       "efg": 54.46,
+       "opp_efg": 46.36,
+       "off": 119.03,
+       "def": 111.2,
+       "net": 7.83
+      },
+      "opp_power_rank": 291
+     },
+     {
+      "game_id": 401925089,
+      "date": "2026-11-06",
+      "site": "home",
+      "opp_id": 2639,
+      "opp": "TXLU",
+      "d1_opp": false,
+      "pts": 89,
+      "opp_pts": 32,
+      "metrics": {
+       "efg": 51.35,
+       "opp_efg": 23.64,
+       "off": 121.71,
+       "def": 43.76,
+       "net": 77.95
+      },
+      "opp_power_rank": null
+     },
+     {
+      "game_id": 401925088,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 2358,
+      "opp": "LYON",
+      "d1_opp": false,
+      "pts": 120,
+      "opp_pts": 61,
+      "metrics": {
+       "efg": 65.38,
+       "opp_efg": 40.0,
+       "off": 158.05,
+       "def": 80.34,
+       "net": 77.71
+      },
+      "opp_power_rank": null
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-11.5",
+    "b2b": false,
+    "power": {
+     "rank": 125,
+     "bpi": 121,
+     "own_net": 129
+    },
+    "key_players": [
+     "Christian Green",
+     "Narit Chotikavanic",
+     "MJ Russell",
+     "Erik Makke",
+     "Gediminas Alisas",
+     "Edwin Daniel"
+    ],
+    "top_scorers": [
+     {
+      "name": "Erik Makke",
+      "ppg": 15.3
+     },
+     {
+      "name": "Gediminas Alisas",
+      "ppg": 12.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "242",
+    "abbr": "RICE",
+    "name": "Rice",
+    "display": "Rice Owls",
+    "mascot": "Owls",
+    "record": "1-2",
+    "l3_record": "1-2",
+    "games": 2,
+    "season": {
+     "efg": 44.14,
+     "opp_efg": 50.0,
+     "off": 100.23,
+     "def": 113.46,
+     "net": -13.23,
+     "poss_per_game": 71.8,
+     "ranks": {
+      "efg": 301,
+      "off": 228,
+      "opp_efg": 167,
+      "def": 250,
+      "net": 236
+     }
+    },
+    "last3": {
+     "efg": 44.14,
+     "opp_efg": 50.0,
+     "off": 100.23,
+     "def": 113.46,
+     "net": -13.23,
+     "poss_per_game": 71.8,
+     "ranks": {
+      "efg": 301,
+      "off": 232,
+      "opp_efg": 167,
+      "def": 248,
+      "net": 237
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401921095,
+      "date": "2026-11-09",
+      "site": "away",
+      "opp_id": 24,
+      "opp": "STAN",
+      "d1_opp": true,
+      "pts": 73,
+      "opp_pts": 91,
+      "metrics": {
+       "efg": 45.9,
+       "opp_efg": 57.26,
+       "off": 96.42,
+       "def": 120.19,
+       "net": -23.77
+      },
+      "opp_power_rank": 93
+     },
+     {
+      "game_id": 401921094,
+      "date": "2026-11-05",
+      "site": "home",
+      "opp_id": 2837,
+      "opp": "ETAM",
+      "d1_opp": true,
+      "pts": 71,
+      "opp_pts": 72,
+      "metrics": {
+       "efg": 42.54,
+       "opp_efg": 43.28,
+       "off": 104.49,
+       "def": 105.96,
+       "net": -1.47
+      },
+      "opp_power_rank": 211
+     },
+     {
+      "game_id": 401921093,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 2937,
+      "opp": "DCC",
+      "d1_opp": false,
+      "pts": 100,
+      "opp_pts": 55,
+      "metrics": {
+       "efg": 53.66,
+       "opp_efg": 35.25,
+       "off": 120.37,
+       "def": 66.21,
+       "net": 54.17
+      },
+      "opp_power_rank": null
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+11.5",
+    "b2b": false,
+    "power": {
+     "rank": 232,
+     "bpi": 226,
+     "own_net": 236
+    },
+    "key_players": [
+     "Jaxson Thompson",
+     "Eternity Eguagie",
+     "Dallas Hobbs",
+     "Jacob Dar",
+     "Carmelo Adkins",
+     "Jimmy Oladokun Jr."
+    ],
+    "top_scorers": [
+     {
+      "name": "Jacob Dar",
+      "ppg": 13.0
+     },
+     {
+      "name": "Jaxson Thompson",
+      "ppg": 13.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "SFA",
+    "dog": "RICE",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 13 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 SFA last-3 top 50 in 0 of 4 \u00b7 \u2717 RICE last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2717 SFA season outside 1-182: Def Eff #228 \u00b7 \u2713 RICE season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "RICE: consensus #232, BPI #226, our net #236"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 13 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for SFA: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 13,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 0,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 8,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 2,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "SFA",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 99,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 69,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 89,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 228,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "SFA",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 96,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 67,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 89,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 227,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "RICE",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 167,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 250,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 301,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 228,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "RICE",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 167,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 248,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 301,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 232,
+        "color": "green"
+       }
+      ]
+     }
+    ]
+   },
+   "summary": "No track: score 13 (watch list from 18, qualifies at 28). Biggest edge over the last 3: SFA Opp eFG% (#89) against RICE eFG% (#301). SFA 3-0 in its last 3, RICE 1-2. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV14RICESFA",
+    "fav_prob": 0.825,
+    "bid": 0.81,
+    "ask": 0.84
+   }
+  },
+  {
+   "id": "401911276",
+   "tip_utc": "2026-11-15T00:30:00+00:00",
+   "tip_pt": "4:30 PM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 7:30 PM EST",
+   "neutral": false,
+   "venue": "UPMC Cooper Fieldhouse",
+   "favorite": "home",
+   "spread": {
+    "spread": 16.5,
+    "details": "DUQ -16.5",
+    "provider": "DraftKings",
+    "ml_home": -1450,
+    "ml_away": 850
+   },
+   "home": {
+    "id": "2184",
+    "abbr": "DUQ",
+    "name": "Duquesne",
+    "display": "Duquesne Dukes",
+    "mascot": "Dukes",
+    "record": "3-0",
+    "l3_record": "3-0",
+    "games": 2,
+    "season": {
+     "efg": 56.37,
+     "opp_efg": 52.59,
+     "off": 112.3,
+     "def": 106.31,
+     "net": 5.99,
+     "poss_per_game": 66.8,
+     "ranks": {
+      "efg": 68,
+      "off": 121,
+      "opp_efg": 226,
+      "def": 177,
+      "net": 145
+     }
+    },
+    "last3": {
+     "efg": 56.37,
+     "opp_efg": 52.59,
+     "off": 112.3,
+     "def": 106.31,
+     "net": 5.99,
+     "poss_per_game": 66.8,
+     "ranks": {
+      "efg": 65,
+      "off": 117,
+      "opp_efg": 219,
+      "def": 176,
+      "net": 142
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401925781,
+      "date": "2026-11-10",
+      "site": "home",
+      "opp_id": 265,
+      "opp": "WSU",
+      "d1_opp": true,
+      "pts": 72,
+      "opp_pts": 71,
+      "metrics": {
+       "efg": 55.32,
+       "opp_efg": 55.45,
+       "off": 115.25,
+       "def": 113.65,
+       "net": 1.6
+      },
+      "opp_power_rank": 197
+     },
+     {
+      "game_id": 401925780,
+      "date": "2026-11-07",
+      "site": "home",
+      "opp_id": 2119,
+      "opp": "CNSU",
+      "d1_opp": false,
+      "pts": 68,
+      "opp_pts": 58,
+      "metrics": {
+       "efg": 47.22,
+       "opp_efg": 48.0,
+       "off": 103.78,
+       "def": 88.52,
+       "net": 15.26
+      },
+      "opp_power_rank": null
+     },
+     {
+      "game_id": 401925779,
+      "date": "2026-11-03",
+      "site": "home",
+      "opp_id": 2870,
+      "opp": "PFW",
+      "d1_opp": true,
+      "pts": 78,
+      "opp_pts": 71,
+      "metrics": {
+       "efg": 57.27,
+       "opp_efg": 50.0,
+       "off": 109.7,
+       "def": 99.86,
+       "net": 9.85
+      },
+      "opp_power_rank": 290
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-16.5",
+    "b2b": false,
+    "power": {
+     "rank": 156,
+     "bpi": 187,
+     "own_net": 145
+    },
+    "key_players": [
+     "Yoav Berman",
+     "Kerem Konan",
+     "Arness Lawson",
+     "Izaiah Pasha",
+     "Ege Demir"
+    ],
+    "top_scorers": [
+     {
+      "name": "Yoav Berman",
+      "ppg": 15.3
+     },
+     {
+      "name": "Kerem Konan",
+      "ppg": 13.3
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "2066",
+    "abbr": "BING",
+    "name": "Binghamton",
+    "display": "Binghamton Bearcats",
+    "mascot": "Bearcats",
+    "record": "3-1",
+    "l3_record": "3-0",
+    "games": 3,
+    "season": {
+     "efg": 47.1,
+     "opp_efg": 50.93,
+     "off": 104.59,
+     "def": 110.55,
+     "net": -5.96,
+     "poss_per_game": 61.5,
+     "ranks": {
+      "efg": 248,
+      "off": 195,
+      "opp_efg": 190,
+      "def": 221,
+      "net": 196
+     }
+    },
+    "last3": {
+     "efg": 47.1,
+     "opp_efg": 50.93,
+     "off": 104.59,
+     "def": 110.55,
+     "net": -5.96,
+     "poss_per_game": 61.5,
+     "ranks": {
+      "efg": 250,
+      "off": 196,
+      "opp_efg": 190,
+      "def": 220,
+      "net": 199
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401911275,
+      "date": "2026-11-11",
+      "site": "away",
+      "opp_id": 111902,
+      "opp": "MISE",
+      "d1_opp": false,
+      "pts": 87,
+      "opp_pts": 62,
+      "metrics": {
+       "efg": 59.84,
+       "opp_efg": 42.98,
+       "off": 117.65,
+       "def": 83.84,
+       "net": 33.81
+      },
+      "opp_power_rank": null
+     },
+     {
+      "game_id": 401911274,
+      "date": "2026-11-08",
+      "site": "home",
+      "opp_id": 2520,
+      "opp": "RID",
+      "d1_opp": true,
+      "pts": 75,
+      "opp_pts": 63,
+      "metrics": {
+       "efg": 56.9,
+       "opp_efg": 44.26,
+       "off": 124.04,
+       "def": 104.2,
+       "net": 19.85
+      },
+      "opp_power_rank": 346
+     },
+     {
+      "game_id": 401911273,
+      "date": "2026-11-05",
+      "site": "away",
+      "opp_id": 2612,
+      "opp": "SPU",
+      "d1_opp": true,
+      "pts": 58,
+      "opp_pts": 55,
+      "metrics": {
+       "efg": 36.67,
+       "opp_efg": 41.67,
+       "off": 95.77,
+       "def": 90.82,
+       "net": 4.95
+      },
+      "opp_power_rank": 329
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+16.5",
+    "b2b": false,
+    "power": {
+     "rank": 269,
+     "bpi": 325,
+     "own_net": 196
+    },
+    "key_players": [
+     "Demetrius Lilley",
+     "Jeremiah Quigley",
+     "Dylan Godfrey",
+     "Jayden Kelsey",
+     "Jake Blackburn",
+     "Bobby Montgomery Jr."
+    ],
+    "top_scorers": [
+     {
+      "name": "Jeremiah Quigley",
+      "ppg": 17.2
+     },
+     {
+      "name": "Dylan Godfrey",
+      "ppg": 11.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "DUQ",
+    "dog": "BING",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 13 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 DUQ last-3 top 50 in 0 of 4 \u00b7 \u2717 BING last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2717 DUQ season outside 1-182: Opp eFG% #226 \u00b7 \u2713 BING season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "BING: consensus #269, BPI #325, our net #196"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 13 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for DUQ: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 13,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 0,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 8,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 2,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "DUQ",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 68,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 121,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 226,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 177,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "DUQ",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 65,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 117,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 219,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 176,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "BING",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 190,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 221,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 248,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 195,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "BING",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 190,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 220,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 250,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 196,
+        "color": "green"
+       }
+      ]
+     }
+    ]
+   },
+   "summary": "No track: score 13 (watch list from 18, qualifies at 28). Biggest edge over the last 3: DUQ eFG% (#65) against BING Opp eFG% (#190). DUQ 3-0 in its last 3, BING 3-0. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV14BINGDUQ",
+    "fav_prob": 0.915,
+    "bid": 0.9,
+    "ask": 0.93
+   }
+  },
+  {
+   "id": "401918979",
+   "tip_utc": "2026-11-14T21:00:00+00:00",
+   "tip_pt": "1:00 PM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 4:00 PM EST",
+   "neutral": false,
+   "venue": "Williams Arena at Minges Coliseum",
+   "favorite": "home",
+   "spread": {
+    "spread": 16.5,
+    "details": "ECU -16.5",
+    "provider": "DraftKings",
+    "ml_home": -1600,
+    "ml_away": 900
+   },
+   "home": {
+    "id": "151",
+    "abbr": "ECU",
+    "name": "East Carolina",
+    "display": "East Carolina Pirates",
+    "mascot": "Pirates",
+    "record": "2-1",
+    "l3_record": "2-1",
+    "games": 3,
+    "season": {
+     "efg": 50.0,
+     "opp_efg": 46.78,
+     "off": 102.47,
+     "def": 95.79,
+     "net": 6.68,
+     "poss_per_game": 74.8,
+     "ranks": {
+      "efg": 184,
+      "off": 209,
+      "opp_efg": 95,
+      "def": 79,
+      "net": 134
+     }
+    },
+    "last3": {
+     "efg": 50.0,
+     "opp_efg": 46.78,
+     "off": 102.47,
+     "def": 95.79,
+     "net": 6.68,
+     "poss_per_game": 74.8,
+     "ranks": {
+      "efg": 185,
+      "off": 213,
+      "opp_efg": 96,
+      "def": 77,
+      "net": 132
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401918978,
+      "date": "2026-11-11",
+      "site": "home",
+      "opp_id": 2448,
+      "opp": "NCAT",
+      "d1_opp": true,
+      "pts": 72,
+      "opp_pts": 67,
+      "metrics": {
+       "efg": 48.25,
+       "opp_efg": 33.33,
+       "off": 96.51,
+       "def": 89.81,
+       "net": 6.7
+      },
+      "opp_power_rank": 265
+     },
+     {
+      "game_id": 401918977,
+      "date": "2026-11-07",
+      "site": "home",
+      "opp_id": 350,
+      "opp": "UNCW",
+      "d1_opp": true,
+      "pts": 75,
+      "opp_pts": 78,
+      "metrics": {
+       "efg": 44.35,
+       "opp_efg": 50.86,
+       "off": 94.92,
+       "def": 98.72,
+       "net": -3.8
+      },
+      "opp_power_rank": 111
+     },
+     {
+      "game_id": 401918976,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 2908,
+      "opp": "UPST",
+      "d1_opp": true,
+      "pts": 83,
+      "opp_pts": 70,
+      "metrics": {
+       "efg": 57.89,
+       "opp_efg": 55.08,
+       "off": 117.17,
+       "def": 98.82,
+       "net": 18.35
+      },
+      "opp_power_rank": 287
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-16.5",
+    "b2b": false,
+    "power": {
+     "rank": 165,
+     "bpi": 212,
+     "own_net": 134
+    },
+    "key_players": [
+     "Kaseem Watson",
+     "Cian Medley",
+     "Brycen Blaine",
+     "Trevor Best",
+     "Kaden Cooper",
+     "Maxim Klitschko"
+    ],
+    "top_scorers": [
+     {
+      "name": "Trevor Best",
+      "ppg": 17.7
+     },
+     {
+      "name": "Cian Medley",
+      "ppg": 15.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "2169",
+    "abbr": "DSU",
+    "name": "Delaware State",
+    "display": "Delaware State Hornets",
+    "mascot": "Hornets",
+    "record": "1-2",
+    "l3_record": "1-2",
+    "games": 2,
+    "season": {
+     "efg": 55.14,
+     "opp_efg": 51.9,
+     "off": 99.75,
+     "def": 107.7,
+     "net": -7.95,
+     "poss_per_game": 69.2,
+     "ranks": {
+      "efg": 91,
+      "off": 230,
+      "opp_efg": 215,
+      "def": 191,
+      "net": 215
+     }
+    },
+    "last3": {
+     "efg": 55.14,
+     "opp_efg": 51.9,
+     "off": 99.75,
+     "def": 107.7,
+     "net": -7.95,
+     "poss_per_game": 69.2,
+     "ranks": {
+      "efg": 86,
+      "off": 234,
+      "opp_efg": 211,
+      "def": 192,
+      "net": 215
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401909514,
+      "date": "2026-11-10",
+      "site": "away",
+      "opp_id": 46,
+      "opp": "GTWN",
+      "d1_opp": true,
+      "pts": 78,
+      "opp_pts": 83,
+      "metrics": {
+       "efg": 62.04,
+       "opp_efg": 56.36,
+       "off": 114.35,
+       "def": 121.68,
+       "net": -7.33
+      },
+      "opp_power_rank": 94
+     },
+     {
+      "game_id": 401921219,
+      "date": "2026-11-05",
+      "site": "away",
+      "opp_id": 2426,
+      "opp": "NAVY",
+      "d1_opp": true,
+      "pts": 60,
+      "opp_pts": 66,
+      "metrics": {
+       "efg": 48.11,
+       "opp_efg": 47.0,
+       "off": 85.55,
+       "def": 94.1,
+       "net": -8.55
+      },
+      "opp_power_rank": 275
+     },
+     {
+      "game_id": 401927341,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 2614,
+      "opp": "SVC",
+      "d1_opp": false,
+      "pts": 86,
+      "opp_pts": 52,
+      "metrics": {
+       "efg": 64.62,
+       "opp_efg": 37.74,
+       "off": 124.71,
+       "def": 75.4,
+       "net": 49.3
+      },
+      "opp_power_rank": null
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+16.5",
+    "b2b": false,
+    "power": {
+     "rank": 288,
+     "bpi": 343,
+     "own_net": 215
+    },
+    "key_players": [
+     "Nehemiah Reedus",
+     "Joshua Obiora",
+     "Nasir Muhammad",
+     "Anthony Parker",
+     "Isaiah Sullivan",
+     "Rahmir Moore",
+     "Muazibini Adamu"
+    ],
+    "top_scorers": [
+     {
+      "name": "Nehemiah Reedus",
+      "ppg": 18.3
+     },
+     {
+      "name": "Nasir Muhammad",
+      "ppg": 15.7
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "ECU",
+    "dog": "DSU",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 12 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 ECU last-3 top 50 in 0 of 4 \u00b7 \u2717 DSU last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2717 ECU season outside 1-182: eFG% #184, Off Eff #209 \u00b7 \u2713 DSU season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "DSU: consensus #288, BPI #343, our net #215"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 12 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for ECU: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 12,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 0,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 8,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "ECU",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 184,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 209,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 95,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 79,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "ECU",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 185,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 213,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 96,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 77,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "DSU",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 215,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 191,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 91,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 230,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "DSU",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 211,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 192,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 86,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 234,
+        "color": "green"
+       }
+      ]
+     }
+    ]
+   },
+   "summary": "No track: score 12 (watch list from 18, qualifies at 28). Biggest edge over the last 3: ECU Def Eff (#77) against DSU Off Eff (#234). ECU 2-1 in its last 3, DSU 1-2. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV14DSUECU",
+    "fav_prob": 0.91,
+    "bid": 0.9,
+    "ask": 0.92
+   }
+  },
+  {
+   "id": "401911455",
+   "tip_utc": "2026-11-15T03:00:00+00:00",
+   "tip_pt": "7:00 PM PT",
+   "day_et": "2026-11-14",
+   "state": "pre",
+   "detail": "11/14 - 10:00 PM EST",
+   "neutral": false,
+   "venue": "Lawlor Events Center",
+   "favorite": "home",
+   "spread": {
+    "spread": 10.5,
+    "details": "NEV -10.5",
+    "provider": "DraftKings",
+    "ml_home": -470,
+    "ml_away": 360
+   },
+   "home": {
+    "id": "2440",
+    "abbr": "NEV",
+    "name": "Nevada",
+    "display": "Nevada Wolf Pack",
+    "mascot": "Wolf Pack",
+    "record": "2-1",
+    "l3_record": "2-1",
+    "games": 3,
+    "season": {
+     "efg": 52.16,
+     "opp_efg": 45.17,
+     "off": 112.58,
+     "def": 101.09,
+     "net": 11.49,
+     "poss_per_game": 72.5,
+     "ranks": {
+      "efg": 138,
+      "off": 116,
+      "opp_efg": 66,
+      "def": 123,
+      "net": 115
+     }
+    },
+    "last3": {
+     "efg": 52.16,
+     "opp_efg": 45.17,
+     "off": 112.58,
+     "def": 101.09,
+     "net": 11.49,
+     "poss_per_game": 72.5,
+     "ranks": {
+      "efg": 135,
+      "off": 113,
+      "opp_efg": 66,
+      "def": 121,
+      "net": 114
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401911454,
+      "date": "2026-11-11",
+      "site": "away",
+      "opp_id": 2540,
+      "opp": "UCSB",
+      "d1_opp": true,
+      "pts": 63,
+      "opp_pts": 76,
+      "metrics": {
+       "efg": 41.38,
+       "opp_efg": 50.0,
+       "off": 93.14,
+       "def": 112.36,
+       "net": -19.22
+      },
+      "opp_power_rank": 77
+     },
+     {
+      "game_id": 401911453,
+      "date": "2026-11-08",
+      "site": "home",
+      "opp_id": 2608,
+      "opp": "SMC",
+      "d1_opp": true,
+      "pts": 96,
+      "opp_pts": 95,
+      "metrics": {
+       "efg": 61.86,
+       "opp_efg": 51.97,
+       "off": 115.58,
+       "def": 114.37,
+       "net": 1.2
+      },
+      "opp_power_rank": 64
+     },
+     {
+      "game_id": 401911452,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 2523,
+      "opp": "RMU",
+      "d1_opp": true,
+      "pts": 86,
+      "opp_pts": 49,
+      "metrics": {
+       "efg": 52.94,
+       "opp_efg": 29.59,
+       "off": 128.5,
+       "def": 73.22,
+       "net": 55.29
+      },
+      "opp_power_rank": 294
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-10.5",
+    "b2b": false,
+    "power": {
+     "rank": 90,
+     "bpi": 64,
+     "own_net": 115
+    },
+    "key_players": [
+     "Elijah Price",
+     "Vaughn Weems",
+     "Styles Phipps",
+     "Peter Bandelj",
+     "Peyton White",
+     "Simon Majok"
+    ],
+    "top_scorers": [
+     {
+      "name": "Styles Phipps",
+      "ppg": 19.3
+     },
+     {
+      "name": "Vaughn Weems",
+      "ppg": 18.7
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "3084",
+    "abbr": "UVU",
+    "name": "Utah Valley",
+    "display": "Utah Valley Wolverines",
+    "mascot": "Wolverines",
+    "record": "2-0",
+    "l3_record": "2-0",
+    "games": 1,
+    "season": {
+     "efg": 71.93,
+     "opp_efg": 56.72,
+     "off": 128.17,
+     "def": 118.02,
+     "net": 10.15,
+     "poss_per_game": 78.8,
+     "ranks": {
+      "efg": 1,
+      "off": 20,
+      "opp_efg": 297,
+      "def": 286,
+      "net": 120
+     }
+    },
+    "last3": {
+     "efg": 71.93,
+     "opp_efg": 56.72,
+     "off": 128.17,
+     "def": 118.02,
+     "net": 10.15,
+     "poss_per_game": 78.8,
+     "ranks": {
+      "efg": 1,
+      "off": 22,
+      "opp_efg": 299,
+      "def": 285,
+      "net": 117
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401920435,
+      "date": "2026-11-07",
+      "site": "away",
+      "opp_id": 2692,
+      "opp": "WEB",
+      "d1_opp": true,
+      "pts": 101,
+      "opp_pts": 93,
+      "metrics": {
+       "efg": 71.93,
+       "opp_efg": 56.72,
+       "off": 128.17,
+       "def": 118.02,
+       "net": 10.15
+      },
+      "opp_power_rank": 323
+     },
+     {
+      "game_id": 401920434,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 112694,
+      "opp": "WCOL",
+      "d1_opp": false,
+      "pts": 84,
+      "opp_pts": 63,
+      "metrics": {
+       "efg": 53.85,
+       "opp_efg": 36.67,
+       "off": 101.01,
+       "def": 75.76,
+       "net": 25.25
+      },
+      "opp_power_rank": null
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+10.5",
+    "b2b": false,
+    "power": {
+     "rank": 127,
+     "bpi": 136,
+     "own_net": 120
+    },
+    "key_players": [
+     "Isaac Davis",
+     "Dominick Nelson",
+     "Braden Housley",
+     "Jordy Barnes",
+     "Isaac Hawkins"
+    ],
+    "top_scorers": [
+     {
+      "name": "Dominick Nelson",
+      "ppg": 17.0
+     },
+     {
+      "name": "Tyler Weaver",
+      "ppg": 14.5
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "NEV",
+    "dog": "UVU",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 8 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 NEV last-3 top 50 in 0 of 4 \u00b7 \u2717 UVU last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2713 NEV season top half (1-182) in all four \u00b7 \u2717 UVU season top 50: eFG% #1, Off Eff #20"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "UVU: consensus #127, BPI #136, our net #120"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 8 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for NEV: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 8,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 0,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 4,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "NEV",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 138,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 116,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 66,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 123,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "NEV",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 135,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 113,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 66,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 121,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "UVU",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 297,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 286,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 1,
+        "color": "deep-red"
+       },
+       {
+        "metric": "off",
+        "rank": 20,
+        "color": "deep-red"
+       }
+      ]
+     },
+     {
+      "team": "UVU",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 299,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 285,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 1,
+        "color": "deep-red"
+       },
+       {
+        "metric": "off",
+        "rank": 22,
+        "color": "red"
+       }
+      ]
+     }
+    ]
+   },
+   "summary": "No track: score 8 (watch list from 18, qualifies at 28). Biggest edge over the last 3: NEV Off Eff (#113) against UVU Def Eff (#285). NEV 2-1 in its last 3, UVU 2-0. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV14UVUNEV",
+    "fav_prob": 0.825,
+    "bid": 0.82,
+    "ask": 0.83
+   }
+  }
+ ],
+ "notes": [],
+ "other_games": 42,
+ "no_line_games": 0,
+ "summary": {
+  "date": "2026-11-14",
+  "date_label": "Saturday, November 14",
+  "kind": "board",
+  "games": 15,
+  "qualified": 0,
+  "watch": 2,
+  "would_qualify": 0,
+  "early": true,
+  "cutover": "Dec 15",
+  "other_games": 42,
+  "built_label": "Fri Nov 13, 9:00 PM PT"
+ }
+}
