@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 10,
- "built_at": "2026-11-14T05:56:59-08:00",
- "built_label": "Sat Nov 14, 5:56 AM PT",
+ "built_at": "2026-11-14T09:50:37-08:00",
+ "built_label": "Sat Nov 14, 9:50 AM PT",
  "games": [
   {
    "id": "401873053",
@@ -20,7 +20,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -1.5,
    "total": 49.5,
    "total_open": 48.5,
@@ -377,14 +377,14 @@
     "ask": 0.58
    },
    "votes": {
-    "fav": 12,
+    "fav": 13,
     "dog": 3,
-    "support": 0.8,
+    "support": 0.812,
     "sources": [
      {
       "site": "CBS Sports",
-      "url": "https://www.cbssports.com/nfl/picks/experts/",
-      "fav": 6,
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-10-picks-hub-expert-selections-best-bets-teasers-survivor/",
+      "fav": 7,
       "dog": 0
      },
      {
@@ -425,11 +425,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -4.5,
    "total": 47.5,
    "total_open": 45.5,
-   "fav_ml": -175.0,
+   "fav_ml": -170.0,
    "favorite": "away",
    "spread": -3.0,
    "movement": -1.5,
@@ -616,10 +616,10 @@
     },
     "injuries_known": true,
     "key_out": [
-     "Jaylon Moore"
+     "Jaylon Moore",
+     "Kenneth Walker III"
     ],
     "key_questionable": [
-     "Kenneth Walker III",
      "Mansoor Delane"
     ],
     "key_long_term": [],
@@ -627,6 +627,11 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Kenneth Walker III",
+      "pos": "RB",
+      "status": "Out"
+     },
      {
       "name": "Jaylon Moore",
       "pos": "OT",
@@ -645,11 +650,6 @@
      {
       "name": "Mansoor Delane",
       "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Kenneth Walker III",
-      "pos": "RB",
       "status": "Questionable"
      }
     ],
@@ -687,7 +687,7 @@
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
       "pass": false,
-      "detail": "KC key starter out: Jaylon Moore"
+      "detail": "KC key starter out: Jaylon Moore, Kenneth Walker III"
      },
      {
       "rule": "Power",
@@ -727,11 +727,11 @@
      "off_sr"
     ],
     "fails": [
-     "KC key starter out: Jaylon Moore",
+     "KC key starter out: Jaylon Moore, Kenneth Walker III",
      "Would be on the watch list otherwise (score 24)"
     ],
     "failed": [
-     "KC key starter out: Jaylon Moore",
+     "KC key starter out: Jaylon Moore, Kenneth Walker III",
      "Would be on the watch list otherwise (score 24)"
     ],
     "hero": {
@@ -762,7 +762,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Kenneth Walker III, Mansoor Delane"
+      "text": "Favorite questionable: Mansoor Delane"
      },
      {
       "level": "yellow",
@@ -789,14 +789,14 @@
    },
    "votes": {
     "fav": 14,
-    "dog": 2,
-    "support": 0.875,
+    "dog": 3,
+    "support": 0.824,
     "sources": [
      {
       "site": "CBS Sports",
-      "url": "https://www.cbssports.com/nfl/picks/experts/",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-10-picks-hub-expert-selections-best-bets-teasers-survivor/",
       "fav": 6,
-      "dog": 0
+      "dog": 1
      },
      {
       "site": "Bleacher Report",
@@ -842,7 +842,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -4.5,
    "total": 40.5,
    "total_open": 38.5,
@@ -1205,14 +1205,14 @@
     "ask": 0.68
    },
    "votes": {
-    "fav": 12,
+    "fav": 13,
     "dog": 4,
-    "support": 0.75,
+    "support": 0.765,
     "sources": [
      {
       "site": "CBS Sports",
-      "url": "https://www.cbssports.com/nfl/picks/experts/",
-      "fav": 4,
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-10-picks-hub-expert-selections-best-bets-teasers-survivor/",
+      "fav": 5,
       "dog": 2
      },
      {
@@ -1259,7 +1259,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -4.5,
    "total": 42.5,
    "total_open": 45.5,
@@ -1341,7 +1341,6 @@
      "Sean Rhyan"
     ],
     "key_questionable": [
-     "Javon Bullard",
      "Lukas Van Ness"
     ],
     "key_long_term": [],
@@ -1351,6 +1350,11 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Josh Jacobs",
+      "pos": "RB",
+      "status": "Out"
+     },
      {
       "name": "Kevin Zeitler",
       "pos": "G",
@@ -1369,11 +1373,6 @@
      {
       "name": "Lukas Van Ness",
       "pos": "DE",
-      "status": "Questionable"
-     },
-     {
-      "name": "Javon Bullard",
-      "pos": "S",
       "status": "Questionable"
      }
     ],
@@ -1616,7 +1615,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Javon Bullard, Lukas Van Ness"
+      "text": "Favorite questionable: Lukas Van Ness"
      }
     ],
     "under": {
@@ -1639,14 +1638,14 @@
    },
    "votes": {
     "fav": 9,
-    "dog": 7,
-    "support": 0.562,
+    "dog": 8,
+    "support": 0.529,
     "sources": [
      {
       "site": "CBS Sports",
-      "url": "https://www.cbssports.com/nfl/picks/experts/",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-10-picks-hub-expert-selections-best-bets-teasers-survivor/",
       "fav": 1,
-      "dog": 5
+      "dog": 6
      },
      {
       "site": "Bleacher Report",
@@ -1673,7 +1672,7 @@
       "dog": 0
      }
     ],
-    "notes": "CBS panel leans Vikings 5-1 while the other four sources back the Packers."
+    "notes": "CBS panel leans Vikings 6-1 while the other four sources back the Packers."
    }
   },
   {
@@ -1692,7 +1691,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -6.5,
    "total": 38.5,
    "total_open": 47.5,
@@ -1774,11 +1773,28 @@
      "Jalen Travis"
     ],
     "key_questionable": [],
-    "key_long_term": [],
+    "key_long_term": [
+     "Akeem Davis-Gaither"
+    ],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Akeem Davis-Gaither",
+      "pos": "LB",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Mo Alie-Cox",
+      "pos": "TE",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Will Mallory",
+      "pos": "TE",
+      "status": "Out"
+     },
      {
       "name": "Jalen Travis",
       "pos": "OT",
@@ -1788,21 +1804,6 @@
       "name": "Jaylon Carlies",
       "pos": "LB",
       "status": "Out"
-     },
-     {
-      "name": "Jerry Tillery",
-      "pos": "DT",
-      "status": "Out"
-     },
-     {
-      "name": "Luke Rhodes",
-      "pos": "LS",
-      "status": "Out"
-     },
-     {
-      "name": "Will Mallory",
-      "pos": "TE",
-      "status": "Questionable"
      }
     ],
     "power": {
@@ -1957,7 +1958,7 @@
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
       "pass": false,
-      "detail": "IND key starter out: Jalen Travis"
+      "detail": "IND key starter out: Jalen Travis (on injured reserve, not counted: Akeem Davis-Gaither)"
      },
      {
       "rule": "Power",
@@ -2047,14 +2048,14 @@
     "ask": 0.67
    },
    "votes": {
-    "fav": 11,
+    "fav": 12,
     "dog": 5,
-    "support": 0.688,
+    "support": 0.706,
     "sources": [
      {
       "site": "CBS Sports",
-      "url": "https://www.cbssports.com/nfl/picks/experts/",
-      "fav": 4,
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-10-picks-hub-expert-selections-best-bets-teasers-survivor/",
+      "fav": 5,
       "dog": 2
      },
      {
@@ -2101,7 +2102,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -1.5,
    "total": 48.5,
    "total_open": 43.5,
@@ -2192,6 +2193,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Travis Etienne Jr.",
+      "pos": "RB",
+      "status": "Injured Reserve"
+     },
+     {
       "name": "Erik McCoy",
       "pos": "C",
       "status": "Out"
@@ -2210,11 +2216,6 @@
       "name": "Martin Emerson Jr.",
       "pos": "CB",
       "status": "Questionable"
-     },
-     {
-      "name": "CJ Donaldson",
-      "pos": "RB",
-      "status": "Out"
      }
     ],
     "power": {
@@ -2456,15 +2457,15 @@
     "ask": 0.55
    },
    "votes": {
-    "fav": 6,
-    "dog": 8,
-    "support": 0.429,
+    "fav": 7,
+    "dog": 9,
+    "support": 0.438,
     "sources": [
      {
       "site": "CBS Sports",
-      "url": "https://www.cbssports.com/nfl/picks/experts/",
-      "fav": 2,
-      "dog": 3
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-10-picks-hub-expert-selections-best-bets-teasers-survivor/",
+      "fav": 3,
+      "dog": 4
      },
      {
       "site": "Bleacher Report",
@@ -2485,7 +2486,7 @@
       "dog": 1
      }
     ],
-    "notes": "SI gives a total only (Over 47.5); not counted. Bleacher Report's FanDuel line had Carolina -1.5 (ESPN: Saints -2.5); picks counted by team, Saints = favorite."
+    "notes": "SI gives a total only (Over 47.5); not counted. Bleacher Report's FanDuel line and CBS's line had Carolina -1.5 (ESPN: Saints -2.5); picks counted by team, Saints = favorite."
    }
   },
   {
@@ -2504,7 +2505,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -7.0,
    "total": 50.5,
    "total_open": 46.5,
@@ -2584,14 +2585,29 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
-     "Harrison Phillips",
-     "Jarvis Brownlee"
+     "Garrett Wilson",
+     "Harrison Phillips"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Adonai Mitchell",
+      "pos": "WR",
+      "status": "Questionable"
+     },
+     {
+      "name": "Garrett Wilson",
+      "pos": "WR",
+      "status": "Questionable"
+     },
+     {
+      "name": "Omar Cooper Jr.",
+      "pos": "WR",
+      "status": "Questionable"
+     },
      {
       "name": "Nahshon Wright",
       "pos": "CB",
@@ -2601,21 +2617,6 @@
       "name": "Harrison Phillips",
       "pos": "DT",
       "status": "Questionable"
-     },
-     {
-      "name": "Joseph Ossai",
-      "pos": "DE",
-      "status": "Questionable"
-     },
-     {
-      "name": "Jarvis Brownlee Jr.",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Trevin Wallace",
-      "pos": "LB",
-      "status": "Out"
      }
     ],
     "power": {
@@ -2840,7 +2841,7 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Harrison Phillips, Jarvis Brownlee"
+      "text": "Underdog questionable: Garrett Wilson, Harrison Phillips"
      }
     ],
     "under": {
@@ -2862,14 +2863,14 @@
     "ask": 0.8
    },
    "votes": {
-    "fav": 10,
+    "fav": 11,
     "dog": 6,
-    "support": 0.625,
+    "support": 0.647,
     "sources": [
      {
       "site": "CBS Sports",
-      "url": "https://www.cbssports.com/nfl/picks/experts/",
-      "fav": 5,
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-10-picks-hub-expert-selections-best-bets-teasers-survivor/",
+      "fav": 6,
       "dog": 1
      },
      {
@@ -2916,7 +2917,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -2.5,
    "total": 46.5,
    "total_open": 45.5,
@@ -3278,14 +3279,14 @@
     "ask": 0.84
    },
    "votes": {
-    "fav": 14,
+    "fav": 15,
     "dog": 2,
-    "support": 0.875,
+    "support": 0.882,
     "sources": [
      {
       "site": "CBS Sports",
-      "url": "https://www.cbssports.com/nfl/picks/experts/",
-      "fav": 6,
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-10-picks-hub-expert-selections-best-bets-teasers-survivor/",
+      "fav": 7,
       "dog": 0
      },
      {
@@ -3376,11 +3377,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -10.5,
    "total": 39.5,
    "total_open": 47.5,
-   "fav_ml": -500.0,
+   "fav_ml": -520.0,
    "favorite": "away",
    "spread": -9.5,
    "movement": -1.0,
@@ -3749,14 +3750,14 @@
    },
    "votes": {
     "fav": 10,
-    "dog": 6,
-    "support": 0.625,
+    "dog": 7,
+    "support": 0.588,
     "sources": [
      {
       "site": "CBS Sports",
-      "url": "https://www.cbssports.com/nfl/picks/experts/",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-10-picks-hub-expert-selections-best-bets-teasers-survivor/",
       "fav": 3,
-      "dog": 3
+      "dog": 4
      },
      {
       "site": "Bleacher Report",
@@ -3802,7 +3803,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -7.0,
    "total": 40.5,
    "total_open": 43.5,
@@ -4157,14 +4158,14 @@
    },
    "votes": {
     "fav": 14,
-    "dog": 1,
-    "support": 0.933,
+    "dog": 2,
+    "support": 0.875,
     "sources": [
      {
       "site": "CBS Sports",
-      "url": "https://www.cbssports.com/nfl/picks/experts/",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-10-picks-hub-expert-selections-best-bets-teasers-survivor/",
       "fav": 6,
-      "dog": 0
+      "dog": 1
      },
      {
       "site": "Bleacher Report",
@@ -4204,7 +4205,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": 1.5,
    "total": 55.5,
    "total_open": 52.5,
@@ -4573,14 +4574,14 @@
     "ask": 0.66
    },
    "votes": {
-    "fav": 12,
+    "fav": 13,
     "dog": 4,
-    "support": 0.75,
+    "support": 0.765,
     "sources": [
      {
       "site": "CBS Sports",
-      "url": "https://www.cbssports.com/nfl/picks/experts/",
-      "fav": 5,
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-10-picks-hub-expert-selections-best-bets-teasers-survivor/",
+      "fav": 6,
       "dog": 1
      },
      {
@@ -4627,7 +4628,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -3.5,
    "total": 49.5,
    "total_open": 47.5,
@@ -4814,12 +4815,19 @@
     },
     "injuries_known": true,
     "key_out": [],
-    "key_questionable": [],
+    "key_questionable": [
+     "Pat Freiermuth"
+    ],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Pat Freiermuth",
+      "pos": "TE",
+      "status": "Questionable"
+     },
      {
       "name": "Derrick Harmon",
       "pos": "DT",
@@ -4838,11 +4846,6 @@
      {
       "name": "Roman Wilson",
       "pos": "WR",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Gennings Dunker",
-      "pos": "G",
       "status": "Injured Reserve"
      }
     ],
@@ -4946,7 +4949,12 @@
      "adjusted_gap": 0.08,
      "adjusted_recent_gap": 0.06
     },
-    "flags": [],
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "Underdog questionable: Pat Freiermuth"
+     }
+    ],
     "under": {
      "passes": false,
      "ranks": [
@@ -4967,14 +4975,14 @@
    },
    "votes": {
     "fav": 6,
-    "dog": 10,
-    "support": 0.375,
+    "dog": 11,
+    "support": 0.353,
     "sources": [
      {
       "site": "CBS Sports",
-      "url": "https://www.cbssports.com/nfl/picks/experts/",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-10-picks-hub-expert-selections-best-bets-teasers-survivor/",
       "fav": 2,
-      "dog": 4
+      "dog": 5
      },
      {
       "site": "Bleacher Report",
@@ -5068,7 +5076,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -2.5,
    "total": 38.5,
    "total_open": 48.5,
@@ -5422,14 +5430,14 @@
     "ask": 0.67
    },
    "votes": {
-    "fav": 7,
+    "fav": 8,
     "dog": 8,
-    "support": 0.467,
+    "support": 0.5,
     "sources": [
      {
       "site": "CBS Sports",
-      "url": "https://www.cbssports.com/nfl/picks/experts/",
-      "fav": 3,
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-10-picks-hub-expert-selections-best-bets-teasers-survivor/",
+      "fav": 4,
       "dog": 3
      },
      {
@@ -5470,7 +5478,7 @@
     "home": 21,
     "away": 24
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -1.5,
    "total": 40.5,
    "total_open": 47.5,
@@ -5872,7 +5880,7 @@
  "power_sources": {
   "nfl_com_url": "https://www.nfl.com/news/nfl-power-rankings-week-10-2026-nfl-season"
  },
- "votes_status": "gathered 2026-11-12T09:47-08:00",
+ "votes_status": "gathered 2026-11-14T09:55-08:00",
  "votes_missing": [],
  "summary": {
   "season": 2026,
@@ -5884,6 +5892,6 @@
   "watch": 1,
   "green": 1,
   "edge_clears": 1,
-  "built_label": "Sat Nov 14, 5:56 AM PT"
+  "built_label": "Sat Nov 14, 9:50 AM PT"
  }
 }
