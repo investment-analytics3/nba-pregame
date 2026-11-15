@@ -1,12 +1,12 @@
 {
  "date": "2026-11-15",
  "date_label": "Sunday, November 15",
- "kind": "preview",
+ "kind": "board",
  "season": 2027,
- "built_at": "2026-11-14T19:30:38-08:00",
- "built_label": "Sat Nov 14, 7:30 PM PT",
- "metrics_through": "2026-11-13",
- "metrics_through_label": "Nov 13",
+ "built_at": "2026-11-14T21:00:45-08:00",
+ "built_label": "Sat Nov 14, 9:00 PM PT",
+ "metrics_through": "2026-11-14",
+ "metrics_through_label": "Nov 14",
  "n_d1": 365,
  "max": 40,
  "early": true,
@@ -27,8 +27,8 @@
    "venue": "Matthew Knight Arena",
    "favorite": "home",
    "spread": {
-    "spread": 14.5,
-    "details": "ORE -14.5",
+    "spread": 13.5,
+    "details": "ORE -13.5",
     "provider": "DraftKings",
     "ml_home": null,
     "ml_away": null
@@ -53,8 +53,8 @@
       "efg": 2,
       "off": 4,
       "opp_efg": 124,
-      "def": 96,
-      "net": 26
+      "def": 100,
+      "net": 27
      }
     },
     "last3": {
@@ -67,9 +67,9 @@
      "ranks": {
       "efg": 3,
       "off": 4,
-      "opp_efg": 123,
-      "def": 91,
-      "net": 24
+      "opp_efg": 124,
+      "def": 95,
+      "net": 26
      }
     },
     "last3_games": [
@@ -89,7 +89,7 @@
        "def": 98.25,
        "net": 50.61
       },
-      "opp_power_rank": 355
+      "opp_power_rank": 354
      },
      {
       "game_id": 401920717,
@@ -107,7 +107,7 @@
        "def": 95.91,
        "net": 36.47
       },
-      "opp_power_rank": 226
+      "opp_power_rank": 230
      },
      {
       "game_id": 401922029,
@@ -125,16 +125,16 @@
        "def": 100.97,
        "net": 26.34
       },
-      "opp_power_rank": 202
+      "opp_power_rank": 173
      }
     ],
     "is_fav": true,
-    "spread_text": "-14.5",
+    "spread_text": "-13.5",
     "b2b": false,
     "power": {
      "rank": 36,
      "bpi": 53,
-     "own_net": 26
+     "own_net": 27
     },
     "key_players": [
      "Tyrone Riley IV",
@@ -177,11 +177,11 @@
      "net": -6.14,
      "poss_per_game": 73.2,
      "ranks": {
-      "efg": 142,
-      "off": 142,
-      "opp_efg": 248,
-      "def": 277,
-      "net": 196
+      "efg": 137,
+      "off": 138,
+      "opp_efg": 261,
+      "def": 283,
+      "net": 198
      }
     },
     "last3": {
@@ -192,11 +192,11 @@
      "net": -6.14,
      "poss_per_game": 73.2,
      "ranks": {
-      "efg": 138,
-      "off": 138,
-      "opp_efg": 243,
-      "def": 275,
-      "net": 199
+      "efg": 131,
+      "off": 135,
+      "opp_efg": 256,
+      "def": 279,
+      "net": 202
      }
     },
     "last3_games": [
@@ -216,7 +216,7 @@
        "def": 119.82,
        "net": -11.28
       },
-      "opp_power_rank": 188
+      "opp_power_rank": 190
      },
      {
       "game_id": 401931195,
@@ -256,12 +256,12 @@
      }
     ],
     "is_fav": false,
-    "spread_text": "+14.5",
+    "spread_text": "+13.5",
     "b2b": false,
     "power": {
-     "rank": 169,
+     "rank": 171,
      "bpi": 158,
-     "own_net": 196
+     "own_net": 198
     },
     "key_players": [
      "Jahari Williamson",
@@ -324,7 +324,7 @@
       "rule": "Power",
       "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
       "pass": true,
-      "detail": "PEPP: consensus #169, BPI #158, our net #196"
+      "detail": "PEPP: consensus #171, BPI #158, our net #198"
      },
      {
       "rule": "Early",
@@ -416,7 +416,7 @@
        },
        {
         "metric": "def",
-        "rank": 96,
+        "rank": 100,
         "color": "yellow"
        }
       ]
@@ -438,12 +438,12 @@
        },
        {
         "metric": "opp_efg",
-        "rank": 123,
+        "rank": 124,
         "color": "yellow"
        },
        {
         "metric": "def",
-        "rank": 91,
+        "rank": 95,
         "color": "yellow"
        }
       ]
@@ -455,22 +455,22 @@
       "cells": [
        {
         "metric": "opp_efg",
-        "rank": 248,
+        "rank": 261,
         "color": "green"
        },
        {
         "metric": "def",
-        "rank": 277,
+        "rank": 283,
         "color": "green"
        },
        {
         "metric": "efg",
-        "rank": 142,
+        "rank": 137,
         "color": "yellow"
        },
        {
         "metric": "off",
-        "rank": 142,
+        "rank": 138,
         "color": "yellow"
        }
       ]
@@ -482,35 +482,35 @@
       "cells": [
        {
         "metric": "opp_efg",
-        "rank": 243,
+        "rank": 256,
         "color": "green"
        },
        {
         "metric": "def",
-        "rank": 275,
+        "rank": 279,
         "color": "green"
        },
        {
         "metric": "efg",
-        "rank": 138,
+        "rank": 131,
         "color": "yellow"
        },
        {
         "metric": "off",
-        "rank": 138,
+        "rank": 135,
         "color": "yellow"
        }
       ]
      }
     ]
    },
-   "summary": "Watch list: score 22 (qualifies at 28). Biggest edge over the last 3: ORE Off Eff (#4) against PEPP Def Eff (#275). ORE 3-0 in its last 3, PEPP 2-1. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "summary": "Watch list: score 22 (qualifies at 28). Biggest edge over the last 3: ORE Off Eff (#4) against PEPP Def Eff (#279). ORE 3-0 in its last 3, PEPP 2-1. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
    "lean": "Lean: ORE (watch list)",
    "kalshi": {
     "event": "KXNCAAMBGAME-26NOV15PEPPORE",
-    "fav_prob": 0.925,
-    "bid": 0.92,
-    "ask": 0.93
+    "fav_prob": 0.895,
+    "bid": 0.89,
+    "ask": 0.9
    }
   },
   {
@@ -524,11 +524,11 @@
    "venue": "Frontwave Arena",
    "favorite": "home",
    "spread": {
-    "spread": 11.5,
-    "details": "SDSU -11.5",
+    "spread": 12.5,
+    "details": "SDSU -12.5",
     "provider": "DraftKings",
-    "ml_home": null,
-    "ml_away": null
+    "ml_home": -950,
+    "ml_away": 625
    },
    "home": {
     "id": "21",
@@ -547,11 +547,11 @@
      "net": 21.58,
      "poss_per_game": 74.1,
      "ranks": {
-      "efg": 19,
+      "efg": 18,
       "off": 65,
-      "opp_efg": 80,
-      "def": 98,
-      "net": 71
+      "opp_efg": 87,
+      "def": 101,
+      "net": 69
      }
     },
     "last3": {
@@ -562,11 +562,11 @@
      "net": 21.58,
      "poss_per_game": 74.1,
      "ranks": {
-      "efg": 18,
+      "efg": 17,
       "off": 65,
-      "opp_efg": 78,
-      "def": 93,
-      "net": 71
+      "opp_efg": 83,
+      "def": 97,
+      "net": 69
      }
     },
     "last3_games": [
@@ -586,7 +586,7 @@
        "def": 109.71,
        "net": 19.02
       },
-      "opp_power_rank": 249
+      "opp_power_rank": 255
      },
      {
       "game_id": 401909760,
@@ -604,7 +604,7 @@
        "def": 88.83,
        "net": 14.8
       },
-      "opp_power_rank": 84
+      "opp_power_rank": 108
      },
      {
       "game_id": 401920155,
@@ -622,16 +622,16 @@
        "def": 97.77,
        "net": 30.08
       },
-      "opp_power_rank": 260
+      "opp_power_rank": 261
      }
     ],
     "is_fav": true,
-    "spread_text": "-11.5",
+    "spread_text": "-12.5",
     "b2b": false,
     "power": {
      "rank": 72,
      "bpi": 76,
-     "own_net": 71
+     "own_net": 69
     },
     "key_players": [
      "Latrell Davis",
@@ -672,11 +672,11 @@
      "net": -33.16,
      "poss_per_game": 64.8,
      "ranks": {
-      "efg": 214,
-      "off": 253,
-      "opp_efg": 333,
-      "def": 351,
-      "net": 330
+      "efg": 211,
+      "off": 258,
+      "opp_efg": 336,
+      "def": 353,
+      "net": 336
      }
     },
     "last3": {
@@ -687,11 +687,11 @@
      "net": -33.16,
      "poss_per_game": 64.8,
      "ranks": {
-      "efg": 213,
-      "off": 254,
-      "opp_efg": 333,
-      "def": 352,
-      "net": 330
+      "efg": 212,
+      "off": 260,
+      "opp_efg": 335,
+      "def": 353,
+      "net": 335
      }
     },
     "last3_games": [
@@ -729,7 +729,7 @@
        "def": 155.52,
        "net": -58.5
       },
-      "opp_power_rank": 17
+      "opp_power_rank": 37
      },
      {
       "game_id": 401928787,
@@ -751,12 +751,12 @@
      }
     ],
     "is_fav": false,
-    "spread_text": "+11.5",
+    "spread_text": "+12.5",
     "b2b": false,
     "power": {
-     "rank": 283,
+     "rank": 284,
      "bpi": 213,
-     "own_net": 330
+     "own_net": 336
     },
     "key_players": [
      "Jae'Coby Osborne",
@@ -818,7 +818,7 @@
       "rule": "Power",
       "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
       "pass": true,
-      "detail": "NMSU: consensus #283, BPI #213, our net #330"
+      "detail": "NMSU: consensus #284, BPI #213, our net #336"
      },
      {
       "rule": "Early",
@@ -896,7 +896,7 @@
       "cells": [
        {
         "metric": "efg",
-        "rank": 19,
+        "rank": 18,
         "color": "green"
        },
        {
@@ -906,12 +906,12 @@
        },
        {
         "metric": "opp_efg",
-        "rank": 80,
+        "rank": 87,
         "color": "yellow"
        },
        {
         "metric": "def",
-        "rank": 98,
+        "rank": 101,
         "color": "yellow"
        }
       ]
@@ -923,7 +923,7 @@
       "cells": [
        {
         "metric": "efg",
-        "rank": 18,
+        "rank": 17,
         "color": "green"
        },
        {
@@ -933,12 +933,12 @@
        },
        {
         "metric": "opp_efg",
-        "rank": 78,
+        "rank": 83,
         "color": "yellow"
        },
        {
         "metric": "def",
-        "rank": 93,
+        "rank": 97,
         "color": "yellow"
        }
       ]
@@ -950,22 +950,22 @@
       "cells": [
        {
         "metric": "opp_efg",
-        "rank": 333,
+        "rank": 336,
         "color": "green"
        },
        {
         "metric": "def",
-        "rank": 351,
+        "rank": 353,
         "color": "green"
        },
        {
         "metric": "efg",
-        "rank": 214,
+        "rank": 211,
         "color": "green"
        },
        {
         "metric": "off",
-        "rank": 253,
+        "rank": 258,
         "color": "green"
        }
       ]
@@ -977,35 +977,35 @@
       "cells": [
        {
         "metric": "opp_efg",
-        "rank": 333,
+        "rank": 335,
         "color": "green"
        },
        {
         "metric": "def",
-        "rank": 352,
+        "rank": 353,
         "color": "green"
        },
        {
         "metric": "efg",
-        "rank": 213,
+        "rank": 212,
         "color": "green"
        },
        {
         "metric": "off",
-        "rank": 254,
+        "rank": 260,
         "color": "green"
        }
       ]
      }
     ]
    },
-   "summary": "Watch list: score 20 (qualifies at 28). Biggest edge over the last 3: SDSU eFG% (#18) against NMSU Opp eFG% (#333). SDSU 3-0 in its last 3, NMSU 1-2. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "summary": "Watch list: score 20 (qualifies at 28). Biggest edge over the last 3: SDSU eFG% (#17) against NMSU Opp eFG% (#335). SDSU 3-0 in its last 3, NMSU 1-2. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
    "lean": "Lean: SDSU (watch list)",
    "kalshi": {
     "event": "KXNCAAMBGAME-26NOV15NMSUSDSU",
-    "fav_prob": 0.865,
-    "bid": 0.86,
-    "ask": 0.87
+    "fav_prob": 0.885,
+    "bid": 0.88,
+    "ask": 0.89
    }
   },
   {
@@ -1022,8 +1022,8 @@
     "spread": 17.5,
     "details": "COFC -17.5",
     "provider": "DraftKings",
-    "ml_home": -2400,
-    "ml_away": 1200
+    "ml_home": -2800,
+    "ml_away": 1300
    },
    "home": {
     "id": "232",
@@ -1044,9 +1044,9 @@
      "ranks": {
       "efg": 9,
       "off": 22,
-      "opp_efg": 146,
-      "def": 255,
-      "net": 100
+      "opp_efg": 144,
+      "def": 262,
+      "net": 99
      }
     },
     "last3": {
@@ -1059,9 +1059,9 @@
      "ranks": {
       "efg": 10,
       "off": 25,
-      "opp_efg": 150,
-      "def": 252,
-      "net": 100
+      "opp_efg": 155,
+      "def": 257,
+      "net": 95
      }
     },
     "last3_games": [
@@ -1081,7 +1081,7 @@
        "def": 113.7,
        "net": 14.04
       },
-      "opp_power_rank": 191
+      "opp_power_rank": 195
      },
      {
       "game_id": 401926813,
@@ -1124,9 +1124,9 @@
     "spread_text": "-17.5",
     "b2b": false,
     "power": {
-     "rank": 104,
+     "rank": 101,
      "bpi": 107,
-     "own_net": 100
+     "own_net": 99
     },
     "key_players": [
      "Tavari Johnson",
@@ -1167,11 +1167,11 @@
      "net": -7.62,
      "poss_per_game": 74.3,
      "ranks": {
-      "efg": 303,
-      "off": 245,
-      "opp_efg": 218,
-      "def": 169,
-      "net": 212
+      "efg": 304,
+      "off": 251,
+      "opp_efg": 225,
+      "def": 167,
+      "net": 213
      }
     },
     "last3": {
@@ -1182,11 +1182,11 @@
      "net": -7.62,
      "poss_per_game": 74.3,
      "ranks": {
-      "efg": 303,
-      "off": 246,
-      "opp_efg": 212,
-      "def": 169,
-      "net": 212
+      "efg": 305,
+      "off": 252,
+      "opp_efg": 221,
+      "def": 175,
+      "net": 215
      }
     },
     "last3_games": [
@@ -1206,7 +1206,7 @@
        "def": 130.76,
        "net": -52.83
       },
-      "opp_power_rank": 46
+      "opp_power_rank": 50
      },
      {
       "game_id": 401919733,
@@ -1224,7 +1224,7 @@
        "def": 93.72,
        "net": 20.98
       },
-      "opp_power_rank": 313
+      "opp_power_rank": 312
      },
      {
       "game_id": 401922059,
@@ -1242,16 +1242,16 @@
        "def": 92.32,
        "net": 10.55
       },
-      "opp_power_rank": 285
+      "opp_power_rank": 298
      }
     ],
     "is_fav": false,
     "spread_text": "+17.5",
     "b2b": false,
     "power": {
-     "rank": 273,
+     "rank": 271,
      "bpi": 312,
-     "own_net": 212
+     "own_net": 213
     },
     "key_players": [
      "DeShaun Jackson Jr.",
@@ -1301,7 +1301,7 @@
       "rule": "B",
       "name": "Last-3 mismatch (3 of 4) with a season floor",
       "pass": false,
-      "detail": "\u2717 COFC last-3 top 50 in 2 of 4 \u00b7 \u2717 SCST last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2717 COFC season outside 1-182: Def Eff #255 \u00b7 \u2713 SCST season top 50 in none"
+      "detail": "\u2717 COFC last-3 top 50 in 2 of 4 \u00b7 \u2717 SCST last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2717 COFC season outside 1-182: Def Eff #262 \u00b7 \u2713 SCST season top 50 in none"
      },
      {
       "rule": "Injury",
@@ -1313,7 +1313,7 @@
       "rule": "Power",
       "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
       "pass": true,
-      "detail": "SCST: consensus #273, BPI #312, our net #212"
+      "detail": "SCST: consensus #271, BPI #312, our net #213"
      },
      {
       "rule": "Early",
@@ -1400,12 +1400,12 @@
        },
        {
         "metric": "opp_efg",
-        "rank": 146,
+        "rank": 144,
         "color": "yellow"
        },
        {
         "metric": "def",
-        "rank": 255,
+        "rank": 262,
         "color": "red"
        }
       ]
@@ -1427,12 +1427,12 @@
        },
        {
         "metric": "opp_efg",
-        "rank": 150,
-        "color": "yellow"
+        "rank": 155,
+        "color": "red"
        },
        {
         "metric": "def",
-        "rank": 252,
+        "rank": 257,
         "color": "red"
        }
       ]
@@ -1444,22 +1444,22 @@
       "cells": [
        {
         "metric": "opp_efg",
-        "rank": 218,
+        "rank": 225,
         "color": "green"
        },
        {
         "metric": "def",
-        "rank": 169,
+        "rank": 167,
         "color": "green"
        },
        {
         "metric": "efg",
-        "rank": 303,
+        "rank": 304,
         "color": "green"
        },
        {
         "metric": "off",
-        "rank": 245,
+        "rank": 251,
         "color": "green"
        }
       ]
@@ -1471,29 +1471,29 @@
       "cells": [
        {
         "metric": "opp_efg",
-        "rank": 212,
+        "rank": 221,
         "color": "green"
        },
        {
         "metric": "def",
-        "rank": 169,
+        "rank": 175,
         "color": "green"
        },
        {
         "metric": "efg",
-        "rank": 303,
+        "rank": 305,
         "color": "green"
        },
        {
         "metric": "off",
-        "rank": 246,
+        "rank": 252,
         "color": "green"
        }
       ]
      }
     ]
    },
-   "summary": "Watch list: score 19 (qualifies at 28). Biggest edge over the last 3: COFC eFG% (#10) against SCST Opp eFG% (#212). COFC 3-0 in its last 3, SCST 2-1. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "summary": "Watch list: score 19 (qualifies at 28). Biggest edge over the last 3: COFC eFG% (#10) against SCST Opp eFG% (#221). COFC 3-0 in its last 3, SCST 2-1. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
    "lean": "Lean: COFC (watch list)",
    "kalshi": {
     "event": "KXNCAAMBGAME-26NOV15SCSTCOFC",
@@ -1513,8 +1513,8 @@
    "venue": "Provident Credit Union Event Center",
    "favorite": "home",
    "spread": {
-    "spread": 11.5,
-    "details": "SJSU -11.5",
+    "spread": 12.5,
+    "details": "SJSU -12.5",
     "provider": "DraftKings",
     "ml_home": null,
     "ml_away": null
@@ -1537,10 +1537,10 @@
      "poss_per_game": 73.7,
      "ranks": {
       "efg": 10,
-      "off": 116,
-      "opp_efg": 316,
-      "def": 223,
-      "net": 161
+      "off": 113,
+      "opp_efg": 322,
+      "def": 229,
+      "net": 158
      }
     },
     "last3": {
@@ -1553,9 +1553,9 @@
      "ranks": {
       "efg": 11,
       "off": 113,
-      "opp_efg": 316,
-      "def": 222,
-      "net": 159
+      "opp_efg": 323,
+      "def": 228,
+      "net": 155
      }
     },
     "last3_games": [
@@ -1575,7 +1575,7 @@
        "def": 110.5,
        "net": -6.91
       },
-      "opp_power_rank": 149
+      "opp_power_rank": 166
      },
      {
       "game_id": 401911470,
@@ -1593,7 +1593,7 @@
        "def": 122.11,
        "net": -16.1
       },
-      "opp_power_rank": 105
+      "opp_power_rank": 104
      },
      {
       "game_id": 401911469,
@@ -1611,16 +1611,16 @@
        "def": 99.58,
        "net": 28.26
       },
-      "opp_power_rank": 172
+      "opp_power_rank": 174
      }
     ],
     "is_fav": true,
-    "spread_text": "-11.5",
+    "spread_text": "-12.5",
     "b2b": false,
     "power": {
      "rank": 167,
      "bpi": 187,
-     "own_net": 161
+     "own_net": 158
     },
     "key_players": [
      "Joey Chammaa",
@@ -1662,11 +1662,11 @@
      "net": -37.16,
      "poss_per_game": 83.4,
      "ranks": {
-      "efg": 346,
+      "efg": 347,
       "off": 354,
-      "opp_efg": 273,
-      "def": 272,
-      "net": 340
+      "opp_efg": 280,
+      "def": 280,
+      "net": 346
      }
     },
     "last3": {
@@ -1679,9 +1679,9 @@
      "ranks": {
       "efg": 344,
       "off": 355,
-      "opp_efg": 269,
-      "def": 269,
-      "net": 340
+      "opp_efg": 279,
+      "def": 274,
+      "net": 345
      }
     },
     "last3_games": [
@@ -1741,12 +1741,12 @@
      }
     ],
     "is_fav": false,
-    "spread_text": "+11.5",
+    "spread_text": "+12.5",
     "b2b": false,
     "power": {
      "rank": 362,
      "bpi": 363,
-     "own_net": 340
+     "own_net": 346
     },
     "key_players": [
      "Paul McMillan IV",
@@ -1795,7 +1795,7 @@
       "rule": "B",
       "name": "Last-3 mismatch (3 of 4) with a season floor",
       "pass": false,
-      "detail": "\u2717 SJSU last-3 top 50 in 1 of 4 \u00b7 \u2717 ALST last-3 bottom 50 (316+) in 2 of 4 \u00b7 \u2717 SJSU season outside 1-182: Opp eFG% #316, Def Eff #223 \u00b7 \u2713 ALST season top 50 in none"
+      "detail": "\u2717 SJSU last-3 top 50 in 1 of 4 \u00b7 \u2717 ALST last-3 bottom 50 (316+) in 2 of 4 \u00b7 \u2717 SJSU season outside 1-182: Opp eFG% #322, Def Eff #229 \u00b7 \u2713 ALST season top 50 in none"
      },
      {
       "rule": "Injury",
@@ -1807,7 +1807,7 @@
       "rule": "Power",
       "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
       "pass": true,
-      "detail": "ALST: consensus #362, BPI #363, our net #340"
+      "detail": "ALST: consensus #362, BPI #363, our net #346"
      },
      {
       "rule": "Early",
@@ -1889,17 +1889,17 @@
        },
        {
         "metric": "off",
-        "rank": 116,
+        "rank": 113,
         "color": "yellow"
        },
        {
         "metric": "opp_efg",
-        "rank": 316,
+        "rank": 322,
         "color": "red"
        },
        {
         "metric": "def",
-        "rank": 223,
+        "rank": 229,
         "color": "red"
        }
       ]
@@ -1921,12 +1921,12 @@
        },
        {
         "metric": "opp_efg",
-        "rank": 316,
+        "rank": 323,
         "color": "red"
        },
        {
         "metric": "def",
-        "rank": 222,
+        "rank": 228,
         "color": "red"
        }
       ]
@@ -1938,17 +1938,17 @@
       "cells": [
        {
         "metric": "opp_efg",
-        "rank": 273,
+        "rank": 280,
         "color": "green"
        },
        {
         "metric": "def",
-        "rank": 272,
+        "rank": 280,
         "color": "green"
        },
        {
         "metric": "efg",
-        "rank": 346,
+        "rank": 347,
         "color": "green"
        },
        {
@@ -1965,12 +1965,12 @@
       "cells": [
        {
         "metric": "opp_efg",
-        "rank": 269,
+        "rank": 279,
         "color": "green"
        },
        {
         "metric": "def",
-        "rank": 269,
+        "rank": 274,
         "color": "green"
        },
        {
@@ -1987,13 +1987,13 @@
      }
     ]
    },
-   "summary": "Watch list: score 19 (qualifies at 28). Biggest edge over the last 3: SJSU eFG% (#11) against ALST Opp eFG% (#269). SJSU 1-2 in its last 3, ALST 1-2. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "summary": "Watch list: score 19 (qualifies at 28). Biggest edge over the last 3: SJSU eFG% (#11) against ALST Opp eFG% (#279). SJSU 1-2 in its last 3, ALST 1-2. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
    "lean": "Lean: SJSU (watch list)",
    "kalshi": {
     "event": "KXNCAAMBGAME-26NOV15ALSTSJSU",
-    "fav_prob": 0.85,
-    "bid": 0.84,
-    "ask": 0.86
+    "fav_prob": 0.87,
+    "bid": 0.86,
+    "ask": 0.88
    }
   },
   {
@@ -2030,11 +2030,11 @@
      "net": -7.4,
      "poss_per_game": 72.0,
      "ranks": {
-      "efg": 133,
-      "off": 166,
-      "opp_efg": 276,
-      "def": 262,
-      "net": 209
+      "efg": 125,
+      "off": 167,
+      "opp_efg": 283,
+      "def": 268,
+      "net": 212
      }
     },
     "last3": {
@@ -2045,11 +2045,11 @@
      "net": -7.4,
      "poss_per_game": 72.0,
      "ranks": {
-      "efg": 132,
+      "efg": 123,
       "off": 167,
-      "opp_efg": 271,
-      "def": 260,
-      "net": 209
+      "opp_efg": 281,
+      "def": 265,
+      "net": 214
      }
     },
     "last3_games": [
@@ -2069,7 +2069,7 @@
        "def": 121.58,
        "net": -3.84
       },
-      "opp_power_rank": 253
+      "opp_power_rank": 227
      },
      {
       "game_id": 401929449,
@@ -2105,16 +2105,16 @@
        "def": 115.01,
        "net": -14.94
       },
-      "opp_power_rank": 140
+      "opp_power_rank": 139
      }
     ],
     "is_fav": true,
     "spread_text": "-11.5",
     "b2b": false,
     "power": {
-     "rank": 220,
+     "rank": 221,
      "bpi": 232,
-     "own_net": 209
+     "own_net": 212
     },
     "key_players": [
      "Jaden Jackson",
@@ -2156,11 +2156,11 @@
      "net": -30.67,
      "poss_per_game": 68.5,
      "ranks": {
-      "efg": 283,
-      "off": 254,
-      "opp_efg": 358,
-      "def": 342,
-      "net": 321
+      "efg": 289,
+      "off": 259,
+      "opp_efg": 360,
+      "def": 345,
+      "net": 324
      }
     },
     "last3": {
@@ -2171,11 +2171,11 @@
      "net": -30.67,
      "poss_per_game": 68.5,
      "ranks": {
-      "efg": 282,
-      "off": 255,
-      "opp_efg": 358,
-      "def": 342,
-      "net": 321
+      "efg": 288,
+      "off": 261,
+      "opp_efg": 360,
+      "def": 345,
+      "net": 324
      }
     },
     "last3_games": [
@@ -2195,7 +2195,7 @@
        "def": 110.66,
        "net": -17.14
       },
-      "opp_power_rank": 119
+      "opp_power_rank": 123
      },
      {
       "game_id": 401925894,
@@ -2213,7 +2213,7 @@
        "def": 142.86,
        "net": -42.58
       },
-      "opp_power_rank": 153
+      "opp_power_rank": 155
      },
      {
       "game_id": 401925893,
@@ -2238,9 +2238,9 @@
     "spread_text": "+11.5",
     "b2b": false,
     "power": {
-     "rank": 342,
+     "rank": 343,
      "bpi": 348,
-     "own_net": 321
+     "own_net": 324
     },
     "key_players": [
      "Bahsil Laster",
@@ -2290,7 +2290,7 @@
       "rule": "B",
       "name": "Last-3 mismatch (3 of 4) with a season floor",
       "pass": false,
-      "detail": "\u2717 GAST last-3 top 50 in 0 of 4 \u00b7 \u2717 NORF last-3 bottom 50 (316+) in 2 of 4 \u00b7 \u2717 GAST season outside 1-182: Opp eFG% #276, Def Eff #262 \u00b7 \u2713 NORF season top 50 in none"
+      "detail": "\u2717 GAST last-3 top 50 in 0 of 4 \u00b7 \u2717 NORF last-3 bottom 50 (316+) in 2 of 4 \u00b7 \u2717 GAST season outside 1-182: Opp eFG% #283, Def Eff #268 \u00b7 \u2713 NORF season top 50 in none"
      },
      {
       "rule": "Injury",
@@ -2302,7 +2302,7 @@
       "rule": "Power",
       "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
       "pass": true,
-      "detail": "NORF: consensus #342, BPI #348, our net #321"
+      "detail": "NORF: consensus #343, BPI #348, our net #324"
      },
      {
       "rule": "Early",
@@ -2379,22 +2379,22 @@
       "cells": [
        {
         "metric": "efg",
-        "rank": 133,
+        "rank": 125,
         "color": "yellow"
        },
        {
         "metric": "off",
-        "rank": 166,
+        "rank": 167,
         "color": "red"
        },
        {
         "metric": "opp_efg",
-        "rank": 276,
+        "rank": 283,
         "color": "red"
        },
        {
         "metric": "def",
-        "rank": 262,
+        "rank": 268,
         "color": "red"
        }
       ]
@@ -2406,7 +2406,7 @@
       "cells": [
        {
         "metric": "efg",
-        "rank": 132,
+        "rank": 123,
         "color": "yellow"
        },
        {
@@ -2416,12 +2416,12 @@
        },
        {
         "metric": "opp_efg",
-        "rank": 271,
+        "rank": 281,
         "color": "red"
        },
        {
         "metric": "def",
-        "rank": 260,
+        "rank": 265,
         "color": "red"
        }
       ]
@@ -2433,22 +2433,22 @@
       "cells": [
        {
         "metric": "opp_efg",
-        "rank": 358,
+        "rank": 360,
         "color": "green"
        },
        {
         "metric": "def",
-        "rank": 342,
+        "rank": 345,
         "color": "green"
        },
        {
         "metric": "efg",
-        "rank": 283,
+        "rank": 289,
         "color": "green"
        },
        {
         "metric": "off",
-        "rank": 254,
+        "rank": 259,
         "color": "green"
        }
       ]
@@ -2460,29 +2460,29 @@
       "cells": [
        {
         "metric": "opp_efg",
-        "rank": 358,
+        "rank": 360,
         "color": "green"
        },
        {
         "metric": "def",
-        "rank": 342,
+        "rank": 345,
         "color": "green"
        },
        {
         "metric": "efg",
-        "rank": 282,
+        "rank": 288,
         "color": "green"
        },
        {
         "metric": "off",
-        "rank": 255,
+        "rank": 261,
         "color": "green"
        }
       ]
      }
     ]
    },
-   "summary": "No track: score 15 (watch list from 18, qualifies at 28). Biggest edge over the last 3: GAST eFG% (#132) against NORF Opp eFG% (#358). GAST 1-2 in its last 3, NORF 1-2. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "summary": "No track: score 15 (watch list from 18, qualifies at 28). Biggest edge over the last 3: GAST eFG% (#123) against NORF Opp eFG% (#360). GAST 1-2 in its last 3, NORF 1-2. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNCAAMBGAME-26NOV15NORFGAST",
@@ -2525,11 +2525,11 @@
      "net": -4.2,
      "poss_per_game": 71.4,
      "ranks": {
-      "efg": 174,
-      "off": 240,
-      "opp_efg": 204,
+      "efg": 172,
+      "off": 246,
+      "opp_efg": 202,
       "def": 138,
-      "net": 186
+      "net": 187
      }
     },
     "last3": {
@@ -2540,11 +2540,11 @@
      "net": -4.2,
      "poss_per_game": 71.4,
      "ranks": {
-      "efg": 175,
-      "off": 241,
-      "opp_efg": 200,
-      "def": 137,
-      "net": 187
+      "efg": 171,
+      "off": 247,
+      "opp_efg": 205,
+      "def": 144,
+      "net": 189
      }
     },
     "last3_games": [
@@ -2564,7 +2564,7 @@
        "def": 119.26,
        "net": -37.44
       },
-      "opp_power_rank": 172
+      "opp_power_rank": 174
      },
      {
       "game_id": 401917517,
@@ -2582,7 +2582,7 @@
        "def": 87.82,
        "net": 27.81
       },
-      "opp_power_rank": 280
+      "opp_power_rank": 228
      },
      {
       "game_id": 401917506,
@@ -2607,9 +2607,9 @@
     "spread_text": "-16.5",
     "b2b": false,
     "power": {
-     "rank": 158,
+     "rank": 160,
      "bpi": 150,
-     "own_net": 186
+     "own_net": 187
     },
     "key_players": [
      "Will Heimbrodt",
@@ -2650,11 +2650,11 @@
      "net": -33.5,
      "poss_per_game": 73.6,
      "ranks": {
-      "efg": 342,
-      "off": 300,
-      "opp_efg": 234,
-      "def": 331,
-      "net": 331
+      "efg": 340,
+      "off": 304,
+      "opp_efg": 244,
+      "def": 332,
+      "net": 337
      }
     },
     "last3": {
@@ -2665,11 +2665,11 @@
      "net": -33.5,
      "poss_per_game": 73.6,
      "ranks": {
-      "efg": 341,
-      "off": 302,
-      "opp_efg": 228,
+      "efg": 338,
+      "off": 307,
+      "opp_efg": 238,
       "def": 332,
-      "net": 331
+      "net": 336
      }
     },
     "last3_games": [
@@ -2707,7 +2707,7 @@
        "def": 132.74,
        "net": -44.25
       },
-      "opp_power_rank": 109
+      "opp_power_rank": 92
      },
      {
       "game_id": 401922020,
@@ -2732,9 +2732,9 @@
     "spread_text": "+16.5",
     "b2b": false,
     "power": {
-     "rank": 337,
+     "rank": 339,
      "bpi": 325,
-     "own_net": 331
+     "own_net": 337
     },
     "key_players": [
      "MaCarhy Morris",
@@ -2785,7 +2785,7 @@
       "rule": "B",
       "name": "Last-3 mismatch (3 of 4) with a season floor",
       "pass": false,
-      "detail": "\u2717 SEA last-3 top 50 in 0 of 4 \u00b7 \u2717 IDST last-3 bottom 50 (316+) in 2 of 4 \u00b7 \u2717 SEA season outside 1-182: Off Eff #240, Opp eFG% #204 \u00b7 \u2713 IDST season top 50 in none"
+      "detail": "\u2717 SEA last-3 top 50 in 0 of 4 \u00b7 \u2717 IDST last-3 bottom 50 (316+) in 2 of 4 \u00b7 \u2717 SEA season outside 1-182: Off Eff #246, Opp eFG% #202 \u00b7 \u2713 IDST season top 50 in none"
      },
      {
       "rule": "Injury",
@@ -2797,7 +2797,7 @@
       "rule": "Power",
       "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
       "pass": true,
-      "detail": "IDST: consensus #337, BPI #325, our net #331"
+      "detail": "IDST: consensus #339, BPI #325, our net #337"
      },
      {
       "rule": "Early",
@@ -2874,17 +2874,17 @@
       "cells": [
        {
         "metric": "efg",
-        "rank": 174,
+        "rank": 172,
         "color": "red"
        },
        {
         "metric": "off",
-        "rank": 240,
+        "rank": 246,
         "color": "red"
        },
        {
         "metric": "opp_efg",
-        "rank": 204,
+        "rank": 202,
         "color": "red"
        },
        {
@@ -2901,22 +2901,22 @@
       "cells": [
        {
         "metric": "efg",
-        "rank": 175,
+        "rank": 171,
         "color": "red"
        },
        {
         "metric": "off",
-        "rank": 241,
+        "rank": 247,
         "color": "red"
        },
        {
         "metric": "opp_efg",
-        "rank": 200,
+        "rank": 205,
         "color": "red"
        },
        {
         "metric": "def",
-        "rank": 137,
+        "rank": 144,
         "color": "yellow"
        }
       ]
@@ -2928,22 +2928,22 @@
       "cells": [
        {
         "metric": "opp_efg",
-        "rank": 234,
+        "rank": 244,
         "color": "green"
        },
        {
         "metric": "def",
-        "rank": 331,
+        "rank": 332,
         "color": "green"
        },
        {
         "metric": "efg",
-        "rank": 342,
+        "rank": 340,
         "color": "green"
        },
        {
         "metric": "off",
-        "rank": 300,
+        "rank": 304,
         "color": "green"
        }
       ]
@@ -2955,7 +2955,7 @@
       "cells": [
        {
         "metric": "opp_efg",
-        "rank": 228,
+        "rank": 238,
         "color": "green"
        },
        {
@@ -2965,19 +2965,19 @@
        },
        {
         "metric": "efg",
-        "rank": 341,
+        "rank": 338,
         "color": "green"
        },
        {
         "metric": "off",
-        "rank": 302,
+        "rank": 307,
         "color": "green"
        }
       ]
      }
     ]
    },
-   "summary": "No track: score 15 (watch list from 18, qualifies at 28). Biggest edge over the last 3: SEA Def Eff (#137) against IDST Off Eff (#302). SEA 1-2 in its last 3, IDST 0-3. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "summary": "No track: score 15 (watch list from 18, qualifies at 28). Biggest edge over the last 3: SEA Def Eff (#144) against IDST Off Eff (#307). SEA 1-2 in its last 3, IDST 0-3. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
    "lean": "No lean"
   },
   {
@@ -2991,11 +2991,11 @@
    "venue": "Broadview Arena",
    "favorite": "home",
    "spread": {
-    "spread": 15.5,
-    "details": "BUF -15.5",
+    "spread": 14.5,
+    "details": "BUF -14.5",
     "provider": "DraftKings",
-    "ml_home": -1100,
-    "ml_away": 700
+    "ml_home": -1050,
+    "ml_away": 675
    },
    "home": {
     "id": "2084",
@@ -3014,11 +3014,11 @@
      "net": -31.11,
      "poss_per_game": 73.9,
      "ranks": {
-      "efg": 317,
-      "off": 333,
-      "opp_efg": 237,
-      "def": 273,
-      "net": 323
+      "efg": 318,
+      "off": 335,
+      "opp_efg": 246,
+      "def": 281,
+      "net": 327
      }
     },
     "last3": {
@@ -3029,11 +3029,11 @@
      "net": -31.11,
      "poss_per_game": 73.9,
      "ranks": {
-      "efg": 316,
-      "off": 332,
-      "opp_efg": 232,
-      "def": 270,
-      "net": 323
+      "efg": 317,
+      "off": 336,
+      "opp_efg": 241,
+      "def": 276,
+      "net": 328
      }
     },
     "last3_games": [
@@ -3071,7 +3071,7 @@
        "def": 111.32,
        "net": -26.44
       },
-      "opp_power_rank": 65
+      "opp_power_rank": 64
      },
      {
       "game_id": 401910995,
@@ -3089,16 +3089,16 @@
        "def": 121.05,
        "net": -35.53
       },
-      "opp_power_rank": 139
+      "opp_power_rank": 146
      }
     ],
     "is_fav": true,
-    "spread_text": "-15.5",
+    "spread_text": "-14.5",
     "b2b": false,
     "power": {
-     "rank": 297,
+     "rank": 300,
      "bpi": 252,
-     "own_net": 323
+     "own_net": 327
     },
     "key_players": [
      "Drew Steffe",
@@ -3140,11 +3140,11 @@
      "net": -35.04,
      "poss_per_game": 70.4,
      "ranks": {
-      "efg": 224,
-      "off": 306,
-      "opp_efg": 349,
-      "def": 334,
-      "net": 335
+      "efg": 221,
+      "off": 307,
+      "opp_efg": 350,
+      "def": 337,
+      "net": 343
      }
     },
     "last3": {
@@ -3156,10 +3156,10 @@
      "poss_per_game": 70.4,
      "ranks": {
       "efg": 221,
-      "off": 308,
-      "opp_efg": 346,
-      "def": 335,
-      "net": 335
+      "off": 310,
+      "opp_efg": 348,
+      "def": 336,
+      "net": 341
      }
     },
     "last3_games": [
@@ -3179,7 +3179,7 @@
        "def": 113.29,
        "net": 6.99
       },
-      "opp_power_rank": 221
+      "opp_power_rank": 224
      },
      {
       "game_id": 401920279,
@@ -3215,16 +3215,16 @@
        "def": 133.01,
        "net": -58.95
       },
-      "opp_power_rank": 99
+      "opp_power_rank": 93
      }
     ],
     "is_fav": false,
-    "spread_text": "+15.5",
+    "spread_text": "+14.5",
     "b2b": false,
     "power": {
-     "rank": 354,
+     "rank": 353,
      "bpi": 352,
-     "own_net": 335
+     "own_net": 343
     },
     "key_players": [
      "Michael Wilson Jr.",
@@ -3273,7 +3273,7 @@
       "rule": "B",
       "name": "Last-3 mismatch (3 of 4) with a season floor",
       "pass": false,
-      "detail": "\u2717 BUF last-3 top 50 in 0 of 4 \u00b7 \u2717 CAN last-3 bottom 50 (316+) in 2 of 4 \u00b7 \u2717 BUF season outside 1-182: eFG% #317, Off Eff #333, Opp eFG% #237, Def Eff #273 \u00b7 \u2713 CAN season top 50 in none"
+      "detail": "\u2717 BUF last-3 top 50 in 0 of 4 \u00b7 \u2717 CAN last-3 bottom 50 (316+) in 2 of 4 \u00b7 \u2717 BUF season outside 1-182: eFG% #318, Off Eff #335, Opp eFG% #246, Def Eff #281 \u00b7 \u2713 CAN season top 50 in none"
      },
      {
       "rule": "Injury",
@@ -3285,7 +3285,7 @@
       "rule": "Power",
       "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
       "pass": true,
-      "detail": "CAN: consensus #354, BPI #352, our net #335"
+      "detail": "CAN: consensus #353, BPI #352, our net #343"
      },
      {
       "rule": "Early",
@@ -3362,22 +3362,22 @@
       "cells": [
        {
         "metric": "efg",
-        "rank": 317,
+        "rank": 318,
         "color": "red"
        },
        {
         "metric": "off",
-        "rank": 333,
+        "rank": 335,
         "color": "red"
        },
        {
         "metric": "opp_efg",
-        "rank": 237,
+        "rank": 246,
         "color": "red"
        },
        {
         "metric": "def",
-        "rank": 273,
+        "rank": 281,
         "color": "red"
        }
       ]
@@ -3389,22 +3389,22 @@
       "cells": [
        {
         "metric": "efg",
-        "rank": 316,
+        "rank": 317,
         "color": "red"
        },
        {
         "metric": "off",
-        "rank": 332,
+        "rank": 336,
         "color": "red"
        },
        {
         "metric": "opp_efg",
-        "rank": 232,
+        "rank": 241,
         "color": "red"
        },
        {
         "metric": "def",
-        "rank": 270,
+        "rank": 276,
         "color": "red"
        }
       ]
@@ -3416,22 +3416,22 @@
       "cells": [
        {
         "metric": "opp_efg",
-        "rank": 349,
+        "rank": 350,
         "color": "green"
        },
        {
         "metric": "def",
-        "rank": 334,
+        "rank": 337,
         "color": "green"
        },
        {
         "metric": "efg",
-        "rank": 224,
+        "rank": 221,
         "color": "green"
        },
        {
         "metric": "off",
-        "rank": 306,
+        "rank": 307,
         "color": "green"
        }
       ]
@@ -3443,12 +3443,12 @@
       "cells": [
        {
         "metric": "opp_efg",
-        "rank": 346,
+        "rank": 348,
         "color": "green"
        },
        {
         "metric": "def",
-        "rank": 335,
+        "rank": 336,
         "color": "green"
        },
        {
@@ -3458,7 +3458,7 @@
        },
        {
         "metric": "off",
-        "rank": 308,
+        "rank": 310,
         "color": "green"
        }
       ]
@@ -3469,8 +3469,8 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNCAAMBGAME-26NOV15CANBUFF",
-    "fav_prob": 0.9,
-    "bid": 0.89,
+    "fav_prob": 0.905,
+    "bid": 0.9,
     "ask": 0.91
    }
   },
@@ -3508,10 +3508,10 @@
      "net": 38.97,
      "poss_per_game": 72.7,
      "ranks": {
-      "efg": 61,
-      "off": 38,
-      "opp_efg": 112,
-      "def": 26,
+      "efg": 55,
+      "off": 39,
+      "opp_efg": 115,
+      "def": 24,
       "net": 23
      }
     },
@@ -3523,11 +3523,11 @@
      "net": 38.97,
      "poss_per_game": 72.7,
      "ranks": {
-      "efg": 60,
-      "off": 40,
-      "opp_efg": 113,
-      "def": 25,
-      "net": 22
+      "efg": 58,
+      "off": 43,
+      "opp_efg": 115,
+      "def": 26,
+      "net": 23
      }
     },
     "last3_games": [
@@ -3547,7 +3547,7 @@
        "def": 81.86,
        "net": 43.01
       },
-      "opp_power_rank": 235
+      "opp_power_rank": 245
      },
      {
       "game_id": 401924646,
@@ -3565,7 +3565,7 @@
        "def": 91.82,
        "net": 55.09
       },
-      "opp_power_rank": 192
+      "opp_power_rank": 194
      },
      {
       "game_id": 401920679,
@@ -3583,7 +3583,7 @@
        "def": 83.71,
        "net": 19.93
       },
-      "opp_power_rank": 200
+      "opp_power_rank": 201
      }
     ],
     "is_fav": true,
@@ -3634,11 +3634,11 @@
      "net": 32.75,
      "poss_per_game": 67.2,
      "ranks": {
-      "efg": 41,
+      "efg": 36,
       "off": 26,
-      "opp_efg": 64,
-      "def": 68,
-      "net": 34
+      "opp_efg": 72,
+      "def": 74,
+      "net": 35
      }
     },
     "last3": {
@@ -3649,11 +3649,11 @@
      "net": 32.75,
      "poss_per_game": 67.2,
      "ranks": {
-      "efg": 41,
+      "efg": 38,
       "off": 27,
-      "opp_efg": 64,
-      "def": 65,
-      "net": 34
+      "opp_efg": 69,
+      "def": 69,
+      "net": 37
      }
     },
     "last3_games": [
@@ -3673,7 +3673,7 @@
        "def": 117.86,
        "net": -4.26
       },
-      "opp_power_rank": 37
+      "opp_power_rank": 38
      },
      {
       "game_id": 401909717,
@@ -3691,7 +3691,7 @@
        "def": 73.13,
        "net": 79.1
       },
-      "opp_power_rank": 304
+      "opp_power_rank": 311
      },
      {
       "game_id": 401909716,
@@ -3709,16 +3709,16 @@
        "def": 90.52,
        "net": 24.97
       },
-      "opp_power_rank": 312
+      "opp_power_rank": 315
      }
     ],
     "is_fav": false,
     "spread_text": "+12.5",
     "b2b": false,
     "power": {
-     "rank": 51,
+     "rank": 53,
      "bpi": 70,
-     "own_net": 34
+     "own_net": 35
     },
     "key_players": [
      "Gavin Doty",
@@ -3769,7 +3769,7 @@
       "rule": "B",
       "name": "Last-3 mismatch (3 of 4) with a season floor",
       "pass": false,
-      "detail": "\u2717 SJU last-3 top 50 in 2 of 4 \u00b7 \u2717 SYR last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2713 SJU season top half (1-182) in all four \u00b7 \u2717 SYR season top 50: eFG% #41, Off Eff #26"
+      "detail": "\u2717 SJU last-3 top 50 in 2 of 4 \u00b7 \u2717 SYR last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2713 SJU season top half (1-182) in all four \u00b7 \u2717 SYR season top 50: eFG% #36, Off Eff #26"
      },
      {
       "rule": "Injury",
@@ -3781,7 +3781,7 @@
       "rule": "Power",
       "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
       "pass": true,
-      "detail": "SYR: consensus #51, BPI #70, our net #34"
+      "detail": "SYR: consensus #53, BPI #70, our net #35"
      },
      {
       "rule": "Early",
@@ -3858,22 +3858,22 @@
       "cells": [
        {
         "metric": "efg",
-        "rank": 61,
+        "rank": 55,
         "color": "yellow"
        },
        {
         "metric": "off",
-        "rank": 38,
+        "rank": 39,
         "color": "green"
        },
        {
         "metric": "opp_efg",
-        "rank": 112,
+        "rank": 115,
         "color": "yellow"
        },
        {
         "metric": "def",
-        "rank": 26,
+        "rank": 24,
         "color": "green"
        }
       ]
@@ -3885,22 +3885,22 @@
       "cells": [
        {
         "metric": "efg",
-        "rank": 60,
+        "rank": 58,
         "color": "yellow"
        },
        {
         "metric": "off",
-        "rank": 40,
+        "rank": 43,
         "color": "green"
        },
        {
         "metric": "opp_efg",
-        "rank": 113,
+        "rank": 115,
         "color": "yellow"
        },
        {
         "metric": "def",
-        "rank": 25,
+        "rank": 26,
         "color": "green"
        }
       ]
@@ -3912,17 +3912,17 @@
       "cells": [
        {
         "metric": "opp_efg",
-        "rank": 64,
+        "rank": 72,
         "color": "yellow"
        },
        {
         "metric": "def",
-        "rank": 68,
+        "rank": 74,
         "color": "yellow"
        },
        {
         "metric": "efg",
-        "rank": 41,
+        "rank": 36,
         "color": "red"
        },
        {
@@ -3939,17 +3939,17 @@
       "cells": [
        {
         "metric": "opp_efg",
-        "rank": 64,
+        "rank": 69,
         "color": "yellow"
        },
        {
         "metric": "def",
-        "rank": 65,
+        "rank": 69,
         "color": "yellow"
        },
        {
         "metric": "efg",
-        "rank": 41,
+        "rank": 38,
         "color": "red"
        },
        {
@@ -3981,11 +3981,11 @@
    "venue": "Gersten Pavilion",
    "favorite": "home",
    "spread": {
-    "spread": 16.5,
-    "details": "LMU -16.5",
+    "spread": 18.5,
+    "details": "LMU -18.5",
     "provider": "DraftKings",
-    "ml_home": -1350,
-    "ml_away": 800
+    "ml_home": -2400,
+    "ml_away": 1200
    },
    "home": {
     "id": "2351",
@@ -4004,11 +4004,11 @@
      "net": -6.29,
      "poss_per_game": 68.9,
      "ranks": {
-      "efg": 164,
-      "off": 96,
-      "opp_efg": 326,
-      "def": 309,
-      "net": 198
+      "efg": 162,
+      "off": 94,
+      "opp_efg": 333,
+      "def": 315,
+      "net": 201
      }
     },
     "last3": {
@@ -4019,11 +4019,11 @@
      "net": -6.29,
      "poss_per_game": 68.9,
      "ranks": {
-      "efg": 162,
-      "off": 96,
-      "opp_efg": 325,
-      "def": 310,
-      "net": 200
+      "efg": 160,
+      "off": 97,
+      "opp_efg": 331,
+      "def": 312,
+      "net": 203
      }
     },
     "last3_games": [
@@ -4043,7 +4043,7 @@
        "def": 128.19,
        "net": -11.36
       },
-      "opp_power_rank": 190
+      "opp_power_rank": 189
      },
      {
       "game_id": 401917520,
@@ -4061,7 +4061,7 @@
        "def": 104.96,
        "net": -7.09
       },
-      "opp_power_rank": 227
+      "opp_power_rank": 232
      },
      {
       "game_id": 401917516,
@@ -4083,12 +4083,12 @@
      }
     ],
     "is_fav": true,
-    "spread_text": "-16.5",
+    "spread_text": "-18.5",
     "b2b": false,
     "power": {
-     "rank": 170,
+     "rank": 172,
      "bpi": 157,
-     "own_net": 198
+     "own_net": 201
     },
     "key_players": [
      "Zion Sensley",
@@ -4129,11 +4129,11 @@
      "net": -15.94,
      "poss_per_game": 67.8,
      "ranks": {
-      "efg": 195,
-      "off": 226,
-      "opp_efg": 306,
-      "def": 271,
-      "net": 257
+      "efg": 194,
+      "off": 232,
+      "opp_efg": 312,
+      "def": 279,
+      "net": 262
      }
     },
     "last3": {
@@ -4144,11 +4144,11 @@
      "net": -8.27,
      "poss_per_game": 64.5,
      "ranks": {
-      "efg": 120,
-      "off": 128,
-      "opp_efg": 344,
-      "def": 298,
-      "net": 216
+      "efg": 112,
+      "off": 126,
+      "opp_efg": 345,
+      "def": 299,
+      "net": 220
      }
     },
     "last3_games": [
@@ -4168,7 +4168,7 @@
        "def": 140.38,
        "net": -32.27
       },
-      "opp_power_rank": 165
+      "opp_power_rank": 168
      },
      {
       "game_id": 401919734,
@@ -4204,16 +4204,16 @@
        "def": 114.71,
        "net": -20.98
       },
-      "opp_power_rank": 273
+      "opp_power_rank": 271
      }
     ],
     "is_fav": false,
-    "spread_text": "+16.5",
+    "spread_text": "+18.5",
     "b2b": false,
     "power": {
-     "rank": 313,
+     "rank": 312,
      "bpi": 339,
-     "own_net": 257
+     "own_net": 262
     },
     "key_players": [
      "Mike Price",
@@ -4264,7 +4264,7 @@
       "rule": "B",
       "name": "Last-3 mismatch (3 of 4) with a season floor",
       "pass": false,
-      "detail": "\u2717 LMU last-3 top 50 in 0 of 4 \u00b7 \u2717 CHST last-3 bottom 50 (316+) in 1 of 4 \u00b7 \u2717 LMU season outside 1-182: Opp eFG% #326, Def Eff #309 \u00b7 \u2713 CHST season top 50 in none"
+      "detail": "\u2717 LMU last-3 top 50 in 0 of 4 \u00b7 \u2717 CHST last-3 bottom 50 (316+) in 1 of 4 \u00b7 \u2717 LMU season outside 1-182: Opp eFG% #333, Def Eff #315 \u00b7 \u2713 CHST season top 50 in none"
      },
      {
       "rule": "Injury",
@@ -4276,7 +4276,7 @@
       "rule": "Power",
       "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
       "pass": true,
-      "detail": "CHST: consensus #313, BPI #339, our net #257"
+      "detail": "CHST: consensus #312, BPI #339, our net #262"
      },
      {
       "rule": "Early",
@@ -4353,22 +4353,22 @@
       "cells": [
        {
         "metric": "efg",
-        "rank": 164,
+        "rank": 162,
         "color": "red"
        },
        {
         "metric": "off",
-        "rank": 96,
+        "rank": 94,
         "color": "yellow"
        },
        {
         "metric": "opp_efg",
-        "rank": 326,
+        "rank": 333,
         "color": "red"
        },
        {
         "metric": "def",
-        "rank": 309,
+        "rank": 315,
         "color": "red"
        }
       ]
@@ -4380,22 +4380,22 @@
       "cells": [
        {
         "metric": "efg",
-        "rank": 162,
+        "rank": 160,
         "color": "red"
        },
        {
         "metric": "off",
-        "rank": 96,
+        "rank": 97,
         "color": "yellow"
        },
        {
         "metric": "opp_efg",
-        "rank": 325,
+        "rank": 331,
         "color": "red"
        },
        {
         "metric": "def",
-        "rank": 310,
+        "rank": 312,
         "color": "red"
        }
       ]
@@ -4407,22 +4407,22 @@
       "cells": [
        {
         "metric": "opp_efg",
-        "rank": 306,
+        "rank": 312,
         "color": "green"
        },
        {
         "metric": "def",
-        "rank": 271,
+        "rank": 279,
         "color": "green"
        },
        {
         "metric": "efg",
-        "rank": 195,
+        "rank": 194,
         "color": "green"
        },
        {
         "metric": "off",
-        "rank": 226,
+        "rank": 232,
         "color": "green"
        }
       ]
@@ -4434,34 +4434,34 @@
       "cells": [
        {
         "metric": "opp_efg",
-        "rank": 344,
+        "rank": 345,
         "color": "green"
        },
        {
         "metric": "def",
-        "rank": 298,
+        "rank": 299,
         "color": "green"
        },
        {
         "metric": "efg",
-        "rank": 120,
+        "rank": 112,
         "color": "yellow"
        },
        {
         "metric": "off",
-        "rank": 128,
+        "rank": 126,
         "color": "yellow"
        }
       ]
      }
     ]
    },
-   "summary": "No track: score 12 (watch list from 18, qualifies at 28). Biggest edge over the last 3: LMU Off Eff (#96) against CHST Def Eff (#298). LMU 1-2 in its last 3, CHST 1-2. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "summary": "No track: score 12 (watch list from 18, qualifies at 28). Biggest edge over the last 3: LMU Off Eff (#97) against CHST Def Eff (#299). LMU 1-2 in its last 3, CHST 1-2. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNCAAMBGAME-26NOV15CHSLMU",
-    "fav_prob": 0.92,
-    "bid": 0.91,
+    "fav_prob": 0.925,
+    "bid": 0.92,
     "ask": 0.93
    }
   }
@@ -4472,7 +4472,7 @@
  "summary": {
   "date": "2026-11-15",
   "date_label": "Sunday, November 15",
-  "kind": "preview",
+  "kind": "board",
   "games": 9,
   "qualified": 0,
   "watch": 4,
@@ -4480,6 +4480,6 @@
   "early": true,
   "cutover": "Dec 15",
   "other_games": 23,
-  "built_label": "Sat Nov 14, 7:30 PM PT"
+  "built_label": "Sat Nov 14, 9:00 PM PT"
  }
 }
