@@ -3,8 +3,8 @@
  "date_label": "Sunday, November 15",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-15T13:30:48-08:00",
- "built_label": "Sun Nov 15, 1:30 PM PT",
+ "built_at": "2026-11-15T14:21:29-08:00",
+ "built_label": "Sun Nov 15, 2:21 PM PT",
  "metrics_through": "2026-11-14",
  "metrics_through_label": "Nov 14",
  "n_d1": 365,
@@ -504,7 +504,7 @@
    "tip_pt": "1:00 PM PT",
    "day_et": "2026-11-15",
    "state": "in",
-   "detail": "11:47 - 1st",
+   "detail": "Halftime",
    "neutral": true,
    "venue": "Frontwave Arena",
    "favorite": "home",
@@ -1016,8 +1016,8 @@
     "updated": "2026-11-15T05:18-08:00"
    },
    "score": {
-    "home": 12,
-    "away": 9
+    "home": 35,
+    "away": 29
    }
   },
   {
@@ -1532,7 +1532,7 @@
    "tip_pt": "1:00 PM PT",
    "day_et": "2026-11-15",
    "state": "in",
-   "detail": "5:39 - 1st",
+   "detail": "11:49 - 2nd",
    "neutral": false,
    "venue": "Atlantic Union Bank Center",
    "favorite": "home",
@@ -2042,8 +2042,8 @@
     "updated": "2026-11-15T05:18-08:00"
    },
    "score": {
-    "home": 27,
-    "away": 21
+    "home": 48,
+    "away": 50
    }
   },
   {
@@ -2528,6 +2528,210 @@
         "color": "green"
        }
       ]
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "cells": [
+       {
+        "team": "SJSU",
+        "role": "fav",
+        "window": "season",
+        "metric": "off",
+        "rank": 113,
+        "color": "yellow"
+       },
+       {
+        "team": "SJSU",
+        "role": "fav",
+        "window": "last3",
+        "metric": "off",
+        "rank": 112,
+        "color": "yellow"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "season",
+        "metric": "def",
+        "rank": 281,
+        "color": "green"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "last3",
+        "metric": "def",
+        "rank": 275,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "cells": [
+       {
+        "team": "SJSU",
+        "role": "fav",
+        "window": "season",
+        "metric": "def",
+        "rank": 230,
+        "color": "red"
+       },
+       {
+        "team": "SJSU",
+        "role": "fav",
+        "window": "last3",
+        "metric": "def",
+        "rank": 229,
+        "color": "red"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "season",
+        "metric": "off",
+        "rank": 354,
+        "color": "green"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "last3",
+        "metric": "off",
+        "rank": 355,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shoot",
+      "label": "Shooting vs shot defense",
+      "fav_metric": "efg",
+      "dog_metric": "opp_efg",
+      "cells": [
+       {
+        "team": "SJSU",
+        "role": "fav",
+        "window": "season",
+        "metric": "efg",
+        "rank": 10,
+        "color": "green"
+       },
+       {
+        "team": "SJSU",
+        "role": "fav",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 11,
+        "color": "green"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 281,
+        "color": "green"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 280,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shotd",
+      "label": "Shot defense vs shooting",
+      "fav_metric": "opp_efg",
+      "dog_metric": "efg",
+      "cells": [
+       {
+        "team": "SJSU",
+        "role": "fav",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 322,
+        "color": "red"
+       },
+       {
+        "team": "SJSU",
+        "role": "fav",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 323,
+        "color": "red"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "season",
+        "metric": "efg",
+        "rank": 347,
+        "color": "green"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 344,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "off",
+      "dog_metric": "off",
+      "fav_rank": 112,
+      "dog_rank": 355,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def",
+      "dog_metric": "def",
+      "fav_rank": 229,
+      "dog_rank": 275,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "fav_rank": 229,
+      "dog_rank": 355,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "fav_rank": 112,
+      "dog_rank": 275,
+      "counts": false,
+      "met": false
      }
     ]
    },
@@ -3063,7 +3267,7 @@
    "tip_pt": "1:00 PM PT",
    "day_et": "2026-11-15",
    "state": "in",
-   "detail": "6:58 - 1st",
+   "detail": "13:45 - 2nd",
    "neutral": false,
    "venue": "Redhawk Center",
    "favorite": "home",
@@ -3547,8 +3751,8 @@
    "lean": "No lean",
    "locked_at": "2026-11-15T12:15:42-08:00",
    "score": {
-    "home": 32,
-    "away": 24
+    "home": 52,
+    "away": 52
    }
   },
   {
@@ -4044,7 +4248,11 @@
     "bid": 0.89,
     "ask": 0.9
    },
-   "locked_at": "2026-11-15T13:30:48-08:00"
+   "locked_at": "2026-11-15T13:30:48-08:00",
+   "score": {
+    "home": 0,
+    "away": 0
+   }
   },
   {
    "id": "401920681",
@@ -4531,6 +4739,210 @@
        }
       ]
      }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "cells": [
+       {
+        "team": "SJU",
+        "role": "fav",
+        "window": "season",
+        "metric": "off",
+        "rank": 38,
+        "color": "green"
+       },
+       {
+        "team": "SJU",
+        "role": "fav",
+        "window": "last3",
+        "metric": "off",
+        "rank": 42,
+        "color": "green"
+       },
+       {
+        "team": "SYR",
+        "role": "dog",
+        "window": "season",
+        "metric": "def",
+        "rank": 72,
+        "color": "yellow"
+       },
+       {
+        "team": "SYR",
+        "role": "dog",
+        "window": "last3",
+        "metric": "def",
+        "rank": 67,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "cells": [
+       {
+        "team": "SJU",
+        "role": "fav",
+        "window": "season",
+        "metric": "def",
+        "rank": 24,
+        "color": "green"
+       },
+       {
+        "team": "SJU",
+        "role": "fav",
+        "window": "last3",
+        "metric": "def",
+        "rank": 26,
+        "color": "green"
+       },
+       {
+        "team": "SYR",
+        "role": "dog",
+        "window": "season",
+        "metric": "off",
+        "rank": 25,
+        "color": "red"
+       },
+       {
+        "team": "SYR",
+        "role": "dog",
+        "window": "last3",
+        "metric": "off",
+        "rank": 26,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "key": "shoot",
+      "label": "Shooting vs shot defense",
+      "fav_metric": "efg",
+      "dog_metric": "opp_efg",
+      "cells": [
+       {
+        "team": "SJU",
+        "role": "fav",
+        "window": "season",
+        "metric": "efg",
+        "rank": 55,
+        "color": "yellow"
+       },
+       {
+        "team": "SJU",
+        "role": "fav",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 57,
+        "color": "yellow"
+       },
+       {
+        "team": "SYR",
+        "role": "dog",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 70,
+        "color": "yellow"
+       },
+       {
+        "team": "SYR",
+        "role": "dog",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 68,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "key": "shotd",
+      "label": "Shot defense vs shooting",
+      "fav_metric": "opp_efg",
+      "dog_metric": "efg",
+      "cells": [
+       {
+        "team": "SJU",
+        "role": "fav",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 115,
+        "color": "yellow"
+       },
+       {
+        "team": "SJU",
+        "role": "fav",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 113,
+        "color": "yellow"
+       },
+       {
+        "team": "SYR",
+        "role": "dog",
+        "window": "season",
+        "metric": "efg",
+        "rank": 35,
+        "color": "red"
+       },
+       {
+        "team": "SYR",
+        "role": "dog",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 37,
+        "color": "red"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "off",
+      "dog_metric": "off",
+      "fav_rank": 42,
+      "dog_rank": 26,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def",
+      "dog_metric": "def",
+      "fav_rank": 26,
+      "dog_rank": 67,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "fav_rank": 26,
+      "dog_rank": 26,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "fav_rank": 42,
+      "dog_rank": 67,
+      "counts": false,
+      "met": false
+     }
     ]
    },
    "summary": "No track: score 14 (watch list from 18, qualifies at 28). SJU 3-0 in its last 3, SYR 2-1. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
@@ -4548,7 +4960,7 @@
    "tip_pt": "1:00 PM PT",
    "day_et": "2026-11-15",
    "state": "in",
-   "detail": "8:01 - 1st",
+   "detail": "12:35 - 2nd",
    "neutral": false,
    "venue": "Gersten Pavilion",
    "favorite": "home",
@@ -5038,14 +5450,14 @@
    },
    "locked_at": "2026-11-15T12:15:42-08:00",
    "score": {
-    "home": 28,
-    "away": 13
+    "home": 55,
+    "away": 37
    }
   }
  ],
  "notes": [],
- "other_games": 6,
- "no_line_games": 7,
+ "other_games": 4,
+ "no_line_games": 4,
  "summary": {
   "date": "2026-11-15",
   "date_label": "Sunday, November 15",
@@ -5056,7 +5468,7 @@
   "would_qualify": 0,
   "early": true,
   "cutover": "Dec 15",
-  "other_games": 6,
-  "built_label": "Sun Nov 15, 1:30 PM PT"
+  "other_games": 4,
+  "built_label": "Sun Nov 15, 2:21 PM PT"
  }
 }
