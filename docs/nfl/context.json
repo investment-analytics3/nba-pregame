@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 10,
- "built_at": "2026-11-15T11:45:43-08:00",
+ "built_at": "2026-11-15T13:00:50-08:00",
  "games": [
   {
    "id": "401873058",
@@ -76,42 +76,6 @@
    "kick_pt": "Sun 10:00 AM PT"
   },
   {
-   "id": "401873060",
-   "nflverse_id": "2026_10_MIN_GB",
-   "kick_utc": "2026-11-15T18:00:00+00:00",
-   "day_et": "2026-11-15",
-   "home": "GB",
-   "away": "MIN",
-   "fav": "GB",
-   "dog": "MIN",
-   "spread": -2.5,
-   "fav_defense_top10": false,
-   "tracked": false,
-   "alerts": false,
-   "tier": "out",
-   "tier_label": "No track",
-   "kalshi_away": "MIN",
-   "kalshi_home": "GB",
-   "away_abbr": "MIN",
-   "home_abbr": "GB",
-   "fav_abbr": "GB",
-   "dog_abbr": "MIN",
-   "qbs": {
-    "MIN": {
-     "regular": "K.Murray",
-     "rank": 28
-    },
-    "GB": {
-     "regular": "J.Love",
-     "rank": 7
-    }
-   },
-   "hero": 20,
-   "band": "yellow",
-   "call": "No track",
-   "kick_pt": "Sun 10:00 AM PT"
-  },
-  {
    "id": "401873059",
    "nflverse_id": "2026_10_MIA_IND",
    "kick_utc": "2026-11-15T18:00:00+00:00",
@@ -122,10 +86,10 @@
    "dog": "MIA",
    "spread": -5.5,
    "fav_defense_top10": false,
-   "tracked": false,
+   "tracked": true,
    "alerts": false,
-   "tier": "out",
-   "tier_label": "No track",
+   "tier": "watch",
+   "tier_label": "Watch list",
    "kalshi_away": "MIA",
    "kalshi_home": "IND",
    "away_abbr": "MIA",
@@ -142,9 +106,9 @@
      "rank": 33
     }
    },
-   "hero": 19,
+   "hero": 20,
    "band": "yellow",
-   "call": "No track",
+   "call": "Watch list",
    "kick_pt": "Sun 10:00 AM PT"
   },
   {
@@ -264,12 +228,12 @@
    "away": "LA",
    "fav": "LA",
    "dog": "ARI",
-   "spread": -9.5,
+   "spread": -10.0,
    "fav_defense_top10": true,
-   "tracked": false,
+   "tracked": true,
    "alerts": false,
-   "tier": "out",
-   "tier_label": "No track",
+   "tier": "watch",
+   "tier_label": "Watch list",
    "kalshi_away": "LAR",
    "kalshi_home": "ARI",
    "away_abbr": "LAR",
@@ -286,9 +250,9 @@
      "rank": 24
     }
    },
-   "hero": 25,
+   "hero": 27,
    "band": "yellow",
-   "call": "No track",
+   "call": "Watch list",
    "kick_pt": "Sun 1:05 PM PT"
   },
   {
@@ -322,7 +286,7 @@
      "rank": 12
     }
    },
-   "hero": 19,
+   "hero": 21,
    "band": "yellow",
    "call": "No track",
    "kick_pt": "Sun 1:05 PM PT"
@@ -336,7 +300,7 @@
    "away": "SF",
    "fav": "SF",
    "dog": "DAL",
-   "spread": -4.5,
+   "spread": -3.5,
    "fav_defense_top10": false,
    "tracked": false,
    "alerts": false,
@@ -506,6 +470,42 @@
    "band": "yellow",
    "call": "No track",
    "kick_pt": "Sun 6:30 AM PT"
+  },
+  {
+   "id": "401873060",
+   "nflverse_id": "2026_10_MIN_GB",
+   "kick_utc": "2026-11-15T18:00:00+00:00",
+   "day_et": "2026-11-15",
+   "home": "GB",
+   "away": "MIN",
+   "fav": "GB",
+   "dog": "MIN",
+   "spread": -2.5,
+   "fav_defense_top10": false,
+   "tracked": false,
+   "alerts": false,
+   "tier": "out",
+   "tier_label": "No track",
+   "kalshi_away": "MIN",
+   "kalshi_home": "GB",
+   "away_abbr": "MIN",
+   "home_abbr": "GB",
+   "fav_abbr": "GB",
+   "dog_abbr": "MIN",
+   "qbs": {
+    "MIN": {
+     "regular": "K.Murray",
+     "rank": 28
+    },
+    "GB": {
+     "regular": "J.Love",
+     "rank": 7
+    }
+   },
+   "hero": 20,
+   "band": "yellow",
+   "call": "No track",
+   "kick_pt": "Sun 10:00 AM PT"
   }
  ]
 }
