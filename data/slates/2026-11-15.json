@@ -1,11 +1,11 @@
 {
  "date": "2026-11-15",
- "built_at": "2026-11-15T03:00:34-08:00",
+ "built_at": "2026-11-15T08:30:39-08:00",
  "retro": false,
  "metrics_through": "2026-11-14",
  "injury_source": "NBA official injury report",
- "injury_report_time": "2026-11-15T06:00:00-05:00",
- "injury_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_06_00AM.pdf",
+ "injury_report_time": "2026-11-15T11:30:00-05:00",
+ "injury_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_11_30AM.pdf",
  "first_tip_utc": "2026-11-15T18:00Z",
  "games": [
   {
@@ -262,8 +262,8 @@
     "spread": 13.5,
     "details": "BOS -13.5",
     "provider": "DraftKings",
-    "ml_home": -800,
-    "ml_away": 558
+    "ml_home": -750,
+    "ml_away": 530
    },
    "favorite": "home",
    "scoring": {
@@ -828,11 +828,11 @@
    },
    "spread": {
     "favorite_id": "24",
-    "spread": 17.5,
-    "details": "SA -17.5",
+    "spread": 16.5,
+    "details": "SA -16.5",
     "provider": "DraftKings",
-    "ml_home": 850,
-    "ml_away": -1460
+    "ml_home": 810,
+    "ml_away": -1340
    },
    "favorite": "away",
    "scoring": {
@@ -1415,11 +1415,11 @@
    },
    "spread": {
     "favorite_id": "10",
-    "spread": 9.5,
-    "details": "HOU -9.5",
+    "spread": 8.5,
+    "details": "HOU -8.5",
     "provider": "DraftKings",
-    "ml_home": 329,
-    "ml_away": -420
+    "ml_home": 286,
+    "ml_away": -359
    },
    "favorite": "away",
    "scoring": {
@@ -1944,8 +1944,8 @@
     "spread": 2.5,
     "details": "LAL -2.5",
     "provider": "DraftKings",
-    "ml_home": 131,
-    "ml_away": -156
+    "ml_home": 130,
+    "ml_away": -154
    },
    "favorite": "away",
    "scoring": {
@@ -2168,540 +2168,6 @@
        {
         "metric": "off",
         "rank": 21,
-        "color": "green"
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "id": "401909987",
-   "state": "pre",
-   "neutral": false,
-   "tip_utc": "2026-11-15T21:30Z",
-   "tip_pt": "1:30 PM PT",
-   "away": {
-    "id": "30",
-    "abbr": "CHA",
-    "name": "Hornets",
-    "display": "Charlotte Hornets",
-    "record": "4-8",
-    "l3_record": "1-2",
-    "games_played": 12,
-    "b2b": false,
-    "b2b_record": "1-1",
-    "season": {
-     "efg": 48.08,
-     "opp_efg": 55.61,
-     "off": 99.89,
-     "def": 111.03,
-     "net": -11.15,
-     "poss_per_game": 98.7,
-     "ranks": {
-      "efg": 30,
-      "opp_efg": 25,
-      "off": 30,
-      "def": 17,
-      "net": 28
-     }
-    },
-    "last3": {
-     "efg": 48.3,
-     "opp_efg": 55.84,
-     "off": 101.02,
-     "def": 111.79,
-     "net": -10.78,
-     "poss_per_game": 99.0,
-     "ranks": {
-      "efg": 30,
-      "opp_efg": 22,
-      "off": 30,
-      "def": 14,
-      "net": 26
-     }
-    },
-    "power": {
-     "rank": 27,
-     "split": false,
-     "own_net": 28,
-     "bpi": 24,
-     "nba_com": 27
-    },
-    "last3_games": [
-     {
-      "game_id": "401909979",
-      "date": "2026-11-12",
-      "site": "away",
-      "opp_id": "21",
-      "opp": "PHX",
-      "pts": 96,
-      "opp_pts": 101,
-      "metrics": {
-       "efg": 50.0,
-       "opp_efg": 48.37,
-       "off": 96.77,
-       "def": 101.81,
-       "net": -5.04
-      },
-      "opp_power_rank": 20
-     },
-     {
-      "game_id": "401909953",
-      "date": "2026-11-09",
-      "site": "home",
-      "opp_id": "5",
-      "opp": "CLE",
-      "pts": 124,
-      "opp_pts": 112,
-      "metrics": {
-       "efg": 59.68,
-       "opp_efg": 59.76,
-       "off": 124.02,
-       "def": 112.02,
-       "net": 12.0
-      },
-      "opp_power_rank": 13
-     },
-     {
-      "game_id": "401909288",
-      "date": "2026-11-06",
-      "site": "home",
-      "opp_id": "2",
-      "opp": "BOS",
-      "pts": 80,
-      "opp_pts": 119,
-      "metrics": {
-       "efg": 35.33,
-       "opp_efg": 60.24,
-       "off": 81.8,
-       "def": 121.68,
-       "net": -39.88
-      },
-      "opp_power_rank": 2
-     }
-    ],
-    "injuries": [
-     {
-      "player": "Dennis Schroder",
-      "status": "Out",
-      "reason": "Injury: Left Hamstring Strain",
-      "is_key": true,
-      "key_info": {
-       "name": "Dennis Schroder",
-       "starts": 7,
-       "team_games": 12,
-       "mpg": 30.0,
-       "ppg": 10.2,
-       "why": "starter"
-      },
-      "counts_as_out": true
-     },
-     {
-      "player": "Hannes Steinbach",
-      "status": "Out",
-      "reason": "GLeague-On Assignment",
-      "is_key": false,
-      "key_info": null,
-      "counts_as_out": true
-     },
-     {
-      "player": "Kon Knueppel",
-      "status": "Out",
-      "reason": "Injury: Left Hamstring Strain",
-      "is_key": false,
-      "key_info": null,
-      "counts_as_out": true
-     },
-     {
-      "player": "Kylan Boswell",
-      "status": "Out",
-      "reason": "G League two-way",
-      "is_key": false,
-      "key_info": null,
-      "counts_as_out": true
-     },
-     {
-      "player": "Michael Ajayi",
-      "status": "Out",
-      "reason": "G League two-way",
-      "is_key": false,
-      "key_info": null,
-      "counts_as_out": true
-     }
-    ],
-    "injuries_known": true,
-    "key_out": [
-     "Dennis Schroder"
-    ],
-    "key_questionable": []
-   },
-   "home": {
-    "id": "12",
-    "abbr": "LAC",
-    "name": "Clippers",
-    "display": "LA Clippers",
-    "record": "3-8",
-    "l3_record": "2-1",
-    "games_played": 11,
-    "b2b": false,
-    "b2b_record": "0-1",
-    "season": {
-     "efg": 54.26,
-     "opp_efg": 56.64,
-     "off": 108.68,
-     "def": 113.79,
-     "net": -5.1,
-     "poss_per_game": 103.3,
-     "ranks": {
-      "efg": 12,
-      "opp_efg": 27,
-      "off": 21,
-      "def": 24,
-      "net": 22
-     }
-    },
-    "last3": {
-     "efg": 56.3,
-     "opp_efg": 59.13,
-     "off": 117.35,
-     "def": 119.29,
-     "net": -1.95,
-     "poss_per_game": 102.8,
-     "ranks": {
-      "efg": 9,
-      "opp_efg": 26,
-      "off": 10,
-      "def": 24,
-      "net": 19
-     }
-    },
-    "power": {
-     "rank": 23,
-     "split": false,
-     "own_net": 22,
-     "bpi": 23,
-     "nba_com": 24
-    },
-    "last3_games": [
-     {
-      "game_id": "401909304",
-      "date": "2026-11-13",
-      "site": "home",
-      "opp_id": "25",
-      "opp": "OKC",
-      "pts": 113,
-      "opp_pts": 112,
-      "metrics": {
-       "efg": 54.55,
-       "opp_efg": 52.66,
-       "off": 111.55,
-       "def": 110.56,
-       "net": 0.99
-      },
-      "opp_power_rank": 5
-     },
-     {
-      "game_id": "401909962",
-      "date": "2026-11-10",
-      "site": "away",
-      "opp_id": "21",
-      "opp": "PHX",
-      "pts": 110,
-      "opp_pts": 133,
-      "metrics": {
-       "efg": 50.56,
-       "opp_efg": 68.18,
-       "off": 103.66,
-       "def": 125.33,
-       "net": -21.67
-      },
-      "opp_power_rank": 20
-     },
-     {
-      "game_id": "401909950",
-      "date": "2026-11-08",
-      "site": "home",
-      "opp_id": "3",
-      "opp": "NO",
-      "pts": 139,
-      "opp_pts": 123,
-      "metrics": {
-       "efg": 64.29,
-       "opp_efg": 56.79,
-       "off": 137.54,
-       "def": 121.71,
-       "net": 15.83
-      },
-      "opp_power_rank": 24
-     }
-    ],
-    "injuries": [
-     {
-      "player": "Bradley Beal",
-      "status": "Out",
-      "reason": "Injury: Right Knee Injury Management",
-      "is_key": false,
-      "key_info": null,
-      "counts_as_out": true
-     },
-     {
-      "player": "Brandon Ingram",
-      "status": "Out",
-      "reason": "Injury: Right Heel Surgery",
-      "is_key": false,
-      "key_info": null,
-      "counts_as_out": true
-     },
-     {
-      "player": "Jordan Miller",
-      "status": "Out",
-      "reason": "Injury: Left Rotator Cuff Surgery",
-      "is_key": false,
-      "key_info": null,
-      "counts_as_out": true
-     },
-     {
-      "player": "YanicKonan Niederhauser",
-      "status": "Out",
-      "reason": "Injury: Right Lisfranc Surgery",
-      "is_key": false,
-      "key_info": null,
-      "counts_as_out": true
-     }
-    ],
-    "injuries_known": true,
-    "key_out": [],
-    "key_questionable": []
-   },
-   "spread": {
-    "favorite_id": "12",
-    "spread": 1.5,
-    "details": "LAC -1.5",
-    "provider": "DraftKings",
-    "ml_home": -118,
-    "ml_away": 100
-   },
-   "favorite": "home",
-   "scoring": {
-    "scored": true,
-    "favorite_side": "home",
-    "fav": "LAC",
-    "dog": "CHA",
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "routes": [],
-    "route": "",
-    "fails": [
-     "Score 16 (watch list from 18, qualifies at 28)"
-    ],
-    "warnings": [
-     "Info: CHA without Dennis Schroder"
-    ],
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Analysis Score 28+",
-      "pass": false,
-      "detail": "Score 16 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 LAC last-3 top 10 in 2 of 4 \u00b7 \u2713 CHA last-3 bottom 10 in 3 of 4 \u00b7 \u2717 LAC season outside top 15: Off Eff #21, Opp eFG% #27, Def Eff #24 \u00b7 \u2713 CHA season top 10 in none"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key player out for the favorite",
-      "pass": true,
-      "detail": "Clear"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not top 10 in any power ranking",
-      "pass": true,
-      "detail": "Underdog: consensus #27, our net rating #28, ESPN BPI #24, NBA.com #27"
-     }
-    ],
-    "context": [
-     {
-      "check": "Favorite top 10 in a metric, season and last 3",
-      "pass": false,
-      "detail": "none"
-     },
-     {
-      "check": "Underdog not top 10 in any metric over its last 3",
-      "pass": true,
-      "detail": "none"
-     },
-     {
-      "check": "Underdog not 3-0 in its last 3",
-      "pass": true,
-      "detail": "1-2"
-     }
-    ],
-    "qualifiers": [],
-    "score": 16,
-    "max": 40,
-    "band": "red",
-    "parts": [
-     {
-      "key": "fav_metrics",
-      "label": "Favorite metrics",
-      "points": 2,
-      "max": 16
-     },
-     {
-      "key": "dog_metrics",
-      "label": "Underdog metrics",
-      "points": 10,
-      "max": 16
-     },
-     {
-      "key": "net",
-      "label": "Net rating",
-      "points": 0,
-      "max": 2
-     },
-     {
-      "key": "form",
-      "label": "Last-3 form",
-      "points": 1,
-      "max": 2
-     },
-     {
-      "key": "power",
-      "label": "Power rank",
-      "points": 0,
-      "max": 1
-     },
-     {
-      "key": "home",
-      "label": "Home court",
-      "points": 1,
-      "max": 1
-     },
-     {
-      "key": "health",
-      "label": "Health",
-      "points": 1,
-      "max": 1
-     },
-     {
-      "key": "rest",
-      "label": "Rest",
-      "points": 1,
-      "max": 1
-     }
-    ],
-    "pills": [
-     {
-      "team": "LAC",
-      "role": "fav",
-      "window": "season",
-      "cells": [
-       {
-        "metric": "efg",
-        "rank": 12,
-        "color": "yellow"
-       },
-       {
-        "metric": "off",
-        "rank": 21,
-        "color": "red"
-       },
-       {
-        "metric": "opp_efg",
-        "rank": 27,
-        "color": "red"
-       },
-       {
-        "metric": "def",
-        "rank": 24,
-        "color": "red"
-       }
-      ]
-     },
-     {
-      "team": "LAC",
-      "role": "fav",
-      "window": "last3",
-      "cells": [
-       {
-        "metric": "efg",
-        "rank": 9,
-        "color": "green"
-       },
-       {
-        "metric": "off",
-        "rank": 10,
-        "color": "green"
-       },
-       {
-        "metric": "opp_efg",
-        "rank": 26,
-        "color": "red"
-       },
-       {
-        "metric": "def",
-        "rank": 24,
-        "color": "red"
-       }
-      ]
-     },
-     {
-      "team": "CHA",
-      "role": "dog",
-      "window": "season",
-      "cells": [
-       {
-        "metric": "opp_efg",
-        "rank": 25,
-        "color": "green"
-       },
-       {
-        "metric": "def",
-        "rank": 17,
-        "color": "yellow"
-       },
-       {
-        "metric": "efg",
-        "rank": 30,
-        "color": "green"
-       },
-       {
-        "metric": "off",
-        "rank": 30,
-        "color": "green"
-       }
-      ]
-     },
-     {
-      "team": "CHA",
-      "role": "dog",
-      "window": "last3",
-      "cells": [
-       {
-        "metric": "opp_efg",
-        "rank": 22,
-        "color": "green"
-       },
-       {
-        "metric": "def",
-        "rank": 14,
-        "color": "yellow"
-       },
-       {
-        "metric": "efg",
-        "rank": 30,
-        "color": "green"
-       },
-       {
-        "metric": "off",
-        "rank": 30,
         "color": "green"
        }
       ]
@@ -3071,8 +2537,8 @@
     "spread": 10.5,
     "details": "OKC -10.5",
     "provider": "DraftKings",
-    "ml_home": 360,
-    "ml_away": -467
+    "ml_home": 361,
+    "ml_away": -468
    },
    "favorite": "away",
    "scoring": {
@@ -3572,8 +3038,8 @@
     "spread": 4.5,
     "details": "NY -4.5",
     "provider": "DraftKings",
-    "ml_home": 155,
-    "ml_away": -185
+    "ml_home": 160,
+    "ml_away": -191
    },
    "favorite": "away",
    "scoring": {
@@ -4119,11 +3585,11 @@
    },
    "spread": {
     "favorite_id": "1",
-    "spread": 7.5,
-    "details": "ATL -7.5",
+    "spread": 8.5,
+    "details": "ATL -8.5",
     "provider": "DraftKings",
-    "ml_home": 251,
-    "ml_away": -310
+    "ml_home": 261,
+    "ml_away": -324
    },
    "favorite": "away",
    "scoring": {
@@ -4344,6 +3810,538 @@
         "metric": "off",
         "rank": 29,
         "color": "green"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "401909987",
+   "state": "pre",
+   "neutral": false,
+   "tip_utc": "2026-11-15T21:30Z",
+   "tip_pt": "1:30 PM PT",
+   "away": {
+    "id": "30",
+    "abbr": "CHA",
+    "name": "Hornets",
+    "display": "Charlotte Hornets",
+    "record": "4-8",
+    "l3_record": "1-2",
+    "games_played": 12,
+    "b2b": false,
+    "b2b_record": "1-1",
+    "season": {
+     "efg": 48.08,
+     "opp_efg": 55.61,
+     "off": 99.89,
+     "def": 111.03,
+     "net": -11.15,
+     "poss_per_game": 98.7,
+     "ranks": {
+      "efg": 30,
+      "opp_efg": 25,
+      "off": 30,
+      "def": 17,
+      "net": 28
+     }
+    },
+    "last3": {
+     "efg": 48.3,
+     "opp_efg": 55.84,
+     "off": 101.02,
+     "def": 111.79,
+     "net": -10.78,
+     "poss_per_game": 99.0,
+     "ranks": {
+      "efg": 30,
+      "opp_efg": 22,
+      "off": 30,
+      "def": 14,
+      "net": 26
+     }
+    },
+    "power": {
+     "rank": 27,
+     "split": false,
+     "own_net": 28,
+     "bpi": 24,
+     "nba_com": 27
+    },
+    "last3_games": [
+     {
+      "game_id": "401909979",
+      "date": "2026-11-12",
+      "site": "away",
+      "opp_id": "21",
+      "opp": "PHX",
+      "pts": 96,
+      "opp_pts": 101,
+      "metrics": {
+       "efg": 50.0,
+       "opp_efg": 48.37,
+       "off": 96.77,
+       "def": 101.81,
+       "net": -5.04
+      },
+      "opp_power_rank": 20
+     },
+     {
+      "game_id": "401909953",
+      "date": "2026-11-09",
+      "site": "home",
+      "opp_id": "5",
+      "opp": "CLE",
+      "pts": 124,
+      "opp_pts": 112,
+      "metrics": {
+       "efg": 59.68,
+       "opp_efg": 59.76,
+       "off": 124.02,
+       "def": 112.02,
+       "net": 12.0
+      },
+      "opp_power_rank": 13
+     },
+     {
+      "game_id": "401909288",
+      "date": "2026-11-06",
+      "site": "home",
+      "opp_id": "2",
+      "opp": "BOS",
+      "pts": 80,
+      "opp_pts": 119,
+      "metrics": {
+       "efg": 35.33,
+       "opp_efg": 60.24,
+       "off": 81.8,
+       "def": 121.68,
+       "net": -39.88
+      },
+      "opp_power_rank": 2
+     }
+    ],
+    "injuries": [
+     {
+      "player": "Dennis Schroder",
+      "status": "Out",
+      "reason": "Injury: Left Hamstring Strain",
+      "is_key": true,
+      "key_info": {
+       "name": "Dennis Schroder",
+       "starts": 7,
+       "team_games": 12,
+       "mpg": 30.0,
+       "ppg": 10.2,
+       "why": "starter"
+      },
+      "counts_as_out": true
+     },
+     {
+      "player": "Hannes Steinbach",
+      "status": "Out",
+      "reason": "GLeague-On Assignment",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Kon Knueppel",
+      "status": "Out",
+      "reason": "Injury: Left Hamstring Strain",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Kylan Boswell",
+      "status": "Out",
+      "reason": "G League two-way",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Michael Ajayi",
+      "status": "Out",
+      "reason": "G League two-way",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [
+     "Dennis Schroder"
+    ],
+    "key_questionable": []
+   },
+   "home": {
+    "id": "12",
+    "abbr": "LAC",
+    "name": "Clippers",
+    "display": "LA Clippers",
+    "record": "3-8",
+    "l3_record": "2-1",
+    "games_played": 11,
+    "b2b": false,
+    "b2b_record": "0-1",
+    "season": {
+     "efg": 54.26,
+     "opp_efg": 56.64,
+     "off": 108.68,
+     "def": 113.79,
+     "net": -5.1,
+     "poss_per_game": 103.3,
+     "ranks": {
+      "efg": 12,
+      "opp_efg": 27,
+      "off": 21,
+      "def": 24,
+      "net": 22
+     }
+    },
+    "last3": {
+     "efg": 56.3,
+     "opp_efg": 59.13,
+     "off": 117.35,
+     "def": 119.29,
+     "net": -1.95,
+     "poss_per_game": 102.8,
+     "ranks": {
+      "efg": 9,
+      "opp_efg": 26,
+      "off": 10,
+      "def": 24,
+      "net": 19
+     }
+    },
+    "power": {
+     "rank": 23,
+     "split": false,
+     "own_net": 22,
+     "bpi": 23,
+     "nba_com": 24
+    },
+    "last3_games": [
+     {
+      "game_id": "401909304",
+      "date": "2026-11-13",
+      "site": "home",
+      "opp_id": "25",
+      "opp": "OKC",
+      "pts": 113,
+      "opp_pts": 112,
+      "metrics": {
+       "efg": 54.55,
+       "opp_efg": 52.66,
+       "off": 111.55,
+       "def": 110.56,
+       "net": 0.99
+      },
+      "opp_power_rank": 5
+     },
+     {
+      "game_id": "401909962",
+      "date": "2026-11-10",
+      "site": "away",
+      "opp_id": "21",
+      "opp": "PHX",
+      "pts": 110,
+      "opp_pts": 133,
+      "metrics": {
+       "efg": 50.56,
+       "opp_efg": 68.18,
+       "off": 103.66,
+       "def": 125.33,
+       "net": -21.67
+      },
+      "opp_power_rank": 20
+     },
+     {
+      "game_id": "401909950",
+      "date": "2026-11-08",
+      "site": "home",
+      "opp_id": "3",
+      "opp": "NO",
+      "pts": 139,
+      "opp_pts": 123,
+      "metrics": {
+       "efg": 64.29,
+       "opp_efg": 56.79,
+       "off": 137.54,
+       "def": 121.71,
+       "net": 15.83
+      },
+      "opp_power_rank": 24
+     }
+    ],
+    "injuries": [
+     {
+      "player": "Bradley Beal",
+      "status": "Out",
+      "reason": "Injury: Right Knee Injury Management",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Brandon Ingram",
+      "status": "Out",
+      "reason": "Injury: Right Heel Surgery",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Jordan Miller",
+      "status": "Out",
+      "reason": "Injury: Left Rotator Cuff Surgery",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "YanicKonan Niederhauser",
+      "status": "Out",
+      "reason": "Injury: Right Lisfranc Surgery",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "spread": {
+    "favorite_id": "30",
+    "spread": 1.5,
+    "details": "CHA -1.5",
+    "provider": "DraftKings",
+    "ml_home": -105,
+    "ml_away": -113
+   },
+   "favorite": "away",
+   "scoring": {
+    "scored": true,
+    "favorite_side": "away",
+    "fav": "CHA",
+    "dog": "LAC",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "routes": [],
+    "route": "",
+    "fails": [
+     "Favorite key player out: Dennis Schroder"
+    ],
+    "warnings": [],
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 8 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 CHA last-3 top 10 in 0 of 4 \u00b7 \u2717 LAC last-3 bottom 10 in 2 of 4 \u00b7 \u2717 CHA season outside top 15: eFG% #30, Off Eff #30, Opp eFG% #25, Def Eff #17 \u00b7 \u2713 LAC season top 10 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out for the favorite",
+      "pass": false,
+      "detail": "Favorite key player out: Dennis Schroder"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": true,
+      "detail": "Underdog: consensus #23, our net rating #22, ESPN BPI #23, NBA.com #24"
+     }
+    ],
+    "context": [
+     {
+      "check": "Favorite top 10 in a metric, season and last 3",
+      "pass": false,
+      "detail": "none"
+     },
+     {
+      "check": "Underdog not top 10 in any metric over its last 3",
+      "pass": false,
+      "detail": "eFG%, Off Eff"
+     },
+     {
+      "check": "Underdog not 3-0 in its last 3",
+      "pass": true,
+      "detail": "2-1"
+     }
+    ],
+    "qualifiers": [],
+    "score": 8,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 0,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 7,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "CHA",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 30,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 30,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 25,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 17,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "CHA",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 30,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 30,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 22,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 14,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "LAC",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 27,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 24,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 12,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 21,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "LAC",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 26,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 24,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 9,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 10,
+        "color": "red"
        }
       ]
      }
@@ -4688,8 +4686,8 @@
     "spread": 7.5,
     "details": "PHI -7.5",
     "provider": "DraftKings",
-    "ml_home": -288,
-    "ml_away": 235
+    "ml_home": -277,
+    "ml_away": 226
    },
    "favorite": "home",
    "scoring": {
