@@ -1,7 +1,62 @@
 {
  "date": "2026-11-15",
- "built_at": "2026-11-14T23:00:30-05:00",
+ "built_at": "2026-11-15T06:00:34-05:00",
  "games": [
+  {
+   "id": "401909989",
+   "fav_defense": {
+    "season": {
+     "opp_efg": {
+      "v": 50.49,
+      "r": 4
+     },
+     "def": {
+      "v": 104.08,
+      "r": 3
+     }
+    },
+    "last3": {
+     "opp_efg": {
+      "v": 49.79,
+      "r": 3
+     },
+     "def": {
+      "v": 102.45,
+      "r": 4
+     }
+    }
+   },
+   "fav_b2b": false,
+   "tip_utc": "2026-11-15T23:00Z",
+   "tip_pt": "3:00 PM PT",
+   "fav": "BOS",
+   "dog": "DAL",
+   "qualifiers": [
+    "eFG%",
+    "Off Eff",
+    "Opp eFG%",
+    "Def Eff"
+   ],
+   "tier": "qualified",
+   "route": "Last-3 mismatch",
+   "score": 27,
+   "band": "yellow",
+   "spread": "BOS -13.5",
+   "away": {
+    "id": "6",
+    "abbr": "DAL",
+    "name": "Mavericks",
+    "display": "Dallas Mavericks",
+    "record": "7-6"
+   },
+   "home": {
+    "id": "2",
+    "abbr": "BOS",
+    "name": "Celtics",
+    "display": "Boston Celtics",
+    "record": "10-2"
+   }
+  },
   {
    "id": "401909988",
    "fav_defense": {
@@ -58,6 +113,46 @@
   }
  ],
  "closers": {
+  "DAL": {
+   "closers": [
+    "Cooper Flagg",
+    "Kyrie Irving"
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "Cooper Flagg": {
+     "ppm": 0.71,
+     "ppg": 24.1,
+     "gp": 12
+    },
+    "Kyrie Irving": {
+     "ppm": 0.737,
+     "ppg": 22.7,
+     "gp": 11
+    }
+   }
+  },
+  "BOS": {
+   "closers": [
+    "Jayson Tatum",
+    "Paul George"
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "Jayson Tatum": {
+     "ppm": 0.773,
+     "ppg": 26.3,
+     "gp": 11
+    },
+    "Paul George": {
+     "ppm": 0.731,
+     "ppg": 22.0,
+     "gp": 10
+    }
+   }
+  },
   "UTAH": {
    "closers": [
     "Keyonte George",
