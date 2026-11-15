@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 10,
- "built_at": "2026-11-15T09:45:36-08:00",
- "built_label": "Sun Nov 15, 9:45 AM PT",
+ "built_at": "2026-11-15T10:45:35-08:00",
+ "built_label": "Sun Nov 15, 10:45 AM PT",
  "games": [
   {
    "id": "401873058",
@@ -10,15 +10,15 @@
    "kick_utc": "2026-11-15T18:00:00+00:00",
    "kick_pt": "Sun 10:00 AM PT",
    "day_et": "2026-11-15",
-   "state": "pre",
-   "detail": "11/15 - 1:00 PM EST",
+   "state": "in",
+   "detail": "14:53 - 2nd",
    "neutral": false,
    "venue": "Mercedes-Benz Stadium",
    "home_code": "ATL",
    "away_code": "KC",
    "score": {
     "home": 0,
-    "away": 0
+    "away": 7
    },
    "line_source": "Draft Kings",
    "open_spread": -4.5,
@@ -135,8 +135,7 @@
      "consensus": 20,
      "fpi": 24,
      "nfl_com": 18
-    },
-    "fpi_win": 0.215
+    }
    },
    "away": {
     "code": "KC",
@@ -206,15 +205,25 @@
      "rank": 11
     },
     "injuries_known": true,
-    "key_out": [
-     "Jaylon Moore"
+    "key_out": [],
+    "key_questionable": [
+     "Travis Kelce"
     ],
-    "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Jared Wiley",
+      "pos": "TE",
+      "status": "Questionable"
+     },
+     {
+      "name": "Travis Kelce",
+      "pos": "TE",
+      "status": "Questionable"
+     },
      {
       "name": "Garrett Nussmeier",
       "pos": "QB",
@@ -229,32 +238,21 @@
       "name": "Peter Woods",
       "pos": "DT",
       "status": "Out"
-     },
-     {
-      "name": "Ben VanSumeren",
-      "pos": "FB",
-      "status": "Out"
-     },
-     {
-      "name": "Jaylon Moore",
-      "pos": "OT",
-      "status": "Out"
      }
     ],
     "power": {
      "consensus": 6,
      "fpi": 5,
      "nfl_com": 10
-    },
-    "fpi_win": 0.783
+    }
    },
    "fav": "KC",
    "dog": "ATL",
    "scoring": {
     "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
     "alerts": false,
     "routes": [],
     "route": "",
@@ -263,7 +261,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 24 of 40"
+      "detail": "Score 25 of 40"
      },
      {
       "rule": "B",
@@ -274,8 +272,8 @@
      {
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
-      "pass": false,
-      "detail": "KC key starter out: Jaylon Moore"
+      "pass": true,
+      "detail": "Clear"
      },
      {
       "rule": "Power",
@@ -315,20 +313,18 @@
      "off_sr"
     ],
     "fails": [
-     "KC key starter out: Jaylon Moore",
-     "Would be on the watch list otherwise (score 24)"
+     "Watch list: score 25 (qualifies at 28)"
     ],
     "failed": [
-     "KC key starter out: Jaylon Moore",
-     "Would be on the watch list otherwise (score 24)"
+     "Watch list: score 25 (qualifies at 28)"
     ],
     "hero": {
-     "score": 24,
+     "score": 25,
      "band": "yellow",
      "parts": {
       "fav_strength": 9,
       "dog_weakness": 11,
-      "health": 3,
+      "health": 4,
       "home": 0,
       "rest": 0,
       "form": 1
@@ -347,6 +343,10 @@
      {
       "level": "yellow",
       "text": "Line crossed key number 3"
+     },
+     {
+      "level": "yellow",
+      "text": "Favorite questionable: Travis Kelce"
      }
     ],
     "under": {
@@ -358,15 +358,9 @@
      "total_move": 2.0,
      "note": ""
     },
-    "call": "No track"
+    "call": "Watch list"
    },
    "fav_defense_top10": false,
-   "kalshi": {
-    "event": "KXNFLGAME-26NOV15KCATL",
-    "fav_prob": 0.635,
-    "bid": 0.63,
-    "ask": 0.64
-   },
    "votes": {
     "fav": 14,
     "dog": 3,
@@ -412,21 +406,21 @@
    "kick_utc": "2026-11-15T18:00:00+00:00",
    "kick_pt": "Sun 10:00 AM PT",
    "day_et": "2026-11-15",
-   "state": "pre",
-   "detail": "11/15 - 1:00 PM EST",
+   "state": "in",
+   "detail": "11:21 - 2nd",
    "neutral": false,
    "venue": "Huntington Bank Field",
    "home_code": "CLE",
    "away_code": "HOU",
    "score": {
     "home": 0,
-    "away": 0
+    "away": 10
    },
    "line_source": "Draft Kings",
    "open_spread": -4.5,
    "total": 40.5,
    "total_open": 38.5,
-   "fav_ml": -198.0,
+   "fav_ml": -205.0,
    "favorite": "away",
    "spread": -4.5,
    "movement": 0.0,
@@ -539,8 +533,7 @@
      "consensus": 23,
      "fpi": 26,
      "nfl_com": 19
-    },
-    "fpi_win": 0.233
+    }
    },
    "away": {
     "code": "HOU",
@@ -652,8 +645,7 @@
      "consensus": 12,
      "fpi": 8,
      "nfl_com": 16
-    },
-    "fpi_win": 0.766
+    }
    },
    "fav": "HOU",
    "dog": "CLE",
@@ -765,12 +757,6 @@
     "call": "No track"
    },
    "fav_defense_top10": false,
-   "kalshi": {
-    "event": "KXNFLGAME-26NOV15HOUCLE",
-    "fav_prob": 0.645,
-    "bid": 0.64,
-    "ask": 0.65
-   },
    "votes": {
     "fav": 13,
     "dog": 4,
@@ -816,15 +802,15 @@
    "kick_utc": "2026-11-15T18:00:00+00:00",
    "kick_pt": "Sun 10:00 AM PT",
    "day_et": "2026-11-15",
-   "state": "pre",
-   "detail": "11/15 - 1:00 PM EST",
+   "state": "in",
+   "detail": "14:55 - 2nd",
    "neutral": false,
    "venue": "Lambeau Field",
    "home_code": "GB",
    "away_code": "MIN",
    "score": {
     "home": 0,
-    "away": 0
+    "away": 10
    },
    "line_source": "Draft Kings",
    "open_spread": -4.5,
@@ -946,8 +932,7 @@
      "consensus": 7,
      "fpi": 10,
      "nfl_com": 8
-    },
-    "fpi_win": 0.552
+    }
    },
    "away": {
     "code": "MIN",
@@ -1018,7 +1003,6 @@
     },
     "injuries_known": true,
     "key_out": [
-     "Jauan Jennings",
      "Jordan Addison",
      "T.J. Hockenson",
      "Tyrion Ingram-Dawkins"
@@ -1029,6 +1013,11 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Bo Richter",
+      "pos": "LB",
+      "status": "Questionable"
+     },
      {
       "name": "Max Brosmer",
       "pos": "QB",
@@ -1048,19 +1037,13 @@
       "name": "Tyrion Ingram-Dawkins",
       "pos": "DE",
       "status": "Out"
-     },
-     {
-      "name": "Jauan Jennings",
-      "pos": "WR",
-      "status": "Out"
      }
     ],
     "power": {
      "consensus": 9,
      "fpi": 9,
      "nfl_com": 11
-    },
-    "fpi_win": 0.444
+    }
    },
    "fav": "GB",
    "dog": "MIN",
@@ -1185,12 +1168,6 @@
     "call": "No track"
    },
    "fav_defense_top10": false,
-   "kalshi": {
-    "event": "KXNFLGAME-26NOV15MINGB",
-    "fav_prob": 0.575,
-    "bid": 0.57,
-    "ask": 0.58
-   },
    "votes": {
     "fav": 9,
     "dog": 8,
@@ -1236,24 +1213,24 @@
    "kick_utc": "2026-11-15T18:00:00+00:00",
    "kick_pt": "Sun 10:00 AM PT",
    "day_et": "2026-11-15",
-   "state": "pre",
-   "detail": "11/15 - 1:00 PM EST",
+   "state": "in",
+   "detail": "14:46 - 2nd",
    "neutral": false,
    "venue": "Lucas Oil Stadium",
    "home_code": "IND",
    "away_code": "MIA",
    "score": {
-    "home": 0,
+    "home": 7,
     "away": 0
    },
    "line_source": "Draft Kings",
    "open_spread": -6.5,
    "total": 37.5,
    "total_open": 47.5,
-   "fav_ml": -225.0,
+   "fav_ml": -238.0,
    "favorite": "home",
-   "spread": -4.5,
-   "movement": -2.0,
+   "spread": -5.5,
+   "movement": -1.0,
    "total_move": -10.0,
    "fav_home": true,
    "home": {
@@ -1327,12 +1304,19 @@
     "key_out": [
      "Jalen Travis"
     ],
-    "key_questionable": [],
+    "key_questionable": [
+     "Bernhard Raimann"
+    ],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Bernhard Raimann",
+      "pos": "OT",
+      "status": "Questionable"
+     },
      {
       "name": "Riley Leonard",
       "pos": "QB",
@@ -1352,19 +1336,13 @@
       "name": "Jalen Travis",
       "pos": "OT",
       "status": "Out"
-     },
-     {
-      "name": "Jaylon Carlies",
-      "pos": "LB",
-      "status": "Out"
      }
     ],
     "power": {
      "consensus": 21,
      "fpi": 19,
      "nfl_com": 25
-    },
-    "fpi_win": 0.82
+    }
    },
    "away": {
     "code": "MIA",
@@ -1476,8 +1454,7 @@
      "consensus": 32,
      "fpi": 32,
      "nfl_com": 29
-    },
-    "fpi_win": 0.178
+    }
    },
    "fav": "IND",
    "dog": "MIA",
@@ -1571,7 +1548,12 @@
      "adjusted_gap": 0.017,
      "adjusted_recent_gap": 0.006
     },
-    "flags": [],
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "Favorite questionable: Bernhard Raimann"
+     }
+    ],
     "under": {
      "passes": false,
      "ranks": [
@@ -1584,12 +1566,6 @@
     "call": "No track"
    },
    "fav_defense_top10": false,
-   "kalshi": {
-    "event": "KXNFLGAME-26NOV15MIAIND",
-    "fav_prob": 0.675,
-    "bid": 0.67,
-    "ask": 0.68
-   },
    "votes": {
     "fav": 12,
     "dog": 5,
@@ -1635,8 +1611,8 @@
    "kick_utc": "2026-11-15T18:00:00+00:00",
    "kick_pt": "Sun 10:00 AM PT",
    "day_et": "2026-11-15",
-   "state": "pre",
-   "detail": "11/15 - 1:00 PM EST",
+   "state": "in",
+   "detail": "12:52 - 2nd",
    "neutral": false,
    "venue": "Caesars Superdome",
    "home_code": "NO",
@@ -1646,15 +1622,15 @@
     "away": 0
    },
    "line_source": "Draft Kings",
-   "open_spread": -1.5,
+   "open_spread": 1.5,
    "total": 48.5,
    "total_open": 43.5,
-   "fav_ml": -110.0,
-   "favorite": "home",
+   "fav_ml": -122.0,
+   "favorite": "away",
    "spread": -1.5,
-   "movement": 0.0,
+   "movement": 3.0,
    "total_move": 5.0,
-   "fav_home": true,
+   "fav_home": false,
    "home": {
     "code": "NO",
     "abbr": "NO",
@@ -1764,8 +1740,7 @@
      "consensus": 22,
      "fpi": 21,
      "nfl_com": 23
-    },
-    "fpi_win": 0.5
+    }
    },
    "away": {
     "code": "CAR",
@@ -1875,11 +1850,10 @@
      "consensus": 19,
      "fpi": 18,
      "nfl_com": 20
-    },
-    "fpi_win": 0.496
+    }
    },
-   "fav": "NO",
-   "dog": "CAR",
+   "fav": "CAR",
+   "dog": "NO",
    "scoring": {
     "qualified": false,
     "tier": "out",
@@ -1893,25 +1867,25 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 18 of 40"
+      "detail": "Score 14 of 40"
      },
      {
       "rule": "B",
       "name": "Last-3 mismatch (3 of 4) with a season floor",
       "pass": false,
-      "detail": "\u2717 NO last-3 top 10 in 0 of 4 \u00b7 \u2713 CAR last-3 bottom 10 (23-32) in 4 of 4 \u00b7 \u2717 NO season outside top 15: Off EPA/play #22, Off success #20, Def EPA allowed #24, Def success allowed #29 \u00b7 \u2713 CAR season top 10 in none"
+      "detail": "\u2717 CAR last-3 top 10 in 0 of 4 \u00b7 \u2717 NO last-3 bottom 10 (23-32) in 1 of 4 \u00b7 \u2717 CAR season outside top 15: Off success #18, Def EPA allowed #23, Def success allowed #23 \u00b7 \u2713 NO season top 10 in none"
      },
      {
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
       "pass": false,
-      "detail": "NO key starter out: Erik McCoy"
+      "detail": "CAR key starter out: Bobby Okereke, Will Lee"
      },
      {
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "CAR: consensus #19, ESPN FPI #18, NFL.com #20"
+      "detail": "NO: consensus #22, ESPN FPI #21, NFL.com #23"
      }
     ],
     "context": [
@@ -1937,50 +1911,43 @@
       "n": 4,
       "ok": true,
       "text": "Underdog not 3-0 in its last 3",
-      "detail": "0-3"
+      "detail": "2-1"
      }
     ],
     "qualifiers": [],
     "fails": [
-     "NO key starter out: Erik McCoy",
-     "Would be on the watch list otherwise (score 18)"
+     "CAR key starter out: Bobby Okereke, Will Lee"
     ],
     "failed": [
-     "NO key starter out: Erik McCoy",
-     "Would be on the watch list otherwise (score 18)"
+     "CAR key starter out: Bobby Okereke, Will Lee"
     ],
     "hero": {
-     "score": 18,
-     "band": "yellow",
+     "score": 14,
+     "band": "red",
      "parts": {
       "fav_strength": 0,
-      "dog_weakness": 14,
-      "health": 2,
-      "home": 1,
+      "dog_weakness": 11,
+      "health": 3,
+      "home": 0,
       "rest": 0,
-      "form": 1
+      "form": 0
      },
      "max": 40
     },
     "edge": {
-     "gap": -0.06,
+     "gap": 0.06,
      "required": 0.35,
      "clears": false,
-     "short_by": 0.41,
-     "adjusted_gap": -0.038,
-     "adjusted_recent_gap": -0.003
+     "short_by": 0.29,
+     "adjusted_gap": 0.038,
+     "adjusted_recent_gap": 0.003
     },
-    "flags": [
-     {
-      "level": "yellow",
-      "text": "Favorite interior OL out: Erik McCoy"
-     }
-    ],
+    "flags": [],
     "under": {
      "passes": false,
      "ranks": [
-      22,
-      13
+      13,
+      22
      ],
      "total_move": 5.0,
      "note": ""
@@ -1988,12 +1955,6 @@
     "call": "No track"
    },
    "fav_defense_top10": false,
-   "kalshi": {
-    "event": "KXNFLGAME-26NOV15CARNO",
-    "fav_prob": 0.495,
-    "bid": 0.49,
-    "ask": 0.5
-   },
    "votes": {
     "fav": 7,
     "dog": 9,
@@ -2033,21 +1994,21 @@
    "kick_utc": "2026-11-15T18:00:00+00:00",
    "kick_pt": "Sun 10:00 AM PT",
    "day_et": "2026-11-15",
-   "state": "pre",
-   "detail": "11/15 - 1:00 PM EST",
+   "state": "in",
+   "detail": "13:21 - 2nd",
    "neutral": false,
    "venue": "MetLife Stadium",
    "home_code": "NYJ",
    "away_code": "BUF",
    "score": {
     "home": 0,
-    "away": 0
+    "away": 7
    },
    "line_source": "Draft Kings",
    "open_spread": -7.0,
    "total": 50.5,
    "total_open": 46.5,
-   "fav_ml": -485.0,
+   "fav_ml": -470.0,
    "favorite": "away",
    "spread": -8.5,
    "movement": 1.5,
@@ -2160,8 +2121,7 @@
      "consensus": 28,
      "fpi": 25,
      "nfl_com": 30
-    },
-    "fpi_win": 0.173
+    }
    },
    "away": {
     "code": "BUF",
@@ -2268,8 +2228,7 @@
      "consensus": 2,
      "fpi": 2,
      "nfl_com": 2
-    },
-    "fpi_win": 0.826
+    }
    },
    "fav": "BUF",
    "dog": "NYJ",
@@ -2379,12 +2338,6 @@
     "call": "Watch list"
    },
    "fav_defense_top10": false,
-   "kalshi": {
-    "event": "KXNFLGAME-26NOV15BUFNYJ",
-    "fav_prob": 0.795,
-    "bid": 0.79,
-    "ask": 0.8
-   },
    "votes": {
     "fav": 11,
     "dog": 6,
@@ -2430,21 +2383,21 @@
    "kick_utc": "2026-11-15T18:00:00+00:00",
    "kick_pt": "Sun 10:00 AM PT",
    "day_et": "2026-11-15",
-   "state": "pre",
-   "detail": "11/15 - 1:00 PM EST",
+   "state": "in",
+   "detail": "12:54 - 2nd",
    "neutral": false,
    "venue": "Nissan Stadium",
    "home_code": "TEN",
    "away_code": "JAX",
    "score": {
-    "home": 0,
-    "away": 0
+    "home": 3,
+    "away": 10
    },
    "line_source": "Draft Kings",
    "open_spread": -2.5,
    "total": 45.5,
    "total_open": 45.5,
-   "fav_ml": -675.0,
+   "fav_ml": -650.0,
    "favorite": "away",
    "spread": -10.5,
    "movement": 8.0,
@@ -2558,8 +2511,7 @@
      "consensus": 26,
      "fpi": 28,
      "nfl_com": 24
-    },
-    "fpi_win": 0.159
+    }
    },
    "away": {
     "code": "JAX",
@@ -2666,8 +2618,7 @@
      "consensus": 3,
      "fpi": 3,
      "nfl_com": 3
-    },
-    "fpi_win": 0.84
+    }
    },
    "fav": "JAX",
    "dog": "TEN",
@@ -2784,12 +2735,6 @@
     "call": "Edge clears"
    },
    "fav_defense_top10": true,
-   "kalshi": {
-    "event": "KXNFLGAME-26NOV15JACTEN",
-    "fav_prob": 0.835,
-    "bid": 0.83,
-    "ask": 0.84
-   },
    "votes": {
     "fav": 15,
     "dog": 2,
@@ -3903,9 +3848,10 @@
      "rank": 4
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Mike Evans"
+    ],
     "key_questionable": [
-     "Renardo Green",
      "Trent Williams"
     ],
     "key_long_term": [
@@ -3915,6 +3861,11 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Mike Evans",
+      "pos": "WR",
+      "status": "Out"
+     },
      {
       "name": "Trent Williams",
       "pos": "OT",
@@ -3934,11 +3885,6 @@
       "name": "Gracen Halton",
       "pos": "DT",
       "status": "Injured Reserve"
-     },
-     {
-      "name": "Renardo Green",
-      "pos": "CB",
-      "status": "Questionable"
      }
     ],
     "power": {
@@ -3952,9 +3898,9 @@
    "dog": "DAL",
    "scoring": {
     "qualified": false,
-    "tier": "watch",
-    "tier_label": "Watch list",
-    "tracked": true,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
     "alerts": false,
     "routes": [],
     "route": "",
@@ -3963,7 +3909,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 19 of 40"
+      "detail": "Score 18 of 40"
      },
      {
       "rule": "B",
@@ -3974,8 +3920,8 @@
      {
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "Clear (on injured reserve, not counted: Gracen Halton)"
+      "pass": false,
+      "detail": "SF key starter out: Mike Evans (on injured reserve, not counted: Gracen Halton)"
      },
      {
       "rule": "Power",
@@ -4015,18 +3961,20 @@
      "off_sr"
     ],
     "fails": [
-     "Watch list: score 19 (qualifies at 28)"
+     "SF key starter out: Mike Evans",
+     "Would be on the watch list otherwise (score 18)"
     ],
     "failed": [
-     "Watch list: score 19 (qualifies at 28)"
+     "SF key starter out: Mike Evans",
+     "Would be on the watch list otherwise (score 18)"
     ],
     "hero": {
-     "score": 19,
+     "score": 18,
      "band": "yellow",
      "parts": {
       "fav_strength": 9,
       "dog_weakness": 5,
-      "health": 4,
+      "health": 3,
       "home": 0,
       "rest": 0,
       "form": 1
@@ -4052,7 +4000,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Renardo Green, Trent Williams"
+      "text": "Favorite questionable: Trent Williams"
      },
      {
       "level": "yellow",
@@ -4068,7 +4016,7 @@
      "total_move": 3.0,
      "note": ""
     },
-    "call": "Watch list"
+    "call": "No track"
    },
    "fav_defense_top10": false,
    "kalshi": {
@@ -4114,54 +4062,6 @@
      }
     ],
     "notes": ""
-   },
-   "readout": {
-    "matchup": "SF @ DAL",
-    "summary": "The lean is San Francisco, but it is split. CBS's Breech and the Dimers model pick the 49ers (Dimers gives them 65.5%). Prisco picks a Cowboys upset behind Dak Prescott, and SI/BetMGM takes Dallas +4 on the 49ers' injuries (Evans, Hobbs and C.J. West out; Trent Williams and three corners questionable). Everyone expects a high-scoring game.",
-    "pick": "Split: 49ers (CBS Breech, Dimers model) vs Cowboys (CBS Prisco upset); ATS: Cowboys +4 (SI/BetMGM)",
-    "predicted_score": "49ers 31-24 (CBS, John Breech, Nov 10); Cowboys 30-28 (CBS, Pete Prisco, Nov 11); 49ers 30-25 (Dimers model, Nov 13; its widget shows 30-26)",
-    "moneyline": "49ers -220 / Cowboys +180 (BetMGM, per SI, Nov 10); 49ers -194 / Cowboys +190 (Dimers, Nov 13, book not named)",
-    "win_probability": "49ers 65.5%, Cowboys 34.5% (Dimers model, Nov 13)",
-    "injuries": "49ers (NBC Sports Bay Area, Sat Nov 14): Out WR Mike Evans (Achilles tendinitis), CB Nate Hobbs (adductor, stays on IR), DT C.J. West (knee, downgraded from Questionable, stays on IR); Questionable T Trent Williams (shoulder), CBs Deommodore Lenoir (foot), Renardo Green (back), Upton Stout (shoulder), LB Dre Greenlaw (knee); no practice-squad elevations, read as a sign the three corners will play (49ers Webzone); WR Deebo Samuel back. Cowboys (team updates / Athlon, Sat Nov 14): Out TE Jake Ferguson (knee, ankle), RB Tyler Goodson (knee, placed on IR), S P.J. Locke (concussion), CB Devin Moore, LB Donovan Ezeiruaku (ankle), WR Jonathan Mingo (ankle) (Friday report); Doubtful S Juanyeh Thomas (hamstring); Questionable CB Joey Porter Jr. (ankle) and CB DaRon Bland (ankle), both trending toward playing (Ian Rapoport via NBC Sports, Nov 15), S Alijah Clark (illness); DT Jonathan Bullard activated from IR; RB Israel Abanikanda and CB Derion Kendrick elevated; WR George Pickens, LB DeMarvion Overshown and WR KaVontae Turpin off the report.",
-    "sources": [
-     {
-      "site": "CBS Sports (John Breech score predictions)",
-      "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-10-picks-score-predictions-lions-patriots-bengals/"
-     },
-     {
-      "site": "CBS Sports (Pete Prisco picks)",
-      "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-10-expert-nfl-picks/"
-     },
-     {
-      "site": "SI (odds, injuries, pick)",
-      "url": "https://www.si.com/betting/49ers-vs-cowboys-prediction-odds-spread-injuries-trends-for-nfl-week-10-2026"
-     },
-     {
-      "site": "Dimers",
-      "url": "https://www.dimers.com/nfl/predictions/2026_10_dal_sf"
-     },
-     {
-      "site": "NBC Sports / PFT (Cowboys injuries)",
-      "url": "https://nbcsports.com/nfl/profootballtalk/rumor-mill/news/cowboys-cbs-joey-porter-jr-daron-bland-are-questionable"
-     },
-     {
-      "site": "NBC Sports Bay Area (49ers statuses, Nov 14)",
-      "url": "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/deommodore-lenoir-renardo-green-upton-stout/1980073/"
-     },
-     {
-      "site": "Dallas Cowboys (official updates, Nov 14)",
-      "url": "https://www.dallascowboys.com/news/updates-november-2026"
-     },
-     {
-      "site": "Yahoo / Athlon (Cowboys roster moves, Nov 14)",
-      "url": "https://sports.yahoo.com/articles/cowboys-activate-veteran-defensive-lineman-233243529.html"
-     },
-     {
-      "site": "NBC Sports (Porter Jr., Bland trending to play, Nov 15)",
-      "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-15/jpj-and-daron-bland-are-trending-towards-playing"
-     }
-    ],
-    "updated": "2026-11-15T05:50-08:00"
    }
   },
   {
@@ -5615,21 +5515,22 @@
      "rank": 13
     },
     "injuries_known": true,
-    "key_out": [
-     "Drake Maye"
-    ],
+    "key_out": [],
     "key_questionable": [
+     "Drake Maye",
      "Dre'Mont Jones",
      "Robert Spillane"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
-    "qb_out": [
-     "Drake Maye"
-    ],
-    "qb_active": false,
-    "qb_reset": "Drake Maye out",
+    "qb_out": [],
+    "qb_active": true,
     "injury_list": [
+     {
+      "name": "Drake Maye",
+      "pos": "QB",
+      "status": "Questionable"
+     },
      {
       "name": "Dre'Mont Jones",
       "pos": "DE",
@@ -5644,11 +5545,6 @@
       "name": "Robert Spillane",
       "pos": "LB",
       "status": "Questionable"
-     },
-     {
-      "name": "Drake Maye",
-      "pos": "QB",
-      "status": "Out"
      },
      {
       "name": "Brenden Schooler",
@@ -5758,16 +5654,12 @@
     },
     "flags": [
      {
-      "level": "red",
-      "text": "Underdog QB change (Drake Maye out): call capped at Lean"
-     },
-     {
       "level": "yellow",
       "text": "Favorite questionable: Aidan Hutchinson"
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Dre'Mont Jones, Robert Spillane"
+      "text": "Underdog questionable: Drake Maye, Dre'Mont Jones, Robert Spillane"
      }
     ],
     "under": {
@@ -5845,12 +5737,12 @@
   "season": 2026,
   "week": 10,
   "games": 14,
-  "upcoming": 12,
+  "upcoming": 5,
   "tracked": 1,
   "qualified": 1,
   "watch": 3,
   "green": 1,
   "edge_clears": 1,
-  "built_label": "Sun Nov 15, 9:45 AM PT"
+  "built_label": "Sun Nov 15, 10:45 AM PT"
  }
 }
