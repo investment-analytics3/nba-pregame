@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 10,
- "built_at": "2026-11-15T14:40:19-08:00",
- "built_label": "Sun Nov 15, 2:40 PM PT",
+ "built_at": "2026-11-15T15:20:34-08:00",
+ "built_label": "Sun Nov 15, 3:20 PM PT",
  "games": [
   {
    "id": "401873061",
@@ -11,16 +11,16 @@
    "kick_pt": "Sun 1:05 PM PT",
    "day_et": "2026-11-15",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "0:10 - 3rd",
    "neutral": false,
    "venue": "State Farm Stadium",
    "home_code": "ARI",
    "away_code": "LA",
    "score": {
     "home": 6,
-    "away": 17
+    "away": 31
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -10.5,
    "total": 38.5,
    "total_open": 47.5,
@@ -215,12 +215,12 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Dylan McMahon",
+      "name": "Coleman Shelton",
       "pos": "C",
       "status": "Questionable"
      },
      {
-      "name": "Coleman Shelton",
+      "name": "Dylan McMahon",
       "pos": "C",
       "status": "Questionable"
      },
@@ -359,7 +359,39 @@
      "total_move": -9.0,
      "note": ""
     },
-    "call": "Watch list"
+    "call": "Watch list",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 2,
+      "dog_rank": 7,
+      "in_range": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 2,
+      "dog_rank": 27,
+      "in_range": true,
+      "met": true
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 3,
+      "dog_rank": 7,
+      "in_range": true,
+      "met": false
+     }
+    ]
    },
    "fav_defense_top10": true,
    "votes": {
@@ -408,16 +440,16 @@
    "kick_pt": "Sun 1:05 PM PT",
    "day_et": "2026-11-15",
    "state": "in",
-   "detail": "13:27 - 3rd",
+   "detail": "12:16 - 4th",
    "neutral": false,
    "venue": "Allegiant Stadium",
    "home_code": "LV",
    "away_code": "SEA",
    "score": {
     "home": 10,
-    "away": 7
+    "away": 21
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -7.0,
    "total": 40.5,
    "total_open": 43.5,
@@ -495,10 +527,10 @@
      "rank": 12
     },
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
+    "key_out": [
      "Brock Bowers"
     ],
+    "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
@@ -507,7 +539,7 @@
      {
       "name": "Brock Bowers",
       "pos": "TE",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
       "name": "Malik Benson",
@@ -616,6 +648,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "George Holani",
+      "pos": "RB",
+      "status": "Out"
+     },
+     {
       "name": "Jarran Reed",
       "pos": "DT",
       "status": "Questionable"
@@ -623,11 +660,6 @@
      {
       "name": "Abraham Lucas",
       "pos": "OT",
-      "status": "Questionable"
-     },
-     {
-      "name": "George Holani",
-      "pos": "RB",
       "status": "Questionable"
      },
      {
@@ -747,10 +779,6 @@
      {
       "level": "yellow",
       "text": "Favorite questionable: Abraham Lucas"
-     },
-     {
-      "level": "yellow",
-      "text": "Underdog questionable: Brock Bowers"
      }
     ],
     "under": {
@@ -762,7 +790,39 @@
      "total_move": -3.0,
      "note": ""
     },
-    "call": "No track"
+    "call": "No track",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 17,
+      "dog_rank": 32,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 17,
+      "dog_rank": 22,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 21,
+      "dog_rank": 32,
+      "in_range": false,
+      "met": false
+     }
+    ]
    },
    "fav_defense_top10": false,
    "votes": {
@@ -805,16 +865,16 @@
    "kick_pt": "Sun 1:25 PM PT",
    "day_et": "2026-11-15",
    "state": "in",
-   "detail": "2:00 - 2nd",
+   "detail": "11:22 - 3rd",
    "neutral": false,
    "venue": "AT&T Stadium",
    "home_code": "DAL",
    "away_code": "SF",
    "score": {
     "home": 16,
-    "away": 17
+    "away": 24
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": 1.5,
    "total": 55.5,
    "total_open": 52.5,
@@ -902,6 +962,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Otito Ogbonnia",
+      "pos": "DT",
+      "status": "Questionable"
+     },
+     {
       "name": "DaRon Bland",
       "pos": "CB",
       "status": "Questionable"
@@ -919,11 +984,6 @@
      {
       "name": "Derion Kendrick",
       "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "name": "P.J. Locke",
-      "pos": "S",
       "status": "Out"
      }
     ],
@@ -1160,7 +1220,39 @@
      "total_move": 3.0,
      "note": ""
     },
-    "call": "No track"
+    "call": "No track",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 23,
+      "dog_rank": 10,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 23,
+      "dog_rank": 10,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 2,
+      "dog_rank": 10,
+      "in_range": false,
+      "met": false
+     }
+    ]
    },
    "fav_defense_top10": false,
    "votes": {
@@ -1218,7 +1310,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -3.5,
    "total": 49.5,
    "total_open": 47.5,
@@ -1560,7 +1652,39 @@
      "total_move": 2.0,
      "note": ""
     },
-    "call": "Watch list"
+    "call": "Watch list",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 24,
+      "dog_rank": 6,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 24,
+      "dog_rank": 19,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 1,
+      "dog_rank": 6,
+      "in_range": false,
+      "met": false
+     }
+    ]
    },
    "fav_defense_top10": false,
    "kalshi": {
@@ -1672,7 +1796,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -2.5,
    "total": 38.5,
    "total_open": 48.5,
@@ -2012,7 +2136,39 @@
      "total_move": -10.0,
      "note": ""
     },
-    "call": "No track"
+    "call": "No track",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 28,
+      "dog_rank": 25,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 28,
+      "dog_rank": 32,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 30,
+      "dog_rank": 25,
+      "in_range": false,
+      "met": false
+     }
+    ]
    },
    "fav_defense_top10": false,
    "kalshi": {
@@ -2070,7 +2226,7 @@
     "home": 21,
     "away": 24
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -1.5,
    "total": 40.5,
    "total_open": 47.5,
@@ -2406,7 +2562,39 @@
      "total_move": -7.0,
      "note": ""
     },
-    "call": "Watch list"
+    "call": "Watch list",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 1,
+      "dog_rank": 21,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 1,
+      "dog_rank": 17,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 28,
+      "dog_rank": 21,
+      "in_range": false,
+      "met": false
+     }
+    ]
    },
    "fav_defense_top10": false,
    "votes": {
@@ -2464,7 +2652,7 @@
     "home": 35,
     "away": 10
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -1.5,
    "total": 50.5,
    "total_open": 48.5,
@@ -2804,7 +2992,39 @@
      "total_move": 2.0,
      "note": ""
     },
-    "call": "No track"
+    "call": "No track",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 3,
+      "dog_rank": 22,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 3,
+      "dog_rank": 8,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 4,
+      "dog_rank": 22,
+      "in_range": false,
+      "met": false
+     }
+    ]
    },
    "fav_defense_top10": false,
    "votes": {
@@ -2856,7 +3076,7 @@
     "home": 13,
     "away": 35
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -4.5,
    "total": 47.5,
    "total_open": 45.5,
@@ -3200,7 +3420,39 @@
      "total_move": 2.0,
      "note": ""
     },
-    "call": "Watch list"
+    "call": "Watch list",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 18,
+      "dog_rank": 30,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 18,
+      "dog_rank": 20,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 5,
+      "dog_rank": 30,
+      "in_range": false,
+      "met": false
+     }
+    ]
    },
    "fav_defense_top10": false,
    "votes": {
@@ -3258,7 +3510,7 @@
     "home": 27,
     "away": 24
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -4.5,
    "total": 40.5,
    "total_open": 38.5,
@@ -3447,11 +3699,10 @@
     "injuries_known": true,
     "key_out": [
      "Danielle Hunter",
-     "Keylan Rutledge"
-    ],
-    "key_questionable": [
+     "Keylan Rutledge",
      "Woody Marks"
     ],
+    "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [
      "Keylan Rutledge"
@@ -3462,7 +3713,7 @@
      {
       "name": "Woody Marks",
       "pos": "RB",
-      "status": "Questionable"
+      "status": "Doubtful"
      },
      {
       "name": "Wyatt Teller",
@@ -3518,7 +3769,7 @@
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
       "pass": false,
-      "detail": "HOU key starter out: Danielle Hunter, Keylan Rutledge"
+      "detail": "HOU key starter out: Danielle Hunter, Keylan Rutledge, Woody Marks"
      },
      {
       "rule": "Power",
@@ -3557,10 +3808,10 @@
      "off_epa"
     ],
     "fails": [
-     "HOU key starter out: Danielle Hunter, Keylan Rutledge"
+     "HOU key starter out: Danielle Hunter, Keylan Rutledge, Woody Marks"
     ],
     "failed": [
-     "HOU key starter out: Danielle Hunter, Keylan Rutledge"
+     "HOU key starter out: Danielle Hunter, Keylan Rutledge, Woody Marks"
     ],
     "hero": {
      "score": 17,
@@ -3587,10 +3838,6 @@
      {
       "level": "yellow",
       "text": "Favorite interior OL out: Keylan Rutledge"
-     },
-     {
-      "level": "yellow",
-      "text": "Favorite questionable: Woody Marks"
      }
     ],
     "under": {
@@ -3602,7 +3849,39 @@
      "total_move": 2.0,
      "note": ""
     },
-    "call": "No track"
+    "call": "No track",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 16,
+      "dog_rank": 15,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 16,
+      "dog_rank": 14,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 13,
+      "dog_rank": 15,
+      "in_range": false,
+      "met": false
+     }
+    ]
    },
    "fav_defense_top10": false,
    "votes": {
@@ -3660,7 +3939,7 @@
     "home": 10,
     "away": 30
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -4.5,
    "total": 42.5,
    "total_open": 45.5,
@@ -4016,7 +4295,39 @@
      "total_move": -3.0,
      "note": ""
     },
-    "call": "No track"
+    "call": "No track",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 19,
+      "dog_rank": 14,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 19,
+      "dog_rank": 29,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 18,
+      "dog_rank": 14,
+      "in_range": false,
+      "met": false
+     }
+    ]
    },
    "fav_defense_top10": false,
    "votes": {
@@ -4074,7 +4385,7 @@
     "home": 24,
     "away": 22
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -6.5,
    "total": 37.5,
    "total_open": 47.5,
@@ -4415,7 +4726,39 @@
      "total_move": -10.0,
      "note": ""
     },
-    "call": "Watch list"
+    "call": "Watch list",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 13,
+      "dog_rank": 26,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 13,
+      "dog_rank": 24,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 23,
+      "dog_rank": 26,
+      "in_range": false,
+      "met": false
+     }
+    ]
    },
    "fav_defense_top10": false,
    "votes": {
@@ -4473,7 +4816,7 @@
     "home": 17,
     "away": 20
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": 1.5,
    "total": 48.5,
    "total_open": 43.5,
@@ -4812,7 +5155,39 @@
      "total_move": 5.0,
      "note": ""
     },
-    "call": "No track"
+    "call": "No track",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 27,
+      "dog_rank": 11,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 27,
+      "dog_rank": 26,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 25,
+      "dog_rank": 11,
+      "in_range": false,
+      "met": false
+     }
+    ]
    },
    "fav_defense_top10": false,
    "votes": {
@@ -4864,7 +5239,7 @@
     "home": 12,
     "away": 31
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -7.0,
    "total": 50.5,
    "total_open": 46.5,
@@ -5209,7 +5584,39 @@
      "total_move": 4.0,
      "note": ""
     },
-    "call": "Watch list"
+    "call": "Watch list",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 4,
+      "dog_rank": 31,
+      "in_range": true,
+      "met": true
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 4,
+      "dog_rank": 9,
+      "in_range": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 11,
+      "dog_rank": 31,
+      "in_range": true,
+      "met": false
+     }
+    ]
    },
    "fav_defense_top10": false,
    "votes": {
@@ -5267,7 +5674,7 @@
     "home": 23,
     "away": 40
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -2.5,
    "total": 45.5,
    "total_open": 45.5,
@@ -5618,7 +6025,39 @@
      "total_move": 0.0,
      "note": ""
     },
-    "call": "Edge clears"
+    "call": "Edge clears",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 8,
+      "dog_rank": 29,
+      "in_range": true,
+      "met": true
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 8,
+      "dog_rank": 16,
+      "in_range": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 6,
+      "dog_rank": 29,
+      "in_range": true,
+      "met": true
+     }
+    ]
    },
    "fav_defense_top10": true,
    "votes": {
@@ -5744,6 +6183,6 @@
   "watch": 2,
   "green": 0,
   "edge_clears": 1,
-  "built_label": "Sun Nov 15, 2:40 PM PT"
+  "built_label": "Sun Nov 15, 3:20 PM PT"
  }
 }
