@@ -116,6 +116,26 @@ class Rules(unittest.TestCase):
         self.assertEqual(power.team_code("San Francisco 49ers"), "SF")
 
 
+class Matchups(unittest.TestCase):
+    """Owner Nov 15: information only; spread 7+, last-3 success rate, fav top 10 vs dog 23-32 (three pairings)."""
+
+    def test_met_only_at_seven_plus(self):
+        # M = off_epa, off_sr, def_epa, def_sr
+        fav, dog = team((5,) * 4, (12, 12, 12, 4)), team((20,) * 4, (20, 20, 20, 25))
+        met = lambda sp: [m["key"] for m in scoring.matchups({"spread": sp}, fav, dog) if m["met"]]
+        self.assertEqual(met(-7), ["def_def"])
+        self.assertEqual(met(-6.5), [])
+        self.assertEqual(met(None), [])
+        dog2 = team((20,) * 4, (30, 30, 30, 20))                 # dog last-3 offense weak (EPA and SR)
+        fav2 = team((5,) * 4, (1, 1, 1, 4))                      # fav offense top in both; OvO alone never counts
+        keys = [m["key"] for m in scoring.matchups({"spread": -10}, fav2, dog2) if m["met"]]
+        self.assertEqual(keys, ["def_off"])
+
+    def test_epa_never_counts(self):
+        fav, dog = team((5,) * 4, (1, 20, 1, 20)), team((20,) * 4, (30, 15, 30, 15))
+        self.assertFalse(any(m["met"] for m in scoring.matchups({"spread": -9}, fav, dog)))
+
+
 class Hero(unittest.TestCase):
     def test_max_is_40(self):
         fav = team((1,) * 4, (1,) * 4, rest=14)

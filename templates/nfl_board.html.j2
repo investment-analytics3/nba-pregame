@@ -18,6 +18,8 @@
 .day-head.small-day h2{font-size:18px;color:#C7CEDC}
 .played{margin-top:34px}
 .h2h{display:grid;grid-template-columns:74px repeat(2,minmax(0,1fr)) 14px repeat(2,minmax(0,1fr));gap:6px;align-items:center}
+.mx{outline:2.5px solid #F3F6FB;outline-offset:2px;box-shadow:0 0 12px rgba(255,255,255,.55)!important}
+.mline{font-size:12px;line-height:1.4;padding:6px 8px 0;border-top:1px solid #1F2A42;margin-top:6px;color:#86EFAC}
 .h2h .vs{font-size:9px;font-weight:800;color:#5B6680;text-align:center;letter-spacing:.04em}
 .h2h .tm{grid-column:span 2;text-align:center;font-size:11.5px;font-weight:800;color:#DCE2EE;letter-spacing:.04em}
 .hm .vs{font-size:9px;font-weight:800;color:#5B6680;text-align:center}
@@ -81,15 +83,24 @@ const H2H = [{f:'off_epa',d:'def_epa',lab:'Off vs Def',sub:'EPA/play'},{f:'def_e
              {f:'off_sr',d:'def_sr',lab:'Off vs Def',sub:'success rate'},{f:'def_sr',d:'off_sr',lab:'Def vs Off',sub:'success rate'}];
 function pills(g){
   const fav = team(g,g.fav), dog = team(g,g.dog);
+  const sc = g.scoring||{};
   const cell = (t,w,m,cls) => { const r = ((t[w]||{}).ranks||{})[m];
-    return `<div class="pill ${cls(r)}" title="${esc(t.abbr)} ${w==='season'?'season':'last 3'} ${esc(MN[m])}: rank ${r??'–'} of 32">${r??'–'}</div>`; };
+    return `<div class="pill ${cls(r)}${isMx(sc,t===fav?'fav':'dog',m,w)?' mx':''}" title="${esc(t.abbr)} ${w==='season'?'season':'last 3'} ${esc(MN[m])}: rank ${r??'–'} of 32">${r??'–'}</div>`; };
   let h = `<div class="pills"><div class="h2h"><span></span><span class="tm">${esc(fav.abbr)}</span><span></span><span class="tm">${esc(dog.abbr)}</span></div>
     <div class="h2h" style="margin-top:-3px"><span></span>${['Season','Last 3','','Season','Last 3'].map(x=>`<div class="ph"><span>${x}</span></div>`).join('')}</div>`;
   H2H.forEach((c,i)=>{
     h += `<div class="h2h" style="margin-top:${i===2?8:0}px"><div class="pl"><b>${c.lab}</b><span>${c.sub}</span></div>`
       + cell(fav,'season',c.f,favCls) + cell(fav,'last3',c.f,favCls) + `<span class="vs">vs</span>` + cell(dog,'season',c.d,dogCls) + cell(dog,'last3',c.d,dogCls) + '</div>';
   });
-  return h + '</div>';
+  return h + matchLine(sc, fav.abbr, dog.abbr) + '</div>';
+}
+// Matchups (owner Nov 15, information only): spread 7+ games, last-3 success rate; last-3 cells outlined + one line
+const metOf = sc => ((sc||{}).matchups||[]).filter(m=>m.met);
+const isMx = (sc, role, metric, w) => w==='last3' && metOf(sc).some(m=>(role==='fav'?m.fav_metric:m.dog_metric)===metric);
+function matchLine(sc, fa, da){
+  const met = metOf(sc);
+  if(!met.length) return '';
+  return `<div class="mline"><b>Matchup ✓</b> ${met.map(m=>`${esc(m.label)}, success rate (${esc(fa)} #${m.fav_rank} · ${esc(da)} #${m.dog_rank})`).join(' · ')}<br><span style="color:#9AA4BA">Pregame: favorites won 89% (140-18), vs 75% without. Leading at halftime they held 98%, after the 3rd 98% (2021-26).</span></div>`;
 }
 
 function edgeBar(e){

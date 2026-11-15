@@ -92,7 +92,11 @@ NFL rules (spec "NFL Stat Edge v2", decisions Nov 8 2026):
   college football board); cards open an L2 view (`#g-<id>`) with
   Pregame/Live tabs (Live = `nfl/game.html?g=<id>`), "How it qualifies", score, pills, details. Metric pills (owner Nov 15, as NHL/college;
   template `H2H`): rows read across, favorite season / last 3 vs underdog season / last 3: offense vs defense and defense vs
-  offense, for EPA/play and success rate; colors unchanged; no matchup outlines (not backtested for the NFL). Board pills (Nov 10, as NBA): L2 WW green / split yellow / LL red and PR
+  offense, for EPA/play and success rate; colors unchanged. Matchups (owner Nov 15, INFORMATION ONLY, tiers unchanged;
+  `scoring.matchups`, `MATCHUP_PAIRS`): spread 7+ games, last-3 SUCCESS RATE, fav top 10 vs dog 23-32 in defense vs defense,
+  defense vs offense or offense vs defense; last-3 cells outlined + a Matchup line ("Pregame: favorites won 89% (140-18), vs
+  75% without. Leading at halftime they held 98%, after the 3rd 98% (2021-26)"). Backtest `scripts/nfl_matchup_backtest.py`
+  (1,216 games): EPA/play matchups and offense vs offense add nothing beyond the spread; under 7 points nothing separated. Board pills (Nov 10, as NBA): L2 WW green / split yellow / LL red and PR
   (consensus) 1-10 green / 11-22 yellow / 23-32 red for the favorite; flipped for the underdog. Hero score 40: fav 16 (top 5 = 2, 6-10 = 1), dog 16 (outside top 10 = 1,
   ranks 23-32 = 2), health 4 (QB active 2, other key starter 1, interior OL 1; 0 without injury info), home 1, rest 1 (fav off
   a bye, or dog on a short week while the fav isn't), form 2 (fav last 2). Bands red 0-17, yellow 18-27, green 28-40.

@@ -50,6 +50,15 @@ LIVE_TIERS = ("qualified", "watch")       # followed live (Live page, checkpoint
 ALERT_TIERS = ("qualified",)              # phone pushes (owner Nov 10: not the watch list)
 SEASON_FLOOR = 15                          # route B: favorite season top 15 in all four
 DOG_BOTTOM = 23                            # bottom 10 of 32
+# Matchups (owner Nov 15, INFORMATION ONLY, tiers unchanged): spread 7+ games; last-3 success rate, favorite top 10
+# vs underdog 23-32. Backtest 2021-26 (scripts/nfl_matchup_backtest.py): any of the three won 140-18 (89%, spread
+# predicts 82%) vs 109-36 (75%) without; leads held 98% at halftime and after the 3rd. EPA/play matchups and offense
+# vs offense showed no edge (the line prices them).
+MATCH_SPREAD = 7.0
+MATCH_TOP = 10
+MATCHUP_PAIRS = (("def_def", "Defense vs defense", "def_sr", "def_sr"),
+                 ("def_off", "Defense vs offense", "def_sr", "off_sr"),
+                 ("off_def", "Offense vs defense", "off_sr", "def_sr"))
 
 
 def band(score: int) -> str:
@@ -241,6 +250,19 @@ def call(qual: dict, edge: dict, fav: dict, dog: dict) -> str:
     return "Edge clears" if edge.get("clears") else "Track, edge short"
 
 
+def matchups(game: dict, fav: dict, dog: dict) -> list[dict]:
+    """Last-3 success-rate pairings, met only when the favorite lays 7+ (see MATCHUP_PAIRS)."""
+    sp = game.get("spread")
+    in_range = sp is not None and abs(sp) >= MATCH_SPREAD
+    out = []
+    for key, label, fm, dm in MATCHUP_PAIRS:
+        fr, dr = fav["last3"]["ranks"].get(fm), dog["last3"]["ranks"].get(dm)
+        out.append({"key": key, "label": label, "fav_metric": fm, "dog_metric": dm, "fav_rank": fr, "dog_rank": dr,
+                    "in_range": in_range,
+                    "met": in_range and fr is not None and dr is not None and fr <= MATCH_TOP and dr >= DOG_BOTTOM})
+    return out
+
+
 def score_game(game: dict, fav: dict, dog: dict) -> dict:
     hs = hero_score(game, fav, dog)
     q = qualification(fav, dog, hs["score"])
@@ -248,4 +270,4 @@ def score_game(game: dict, fav: dict, dog: dict) -> dict:
     return {k: q[k] for k in ("qualified", "tier", "tier_label", "tracked", "alerts", "routes", "route", "rules",
                               "context", "qualifiers", "fails", "failed")} | {
             "hero": hs, "edge": e, "flags": flags(game, fav, dog, e, q.get("power_fail")), "under": under_gate(game, fav, dog),
-            "call": call(q, e, fav, dog)}
+            "call": call(q, e, fav, dog), "matchups": matchups(game, fav, dog)}
