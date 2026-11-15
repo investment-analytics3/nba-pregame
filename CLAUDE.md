@@ -220,6 +220,8 @@ NHL rules (owner decisions Nov 12-13 2026; spec "NHL Board"):
 - Board grid (owner Nov 15, `scoring.GRID`, card + L2 heat map + bars): rows read across as head-to-head, favorite season / last 5
   vs underdog season / last 5: offense vs defense, defense vs offense, shot share, goaltending, special teams; colors unchanged;
   last-5 cells of a counting matchup outlined, a "Matchup" line under the grid.
+  Goalie label (owner Nov 15): "(starter)" / "(backup)" after the name; favorite starter green, backup red; underdog
+  starter yellow, backup green; not posted grey.
 - Board: daily like the NBA (today's games, then tomorrow's preview once today's are final), tier locks 1 h before puck drop;
   one phone push a day (weekdays 1 PM PT after goalies post, weekends 9 AM PT) only when a game today is Qualified.
 - Live: Qualified + Watch list tracked. Readouts at the end of the 1st and 2nd (Live page + log), 3rd period before 10:00
