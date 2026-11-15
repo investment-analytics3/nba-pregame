@@ -190,6 +190,11 @@ College basketball rules (owner decisions Nov 11 2026; spec "College Basketball 
   Pushes Qualified only: 2H 10:00 + first BET.
 - Backtest 2025-26 (894 games): favorites won 90.4% vs DK price 91.2%; Qualified 10-0 (price ~94%); Watch list 92% vs 92%;
   tracked favorites up 10+ at 2H 10:00 won 200/200 (ESPN WP ~98.5%). Review Kalshi price logs after a few weeks.
+- Board grid (owner Nov 15, as NHL; `scoring.GRID`, card + L2 heat map + bars): rows read across, favorite season / last 3
+  vs underdog season / last 3: offense vs defense, defense vs offense, shooting vs shot D, shot D vs shooting; colors unchanged.
+  Matchups (`scoring.matchups`, INFORMATION ONLY, tiers unchanged): fav top 50 / dog bottom 50 over the last 3 in offense vs
+  offense, defense vs defense or fav defense vs dog offense; last-3 cells outlined + a Matchup line. Backtest (spread pool
+  2025-26): any of the three 98-7 (93%) vs 90% without; fav offense vs dog defense 88% (shown, doesn't count).
 - Analyst readouts: `data/cbb/readouts/<date>.json` (format: README there), owner's Claude scheduled task "College hoops
   analyst readouts" (daily 5:13 AM PT, tracked games, max 12), commits only that file and dispatches `cbb.yml`
   force_build=true, send=false. The readout's injury line is the only injury check.

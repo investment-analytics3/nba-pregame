@@ -117,6 +117,32 @@ def power_gate(dog_power: dict | None) -> list[str]:
     return [f"{label} #{p[k]}" for label, k, cut in POWER_SOURCES if p.get(k) is not None and p[k] <= cut]
 
 
+# Matchups (owner Nov 15, information only: tiers unchanged): favorite top 50, underdog bottom 50, last 3 games.
+# Backtest (spread -10 to -20, 2025-26, 894 games, 90.4%): offense vs offense 35-3, defense vs defense 38-2, favorite
+# defense vs underdog offense 43-2, any of the three 98-7 (93%), none 90%; favorite offense vs underdog defense 44-6 (88%,
+# shown, doesn't count). Top 100 vs bottom 100 by net rating (both seasons): any of the three 95% vs 90%.
+# (key, label, favorite metric, underdog metric, counts)
+MATCHUPS = (("off_off", "Offense vs offense", "off", "off", True),
+            ("def_def", "Defense vs defense", "def", "def", True),
+            ("def_off", "Defense vs offense", "def", "off", True),
+            ("off_def", "Offense vs defense", "off", "def", False))
+# head-to-head grid: each row reads across, favorite (season, last 3) vs underdog (season, last 3)
+GRID = (("off_def", "Offense vs defense", "off", "def"),
+        ("def_off", "Defense vs offense", "def", "off"),
+        ("shoot", "Shooting vs shot defense", "efg", "opp_efg"),
+        ("shotd", "Shot defense vs shooting", "opp_efg", "efg"))
+
+
+def matchups(fav: dict, dog: dict, n: int = N_D1) -> list[dict]:
+    """The four last-3 pairings; met = favorite top 50 AND underdog bottom 50."""
+    out = []
+    for key, label, fm, dm, counts in MATCHUPS:
+        fr, dr = _r(fav, "last3", fm), _r(dog, "last3", dm)
+        out.append({"key": key, "label": label, "fav_metric": fm, "dog_metric": dm, "fav_rank": fr, "dog_rank": dr, "counts": counts,
+                    "met": fr is not None and dr is not None and fr <= STRONG and dr >= weak_from(n)})
+    return out
+
+
 def score_game(game: dict, fav: dict, dog: dict, day: str, n: int = N_D1) -> dict:
     """Tier, routes, gates, Analysis Score and L1 pills for one game (favorite's point of view)."""
     fa, da = fav.get("abbr", "Favorite"), dog.get("abbr", "Underdog")
@@ -205,12 +231,20 @@ def score_game(game: dict, fav: dict, dog: dict, day: str, n: int = N_D1) -> dic
             rk = _r(team, w, m)
             cells.append({"metric": m, "rank": rk, "color": fav_color(rk) if role == "fav" else dog_color(rk, n)})
         pills.append({"team": team.get("abbr"), "role": role, "window": w, "cells": cells})
+    grid = []
+    for key, label, fm, dm in GRID:
+        cells = [{"team": fa, "role": "fav", "window": w, "metric": fm, "rank": _r(fav, w, fm), "color": fav_color(_r(fav, w, fm))}
+                 for w in ("season", "last3")]
+        cells += [{"team": da, "role": "dog", "window": w, "metric": dm, "rank": _r(dog, w, dm), "color": dog_color(_r(dog, w, dm), n)}
+                  for w in ("season", "last3")]
+        grid.append({"key": key, "label": label, "fav_metric": fm, "dog_metric": dm, "cells": cells})
 
     return {"scored": True, "fav": fa, "dog": da, "qualified": tier == "qualified", "tier": tier,
             "tier_label": TIER_LABEL[tier], "tracked": tier in LIVE_TIERS, "alerts": tier in ALERT_TIERS,
             "routes": routes, "route": " + ".join(routes), "qualifiers": [], "would_qualify": bool(routes) and not (injury_fails or power_fail),
             "early": early, "rules": rules, "fails": fails, "warnings": warnings,
-            "score": total, "max": 40, "band": a["band"], "parts": a["parts"], "pills": pills}
+            "score": total, "max": 40, "band": a["band"], "parts": a["parts"], "pills": pills,
+            "grid": grid, "matchups": matchups(fav, dog, n)}
 
 
 def _cut_label() -> str:
