@@ -197,10 +197,11 @@ function teamLine(g, t){
 // Starting goalie (owner: like the NFL quarterback). Favorite's backup in net = red; not posted yet = yellow.
 function goalieLine(t){
   const g = t.goalie||{}, st = t.goalie_status;
-  const bad = t.is_fav && st==='backup', unk = st==='unknown';
-  const col = bad ? 'color:#fff;background:linear-gradient(180deg,#D44444,#A12222)' : (unk ? 'color:#2A1C00;background:linear-gradient(180deg,#FADB80,#D9A12A)'
-    : (st==='backup' ? 'color:#fff;background:linear-gradient(180deg,#34C77B,#1A8A4C)' : 'color:#C7CEDC;background:#1A2236;border:1px solid #2E3B5C'));
-  const txt = g.name ? `${g.name}${g.confirmed?' ✓':''}${st==='backup'?' (backup)':''}` : 'goalie not posted';
+  // owner Nov 15: favorite starter green / backup red; underdog starter yellow / backup green; not posted grey
+  const known = g.name && (st==='regular' || st==='backup');
+  const col = !known ? 'color:#C7CEDC;background:#1A2236;border:1px solid #2E3B5C'
+    : (t.is_fav===false ? (st==='backup' ? B2B_G : B2B_Y) : (st==='backup' ? B2B_R : B2B_G));
+  const txt = g.name ? `${g.name}${g.confirmed?' ✓':''}${st==='backup'?' (backup)':(st==='regular'?' (starter)':'')}` : 'goalie not posted';
   return `<div class="sub" style="margin-top:3px"><span style="font-size:11px;font-weight:700;letter-spacing:.06em;color:#7C869E">G</span> <span class="yn" style="${col}" title="${esc(st==='backup'?'Backup goalie; regular: '+(t.regular_goalie_name||'?'):(g.confirmed?'Confirmed starter':'Probable starter'))}">${esc(txt)}</span></div>`;
 }
 
