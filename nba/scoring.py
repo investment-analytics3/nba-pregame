@@ -39,6 +39,16 @@ METRICS = ("efg", "off", "opp_efg", "def")
 NAMES = {"efg": "eFG%", "off": "Off Eff", "opp_efg": "Opp eFG%", "def": "Def Eff"}
 # Each pill column pairs a favorite metric with the underdog metric it runs into.
 MATCHUPS = [("efg", "opp_efg"), ("off", "def"), ("opp_efg", "efg"), ("def", "off")]
+# Matchups (owner Nov 15, INFORMATION ONLY, tiers unchanged): only in games where the favorite is top 10 and the underdog
+# bottom 10 (21-30) in season net rating; met = favorite top 10 and underdog bottom 10 over the last 3 in any of these
+# pairings (all four held up in the NBA). Backtest 2023-26 (756 such games, favorite = better net rating): any matchup
+# 391-83 (82%) vs 219-63 (78%) without; a halftime lead held 92% (vs 86%), an end-of-3rd lead 95% (vs 91%).
+# Outside that range the lift was small (64% vs 61%), so nothing is marked there.
+MATCH_TOP, MATCH_BOTTOM_FROM = 10, 21
+MATCHUP_PAIRS = (("off_off", "Offense vs offense", "off", "off"),
+                 ("def_def", "Defense vs defense", "def", "def"),
+                 ("def_off", "Defense vs offense", "def", "off"),
+                 ("off_def", "Offense vs defense", "off", "def"))
 # Board grid (owner Nov 15, as NHL / college): each row reads across, favorite (season, last 3) vs underdog (season, last 3)
 GRID = (("off_def", "Offense vs defense", "off", "def"),
         ("def_off", "Defense vs offense", "def", "off"),
@@ -82,6 +92,19 @@ def dog_color(rank) -> str:
     if rank <= 5:
         return "deep-red"
     return "red" if rank <= 10 else ("yellow" if rank <= 20 else "green")
+
+
+def matchups(fav: dict, dog: dict) -> list[dict]:
+    """Last-3 pairings, met only in a top-10 vs bottom-10 net-rating game (see MATCHUP_PAIRS)."""
+    fn, dn = _rank(fav, "season", "net"), _rank(dog, "season", "net")
+    in_range = fn is not None and dn is not None and fn <= MATCH_TOP and dn >= MATCH_BOTTOM_FROM
+    out = []
+    for key, label, fm, dm in MATCHUP_PAIRS:
+        fr, dr = _rank(fav, "last3", fm), _rank(dog, "last3", dm)
+        out.append({"key": key, "label": label, "fav_metric": fm, "dog_metric": dm, "fav_rank": fr, "dog_rank": dr,
+                    "counts": True, "in_range": in_range,
+                    "met": in_range and fr is not None and dr is not None and fr <= MATCH_TOP and dr >= MATCH_BOTTOM_FROM})
+    return out
 
 
 def score_game(game: dict) -> dict:
@@ -226,7 +249,7 @@ def score_game(game: dict) -> dict:
         "routes": routes, "route": " + ".join(routes),
         "fails": fails, "warnings": warnings, "rules": rules, "context": context,
         "qualifiers": [NAMES[m] for m in qualifiers],
-        "score": total, "max": MAX_SCORE, "band": band(total), "parts": parts, "pills": pills, "grid": grid,
+        "score": total, "max": MAX_SCORE, "band": band(total), "parts": parts, "pills": pills, "grid": grid, "matchups": matchups(fav, dog),
     }
 
 

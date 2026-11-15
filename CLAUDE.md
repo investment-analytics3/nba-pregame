@@ -310,7 +310,12 @@ often: always `git pull --rebase origin main` before pushing.
   L1 live chips and Live page follow (Qualified + Watch list since Nov 9).
 - Metric grid (owner Nov 15, as NHL/college; `scoring.GRID` -> `sc.grid`, card + L2 heat map + bars): rows read across,
   favorite season / last 3 vs underdog season / last 3: offense vs defense, defense vs offense, shooting vs shot D, shot D vs
-  shooting; colors unchanged; no matchup outlines (not backtested for the NBA). `sc.pills` is kept for older pages.
+  shooting; colors unchanged. `sc.pills` is kept for older pages.
+  Matchups (owner Nov 15, INFORMATION ONLY, tiers unchanged; `scoring.matchups`, `MATCHUP_PAIRS`): only in games where the
+  favorite is top 10 and the underdog 21-30 in season net rating; met = fav top 10 / dog 21-30 over the last 3 in offense vs
+  offense, defense vs defense, defense vs offense or offense vs defense (all four held up). Last-3 cells outlined + a Matchup
+  line: "Pregame: favorites won 82%, vs 78% without. Leading at halftime they held 92%, after the 3rd 95%". Backtest
+  `scripts/nba_matchup_backtest.py` (2023-26, 756 range games; outside the range the lift was 64% vs 61%, so not marked).
 - L1: three sections (Qualified green, Watch list amber, Did not qualify red line). B2B pills by role (owner Nov 11):
   favorite Yes = red, No = green; underdog Yes = green (tired opponent), No = yellow (board, Results page, email text).
   L2 shows each team's season record in the second game of back-to-backs (`b2b_record`, build_slate `b2b_records`).

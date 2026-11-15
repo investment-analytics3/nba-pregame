@@ -163,3 +163,32 @@ class HeroScore(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Matchups(unittest.TestCase):
+    """Owner Nov 15: last-3 matchups, information only, marked only in top-10 vs bottom-10 net-rating games."""
+    def ranks(self, **kw):
+        base = dict(zip(scoring.METRICS, (15,) * len(scoring.METRICS)))
+        base.update(kw)
+        return tuple(base[m] for m in scoring.METRICS)
+
+    def test_met_only_in_range(self):
+        fav = team("FAV", self.ranks(), self.ranks(off=4), net=3)
+        dog = team("DOG", self.ranks(), self.ranks(off=27), net=26)
+        sc = scoring.score_game(game(fav, dog))
+        met = {m["key"] for m in sc["matchups"] if m["met"]}
+        self.assertEqual(met, {"off_off"})
+        tier = sc["tier"]
+        # outside the net-rating range nothing is marked, and the tier never depends on it
+        dog["season"]["ranks"]["net"] = 18
+        sc2 = scoring.score_game(game(fav, dog))
+        self.assertFalse(any(m["met"] for m in sc2["matchups"]))
+        self.assertEqual(sc2["tier"], scoring.score_game(game(fav, dog))["tier"])
+        self.assertIn(tier, ("qualified", "watch", "out"))
+
+    def test_all_four_pairings_count(self):
+        fav = team("FAV", self.ranks(), self.ranks(off=10, **{"def": 2}), net=1)
+        dog = team("DOG", self.ranks(), self.ranks(off=21, **{"def": 30}), net=30)
+        sc = scoring.score_game(game(fav, dog))
+        self.assertEqual({m["key"] for m in sc["matchups"] if m["met"]}, {"off_off", "def_def", "def_off", "off_def"})
+        self.assertEqual([r["key"] for r in sc["grid"]], ["off_def", "def_off", "shoot", "shotd"])

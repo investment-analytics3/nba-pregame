@@ -50,6 +50,8 @@ box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 3px 8px rgba(0,0,0,.35)}
 .h2h{display:grid;grid-template-columns:74px repeat(2,minmax(0,1fr)) 14px repeat(2,minmax(0,1fr));gap:6px;align-items:center}
 .h2h .vs{font-size:9px;font-weight:800;color:#5B6680;text-align:center;letter-spacing:.04em}
 .h2h .tm{grid-column:span 2;text-align:center;font-size:11.5px;font-weight:800;color:#DCE2EE;letter-spacing:.04em}
+.mx{outline:2.5px solid #F3F6FB;outline-offset:2px;box-shadow:0 0 12px rgba(255,255,255,.55)!important}
+.mline{font-size:12px;line-height:1.4;padding:6px 8px 0;border-top:1px solid #1F2A42;margin-top:4px;color:#86EFAC}
 .hm .vs{font-size:9px;font-weight:800;color:#5B6680;text-align:center}
 .ph{display:flex;flex-direction:column;align-items:center;line-height:1.15}.ph b{font-size:10.5px;color:#C7CEDC}.ph span{font-size:9.5px;color:var(--dim)}
 .pl{display:flex;flex-direction:column;line-height:1.1}.pl b{font-size:12px;color:#DCE2EE}.pl span{font-size:10px;color:var(--dim)}
@@ -127,6 +129,14 @@ const NAMES = {efg:'eFG%', off:'Off Eff', opp_efg:'Opp eFG%', def:'Def Eff'};
 const H2H = [{f:'off',d:'def',fly:'Offense vs defense',lab:'Off vs Def'},{f:'def',d:'off',fly:'Defense vs offense',lab:'Def vs Off'},
              {f:'efg',d:'opp_efg',fly:'Shooting vs shot D',lab:'Shoot vs D'},{f:'opp_efg',d:'efg',fly:'Shot D vs shooting',lab:'Shot D vs Shoot'}];
 const SHORT = {efg:'eFG%', off:'Off Eff', opp_efg:'Opp eFG%', def:'Def Eff'};
+// Matchups (owner Nov 15, information only): top-10 vs bottom-10 net-rating games; last-3 cells outlined + one line
+const metOf = sc => ((sc||{}).matchups||[]).filter(m=>m.met);
+const isMx = (sc, role, metric, w) => w==='last3' && metOf(sc).some(m=>(role==='fav'?m.fav_metric:m.dog_metric)===metric);
+function matchLine(sc, fa, da){
+  const met = metOf(sc);
+  if(!met.length) return '';
+  return `<div class="mline"><b>Matchup ✓</b> ${met.map(m=>`${esc(m.label)} (${esc(fa)} #${m.fav_rank} · ${esc(da)} #${m.dog_rank})`).join(' · ')}<br><span style="color:#9AA4BA">Pregame: favorites won 82%, vs 78% without. Leading at halftime they held 92%, after the 3rd 95% (2023-26).</span></div>`;
+}
 const COLS_OLD = [{f:'efg',d:'opp_efg',top:'eFG%',sub:'vs D eFG',fly:'Shooting'},{f:'off',d:'def',top:'OFF',sub:'vs DEF',fly:'Scoring'},
               {f:'opp_efg',d:'efg',top:'D eFG',sub:'vs eFG',fly:'Shot defense'},{f:'def',d:'off',top:'DEF',sub:'vs OFF',fly:'Stops'}];
 const BAND = {green:{num:'#5BEA9E',word:'Strong edge'},yellow:{num:'#FFD66B',word:'Moderate'},red:{num:'#FF7676',word:'Risk'}};
@@ -192,11 +202,11 @@ function pillGrid(sc, base){
     <div class="h2h" style="margin-top:-3px"><span></span>${['Season','Last 3','','Season','Last 3'].map(x=>`<span class="ph"><span>${x}</span></span>`).join('')}</div>`;
   sc.grid.forEach((r,ri)=>{
     const c = H2H[ri]||{lab:r.label};
-    const cell = (x,ci) => `<span class="pill cond ${PILL[x.color]}" title="${esc(x.team)} ${x.window==='season'?'season':'last 3'} ${NAMES[x.metric]}: rank ${x.rank??'n/a'}" style="animation-delay:${base+ri*90+ci*45}ms"><span>#${x.rank??'–'}</span></span>`;
+    const cell = (x,ci) => `<span class="pill cond ${PILL[x.color]}${isMx(sc,x.role,x.metric,x.window)?' mx':''}" title="${esc(x.team)} ${x.window==='season'?'season':'last 3'} ${NAMES[x.metric]}: rank ${x.rank??'n/a'}" style="animation-delay:${base+ri*90+ci*45}ms"><span>#${x.rank??'–'}</span></span>`;
     h += `<div class="h2h" style="margin-top:${ri===2?8:0}px"><span class="pl"><b>${esc(c.lab)}</b><span>${SHORT[r.fav_metric]} · ${SHORT[r.dog_metric]}</span></span>`
       + r.cells.slice(0,2).map(cell).join('') + `<span class="vs">vs</span>` + r.cells.slice(2).map((x,i)=>cell(x,i+2)).join('') + '</div>';
   });
-  return h + '</div>';
+  return h + matchLine(sc, fa, da) + '</div>';
 }
 
 function card(g, i){
@@ -256,7 +266,7 @@ function listView(){
   return h;
 }
 
-function heat(fav, dog){
+function heat(fav, dog, sc){
   const head = [[fav.abbr,'Season'],[fav.abbr,'Last 3'],[dog.abbr,'Season'],[dog.abbr,'Last 3']];
   head.splice(2, 0, null);
   let h = `<div class="hm" style="align-items:end"><span></span>${head.map(x=>!x?'<span></span>':`<span style="text-align:center;font-size:11px;font-weight:700;color:#C7CEDC">${esc(x[0])}<br><span style="font-weight:500;color:#7C869E">${x[1]}</span></span>`).join('')}</div>`;
@@ -265,7 +275,7 @@ function heat(fav, dog){
       [[fav,'season',1,c.f],[fav,'last3',1,c.f],null,[dog,'season',0,c.d],[dog,'last3',0,c.d]].map((x,ci)=>{
         if(!x) return '<span class="vs">vs</span>';
         const [t,w,isF,m] = x, r = rk(t,w,m), v = (t[w]||{})[m];
-        return `<span class="cell ${isF?favCls(r):dogCls(r)}" style="animation-delay:${250+ri*80+ci*40}ms"><b class="cond" style="font-size:15px;line-height:1">${fmt(m,v)}</b><span style="font-size:10.5px;font-weight:700;opacity:.85">#${r??'–'}</span></span>`;
+        return `<span class="cell ${isF?favCls(r):dogCls(r)}${isMx(sc,isF?'fav':'dog',m,w)?' mx':''}" style="animation-delay:${250+ri*80+ci*40}ms"><b class="cond" style="font-size:15px;line-height:1">${fmt(m,v)}</b><span style="font-size:10.5px;font-weight:700;opacity:.85">#${r??'–'}</span></span>`;
       }).join('') + '</div>';
   });
   return h;
@@ -346,7 +356,7 @@ function detailView(g){
       <div class="fade" style="position:absolute;top:-5px;left:${sc.score/MAX*100}%;width:3px;height:16px;margin-left:-1.5px;border-radius:2px;background:#fff;box-shadow:0 0 6px rgba(255,255,255,.8);animation-delay:900ms"></div>
       <div style="position:relative;height:16px;margin-top:4px;font-size:10.5px;color:var(--dim)"><span style="position:absolute;left:0">0 · Risk</span><span style="position:absolute;left:${18/MAX*100}%">18 · Moderate</span><span style="position:absolute;left:${28/MAX*100}%">28 · Strong</span><span style="position:absolute;right:0">${MAX}</span></div></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px 20px;margin-top:16px">${sc.parts.map(p=>`<div class="row" style="gap:8px;font-size:13px;color:#C7CEDC"><i class="sw" style="background:${segCol[p.key]}"></i><span style="flex:1">${esc(p.label)}</span><b class="cond" style="font-size:15px">${p.points}<span style="color:#7C869E;font-weight:500"> / ${p.max}</span></b></div>`).join('')}</div></div>`;
-    h += `<div class="cols2"><div class="panel pad"><h3>Metric heat map</h3><p class="note">Value and league rank; each row reads across as a matchup. Underdog colors are flipped, so green is always good for the bet.</p>${heat(fav,dog)}</div>
+    h += `<div class="cols2"><div class="panel pad"><h3>Metric heat map</h3><p class="note">Value and league rank; each row reads across as a matchup. Underdog colors are flipped, so green is always good for the bet.</p>${heat(fav,dog,sc)}${matchLine(sc,fav.abbr,dog.abbr)}</div>
       <div class="panel pad"><h3>Head-to-head, last 3</h3><p class="note">Longer bar = stronger rank. ${esc(fav.abbr)} extends left, ${esc(dog.abbr)} right.</p>${butterfly(fav,dog)}</div></div>`;
   }
   h += `<div class="cols2">${[fav,dog].map(t=>`<div class="panel pad"><div class="row between" style="margin-bottom:10px"><h3 style="margin:0">${esc(t.name)} · last 3 games</h3><span style="font-size:12px;font-weight:700;color:#C7CEDC">L3 ${formPill(t.l3_record, t.is_fav)}${t.b2b?' · B2B tonight':''}${t.b2b_record ? ` · <span title="Season record in the second game of a back-to-back">${esc(t.b2b_record)} on back-to-backs</span>`:''}</span></div>
