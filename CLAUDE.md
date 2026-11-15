@@ -230,6 +230,8 @@ NHL rules (owner decisions Nov 12-13 2026; spec "NHL Board"):
   `hold_alerts`, kinds `hold1`/`hold2`, never repeated): end of 1st when up 1 and meets/strong; end of 2nd when that check
   met and the lead is 1 or 2. Each push: level, period shots, both defense ranks, control (xG share), Kalshi vs backtest.
   Late checkpoints (logger started after the period ended) don't push.
+- Metric window = last 5 (owner Nov 15, after a last-3 test: at 22 the last-3 Qualified group won 70% at a 70% price, no
+  edge; last 3 needed a 24 cutoff (76% vs 71%, 59 games). The owner kept last 5 (71% vs 69%, 94 games)).
 - Backtest 2024-26: 246 range games, favorite won 65% (priced 2025-26: 71% vs a 67% moneyline); score 22+ with regular goalie
   and rested 71% (94 games; priced 76% vs 69%, 33 games; re-run Nov 13 after the xGA/60 swap); small samples, review after a month.
 
