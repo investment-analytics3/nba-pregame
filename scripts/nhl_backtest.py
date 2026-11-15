@@ -1,4 +1,4 @@
-"""One-off NHL backtest (owner Nov 13, 2026), two regular seasons (2024-25, 2025-26):
+"""One-off NHL backtest (owner Nov 13, 2026; re-run Nov 15 with the matchup tiers), two regular seasons (2024-25, 2025-26):
 
   1. Range: games where a top-7 team (our consensus proxy, see below) plays a bottom-7 team. How often does the
      top-7 team win, and at what price (closing DraftKings moneyline via ESPN)?
@@ -116,7 +116,7 @@ def season(d: str, y: int) -> pd.DataFrame:
                "ml_fav_is_fav": (((ph >= pa) == fav_home) if ok_ml else None)}
         for side, t in (("fav", ft), ("dog", dt)):            # metric ranks as of the game day (season and last 5)
             for w, tag in (("season", ""), ("last5", "_l5")):
-                for m in M.METRICS:
+                for m in M.RANKED:
                     row[f"{side}_{m}{tag}"] = ((t.get(w) or {}).get("ranks") or {}).get(m)
         if gid in lead.index:
             for k in MARKS:
@@ -193,6 +193,19 @@ def holds_by_defense(df: pd.DataFrame) -> dict:
     return out
 
 
+def matchup_stats(rng: pd.DataFrame) -> dict:
+    """Owner Nov 15: last-5 matchups (favorite top 7, underdog 26-32) among range games, score 22+ and regular goalie."""
+    base = rng[(rng["score"] >= S.QUALIFY_SCORE) & (rng["fav_goalie"] == "regular")]
+    out = {}
+    for key, _label, fm, dm, _counts in S.MATCHUPS:
+        met = (base[f"fav_{fm}_l5"] <= S.MATCH_TOP) & (base[f"dog_{dm}_l5"] >= S.MATCH_BOTTOM_FROM)
+        out[key] = stat(base[met])
+        base = base.assign(**{f"m_{key}": met})
+    counting = base[[f"m_{k}" for k, *_x, c in S.MATCHUPS if c]].any(axis=1)
+    out["any_counting"], out["none"], out["base_22_regular_goalie"] = stat(base[counting]), stat(base[~counting]), stat(base)
+    return out
+
+
 def main(d: str) -> None:
     df = pd.concat([season(d, y) for y in SEASONS if os.path.exists(os.path.join(d, f"pbp_{y}.parquet"))], ignore_index=True)
     os.makedirs(OUT, exist_ok=True)
@@ -210,7 +223,9 @@ def main(d: str) -> None:
            "holds_range": holds(rng), "holds_all_favorites": holds(df),
            "holds_by_defense": {"range": holds_by_defense(rng), "qualified": holds_by_defense(rng[rng["tier"] == "qualified"]),
                                 "all_favorites": holds_by_defense(df)},
-           "by_season": {str(y): {"range": stat(g[g["in_range"]]), "all": stat(g)} for y, g in df.groupby("season")},
+           "matchups": matchup_stats(rng),
+           "by_season": {str(y): {"range": stat(g[g["in_range"]]), "all": stat(g),
+                                  "qualified": stat(g[g["in_range"] & (g["tier"] == "qualified")])} for y, g in df.groupby("season")},
            "rank_stability": {str(y): stability(d, y) for y in SEASONS if os.path.exists(os.path.join(d, f"pbp_{y}.parquet"))}}
     with open(os.path.join(OUT, "backtest.json"), "w") as f:
         json.dump(res, f, indent=1, default=str)

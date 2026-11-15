@@ -193,7 +193,7 @@ College basketball rules (owner decisions Nov 11 2026; spec "College Basketball 
 | Path | Purpose |
 |---|---|
 | `nhl/sources.py` | sportsdataverse fastRhockey releases (`nhl_pbp_full` play-by-play with expected goals per shot, `nhl_schedules`, player boxes; file year = season end), cached in `data/nhl/cache/` (git-ignored) |
-| `nhl/metrics.py` | Four metrics, season + last 5, ranked 1-32, as of a date: 5v5 expected-goals share (xGF%), 5v5 expected goals against per 60 (xGA/60, team defense apart from the goalie; lower = better; owner Nov 13 replaced Corsi), goaltending (goals saved above expected), special teams (PP% + PK%); records, L3, regular goalie, key skaters; own daily rank (xGF% rank + points-% rank) |
+| `nhl/metrics.py` | Four metrics, season + last 5, ranked 1-32, as of a date: 5v5 expected-goals share (xGF%), 5v5 expected goals against per 60 (xGA/60, team defense apart from the goalie; lower = better; owner Nov 13 replaced Corsi), goaltending (goals saved above expected), special teams (PP% + PK%); + offense 5v5 xG FOR per 60 (`xgf60`, `RANKED`, owner Nov 15: ranked + shown, NOT scored); records, L3, regular goalie, key skaters; own daily rank (xGF% rank + points-% rank) |
 | `nhl/power.py` | Consensus power rank = average of own daily rank + ESPN weekly + NHL.com weekly (`data/nhl/power/<date>.json`, written by the owner's Claude task "NHL power rankings", Tue 10:47 AM PT; a list older than 10 days is dropped), ranks logged daily (`data/nhl/power_log.json`) |
 | `nhl/scoring.py` | Range filter, Analysis Score, tiers, goalie/back-to-back caps (rules below) |
 | `nhl/espn.py`, `nhl/kalshi.py` | ESPN scoreboard (moneyline text, probable goalies), summaries, injuries; Kalshi `KXNHLGAME` |
@@ -211,9 +211,15 @@ NHL rules (owner decisions Nov 12-13 2026; spec "NHL Board"):
 - Analysis Score 40: fav metrics 16 (season + last 5; rank 1-5 = 2, 6-10 = 1), dog metrics 16 (outside top 10 = 1, 23-32 = 2),
   goalies + health 4 (fav regular goalie starts 2, dog starts its backup 1, no fav key skater out 1), home 1, rest 1 (fav
   didn't play yesterday), last-3 form 2 (3 wins = 2, 2 = 1). Ring bands: green 22+, yellow 18-21, red under 18.
-- Tiers (backtest Nov 13): Qualified = in range, score 22+, fav's regular goalie starts, fav rested. Watch list = in range, 22+
-  but a backup goalie or a back-to-back (red flag / red pill). Under 22 = No track (18-21 won 54% vs a 64% price).
-  No early-season hold. Goalie not posted = yellow warning. B2B pills as the NBA.
+- Tiers (owner Nov 15, replacing Nov 13's): Qualified = in range, score 22+, fav's regular goalie starts, AND a last-5 matchup
+  (`scoring.matchups`, fav top 7 / dog 26-32): offense vs offense (xGF/60 both), defense vs defense (xGA/60 both) or fav defense
+  (xGA/60) vs dog offense (xGF/60). Backtest 2024-26: 34-7 (83%; 18-3 / 16-4), ~20 games a season; 22+ regular goalie without a
+  matchup 38-20 (66%). Fav offense vs dog defense is shown, doesn't count (70%). Watch list = in range, 22+ with a backup goalie
+  or no matchup. Under 22 = No track (18-21 won 54% vs a 64% price). Rest rule dropped Nov 15 (added nothing; a back-to-back
+  still costs the rest point + red B2B pill). No early-season hold. Goalie not posted = yellow warning.
+- Board grid (owner Nov 15, `scoring.GRID`, card + L2 heat map + bars): rows read across as head-to-head, favorite season / last 5
+  vs underdog season / last 5: offense vs defense, defense vs offense, shot share, goaltending, special teams; colors unchanged;
+  last-5 cells of a counting matchup outlined, a "Matchup" line under the grid.
 - Board: daily like the NBA (today's games, then tomorrow's preview once today's are final), tier locks 1 h before puck drop;
   one phone push a day (weekdays 1 PM PT after goalies post, weekends 9 AM PT) only when a game today is Qualified.
 - Live: Qualified + Watch list tracked. Readouts at the end of the 1st and 2nd (Live page + log), 3rd period before 10:00

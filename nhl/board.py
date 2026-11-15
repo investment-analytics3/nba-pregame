@@ -172,7 +172,7 @@ def build(now: datetime | None = None, refresh: bool = True, day: date | None = 
     board = {"date": ds, "date_label": datetime.combine(day, datetime.min.time()).strftime("%A, %B %-d"), "kind": kind,
              "season": season, "built_at": now.astimezone(PT).isoformat(timespec="seconds"), "built_label": built_label,
              "metrics_through": through, "metrics_through_label": (datetime.fromisoformat(through).strftime("%b %-d") if through else "–"),
-             "max": 40, "top": scoring.TOP, "bottom_from": scoring.BOTTOM_FROM, "power_sources": {k: {"date": v["date"], "url": v["url"]} for k, v in pub.items()},
+             "max": 40, "top": scoring.TOP, "bottom_from": scoring.BOTTOM_FROM, "match_top": scoring.MATCH_TOP, "match_bottom_from": scoring.MATCH_BOTTOM_FROM, "power_sources": {k: {"date": v["date"], "url": v["url"]} for k, v in pub.items()},
              "games": [], "notes": notes}
     for ev in events:
         if ev.get("season_type") not in (2, None):

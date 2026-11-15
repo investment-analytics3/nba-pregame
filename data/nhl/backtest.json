@@ -29,20 +29,20 @@
  },
  "range_by_tier": {
   "qualified": {
-   "n": 94,
-   "win": 0.713,
-   "price": 0.687,
-   "edge_vs_price": 0.071,
-   "fair": 0.659,
-   "priced_n": 33
+   "n": 41,
+   "win": 0.829,
+   "price": 0.686,
+   "edge_vs_price": 0.231,
+   "fair": 0.658,
+   "priced_n": 12
   },
   "watch": {
-   "n": 60,
-   "win": 0.717,
-   "price": 0.707,
-   "edge_vs_price": 0.156,
-   "fair": 0.678,
-   "priced_n": 22
+   "n": 113,
+   "win": 0.673,
+   "price": 0.698,
+   "edge_vs_price": 0.07,
+   "fair": 0.669,
+   "priced_n": 43
   },
   "out": {
    "n": 92,
@@ -659,97 +659,97 @@
   "qualified": {
    "end1": {
     "up 1 \u00b7 D top 5": {
-     "n": 7,
-     "won": 6,
-     "win": 0.857
+     "n": 4,
+     "won": 3,
+     "win": 0.75
     },
     "up 1 \u00b7 D 6-10": {
-     "n": 4,
-     "won": 4,
-     "win": 1.0
-    },
-    "up 1 \u00b7 D 11-32": {
-     "n": 5,
-     "won": 5,
-     "win": 1.0
-    },
-    "up 2+ \u00b7 D top 5": {
-     "n": 5,
-     "won": 5,
-     "win": 1.0
-    },
-    "up 2+ \u00b7 D 6-10": {
      "n": 2,
      "won": 2,
      "win": 1.0
     },
-    "up 2+ \u00b7 D 11-32": {
-     "n": 5,
-     "won": 5,
-     "win": 1.0
-    }
-   },
-   "end2": {
-    "up 1 \u00b7 D top 5": {
-     "n": 11,
-     "won": 11,
+    "up 1 \u00b7 D 11-32": {
+     "n": 2,
+     "won": 2,
      "win": 1.0
     },
-    "up 1 \u00b7 D 6-10": {
+    "up 2+ \u00b7 D top 5": {
      "n": 4,
      "won": 4,
      "win": 1.0
     },
-    "up 1 \u00b7 D 11-32": {
-     "n": 5,
-     "won": 5,
-     "win": 1.0
-    },
-    "up 2+ \u00b7 D top 5": {
-     "n": 11,
-     "won": 11,
-     "win": 1.0
-    },
     "up 2+ \u00b7 D 6-10": {
+     "n": 1,
+     "won": 1,
+     "win": 1.0
+    },
+    "up 2+ \u00b7 D 11-32": {
+     "n": 0,
+     "won": 0,
+     "win": null
+    }
+   },
+   "end2": {
+    "up 1 \u00b7 D top 5": {
      "n": 7,
      "won": 7,
      "win": 1.0
     },
+    "up 1 \u00b7 D 6-10": {
+     "n": 1,
+     "won": 1,
+     "win": 1.0
+    },
+    "up 1 \u00b7 D 11-32": {
+     "n": 2,
+     "won": 2,
+     "win": 1.0
+    },
+    "up 2+ \u00b7 D top 5": {
+     "n": 5,
+     "won": 5,
+     "win": 1.0
+    },
+    "up 2+ \u00b7 D 6-10": {
+     "n": 5,
+     "won": 5,
+     "win": 1.0
+    },
     "up 2+ \u00b7 D 11-32": {
-     "n": 12,
-     "won": 12,
+     "n": 3,
+     "won": 3,
      "win": 1.0
     }
    },
    "p3_10": {
     "up 1 \u00b7 D top 5": {
-     "n": 6,
-     "won": 6,
+     "n": 4,
+     "won": 4,
      "win": 1.0
     },
     "up 1 \u00b7 D 6-10": {
-     "n": 6,
-     "won": 6,
+     "n": 2,
+     "won": 2,
      "win": 1.0
     },
     "up 1 \u00b7 D 11-32": {
-     "n": 6,
-     "won": 6,
+     "n": 2,
+     "won": 2,
      "win": 1.0
     },
     "up 2+ \u00b7 D top 5": {
-     "n": 14,
-     "won": 14,
+     "n": 7,
+     "won": 7,
      "win": 1.0
     },
     "up 2+ \u00b7 D 6-10": {
-     "n": 5,
-     "won": 5,
+     "n": 4,
+     "won": 4,
      "win": 1.0
     },
     "up 2+ \u00b7 D 11-32": {
-     "n": 12,
-     "won": 12,
+     "n": 4,
+     "won": 4,
      "win": 1.0
     }
    }
@@ -853,6 +853,64 @@
    }
   }
  },
+ "matchups": {
+  "off_off": {
+   "n": 12,
+   "win": 0.917,
+   "price": 0.702,
+   "edge_vs_price": 0.298,
+   "fair": 0.673,
+   "priced_n": 4
+  },
+  "def_def": {
+   "n": 24,
+   "win": 0.875,
+   "price": 0.704,
+   "edge_vs_price": 0.296,
+   "fair": 0.675,
+   "priced_n": 5
+  },
+  "def_off": {
+   "n": 19,
+   "win": 0.842,
+   "price": 0.672,
+   "edge_vs_price": 0.203,
+   "fair": 0.644,
+   "priced_n": 8
+  },
+  "off_def": {
+   "n": 20,
+   "win": 0.7,
+   "price": 0.672,
+   "edge_vs_price": 0.328,
+   "fair": 0.644,
+   "priced_n": 5
+  },
+  "any_counting": {
+   "n": 41,
+   "win": 0.829,
+   "price": 0.686,
+   "edge_vs_price": 0.231,
+   "fair": 0.658,
+   "priced_n": 12
+  },
+  "none": {
+   "n": 58,
+   "win": 0.655,
+   "price": 0.684,
+   "edge_vs_price": -0.003,
+   "fair": 0.656,
+   "priced_n": 22
+  },
+  "base_22_regular_goalie": {
+   "n": 99,
+   "win": 0.727,
+   "price": 0.685,
+   "edge_vs_price": 0.08,
+   "fair": 0.657,
+   "priced_n": 34
+  }
+ },
  "by_season": {
   "2025": {
    "range": {
@@ -862,6 +920,10 @@
    "all": {
     "n": 1276,
     "win": 0.567
+   },
+   "qualified": {
+    "n": 21,
+    "win": 0.857
    }
   },
   "2026": {
@@ -880,6 +942,14 @@
     "edge_vs_price": -0.044,
     "fair": 0.579,
     "priced_n": 936
+   },
+   "qualified": {
+    "n": 20,
+    "win": 0.8,
+    "price": 0.686,
+    "edge_vs_price": 0.231,
+    "fair": 0.658,
+    "priced_n": 12
    }
   }
  },

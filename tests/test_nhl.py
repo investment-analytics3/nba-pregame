@@ -21,8 +21,10 @@ import nhl_live  # noqa: E402
 M = metrics.METRICS
 
 
-def team(abbr, season, last5, rank, **kw):
-    return {"abbr": abbr, "season": {"ranks": dict(zip(M, season))}, "last5": {"ranks": dict(zip(M, last5))},
+def team(abbr, season, last5, rank, off=(None, None), **kw):
+    """off = (season, last 5) rank in xGF/60 (offense: ranked, not scored)."""
+    return {"abbr": abbr, "season": {"ranks": {**dict(zip(M, season)), "xgf60": off[0]}},
+            "last5": {"ranks": {**dict(zip(M, last5)), "xgf60": off[1]}},
             "l3_record": kw.pop("l3", "2-1-0"), "power": {"rank": rank}, "goalie_status": kw.pop("goalie", "regular"),
             "games": 20, "injuries_known": True, "key_out": [], **kw}
 
@@ -59,15 +61,59 @@ class Scoring(unittest.TestCase):
         self.assertTrue(sc["flags"])
         self.assertFalse(sc["alerts"])
 
-    def test_back_to_back_caps_at_watch_list(self):
-        fav, dog = self.strong(b2b=True)
+    def test_back_to_back_no_longer_caps(self):
+        fav, dog = self.strong(b2b=True)                       # owner Nov 15: rest rule dropped (rest point still lost)
+        sc = scoring.score_game({"favorite": "home"}, fav, dog, "2026-12-01")
+        self.assertEqual(sc["score"], 39)
+        self.assertEqual(sc["tier"], "qualified")
+        self.assertTrue(any("back-to-back" in w for w in sc["warnings"]))
+
+    def test_matchups(self):
+        fav, dog = self.strong()                               # fav xGA/60 last 5 #3, dog #32: defense vs defense
+        sc = scoring.score_game({"favorite": "home"}, fav, dog, "2026-12-01")
+        met = {m["key"] for m in sc["matchups"] if m["met"]}
+        self.assertEqual(met, {"def_def"})
+        self.assertIn("Defense vs defense", sc["route"])
+        # no matchup: 22+ and regular goalie but the underdog's last-5 defense is #25 -> Watch list
+        dog["last5"]["ranks"]["xga60"] = 25
         sc = scoring.score_game({"favorite": "home"}, fav, dog, "2026-12-01")
         self.assertEqual(sc["tier"], "watch")
-        self.assertIn("played yesterday", sc["fails"][0])
+        self.assertIn("no matchup", sc["fails"][0])
+        self.assertFalse(sc["alerts"])
+        # defense vs offense: fav xGA/60 #3 (last 5) vs dog xGF/60 #27 (last 5)
+        dog["last5"]["ranks"]["xgf60"] = 27
+        sc = scoring.score_game({"favorite": "home"}, fav, dog, "2026-12-01")
+        self.assertEqual(sc["tier"], "qualified")
+        self.assertIn("Defense vs offense", sc["route"])
+        # offense vs offense: fav xGF/60 #7, dog xGF/60 #26 (both last 5); fav defense now #8
+        fav["last5"]["ranks"].update(xga60=8, xgf60=7); dog["last5"]["ranks"]["xgf60"] = 26
+        sc = scoring.score_game({"favorite": "home"}, fav, dog, "2026-12-01")
+        self.assertEqual({m["key"] for m in sc["matchups"] if m["met"]}, {"off_off"})
+        self.assertEqual(sc["tier"], "qualified")
+        # offense vs defense is shown but doesn't count
+        fav["last5"]["ranks"].update(xgf60=2); dog["last5"]["ranks"].update(xgf60=10, xga60=30)
+        fav["last5"]["ranks"]["xga60"] = 12
+        sc = scoring.score_game({"favorite": "home"}, fav, dog, "2026-12-01")
+        self.assertEqual({m["key"] for m in sc["matchups"] if m["met"]}, {"off_def"})
+        self.assertEqual(sc["tier"], "watch")
+        # season ranks don't count: missing last-5 ranks = no matchup
+        fav["last5"]["ranks"].update(xgf60=None, xga60=None)
+        sc = scoring.score_game({"favorite": "home"}, fav, dog, "2026-12-01")
+        self.assertEqual(sc["tier"], "watch")
+
+    def test_grid_rows_read_as_matchups(self):
+        fav, dog = self.strong()
+        sc = scoring.score_game({"favorite": "home"}, fav, dog, "2026-12-01")
+        g = {r["key"]: r for r in sc["grid"]}
+        self.assertEqual([r["key"] for r in sc["grid"]], ["off_def", "def_off", "share", "goalie", "st"])
+        self.assertEqual((g["off_def"]["fav_metric"], g["off_def"]["dog_metric"]), ("xgf60", "xga60"))
+        self.assertEqual([c["rank"] for c in g["def_off"]["cells"]], [2, 3, None, None])
+        self.assertFalse(g["off_def"]["scored"])
+        self.assertEqual(g["def_off"]["cells"][0]["color"], "green")
 
     def test_cutoff_is_22(self):
-        fav = team("FAV", (6, 7, 8, 9), (6, 7, 8, 9), 3, l3="2-1-0")          # metrics 8
-        dog = team("DOG", (24, 25, 26, 27), (24, 25, 26, 27), 30)            # 16
+        fav = team("FAV", (6, 7, 8, 9), (6, 7, 8, 9), 3, l3="2-1-0")          # metrics 8 (last-5 defense #7)
+        dog = team("DOG", (24, 25, 26, 27), (24, 26, 26, 27), 30)            # 16 (last-5 defense #26: a matchup)
         sc = scoring.score_game({"favorite": "away"}, fav, dog, "2026-12-01")   # + goalie 2 + health 1 + rest 1 + form 1 = 29? no home
         self.assertEqual(sc["score"], 8 + 16 + 2 + 1 + 1 + 1)
         self.assertEqual(sc["tier"], "qualified")

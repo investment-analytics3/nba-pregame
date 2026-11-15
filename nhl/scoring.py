@@ -10,15 +10,19 @@ Analysis Score (max 40), built like the NFL hero score (32 teams):
   Home ice           1  favorite at home (none at neutral sites)
   Rest               1  favorite didn't play yesterday
   Last-3 form        2  favorite won 3 = 2, won 2 = 1
-Tiers (range games only; cutoffs from the 2024-26 backtest, data/nhl/backtest.json, Nov 13):
-  Qualified   score 22+, the favorite's regular goalie starts, and the favorite didn't play yesterday
-              (range favorites 22+ with both: 71% won, 94 games; priced 2025-26: 76% vs a 69% moneyline, 33 games)
-  Watch list  score 22+ but the favorite starts its backup goalie or is on a back-to-back (72% won, 60 games)
+Tiers (range games only; owner Nov 15, from the 2024-26 backtest, data/nhl/backtest.json):
+  Qualified   score 22+, the favorite's regular goalie starts, AND at least one matchup (last 5 games, ranks 1-32):
+                offense vs offense  favorite top 7 in xGF/60, underdog bottom 7 (26-32) in xGF/60
+                defense vs defense  favorite top 7 in xGA/60, underdog bottom 7 in xGA/60
+                defense vs offense  favorite top 7 in xGA/60, underdog bottom 7 in xGF/60
+              (34-7, 83%, 2024-26: 18-3 and 16-4 by season; about 20 games a season). The fourth pairing (favorite
+              offense vs underdog defense) is shown but doesn't count: it won 70%, no better than any range game.
+  Watch list  score 22+ but the favorite's backup goalie starts or there is no matchup (no matchup: 35-17, 67%)
   No track    score under 22 (18-21 won 54% vs a 64% price; under 18 won 56%)
+  The rest rule (favorite didn't play yesterday) was dropped Nov 15: it added nothing once the goalie and matchup
+  rules applied. A back-to-back still costs the rest point and shows the red B2B pill.
 Goalie flag (owner: like the NFL quarterback): the favorite's regular goalie not listed as the probable starter = red
 flag and the game is capped at the Watch list. No probable starter posted yet = yellow warning.
-Back-to-back (owner: NBA pill rules): favorite on a back-to-back = red pill and capped at the Watch list (range
-favorites on a back-to-back won 52% vs a 65% price).
 Key skater out (ESPN injury list; injured reserve / long-term IR never count, as the NFL): costs the health point and
 shows a yellow warning (one skater moves a hockey game less than a quarterback or an NBA starter).
 Live: Qualified + Watch list followed live; phone pushes for Qualified only.
@@ -30,7 +34,19 @@ from .metrics import LABELS, METRICS
 N = 32
 TOP, BOTTOM_FROM = 7, 26
 ELITE, STRONG, WEAK_FROM = 5, 10, 23
-QUALIFY_SCORE, WATCH_SCORE = 22, 22   # Watch list = a 22+ game capped by the goalie or back-to-back
+QUALIFY_SCORE, WATCH_SCORE = 22, 22   # Watch list = a 22+ game capped by the goalie or without a matchup
+MATCH_TOP, MATCH_BOTTOM_FROM = 7, 26   # matchup check: favorite top 7, underdog 26-32, last-5 ranks (owner Nov 15)
+# (key, label, favorite metric, underdog metric, counts toward Qualified)
+MATCHUPS = (("off_off", "Offense vs offense", "xgf60", "xgf60", True),
+            ("def_def", "Defense vs defense", "xga60", "xga60", True),
+            ("def_off", "Defense vs offense", "xga60", "xgf60", True),
+            ("off_def", "Offense vs defense", "xgf60", "xga60", False))
+# The board's head-to-head grid (owner Nov 15): each row reads across as one matchup
+GRID = (("off_def", "Offense vs defense", "xgf60", "xga60"),
+        ("def_off", "Defense vs offense", "xga60", "xgf60"),
+        ("share", "Shot share", "xgf", "xgf"),
+        ("goalie", "Goaltending", "gsax", "gsax"),
+        ("st", "Special teams", "st", "st"))
 CUTOVER = None                 # no early-season hold (backtest Nov 13: see data/nhl/backtest.json rank_stability)
 TIER_LABEL = {"qualified": "Qualified", "watch": "Watch list", "out": "No track"}
 LIVE_TIERS = ("qualified", "watch")
@@ -71,6 +87,16 @@ def _r(t: dict, w: str, m: str):
     return ((t.get(w) or {}).get("ranks") or {}).get(m)
 
 
+def matchups(fav: dict, dog: dict) -> list[dict]:
+    """The four last-5 pairings; `met` = favorite top 7 AND underdog bottom 7. Only `counts` ones qualify a game."""
+    out = []
+    for key, label, fm, dm, counts in MATCHUPS:
+        fr, dr = _r(fav, "last5", fm), _r(dog, "last5", dm)
+        out.append({"key": key, "label": label, "fav_metric": fm, "dog_metric": dm, "fav_rank": fr, "dog_rank": dr,
+                    "counts": counts, "met": fr is not None and dr is not None and fr <= MATCH_TOP and dr >= MATCH_BOTTOM_FROM})
+    return out
+
+
 def analysis_score(game: dict, fav: dict, dog: dict) -> dict:
     fm = sum(fav_points(_r(fav, w, m)) for m in METRICS for w in ("season", "last5"))
     dm = sum(dog_points(_r(dog, w, m)) for m in METRICS for w in ("season", "last5"))
@@ -103,12 +129,14 @@ def score_game(game: dict, fav: dict, dog: dict, day: str, in_range: bool | None
     a = analysis_score(game, fav, dog)
     total = a["score"]
     goalie_cap = fav.get("goalie_status") == "backup"
-    b2b_cap = bool(fav.get("b2b"))
+    mus = matchups(fav, dog)
+    met = [m for m in mus if m["met"] and m["counts"]]
+    no_match = not met
     early = early_season(day)
     if not rng:
         tier, routes = "out", []
-    elif total >= QUALIFY_SCORE and not goalie_cap and not b2b_cap and not early:
-        tier, routes = "qualified", [f"Score {total}"]
+    elif total >= QUALIFY_SCORE and not goalie_cap and not no_match and not early:
+        tier, routes = "qualified", [f"Score {total}"] + [m["label"] for m in met]
     elif total >= WATCH_SCORE:
         tier, routes = "watch", []
     else:
@@ -124,8 +152,10 @@ def score_game(game: dict, fav: dict, dog: dict, day: str, in_range: bool | None
          "detail": (f"{gs.get('name') or 'Backup'} listed instead of {fav.get('regular_goalie_name') or 'the regular starter'}: capped at the Watch list"
                     if goalie_cap else (f"{gs.get('name')} ({'confirmed' if gs.get('confirmed') else 'probable'})" if gs.get("name")
                                         else "No probable starter posted yet"))},
-        {"rule": "Rest", "name": f"{fa} didn't play yesterday", "pass": not b2b_cap,
-         "detail": f"{fa} on a back-to-back: capped at the Watch list" if b2b_cap else "Rested"},
+        {"rule": "Matchup", "name": f"{fa} top {MATCH_TOP} vs {da} bottom {N - MATCH_BOTTOM_FROM + 1} in a matchup (last 5)",
+         "pass": not no_match,
+         "detail": ("; ".join(f"{m['label']}: {fa} #{m['fav_rank']} vs {da} #{m['dog_rank']}" for m in met) if met else
+                    "None: offense vs offense, defense vs defense or defense vs offense (xGF/60, xGA/60): capped at the Watch list")},
     ]
     warnings, flags = [], []
     if goalie_cap:
@@ -145,8 +175,8 @@ def score_game(game: dict, fav: dict, dog: dict, day: str, in_range: bool | None
         fails = []
     elif not rng:
         fails = [f"Not a top-{TOP} vs bottom-{N - BOTTOM_FROM + 1} matchup ({fa} #{fr if fr is not None else '–'}, {da} #{dr if dr is not None else '–'})"]
-    elif (goalie_cap or b2b_cap) and total >= QUALIFY_SCORE:
-        why = " and ".join(x for x, on in ((f"{fa}'s backup goalie starts", goalie_cap), (f"{fa} played yesterday", b2b_cap)) if on)
+    elif (goalie_cap or no_match) and total >= QUALIFY_SCORE:
+        why = " and ".join(x for x, on in ((f"{fa}'s backup goalie starts", goalie_cap), ("no matchup over the last 5", no_match)) if on)
         fails = [f"Would qualify (score {total}) but {why}: Watch list"]
     elif early and total >= QUALIFY_SCORE:
         fails = [f"Early season: would qualify (score {total}); held on the Watch list"]
@@ -155,17 +185,21 @@ def score_game(game: dict, fav: dict, dog: dict, day: str, in_range: bool | None
     else:
         fails = [f"Score {total} (qualifies at {QUALIFY_SCORE})"]
 
-    pills = []
-    for team, role, w in ((fav, "fav", "season"), (fav, "fav", "last5"), (dog, "dog", "season"), (dog, "dog", "last5")):
-        cells = [{"metric": m, "rank": _r(team, w, m), "color": fav_color(_r(team, w, m)) if role == "fav" else dog_color(_r(team, w, m))}
-                 for m in METRICS]
-        pills.append({"team": team.get("abbr"), "role": role, "window": w, "cells": cells})
+    # head-to-head grid (owner Nov 15): favorite season / last 5, then underdog season / last 5; colors as before
+    grid = []
+    for key, label, fm, dm in GRID:
+        cells = [{"team": fa, "role": "fav", "window": w, "metric": fm, "rank": _r(fav, w, fm), "color": fav_color(_r(fav, w, fm))}
+                 for w in ("season", "last5")]
+        cells += [{"team": da, "role": "dog", "window": w, "metric": dm, "rank": _r(dog, w, dm), "color": dog_color(_r(dog, w, dm))}
+                  for w in ("season", "last5")]
+        grid.append({"key": key, "label": label, "fav_metric": fm, "dog_metric": dm, "scored": fm in METRICS and dm in METRICS,
+                     "cells": cells})
 
     return {"scored": True, "fav": fa, "dog": da, "in_range": rng, "qualified": tier == "qualified", "tier": tier,
             "tier_label": TIER_LABEL[tier], "tracked": tier in LIVE_TIERS, "alerts": tier in ALERT_TIERS,
             "routes": routes, "route": " + ".join(routes), "qualifiers": [], "would_qualify": bool(would),
             "rules": rules, "fails": fails, "warnings": warnings, "flags": flags,
-            "score": total, "max": 40, "band": a["band"], "parts": a["parts"], "pills": pills, "labels": LABELS}
+            "score": total, "max": 40, "band": a["band"], "parts": a["parts"], "grid": grid, "matchups": mus, "labels": LABELS}
 
 
 def order_games(games: list[dict]) -> list[dict]:

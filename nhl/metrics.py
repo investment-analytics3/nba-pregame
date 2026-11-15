@@ -10,6 +10,8 @@ Four metrics (owner Nov 12-13, spec "NHL Board"), each ranked 1-32 for the seaso
            all strengths, no shootout)
     st     special teams: power-play % + penalty-kill %  (opportunity = each new stretch with more
            skaters than the opponent, both goalies in)
+Also ranked but NOT scored (owner Nov 15): xgf60 = 5-on-5 expected goals FOR per 60 (offense), used with xga60 for the
+matchup check (scoring.matchups) and shown on the board.
 Last 5 for the metrics (hockey is noisy; three games say little), last 3 for the form record.
 Rank 1 = best for all four (highest xGF%, GSAx and special teams; LOWEST xGA/60).
 """
@@ -18,10 +20,11 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 
-METRICS = ("xgf", "xga60", "gsax", "st")
+METRICS = ("xgf", "xga60", "gsax", "st")          # the four scored metrics
+RANKED = METRICS + ("xgf60",)                     # + offense, ranked and shown, not scored (owner Nov 15)
 LOWER_IS_BETTER = {"xga60"}
-LABELS = {"xgf": "xGF% 5v5", "xga60": "xGA/60 5v5", "gsax": "GSAx/gm", "st": "PP%+PK%", "pts": "Points %"}
-SHORT = {"xgf": "xGF%", "xga60": "xGA/60", "gsax": "GSAx", "st": "ST"}
+LABELS = {"xgf60": "xGF/60 5v5", "xgf": "xGF% 5v5", "xga60": "xGA/60 5v5", "gsax": "GSAx/gm", "st": "PP%+PK%", "pts": "Points %"}
+SHORT = {"xgf60": "xGF/60", "xgf": "xGF%", "xga60": "xGA/60", "gsax": "GSAx", "st": "ST"}
 RECENT = 5
 UNBLOCKED = {"SHOT", "MISSED_SHOT", "GOAL"}
 ATTEMPTS = UNBLOCKED | {"BLOCKED_SHOT"}
@@ -107,12 +110,13 @@ def attach_results(rows: pd.DataFrame, sched: pd.DataFrame) -> pd.DataFrame:
 
 def _calc(g: pd.DataFrame) -> dict:
     if not len(g):
-        return {m: None for m in METRICS}
+        return {m: None for m in RANKED}
     s = g[["cf", "ca", "xgf", "xga", "toi5", "xga_net", "ga_net", "ppo", "ppg", "pko", "pkga"]].sum()
     pp = s.ppg / s.ppo if s.ppo else 0.0
     pk = 1 - s.pkga / s.pko if s.pko else 1.0
     return {"xgf": round(100 * s.xgf / (s.xgf + s.xga), 2) if s.xgf + s.xga else None,
             "xga60": round(3600 * s.xga / s.toi5, 3) if s.toi5 > 0 else None,
+            "xgf60": round(3600 * s.xgf / s.toi5, 3) if s.toi5 > 0 else None,
             "cf": round(100 * s.cf / (s.cf + s.ca), 2) if s.cf + s.ca else None,
             "gsax": round((s.xga_net - s.ga_net) / len(g), 3),
             "st": round(100 * (pp + pk), 1), "pp": round(100 * pp, 1), "pk": round(100 * pk, 1)}
@@ -145,10 +149,10 @@ def compute(rows: pd.DataFrame, before: str | None = None) -> dict:
                     "regular_goalie": str(int(starts.index[0])) if len(starts) else None,
                     "last_games": [{"game_id": int(x.game_id), "date": x.date, "site": x.site, "opp": x.opp, "pts": int(x.gf),
                                     "opp_pts": int(x.ga), "extra": bool(x.extra)} for x in l3.iloc[::-1].itertuples()],
-                    "trend_games": [{"date": x.date, "opp": x.opp, "metrics": {k: v for k, v in _calc(l5.iloc[[i]]).items() if k in METRICS}}
+                    "trend_games": [{"date": x.date, "opp": x.opp, "metrics": {k: v for k, v in _calc(l5.iloc[[i]]).items() if k in RANKED}}
                                     for i, x in enumerate(l5.itertuples())]}
     for w in ("season", "last5"):
-        for m in METRICS:
+        for m in RANKED:
             vals = {t: v[w][m] for t, v in teams.items() if v[w][m] is not None}
             for t, rk in _rank(vals, m in LOWER_IS_BETTER).items():
                 teams[t][w].setdefault("ranks", {})[m] = rk
