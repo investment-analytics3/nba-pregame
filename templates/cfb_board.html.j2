@@ -96,7 +96,7 @@ function pills(g){
       + cell(fav,'season',c.f,favCls) + cell(fav,'last3',c.f,favCls,hold && c.f==='def_epa')
       + `<span class="vs">vs</span>` + cell(dog,'season',c.d,dogCls) + cell(dog,'last3',c.d,dogCls) + '</div>';
   });
-  if (hold) h += `<div class="mline" style="color:#86EFAC"><b>Defense hold check ✓</b> ${esc(fav.abbr)} #${rk(fav,'last3','def_epa')} in defensive EPA (last 3, outlined) · push at halftime or end of 3rd if up 8–14 (16 of 17 / 17 of 17, 2022-26)</div>`;
+  if (hold) h += `<div class="mline" style="color:#86EFAC"><b>Defense hold check ✓</b> ${esc(fav.abbr)} #${rk(fav,'last3','def_epa')} in defensive EPA (last 3, outlined) · push at halftime or end of 3rd if up 8–14<br><span style="color:#9AA4BA">Pregame: these favorites won 82%, the same as the rest. The edge is holding 8–14 point leads: 16 of 17 at halftime, 17 of 17 after the 3rd (2022-26).</span></div>`;
   return h + '</div>';
 }
 

@@ -140,7 +140,7 @@ const metOf = sc => ((sc||{}).matchups||[]).filter(m=>m.met && m.counts);
 const isMx = (sc, role, metric, w) => w==='last5' && metOf(sc).some(m=>(role==='fav'?m.fav_metric:m.dog_metric)===metric);
 function matchLine(sc, fa, da){
   const met = metOf(sc), extra = ((sc||{}).matchups||[]).filter(m=>m.met && !m.counts);
-  if(met.length) return `<div class="mline" style="color:#86EFAC"><b>Matchup ✓</b> ${met.map(m=>`${esc(m.label)} (${esc(fa)} #${m.fav_rank} · ${esc(da)} #${m.dog_rank})`).join(' · ')} <span style="color:#7C869E">· last 5, outlined</span></div>`;
+  if(met.length) return `<div class="mline" style="color:#86EFAC"><b>Matchup ✓</b> ${met.map(m=>`${esc(m.label)} (${esc(fa)} #${m.fav_rank} · ${esc(da)} #${m.dog_rank})`).join(' · ')} <span style="color:#7C869E">· last 5, outlined</span><br><span style="color:#9AA4BA">Pregame: favorites won 83% (34-7), vs 66% without. Leading after the 1st they held 92%, after the 2nd 23 of 23 (2024-26).</span></div>`;
   return `<div class="mline" style="color:#FCD97A"><b>No matchup</b> <span style="color:#9AA4BA">· needs ${esc(fa)} top ${MT} vs ${esc(da)} bottom ${N-MB+1} (last 5) in offense vs offense, defense vs defense or defense vs offense${extra.length?'; offense vs defense is met but doesn&#39;t count':''}</span></div>`;
 }
 const favOf = g => g.favorite==='home' ? g.home : (g.favorite==='away' ? g.away : null);

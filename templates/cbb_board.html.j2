@@ -135,7 +135,7 @@ const metOf = sc => ((sc||{}).matchups||[]).filter(m=>m.met && m.counts);
 const isMx = (sc, role, metric, w) => w==='last3' && metOf(sc).some(m=>(role==='fav'?m.fav_metric:m.dog_metric)===metric);
 function matchLine(sc, fa, da){
   const met = metOf(sc);
-  if(met.length) return `<div class="mline" style="color:#86EFAC"><b>Matchup ✓</b> ${met.map(m=>`${esc(m.label)} (${esc(fa)} #${m.fav_rank} · ${esc(da)} #${m.dog_rank})`).join(' · ')} <span style="color:#7C869E">· last 3, outlined · 93% vs 90% without (2025-26)</span></div>`;
+  if(met.length) return `<div class="mline" style="color:#86EFAC"><b>Matchup ✓</b> ${met.map(m=>`${esc(m.label)} (${esc(fa)} #${m.fav_rank} · ${esc(da)} #${m.dog_rank})`).join(' · ')} <span style="color:#7C869E">· last 3, outlined</span><br><span style="color:#9AA4BA">Pregame: favorites won 93% (98-7), vs 90% without. Leading at halftime they held 98%, at 10:00 of the 2nd half 98% (2025-26).</span></div>`;
   return `<div class="mline" style="color:#9AA4BA"><b>No matchup</b> · ${esc(fa)} top ${MT} vs ${esc(da)} bottom 50 (last 3) in offense vs offense, defense vs defense or defense vs offense</div>`;
 }
 const BAND = {green:{num:'#5BEA9E',word:'Strong edge'},yellow:{num:'#FFD66B',word:'Moderate'},red:{num:'#FF7676',word:'Risk'}};

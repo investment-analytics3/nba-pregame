@@ -158,7 +158,8 @@ College rules (owner decisions Nov 10 2026, spec "College Football Board"):
 - Board grid (owner Nov 15, as NHL/CBB; template `pills()` / `H2H`): rows read across, favorite season / last 3 vs underdog
   season / last 3: offense vs defense (EPA/play), defense vs offense (EPA), same two for success rate; colors unchanged. No
   matchup outlines (they don't separate college games); the outline marks the defense hold check (fav last-3 defensive EPA
-  top 10) with a "Defense hold check" line.
+  top 10) with a "Defense hold check" line, which also says these favorites won 82% pregame (same as the rest: the edge is
+  in holding 8-14 point leads).
 
 ## College basketball (separate pipeline like the NFL/CFB: own folder, workflows, concurrency groups `cbb-data`, `cbb-live`)
 
@@ -200,7 +201,8 @@ College basketball rules (owner decisions Nov 11 2026; spec "College Basketball 
   vs underdog season / last 3: offense vs defense, defense vs offense, shooting vs shot D, shot D vs shooting; colors unchanged.
   Matchups (`scoring.matchups`, INFORMATION ONLY, tiers unchanged): fav top 50 / dog bottom 50 over the last 3 in offense vs
   offense, defense vs defense or fav defense vs dog offense; last-3 cells outlined + a Matchup line. Backtest (spread pool
-  2025-26): any of the three 98-7 (93%) vs 90% without; fav offense vs dog defense 88% (shown, doesn't count).
+  2025-26): any of the three 98-7 (93%) vs 90% without; fav offense vs dog defense 88% (shown, doesn't count). Line also says
+  leads held 98% at halftime and at 2H 10:00 (no-matchup games 97%).
 - Analyst readouts: `data/cbb/readouts/<date>.json` (format: README there), owner's Claude scheduled task "College hoops
   analyst readouts" (daily 5:13 AM PT, tracked games, max 12), commits only that file and dispatches `cbb.yml`
   force_build=true, send=false. The readout's injury line is the only injury check.
@@ -236,7 +238,8 @@ NHL rules (owner decisions Nov 12-13 2026; spec "NHL Board"):
   still costs the rest point + red B2B pill). No early-season hold. Goalie not posted = yellow warning.
 - Board grid (owner Nov 15, `scoring.GRID`, card + L2 heat map + bars): rows read across as head-to-head, favorite season / last 5
   vs underdog season / last 5: offense vs defense, defense vs offense, shot share, goaltending, special teams; colors unchanged;
-  last-5 cells of a counting matchup outlined, a "Matchup" line under the grid.
+  last-5 cells of a counting matchup outlined, a "Matchup" line under the grid with "Pregame: favorites won 83% (34-7), vs 66%
+  without. Leading after the 1st they held 92%, after the 2nd 23 of 23" (no-matchup leads after the 2nd also held 30 of 30).
   Goalie label (owner Nov 15): "(starter)" / "(backup)" after the name; favorite starter green, backup red; underdog
   starter yellow, backup green; not posted grey.
 - Board: daily like the NBA (today's games, then tomorrow's preview once today's are final), tier locks 1 h before puck drop;
