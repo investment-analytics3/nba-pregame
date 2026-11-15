@@ -8042,7 +8042,517 @@
     "bid": 0.79,
     "ask": 0.8
    },
-   "locked_at": "2026-11-15T09:45:34-08:00"
+   "locked_at": "2026-11-15T09:45:34-08:00",
+   "score": {
+    "home": 0,
+    "away": 0
+   }
+  }
+ },
+ "401925926": {
+  "at": "2026-11-15T10:00:42-08:00",
+  "day": "2026-11-15",
+  "game": {
+   "id": "401925926",
+   "tip_utc": "2026-11-15T19:00:00+00:00",
+   "tip_pt": "11:00 AM PT",
+   "day_et": "2026-11-15",
+   "state": "pre",
+   "detail": "11/15 - 2:00 PM EST",
+   "neutral": false,
+   "venue": "TD Arena",
+   "favorite": "home",
+   "spread": {
+    "spread": 18.5,
+    "details": "COFC -18.5",
+    "provider": "DraftKings",
+    "ml_home": -2400,
+    "ml_away": 1200
+   },
+   "home": {
+    "id": "232",
+    "abbr": "COFC",
+    "name": "Charleston",
+    "display": "Charleston Cougars",
+    "mascot": "Cougars",
+    "record": "3-0",
+    "l3_record": "3-0",
+    "games": 1,
+    "season": {
+     "efg": 62.96,
+     "opp_efg": 49.32,
+     "off": 127.74,
+     "def": 113.7,
+     "net": 14.04,
+     "poss_per_game": 71.2,
+     "ranks": {
+      "efg": 9,
+      "off": 21,
+      "opp_efg": 144,
+      "def": 263,
+      "net": 99
+     }
+    },
+    "last3": {
+     "efg": 62.96,
+     "opp_efg": 49.32,
+     "off": 127.74,
+     "def": 113.7,
+     "net": 14.04,
+     "poss_per_game": 71.2,
+     "ranks": {
+      "efg": 10,
+      "off": 24,
+      "opp_efg": 154,
+      "def": 258,
+      "net": 94
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401925858,
+      "date": "2026-11-11",
+      "site": "away",
+      "opp_id": 218,
+      "opp": "TEM",
+      "d1_opp": true,
+      "pts": 91,
+      "opp_pts": 81,
+      "metrics": {
+       "efg": 62.96,
+       "opp_efg": 49.32,
+       "off": 127.74,
+       "def": 113.7,
+       "net": 14.04
+      },
+      "opp_power_rank": 195
+     },
+     {
+      "game_id": 401926813,
+      "date": "2026-11-06",
+      "site": "home",
+      "opp_id": 2444,
+      "opp": "NBRY",
+      "d1_opp": false,
+      "pts": 112,
+      "opp_pts": 66,
+      "metrics": {
+       "efg": 64.67,
+       "opp_efg": 43.33,
+       "off": 139.63,
+       "def": 82.28,
+       "net": 57.35
+      },
+      "opp_power_rank": null
+     },
+     {
+      "game_id": 401931655,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 2576,
+      "opp": "SWES",
+      "d1_opp": false,
+      "pts": 111,
+      "opp_pts": 55,
+      "metrics": {
+       "efg": 63.53,
+       "opp_efg": 34.85,
+       "off": 136.57,
+       "def": 67.67,
+       "net": 68.9
+      },
+      "opp_power_rank": null
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-18.5",
+    "b2b": false,
+    "power": {
+     "rank": 102,
+     "bpi": 107,
+     "own_net": 99
+    },
+    "key_players": [
+     "Tavari Johnson",
+     "Max Green",
+     "Eli Ellis",
+     "Ben Bradford",
+     "Braden Pierce"
+    ],
+    "top_scorers": [
+     {
+      "name": "Tavari Johnson",
+      "ppg": 18.7
+     },
+     {
+      "name": "Ben Bradford",
+      "ppg": 15.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "2569",
+    "abbr": "SCST",
+    "name": "South Carolina State",
+    "display": "South Carolina State Bulldogs",
+    "mascot": "Bulldogs",
+    "record": "3-1",
+    "l3_record": "2-1",
+    "games": 3,
+    "season": {
+     "efg": 43.94,
+     "opp_efg": 52.19,
+     "off": 98.2,
+     "def": 105.82,
+     "net": -7.62,
+     "poss_per_game": 74.3,
+     "ranks": {
+      "efg": 304,
+      "off": 251,
+      "opp_efg": 226,
+      "def": 167,
+      "net": 213
+     }
+    },
+    "last3": {
+     "efg": 43.94,
+     "opp_efg": 52.19,
+     "off": 98.2,
+     "def": 105.82,
+     "net": -7.62,
+     "poss_per_game": 74.3,
+     "ranks": {
+      "efg": 305,
+      "off": 252,
+      "opp_efg": 221,
+      "def": 174,
+      "net": 215
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401925682,
+      "date": "2026-11-11",
+      "site": "away",
+      "opp_id": 87,
+      "opp": "ND",
+      "d1_opp": true,
+      "pts": 59,
+      "opp_pts": 99,
+      "metrics": {
+       "efg": 33.1,
+       "opp_efg": 72.03,
+       "off": 77.93,
+       "def": 130.76,
+       "net": -52.83
+      },
+      "opp_power_rank": 50
+     },
+     {
+      "game_id": 401919733,
+      "date": "2026-11-09",
+      "site": "away",
+      "opp_id": 2130,
+      "opp": "CHST",
+      "d1_opp": true,
+      "pts": 82,
+      "opp_pts": 67,
+      "metrics": {
+       "efg": 65.62,
+       "opp_efg": 38.54,
+       "off": 114.71,
+       "def": 93.72,
+       "net": 20.98
+      },
+      "opp_power_rank": 312
+     },
+     {
+      "game_id": 401922059,
+      "date": "2026-11-06",
+      "site": "away",
+      "opp_id": 2908,
+      "opp": "UPST",
+      "d1_opp": true,
+      "pts": 78,
+      "opp_pts": 70,
+      "metrics": {
+       "efg": 40.51,
+       "opp_efg": 42.45,
+       "off": 102.87,
+       "def": 92.32,
+       "net": 10.55
+      },
+      "opp_power_rank": 298
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+18.5",
+    "b2b": false,
+    "power": {
+     "rank": 271,
+     "bpi": 312,
+     "own_net": 213
+    },
+    "key_players": [
+     "DeShaun Jackson Jr.",
+     "Noah Treadwell",
+     "Mitchell Taylor",
+     "Teon Tindal",
+     "Treven Raymon",
+     "Chris Parker"
+    ],
+    "top_scorers": [
+     {
+      "name": "Noah Treadwell",
+      "ppg": 12.2
+     },
+     {
+      "name": "Mitchell Taylor",
+      "ppg": 9.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "COFC",
+    "dog": "SCST",
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 19 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 COFC last-3 top 50 in 2 of 4 \u00b7 \u2717 SCST last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2717 COFC season outside 1-182: Def Eff #263 \u00b7 \u2713 SCST season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "SCST: consensus #271, BPI #312, our net #213"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Watch list: score 19 (qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for COFC: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 19,
+    "max": 40,
+    "band": "yellow",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 6,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 8,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 2,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "COFC",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 9,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 21,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 144,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 263,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "COFC",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 10,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 24,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 154,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 258,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "SCST",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 226,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 167,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 304,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 251,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "SCST",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 221,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 174,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 305,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 252,
+        "color": "green"
+       }
+      ]
+     }
+    ]
+   },
+   "summary": "Watch list: score 19 (qualifies at 28). Biggest edge over the last 3: COFC eFG% (#10) against SCST Opp eFG% (#221). COFC 3-0 in its last 3, SCST 2-1. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "Lean: COFC (watch list)",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV15SCSTCOFC",
+    "fav_prob": 0.945,
+    "bid": 0.94,
+    "ask": 0.95
+   },
+   "locked_at": "2026-11-15T10:00:42-08:00",
+   "readout": {
+    "matchup": "SCST @ COFC",
+    "summary": "No preview for this game could be opened: the Dimers and Bleacher Nation pages failed to load and the other results were from last season's meeting. Nothing to report beyond the board's own numbers.",
+    "injuries": "No source checked (no readable preview); treat as unknown",
+    "sources": [],
+    "updated": "2026-11-15T05:18-08:00"
+   }
   }
  }
 }
