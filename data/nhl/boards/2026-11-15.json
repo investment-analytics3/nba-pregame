@@ -3,10 +3,10 @@
  "date_label": "Sunday, November 15",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-14T23:30:48-08:00",
- "built_label": "Sat Nov 14, 11:30 PM PT",
- "metrics_through": "2026-11-13",
- "metrics_through_label": "Nov 13",
+ "built_at": "2026-11-15T06:00:46-08:00",
+ "built_label": "Sun Nov 15, 6:00 AM PT",
+ "metrics_through": "2026-11-14",
+ "metrics_through_label": "Nov 14",
  "max": 40,
  "top": 7,
  "bottom_from": 26,
@@ -33,7 +33,7 @@
    "favorite": "home",
    "line": {
     "details": "VGK -410",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -410,
     "ml_away": null,
     "puck_line": -1.5,
@@ -42,7 +42,7 @@
    },
    "spread": {
     "details": "VGK -410",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -64,10 +64,10 @@
      "pp": 30.4,
      "pk": 75.5,
      "ranks": {
-      "xgf": 7,
-      "xga60": 10,
-      "gsax": 11,
-      "st": 11
+      "xgf": 6,
+      "xga60": 9,
+      "gsax": 10,
+      "st": 12
      }
     },
     "last5": {
@@ -82,7 +82,7 @@
       "xgf": 25,
       "xga60": 27,
       "gsax": 2,
-      "st": 1
+      "st": 2
      }
     },
     "last3_games": [
@@ -172,9 +172,9 @@
     "is_fav": true,
     "b2b": false,
     "power": {
-     "rank": 7,
-     "own": 6,
-     "avg": 6.67,
+     "rank": 6,
+     "own": 4,
+     "avg": 6.0,
      "espn": 7,
      "nhl_com": 7
     },
@@ -245,7 +245,7 @@
       "xgf": 31,
       "xga60": 29,
       "gsax": 32,
-      "st": 32
+      "st": 31
      }
     },
     "last5": {
@@ -258,8 +258,8 @@
      "pk": 50.0,
      "ranks": {
       "xgf": 31,
-      "xga60": 17,
-      "gsax": 31,
+      "xga60": 15,
+      "gsax": 32,
       "st": 30
      }
     },
@@ -292,7 +292,7 @@
       "pts": 2,
       "opp_pts": 4,
       "extra": false,
-      "opp_power_rank": 6
+      "opp_power_rank": 7
      }
     ],
     "trend_games": [
@@ -424,9 +424,9 @@
     "tracked": true,
     "alerts": true,
     "routes": [
-     "Score 27"
+     "Score 28"
     ],
-    "route": "Score 27",
+    "route": "Score 28",
     "qualifiers": [],
     "would_qualify": false,
     "rules": [
@@ -434,13 +434,13 @@
       "rule": "Range",
       "name": "Top-7 team vs bottom-7 team (consensus power rank)",
       "pass": true,
-      "detail": "VGK #7 vs VAN #32"
+      "detail": "VGK #6 vs VAN #32"
      },
      {
       "rule": "A",
       "name": "Analysis Score 22+",
       "pass": true,
-      "detail": "Score 27 of 40"
+      "detail": "Score 28 of 40"
      },
      {
       "rule": "Goalie",
@@ -461,14 +461,14 @@
      "VGK key skater out: Noah Hanifin"
     ],
     "flags": [],
-    "score": 27,
+    "score": 28,
     "max": 40,
     "band": "green",
     "parts": [
      {
       "key": "fav_metrics",
       "label": "Favorite metrics",
-      "points": 6,
+      "points": 7,
       "max": 16
      },
      {
@@ -510,22 +510,22 @@
       "cells": [
        {
         "metric": "xgf",
-        "rank": 7,
+        "rank": 6,
         "color": "green"
        },
        {
         "metric": "xga60",
-        "rank": 10,
+        "rank": 9,
         "color": "green"
        },
        {
         "metric": "gsax",
-        "rank": 11,
-        "color": "yellow"
+        "rank": 10,
+        "color": "green"
        },
        {
         "metric": "st",
-        "rank": 11,
+        "rank": 12,
         "color": "yellow"
        }
       ]
@@ -552,7 +552,7 @@
        },
        {
         "metric": "st",
-        "rank": 1,
+        "rank": 2,
         "color": "green"
        }
       ]
@@ -579,7 +579,7 @@
        },
        {
         "metric": "st",
-        "rank": 32,
+        "rank": 31,
         "color": "green"
        }
       ]
@@ -596,12 +596,12 @@
        },
        {
         "metric": "xga60",
-        "rank": 17,
+        "rank": 15,
         "color": "yellow"
        },
        {
         "metric": "gsax",
-        "rank": 31,
+        "rank": 32,
         "color": "green"
        },
        {
@@ -620,13 +620,13 @@
      "pts": "Points %"
     }
    },
-   "summary": "Vegas (#7) against Vancouver (#32): a top-7 vs bottom-7 game, Analysis Score 27. Carter Hart in goal for VGK (probable). Biggest edge over the last 5: GSAx/gm (VGK #2, VAN #31). VGK 2-0-1 in its last 3, VAN 0-3-0.",
+   "summary": "Vegas (#6) against Vancouver (#32): a top-7 vs bottom-7 game, Analysis Score 28. Carter Hart in goal for VGK (probable). Biggest edge over the last 5: GSAx/gm (VGK #2, VAN #32). VGK 2-0-1 in its last 3, VAN 0-3-0.",
    "lean": "Lean: VGK",
    "kalshi": {
     "event": "KXNHLGAME-26NOV15VANVGK",
-    "fav_prob": 0.795,
-    "bid": 0.79,
-    "ask": 0.8
+    "fav_prob": 0.785,
+    "bid": 0.78,
+    "ask": 0.79
    }
   },
   {
@@ -641,7 +641,7 @@
    "favorite": "away",
    "line": {
     "details": "NSH -170",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": null,
     "ml_away": -170,
     "puck_line": 1.5,
@@ -650,7 +650,7 @@
    },
    "spread": {
     "details": "NSH -170",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": 1.5
    },
    "home": {
@@ -660,40 +660,50 @@
     "name": "San Jose",
     "display": "San Jose Sharks",
     "record": "9-11-2",
-    "l3_record": "1-1-1",
-    "games": 21,
-    "pts_pct": 0.429,
+    "l3_record": "2-0-1",
+    "games": 22,
+    "pts_pct": 0.455,
     "season": {
-     "xgf": 42.03,
-     "xga60": 3.037,
-     "cf": 47.96,
-     "gsax": 0.431,
-     "st": 90.2,
-     "pp": 18.8,
-     "pk": 71.4,
+     "xgf": 42.16,
+     "xga60": 3.003,
+     "cf": 47.73,
+     "gsax": 0.338,
+     "st": 91.0,
+     "pp": 20.0,
+     "pk": 71.0,
      "ranks": {
       "xgf": 30,
       "xga60": 32,
       "gsax": 5,
-      "st": 24
+      "st": 23
      }
     },
     "last5": {
-     "xgf": 44.92,
-     "xga60": 2.857,
-     "cf": 48.76,
-     "gsax": -0.075,
-     "st": 61.0,
-     "pp": 13.6,
-     "pk": 47.4,
+     "xgf": 46.87,
+     "xga60": 2.626,
+     "cf": 47.92,
+     "gsax": 0.209,
+     "st": 71.4,
+     "pp": 14.3,
+     "pk": 57.1,
      "ranks": {
-      "xgf": 27,
-      "xga60": 26,
+      "xgf": 24,
+      "xga60": 20,
       "gsax": 14,
-      "st": 31
+      "st": 29
      }
     },
     "last3_games": [
+     {
+      "game_id": 2026020323,
+      "date": "2026-11-14",
+      "site": "away",
+      "opp": "UTA",
+      "pts": 6,
+      "opp_pts": 5,
+      "extra": true,
+      "opp_power_rank": 12
+     },
      {
       "game_id": 2026020298,
       "date": "2026-11-11",
@@ -713,29 +723,9 @@
       "opp_pts": 2,
       "extra": true,
       "opp_power_rank": 17
-     },
-     {
-      "game_id": 2026020272,
-      "date": "2026-11-07",
-      "site": "away",
-      "opp": "DAL",
-      "pts": 3,
-      "opp_pts": 4,
-      "extra": false,
-      "opp_power_rank": 11
      }
     ],
     "trend_games": [
-     {
-      "date": "2026-11-04",
-      "opp": "LAK",
-      "metrics": {
-       "xgf": 36.39,
-       "xga60": 3.436,
-       "gsax": -3.036,
-       "st": 58.3
-      }
-     },
      {
       "date": "2026-11-06",
       "opp": "MIN",
@@ -775,10 +765,20 @@
        "gsax": 1.235,
        "st": 66.7
       }
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "UTA",
+      "metrics": {
+       "xgf": 46.05,
+       "xga60": 2.217,
+       "gsax": -1.617,
+       "st": 106.7
+      }
      }
     ],
     "is_fav": false,
-    "b2b": false,
+    "b2b": true,
     "power": {
      "rank": 29,
      "own": 29,
@@ -798,7 +798,7 @@
      {
       "id": "8482137",
       "name": "Y. Askarov",
-      "starts": 14
+      "starts": 15
      },
      {
       "id": "8477968",
@@ -871,9 +871,9 @@
      "pp": 26.6,
      "pk": 91.7,
      "ranks": {
-      "xgf": 24,
+      "xgf": 25,
       "xga60": 27,
-      "gsax": 3,
+      "gsax": 2,
       "st": 1
      }
     },
@@ -886,10 +886,10 @@
      "pp": 11.8,
      "pk": 100.0,
      "ranks": {
-      "xgf": 15,
-      "xga60": 21,
+      "xgf": 14,
+      "xga60": 22,
       "gsax": 1,
-      "st": 9
+      "st": 8
      }
     },
     "last3_games": [
@@ -901,7 +901,7 @@
       "pts": 3,
       "opp_pts": 2,
       "extra": true,
-      "opp_power_rank": 7
+      "opp_power_rank": 6
      },
      {
       "game_id": 2026020297,
@@ -1058,7 +1058,7 @@
       "rule": "A",
       "name": "Analysis Score 22+",
       "pass": true,
-      "detail": "Score 27 of 40"
+      "detail": "Score 26 of 40"
      },
      {
       "rule": "Goalie",
@@ -1080,7 +1080,7 @@
      "Info: SJS starting its backup goalie (Alex Nedeljkovic)"
     ],
     "flags": [],
-    "score": 27,
+    "score": 26,
     "max": 40,
     "band": "green",
     "parts": [
@@ -1093,7 +1093,7 @@
      {
       "key": "dog_metrics",
       "label": "Underdog metrics",
-      "points": 13,
+      "points": 12,
       "max": 16
      },
      {
@@ -1129,7 +1129,7 @@
       "cells": [
        {
         "metric": "xgf",
-        "rank": 24,
+        "rank": 25,
         "color": "red"
        },
        {
@@ -1139,7 +1139,7 @@
        },
        {
         "metric": "gsax",
-        "rank": 3,
+        "rank": 2,
         "color": "green"
        },
        {
@@ -1156,12 +1156,12 @@
       "cells": [
        {
         "metric": "xgf",
-        "rank": 15,
+        "rank": 14,
         "color": "yellow"
        },
        {
         "metric": "xga60",
-        "rank": 21,
+        "rank": 22,
         "color": "yellow"
        },
        {
@@ -1171,7 +1171,7 @@
        },
        {
         "metric": "st",
-        "rank": 9,
+        "rank": 8,
         "color": "green"
        }
       ]
@@ -1198,7 +1198,7 @@
        },
        {
         "metric": "st",
-        "rank": 24,
+        "rank": 23,
         "color": "green"
        }
       ]
@@ -1210,13 +1210,13 @@
       "cells": [
        {
         "metric": "xgf",
-        "rank": 27,
+        "rank": 24,
         "color": "green"
        },
        {
         "metric": "xga60",
-        "rank": 26,
-        "color": "green"
+        "rank": 20,
+        "color": "yellow"
        },
        {
         "metric": "gsax",
@@ -1225,7 +1225,7 @@
        },
        {
         "metric": "st",
-        "rank": 31,
+        "rank": 29,
         "color": "green"
        }
       ]
@@ -1239,13 +1239,13 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (NSH #13, SJS #29). Juuse Saros in goal for NSH (probable). Biggest edge over the last 5: PP%+PK% (NSH #9, SJS #31). NSH 3-0-0 in its last 3, SJS 1-1-1.",
+   "summary": "Not a top-7 vs bottom-7 matchup (NSH #13, SJS #29). Juuse Saros in goal for NSH (probable). Biggest edge over the last 5: PP%+PK% (NSH #8, SJS #29). NSH 3-0-0 in its last 3, SJS 2-0-1; SJS played yesterday.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV15NSHSJ",
-    "fav_prob": 0.625,
-    "bid": 0.62,
-    "ask": 0.63
+    "fav_prob": 0.605,
+    "bid": 0.6,
+    "ask": 0.61
    }
   },
   {
@@ -1259,17 +1259,17 @@
    "venue": "Xfinity Mobile Arena",
    "favorite": "away",
    "line": {
-    "details": "EDM -155",
-    "provider": "Draft Kings",
+    "details": "EDM -148",
+    "provider": "DraftKings",
     "ml_home": null,
-    "ml_away": -155,
+    "ml_away": -148,
     "puck_line": 1.5,
     "total": 6.5,
-    "fav_price": 0.6078
+    "fav_price": 0.5968
    },
    "spread": {
-    "details": "EDM -155",
-    "provider": "Draft Kings",
+    "details": "EDM -148",
+    "provider": "DraftKings",
     "puck_line": 1.5
    },
    "home": {
@@ -1279,40 +1279,50 @@
     "name": "Philadelphia",
     "display": "Philadelphia Flyers",
     "record": "6-10-6",
-    "l3_record": "1-0-2",
-    "games": 21,
-    "pts_pct": 0.381,
+    "l3_record": "2-0-1",
+    "games": 22,
+    "pts_pct": 0.409,
     "season": {
-     "xgf": 42.18,
-     "xga60": 2.82,
-     "cf": 47.13,
-     "gsax": 0.066,
-     "st": 100.4,
-     "pp": 18.0,
-     "pk": 82.4,
+     "xgf": 42.29,
+     "xga60": 2.813,
+     "cf": 46.99,
+     "gsax": 0.053,
+     "st": 101.4,
+     "pp": 18.8,
+     "pk": 82.6,
      "ranks": {
       "xgf": 29,
       "xga60": 28,
-      "gsax": 13,
-      "st": 17
+      "gsax": 12,
+      "st": 15
      }
     },
     "last5": {
-     "xgf": 52.06,
-     "xga60": 2.371,
-     "cf": 50.41,
-     "gsax": -0.076,
-     "st": 107.1,
+     "xgf": 50.45,
+     "xga60": 2.442,
+     "cf": 48.24,
+     "gsax": 0.017,
+     "st": 103.6,
      "pp": 28.6,
-     "pk": 78.6,
+     "pk": 75.0,
      "ranks": {
-      "xgf": 9,
-      "xga60": 12,
-      "gsax": 15,
-      "st": 13
+      "xgf": 15,
+      "xga60": 14,
+      "gsax": 18,
+      "st": 15
      }
     },
     "last3_games": [
+     {
+      "game_id": 2026020319,
+      "date": "2026-11-14",
+      "site": "away",
+      "opp": "CBJ",
+      "pts": 4,
+      "opp_pts": 3,
+      "extra": false,
+      "opp_power_rank": 28
+     },
      {
       "game_id": 2026020295,
       "date": "2026-11-11",
@@ -1321,7 +1331,7 @@
       "pts": 2,
       "opp_pts": 3,
       "extra": true,
-      "opp_power_rank": 6
+      "opp_power_rank": 7
      },
      {
       "game_id": 2026020284,
@@ -1332,29 +1342,9 @@
       "opp_pts": 1,
       "extra": false,
       "opp_power_rank": 32
-     },
-     {
-      "game_id": 2026020281,
-      "date": "2026-11-08",
-      "site": "away",
-      "opp": "CGY",
-      "pts": 3,
-      "opp_pts": 4,
-      "extra": true,
-      "opp_power_rank": 25
      }
     ],
     "trend_games": [
-     {
-      "date": "2026-11-03",
-      "opp": "MIN",
-      "metrics": {
-       "xgf": 52.6,
-       "xga60": 2.331,
-       "gsax": -0.69,
-       "st": 133.3
-      }
-     },
      {
       "date": "2026-11-05",
       "opp": "NYR",
@@ -1394,10 +1384,20 @@
        "gsax": -0.545,
        "st": 25.0
       }
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "CBJ",
+      "metrics": {
+       "xgf": 44.44,
+       "xga60": 2.686,
+       "gsax": -0.221,
+       "st": 133.3
+      }
      }
     ],
     "is_fav": false,
-    "b2b": false,
+    "b2b": true,
     "power": {
      "rank": 30,
      "own": 30,
@@ -1422,7 +1422,7 @@
      {
       "id": "8479361",
       "name": "J. Woll",
-      "starts": 10
+      "starts": 11
      }
     ],
     "key_skaters": [
@@ -1430,8 +1430,8 @@
      "J. Drysdale",
      "C. York",
      "N. Seeler",
-     "O. Bonk",
-     "T. Zegras"
+     "T. Zegras",
+     "O. Bonk"
     ],
     "injuries": [
      {
@@ -1463,39 +1463,49 @@
     "display": "Edmonton Oilers",
     "record": "15-3-3",
     "l3_record": "3-0-0",
-    "games": 20,
-    "pts_pct": 0.775,
+    "games": 21,
+    "pts_pct": 0.786,
     "season": {
-     "xgf": 48.15,
-     "xga60": 2.306,
-     "cf": 48.14,
-     "gsax": -0.004,
+     "xgf": 48.26,
+     "xga60": 2.248,
+     "cf": 48.18,
+     "gsax": 0.066,
      "st": 106.8,
-     "pp": 31.8,
-     "pk": 75.0,
+     "pp": 31.3,
+     "pk": 75.4,
      "ranks": {
-      "xgf": 22,
-      "xga60": 8,
-      "gsax": 14,
+      "xgf": 21,
+      "xga60": 6,
+      "gsax": 11,
       "st": 9
      }
     },
     "last5": {
-     "xgf": 44.67,
-     "xga60": 2.169,
-     "cf": 45.38,
-     "gsax": 0.347,
-     "st": 112.6,
-     "pp": 35.3,
-     "pk": 77.3,
+     "xgf": 47.95,
+     "xga60": 1.997,
+     "cf": 47.21,
+     "gsax": 0.618,
+     "st": 114.1,
+     "pp": 30.8,
+     "pk": 83.3,
      "ranks": {
-      "xgf": 28,
-      "xga60": 5,
-      "gsax": 9,
+      "xgf": 21,
+      "xga60": 2,
+      "gsax": 4,
       "st": 7
      }
     },
     "last3_games": [
+     {
+      "game_id": 2026020314,
+      "date": "2026-11-14",
+      "site": "away",
+      "opp": "TOR",
+      "pts": 1,
+      "opp_pts": 0,
+      "extra": false,
+      "opp_power_rank": 26
+     },
      {
       "game_id": 2026020295,
       "date": "2026-11-11",
@@ -1515,29 +1525,9 @@
       "opp_pts": 1,
       "extra": false,
       "opp_power_rank": 16
-     },
-     {
-      "game_id": 2026020276,
-      "date": "2026-11-07",
-      "site": "home",
-      "opp": "VAN",
-      "pts": 4,
-      "opp_pts": 2,
-      "extra": false,
-      "opp_power_rank": 32
      }
     ],
     "trend_games": [
-     {
-      "date": "2026-11-03",
-      "opp": "NJD",
-      "metrics": {
-       "xgf": 30.51,
-       "xga60": 1.949,
-       "gsax": 0.096,
-       "st": 100.0
-      }
-     },
      {
       "date": "2026-11-05",
       "opp": "ANA",
@@ -1577,14 +1567,24 @@
        "gsax": 1.132,
        "st": 175.0
       }
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "TOR",
+      "metrics": {
+       "xgf": 51.4,
+       "xga60": 1.244,
+       "gsax": 1.455,
+       "st": 100.0
+      }
      }
     ],
     "is_fav": true,
-    "b2b": false,
+    "b2b": true,
     "power": {
-     "rank": 6,
-     "own": 12,
-     "avg": 6.33,
+     "rank": 7,
+     "own": 11,
+     "avg": 6.0,
      "espn": 4,
      "nhl_com": 3
     },
@@ -1594,17 +1594,17 @@
      "espn_id": "3042020",
      "confirmed": false
     },
-    "goalie_status": "regular",
-    "regular_goalie_name": "T. Jarry",
+    "goalie_status": "backup",
+    "regular_goalie_name": "D. Levi",
     "goalies": [
-     {
-      "id": "8477465",
-      "name": "T. Jarry",
-      "starts": 9
-     },
      {
       "id": "8482221",
       "name": "D. Levi",
+      "starts": 10
+     },
+     {
+      "id": "8477465",
+      "name": "T. Jarry",
       "starts": 9
      },
      {
@@ -1662,7 +1662,7 @@
     "key_out": [],
     "key_questionable": [],
     "key_long_term": [],
-    "spread_text": "-155"
+    "spread_text": "-148"
    },
    "scoring": {
     "scored": true,
@@ -1683,52 +1683,56 @@
       "rule": "Range",
       "name": "Top-7 team vs bottom-7 team (consensus power rank)",
       "pass": true,
-      "detail": "EDM #6 vs PHI #30"
+      "detail": "EDM #7 vs PHI #30"
      },
      {
       "rule": "A",
       "name": "Analysis Score 22+",
       "pass": false,
-      "detail": "Score 21 of 40"
+      "detail": "Score 20 of 40"
      },
      {
       "rule": "Goalie",
       "name": "EDM's regular goalie starts",
-      "pass": true,
-      "detail": "Tristan Jarry (probable)"
+      "pass": false,
+      "detail": "Tristan Jarry listed instead of D. Levi: capped at the Watch list"
      },
      {
       "rule": "Rest",
       "name": "EDM didn't play yesterday",
-      "pass": true,
-      "detail": "Rested"
+      "pass": false,
+      "detail": "EDM on a back-to-back: capped at the Watch list"
      }
     ],
     "fails": [
-     "Score 21 (qualifies at 22)"
+     "Score 20 (qualifies at 22)"
     ],
-    "warnings": [],
-    "flags": [],
-    "score": 21,
+    "warnings": [
+     "EDM played yesterday (back-to-back)"
+    ],
+    "flags": [
+     "EDM backup goalie starting (Tristan Jarry)"
+    ],
+    "score": 20,
     "max": 40,
     "band": "yellow",
     "parts": [
      {
       "key": "fav_metrics",
       "label": "Favorite metrics",
-      "points": 6,
+      "points": 7,
       "max": 16
      },
      {
       "key": "dog_metrics",
       "label": "Underdog metrics",
-      "points": 9,
+      "points": 10,
       "max": 16
      },
      {
       "key": "goalies",
       "label": "Goalies + health",
-      "points": 3,
+      "points": 1,
       "max": 4
      },
      {
@@ -1740,7 +1744,7 @@
      {
       "key": "rest",
       "label": "Rest",
-      "points": 1,
+      "points": 0,
       "max": 1
      },
      {
@@ -1758,17 +1762,17 @@
       "cells": [
        {
         "metric": "xgf",
-        "rank": 22,
+        "rank": 21,
         "color": "yellow"
        },
        {
         "metric": "xga60",
-        "rank": 8,
+        "rank": 6,
         "color": "green"
        },
        {
         "metric": "gsax",
-        "rank": 14,
+        "rank": 11,
         "color": "yellow"
        },
        {
@@ -1785,17 +1789,17 @@
       "cells": [
        {
         "metric": "xgf",
-        "rank": 28,
-        "color": "red"
+        "rank": 21,
+        "color": "yellow"
        },
        {
         "metric": "xga60",
-        "rank": 5,
+        "rank": 2,
         "color": "green"
        },
        {
         "metric": "gsax",
-        "rank": 9,
+        "rank": 4,
         "color": "green"
        },
        {
@@ -1822,12 +1826,12 @@
        },
        {
         "metric": "gsax",
-        "rank": 13,
+        "rank": 12,
         "color": "yellow"
        },
        {
         "metric": "st",
-        "rank": 17,
+        "rank": 15,
         "color": "yellow"
        }
       ]
@@ -1839,22 +1843,22 @@
       "cells": [
        {
         "metric": "xgf",
-        "rank": 9,
-        "color": "red"
-       },
-       {
-        "metric": "xga60",
-        "rank": 12,
-        "color": "yellow"
-       },
-       {
-        "metric": "gsax",
         "rank": 15,
         "color": "yellow"
        },
        {
+        "metric": "xga60",
+        "rank": 14,
+        "color": "yellow"
+       },
+       {
+        "metric": "gsax",
+        "rank": 18,
+        "color": "yellow"
+       },
+       {
         "metric": "st",
-        "rank": 13,
+        "rank": 15,
         "color": "yellow"
        }
       ]
@@ -1868,13 +1872,13 @@
      "pts": "Points %"
     }
    },
-   "summary": "Score 21 (qualifies at 22). Tristan Jarry in goal for EDM (probable). EDM 3-0-0 in its last 3, PHI 1-0-2.",
+   "summary": "Score 20 (qualifies at 22). EDM start their backup goalie, Tristan Jarry (regular: D. Levi). EDM 3-0-0 in its last 3, PHI 2-0-1; EDM and PHI played yesterday.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV15EDMPHI",
-    "fav_prob": 0.585,
-    "bid": 0.58,
-    "ask": 0.59
+    "fav_prob": 0.575,
+    "bid": 0.57,
+    "ask": 0.58
    }
   },
   {
@@ -1888,17 +1892,17 @@
    "venue": "American Airlines Center",
    "favorite": "home",
    "line": {
-    "details": "DAL -130",
-    "provider": "Draft Kings",
-    "ml_home": -130,
+    "details": "DAL -135",
+    "provider": "DraftKings",
+    "ml_home": -135,
     "ml_away": null,
     "puck_line": -1.5,
     "total": 5.5,
-    "fav_price": 0.5652
+    "fav_price": 0.5745
    },
    "spread": {
-    "details": "DAL -130",
-    "provider": "Draft Kings",
+    "details": "DAL -135",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -1908,40 +1912,50 @@
     "name": "Dallas",
     "display": "Dallas Stars",
     "record": "11-6-2",
-    "l3_record": "1-1-1",
-    "games": 18,
-    "pts_pct": 0.611,
+    "l3_record": "2-1-0",
+    "games": 19,
+    "pts_pct": 0.632,
     "season": {
-     "xgf": 51.43,
-     "xga60": 2.262,
-     "cf": 52.12,
-     "gsax": 0.121,
-     "st": 113.7,
-     "pp": 24.4,
-     "pk": 89.2,
+     "xgf": 52.52,
+     "xga60": 2.224,
+     "cf": 52.57,
+     "gsax": 0.25,
+     "st": 113.9,
+     "pp": 24.0,
+     "pk": 89.9,
      "ranks": {
-      "xgf": 15,
-      "xga60": 6,
-      "gsax": 10,
-      "st": 4
+      "xgf": 11,
+      "xga60": 5,
+      "gsax": 7,
+      "st": 3
      }
     },
     "last5": {
-     "xgf": 48.57,
-     "xga60": 2.799,
-     "cf": 51.27,
-     "gsax": -0.554,
-     "st": 109.9,
-     "pp": 38.5,
-     "pk": 71.4,
+     "xgf": 53.99,
+     "xga60": 2.674,
+     "cf": 53.81,
+     "gsax": -0.347,
+     "st": 107.7,
+     "pp": 31.2,
+     "pk": 76.5,
      "ranks": {
-      "xgf": 18,
-      "xga60": 24,
-      "gsax": 23,
-      "st": 10
+      "xgf": 8,
+      "xga60": 23,
+      "gsax": 21,
+      "st": 12
      }
     },
     "last3_games": [
+     {
+      "game_id": 2026020322,
+      "date": "2026-11-14",
+      "site": "home",
+      "opp": "BUF",
+      "pts": 2,
+      "opp_pts": 0,
+      "extra": false,
+      "opp_power_rank": 18
+     },
      {
       "game_id": 2026020306,
       "date": "2026-11-12",
@@ -1950,7 +1964,7 @@
       "pts": 3,
       "opp_pts": 8,
       "extra": false,
-      "opp_power_rank": 23
+      "opp_power_rank": 22
      },
      {
       "game_id": 2026020272,
@@ -1961,29 +1975,9 @@
       "opp_pts": 3,
       "extra": false,
       "opp_power_rank": 29
-     },
-     {
-      "game_id": 2026020258,
-      "date": "2026-11-05",
-      "site": "away",
-      "opp": "CBJ",
-      "pts": 1,
-      "opp_pts": 2,
-      "extra": true,
-      "opp_power_rank": 28
      }
     ],
     "trend_games": [
-     {
-      "date": "2026-10-31",
-      "opp": "CBJ",
-      "metrics": {
-       "xgf": 38.21,
-       "xga60": 2.317,
-       "gsax": 1.546,
-       "st": 150.0
-      }
-     },
      {
       "date": "2026-11-03",
       "opp": "WSH",
@@ -2023,14 +2017,24 @@
        "gsax": -4.06,
        "st": 66.7
       }
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "BUF",
+      "metrics": {
+       "xgf": 73.29,
+       "xga60": 1.409,
+       "gsax": 2.581,
+       "st": 120.0
+      }
      }
     ],
     "is_fav": true,
-    "b2b": false,
+    "b2b": true,
     "power": {
      "rank": 11,
-     "own": 14,
-     "avg": 11.0,
+     "own": 12,
+     "avg": 10.33,
      "espn": 10,
      "nhl_com": 9
     },
@@ -2046,7 +2050,7 @@
      {
       "id": "8479979",
       "name": "J. Oettinger",
-      "starts": 14
+      "starts": 15
      },
      {
       "id": "8479193",
@@ -2090,6 +2094,13 @@
       "status": "Injured Reserve",
       "date": "2026-10-24T18:32Z",
       "comment": "Back was placed on long-term injured reserve on Saturday."
+     },
+     {
+      "name": "Matt Duchene",
+      "last": "Duchene",
+      "status": "Injured Reserve",
+      "date": "2026-10-12T16:46Z",
+      "comment": "Duchene will be out for approximately three months after undergoing surgery to repair a core injury, the team announced Monday."
      }
     ],
     "injuries_known": true,
@@ -2098,7 +2109,7 @@
     ],
     "key_questionable": [],
     "key_long_term": [],
-    "spread_text": "-130"
+    "spread_text": "-135"
    },
    "away": {
     "id": "26",
@@ -2107,40 +2118,50 @@
     "name": "Florida",
     "display": "Florida Panthers",
     "record": "12-7-2",
-    "l3_record": "2-1-0",
-    "games": 20,
-    "pts_pct": 0.6,
+    "l3_record": "3-0-0",
+    "games": 21,
+    "pts_pct": 0.619,
     "season": {
-     "xgf": 52.06,
-     "xga60": 2.26,
-     "cf": 49.4,
-     "gsax": -0.162,
-     "st": 109.4,
-     "pp": 23.5,
-     "pk": 85.9,
+     "xgf": 51.73,
+     "xga60": 2.256,
+     "cf": 49.52,
+     "gsax": -0.065,
+     "st": 109.2,
+     "pp": 24.1,
+     "pk": 85.1,
      "ranks": {
-      "xgf": 12,
-      "xga60": 5,
-      "gsax": 18,
-      "st": 5
-     }
-    },
-    "last5": {
-     "xgf": 45.95,
-     "xga60": 3.006,
-     "cf": 46.67,
-     "gsax": -0.124,
-     "st": 113.8,
-     "pp": 20.0,
-     "pk": 93.8,
-     "ranks": {
-      "xgf": 26,
-      "xga60": 29,
+      "xgf": 14,
+      "xga60": 7,
       "gsax": 17,
       "st": 5
      }
     },
+    "last5": {
+     "xgf": 44.4,
+     "xga60": 3.089,
+     "cf": 46.39,
+     "gsax": 0.435,
+     "st": 108.1,
+     "pp": 21.4,
+     "pk": 86.7,
+     "ranks": {
+      "xgf": 28,
+      "xga60": 32,
+      "gsax": 8,
+      "st": 11
+     }
+    },
     "last3_games": [
+     {
+      "game_id": 2026020320,
+      "date": "2026-11-14",
+      "site": "away",
+      "opp": "STL",
+      "pts": 4,
+      "opp_pts": 1,
+      "extra": false,
+      "opp_power_rank": 20
+     },
      {
       "game_id": 2026020302,
       "date": "2026-11-12",
@@ -2149,7 +2170,7 @@
       "pts": 5,
       "opp_pts": 4,
       "extra": false,
-      "opp_power_rank": 22
+      "opp_power_rank": 23
      },
      {
       "game_id": 2026020289,
@@ -2160,29 +2181,9 @@
       "opp_pts": 1,
       "extra": false,
       "opp_power_rank": 28
-     },
-     {
-      "game_id": 2026020277,
-      "date": "2026-11-08",
-      "site": "away",
-      "opp": "BOS",
-      "pts": 1,
-      "opp_pts": 4,
-      "extra": false,
-      "opp_power_rank": 3
      }
     ],
     "trend_games": [
-     {
-      "date": "2026-11-04",
-      "opp": "CHI",
-      "metrics": {
-       "xgf": 54.92,
-       "xga60": 1.761,
-       "gsax": -0.921,
-       "st": 133.3
-      }
-     },
      {
       "date": "2026-11-07",
       "opp": "WSH",
@@ -2222,14 +2223,24 @@
        "gsax": -1.352,
        "st": 100.0
       }
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "STL",
+      "metrics": {
+       "xgf": 44.99,
+       "xga60": 2.182,
+       "gsax": 1.878,
+       "st": 116.7
+      }
      }
     ],
     "is_fav": false,
-    "b2b": false,
+    "b2b": true,
     "power": {
-     "rank": 14,
-     "own": 13,
-     "avg": 13.33,
+     "rank": 15,
+     "own": 15,
+     "avg": 14.0,
      "espn": 14,
      "nhl_com": 13
     },
@@ -2245,7 +2256,7 @@
      {
       "id": "8474593",
       "name": "J. Markstrom",
-      "starts": 10
+      "starts": 11
      },
      {
       "id": "8481033",
@@ -2314,13 +2325,13 @@
       "rule": "Range",
       "name": "Top-7 team vs bottom-7 team (consensus power rank)",
       "pass": false,
-      "detail": "DAL #11 vs FLA #14"
+      "detail": "DAL #11 vs FLA #15"
      },
      {
       "rule": "A",
       "name": "Analysis Score 22+",
       "pass": false,
-      "detail": "Score 15 of 40"
+      "detail": "Score 16 of 40"
      },
      {
       "rule": "Goalie",
@@ -2331,28 +2342,29 @@
      {
       "rule": "Rest",
       "name": "DAL didn't play yesterday",
-      "pass": true,
-      "detail": "Rested"
+      "pass": false,
+      "detail": "DAL on a back-to-back: capped at the Watch list"
      }
     ],
     "fails": [
-     "Not a top-7 vs bottom-7 matchup (DAL #11, FLA #14)"
+     "Not a top-7 vs bottom-7 matchup (DAL #11, FLA #15)"
     ],
     "warnings": [
      "Info: FLA starting its backup goalie (Akira Schmid)",
-     "DAL key skater out: Miro Heiskanen"
+     "DAL key skater out: Miro Heiskanen",
+     "DAL played yesterday (back-to-back)"
     ],
     "flags": [
      "DAL backup goalie starting (Casey DeSmith)"
     ],
-    "score": 15,
+    "score": 16,
     "max": 40,
     "band": "red",
     "parts": [
      {
       "key": "fav_metrics",
       "label": "Favorite metrics",
-      "points": 5,
+      "points": 6,
       "max": 16
      },
      {
@@ -2376,13 +2388,13 @@
      {
       "key": "rest",
       "label": "Rest",
-      "points": 1,
+      "points": 0,
       "max": 1
      },
      {
       "key": "form",
       "label": "Last-3 form",
-      "points": 0,
+      "points": 1,
       "max": 2
      }
     ],
@@ -2394,22 +2406,22 @@
       "cells": [
        {
         "metric": "xgf",
-        "rank": 15,
+        "rank": 11,
         "color": "yellow"
        },
        {
         "metric": "xga60",
-        "rank": 6,
+        "rank": 5,
         "color": "green"
        },
        {
         "metric": "gsax",
-        "rank": 10,
+        "rank": 7,
         "color": "green"
        },
        {
         "metric": "st",
-        "rank": 4,
+        "rank": 3,
         "color": "green"
        }
       ]
@@ -2421,23 +2433,23 @@
       "cells": [
        {
         "metric": "xgf",
-        "rank": 18,
-        "color": "yellow"
+        "rank": 8,
+        "color": "green"
        },
        {
         "metric": "xga60",
-        "rank": 24,
-        "color": "red"
-       },
-       {
-        "metric": "gsax",
         "rank": 23,
         "color": "red"
        },
        {
+        "metric": "gsax",
+        "rank": 21,
+        "color": "yellow"
+       },
+       {
         "metric": "st",
-        "rank": 10,
-        "color": "green"
+        "rank": 12,
+        "color": "yellow"
        }
       ]
      },
@@ -2448,40 +2460,13 @@
       "cells": [
        {
         "metric": "xgf",
-        "rank": 12,
+        "rank": 14,
         "color": "yellow"
        },
        {
         "metric": "xga60",
-        "rank": 5,
-        "color": "deep-red"
-       },
-       {
-        "metric": "gsax",
-        "rank": 18,
-        "color": "yellow"
-       },
-       {
-        "metric": "st",
-        "rank": 5,
-        "color": "deep-red"
-       }
-      ]
-     },
-     {
-      "team": "FLA",
-      "role": "dog",
-      "window": "last5",
-      "cells": [
-       {
-        "metric": "xgf",
-        "rank": 26,
-        "color": "green"
-       },
-       {
-        "metric": "xga60",
-        "rank": 29,
-        "color": "green"
+        "rank": 7,
+        "color": "red"
        },
        {
         "metric": "gsax",
@@ -2494,6 +2479,33 @@
         "color": "deep-red"
        }
       ]
+     },
+     {
+      "team": "FLA",
+      "role": "dog",
+      "window": "last5",
+      "cells": [
+       {
+        "metric": "xgf",
+        "rank": 28,
+        "color": "green"
+       },
+       {
+        "metric": "xga60",
+        "rank": 32,
+        "color": "green"
+       },
+       {
+        "metric": "gsax",
+        "rank": 8,
+        "color": "red"
+       },
+       {
+        "metric": "st",
+        "rank": 11,
+        "color": "yellow"
+       }
+      ]
      }
     ],
     "labels": {
@@ -2504,13 +2516,13 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (DAL #11, FLA #14). DAL start their backup goalie, Casey DeSmith (regular: J. Oettinger). DAL 1-1-1 in its last 3, FLA 2-1-0.",
+   "summary": "Not a top-7 vs bottom-7 matchup (DAL #11, FLA #15). DAL start their backup goalie, Casey DeSmith (regular: J. Oettinger). Biggest edge over the last 5: xGF% 5v5 (DAL #8, FLA #28). DAL 2-1-0 in its last 3, FLA 3-0-0; DAL and FLA played yesterday.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV15FLADAL",
-    "fav_prob": 0.55,
-    "bid": 0.54,
-    "ask": 0.56
+    "fav_prob": 0.565,
+    "bid": 0.56,
+    "ask": 0.57
    }
   },
   {
@@ -2525,7 +2537,7 @@
    "favorite": "home",
    "line": {
     "details": "ANA -155",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -155,
     "ml_away": null,
     "puck_line": -1.5,
@@ -2534,7 +2546,7 @@
    },
    "spread": {
     "details": "ANA -155",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -2544,40 +2556,50 @@
     "name": "Anaheim",
     "display": "Anaheim Ducks",
     "record": "10-9-1",
-    "l3_record": "2-1-0",
-    "games": 19,
-    "pts_pct": 0.553,
+    "l3_record": "1-2-0",
+    "games": 20,
+    "pts_pct": 0.525,
     "season": {
-     "xgf": 44.88,
-     "xga60": 2.926,
-     "cf": 48.97,
-     "gsax": -0.329,
-     "st": 116.5,
-     "pp": 40.0,
-     "pk": 76.5,
+     "xgf": 45.48,
+     "xga60": 2.889,
+     "cf": 49.11,
+     "gsax": -0.496,
+     "st": 115.7,
+     "pp": 39.3,
+     "pk": 76.4,
      "ranks": {
-      "xgf": 28,
+      "xgf": 27,
       "xga60": 30,
-      "gsax": 24,
+      "gsax": 29,
       "st": 2
      }
     },
     "last5": {
-     "xgf": 46.66,
-     "xga60": 2.816,
-     "cf": 49.76,
-     "gsax": -0.291,
-     "st": 122.2,
-     "pp": 50.0,
-     "pk": 72.2,
+     "xgf": 49.21,
+     "xga60": 2.799,
+     "cf": 50.0,
+     "gsax": -0.761,
+     "st": 115.3,
+     "pp": 37.5,
+     "pk": 77.8,
      "ranks": {
-      "xgf": 24,
+      "xgf": 19,
       "xga60": 25,
-      "gsax": 20,
-      "st": 3
+      "gsax": 28,
+      "st": 5
      }
     },
     "last3_games": [
+     {
+      "game_id": 2026020324,
+      "date": "2026-11-14",
+      "site": "home",
+      "opp": "NYI",
+      "pts": 2,
+      "opp_pts": 6,
+      "extra": false,
+      "opp_power_rank": 17
+     },
      {
       "game_id": 2026020297,
       "date": "2026-11-11",
@@ -2597,29 +2619,9 @@
       "opp_pts": 2,
       "extra": false,
       "opp_power_rank": 24
-     },
-     {
-      "game_id": 2026020264,
-      "date": "2026-11-06",
-      "site": "away",
-      "opp": "CGY",
-      "pts": 5,
-      "opp_pts": 3,
-      "extra": false,
-      "opp_power_rank": 25
      }
     ],
     "trend_games": [
-     {
-      "date": "2026-11-03",
-      "opp": "VAN",
-      "metrics": {
-       "xgf": 42.88,
-       "xga60": 2.306,
-       "gsax": -1.319,
-       "st": 150.0
-      }
-     },
      {
       "date": "2026-11-05",
       "opp": "EDM",
@@ -2659,10 +2661,20 @@
        "gsax": -1.017,
        "st": 100.0
       }
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "NYI",
+      "metrics": {
+       "xgf": 55.36,
+       "xga60": 2.29,
+       "gsax": -3.671,
+       "st": 75.0
+      }
      }
     ],
     "is_fav": true,
-    "b2b": false,
+    "b2b": true,
     "power": {
      "rank": 19,
      "own": 25,
@@ -2682,7 +2694,7 @@
      {
       "id": "8480843",
       "name": "L. Dostal",
-      "starts": 10
+      "starts": 11
      },
      {
       "id": "8476316",
@@ -2699,9 +2711,9 @@
      "J. LaCombe",
      "M. Granlund",
      "B. Sennecke",
+     "T. Luneau",
      "L. Carlsson",
-     "D. Helleson",
-     "T. Luneau"
+     "D. Helleson"
     ],
     "injuries": [
      {
@@ -2739,40 +2751,50 @@
     "name": "Calgary",
     "display": "Calgary Flames",
     "record": "9-10-1",
-    "l3_record": "1-2-0",
-    "games": 19,
-    "pts_pct": 0.447,
+    "l3_record": "2-1-0",
+    "games": 20,
+    "pts_pct": 0.475,
     "season": {
-     "xgf": 48.33,
-     "xga60": 2.598,
-     "cf": 49.44,
-     "gsax": -0.359,
-     "st": 109.3,
-     "pp": 28.3,
-     "pk": 81.0,
+     "xgf": 48.17,
+     "xga60": 2.623,
+     "cf": 49.29,
+     "gsax": -0.303,
+     "st": 108.8,
+     "pp": 26.5,
+     "pk": 82.3,
      "ranks": {
-      "xgf": 21,
-      "xga60": 21,
-      "gsax": 25,
-      "st": 6
+      "xgf": 22,
+      "xga60": 20,
+      "gsax": 24,
+      "st": 7
      }
     },
     "last5": {
-     "xgf": 51.67,
-     "xga60": 2.328,
-     "cf": 51.99,
-     "gsax": 0.253,
-     "st": 100.0,
-     "pp": 20.0,
-     "pk": 80.0,
+     "xgf": 50.61,
+     "xga60": 2.391,
+     "cf": 52.06,
+     "gsax": 0.033,
+     "st": 99.4,
+     "pp": 18.2,
+     "pk": 81.2,
      "ranks": {
-      "xgf": 10,
-      "xga60": 9,
-      "gsax": 13,
-      "st": 17
+      "xgf": 13,
+      "xga60": 13,
+      "gsax": 17,
+      "st": 18
      }
     },
     "last3_games": [
+     {
+      "game_id": 2026020325,
+      "date": "2026-11-14",
+      "site": "away",
+      "opp": "LAK",
+      "pts": 3,
+      "opp_pts": 2,
+      "extra": false,
+      "opp_power_rank": 27
+     },
      {
       "game_id": 2026020294,
       "date": "2026-11-11",
@@ -2792,29 +2814,9 @@
       "opp_pts": 3,
       "extra": true,
       "opp_power_rank": 30
-     },
-     {
-      "game_id": 2026020264,
-      "date": "2026-11-06",
-      "site": "home",
-      "opp": "ANA",
-      "pts": 3,
-      "opp_pts": 5,
-      "extra": false,
-      "opp_power_rank": 19
      }
     ],
     "trend_games": [
-     {
-      "date": "2026-11-02",
-      "opp": "SJS",
-      "metrics": {
-       "xgf": 50.15,
-       "xga60": 2.757,
-       "gsax": 1.86,
-       "st": 100.0
-      }
-     },
      {
       "date": "2026-11-04",
       "opp": "SEA",
@@ -2854,10 +2856,20 @@
        "gsax": -0.002,
        "st": 116.7
       }
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "LAK",
+      "metrics": {
+       "xgf": 45.14,
+       "xga60": 3.139,
+       "gsax": 0.76,
+       "st": 100.0
+      }
      }
     ],
     "is_fav": false,
-    "b2b": false,
+    "b2b": true,
     "power": {
      "rank": 25,
      "own": 23,
@@ -2877,7 +2889,7 @@
      {
       "id": "8481692",
       "name": "D. Wolf",
-      "starts": 9
+      "starts": 10
      },
      {
       "id": "8482445",
@@ -2896,7 +2908,7 @@
      "Z. Whitecloud",
      "J. Farabee",
      "J. Middleton",
-     "Z. Parekh"
+     "M. Backlund"
     ],
     "injuries": [
      {
@@ -2965,15 +2977,16 @@
      {
       "rule": "Rest",
       "name": "ANA didn't play yesterday",
-      "pass": true,
-      "detail": "Rested"
+      "pass": false,
+      "detail": "ANA on a back-to-back: capped at the Watch list"
      }
     ],
     "fails": [
      "Not a top-7 vs bottom-7 matchup (ANA #19, CGY #25)"
     ],
     "warnings": [
-     "Info: CGY starting its backup goalie (Devin Cooley)"
+     "Info: CGY starting its backup goalie (Devin Cooley)",
+     "ANA played yesterday (back-to-back)"
     ],
     "flags": [
      "ANA backup goalie starting (Ville Husso)"
@@ -2991,7 +3004,7 @@
      {
       "key": "dog_metrics",
       "label": "Underdog metrics",
-      "points": 6,
+      "points": 8,
       "max": 16
      },
      {
@@ -3009,13 +3022,13 @@
      {
       "key": "rest",
       "label": "Rest",
-      "points": 1,
+      "points": 0,
       "max": 1
      },
      {
       "key": "form",
       "label": "Last-3 form",
-      "points": 1,
+      "points": 0,
       "max": 2
      }
     ],
@@ -3027,7 +3040,7 @@
       "cells": [
        {
         "metric": "xgf",
-        "rank": 28,
+        "rank": 27,
         "color": "red"
        },
        {
@@ -3037,7 +3050,7 @@
        },
        {
         "metric": "gsax",
-        "rank": 24,
+        "rank": 29,
         "color": "red"
        },
        {
@@ -3054,8 +3067,8 @@
       "cells": [
        {
         "metric": "xgf",
-        "rank": 24,
-        "color": "red"
+        "rank": 19,
+        "color": "yellow"
        },
        {
         "metric": "xga60",
@@ -3064,12 +3077,12 @@
        },
        {
         "metric": "gsax",
-        "rank": 20,
-        "color": "yellow"
+        "rank": 28,
+        "color": "red"
        },
        {
         "metric": "st",
-        "rank": 3,
+        "rank": 5,
         "color": "green"
        }
       ]
@@ -3081,22 +3094,22 @@
       "cells": [
        {
         "metric": "xgf",
-        "rank": 21,
+        "rank": 22,
         "color": "yellow"
        },
        {
         "metric": "xga60",
-        "rank": 21,
+        "rank": 20,
         "color": "yellow"
        },
        {
         "metric": "gsax",
-        "rank": 25,
+        "rank": 24,
         "color": "green"
        },
        {
         "metric": "st",
-        "rank": 6,
+        "rank": 7,
         "color": "red"
        }
       ]
@@ -3108,22 +3121,22 @@
       "cells": [
        {
         "metric": "xgf",
-        "rank": 10,
-        "color": "red"
-       },
-       {
-        "metric": "xga60",
-        "rank": 9,
-        "color": "red"
-       },
-       {
-        "metric": "gsax",
         "rank": 13,
         "color": "yellow"
        },
        {
-        "metric": "st",
+        "metric": "xga60",
+        "rank": 13,
+        "color": "yellow"
+       },
+       {
+        "metric": "gsax",
         "rank": 17,
+        "color": "yellow"
+       },
+       {
+        "metric": "st",
+        "rank": 18,
         "color": "yellow"
        }
       ]
@@ -3137,13 +3150,13 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (ANA #19, CGY #25). ANA start their backup goalie, Ville Husso (regular: L. Dostal). ANA 2-1-0 in its last 3, CGY 1-2-0.",
+   "summary": "Not a top-7 vs bottom-7 matchup (ANA #19, CGY #25). ANA start their backup goalie, Ville Husso (regular: L. Dostal). ANA 1-2-0 in its last 3, CGY 2-1-0; ANA and CGY played yesterday.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV15CGYANA",
-    "fav_prob": 0.585,
-    "bid": 0.58,
-    "ask": 0.59
+    "fav_prob": 0.575,
+    "bid": 0.57,
+    "ask": 0.58
    }
   }
  ],
@@ -3156,7 +3169,7 @@
   "in_range": 2,
   "qualified": 1,
   "watch": 0,
-  "built_label": "Sat Nov 14, 11:30 PM PT"
+  "built_label": "Sun Nov 15, 6:00 AM PT"
  },
  "power_table": [
   {
@@ -3170,8 +3183,8 @@
   {
    "abbr": "MIN",
    "rank": 2,
-   "own": 4,
-   "avg": 2.67,
+   "own": 6,
+   "avg": 3.33,
    "espn": 2,
    "nhl_com": 2
   },
@@ -3184,36 +3197,36 @@
    "nhl_com": 4
   },
   {
-   "abbr": "TBL",
+   "abbr": "NJD",
    "rank": 4,
    "own": 2,
-   "avg": 5.0,
-   "espn": 5,
-   "nhl_com": 8
-  },
-  {
-   "abbr": "NJD",
-   "rank": 5,
-   "own": 3,
-   "avg": 5.0,
+   "avg": 4.67,
    "espn": 6,
    "nhl_com": 6
   },
   {
-   "abbr": "EDM",
-   "rank": 6,
-   "own": 12,
-   "avg": 6.33,
-   "espn": 4,
-   "nhl_com": 3
+   "abbr": "TBL",
+   "rank": 5,
+   "own": 3,
+   "avg": 5.33,
+   "espn": 5,
+   "nhl_com": 8
   },
   {
    "abbr": "VGK",
-   "rank": 7,
-   "own": 6,
-   "avg": 6.67,
+   "rank": 6,
+   "own": 4,
+   "avg": 6.0,
    "espn": 7,
    "nhl_com": 7
+  },
+  {
+   "abbr": "EDM",
+   "rank": 7,
+   "own": 11,
+   "avg": 6.0,
+   "espn": 4,
+   "nhl_com": 3
   },
   {
    "abbr": "MTL",
@@ -3242,8 +3255,8 @@
   {
    "abbr": "DAL",
    "rank": 11,
-   "own": 14,
-   "avg": 11.0,
+   "own": 12,
+   "avg": 10.33,
    "espn": 10,
    "nhl_com": 9
   },
@@ -3264,26 +3277,26 @@
    "nhl_com": 12
   },
   {
-   "abbr": "FLA",
-   "rank": 14,
-   "own": 13,
-   "avg": 13.33,
-   "espn": 14,
-   "nhl_com": 13
-  },
-  {
    "abbr": "WSH",
-   "rank": 15,
-   "own": 15,
-   "avg": 14.0,
+   "rank": 14,
+   "own": 14,
+   "avg": 13.67,
    "espn": 13,
    "nhl_com": 14
   },
   {
+   "abbr": "FLA",
+   "rank": 15,
+   "own": 15,
+   "avg": 14.0,
+   "espn": 14,
+   "nhl_com": 13
+  },
+  {
    "abbr": "NYR",
    "rank": 16,
-   "own": 11,
-   "avg": 14.5,
+   "own": 13,
+   "avg": 15.5,
    "espn": 18,
    "nhl_com": null
   },
@@ -3298,8 +3311,8 @@
   {
    "abbr": "BUF",
    "rank": 18,
-   "own": 18,
-   "avg": 18.5,
+   "own": 19,
+   "avg": 19.0,
    "espn": 19,
    "nhl_com": null
   },
@@ -3312,35 +3325,35 @@
    "nhl_com": 16
   },
   {
-   "abbr": "SEA",
-   "rank": 20,
-   "own": 22,
-   "avg": 19.5,
-   "espn": 17,
-   "nhl_com": null
-  },
-  {
    "abbr": "STL",
-   "rank": 21,
-   "own": 19,
-   "avg": 20.0,
+   "rank": 20,
+   "own": 18,
+   "avg": 19.5,
    "espn": 21,
    "nhl_com": null
   },
   {
-   "abbr": "DET",
-   "rank": 22,
-   "own": 21,
-   "avg": 22.5,
-   "espn": 24,
+   "abbr": "SEA",
+   "rank": 21,
+   "own": 24,
+   "avg": 20.5,
+   "espn": 17,
    "nhl_com": null
   },
   {
    "abbr": "WPG",
-   "rank": 23,
-   "own": 24,
-   "avg": 23.0,
+   "rank": 22,
+   "own": 21,
+   "avg": 21.5,
    "espn": 22,
+   "nhl_com": null
+  },
+  {
+   "abbr": "DET",
+   "rank": 23,
+   "own": 22,
+   "avg": 23.0,
+   "espn": 24,
    "nhl_com": null
   },
   {
