@@ -39,6 +39,11 @@ METRICS = ("efg", "off", "opp_efg", "def")
 NAMES = {"efg": "eFG%", "off": "Off Eff", "opp_efg": "Opp eFG%", "def": "Def Eff"}
 # Each pill column pairs a favorite metric with the underdog metric it runs into.
 MATCHUPS = [("efg", "opp_efg"), ("off", "def"), ("opp_efg", "efg"), ("def", "off")]
+# Board grid (owner Nov 15, as NHL / college): each row reads across, favorite (season, last 3) vs underdog (season, last 3)
+GRID = (("off_def", "Offense vs defense", "off", "def"),
+        ("def_off", "Defense vs offense", "def", "off"),
+        ("shoot", "Shooting vs shot defense", "efg", "opp_efg"),
+        ("shotd", "Shot defense vs shooting", "opp_efg", "efg"))
 MAX_SCORE = 40
 BANDS = [(28, "green"), (18, "yellow"), (0, "red")]
 QUALIFY_SCORE = 28
@@ -207,6 +212,13 @@ def score_game(game: dict) -> dict:
             cells.append({"metric": m, "rank": r,
                           "color": fav_color(r) if role == "fav" else dog_color(r)})
         pills.append({"team": team["abbr"], "role": role, "window": window, "cells": cells})
+    grid = []
+    for key, label, fm, dm in GRID:
+        cells = [{"team": fav["abbr"], "role": "fav", "window": w, "metric": fm, "rank": _rank(fav, w, fm), "color": fav_color(_rank(fav, w, fm))}
+                 for w in ("season", "last3")]
+        cells += [{"team": dog["abbr"], "role": "dog", "window": w, "metric": dm, "rank": _rank(dog, w, dm), "color": dog_color(_rank(dog, w, dm))}
+                  for w in ("season", "last3")]
+        grid.append({"key": key, "label": label, "fav_metric": fm, "dog_metric": dm, "cells": cells})
 
     return {
         "scored": True, "favorite_side": side, "fav": fav["abbr"], "dog": dog["abbr"],
@@ -214,7 +226,7 @@ def score_game(game: dict) -> dict:
         "routes": routes, "route": " + ".join(routes),
         "fails": fails, "warnings": warnings, "rules": rules, "context": context,
         "qualifiers": [NAMES[m] for m in qualifiers],
-        "score": total, "max": MAX_SCORE, "band": band(total), "parts": parts, "pills": pills,
+        "score": total, "max": MAX_SCORE, "band": band(total), "parts": parts, "pills": pills, "grid": grid,
     }
 
 

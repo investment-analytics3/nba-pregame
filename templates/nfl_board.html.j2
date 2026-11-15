@@ -17,6 +17,10 @@
 .day-head.small-day{margin:18px 0 10px;padding:6px 12px;border-left-color:#7C869E;background:linear-gradient(90deg,rgba(124,134,158,.14),rgba(124,134,158,0))}
 .day-head.small-day h2{font-size:18px;color:#C7CEDC}
 .played{margin-top:34px}
+.h2h{display:grid;grid-template-columns:74px repeat(2,minmax(0,1fr)) 14px repeat(2,minmax(0,1fr));gap:6px;align-items:center}
+.h2h .vs{font-size:9px;font-weight:800;color:#5B6680;text-align:center;letter-spacing:.04em}
+.h2h .tm{grid-column:span 2;text-align:center;font-size:11.5px;font-weight:800;color:#DCE2EE;letter-spacing:.04em}
+.hm .vs{font-size:9px;font-weight:800;color:#5B6680;text-align:center}
 </style>
 </head>
 <body>
@@ -71,12 +75,21 @@ function donut(h){
     <div class="num"><b style="color:${b[0]}">${h.score}</b><span>OF 40</span></div></div>`;
 }
 
+// Head-to-head grid (owner Nov 15, as NHL / college): each row reads across, favorite (season, last 3) vs underdog
+// (season, last 3); same colors.
+const H2H = [{f:'off_epa',d:'def_epa',lab:'Off vs Def',sub:'EPA/play'},{f:'def_epa',d:'off_epa',lab:'Def vs Off',sub:'EPA/play'},
+             {f:'off_sr',d:'def_sr',lab:'Off vs Def',sub:'success rate'},{f:'def_sr',d:'off_sr',lab:'Def vs Off',sub:'success rate'}];
 function pills(g){
   const fav = team(g,g.fav), dog = team(g,g.dog);
-  const row = (lbl, sub, t, w, cls) => `<div class="prow"><div class="pl"><b>${esc(lbl)}</b><span>${sub}</span></div>${M.map(m=>{const r=(t[w].ranks||{})[m];return `<div class="pill ${cls(r)}" title="${esc(MN[m])}: rank ${r??'–'} of 32">${r??'–'}</div>`;}).join('')}</div>`;
-  return `<div class="pills"><div class="prow"><div></div>${M.map(m=>`<div class="ph"><b>${MH[m][0]}</b><span>${MH[m][1]}</span></div>`).join('')}</div>
-    ${row(fav.abbr,'season',fav,'season',favCls)}${row(fav.abbr,'last 3',fav,'last3',favCls)}
-    ${row(dog.abbr,'season',dog,'season',dogCls)}${row(dog.abbr,'last 3',dog,'last3',dogCls)}</div>`;
+  const cell = (t,w,m,cls) => { const r = ((t[w]||{}).ranks||{})[m];
+    return `<div class="pill ${cls(r)}" title="${esc(t.abbr)} ${w==='season'?'season':'last 3'} ${esc(MN[m])}: rank ${r??'–'} of 32">${r??'–'}</div>`; };
+  let h = `<div class="pills"><div class="h2h"><span></span><span class="tm">${esc(fav.abbr)}</span><span></span><span class="tm">${esc(dog.abbr)}</span></div>
+    <div class="h2h" style="margin-top:-3px"><span></span>${['Season','Last 3','','Season','Last 3'].map(x=>`<div class="ph"><span>${x}</span></div>`).join('')}</div>`;
+  H2H.forEach((c,i)=>{
+    h += `<div class="h2h" style="margin-top:${i===2?8:0}px"><div class="pl"><b>${c.lab}</b><span>${c.sub}</span></div>`
+      + cell(fav,'season',c.f,favCls) + cell(fav,'last3',c.f,favCls) + `<span class="vs">vs</span>` + cell(dog,'season',c.d,dogCls) + cell(dog,'last3',c.d,dogCls) + '</div>';
+  });
+  return h + '</div>';
 }
 
 function edgeBar(e){

@@ -90,7 +90,9 @@ NFL rules (spec "NFL Stat Edge v2", decisions Nov 8 2026):
   Board (Nov 10; grouped by day Nov 11, owner): L1 = one header per day (Pacific date of kickoff, earliest first), each with
   Qualified / Watch list / Did not qualify; then one Played section at the bottom, also by day, earliest first (same on the
   college football board); cards open an L2 view (`#g-<id>`) with
-  Pregame/Live tabs (Live = `nfl/game.html?g=<id>`), "How it qualifies", score, pills, details. Board pills (Nov 10, as NBA): L2 WW green / split yellow / LL red and PR
+  Pregame/Live tabs (Live = `nfl/game.html?g=<id>`), "How it qualifies", score, pills, details. Metric pills (owner Nov 15, as NHL/college;
+  template `H2H`): rows read across, favorite season / last 3 vs underdog season / last 3: offense vs defense and defense vs
+  offense, for EPA/play and success rate; colors unchanged; no matchup outlines (not backtested for the NFL). Board pills (Nov 10, as NBA): L2 WW green / split yellow / LL red and PR
   (consensus) 1-10 green / 11-22 yellow / 23-32 red for the favorite; flipped for the underdog. Hero score 40: fav 16 (top 5 = 2, 6-10 = 1), dog 16 (outside top 10 = 1,
   ranks 23-32 = 2), health 4 (QB active 2, other key starter 1, interior OL 1; 0 without injury info), home 1, rest 1 (fav off
   a bye, or dog on a short week while the fav isn't), form 2 (fav last 2). Bands red 0-17, yellow 18-27, green 28-40.
@@ -306,6 +308,9 @@ often: always `git pull --rebase origin main` before pushing.
   `context` only; `qualifiers` still lists the favorite's top-10 (season+last 3) metrics. `qualified` stays the
   boolean every consumer reads; `tier`, `route`, `tracked` are new. `LIVE_TIERS` decides what the live tracker,
   L1 live chips and Live page follow (Qualified + Watch list since Nov 9).
+- Metric grid (owner Nov 15, as NHL/college; `scoring.GRID` -> `sc.grid`, card + L2 heat map + bars): rows read across,
+  favorite season / last 3 vs underdog season / last 3: offense vs defense, defense vs offense, shooting vs shot D, shot D vs
+  shooting; colors unchanged; no matchup outlines (not backtested for the NBA). `sc.pills` is kept for older pages.
 - L1: three sections (Qualified green, Watch list amber, Did not qualify red line). B2B pills by role (owner Nov 11):
   favorite Yes = red, No = green; underdog Yes = green (tired opponent), No = yellow (board, Results page, email text).
   L2 shows each team's season record in the second game of back-to-backs (`b2b_record`, build_slate `b2b_records`).
