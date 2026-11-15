@@ -32,6 +32,13 @@ QUALIFY_SCORE, WATCH_SCORE = 28, 18
 BYE_REST, SHORT_WEEK = 13, 5
 TIER_LABEL = {"qualified": "Qualified", "watch": "Watch list", "out": "No track"}
 LIVE_TIERS = ("qualified", "watch")
+# Defense hold check (owner Nov 15; information only, never a bet): every board game (-10 to -20, any tier) whose favorite
+# ranks top 10 in defensive EPA allowed over its last 3 games is followed live; a favorite lead of 8-14 at halftime or the
+# end of the 3rd sends a push. Backtest 2022-26 (793 games): up 8-14 at halftime 16 of 17 (94%), end of 3rd 17 of 17;
+# weaker defenses (outside the top 50) 90% / 91%; ESPN's live win probability ~94% for both.
+DEF_HOLD_RANK = 10
+DEF_HOLD_LEAD = (8, 14)
+DEF_HOLD_RECORD = {"half": "16 of 17 (94%)", "q3": "17 of 17 (100%)"}
 ALERT_TIERS = ("qualified",)
 OUT = {"Out", "Doubtful"}
 LONG_TERM = {"Injured Reserve", "Out For Season", "Out for Season", "Suspension", "Season-Ending", "Physically Unable to Perform"}

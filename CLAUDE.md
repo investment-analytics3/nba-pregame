@@ -147,6 +147,12 @@ College rules (owner decisions Nov 10 2026, spec "College Football Board"):
   then the final (`data/cfb/live/<season>.json`, `docs/cfb/live.json`); pushes Qualified only: end of 3rd + first BET.
   Backtest: pregame tiers ~ spread-implied win rate; at every checkpoint win rate ~ fair price (in-game WP); the price log
   is there to find out whether Kalshi sells these leads below fair. Review after 3-4 weekends.
+- Defense hold check (owner Nov 15, information only, never a bet; `scoring.DEF_HOLD_*`): every board game (any tier) whose
+  favorite is top 10 in defensive EPA allowed over its last 3 (`def_hold`, `fav_def_rank_l3` in the context) is followed by
+  the logger; up 8-14 at halftime or the end of the 3rd = checkpoint marked `dhold` + a push (`dhold_half` / `dhold_q3`, once,
+  not when late). Backtest 2022-26: 16 of 17 at halftime, 17 of 17 at the end of the 3rd (weak defenses 90-91%, ESPN WP ~94%).
+  Live page panel + list chip ("Top-10 D #n"); price log shows each level's record vs avg Kalshi. Matchup splits (offense vs
+  offense etc., last 2/3/season) were tested Nov 15 and don't separate college games: the spread already prices them.
 
 ## College basketball (separate pipeline like the NFL/CFB: own folder, workflows, concurrency groups `cbb-data`, `cbb-live`)
 

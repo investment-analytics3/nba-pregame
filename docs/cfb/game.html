@@ -42,18 +42,20 @@ let timer = null, ctx = null, ep = null, book = null;
 // Tier chip (owner Nov 10): Qualified = live read + phone pushes; Watch list = live read only.
 const tierChip = g => g.tier === 'qualified' || (!g.tier && g.tracked) ? '<span class="chip cg">Qualified</span>'
   : (g.tier === 'watch' ? '<span class="chip cy" title="Live read here; no phone pushes">Watch list</span>' : '');
+// Defense hold check (owner Nov 15): any board game whose favorite is top 10 in defensive EPA allowed over its last 3
+const dChip = g => g.def_hold ? `<span class="chip cg" title="Top-10 defense over the last 3: defense hold check at halftime and the end of the 3rd">Top-10 D #${esc(g.fav_def_rank_l3)}</span>` : '';
 
 async function list() {
   const sb = await get(`${ESPN}/scoreboard?groups=80&limit=300`).catch(() => ({ events: [] }));
   const st = {}; (sb.events || []).forEach(e => { st[e.id] = e.status; });
-  const games = (ctx.games || []).filter(g => g.tracked).slice().sort((a, b) => {
+  const games = (ctx.games || []).filter(g => g.tracked || g.def_hold).slice().sort((a, b) => {
     const r = x => ({ in: 0, pre: 1, post: 2 }[((st[x.id] || {}).type || {}).state] ?? 1);
     return r(a) - r(b) || a.kick_utc.localeCompare(b.kick_utc);
   });
   app.innerHTML = `<div class="eyebrow">College football · Week ${esc(ctx.week)} · live</div><h1 class="title cond">Live games</h1>
-    <div class="muted" style="margin:6px 0 18px">Qualified and Watch list games (favorite −10 to −20). Grades run in your browser from ESPN play-by-play with the football live rules. Bets only in the 4th, 15:00–5:00.</div>
+    <div class="muted" style="margin:6px 0 18px">Qualified and Watch list games, plus any game whose favorite has a top-10 defense over its last 3 (defense hold check), favorite −10 to −20. Grades run in your browser from ESPN play-by-play with the football live rules. Bets only in the 4th, 15:00–5:00.</div>
     <div class="list">${games.map(g => { const s = st[g.id] || {}, state = (s.type || {}).state;
-      return `<a class="panel game" href="?g=${esc(g.id)}"><span><b>${esc(g.away_abbr)} @ ${esc(g.home_abbr)}</b> ${tierChip(g)}<br>
+      return `<a class="panel game" href="?g=${esc(g.id)}"><span><b>${esc(g.away_abbr)} @ ${esc(g.home_abbr)}</b> ${tierChip(g)} ${dChip(g)}<br>
       <span class="muted small">${state === 'in' ? '<span class="chip live"><i></i>' + esc((s.type || {}).shortDetail) + '</span>' : esc(state === 'post' ? 'Final' : g.kick_pt)} · ${g.fav_abbr ? esc(g.fav_abbr) + ' ' + (g.spread ?? '') : 'no line'}</span></span><span class="muted">Open ›</span></a>`; }).join('')}</div>`;
 }
 
@@ -65,7 +67,7 @@ async function game() {
   const r = NflEngine.analyze(summ, c);
   const d = r.decision || {};
   const T = r.teams, A = T.away.abbr, H = T.home.abbr;
-  let h = `<div class="row" style="flex-wrap:wrap;margin-bottom:14px"><a class="btn chip cn" href="game.html">‹ All games</a><a class="btn chip cn" href="./#g-${esc(gid)}">Pregame page</a>${g ? tierChip(g) : ''}${g ? `<span class="chip cn">Pregame call: ${esc(g.call)}${g.hero != null ? ' · ' + g.hero + '/40' : ''}</span>` : ''}</div>
+  let h = `<div class="row" style="flex-wrap:wrap;margin-bottom:14px"><a class="btn chip cn" href="game.html">‹ All games</a><a class="btn chip cn" href="./#g-${esc(gid)}">Pregame page</a>${g ? tierChip(g) : ''}${g ? dChip(g) : ''}${g ? `<span class="chip cn">Pregame call: ${esc(g.call)}${g.hero != null ? ' · ' + g.hero + '/40' : ''}</span>` : ''}</div>
     <div class="eyebrow">College live · ${esc(r.phase.label)}</div>
     <div class="row between" style="margin:8px 0 18px;flex-wrap:wrap"><div class="score">${esc(A)} ${T.away.score} – ${esc(H)} ${T.home.score}</div><div class="muted">${esc(r.clockLabel)}${r.state === 'in' ? ' · refreshes every 30 s' : ''}</div></div>`;
   if (r.state === 'pre') { app.innerHTML = h + `<div class="panel final">Not started. Kickoff ${esc(g ? g.kick_pt : '')}.</div>`; return; }
@@ -75,6 +77,16 @@ async function game() {
       <div><div class="line">${esc(d.headline)}${d.lock ? ' <span class="chip cg">Lock (who wins, not value)</span>' : ''}</div>
       <div class="small muted">${esc(price)}</div></div></div>
       ${(fside.gates || []).length ? `<div style="margin-top:10px">${fside.gates.map(x => `<div class="flag yellow" style="margin-top:6px">${esc(x)}</div>`).join('')}</div>` : ''}</div>`;
+  if (g && g.def_hold) {
+    const lg0 = book && book.games ? book.games[gid] : null;
+    const favNow = T.home.abbr === g.fav_abbr ? T.home.score - T.away.score : T.away.score - T.home.score;
+    const cp = (k, lab, rec) => { const x = lg0 && lg0[k]; if (!x) return `<div>${lab}: <span class="muted">not logged yet</span></div>`;
+      return `<div>${lab}: ${esc(g.fav_abbr)} ${x.lead > 0 ? '+' : ''}${x.lead} · ${x.dhold ? `<b class="okc">in the 8–14 window</b> (${rec})` : '<span class="muted">outside 8–14</span>'}${(x.kalshi || {}).prob != null ? ` · Kalshi ${Math.round(x.kalshi.prob * 100)}¢` : ''}</div>`; };
+    h += `<div class="panel sec"><h3>Defense hold check</h3><div class="small">${esc(g.fav_abbr)} ranks <b>#${esc(g.fav_def_rank_l3)}</b> in defensive EPA allowed over its last 3 games (top 10).
+      Favorites −10 to −20 with a top-10 defense up 8–14 won <b>16 of 17</b> at halftime and <b>17 of 17</b> at the end of the 3rd (2022-26). Lead now: ${esc(g.fav_abbr)} ${favNow > 0 ? '+' : ''}${favNow}.
+      <div style="margin-top:8px">${cp('half', 'Halftime', '16 of 17')}${cp('q3', 'End of 3rd', '17 of 17')}</div></div>
+      <div class="tiny">Information only, never a bet: ESPN's live win probability already puts these leads near 94%. Pushes go out at halftime and the end of the 3rd when the lead is 8–14.</div></div>`;
+  }
   h += `<div class="panel sec"><h3>1. Who answered the run?</h3><div class="small"><b>${esc(r.whoAnswered || 'NONE')}</b> · ${esc(r.answerNote)}</div>
       <div class="small muted" style="margin-top:8px">Scoring: ${(r.scoring || []).map(e => `${esc(e.at)} ${esc(e.team)} +${e.pts}`).join(' · ') || 'none yet'}</div></div>`;
   h += `<div class="panel sec"><h3>2. Control vs momentum (${esc(r.control.window)})</h3><div class="tw"><table><tr><th></th><th>${esc(A)}</th><th>${esc(H)}</th></tr>

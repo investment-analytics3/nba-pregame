@@ -300,6 +300,8 @@ def context_row(g: dict) -> dict:
             "away_names": [g["away"].get("display"), g["away"].get("name")], "home_names": [g["home"].get("display"), g["home"].get("name")],
             "tier": sc["tier"], "tier_label": sc["tier_label"], "tracked": sc["tracked"], "alerts": sc["alerts"],
             "call": sc["call"], "hero": sc["hero"]["score"], "fav_defense_top10": bool(g.get("fav_defense_top25")),
+            "fav_def_rank_l3": ((fav.get("last3") or {}).get("ranks") or {}).get("def_epa"),
+            "def_hold": (((fav.get("last3") or {}).get("ranks") or {}).get("def_epa") or 999) <= scoring.DEF_HOLD_RANK,
             "qbs": {t["abbr"]: {"regular": (t.get("qb") or {}).get("regular"), "rank": (t.get("qb") or {}).get("rank")}
                     for t in (g["away"], g["home"])},
             "kalshi_event": (g.get("kalshi") or {}).get("event"), "locked": bool(g.get("locked_at"))}

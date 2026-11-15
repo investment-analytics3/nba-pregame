@@ -159,3 +159,51 @@ class Kalshi(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class DefenseHold(unittest.TestCase):
+    """Owner Nov 15: top-10 defense (last 3) up 8-14 at halftime / end of 3rd -> information push, any tier."""
+    def setUp(self):
+        self.L = _load("cfb_live")
+        self.sent = []
+        self._orig = self.L.notify.send_alert
+        self.L.notify.send_alert = lambda title, body, **kw: self.sent.append((title, body))
+        self._argv = list(sys.argv)
+        sys.argv[:] = ["x"]
+        self.g = {"id": "1", "fav_abbr": "BSU", "dog_abbr": "NEV", "def_hold": True, "fav_def_rank_l3": 6,
+                  "tracked": False, "alerts": False}
+
+    def tearDown(self):
+        self.L.notify.send_alert = self._orig
+        sys.argv[:] = self._argv
+
+    def rec(self, lead, late=False):
+        return {"lead": lead, "late": late, "score": "NEV 10 - BSU 21", "kalshi": {"prob": 0.93}, "espn_wp": 0.95}
+
+    def test_rule(self):
+        self.assertTrue(self.L.def_hold(self.g, self.rec(8), "half"))
+        self.assertTrue(self.L.def_hold(self.g, self.rec(14), "q3"))
+        self.assertFalse(self.L.def_hold(self.g, self.rec(15), "q3"))
+        self.assertFalse(self.L.def_hold(self.g, self.rec(7), "half"))
+        self.assertFalse(self.L.def_hold(self.g, self.rec(10), "q1"))
+        self.assertFalse(self.L.def_hold({**self.g, "def_hold": False}, self.rec(10), "half"))
+
+    def test_push_any_tier_once_not_late(self):
+        entry = {}
+        self.L.dhold_alert(entry, self.g, self.rec(11), "half")          # a No track game still pushes
+        self.assertEqual(len(self.sent), 1)
+        title, body = self.sent[0]
+        self.assertIn("halftime", title)
+        for bit in ("BSU up 11", "#6", "16 of 17", "93¢", "ESPN 95%", "not a bet"):
+            self.assertIn(bit, body)
+        self.L.dhold_alert(entry, self.g, self.rec(11), "half")          # never twice
+        self.L.dhold_alert({}, self.g, self.rec(11, late=True), "q3")    # late: no push
+        self.assertEqual(len(self.sent), 1)
+        self.L.dhold_alert(entry, self.g, self.rec(9), "q3")
+        self.assertIn("17 of 17", self.sent[1][1])
+
+    def test_scheduler_follows_def_hold_games(self):
+        s = _load("cfb_scheduler")
+        kick = datetime(2026, 11, 14, 20, tzinfo=timezone.utc)
+        g = {"kick_utc": kick.isoformat(), "tracked": False, "def_hold": True}
+        self.assertTrue(s.decide(kick - timedelta(minutes=10), {"games": [g]}, {})["live"])

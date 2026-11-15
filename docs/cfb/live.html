@@ -27,8 +27,8 @@ const BT = {q1: {won: '92.6%', fair: '95¢'}, half: {won: '96.3%', fair: '97¢'}
 function row(e, kind){
   const r = e[kind]; if (!r) return '';
   const k = r.kalshi || {}, res = e.final ? (e.final.fav_won ? `<span class="okc">${esc(e.fav)} won by ${e.final.fav_margin}</span>` : `<span class="noc">${esc(e.fav)} lost by ${-e.final.fav_margin}</span>`) : '<span class="muted">in progress</span>';
-  return `<tr><td>${esc(e.day_et)}</td><td><b>${esc(e.away)} @ ${esc(e.home)}</b><br><span class="muted">${esc(e.fav)} ${e.spread ?? ''} · ${esc(e.tier === 'qualified' ? 'Qualified' : 'Watch list')}</span></td>
-    <td>${KIND[kind]}${r.late ? ` <span class="muted">(late, ${esc(r.clock)})</span>` : ''}</td><td>${esc(r.score)}</td><td>${r.lead > 0 ? '+' : ''}${r.lead}</td>
+  return `<tr><td>${esc(e.day_et)}</td><td><b>${esc(e.away)} @ ${esc(e.home)}</b><br><span class="muted">${esc(e.fav)} ${e.spread ?? ''} · ${esc(e.tier === 'qualified' ? 'Qualified' : (e.tier === 'watch' ? 'Watch list' : 'Defense check'))}${e.def_hold ? ` · top-10 D #${esc(e.fav_def_rank_l3)}` : ''}</span></td>
+    <td>${KIND[kind]}${r.late ? ` <span class="muted">(late, ${esc(r.clock)})</span>` : ''}${r.dhold ? '<br><span class="okc">defense hold</span>' : ''}</td><td>${esc(r.score)}</td><td>${r.lead > 0 ? '+' : ''}${r.lead}</td>
     <td><b>${c(k.prob)}</b>${k.bid != null ? `<br><span class="muted">${c(k.bid)}/${c(k.ask)}</span>` : ''}</td>
     <td>${r.espn_wp != null ? Math.round(r.espn_wp * 100) + '%' : '–'}</td><td>${res}</td></tr>`;
 }
@@ -43,6 +43,10 @@ fetch('live.json?t=' + Date.now()).then(r => r.ok ? r.json() : {games: {}}).catc
     const avg = xs.length ? xs.reduce((a, e) => a + e[kind].kalshi.prob, 0) / xs.length : null;
     stat[kind] = {n: xs.length, won, avg};
   }
+  // defense hold check (owner Nov 15): top-10 defense (last 3) up 8-14; backtest 16 of 17 at halftime, 17 of 17 at the end of the 3rd
+  const dh = ['half', 'q3'].map(k => { const xs = entries.filter(e => e.final && e[k] && e[k].dhold && (e[k].kalshi || {}).prob != null);
+    const won = xs.filter(e => e.final.fav_won).length, avg = xs.length ? xs.reduce((a, e) => a + e[k].kalshi.prob, 0) / xs.length : null;
+    return `<li>${KIND[k]}: ${xs.length ? `${won}-${xs.length - won}, avg Kalshi ${c(avg)}` : 'none yet'} <span class="muted">(backtest ${k === 'half' ? '16 of 17' : '17 of 17'})</span></li>`; }).join('');
   const tiles = ['q1', 'half', 'q3'].map(k => `<div><b>${stat[k].n ? stat[k].won + '-' + (stat[k].n - stat[k].won) : '–'}</b><span>${KIND[k]}, up 10+ · avg Kalshi ${c(stat[k].avg)}</span></div>`).join('');
   const rows = entries.map(e => ['q1', 'half', 'q3'].map(k => row(e, k)).join('')).join('');
   app.innerHTML = `<div class="eyebrow">College football · ${esc(book.season || '')} · price log</div>
@@ -51,6 +55,7 @@ fetch('live.json?t=' + Date.now()).then(r => r.ok ? r.json() : {games: {}}).catc
     <div class="stat" style="margin:20px 0 22px">${tiles}</div>
     <div class="panel final"><b>What to compare against (backtest 2022-26, favorite up 10+)</b><ul>
       ${['q1', 'half', 'q3'].map(k => `<li>${KIND[k]}: won ${BT[k].won}; fair price about ${BT[k].fair}</li>`).join('')}</ul>
+      <div style="margin-top:10px"><b>Defense hold check</b> <span class="muted">(favorite top 10 in defensive EPA over its last 3, up 8–14; any tier)</span><ul>${dh}</ul></div>
       <div class="small muted" style="margin-top:8px">If Kalshi's average price at a checkpoint sits well below the win rate over a few weekends, that checkpoint has value. Up to now it is only a price log; no bet signal comes from it.</div></div>
     ${rows ? `<div class="panel" style="padding:8px 12px"><div class="tw"><table><tr><th>Date</th><th>Game</th><th>Checkpoint</th><th>Score</th><th>Fav lead</th><th>Kalshi fav</th><th>ESPN win %</th><th>Result</th></tr>${rows}</table></div></div>`
            : '<div class="panel final">No checkpoints logged yet. The first ones come from this week\'s tracked games.</div>'}

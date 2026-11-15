@@ -9,7 +9,8 @@ Started by the NBA Scheduler's 15-minute tick (it dispatches cfb.yml). Every job
             an unlocked game kicks off within 75 minutes: every 15 minutes (its tier locks 1 hour before)
             other days: morning (from 7 AM PT) and evening (from 6 PM PT)
   alert   the first build on a game day sends one phone push (Qualified games today)
-  live    a tracked game (Qualified or Watch list) kicks off within 15 minutes or is on: start the logger
+  live    a tracked game (Qualified or Watch list), or any board game whose favorite has a top-10 defense over its
+          last 3 (defense hold check, owner Nov 15), kicks off within 15 minutes or is on: start the logger
 
     python scripts/cfb_scheduler.py decide [--force-build]
     python scripts/cfb_scheduler.py mark built|alerted
@@ -64,7 +65,7 @@ def decide(now: datetime, ctx: dict | None, state: dict, force: bool = False) ->
         out["build"], out["why"] = True, "morning/evening refresh"
     if out["build"] and today and now_pt.hour >= 6:
         out["alert"] = state.get("alerted") != today_et
-    out["live"] = any(g.get("tracked") and datetime.fromisoformat(g["kick_utc"]) - LIVE_BEFORE <= now
+    out["live"] = any((g.get("tracked") or g.get("def_hold")) and datetime.fromisoformat(g["kick_utc"]) - LIVE_BEFORE <= now
                       <= datetime.fromisoformat(g["kick_utc"]) + LIVE_AFTER for g in games)
     return out
 

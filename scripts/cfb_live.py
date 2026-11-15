@@ -13,6 +13,12 @@ so value exists only if Kalshi prices these moments below fair. A few weekends o
 answer that. If a poll misses the exact moment, the first poll after it is used and the record is
 marked "late". The final score is recorded too.
 
+Defense hold check (owner Nov 15, information only, never a bet): every board game whose favorite ranks top 10 in
+defensive EPA allowed over its last 3 games ("def_hold" in the context, any tier) is followed too. If the favorite
+leads by 8-14 at halftime or the end of the 3rd, the checkpoint is marked "dhold" and a push goes out (kinds dhold_half
+and dhold_q3, once each; not when the checkpoint was logged late). Backtest 2022-26: 16 of 17 at halftime, 17 of 17
+at the end of the 3rd (cfb.scoring.DEF_HOLD_*).
+
 Phone pushes: Qualified games only (Watch list = logged + Live page, no pushes), at most two per
 game, never repeated across restarts:
     end3  end of the 3rd: score, lead, Kalshi price, the engine's read
@@ -38,7 +44,7 @@ from zoneinfo import ZoneInfo
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from nba import notify  # noqa: E402
 from nba.http import FetchError  # noqa: E402
-from cfb import espn, kalshi  # noqa: E402
+from cfb import espn, kalshi, scoring  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ET = ZoneInfo("America/New_York")
@@ -208,9 +214,9 @@ def push_ok(g: dict) -> bool:
     return bool(g.get("alerts"))
 
 
-def alert(entry: dict, g: dict, kind: str, title: str, body: str, priority: str = "default") -> bool:
+def alert(entry: dict, g: dict, kind: str, title: str, body: str, priority: str = "default", ok: bool | None = None) -> bool:
     sent = entry.setdefault("alerts", {})
-    if kind in sent or not push_ok(g) or "--no-alert" in sys.argv:
+    if kind in sent or not (push_ok(g) if ok is None else ok) or "--no-alert" in sys.argv:
         return False
     try:
         notify.send_alert(title, body, click=f"{PAGES}cfb/game.html?g={g['id']}", priority=priority, tags="football")
@@ -233,6 +239,27 @@ def end3_alert(entry: dict, g: dict, rec: dict):
             + (f" Kalshi {g['fav_abbr']} {round(k['prob'] * 100)}¢." if k.get("prob") else " No Kalshi price.")
             + (f" Read: {en['headline']} ({en.get('grade', '–')})." if en.get("headline") else ""))
     alert(entry, g, "end3", title, body, "high" if rec["lead"] >= 14 else "default")
+
+
+def def_hold(g: dict, rec: dict, kind: str) -> bool:
+    """Favorite top 10 in defensive EPA (last 3) and up 8-14 at halftime or the end of the 3rd."""
+    lo, hi = scoring.DEF_HOLD_LEAD
+    return kind in ("half", "q3") and bool(g.get("def_hold")) and lo <= (rec.get("lead") or 0) <= hi
+
+
+def dhold_alert(entry: dict, g: dict, rec: dict, kind: str):
+    """Defense hold push (owner Nov 15): information only, any tier, not for a late checkpoint."""
+    if rec.get("late") or not def_hold(g, rec, kind):
+        return
+    k = rec.get("kalshi") or {}
+    when = LABEL[kind].lower()
+    title = f"College defense hold ({when}): {rec['score']}"
+    body = (f"{g['fav_abbr']} up {rec['lead']} with a top-10 defense over its last 3 (#{g.get('fav_def_rank_l3')} in EPA allowed). "
+            f"Favorites -10 to -20 in this spot won {scoring.DEF_HOLD_RECORD[kind]} at the {when} (2022-26)."
+            + (f" Kalshi {g['fav_abbr']} {round(k['prob'] * 100)}¢" if k.get("prob") else " No Kalshi price")
+            + (f", ESPN {round(rec['espn_wp'] * 100)}%." if rec.get("espn_wp") is not None else ".")
+            + " Information only, not a bet.")
+    alert(entry, g, f"dhold_{kind}", title, body, ok=True)
 
 
 def bet_check(entry: dict, g: dict, ev: dict) -> bool:
@@ -304,9 +331,9 @@ def main() -> int:
         print("No college context (build the board first).")
         return 0
     season = ctx["season"]
-    games = {g["id"]: g for g in ctx["games"] if g.get("tracked")}
+    games = {g["id"]: g for g in ctx["games"] if g.get("tracked") or g.get("def_hold")}
     if not games:
-        print("No tracked college games this week.")
+        print("No tracked or defense-hold college games this week.")
         return 0
     book = load(log_path(season), {"season": season, "games": {}})
     stop = time.time() + 60 * float(arg("--max-minutes", 330))
@@ -328,11 +355,15 @@ def main() -> int:
                 continue
             entry = book["games"].setdefault(ev["id"], {
                 "week": ctx["week"], "day_et": g["day_et"], "away": g["away_abbr"], "home": g["home_abbr"],
-                "fav": g["fav_abbr"], "dog": g["dog_abbr"], "spread": g["spread"], "tier": g["tier"], "hero": g.get("hero")})
+                "fav": g["fav_abbr"], "dog": g["dog_abbr"], "spread": g["spread"], "tier": g["tier"], "hero": g.get("hero"),
+                "def_hold": bool(g.get("def_hold")), "fav_def_rank_l3": g.get("fav_def_rank_l3")})
             for kind, late in due_checkpoints(ev, entry):
                 entry[kind] = snapshot(g, ev, kind, late)
                 changed.append(f"{g['away_abbr']}@{g['home_abbr']} {kind}")
                 r = entry[kind]
+                if def_hold(g, r, kind):
+                    r["dhold"] = True
+                    dhold_alert(entry, g, r, kind)
                 print(f"{datetime.now(PT):%-I:%M %p} {g['away_abbr']}@{g['home_abbr']} {kind}{' (late)' if late else ''}: "
                       f"{r['score']} lead {r['lead']} kalshi {(r.get('kalshi') or {}).get('prob')} wp {r['espn_wp']}")
                 if kind == "q3" and not (late and (_secs(ev.get("clock")) or 0) < 600):   # skip a stale end-of-3rd push
