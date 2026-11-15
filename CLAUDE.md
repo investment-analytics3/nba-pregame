@@ -153,6 +153,10 @@ College rules (owner decisions Nov 10 2026, spec "College Football Board"):
   not when late). Backtest 2022-26: 16 of 17 at halftime, 17 of 17 at the end of the 3rd (weak defenses 90-91%, ESPN WP ~94%).
   Live page panel + list chip ("Top-10 D #n"); price log shows each level's record vs avg Kalshi. Matchup splits (offense vs
   offense etc., last 2/3/season) were tested Nov 15 and don't separate college games: the spread already prices them.
+- Board grid (owner Nov 15, as NHL/CBB; template `pills()` / `H2H`): rows read across, favorite season / last 3 vs underdog
+  season / last 3: offense vs defense (EPA/play), defense vs offense (EPA), same two for success rate; colors unchanged. No
+  matchup outlines (they don't separate college games); the outline marks the defense hold check (fav last-3 defensive EPA
+  top 10) with a "Defense hold check" line.
 
 ## College basketball (separate pipeline like the NFL/CFB: own folder, workflows, concurrency groups `cbb-data`, `cbb-live`)
 
