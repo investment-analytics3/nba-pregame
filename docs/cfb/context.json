@@ -1,26 +1,108 @@
 {
  "season": 2026,
- "week": 11,
- "built_at": "2026-11-15T14:31:16-08:00",
+ "week": 12,
+ "built_at": "2026-11-15T15:04:12-08:00",
  "games": [
   {
-   "id": "401866462",
-   "kick_utc": "2026-11-12T00:30:00+00:00",
-   "kick_pt": "Wed 4:30 PM PT",
-   "day_et": "2026-11-11",
-   "away_abbr": "SAC",
-   "home_abbr": "CMU",
-   "fav_abbr": "CMU",
-   "dog_abbr": "SAC",
+   "id": "401866465",
+   "kick_utc": "2026-11-17T23:00:00+00:00",
+   "kick_pt": "Tue 3:00 PM PT",
+   "day_et": "2026-11-17",
+   "away_abbr": "EMU",
+   "home_abbr": "WMU",
+   "fav_abbr": "WMU",
+   "dog_abbr": "EMU",
    "fav_home": true,
-   "spread": -17.5,
+   "spread": -14.5,
    "away_names": [
-    "Sacramento State Hornets",
-    "Sacramento St"
+    "Eastern Michigan Eagles",
+    "E Michigan"
    ],
    "home_names": [
-    "Central Michigan Chippewas",
-    "C Michigan"
+    "Western Michigan Broncos",
+    "W Michigan"
+   ],
+   "tier": "watch",
+   "tier_label": "Watch list",
+   "tracked": true,
+   "alerts": false,
+   "call": "Watch list",
+   "hero": 20,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 91,
+   "def_hold": false,
+   "qbs": {
+    "EMU": {
+     "regular": "Noah Kim",
+     "rank": 101
+    },
+    "WMU": {
+     "regular": "Broc Lowry",
+     "rank": 98
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV17EMUWMU",
+   "locked": false
+  },
+  {
+   "id": "401866464",
+   "kick_utc": "2026-11-18T00:00:00+00:00",
+   "kick_pt": "Tue 4:00 PM PT",
+   "day_et": "2026-11-17",
+   "away_abbr": "BALL",
+   "home_abbr": "OHIO",
+   "fav_abbr": "OHIO",
+   "dog_abbr": "BALL",
+   "fav_home": true,
+   "spread": -10.5,
+   "away_names": [
+    "Ball State Cardinals",
+    "Ball State"
+   ],
+   "home_names": [
+    "Ohio Bobcats",
+    "Ohio"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "alerts": false,
+   "call": "No track",
+   "hero": 15,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 34,
+   "def_hold": false,
+   "qbs": {
+    "BALL": {
+     "regular": "Keldric Luster",
+     "rank": 105
+    },
+    "OHIO": {
+     "regular": "Nick Poulos",
+     "rank": 95
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV17BALLOHIO",
+   "locked": false
+  },
+  {
+   "id": "401858303",
+   "kick_utc": "2026-11-21T00:30:00+00:00",
+   "kick_pt": "Fri 4:30 PM PT",
+   "day_et": "2026-11-20",
+   "away_abbr": "CLEM",
+   "home_abbr": "DUKE",
+   "fav_abbr": "DUKE",
+   "dog_abbr": "CLEM",
+   "fav_home": true,
+   "spread": -11.5,
+   "away_names": [
+    "Clemson Tigers",
+    "Clemson"
+   ],
+   "home_names": [
+    "Duke Blue Devils",
+    "Duke"
    ],
    "tier": "out",
    "tier_label": "No track",
@@ -29,35 +111,35 @@
    "call": "No track",
    "hero": 16,
    "fav_defense_top10": false,
-   "fav_def_rank_l3": 59,
+   "fav_def_rank_l3": 40,
    "def_hold": false,
    "qbs": {
-    "SAC": {
-     "regular": "Jackson Sharman",
-     "rank": 124
+    "CLEM": {
+     "regular": "Tait Reynolds",
+     "rank": 128
     },
-    "CMU": {
-     "regular": "Angel Flores",
-     "rank": 133
+    "DUKE": {
+     "regular": "Walker Eget",
+     "rank": 31
     }
    },
-   "kalshi_event": "KXNCAAFGAME-26NOV11SACCMU",
-   "locked": true
+   "kalshi_event": "KXNCAAFGAME-26NOV20CLEMDUKE",
+   "locked": false
   },
   {
-   "id": "401866463",
-   "kick_utc": "2026-11-12T00:30:00+00:00",
-   "kick_pt": "Wed 4:30 PM PT",
-   "day_et": "2026-11-11",
-   "away_abbr": "MASS",
+   "id": "401866468",
+   "kick_utc": "2026-11-21T00:30:00+00:00",
+   "kick_pt": "Fri 4:30 PM PT",
+   "day_et": "2026-11-20",
+   "away_abbr": "BGSU",
    "home_abbr": "TOL",
    "fav_abbr": "TOL",
-   "dog_abbr": "MASS",
+   "dog_abbr": "BGSU",
    "fav_home": true,
-   "spread": -14.0,
+   "spread": -15.5,
    "away_names": [
-    "Massachusetts Minutemen",
-    "UMass"
+    "Bowling Green Falcons",
+    "Bowling Green"
    ],
    "home_names": [
     "Toledo Rockets",
@@ -68,246 +150,41 @@
    "tracked": true,
    "alerts": false,
    "call": "Watch list",
-   "hero": 20,
-   "fav_defense_top10": false,
-   "fav_def_rank_l3": 17,
-   "def_hold": false,
+   "hero": 22,
+   "fav_defense_top10": true,
+   "fav_def_rank_l3": 7,
+   "def_hold": true,
    "qbs": {
-    "MASS": {
-     "regular": "William Watson III",
-     "rank": 53
+    "BGSU": {
+     "regular": "Jay Kastantin",
+     "rank": 104
     },
     "TOL": {
      "regular": "John Alan Richter",
-     "rank": 23
+     "rank": 26
     }
    },
-   "kalshi_event": "KXNCAAFGAME-26NOV11MASSTOL",
-   "locked": true
+   "kalshi_event": "KXNCAAFGAME-26NOV20BGSUTOL",
+   "locked": false
   },
   {
-   "id": "401869969",
-   "kick_utc": "2026-11-13T02:00:00+00:00",
-   "kick_pt": "Thu 6:00 PM PT",
-   "day_et": "2026-11-12",
-   "away_abbr": "UL",
-   "home_abbr": "ULM",
-   "fav_abbr": "UL",
-   "dog_abbr": "ULM",
+   "id": "401858529",
+   "kick_utc": "2026-11-21T01:00:00+00:00",
+   "kick_pt": "Fri 5:00 PM PT",
+   "day_et": "2026-11-20",
+   "away_abbr": "ORE",
+   "home_abbr": "MSU",
+   "fav_abbr": "ORE",
+   "dog_abbr": "MSU",
    "fav_home": false,
-   "spread": -10.0,
-   "away_names": [
-    "Louisiana Ragin' Cajuns",
-    "Louisiana"
-   ],
-   "home_names": [
-    "UL Monroe Warhawks",
-    "UL Monroe"
-   ],
-   "tier": "out",
-   "tier_label": "No track",
-   "tracked": false,
-   "alerts": false,
-   "call": "No track",
-   "hero": 13,
-   "fav_defense_top10": false,
-   "fav_def_rank_l3": 45,
-   "def_hold": false,
-   "qbs": {
-    "UL": {
-     "regular": "Lunch Winfield",
-     "rank": 102
-    },
-    "ULM": {
-     "regular": "Aidan Armenta",
-     "rank": 65
-    }
-   },
-   "kalshi_event": null,
-   "locked": true
-  },
-  {
-   "id": "401858526",
-   "kick_utc": "2026-11-14T02:00:00+00:00",
-   "kick_pt": "Fri 6:00 PM PT",
-   "day_et": "2026-11-13",
-   "away_abbr": "ILL",
-   "home_abbr": "UCLA",
-   "fav_abbr": "UCLA",
-   "dog_abbr": "ILL",
-   "fav_home": true,
-   "spread": -10.0,
-   "away_names": [
-    "Illinois Fighting Illini",
-    "Illinois"
-   ],
-   "home_names": [
-    "UCLA Bruins",
-    "UCLA"
-   ],
-   "tier": "watch",
-   "tier_label": "Watch list",
-   "tracked": true,
-   "alerts": false,
-   "call": "Watch list",
-   "hero": 24,
-   "fav_defense_top10": true,
-   "fav_def_rank_l3": 2,
-   "def_hold": true,
-   "qbs": {
-    "ILL": {
-     "regular": "Katin Houser",
-     "rank": 31
-    },
-    "UCLA": {
-     "regular": "Nico Iamaleava",
-     "rank": 94
-    }
-   },
-   "kalshi_event": "KXNCAAFGAME-26NOV13ILLUCLA",
-   "locked": true
-  },
-  {
-   "id": "401858296",
-   "kick_utc": "2026-11-14T17:00:00+00:00",
-   "kick_pt": "Sat 9:00 AM PT",
-   "day_et": "2026-11-14",
-   "away_abbr": "DUKE",
-   "home_abbr": "MIA",
-   "fav_abbr": "MIA",
-   "dog_abbr": "DUKE",
-   "fav_home": true,
    "spread": -14.0,
    "away_names": [
-    "Duke Blue Devils",
-    "Duke"
+    "Oregon Ducks",
+    "Oregon"
    ],
    "home_names": [
-    "Miami Hurricanes",
-    "Miami"
-   ],
-   "tier": "out",
-   "tier_label": "No track",
-   "tracked": false,
-   "alerts": false,
-   "call": "No track",
-   "hero": 17,
-   "fav_defense_top10": false,
-   "fav_def_rank_l3": 121,
-   "def_hold": false,
-   "qbs": {
-    "DUKE": {
-     "regular": "Walker Eget",
-     "rank": 28
-    },
-    "MIA": {
-     "regular": "Darian Mensah",
-     "rank": 1
-    }
-   },
-   "kalshi_event": "KXNCAAFGAME-26NOV14DUKEMIA",
-   "locked": true
-  },
-  {
-   "id": "401858522",
-   "kick_utc": "2026-11-14T17:00:00+00:00",
-   "kick_pt": "Sat 9:00 AM PT",
-   "day_et": "2026-11-14",
-   "away_abbr": "NU",
-   "home_abbr": "OSU",
-   "fav_abbr": "OSU",
-   "dog_abbr": "NU",
-   "fav_home": true,
-   "spread": -14.0,
-   "away_names": [
-    "Northwestern Wildcats",
-    "Northwestern"
-   ],
-   "home_names": [
-    "Ohio State Buckeyes",
-    "Ohio State"
-   ],
-   "tier": "out",
-   "tier_label": "No track",
-   "tracked": false,
-   "alerts": false,
-   "call": "No track",
-   "hero": 15,
-   "fav_defense_top10": false,
-   "fav_def_rank_l3": 73,
-   "def_hold": false,
-   "qbs": {
-    "NU": {
-     "regular": "Aidan Chiles",
-     "rank": 17
-    },
-    "OSU": {
-     "regular": "Julian Sayin",
-     "rank": 6
-    }
-   },
-   "kalshi_event": "KXNCAAFGAME-26NOV14NWOSU",
-   "locked": true
-  },
-  {
-   "id": "401858297",
-   "kick_utc": "2026-11-14T17:30:00+00:00",
-   "kick_pt": "Sat 9:30 AM PT",
-   "day_et": "2026-11-14",
-   "away_abbr": "GT",
-   "home_abbr": "CLEM",
-   "fav_abbr": "CLEM",
-   "dog_abbr": "GT",
-   "fav_home": true,
-   "spread": -15.5,
-   "away_names": [
-    "Georgia Tech Yellow Jackets",
-    "Georgia Tech"
-   ],
-   "home_names": [
-    "Clemson Tigers",
-    "Clemson"
-   ],
-   "tier": "watch",
-   "tier_label": "Watch list",
-   "tracked": true,
-   "alerts": false,
-   "call": "Watch list",
-   "hero": 21,
-   "fav_defense_top10": false,
-   "fav_def_rank_l3": 21,
-   "def_hold": false,
-   "qbs": {
-    "GT": {
-     "regular": "Alberto Mendoza",
-     "rank": 95
-    },
-    "CLEM": {
-     "regular": "Tait Reynolds",
-     "rank": 128
-    }
-   },
-   "kalshi_event": "KXNCAAFGAME-26NOV14GTCLEM",
-   "locked": true
-  },
-  {
-   "id": "401858525",
-   "kick_utc": "2026-11-14T17:30:00+00:00",
-   "kick_pt": "Sat 9:30 AM PT",
-   "day_et": "2026-11-14",
-   "away_abbr": "NEB",
-   "home_abbr": "RUTG",
-   "fav_abbr": "NEB",
-   "dog_abbr": "RUTG",
-   "fav_home": false,
-   "spread": -15.5,
-   "away_names": [
-    "Nebraska Cornhuskers",
-    "Nebraska"
-   ],
-   "home_names": [
-    "Rutgers Scarlet Knights",
-    "Rutgers"
+    "Michigan State Spartans",
+    "Michigan St"
    ],
    "tier": "watch",
    "tier_label": "Watch list",
@@ -316,80 +193,39 @@
    "call": "Watch list",
    "hero": 20,
    "fav_defense_top10": false,
-   "fav_def_rank_l3": 33,
+   "fav_def_rank_l3": 59,
    "def_hold": false,
    "qbs": {
-    "NEB": {
-     "regular": "Anthony Colandrea",
-     "rank": 76
-    },
-    "RUTG": {
-     "regular": "Dylan Lonergan",
-     "rank": 13
-    }
-   },
-   "kalshi_event": "KXNCAAFGAME-26NOV14NEBRUTG",
-   "locked": true
-  },
-  {
-   "id": "401856889",
-   "kick_utc": "2026-11-14T17:45:00+00:00",
-   "kick_pt": "Sat 9:45 AM PT",
-   "day_et": "2026-11-14",
-   "away_abbr": "ALA",
-   "home_abbr": "VAN",
-   "fav_abbr": "ALA",
-   "dog_abbr": "VAN",
-   "fav_home": false,
-   "spread": -14.0,
-   "away_names": [
-    "Alabama Crimson Tide",
-    "Alabama"
-   ],
-   "home_names": [
-    "Vanderbilt Commodores",
-    "Vanderbilt"
-   ],
-   "tier": "out",
-   "tier_label": "No track",
-   "tracked": false,
-   "alerts": false,
-   "call": "No track",
-   "hero": 16,
-   "fav_defense_top10": false,
-   "fav_def_rank_l3": 26,
-   "def_hold": false,
-   "qbs": {
-    "ALA": {
-     "regular": "Keelon Russell",
+    "ORE": {
+     "regular": "Dylan Raiola",
      "rank": 29
     },
-    "VAN": {
-     "regular": "Jared Curtis",
-     "rank": 74
+    "MSU": {
+     "regular": "Alessio Milivojevic",
+     "rank": 84
     }
    },
-   "kalshi_event": "KXNCAAFGAME-26NOV14ALAVAN",
-   "locked": true
+   "kalshi_event": "KXNCAAFGAME-26NOV20OREMSU",
+   "locked": false
   },
   {
-   "id": "401862825",
-   "kick_utc": "2026-11-14T18:00:00+00:00",
-   "kick_pt": "Sat 10:00 AM PT",
-   "day_et": "2026-11-14",
-   "away_abbr": "ECU",
-   "home_abbr": "CLT",
-   "fav_abbr": "ECU",
-   "dog_abbr": "CLT",
-   "fav_home": false,
-   "spread": -10.5,
+   "id": "401858306",
+   "kick_utc": "2026-11-21T05:00:00+00:00",
+   "kick_pt": "Fri 9:00 PM PT",
+   "day_et": "2026-11-21",
+   "away_abbr": "PITT",
+   "home_abbr": "LOU",
+   "fav_abbr": "LOU",
+   "dog_abbr": "PITT",
+   "fav_home": true,
+   "spread": -12.5,
    "away_names": [
-    "East Carolina Pirates",
-    "East Carolina"
+    "Pittsburgh Panthers",
+    "Pitt"
    ],
    "home_names": [
-    "Charlotte 49ers",
-    "Charlotte"
+    "Louisville Cardinals",
+    "Louisville"
    ],
    "tier": "watch",
    "tier_label": "Watch list",
@@ -398,203 +234,39 @@
    "call": "Watch list",
    "hero": 22,
    "fav_defense_top10": false,
-   "fav_def_rank_l3": 66,
+   "fav_def_rank_l3": 24,
    "def_hold": false,
    "qbs": {
-    "ECU": {
-     "regular": "Emory Williams",
-     "rank": 116
+    "PITT": {
+     "regular": "Mason Heintschel",
+     "rank": 11
     },
-    "CLT": {
-     "regular": "Conner Harrell",
-     "rank": 88
+    "LOU": {
+     "regular": "Lincoln Kienholz",
+     "rank": 17
     }
    },
-   "kalshi_event": "KXNCAAFGAME-26NOV14ECUCHAR",
-   "locked": true
+   "kalshi_event": "KXNCAAFGAME-26NOV21PITTLOU",
+   "locked": false
   },
   {
-   "id": "401856862",
-   "kick_utc": "2026-11-14T19:00:00+00:00",
-   "kick_pt": "Sat 11:00 AM PT",
-   "day_et": "2026-11-14",
-   "away_abbr": "KSU",
-   "home_abbr": "TCU",
-   "fav_abbr": "TCU",
-   "dog_abbr": "KSU",
+   "id": "401856748",
+   "kick_utc": "2026-11-21T17:00:00+00:00",
+   "kick_pt": "Sat 9:00 AM PT",
+   "day_et": "2026-11-21",
+   "away_abbr": "VAN",
+   "home_abbr": "FLA",
+   "fav_abbr": "FLA",
+   "dog_abbr": "VAN",
    "fav_home": true,
    "spread": -13.5,
    "away_names": [
-    "Kansas State Wildcats",
-    "Kansas St"
+    "Vanderbilt Commodores",
+    "Vanderbilt"
    ],
    "home_names": [
-    "TCU Horned Frogs",
-    "TCU"
-   ],
-   "tier": "watch",
-   "tier_label": "Watch list",
-   "tracked": true,
-   "alerts": false,
-   "call": "Watch list",
-   "hero": 20,
-   "fav_defense_top10": false,
-   "fav_def_rank_l3": 41,
-   "def_hold": false,
-   "qbs": {
-    "KSU": {
-     "regular": "Avery Johnson",
-     "rank": 39
-    },
-    "TCU": {
-     "regular": "Jaden Craig",
-     "rank": 66
-    }
-   },
-   "kalshi_event": "KXNCAAFGAME-26NOV14KSUTCU",
-   "locked": true
-  },
-  {
-   "id": "401856883",
-   "kick_utc": "2026-11-14T20:30:00+00:00",
-   "kick_pt": "Sat 12:30 PM PT",
-   "day_et": "2026-11-14",
-   "away_abbr": "MIZ",
-   "home_abbr": "UGA",
-   "fav_abbr": "UGA",
-   "dog_abbr": "MIZ",
-   "fav_home": true,
-   "spread": -16.5,
-   "away_names": [
-    "Missouri Tigers",
-    "Missouri"
-   ],
-   "home_names": [
-    "Georgia Bulldogs",
-    "Georgia"
-   ],
-   "tier": "out",
-   "tier_label": "No track",
-   "tracked": false,
-   "alerts": false,
-   "call": "No track",
-   "hero": 21,
-   "fav_defense_top10": false,
-   "fav_def_rank_l3": 25,
-   "def_hold": false,
-   "qbs": {
-    "MIZ": {
-     "regular": "Austin Simmons",
-     "rank": 30
-    },
-    "UGA": {
-     "regular": "Gunner Stockton",
-     "rank": 25
-    }
-   },
-   "kalshi_event": "KXNCAAFGAME-26NOV14MIZZUGA",
-   "locked": true
-  },
-  {
-   "id": "401858523",
-   "kick_utc": "2026-11-14T20:30:00+00:00",
-   "kick_pt": "Sat 12:30 PM PT",
-   "day_et": "2026-11-14",
-   "away_abbr": "MICH",
-   "home_abbr": "ORE",
-   "fav_abbr": "ORE",
-   "dog_abbr": "MICH",
-   "fav_home": true,
-   "spread": -10.0,
-   "away_names": [
-    "Michigan Wolverines",
-    "Michigan"
-   ],
-   "home_names": [
-    "Oregon Ducks",
-    "Oregon"
-   ],
-   "tier": "out",
-   "tier_label": "No track",
-   "tracked": false,
-   "alerts": false,
-   "call": "No track",
-   "hero": 13,
-   "fav_defense_top10": false,
-   "fav_def_rank_l3": 75,
-   "def_hold": false,
-   "qbs": {
-    "MICH": {
-     "regular": "Bryce Underwood",
-     "rank": 55
-    },
-    "ORE": {
-     "regular": "Dylan Raiola",
-     "rank": 47
-    }
-   },
-   "kalshi_event": "KXNCAAFGAME-26NOV14MICHORE",
-   "locked": true
-  },
-  {
-   "id": "401858295",
-   "kick_utc": "2026-11-14T20:30:00+00:00",
-   "kick_pt": "Sat 12:30 PM PT",
-   "day_et": "2026-11-14",
-   "away_abbr": "CAL",
-   "home_abbr": "UVA",
-   "fav_abbr": "UVA",
-   "dog_abbr": "CAL",
-   "fav_home": true,
-   "spread": -11.5,
-   "away_names": [
-    "California Golden Bears",
-    "California"
-   ],
-   "home_names": [
-    "Virginia Cavaliers",
-    "Virginia"
-   ],
-   "tier": "watch",
-   "tier_label": "Watch list",
-   "tracked": true,
-   "alerts": false,
-   "call": "Watch list",
-   "hero": 19,
-   "fav_defense_top10": false,
-   "fav_def_rank_l3": 114,
-   "def_hold": false,
-   "qbs": {
-    "CAL": {
-     "regular": "Jaron-Keawe Sagapolutele",
-     "rank": 117
-    },
-    "UVA": {
-     "regular": "Beau Pribula",
-     "rank": 78
-    }
-   },
-   "kalshi_event": "KXNCAAFGAME-26NOV14CALUVA",
-   "locked": true
-  },
-  {
-   "id": "401860916",
-   "kick_utc": "2026-11-14T21:00:00+00:00",
-   "kick_pt": "Sat 1:00 PM PT",
-   "day_et": "2026-11-14",
-   "away_abbr": "FRES",
-   "home_abbr": "TXST",
-   "fav_abbr": "TXST",
-   "dog_abbr": "FRES",
-   "fav_home": true,
-   "spread": -10.0,
-   "away_names": [
-    "Fresno State Bulldogs",
-    "Fresno St"
-   ],
-   "home_names": [
-    "Texas State Bobcats",
-    "Texas St"
+    "Florida Gators",
+    "Florida"
    ],
    "tier": "out",
    "tier_label": "No track",
@@ -603,35 +275,322 @@
    "call": "No track",
    "hero": 15,
    "fav_defense_top10": false,
-   "fav_def_rank_l3": 97,
+   "fav_def_rank_l3": 45,
    "def_hold": false,
    "qbs": {
-    "FRES": {
-     "regular": "Jayden Mandal",
-     "rank": 37
+    "VAN": {
+     "regular": "Jared Curtis",
+     "rank": 91
+    },
+    "FLA": {
+     "regular": "Aaron Philo",
+     "rank": 28
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV21VANFLA",
+   "locked": false
+  },
+  {
+   "id": "401871080",
+   "kick_utc": "2026-11-21T18:00:00+00:00",
+   "kick_pt": "Sat 10:00 AM PT",
+   "day_et": "2026-11-21",
+   "away_abbr": "WKU",
+   "home_abbr": "LIB",
+   "fav_abbr": "LIB",
+   "dog_abbr": "WKU",
+   "fav_home": true,
+   "spread": -16.5,
+   "away_names": [
+    "Western Kentucky Hilltoppers",
+    "Western KY"
+   ],
+   "home_names": [
+    "Liberty Flames",
+    "Liberty"
+   ],
+   "tier": "watch",
+   "tier_label": "Watch list",
+   "tracked": true,
+   "alerts": false,
+   "call": "Watch list",
+   "hero": 24,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 57,
+   "def_hold": false,
+   "qbs": {
+    "WKU": {
+     "regular": "Brock Glenn",
+     "rank": 113
+    },
+    "LIB": {
+     "regular": "Deshawn Purdie",
+     "rank": 38
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV21WKULIB",
+   "locked": false
+  },
+  {
+   "id": "401871079",
+   "kick_utc": "2026-11-21T19:00:00+00:00",
+   "kick_pt": "Sat 11:00 AM PT",
+   "day_et": "2026-11-21",
+   "away_abbr": "MOST",
+   "home_abbr": "JXST",
+   "fav_abbr": "JXST",
+   "dog_abbr": "MOST",
+   "fav_home": true,
+   "spread": -10.5,
+   "away_names": [
+    "Missouri State Bears",
+    "Missouri St"
+   ],
+   "home_names": [
+    "Jacksonville State Gamecocks",
+    "Jax State"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "alerts": false,
+   "call": "No track",
+   "hero": 14,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 52,
+   "def_hold": false,
+   "qbs": {
+    "MOST": {
+     "regular": "Henry Belin IV",
+     "rank": 82
+    },
+    "JXST": {
+     "regular": "Caden Creel",
+     "rank": 36
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV21MOSUJVST",
+   "locked": false
+  },
+  {
+   "id": "401869929",
+   "kick_utc": "2026-11-21T19:30:00+00:00",
+   "kick_pt": "Sat 11:30 AM PT",
+   "day_et": "2026-11-21",
+   "away_abbr": "ULM",
+   "home_abbr": "APP",
+   "fav_abbr": "APP",
+   "dog_abbr": "ULM",
+   "fav_home": true,
+   "spread": -14.0,
+   "away_names": [
+    "UL Monroe Warhawks",
+    "UL Monroe"
+   ],
+   "home_names": [
+    "App State Mountaineers",
+    "App State"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "alerts": false,
+   "call": "No track",
+   "hero": 16,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 72,
+   "def_hold": false,
+   "qbs": {
+    "ULM": {
+     "regular": "Aidan Armenta",
+     "rank": 58
+    },
+    "APP": {
+     "regular": "Malachi Singleton",
+     "rank": 61
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV21ULMAPP",
+   "locked": false
+  },
+  {
+   "id": "401869946",
+   "kick_utc": "2026-11-21T20:00:00+00:00",
+   "kick_pt": "Sat 12:00 PM PT",
+   "day_et": "2026-11-21",
+   "away_abbr": "CCU",
+   "home_abbr": "UL",
+   "fav_abbr": "UL",
+   "dog_abbr": "CCU",
+   "fav_home": true,
+   "spread": -10.0,
+   "away_names": [
+    "Coastal Carolina Chanticleers",
+    "Coastal"
+   ],
+   "home_names": [
+    "Louisiana Ragin' Cajuns",
+    "Louisiana"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "alerts": false,
+   "call": "No track",
+   "hero": 17,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 81,
+   "def_hold": false,
+   "qbs": {
+    "CCU": {
+     "regular": "Deuce Bailey",
+     "rank": 71
+    },
+    "UL": {
+     "regular": "Lunch Winfield",
+     "rank": 99
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV21CCARULL",
+   "locked": false
+  },
+  {
+   "id": "401861968",
+   "kick_utc": "2026-11-21T20:30:00+00:00",
+   "kick_pt": "Sat 12:30 PM PT",
+   "day_et": "2026-11-21",
+   "away_abbr": "ODU",
+   "home_abbr": "CONN",
+   "fav_abbr": "CONN",
+   "dog_abbr": "ODU",
+   "fav_home": true,
+   "spread": -14.0,
+   "away_names": [
+    "Old Dominion Monarchs",
+    "Old Dominion"
+   ],
+   "home_names": [
+    "UConn Huskies",
+    "UConn"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "alerts": false,
+   "call": "No track",
+   "hero": 16,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 111,
+   "def_hold": false,
+   "qbs": {
+    "ODU": {
+     "regular": "Jaxon Potter",
+     "rank": 133
+    },
+    "CONN": {
+     "regular": "Kalieb Osborne",
+     "rank": 56
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV21ODUCONN",
+   "locked": false
+  },
+  {
+   "id": "401860920",
+   "kick_utc": "2026-11-21T23:00:00+00:00",
+   "kick_pt": "Sat 3:00 PM PT",
+   "day_et": "2026-11-21",
+   "away_abbr": "WSU",
+   "home_abbr": "TXST",
+   "fav_abbr": "TXST",
+   "dog_abbr": "WSU",
+   "fav_home": true,
+   "spread": -11.5,
+   "away_names": [
+    "Washington State Cougars",
+    "Washington St"
+   ],
+   "home_names": [
+    "Texas State Bobcats",
+    "Texas St"
+   ],
+   "tier": "watch",
+   "tier_label": "Watch list",
+   "tracked": true,
+   "alerts": false,
+   "call": "Watch list",
+   "hero": 18,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 118,
+   "def_hold": false,
+   "qbs": {
+    "WSU": {
+     "regular": "Caden Pinnick",
+     "rank": 131
     },
     "TXST": {
      "regular": "Brad Jackson",
-     "rank": 19
+     "rank": 7
     }
    },
-   "kalshi_event": "KXNCAAFGAME-26NOV14FRESTXST",
-   "locked": true
+   "kalshi_event": "KXNCAAFGAME-26NOV21WSUTXST",
+   "locked": false
   },
   {
-   "id": "401871099",
-   "kick_utc": "2026-11-14T22:00:00+00:00",
-   "kick_pt": "Sat 2:00 PM PT",
-   "day_et": "2026-11-14",
-   "away_abbr": "USM",
+   "id": "401858534",
+   "kick_utc": "2026-11-21T23:15:00+00:00",
+   "kick_pt": "Sat 3:15 PM PT",
+   "day_et": "2026-11-21",
+   "away_abbr": "MD",
+   "home_abbr": "USC",
+   "fav_abbr": "USC",
+   "dog_abbr": "MD",
+   "fav_home": true,
+   "spread": -16.5,
+   "away_names": [
+    "Maryland Terrapins",
+    "Maryland"
+   ],
+   "home_names": [
+    "USC Trojans",
+    "USC"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "alerts": false,
+   "call": "No track",
+   "hero": 16,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 95,
+   "def_hold": false,
+   "qbs": {
+    "MD": {
+     "regular": "Malik Washington",
+     "rank": 110
+    },
+    "USC": {
+     "regular": "Jayden Maiava",
+     "rank": 13
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV21MDUSC",
+   "locked": false
+  },
+  {
+   "id": "401869938",
+   "kick_utc": "2026-11-22T00:00:00+00:00",
+   "kick_pt": "Sat 4:00 PM PT",
+   "day_et": "2026-11-21",
+   "away_abbr": "ARST",
    "home_abbr": "LT",
    "fav_abbr": "LT",
-   "dog_abbr": "USM",
+   "dog_abbr": "ARST",
    "fav_home": true,
-   "spread": -17.5,
+   "spread": -14.5,
    "away_names": [
-    "Southern Miss Golden Eagles",
-    "Southern Miss"
+    "Arkansas State Red Wolves",
+    "Arkansas St"
    ],
    "home_names": [
     "Louisiana Tech Bulldogs",
@@ -642,37 +601,78 @@
    "tracked": true,
    "alerts": false,
    "call": "Watch list",
-   "hero": 21,
-   "fav_defense_top10": true,
-   "fav_def_rank_l3": 4,
+   "hero": 22,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 10,
    "def_hold": true,
    "qbs": {
-    "USM": {
-     "regular": "Landry Lyddy",
-     "rank": 112
+    "ARST": {
+     "regular": "Trey Owens",
+     "rank": 80
     },
     "LT": {
      "regular": "Blake Baker",
-     "rank": 43
+     "rank": 32
     }
    },
-   "kalshi_event": "KXNCAAFGAME-26NOV14USMLT",
-   "locked": true
+   "kalshi_event": "KXNCAAFGAME-26NOV21ARSTLT",
+   "locked": false
   },
   {
-   "id": "401860914",
-   "kick_utc": "2026-11-14T23:00:00+00:00",
-   "kick_pt": "Sat 3:00 PM PT",
-   "day_et": "2026-11-14",
-   "away_abbr": "ORST",
+   "id": "401856753",
+   "kick_utc": "2026-11-22T00:30:00+00:00",
+   "kick_pt": "Sat 4:30 PM PT",
+   "day_et": "2026-11-21",
+   "away_abbr": "UGA",
+   "home_abbr": "SC",
+   "fav_abbr": "UGA",
+   "dog_abbr": "SC",
+   "fav_home": false,
+   "spread": -16.5,
+   "away_names": [
+    "Georgia Bulldogs",
+    "Georgia"
+   ],
+   "home_names": [
+    "South Carolina Gamecocks",
+    "South Carolina"
+   ],
+   "tier": "watch",
+   "tier_label": "Watch list",
+   "tracked": true,
+   "alerts": false,
+   "call": "Watch list",
+   "hero": 21,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 19,
+   "def_hold": false,
+   "qbs": {
+    "UGA": {
+     "regular": "Gunner Stockton",
+     "rank": 18
+    },
+    "SC": {
+     "regular": "LaNorris Sellers",
+     "rank": 69
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV21UGASCAR",
+   "locked": false
+  },
+  {
+   "id": "401860925",
+   "kick_utc": "2026-11-22T02:30:00+00:00",
+   "kick_pt": "Sat 6:30 PM PT",
+   "day_et": "2026-11-21",
+   "away_abbr": "SDSU",
    "home_abbr": "BOIS",
    "fav_abbr": "BOIS",
-   "dog_abbr": "ORST",
+   "dog_abbr": "SDSU",
    "fav_home": true,
    "spread": -16.5,
    "away_names": [
-    "Oregon State Beavers",
-    "Oregon St"
+    "San Diego State Aztecs",
+    "San Diego St"
    ],
    "home_names": [
     "Boise State Broncos",
@@ -683,227 +683,22 @@
    "tracked": true,
    "alerts": false,
    "call": "Watch list",
-   "hero": 21,
+   "hero": 25,
    "fav_defense_top10": false,
-   "fav_def_rank_l3": 120,
+   "fav_def_rank_l3": 137,
    "def_hold": false,
    "qbs": {
-    "ORST": {
-     "regular": "Braden Atkinson",
-     "rank": 22
+    "SDSU": {
+     "regular": "Jayden Denegal",
+     "rank": 126
     },
     "BOIS": {
      "regular": "Maddux Madsen",
-     "rank": 26
+     "rank": 8
     }
    },
-   "kalshi_event": "KXNCAAFGAME-26NOV14ORSTBSU",
-   "locked": true
-  },
-  {
-   "id": "401858524",
-   "kick_utc": "2026-11-15T00:00:00+00:00",
-   "kick_pt": "Sat 4:00 PM PT",
-   "day_et": "2026-11-14",
-   "away_abbr": "MINN",
-   "home_abbr": "PSU",
-   "fav_abbr": "PSU",
-   "dog_abbr": "MINN",
-   "fav_home": true,
-   "spread": -12.5,
-   "away_names": [
-    "Minnesota Golden Gophers",
-    "Minnesota"
-   ],
-   "home_names": [
-    "Penn State Nittany Lions",
-    "Penn State"
-   ],
-   "tier": "watch",
-   "tier_label": "Watch list",
-   "tracked": true,
-   "alerts": false,
-   "call": "Watch list",
-   "hero": 19,
-   "fav_defense_top10": false,
-   "fav_def_rank_l3": 51,
-   "def_hold": false,
-   "qbs": {
-    "MINN": {
-     "regular": "Drake Lindsey",
-     "rank": 104
-    },
-    "PSU": {
-     "regular": "Rocco Becht",
-     "rank": 48
-    }
-   },
-   "kalshi_event": "KXNCAAFGAME-26NOV14MINNPSU",
-   "locked": true
-  },
-  {
-   "id": "401864538",
-   "kick_utc": "2026-11-15T00:00:00+00:00",
-   "kick_pt": "Sat 4:00 PM PT",
-   "day_et": "2026-11-14",
-   "away_abbr": "SJSU",
-   "home_abbr": "AFA",
-   "fav_abbr": "AFA",
-   "dog_abbr": "SJSU",
-   "fav_home": true,
-   "spread": -14.0,
-   "away_names": [
-    "San Jos\u00e9 State Spartans",
-    "San Jos\u00e9 St"
-   ],
-   "home_names": [
-    "Air Force Falcons",
-    "Air Force"
-   ],
-   "tier": "watch",
-   "tier_label": "Watch list",
-   "tracked": true,
-   "alerts": false,
-   "call": "Watch list",
-   "hero": 23,
-   "fav_defense_top10": false,
-   "fav_def_rank_l3": 123,
-   "def_hold": false,
-   "qbs": {
-    "SJSU": {
-     "regular": "Luke Weaver",
-     "rank": 62
-    },
-    "AFA": {
-     "regular": "Liam Szarka",
-     "rank": null
-    }
-   },
-   "kalshi_event": "KXNCAAFGAME-26NOV14SJSUAFA",
-   "locked": true
-  },
-  {
-   "id": "401858519",
-   "kick_utc": "2026-11-15T00:30:00+00:00",
-   "kick_pt": "Sat 4:30 PM PT",
-   "day_et": "2026-11-14",
-   "away_abbr": "PUR",
-   "home_abbr": "IOWA",
-   "fav_abbr": "IOWA",
-   "dog_abbr": "PUR",
-   "fav_home": true,
-   "spread": -18.5,
-   "away_names": [
-    "Purdue Boilermakers",
-    "Purdue"
-   ],
-   "home_names": [
-    "Iowa Hawkeyes",
-    "Iowa"
-   ],
-   "tier": "watch",
-   "tier_label": "Watch list",
-   "tracked": true,
-   "alerts": false,
-   "call": "Watch list",
-   "hero": 24,
-   "fav_defense_top10": true,
-   "fav_def_rank_l3": 13,
-   "def_hold": false,
-   "qbs": {
-    "PUR": {
-     "regular": "Ryan Browne",
-     "rank": 49
-    },
-    "IOWA": {
-     "regular": "Hank Brown",
-     "rank": 58
-    }
-   },
-   "kalshi_event": "KXNCAAFGAME-26NOV14PURIOWA",
-   "locked": true
-  },
-  {
-   "id": "401858299",
-   "kick_utc": "2026-11-15T00:30:00+00:00",
-   "kick_pt": "Sat 4:30 PM PT",
-   "day_et": "2026-11-14",
-   "away_abbr": "STAN",
-   "home_abbr": "VT",
-   "fav_abbr": "VT",
-   "dog_abbr": "STAN",
-   "fav_home": true,
-   "spread": -17.5,
-   "away_names": [
-    "Stanford Cardinal",
-    "Stanford"
-   ],
-   "home_names": [
-    "Virginia Tech Hokies",
-    "Virginia Tech"
-   ],
-   "tier": "watch",
-   "tier_label": "Watch list",
-   "tracked": true,
-   "alerts": false,
-   "call": "Watch list",
-   "hero": 19,
-   "fav_defense_top10": false,
-   "fav_def_rank_l3": 102,
-   "def_hold": false,
-   "qbs": {
-    "STAN": {
-     "regular": "Davis Warren",
-     "rank": 67
-    },
-    "VT": {
-     "regular": "Ethan Grunkemeyer",
-     "rank": 57
-    }
-   },
-   "kalshi_event": "KXNCAAFGAME-26NOV14STANVT",
-   "locked": true
-  },
-  {
-   "id": "401864539",
-   "kick_utc": "2026-11-15T00:30:00+00:00",
-   "kick_pt": "Sat 4:30 PM PT",
-   "day_et": "2026-11-14",
-   "away_abbr": "UNLV",
-   "home_abbr": "UNM",
-   "fav_abbr": "UNM",
-   "dog_abbr": "UNLV",
-   "fav_home": true,
-   "spread": -17.5,
-   "away_names": [
-    "UNLV Rebels",
-    "UNLV"
-   ],
-   "home_names": [
-    "New Mexico Lobos",
-    "New Mexico"
-   ],
-   "tier": "watch",
-   "tier_label": "Watch list",
-   "tracked": true,
-   "alerts": false,
-   "call": "Watch list",
-   "hero": 24,
-   "fav_defense_top10": true,
-   "fav_def_rank_l3": 1,
-   "def_hold": true,
-   "qbs": {
-    "UNLV": {
-     "regular": "Jackson Arnold",
-     "rank": 89
-    },
-    "UNM": {
-     "regular": "Toa Fa'avae",
-     "rank": 127
-    }
-   },
-   "kalshi_event": "KXNCAAFGAME-26NOV14UNLVUNM",
-   "locked": true
+   "kalshi_event": "KXNCAAFGAME-26NOV21SDSUBSU",
+   "locked": false
   }
  ]
 }
