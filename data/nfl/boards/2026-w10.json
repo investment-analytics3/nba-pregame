@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 10,
- "built_at": "2026-11-16T12:01:02-08:00",
- "built_label": "Mon Nov 16, 12:01 PM PT",
+ "built_at": "2026-11-16T13:01:16-08:00",
+ "built_label": "Mon Nov 16, 1:01 PM PT",
  "games": [
   {
    "id": "401873065",
@@ -642,7 +642,9 @@
      "Lucas Patrick"
     ],
     "key_questionable": [],
-    "key_long_term": [],
+    "key_long_term": [
+     "Daron Payne"
+    ],
     "interior_ol_out": [
      "Lucas Patrick"
     ],
@@ -650,29 +652,29 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Athan Kaliakmanis",
-      "pos": "QB",
-      "status": "Out"
+      "name": "Jacory Croskey-Merritt",
+      "pos": "RB",
+      "status": "Injured Reserve"
      },
      {
-      "name": "Isaac Yiadom",
-      "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "name": "Tanoa Togiai",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "name": "Ricky Barber",
-      "pos": "DT",
+      "name": "Colson Yankoff",
+      "pos": "TE",
       "status": "Out"
      },
      {
       "name": "Lucas Patrick",
       "pos": "G",
       "status": "Out"
+     },
+     {
+      "name": "Dyami Brown",
+      "pos": "WR",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Daron Payne",
+      "pos": "DT",
+      "status": "Injured Reserve"
      }
     ],
     "power": {
@@ -2242,8 +2244,7 @@
     },
     "injuries_known": true,
     "key_out": [
-     "Sean Rhyan",
-     "Zaire Franklin"
+     "Sean Rhyan"
     ],
     "key_questionable": [],
     "key_long_term": [],
@@ -2253,6 +2254,11 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Skyy Moore",
+      "pos": "WR",
+      "status": "Questionable"
+     },
      {
       "name": "Micah Parsons",
       "pos": "DE",
@@ -2271,11 +2277,6 @@
      {
       "name": "Josh Jacobs",
       "pos": "RB",
-      "status": "Out"
-     },
-     {
-      "name": "Zaire Franklin",
-      "pos": "LB",
       "status": "Out"
      }
     ],
@@ -2425,7 +2426,7 @@
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
       "pass": false,
-      "detail": "GB key starter out: Sean Rhyan, Zaire Franklin"
+      "detail": "GB key starter out: Sean Rhyan"
      },
      {
       "rule": "Power",
@@ -2466,12 +2467,12 @@
     ],
     "fails": [
      "MIN top 10 in power ranking: consensus #10, ESPN FPI #9",
-     "GB key starter out: Sean Rhyan, Zaire Franklin",
+     "GB key starter out: Sean Rhyan",
      "Would be on the watch list otherwise (score 19)"
     ],
     "failed": [
      "MIN top 10 in power ranking: consensus #10, ESPN FPI #9",
-     "GB key starter out: Sean Rhyan, Zaire Franklin",
+     "GB key starter out: Sean Rhyan",
      "Would be on the watch list otherwise (score 19)"
     ],
     "hero": {
@@ -2815,6 +2816,11 @@
     "qb_reset": "Malik Willis out",
     "injury_list": [
      {
+      "name": "Jordan Phillips",
+      "pos": "DT",
+      "status": "Questionable"
+     },
+     {
       "name": "Jared Wayne",
       "pos": "WR",
       "status": "Out"
@@ -2833,11 +2839,6 @@
       "name": "Malik Willis",
       "pos": "QB",
       "status": "Injured Reserve"
-     },
-     {
-      "name": "Jordan Phillips",
-      "pos": "DT",
-      "status": "Questionable"
      }
     ],
     "power": {
@@ -3126,11 +3127,11 @@
     },
     "injuries_known": true,
     "key_out": [
+     "Asim Richards",
      "Erik McCoy",
      "Taliese Fuaga"
     ],
     "key_questionable": [
-     "Asim Richards",
      "Pete Werner"
     ],
     "key_long_term": [],
@@ -3158,7 +3159,7 @@
      {
       "name": "Asim Richards",
       "pos": "OT",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
       "name": "Pete Werner",
@@ -3375,7 +3376,7 @@
     "flags": [
      {
       "level": "yellow",
-      "text": "Underdog questionable: Asim Richards, Pete Werner"
+      "text": "Underdog questionable: Pete Werner"
      }
     ],
     "under": {
@@ -3986,7 +3987,8 @@
     "injuries_known": true,
     "key_out": [
      "Anthony Hill",
-     "Carnell Tate"
+     "Carnell Tate",
+     "Cody Barton"
     ],
     "key_questionable": [
      "Wan'Dale Robinson"
@@ -3996,6 +3998,16 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Anthony Hill Jr.",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
+      "name": "Cody Barton",
+      "pos": "LB",
+      "status": "Out"
+     },
      {
       "name": "Carnell Tate",
       "pos": "WR",
@@ -4010,16 +4022,6 @@
       "name": "Tony Adams",
       "pos": "S",
       "status": "Questionable"
-     },
-     {
-      "name": "Nicholas Singleton",
-      "pos": "RB",
-      "status": "Out"
-     },
-     {
-      "name": "Anthony Hill Jr.",
-      "pos": "LB",
-      "status": "Out"
      }
     ],
     "power": {
@@ -5045,6 +5047,11 @@
     "qb_reset": "Sam Darnold out",
     "injury_list": [
      {
+      "name": "George Holani",
+      "pos": "RB",
+      "status": "Questionable"
+     },
+     {
       "name": "Leonard Williams",
       "pos": "DT",
       "status": "Out"
@@ -5063,11 +5070,6 @@
       "name": "Sam Darnold",
       "pos": "QB",
       "status": "Out"
-     },
-     {
-      "name": "George Holani",
-      "pos": "RB",
-      "status": "Questionable"
      }
     ],
     "power": {
@@ -5899,19 +5901,31 @@
      "rank": 27
     },
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
+    "key_out": [
      "Mason McCormick"
     ],
+    "key_questionable": [],
     "key_long_term": [],
-    "interior_ol_out": [],
+    "interior_ol_out": [
+     "Mason McCormick"
+    ],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Michael Pittman Jr.",
+      "pos": "WR",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Roman Wilson",
+      "pos": "WR",
+      "status": "Injured Reserve"
+     },
+     {
       "name": "Mason McCormick",
       "pos": "G",
-      "status": "Questionable"
+      "status": "Doubtful"
      },
      {
       "name": "DeShon Elliott",
@@ -5919,18 +5933,8 @@
       "status": "Out"
      },
      {
-      "name": "Michael Pittman Jr.",
-      "pos": "WR",
-      "status": "Injured Reserve"
-     },
-     {
       "name": "Sebastian Joseph-Day",
       "pos": "DT",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Roman Wilson",
-      "pos": "WR",
       "status": "Injured Reserve"
      }
     ],
@@ -6037,10 +6041,6 @@
      {
       "level": "yellow",
       "text": "Favorite questionable: Dalton Risner"
-     },
-     {
-      "level": "yellow",
-      "text": "Underdog questionable: Mason McCormick"
      }
     ],
     "under": {
@@ -6210,6 +6210,6 @@
   "watch": 0,
   "green": 0,
   "edge_clears": 1,
-  "built_label": "Mon Nov 16, 12:01 PM PT"
+  "built_label": "Mon Nov 16, 1:01 PM PT"
  }
 }
