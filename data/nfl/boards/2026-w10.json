@@ -1,482 +1,9 @@
 {
  "season": 2026,
  "week": 10,
- "built_at": "2026-11-15T17:15:45-08:00",
- "built_label": "Sun Nov 15, 5:15 PM PT",
+ "built_at": "2026-11-15T21:00:48-08:00",
+ "built_label": "Sun Nov 15, 9:00 PM PT",
  "games": [
-  {
-   "id": "401873064",
-   "nflverse_id": "2026_10_PIT_CIN",
-   "kick_utc": "2026-11-16T01:20:00+00:00",
-   "kick_pt": "Sun 5:20 PM PT",
-   "day_et": "2026-11-15",
-   "state": "pre",
-   "detail": "11/15 - 8:20 PM EST",
-   "neutral": false,
-   "venue": "Paycor Stadium",
-   "home_code": "CIN",
-   "away_code": "PIT",
-   "score": {
-    "home": 0,
-    "away": 0
-   },
-   "line_source": "DraftKings",
-   "open_spread": -3.5,
-   "total": 49.5,
-   "total_open": 47.5,
-   "fav_ml": -218.0,
-   "favorite": "home",
-   "spread": -4.5,
-   "movement": 1.0,
-   "total_move": 2.0,
-   "fav_home": true,
-   "home": {
-    "code": "CIN",
-    "abbr": "CIN",
-    "season": {
-     "games": 8,
-     "off_epa": 0.1437,
-     "off_sr": 0.508,
-     "def_epa": 0.0095,
-     "def_sr": 0.4504,
-     "off_pass_epa": 0.2619,
-     "off_rush_epa": -0.1007,
-     "def_pass_epa": 0.0378,
-     "def_rush_epa": -0.0433,
-     "ranks": {
-      "off_epa": 2,
-      "off_sr": 2,
-      "def_epa": 16,
-      "def_sr": 24
-     }
-    },
-    "last3": {
-     "games": 3,
-     "off_epa": 0.2751,
-     "off_sr": 0.5738,
-     "def_epa": 0.06,
-     "def_sr": 0.466,
-     "off_pass_epa": 0.4641,
-     "off_rush_epa": -0.1321,
-     "def_pass_epa": 0.1208,
-     "def_rush_epa": -0.0484,
-     "ranks": {
-      "off_epa": 1,
-      "off_sr": 1,
-      "def_epa": 19,
-      "def_sr": 24
-     }
-    },
-    "net": 0.1342,
-    "net_rank": 4,
-    "adjusted": {
-     "off": 0.1711,
-     "def": 0.0521,
-     "net": 0.0818,
-     "recent_net": 0.079,
-     "sr_off": 0.508,
-     "sr_def": 0.4504
-    },
-    "record": "6-2",
-    "last2_results": [
-     "W",
-     "W"
-    ],
-    "last3_results": [
-     "W",
-     "W",
-     "W"
-    ],
-    "rest": 7,
-    "qb": {
-     "regular": "J.Burrow",
-     "regular_id": "00-0036442",
-     "season_leader": "J.Burrow",
-     "reset": false,
-     "dropbacks": 312,
-     "epa_db": 0.2533,
-     "rank": 3
-    },
-    "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [],
-    "key_long_term": [],
-    "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [
-     {
-      "name": "Myles Hinton",
-      "pos": "OT",
-      "status": "Out"
-     },
-     {
-      "name": "Landon Robinson",
-      "pos": "DT",
-      "status": "Out"
-     },
-     {
-      "name": "Connor Lew",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "name": "Kyle Dugger",
-      "pos": "S",
-      "status": "Out"
-     },
-     {
-      "name": "Andrei Iosivas",
-      "pos": "WR",
-      "status": "Injured Reserve"
-     }
-    ],
-    "power": {
-     "consensus": 4,
-     "fpi": 4,
-     "nfl_com": 5
-    },
-    "fpi_win": 0.705
-   },
-   "away": {
-    "code": "PIT",
-    "abbr": "PIT",
-    "season": {
-     "games": 8,
-     "off_epa": -0.0108,
-     "off_sr": 0.4277,
-     "def_epa": -0.0683,
-     "def_sr": 0.4215,
-     "off_pass_epa": -0.0719,
-     "off_rush_epa": 0.1024,
-     "def_pass_epa": -0.0174,
-     "def_rush_epa": -0.1672,
-     "ranks": {
-      "off_epa": 18,
-      "off_sr": 17,
-      "def_epa": 6,
-      "def_sr": 11
-     }
-    },
-    "last3": {
-     "games": 3,
-     "off_epa": 0.0098,
-     "off_sr": 0.4286,
-     "def_epa": -0.1681,
-     "def_sr": 0.385,
-     "off_pass_epa": -0.1076,
-     "off_rush_epa": 0.1765,
-     "def_pass_epa": -0.0875,
-     "def_rush_epa": -0.3976,
-     "ranks": {
-      "off_epa": 18,
-      "off_sr": 19,
-      "def_epa": 5,
-      "def_sr": 6
-     }
-    },
-    "net": 0.0575,
-    "net_rank": 10,
-    "adjusted": {
-     "off": 0.0124,
-     "def": 0.0145,
-     "net": 0.0016,
-     "recent_net": 0.0188,
-     "sr_off": 0.4277,
-     "sr_def": 0.4215
-    },
-    "record": "6-2",
-    "last2_results": [
-     "W",
-     "W"
-    ],
-    "last3_results": [
-     "W",
-     "W",
-     "W"
-    ],
-    "rest": 14,
-    "qb": {
-     "regular": "A.Rodgers",
-     "regular_id": "00-0023459",
-     "season_leader": "A.Rodgers",
-     "reset": false,
-     "dropbacks": 308,
-     "epa_db": -0.109,
-     "rank": 27
-    },
-    "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [],
-    "key_long_term": [],
-    "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [
-     {
-      "name": "Will Howard",
-      "pos": "QB",
-      "status": "Out"
-     },
-     {
-      "name": "Eli Heidenreich",
-      "pos": "RB",
-      "status": "Out"
-     },
-     {
-      "name": "Sean Murphy-Bunting",
-      "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "name": "Drew Allar",
-      "pos": "QB",
-      "status": "Out"
-     },
-     {
-      "name": "DeShon Elliott",
-      "pos": "S",
-      "status": "Out"
-     }
-    ],
-    "power": {
-     "consensus": 15,
-     "fpi": 17,
-     "nfl_com": 12
-    },
-    "fpi_win": 0.292
-   },
-   "fav": "CIN",
-   "dog": "PIT",
-   "scoring": {
-    "qualified": false,
-    "tier": "watch",
-    "tier_label": "Watch list",
-    "tracked": true,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 20 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 CIN last-3 top 10 in 2 of 4 \u00b7 \u2717 PIT last-3 bottom 10 (23-32) in 0 of 4 \u00b7 \u2717 CIN season outside top 15: Def EPA allowed #16, Def success allowed #24 \u00b7 \u2717 PIT season top 10: Def EPA allowed #6"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key starter newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "Clear"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not top 10 in any power ranking",
-      "pass": true,
-      "detail": "PIT: consensus #15, ESPN FPI #17, NFL.com #12"
-     }
-    ],
-    "context": [
-     {
-      "n": 1,
-      "ok": true,
-      "text": "Favorite top 10 (season) in a core metric",
-      "detail": "Off EPA/play, Off success"
-     },
-     {
-      "n": 2,
-      "ok": true,
-      "text": "Also top 10 over its last 3 in that same metric",
-      "detail": "Off EPA/play, Off success"
-     },
-     {
-      "n": 3,
-      "ok": false,
-      "text": "Underdog not top 10 in any metric over its last 3",
-      "detail": "Def EPA allowed, Def success allowed"
-     },
-     {
-      "n": 4,
-      "ok": false,
-      "text": "Underdog not 3-0 in its last 3",
-      "detail": "3-0"
-     }
-    ],
-    "qualifiers": [
-     "off_epa",
-     "off_sr"
-    ],
-    "fails": [
-     "Watch list: score 20 (qualifies at 28)"
-    ],
-    "failed": [
-     "Watch list: score 20 (qualifies at 28)"
-    ],
-    "hero": {
-     "score": 20,
-     "band": "yellow",
-     "parts": {
-      "fav_strength": 8,
-      "dog_weakness": 5,
-      "health": 4,
-      "home": 1,
-      "rest": 0,
-      "form": 2
-     },
-     "max": 40
-    },
-    "edge": {
-     "gap": 0.077,
-     "required": 0.35,
-     "clears": false,
-     "short_by": 0.273,
-     "adjusted_gap": 0.08,
-     "adjusted_recent_gap": 0.06
-    },
-    "flags": [],
-    "under": {
-     "passes": false,
-     "ranks": [
-      2,
-      18
-     ],
-     "total_move": 2.0,
-     "note": ""
-    },
-    "call": "Watch list",
-    "matchups": [
-     {
-      "key": "def_def",
-      "label": "Defense vs defense",
-      "fav_metric": "def_sr",
-      "dog_metric": "def_sr",
-      "fav_rank": 24,
-      "dog_rank": 6,
-      "in_range": false,
-      "met": false
-     },
-     {
-      "key": "def_off",
-      "label": "Defense vs offense",
-      "fav_metric": "def_sr",
-      "dog_metric": "off_sr",
-      "fav_rank": 24,
-      "dog_rank": 19,
-      "in_range": false,
-      "met": false
-     },
-     {
-      "key": "off_def",
-      "label": "Offense vs defense",
-      "fav_metric": "off_sr",
-      "dog_metric": "def_sr",
-      "fav_rank": 1,
-      "dog_rank": 6,
-      "in_range": false,
-      "met": false
-     }
-    ]
-   },
-   "fav_defense_top10": false,
-   "kalshi": {
-    "event": "KXNFLGAME-26NOV15PITCIN",
-    "fav_prob": 0.665,
-    "bid": 0.66,
-    "ask": 0.67
-   },
-   "votes": {
-    "fav": 6,
-    "dog": 11,
-    "support": 0.353,
-    "sources": [
-     {
-      "site": "CBS Sports",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-10-picks-hub-expert-selections-best-bets-teasers-survivor/",
-      "fav": 2,
-      "dog": 5
-     },
-     {
-      "site": "Bleacher Report",
-      "url": "https://bleacherreport.com/articles/25532099-bleacher-reports-expert-week-10-2026-nfl-picks",
-      "fav": 2,
-      "dog": 5
-     },
-     {
-      "site": "Covers",
-      "url": "https://www.covers.com/nfl/picks-against-the-spread-week-10-2026",
-      "fav": 1,
-      "dog": 0
-     },
-     {
-      "site": "SI",
-      "url": "https://www.si.com/betting/road-to-272-bets-nfl-week-10-picks-for-every-game-01m70qgrdya8",
-      "fav": 1,
-      "dog": 0
-     },
-     {
-      "site": "Yahoo Sports",
-      "url": "https://sports.yahoo.com/nfl/betting/article/week-10-nfl-picks-against-the-spread-predictions-for-every-game-kirk-cousins-returns-to-lead-vikings-vs-packers-134850175.html",
-      "fav": 0,
-      "dog": 1
-     }
-    ],
-    "notes": ""
-   },
-   "readout": {
-    "matchup": "PIT @ CIN",
-    "summary": "Cincinnati is the straight-up pick from both CBS writers, behind Joe Burrow and the passing game, and the Dimers model gives the Bengals 65.6%. Against the spread most bettors lean Pittsburgh +3.5: Covers, BetMGM and three Action Network experts cite the Steelers' extra rest off a bye against a Bengals team returning from Madrid, plus their run game. SI/BetMGM lays the points with Cincinnati.",
-    "pick": "Bengals straight up (CBS Breech, CBS Prisco, Dimers model); ATS split: Steelers +3.5 (Covers lean, BetMGM blog, Action Network: Dabbundo, Kravitz, Action Pod) vs Bengals -3.5 (SI/BetMGM)",
-    "predicted_score": "Bengals 27-24 (CBS, John Breech, Nov 10); Bengals 27-21 (CBS, Pete Prisco, Nov 11); Bengals 27-22 (Dimers model, Nov 10; its widget shows 27-23)",
-    "moneyline": "Bengals -190 / Steelers +160 (BetMGM, per SI, Nov 11); Bengals -185 / Steelers +154 (Action Network game page, book not named, viewed Nov 14)",
-    "win_probability": "Bengals 65.6%, Steelers 34.4% (Dimers model, Nov 10); Kalshi Bengals 63% (per Covers, Nov 11)",
-    "injuries": "Steelers final report (Athlon, Fri Nov 13): DT Derrick Harmon (foot) Questionable (full practice Friday); everyone else listed is in: WR Ben Skowronek (calf), CB Brandin Echols (hamstring), CB Doneiko Slaughter (hamstring), S DeShon Elliott (ankle), plus rest days for Cam Heyward, T.J. Watt and Darnell Washington. Bengals final report (AtoZ Sports via Yahoo, Fri Nov 13): S Kyle Dugger (quad) Out; Doubtful (must first be activated from IR): CB Jalen Davis (hamstring), WR Andrei Iosivas (thumb), G Brian Parker II (knee); G Dylan Fairchild (pectoral) and CB DJ Turner II (heel) expected to play; DTs Jonathan Allen, B.J. Hill and Dexter Lawrence II on rest days.",
-    "sources": [
-     {
-      "site": "CBS Sports (John Breech score predictions)",
-      "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-10-picks-score-predictions-lions-patriots-bengals/"
-     },
-     {
-      "site": "CBS Sports (Pete Prisco picks)",
-      "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-10-expert-nfl-picks/"
-     },
-     {
-      "site": "SI (odds, pick)",
-      "url": "https://www.si.com/betting/steelers-vs-bengals-prediction-odds-spread-injuries-trends-for-nfl-week-10-01m7414skcz7"
-     },
-     {
-      "site": "Covers",
-      "url": "https://www.covers.com/nfl/steelers-vs-bengals-prediction-picks-odds-early-leans-week-10-2026"
-     },
-     {
-      "site": "BetMGM blog",
-      "url": "https://sports.betmgm.com/en/blog/nfl/bengals-vs-steelers-prediction-odds-picks-week-10-snf-2026-bm16/"
-     },
-     {
-      "site": "Action Network",
-      "url": "https://www.actionnetwork.com/nfl-game/steelers-bengals-score-odds-november-15-2026/290981"
-     },
-     {
-      "site": "Dimers",
-      "url": "https://www.dimers.com/nfl/predictions/2026_10_cin_pit"
-     },
-     {
-      "site": "Athlon (Steelers final injury report)",
-      "url": "https://athlonsports.com/nfl/pittsburgh-steelers/steelers-week-10-final-injury-report-who-is-in-who-is-out-of-pivotal-matchup-vs-bengals"
-     },
-     {
-      "site": "Yahoo / AtoZ Sports (Bengals final injury report)",
-      "url": "https://sports.yahoo.com/articles/bengals-unveil-promising-final-injury-005015528.html"
-     }
-    ],
-    "updated": "2026-11-15T05:50-08:00"
-   }
-  },
   {
    "id": "401873065",
    "nflverse_id": "2026_10_LAC_BAL",
@@ -870,9 +397,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV16LACBAL",
-    "fav_prob": 0.665,
-    "bid": 0.66,
-    "ask": 0.67
+    "fav_prob": 0.675,
+    "bid": 0.67,
+    "ask": 0.68
    },
    "votes": {
     "fav": 8,
@@ -1554,13 +1081,13 @@
       "status": "Questionable"
      },
      {
-      "name": "Dre'Mont Jones",
-      "pos": "DE",
+      "name": "A.J. Brown",
+      "pos": "WR",
       "status": "Questionable"
      },
      {
-      "name": "A.J. Brown",
-      "pos": "WR",
+      "name": "Dre'Mont Jones",
+      "pos": "DE",
       "status": "Questionable"
      },
      {
@@ -5488,6 +5015,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Abraham Lucas",
+      "pos": "OT",
+      "status": "Questionable"
+     },
+     {
       "name": "George Holani",
       "pos": "RB",
       "status": "Questionable"
@@ -5495,11 +5027,6 @@
      {
       "name": "Jarran Reed",
       "pos": "DT",
-      "status": "Questionable"
-     },
-     {
-      "name": "Abraham Lucas",
-      "pos": "OT",
       "status": "Questionable"
      },
      {
@@ -5798,13 +5325,19 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
-     "DaRon Bland"
+     "DaRon Bland",
+     "Tyler Booker"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Tyler Booker",
+      "pos": "G",
+      "status": "Questionable"
+     },
      {
       "name": "DaRon Bland",
       "pos": "CB",
@@ -5823,11 +5356,6 @@
      {
       "name": "Derion Kendrick",
       "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "name": "P.J. Locke",
-      "pos": "S",
       "status": "Out"
      }
     ],
@@ -6052,7 +5580,7 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: DaRon Bland"
+      "text": "Underdog questionable: DaRon Bland, Tyler Booker"
      }
     ],
     "under": {
@@ -6137,6 +5665,484 @@
     ],
     "notes": ""
    }
+  },
+  {
+   "id": "401873064",
+   "nflverse_id": "2026_10_PIT_CIN",
+   "kick_utc": "2026-11-16T01:20:00+00:00",
+   "kick_pt": "Sun 5:20 PM PT",
+   "day_et": "2026-11-15",
+   "state": "post",
+   "detail": "Final",
+   "neutral": false,
+   "venue": "Paycor Stadium",
+   "home_code": "CIN",
+   "away_code": "PIT",
+   "score": {
+    "home": 38,
+    "away": 18
+   },
+   "line_source": "DraftKings",
+   "open_spread": -3.5,
+   "total": 49.5,
+   "total_open": 47.5,
+   "fav_ml": -225.0,
+   "favorite": "home",
+   "spread": -4.5,
+   "movement": 1.0,
+   "total_move": 2.0,
+   "fav_home": true,
+   "home": {
+    "code": "CIN",
+    "abbr": "CIN",
+    "season": {
+     "games": 8,
+     "off_epa": 0.1437,
+     "off_sr": 0.508,
+     "def_epa": 0.0095,
+     "def_sr": 0.4504,
+     "off_pass_epa": 0.2619,
+     "off_rush_epa": -0.1007,
+     "def_pass_epa": 0.0378,
+     "def_rush_epa": -0.0433,
+     "ranks": {
+      "off_epa": 2,
+      "off_sr": 2,
+      "def_epa": 16,
+      "def_sr": 24
+     }
+    },
+    "last3": {
+     "games": 3,
+     "off_epa": 0.2751,
+     "off_sr": 0.5738,
+     "def_epa": 0.06,
+     "def_sr": 0.466,
+     "off_pass_epa": 0.4641,
+     "off_rush_epa": -0.1321,
+     "def_pass_epa": 0.1208,
+     "def_rush_epa": -0.0484,
+     "ranks": {
+      "off_epa": 1,
+      "off_sr": 1,
+      "def_epa": 19,
+      "def_sr": 24
+     }
+    },
+    "net": 0.1342,
+    "net_rank": 4,
+    "adjusted": {
+     "off": 0.1711,
+     "def": 0.0521,
+     "net": 0.0818,
+     "recent_net": 0.079,
+     "sr_off": 0.508,
+     "sr_def": 0.4504
+    },
+    "record": "6-2",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "W"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "J.Burrow",
+     "regular_id": "00-0036442",
+     "season_leader": "J.Burrow",
+     "reset": false,
+     "dropbacks": 312,
+     "epa_db": 0.2533,
+     "rank": 3
+    },
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [
+     "Dalton Risner"
+    ],
+    "key_long_term": [],
+    "interior_ol_out": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [
+     {
+      "name": "Oren Burks",
+      "pos": "LB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Dalton Risner",
+      "pos": "G",
+      "status": "Questionable"
+     },
+     {
+      "name": "Myles Hinton",
+      "pos": "OT",
+      "status": "Out"
+     },
+     {
+      "name": "Landon Robinson",
+      "pos": "DT",
+      "status": "Out"
+     },
+     {
+      "name": "Connor Lew",
+      "pos": "C",
+      "status": "Out"
+     }
+    ],
+    "power": {
+     "consensus": 4,
+     "fpi": 4,
+     "nfl_com": 5
+    }
+   },
+   "away": {
+    "code": "PIT",
+    "abbr": "PIT",
+    "season": {
+     "games": 8,
+     "off_epa": -0.0108,
+     "off_sr": 0.4277,
+     "def_epa": -0.0683,
+     "def_sr": 0.4215,
+     "off_pass_epa": -0.0719,
+     "off_rush_epa": 0.1024,
+     "def_pass_epa": -0.0174,
+     "def_rush_epa": -0.1672,
+     "ranks": {
+      "off_epa": 18,
+      "off_sr": 17,
+      "def_epa": 6,
+      "def_sr": 11
+     }
+    },
+    "last3": {
+     "games": 3,
+     "off_epa": 0.0098,
+     "off_sr": 0.4286,
+     "def_epa": -0.1681,
+     "def_sr": 0.385,
+     "off_pass_epa": -0.1076,
+     "off_rush_epa": 0.1765,
+     "def_pass_epa": -0.0875,
+     "def_rush_epa": -0.3976,
+     "ranks": {
+      "off_epa": 18,
+      "off_sr": 19,
+      "def_epa": 5,
+      "def_sr": 6
+     }
+    },
+    "net": 0.0575,
+    "net_rank": 10,
+    "adjusted": {
+     "off": 0.0124,
+     "def": 0.0145,
+     "net": 0.0016,
+     "recent_net": 0.0188,
+     "sr_off": 0.4277,
+     "sr_def": 0.4215
+    },
+    "record": "6-2",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "W"
+    ],
+    "rest": 14,
+    "qb": {
+     "regular": "A.Rodgers",
+     "regular_id": "00-0023459",
+     "season_leader": "A.Rodgers",
+     "reset": false,
+     "dropbacks": 308,
+     "epa_db": -0.109,
+     "rank": 27
+    },
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [
+     "Mason McCormick"
+    ],
+    "key_long_term": [],
+    "interior_ol_out": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [
+     {
+      "name": "Mason McCormick",
+      "pos": "G",
+      "status": "Questionable"
+     },
+     {
+      "name": "Will Howard",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "name": "Eli Heidenreich",
+      "pos": "RB",
+      "status": "Out"
+     },
+     {
+      "name": "Sean Murphy-Bunting",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "name": "Drew Allar",
+      "pos": "QB",
+      "status": "Out"
+     }
+    ],
+    "power": {
+     "consensus": 15,
+     "fpi": 17,
+     "nfl_com": 12
+    }
+   },
+   "fav": "CIN",
+   "dog": "PIT",
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 20 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 CIN last-3 top 10 in 2 of 4 \u00b7 \u2717 PIT last-3 bottom 10 (23-32) in 0 of 4 \u00b7 \u2717 CIN season outside top 15: Def EPA allowed #16, Def success allowed #24 \u00b7 \u2717 PIT season top 10: Def EPA allowed #6"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "Clear"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": true,
+      "detail": "PIT: consensus #15, ESPN FPI #17, NFL.com #12"
+     }
+    ],
+    "context": [
+     {
+      "n": 1,
+      "ok": true,
+      "text": "Favorite top 10 (season) in a core metric",
+      "detail": "Off EPA/play, Off success"
+     },
+     {
+      "n": 2,
+      "ok": true,
+      "text": "Also top 10 over its last 3 in that same metric",
+      "detail": "Off EPA/play, Off success"
+     },
+     {
+      "n": 3,
+      "ok": false,
+      "text": "Underdog not top 10 in any metric over its last 3",
+      "detail": "Def EPA allowed, Def success allowed"
+     },
+     {
+      "n": 4,
+      "ok": false,
+      "text": "Underdog not 3-0 in its last 3",
+      "detail": "3-0"
+     }
+    ],
+    "qualifiers": [
+     "off_epa",
+     "off_sr"
+    ],
+    "fails": [
+     "Watch list: score 20 (qualifies at 28)"
+    ],
+    "failed": [
+     "Watch list: score 20 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 20,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 8,
+      "dog_weakness": 5,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "edge": {
+     "gap": 0.077,
+     "required": 0.35,
+     "clears": false,
+     "short_by": 0.273,
+     "adjusted_gap": 0.08,
+     "adjusted_recent_gap": 0.06
+    },
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "Favorite questionable: Dalton Risner"
+     },
+     {
+      "level": "yellow",
+      "text": "Underdog questionable: Mason McCormick"
+     }
+    ],
+    "under": {
+     "passes": false,
+     "ranks": [
+      2,
+      18
+     ],
+     "total_move": 2.0,
+     "note": ""
+    },
+    "call": "Watch list",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 24,
+      "dog_rank": 6,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 24,
+      "dog_rank": 19,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 1,
+      "dog_rank": 6,
+      "in_range": false,
+      "met": false
+     }
+    ]
+   },
+   "fav_defense_top10": false,
+   "votes": {
+    "fav": 6,
+    "dog": 11,
+    "support": 0.353,
+    "sources": [
+     {
+      "site": "CBS Sports",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-10-picks-hub-expert-selections-best-bets-teasers-survivor/",
+      "fav": 2,
+      "dog": 5
+     },
+     {
+      "site": "Bleacher Report",
+      "url": "https://bleacherreport.com/articles/25532099-bleacher-reports-expert-week-10-2026-nfl-picks",
+      "fav": 2,
+      "dog": 5
+     },
+     {
+      "site": "Covers",
+      "url": "https://www.covers.com/nfl/picks-against-the-spread-week-10-2026",
+      "fav": 1,
+      "dog": 0
+     },
+     {
+      "site": "SI",
+      "url": "https://www.si.com/betting/road-to-272-bets-nfl-week-10-picks-for-every-game-01m70qgrdya8",
+      "fav": 1,
+      "dog": 0
+     },
+     {
+      "site": "Yahoo Sports",
+      "url": "https://sports.yahoo.com/nfl/betting/article/week-10-nfl-picks-against-the-spread-predictions-for-every-game-kirk-cousins-returns-to-lead-vikings-vs-packers-134850175.html",
+      "fav": 0,
+      "dog": 1
+     }
+    ],
+    "notes": ""
+   },
+   "readout": {
+    "matchup": "PIT @ CIN",
+    "summary": "Cincinnati is the straight-up pick from both CBS writers, behind Joe Burrow and the passing game, and the Dimers model gives the Bengals 65.6%. Against the spread most bettors lean Pittsburgh +3.5: Covers, BetMGM and three Action Network experts cite the Steelers' extra rest off a bye against a Bengals team returning from Madrid, plus their run game. SI/BetMGM lays the points with Cincinnati.",
+    "pick": "Bengals straight up (CBS Breech, CBS Prisco, Dimers model); ATS split: Steelers +3.5 (Covers lean, BetMGM blog, Action Network: Dabbundo, Kravitz, Action Pod) vs Bengals -3.5 (SI/BetMGM)",
+    "predicted_score": "Bengals 27-24 (CBS, John Breech, Nov 10); Bengals 27-21 (CBS, Pete Prisco, Nov 11); Bengals 27-22 (Dimers model, Nov 10; its widget shows 27-23)",
+    "moneyline": "Bengals -190 / Steelers +160 (BetMGM, per SI, Nov 11); Bengals -185 / Steelers +154 (Action Network game page, book not named, viewed Nov 14)",
+    "win_probability": "Bengals 65.6%, Steelers 34.4% (Dimers model, Nov 10); Kalshi Bengals 63% (per Covers, Nov 11)",
+    "injuries": "Steelers final report (Athlon, Fri Nov 13): DT Derrick Harmon (foot) Questionable (full practice Friday); everyone else listed is in: WR Ben Skowronek (calf), CB Brandin Echols (hamstring), CB Doneiko Slaughter (hamstring), S DeShon Elliott (ankle), plus rest days for Cam Heyward, T.J. Watt and Darnell Washington. Bengals final report (AtoZ Sports via Yahoo, Fri Nov 13): S Kyle Dugger (quad) Out; Doubtful (must first be activated from IR): CB Jalen Davis (hamstring), WR Andrei Iosivas (thumb), G Brian Parker II (knee); G Dylan Fairchild (pectoral) and CB DJ Turner II (heel) expected to play; DTs Jonathan Allen, B.J. Hill and Dexter Lawrence II on rest days.",
+    "sources": [
+     {
+      "site": "CBS Sports (John Breech score predictions)",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-10-picks-score-predictions-lions-patriots-bengals/"
+     },
+     {
+      "site": "CBS Sports (Pete Prisco picks)",
+      "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-10-expert-nfl-picks/"
+     },
+     {
+      "site": "SI (odds, pick)",
+      "url": "https://www.si.com/betting/steelers-vs-bengals-prediction-odds-spread-injuries-trends-for-nfl-week-10-01m7414skcz7"
+     },
+     {
+      "site": "Covers",
+      "url": "https://www.covers.com/nfl/steelers-vs-bengals-prediction-picks-odds-early-leans-week-10-2026"
+     },
+     {
+      "site": "BetMGM blog",
+      "url": "https://sports.betmgm.com/en/blog/nfl/bengals-vs-steelers-prediction-odds-picks-week-10-snf-2026-bm16/"
+     },
+     {
+      "site": "Action Network",
+      "url": "https://www.actionnetwork.com/nfl-game/steelers-bengals-score-odds-november-15-2026/290981"
+     },
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/nfl/predictions/2026_10_cin_pit"
+     },
+     {
+      "site": "Athlon (Steelers final injury report)",
+      "url": "https://athlonsports.com/nfl/pittsburgh-steelers/steelers-week-10-final-injury-report-who-is-in-who-is-out-of-pivotal-matchup-vs-bengals"
+     },
+     {
+      "site": "Yahoo / AtoZ Sports (Bengals final injury report)",
+      "url": "https://sports.yahoo.com/articles/bengals-unveil-promising-final-injury-005015528.html"
+     }
+    ],
+    "updated": "2026-11-15T05:50-08:00"
+   }
   }
  ],
  "notes": [],
@@ -6168,12 +6174,12 @@
   "season": 2026,
   "week": 10,
   "games": 14,
-  "upcoming": 2,
+  "upcoming": 1,
   "tracked": 0,
   "qualified": 0,
-  "watch": 1,
+  "watch": 0,
   "green": 0,
   "edge_clears": 1,
-  "built_label": "Sun Nov 15, 5:15 PM PT"
+  "built_label": "Sun Nov 15, 9:00 PM PT"
  }
 }
