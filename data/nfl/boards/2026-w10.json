@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 10,
- "built_at": "2026-11-16T09:01:08-08:00",
- "built_label": "Mon Nov 16, 9:01 AM PT",
+ "built_at": "2026-11-16T10:00:55-08:00",
+ "built_label": "Mon Nov 16, 10:00 AM PT",
  "games": [
   {
    "id": "401873065",
@@ -20,11 +20,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -2.5,
    "total": 39.5,
    "total_open": 48.5,
-   "fav_ml": -225.0,
+   "fav_ml": -230.0,
    "favorite": "home",
    "spread": -4.5,
    "movement": 2.0,
@@ -397,9 +397,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV16LACBAL",
-    "fav_prob": 0.68,
+    "fav_prob": 0.675,
     "bid": 0.67,
-    "ask": 0.69
+    "ask": 0.68
    },
    "votes": {
     "fav": 8,
@@ -450,7 +450,7 @@
     "home": 21,
     "away": 24
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 40.5,
    "total_open": 47.5,
@@ -1308,7 +1308,7 @@
     "home": 13,
     "away": 35
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -4.5,
    "total": 47.5,
    "total_open": 45.5,
@@ -1386,7 +1386,9 @@
      "rank": 18
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Divine Deablo"
+    ],
     "key_questionable": [
      "Drake London"
     ],
@@ -1396,29 +1398,29 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Divine Deablo",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
+      "name": "Zachariah Branch",
+      "pos": "WR",
+      "status": "Out"
+     },
+     {
       "name": "Drake London",
       "pos": "WR",
       "status": "Questionable"
      },
      {
-      "name": "Andy Dalton",
-      "pos": "QB",
-      "status": "Out"
+      "name": "Brian Robinson Jr.",
+      "pos": "RB",
+      "status": "Injured Reserve"
      },
      {
-      "name": "Avieon Terrell",
-      "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "name": "Cameron Williams",
-      "pos": "OL",
-      "status": "Out"
-     },
-     {
-      "name": "Jack Strand",
-      "pos": "QB",
-      "status": "Out"
+      "name": "Samson Ebukam",
+      "pos": "DE",
+      "status": "Injured Reserve"
      }
     ],
     "power": {
@@ -1742,7 +1744,7 @@
     "home": 27,
     "away": 24
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -4.5,
    "total": 40.5,
    "total_open": 38.5,
@@ -2170,7 +2172,7 @@
     "home": 10,
     "away": 30
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -4.5,
    "total": 42.5,
    "total_open": 45.5,
@@ -2616,7 +2618,7 @@
     "home": 24,
     "away": 22
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -6.5,
    "total": 37.5,
    "total_open": 47.5,
@@ -2812,11 +2814,21 @@
      "Jordan Phillips",
      "Zeek Biggers"
     ],
-    "key_long_term": [],
+    "key_long_term": [
+     "Malik Willis"
+    ],
     "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
+    "qb_out": [
+     "Malik Willis"
+    ],
+    "qb_active": false,
+    "qb_reset": "Malik Willis out",
     "injury_list": [
+     {
+      "name": "Malik Willis",
+      "pos": "QB",
+      "status": "Injured Reserve"
+     },
      {
       "name": "Jordan Phillips",
       "pos": "DT",
@@ -2835,11 +2847,6 @@
      {
       "name": "Chris Bell",
       "pos": "WR",
-      "status": "Out"
-     },
-     {
-      "name": "Caedan Wallace",
-      "pos": "OT",
       "status": "Out"
      }
     ],
@@ -2940,6 +2947,10 @@
      "adjusted_recent_gap": 0.006
     },
     "flags": [
+     {
+      "level": "red",
+      "text": "Underdog QB change (Malik Willis out): call capped at Lean"
+     },
      {
       "level": "yellow",
       "text": "Favorite questionable: Bernhard Raimann, Charvarius Ward, Sauce Gardner"
@@ -3048,7 +3059,7 @@
     "home": 17,
     "away": 20
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 1.5,
    "total": 48.5,
    "total_open": 43.5,
@@ -3906,7 +3917,7 @@
     "home": 23,
     "away": 40
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -2.5,
    "total": 45.5,
    "total_open": 45.5,
@@ -4473,13 +4484,27 @@
      "rank": 24
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Hjalte Froholdt"
+    ],
     "key_questionable": [],
     "key_long_term": [],
-    "interior_ol_out": [],
+    "interior_ol_out": [
+     "Hjalte Froholdt"
+    ],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Jon Gaines II",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "name": "Hjalte Froholdt",
+      "pos": "C",
+      "status": "Out"
+     },
      {
       "name": "Jordan Burch",
       "pos": "LB",
@@ -4491,19 +4516,9 @@
       "status": "Out"
      },
      {
-      "name": "Joey Aguilar",
+      "name": "Gardner Minshew II",
       "pos": "QB",
-      "status": "Out"
-     },
-     {
-      "name": "Starling Thomas V",
-      "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "name": "Eku Leota",
-      "pos": "LB",
-      "status": "Out"
+      "status": "Injured Reserve"
      }
     ],
     "power": {
@@ -4824,7 +4839,7 @@
     "home": 13,
     "away": 21
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -7.0,
    "total": 40.5,
    "total_open": 43.5,
@@ -5254,7 +5269,7 @@
     "home": 40,
     "away": 46
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 1.5,
    "total": 55.5,
    "total_open": 52.5,
@@ -5689,7 +5704,7 @@
     "home": 38,
     "away": 18
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -3.5,
    "total": 49.5,
    "total_open": 47.5,
@@ -6187,6 +6202,6 @@
   "watch": 0,
   "green": 0,
   "edge_clears": 1,
-  "built_label": "Mon Nov 16, 9:01 AM PT"
+  "built_label": "Mon Nov 16, 10:00 AM PT"
  }
 }
