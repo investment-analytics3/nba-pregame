@@ -1,445 +1,9 @@
 {
  "season": 2026,
  "week": 10,
- "built_at": "2026-11-15T16:15:53-08:00",
- "built_label": "Sun Nov 15, 4:15 PM PT",
+ "built_at": "2026-11-15T17:15:45-08:00",
+ "built_label": "Sun Nov 15, 5:15 PM PT",
  "games": [
-  {
-   "id": "401873063",
-   "nflverse_id": "2026_10_SF_DAL",
-   "kick_utc": "2026-11-15T21:25:00+00:00",
-   "kick_pt": "Sun 1:25 PM PT",
-   "day_et": "2026-11-15",
-   "state": "in",
-   "detail": "3:51 - 4th",
-   "neutral": false,
-   "venue": "AT&T Stadium",
-   "home_code": "DAL",
-   "away_code": "SF",
-   "score": {
-    "home": 25,
-    "away": 38
-   },
-   "line_source": "DraftKings",
-   "open_spread": 1.5,
-   "total": 55.5,
-   "total_open": 52.5,
-   "fav_ml": -198.0,
-   "favorite": "away",
-   "spread": -3.5,
-   "movement": 5.0,
-   "total_move": 3.0,
-   "fav_home": false,
-   "home": {
-    "code": "DAL",
-    "abbr": "DAL",
-    "season": {
-     "games": 9,
-     "off_epa": 0.1121,
-     "off_sr": 0.4711,
-     "def_epa": 0.1007,
-     "def_sr": 0.4628,
-     "off_pass_epa": 0.1893,
-     "off_rush_epa": -0.0269,
-     "def_pass_epa": 0.1868,
-     "def_rush_epa": -0.0284,
-     "ranks": {
-      "off_epa": 6,
-      "off_sr": 8,
-      "def_epa": 31,
-      "def_sr": 27
-     }
-    },
-    "last3": {
-     "games": 3,
-     "off_epa": 0.1237,
-     "off_sr": 0.4566,
-     "def_epa": -0.0015,
-     "def_sr": 0.4183,
-     "off_pass_epa": 0.2508,
-     "off_rush_epa": -0.0119,
-     "def_pass_epa": -0.0469,
-     "def_rush_epa": 0.0843,
-     "ranks": {
-      "off_epa": 7,
-      "off_sr": 10,
-      "def_epa": 14,
-      "def_sr": 10
-     }
-    },
-    "net": 0.0115,
-    "net_rank": 17,
-    "adjusted": {
-     "off": 0.1195,
-     "def": 0.1199,
-     "net": 0.0237,
-     "recent_net": 0.0315,
-     "sr_off": 0.4711,
-     "sr_def": 0.4628
-    },
-    "record": "4-5",
-    "last2_results": [
-     "W",
-     "L"
-    ],
-    "last3_results": [
-     "W",
-     "L",
-     "W"
-    ],
-    "rest": 7,
-    "qb": {
-     "regular": "D.Prescott",
-     "regular_id": "00-0033077",
-     "season_leader": "D.Prescott",
-     "reset": false,
-     "dropbacks": 353,
-     "epa_db": 0.1512,
-     "rank": 9
-    },
-    "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
-     "DaRon Bland"
-    ],
-    "key_long_term": [],
-    "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [
-     {
-      "name": "DaRon Bland",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Juanyeh Thomas",
-      "pos": "S",
-      "status": "Out"
-     },
-     {
-      "name": "Jonathan Mingo",
-      "pos": "WR",
-      "status": "Out"
-     },
-     {
-      "name": "Derion Kendrick",
-      "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "name": "P.J. Locke",
-      "pos": "S",
-      "status": "Out"
-     }
-    ],
-    "power": {
-     "consensus": 17,
-     "fpi": 14,
-     "nfl_com": 22
-    }
-   },
-   "away": {
-    "code": "SF",
-    "abbr": "SF",
-    "season": {
-     "games": 8,
-     "off_epa": 0.164,
-     "off_sr": 0.5247,
-     "def_epa": -0.0631,
-     "def_sr": 0.4344,
-     "off_pass_epa": 0.2897,
-     "off_rush_epa": -0.0012,
-     "def_pass_epa": 0.0244,
-     "def_rush_epa": -0.2084,
-     "ranks": {
-      "off_epa": 1,
-      "off_sr": 1,
-      "def_epa": 7,
-      "def_sr": 14
-     }
-    },
-    "last3": {
-     "games": 3,
-     "off_epa": 0.1297,
-     "off_sr": 0.533,
-     "def_epa": -0.0455,
-     "def_sr": 0.4659,
-     "off_pass_epa": 0.1422,
-     "off_rush_epa": 0.1135,
-     "def_pass_epa": 0.0353,
-     "def_rush_epa": -0.214,
-     "ranks": {
-      "off_epa": 5,
-      "off_sr": 2,
-      "def_epa": 11,
-      "def_sr": 23
-     }
-    },
-    "net": 0.2271,
-    "net_rank": 1,
-    "adjusted": {
-     "off": 0.1671,
-     "def": -0.0621,
-     "net": 0.1251,
-     "recent_net": 0.1266,
-     "sr_off": 0.5247,
-     "sr_def": 0.4344
-    },
-    "record": "7-1",
-    "last2_results": [
-     "W",
-     "L"
-    ],
-    "last3_results": [
-     "W",
-     "L",
-     "W"
-    ],
-    "rest": 7,
-    "qb": {
-     "regular": "B.Purdy",
-     "regular_id": "00-0037834",
-     "season_leader": "B.Purdy",
-     "reset": false,
-     "dropbacks": 243,
-     "epa_db": 0.2507,
-     "rank": 4
-    },
-    "injuries_known": true,
-    "key_out": [
-     "Mike Evans"
-    ],
-    "key_questionable": [],
-    "key_long_term": [],
-    "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [
-     {
-      "name": "Brandin Cooks",
-      "pos": "WR",
-      "status": "Out"
-     },
-     {
-      "name": "Kurtis Rourke",
-      "pos": "QB",
-      "status": "Out"
-     },
-     {
-      "name": "Tatum Bethune",
-      "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "name": "Enrique Cruz Jr.",
-      "pos": "OT",
-      "status": "Out"
-     },
-     {
-      "name": "Mike Evans",
-      "pos": "WR",
-      "status": "Out"
-     }
-    ],
-    "power": {
-     "consensus": 1,
-     "fpi": 1,
-     "nfl_com": 1
-    }
-   },
-   "fav": "SF",
-   "dog": "DAL",
-   "scoring": {
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 18 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 SF last-3 top 10 in 2 of 4 \u00b7 \u2717 DAL last-3 bottom 10 (23-32) in 0 of 4 \u00b7 \u2713 SF season top 15 in all four \u00b7 \u2717 DAL season top 10: Off EPA/play #6, Off success #8"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key starter newly out or doubtful for the favorite",
-      "pass": false,
-      "detail": "SF key starter out: Mike Evans"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not top 10 in any power ranking",
-      "pass": true,
-      "detail": "DAL: consensus #17, ESPN FPI #14, NFL.com #22"
-     }
-    ],
-    "context": [
-     {
-      "n": 1,
-      "ok": true,
-      "text": "Favorite top 10 (season) in a core metric",
-      "detail": "Off EPA/play, Off success, Def EPA allowed"
-     },
-     {
-      "n": 2,
-      "ok": true,
-      "text": "Also top 10 over its last 3 in that same metric",
-      "detail": "Off EPA/play, Off success"
-     },
-     {
-      "n": 3,
-      "ok": false,
-      "text": "Underdog not top 10 in any metric over its last 3",
-      "detail": "Off EPA/play, Off success, Def success allowed"
-     },
-     {
-      "n": 4,
-      "ok": true,
-      "text": "Underdog not 3-0 in its last 3",
-      "detail": "2-1"
-     }
-    ],
-    "qualifiers": [
-     "off_epa",
-     "off_sr"
-    ],
-    "fails": [
-     "SF key starter out: Mike Evans",
-     "Would be on the watch list otherwise (score 18)"
-    ],
-    "failed": [
-     "SF key starter out: Mike Evans",
-     "Would be on the watch list otherwise (score 18)"
-    ],
-    "hero": {
-     "score": 18,
-     "band": "yellow",
-     "parts": {
-      "fav_strength": 9,
-      "dog_weakness": 5,
-      "health": 3,
-      "home": 0,
-      "rest": 0,
-      "form": 1
-     },
-     "max": 40
-    },
-    "edge": {
-     "gap": 0.216,
-     "required": 0.35,
-     "clears": false,
-     "short_by": 0.134,
-     "adjusted_gap": 0.101,
-     "adjusted_recent_gap": 0.095
-    },
-    "flags": [
-     {
-      "level": "yellow",
-      "text": "Line moved +5 toward the favorite (4+): downgrade"
-     },
-     {
-      "level": "yellow",
-      "text": "Line crossed key number 3"
-     },
-     {
-      "level": "yellow",
-      "text": "Underdog questionable: DaRon Bland"
-     }
-    ],
-    "under": {
-     "passes": false,
-     "ranks": [
-      1,
-      6
-     ],
-     "total_move": 3.0,
-     "note": ""
-    },
-    "call": "No track",
-    "matchups": [
-     {
-      "key": "def_def",
-      "label": "Defense vs defense",
-      "fav_metric": "def_sr",
-      "dog_metric": "def_sr",
-      "fav_rank": 23,
-      "dog_rank": 10,
-      "in_range": false,
-      "met": false
-     },
-     {
-      "key": "def_off",
-      "label": "Defense vs offense",
-      "fav_metric": "def_sr",
-      "dog_metric": "off_sr",
-      "fav_rank": 23,
-      "dog_rank": 10,
-      "in_range": false,
-      "met": false
-     },
-     {
-      "key": "off_def",
-      "label": "Offense vs defense",
-      "fav_metric": "off_sr",
-      "dog_metric": "def_sr",
-      "fav_rank": 2,
-      "dog_rank": 10,
-      "in_range": false,
-      "met": false
-     }
-    ]
-   },
-   "fav_defense_top10": false,
-   "votes": {
-    "fav": 13,
-    "dog": 4,
-    "support": 0.765,
-    "sources": [
-     {
-      "site": "CBS Sports",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-10-picks-hub-expert-selections-best-bets-teasers-survivor/",
-      "fav": 6,
-      "dog": 1
-     },
-     {
-      "site": "Bleacher Report",
-      "url": "https://bleacherreport.com/articles/25532099-bleacher-reports-expert-week-10-2026-nfl-picks",
-      "fav": 5,
-      "dog": 2
-     },
-     {
-      "site": "Covers",
-      "url": "https://www.covers.com/nfl/picks-against-the-spread-week-10-2026",
-      "fav": 1,
-      "dog": 0
-     },
-     {
-      "site": "SI",
-      "url": "https://www.si.com/betting/road-to-272-bets-nfl-week-10-picks-for-every-game-01m70qgrdya8",
-      "fav": 0,
-      "dog": 1
-     },
-     {
-      "site": "Yahoo Sports",
-      "url": "https://sports.yahoo.com/nfl/betting/article/week-10-nfl-picks-against-the-spread-predictions-for-every-game-kirk-cousins-returns-to-lead-vikings-vs-packers-134850175.html",
-      "fav": 1,
-      "dog": 0
-     }
-    ],
-    "notes": ""
-   }
-  },
   {
    "id": "401873064",
    "nflverse_id": "2026_10_PIT_CIN",
@@ -460,10 +24,10 @@
    "open_spread": -3.5,
    "total": 49.5,
    "total_open": 47.5,
-   "fav_ml": -192.0,
+   "fav_ml": -218.0,
    "favorite": "home",
-   "spread": -3.5,
-   "movement": 0.0,
+   "spread": -4.5,
+   "movement": 1.0,
    "total_move": 2.0,
    "fav_home": true,
    "home": {
@@ -650,13 +214,13 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Eli Heidenreich",
-      "pos": "RB",
+      "name": "Will Howard",
+      "pos": "QB",
       "status": "Out"
      },
      {
-      "name": "Will Howard",
-      "pos": "QB",
+      "name": "Eli Heidenreich",
+      "pos": "RB",
       "status": "Out"
      },
      {
@@ -665,13 +229,13 @@
       "status": "Out"
      },
      {
-      "name": "DeShon Elliott",
-      "pos": "S",
+      "name": "Drew Allar",
+      "pos": "QB",
       "status": "Out"
      },
      {
-      "name": "Drew Allar",
-      "pos": "QB",
+      "name": "DeShon Elliott",
+      "pos": "S",
       "status": "Out"
      }
     ],
@@ -822,9 +386,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV15PITCIN",
-    "fav_prob": 0.655,
-    "bid": 0.65,
-    "ask": 0.66
+    "fav_prob": 0.665,
+    "bid": 0.66,
+    "ask": 0.67
    },
    "votes": {
     "fav": 6,
@@ -2831,7 +2395,6 @@
     },
     "injuries_known": true,
     "key_out": [
-     "Danielle Hunter",
      "Keylan Rutledge",
      "Woody Marks"
     ],
@@ -2843,6 +2406,11 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "David Montgomery",
+      "pos": "RB",
+      "status": "Out"
+     },
      {
       "name": "Woody Marks",
       "pos": "RB",
@@ -2861,11 +2429,6 @@
      {
       "name": "Marvin Harrison Jr.",
       "pos": "WR",
-      "status": "Out"
-     },
-     {
-      "name": "Danielle Hunter",
-      "pos": "DE",
       "status": "Out"
      }
     ],
@@ -2902,7 +2465,7 @@
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
       "pass": false,
-      "detail": "HOU key starter out: Danielle Hunter, Keylan Rutledge, Woody Marks"
+      "detail": "HOU key starter out: Keylan Rutledge, Woody Marks"
      },
      {
       "rule": "Power",
@@ -2941,10 +2504,10 @@
      "off_epa"
     ],
     "fails": [
-     "HOU key starter out: Danielle Hunter, Keylan Rutledge, Woody Marks"
+     "HOU key starter out: Keylan Rutledge, Woody Marks"
     ],
     "failed": [
-     "HOU key starter out: Danielle Hunter, Keylan Rutledge, Woody Marks"
+     "HOU key starter out: Keylan Rutledge, Woody Marks"
     ],
     "hero": {
      "score": 17,
@@ -5803,10 +5366,9 @@
      "rank": 12
     },
     "injuries_known": true,
-    "key_out": [
-     "Brock Bowers"
-    ],
+    "key_out": [],
     "key_questionable": [
+     "Brock Bowers",
      "Kwity Paye"
     ],
     "key_long_term": [],
@@ -5815,14 +5377,14 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Kwity Paye",
-      "pos": "DE",
+      "name": "Brock Bowers",
+      "pos": "TE",
       "status": "Questionable"
      },
      {
-      "name": "Brock Bowers",
-      "pos": "TE",
-      "status": "Out"
+      "name": "Kwity Paye",
+      "pos": "DE",
+      "status": "Questionable"
      },
      {
       "name": "Malik Benson",
@@ -5928,7 +5490,7 @@
      {
       "name": "George Holani",
       "pos": "RB",
-      "status": "Out"
+      "status": "Questionable"
      },
      {
       "name": "Jarran Reed",
@@ -6060,7 +5622,7 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Kwity Paye"
+      "text": "Underdog questionable: Brock Bowers, Kwity Paye"
      }
     ],
     "under": {
@@ -6139,6 +5701,442 @@
     ],
     "notes": "SI gives a total only (Under 43); not counted."
    }
+  },
+  {
+   "id": "401873063",
+   "nflverse_id": "2026_10_SF_DAL",
+   "kick_utc": "2026-11-15T21:25:00+00:00",
+   "kick_pt": "Sun 1:25 PM PT",
+   "day_et": "2026-11-15",
+   "state": "post",
+   "detail": "Final",
+   "neutral": false,
+   "venue": "AT&T Stadium",
+   "home_code": "DAL",
+   "away_code": "SF",
+   "score": {
+    "home": 40,
+    "away": 46
+   },
+   "line_source": "DraftKings",
+   "open_spread": 1.5,
+   "total": 55.5,
+   "total_open": 52.5,
+   "fav_ml": -198.0,
+   "favorite": "away",
+   "spread": -3.5,
+   "movement": 5.0,
+   "total_move": 3.0,
+   "fav_home": false,
+   "home": {
+    "code": "DAL",
+    "abbr": "DAL",
+    "season": {
+     "games": 9,
+     "off_epa": 0.1121,
+     "off_sr": 0.4711,
+     "def_epa": 0.1007,
+     "def_sr": 0.4628,
+     "off_pass_epa": 0.1893,
+     "off_rush_epa": -0.0269,
+     "def_pass_epa": 0.1868,
+     "def_rush_epa": -0.0284,
+     "ranks": {
+      "off_epa": 6,
+      "off_sr": 8,
+      "def_epa": 31,
+      "def_sr": 27
+     }
+    },
+    "last3": {
+     "games": 3,
+     "off_epa": 0.1237,
+     "off_sr": 0.4566,
+     "def_epa": -0.0015,
+     "def_sr": 0.4183,
+     "off_pass_epa": 0.2508,
+     "off_rush_epa": -0.0119,
+     "def_pass_epa": -0.0469,
+     "def_rush_epa": 0.0843,
+     "ranks": {
+      "off_epa": 7,
+      "off_sr": 10,
+      "def_epa": 14,
+      "def_sr": 10
+     }
+    },
+    "net": 0.0115,
+    "net_rank": 17,
+    "adjusted": {
+     "off": 0.1195,
+     "def": 0.1199,
+     "net": 0.0237,
+     "recent_net": 0.0315,
+     "sr_off": 0.4711,
+     "sr_def": 0.4628
+    },
+    "record": "4-5",
+    "last2_results": [
+     "W",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "L",
+     "W"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "D.Prescott",
+     "regular_id": "00-0033077",
+     "season_leader": "D.Prescott",
+     "reset": false,
+     "dropbacks": 353,
+     "epa_db": 0.1512,
+     "rank": 9
+    },
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [
+     "DaRon Bland"
+    ],
+    "key_long_term": [],
+    "interior_ol_out": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [
+     {
+      "name": "DaRon Bland",
+      "pos": "CB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Juanyeh Thomas",
+      "pos": "S",
+      "status": "Out"
+     },
+     {
+      "name": "Jonathan Mingo",
+      "pos": "WR",
+      "status": "Out"
+     },
+     {
+      "name": "Derion Kendrick",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "name": "P.J. Locke",
+      "pos": "S",
+      "status": "Out"
+     }
+    ],
+    "power": {
+     "consensus": 17,
+     "fpi": 14,
+     "nfl_com": 22
+    }
+   },
+   "away": {
+    "code": "SF",
+    "abbr": "SF",
+    "season": {
+     "games": 8,
+     "off_epa": 0.164,
+     "off_sr": 0.5247,
+     "def_epa": -0.0631,
+     "def_sr": 0.4344,
+     "off_pass_epa": 0.2897,
+     "off_rush_epa": -0.0012,
+     "def_pass_epa": 0.0244,
+     "def_rush_epa": -0.2084,
+     "ranks": {
+      "off_epa": 1,
+      "off_sr": 1,
+      "def_epa": 7,
+      "def_sr": 14
+     }
+    },
+    "last3": {
+     "games": 3,
+     "off_epa": 0.1297,
+     "off_sr": 0.533,
+     "def_epa": -0.0455,
+     "def_sr": 0.4659,
+     "off_pass_epa": 0.1422,
+     "off_rush_epa": 0.1135,
+     "def_pass_epa": 0.0353,
+     "def_rush_epa": -0.214,
+     "ranks": {
+      "off_epa": 5,
+      "off_sr": 2,
+      "def_epa": 11,
+      "def_sr": 23
+     }
+    },
+    "net": 0.2271,
+    "net_rank": 1,
+    "adjusted": {
+     "off": 0.1671,
+     "def": -0.0621,
+     "net": 0.1251,
+     "recent_net": 0.1266,
+     "sr_off": 0.5247,
+     "sr_def": 0.4344
+    },
+    "record": "7-1",
+    "last2_results": [
+     "W",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "L",
+     "W"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "B.Purdy",
+     "regular_id": "00-0037834",
+     "season_leader": "B.Purdy",
+     "reset": false,
+     "dropbacks": 243,
+     "epa_db": 0.2507,
+     "rank": 4
+    },
+    "injuries_known": true,
+    "key_out": [
+     "Mike Evans"
+    ],
+    "key_questionable": [],
+    "key_long_term": [],
+    "interior_ol_out": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [
+     {
+      "name": "Brandin Cooks",
+      "pos": "WR",
+      "status": "Out"
+     },
+     {
+      "name": "Kurtis Rourke",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "name": "Tatum Bethune",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
+      "name": "Enrique Cruz Jr.",
+      "pos": "OT",
+      "status": "Out"
+     },
+     {
+      "name": "Mike Evans",
+      "pos": "WR",
+      "status": "Out"
+     }
+    ],
+    "power": {
+     "consensus": 1,
+     "fpi": 1,
+     "nfl_com": 1
+    }
+   },
+   "fav": "SF",
+   "dog": "DAL",
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 18 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 SF last-3 top 10 in 2 of 4 \u00b7 \u2717 DAL last-3 bottom 10 (23-32) in 0 of 4 \u00b7 \u2713 SF season top 15 in all four \u00b7 \u2717 DAL season top 10: Off EPA/play #6, Off success #8"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter newly out or doubtful for the favorite",
+      "pass": false,
+      "detail": "SF key starter out: Mike Evans"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": true,
+      "detail": "DAL: consensus #17, ESPN FPI #14, NFL.com #22"
+     }
+    ],
+    "context": [
+     {
+      "n": 1,
+      "ok": true,
+      "text": "Favorite top 10 (season) in a core metric",
+      "detail": "Off EPA/play, Off success, Def EPA allowed"
+     },
+     {
+      "n": 2,
+      "ok": true,
+      "text": "Also top 10 over its last 3 in that same metric",
+      "detail": "Off EPA/play, Off success"
+     },
+     {
+      "n": 3,
+      "ok": false,
+      "text": "Underdog not top 10 in any metric over its last 3",
+      "detail": "Off EPA/play, Off success, Def success allowed"
+     },
+     {
+      "n": 4,
+      "ok": true,
+      "text": "Underdog not 3-0 in its last 3",
+      "detail": "2-1"
+     }
+    ],
+    "qualifiers": [
+     "off_epa",
+     "off_sr"
+    ],
+    "fails": [
+     "SF key starter out: Mike Evans",
+     "Would be on the watch list otherwise (score 18)"
+    ],
+    "failed": [
+     "SF key starter out: Mike Evans",
+     "Would be on the watch list otherwise (score 18)"
+    ],
+    "hero": {
+     "score": 18,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 9,
+      "dog_weakness": 5,
+      "health": 3,
+      "home": 0,
+      "rest": 0,
+      "form": 1
+     },
+     "max": 40
+    },
+    "edge": {
+     "gap": 0.216,
+     "required": 0.35,
+     "clears": false,
+     "short_by": 0.134,
+     "adjusted_gap": 0.101,
+     "adjusted_recent_gap": 0.095
+    },
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "Line moved +5 toward the favorite (4+): downgrade"
+     },
+     {
+      "level": "yellow",
+      "text": "Line crossed key number 3"
+     },
+     {
+      "level": "yellow",
+      "text": "Underdog questionable: DaRon Bland"
+     }
+    ],
+    "under": {
+     "passes": false,
+     "ranks": [
+      1,
+      6
+     ],
+     "total_move": 3.0,
+     "note": ""
+    },
+    "call": "No track",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 23,
+      "dog_rank": 10,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 23,
+      "dog_rank": 10,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 2,
+      "dog_rank": 10,
+      "in_range": false,
+      "met": false
+     }
+    ]
+   },
+   "fav_defense_top10": false,
+   "votes": {
+    "fav": 13,
+    "dog": 4,
+    "support": 0.765,
+    "sources": [
+     {
+      "site": "CBS Sports",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-10-picks-hub-expert-selections-best-bets-teasers-survivor/",
+      "fav": 6,
+      "dog": 1
+     },
+     {
+      "site": "Bleacher Report",
+      "url": "https://bleacherreport.com/articles/25532099-bleacher-reports-expert-week-10-2026-nfl-picks",
+      "fav": 5,
+      "dog": 2
+     },
+     {
+      "site": "Covers",
+      "url": "https://www.covers.com/nfl/picks-against-the-spread-week-10-2026",
+      "fav": 1,
+      "dog": 0
+     },
+     {
+      "site": "SI",
+      "url": "https://www.si.com/betting/road-to-272-bets-nfl-week-10-picks-for-every-game-01m70qgrdya8",
+      "fav": 0,
+      "dog": 1
+     },
+     {
+      "site": "Yahoo Sports",
+      "url": "https://sports.yahoo.com/nfl/betting/article/week-10-nfl-picks-against-the-spread-predictions-for-every-game-kirk-cousins-returns-to-lead-vikings-vs-packers-134850175.html",
+      "fav": 1,
+      "dog": 0
+     }
+    ],
+    "notes": ""
+   }
   }
  ],
  "notes": [],
@@ -6176,6 +6174,6 @@
   "watch": 1,
   "green": 0,
   "edge_clears": 1,
-  "built_label": "Sun Nov 15, 4:15 PM PT"
+  "built_label": "Sun Nov 15, 5:15 PM PT"
  }
 }
