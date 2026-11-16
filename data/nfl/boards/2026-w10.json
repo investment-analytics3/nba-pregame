@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 10,
- "built_at": "2026-11-16T13:01:16-08:00",
- "built_label": "Mon Nov 16, 1:01 PM PT",
+ "built_at": "2026-11-16T14:00:39-08:00",
+ "built_label": "Mon Nov 16, 2:00 PM PT",
  "games": [
   {
    "id": "401873065",
@@ -219,6 +219,21 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Branson Taylor",
+      "pos": "G",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "David Njoku",
+      "pos": "TE",
+      "status": "Questionable"
+     },
+     {
+      "name": "Denzel Perryman",
+      "pos": "LB",
+      "status": "Questionable"
+     },
+     {
       "name": "Brenen Thompson",
       "pos": "WR",
       "status": "Doubtful"
@@ -227,21 +242,6 @@
       "name": "Ladd McConkey",
       "pos": "WR",
       "status": "Out"
-     },
-     {
-      "name": "Branson Taylor",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "name": "Trey Pipkins III",
-      "pos": "OT",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Kayode Awosika",
-      "pos": "G",
-      "status": "Questionable"
      }
     ],
     "power": {
@@ -2356,17 +2356,23 @@
     "injuries_known": true,
     "key_out": [
      "Blake Cashman",
-     "Jauan Jennings",
      "Jordan Addison",
      "T.J. Hockenson",
      "Tyrion Ingram-Dawkins"
     ],
-    "key_questionable": [],
+    "key_questionable": [
+     "Andrew Van Ginkel"
+    ],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Andrew Van Ginkel",
+      "pos": "LB",
+      "status": "Questionable"
+     },
      {
       "name": "Jordan Addison",
       "pos": "WR",
@@ -2385,11 +2391,6 @@
      {
       "name": "Blake Cashman",
       "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "name": "Jauan Jennings",
-      "pos": "WR",
       "status": "Out"
      }
     ],
@@ -2508,6 +2509,10 @@
      {
       "level": "yellow",
       "text": "Line crossed key number 3"
+     },
+     {
+      "level": "yellow",
+      "text": "Underdog questionable: Andrew Van Ginkel"
      }
     ],
     "under": {
@@ -4478,6 +4483,7 @@
     },
     "injuries_known": true,
     "key_out": [
+     "Andrew Wingard",
      "Hjalte Froholdt"
     ],
     "key_questionable": [],
@@ -4488,6 +4494,11 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Andrew Wingard",
+      "pos": "S",
+      "status": "Out"
+     },
      {
       "name": "Jon Gaines II",
       "pos": "G",
@@ -4501,17 +4512,12 @@
      {
       "name": "Jordan Burch",
       "pos": "LB",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
       "name": "Jayden Williams",
       "pos": "OT",
       "status": "Out"
-     },
-     {
-      "name": "Gardner Minshew II",
-      "pos": "QB",
-      "status": "Injured Reserve"
      }
     ],
     "power": {
@@ -5370,7 +5376,7 @@
      {
       "name": "DaRon Bland",
       "pos": "CB",
-      "status": "Doubtful"
+      "status": "Out"
      },
      {
       "name": "Tyler Booker",
@@ -6210,6 +6216,6 @@
   "watch": 0,
   "green": 0,
   "edge_clears": 1,
-  "built_label": "Mon Nov 16, 1:01 PM PT"
+  "built_label": "Mon Nov 16, 2:00 PM PT"
  }
 }
