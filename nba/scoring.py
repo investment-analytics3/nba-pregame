@@ -50,9 +50,9 @@ MATCHUP_PAIRS = (("off_off", "Offense vs offense", "off", "off"),
                  ("def_off", "Defense vs offense", "def", "off"),
                  ("off_def", "Offense vs defense", "off", "def"))
 # Board grid (owner Nov 15, as NHL / college): each row reads across, favorite (season, last 3) vs underdog (season, last 3)
-GRID = (("off_def", "Offense vs defense", "off", "def"),
-        ("def_off", "Defense vs offense", "def", "off"),
+GRID = (("off_def", "Offense vs defense", "off", "def"),       # owner Nov 15: offense rows first, then defense
         ("shoot", "Shooting vs shot defense", "efg", "opp_efg"),
+        ("def_off", "Defense vs offense", "def", "off"),
         ("shotd", "Shot defense vs shooting", "opp_efg", "efg"))
 MAX_SCORE = 40
 BANDS = [(28, "green"), (18, "yellow"), (0, "red")]

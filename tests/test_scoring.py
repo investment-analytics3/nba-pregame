@@ -191,4 +191,4 @@ class Matchups(unittest.TestCase):
         dog = team("DOG", self.ranks(), self.ranks(off=21, **{"def": 30}), net=30)
         sc = scoring.score_game(game(fav, dog))
         self.assertEqual({m["key"] for m in sc["matchups"] if m["met"]}, {"off_off", "def_def", "def_off", "off_def"})
-        self.assertEqual([r["key"] for r in sc["grid"]], ["off_def", "def_off", "shoot", "shotd"])
+        self.assertEqual([r["key"] for r in sc["grid"]], ["off_def", "shoot", "def_off", "shotd"])

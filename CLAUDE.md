@@ -92,7 +92,7 @@ NFL rules (spec "NFL Stat Edge v2", decisions Nov 8 2026):
   college football board); cards open an L2 view (`#g-<id>`) with
   Pregame/Live tabs (Live = `nfl/game.html?g=<id>`), "How it qualifies", score, pills, details. Metric pills (owner Nov 15, as NHL/college;
   template `H2H`): rows read across, favorite season / last 3 vs underdog season / last 3: offense vs defense and defense vs
-  offense, for EPA/play and success rate; colors unchanged. Matchups (owner Nov 15, INFORMATION ONLY, tiers unchanged;
+  offense, for EPA/play and success rate (rows: off EPA, off SR, def EPA, def SR; offense first); colors unchanged. Matchups (owner Nov 15, INFORMATION ONLY, tiers unchanged;
   `scoring.matchups`, `MATCHUP_PAIRS`): spread 7+ games, last-3 SUCCESS RATE, fav top 10 vs dog 23-32 in defense vs defense,
   defense vs offense or offense vs defense; last-3 cells outlined + a Matchup line ("Pregame: favorites won 89% (140-18), vs
   75% without. Leading at halftime they held 98%, after the 3rd 98% (2021-26)"). Backtest `scripts/nfl_matchup_backtest.py`
@@ -160,7 +160,7 @@ College rules (owner decisions Nov 10 2026, spec "College Football Board"):
   Live page panel + list chip ("Top-10 D #n"); price log shows each level's record vs avg Kalshi. Matchup splits (offense vs
   offense etc., last 2/3/season) were tested Nov 15 and don't separate college games: the spread already prices them.
 - Board grid (owner Nov 15, as NHL/CBB; template `pills()` / `H2H`): rows read across, favorite season / last 3 vs underdog
-  season / last 3: offense vs defense (EPA/play), defense vs offense (EPA), same two for success rate; colors unchanged. No
+  season / last 3: offense vs defense in EPA/play then success rate, then defense vs offense in both (offense rows first); colors unchanged. No
   matchup outlines (they don't separate college games); the outline marks the defense hold check (fav last-3 defensive EPA
   top 10) with a "Defense hold check" line, which also says these favorites won 82% pregame (same as the rest: the edge is
   in holding 8-14 point leads).
@@ -202,7 +202,7 @@ College basketball rules (owner decisions Nov 11 2026; spec "College Basketball 
 - Backtest 2025-26 (894 games): favorites won 90.4% vs DK price 91.2%; Qualified 10-0 (price ~94%); Watch list 92% vs 92%;
   tracked favorites up 10+ at 2H 10:00 won 200/200 (ESPN WP ~98.5%). Review Kalshi price logs after a few weeks.
 - Board grid (owner Nov 15, as NHL; `scoring.GRID`, card + L2 heat map + bars): rows read across, favorite season / last 3
-  vs underdog season / last 3: offense vs defense, defense vs offense, shooting vs shot D, shot D vs shooting; colors unchanged.
+  vs underdog season / last 3: offense vs defense, shooting vs shot D, defense vs offense, shot D vs shooting (offense rows first, owner Nov 15); colors unchanged.
   Matchups (`scoring.matchups`, INFORMATION ONLY, tiers unchanged): fav top 50 / dog bottom 50 over the last 3 in offense vs
   offense, defense vs defense or fav defense vs dog offense; last-3 cells outlined + a Matchup line. Backtest (spread pool
   2025-26): any of the three 98-7 (93%) vs 90% without; fav offense vs dog defense 88% (shown, doesn't count). Line also says

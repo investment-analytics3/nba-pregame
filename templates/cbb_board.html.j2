@@ -126,8 +126,9 @@ const C = 289.027, MAX = DATA.max || 40, N = DATA.n_d1 || 365;
 // College cutoffs (owner Nov 11): strong = top 50 of ~365, elite = top 20, weak = bottom 50
 const NAMES = {efg:'eFG%', off:'Off Eff', opp_efg:'Opp eFG%', def:'Def Eff'};
 // Owner Nov 15: the grid reads across as head-to-head matchups (cbb/scoring.py GRID), like the NHL board
-const COLS = [{f:'off',d:'def',fly:'Offense vs defense',lab:'Off vs Def'},{f:'def',d:'off',fly:'Defense vs offense',lab:'Def vs Off'},
-              {f:'efg',d:'opp_efg',fly:'Shooting vs shot D',lab:'Shoot vs D'},{f:'opp_efg',d:'efg',fly:'Shot D vs shooting',lab:'Shot D vs Shoot'}];
+// Row order (owner Nov 15): the two offense rows, then the two defense rows
+const COLS = [{k:'off_def',f:'off',d:'def',fly:'Offense vs defense',lab:'Off vs Def'},{k:'shoot',f:'efg',d:'opp_efg',fly:'Shooting vs shot D',lab:'Shoot vs D'},
+              {k:'def_off',f:'def',d:'off',fly:'Defense vs offense',lab:'Def vs Off'},{k:'shotd',f:'opp_efg',d:'efg',fly:'Shot D vs shooting',lab:'Shot D vs Shoot'}];
 const SHORT = {efg:'eFG%', off:'Off Eff', opp_efg:'Opp eFG%', def:'Def Eff'};
 const MT = 50, MB = N - 49;   // matchup: favorite top 50, underdog bottom 50 (last 3)
 // last-3 matchups that count (offense vs offense, defense vs defense, defense vs offense): information only
@@ -202,7 +203,7 @@ function pillGrid(sc, base){
   let h = `<div class="pills"><div class="h2h"><span></span><span class="tm">${esc(fa)}</span><span></span><span class="tm">${esc(da)}</span></div>
     <div class="h2h" style="margin-top:-3px"><span></span>${['Season','Last 3','','Season','Last 3'].map(x=>`<span class="ph"><span>${x}</span></span>`).join('')}</div>`;
   sc.grid.forEach((r,ri)=>{
-    const c = COLS[ri]||{lab:r.label};
+    const c = COLS.find(x=>x.k===r.key)||{lab:r.label};
     const cell = (x,ci) => `<span class="pill cond ${PILL[x.color]}${isMx(sc,x.role,x.metric,x.window)?' mx':''}" title="${esc(x.team)} ${x.window==='season'?'season':'last 3'} ${NAMES[x.metric]}: rank ${x.rank??'n/a'}" style="animation-delay:${base+ri*90+ci*45}ms"><span>#${x.rank??'–'}</span></span>`;
     h += `<div class="h2h" style="margin-top:${ri===2?8:0}px"><span class="pl"><b>${esc(c.lab)}</b><span>${SHORT[r.fav_metric]} · ${SHORT[r.dog_metric]}</span></span>`
       + r.cells.slice(0,2).map(cell).join('') + `<span class="vs">vs</span>` + r.cells.slice(2).map((x,i)=>cell(x,i+2)).join('') + '</div>';

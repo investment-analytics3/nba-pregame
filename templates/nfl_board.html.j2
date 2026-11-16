@@ -79,8 +79,9 @@ function donut(h){
 
 // Head-to-head grid (owner Nov 15, as NHL / college): each row reads across, favorite (season, last 3) vs underdog
 // (season, last 3); same colors.
-const H2H = [{f:'off_epa',d:'def_epa',lab:'Off vs Def',sub:'EPA/play'},{f:'def_epa',d:'off_epa',lab:'Def vs Off',sub:'EPA/play'},
-             {f:'off_sr',d:'def_sr',lab:'Off vs Def',sub:'success rate'},{f:'def_sr',d:'off_sr',lab:'Def vs Off',sub:'success rate'}];
+// Row order (owner Nov 15): the two offense rows, then the two defense rows
+const H2H = [{f:'off_epa',d:'def_epa',lab:'Off vs Def',sub:'EPA/play'},{f:'off_sr',d:'def_sr',lab:'Off vs Def',sub:'success rate'},
+             {f:'def_epa',d:'off_epa',lab:'Def vs Off',sub:'EPA/play'},{f:'def_sr',d:'off_sr',lab:'Def vs Off',sub:'success rate'}];
 function pills(g){
   const fav = team(g,g.fav), dog = team(g,g.dog);
   const sc = g.scoring||{};
