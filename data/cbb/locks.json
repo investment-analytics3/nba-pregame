@@ -11123,7 +11123,7 @@
    "tip_pt": "4:00 PM PT",
    "day_et": "2026-11-15",
    "state": "in",
-   "detail": "0:48 - 1st",
+   "detail": "Halftime",
    "neutral": false,
    "venue": "Madison Square Garden",
    "favorite": "home",
@@ -11818,8 +11818,728 @@
    },
    "locked_at": "2026-11-15T15:00:51-08:00",
    "score": {
-    "home": 28,
-    "away": 32
+    "home": 30,
+    "away": 33
+   }
+  }
+ },
+ "401911472": {
+  "at": "2026-11-15T17:00:56-08:00",
+  "day": "2026-11-15",
+  "game": {
+   "id": "401911472",
+   "tip_utc": "2026-11-16T02:00:00+00:00",
+   "tip_pt": "6:00 PM PT",
+   "day_et": "2026-11-15",
+   "state": "pre",
+   "detail": "11/15 - 9:00 PM EST",
+   "neutral": false,
+   "venue": "Provident Credit Union Event Center",
+   "favorite": "home",
+   "spread": {
+    "spread": 13.5,
+    "details": "SJSU -13.5",
+    "provider": "DraftKings",
+    "ml_home": -1000,
+    "ml_away": 650
+   },
+   "home": {
+    "id": "23",
+    "abbr": "SJSU",
+    "name": "San Jos\u00e9 State",
+    "display": "San Jos\u00e9 State Spartans",
+    "mascot": "Spartans",
+    "record": "1-2",
+    "l3_record": "1-2",
+    "games": 3,
+    "season": {
+     "efg": 62.88,
+     "opp_efg": 57.91,
+     "off": 112.55,
+     "def": 110.74,
+     "net": 1.81,
+     "poss_per_game": 73.7,
+     "ranks": {
+      "efg": 10,
+      "off": 113,
+      "opp_efg": 322,
+      "def": 230,
+      "net": 158
+     }
+    },
+    "last3": {
+     "efg": 62.88,
+     "opp_efg": 57.91,
+     "off": 112.55,
+     "def": 110.74,
+     "net": 1.81,
+     "poss_per_game": 73.7,
+     "ranks": {
+      "efg": 11,
+      "off": 112,
+      "opp_efg": 323,
+      "def": 229,
+      "net": 154
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401911471,
+      "date": "2026-11-12",
+      "site": "home",
+      "opp_id": 27,
+      "opp": "UCR",
+      "d1_opp": true,
+      "pts": 75,
+      "opp_pts": 80,
+      "metrics": {
+       "efg": 67.44,
+       "opp_efg": 65.69,
+       "off": 103.59,
+       "def": 110.5,
+       "net": -6.91
+      },
+      "opp_power_rank": 167
+     },
+     {
+      "game_id": 401911470,
+      "date": "2026-11-07",
+      "site": "away",
+      "opp_id": 300,
+      "opp": "UCI",
+      "d1_opp": true,
+      "pts": 79,
+      "opp_pts": 91,
+      "metrics": {
+       "efg": 55.47,
+       "opp_efg": 57.14,
+       "off": 106.0,
+       "def": 122.11,
+       "net": -16.1
+      },
+      "opp_power_rank": 104
+     },
+     {
+      "game_id": 401911469,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 2636,
+      "opp": "UTSA",
+      "d1_opp": true,
+      "pts": 95,
+      "opp_pts": 74,
+      "metrics": {
+       "efg": 67.86,
+       "opp_efg": 52.38,
+       "off": 127.84,
+       "def": 99.58,
+       "net": 28.26
+      },
+      "opp_power_rank": 174
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-13.5",
+    "b2b": false,
+    "power": {
+     "rank": 168,
+     "bpi": 187,
+     "own_net": 158
+    },
+    "key_players": [
+     "Joey Chammaa",
+     "Mekhi Mason",
+     "JaVaughn Hannah",
+     "Robert Vaihola",
+     "Mookie Cook",
+     "Zine Eddine Bedri"
+    ],
+    "top_scorers": [
+     {
+      "name": "Joey Chammaa",
+      "ppg": 19.3
+     },
+     {
+      "name": "Mekhi Mason",
+      "ppg": 19.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "2011",
+    "abbr": "ALST",
+    "name": "Alabama State",
+    "display": "Alabama State Hornets",
+    "mascot": "Hornets",
+    "record": "1-2",
+    "l3_record": "1-2",
+    "games": 1,
+    "season": {
+     "efg": 38.81,
+     "opp_efg": 54.84,
+     "off": 79.12,
+     "def": 116.29,
+     "net": -37.16,
+     "poss_per_game": 83.4,
+     "ranks": {
+      "efg": 347,
+      "off": 354,
+      "opp_efg": 281,
+      "def": 281,
+      "net": 346
+     }
+    },
+    "last3": {
+     "efg": 38.81,
+     "opp_efg": 54.84,
+     "off": 79.12,
+     "def": 116.29,
+     "net": -37.16,
+     "poss_per_game": 83.4,
+     "ranks": {
+      "efg": 344,
+      "off": 355,
+      "opp_efg": 280,
+      "def": 275,
+      "net": 345
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401925663,
+      "date": "2026-11-11",
+      "site": "home",
+      "opp_id": 2824,
+      "opp": "OPSU",
+      "d1_opp": false,
+      "pts": 66,
+      "opp_pts": 60,
+      "metrics": {
+       "efg": 36.89,
+       "opp_efg": 45.65,
+       "off": 101.81,
+       "def": 92.56,
+       "net": 9.26
+      },
+      "opp_power_rank": null
+     },
+     {
+      "game_id": 401925662,
+      "date": "2026-11-09",
+      "site": "home",
+      "opp_id": 134891,
+      "opp": "GGC",
+      "d1_opp": false,
+      "pts": 77,
+      "opp_pts": 79,
+      "metrics": {
+       "efg": 49.22,
+       "opp_efg": 68.37,
+       "off": 106.32,
+       "def": 109.08,
+       "net": -2.76
+      },
+      "opp_power_rank": null
+     },
+     {
+      "game_id": 401920806,
+      "date": "2026-11-03",
+      "site": "away",
+      "opp_id": 245,
+      "opp": "TA&M",
+      "d1_opp": true,
+      "pts": 66,
+      "opp_pts": 97,
+      "metrics": {
+       "efg": 38.81,
+       "opp_efg": 54.84,
+       "off": 79.12,
+       "def": 116.29,
+       "net": -37.16
+      },
+      "opp_power_rank": 18
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+13.5",
+    "b2b": false,
+    "power": {
+     "rank": 362,
+     "bpi": 363,
+     "own_net": 346
+    },
+    "key_players": [
+     "Paul McMillan IV",
+     "Mike James",
+     "Damarion Bonds",
+     "Terrance Hampton",
+     "Tre Powell"
+    ],
+    "top_scorers": [
+     {
+      "name": "Paul McMillan IV",
+      "ppg": 15.7
+     },
+     {
+      "name": "Terrance Hampton",
+      "ppg": 11.7
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "SJSU",
+    "dog": "ALST",
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 19 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 SJSU last-3 top 50 in 1 of 4 \u00b7 \u2717 ALST last-3 bottom 50 (316+) in 2 of 4 \u00b7 \u2717 SJSU season outside 1-182: Opp eFG% #322, Def Eff #230 \u00b7 \u2713 ALST season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "ALST: consensus #362, BPI #363, our net #346"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Watch list: score 19 (qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for SJSU: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 19,
+    "max": 40,
+    "band": "yellow",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 4,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 12,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "SJSU",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 10,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 113,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 322,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 230,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "SJSU",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 11,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 112,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 323,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 229,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "ALST",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 281,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 281,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 347,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 354,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "ALST",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 280,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 275,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 344,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 355,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "cells": [
+       {
+        "team": "SJSU",
+        "role": "fav",
+        "window": "season",
+        "metric": "off",
+        "rank": 113,
+        "color": "yellow"
+       },
+       {
+        "team": "SJSU",
+        "role": "fav",
+        "window": "last3",
+        "metric": "off",
+        "rank": 112,
+        "color": "yellow"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "season",
+        "metric": "def",
+        "rank": 281,
+        "color": "green"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "last3",
+        "metric": "def",
+        "rank": 275,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "cells": [
+       {
+        "team": "SJSU",
+        "role": "fav",
+        "window": "season",
+        "metric": "def",
+        "rank": 230,
+        "color": "red"
+       },
+       {
+        "team": "SJSU",
+        "role": "fav",
+        "window": "last3",
+        "metric": "def",
+        "rank": 229,
+        "color": "red"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "season",
+        "metric": "off",
+        "rank": 354,
+        "color": "green"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "last3",
+        "metric": "off",
+        "rank": 355,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shoot",
+      "label": "Shooting vs shot defense",
+      "fav_metric": "efg",
+      "dog_metric": "opp_efg",
+      "cells": [
+       {
+        "team": "SJSU",
+        "role": "fav",
+        "window": "season",
+        "metric": "efg",
+        "rank": 10,
+        "color": "green"
+       },
+       {
+        "team": "SJSU",
+        "role": "fav",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 11,
+        "color": "green"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 281,
+        "color": "green"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 280,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shotd",
+      "label": "Shot defense vs shooting",
+      "fav_metric": "opp_efg",
+      "dog_metric": "efg",
+      "cells": [
+       {
+        "team": "SJSU",
+        "role": "fav",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 322,
+        "color": "red"
+       },
+       {
+        "team": "SJSU",
+        "role": "fav",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 323,
+        "color": "red"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "season",
+        "metric": "efg",
+        "rank": 347,
+        "color": "green"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 344,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "off",
+      "dog_metric": "off",
+      "fav_rank": 112,
+      "dog_rank": 355,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def",
+      "dog_metric": "def",
+      "fav_rank": 229,
+      "dog_rank": 275,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "fav_rank": 229,
+      "dog_rank": 355,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "fav_rank": 112,
+      "dog_rank": 275,
+      "counts": false,
+      "met": false
+     }
+    ]
+   },
+   "summary": "Watch list: score 19 (qualifies at 28). Biggest edge over the last 3: SJSU eFG% (#11) against ALST Opp eFG% (#280). SJSU 1-2 in its last 3, ALST 1-2. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "Lean: SJSU (watch list)",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV15ALSTSJSU",
+    "fav_prob": 0.895,
+    "bid": 0.89,
+    "ask": 0.9
+   },
+   "locked_at": "2026-11-15T17:00:56-08:00",
+   "readout": {
+    "matchup": "ALST @ SJSU",
+    "summary": "Both previews pick San Jose State at home, pointing to the Spartans' 83 points a game on 54% shooting and Alabama State's 35% shooting and nearly 20 turnovers a game. The Hornets' only Division I game was a 97-66 loss at Texas A&M.",
+    "pick": "San Jose State to win (both sources); Pick Dawgz also takes SJSU -12.5",
+    "injuries": "None reported for either team",
+    "sources": [
+     {
+      "site": "BangTheBook",
+      "url": "https://bangthebook.com/alabama-state-hornets-vs-san-jos-state-spartans-prediction-2026-11-15/"
+     },
+     {
+      "site": "Pick Dawgz",
+      "url": "https://pickdawgz.com/college-basketball-picks/alabama-state-vs-san-jose-state-prediction-11-15-2026-todays-college-basketball-picks/"
+     }
+    ],
+    "updated": "2026-11-15T05:18-08:00"
    }
   }
  }
