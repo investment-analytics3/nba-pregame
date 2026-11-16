@@ -1,135 +1,155 @@
 {
- "date": "2026-11-15",
- "built_at": "2026-11-15T12:43:15-05:00",
+ "date": "2026-11-16",
+ "built_at": "2026-11-15T23:30:28-05:00",
  "games": [
   {
-   "id": "401909989",
+   "id": "401909994",
    "fav_defense": {
     "season": {
      "opp_efg": {
-      "v": 50.49,
-      "r": 4
+      "v": 50.32,
+      "r": 3
      },
      "def": {
-      "v": 104.08,
-      "r": 3
+      "v": 103.52,
+      "r": 2
      }
     },
     "last3": {
      "opp_efg": {
-      "v": 49.79,
-      "r": 3
+      "v": 47.98,
+      "r": 1
      },
      "def": {
-      "v": 102.45,
-      "r": 4
+      "v": 99.26,
+      "r": 2
      }
     }
    },
-   "fav_b2b": false,
-   "tip_utc": "2026-11-15T23:00Z",
-   "tip_pt": "3:00 PM PT",
+   "fav_b2b": true,
+   "tip_utc": "2026-11-17T00:00Z",
+   "tip_pt": "4:00 PM PT",
    "fav": "BOS",
-   "dog": "DAL",
+   "dog": "ORL",
    "qualifiers": [
     "eFG%",
     "Off Eff",
     "Opp eFG%",
     "Def Eff"
    ],
-   "tier": "qualified",
-   "route": "Last-3 mismatch",
-   "score": 27,
+   "tier": "watch",
+   "route": "",
+   "score": 23,
    "band": "yellow",
-   "spread": "BOS -13.5",
+   "spread": "BOS -8.5",
    "away": {
-    "id": "6",
-    "abbr": "DAL",
-    "name": "Mavericks",
-    "display": "Dallas Mavericks",
-    "record": "7-6"
+    "id": "19",
+    "abbr": "ORL",
+    "name": "Magic",
+    "display": "Orlando Magic",
+    "record": "5-7"
    },
    "home": {
     "id": "2",
     "abbr": "BOS",
     "name": "Celtics",
     "display": "Boston Celtics",
-    "record": "10-2"
+    "record": "11-2"
    }
   },
   {
-   "id": "401909988",
+   "id": "401909998",
    "fav_defense": {
     "season": {
      "opp_efg": {
-      "v": 50.34,
-      "r": 3
+      "v": 52.45,
+      "r": 9
      },
      "def": {
-      "v": 103.97,
-      "r": 2
+      "v": 108.4,
+      "r": 9
      }
     },
     "last3": {
      "opp_efg": {
-      "v": 50.19,
-      "r": 4
+      "v": 52.62,
+      "r": 10
      },
      "def": {
-      "v": 101.67,
-      "r": 2
+      "v": 115.94,
+      "r": 22
      }
     }
    },
-   "fav_b2b": false,
-   "tip_utc": "2026-11-15T22:00Z",
-   "tip_pt": "2:00 PM PT",
-   "fav": "SA",
-   "dog": "UTAH",
+   "fav_b2b": true,
+   "tip_utc": "2026-11-17T00:30Z",
+   "tip_pt": "4:30 PM PT",
+   "fav": "HOU",
+   "dog": "MIA",
    "qualifiers": [
+    "eFG%",
     "Off Eff",
-    "Opp eFG%",
-    "Def Eff"
+    "Opp eFG%"
    ],
    "tier": "watch",
    "route": "",
-   "score": 26,
+   "score": 19,
    "band": "yellow",
-   "spread": "SA -15.5",
+   "spread": "HOU -3.5",
    "away": {
-    "id": "24",
-    "abbr": "SA",
-    "name": "Spurs",
-    "display": "San Antonio Spurs",
-    "record": "11-2"
+    "id": "10",
+    "abbr": "HOU",
+    "name": "Rockets",
+    "display": "Houston Rockets",
+    "record": "11-3"
    },
    "home": {
-    "id": "26",
-    "abbr": "UTAH",
-    "name": "Jazz",
-    "display": "Utah Jazz",
-    "record": "1-12"
+    "id": "14",
+    "abbr": "MIA",
+    "name": "Heat",
+    "display": "Miami Heat",
+    "record": "7-6"
    }
   }
  ],
  "closers": {
-  "SA": {
+  "MIA": {
    "closers": [
-    "Victor Wembanyama",
-    "Dylan Harper"
+    "Davion Mitchell",
+    "Giannis Antetokounmpo"
    ],
    "elite": [],
    "source": "draft",
    "season": {
-    "Victor Wembanyama": {
-     "ppm": 0.984,
-     "ppg": 28.8,
+    "Davion Mitchell": {
+     "ppm": 0.47,
+     "ppg": 16.8,
      "gp": 13
     },
-    "Dylan Harper": {
-     "ppm": 0.554,
-     "ppg": 17.3,
+    "Giannis Antetokounmpo": {
+     "ppm": 0.891,
+     "ppg": 28.9,
      "gp": 13
+    }
+   }
+  },
+  "HOU": {
+   "closers": [
+    "Kevin Durant",
+    "Alperen Sengun"
+   ],
+   "elite": [],
+   "source": "draft",
+   "season": {
+    "Kevin Durant": {
+     "ppm": 0.627,
+     "ppg": 21.3,
+     "gp": 14
+    },
+    "Alperen Sengun": {
+     "ppm": 0.658,
+     "ppg": 22.8,
+     "gp": 12
     }
    }
   },
@@ -142,54 +162,34 @@
    "source": "draft",
    "season": {
     "Jayson Tatum": {
-     "ppm": 0.773,
-     "ppg": 26.3,
-     "gp": 11
+     "ppm": 0.795,
+     "ppg": 26.8,
+     "gp": 12
     },
     "Paul George": {
-     "ppm": 0.731,
-     "ppg": 22.0,
-     "gp": 10
-    }
-   }
-  },
-  "DAL": {
-   "closers": [
-    "Cooper Flagg",
-    "Kyrie Irving"
-   ],
-   "elite": [],
-   "source": "draft",
-   "season": {
-    "Cooper Flagg": {
-     "ppm": 0.71,
-     "ppg": 24.1,
-     "gp": 12
-    },
-    "Kyrie Irving": {
-     "ppm": 0.737,
-     "ppg": 22.7,
+     "ppm": 0.696,
+     "ppg": 20.6,
      "gp": 11
     }
    }
   },
-  "UTAH": {
+  "ORL": {
    "closers": [
-    "Keyonte George",
-    "Darryn Peterson"
+    "Franz Wagner",
+    "Desmond Bane"
    ],
    "elite": [],
    "source": "draft",
    "season": {
-    "Keyonte George": {
-     "ppm": 0.64,
-     "ppg": 20.9,
+    "Franz Wagner": {
+     "ppm": 0.664,
+     "ppg": 24.4,
      "gp": 12
     },
-    "Darryn Peterson": {
-     "ppm": 0.551,
-     "ppg": 17.2,
-     "gp": 13
+    "Desmond Bane": {
+     "ppm": 0.528,
+     "ppg": 18.3,
+     "gp": 11
     }
    }
   }
@@ -197,67 +197,67 @@
  "league": {
   "opp_efg": [
    49.83,
-   50.0,
-   50.34,
-   50.49,
+   50.24,
+   50.32,
+   50.72,
+   51.02,
    51.05,
    51.15,
-   51.17,
-   51.63,
    51.92,
-   52.29,
-   52.41,
-   52.42,
+   52.45,
    52.47,
-   52.88,
+   52.53,
+   52.63,
+   52.65,
    53.36,
-   53.77,
+   53.76,
    53.78,
-   54.18,
-   54.26,
+   53.94,
+   54.23,
+   54.45,
    54.54,
-   54.76,
    54.88,
+   55.12,
+   55.14,
    55.17,
-   55.59,
-   55.61,
-   55.73,
-   56.64,
+   55.22,
+   55.82,
+   56.34,
    56.96,
    57.03,
-   57.32
+   57.37
   ],
   "def": [
    102.57,
-   103.97,
-   104.08,
-   105.13,
-   105.63,
+   103.52,
+   104.1,
+   104.92,
+   105.22,
    107.23,
-   107.38,
-   107.75,
    108.22,
+   108.32,
+   108.4,
+   109.01,
    109.26,
-   109.69,
-   110.05,
+   109.76,
    110.13,
-   110.15,
-   110.52,
    110.99,
-   111.03,
-   111.24,
-   112.36,
+   111.36,
+   111.38,
+   111.55,
+   112.17,
    112.54,
    113.02,
+   113.28,
    113.29,
    113.63,
-   113.79,
    114.36,
-   114.62,
+   114.61,
+   115.35,
    117.25,
-   117.36,
-   118.08,
-   118.26
+   117.4,
+   117.66,
+   118.08
   ]
  },
  "fav10": {
