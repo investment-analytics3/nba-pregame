@@ -316,8 +316,8 @@ often: always `git pull --rebase origin main` before pushing.
   boolean every consumer reads; `tier`, `route`, `tracked` are new. `LIVE_TIERS` decides what the live tracker,
   L1 live chips and Live page follow (Qualified + Watch list since Nov 9).
 - Metric grid (owner Nov 15, as NHL/college; `scoring.GRID` -> `sc.grid`, card + L2 heat map + bars): rows read across,
-  favorite season / last 3 vs underdog season / last 3: offense vs defense, defense vs offense, shooting vs shot D, shot D vs
-  shooting; colors unchanged. `sc.pills` is kept for older pages.
+  favorite season / last 3 vs underdog season / last 3: offense vs defense, shooting vs shot D, defense vs offense,
+  shot D vs shooting (offense rows first); colors unchanged; the template finds row labels by `key`. `sc.pills` is kept for older pages.
   Matchups (owner Nov 15, INFORMATION ONLY, tiers unchanged; `scoring.matchups`, `MATCHUP_PAIRS`): only in games where the
   favorite is top 10 and the underdog 21-30 in season net rating; met = fav top 10 / dog 21-30 over the last 3 in offense vs
   offense, defense vs defense, defense vs offense or offense vs defense (all four held up). Last-3 cells outlined + a Matchup
