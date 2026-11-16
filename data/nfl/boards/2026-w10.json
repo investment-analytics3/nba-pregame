@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 10,
- "built_at": "2026-11-15T23:07:59-08:00",
- "built_label": "Sun Nov 15, 11:07 PM PT",
+ "built_at": "2026-11-16T06:00:37-08:00",
+ "built_label": "Mon Nov 16, 6:00 AM PT",
  "games": [
   {
    "id": "401873065",
@@ -138,10 +138,10 @@
     ],
     "power": {
      "consensus": 29,
-     "fpi": 27,
+     "fpi": 28,
      "nfl_com": 28
     },
-    "fpi_win": 0.449
+    "fpi_win": 0.435
    },
    "away": {
     "code": "LAC",
@@ -245,11 +245,11 @@
      }
     ],
     "power": {
-     "consensus": 27,
-     "fpi": 22,
+     "consensus": 25,
+     "fpi": 20,
      "nfl_com": 32
     },
-    "fpi_win": 0.548
+    "fpi_win": 0.561
    },
    "fav": "BAL",
    "dog": "LAC",
@@ -284,7 +284,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "LAC: consensus #27, ESPN FPI #22, NFL.com #32"
+      "detail": "LAC: consensus #25, ESPN FPI #20, NFL.com #32"
      }
     ],
     "context": [
@@ -674,8 +674,8 @@
      }
     ],
     "power": {
-     "consensus": 24,
-     "fpi": 20,
+     "consensus": 23,
+     "fpi": 19,
      "nfl_com": 26
     }
    },
@@ -712,7 +712,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "WSH: consensus #24, ESPN FPI #20, NFL.com #26"
+      "detail": "WSH: consensus #23, ESPN FPI #19, NFL.com #26"
      }
     ],
     "context": [
@@ -991,8 +991,8 @@
      }
     ],
     "power": {
-     "consensus": 10,
-     "fpi": 13,
+     "consensus": 8,
+     "fpi": 10,
      "nfl_com": 7
     }
    },
@@ -1064,21 +1064,25 @@
      "rank": 13
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Drake Maye"
+    ],
     "key_questionable": [
-     "Drake Maye",
      "Dre'Mont Jones",
      "Robert Spillane"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
+    "qb_out": [
+     "Drake Maye"
+    ],
+    "qb_active": false,
+    "qb_reset": "Drake Maye out",
     "injury_list": [
      {
       "name": "Drake Maye",
       "pos": "QB",
-      "status": "Questionable"
+      "status": "Doubtful"
      },
      {
       "name": "A.J. Brown",
@@ -1103,7 +1107,7 @@
     ],
     "power": {
      "consensus": 16,
-     "fpi": 15,
+     "fpi": 18,
      "nfl_com": 15
     }
    },
@@ -1140,7 +1144,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "NE: consensus #16, ESPN FPI #15, NFL.com #15"
+      "detail": "NE: consensus #16, ESPN FPI #18, NFL.com #15"
      }
     ],
     "context": [
@@ -1203,8 +1207,12 @@
     },
     "flags": [
      {
+      "level": "red",
+      "text": "Underdog QB change (Drake Maye out): call capped at Lean"
+     },
+     {
       "level": "yellow",
-      "text": "Underdog questionable: Drake Maye, Dre'Mont Jones, Robert Spillane"
+      "text": "Underdog questionable: Dre'Mont Jones, Robert Spillane"
      }
     ],
     "under": {
@@ -1414,8 +1422,8 @@
      }
     ],
     "power": {
-     "consensus": 20,
-     "fpi": 24,
+     "consensus": 22,
+     "fpi": 26,
      "nfl_com": 18
     }
    },
@@ -1561,7 +1569,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "ATL: consensus #20, ESPN FPI #24, NFL.com #18"
+      "detail": "ATL: consensus #22, ESPN FPI #26, NFL.com #18"
      }
     ],
     "context": [
@@ -1848,8 +1856,8 @@
      }
     ],
     "power": {
-     "consensus": 23,
-     "fpi": 26,
+     "consensus": 20,
+     "fpi": 24,
      "nfl_com": 19
     }
    },
@@ -1960,8 +1968,8 @@
      }
     ],
     "power": {
-     "consensus": 12,
-     "fpi": 8,
+     "consensus": 13,
+     "fpi": 12,
      "nfl_com": 16
     }
    },
@@ -1998,7 +2006,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "CLE: consensus #23, ESPN FPI #26, NFL.com #19"
+      "detail": "CLE: consensus #20, ESPN FPI #24, NFL.com #19"
      }
     ],
     "context": [
@@ -2278,8 +2286,8 @@
      }
     ],
     "power": {
-     "consensus": 7,
-     "fpi": 10,
+     "consensus": 11,
+     "fpi": 13,
      "nfl_com": 8
     }
    },
@@ -2389,7 +2397,7 @@
      }
     ],
     "power": {
-     "consensus": 9,
+     "consensus": 10,
      "fpi": 9,
      "nfl_com": 11
     }
@@ -2427,7 +2435,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": false,
-      "detail": "MIN top 10 in power ranking: consensus #9, ESPN FPI #9"
+      "detail": "MIN top 10 in power ranking: consensus #10, ESPN FPI #9"
      }
     ],
     "context": [
@@ -2461,12 +2469,12 @@
      "def_epa"
     ],
     "fails": [
-     "MIN top 10 in power ranking: consensus #9, ESPN FPI #9",
+     "MIN top 10 in power ranking: consensus #10, ESPN FPI #9",
      "GB key starter out: Zaire Franklin",
      "Would be on the watch list otherwise (score 20)"
     ],
     "failed": [
-     "MIN top 10 in power ranking: consensus #9, ESPN FPI #9",
+     "MIN top 10 in power ranking: consensus #10, ESPN FPI #9",
      "GB key starter out: Zaire Franklin",
      "Would be on the watch list otherwise (score 20)"
     ],
@@ -2494,7 +2502,7 @@
     "flags": [
      {
       "level": "red",
-      "text": "MIN top 10 in power ranking: consensus #9, ESPN FPI #9 (no track)"
+      "text": "MIN top 10 in power ranking: consensus #10, ESPN FPI #9 (no track)"
      },
      {
       "level": "yellow",
@@ -2724,8 +2732,8 @@
      }
     ],
     "power": {
-     "consensus": 21,
-     "fpi": 19,
+     "consensus": 24,
+     "fpi": 22,
      "nfl_com": 25
     }
    },
@@ -3158,7 +3166,7 @@
      }
     ],
     "power": {
-     "consensus": 22,
+     "consensus": 21,
      "fpi": 21,
      "nfl_com": 23
     }
@@ -3269,7 +3277,7 @@
     ],
     "power": {
      "consensus": 19,
-     "fpi": 18,
+     "fpi": 17,
      "nfl_com": 20
     }
    },
@@ -3306,7 +3314,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "NO: consensus #22, ESPN FPI #21, NFL.com #23"
+      "detail": "NO: consensus #21, ESPN FPI #21, NFL.com #23"
      }
     ],
     "context": [
@@ -3689,8 +3697,8 @@
      }
     ],
     "power": {
-     "consensus": 2,
-     "fpi": 2,
+     "consensus": 3,
+     "fpi": 3,
      "nfl_com": 2
     }
    },
@@ -4014,8 +4022,8 @@
      }
     ],
     "power": {
-     "consensus": 26,
-     "fpi": 28,
+     "consensus": 27,
+     "fpi": 30,
      "nfl_com": 24
     }
    },
@@ -4123,8 +4131,8 @@
      }
     ],
     "power": {
-     "consensus": 3,
-     "fpi": 3,
+     "consensus": 2,
+     "fpi": 2,
      "nfl_com": 3
     }
    },
@@ -4163,7 +4171,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "TEN: consensus #26, ESPN FPI #28, NFL.com #24"
+      "detail": "TEN: consensus #27, ESPN FPI #30, NFL.com #24"
      }
     ],
     "context": [
@@ -4499,7 +4507,7 @@
     ],
     "power": {
      "consensus": 30,
-     "fpi": 31,
+     "fpi": 29,
      "nfl_com": 27
     }
    },
@@ -4607,8 +4615,8 @@
      }
     ],
     "power": {
-     "consensus": 11,
-     "fpi": 7,
+     "consensus": 12,
+     "fpi": 6,
      "nfl_com": 17
     }
    },
@@ -4645,7 +4653,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "ARI: consensus #30, ESPN FPI #31, NFL.com #27"
+      "detail": "ARI: consensus #30, ESPN FPI #29, NFL.com #27"
      }
     ],
     "context": [
@@ -4930,8 +4938,8 @@
      }
     ],
     "power": {
-     "consensus": 25,
-     "fpi": 30,
+     "consensus": 26,
+     "fpi": 31,
      "nfl_com": 21
     }
    },
@@ -5041,8 +5049,8 @@
      }
     ],
     "power": {
-     "consensus": 14,
-     "fpi": 16,
+     "consensus": 7,
+     "fpi": 8,
      "nfl_com": 9
     }
    },
@@ -5079,7 +5087,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "LV: consensus #25, ESPN FPI #30, NFL.com #21"
+      "detail": "LV: consensus #26, ESPN FPI #31, NFL.com #21"
      }
     ],
     "context": [
@@ -5905,8 +5913,8 @@
      }
     ],
     "power": {
-     "consensus": 15,
-     "fpi": 17,
+     "consensus": 14,
+     "fpi": 16,
      "nfl_com": 12
     }
    },
@@ -5943,7 +5951,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "PIT: consensus #15, ESPN FPI #17, NFL.com #12"
+      "detail": "PIT: consensus #14, ESPN FPI #16, NFL.com #12"
      }
     ],
     "context": [
@@ -6180,6 +6188,6 @@
   "watch": 0,
   "green": 0,
   "edge_clears": 1,
-  "built_label": "Sun Nov 15, 11:07 PM PT"
+  "built_label": "Mon Nov 16, 6:00 AM PT"
  }
 }
