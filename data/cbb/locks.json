@@ -5033,7 +5033,7 @@
    "tip_pt": "9:00 AM PT",
    "day_et": "2026-11-17",
    "state": "in",
-   "detail": "9:02 - 1st",
+   "detail": "3:56 - 1st",
    "neutral": true,
    "venue": "Landers Center",
    "favorite": "home",
@@ -5728,8 +5728,744 @@
    },
    "locked_at": "2026-11-17T08:00:55-08:00",
    "score": {
-    "home": 22,
-    "away": 14
+    "home": 36,
+    "away": 23
+   }
+  }
+ },
+ "401920511": {
+  "at": "2026-11-17T10:00:48-08:00",
+  "day": "2026-11-17",
+  "game": {
+   "id": "401920511",
+   "tip_utc": "2026-11-17T19:00:00+00:00",
+   "tip_pt": "11:00 AM PT",
+   "day_et": "2026-11-17",
+   "state": "pre",
+   "detail": "11/17 - 2:00 PM EST",
+   "neutral": true,
+   "venue": "Michelob ULTRA Arena",
+   "favorite": "home",
+   "spread": {
+    "spread": 16.5,
+    "details": "HOU -16.5",
+    "provider": "Draft Kings",
+    "ml_home": -2400,
+    "ml_away": 1200
+   },
+   "home": {
+    "id": "248",
+    "abbr": "HOU",
+    "name": "Houston",
+    "display": "Houston Cougars",
+    "mascot": "Cougars",
+    "record": "3-0",
+    "l3_record": "3-0",
+    "games": 3,
+    "season": {
+     "efg": 58.1,
+     "opp_efg": 38.73,
+     "off": 128.25,
+     "def": 79.68,
+     "net": 48.56,
+     "poss_per_game": 70.7,
+     "ranks": {
+      "efg": 33,
+      "off": 15,
+      "opp_efg": 7,
+      "def": 10,
+      "net": 3
+     }
+    },
+    "last3": {
+     "efg": 58.1,
+     "opp_efg": 38.73,
+     "off": 128.25,
+     "def": 79.68,
+     "net": 48.56,
+     "poss_per_game": 70.7,
+     "ranks": {
+      "efg": 42,
+      "off": 15,
+      "opp_efg": 10,
+      "def": 9,
+      "net": 3
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401925702,
+      "date": "2026-11-11",
+      "site": "home",
+      "opp_id": 55,
+      "opp": "JXST",
+      "d1_opp": true,
+      "pts": 92,
+      "opp_pts": 46,
+      "metrics": {
+       "efg": 60.19,
+       "opp_efg": 33.04,
+       "off": 138.55,
+       "def": 69.28,
+       "net": 69.28
+      },
+      "opp_power_rank": 270
+     },
+     {
+      "game_id": 401918053,
+      "date": "2026-11-08",
+      "site": "home",
+      "opp_id": 25,
+      "opp": "CAL",
+      "d1_opp": true,
+      "pts": 86,
+      "opp_pts": 68,
+      "metrics": {
+       "efg": 55.88,
+       "opp_efg": 51.75,
+       "off": 122.97,
+       "def": 97.23,
+       "net": 25.74
+      },
+      "opp_power_rank": 149
+     },
+     {
+      "game_id": 401925811,
+      "date": "2026-11-02",
+      "site": "home",
+      "opp_id": 2325,
+      "opp": "LAS",
+      "d1_opp": true,
+      "pts": 94,
+      "opp_pts": 55,
+      "metrics": {
+       "efg": 58.77,
+       "opp_efg": 31.67,
+       "off": 124.09,
+       "def": 72.61,
+       "net": 51.49
+      },
+      "opp_power_rank": 283
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-16.5",
+    "b2b": false,
+    "power": {
+     "rank": 2,
+     "bpi": 5,
+     "own_net": 3,
+     "ap": 8
+    },
+    "key_players": [
+     "Dedan Thomas Jr.",
+     "Mercy Miller",
+     "Delrecco Gillespie",
+     "Corey Hadnot II",
+     "Joseph Tugler",
+     "Chase McCarty"
+    ],
+    "top_scorers": [
+     {
+      "name": "Dedan Thomas Jr.",
+      "ppg": 17.7
+     },
+     {
+      "name": "Delrecco Gillespie",
+      "ppg": 11.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "164",
+    "abbr": "RUTG",
+    "name": "Rutgers",
+    "display": "Rutgers Scarlet Knights",
+    "mascot": "Scarlet Knights",
+    "record": "3-0",
+    "l3_record": "3-0",
+    "games": 3,
+    "season": {
+     "efg": 54.26,
+     "opp_efg": 40.57,
+     "off": 126.27,
+     "def": 84.01,
+     "net": 42.25,
+     "poss_per_game": 67.1,
+     "ranks": {
+      "efg": 99,
+      "off": 24,
+      "opp_efg": 18,
+      "def": 17,
+      "net": 9
+     }
+    },
+    "last3": {
+     "efg": 54.26,
+     "opp_efg": 40.57,
+     "off": 126.27,
+     "def": 84.01,
+     "net": 42.25,
+     "poss_per_game": 67.1,
+     "ranks": {
+      "efg": 105,
+      "off": 24,
+      "opp_efg": 21,
+      "def": 15,
+      "net": 10
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401923270,
+      "date": "2026-11-13",
+      "site": "home",
+      "opp_id": 2803,
+      "opp": "BRY",
+      "d1_opp": true,
+      "pts": 72,
+      "opp_pts": 51,
+      "metrics": {
+       "efg": 46.43,
+       "opp_efg": 41.53,
+       "off": 121.39,
+       "def": 85.99,
+       "net": 35.41
+      },
+      "opp_power_rank": 306
+     },
+     {
+      "game_id": 401920866,
+      "date": "2026-11-10",
+      "site": "home",
+      "opp_id": 2885,
+      "opp": "NJIT",
+      "d1_opp": true,
+      "pts": 101,
+      "opp_pts": 64,
+      "metrics": {
+       "efg": 58.33,
+       "opp_efg": 34.85,
+       "off": 131.72,
+       "def": 83.47,
+       "net": 48.26
+      },
+      "opp_power_rank": 351
+     },
+     {
+      "game_id": 401926135,
+      "date": "2026-11-06",
+      "site": "home",
+      "opp_id": 2441,
+      "opp": "NHVN",
+      "d1_opp": true,
+      "pts": 81,
+      "opp_pts": 54,
+      "metrics": {
+       "efg": 57.5,
+       "opp_efg": 47.0,
+       "off": 124.28,
+       "def": 82.85,
+       "net": 41.43
+      },
+      "opp_power_rank": 332
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+16.5",
+    "b2b": false,
+    "power": {
+     "rank": 36,
+     "bpi": 73,
+     "own_net": 9
+    },
+    "key_players": [
+     "Lino Mark",
+     "Darren Buchanan Jr.",
+     "Tariq Francis",
+     "Christian Gurdak",
+     "Jamichael Davis",
+     "Darin Smith Jr."
+    ],
+    "top_scorers": [
+     {
+      "name": "Christian Gurdak",
+      "ppg": 14.7
+     },
+     {
+      "name": "Jamichael Davis",
+      "ppg": 13.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "HOU",
+    "dog": "RUTG",
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 22 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2713 HOU last-3 top 50 in 4 of 4 \u00b7 \u2717 RUTG last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2713 HOU season top half (1-182) in all four \u00b7 \u2717 RUTG season top 50: Off Eff #24, Opp eFG% #18, Def Eff #17"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "RUTG: consensus #36, BPI #73, our net #9"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Watch list: score 22 (qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for HOU: check news before betting",
+     "Neutral-site game: no home-court point",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 22,
+    "max": 40,
+    "band": "yellow",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 14,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 2,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 2,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 2,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "HOU",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 33,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 15,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 7,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 10,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "HOU",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 42,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 15,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 10,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 9,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "RUTG",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 18,
+        "color": "deep-red"
+       },
+       {
+        "metric": "def",
+        "rank": 17,
+        "color": "deep-red"
+       },
+       {
+        "metric": "efg",
+        "rank": 99,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 24,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "RUTG",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 21,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 15,
+        "color": "deep-red"
+       },
+       {
+        "metric": "efg",
+        "rank": 105,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 24,
+        "color": "red"
+       }
+      ]
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "cells": [
+       {
+        "team": "HOU",
+        "role": "fav",
+        "window": "season",
+        "metric": "off",
+        "rank": 15,
+        "color": "green"
+       },
+       {
+        "team": "HOU",
+        "role": "fav",
+        "window": "last3",
+        "metric": "off",
+        "rank": 15,
+        "color": "green"
+       },
+       {
+        "team": "RUTG",
+        "role": "dog",
+        "window": "season",
+        "metric": "def",
+        "rank": 17,
+        "color": "deep-red"
+       },
+       {
+        "team": "RUTG",
+        "role": "dog",
+        "window": "last3",
+        "metric": "def",
+        "rank": 15,
+        "color": "deep-red"
+       }
+      ]
+     },
+     {
+      "key": "shoot",
+      "label": "Shooting vs shot defense",
+      "fav_metric": "efg",
+      "dog_metric": "opp_efg",
+      "cells": [
+       {
+        "team": "HOU",
+        "role": "fav",
+        "window": "season",
+        "metric": "efg",
+        "rank": 33,
+        "color": "green"
+       },
+       {
+        "team": "HOU",
+        "role": "fav",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 42,
+        "color": "green"
+       },
+       {
+        "team": "RUTG",
+        "role": "dog",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 18,
+        "color": "deep-red"
+       },
+       {
+        "team": "RUTG",
+        "role": "dog",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 21,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "cells": [
+       {
+        "team": "HOU",
+        "role": "fav",
+        "window": "season",
+        "metric": "def",
+        "rank": 10,
+        "color": "green"
+       },
+       {
+        "team": "HOU",
+        "role": "fav",
+        "window": "last3",
+        "metric": "def",
+        "rank": 9,
+        "color": "green"
+       },
+       {
+        "team": "RUTG",
+        "role": "dog",
+        "window": "season",
+        "metric": "off",
+        "rank": 24,
+        "color": "red"
+       },
+       {
+        "team": "RUTG",
+        "role": "dog",
+        "window": "last3",
+        "metric": "off",
+        "rank": 24,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "key": "shotd",
+      "label": "Shot defense vs shooting",
+      "fav_metric": "opp_efg",
+      "dog_metric": "efg",
+      "cells": [
+       {
+        "team": "HOU",
+        "role": "fav",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 7,
+        "color": "green"
+       },
+       {
+        "team": "HOU",
+        "role": "fav",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 10,
+        "color": "green"
+       },
+       {
+        "team": "RUTG",
+        "role": "dog",
+        "window": "season",
+        "metric": "efg",
+        "rank": 99,
+        "color": "yellow"
+       },
+       {
+        "team": "RUTG",
+        "role": "dog",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 105,
+        "color": "yellow"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "off",
+      "dog_metric": "off",
+      "fav_rank": 15,
+      "dog_rank": 24,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def",
+      "dog_metric": "def",
+      "fav_rank": 9,
+      "dog_rank": 15,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "fav_rank": 9,
+      "dog_rank": 24,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "fav_rank": 15,
+      "dog_rank": 15,
+      "counts": false,
+      "met": false
+     }
+    ]
+   },
+   "summary": "Watch list: score 22 (qualifies at 28). HOU 3-0 in its last 3, RUTG 3-0. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "Lean: HOU (watch list)",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV17HOURUTG",
+    "fav_prob": 0.945,
+    "bid": 0.94,
+    "ask": 0.95
+   },
+   "locked_at": "2026-11-17T10:00:48-08:00",
+   "readout": {
+    "matchup": "RUTG @ HOU",
+    "summary": "Every source expects No. 8 Houston to win (Players Era, Las Vegas, neutral): better shooting (53% vs 48%) and scoring (90.7 vs 84.7 ppg). Dimers' model gives Houston 94%. Spread picks lean Rutgers +16.5: PredictEm says Barttorvik projects Houston by about 11. Pick Dawgz takes the Under 142.5.",
+    "pick": "Houston to win (all sources); Rutgers +16.5 (PredictEm); Dimers' spread pick unclear (headline Houston -16.5, text says Rutgers covers); Under 142.5 (Pick Dawgz)",
+    "predicted_score": "77-65 Houston (PredictEm); 79-62 Houston (Dimers model)",
+    "injuries": "None reported for either team (BangTheBook Nov 16: no player statuses; PredictEm, Pick Dawgz, 247Sports mention none). Rutgers has an acting head coach (247Sports).",
+    "sources": [
+     {
+      "site": "PredictEm",
+      "url": "https://www.predictem.com/college-basketball/rutgers-vs-houston-college-basketball-prediction-odds-players-era-8-pick/"
+     },
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/cbb/news/rutgers-vs-houston-prediction-11-17-2026-ac"
+     },
+     {
+      "site": "BangTheBook",
+      "url": "https://bangthebook.com/rutgers-scarlet-knights-vs-houston-cougars-prediction-2026-11-17/"
+     },
+     {
+      "site": "Pick Dawgz",
+      "url": "https://pickdawgz.com/college-basketball-picks/rutgers-vs-houston-prediction-11-17-2026-todays-college-basketball-picks/"
+     },
+     {
+      "site": "247Sports",
+      "url": "https://247sports.com/college/rutgers/article/rutgers-vs-houston-preview-how-to-watch-tv-radio-live-thread-292849365/"
+     }
+    ],
+    "updated": "2026-11-17T05:22-08:00"
    }
   }
  }
