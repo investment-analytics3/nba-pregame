@@ -3,8 +3,8 @@
  "date_label": "Tuesday, November 17",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-17T10:15:59-08:00",
- "built_label": "Tue Nov 17, 10:15 AM PT",
+ "built_at": "2026-11-17T10:49:16-08:00",
+ "built_label": "Tue Nov 17, 10:49 AM PT",
  "metrics_through": "2026-11-16",
  "metrics_through_label": "Nov 16",
  "max": 40,
@@ -35,7 +35,7 @@
    "favorite": "home",
    "line": {
     "details": "TB -162",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": -162,
     "ml_away": null,
     "puck_line": -1.5,
@@ -44,7 +44,7 @@
    },
    "spread": {
     "details": "TB -162",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": -1.5
    },
    "home": {
@@ -219,6 +219,13 @@
     ],
     "injuries": [
      {
+      "name": "Conor Geekie",
+      "last": "Geekie",
+      "status": "Injured Reserve",
+      "date": "2026-11-17T18:19Z",
+      "comment": "ir"
+     },
+     {
       "name": "Erik Cernak",
       "last": "Cernak",
       "status": "Day-To-Day",
@@ -231,21 +238,12 @@
       "status": "Day-To-Day",
       "date": "2026-11-15T14:13Z",
       "comment": "day-to-day"
-     },
-     {
-      "name": "Brayden Point",
-      "last": "Point",
-      "status": "Injured Reserve",
-      "date": "2026-11-10T15:30Z",
-      "comment": "ir"
      }
     ],
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [],
-    "key_long_term": [
-     "Brayden Point"
-    ],
+    "key_long_term": [],
     "spread_text": "-162"
    },
    "away": {
@@ -807,7 +805,7 @@
    "favorite": "home",
    "line": {
     "details": "NYI -142",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": -142,
     "ml_away": null,
     "puck_line": -1.5,
@@ -816,7 +814,7 @@
    },
    "spread": {
     "details": "NYI -142",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": -1.5
    },
    "home": {
@@ -1579,7 +1577,7 @@
    "favorite": "home",
    "line": {
     "details": "SJ -130",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": -130,
     "ml_away": null,
     "puck_line": -1.5,
@@ -1588,7 +1586,7 @@
    },
    "spread": {
     "details": "SJ -130",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": -1.5
    },
    "home": {
@@ -2375,7 +2373,7 @@
    "favorite": "away",
    "line": {
     "details": "TOR -148",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": null,
     "ml_away": -148,
     "puck_line": 1.5,
@@ -2384,7 +2382,7 @@
    },
    "spread": {
     "details": "TOR -148",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": 1.5
    },
    "home": {
@@ -3161,9 +3159,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV17TORCHI",
-    "fav_prob": 0.565,
-    "bid": 0.56,
-    "ask": 0.57
+    "fav_prob": 0.555,
+    "bid": 0.55,
+    "ask": 0.56
    }
   },
   {
@@ -3178,7 +3176,7 @@
    "favorite": "home",
    "line": {
     "details": "BOS -155",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": -155,
     "ml_away": null,
     "puck_line": -1.5,
@@ -3187,7 +3185,7 @@
    },
    "spread": {
     "details": "BOS -155",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": -1.5
    },
    "home": {
@@ -3521,7 +3519,7 @@
      "name": "Darcy Kuemper",
      "last": "Kuemper",
      "espn_id": "2610321",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "regular",
     "regular_goalie_name": "D. Kuemper",
@@ -3919,9 +3917,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV17LABOS",
-    "fav_prob": 0.605,
-    "bid": 0.6,
-    "ask": 0.61
+    "fav_prob": 0.585,
+    "bid": 0.58,
+    "ask": 0.59
    }
   },
   {
@@ -3936,7 +3934,7 @@
    "favorite": "home",
    "line": {
     "details": "MIN -205",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": -205,
     "ml_away": null,
     "puck_line": -1.5,
@@ -3945,7 +3943,7 @@
    },
    "spread": {
     "details": "MIN -205",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": -1.5
    },
    "home": {
@@ -4689,7 +4687,7 @@
    "favorite": "away",
    "line": {
     "details": "OTT -130",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": null,
     "ml_away": -130,
     "puck_line": 1.5,
@@ -4698,7 +4696,7 @@
    },
    "spread": {
     "details": "OTT -130",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": 1.5
    },
    "home": {
@@ -5504,7 +5502,7 @@
    "favorite": "home",
    "line": {
     "details": "FLA -125",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": -125,
     "ml_away": null,
     "puck_line": -1.5,
@@ -5513,7 +5511,7 @@
    },
    "spread": {
     "details": "FLA -125",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": -1.5
    },
    "home": {
@@ -6305,7 +6303,7 @@
    "favorite": "home",
    "line": {
     "details": "STL -135",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": -135,
     "ml_away": null,
     "puck_line": -1.5,
@@ -6314,7 +6312,7 @@
    },
    "spread": {
     "details": "STL -135",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": -1.5
    },
    "home": {
@@ -7077,9 +7075,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV17ANASTL",
-    "fav_prob": 0.555,
-    "bid": 0.55,
-    "ask": 0.56
+    "fav_prob": 0.545,
+    "bid": 0.54,
+    "ask": 0.55
    }
   },
   {
@@ -7094,7 +7092,7 @@
    "favorite": "away",
    "line": {
     "details": "BUF -125",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": null,
     "ml_away": -125,
     "puck_line": 1.5,
@@ -7103,7 +7101,7 @@
    },
    "spread": {
     "details": "BUF -125",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": 1.5
    },
    "home": {
@@ -7437,7 +7435,7 @@
      "name": "Alex Lyon",
      "last": "Lyon",
      "espn_id": "3654006",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "backup",
     "regular_goalie_name": "U. Luukkonen",
@@ -7864,7 +7862,7 @@
    "favorite": "home",
    "line": {
     "details": "VGK -135",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": -135,
     "ml_away": null,
     "puck_line": -1.5,
@@ -7873,7 +7871,7 @@
    },
    "spread": {
     "details": "VGK -135",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": -1.5
    },
    "home": {
@@ -8268,13 +8266,6 @@
       "status": "Injured Reserve",
       "date": "2026-10-24T18:32Z",
       "comment": "Back was placed on long-term injured reserve on Saturday."
-     },
-     {
-      "name": "Matt Duchene",
-      "last": "Duchene",
-      "status": "Injured Reserve",
-      "date": "2026-10-12T16:46Z",
-      "comment": "Duchene will be out for approximately three months after undergoing surgery to repair a core injury, the team announced Monday."
      }
     ],
     "injuries_known": true,
@@ -8652,7 +8643,7 @@
   "in_range": 1,
   "qualified": 0,
   "watch": 0,
-  "built_label": "Tue Nov 17, 10:15 AM PT"
+  "built_label": "Tue Nov 17, 10:49 AM PT"
  },
  "power_table": [
   {
