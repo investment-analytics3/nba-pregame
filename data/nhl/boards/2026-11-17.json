@@ -3,10 +3,10 @@
  "date_label": "Tuesday, November 17",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-16T23:00:44-08:00",
- "built_label": "Mon Nov 16, 11:00 PM PT",
- "metrics_through": "2026-11-15",
- "metrics_through_label": "Nov 15",
+ "built_at": "2026-11-17T06:00:47-08:00",
+ "built_label": "Tue Nov 17, 6:00 AM PT",
+ "metrics_through": "2026-11-16",
+ "metrics_through_label": "Nov 16",
  "max": 40,
  "top": 7,
  "bottom_from": 26,
@@ -35,7 +35,7 @@
    "favorite": "home",
    "line": {
     "details": "TB -162",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": -162,
     "ml_away": null,
     "puck_line": -1.5,
@@ -44,7 +44,7 @@
    },
    "spread": {
     "details": "TB -162",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": -1.5
    },
    "home": {
@@ -85,10 +85,10 @@
      "pk": 45.5,
      "ranks": {
       "xgf": 2,
-      "xga60": 2,
-      "gsax": 14,
+      "xga60": 3,
+      "gsax": 15,
       "st": 31,
-      "xgf60": 3
+      "xgf60": 4
      }
     },
     "last3_games": [
@@ -272,7 +272,7 @@
       "xga60": 23,
       "gsax": 19,
       "st": 19,
-      "xgf60": 2
+      "xgf60": 3
      }
     },
     "last5": {
@@ -288,8 +288,8 @@
       "xgf": 12,
       "xga60": 18,
       "gsax": 31,
-      "st": 20,
-      "xgf60": 7
+      "st": 19,
+      "xgf60": 8
      }
     },
     "last3_games": [
@@ -384,7 +384,7 @@
     "is_fav": false,
     "b2b": false,
     "power": {
-     "rank": 15,
+     "rank": 16,
      "own": 15,
      "avg": 14.0,
      "espn": 13,
@@ -461,7 +461,7 @@
       "rule": "Range",
       "name": "Top-7 team vs bottom-7 team (consensus power rank)",
       "pass": false,
-      "detail": "TBL #5 vs WSH #15"
+      "detail": "TBL #5 vs WSH #16"
      },
      {
       "rule": "A",
@@ -483,7 +483,7 @@
      }
     ],
     "fails": [
-     "Not a top-7 vs bottom-7 matchup (TBL #5, WSH #15)"
+     "Not a top-7 vs bottom-7 matchup (TBL #5, WSH #16)"
     ],
     "warnings": [],
     "flags": [],
@@ -549,7 +549,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "xgf60",
-        "rank": 3,
+        "rank": 4,
         "color": "green"
        },
        {
@@ -590,7 +590,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "xga60",
-        "rank": 2,
+        "rank": 3,
         "color": "green"
        },
        {
@@ -598,7 +598,7 @@
         "role": "dog",
         "window": "season",
         "metric": "xgf60",
-        "rank": 2,
+        "rank": 3,
         "color": "deep-red"
        },
        {
@@ -606,7 +606,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "xgf60",
-        "rank": 7,
+        "rank": 8,
         "color": "red"
        }
       ]
@@ -672,7 +672,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "gsax",
-        "rank": 14,
+        "rank": 15,
         "color": "yellow"
        },
        {
@@ -729,7 +729,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "st",
-        "rank": 20,
+        "rank": 19,
         "color": "yellow"
        }
       ]
@@ -741,8 +741,8 @@
       "label": "Offense vs offense",
       "fav_metric": "xgf60",
       "dog_metric": "xgf60",
-      "fav_rank": 3,
-      "dog_rank": 7,
+      "fav_rank": 4,
+      "dog_rank": 8,
       "counts": true,
       "met": false
      },
@@ -751,7 +751,7 @@
       "label": "Defense vs defense",
       "fav_metric": "xga60",
       "dog_metric": "xga60",
-      "fav_rank": 2,
+      "fav_rank": 3,
       "dog_rank": 18,
       "counts": true,
       "met": false
@@ -761,8 +761,8 @@
       "label": "Defense vs offense",
       "fav_metric": "xga60",
       "dog_metric": "xgf60",
-      "fav_rank": 2,
-      "dog_rank": 7,
+      "fav_rank": 3,
+      "dog_rank": 8,
       "counts": true,
       "met": false
      },
@@ -771,7 +771,7 @@
       "label": "Offense vs defense",
       "fav_metric": "xgf60",
       "dog_metric": "xga60",
-      "fav_rank": 3,
+      "fav_rank": 4,
       "dog_rank": 18,
       "counts": false,
       "met": false
@@ -786,13 +786,809 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (TBL #5, WSH #15). Andrei Vasilevskiy in goal for TBL (probable). Biggest edge over the last 5: GSAx/gm (TBL #14, WSH #31). TBL 2-1-0 in its last 3, WSH 1-2-0.",
+   "summary": "Not a top-7 vs bottom-7 matchup (TBL #5, WSH #16). Andrei Vasilevskiy in goal for TBL (probable). Biggest edge over the last 5: GSAx/gm (TBL #15, WSH #31). TBL 2-1-0 in its last 3, WSH 1-2-0.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV17WSHTB",
     "fav_prob": 0.605,
     "bid": 0.6,
     "ask": 0.61
+   }
+  },
+  {
+   "id": "401892738",
+   "tip_utc": "2026-11-18T03:00:00+00:00",
+   "tip_pt": "7:00 PM PT",
+   "day_et": "2026-11-17",
+   "state": "pre",
+   "detail": "11/17 - 10:00 PM EST",
+   "neutral": false,
+   "venue": "SAP Center at San Jose",
+   "favorite": "home",
+   "line": {
+    "details": "SJ -130",
+    "provider": "Draft Kings",
+    "ml_home": -130,
+    "ml_away": null,
+    "puck_line": -1.5,
+    "total": 5.5,
+    "fav_price": 0.5652
+   },
+   "spread": {
+    "details": "SJ -130",
+    "provider": "Draft Kings",
+    "puck_line": -1.5
+   },
+   "home": {
+    "id": "18",
+    "abbr": "SJS",
+    "espn_abbr": "SJ",
+    "name": "San Jose",
+    "display": "San Jose Sharks",
+    "record": "10-11-2",
+    "l3_record": "2-0-1",
+    "games": 23,
+    "pts_pct": 0.478,
+    "season": {
+     "xgf": 42.32,
+     "xga60": 2.996,
+     "xgf60": 2.198,
+     "cf": 47.64,
+     "gsax": 0.371,
+     "st": 91.6,
+     "pp": 19.8,
+     "pk": 71.8,
+     "ranks": {
+      "xgf": 30,
+      "xga60": 32,
+      "gsax": 5,
+      "st": 23,
+      "xgf60": 27
+     }
+    },
+    "last5": {
+     "xgf": 45.99,
+     "xga60": 2.835,
+     "xgf60": 2.414,
+     "cf": 47.03,
+     "gsax": 0.486,
+     "st": 78.9,
+     "pp": 15.8,
+     "pk": 63.2,
+     "ranks": {
+      "xgf": 25,
+      "xga60": 26,
+      "gsax": 8,
+      "st": 30,
+      "xgf60": 22
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 2026020330,
+      "date": "2026-11-15",
+      "site": "home",
+      "opp": "NSH",
+      "pts": 4,
+      "opp_pts": 2,
+      "extra": false,
+      "opp_power_rank": 12
+     },
+     {
+      "game_id": 2026020323,
+      "date": "2026-11-14",
+      "site": "away",
+      "opp": "UTA",
+      "pts": 6,
+      "opp_pts": 5,
+      "extra": true,
+      "opp_power_rank": 13
+     },
+     {
+      "game_id": 2026020298,
+      "date": "2026-11-11",
+      "site": "home",
+      "opp": "PIT",
+      "pts": 2,
+      "opp_pts": 3,
+      "extra": true,
+      "opp_power_rank": 24
+     }
+    ],
+    "trend_games": [
+     {
+      "date": "2026-11-07",
+      "opp": "DAL",
+      "metrics": {
+       "xgf": 50.16,
+       "xga60": 3.138,
+       "xgf60": 3.158,
+       "gsax": 0.444,
+       "st": 60.0
+      }
+     },
+     {
+      "date": "2026-11-09",
+      "opp": "NYI",
+      "metrics": {
+       "xgf": 47.62,
+       "xga60": 2.817,
+       "xgf60": 2.561,
+       "gsax": 1.267,
+       "st": 66.7
+      }
+     },
+     {
+      "date": "2026-11-11",
+      "opp": "PIT",
+      "metrics": {
+       "xgf": 40.37,
+       "xga60": 3.142,
+       "xgf60": 2.128,
+       "gsax": 1.235,
+       "st": 66.7
+      }
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "UTA",
+      "metrics": {
+       "xgf": 46.05,
+       "xga60": 2.217,
+       "xgf60": 1.893,
+       "gsax": -1.617,
+       "st": 106.7
+      }
+     },
+     {
+      "date": "2026-11-15",
+      "opp": "NSH",
+      "metrics": {
+       "xgf": 45.59,
+       "xga60": 2.848,
+       "xgf60": 2.386,
+       "gsax": 1.102,
+       "st": 100.0
+      }
+     }
+    ],
+    "is_fav": true,
+    "b2b": false,
+    "power": {
+     "rank": 28,
+     "own": 28,
+     "avg": 27.0,
+     "espn": 26,
+     "nhl_com": null
+    },
+    "goalie": {
+     "name": "Yaroslav Askarov",
+     "last": "Askarov",
+     "espn_id": "4697394",
+     "confirmed": false
+    },
+    "goalie_status": "regular",
+    "regular_goalie_name": "Y. Askarov",
+    "goalies": [
+     {
+      "id": "8482137",
+      "name": "Y. Askarov",
+      "starts": 15
+     },
+     {
+      "id": "8477968",
+      "name": "A. Nedeljkovic",
+      "starts": 8
+     }
+    ],
+    "key_skaters": [
+     "M. Celebrini",
+     "J. Trouba",
+     "D. Nurse",
+     "W. Smith",
+     "S. Dickinson",
+     "M. Kesselring"
+    ],
+    "injuries": [
+     {
+      "name": "Alexander Wennberg",
+      "last": "Wennberg",
+      "status": "Day-To-Day",
+      "date": "2026-11-16T14:05Z",
+      "comment": "day-to-day"
+     },
+     {
+      "name": "Kiefer Sherwood",
+      "last": "Sherwood",
+      "status": "Day-To-Day",
+      "date": "2026-11-16T05:16Z",
+      "comment": "day-to-day"
+     },
+     {
+      "name": "Igor Chernyshov",
+      "last": "Chernyshov",
+      "status": "Injured Reserve",
+      "date": "2026-11-15T23:51Z",
+      "comment": "Head coach Ryan Warsofsky said Sunday that Chernyshov (upper body) is not close to returning to game action, per Curtis Pashelka of The San Jose Mercury News."
+     },
+     {
+      "name": "Quentin Musty",
+      "last": "Musty",
+      "status": "Injured Reserve",
+      "date": "2026-11-15T23:51Z",
+      "comment": "Head coach Ryan Warsofsky said Sunday that Musty (upper body) isn't close to returning, Curtis Pashelka of The San Jose Mercury News reports."
+     },
+     {
+      "name": "Kyle Keyser",
+      "last": "Keyser",
+      "status": "Injured Reserve",
+      "date": "2026-09-28T22:10Z",
+      "comment": "Keyser (upper body) was placed on non-roster injured reserve by the Sharks on Monday, Curtis Pashelka of The San Jose Mercury News reports."
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [],
+    "key_long_term": [],
+    "spread_text": "-130"
+   },
+   "away": {
+    "id": "3",
+    "abbr": "CGY",
+    "espn_abbr": "CGY",
+    "name": "Calgary",
+    "display": "Calgary Flames",
+    "record": "9-11-1",
+    "l3_record": "1-2-0",
+    "games": 21,
+    "pts_pct": 0.452,
+    "season": {
+     "xgf": 47.51,
+     "xga60": 2.699,
+     "xgf60": 2.443,
+     "cf": 49.18,
+     "gsax": -0.344,
+     "st": 108.8,
+     "pp": 26.0,
+     "pk": 82.8,
+     "ranks": {
+      "xgf": 24,
+      "xga60": 25,
+      "gsax": 25,
+      "st": 7,
+      "xgf60": 20
+     }
+    },
+    "last5": {
+     "xgf": 46.5,
+     "xga60": 2.834,
+     "xgf60": 2.463,
+     "cf": 50.92,
+     "gsax": -0.287,
+     "st": 96.7,
+     "pp": 16.7,
+     "pk": 80.0,
+     "ranks": {
+      "xgf": 23,
+      "xga60": 25,
+      "gsax": 21,
+      "st": 17,
+      "xgf60": 19
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 2026020328,
+      "date": "2026-11-15",
+      "site": "away",
+      "opp": "ANA",
+      "pts": 1,
+      "opp_pts": 6,
+      "extra": false,
+      "opp_power_rank": 17
+     },
+     {
+      "game_id": 2026020325,
+      "date": "2026-11-14",
+      "site": "away",
+      "opp": "LAK",
+      "pts": 3,
+      "opp_pts": 2,
+      "extra": false,
+      "opp_power_rank": 27
+     },
+     {
+      "game_id": 2026020294,
+      "date": "2026-11-11",
+      "site": "home",
+      "opp": "NYR",
+      "pts": 1,
+      "opp_pts": 3,
+      "extra": false,
+      "opp_power_rank": 15
+     }
+    ],
+    "trend_games": [
+     {
+      "date": "2026-11-06",
+      "opp": "ANA",
+      "metrics": {
+       "xgf": 45.55,
+       "xga60": 2.735,
+       "xgf60": 2.288,
+       "gsax": -1.213,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-08",
+      "opp": "PHI",
+      "metrics": {
+       "xgf": 56.04,
+       "xga60": 2.239,
+       "xgf60": 2.853,
+       "gsax": 0.196,
+       "st": 66.7
+      }
+     },
+     {
+      "date": "2026-11-11",
+      "opp": "NYR",
+      "metrics": {
+       "xgf": 52.31,
+       "xga60": 1.855,
+       "xgf60": 2.034,
+       "gsax": -0.002,
+       "st": 116.7
+      }
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "LAK",
+      "metrics": {
+       "xgf": 45.14,
+       "xga60": 3.139,
+       "xgf60": 2.583,
+       "gsax": 0.76,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-15",
+      "opp": "ANA",
+      "metrics": {
+       "xgf": 37.97,
+       "xga60": 4.164,
+       "xgf60": 2.548,
+       "gsax": -1.177,
+       "st": 100.0
+      }
+     }
+    ],
+    "is_fav": false,
+    "b2b": false,
+    "power": {
+     "rank": 26,
+     "own": 26,
+     "avg": 25.5,
+     "espn": 25,
+     "nhl_com": null
+    },
+    "goalie": {
+     "name": "Dustin Wolf",
+     "last": "Wolf",
+     "espn_id": "4587952",
+     "confirmed": false
+    },
+    "goalie_status": "regular",
+    "regular_goalie_name": "D. Wolf",
+    "goalies": [
+     {
+      "id": "8481692",
+      "name": "D. Wolf",
+      "starts": 10
+     },
+     {
+      "id": "8482445",
+      "name": "D. Cooley",
+      "starts": 10
+     },
+     {
+      "id": "8482949",
+      "name": "A. Sergeev",
+      "starts": 1
+     }
+    ],
+    "key_skaters": [
+     "K. Bahl",
+     "S. Nemec",
+     "Z. Whitecloud",
+     "J. Farabee",
+     "J. Middleton",
+     "M. Backlund"
+    ],
+    "injuries": [
+     {
+      "name": "Jonathan Huberdeau",
+      "last": "Huberdeau",
+      "status": "Injured Reserve",
+      "date": "2026-11-13T17:38Z",
+      "comment": "Huberdeau (hip) won't travel with the Flames during their upcoming three-game road trip, Pat Steinberg of QR Calgary 770 AM reports Friday."
+     },
+     {
+      "name": "Kevin Bahl",
+      "last": "Bahl",
+      "status": "Injured Reserve",
+      "date": "2026-11-08T16:17Z",
+      "comment": "Bahl will undergo surgery for a ruptured Achilles tendon and won't play again in the 2026-27 season, the Flames announced Sunday."
+     },
+     {
+      "name": "Connor Zary",
+      "last": "Zary",
+      "status": "Out",
+      "date": "2026-10-30T16:44Z",
+      "comment": "out"
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [],
+    "key_long_term": [
+     "Kevin Bahl"
+    ],
+    "spread_text": ""
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "SJS",
+    "dog": "CGY",
+    "in_range": false,
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "rules": [
+     {
+      "rule": "Range",
+      "name": "Top-7 team vs bottom-7 team (consensus power rank)",
+      "pass": false,
+      "detail": "SJS #28 vs CGY #26"
+     },
+     {
+      "rule": "A",
+      "name": "Analysis Score 22+",
+      "pass": false,
+      "detail": "Score 21 of 40"
+     },
+     {
+      "rule": "Goalie",
+      "name": "SJS's regular goalie starts",
+      "pass": true,
+      "detail": "Yaroslav Askarov (probable)"
+     },
+     {
+      "rule": "Matchup",
+      "name": "SJS top 7 vs CGY bottom 7 in a matchup (last 5)",
+      "pass": false,
+      "detail": "None: offense vs offense, defense vs defense or defense vs offense (xGF/60, xGA/60): capped at the Watch list"
+     }
+    ],
+    "fails": [
+     "Not a top-7 vs bottom-7 matchup (SJS #28, CGY #26)"
+    ],
+    "warnings": [],
+    "flags": [],
+    "score": 21,
+    "max": 40,
+    "band": "yellow",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 3,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 12,
+      "max": 16
+     },
+     {
+      "key": "goalies",
+      "label": "Goalies + health",
+      "points": 3,
+      "max": 4
+     },
+     {
+      "key": "home",
+      "label": "Home ice",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xga60",
+      "scored": false,
+      "cells": [
+       {
+        "team": "SJS",
+        "role": "fav",
+        "window": "season",
+        "metric": "xgf60",
+        "rank": 27,
+        "color": "red"
+       },
+       {
+        "team": "SJS",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xgf60",
+        "rank": 22,
+        "color": "yellow"
+       },
+       {
+        "team": "CGY",
+        "role": "dog",
+        "window": "season",
+        "metric": "xga60",
+        "rank": 25,
+        "color": "green"
+       },
+       {
+        "team": "CGY",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xga60",
+        "rank": 25,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "xga60",
+      "dog_metric": "xgf60",
+      "scored": false,
+      "cells": [
+       {
+        "team": "SJS",
+        "role": "fav",
+        "window": "season",
+        "metric": "xga60",
+        "rank": 32,
+        "color": "red"
+       },
+       {
+        "team": "SJS",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xga60",
+        "rank": 26,
+        "color": "red"
+       },
+       {
+        "team": "CGY",
+        "role": "dog",
+        "window": "season",
+        "metric": "xgf60",
+        "rank": 20,
+        "color": "yellow"
+       },
+       {
+        "team": "CGY",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xgf60",
+        "rank": 19,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "key": "share",
+      "label": "Shot share",
+      "fav_metric": "xgf",
+      "dog_metric": "xgf",
+      "scored": true,
+      "cells": [
+       {
+        "team": "SJS",
+        "role": "fav",
+        "window": "season",
+        "metric": "xgf",
+        "rank": 30,
+        "color": "red"
+       },
+       {
+        "team": "SJS",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xgf",
+        "rank": 25,
+        "color": "red"
+       },
+       {
+        "team": "CGY",
+        "role": "dog",
+        "window": "season",
+        "metric": "xgf",
+        "rank": 24,
+        "color": "green"
+       },
+       {
+        "team": "CGY",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xgf",
+        "rank": 23,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "goalie",
+      "label": "Goaltending",
+      "fav_metric": "gsax",
+      "dog_metric": "gsax",
+      "scored": true,
+      "cells": [
+       {
+        "team": "SJS",
+        "role": "fav",
+        "window": "season",
+        "metric": "gsax",
+        "rank": 5,
+        "color": "green"
+       },
+       {
+        "team": "SJS",
+        "role": "fav",
+        "window": "last5",
+        "metric": "gsax",
+        "rank": 8,
+        "color": "green"
+       },
+       {
+        "team": "CGY",
+        "role": "dog",
+        "window": "season",
+        "metric": "gsax",
+        "rank": 25,
+        "color": "green"
+       },
+       {
+        "team": "CGY",
+        "role": "dog",
+        "window": "last5",
+        "metric": "gsax",
+        "rank": 21,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "key": "st",
+      "label": "Special teams",
+      "fav_metric": "st",
+      "dog_metric": "st",
+      "scored": true,
+      "cells": [
+       {
+        "team": "SJS",
+        "role": "fav",
+        "window": "season",
+        "metric": "st",
+        "rank": 23,
+        "color": "red"
+       },
+       {
+        "team": "SJS",
+        "role": "fav",
+        "window": "last5",
+        "metric": "st",
+        "rank": 30,
+        "color": "red"
+       },
+       {
+        "team": "CGY",
+        "role": "dog",
+        "window": "season",
+        "metric": "st",
+        "rank": 7,
+        "color": "red"
+       },
+       {
+        "team": "CGY",
+        "role": "dog",
+        "window": "last5",
+        "metric": "st",
+        "rank": 17,
+        "color": "yellow"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xgf60",
+      "fav_rank": 22,
+      "dog_rank": 19,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "xga60",
+      "dog_metric": "xga60",
+      "fav_rank": 26,
+      "dog_rank": 25,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "xga60",
+      "dog_metric": "xgf60",
+      "fav_rank": 26,
+      "dog_rank": 19,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xga60",
+      "fav_rank": 22,
+      "dog_rank": 25,
+      "counts": false,
+      "met": false
+     }
+    ],
+    "labels": {
+     "xgf60": "xGF/60 5v5",
+     "xgf": "xGF% 5v5",
+     "xga60": "xGA/60 5v5",
+     "gsax": "GSAx/gm",
+     "st": "PP%+PK%",
+     "pts": "Points %"
+    }
+   },
+   "summary": "Not a top-7 vs bottom-7 matchup (SJS #28, CGY #26). Yaroslav Askarov in goal for SJS (probable). SJS 2-0-1 in its last 3, CGY 1-2-0.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNHLGAME-26NOV17CGYSJ",
+    "fav_prob": 0.545,
+    "bid": 0.54,
+    "ask": 0.55
    }
   },
   {
@@ -807,7 +1603,7 @@
    "favorite": "home",
    "line": {
     "details": "BOS -155",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": -155,
     "ml_away": null,
     "puck_line": -1.5,
@@ -816,7 +1612,7 @@
    },
    "spread": {
     "details": "BOS -155",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": -1.5
    },
    "home": {
@@ -856,11 +1652,11 @@
      "pp": 20.0,
      "pk": 94.1,
      "ranks": {
-      "xgf": 5,
+      "xgf": 6,
       "xga60": 10,
-      "gsax": 18,
+      "gsax": 19,
       "st": 7,
-      "xgf60": 8
+      "xgf60": 9
      }
     },
     "last3_games": [
@@ -1024,7 +1820,7 @@
      "pp": 21.7,
      "pk": 67.2,
      "ranks": {
-      "xgf": 18,
+      "xgf": 17,
       "xga60": 13,
       "gsax": 29,
       "st": 27,
@@ -1041,11 +1837,11 @@
      "pp": 33.3,
      "pk": 77.8,
      "ranks": {
-      "xgf": 3,
-      "xga60": 7,
+      "xgf": 4,
+      "xga60": 8,
       "gsax": 28,
       "st": 8,
-      "xgf60": 5
+      "xgf60": 6
      }
     },
     "last3_games": [
@@ -1057,7 +1853,7 @@
       "pts": 2,
       "opp_pts": 3,
       "extra": false,
-      "opp_power_rank": 25
+      "opp_power_rank": 26
      },
      {
       "game_id": 2026020308,
@@ -1140,9 +1936,9 @@
     "is_fav": false,
     "b2b": false,
     "power": {
-     "rank": 28,
-     "own": 26,
-     "avg": 27.5,
+     "rank": 27,
+     "own": 25,
+     "avg": 27.0,
      "espn": 29,
      "nhl_com": null
     },
@@ -1217,13 +2013,13 @@
       "rule": "Range",
       "name": "Top-7 team vs bottom-7 team (consensus power rank)",
       "pass": true,
-      "detail": "BOS #2 vs LAK #28"
+      "detail": "BOS #2 vs LAK #27"
      },
      {
       "rule": "A",
       "name": "Analysis Score 22+",
       "pass": false,
-      "detail": "Score 21 of 40"
+      "detail": "Score 20 of 40"
      },
      {
       "rule": "Goalie",
@@ -1239,18 +2035,18 @@
      }
     ],
     "fails": [
-     "Score 21 (qualifies at 22)"
+     "Score 20 (qualifies at 22)"
     ],
     "warnings": [],
     "flags": [],
-    "score": 21,
+    "score": 20,
     "max": 40,
     "band": "yellow",
     "parts": [
      {
       "key": "fav_metrics",
       "label": "Favorite metrics",
-      "points": 8,
+      "points": 7,
       "max": 16
      },
      {
@@ -1305,7 +2101,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "xgf60",
-        "rank": 8,
+        "rank": 9,
         "color": "green"
        },
        {
@@ -1321,7 +2117,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "xga60",
-        "rank": 7,
+        "rank": 8,
         "color": "red"
        }
       ]
@@ -1362,8 +2158,8 @@
         "role": "dog",
         "window": "last5",
         "metric": "xgf60",
-        "rank": 5,
-        "color": "deep-red"
+        "rank": 6,
+        "color": "red"
        }
       ]
      },
@@ -1387,7 +2183,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "xgf",
-        "rank": 5,
+        "rank": 6,
         "color": "green"
        },
        {
@@ -1395,7 +2191,7 @@
         "role": "dog",
         "window": "season",
         "metric": "xgf",
-        "rank": 18,
+        "rank": 17,
         "color": "yellow"
        },
        {
@@ -1403,7 +2199,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "xgf",
-        "rank": 3,
+        "rank": 4,
         "color": "deep-red"
        }
       ]
@@ -1428,7 +2224,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "gsax",
-        "rank": 18,
+        "rank": 19,
         "color": "yellow"
        },
        {
@@ -1497,8 +2293,8 @@
       "label": "Offense vs offense",
       "fav_metric": "xgf60",
       "dog_metric": "xgf60",
-      "fav_rank": 8,
-      "dog_rank": 5,
+      "fav_rank": 9,
+      "dog_rank": 6,
       "counts": true,
       "met": false
      },
@@ -1508,7 +2304,7 @@
       "fav_metric": "xga60",
       "dog_metric": "xga60",
       "fav_rank": 10,
-      "dog_rank": 7,
+      "dog_rank": 8,
       "counts": true,
       "met": false
      },
@@ -1518,7 +2314,7 @@
       "fav_metric": "xga60",
       "dog_metric": "xgf60",
       "fav_rank": 10,
-      "dog_rank": 5,
+      "dog_rank": 6,
       "counts": true,
       "met": false
      },
@@ -1527,8 +2323,8 @@
       "label": "Offense vs defense",
       "fav_metric": "xgf60",
       "dog_metric": "xga60",
-      "fav_rank": 8,
-      "dog_rank": 7,
+      "fav_rank": 9,
+      "dog_rank": 8,
       "counts": false,
       "met": false
      }
@@ -1542,809 +2338,13 @@
      "pts": "Points %"
     }
    },
-   "summary": "Score 21 (qualifies at 22). Jeremy Swayman in goal for BOS (probable). BOS 1-2-0 in its last 3, LAK 0-3-0.",
+   "summary": "Score 20 (qualifies at 22). Jeremy Swayman in goal for BOS (probable). BOS 1-2-0 in its last 3, LAK 0-3-0.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV17LABOS",
-    "fav_prob": 0.59,
-    "bid": 0.58,
-    "ask": 0.6
-   }
-  },
-  {
-   "id": "401892738",
-   "tip_utc": "2026-11-18T03:00:00+00:00",
-   "tip_pt": "7:00 PM PT",
-   "day_et": "2026-11-17",
-   "state": "pre",
-   "detail": "11/17 - 10:00 PM EST",
-   "neutral": false,
-   "venue": "SAP Center at San Jose",
-   "favorite": "home",
-   "line": {
-    "details": "SJ -125",
-    "provider": "DraftKings",
-    "ml_home": -125,
-    "ml_away": null,
-    "puck_line": -1.5,
-    "total": 5.5,
-    "fav_price": 0.5556
-   },
-   "spread": {
-    "details": "SJ -125",
-    "provider": "DraftKings",
-    "puck_line": -1.5
-   },
-   "home": {
-    "id": "18",
-    "abbr": "SJS",
-    "espn_abbr": "SJ",
-    "name": "San Jose",
-    "display": "San Jose Sharks",
-    "record": "10-11-2",
-    "l3_record": "2-0-1",
-    "games": 23,
-    "pts_pct": 0.478,
-    "season": {
-     "xgf": 42.32,
-     "xga60": 2.996,
-     "xgf60": 2.198,
-     "cf": 47.64,
-     "gsax": 0.371,
-     "st": 91.6,
-     "pp": 19.8,
-     "pk": 71.8,
-     "ranks": {
-      "xgf": 30,
-      "xga60": 32,
-      "gsax": 5,
-      "st": 23,
-      "xgf60": 27
-     }
-    },
-    "last5": {
-     "xgf": 45.99,
-     "xga60": 2.835,
-     "xgf60": 2.414,
-     "cf": 47.03,
-     "gsax": 0.486,
-     "st": 78.9,
-     "pp": 15.8,
-     "pk": 63.2,
-     "ranks": {
-      "xgf": 25,
-      "xga60": 26,
-      "gsax": 8,
-      "st": 28,
-      "xgf60": 23
-     }
-    },
-    "last3_games": [
-     {
-      "game_id": 2026020330,
-      "date": "2026-11-15",
-      "site": "home",
-      "opp": "NSH",
-      "pts": 4,
-      "opp_pts": 2,
-      "extra": false,
-      "opp_power_rank": 12
-     },
-     {
-      "game_id": 2026020323,
-      "date": "2026-11-14",
-      "site": "away",
-      "opp": "UTA",
-      "pts": 6,
-      "opp_pts": 5,
-      "extra": true,
-      "opp_power_rank": 13
-     },
-     {
-      "game_id": 2026020298,
-      "date": "2026-11-11",
-      "site": "home",
-      "opp": "PIT",
-      "pts": 2,
-      "opp_pts": 3,
-      "extra": true,
-      "opp_power_rank": 24
-     }
-    ],
-    "trend_games": [
-     {
-      "date": "2026-11-07",
-      "opp": "DAL",
-      "metrics": {
-       "xgf": 50.16,
-       "xga60": 3.138,
-       "xgf60": 3.158,
-       "gsax": 0.444,
-       "st": 60.0
-      }
-     },
-     {
-      "date": "2026-11-09",
-      "opp": "NYI",
-      "metrics": {
-       "xgf": 47.62,
-       "xga60": 2.817,
-       "xgf60": 2.561,
-       "gsax": 1.267,
-       "st": 66.7
-      }
-     },
-     {
-      "date": "2026-11-11",
-      "opp": "PIT",
-      "metrics": {
-       "xgf": 40.37,
-       "xga60": 3.142,
-       "xgf60": 2.128,
-       "gsax": 1.235,
-       "st": 66.7
-      }
-     },
-     {
-      "date": "2026-11-14",
-      "opp": "UTA",
-      "metrics": {
-       "xgf": 46.05,
-       "xga60": 2.217,
-       "xgf60": 1.893,
-       "gsax": -1.617,
-       "st": 106.7
-      }
-     },
-     {
-      "date": "2026-11-15",
-      "opp": "NSH",
-      "metrics": {
-       "xgf": 45.59,
-       "xga60": 2.848,
-       "xgf60": 2.386,
-       "gsax": 1.102,
-       "st": 100.0
-      }
-     }
-    ],
-    "is_fav": true,
-    "b2b": false,
-    "power": {
-     "rank": 27,
-     "own": 28,
-     "avg": 27.0,
-     "espn": 26,
-     "nhl_com": null
-    },
-    "goalie": {
-     "name": "Yaroslav Askarov",
-     "last": "Askarov",
-     "espn_id": "4697394",
-     "confirmed": false
-    },
-    "goalie_status": "regular",
-    "regular_goalie_name": "Y. Askarov",
-    "goalies": [
-     {
-      "id": "8482137",
-      "name": "Y. Askarov",
-      "starts": 15
-     },
-     {
-      "id": "8477968",
-      "name": "A. Nedeljkovic",
-      "starts": 8
-     }
-    ],
-    "key_skaters": [
-     "M. Celebrini",
-     "J. Trouba",
-     "D. Nurse",
-     "W. Smith",
-     "S. Dickinson",
-     "M. Kesselring"
-    ],
-    "injuries": [
-     {
-      "name": "Alexander Wennberg",
-      "last": "Wennberg",
-      "status": "Day-To-Day",
-      "date": "2026-11-16T14:05Z",
-      "comment": "day-to-day"
-     },
-     {
-      "name": "Kiefer Sherwood",
-      "last": "Sherwood",
-      "status": "Day-To-Day",
-      "date": "2026-11-16T05:16Z",
-      "comment": "day-to-day"
-     },
-     {
-      "name": "Igor Chernyshov",
-      "last": "Chernyshov",
-      "status": "Injured Reserve",
-      "date": "2026-11-15T23:51Z",
-      "comment": "Head coach Ryan Warsofsky said Sunday that Chernyshov (upper body) is not close to returning to game action, per Curtis Pashelka of The San Jose Mercury News."
-     },
-     {
-      "name": "Quentin Musty",
-      "last": "Musty",
-      "status": "Injured Reserve",
-      "date": "2026-11-15T23:51Z",
-      "comment": "Head coach Ryan Warsofsky said Sunday that Musty (upper body) isn't close to returning, Curtis Pashelka of The San Jose Mercury News reports."
-     },
-     {
-      "name": "Kyle Keyser",
-      "last": "Keyser",
-      "status": "Injured Reserve",
-      "date": "2026-09-28T22:10Z",
-      "comment": "Keyser (upper body) was placed on non-roster injured reserve by the Sharks on Monday, Curtis Pashelka of The San Jose Mercury News reports."
-     }
-    ],
-    "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [],
-    "key_long_term": [],
-    "spread_text": "-125"
-   },
-   "away": {
-    "id": "3",
-    "abbr": "CGY",
-    "espn_abbr": "CGY",
-    "name": "Calgary",
-    "display": "Calgary Flames",
-    "record": "9-11-1",
-    "l3_record": "1-2-0",
-    "games": 21,
-    "pts_pct": 0.452,
-    "season": {
-     "xgf": 47.51,
-     "xga60": 2.699,
-     "xgf60": 2.443,
-     "cf": 49.18,
-     "gsax": -0.344,
-     "st": 108.8,
-     "pp": 26.0,
-     "pk": 82.8,
-     "ranks": {
-      "xgf": 24,
-      "xga60": 25,
-      "gsax": 25,
-      "st": 8,
-      "xgf60": 20
-     }
-    },
-    "last5": {
-     "xgf": 46.5,
-     "xga60": 2.834,
-     "xgf60": 2.463,
-     "cf": 50.92,
-     "gsax": -0.287,
-     "st": 96.7,
-     "pp": 16.7,
-     "pk": 80.0,
-     "ranks": {
-      "xgf": 23,
-      "xga60": 25,
-      "gsax": 19,
-      "st": 18,
-      "xgf60": 19
-     }
-    },
-    "last3_games": [
-     {
-      "game_id": 2026020328,
-      "date": "2026-11-15",
-      "site": "away",
-      "opp": "ANA",
-      "pts": 1,
-      "opp_pts": 6,
-      "extra": false,
-      "opp_power_rank": 17
-     },
-     {
-      "game_id": 2026020325,
-      "date": "2026-11-14",
-      "site": "away",
-      "opp": "LAK",
-      "pts": 3,
-      "opp_pts": 2,
-      "extra": false,
-      "opp_power_rank": 28
-     },
-     {
-      "game_id": 2026020294,
-      "date": "2026-11-11",
-      "site": "home",
-      "opp": "NYR",
-      "pts": 1,
-      "opp_pts": 3,
-      "extra": false,
-      "opp_power_rank": 16
-     }
-    ],
-    "trend_games": [
-     {
-      "date": "2026-11-06",
-      "opp": "ANA",
-      "metrics": {
-       "xgf": 45.55,
-       "xga60": 2.735,
-       "xgf60": 2.288,
-       "gsax": -1.213,
-       "st": 100.0
-      }
-     },
-     {
-      "date": "2026-11-08",
-      "opp": "PHI",
-      "metrics": {
-       "xgf": 56.04,
-       "xga60": 2.239,
-       "xgf60": 2.853,
-       "gsax": 0.196,
-       "st": 66.7
-      }
-     },
-     {
-      "date": "2026-11-11",
-      "opp": "NYR",
-      "metrics": {
-       "xgf": 52.31,
-       "xga60": 1.855,
-       "xgf60": 2.034,
-       "gsax": -0.002,
-       "st": 116.7
-      }
-     },
-     {
-      "date": "2026-11-14",
-      "opp": "LAK",
-      "metrics": {
-       "xgf": 45.14,
-       "xga60": 3.139,
-       "xgf60": 2.583,
-       "gsax": 0.76,
-       "st": 100.0
-      }
-     },
-     {
-      "date": "2026-11-15",
-      "opp": "ANA",
-      "metrics": {
-       "xgf": 37.97,
-       "xga60": 4.164,
-       "xgf60": 2.548,
-       "gsax": -1.177,
-       "st": 100.0
-      }
-     }
-    ],
-    "is_fav": false,
-    "b2b": false,
-    "power": {
-     "rank": 25,
-     "own": 25,
-     "avg": 25.0,
-     "espn": 25,
-     "nhl_com": null
-    },
-    "goalie": {
-     "name": "Dustin Wolf",
-     "last": "Wolf",
-     "espn_id": "4587952",
-     "confirmed": false
-    },
-    "goalie_status": "regular",
-    "regular_goalie_name": "D. Wolf",
-    "goalies": [
-     {
-      "id": "8481692",
-      "name": "D. Wolf",
-      "starts": 10
-     },
-     {
-      "id": "8482445",
-      "name": "D. Cooley",
-      "starts": 10
-     },
-     {
-      "id": "8482949",
-      "name": "A. Sergeev",
-      "starts": 1
-     }
-    ],
-    "key_skaters": [
-     "K. Bahl",
-     "S. Nemec",
-     "Z. Whitecloud",
-     "J. Farabee",
-     "J. Middleton",
-     "M. Backlund"
-    ],
-    "injuries": [
-     {
-      "name": "Jonathan Huberdeau",
-      "last": "Huberdeau",
-      "status": "Injured Reserve",
-      "date": "2026-11-13T17:38Z",
-      "comment": "Huberdeau (hip) won't travel with the Flames during their upcoming three-game road trip, Pat Steinberg of QR Calgary 770 AM reports Friday."
-     },
-     {
-      "name": "Kevin Bahl",
-      "last": "Bahl",
-      "status": "Injured Reserve",
-      "date": "2026-11-08T16:17Z",
-      "comment": "Bahl will undergo surgery for a ruptured Achilles tendon and won't play again in the 2026-27 season, the Flames announced Sunday."
-     },
-     {
-      "name": "Connor Zary",
-      "last": "Zary",
-      "status": "Out",
-      "date": "2026-10-30T16:44Z",
-      "comment": "out"
-     }
-    ],
-    "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [],
-    "key_long_term": [
-     "Kevin Bahl"
-    ],
-    "spread_text": ""
-   },
-   "scoring": {
-    "scored": true,
-    "fav": "SJS",
-    "dog": "CGY",
-    "in_range": false,
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "qualifiers": [],
-    "would_qualify": false,
-    "rules": [
-     {
-      "rule": "Range",
-      "name": "Top-7 team vs bottom-7 team (consensus power rank)",
-      "pass": false,
-      "detail": "SJS #27 vs CGY #25"
-     },
-     {
-      "rule": "A",
-      "name": "Analysis Score 22+",
-      "pass": false,
-      "detail": "Score 21 of 40"
-     },
-     {
-      "rule": "Goalie",
-      "name": "SJS's regular goalie starts",
-      "pass": true,
-      "detail": "Yaroslav Askarov (probable)"
-     },
-     {
-      "rule": "Matchup",
-      "name": "SJS top 7 vs CGY bottom 7 in a matchup (last 5)",
-      "pass": false,
-      "detail": "None: offense vs offense, defense vs defense or defense vs offense (xGF/60, xGA/60): capped at the Watch list"
-     }
-    ],
-    "fails": [
-     "Not a top-7 vs bottom-7 matchup (SJS #27, CGY #25)"
-    ],
-    "warnings": [],
-    "flags": [],
-    "score": 21,
-    "max": 40,
-    "band": "yellow",
-    "parts": [
-     {
-      "key": "fav_metrics",
-      "label": "Favorite metrics",
-      "points": 3,
-      "max": 16
-     },
-     {
-      "key": "dog_metrics",
-      "label": "Underdog metrics",
-      "points": 12,
-      "max": 16
-     },
-     {
-      "key": "goalies",
-      "label": "Goalies + health",
-      "points": 3,
-      "max": 4
-     },
-     {
-      "key": "home",
-      "label": "Home ice",
-      "points": 1,
-      "max": 1
-     },
-     {
-      "key": "rest",
-      "label": "Rest",
-      "points": 1,
-      "max": 1
-     },
-     {
-      "key": "form",
-      "label": "Last-3 form",
-      "points": 1,
-      "max": 2
-     }
-    ],
-    "grid": [
-     {
-      "key": "off_def",
-      "label": "Offense vs defense",
-      "fav_metric": "xgf60",
-      "dog_metric": "xga60",
-      "scored": false,
-      "cells": [
-       {
-        "team": "SJS",
-        "role": "fav",
-        "window": "season",
-        "metric": "xgf60",
-        "rank": 27,
-        "color": "red"
-       },
-       {
-        "team": "SJS",
-        "role": "fav",
-        "window": "last5",
-        "metric": "xgf60",
-        "rank": 23,
-        "color": "red"
-       },
-       {
-        "team": "CGY",
-        "role": "dog",
-        "window": "season",
-        "metric": "xga60",
-        "rank": 25,
-        "color": "green"
-       },
-       {
-        "team": "CGY",
-        "role": "dog",
-        "window": "last5",
-        "metric": "xga60",
-        "rank": 25,
-        "color": "green"
-       }
-      ]
-     },
-     {
-      "key": "def_off",
-      "label": "Defense vs offense",
-      "fav_metric": "xga60",
-      "dog_metric": "xgf60",
-      "scored": false,
-      "cells": [
-       {
-        "team": "SJS",
-        "role": "fav",
-        "window": "season",
-        "metric": "xga60",
-        "rank": 32,
-        "color": "red"
-       },
-       {
-        "team": "SJS",
-        "role": "fav",
-        "window": "last5",
-        "metric": "xga60",
-        "rank": 26,
-        "color": "red"
-       },
-       {
-        "team": "CGY",
-        "role": "dog",
-        "window": "season",
-        "metric": "xgf60",
-        "rank": 20,
-        "color": "yellow"
-       },
-       {
-        "team": "CGY",
-        "role": "dog",
-        "window": "last5",
-        "metric": "xgf60",
-        "rank": 19,
-        "color": "yellow"
-       }
-      ]
-     },
-     {
-      "key": "share",
-      "label": "Shot share",
-      "fav_metric": "xgf",
-      "dog_metric": "xgf",
-      "scored": true,
-      "cells": [
-       {
-        "team": "SJS",
-        "role": "fav",
-        "window": "season",
-        "metric": "xgf",
-        "rank": 30,
-        "color": "red"
-       },
-       {
-        "team": "SJS",
-        "role": "fav",
-        "window": "last5",
-        "metric": "xgf",
-        "rank": 25,
-        "color": "red"
-       },
-       {
-        "team": "CGY",
-        "role": "dog",
-        "window": "season",
-        "metric": "xgf",
-        "rank": 24,
-        "color": "green"
-       },
-       {
-        "team": "CGY",
-        "role": "dog",
-        "window": "last5",
-        "metric": "xgf",
-        "rank": 23,
-        "color": "green"
-       }
-      ]
-     },
-     {
-      "key": "goalie",
-      "label": "Goaltending",
-      "fav_metric": "gsax",
-      "dog_metric": "gsax",
-      "scored": true,
-      "cells": [
-       {
-        "team": "SJS",
-        "role": "fav",
-        "window": "season",
-        "metric": "gsax",
-        "rank": 5,
-        "color": "green"
-       },
-       {
-        "team": "SJS",
-        "role": "fav",
-        "window": "last5",
-        "metric": "gsax",
-        "rank": 8,
-        "color": "green"
-       },
-       {
-        "team": "CGY",
-        "role": "dog",
-        "window": "season",
-        "metric": "gsax",
-        "rank": 25,
-        "color": "green"
-       },
-       {
-        "team": "CGY",
-        "role": "dog",
-        "window": "last5",
-        "metric": "gsax",
-        "rank": 19,
-        "color": "yellow"
-       }
-      ]
-     },
-     {
-      "key": "st",
-      "label": "Special teams",
-      "fav_metric": "st",
-      "dog_metric": "st",
-      "scored": true,
-      "cells": [
-       {
-        "team": "SJS",
-        "role": "fav",
-        "window": "season",
-        "metric": "st",
-        "rank": 23,
-        "color": "red"
-       },
-       {
-        "team": "SJS",
-        "role": "fav",
-        "window": "last5",
-        "metric": "st",
-        "rank": 28,
-        "color": "red"
-       },
-       {
-        "team": "CGY",
-        "role": "dog",
-        "window": "season",
-        "metric": "st",
-        "rank": 8,
-        "color": "red"
-       },
-       {
-        "team": "CGY",
-        "role": "dog",
-        "window": "last5",
-        "metric": "st",
-        "rank": 18,
-        "color": "yellow"
-       }
-      ]
-     }
-    ],
-    "matchups": [
-     {
-      "key": "off_off",
-      "label": "Offense vs offense",
-      "fav_metric": "xgf60",
-      "dog_metric": "xgf60",
-      "fav_rank": 23,
-      "dog_rank": 19,
-      "counts": true,
-      "met": false
-     },
-     {
-      "key": "def_def",
-      "label": "Defense vs defense",
-      "fav_metric": "xga60",
-      "dog_metric": "xga60",
-      "fav_rank": 26,
-      "dog_rank": 25,
-      "counts": true,
-      "met": false
-     },
-     {
-      "key": "def_off",
-      "label": "Defense vs offense",
-      "fav_metric": "xga60",
-      "dog_metric": "xgf60",
-      "fav_rank": 26,
-      "dog_rank": 19,
-      "counts": true,
-      "met": false
-     },
-     {
-      "key": "off_def",
-      "label": "Offense vs defense",
-      "fav_metric": "xgf60",
-      "dog_metric": "xga60",
-      "fav_rank": 23,
-      "dog_rank": 25,
-      "counts": false,
-      "met": false
-     }
-    ],
-    "labels": {
-     "xgf60": "xGF/60 5v5",
-     "xgf": "xGF% 5v5",
-     "xga60": "xGA/60 5v5",
-     "gsax": "GSAx/gm",
-     "st": "PP%+PK%",
-     "pts": "Points %"
-    }
-   },
-   "summary": "Not a top-7 vs bottom-7 matchup (SJS #27, CGY #25). Yaroslav Askarov in goal for SJS (probable). SJS 2-0-1 in its last 3, CGY 1-2-0.",
-   "lean": "No lean",
-   "kalshi": {
-    "event": "KXNHLGAME-26NOV17CGYSJ",
-    "fav_prob": 0.545,
-    "bid": 0.54,
-    "ask": 0.55
+    "fav_prob": 0.605,
+    "bid": 0.6,
+    "ask": 0.61
    }
   },
   {
@@ -2359,7 +2359,7 @@
    "favorite": "home",
    "line": {
     "details": "NYI -142",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": -142,
     "ml_away": null,
     "puck_line": -1.5,
@@ -2368,7 +2368,7 @@
    },
    "spread": {
     "details": "NYI -142",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": -1.5
    },
    "home": {
@@ -2409,9 +2409,9 @@
      "pk": 84.6,
      "ranks": {
       "xgf": 22,
-      "xga60": 32,
+      "xga60": 31,
       "gsax": 9,
-      "st": 12,
+      "st": 11,
       "xgf60": 12
      }
     },
@@ -2434,7 +2434,7 @@
       "pts": 5,
       "opp_pts": 2,
       "extra": false,
-      "opp_power_rank": 28
+      "opp_power_rank": 27
      },
      {
       "game_id": 2026020285,
@@ -2444,7 +2444,7 @@
       "pts": 2,
       "opp_pts": 3,
       "extra": true,
-      "opp_power_rank": 27
+      "opp_power_rank": 28
      }
     ],
     "trend_games": [
@@ -2618,7 +2618,7 @@
      "ranks": {
       "xgf": 21,
       "xga60": 29,
-      "gsax": 20,
+      "gsax": 22,
       "st": 15,
       "xgf60": 13
      }
@@ -2912,7 +2912,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "xga60",
-        "rank": 32,
+        "rank": 31,
         "color": "red"
        },
        {
@@ -3010,7 +3010,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "gsax",
-        "rank": 20,
+        "rank": 22,
         "color": "yellow"
        }
       ]
@@ -3035,7 +3035,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "st",
-        "rank": 12,
+        "rank": 11,
         "color": "yellow"
        },
        {
@@ -3073,7 +3073,7 @@
       "label": "Defense vs defense",
       "fav_metric": "xga60",
       "dog_metric": "xga60",
-      "fav_rank": 32,
+      "fav_rank": 31,
       "dog_rank": 29,
       "counts": true,
       "met": false
@@ -3083,7 +3083,7 @@
       "label": "Defense vs offense",
       "fav_metric": "xga60",
       "dog_metric": "xgf60",
-      "fav_rank": 32,
+      "fav_rank": 31,
       "dog_rank": 13,
       "counts": true,
       "met": false
@@ -3112,9 +3112,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV17CBJNYI",
-    "fav_prob": 0.565,
-    "bid": 0.56,
-    "ask": 0.57
+    "fav_prob": 0.555,
+    "bid": 0.55,
+    "ask": 0.56
    }
   },
   {
@@ -3129,7 +3129,7 @@
    "favorite": "away",
    "line": {
     "details": "TOR -155",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": null,
     "ml_away": -155,
     "puck_line": 1.5,
@@ -3138,7 +3138,7 @@
    },
    "spread": {
     "details": "TOR -155",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": 1.5
    },
    "home": {
@@ -3181,8 +3181,8 @@
       "xgf": 30,
       "xga60": 16,
       "gsax": 32,
-      "st": 17,
-      "xgf60": 30
+      "st": 16,
+      "xgf60": 31
      }
     },
     "last3_games": [
@@ -3364,9 +3364,9 @@
      "pk": 75.0,
      "ranks": {
       "xgf": 16,
-      "xga60": 8,
+      "xga60": 9,
       "gsax": 30,
-      "st": 23,
+      "st": 22,
       "xgf60": 26
      }
     },
@@ -3379,7 +3379,7 @@
       "pts": 0,
       "opp_pts": 1,
       "extra": false,
-      "opp_power_rank": 7
+      "opp_power_rank": 6
      },
      {
       "game_id": 2026020300,
@@ -3399,7 +3399,7 @@
       "pts": 3,
       "opp_pts": 6,
       "extra": false,
-      "opp_power_rank": 9
+      "opp_power_rank": 11
      }
     ],
     "trend_games": [
@@ -3462,7 +3462,7 @@
     "is_fav": true,
     "b2b": false,
     "power": {
-     "rank": 26,
+     "rank": 25,
      "own": 27,
      "avg": 25.0,
      "espn": 23,
@@ -3595,7 +3595,7 @@
       "rule": "Range",
       "name": "Top-7 team vs bottom-7 team (consensus power rank)",
       "pass": false,
-      "detail": "TOR #26 vs CHI #31"
+      "detail": "TOR #25 vs CHI #31"
      },
      {
       "rule": "A",
@@ -3617,7 +3617,7 @@
      }
     ],
     "fails": [
-     "Not a top-7 vs bottom-7 matchup (TOR #26, CHI #31)"
+     "Not a top-7 vs bottom-7 matchup (TOR #25, CHI #31)"
     ],
     "warnings": [],
     "flags": [],
@@ -3724,7 +3724,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "xga60",
-        "rank": 8,
+        "rank": 9,
         "color": "green"
        },
        {
@@ -3740,7 +3740,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "xgf60",
-        "rank": 30,
+        "rank": 31,
         "color": "green"
        }
       ]
@@ -3847,8 +3847,8 @@
         "role": "fav",
         "window": "last5",
         "metric": "st",
-        "rank": 23,
-        "color": "red"
+        "rank": 22,
+        "color": "yellow"
        },
        {
         "team": "CHI",
@@ -3863,7 +3863,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "st",
-        "rank": 17,
+        "rank": 16,
         "color": "yellow"
        }
       ]
@@ -3876,7 +3876,7 @@
       "fav_metric": "xgf60",
       "dog_metric": "xgf60",
       "fav_rank": 26,
-      "dog_rank": 30,
+      "dog_rank": 31,
       "counts": true,
       "met": false
      },
@@ -3885,7 +3885,7 @@
       "label": "Defense vs defense",
       "fav_metric": "xga60",
       "dog_metric": "xga60",
-      "fav_rank": 8,
+      "fav_rank": 9,
       "dog_rank": 16,
       "counts": true,
       "met": false
@@ -3895,8 +3895,8 @@
       "label": "Defense vs offense",
       "fav_metric": "xga60",
       "dog_metric": "xgf60",
-      "fav_rank": 8,
-      "dog_rank": 30,
+      "fav_rank": 9,
+      "dog_rank": 31,
       "counts": true,
       "met": false
      },
@@ -3920,13 +3920,13 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (TOR #26, CHI #31). Sergei Bobrovsky in goal for TOR (probable). TOR 0-3-0 in its last 3, CHI 1-1-1.",
+   "summary": "Not a top-7 vs bottom-7 matchup (TOR #25, CHI #31). Sergei Bobrovsky in goal for TOR (probable). TOR 0-3-0 in its last 3, CHI 1-1-1.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV17TORCHI",
-    "fav_prob": 0.585,
-    "bid": 0.58,
-    "ask": 0.59
+    "fav_prob": 0.565,
+    "bid": 0.56,
+    "ask": 0.57
    }
   },
   {
@@ -3941,7 +3941,7 @@
    "favorite": "home",
    "line": {
     "details": "MIN -205",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": -205,
     "ml_away": null,
     "puck_line": -1.5,
@@ -3950,7 +3950,7 @@
    },
    "spread": {
     "details": "MIN -205",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": -1.5
    },
    "home": {
@@ -3990,10 +3990,10 @@
      "pp": 26.3,
      "pk": 80.0,
      "ranks": {
-      "xgf": 27,
+      "xgf": 26,
       "xga60": 19,
       "gsax": 3,
-      "st": 14,
+      "st": 13,
       "xgf60": 27
      }
     },
@@ -4016,7 +4016,7 @@
       "pts": 5,
       "opp_pts": 2,
       "extra": false,
-      "opp_power_rank": 26
+      "opp_power_rank": 25
      },
      {
       "game_id": 2026020287,
@@ -4187,7 +4187,7 @@
       "xgf": 15,
       "xga60": 22,
       "gsax": 2,
-      "st": 13,
+      "st": 12,
       "xgf60": 10
      }
     },
@@ -4200,7 +4200,7 @@
       "pts": 2,
       "opp_pts": 4,
       "extra": false,
-      "opp_power_rank": 27
+      "opp_power_rank": 28
      },
      {
       "game_id": 2026020311,
@@ -4210,7 +4210,7 @@
       "pts": 3,
       "opp_pts": 2,
       "extra": true,
-      "opp_power_rank": 6
+      "opp_power_rank": 7
      },
      {
       "game_id": 2026020297,
@@ -4526,7 +4526,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "xgf",
-        "rank": 27,
+        "rank": 26,
         "color": "red"
        },
        {
@@ -4608,7 +4608,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "st",
-        "rank": 14,
+        "rank": 13,
         "color": "yellow"
        },
        {
@@ -4624,7 +4624,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "st",
-        "rank": 13,
+        "rank": 12,
         "color": "yellow"
        }
       ]
@@ -4702,7 +4702,7 @@
    "favorite": "away",
    "line": {
     "details": "OTT -130",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": null,
     "ml_away": -130,
     "puck_line": 1.5,
@@ -4711,7 +4711,7 @@
    },
    "spread": {
     "details": "OTT -130",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": 1.5
    },
    "home": {
@@ -4751,11 +4751,11 @@
      "pp": 50.0,
      "pk": 85.7,
      "ranks": {
-      "xgf": 8,
-      "xga60": 3,
-      "gsax": 24,
+      "xgf": 9,
+      "xga60": 4,
+      "gsax": 26,
       "st": 1,
-      "xgf60": 21
+      "xgf60": 20
      }
     },
     "last3_games": [
@@ -4777,7 +4777,7 @@
       "pts": 8,
       "opp_pts": 3,
       "extra": false,
-      "opp_power_rank": 11
+      "opp_power_rank": 9
      },
      {
       "game_id": 2026020291,
@@ -4851,8 +4851,8 @@
     "b2b": false,
     "power": {
      "rank": 22,
-     "own": 21,
-     "avg": 21.5,
+     "own": 20,
+     "avg": 21.0,
      "espn": 22,
      "nhl_com": null
     },
@@ -4971,10 +4971,10 @@
      "pp": 7.7,
      "pk": 86.7,
      "ranks": {
-      "xgf": 6,
-      "xga60": 4,
-      "gsax": 13,
-      "st": 21,
+      "xgf": 7,
+      "xga60": 5,
+      "gsax": 14,
+      "st": 20,
       "xgf60": 16
      }
     },
@@ -4997,7 +4997,7 @@
       "pts": 4,
       "opp_pts": 3,
       "extra": true,
-      "opp_power_rank": 9
+      "opp_power_rank": 11
      },
      {
       "game_id": 2026020288,
@@ -5007,7 +5007,7 @@
       "pts": 2,
       "opp_pts": 3,
       "extra": true,
-      "opp_power_rank": 15
+      "opp_power_rank": 16
      }
     ],
     "trend_games": [
@@ -5275,7 +5275,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "xga60",
-        "rank": 3,
+        "rank": 4,
         "color": "deep-red"
        }
       ]
@@ -5300,7 +5300,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "xga60",
-        "rank": 4,
+        "rank": 5,
         "color": "green"
        },
        {
@@ -5316,7 +5316,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "xgf60",
-        "rank": 21,
+        "rank": 20,
         "color": "yellow"
        }
       ]
@@ -5341,7 +5341,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "xgf",
-        "rank": 6,
+        "rank": 7,
         "color": "green"
        },
        {
@@ -5357,7 +5357,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "xgf",
-        "rank": 8,
+        "rank": 9,
         "color": "red"
        }
       ]
@@ -5382,7 +5382,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "gsax",
-        "rank": 13,
+        "rank": 14,
         "color": "yellow"
        },
        {
@@ -5398,7 +5398,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "gsax",
-        "rank": 24,
+        "rank": 26,
         "color": "green"
        }
       ]
@@ -5423,7 +5423,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "st",
-        "rank": 21,
+        "rank": 20,
         "color": "yellow"
        },
        {
@@ -5452,7 +5452,7 @@
       "fav_metric": "xgf60",
       "dog_metric": "xgf60",
       "fav_rank": 16,
-      "dog_rank": 21,
+      "dog_rank": 20,
       "counts": true,
       "met": false
      },
@@ -5461,8 +5461,8 @@
       "label": "Defense vs defense",
       "fav_metric": "xga60",
       "dog_metric": "xga60",
-      "fav_rank": 4,
-      "dog_rank": 3,
+      "fav_rank": 5,
+      "dog_rank": 4,
       "counts": true,
       "met": false
      },
@@ -5471,8 +5471,8 @@
       "label": "Defense vs offense",
       "fav_metric": "xga60",
       "dog_metric": "xgf60",
-      "fav_rank": 4,
-      "dog_rank": 21,
+      "fav_rank": 5,
+      "dog_rank": 20,
       "counts": true,
       "met": false
      },
@@ -5482,7 +5482,7 @@
       "fav_metric": "xgf60",
       "dog_metric": "xga60",
       "fav_rank": 16,
-      "dog_rank": 3,
+      "dog_rank": 4,
       "counts": false,
       "met": false
      }
@@ -5517,7 +5517,7 @@
    "favorite": "home",
    "line": {
     "details": "STL -142",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": -142,
     "ml_away": null,
     "puck_line": -1.5,
@@ -5526,7 +5526,7 @@
    },
    "spread": {
     "details": "STL -142",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": -1.5
    },
    "home": {
@@ -5568,8 +5568,8 @@
      "ranks": {
       "xgf": 11,
       "xga60": 12,
-      "gsax": 11,
-      "st": 19,
+      "gsax": 12,
+      "st": 18,
       "xgf60": 17
      }
     },
@@ -5781,7 +5781,7 @@
      "ranks": {
       "xgf": 13,
       "xga60": 21,
-      "gsax": 21,
+      "gsax": 23,
       "st": 5,
       "xgf60": 2
      }
@@ -5795,7 +5795,7 @@
       "pts": 6,
       "opp_pts": 1,
       "extra": false,
-      "opp_power_rank": 25
+      "opp_power_rank": 26
      },
      {
       "game_id": 2026020324,
@@ -5964,7 +5964,7 @@
       "rule": "A",
       "name": "Analysis Score 22+",
       "pass": false,
-      "detail": "Score 15 of 40"
+      "detail": "Score 16 of 40"
      },
      {
       "rule": "Goalie",
@@ -5984,7 +5984,7 @@
     ],
     "warnings": [],
     "flags": [],
-    "score": 15,
+    "score": 16,
     "max": 40,
     "band": "red",
     "parts": [
@@ -5997,7 +5997,7 @@
      {
       "key": "dog_metrics",
       "label": "Underdog metrics",
-      "points": 9,
+      "points": 10,
       "max": 16
      },
      {
@@ -6169,7 +6169,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "gsax",
-        "rank": 11,
+        "rank": 12,
         "color": "yellow"
        },
        {
@@ -6185,8 +6185,8 @@
         "role": "dog",
         "window": "last5",
         "metric": "gsax",
-        "rank": 21,
-        "color": "yellow"
+        "rank": 23,
+        "color": "green"
        }
       ]
      },
@@ -6210,7 +6210,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "st",
-        "rank": 19,
+        "rank": 18,
         "color": "yellow"
        },
        {
@@ -6287,9 +6287,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV17ANASTL",
-    "fav_prob": 0.565,
-    "bid": 0.56,
-    "ask": 0.57
+    "fav_prob": 0.555,
+    "bid": 0.55,
+    "ask": 0.56
    }
   },
   {
@@ -6304,16 +6304,16 @@
    "favorite": "home",
    "line": {
     "details": "FLA -120",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": -120,
     "ml_away": null,
     "puck_line": -1.5,
-    "total": 6.5,
+    "total": 5.5,
     "fav_price": 0.5455
    },
    "spread": {
     "details": "FLA -120",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": -1.5
    },
    "home": {
@@ -6356,7 +6356,7 @@
       "xgf": 24,
       "xga60": 17,
       "gsax": 7,
-      "st": 11,
+      "st": 10,
       "xgf60": 25
      }
     },
@@ -6369,7 +6369,7 @@
       "pts": 1,
       "opp_pts": 2,
       "extra": true,
-      "opp_power_rank": 11
+      "opp_power_rank": 9
      },
      {
       "game_id": 2026020320,
@@ -6558,7 +6558,7 @@
      "pk": 95.2,
      "ranks": {
       "xgf": 29,
-      "xga60": 6,
+      "xga60": 7,
       "gsax": 1,
       "st": 2,
       "xgf60": 32
@@ -6583,7 +6583,7 @@
       "pts": 1,
       "opp_pts": 0,
       "extra": false,
-      "opp_power_rank": 26
+      "opp_power_rank": 25
      },
      {
       "game_id": 2026020295,
@@ -6656,9 +6656,9 @@
     "is_fav": false,
     "b2b": false,
     "power": {
-     "rank": 7,
-     "own": 13,
-     "avg": 6.67,
+     "rank": 6,
+     "own": 12,
+     "avg": 6.33,
      "espn": 4,
      "nhl_com": 3
     },
@@ -6757,13 +6757,13 @@
       "rule": "Range",
       "name": "Top-7 team vs bottom-7 team (consensus power rank)",
       "pass": false,
-      "detail": "FLA #14 vs EDM #7"
+      "detail": "FLA #14 vs EDM #6"
      },
      {
       "rule": "A",
       "name": "Analysis Score 22+",
       "pass": false,
-      "detail": "Score 14 of 40"
+      "detail": "Score 15 of 40"
      },
      {
       "rule": "Goalie",
@@ -6779,20 +6779,20 @@
      }
     ],
     "fails": [
-     "Not a top-7 vs bottom-7 matchup (FLA #14, EDM #7)"
+     "Not a top-7 vs bottom-7 matchup (FLA #14, EDM #6)"
     ],
     "warnings": [
      "Info: EDM starting its backup goalie (Devon Levi)"
     ],
     "flags": [],
-    "score": 14,
+    "score": 15,
     "max": 40,
     "band": "red",
     "parts": [
      {
       "key": "fav_metrics",
       "label": "Favorite metrics",
-      "points": 3,
+      "points": 4,
       "max": 16
      },
      {
@@ -6863,7 +6863,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "xga60",
-        "rank": 6,
+        "rank": 7,
         "color": "red"
        }
       ]
@@ -7011,8 +7011,8 @@
         "role": "fav",
         "window": "last5",
         "metric": "st",
-        "rank": 11,
-        "color": "yellow"
+        "rank": 10,
+        "color": "green"
        },
        {
         "team": "EDM",
@@ -7050,7 +7050,7 @@
       "fav_metric": "xga60",
       "dog_metric": "xga60",
       "fav_rank": 17,
-      "dog_rank": 6,
+      "dog_rank": 7,
       "counts": true,
       "met": false
      },
@@ -7070,7 +7070,7 @@
       "fav_metric": "xgf60",
       "dog_metric": "xga60",
       "fav_rank": 25,
-      "dog_rank": 6,
+      "dog_rank": 7,
       "counts": false,
       "met": false
      }
@@ -7084,13 +7084,13 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (FLA #14, EDM #7). Jacob Markstrom in goal for FLA (probable). FLA 2-0-1 in its last 3, EDM 3-0-0.",
+   "summary": "Not a top-7 vs bottom-7 matchup (FLA #14, EDM #6). Jacob Markstrom in goal for FLA (probable). FLA 2-0-1 in its last 3, EDM 3-0-0.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV17EDMFLA",
-    "fav_prob": 0.525,
-    "bid": 0.52,
-    "ask": 0.53
+    "fav_prob": 0.535,
+    "bid": 0.53,
+    "ask": 0.54
    }
   },
   {
@@ -7105,7 +7105,7 @@
    "favorite": "away",
    "line": {
     "details": "BUF -125",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": null,
     "ml_away": -125,
     "puck_line": 1.5,
@@ -7114,7 +7114,7 @@
    },
    "spread": {
     "details": "BUF -125",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": 1.5
    },
    "home": {
@@ -7154,10 +7154,10 @@
      "pp": 19.0,
      "pk": 69.2,
      "ranks": {
-      "xgf": 7,
-      "xga60": 5,
-      "gsax": 23,
-      "st": 24,
+      "xgf": 8,
+      "xga60": 6,
+      "gsax": 25,
+      "st": 23,
       "xgf60": 18
      }
     },
@@ -7170,7 +7170,7 @@
       "pts": 2,
       "opp_pts": 5,
       "extra": false,
-      "opp_power_rank": 7
+      "opp_power_rank": 6
      },
      {
       "game_id": 2026020319,
@@ -7190,7 +7190,7 @@
       "pts": 2,
       "opp_pts": 3,
       "extra": true,
-      "opp_power_rank": 7
+      "opp_power_rank": 6
      }
     ],
     "trend_games": [
@@ -7354,10 +7354,10 @@
      "pk": 75.0,
      "ranks": {
       "xgf": 17,
-      "xga60": 31,
+      "xga60": 30,
       "gsax": 27,
-      "st": 26,
-      "xgf60": 4
+      "st": 27,
+      "xgf60": 5
      }
     },
     "last3_games": [
@@ -7369,7 +7369,7 @@
       "pts": 0,
       "opp_pts": 2,
       "extra": false,
-      "opp_power_rank": 11
+      "opp_power_rank": 9
      },
      {
       "game_id": 2026020305,
@@ -7453,8 +7453,8 @@
     "b2b": false,
     "power": {
      "rank": 20,
-     "own": 20,
-     "avg": 19.5,
+     "own": 21,
+     "avg": 20.0,
      "espn": 19,
      "nhl_com": null
     },
@@ -7629,7 +7629,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "xgf60",
-        "rank": 4,
+        "rank": 5,
         "color": "green"
        },
        {
@@ -7645,8 +7645,8 @@
         "role": "dog",
         "window": "last5",
         "metric": "xga60",
-        "rank": 5,
-        "color": "deep-red"
+        "rank": 6,
+        "color": "red"
        }
       ]
      },
@@ -7670,7 +7670,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "xga60",
-        "rank": 31,
+        "rank": 30,
         "color": "red"
        },
        {
@@ -7727,7 +7727,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "xgf",
-        "rank": 7,
+        "rank": 8,
         "color": "red"
        }
       ]
@@ -7768,7 +7768,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "gsax",
-        "rank": 23,
+        "rank": 25,
         "color": "green"
        }
       ]
@@ -7793,7 +7793,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "st",
-        "rank": 26,
+        "rank": 27,
         "color": "red"
        },
        {
@@ -7809,7 +7809,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "st",
-        "rank": 24,
+        "rank": 23,
         "color": "green"
        }
       ]
@@ -7821,7 +7821,7 @@
       "label": "Offense vs offense",
       "fav_metric": "xgf60",
       "dog_metric": "xgf60",
-      "fav_rank": 4,
+      "fav_rank": 5,
       "dog_rank": 18,
       "counts": true,
       "met": false
@@ -7831,8 +7831,8 @@
       "label": "Defense vs defense",
       "fav_metric": "xga60",
       "dog_metric": "xga60",
-      "fav_rank": 31,
-      "dog_rank": 5,
+      "fav_rank": 30,
+      "dog_rank": 6,
       "counts": true,
       "met": false
      },
@@ -7841,7 +7841,7 @@
       "label": "Defense vs offense",
       "fav_metric": "xga60",
       "dog_metric": "xgf60",
-      "fav_rank": 31,
+      "fav_rank": 30,
       "dog_rank": 18,
       "counts": true,
       "met": false
@@ -7851,8 +7851,8 @@
       "label": "Offense vs defense",
       "fav_metric": "xgf60",
       "dog_metric": "xga60",
-      "fav_rank": 4,
-      "dog_rank": 5,
+      "fav_rank": 5,
+      "dog_rank": 6,
       "counts": false,
       "met": false
      }
@@ -7870,8 +7870,8 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV17BUFPHI",
-    "fav_prob": 0.54,
-    "bid": 0.53,
+    "fav_prob": 0.545,
+    "bid": 0.54,
     "ask": 0.55
    }
   },
@@ -7887,7 +7887,7 @@
    "favorite": "home",
    "line": {
     "details": "VGK -135",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "ml_home": -135,
     "ml_away": null,
     "puck_line": -1.5,
@@ -7896,7 +7896,7 @@
    },
    "spread": {
     "details": "VGK -135",
-    "provider": "DraftKings",
+    "provider": "Draft Kings",
     "puck_line": -1.5
    },
    "home": {
@@ -7923,7 +7923,7 @@
       "xga60": 9,
       "gsax": 14,
       "st": 12,
-      "xgf60": 11
+      "xgf60": 9
      }
     },
     "last5": {
@@ -7938,7 +7938,7 @@
      "ranks": {
       "xgf": 19,
       "xga60": 24,
-      "gsax": 4,
+      "gsax": 5,
       "st": 6,
       "xgf60": 11
      }
@@ -8035,7 +8035,7 @@
     "is_fav": true,
     "b2b": false,
     "power": {
-     "rank": 6,
+     "rank": 7,
      "own": 6,
      "avg": 6.67,
      "espn": 7,
@@ -8123,11 +8123,11 @@
      "pp": 26.7,
      "pk": 83.3,
      "ranks": {
-      "xgf": 9,
+      "xgf": 10,
       "xga60": 14,
-      "gsax": 12,
+      "gsax": 13,
       "st": 9,
-      "xgf60": 6
+      "xgf60": 7
      }
     },
     "last3_games": [
@@ -8222,9 +8222,9 @@
     "is_fav": false,
     "b2b": false,
     "power": {
-     "rank": 11,
-     "own": 9,
-     "avg": 9.33,
+     "rank": 9,
+     "own": 8,
+     "avg": 9.0,
      "espn": 10,
      "nhl_com": 9
     },
@@ -8291,13 +8291,6 @@
       "status": "Injured Reserve",
       "date": "2026-10-24T18:32Z",
       "comment": "Back was placed on long-term injured reserve on Saturday."
-     },
-     {
-      "name": "Matt Duchene",
-      "last": "Duchene",
-      "status": "Injured Reserve",
-      "date": "2026-10-12T16:46Z",
-      "comment": "Duchene will be out for approximately three months after undergoing surgery to repair a core injury, the team announced Monday."
      }
     ],
     "injuries_known": true,
@@ -8327,7 +8320,7 @@
       "rule": "Range",
       "name": "Top-7 team vs bottom-7 team (consensus power rank)",
       "pass": false,
-      "detail": "VGK #6 vs DAL #11"
+      "detail": "VGK #7 vs DAL #9"
      },
      {
       "rule": "A",
@@ -8349,7 +8342,7 @@
      }
     ],
     "fails": [
-     "Not a top-7 vs bottom-7 matchup (VGK #6, DAL #11)"
+     "Not a top-7 vs bottom-7 matchup (VGK #7, DAL #9)"
     ],
     "warnings": [
      "VGK key skater out: Noah Hanifin"
@@ -8411,8 +8404,8 @@
         "role": "fav",
         "window": "season",
         "metric": "xgf60",
-        "rank": 11,
-        "color": "yellow"
+        "rank": 9,
+        "color": "green"
        },
        {
         "team": "VGK",
@@ -8476,7 +8469,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "xgf60",
-        "rank": 6,
+        "rank": 7,
         "color": "red"
        }
       ]
@@ -8517,7 +8510,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "xgf",
-        "rank": 9,
+        "rank": 10,
         "color": "red"
        }
       ]
@@ -8542,7 +8535,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "gsax",
-        "rank": 4,
+        "rank": 5,
         "color": "green"
        },
        {
@@ -8558,7 +8551,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "gsax",
-        "rank": 12,
+        "rank": 13,
         "color": "yellow"
        }
       ]
@@ -8612,7 +8605,7 @@
       "fav_metric": "xgf60",
       "dog_metric": "xgf60",
       "fav_rank": 11,
-      "dog_rank": 6,
+      "dog_rank": 7,
       "counts": true,
       "met": false
      },
@@ -8632,7 +8625,7 @@
       "fav_metric": "xga60",
       "dog_metric": "xgf60",
       "fav_rank": 24,
-      "dog_rank": 6,
+      "dog_rank": 7,
       "counts": true,
       "met": false
      },
@@ -8656,13 +8649,13 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (VGK #6, DAL #11). VGK start their backup goalie, Adin Hill (regular: C. Hart). VGK 1-1-1 in its last 3, DAL 2-1-0.",
+   "summary": "Not a top-7 vs bottom-7 matchup (VGK #7, DAL #9). VGK start their backup goalie, Adin Hill (regular: C. Hart). VGK 1-1-1 in its last 3, DAL 2-1-0.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV17DALVGK",
-    "fav_prob": 0.55,
+    "fav_prob": 0.545,
     "bid": 0.54,
-    "ask": 0.56
+    "ask": 0.55
    }
   }
  ],
@@ -8675,7 +8668,7 @@
   "in_range": 1,
   "qualified": 0,
   "watch": 0,
-  "built_label": "Mon Nov 16, 11:00 PM PT"
+  "built_label": "Tue Nov 17, 6:00 AM PT"
  },
  "power_table": [
   {
@@ -8719,36 +8712,36 @@
    "nhl_com": 8
   },
   {
-   "abbr": "VGK",
+   "abbr": "EDM",
    "rank": 6,
+   "own": 12,
+   "avg": 6.33,
+   "espn": 4,
+   "nhl_com": 3
+  },
+  {
+   "abbr": "VGK",
+   "rank": 7,
    "own": 6,
    "avg": 6.67,
    "espn": 7,
    "nhl_com": 7
   },
   {
-   "abbr": "EDM",
-   "rank": 7,
-   "own": 13,
-   "avg": 6.67,
-   "espn": 4,
-   "nhl_com": 3
-  },
-  {
    "abbr": "MTL",
    "rank": 8,
-   "own": 11,
-   "avg": 8.0,
+   "own": 13,
+   "avg": 8.67,
    "espn": 8,
    "nhl_com": 5
   },
   {
-   "abbr": "COL",
+   "abbr": "DAL",
    "rank": 9,
    "own": 8,
    "avg": 9.0,
-   "espn": 9,
-   "nhl_com": 10
+   "espn": 10,
+   "nhl_com": 9
   },
   {
    "abbr": "OTT",
@@ -8759,12 +8752,12 @@
    "nhl_com": 11
   },
   {
-   "abbr": "DAL",
+   "abbr": "COL",
    "rank": 11,
    "own": 9,
    "avg": 9.33,
-   "espn": 10,
-   "nhl_com": 9
+   "espn": 9,
+   "nhl_com": 10
   },
   {
    "abbr": "NSH",
@@ -8777,8 +8770,8 @@
   {
    "abbr": "UTA",
    "rank": 13,
-   "own": 10,
-   "avg": 13.33,
+   "own": 11,
+   "avg": 13.67,
    "espn": 15,
    "nhl_com": 15
   },
@@ -8791,20 +8784,20 @@
    "nhl_com": 13
   },
   {
-   "abbr": "WSH",
+   "abbr": "NYR",
    "rank": 15,
+   "own": 10,
+   "avg": 14.0,
+   "espn": 18,
+   "nhl_com": null
+  },
+  {
+   "abbr": "WSH",
+   "rank": 16,
    "own": 15,
    "avg": 14.0,
    "espn": 13,
    "nhl_com": 14
-  },
-  {
-   "abbr": "NYR",
-   "rank": 16,
-   "own": 12,
-   "avg": 15.0,
-   "espn": 18,
-   "nhl_com": null
   },
   {
    "abbr": "ANA",
@@ -8833,8 +8826,8 @@
   {
    "abbr": "BUF",
    "rank": 20,
-   "own": 20,
-   "avg": 19.5,
+   "own": 21,
+   "avg": 20.0,
    "espn": 19,
    "nhl_com": null
   },
@@ -8849,8 +8842,8 @@
   {
    "abbr": "WPG",
    "rank": 22,
-   "own": 21,
-   "avg": 21.5,
+   "own": 20,
+   "avg": 21.0,
    "espn": 22,
    "nhl_com": null
   },
@@ -8871,35 +8864,35 @@
    "nhl_com": null
   },
   {
-   "abbr": "CGY",
-   "rank": 25,
-   "own": 25,
-   "avg": 25.0,
-   "espn": 25,
-   "nhl_com": null
-  },
-  {
    "abbr": "TOR",
-   "rank": 26,
+   "rank": 25,
    "own": 27,
    "avg": 25.0,
    "espn": 23,
    "nhl_com": null
   },
   {
-   "abbr": "SJS",
-   "rank": 27,
-   "own": 28,
-   "avg": 27.0,
-   "espn": 26,
+   "abbr": "CGY",
+   "rank": 26,
+   "own": 26,
+   "avg": 25.5,
+   "espn": 25,
    "nhl_com": null
   },
   {
    "abbr": "LAK",
-   "rank": 28,
-   "own": 26,
-   "avg": 27.5,
+   "rank": 27,
+   "own": 25,
+   "avg": 27.0,
    "espn": 29,
+   "nhl_com": null
+  },
+  {
+   "abbr": "SJS",
+   "rank": 28,
+   "own": 28,
+   "avg": 27.0,
+   "espn": 26,
    "nhl_com": null
   },
   {
