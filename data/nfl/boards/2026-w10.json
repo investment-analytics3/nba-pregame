@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 10,
- "built_at": "2026-11-16T15:00:50-08:00",
- "built_label": "Mon Nov 16, 3:00 PM PT",
+ "built_at": "2026-11-16T16:00:50-08:00",
+ "built_label": "Mon Nov 16, 4:00 PM PT",
  "games": [
   {
    "id": "401873065",
@@ -104,36 +104,33 @@
     "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
-    "qb_out": [
-     "Tyler Huntley"
-    ],
-    "qb_active": false,
-    "qb_reset": "Tyler Huntley out",
+    "qb_out": [],
+    "qb_active": true,
     "injury_list": [
      {
-      "name": "Adam Randall",
-      "pos": "RB",
-      "status": "Injured Reserve"
+      "name": "Aeneas Peebles",
+      "pos": "DT",
+      "status": "Out"
+     },
+     {
+      "name": "Chandler Rivers",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "name": "Elijah Sarratt",
+      "pos": "WR",
+      "status": "Out"
+     },
+     {
+      "name": "Kedon Slovis",
+      "pos": "QB",
+      "status": "Out"
      },
      {
       "name": "Jaylinn Hawkins",
       "pos": "S",
       "status": "Out"
-     },
-     {
-      "name": "Lamar Jackson",
-      "pos": "QB",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Adisa Isaac",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Tyler Huntley",
-      "pos": "QB",
-      "status": "Injured Reserve"
      }
     ],
     "power": {
@@ -211,7 +208,9 @@
      "rank": 34
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Justin Eboigbe"
+    ],
     "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -219,19 +218,14 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Denzel Perryman",
-      "pos": "LB",
-      "status": "Questionable"
+      "name": "Isas Waxter",
+      "pos": "CB",
+      "status": "Out"
      },
      {
-      "name": "Branson Taylor",
-      "pos": "G",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Brenen Thompson",
-      "pos": "WR",
-      "status": "Doubtful"
+      "name": "Kendall Williamson",
+      "pos": "S",
+      "status": "Out"
      },
      {
       "name": "Ladd McConkey",
@@ -239,9 +233,14 @@
       "status": "Out"
      },
      {
-      "name": "Trey Pipkins III",
-      "pos": "OT",
-      "status": "Injured Reserve"
+      "name": "Bud Dupree",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
+      "name": "Justin Eboigbe",
+      "pos": "DT",
+      "status": "Out"
      }
     ],
     "power": {
@@ -266,7 +265,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 16 of 40"
+      "detail": "Score 18 of 40"
      },
      {
       "rule": "B",
@@ -315,18 +314,20 @@
     ],
     "qualifiers": [],
     "fails": [
-     "BAL key starter out: Jaylinn Hawkins"
+     "BAL key starter out: Jaylinn Hawkins",
+     "Would be on the watch list otherwise (score 18)"
     ],
     "failed": [
-     "BAL key starter out: Jaylinn Hawkins"
+     "BAL key starter out: Jaylinn Hawkins",
+     "Would be on the watch list otherwise (score 18)"
     ],
     "hero": {
-     "score": 16,
-     "band": "red",
+     "score": 18,
+     "band": "yellow",
      "parts": {
       "fav_strength": 0,
       "dog_weakness": 14,
-      "health": 1,
+      "health": 3,
       "home": 1,
       "rest": 0,
       "form": 0
@@ -342,10 +343,6 @@
      "adjusted_recent_gap": 0.168
     },
     "flags": [
-     {
-      "level": "red",
-      "text": "Favorite QB change (Tyler Huntley out): call capped at Lean"
-     },
      {
       "level": "yellow",
       "text": "Line crossed key number 3"
@@ -971,6 +968,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Aidan Hutchinson",
+      "pos": "DE",
+      "status": "Out"
+     },
+     {
       "name": "D.J. Reed",
       "pos": "CB",
       "status": "Out"
@@ -978,11 +980,6 @@
      {
       "name": "Cade Mays",
       "pos": "C",
-      "status": "Out"
-     },
-     {
-      "name": "Aidan Hutchinson",
-      "pos": "DE",
       "status": "Out"
      },
      {
@@ -4617,17 +4614,17 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Dylan McMahon",
+      "pos": "C",
+      "status": "Injured Reserve"
+     },
+     {
       "name": "Steve Avila",
       "pos": "G",
       "status": "Out"
      },
      {
       "name": "Coleman Shelton",
-      "pos": "C",
-      "status": "Questionable"
-     },
-     {
-      "name": "Dylan McMahon",
       "pos": "C",
       "status": "Questionable"
      },
@@ -6229,6 +6226,6 @@
   "watch": 0,
   "green": 0,
   "edge_clears": 1,
-  "built_label": "Mon Nov 16, 3:00 PM PT"
+  "built_label": "Mon Nov 16, 4:00 PM PT"
  }
 }
