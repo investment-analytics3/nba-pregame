@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 10,
- "built_at": "2026-11-16T16:00:50-08:00",
- "built_label": "Mon Nov 16, 4:00 PM PT",
+ "built_at": "2026-11-16T17:00:52-08:00",
+ "built_label": "Mon Nov 16, 5:00 PM PT",
  "games": [
   {
    "id": "401873065",
@@ -20,7 +20,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -2.5,
    "total": 39.5,
    "total_open": 48.5,
@@ -108,6 +108,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Kedon Slovis",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
       "name": "Aeneas Peebles",
       "pos": "DT",
       "status": "Out"
@@ -120,11 +125,6 @@
      {
       "name": "Elijah Sarratt",
       "pos": "WR",
-      "status": "Out"
-     },
-     {
-      "name": "Kedon Slovis",
-      "pos": "QB",
       "status": "Out"
      },
      {
@@ -218,6 +218,16 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Brenen Thompson",
+      "pos": "WR",
+      "status": "Out"
+     },
+     {
+      "name": "Justin Eboigbe",
+      "pos": "DT",
+      "status": "Out"
+     },
+     {
       "name": "Isas Waxter",
       "pos": "CB",
       "status": "Out"
@@ -230,16 +240,6 @@
      {
       "name": "Ladd McConkey",
       "pos": "WR",
-      "status": "Out"
-     },
-     {
-      "name": "Bud Dupree",
-      "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "name": "Justin Eboigbe",
-      "pos": "DT",
       "status": "Out"
      }
     ],
@@ -447,7 +447,7 @@
     "home": 21,
     "away": 24
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -1.5,
    "total": 40.5,
    "total_open": 47.5,
@@ -639,15 +639,18 @@
      "Lucas Patrick"
     ],
     "key_questionable": [],
-    "key_long_term": [
-     "Daron Payne"
-    ],
+    "key_long_term": [],
     "interior_ol_out": [
      "Lucas Patrick"
     ],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Laremy Tunsil",
+      "pos": "OT",
+      "status": "Injured Reserve"
+     },
      {
       "name": "Jacory Croskey-Merritt",
       "pos": "RB",
@@ -666,11 +669,6 @@
      {
       "name": "Dyami Brown",
       "pos": "WR",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Daron Payne",
-      "pos": "DT",
       "status": "Injured Reserve"
      }
     ],
@@ -877,7 +875,7 @@
     "home": 35,
     "away": 10
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -1.5,
    "total": 50.5,
    "total_open": 48.5,
@@ -1305,7 +1303,7 @@
     "home": 13,
     "away": 35
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -4.5,
    "total": 47.5,
    "total_open": 45.5,
@@ -1734,7 +1732,7 @@
     "home": 27,
     "away": 24
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -4.5,
    "total": 40.5,
    "total_open": 38.5,
@@ -1923,24 +1921,27 @@
     "injuries_known": true,
     "key_out": [
      "Danielle Hunter",
-     "Keylan Rutledge"
+     "Woody Marks"
     ],
     "key_questionable": [],
     "key_long_term": [],
-    "interior_ol_out": [
-     "Keylan Rutledge"
-    ],
+    "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Wyatt Teller",
-      "pos": "G",
-      "status": "Out"
+      "name": "Jake Hummel",
+      "pos": "LB",
+      "status": "Questionable"
      },
      {
-      "name": "Keylan Rutledge",
-      "pos": "G",
+      "name": "Woody Marks",
+      "pos": "RB",
+      "status": "Doubtful"
+     },
+     {
+      "name": "Marvin Harrison Jr.",
+      "pos": "WR",
       "status": "Out"
      },
      {
@@ -1951,11 +1952,6 @@
      {
       "name": "Brevin Jordan",
       "pos": "TE",
-      "status": "Out"
-     },
-     {
-      "name": "Marvin Harrison Jr.",
-      "pos": "WR",
       "status": "Out"
      }
     ],
@@ -1980,7 +1976,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 17 of 40"
+      "detail": "Score 18 of 40"
      },
      {
       "rule": "B",
@@ -1992,7 +1988,7 @@
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
       "pass": false,
-      "detail": "HOU key starter out: Danielle Hunter, Keylan Rutledge"
+      "detail": "HOU key starter out: Danielle Hunter, Woody Marks"
      },
      {
       "rule": "Power",
@@ -2031,18 +2027,20 @@
      "off_epa"
     ],
     "fails": [
-     "HOU key starter out: Danielle Hunter, Keylan Rutledge"
+     "HOU key starter out: Danielle Hunter, Woody Marks",
+     "Would be on the watch list otherwise (score 18)"
     ],
     "failed": [
-     "HOU key starter out: Danielle Hunter, Keylan Rutledge"
+     "HOU key starter out: Danielle Hunter, Woody Marks",
+     "Would be on the watch list otherwise (score 18)"
     ],
     "hero": {
-     "score": 17,
-     "band": "red",
+     "score": 18,
+     "band": "yellow",
      "parts": {
       "fav_strength": 4,
       "dog_weakness": 10,
-      "health": 2,
+      "health": 3,
       "home": 0,
       "rest": 0,
       "form": 1
@@ -2057,12 +2055,7 @@
      "adjusted_gap": 0.041,
      "adjusted_recent_gap": 0.066
     },
-    "flags": [
-     {
-      "level": "yellow",
-      "text": "Favorite interior OL out: Keylan Rutledge"
-     }
-    ],
+    "flags": [],
     "under": {
      "passes": false,
      "ranks": [
@@ -2162,7 +2155,7 @@
     "home": 10,
     "away": 30
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -4.5,
    "total": 42.5,
    "total_open": 45.5,
@@ -2243,7 +2236,9 @@
     "key_out": [
      "Sean Rhyan"
     ],
-    "key_questionable": [],
+    "key_questionable": [
+     "Brandon Cisse"
+    ],
     "key_long_term": [],
     "interior_ol_out": [
      "Sean Rhyan"
@@ -2251,6 +2246,16 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Kevin Zeitler",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "name": "Brandon Cisse",
+      "pos": "CB",
+      "status": "Questionable"
+     },
      {
       "name": "Skyy Moore",
       "pos": "WR",
@@ -2262,18 +2267,8 @@
       "status": "Out"
      },
      {
-      "name": "Kevin Zeitler",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
       "name": "Sean Rhyan",
       "pos": "G",
-      "status": "Out"
-     },
-     {
-      "name": "Josh Jacobs",
-      "pos": "RB",
       "status": "Out"
      }
     ],
@@ -2509,6 +2504,10 @@
      },
      {
       "level": "yellow",
+      "text": "Favorite questionable: Brandon Cisse"
+     },
+     {
+      "level": "yellow",
       "text": "Underdog questionable: Andrew Van Ginkel"
      }
     ],
@@ -2611,7 +2610,7 @@
     "home": 24,
     "away": 22
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -6.5,
    "total": 37.5,
    "total_open": 47.5,
@@ -2702,28 +2701,28 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Charvarius Ward",
+      "name": "Sauce Gardner",
       "pos": "CB",
       "status": "Questionable"
      },
      {
-      "name": "Sauce Gardner",
+      "name": "Will Mallory",
+      "pos": "TE",
+      "status": "Out"
+     },
+     {
+      "name": "Anthony Gould",
+      "pos": "WR",
+      "status": "Questionable"
+     },
+     {
+      "name": "Charvarius Ward",
       "pos": "CB",
       "status": "Questionable"
      },
      {
       "name": "Jalen Travis",
       "pos": "OT",
-      "status": "Out"
-     },
-     {
-      "name": "Luke Rhodes",
-      "pos": "LS",
-      "status": "Out"
-     },
-     {
-      "name": "Jerry Tillery",
-      "pos": "DT",
       "status": "Out"
      }
     ],
@@ -3057,7 +3056,7 @@
     "home": 17,
     "away": 20
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": 1.5,
    "total": 48.5,
    "total_open": 43.5,
@@ -3151,6 +3150,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Asim Richards",
+      "pos": "OT",
+      "status": "Out"
+     },
+     {
       "name": "Erik McCoy",
       "pos": "C",
       "status": "Out"
@@ -3163,11 +3167,6 @@
      {
       "name": "CJ Donaldson",
       "pos": "RB",
-      "status": "Out"
-     },
-     {
-      "name": "Asim Richards",
-      "pos": "OT",
       "status": "Out"
      },
      {
@@ -3481,7 +3480,7 @@
     "home": 12,
     "away": 31
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -7.0,
    "total": 50.5,
    "total_open": 46.5,
@@ -3572,6 +3571,16 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Dylan Parham",
+      "pos": "G",
+      "status": "Questionable"
+     },
+     {
+      "name": "Geno Smith",
+      "pos": "QB",
+      "status": "Questionable"
+     },
+     {
       "name": "Trevin Wallace",
       "pos": "LB",
       "status": "Out"
@@ -3584,16 +3593,6 @@
      {
       "name": "Omar Cooper Jr.",
       "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "name": "Geno Smith",
-      "pos": "QB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Dylan Parham",
-      "pos": "G",
       "status": "Questionable"
      }
     ],
@@ -3916,7 +3915,7 @@
     "home": 23,
     "away": 40
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -2.5,
    "total": 45.5,
    "total_open": 45.5,
@@ -4408,7 +4407,7 @@
     "home": 6,
     "away": 34
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -10.5,
    "total": 38.5,
    "total_open": 47.5,
@@ -4499,6 +4498,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Jordan Burch",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
       "name": "Andrew Wingard",
       "pos": "S",
       "status": "Out"
@@ -4511,11 +4515,6 @@
      {
       "name": "Hjalte Froholdt",
       "pos": "C",
-      "status": "Out"
-     },
-     {
-      "name": "Jordan Burch",
-      "pos": "LB",
       "status": "Out"
      },
      {
@@ -4599,20 +4598,25 @@
     },
     "injuries_known": true,
     "key_out": [
+     "Coleman Shelton",
      "Steve Avila"
     ],
-    "key_questionable": [
-     "Coleman Shelton"
-    ],
+    "key_questionable": [],
     "key_long_term": [
      "Davante Adams"
     ],
     "interior_ol_out": [
+     "Coleman Shelton",
      "Steve Avila"
     ],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Coleman Shelton",
+      "pos": "C",
+      "status": "Doubtful"
+     },
      {
       "name": "Dylan McMahon",
       "pos": "C",
@@ -4622,11 +4626,6 @@
       "name": "Steve Avila",
       "pos": "G",
       "status": "Out"
-     },
-     {
-      "name": "Coleman Shelton",
-      "pos": "C",
-      "status": "Questionable"
      },
      {
       "name": "Joe Cardona",
@@ -4672,7 +4671,7 @@
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
       "pass": false,
-      "detail": "LAR key starter out: Steve Avila (on injured reserve, not counted: Davante Adams)"
+      "detail": "LAR key starter out: Coleman Shelton, Steve Avila (on injured reserve, not counted: Davante Adams)"
      },
      {
       "rule": "Power",
@@ -4713,11 +4712,11 @@
      "def_sr"
     ],
     "fails": [
-     "LAR key starter out: Steve Avila",
+     "LAR key starter out: Coleman Shelton, Steve Avila",
      "Would be on the watch list otherwise (score 25)"
     ],
     "failed": [
-     "LAR key starter out: Steve Avila",
+     "LAR key starter out: Coleman Shelton, Steve Avila",
      "Would be on the watch list otherwise (score 25)"
     ],
     "hero": {
@@ -4744,15 +4743,11 @@
     "flags": [
      {
       "level": "yellow",
-      "text": "Favorite interior OL out: Steve Avila"
+      "text": "Favorite interior OL out: Coleman Shelton, Steve Avila"
      },
      {
       "level": "yellow",
       "text": "Line crossed key number 10"
-     },
-     {
-      "level": "yellow",
-      "text": "Favorite questionable: Coleman Shelton"
      }
     ],
     "under": {
@@ -4854,7 +4849,7 @@
     "home": 13,
     "away": 21
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -7.0,
    "total": 40.5,
    "total_open": 43.5,
@@ -5287,7 +5282,7 @@
     "home": 40,
     "away": 46
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": 1.5,
    "total": 55.5,
    "total_open": 52.5,
@@ -5730,7 +5725,7 @@
     "home": 38,
     "away": 18
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -3.5,
    "total": 49.5,
    "total_open": 47.5,
@@ -5929,6 +5924,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Mason McCormick",
+      "pos": "G",
+      "status": "Doubtful"
+     },
+     {
       "name": "Michael Pittman Jr.",
       "pos": "WR",
       "status": "Injured Reserve"
@@ -5937,11 +5937,6 @@
       "name": "Roman Wilson",
       "pos": "WR",
       "status": "Injured Reserve"
-     },
-     {
-      "name": "Mason McCormick",
-      "pos": "G",
-      "status": "Doubtful"
      },
      {
       "name": "DeShon Elliott",
@@ -6226,6 +6221,6 @@
   "watch": 0,
   "green": 0,
   "edge_clears": 1,
-  "built_label": "Mon Nov 16, 4:00 PM PT"
+  "built_label": "Mon Nov 16, 5:00 PM PT"
  }
 }
