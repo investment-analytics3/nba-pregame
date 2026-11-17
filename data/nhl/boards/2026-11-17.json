@@ -3,8 +3,8 @@
  "date_label": "Tuesday, November 17",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-17T15:01:25-08:00",
- "built_label": "Tue Nov 17, 3:01 PM PT",
+ "built_at": "2026-11-17T15:15:47-08:00",
+ "built_label": "Tue Nov 17, 3:15 PM PT",
  "metrics_through": "2026-11-16",
  "metrics_through_label": "Nov 16",
  "max": 40,
@@ -35,7 +35,7 @@
    "favorite": "home",
    "line": {
     "details": "TB -162",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -162,
     "ml_away": null,
     "puck_line": -1.5,
@@ -44,7 +44,7 @@
    },
    "spread": {
     "details": "TB -162",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -193,7 +193,7 @@
      "name": "Andrei Vasilevskiy",
      "last": "Vasilevskiy",
      "espn_id": "2976847",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "regular",
     "regular_goalie_name": "A. Vasilevskiy",
@@ -219,6 +219,13 @@
     ],
     "injuries": [
      {
+      "name": "Brandon Hagel",
+      "last": "Hagel",
+      "status": "Out",
+      "date": "2026-11-17T23:14Z",
+      "comment": "out"
+     },
+     {
       "name": "Anthony Cirelli",
       "last": "Cirelli",
       "status": "Day-To-Day",
@@ -241,7 +248,9 @@
      }
     ],
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Brandon Hagel"
+    ],
     "key_questionable": [],
     "key_long_term": [],
     "spread_text": "-162"
@@ -392,7 +401,7 @@
      "name": "Logan Thompson",
      "last": "Thompson",
      "espn_id": "4272888",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "regular",
     "regular_goalie_name": "L. Thompson",
@@ -465,13 +474,13 @@
       "rule": "A",
       "name": "Analysis Score 22+",
       "pass": true,
-      "detail": "Score 23 of 40"
+      "detail": "Score 22 of 40"
      },
      {
       "rule": "Goalie",
       "name": "TBL's regular goalie starts",
       "pass": true,
-      "detail": "Andrei Vasilevskiy (probable)"
+      "detail": "Andrei Vasilevskiy (confirmed)"
      },
      {
       "rule": "Matchup",
@@ -483,9 +492,11 @@
     "fails": [
      "Not a top-7 vs bottom-7 matchup (TBL #5, WSH #16)"
     ],
-    "warnings": [],
+    "warnings": [
+     "TBL key skater out: Brandon Hagel"
+    ],
     "flags": [],
-    "score": 23,
+    "score": 22,
     "max": 40,
     "band": "green",
     "parts": [
@@ -504,7 +515,7 @@
      {
       "key": "goalies",
       "label": "Goalies + health",
-      "points": 3,
+      "points": 2,
       "max": 4
      },
      {
@@ -784,13 +795,13 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (TBL #5, WSH #16). Andrei Vasilevskiy in goal for TBL (probable). Biggest edge over the last 5: GSAx/gm (TBL #15, WSH #31). TBL 2-1-0 in its last 3, WSH 1-2-0.",
+   "summary": "Not a top-7 vs bottom-7 matchup (TBL #5, WSH #16). Andrei Vasilevskiy in goal for TBL (confirmed). Biggest edge over the last 5: GSAx/gm (TBL #15, WSH #31). TBL 2-1-0 in its last 3, WSH 1-2-0.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV17WSHTB",
-    "fav_prob": 0.615,
-    "bid": 0.61,
-    "ask": 0.62
+    "fav_prob": 0.605,
+    "bid": 0.6,
+    "ask": 0.61
    }
   },
   {
@@ -805,7 +816,7 @@
    "favorite": "home",
    "line": {
     "details": "SJ -130",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -130,
     "ml_away": null,
     "puck_line": -1.5,
@@ -814,7 +825,7 @@
    },
    "spread": {
     "details": "SJ -130",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -2368,7 +2379,7 @@
    "favorite": "away",
    "line": {
     "details": "TOR -142",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": null,
     "ml_away": -142,
     "puck_line": 1.5,
@@ -2377,7 +2388,7 @@
    },
    "spread": {
     "details": "TOR -142",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": 1.5
    },
    "home": {
@@ -3154,8 +3165,8 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV17TORCHI",
-    "fav_prob": 0.56,
-    "bid": 0.55,
+    "fav_prob": 0.565,
+    "bid": 0.56,
     "ask": 0.57
    }
   },
@@ -3930,7 +3941,7 @@
    "favorite": "home",
    "line": {
     "details": "MIN -205",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -205,
     "ml_away": null,
     "puck_line": -1.5,
@@ -3939,7 +3950,7 @@
    },
    "spread": {
     "details": "MIN -205",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -6301,7 +6312,7 @@
    "favorite": "home",
    "line": {
     "details": "STL -130",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -130,
     "ml_away": null,
     "puck_line": -1.5,
@@ -6310,7 +6321,7 @@
    },
    "spread": {
     "details": "STL -130",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -7856,7 +7867,7 @@
    "favorite": "home",
    "line": {
     "details": "VGK -125",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -125,
     "ml_away": null,
     "puck_line": -1.5,
@@ -7865,7 +7876,7 @@
    },
    "spread": {
     "details": "VGK -125",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -8253,6 +8264,13 @@
       "status": "Injured Reserve",
       "date": "2026-10-24T18:32Z",
       "comment": "Back was placed on long-term injured reserve on Saturday."
+     },
+     {
+      "name": "Matt Duchene",
+      "last": "Duchene",
+      "status": "Injured Reserve",
+      "date": "2026-10-12T16:46Z",
+      "comment": "Duchene will be out for approximately three months after undergoing surgery to repair a core injury, the team announced Monday."
      }
     ],
     "injuries_known": true,
@@ -8628,7 +8646,7 @@
   "in_range": 1,
   "qualified": 0,
   "watch": 0,
-  "built_label": "Tue Nov 17, 3:01 PM PT"
+  "built_label": "Tue Nov 17, 3:15 PM PT"
  },
  "power_table": [
   {
