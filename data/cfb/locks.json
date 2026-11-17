@@ -5735,5 +5735,223 @@
     "away": 0
    }
   }
+ },
+ "401866464": {
+  "at": "2026-11-17T15:01:22-08:00",
+  "week": 12,
+  "game": {
+   "id": "401866464",
+   "kick_utc": "2026-11-18T00:00:00+00:00",
+   "kick_pt": "Tue 4:00 PM PT",
+   "day_et": "2026-11-17",
+   "state": "pre",
+   "detail": "11/17 - 7:00 PM EST",
+   "neutral": false,
+   "venue": "Peden Stadium",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -10.0,
+   "open_spread": -9.5,
+   "line_source": "Draft Kings",
+   "total": 50.5,
+   "fav_ml": -410.0,
+   "movement": 0.5,
+   "home": {
+    "code": 195,
+    "abbr": "OHIO",
+    "name": "Ohio",
+    "display": "Ohio Bobcats",
+    "season": {
+     "off_epa": 0.0555,
+     "off_sr": 0.448,
+     "def_epa": 0.0407,
+     "def_sr": 0.4315,
+     "games": 10,
+     "ranks": {
+      "off_epa": 75,
+      "off_sr": 55,
+      "def_epa": 78,
+      "def_sr": 71
+     }
+    },
+    "last3": {
+     "off_epa": -0.1445,
+     "off_sr": 0.3812,
+     "def_epa": -0.0685,
+     "def_sr": 0.4236,
+     "games": 3,
+     "ranks": {
+      "off_epa": 120,
+      "off_sr": 112,
+      "def_epa": 34,
+      "def_sr": 66
+     }
+    },
+    "net": 0.0148,
+    "net_rank": 78,
+    "record": "7-3",
+    "last2_results": [
+     "W",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "L"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Nick Poulos",
+     "dropbacks": 169,
+     "epa_db": -0.003,
+     "rank": 95
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 92,
+     "fpi": 104,
+     "own_net": 78
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.849
+   },
+   "away": {
+    "code": 2050,
+    "abbr": "BALL",
+    "name": "Ball State",
+    "display": "Ball State Cardinals",
+    "season": {
+     "off_epa": 0.0224,
+     "off_sr": 0.4199,
+     "def_epa": 0.1529,
+     "def_sr": 0.4443,
+     "games": 10,
+     "ranks": {
+      "off_epa": 87,
+      "off_sr": 105,
+      "def_epa": 122,
+      "def_sr": 89
+     }
+    },
+    "last3": {
+     "off_epa": 0.0372,
+     "off_sr": 0.4461,
+     "def_epa": 0.055,
+     "def_sr": 0.4054,
+     "games": 3,
+     "ranks": {
+      "off_epa": 63,
+      "off_sr": 51,
+      "def_epa": 81,
+      "def_sr": 44
+     }
+    },
+    "net": -0.1304,
+    "net_rank": 125,
+    "record": "3-7",
+    "last2_results": [
+     "L",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "L",
+     "L"
+    ],
+    "rest": 5,
+    "qb": {
+     "regular": "Keldric Luster",
+     "dropbacks": 291,
+     "epa_db": -0.031,
+     "rank": 105
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 129,
+     "fpi": 131,
+     "own_net": 125
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.151
+   },
+   "fav": 195,
+   "dog": 2050,
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 15 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 OHIO last-3 top 25 in 0 of 4 \u00b7 \u2717 BALL last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2717 OHIO season outside 1-69: Off EPA/play #75, Def EPA allowed #78, Def success allowed #71 \u00b7 \u2713 BALL season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "BALL: consensus #129, ESPN FPI #131"
+     }
+    ],
+    "fails": [
+     "Score 15 (watch list from 18, qualifies at 28)"
+    ],
+    "hero": {
+     "score": 15,
+     "band": "red",
+     "parts": {
+      "fav_strength": 0,
+      "dog_weakness": 9,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 1
+     },
+     "max": 40
+    },
+    "call": "No track",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for OHIO yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV17BALLOHIO",
+    "fav_prob": 0.795,
+    "bid": 0.79,
+    "ask": 0.8
+   },
+   "locked_at": "2026-11-17T15:01:22-08:00"
+  }
  }
 }
