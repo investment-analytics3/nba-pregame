@@ -3,8 +3,8 @@
  "date_label": "Tuesday, November 17",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-17T07:01:06-08:00",
- "built_label": "Tue Nov 17, 7:01 AM PT",
+ "built_at": "2026-11-17T08:15:54-08:00",
+ "built_label": "Tue Nov 17, 8:15 AM PT",
  "metrics_through": "2026-11-16",
  "metrics_through_label": "Nov 16",
  "max": 40,
@@ -2543,18 +2543,18 @@
     ],
     "injuries": [
      {
+      "name": "Jean-Gabriel Pageau",
+      "last": "Pageau",
+      "status": "Day-To-Day",
+      "date": "2026-11-17T15:46Z",
+      "comment": "Pageau (lower body) will be a game-time decision ahead of Tuesday's matchup with Columbus, Stefen Rosner of NHL.com reports."
+     },
+     {
       "name": "Logan Stanley",
       "last": "Stanley",
       "status": "Day-To-Day",
       "date": "2026-11-16T17:00Z",
       "comment": "Stanley (lower body) is considered day-to-day ahead of Tuesday's clash with the Blue Jackets, Andrew Gross of Newsday reports."
-     },
-     {
-      "name": "Jean-Gabriel Pageau",
-      "last": "Pageau",
-      "status": "Day-To-Day",
-      "date": "2026-11-15T14:13Z",
-      "comment": "day-to-day"
      },
      {
       "name": "Calum Ritchie",
@@ -3316,8 +3316,8 @@
       "name": "Bowen Byram",
       "last": "Byram",
       "status": "Injured Reserve",
-      "date": "2026-11-16T18:59Z",
-      "comment": "Byram (upper body) has been ruled out for Tuesday's game against the Maple Leafs, CHGO Blackhawks reports."
+      "date": "2026-11-17T15:51Z",
+      "comment": "Byram (upper body) will not play in the Blackhawks' next two games, per CHGO Blackhawks."
      }
     ],
     "injuries_known": true,
@@ -3924,9 +3924,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV17TORCHI",
-    "fav_prob": 0.565,
-    "bid": 0.56,
-    "ask": 0.57
+    "fav_prob": 0.575,
+    "bid": 0.57,
+    "ask": 0.58
    }
   },
   {
@@ -4701,16 +4701,16 @@
    "venue": "Canada Life Centre",
    "favorite": "away",
    "line": {
-    "details": "OTT -130",
+    "details": "OTT -135",
     "provider": "DraftKings",
     "ml_home": null,
-    "ml_away": -130,
+    "ml_away": -135,
     "puck_line": 1.5,
     "total": 5.5,
-    "fav_price": 0.5652
+    "fav_price": 0.5745
    },
    "spread": {
-    "details": "OTT -130",
+    "details": "OTT -135",
     "provider": "DraftKings",
     "puck_line": 1.5
    },
@@ -4860,7 +4860,7 @@
      "name": "Stuart Skinner",
      "last": "Skinner",
      "espn_id": "4268767",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "regular",
     "regular_goalie_name": "S. Skinner",
@@ -4893,9 +4893,9 @@
      {
       "name": "Isak Rosen",
       "last": "Rosen",
-      "status": "Day-To-Day",
-      "date": "2026-11-15T14:13Z",
-      "comment": "day-to-day"
+      "status": "Injured Reserve",
+      "date": "2026-11-17T15:15Z",
+      "comment": "ir"
      },
      {
       "name": "Dylan DeMelo",
@@ -5150,7 +5150,7 @@
     "key_out": [],
     "key_questionable": [],
     "key_long_term": [],
-    "spread_text": "-130"
+    "spread_text": "-135"
    },
    "scoring": {
     "scored": true,
@@ -6462,7 +6462,7 @@
      "name": "Jacob Markstrom",
      "last": "Markstrom",
      "espn_id": "5452",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "regular",
     "regular_goalie_name": "J. Markstrom",
@@ -6769,7 +6769,7 @@
       "rule": "Goalie",
       "name": "FLA's regular goalie starts",
       "pass": true,
-      "detail": "Jacob Markstrom (probable)"
+      "detail": "Jacob Markstrom (confirmed)"
      },
      {
       "rule": "Matchup",
@@ -7084,7 +7084,7 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (FLA #14, EDM #6). Jacob Markstrom in goal for FLA (probable). FLA 2-0-1 in its last 3, EDM 3-0-0.",
+   "summary": "Not a top-7 vs bottom-7 matchup (FLA #14, EDM #6). Jacob Markstrom in goal for FLA (confirmed). FLA 2-0-1 in its last 3, EDM 3-0-0.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV17EDMFLA",
@@ -7260,12 +7260,12 @@
      "nhl_com": null
     },
     "goalie": {
-     "name": "Dan Vladar",
-     "last": "Vladar",
-     "espn_id": "3942459",
-     "confirmed": false
+     "name": "Joseph Woll",
+     "last": "Woll",
+     "espn_id": "4271575",
+     "confirmed": true
     },
-    "goalie_status": "regular",
+    "goalie_status": "backup",
     "regular_goalie_name": "D. Vladar",
     "goalies": [
      {
@@ -7293,13 +7293,6 @@
       "last": "Gustafsson",
       "status": "Day-To-Day",
       "date": "2026-11-15T14:13Z",
-      "comment": "day-to-day"
-     },
-     {
-      "name": "Denver Barkey",
-      "last": "Barkey",
-      "status": "Day-To-Day",
-      "date": "2026-11-16T14:05Z",
       "comment": "day-to-day"
      },
      {
@@ -7545,7 +7538,7 @@
       "rule": "A",
       "name": "Analysis Score 22+",
       "pass": false,
-      "detail": "Score 12 of 40"
+      "detail": "Score 13 of 40"
      },
      {
       "rule": "Goalie",
@@ -7563,11 +7556,13 @@
     "fails": [
      "Not a top-7 vs bottom-7 matchup (BUF #20, PHI #30)"
     ],
-    "warnings": [],
+    "warnings": [
+     "Info: PHI starting its backup goalie (Joseph Woll)"
+    ],
     "flags": [
      "BUF backup goalie starting (Alex Lyon)"
     ],
-    "score": 12,
+    "score": 13,
     "max": 40,
     "band": "red",
     "parts": [
@@ -7586,7 +7581,7 @@
      {
       "key": "goalies",
       "label": "Goalies + health",
-      "points": 1,
+      "points": 2,
       "max": 4
      },
      {
@@ -8675,7 +8670,7 @@
   "in_range": 1,
   "qualified": 0,
   "watch": 0,
-  "built_label": "Tue Nov 17, 7:01 AM PT"
+  "built_label": "Tue Nov 17, 8:15 AM PT"
  },
  "power_table": [
   {
