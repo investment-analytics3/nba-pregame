@@ -1,11 +1,11 @@
 {
  "date": "2026-11-17",
- "built_at": "2026-11-16T20:30:27-08:00",
+ "built_at": "2026-11-17T03:00:27-08:00",
  "retro": false,
  "metrics_through": "2026-11-16",
  "injury_source": "NBA official injury report + ESPN backup",
- "injury_report_time": "2026-11-16T23:30:00-05:00",
- "injury_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-16_11_30PM.pdf",
+ "injury_report_time": "2026-11-17T06:00:00-05:00",
+ "injury_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-17_06_00AM.pdf",
  "first_tip_utc": "2026-11-18T00:30Z",
  "games": [
   {
@@ -58,7 +58,7 @@
      "rank": 27,
      "split": false,
      "own_net": 28,
-     "bpi": 26,
+     "bpi": 25,
      "nba_com": 25
     },
     "last3_games": [
@@ -213,7 +213,7 @@
      "rank": 5,
      "split": false,
      "own_net": 6,
-     "bpi": 7,
+     "bpi": 6,
      "nba_com": 4
     },
     "last3_games": [
@@ -273,7 +273,7 @@
      {
       "player": "Austin Reaves",
       "status": "Out",
-      "reason": "Injury: Left Heel Contusion/",
+      "reason": "Injury: Left Heel Contusion/Bone Bruise",
       "is_key": true,
       "key_info": {
        "name": "Austin Reaves",
@@ -288,7 +288,7 @@
      {
       "player": "Walker Kessler",
       "status": "Out",
-      "reason": "Injury: Right Lower Leg Soreness",
+      "reason": "Injury: Right Lower Leg",
       "is_key": true,
       "key_info": {
        "name": "Walker Kessler",
@@ -325,11 +325,11 @@
    },
    "spread": {
     "favorite_id": "13",
-    "spread": 7.5,
-    "details": "LAL -7.5",
-    "provider": "Draft Kings",
-    "ml_home": -316,
-    "ml_away": 255
+    "spread": 8.5,
+    "details": "LAL -8.5",
+    "provider": "DraftKings",
+    "ml_home": -324,
+    "ml_away": 261
    },
    "favorite": "home",
    "scoring": {
@@ -373,7 +373,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "Underdog: consensus #27, our net rating #28, ESPN BPI #26, NBA.com #25"
+      "detail": "Underdog: consensus #27, our net rating #28, ESPN BPI #25, NBA.com #25"
      }
     ],
     "context": [
@@ -817,10 +817,10 @@
      }
     },
     "power": {
-     "rank": 11,
-     "split": true,
+     "rank": 9,
+     "split": false,
      "own_net": 9,
-     "bpi": 12,
+     "bpi": 10,
      "nba_com": 12
     },
     "last3_games": [
@@ -856,7 +856,7 @@
        "def": 119.7,
        "net": 3.42
       },
-      "opp_power_rank": 24
+      "opp_power_rank": 23
      },
      {
       "game_id": "401909954",
@@ -873,7 +873,7 @@
        "def": 105.23,
        "net": 10.43
       },
-      "opp_power_rank": 24
+      "opp_power_rank": 23
      }
     ],
     "injuries": [
@@ -991,7 +991,7 @@
      "rank": 1,
      "split": false,
      "own_net": 1,
-     "bpi": 2,
+     "bpi": 1,
      "nba_com": 1
     },
     "last3_games": [
@@ -1087,11 +1087,11 @@
    },
    "spread": {
     "favorite_id": "24",
-    "spread": 8.5,
-    "details": "SA -8.5",
-    "provider": "Draft Kings",
-    "ml_home": -345,
-    "ml_away": 277
+    "spread": 9.5,
+    "details": "SA -9.5",
+    "provider": "DraftKings",
+    "ml_home": -395,
+    "ml_away": 312
    },
    "favorite": "home",
    "scoring": {
@@ -1106,12 +1106,11 @@
     "routes": [],
     "route": "",
     "fails": [
-     "DET top 10 in power ranking: our net rating #9",
+     "DET top 10 in power ranking: consensus #9, our net rating #9, ESPN BPI #10",
      "Would be on the watch list otherwise (score 19)"
     ],
     "warnings": [
-     "Info: DET without Duncan Robinson",
-     "DET power rank: NBA.com disagrees enough to change its top/bottom-10 group"
+     "Info: DET without Duncan Robinson"
     ],
     "rules": [
      {
@@ -1136,7 +1135,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": false,
-      "detail": "DET top 10 in power ranking: our net rating #9"
+      "detail": "DET top 10 in power ranking: consensus #9, our net rating #9, ESPN BPI #10"
      }
     ],
     "context": [
@@ -1580,10 +1579,10 @@
      }
     },
     "power": {
-     "rank": 7,
+     "rank": 6,
      "split": false,
      "own_net": 8,
-     "bpi": 6,
+     "bpi": 5,
      "nba_com": 11
     },
     "last3_games": [
@@ -1707,7 +1706,7 @@
        "def": 106.32,
        "net": -3.8
       },
-      "opp_power_rank": 7
+      "opp_power_rank": 6
      },
      {
       "game_id": "401909976",
@@ -1724,7 +1723,7 @@
        "def": 124.44,
        "net": -11.13
       },
-      "opp_power_rank": 9
+      "opp_power_rank": 11
      },
      {
       "game_id": "401909968",
@@ -1772,7 +1771,7 @@
      {
       "player": "Nate Bittle",
       "status": "Out",
-      "reason": "Injury: Right Foot Avulsion",
+      "reason": "Injury: Right Foot Avulsion Fracture",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -1786,7 +1785,7 @@
     "favorite_id": "18",
     "spread": 2.5,
     "details": "NY -2.5",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": 128,
     "ml_away": -152
    },
@@ -2329,7 +2328,7 @@
        "def": 106.53,
        "net": 9.86
       },
-      "opp_power_rank": 6
+      "opp_power_rank": 7
      }
     ],
     "injuries": [
@@ -2427,7 +2426,7 @@
      "rank": 4,
      "split": false,
      "own_net": 3,
-     "bpi": 5,
+     "bpi": 7,
      "nba_com": 7
     },
     "last3_games": [
@@ -2545,9 +2544,9 @@
     "favorite_id": "16",
     "spread": 2.5,
     "details": "MIN -2.5",
-    "provider": "Draft Kings",
-    "ml_home": -133,
-    "ml_away": 112
+    "provider": "DraftKings",
+    "ml_home": -135,
+    "ml_away": 114
    },
    "favorite": "home",
    "scoring": {
@@ -3217,7 +3216,7 @@
      "rank": 22,
      "split": false,
      "own_net": 22,
-     "bpi": 23,
+     "bpi": 22,
      "nba_com": 22
     },
     "last3_games": [
@@ -3253,7 +3252,7 @@
        "def": 110.56,
        "net": 0.99
       },
-      "opp_power_rank": 6
+      "opp_power_rank": 7
      },
      {
       "game_id": "401909962",
@@ -3313,11 +3312,11 @@
    },
    "spread": {
     "favorite_id": "12",
-    "spread": 5.5,
-    "details": "LAC -5.5",
-    "provider": "Draft Kings",
-    "ml_home": -219,
-    "ml_away": 182
+    "spread": 6.5,
+    "details": "LAC -6.5",
+    "provider": "DraftKings",
+    "ml_home": -238,
+    "ml_away": 197
    },
    "favorite": "home",
    "scoring": {
