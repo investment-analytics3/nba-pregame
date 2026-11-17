@@ -1,7 +1,7 @@
 {
  "date": "2026-11-17",
  "season": 2027,
- "built_at": "2026-11-17T08:15:54-08:00",
+ "built_at": "2026-11-17T09:15:54-08:00",
  "games": [
   {
    "id": "401892729",
@@ -38,6 +38,43 @@
    "fav_goalie": "Andrei Vasilevskiy",
    "fav_goalie_status": "regular",
    "kalshi_event": "KXNHLGAME-26NOV17WSHTB",
+   "locked": false
+  },
+  {
+   "id": "401892731",
+   "tip_utc": "2026-11-18T00:00:00+00:00",
+   "tip_pt": "4:00 PM PT",
+   "day_et": "2026-11-17",
+   "away_abbr": "CBJ",
+   "home_abbr": "NYI",
+   "away_espn": "CBJ",
+   "home_espn": "NYI",
+   "fav_abbr": "NYI",
+   "fav_espn": "NYI",
+   "dog_abbr": "CBJ",
+   "fav_home": true,
+   "away_names": [
+    "Columbus",
+    "Columbus Blue Jackets"
+   ],
+   "home_names": [
+    "New York",
+    "New York Islanders"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "alerts": false,
+   "score": 21,
+   "in_range": false,
+   "fav_rank": 18,
+   "dog_rank": 29,
+   "fav_def_rank": 24,
+   "dog_def_rank": 22,
+   "fav_b2b": false,
+   "fav_goalie": "Ilya Sorokin",
+   "fav_goalie_status": "regular",
+   "kalshi_event": "KXNHLGAME-26NOV17CBJNYI",
    "locked": false
   },
   {
@@ -78,80 +115,6 @@
    "locked": false
   },
   {
-   "id": "401892728",
-   "tip_utc": "2026-11-18T00:00:00+00:00",
-   "tip_pt": "4:00 PM PT",
-   "day_et": "2026-11-17",
-   "away_abbr": "LAK",
-   "home_abbr": "BOS",
-   "away_espn": "LA",
-   "home_espn": "BOS",
-   "fav_abbr": "BOS",
-   "fav_espn": "BOS",
-   "dog_abbr": "LAK",
-   "fav_home": true,
-   "away_names": [
-    "Los Angeles",
-    "Los Angeles Kings"
-   ],
-   "home_names": [
-    "Boston",
-    "Boston Bruins"
-   ],
-   "tier": "out",
-   "tier_label": "No track",
-   "tracked": false,
-   "alerts": false,
-   "score": 20,
-   "in_range": true,
-   "fav_rank": 2,
-   "dog_rank": 27,
-   "fav_def_rank": 14,
-   "dog_def_rank": 13,
-   "fav_b2b": false,
-   "fav_goalie": "Jeremy Swayman",
-   "fav_goalie_status": "regular",
-   "kalshi_event": "KXNHLGAME-26NOV17LABOS",
-   "locked": false
-  },
-  {
-   "id": "401892731",
-   "tip_utc": "2026-11-18T00:00:00+00:00",
-   "tip_pt": "4:00 PM PT",
-   "day_et": "2026-11-17",
-   "away_abbr": "CBJ",
-   "home_abbr": "NYI",
-   "away_espn": "CBJ",
-   "home_espn": "NYI",
-   "fav_abbr": "NYI",
-   "fav_espn": "NYI",
-   "dog_abbr": "CBJ",
-   "fav_home": true,
-   "away_names": [
-    "Columbus",
-    "Columbus Blue Jackets"
-   ],
-   "home_names": [
-    "New York",
-    "New York Islanders"
-   ],
-   "tier": "out",
-   "tier_label": "No track",
-   "tracked": false,
-   "alerts": false,
-   "score": 20,
-   "in_range": false,
-   "fav_rank": 18,
-   "dog_rank": 29,
-   "fav_def_rank": 24,
-   "dog_def_rank": 22,
-   "fav_b2b": false,
-   "fav_goalie": "Ilya Sorokin",
-   "fav_goalie_status": "regular",
-   "kalshi_event": "KXNHLGAME-26NOV17CBJNYI",
-   "locked": false
-  },
-  {
    "id": "401892733",
    "tip_utc": "2026-11-18T00:30:00+00:00",
    "tip_pt": "4:30 PM PT",
@@ -186,6 +149,43 @@
    "fav_goalie": "Sergei Bobrovsky",
    "fav_goalie_status": "regular",
    "kalshi_event": "KXNHLGAME-26NOV17TORCHI",
+   "locked": false
+  },
+  {
+   "id": "401892728",
+   "tip_utc": "2026-11-18T00:00:00+00:00",
+   "tip_pt": "4:00 PM PT",
+   "day_et": "2026-11-17",
+   "away_abbr": "LAK",
+   "home_abbr": "BOS",
+   "away_espn": "LA",
+   "home_espn": "BOS",
+   "fav_abbr": "BOS",
+   "fav_espn": "BOS",
+   "dog_abbr": "LAK",
+   "fav_home": true,
+   "away_names": [
+    "Los Angeles",
+    "Los Angeles Kings"
+   ],
+   "home_names": [
+    "Boston",
+    "Boston Bruins"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "alerts": false,
+   "score": 18,
+   "in_range": true,
+   "fav_rank": 2,
+   "dog_rank": 27,
+   "fav_def_rank": 14,
+   "dog_def_rank": 13,
+   "fav_b2b": false,
+   "fav_goalie": "Michael DiPietro",
+   "fav_goalie_status": "backup",
+   "kalshi_event": "KXNHLGAME-26NOV17LABOS",
    "locked": false
   },
   {
@@ -263,43 +263,6 @@
    "locked": false
   },
   {
-   "id": "401892734",
-   "tip_utc": "2026-11-18T01:00:00+00:00",
-   "tip_pt": "5:00 PM PT",
-   "day_et": "2026-11-17",
-   "away_abbr": "ANA",
-   "home_abbr": "STL",
-   "away_espn": "ANA",
-   "home_espn": "STL",
-   "fav_abbr": "STL",
-   "fav_espn": "STL",
-   "dog_abbr": "ANA",
-   "fav_home": true,
-   "away_names": [
-    "Anaheim",
-    "Anaheim Ducks"
-   ],
-   "home_names": [
-    "St. Louis",
-    "St. Louis Blues"
-   ],
-   "tier": "out",
-   "tier_label": "No track",
-   "tracked": false,
-   "alerts": false,
-   "score": 16,
-   "in_range": false,
-   "fav_rank": 19,
-   "dog_rank": 17,
-   "fav_def_rank": 15,
-   "dog_def_rank": 29,
-   "fav_b2b": false,
-   "fav_goalie": "Joel Hofer",
-   "fav_goalie_status": "regular",
-   "kalshi_event": "KXNHLGAME-26NOV17ANASTL",
-   "locked": false
-  },
-  {
    "id": "401892730",
    "tip_utc": "2026-11-18T00:00:00+00:00",
    "tip_pt": "4:00 PM PT",
@@ -334,6 +297,43 @@
    "fav_goalie": "Jacob Markstrom",
    "fav_goalie_status": "regular",
    "kalshi_event": "KXNHLGAME-26NOV17EDMFLA",
+   "locked": false
+  },
+  {
+   "id": "401892734",
+   "tip_utc": "2026-11-18T01:00:00+00:00",
+   "tip_pt": "5:00 PM PT",
+   "day_et": "2026-11-17",
+   "away_abbr": "ANA",
+   "home_abbr": "STL",
+   "away_espn": "ANA",
+   "home_espn": "STL",
+   "fav_abbr": "STL",
+   "fav_espn": "STL",
+   "dog_abbr": "ANA",
+   "fav_home": true,
+   "away_names": [
+    "Anaheim",
+    "Anaheim Ducks"
+   ],
+   "home_names": [
+    "St. Louis",
+    "St. Louis Blues"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "alerts": false,
+   "score": 14,
+   "in_range": false,
+   "fav_rank": 19,
+   "dog_rank": 17,
+   "fav_def_rank": 15,
+   "dog_def_rank": 29,
+   "fav_b2b": false,
+   "fav_goalie": "Jordan Binnington",
+   "fav_goalie_status": "backup",
+   "kalshi_event": "KXNHLGAME-26NOV17ANASTL",
    "locked": false
   },
   {
