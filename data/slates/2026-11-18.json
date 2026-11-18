@@ -1,11 +1,11 @@
 {
  "date": "2026-11-18",
- "built_at": "2026-11-18T03:00:29-08:00",
+ "built_at": "2026-11-18T09:42:23-08:00",
  "retro": false,
  "metrics_through": "2026-11-17",
  "injury_source": "NBA official injury report + ESPN backup",
- "injury_report_time": "2026-11-18T06:00:00-05:00",
- "injury_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_06_00AM.pdf",
+ "injury_report_time": "2026-11-18T12:30:00-05:00",
+ "injury_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_12_30PM.pdf",
  "first_tip_utc": "2026-11-19T00:00Z",
  "games": [
   {
@@ -337,11 +337,11 @@
    },
    "spread": {
     "favorite_id": "14",
-    "spread": 12.5,
-    "details": "MIA -12.5",
+    "spread": 11.5,
+    "details": "MIA -11.5",
     "provider": "Draft Kings",
-    "ml_home": -800,
-    "ml_away": 558
+    "ml_home": -700,
+    "ml_away": 505
    },
    "favorite": "home",
    "scoring": {
@@ -1079,11 +1079,11 @@
    },
    "spread": {
     "favorite_id": "8",
-    "spread": 7.5,
-    "details": "DET -7.5",
+    "spread": 6.5,
+    "details": "DET -6.5",
     "provider": "Draft Kings",
-    "ml_home": 227,
-    "ml_away": -277
+    "ml_home": 217,
+    "ml_away": -264
    },
    "favorite": "away",
    "scoring": {
@@ -1791,8 +1791,8 @@
     "spread": 2.5,
     "details": "BOS -2.5",
     "provider": "Draft Kings",
-    "ml_home": 114,
-    "ml_away": -135
+    "ml_home": 120,
+    "ml_away": -142
    },
    "favorite": "away",
    "scoring": {
@@ -2227,6 +2227,761 @@
       "counts": true,
       "in_range": false,
       "met": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "401910017",
+   "state": "pre",
+   "neutral": false,
+   "tip_utc": "2026-11-19T03:00Z",
+   "tip_pt": "7:00 PM PT",
+   "away": {
+    "id": "26",
+    "abbr": "UTAH",
+    "name": "Jazz",
+    "display": "Utah Jazz",
+    "record": "2-13",
+    "l3_record": "1-2",
+    "games_played": 15,
+    "b2b": true,
+    "b2b_record": "0-2",
+    "season": {
+     "efg": 52.07,
+     "opp_efg": 52.48,
+     "off": 105.74,
+     "def": 114.04,
+     "net": -8.3,
+     "poss_per_game": 102.8,
+     "ranks": {
+      "efg": 24,
+      "opp_efg": 10,
+      "off": 27,
+      "def": 22,
+      "net": 26
+     }
+    },
+    "last3": {
+     "efg": 59.92,
+     "opp_efg": 53.28,
+     "off": 120.42,
+     "def": 117.0,
+     "net": 3.42,
+     "poss_per_game": 97.4,
+     "ranks": {
+      "efg": 3,
+      "opp_efg": 12,
+      "off": 6,
+      "def": 21,
+      "net": 11
+     }
+    },
+    "power": {
+     "rank": 28,
+     "split": false,
+     "own_net": 26,
+     "bpi": 27,
+     "nba_com": 28
+    },
+    "last3_games": [
+     {
+      "game_id": "401910006",
+      "date": "2026-11-17",
+      "site": "away",
+      "opp_id": "12",
+      "opp": "LAC",
+      "pts": 132,
+      "opp_pts": 107,
+      "metrics": {
+       "efg": 70.24,
+       "opp_efg": 51.81,
+       "off": 134.83,
+       "def": 109.3,
+       "net": 25.54
+      },
+      "opp_power_rank": 22
+     },
+     {
+      "game_id": "401909988",
+      "date": "2026-11-15",
+      "site": "home",
+      "opp_id": "24",
+      "opp": "SA",
+      "pts": 102,
+      "opp_pts": 110,
+      "metrics": {
+       "efg": 55.62,
+       "opp_efg": 54.12,
+       "off": 106.01,
+       "def": 114.32,
+       "net": -8.31
+      },
+      "opp_power_rank": 1
+     },
+     {
+      "game_id": "401909301",
+      "date": "2026-11-13",
+      "site": "away",
+      "opp_id": "10",
+      "opp": "HOU",
+      "pts": 118,
+      "opp_pts": 125,
+      "metrics": {
+       "efg": 54.49,
+       "opp_efg": 53.85,
+       "off": 120.16,
+       "def": 127.29,
+       "net": -7.13
+      },
+      "opp_power_rank": 3
+     }
+    ],
+    "injuries": [
+     {
+      "player": "Jaren Jackson Jr.",
+      "status": "Out",
+      "reason": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN.",
+      "source": "ESPN",
+      "is_key": true,
+      "key_info": {
+       "name": "Jaren Jackson Jr.",
+       "starts": 4,
+       "team_games": 15,
+       "mpg": 26.0,
+       "ppg": 16.2,
+       "why": "top-5 minutes"
+      },
+      "counts_as_out": true
+     },
+     {
+      "player": "Lauri Markkanen",
+      "status": "Out",
+      "reason": "Markkanen has been diagnosed with a non-displaced fracture in his right hand and will be sidelined for at least one month, Shams Charania of ESPN reports.",
+      "source": "ESPN",
+      "is_key": true,
+      "key_info": {
+       "name": "Lauri Markkanen",
+       "starts": 8,
+       "team_games": 15,
+       "mpg": 30.9,
+       "ppg": 18.0,
+       "why": "starter"
+      },
+      "counts_as_out": true
+     },
+     {
+      "player": "Jaxson Hayes",
+      "status": "Day-To-Day",
+      "reason": "Hayes (knee) has been ruled out for Tuesday's game against the Clippers.",
+      "source": "ESPN",
+      "is_key": true,
+      "key_info": {
+       "name": "Jaxson Hayes",
+       "starts": 10,
+       "team_games": 15,
+       "mpg": 24.0,
+       "ppg": 8.8,
+       "why": "starter"
+      },
+      "counts_as_out": false
+     },
+     {
+      "player": "Jusuf Nurkic",
+      "status": "Out",
+      "reason": "Nurkic (toe) has begun participating in on-court activities as he continues recovering from a right foot injury sustained during an Oct. 4 preseason game against Denver. He will be re-evaluated in two weeks, the Jazz announced Friday.",
+      "source": "ESPN",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [
+     "Jaren Jackson Jr.",
+     "Lauri Markkanen"
+    ],
+    "key_questionable": []
+   },
+   "home": {
+    "id": "13",
+    "abbr": "LAL",
+    "name": "Lakers",
+    "display": "Los Angeles Lakers",
+    "record": "13-2",
+    "l3_record": "3-0",
+    "games_played": 15,
+    "b2b": true,
+    "b2b_record": "3-0",
+    "season": {
+     "efg": 58.14,
+     "opp_efg": 54.37,
+     "off": 118.77,
+     "def": 111.33,
+     "net": 7.43,
+     "poss_per_game": 103.1,
+     "ranks": {
+      "efg": 1,
+      "opp_efg": 18,
+      "off": 1,
+      "def": 15,
+      "net": 6
+     }
+    },
+    "last3": {
+     "efg": 54.46,
+     "opp_efg": 53.85,
+     "off": 118.61,
+     "def": 111.28,
+     "net": 7.33,
+     "poss_per_game": 104.5,
+     "ranks": {
+      "efg": 13,
+      "opp_efg": 14,
+      "off": 8,
+      "def": 14,
+      "net": 7
+     }
+    },
+    "power": {
+     "rank": 5,
+     "split": false,
+     "own_net": 6,
+     "bpi": 7,
+     "nba_com": 4
+    },
+    "last3_games": [
+     {
+      "game_id": "401910005",
+      "date": "2026-11-17",
+      "site": "home",
+      "opp_id": "30",
+      "opp": "CHA",
+      "pts": 118,
+      "opp_pts": 114,
+      "metrics": {
+       "efg": 50.51,
+       "opp_efg": 56.32,
+       "off": 112.08,
+       "def": 108.28,
+       "net": 3.8
+      },
+      "opp_power_rank": 25
+     },
+     {
+      "game_id": "401909986",
+      "date": "2026-11-15",
+      "site": "away",
+      "opp_id": "21",
+      "opp": "PHX",
+      "pts": 131,
+      "opp_pts": 123,
+      "metrics": {
+       "efg": 59.3,
+       "opp_efg": 53.8,
+       "off": 122.98,
+       "def": 115.47,
+       "net": 7.51
+      },
+      "opp_power_rank": 21
+     },
+     {
+      "game_id": "401909971",
+      "date": "2026-11-11",
+      "site": "away",
+      "opp_id": "15",
+      "opp": "MIL",
+      "pts": 123,
+      "opp_pts": 112,
+      "metrics": {
+       "efg": 54.21,
+       "opp_efg": 51.23,
+       "off": 120.8,
+       "def": 110.0,
+       "net": 10.8
+      },
+      "opp_power_rank": 30
+     }
+    ],
+    "injuries": [
+     {
+      "player": "Austin Reaves",
+      "status": "Day-To-Day",
+      "reason": "Reaves (heel) is out for Tuesday's game against the Hornets, Dave McMenamin of ESPN.com reports.",
+      "source": "ESPN",
+      "is_key": true,
+      "key_info": {
+       "name": "Austin Reaves",
+       "starts": 12,
+       "team_games": 15,
+       "mpg": 35.2,
+       "ppg": 24.7,
+       "why": "starter"
+      },
+      "counts_as_out": false
+     },
+     {
+      "player": "Walker Kessler",
+      "status": "Day-To-Day",
+      "reason": "Head coach JJ Redick said he expects Walker (leg) to be available for Wednesday's game against the Jazz, Thuc Nhi Nguyen of the Los Angeles Times reports.",
+      "source": "ESPN",
+      "is_key": true,
+      "key_info": {
+       "name": "Walker Kessler",
+       "starts": 14,
+       "team_games": 15,
+       "mpg": 30.9,
+       "ppg": 14.5,
+       "why": "starter"
+      },
+      "counts_as_out": false
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "spread": {
+    "favorite_id": "13",
+    "spread": 10.5,
+    "details": "LAL -10.5",
+    "provider": "Draft Kings",
+    "ml_home": -437,
+    "ml_away": 341
+   },
+   "favorite": "home",
+   "scoring": {
+    "scored": true,
+    "favorite_side": "home",
+    "fav": "LAL",
+    "dog": "UTAH",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "routes": [],
+    "route": "",
+    "fails": [
+     "Score 16 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "Info: UTAH without Jaren Jackson Jr., Lauri Markkanen"
+    ],
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 16 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 LAL last-3 top 10 in 1 of 4 \u00b7 \u2717 UTAH last-3 bottom 10 in 1 of 4 \u00b7 \u2717 LAL season outside top 15: Opp eFG% #18 \u00b7 \u2717 UTAH season top 10: Opp eFG% #10"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out for the favorite",
+      "pass": true,
+      "detail": "Clear"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": true,
+      "detail": "Underdog: consensus #28, our net rating #26, ESPN BPI #27, NBA.com #28"
+     }
+    ],
+    "context": [
+     {
+      "check": "Favorite top 10 in a metric, season and last 3",
+      "pass": true,
+      "detail": "Off Eff"
+     },
+     {
+      "check": "Underdog not top 10 in any metric over its last 3",
+      "pass": false,
+      "detail": "eFG%, Off Eff"
+     },
+     {
+      "check": "Underdog not 3-0 in its last 3",
+      "pass": true,
+      "detail": "1-2"
+     }
+    ],
+    "qualifiers": [
+     "Off Eff"
+    ],
+    "score": 16,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 5,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 5,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 2,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 0,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "LAL",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 1,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 1,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 18,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 15,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "LAL",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 13,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 8,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 14,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 14,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "UTAH",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 10,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 22,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 24,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 27,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "UTAH",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 12,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 21,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 3,
+        "color": "deep-red"
+       },
+       {
+        "metric": "off",
+        "rank": 6,
+        "color": "red"
+       }
+      ]
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "cells": [
+       {
+        "team": "LAL",
+        "role": "fav",
+        "window": "season",
+        "metric": "off",
+        "rank": 1,
+        "color": "green"
+       },
+       {
+        "team": "LAL",
+        "role": "fav",
+        "window": "last3",
+        "metric": "off",
+        "rank": 8,
+        "color": "green"
+       },
+       {
+        "team": "UTAH",
+        "role": "dog",
+        "window": "season",
+        "metric": "def",
+        "rank": 22,
+        "color": "green"
+       },
+       {
+        "team": "UTAH",
+        "role": "dog",
+        "window": "last3",
+        "metric": "def",
+        "rank": 21,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shoot",
+      "label": "Shooting vs shot defense",
+      "fav_metric": "efg",
+      "dog_metric": "opp_efg",
+      "cells": [
+       {
+        "team": "LAL",
+        "role": "fav",
+        "window": "season",
+        "metric": "efg",
+        "rank": 1,
+        "color": "green"
+       },
+       {
+        "team": "LAL",
+        "role": "fav",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 13,
+        "color": "yellow"
+       },
+       {
+        "team": "UTAH",
+        "role": "dog",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 10,
+        "color": "red"
+       },
+       {
+        "team": "UTAH",
+        "role": "dog",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 12,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "cells": [
+       {
+        "team": "LAL",
+        "role": "fav",
+        "window": "season",
+        "metric": "def",
+        "rank": 15,
+        "color": "yellow"
+       },
+       {
+        "team": "LAL",
+        "role": "fav",
+        "window": "last3",
+        "metric": "def",
+        "rank": 14,
+        "color": "yellow"
+       },
+       {
+        "team": "UTAH",
+        "role": "dog",
+        "window": "season",
+        "metric": "off",
+        "rank": 27,
+        "color": "green"
+       },
+       {
+        "team": "UTAH",
+        "role": "dog",
+        "window": "last3",
+        "metric": "off",
+        "rank": 6,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "key": "shotd",
+      "label": "Shot defense vs shooting",
+      "fav_metric": "opp_efg",
+      "dog_metric": "efg",
+      "cells": [
+       {
+        "team": "LAL",
+        "role": "fav",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 18,
+        "color": "yellow"
+       },
+       {
+        "team": "LAL",
+        "role": "fav",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 14,
+        "color": "yellow"
+       },
+       {
+        "team": "UTAH",
+        "role": "dog",
+        "window": "season",
+        "metric": "efg",
+        "rank": 24,
+        "color": "green"
+       },
+       {
+        "team": "UTAH",
+        "role": "dog",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 3,
+        "color": "deep-red"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "off",
+      "dog_metric": "off",
+      "fav_rank": 8,
+      "dog_rank": 6,
+      "counts": true,
+      "in_range": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def",
+      "dog_metric": "def",
+      "fav_rank": 14,
+      "dog_rank": 21,
+      "counts": true,
+      "in_range": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "fav_rank": 14,
+      "dog_rank": 6,
+      "counts": true,
+      "in_range": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "fav_rank": 8,
+      "dog_rank": 21,
+      "counts": true,
+      "in_range": true,
+      "met": true
      }
     ]
    }
@@ -2982,765 +3737,6 @@
    }
   },
   {
-   "id": "401910017",
-   "state": "pre",
-   "neutral": false,
-   "tip_utc": "2026-11-19T03:00Z",
-   "tip_pt": "7:00 PM PT",
-   "away": {
-    "id": "26",
-    "abbr": "UTAH",
-    "name": "Jazz",
-    "display": "Utah Jazz",
-    "record": "2-13",
-    "l3_record": "1-2",
-    "games_played": 15,
-    "b2b": true,
-    "b2b_record": "0-2",
-    "season": {
-     "efg": 52.07,
-     "opp_efg": 52.48,
-     "off": 105.74,
-     "def": 114.04,
-     "net": -8.3,
-     "poss_per_game": 102.8,
-     "ranks": {
-      "efg": 24,
-      "opp_efg": 10,
-      "off": 27,
-      "def": 22,
-      "net": 26
-     }
-    },
-    "last3": {
-     "efg": 59.92,
-     "opp_efg": 53.28,
-     "off": 120.42,
-     "def": 117.0,
-     "net": 3.42,
-     "poss_per_game": 97.4,
-     "ranks": {
-      "efg": 3,
-      "opp_efg": 12,
-      "off": 6,
-      "def": 21,
-      "net": 11
-     }
-    },
-    "power": {
-     "rank": 28,
-     "split": false,
-     "own_net": 26,
-     "bpi": 27,
-     "nba_com": 28
-    },
-    "last3_games": [
-     {
-      "game_id": "401910006",
-      "date": "2026-11-17",
-      "site": "away",
-      "opp_id": "12",
-      "opp": "LAC",
-      "pts": 132,
-      "opp_pts": 107,
-      "metrics": {
-       "efg": 70.24,
-       "opp_efg": 51.81,
-       "off": 134.83,
-       "def": 109.3,
-       "net": 25.54
-      },
-      "opp_power_rank": 22
-     },
-     {
-      "game_id": "401909988",
-      "date": "2026-11-15",
-      "site": "home",
-      "opp_id": "24",
-      "opp": "SA",
-      "pts": 102,
-      "opp_pts": 110,
-      "metrics": {
-       "efg": 55.62,
-       "opp_efg": 54.12,
-       "off": 106.01,
-       "def": 114.32,
-       "net": -8.31
-      },
-      "opp_power_rank": 1
-     },
-     {
-      "game_id": "401909301",
-      "date": "2026-11-13",
-      "site": "away",
-      "opp_id": "10",
-      "opp": "HOU",
-      "pts": 118,
-      "opp_pts": 125,
-      "metrics": {
-       "efg": 54.49,
-       "opp_efg": 53.85,
-       "off": 120.16,
-       "def": 127.29,
-       "net": -7.13
-      },
-      "opp_power_rank": 3
-     }
-    ],
-    "injuries": [
-     {
-      "player": "Jaren Jackson Jr.",
-      "status": "Out",
-      "reason": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN.",
-      "source": "ESPN",
-      "is_key": true,
-      "key_info": {
-       "name": "Jaren Jackson Jr.",
-       "starts": 4,
-       "team_games": 15,
-       "mpg": 26.0,
-       "ppg": 16.2,
-       "why": "top-5 minutes"
-      },
-      "counts_as_out": true
-     },
-     {
-      "player": "Jaxson Hayes",
-      "status": "Out",
-      "reason": "Hayes (knee) has been ruled out for Tuesday's game against the Clippers.",
-      "source": "ESPN",
-      "is_key": true,
-      "key_info": {
-       "name": "Jaxson Hayes",
-       "starts": 10,
-       "team_games": 15,
-       "mpg": 24.0,
-       "ppg": 8.8,
-       "why": "starter"
-      },
-      "counts_as_out": true
-     },
-     {
-      "player": "Lauri Markkanen",
-      "status": "Out",
-      "reason": "Markkanen has been diagnosed with a non-displaced fracture in his right hand and will be sidelined for at least one month, Shams Charania of ESPN reports.",
-      "source": "ESPN",
-      "is_key": true,
-      "key_info": {
-       "name": "Lauri Markkanen",
-       "starts": 8,
-       "team_games": 15,
-       "mpg": 30.9,
-       "ppg": 18.0,
-       "why": "starter"
-      },
-      "counts_as_out": true
-     },
-     {
-      "player": "Jusuf Nurkic",
-      "status": "Out",
-      "reason": "Nurkic (toe) has begun participating in on-court activities as he continues recovering from a right foot injury sustained during an Oct. 4 preseason game against Denver. He will be re-evaluated in two weeks, the Jazz announced Friday.",
-      "source": "ESPN",
-      "is_key": false,
-      "key_info": null,
-      "counts_as_out": true
-     }
-    ],
-    "injuries_known": true,
-    "key_out": [
-     "Jaren Jackson Jr.",
-     "Jaxson Hayes",
-     "Lauri Markkanen"
-    ],
-    "key_questionable": []
-   },
-   "home": {
-    "id": "13",
-    "abbr": "LAL",
-    "name": "Lakers",
-    "display": "Los Angeles Lakers",
-    "record": "13-2",
-    "l3_record": "3-0",
-    "games_played": 15,
-    "b2b": true,
-    "b2b_record": "3-0",
-    "season": {
-     "efg": 58.14,
-     "opp_efg": 54.37,
-     "off": 118.77,
-     "def": 111.33,
-     "net": 7.43,
-     "poss_per_game": 103.1,
-     "ranks": {
-      "efg": 1,
-      "opp_efg": 18,
-      "off": 1,
-      "def": 15,
-      "net": 6
-     }
-    },
-    "last3": {
-     "efg": 54.46,
-     "opp_efg": 53.85,
-     "off": 118.61,
-     "def": 111.28,
-     "net": 7.33,
-     "poss_per_game": 104.5,
-     "ranks": {
-      "efg": 13,
-      "opp_efg": 14,
-      "off": 8,
-      "def": 14,
-      "net": 7
-     }
-    },
-    "power": {
-     "rank": 5,
-     "split": false,
-     "own_net": 6,
-     "bpi": 7,
-     "nba_com": 4
-    },
-    "last3_games": [
-     {
-      "game_id": "401910005",
-      "date": "2026-11-17",
-      "site": "home",
-      "opp_id": "30",
-      "opp": "CHA",
-      "pts": 118,
-      "opp_pts": 114,
-      "metrics": {
-       "efg": 50.51,
-       "opp_efg": 56.32,
-       "off": 112.08,
-       "def": 108.28,
-       "net": 3.8
-      },
-      "opp_power_rank": 25
-     },
-     {
-      "game_id": "401909986",
-      "date": "2026-11-15",
-      "site": "away",
-      "opp_id": "21",
-      "opp": "PHX",
-      "pts": 131,
-      "opp_pts": 123,
-      "metrics": {
-       "efg": 59.3,
-       "opp_efg": 53.8,
-       "off": 122.98,
-       "def": 115.47,
-       "net": 7.51
-      },
-      "opp_power_rank": 21
-     },
-     {
-      "game_id": "401909971",
-      "date": "2026-11-11",
-      "site": "away",
-      "opp_id": "15",
-      "opp": "MIL",
-      "pts": 123,
-      "opp_pts": 112,
-      "metrics": {
-       "efg": 54.21,
-       "opp_efg": 51.23,
-       "off": 120.8,
-       "def": 110.0,
-       "net": 10.8
-      },
-      "opp_power_rank": 30
-     }
-    ],
-    "injuries": [
-     {
-      "player": "Austin Reaves",
-      "status": "Out",
-      "reason": "Reaves (heel) is out for Tuesday's game against the Hornets, Dave McMenamin of ESPN.com reports.",
-      "source": "ESPN",
-      "is_key": true,
-      "key_info": {
-       "name": "Austin Reaves",
-       "starts": 12,
-       "team_games": 15,
-       "mpg": 35.2,
-       "ppg": 24.7,
-       "why": "starter"
-      },
-      "counts_as_out": true
-     },
-     {
-      "player": "Walker Kessler",
-      "status": "Out",
-      "reason": "Head coach JJ Redick said he expects Walker (leg) to be available for Wednesday's game against the Jazz, Thuc Nhi Nguyen of the Los Angeles Times reports.",
-      "source": "ESPN",
-      "is_key": true,
-      "key_info": {
-       "name": "Walker Kessler",
-       "starts": 14,
-       "team_games": 15,
-       "mpg": 30.9,
-       "ppg": 14.5,
-       "why": "starter"
-      },
-      "counts_as_out": true
-     }
-    ],
-    "injuries_known": true,
-    "key_out": [
-     "Austin Reaves",
-     "Walker Kessler"
-    ],
-    "key_questionable": []
-   },
-   "spread": {
-    "favorite_id": "13",
-    "spread": 10.5,
-    "details": "LAL -10.5",
-    "provider": "Draft Kings",
-    "ml_home": -452,
-    "ml_away": 350
-   },
-   "favorite": "home",
-   "scoring": {
-    "scored": true,
-    "favorite_side": "home",
-    "fav": "LAL",
-    "dog": "UTAH",
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "routes": [],
-    "route": "",
-    "fails": [
-     "Favorite key player out: Austin Reaves, Walker Kessler"
-    ],
-    "warnings": [
-     "Info: UTAH without Jaren Jackson Jr., Jaxson Hayes, Lauri Markkanen"
-    ],
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Analysis Score 28+",
-      "pass": false,
-      "detail": "Score 15 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 LAL last-3 top 10 in 1 of 4 \u00b7 \u2717 UTAH last-3 bottom 10 in 1 of 4 \u00b7 \u2717 LAL season outside top 15: Opp eFG% #18 \u00b7 \u2717 UTAH season top 10: Opp eFG% #10"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key player out for the favorite",
-      "pass": false,
-      "detail": "Favorite key player out: Austin Reaves, Walker Kessler"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not top 10 in any power ranking",
-      "pass": true,
-      "detail": "Underdog: consensus #28, our net rating #26, ESPN BPI #27, NBA.com #28"
-     }
-    ],
-    "context": [
-     {
-      "check": "Favorite top 10 in a metric, season and last 3",
-      "pass": true,
-      "detail": "Off Eff"
-     },
-     {
-      "check": "Underdog not top 10 in any metric over its last 3",
-      "pass": false,
-      "detail": "eFG%, Off Eff"
-     },
-     {
-      "check": "Underdog not 3-0 in its last 3",
-      "pass": true,
-      "detail": "1-2"
-     }
-    ],
-    "qualifiers": [
-     "Off Eff"
-    ],
-    "score": 15,
-    "max": 40,
-    "band": "red",
-    "parts": [
-     {
-      "key": "fav_metrics",
-      "label": "Favorite metrics",
-      "points": 5,
-      "max": 16
-     },
-     {
-      "key": "dog_metrics",
-      "label": "Underdog metrics",
-      "points": 5,
-      "max": 16
-     },
-     {
-      "key": "net",
-      "label": "Net rating",
-      "points": 1,
-      "max": 2
-     },
-     {
-      "key": "form",
-      "label": "Last-3 form",
-      "points": 2,
-      "max": 2
-     },
-     {
-      "key": "power",
-      "label": "Power rank",
-      "points": 1,
-      "max": 1
-     },
-     {
-      "key": "home",
-      "label": "Home court",
-      "points": 1,
-      "max": 1
-     },
-     {
-      "key": "health",
-      "label": "Health",
-      "points": 0,
-      "max": 1
-     },
-     {
-      "key": "rest",
-      "label": "Rest",
-      "points": 0,
-      "max": 1
-     }
-    ],
-    "pills": [
-     {
-      "team": "LAL",
-      "role": "fav",
-      "window": "season",
-      "cells": [
-       {
-        "metric": "efg",
-        "rank": 1,
-        "color": "green"
-       },
-       {
-        "metric": "off",
-        "rank": 1,
-        "color": "green"
-       },
-       {
-        "metric": "opp_efg",
-        "rank": 18,
-        "color": "yellow"
-       },
-       {
-        "metric": "def",
-        "rank": 15,
-        "color": "yellow"
-       }
-      ]
-     },
-     {
-      "team": "LAL",
-      "role": "fav",
-      "window": "last3",
-      "cells": [
-       {
-        "metric": "efg",
-        "rank": 13,
-        "color": "yellow"
-       },
-       {
-        "metric": "off",
-        "rank": 8,
-        "color": "green"
-       },
-       {
-        "metric": "opp_efg",
-        "rank": 14,
-        "color": "yellow"
-       },
-       {
-        "metric": "def",
-        "rank": 14,
-        "color": "yellow"
-       }
-      ]
-     },
-     {
-      "team": "UTAH",
-      "role": "dog",
-      "window": "season",
-      "cells": [
-       {
-        "metric": "opp_efg",
-        "rank": 10,
-        "color": "red"
-       },
-       {
-        "metric": "def",
-        "rank": 22,
-        "color": "green"
-       },
-       {
-        "metric": "efg",
-        "rank": 24,
-        "color": "green"
-       },
-       {
-        "metric": "off",
-        "rank": 27,
-        "color": "green"
-       }
-      ]
-     },
-     {
-      "team": "UTAH",
-      "role": "dog",
-      "window": "last3",
-      "cells": [
-       {
-        "metric": "opp_efg",
-        "rank": 12,
-        "color": "yellow"
-       },
-       {
-        "metric": "def",
-        "rank": 21,
-        "color": "green"
-       },
-       {
-        "metric": "efg",
-        "rank": 3,
-        "color": "deep-red"
-       },
-       {
-        "metric": "off",
-        "rank": 6,
-        "color": "red"
-       }
-      ]
-     }
-    ],
-    "grid": [
-     {
-      "key": "off_def",
-      "label": "Offense vs defense",
-      "fav_metric": "off",
-      "dog_metric": "def",
-      "cells": [
-       {
-        "team": "LAL",
-        "role": "fav",
-        "window": "season",
-        "metric": "off",
-        "rank": 1,
-        "color": "green"
-       },
-       {
-        "team": "LAL",
-        "role": "fav",
-        "window": "last3",
-        "metric": "off",
-        "rank": 8,
-        "color": "green"
-       },
-       {
-        "team": "UTAH",
-        "role": "dog",
-        "window": "season",
-        "metric": "def",
-        "rank": 22,
-        "color": "green"
-       },
-       {
-        "team": "UTAH",
-        "role": "dog",
-        "window": "last3",
-        "metric": "def",
-        "rank": 21,
-        "color": "green"
-       }
-      ]
-     },
-     {
-      "key": "shoot",
-      "label": "Shooting vs shot defense",
-      "fav_metric": "efg",
-      "dog_metric": "opp_efg",
-      "cells": [
-       {
-        "team": "LAL",
-        "role": "fav",
-        "window": "season",
-        "metric": "efg",
-        "rank": 1,
-        "color": "green"
-       },
-       {
-        "team": "LAL",
-        "role": "fav",
-        "window": "last3",
-        "metric": "efg",
-        "rank": 13,
-        "color": "yellow"
-       },
-       {
-        "team": "UTAH",
-        "role": "dog",
-        "window": "season",
-        "metric": "opp_efg",
-        "rank": 10,
-        "color": "red"
-       },
-       {
-        "team": "UTAH",
-        "role": "dog",
-        "window": "last3",
-        "metric": "opp_efg",
-        "rank": 12,
-        "color": "yellow"
-       }
-      ]
-     },
-     {
-      "key": "def_off",
-      "label": "Defense vs offense",
-      "fav_metric": "def",
-      "dog_metric": "off",
-      "cells": [
-       {
-        "team": "LAL",
-        "role": "fav",
-        "window": "season",
-        "metric": "def",
-        "rank": 15,
-        "color": "yellow"
-       },
-       {
-        "team": "LAL",
-        "role": "fav",
-        "window": "last3",
-        "metric": "def",
-        "rank": 14,
-        "color": "yellow"
-       },
-       {
-        "team": "UTAH",
-        "role": "dog",
-        "window": "season",
-        "metric": "off",
-        "rank": 27,
-        "color": "green"
-       },
-       {
-        "team": "UTAH",
-        "role": "dog",
-        "window": "last3",
-        "metric": "off",
-        "rank": 6,
-        "color": "red"
-       }
-      ]
-     },
-     {
-      "key": "shotd",
-      "label": "Shot defense vs shooting",
-      "fav_metric": "opp_efg",
-      "dog_metric": "efg",
-      "cells": [
-       {
-        "team": "LAL",
-        "role": "fav",
-        "window": "season",
-        "metric": "opp_efg",
-        "rank": 18,
-        "color": "yellow"
-       },
-       {
-        "team": "LAL",
-        "role": "fav",
-        "window": "last3",
-        "metric": "opp_efg",
-        "rank": 14,
-        "color": "yellow"
-       },
-       {
-        "team": "UTAH",
-        "role": "dog",
-        "window": "season",
-        "metric": "efg",
-        "rank": 24,
-        "color": "green"
-       },
-       {
-        "team": "UTAH",
-        "role": "dog",
-        "window": "last3",
-        "metric": "efg",
-        "rank": 3,
-        "color": "deep-red"
-       }
-      ]
-     }
-    ],
-    "matchups": [
-     {
-      "key": "off_off",
-      "label": "Offense vs offense",
-      "fav_metric": "off",
-      "dog_metric": "off",
-      "fav_rank": 8,
-      "dog_rank": 6,
-      "counts": true,
-      "in_range": true,
-      "met": false
-     },
-     {
-      "key": "def_def",
-      "label": "Defense vs defense",
-      "fav_metric": "def",
-      "dog_metric": "def",
-      "fav_rank": 14,
-      "dog_rank": 21,
-      "counts": true,
-      "in_range": true,
-      "met": false
-     },
-     {
-      "key": "def_off",
-      "label": "Defense vs offense",
-      "fav_metric": "def",
-      "dog_metric": "off",
-      "fav_rank": 14,
-      "dog_rank": 6,
-      "counts": true,
-      "in_range": true,
-      "met": false
-     },
-     {
-      "key": "off_def",
-      "label": "Offense vs defense",
-      "fav_metric": "off",
-      "dog_metric": "def",
-      "fav_rank": 8,
-      "dog_rank": 21,
-      "counts": true,
-      "in_range": true,
-      "met": true
-     }
-    ]
-   }
-  },
-  {
    "id": "401910018",
    "state": "pre",
    "neutral": false,
@@ -4036,8 +4032,8 @@
     "spread": 6.5,
     "details": "PHX -6.5",
     "provider": "Draft Kings",
-    "ml_home": 220,
-    "ml_away": -269
+    "ml_home": 211,
+    "ml_away": -257
    },
    "favorite": "away",
    "scoring": {
@@ -4794,8 +4790,8 @@
     "spread": 7.5,
     "details": "HOU -7.5",
     "provider": "Draft Kings",
-    "ml_home": 236,
-    "ml_away": -290
+    "ml_home": 247,
+    "ml_away": -304
    },
    "favorite": "away",
    "scoring": {
@@ -5577,11 +5573,11 @@
    },
    "spread": {
     "favorite_id": "25",
-    "spread": 7.5,
-    "details": "OKC -7.5",
+    "spread": 6.5,
+    "details": "OKC -6.5",
     "provider": "Draft Kings",
-    "ml_home": -283,
-    "ml_away": 231
+    "ml_home": -249,
+    "ml_away": 205
    },
    "favorite": "home",
    "scoring": {
@@ -7054,8 +7050,8 @@
     "spread": 4.5,
     "details": "CLE -4.5",
     "provider": "Draft Kings",
-    "ml_home": -205,
-    "ml_away": 171
+    "ml_home": -196,
+    "ml_away": 164
    },
    "favorite": "home",
    "scoring": {
@@ -7791,11 +7787,11 @@
    },
    "spread": {
     "favorite_id": "20",
-    "spread": 2.5,
-    "details": "PHI -2.5",
+    "spread": 1.5,
+    "details": "PHI -1.5",
     "provider": "Draft Kings",
-    "ml_home": 114,
-    "ml_away": -135
+    "ml_home": -105,
+    "ml_away": -113
    },
    "favorite": "away",
    "scoring": {
@@ -8606,11 +8602,11 @@
    },
    "spread": {
     "favorite_id": "6",
-    "spread": 5.5,
-    "details": "DAL -5.5",
+    "spread": 4.5,
+    "details": "DAL -4.5",
     "provider": "Draft Kings",
-    "ml_home": -222,
-    "ml_away": 184
+    "ml_home": -197,
+    "ml_away": 164
    },
    "favorite": "home",
    "scoring": {
