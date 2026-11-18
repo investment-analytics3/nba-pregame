@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 11,
- "built_at": "2026-11-17T07:01:14-08:00",
- "built_label": "Tue Nov 17, 7:01 AM PT",
+ "built_at": "2026-11-18T07:15:46-08:00",
+ "built_label": "Wed Nov 18, 7:15 AM PT",
  "games": [
   {
    "id": "401873066",
@@ -24,7 +24,7 @@
    "open_spread": -5.5,
    "total": 44.5,
    "total_open": 45.5,
-   "fav_ml": -700.0,
+   "fav_ml": -750.0,
    "favorite": "home",
    "spread": -12.5,
    "movement": 7.0,
@@ -98,12 +98,10 @@
      "rank": 9
     },
     "injuries_known": true,
-    "key_out": [
-     "Woody Marks"
-    ],
+    "key_out": [],
     "key_questionable": [
-     "Azeez Al-Shaair",
-     "Danielle Hunter"
+     "Danielle Hunter",
+     "Kamari Lassiter"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -111,9 +109,9 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Danielle Hunter",
-      "pos": "DE",
-      "status": "Questionable"
+      "name": "Jaylin Smith",
+      "pos": "CB",
+      "status": "Injured Reserve"
      },
      {
       "name": "Brevin Jordan",
@@ -121,27 +119,27 @@
       "status": "Questionable"
      },
      {
-      "name": "Azeez Al-Shaair",
-      "pos": "LB",
+      "name": "Danielle Hunter",
+      "pos": "DE",
       "status": "Questionable"
      },
      {
-      "name": "Jake Hummel",
-      "pos": "LB",
+      "name": "Kamari Lassiter",
+      "pos": "CB",
       "status": "Questionable"
      },
      {
-      "name": "Woody Marks",
-      "pos": "RB",
-      "status": "Doubtful"
+      "name": "Marvin Harrison Jr.",
+      "pos": "WR",
+      "status": "Questionable"
      }
     ],
     "power": {
      "consensus": 13,
      "fpi": 12,
-     "nfl_com": 16
+     "nfl_com": 17
     },
-    "fpi_win": 0.744
+    "fpi_win": 0.747
    },
    "away": {
     "code": "IND",
@@ -211,15 +209,28 @@
      "rank": 34
     },
     "injuries_known": true,
-    "key_out": [
-     "Jalen Travis"
-    ],
+    "key_out": [],
     "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Will Mallory",
+      "pos": "TE",
+      "status": "Questionable"
+     },
+     {
+      "name": "Jaylon Carlies",
+      "pos": "LB",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Anthony Gould",
+      "pos": "WR",
+      "status": "Questionable"
+     },
      {
       "name": "Luke Rhodes",
       "pos": "LS",
@@ -229,37 +240,22 @@
       "name": "Jerry Tillery",
       "pos": "DT",
       "status": "Questionable"
-     },
-     {
-      "name": "Jalen Travis",
-      "pos": "OT",
-      "status": "Doubtful"
-     },
-     {
-      "name": "Jaylon Carlies",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Will Mallory",
-      "pos": "TE",
-      "status": "Questionable"
      }
     ],
     "power": {
-     "consensus": 24,
+     "consensus": 25,
      "fpi": 21,
-     "nfl_com": 25
+     "nfl_com": 29
     },
-    "fpi_win": 0.254
+    "fpi_win": 0.251
    },
    "fav": "HOU",
    "dog": "IND",
    "scoring": {
     "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
     "alerts": false,
     "routes": [],
     "route": "",
@@ -268,7 +264,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 19 of 40"
+      "detail": "Score 20 of 40"
      },
      {
       "rule": "B",
@@ -279,14 +275,14 @@
      {
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
-      "pass": false,
-      "detail": "HOU key starter out: Woody Marks"
+      "pass": true,
+      "detail": "Clear"
      },
      {
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "IND: consensus #24, ESPN FPI #21, NFL.com #25"
+      "detail": "IND: consensus #25, ESPN FPI #21, NFL.com #29"
      }
     ],
     "context": [
@@ -319,20 +315,18 @@
      "off_epa"
     ],
     "fails": [
-     "HOU key starter out: Woody Marks",
-     "Would be on the watch list otherwise (score 19)"
+     "Watch list: score 20 (qualifies at 28)"
     ],
     "failed": [
-     "HOU key starter out: Woody Marks",
-     "Would be on the watch list otherwise (score 19)"
+     "Watch list: score 20 (qualifies at 28)"
     ],
     "hero": {
-     "score": 19,
+     "score": 20,
      "band": "yellow",
      "parts": {
       "fav_strength": 3,
       "dog_weakness": 11,
-      "health": 3,
+      "health": 4,
       "home": 1,
       "rest": 0,
       "form": 1
@@ -358,7 +352,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Azeez Al-Shaair, Danielle Hunter"
+      "text": "Favorite questionable: Danielle Hunter, Kamari Lassiter"
      }
     ],
     "under": {
@@ -370,7 +364,7 @@
      "total_move": -1.0,
      "note": ""
     },
-    "call": "No track",
+    "call": "Watch list",
     "matchups": [
      {
       "key": "def_def",
@@ -432,7 +426,7 @@
    "open_spread": -11.5,
    "total": 45.5,
    "total_open": 47.5,
-   "fav_ml": -1200.0,
+   "fav_ml": -1450.0,
    "favorite": "home",
    "spread": -16.5,
    "movement": 5.0,
@@ -517,6 +511,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Ar'maj Reed-Adams",
+      "pos": "G",
+      "status": "Injured Reserve"
+     },
+     {
       "name": "Dorian Williams",
       "pos": "LB",
       "status": "Questionable"
@@ -535,11 +534,6 @@
       "name": "Tyrell Shavers",
       "pos": "WR",
       "status": "Out"
-     },
-     {
-      "name": "Joshua Palmer",
-      "pos": "WR",
-      "status": "Injured Reserve"
      }
     ],
     "power": {
@@ -547,7 +541,7 @@
      "fpi": 3,
      "nfl_com": 2
     },
-    "fpi_win": 0.95
+    "fpi_win": 0.948
    },
    "away": {
     "code": "MIA",
@@ -617,19 +611,29 @@
      "rank": 29
     },
     "injuries_known": true,
-    "key_out": [
-     "Zeek Biggers"
-    ],
+    "key_out": [],
     "key_questionable": [
      "Aaron Brewer",
-     "Chris Bell",
-     "Jordan Phillips"
+     "Chris Bell"
     ],
-    "key_long_term": [],
+    "key_long_term": [
+     "Jordan Phillips",
+     "Zeek Biggers"
+    ],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Zeek Biggers",
+      "pos": "DT",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Jordan Phillips",
+      "pos": "DT",
+      "status": "Injured Reserve"
+     },
      {
       "name": "Jared Wayne",
       "pos": "WR",
@@ -644,24 +648,14 @@
       "name": "Aaron Brewer",
       "pos": "C",
       "status": "Questionable"
-     },
-     {
-      "name": "Zeek Biggers",
-      "pos": "DT",
-      "status": "Out"
-     },
-     {
-      "name": "Jordan Phillips",
-      "pos": "DT",
-      "status": "Questionable"
      }
     ],
     "power": {
      "consensus": 32,
      "fpi": 32,
-     "nfl_com": 29
+     "nfl_com": 30
     },
-    "fpi_win": 0.05
+    "fpi_win": 0.052
    },
    "fav": "BUF",
    "dog": "MIA",
@@ -696,7 +690,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "MIA: consensus #32, ESPN FPI #32, NFL.com #29"
+      "detail": "MIA: consensus #32, ESPN FPI #32, NFL.com #30"
      }
     ],
     "context": [
@@ -764,7 +758,7 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Aaron Brewer, Chris Bell, Jordan Phillips"
+      "text": "Underdog questionable: Aaron Brewer, Chris Bell"
      }
     ],
     "under": {
@@ -836,13 +830,13 @@
    },
    "line_source": "Draft Kings",
    "open_spread": 4.5,
-   "total": 43.5,
+   "total": 44.5,
    "total_open": 46.5,
    "fav_ml": -142.0,
    "favorite": "home",
    "spread": -2.5,
    "movement": 7.0,
-   "total_move": -3.0,
+   "total_move": -2.0,
    "fav_home": true,
    "home": {
     "code": "CAR",
@@ -951,7 +945,7 @@
     "power": {
      "consensus": 18,
      "fpi": 17,
-     "nfl_com": 20
+     "nfl_com": 19
     },
     "fpi_win": 0.687
    },
@@ -1061,11 +1055,11 @@
      }
     ],
     "power": {
-     "consensus": 29,
+     "consensus": 28,
      "fpi": 27,
      "nfl_com": 28
     },
-    "fpi_win": 0.311
+    "fpi_win": 0.31
    },
    "fav": "CAR",
    "dog": "BAL",
@@ -1100,7 +1094,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "BAL: consensus #29, ESPN FPI #27, NFL.com #28"
+      "detail": "BAL: consensus #28, ESPN FPI #27, NFL.com #28"
      }
     ],
     "context": [
@@ -1177,7 +1171,7 @@
       13,
       19
      ],
-     "total_move": -3.0,
+     "total_move": -2.0,
      "note": ""
     },
     "call": "No track",
@@ -1240,13 +1234,13 @@
    },
    "line_source": "Draft Kings",
    "open_spread": -6.5,
-   "total": 49.5,
+   "total": 48.5,
    "total_open": 46.5,
-   "fav_ml": -675.0,
+   "fav_ml": -625.0,
    "favorite": "home",
    "spread": -11.5,
    "movement": 5.0,
-   "total_move": 3.0,
+   "total_move": 2.0,
    "fav_home": true,
    "home": {
     "code": "CHI",
@@ -1318,7 +1312,6 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
-     "Luther Burden",
      "Malik Muhammad",
      "Tyrique Stevenson"
     ],
@@ -1328,7 +1321,7 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Malik Muhammad II",
+      "name": "Kyler Gordon",
       "pos": "CB",
       "status": "Questionable"
      },
@@ -1338,8 +1331,8 @@
       "status": "Questionable"
      },
      {
-      "name": "Luther Burden III",
-      "pos": "WR",
+      "name": "Malik Muhammad II",
+      "pos": "CB",
       "status": "Questionable"
      },
      {
@@ -1356,9 +1349,9 @@
     "power": {
      "consensus": 5,
      "fpi": 7,
-     "nfl_com": 4
+     "nfl_com": 6
     },
-    "fpi_win": 0.786
+    "fpi_win": 0.785
    },
    "away": {
     "code": "NO",
@@ -1470,11 +1463,11 @@
      }
     ],
     "power": {
-     "consensus": 21,
+     "consensus": 22,
      "fpi": 20,
-     "nfl_com": 23
+     "nfl_com": 25
     },
-    "fpi_win": 0.212
+    "fpi_win": 0.213
    },
    "fav": "CHI",
    "dog": "NO",
@@ -1509,7 +1502,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "NO: consensus #21, ESPN FPI #20, NFL.com #23"
+      "detail": "NO: consensus #22, ESPN FPI #20, NFL.com #25"
      }
     ],
     "context": [
@@ -1580,7 +1573,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Luther Burden, Malik Muhammad, Tyrique Stevenson"
+      "text": "Favorite questionable: Malik Muhammad, Tyrique Stevenson"
      },
      {
       "level": "yellow",
@@ -1593,7 +1586,7 @@
       10,
       22
      ],
-     "total_move": 3.0,
+     "total_move": 2.0,
      "note": ""
     },
     "call": "Watch list",
@@ -1658,7 +1651,7 @@
    "open_spread": -6.5,
    "total": 54.5,
    "total_open": 48.5,
-   "fav_ml": -425.0,
+   "fav_ml": -380.0,
    "favorite": "home",
    "spread": -8.5,
    "movement": 2.0,
@@ -1770,11 +1763,11 @@
      }
     ],
     "power": {
-     "consensus": 17,
+     "consensus": 16,
      "fpi": 14,
-     "nfl_com": 22
+     "nfl_com": 18
     },
-    "fpi_win": 0.799
+    "fpi_win": 0.805
    },
    "away": {
     "code": "TEN",
@@ -1848,14 +1841,20 @@
     "key_questionable": [
      "Anthony Hill",
      "Carnell Tate",
-     "Cody Barton",
+     "Cody Barton"
+    ],
+    "key_long_term": [
      "Wan'Dale Robinson"
     ],
-    "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Wan'Dale Robinson",
+      "pos": "WR",
+      "status": "Injured Reserve"
+     },
      {
       "name": "Anthony Hill Jr.",
       "pos": "LB",
@@ -1872,11 +1871,6 @@
       "status": "Questionable"
      },
      {
-      "name": "Wan'Dale Robinson",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
       "name": "Tony Adams",
       "pos": "S",
       "status": "Questionable"
@@ -1887,7 +1881,7 @@
      "fpi": 29,
      "nfl_com": 24
     },
-    "fpi_win": 0.2
+    "fpi_win": 0.193
    },
    "fav": "DAL",
    "dog": "TEN",
@@ -1995,7 +1989,7 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Anthony Hill, Carnell Tate, Cody Barton, Wan'Dale Robinson"
+      "text": "Underdog questionable: Anthony Hill, Carnell Tate, Cody Barton"
      }
     ],
     "under": {
@@ -2067,13 +2061,13 @@
    },
    "line_source": "Draft Kings",
    "open_spread": -4.5,
-   "total": 45.5,
+   "total": 43.5,
    "total_open": 49.5,
-   "fav_ml": -270.0,
+   "fav_ml": -345.0,
    "favorite": "home",
-   "spread": -6.5,
-   "movement": 2.0,
-   "total_move": -4.0,
+   "spread": -7.0,
+   "movement": 2.5,
+   "total_move": -6.0,
    "fav_home": true,
    "home": {
     "code": "DET",
@@ -2157,23 +2151,23 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Cade Mays",
+      "pos": "C",
+      "status": "Doubtful"
+     },
+     {
+      "name": "Kerby Joseph",
+      "pos": "S",
+      "status": "Out"
+     },
+     {
       "name": "D.J. Reed",
       "pos": "CB",
       "status": "Questionable"
      },
      {
-      "name": "Cade Mays",
-      "pos": "C",
-      "status": "Questionable"
-     },
-     {
       "name": "Aidan Hutchinson",
       "pos": "DE",
-      "status": "Out"
-     },
-     {
-      "name": "Kerby Joseph",
-      "pos": "S",
       "status": "Out"
      },
      {
@@ -2185,9 +2179,9 @@
     "power": {
      "consensus": 8,
      "fpi": 10,
-     "nfl_com": 7
+     "nfl_com": 8
     },
-    "fpi_win": 0.609
+    "fpi_win": 0.613
    },
    "away": {
     "code": "TB",
@@ -2270,14 +2264,14 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Yaya Diaby",
-      "pos": "LB",
-      "status": "Doubtful"
-     },
-     {
       "name": "Baker Mayfield",
       "pos": "QB",
       "status": "Questionable"
+     },
+     {
+      "name": "Yaya Diaby",
+      "pos": "LB",
+      "status": "Doubtful"
      },
      {
       "name": "Jalen McMillan",
@@ -2296,11 +2290,11 @@
      }
     ],
     "power": {
-     "consensus": 15,
+     "consensus": 14,
      "fpi": 15,
      "nfl_com": 14
     },
-    "fpi_win": 0.387
+    "fpi_win": 0.384
    },
    "fav": "DET",
    "dog": "TB",
@@ -2335,7 +2329,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "TB: consensus #15, ESPN FPI #15, NFL.com #14"
+      "detail": "TB: consensus #14, ESPN FPI #15, NFL.com #14"
      }
     ],
     "context": [
@@ -2399,6 +2393,10 @@
     "flags": [
      {
       "level": "yellow",
+      "text": "Line crossed key number 7"
+     },
+     {
+      "level": "yellow",
       "text": "Favorite questionable: D.J. Reed"
      },
      {
@@ -2412,7 +2410,7 @@
       7,
       28
      ],
-     "total_move": -4.0,
+     "total_move": -6.0,
      "note": ""
     },
     "call": "No track",
@@ -2424,7 +2422,7 @@
       "dog_metric": "def_sr",
       "fav_rank": 3,
       "dog_rank": 2,
-      "in_range": false,
+      "in_range": true,
       "met": false
      },
      {
@@ -2434,7 +2432,7 @@
       "dog_metric": "off_sr",
       "fav_rank": 3,
       "dog_rank": 13,
-      "in_range": false,
+      "in_range": true,
       "met": false
      },
      {
@@ -2444,7 +2442,7 @@
       "dog_metric": "def_sr",
       "fav_rank": 6,
       "dog_rank": 2,
-      "in_range": false,
+      "in_range": true,
       "met": false
      }
     ]
@@ -2452,9 +2450,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV22TBDET",
-    "fav_prob": 0.715,
-    "bid": 0.71,
-    "ask": 0.72
+    "fav_prob": 0.755,
+    "bid": 0.75,
+    "ask": 0.76
    }
   },
   {
@@ -2479,8 +2477,8 @@
    "total_open": 44.5,
    "fav_ml": -1450.0,
    "favorite": "home",
-   "spread": -16.5,
-   "movement": 5.0,
+   "spread": -15.5,
+   "movement": 4.0,
    "total_move": -3.0,
    "fav_home": true,
    "home": {
@@ -2590,9 +2588,9 @@
     "power": {
      "consensus": 6,
      "fpi": 5,
-     "nfl_com": 10
+     "nfl_com": 9
     },
-    "fpi_win": 0.882
+    "fpi_win": 0.883
    },
    "away": {
     "code": "ARI",
@@ -2662,50 +2660,50 @@
      "rank": null
     },
     "injuries_known": true,
-    "key_out": [
+    "key_out": [],
+    "key_questionable": [],
+    "key_long_term": [
      "Andrew Wingard"
     ],
-    "key_questionable": [
-     "Hjalte Froholdt"
-    ],
-    "key_long_term": [],
     "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
-    "qb_reset": "G.Minshew, 54 dropbacks this season",
+    "qb_out": [
+     "Gardner Minshew II"
+    ],
+    "qb_active": false,
+    "qb_reset": "Gardner Minshew II out",
     "injury_list": [
      {
-      "name": "Jayden Williams",
-      "pos": "OT",
-      "status": "Questionable"
-     },
-     {
-      "name": "Hjalte Froholdt",
-      "pos": "C",
-      "status": "Questionable"
-     },
-     {
-      "name": "Jon Gaines II",
-      "pos": "G",
-      "status": "Questionable"
+      "name": "Gardner Minshew II",
+      "pos": "QB",
+      "status": "Injured Reserve"
      },
      {
       "name": "Jordan Burch",
       "pos": "LB",
-      "status": "Out"
+      "status": "Injured Reserve"
      },
      {
       "name": "Andrew Wingard",
       "pos": "S",
-      "status": "Out"
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "James Conner",
+      "pos": "RB",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Jayden Williams",
+      "pos": "OT",
+      "status": "Questionable"
      }
     ],
     "power": {
-     "consensus": 30,
+     "consensus": 31,
      "fpi": 28,
-     "nfl_com": 27
+     "nfl_com": 31
     },
-    "fpi_win": 0.117
+    "fpi_win": 0.116
    },
    "fav": "KC",
    "dog": "ARI",
@@ -2743,7 +2741,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "ARI: consensus #30, ESPN FPI #28, NFL.com #27"
+      "detail": "ARI: consensus #31, ESPN FPI #28, NFL.com #31"
      }
     ],
     "context": [
@@ -2804,19 +2802,15 @@
     "flags": [
      {
       "level": "red",
-      "text": "Underdog QB change (G.Minshew, 54 dropbacks this season): call capped at Lean"
+      "text": "Underdog QB change (Gardner Minshew II out): call capped at Lean"
      },
      {
       "level": "yellow",
-      "text": "Line moved +5 toward the favorite (4+): downgrade"
+      "text": "Line moved +4 toward the favorite (4+): downgrade"
      },
      {
       "level": "yellow",
       "text": "Favorite questionable: Jaylon Moore, Kenneth Walker III"
-     },
-     {
-      "level": "yellow",
-      "text": "Underdog questionable: Hjalte Froholdt"
      }
     ],
     "under": {
@@ -3000,11 +2994,11 @@
      }
     ],
     "power": {
-     "consensus": 16,
+     "consensus": 19,
      "fpi": 22,
-     "nfl_com": 13
+     "nfl_com": 16
     },
-    "fpi_win": 0.185
+    "fpi_win": 0.19
    },
    "away": {
     "code": "JAX",
@@ -3074,21 +3068,23 @@
      "rank": 2
     },
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
+    "key_out": [
      "Robert Hainsey"
     ],
+    "key_questionable": [],
     "key_long_term": [
      "Eric Murray"
     ],
-    "interior_ol_out": [],
+    "interior_ol_out": [
+     "Robert Hainsey"
+    ],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
       "name": "Robert Hainsey",
       "pos": "C",
-      "status": "Questionable"
+      "status": "Doubtful"
      },
      {
       "name": "Danny Striggow",
@@ -3116,15 +3112,15 @@
      "fpi": 2,
      "nfl_com": 3
     },
-    "fpi_win": 0.813
+    "fpi_win": 0.808
    },
    "fav": "JAX",
    "dog": "NYG",
    "scoring": {
     "qualified": false,
-    "tier": "watch",
-    "tier_label": "Watch list",
-    "tracked": true,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
     "alerts": false,
     "routes": [],
     "route": "",
@@ -3133,7 +3129,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 26 of 40"
+      "detail": "Score 24 of 40"
      },
      {
       "rule": "B",
@@ -3144,14 +3140,14 @@
      {
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "Clear (on injured reserve, not counted: Eric Murray)"
+      "pass": false,
+      "detail": "JAX key starter out: Robert Hainsey (on injured reserve, not counted: Eric Murray)"
      },
      {
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "NYG: consensus #16, ESPN FPI #22, NFL.com #13"
+      "detail": "NYG: consensus #19, ESPN FPI #22, NFL.com #16"
      }
     ],
     "context": [
@@ -3187,18 +3183,20 @@
      "def_sr"
     ],
     "fails": [
-     "Watch list: score 26 (qualifies at 28)"
+     "JAX key starter out: Robert Hainsey",
+     "Would be on the watch list otherwise (score 24)"
     ],
     "failed": [
-     "Watch list: score 26 (qualifies at 28)"
+     "JAX key starter out: Robert Hainsey",
+     "Would be on the watch list otherwise (score 24)"
     ],
     "hero": {
-     "score": 26,
+     "score": 24,
      "band": "yellow",
      "parts": {
       "fav_strength": 14,
       "dog_weakness": 6,
-      "health": 4,
+      "health": 2,
       "home": 0,
       "rest": 0,
       "form": 2
@@ -3216,15 +3214,15 @@
     "flags": [
      {
       "level": "yellow",
+      "text": "Favorite interior OL out: Robert Hainsey"
+     },
+     {
+      "level": "yellow",
       "text": "Line moved +4.5 toward the favorite (4+): downgrade"
      },
      {
       "level": "yellow",
       "text": "Line crossed key number 3"
-     },
-     {
-      "level": "yellow",
-      "text": "Favorite questionable: Robert Hainsey"
      }
     ],
     "under": {
@@ -3236,7 +3234,7 @@
      "total_move": 0.0,
      "note": ""
     },
-    "call": "Watch list",
+    "call": "No track",
     "matchups": [
      {
       "key": "def_def",
@@ -3296,13 +3294,13 @@
    },
    "line_source": "Draft Kings",
    "open_spread": -9.5,
-   "total": 40.5,
+   "total": 41.5,
    "total_open": 41.5,
-   "fav_ml": -180.0,
+   "fav_ml": -185.0,
    "favorite": "home",
    "spread": -3.5,
    "movement": -6.0,
-   "total_move": -1.0,
+   "total_move": 0.0,
    "fav_home": true,
    "home": {
     "code": "LAC",
@@ -3406,11 +3404,11 @@
      }
     ],
     "power": {
-     "consensus": 25,
+     "consensus": 21,
      "fpi": 18,
-     "nfl_com": 32
+     "nfl_com": 27
     },
-    "fpi_win": 0.699
+    "fpi_win": 0.695
    },
    "away": {
     "code": "NYJ",
@@ -3518,11 +3516,11 @@
      }
     ],
     "power": {
-     "consensus": 31,
+     "consensus": 29,
      "fpi": 30,
-     "nfl_com": 30
+     "nfl_com": 26
     },
-    "fpi_win": 0.299
+    "fpi_win": 0.302
    },
    "fav": "LAC",
    "dog": "NYJ",
@@ -3557,7 +3555,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "NYJ: consensus #31, ESPN FPI #30, NFL.com #30"
+      "detail": "NYJ: consensus #29, ESPN FPI #30, NFL.com #26"
      }
     ],
     "context": [
@@ -3630,7 +3628,7 @@
       32,
       20
      ],
-     "total_move": -1.0,
+     "total_move": 0.0,
      "note": ""
     },
     "call": "No track",
@@ -3695,7 +3693,7 @@
    "open_spread": -8.5,
    "total": 40.5,
    "total_open": 41.5,
-   "fav_ml": -550.0,
+   "fav_ml": -600.0,
    "favorite": "home",
    "spread": -10.0,
    "movement": 1.5,
@@ -3810,9 +3808,9 @@
     "power": {
      "consensus": 9,
      "fpi": 11,
-     "nfl_com": 6
+     "nfl_com": 7
     },
-    "fpi_win": 0.859
+    "fpi_win": 0.863
    },
    "away": {
     "code": "LV",
@@ -3923,7 +3921,7 @@
      "fpi": 31,
      "nfl_com": 21
     },
-    "fpi_win": 0.14
+    "fpi_win": 0.136
    },
    "fav": "DEN",
    "dog": "LV",
@@ -4211,11 +4209,11 @@
      }
     ],
     "power": {
-     "consensus": 28,
-     "fpi": 24,
-     "nfl_com": 31
+     "consensus": 30,
+     "fpi": 25,
+     "nfl_com": 32
     },
-    "fpi_win": 0.356
+    "fpi_win": 0.358
    },
    "away": {
     "code": "PIT",
@@ -4297,14 +4295,14 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Mason McCormick",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
       "name": "DeShon Elliott",
       "pos": "S",
       "status": "Questionable"
-     },
-     {
-      "name": "Mason McCormick",
-      "pos": "G",
-      "status": "Doubtful"
      },
      {
       "name": "Michael Pittman Jr.",
@@ -4323,11 +4321,11 @@
      }
     ],
     "power": {
-     "consensus": 14,
+     "consensus": 15,
      "fpi": 16,
-     "nfl_com": 12
+     "nfl_com": 13
     },
-    "fpi_win": 0.641
+    "fpi_win": 0.639
    },
    "fav": "PIT",
    "dog": "PHI",
@@ -4362,7 +4360,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "PHI: consensus #28, ESPN FPI #24, NFL.com #31"
+      "detail": "PHI: consensus #30, ESPN FPI #25, NFL.com #32"
      }
     ],
     "context": [
@@ -4485,8 +4483,8 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV22PITPHI",
-    "fav_prob": 0.67,
-    "bid": 0.66,
+    "fav_prob": 0.675,
+    "bid": 0.67,
     "ask": 0.68
    }
   },
@@ -4508,13 +4506,13 @@
    },
    "line_source": "Draft Kings",
    "open_spread": -3.5,
-   "total": 46.5,
+   "total": 45.5,
    "total_open": 46.5,
    "fav_ml": -162.0,
    "favorite": "home",
    "spread": -3.0,
    "movement": -0.5,
-   "total_move": 0.0,
+   "total_move": -1.0,
    "fav_home": true,
    "home": {
     "code": "SF",
@@ -4624,7 +4622,7 @@
      "fpi": 1,
      "nfl_com": 1
     },
-    "fpi_win": 0.635
+    "fpi_win": 0.631
    },
    "away": {
     "code": "MIN",
@@ -4735,11 +4733,11 @@
      }
     ],
     "power": {
-     "consensus": 10,
+     "consensus": 7,
      "fpi": 9,
-     "nfl_com": 11
+     "nfl_com": 5
     },
-    "fpi_win": 0.362
+    "fpi_win": 0.366
    },
    "fav": "SF",
    "dog": "MIN",
@@ -4774,7 +4772,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": false,
-      "detail": "MIN top 10 in power ranking: consensus #10, ESPN FPI #9"
+      "detail": "MIN top 10 in power ranking: consensus #7, ESPN FPI #9, NFL.com #5"
      }
     ],
     "context": [
@@ -4808,11 +4806,11 @@
      "off_sr"
     ],
     "fails": [
-     "MIN top 10 in power ranking: consensus #10, ESPN FPI #9",
+     "MIN top 10 in power ranking: consensus #7, ESPN FPI #9, NFL.com #5",
      "Would be on the watch list otherwise (score 23)"
     ],
     "failed": [
-     "MIN top 10 in power ranking: consensus #10, ESPN FPI #9",
+     "MIN top 10 in power ranking: consensus #7, ESPN FPI #9, NFL.com #5",
      "Would be on the watch list otherwise (score 23)"
     ],
     "hero": {
@@ -4839,7 +4837,7 @@
     "flags": [
      {
       "level": "red",
-      "text": "MIN top 10 in power ranking: consensus #10, ESPN FPI #9 (no track)"
+      "text": "MIN top 10 in power ranking: consensus #7, ESPN FPI #9, NFL.com #5 (no track)"
      },
      {
       "level": "yellow",
@@ -4860,7 +4858,7 @@
       1,
       30
      ],
-     "total_move": 0.0,
+     "total_move": -1.0,
      "note": ""
     },
     "call": "No track",
@@ -4900,9 +4898,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV22MINSF",
-    "fav_prob": 0.585,
-    "bid": 0.58,
-    "ask": 0.59
+    "fav_prob": 0.595,
+    "bid": 0.59,
+    "ask": 0.6
    }
   },
   {
@@ -4923,13 +4921,13 @@
    },
    "line_source": "Draft Kings",
    "open_spread": -1.5,
-   "total": 52.5,
+   "total": 54.5,
    "total_open": 52.5,
    "fav_ml": -298.0,
    "favorite": "away",
    "spread": -6.5,
    "movement": 5.0,
-   "total_move": 0.0,
+   "total_move": 2.0,
    "fav_home": false,
    "home": {
     "code": "WAS",
@@ -5009,6 +5007,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Jacory Croskey-Merritt",
+      "pos": "RB",
+      "status": "Injured Reserve"
+     },
+     {
       "name": "Colson Yankoff",
       "pos": "TE",
       "status": "Questionable"
@@ -5024,22 +5027,17 @@
       "status": "Injured Reserve"
      },
      {
-      "name": "Jacory Croskey-Merritt",
-      "pos": "RB",
-      "status": "Injured Reserve"
-     },
-     {
       "name": "Dyami Brown",
       "pos": "WR",
       "status": "Injured Reserve"
      }
     ],
     "power": {
-     "consensus": 23,
+     "consensus": 20,
      "fpi": 19,
-     "nfl_com": 26
+     "nfl_com": 20
     },
-    "fpi_win": 0.234
+    "fpi_win": 0.236
    },
    "away": {
     "code": "CIN",
@@ -5147,9 +5145,9 @@
     "power": {
      "consensus": 4,
      "fpi": 4,
-     "nfl_com": 5
+     "nfl_com": 4
     },
-    "fpi_win": 0.765
+    "fpi_win": 0.762
    },
    "fav": "CIN",
    "dog": "WAS",
@@ -5184,7 +5182,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "WSH: consensus #23, ESPN FPI #19, NFL.com #26"
+      "detail": "WSH: consensus #20, ESPN FPI #19, NFL.com #20"
      }
     ],
     "context": [
@@ -5268,7 +5266,7 @@
       2,
       18
      ],
-     "total_move": 0.0,
+     "total_move": 2.0,
      "note": ""
     },
     "call": "Watch list",
@@ -5335,7 +5333,7 @@
  "edge_required": 0.35,
  "data_through": "Week 10",
  "power_sources": {
-  "nfl_com_url": "https://www.nfl.com/news/nfl-power-rankings-week-10-2026-nfl-season"
+  "nfl_com_url": "https://www.nfl.com/news/nfl-power-rankings-week-11-2026-nfl-season"
  },
  "votes_status": "not gathered yet",
  "summary": {
@@ -5348,6 +5346,6 @@
   "watch": 5,
   "green": 1,
   "edge_clears": 0,
-  "built_label": "Tue Nov 17, 7:01 AM PT"
+  "built_label": "Wed Nov 18, 7:15 AM PT"
  }
 }
