@@ -1,90 +1,8 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-17T15:01:22-08:00",
+ "built_at": "2026-11-17T21:00:53-08:00",
  "games": [
-  {
-   "id": "401866465",
-   "kick_utc": "2026-11-17T23:00:00+00:00",
-   "kick_pt": "Tue 3:00 PM PT",
-   "day_et": "2026-11-17",
-   "away_abbr": "EMU",
-   "home_abbr": "WMU",
-   "fav_abbr": "WMU",
-   "dog_abbr": "EMU",
-   "fav_home": true,
-   "spread": -15.5,
-   "away_names": [
-    "Eastern Michigan Eagles",
-    "E Michigan"
-   ],
-   "home_names": [
-    "Western Michigan Broncos",
-    "W Michigan"
-   ],
-   "tier": "watch",
-   "tier_label": "Watch list",
-   "tracked": true,
-   "alerts": false,
-   "call": "Watch list",
-   "hero": 20,
-   "fav_defense_top10": false,
-   "fav_def_rank_l3": 90,
-   "def_hold": false,
-   "qbs": {
-    "EMU": {
-     "regular": "Noah Kim",
-     "rank": 101
-    },
-    "WMU": {
-     "regular": "Broc Lowry",
-     "rank": 98
-    }
-   },
-   "kalshi_event": "KXNCAAFGAME-26NOV17EMUWMU",
-   "locked": true
-  },
-  {
-   "id": "401866464",
-   "kick_utc": "2026-11-18T00:00:00+00:00",
-   "kick_pt": "Tue 4:00 PM PT",
-   "day_et": "2026-11-17",
-   "away_abbr": "BALL",
-   "home_abbr": "OHIO",
-   "fav_abbr": "OHIO",
-   "dog_abbr": "BALL",
-   "fav_home": true,
-   "spread": -10.0,
-   "away_names": [
-    "Ball State Cardinals",
-    "Ball State"
-   ],
-   "home_names": [
-    "Ohio Bobcats",
-    "Ohio"
-   ],
-   "tier": "out",
-   "tier_label": "No track",
-   "tracked": false,
-   "alerts": false,
-   "call": "No track",
-   "hero": 15,
-   "fav_defense_top10": false,
-   "fav_def_rank_l3": 34,
-   "def_hold": false,
-   "qbs": {
-    "BALL": {
-     "regular": "Keldric Luster",
-     "rank": 105
-    },
-    "OHIO": {
-     "regular": "Nick Poulos",
-     "rank": 95
-    }
-   },
-   "kalshi_event": "KXNCAAFGAME-26NOV17BALLOHIO",
-   "locked": true
-  },
   {
    "id": "401858303",
    "kick_utc": "2026-11-21T00:30:00+00:00",
@@ -414,6 +332,47 @@
    "locked": false
   },
   {
+   "id": "401858304",
+   "kick_utc": "2026-11-21T20:30:00+00:00",
+   "kick_pt": "Sat 12:30 PM PT",
+   "day_et": "2026-11-21",
+   "away_abbr": "NCSU",
+   "home_abbr": "FSU",
+   "fav_abbr": "FSU",
+   "dog_abbr": "NCSU",
+   "fav_home": true,
+   "spread": -10.0,
+   "away_names": [
+    "NC State Wolfpack",
+    "NC State"
+   ],
+   "home_names": [
+    "Florida State Seminoles",
+    "Florida St"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "alerts": false,
+   "call": "No track",
+   "hero": 15,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 37,
+   "def_hold": false,
+   "qbs": {
+    "NCSU": {
+     "regular": "CJ Bailey",
+     "rank": 33
+    },
+    "FSU": {
+     "regular": "Ashton Daniels",
+     "rank": 44
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV21NCSTFSU",
+   "locked": false
+  },
+  {
    "id": "401861968",
    "kick_utc": "2026-11-21T20:30:00+00:00",
    "kick_pt": "Sat 12:30 PM PT",
@@ -464,7 +423,7 @@
    "fav_abbr": "TXST",
    "dog_abbr": "WSU",
    "fav_home": true,
-   "spread": -10.5,
+   "spread": -11.5,
    "away_names": [
     "Washington State Cougars",
     "Washington St"
@@ -596,11 +555,11 @@
     "South Carolina Gamecocks",
     "South Carolina"
    ],
-   "tier": "watch",
-   "tier_label": "Watch list",
-   "tracked": true,
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
    "alerts": false,
-   "call": "Watch list",
+   "call": "No track",
    "hero": 21,
    "fav_defense_top10": false,
    "fav_def_rank_l3": 19,
@@ -699,6 +658,88 @@
    },
    "kalshi_event": "KXNCAAFGAME-26NOV21SDSUBSU",
    "locked": false
+  },
+  {
+   "id": "401866465",
+   "kick_utc": "2026-11-17T23:00:00+00:00",
+   "kick_pt": "Tue 3:00 PM PT",
+   "day_et": "2026-11-17",
+   "away_abbr": "EMU",
+   "home_abbr": "WMU",
+   "fav_abbr": "WMU",
+   "dog_abbr": "EMU",
+   "fav_home": true,
+   "spread": -15.5,
+   "away_names": [
+    "Eastern Michigan Eagles",
+    "E Michigan"
+   ],
+   "home_names": [
+    "Western Michigan Broncos",
+    "W Michigan"
+   ],
+   "tier": "watch",
+   "tier_label": "Watch list",
+   "tracked": true,
+   "alerts": false,
+   "call": "Watch list",
+   "hero": 20,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 90,
+   "def_hold": false,
+   "qbs": {
+    "EMU": {
+     "regular": "Noah Kim",
+     "rank": 101
+    },
+    "WMU": {
+     "regular": "Broc Lowry",
+     "rank": 98
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV17EMUWMU",
+   "locked": true
+  },
+  {
+   "id": "401866464",
+   "kick_utc": "2026-11-18T00:00:00+00:00",
+   "kick_pt": "Tue 4:00 PM PT",
+   "day_et": "2026-11-17",
+   "away_abbr": "BALL",
+   "home_abbr": "OHIO",
+   "fav_abbr": "OHIO",
+   "dog_abbr": "BALL",
+   "fav_home": true,
+   "spread": -10.0,
+   "away_names": [
+    "Ball State Cardinals",
+    "Ball State"
+   ],
+   "home_names": [
+    "Ohio Bobcats",
+    "Ohio"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "alerts": false,
+   "call": "No track",
+   "hero": 15,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 34,
+   "def_hold": false,
+   "qbs": {
+    "BALL": {
+     "regular": "Keldric Luster",
+     "rank": 105
+    },
+    "OHIO": {
+     "regular": "Nick Poulos",
+     "rank": 95
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV17BALLOHIO",
+   "locked": true
   }
  ]
 }
