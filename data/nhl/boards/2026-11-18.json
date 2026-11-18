@@ -3,8 +3,8 @@
  "date_label": "Wednesday, November 18",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-18T10:00:45-08:00",
- "built_label": "Wed Nov 18, 10:00 AM PT",
+ "built_at": "2026-11-18T11:00:52-08:00",
+ "built_label": "Wed Nov 18, 11:00 AM PT",
  "metrics_through": "2026-11-17",
  "metrics_through_label": "Nov 17",
  "max": 40,
@@ -1016,12 +1016,12 @@
      "nhl_com": 15
     },
     "goalie": {
-     "name": "Karel Vejmelka",
-     "last": "Vejmelka",
-     "espn_id": "3942065",
-     "confirmed": false
+     "name": "Sebastian Cossa",
+     "last": "Cossa",
+     "espn_id": "4874732",
+     "confirmed": true
     },
-    "goalie_status": "regular",
+    "goalie_status": "backup",
     "regular_goalie_name": "K. Vejmelka",
     "goalies": [
      {
@@ -1045,6 +1045,20 @@
     ],
     "injuries": [
      {
+      "name": "Dylan Guenther",
+      "last": "Guenther",
+      "status": "Injured Reserve",
+      "date": "2026-11-18T18:29Z",
+      "comment": "Guenther (upper body) was on the ice for Wednesday's optional morning skate in a non-contact sweater, Brogan Houston of the Deseret News reports."
+     },
+     {
+      "name": "John Marino",
+      "last": "Marino",
+      "status": "Injured Reserve",
+      "date": "2026-11-18T18:29Z",
+      "comment": "Marino (upper body) took the ice Wednesday in a regular jersey, Chase Beardsley of The Hockey Writers reports, indicating he's been cleared for contact."
+     },
+     {
       "name": "Nick Schmaltz",
       "last": "Schmaltz",
       "status": "Injured Reserve",
@@ -1057,20 +1071,6 @@
       "status": "Injured Reserve",
       "date": "2026-11-12T19:30Z",
       "comment": "The Mammoth announced Thursday that Schmidt (upper body) is considered week-to-week, Cole Bagley of KSL Sports reports."
-     },
-     {
-      "name": "Dylan Guenther",
-      "last": "Guenther",
-      "status": "Injured Reserve",
-      "date": "2026-11-12T01:21Z",
-      "comment": "ir"
-     },
-     {
-      "name": "John Marino",
-      "last": "Marino",
-      "status": "Injured Reserve",
-      "date": "2026-11-01T20:27Z",
-      "comment": "ir"
      },
      {
       "name": "Maveric Lamoureux",
@@ -1329,13 +1329,13 @@
       "rule": "A",
       "name": "Analysis Score 22+",
       "pass": false,
-      "detail": "Score 16 of 40"
+      "detail": "Score 14 of 40"
      },
      {
       "rule": "Goalie",
       "name": "UTA's regular goalie starts",
-      "pass": true,
-      "detail": "Karel Vejmelka (probable)"
+      "pass": false,
+      "detail": "Sebastian Cossa listed instead of K. Vejmelka: capped at the Watch list"
      },
      {
       "rule": "Matchup",
@@ -1348,8 +1348,10 @@
      "Not a top-7 vs bottom-7 matchup (UTA #13, COL #11)"
     ],
     "warnings": [],
-    "flags": [],
-    "score": 16,
+    "flags": [
+     "UTA backup goalie starting (Sebastian Cossa)"
+    ],
+    "score": 14,
     "max": 40,
     "band": "red",
     "parts": [
@@ -1368,7 +1370,7 @@
      {
       "key": "goalies",
       "label": "Goalies + health",
-      "points": 3,
+      "points": 1,
       "max": 4
      },
      {
@@ -1648,13 +1650,13 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (UTA #13, COL #11). Karel Vejmelka in goal for UTA (probable). UTA 0-1-2 in its last 3, COL 2-0-1.",
+   "summary": "Not a top-7 vs bottom-7 matchup (UTA #13, COL #11). UTA start their backup goalie, Sebastian Cossa (regular: K. Vejmelka). UTA 0-1-2 in its last 3, COL 2-0-1.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV18COLUTA",
-    "fav_prob": 0.51,
+    "fav_prob": 0.505,
     "bid": 0.5,
-    "ask": 0.52
+    "ask": 0.51
    }
   },
   {
@@ -2442,7 +2444,7 @@
   "in_range": 0,
   "qualified": 0,
   "watch": 0,
-  "built_label": "Wed Nov 18, 10:00 AM PT"
+  "built_label": "Wed Nov 18, 11:00 AM PT"
  },
  "power_table": [
   {
