@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 11,
- "built_at": "2026-11-18T07:15:46-08:00",
- "built_label": "Wed Nov 18, 7:15 AM PT",
+ "built_at": "2026-11-18T21:00:37-08:00",
+ "built_label": "Wed Nov 18, 9:00 PM PT",
  "games": [
   {
    "id": "401873066",
@@ -20,15 +20,15 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -5.5,
-   "total": 44.5,
+   "total": 43.5,
    "total_open": 45.5,
-   "fav_ml": -750.0,
+   "fav_ml": -700.0,
    "favorite": "home",
    "spread": -12.5,
    "movement": 7.0,
-   "total_move": -1.0,
+   "total_move": -2.0,
    "fav_home": true,
    "home": {
     "code": "HOU",
@@ -98,39 +98,38 @@
      "rank": 9
     },
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
-     "Danielle Hunter",
-     "Kamari Lassiter"
+    "key_out": [
+     "Danielle Hunter"
     ],
+    "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Jake Hummel",
+      "pos": "LB",
+      "status": "Questionable"
+     },
+     {
       "name": "Jaylin Smith",
       "pos": "CB",
       "status": "Injured Reserve"
      },
      {
-      "name": "Brevin Jordan",
-      "pos": "TE",
-      "status": "Questionable"
-     },
-     {
       "name": "Danielle Hunter",
       "pos": "DE",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
-      "name": "Kamari Lassiter",
-      "pos": "CB",
-      "status": "Questionable"
+      "name": "Brevin Jordan",
+      "pos": "TE",
+      "status": "Out"
      },
      {
-      "name": "Marvin Harrison Jr.",
-      "pos": "WR",
+      "name": "Wyatt Teller",
+      "pos": "G",
       "status": "Questionable"
      }
     ],
@@ -209,37 +208,42 @@
      "rank": 34
     },
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [],
+    "key_out": [
+     "Charvarius Ward",
+     "Jalen Travis"
+    ],
+    "key_questionable": [
+     "Sauce Gardner"
+    ],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Will Mallory",
-      "pos": "TE",
-      "status": "Questionable"
-     },
-     {
-      "name": "Jaylon Carlies",
-      "pos": "LB",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Anthony Gould",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "name": "Luke Rhodes",
-      "pos": "LS",
-      "status": "Questionable"
+      "name": "Jalen Travis",
+      "pos": "OT",
+      "status": "Out"
      },
      {
       "name": "Jerry Tillery",
       "pos": "DT",
+      "status": "Out"
+     },
+     {
+      "name": "Sauce Gardner",
+      "pos": "CB",
       "status": "Questionable"
+     },
+     {
+      "name": "Charvarius Ward",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "name": "Will Mallory",
+      "pos": "TE",
+      "status": "Out"
      }
     ],
     "power": {
@@ -253,9 +257,9 @@
    "dog": "IND",
    "scoring": {
     "qualified": false,
-    "tier": "watch",
-    "tier_label": "Watch list",
-    "tracked": true,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
     "alerts": false,
     "routes": [],
     "route": "",
@@ -264,7 +268,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 20 of 40"
+      "detail": "Score 19 of 40"
      },
      {
       "rule": "B",
@@ -275,8 +279,8 @@
      {
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "Clear"
+      "pass": false,
+      "detail": "HOU key starter out: Danielle Hunter"
      },
      {
       "rule": "Power",
@@ -315,18 +319,20 @@
      "off_epa"
     ],
     "fails": [
-     "Watch list: score 20 (qualifies at 28)"
+     "HOU key starter out: Danielle Hunter",
+     "Would be on the watch list otherwise (score 19)"
     ],
     "failed": [
-     "Watch list: score 20 (qualifies at 28)"
+     "HOU key starter out: Danielle Hunter",
+     "Would be on the watch list otherwise (score 19)"
     ],
     "hero": {
-     "score": 20,
+     "score": 19,
      "band": "yellow",
      "parts": {
       "fav_strength": 3,
       "dog_weakness": 11,
-      "health": 4,
+      "health": 3,
       "home": 1,
       "rest": 0,
       "form": 1
@@ -352,7 +358,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Danielle Hunter, Kamari Lassiter"
+      "text": "Underdog questionable: Sauce Gardner"
      }
     ],
     "under": {
@@ -361,10 +367,10 @@
       9,
       31
      ],
-     "total_move": -1.0,
+     "total_move": -2.0,
      "note": ""
     },
-    "call": "Watch list",
+    "call": "No track",
     "matchups": [
      {
       "key": "def_def",
@@ -422,7 +428,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -11.5,
    "total": 45.5,
    "total_open": 47.5,
@@ -503,6 +509,7 @@
     "key_out": [],
     "key_questionable": [
      "Christian Benford",
+     "Cole Bishop",
      "Dorian Williams"
     ],
     "key_long_term": [],
@@ -511,18 +518,13 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Ar'maj Reed-Adams",
-      "pos": "G",
-      "status": "Injured Reserve"
+      "name": "Dee Alford",
+      "pos": "CB",
+      "status": "Questionable"
      },
      {
       "name": "Dorian Williams",
       "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Dee Alford",
-      "pos": "CB",
       "status": "Questionable"
      },
      {
@@ -531,9 +533,14 @@
       "status": "Questionable"
      },
      {
-      "name": "Tyrell Shavers",
-      "pos": "WR",
-      "status": "Out"
+      "name": "Jackson Hawes",
+      "pos": "TE",
+      "status": "Questionable"
+     },
+     {
+      "name": "Cole Bishop",
+      "pos": "S",
+      "status": "Questionable"
      }
     ],
     "power": {
@@ -613,26 +620,27 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
-     "Aaron Brewer",
-     "Chris Bell"
+     "Aaron Brewer"
     ],
-    "key_long_term": [
-     "Jordan Phillips",
-     "Zeek Biggers"
-    ],
+    "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Zeek Biggers",
-      "pos": "DT",
-      "status": "Injured Reserve"
+      "name": "Andrew Meyer",
+      "pos": "C",
+      "status": "Questionable"
      },
      {
-      "name": "Jordan Phillips",
-      "pos": "DT",
-      "status": "Injured Reserve"
+      "name": "Darrell Baker Jr.",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "name": "Aaron Brewer",
+      "pos": "C",
+      "status": "Questionable"
      },
      {
       "name": "Jared Wayne",
@@ -640,13 +648,8 @@
       "status": "Questionable"
      },
      {
-      "name": "Chris Bell",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "name": "Aaron Brewer",
-      "pos": "C",
+      "name": "JuJu Brents",
+      "pos": "CB",
       "status": "Questionable"
      }
     ],
@@ -754,11 +757,11 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Christian Benford, Dorian Williams"
+      "text": "Favorite questionable: Christian Benford, Cole Bishop, Dorian Williams"
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Aaron Brewer, Chris Bell"
+      "text": "Underdog questionable: Aaron Brewer"
      }
     ],
     "under": {
@@ -828,15 +831,15 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 4.5,
-   "total": 44.5,
+   "total": 43.5,
    "total_open": 46.5,
-   "fav_ml": -142.0,
+   "fav_ml": -135.0,
    "favorite": "home",
    "spread": -2.5,
    "movement": 7.0,
-   "total_move": -2.0,
+   "total_move": -3.0,
    "fav_home": true,
    "home": {
     "code": "CAR",
@@ -909,7 +912,8 @@
     "key_out": [],
     "key_questionable": [
      "Bobby Okereke",
-     "Will Lee"
+     "Darren Waller",
+     "Tommy Tremble"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -917,24 +921,24 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Will Lee III",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
       "name": "Bobby Okereke",
       "pos": "LB",
       "status": "Questionable"
      },
      {
-      "name": "Brady Christensen",
-      "pos": "G",
-      "status": "Injured Reserve"
+      "name": "Tommy Tremble",
+      "pos": "TE",
+      "status": "Questionable"
      },
      {
-      "name": "Mike Jackson",
-      "pos": "CB",
-      "status": "Injured Reserve"
+      "name": "Isaiah Simmons",
+      "pos": "S",
+      "status": "Questionable"
+     },
+     {
+      "name": "Darren Waller",
+      "pos": "TE",
+      "status": "Questionable"
      },
      {
       "name": "Jonathon Brooks",
@@ -1029,6 +1033,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Olaivavega Ioane",
+      "pos": "G",
+      "status": "Questionable"
+     },
+     {
       "name": "Jaylinn Hawkins",
       "pos": "S",
       "status": "Questionable"
@@ -1039,19 +1048,14 @@
       "status": "Questionable"
      },
      {
-      "name": "Olaivavega Ioane",
-      "pos": "G",
-      "status": "Questionable"
-     },
-     {
-      "name": "Adam Randall",
-      "pos": "RB",
-      "status": "Injured Reserve"
-     },
-     {
       "name": "Lamar Jackson",
       "pos": "QB",
       "status": "Injured Reserve"
+     },
+     {
+      "name": "Adisa Isaac",
+      "pos": "LB",
+      "status": "Questionable"
      }
     ],
     "power": {
@@ -1158,7 +1162,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Bobby Okereke, Will Lee"
+      "text": "Favorite questionable: Bobby Okereke, Darren Waller, Tommy Tremble"
      },
      {
       "level": "yellow",
@@ -1171,7 +1175,7 @@
       13,
       19
      ],
-     "total_move": -2.0,
+     "total_move": -3.0,
      "note": ""
     },
     "call": "No track",
@@ -1232,11 +1236,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -6.5,
    "total": 48.5,
    "total_open": 46.5,
-   "fav_ml": -625.0,
+   "fav_ml": -600.0,
    "favorite": "home",
    "spread": -11.5,
    "movement": 5.0,
@@ -1311,10 +1315,7 @@
     },
     "injuries_known": true,
     "key_out": [],
-    "key_questionable": [
-     "Malik Muhammad",
-     "Tyrique Stevenson"
-    ],
+    "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
@@ -1326,23 +1327,23 @@
       "status": "Questionable"
      },
      {
-      "name": "Kyle Monangai",
-      "pos": "RB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Malik Muhammad II",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Tyrique Stevenson Sr.",
-      "pos": "CB",
+      "name": "Jeffery Simmons",
+      "pos": "DT",
       "status": "Questionable"
      },
      {
       "name": "Zavier Scott",
       "pos": "RB",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Kentavius Street",
+      "pos": "DT",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Braxton Jones",
+      "pos": "OT",
       "status": "Injured Reserve"
      }
     ],
@@ -1422,9 +1423,7 @@
     },
     "injuries_known": true,
     "key_out": [
-     "Asim Richards",
-     "Erik McCoy",
-     "Taliese Fuaga"
+     "Erik McCoy"
     ],
     "key_questionable": [
      "Pete Werner"
@@ -1437,29 +1436,29 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Erik McCoy",
-      "pos": "C",
-      "status": "Doubtful"
-     },
-     {
-      "name": "CJ Donaldson",
-      "pos": "RB",
+      "name": "Martin Emerson Jr.",
+      "pos": "CB",
       "status": "Questionable"
-     },
-     {
-      "name": "Taliese Fuaga",
-      "pos": "OT",
-      "status": "Doubtful"
-     },
-     {
-      "name": "Asim Richards",
-      "pos": "OT",
-      "status": "Out"
      },
      {
       "name": "Pete Werner",
       "pos": "LB",
       "status": "Questionable"
+     },
+     {
+      "name": "Decamerion Richardson",
+      "pos": "CB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Jordyn Tyson",
+      "pos": "WR",
+      "status": "Questionable"
+     },
+     {
+      "name": "Erik McCoy",
+      "pos": "C",
+      "status": "Doubtful"
      }
     ],
     "power": {
@@ -1573,10 +1572,6 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Malik Muhammad, Tyrique Stevenson"
-     },
-     {
-      "level": "yellow",
       "text": "Underdog questionable: Pete Werner"
      }
     ],
@@ -1647,15 +1642,15 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -6.5,
-   "total": 54.5,
+   "total": 55.5,
    "total_open": 48.5,
-   "fav_ml": -380.0,
+   "fav_ml": -395.0,
    "favorite": "home",
    "spread": -8.5,
    "movement": 2.0,
-   "total_move": 6.0,
+   "total_move": 7.0,
    "fav_home": true,
    "home": {
     "code": "DAL",
@@ -1726,16 +1721,24 @@
     },
     "injuries_known": true,
     "key_out": [
-     "DaRon Bland"
+     "Jake Ferguson"
     ],
-    "key_questionable": [
-     "Donovan Ezeiruaku"
-    ],
+    "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Jalen Thompson",
+      "pos": "S",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Jake Ferguson",
+      "pos": "TE",
+      "status": "Out"
+     },
      {
       "name": "Juanyeh Thomas",
       "pos": "S",
@@ -1750,16 +1753,6 @@
       "name": "Jonathan Mingo",
       "pos": "WR",
       "status": "Questionable"
-     },
-     {
-      "name": "Donovan Ezeiruaku",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "DaRon Bland",
-      "pos": "CB",
-      "status": "Out"
      }
     ],
     "power": {
@@ -1840,20 +1833,18 @@
     "key_out": [],
     "key_questionable": [
      "Anthony Hill",
-     "Carnell Tate",
-     "Cody Barton"
+     "Cody Barton",
+     "John Franklin-Myers"
     ],
-    "key_long_term": [
-     "Wan'Dale Robinson"
-    ],
+    "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Wan'Dale Robinson",
-      "pos": "WR",
-      "status": "Injured Reserve"
+      "name": "Cody Barton",
+      "pos": "LB",
+      "status": "Questionable"
      },
      {
       "name": "Anthony Hill Jr.",
@@ -1861,19 +1852,19 @@
       "status": "Questionable"
      },
      {
-      "name": "Cody Barton",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Carnell Tate",
-      "pos": "WR",
+      "name": "John Franklin-Myers",
+      "pos": "DE",
       "status": "Questionable"
      },
      {
       "name": "Tony Adams",
       "pos": "S",
       "status": "Questionable"
+     },
+     {
+      "name": "Fernando Carmona",
+      "pos": "G",
+      "status": "Injured Reserve"
      }
     ],
     "power": {
@@ -1910,7 +1901,7 @@
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
       "pass": false,
-      "detail": "DAL key starter out: DaRon Bland"
+      "detail": "DAL key starter out: Jake Ferguson"
      },
      {
       "rule": "Power",
@@ -1950,11 +1941,11 @@
      "off_sr"
     ],
     "fails": [
-     "DAL key starter out: DaRon Bland",
+     "DAL key starter out: Jake Ferguson",
      "Would be on the watch list otherwise (score 24)"
     ],
     "failed": [
-     "DAL key starter out: DaRon Bland",
+     "DAL key starter out: Jake Ferguson",
      "Would be on the watch list otherwise (score 24)"
     ],
     "hero": {
@@ -1985,11 +1976,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Donovan Ezeiruaku"
-     },
-     {
-      "level": "yellow",
-      "text": "Underdog questionable: Anthony Hill, Carnell Tate, Cody Barton"
+      "text": "Underdog questionable: Anthony Hill, Cody Barton, John Franklin-Myers"
      }
     ],
     "under": {
@@ -1998,7 +1985,7 @@
       5,
       26
      ],
-     "total_move": 6.0,
+     "total_move": 7.0,
      "note": ""
     },
     "call": "No track",
@@ -2038,9 +2025,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV22TENDAL",
-    "fav_prob": 0.785,
-    "bid": 0.78,
-    "ask": 0.79
+    "fav_prob": 0.775,
+    "bid": 0.77,
+    "ask": 0.78
    }
   },
   {
@@ -2059,11 +2046,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -4.5,
    "total": 43.5,
    "total_open": 49.5,
-   "fav_ml": -345.0,
+   "fav_ml": -340.0,
    "favorite": "home",
    "spread": -7.0,
    "movement": 2.5,
@@ -2137,43 +2124,41 @@
      "rank": 5
     },
     "injuries_known": true,
-    "key_out": [
-     "Aidan Hutchinson"
-    ],
+    "key_out": [],
     "key_questionable": [
      "D.J. Reed"
     ],
     "key_long_term": [
-     "Jack Campbell"
+     "Aidan Hutchinson"
     ],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Cade Mays",
-      "pos": "C",
-      "status": "Doubtful"
-     },
-     {
-      "name": "Kerby Joseph",
-      "pos": "S",
-      "status": "Out"
-     },
-     {
       "name": "D.J. Reed",
       "pos": "CB",
       "status": "Questionable"
      },
      {
-      "name": "Aidan Hutchinson",
-      "pos": "DE",
-      "status": "Out"
+      "name": "Sione Vaki",
+      "pos": "RB",
+      "status": "Questionable"
      },
      {
-      "name": "Jack Campbell",
-      "pos": "LB",
+      "name": "Aidan Hutchinson",
+      "pos": "DE",
       "status": "Injured Reserve"
+     },
+     {
+      "name": "Tyler Lacy",
+      "pos": "DT",
+      "status": "Questionable"
+     },
+     {
+      "name": "Ennis Rakestraw Jr.",
+      "pos": "CB",
+      "status": "Questionable"
      }
     ],
     "power": {
@@ -2251,12 +2236,11 @@
      "rank": 36
     },
     "injuries_known": true,
-    "key_out": [
-     "YaYa Diaby"
-    ],
+    "key_out": [],
     "key_questionable": [
      "Antoine Winfield Jr.",
-     "Baker Mayfield"
+     "Baker Mayfield",
+     "YaYa Diaby"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -2264,18 +2248,8 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Baker Mayfield",
-      "pos": "QB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Yaya Diaby",
-      "pos": "LB",
-      "status": "Doubtful"
-     },
-     {
-      "name": "Jalen McMillan",
-      "pos": "WR",
+      "name": "Josh Hayes",
+      "pos": "CB",
       "status": "Injured Reserve"
      },
      {
@@ -2284,8 +2258,18 @@
       "status": "Questionable"
      },
      {
-      "name": "Josh Hayes",
-      "pos": "CB",
+      "name": "Yaya Diaby",
+      "pos": "LB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Baker Mayfield",
+      "pos": "QB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Jalen McMillan",
+      "pos": "WR",
       "status": "Injured Reserve"
      }
     ],
@@ -2300,9 +2284,9 @@
    "dog": "TB",
    "scoring": {
     "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
     "alerts": false,
     "routes": [],
     "route": "",
@@ -2311,7 +2295,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 20 of 40"
+      "detail": "Score 21 of 40"
      },
      {
       "rule": "B",
@@ -2322,8 +2306,8 @@
      {
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
-      "pass": false,
-      "detail": "DET key starter out: Aidan Hutchinson (on injured reserve, not counted: Jack Campbell)"
+      "pass": true,
+      "detail": "Clear (on injured reserve, not counted: Aidan Hutchinson)"
      },
      {
       "rule": "Power",
@@ -2362,20 +2346,18 @@
      "off_sr"
     ],
     "fails": [
-     "DET key starter out: Aidan Hutchinson",
-     "Would be on the watch list otherwise (score 20)"
+     "Watch list: score 21 (qualifies at 28)"
     ],
     "failed": [
-     "DET key starter out: Aidan Hutchinson",
-     "Would be on the watch list otherwise (score 20)"
+     "Watch list: score 21 (qualifies at 28)"
     ],
     "hero": {
-     "score": 20,
+     "score": 21,
      "band": "yellow",
      "parts": {
       "fav_strength": 8,
       "dog_weakness": 6,
-      "health": 3,
+      "health": 4,
       "home": 1,
       "rest": 0,
       "form": 2
@@ -2401,7 +2383,7 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Antoine Winfield Jr., Baker Mayfield"
+      "text": "Underdog questionable: Antoine Winfield Jr., Baker Mayfield, YaYa Diaby"
      }
     ],
     "under": {
@@ -2413,7 +2395,7 @@
      "total_move": -6.0,
      "note": ""
     },
-    "call": "No track",
+    "call": "Watch list",
     "matchups": [
      {
       "key": "def_def",
@@ -2471,15 +2453,15 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -11.5,
-   "total": 41.5,
+   "total": 40.5,
    "total_open": 44.5,
-   "fav_ml": -1450.0,
+   "fav_ml": -1350.0,
    "favorite": "home",
    "spread": -15.5,
    "movement": 4.0,
-   "total_move": -3.0,
+   "total_move": -4.0,
    "fav_home": true,
    "home": {
     "code": "KC",
@@ -2552,7 +2534,8 @@
     "key_out": [],
     "key_questionable": [
      "Jaylon Moore",
-     "Kenneth Walker III"
+     "Nick Bolton",
+     "Trey Smith"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -2560,13 +2543,13 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Peter Woods",
+      "name": "Omarr Norman-Lott",
       "pos": "DT",
       "status": "Questionable"
      },
      {
-      "name": "Kenneth Walker III",
-      "pos": "RB",
+      "name": "Trey Smith",
+      "pos": "G",
       "status": "Questionable"
      },
      {
@@ -2575,14 +2558,14 @@
       "status": "Questionable"
      },
      {
-      "name": "Jaydn Ott",
-      "pos": "RB",
-      "status": "Questionable"
-     },
-     {
       "name": "Jared Wiley",
       "pos": "TE",
-      "status": "Out"
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Nick Bolton",
+      "pos": "LB",
+      "status": "Questionable"
      }
     ],
     "power": {
@@ -2661,10 +2644,11 @@
     },
     "injuries_known": true,
     "key_out": [],
-    "key_questionable": [],
-    "key_long_term": [
-     "Andrew Wingard"
+    "key_questionable": [
+     "Max Melton",
+     "Walter Nolen"
     ],
+    "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [
      "Gardner Minshew II"
@@ -2673,19 +2657,19 @@
     "qb_reset": "Gardner Minshew II out",
     "injury_list": [
      {
-      "name": "Gardner Minshew II",
-      "pos": "QB",
-      "status": "Injured Reserve"
+      "name": "Walter Nolen III",
+      "pos": "DT",
+      "status": "Questionable"
      },
      {
-      "name": "Jordan Burch",
-      "pos": "LB",
-      "status": "Injured Reserve"
+      "name": "Max Melton",
+      "pos": "CB",
+      "status": "Questionable"
      },
      {
-      "name": "Andrew Wingard",
-      "pos": "S",
-      "status": "Injured Reserve"
+      "name": "Roy Lopez",
+      "pos": "DT",
+      "status": "Questionable"
      },
      {
       "name": "James Conner",
@@ -2693,9 +2677,9 @@
       "status": "Injured Reserve"
      },
      {
-      "name": "Jayden Williams",
-      "pos": "OT",
-      "status": "Questionable"
+      "name": "Gardner Minshew II",
+      "pos": "QB",
+      "status": "Injured Reserve"
      }
     ],
     "power": {
@@ -2810,7 +2794,11 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Jaylon Moore, Kenneth Walker III"
+      "text": "Favorite questionable: Jaylon Moore, Nick Bolton, Trey Smith"
+     },
+     {
+      "level": "yellow",
+      "text": "Underdog questionable: Max Melton, Walter Nolen"
      }
     ],
     "under": {
@@ -2819,7 +2807,7 @@
       6,
       24
      ],
-     "total_move": -3.0,
+     "total_move": -4.0,
      "note": ""
     },
     "call": "Lean (QB cap)",
@@ -2859,9 +2847,9 @@
    "fav_defense_top10": true,
    "kalshi": {
     "event": "KXNFLGAME-26NOV22ARIKC",
-    "fav_prob": 0.905,
-    "bid": 0.9,
-    "ask": 0.91
+    "fav_prob": 0.915,
+    "bid": 0.91,
+    "ask": 0.92
    }
   },
   {
@@ -2880,7 +2868,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 46.5,
    "total_open": 46.5,
@@ -2968,6 +2956,16 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Nic Jones",
+      "pos": "CB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Tyrone Tracy Jr.",
+      "pos": "RB",
+      "status": "Injured Reserve"
+     },
+     {
       "name": "Malik Harrison",
       "pos": "LB",
       "status": "Questionable"
@@ -2978,18 +2976,8 @@
       "status": "Questionable"
      },
      {
-      "name": "Tyrone Tracy Jr.",
-      "pos": "RB",
-      "status": "Injured Reserve"
-     },
-     {
       "name": "Tremaine Edmunds",
       "pos": "LB",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Braxton Berrios",
-      "pos": "WR",
       "status": "Injured Reserve"
      }
     ],
@@ -3068,43 +3056,40 @@
      "rank": 2
     },
     "injuries_known": true,
-    "key_out": [
-     "Robert Hainsey"
+    "key_out": [],
+    "key_questionable": [
+     "Antonio Johnson",
+     "Travon Walker"
     ],
-    "key_questionable": [],
-    "key_long_term": [
-     "Eric Murray"
-    ],
-    "interior_ol_out": [
-     "Robert Hainsey"
-    ],
+    "key_long_term": [],
+    "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
-     {
-      "name": "Robert Hainsey",
-      "pos": "C",
-      "status": "Doubtful"
-     },
      {
       "name": "Danny Striggow",
       "pos": "DE",
       "status": "Questionable"
      },
      {
-      "name": "B.J. Green II",
-      "pos": "DE",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Eric Murray",
+      "name": "Antonio Johnson",
       "pos": "S",
-      "status": "Injured Reserve"
+      "status": "Questionable"
      },
      {
-      "name": "DaVon Hamilton",
-      "pos": "DT",
-      "status": "Injured Reserve"
+      "name": "Travon Walker",
+      "pos": "DE",
+      "status": "Questionable"
+     },
+     {
+      "name": "LeQuint Allen Jr.",
+      "pos": "RB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Chris Rodriguez Jr.",
+      "pos": "RB",
+      "status": "Questionable"
      }
     ],
     "power": {
@@ -3118,9 +3103,9 @@
    "dog": "NYG",
    "scoring": {
     "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
     "alerts": false,
     "routes": [],
     "route": "",
@@ -3129,7 +3114,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 24 of 40"
+      "detail": "Score 26 of 40"
      },
      {
       "rule": "B",
@@ -3140,8 +3125,8 @@
      {
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
-      "pass": false,
-      "detail": "JAX key starter out: Robert Hainsey (on injured reserve, not counted: Eric Murray)"
+      "pass": true,
+      "detail": "Clear"
      },
      {
       "rule": "Power",
@@ -3183,20 +3168,18 @@
      "def_sr"
     ],
     "fails": [
-     "JAX key starter out: Robert Hainsey",
-     "Would be on the watch list otherwise (score 24)"
+     "Watch list: score 26 (qualifies at 28)"
     ],
     "failed": [
-     "JAX key starter out: Robert Hainsey",
-     "Would be on the watch list otherwise (score 24)"
+     "Watch list: score 26 (qualifies at 28)"
     ],
     "hero": {
-     "score": 24,
+     "score": 26,
      "band": "yellow",
      "parts": {
       "fav_strength": 14,
       "dog_weakness": 6,
-      "health": 2,
+      "health": 4,
       "home": 0,
       "rest": 0,
       "form": 2
@@ -3214,15 +3197,15 @@
     "flags": [
      {
       "level": "yellow",
-      "text": "Favorite interior OL out: Robert Hainsey"
-     },
-     {
-      "level": "yellow",
       "text": "Line moved +4.5 toward the favorite (4+): downgrade"
      },
      {
       "level": "yellow",
       "text": "Line crossed key number 3"
+     },
+     {
+      "level": "yellow",
+      "text": "Favorite questionable: Antonio Johnson, Travon Walker"
      }
     ],
     "under": {
@@ -3234,7 +3217,7 @@
      "total_move": 0.0,
      "note": ""
     },
-    "call": "No track",
+    "call": "Watch list",
     "matchups": [
      {
       "key": "def_def",
@@ -3292,14 +3275,14 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -9.5,
    "total": 41.5,
    "total_open": 41.5,
-   "fav_ml": -185.0,
+   "fav_ml": -162.0,
    "favorite": "home",
-   "spread": -3.5,
-   "movement": -6.0,
+   "spread": -3.0,
+   "movement": -6.5,
    "total_move": 0.0,
    "fav_home": true,
    "home": {
@@ -3371,19 +3354,27 @@
     },
     "injuries_known": true,
     "key_out": [],
-    "key_questionable": [],
+    "key_questionable": [
+     "Charlie Kolar",
+     "Daiyan Henley"
+    ],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Kendall Williamson",
-      "pos": "S",
+      "name": "Daiyan Henley",
+      "pos": "LB",
       "status": "Questionable"
      },
      {
-      "name": "Isas Waxter",
+      "name": "Charlie Kolar",
+      "pos": "TE",
+      "status": "Questionable"
+     },
+     {
+      "name": "Donte Jackson",
       "pos": "CB",
       "status": "Questionable"
      },
@@ -3393,13 +3384,8 @@
       "status": "Questionable"
      },
      {
-      "name": "Rodney Shelley",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Brenen Thompson",
-      "pos": "WR",
+      "name": "Kendall Williamson",
+      "pos": "S",
       "status": "Questionable"
      }
     ],
@@ -3480,9 +3466,8 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
-     "Dylan Parham",
      "Geno Smith",
-     "Jarvis Brownlee"
+     "Isaiah Williams"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -3490,23 +3475,23 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Trevin Wallace",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Jarvis Brownlee Jr.",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Dylan Parham",
-      "pos": "G",
-      "status": "Questionable"
-     },
-     {
       "name": "Geno Smith",
       "pos": "QB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Joseph Ossai",
+      "pos": "DE",
+      "status": "Questionable"
+     },
+     {
+      "name": "David Onyemata",
+      "pos": "DT",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Isaiah Williams",
+      "pos": "WR",
       "status": "Questionable"
      },
      {
@@ -3615,11 +3600,15 @@
     "flags": [
      {
       "level": "yellow",
-      "text": "Line crossed key number 7"
+      "text": "Line crossed key number 3, 7"
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Dylan Parham, Geno Smith, Jarvis Brownlee"
+      "text": "Favorite questionable: Charlie Kolar, Daiyan Henley"
+     },
+     {
+      "level": "yellow",
+      "text": "Underdog questionable: Geno Smith, Isaiah Williams"
      }
     ],
     "under": {
@@ -3668,9 +3657,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV22NYJLAC",
-    "fav_prob": 0.625,
-    "bid": 0.62,
-    "ask": 0.63
+    "fav_prob": 0.595,
+    "bid": 0.59,
+    "ask": 0.6
    }
   },
   {
@@ -3689,7 +3678,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -8.5,
    "total": 40.5,
    "total_open": 41.5,
@@ -3771,7 +3760,6 @@
     "key_questionable": [
      "Brandon Jones",
      "Jaylen Waddle",
-     "Riley Moss",
      "Talanoa Hufanga"
     ],
     "key_long_term": [],
@@ -3780,8 +3768,8 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Talanoa Hufanga",
-      "pos": "S",
+      "name": "Kris Abrams-Draine",
+      "pos": "CB",
       "status": "Questionable"
      },
      {
@@ -3790,8 +3778,8 @@
       "status": "Questionable"
      },
      {
-      "name": "Kris Abrams-Draine",
-      "pos": "CB",
+      "name": "Talanoa Hufanga",
+      "pos": "S",
       "status": "Questionable"
      },
      {
@@ -3800,9 +3788,9 @@
       "status": "Questionable"
      },
      {
-      "name": "Riley Moss",
-      "pos": "CB",
-      "status": "Questionable"
+      "name": "Caleb Lohner",
+      "pos": "TE",
+      "status": "Injured Reserve"
      }
     ],
     "power": {
@@ -3883,7 +3871,7 @@
     "key_out": [],
     "key_questionable": [
      "Brock Bowers",
-     "Kwity Paye"
+     "Tonka Hemingway"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -3891,23 +3879,23 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Dont'e Thornton Jr.",
-      "pos": "WR",
+      "name": "Tonka Hemingway",
+      "pos": "DT",
       "status": "Questionable"
      },
      {
-      "name": "Thomas Booker IV",
+      "name": "Folorunso Fatukasi",
       "pos": "DT",
+      "status": "Questionable"
+     },
+     {
+      "name": "Matt Gay",
+      "pos": "PK",
       "status": "Questionable"
      },
      {
       "name": "Brock Bowers",
       "pos": "TE",
-      "status": "Questionable"
-     },
-     {
-      "name": "Kwity Paye",
-      "pos": "DE",
       "status": "Questionable"
      },
      {
@@ -4020,11 +4008,11 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Brandon Jones, Jaylen Waddle, Riley Moss, Talanoa Hufanga"
+      "text": "Favorite questionable: Brandon Jones, Jaylen Waddle, Talanoa Hufanga"
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Brock Bowers, Kwity Paye"
+      "text": "Underdog questionable: Brock Bowers, Tonka Hemingway"
      }
     ],
     "under": {
@@ -4094,15 +4082,15 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 5.5,
-   "total": 38.5,
+   "total": 37.5,
    "total_open": 42.5,
    "fav_ml": -218.0,
    "favorite": "away",
    "spread": -4.5,
    "movement": 10.0,
-   "total_move": -4.0,
+   "total_move": -5.0,
    "fav_home": false,
    "home": {
     "code": "PHI",
@@ -4175,13 +4163,29 @@
     "key_out": [],
     "key_questionable": [
      "Dontayvion Wicks",
-     "Jihaad Campbell"
+     "Nolan Smith",
+     "Zack Baun"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Nolan Smith Jr.",
+      "pos": "LB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Zack Baun",
+      "pos": "LB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Will Shipley",
+      "pos": "RB",
+      "status": "Injured Reserve"
+     },
      {
       "name": "Dontayvion Wicks",
       "pos": "WR",
@@ -4190,21 +4194,6 @@
      {
       "name": "DeVonta Smith",
       "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "name": "Jonathan Jones",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Jihaad Campbell",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Michael Carter II",
-      "pos": "CB",
       "status": "Questionable"
      }
     ],
@@ -4284,40 +4273,42 @@
     },
     "injuries_known": true,
     "key_out": [
+     "Nick Herbig"
+    ],
+    "key_questionable": [
+     "Patrick Queen"
+    ],
+    "key_long_term": [
      "Mason McCormick"
     ],
-    "key_questionable": [],
-    "key_long_term": [],
-    "interior_ol_out": [
-     "Mason McCormick"
-    ],
+    "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Nick Herbig",
+      "pos": "LB",
+      "status": "Doubtful"
+     },
+     {
+      "name": "Gennings Dunker",
+      "pos": "G",
+      "status": "Injured Reserve"
+     },
+     {
       "name": "Mason McCormick",
       "pos": "G",
-      "status": "Out"
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Patrick Queen",
+      "pos": "LB",
+      "status": "Questionable"
      },
      {
       "name": "DeShon Elliott",
       "pos": "S",
       "status": "Questionable"
-     },
-     {
-      "name": "Michael Pittman Jr.",
-      "pos": "WR",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Roman Wilson",
-      "pos": "WR",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Sebastian Joseph-Day",
-      "pos": "DT",
-      "status": "Injured Reserve"
      }
     ],
     "power": {
@@ -4342,7 +4333,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 18 of 40"
+      "detail": "Score 19 of 40"
      },
      {
       "rule": "B",
@@ -4354,7 +4345,7 @@
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
       "pass": false,
-      "detail": "PIT key starter out: Mason McCormick"
+      "detail": "PIT key starter out: Nick Herbig (on injured reserve, not counted: Mason McCormick)"
      },
      {
       "rule": "Power",
@@ -4391,20 +4382,20 @@
     ],
     "qualifiers": [],
     "fails": [
-     "PIT key starter out: Mason McCormick",
-     "Would be on the watch list otherwise (score 18)"
+     "PIT key starter out: Nick Herbig",
+     "Would be on the watch list otherwise (score 19)"
     ],
     "failed": [
-     "PIT key starter out: Mason McCormick",
-     "Would be on the watch list otherwise (score 18)"
+     "PIT key starter out: Nick Herbig",
+     "Would be on the watch list otherwise (score 19)"
     ],
     "hero": {
-     "score": 18,
+     "score": 19,
      "band": "yellow",
      "parts": {
       "fav_strength": 1,
       "dog_weakness": 14,
-      "health": 2,
+      "health": 3,
       "home": 0,
       "rest": 0,
       "form": 1
@@ -4422,10 +4413,6 @@
     "flags": [
      {
       "level": "yellow",
-      "text": "Favorite interior OL out: Mason McCormick"
-     },
-     {
-      "level": "yellow",
       "text": "Line moved +10 toward the favorite (4+): downgrade"
      },
      {
@@ -4434,7 +4421,11 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Dontayvion Wicks, Jihaad Campbell"
+      "text": "Favorite questionable: Patrick Queen"
+     },
+     {
+      "level": "yellow",
+      "text": "Underdog questionable: Dontayvion Wicks, Nolan Smith, Zack Baun"
      }
     ],
     "under": {
@@ -4443,7 +4434,7 @@
       16,
       29
      ],
-     "total_move": -4.0,
+     "total_move": -5.0,
      "note": ""
     },
     "call": "No track",
@@ -4504,15 +4495,15 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -3.5,
-   "total": 45.5,
+   "total": 46.5,
    "total_open": 46.5,
    "fav_ml": -162.0,
    "favorite": "home",
    "spread": -3.0,
    "movement": -0.5,
-   "total_move": -1.0,
+   "total_move": 0.0,
    "fav_home": true,
    "home": {
     "code": "SF",
@@ -4584,7 +4575,8 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
-     "Renardo Green"
+     "Ji'Ayir Brown",
+     "Upton Stout"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -4592,29 +4584,29 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Renardo Green",
+      "name": "Ji'Ayir Brown",
+      "pos": "S",
+      "status": "Questionable"
+     },
+     {
+      "name": "Mac Jones",
+      "pos": "QB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Upton Stout",
       "pos": "CB",
       "status": "Questionable"
      },
      {
-      "name": "Mike Evans",
-      "pos": "WR",
+      "name": "Siran Neal",
+      "pos": "S",
       "status": "Questionable"
      },
      {
-      "name": "C.J. West",
-      "pos": "DT",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Nate Hobbs",
-      "pos": "CB",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Gracen Halton",
-      "pos": "DT",
-      "status": "Injured Reserve"
+      "name": "Khalid Kareem",
+      "pos": "DE",
+      "status": "Questionable"
      }
     ],
     "power": {
@@ -4692,14 +4684,10 @@
      "rank": 12
     },
     "injuries_known": true,
-    "key_out": [
-     "Jordan Addison"
-    ],
+    "key_out": [],
     "key_questionable": [
      "Andrew Van Ginkel",
-     "Blake Cashman",
-     "Jauan Jennings",
-     "Tyrion Ingram-Dawkins"
+     "Blake Cashman"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -4707,13 +4695,13 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Tyrion Ingram-Dawkins",
-      "pos": "DE",
-      "status": "Questionable"
+      "name": "Bo Richter",
+      "pos": "LB",
+      "status": "Injured Reserve"
      },
      {
-      "name": "Jauan Jennings",
-      "pos": "WR",
+      "name": "Andrew Van Ginkel",
+      "pos": "LB",
       "status": "Questionable"
      },
      {
@@ -4722,14 +4710,14 @@
       "status": "Questionable"
      },
      {
-      "name": "Andrew Van Ginkel",
-      "pos": "LB",
+      "name": "Jeshaun Jones",
+      "pos": "WR",
       "status": "Questionable"
      },
      {
-      "name": "Jordan Addison",
-      "pos": "WR",
-      "status": "Out"
+      "name": "Jay Ward",
+      "pos": "S",
+      "status": "Questionable"
      }
     ],
     "power": {
@@ -4845,11 +4833,11 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Renardo Green"
+      "text": "Favorite questionable: Ji'Ayir Brown, Upton Stout"
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Andrew Van Ginkel, Blake Cashman, Jauan Jennings, Tyrion Ingram-Dawkins"
+      "text": "Underdog questionable: Andrew Van Ginkel, Blake Cashman"
      }
     ],
     "under": {
@@ -4858,7 +4846,7 @@
       1,
       30
      ],
-     "total_move": -1.0,
+     "total_move": 0.0,
      "note": ""
     },
     "call": "No track",
@@ -4919,11 +4907,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 54.5,
    "total_open": 52.5,
-   "fav_ml": -298.0,
+   "fav_ml": -310.0,
    "favorite": "away",
    "spread": -6.5,
    "movement": 5.0,
@@ -5343,9 +5331,9 @@
   "upcoming": 13,
   "tracked": 1,
   "qualified": 1,
-  "watch": 5,
+  "watch": 6,
   "green": 1,
   "edge_clears": 0,
-  "built_label": "Wed Nov 18, 7:15 AM PT"
+  "built_label": "Wed Nov 18, 9:00 PM PT"
  }
 }
