@@ -3,8 +3,8 @@
  "date_label": "Thursday, November 19",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-19T13:15:43-08:00",
- "built_label": "Thu Nov 19, 1:15 PM PT",
+ "built_at": "2026-11-19T14:15:41-08:00",
+ "built_label": "Thu Nov 19, 2:15 PM PT",
  "metrics_through": "2026-11-18",
  "metrics_through_label": "Nov 18",
  "max": 40,
@@ -34,16 +34,16 @@
    "venue": "Lenovo Center",
    "favorite": "home",
    "line": {
-    "details": "CAR -345",
+    "details": "CAR -355",
     "provider": "Draft Kings",
-    "ml_home": -345,
+    "ml_home": -355,
     "ml_away": null,
     "puck_line": -1.5,
     "total": 6.5,
-    "fav_price": 0.7753
+    "fav_price": 0.7802
    },
    "spread": {
-    "details": "CAR -345",
+    "details": "CAR -355",
     "provider": "Draft Kings",
     "puck_line": -1.5
    },
@@ -193,7 +193,7 @@
      "name": "Pyotr Kochetkov",
      "last": "Kochetkov",
      "espn_id": "4565259",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "regular",
     "regular_goalie_name": "P. Kochetkov",
@@ -222,7 +222,7 @@
     "key_out": [],
     "key_questionable": [],
     "key_long_term": [],
-    "spread_text": "-345"
+    "spread_text": "-355"
    },
    "away": {
     "id": "10",
@@ -489,7 +489,7 @@
       "rule": "Goalie",
       "name": "CAR's regular goalie starts",
       "pass": true,
-      "detail": "Pyotr Kochetkov (probable)"
+      "detail": "Pyotr Kochetkov (confirmed)"
      },
      {
       "rule": "Matchup",
@@ -804,13 +804,13 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (CAR #1, MTL #8). Pyotr Kochetkov in goal for CAR (probable). Biggest edge over the last 5: xGA/60 5v5 (CAR #1, MTL #26). CAR 3-0-0 in its last 3, MTL 1-2-0; MTL played yesterday.",
+   "summary": "Not a top-7 vs bottom-7 matchup (CAR #1, MTL #8). Pyotr Kochetkov in goal for CAR (confirmed). Biggest edge over the last 5: xGA/60 5v5 (CAR #1, MTL #26). CAR 3-0-0 in its last 3, MTL 1-2-0; MTL played yesterday.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV19MTLCAR",
-    "fav_prob": 0.745,
-    "bid": 0.74,
-    "ask": 0.75
+    "fav_prob": 0.755,
+    "bid": 0.75,
+    "ask": 0.76
    }
   },
   {
@@ -1016,23 +1016,16 @@
      {
       "name": "Nick Cousins",
       "last": "Cousins",
-      "status": "Day-To-Day",
-      "date": "2026-11-18T14:37Z",
-      "comment": "day-to-day"
+      "status": "Out",
+      "date": "2026-11-19T21:58Z",
+      "comment": "out"
      },
      {
       "name": "Hayden Hodgson",
       "last": "Hodgson",
-      "status": "Day-To-Day",
-      "date": "2026-11-18T14:37Z",
-      "comment": "day-to-day"
-     },
-     {
-      "name": "Thomas Chabot",
-      "last": "Chabot",
-      "status": "Day-To-Day",
-      "date": "2026-11-18T03:35Z",
-      "comment": "day-to-day"
+      "status": "Out",
+      "date": "2026-11-19T21:56Z",
+      "comment": "Hodgson (groin) is slated to miss Thursday's game against Philadelphia."
      },
      {
       "name": "Warren Foegele",
@@ -1058,9 +1051,7 @@
     ],
     "injuries_known": true,
     "key_out": [],
-    "key_questionable": [
-     "Thomas Chabot"
-    ],
+    "key_questionable": [],
     "key_long_term": [],
     "spread_text": "-166"
    },
@@ -5774,18 +5765,18 @@
     ],
     "injuries": [
      {
-      "name": "Gavin Brindley",
-      "last": "Brindley",
-      "status": "Day-To-Day",
-      "date": "2026-11-19T04:38Z",
-      "comment": "day-to-day"
-     },
-     {
       "name": "Cale Makar",
       "last": "Makar",
+      "status": "Injured Reserve",
+      "date": "2026-11-19T21:33Z",
+      "comment": "ir"
+     },
+     {
+      "name": "Gavin Brindley",
+      "last": "Brindley",
       "status": "Out",
-      "date": "2026-11-14T17:37Z",
-      "comment": "out"
+      "date": "2026-11-19T21:28Z",
+      "comment": "Brindley (upper body) is slated to be unavailable for Thursday's game against the Ducks, AJ Haefele of DNVR Avalanche reports."
      },
      {
       "name": "Nathan MacKinnon",
@@ -5811,11 +5802,12 @@
     ],
     "injuries_known": true,
     "key_out": [
-     "Cale Makar",
      "Nathan MacKinnon"
     ],
     "key_questionable": [],
-    "key_long_term": [],
+    "key_long_term": [
+     "Cale Makar"
+    ],
     "spread_text": "-130"
    },
    "away": {
@@ -6059,7 +6051,6 @@
      "Not a top-7 vs bottom-7 matchup (COL #11, ANA #18)"
     ],
     "warnings": [
-     "COL key skater out: Cale Makar",
      "COL key skater out: Nathan MacKinnon",
      "COL played yesterday (back-to-back)"
     ],
@@ -7127,9 +7118,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV19CBJCHI",
-    "fav_prob": 0.595,
-    "bid": 0.59,
-    "ask": 0.6
+    "fav_prob": 0.605,
+    "bid": 0.6,
+    "ask": 0.61
    }
   },
   {
@@ -9507,7 +9498,7 @@
   "in_range": 0,
   "qualified": 0,
   "watch": 0,
-  "built_label": "Thu Nov 19, 1:15 PM PT"
+  "built_label": "Thu Nov 19, 2:15 PM PT"
  },
  "power_table": [
   {
