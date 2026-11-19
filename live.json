@@ -1,0 +1,825 @@
+{
+ "date": "2026-11-18",
+ "games": {
+  "401910009": {
+   "label": "MIL @ MIA",
+   "alerts": {
+    "end3": {
+     "at": "2026-11-19T02:18:46.056Z",
+     "clock": "0.0 3rd",
+     "grade": "A",
+     "action": "LEAN",
+     "score": "86-112",
+     "ready": false,
+     "favLead": 26,
+     "kalshiFav": 0.995,
+     "defense": {
+      "opp_efg": 50,
+      "def": 116.7,
+      "opp_efg_rank": 2,
+      "def_rank": 28,
+      "poss": 74
+     },
+     "checklist": {
+      "passed": 6,
+      "total": 7,
+      "items": [
+       {
+        "key": "lead",
+        "pass": true,
+        "detail": "MIA up 26"
+       },
+       {
+        "key": "opp_efg",
+        "pass": true,
+        "detail": "last 3 #3 · tonight 50% #2"
+       },
+       {
+        "key": "def",
+        "pass": false,
+        "detail": "last 3 #18 · tonight 116.7 #28"
+       },
+       {
+        "key": "closer",
+        "pass": true,
+        "detail": "Davion Mitchell, Giannis Antetokounmpo"
+       },
+       {
+        "key": "run",
+        "pass": true,
+        "detail": "MIA answered MIL's 8-2"
+       },
+       {
+        "key": "three",
+        "pass": true,
+        "detail": "game 7/31, last 12 min 2/8"
+       },
+       {
+        "key": "b2b",
+        "pass": true,
+        "detail": "rested"
+       }
+      ]
+     }
+    },
+    "bet": {
+     "at": "2026-11-19T02:28:49.868Z",
+     "clock": "8:20 4th",
+     "grade": "A",
+     "pick": "MIA",
+     "kalshi": 0.995
+    }
+   },
+   "checkpoints": [
+    {
+     "at": "2026-11-18T23:45:24.604Z",
+     "clock": "Pregame",
+     "score": "0-0",
+     "phase": "pre",
+     "grade": "–",
+     "action": "PREGAME",
+     "pick": null,
+     "kalshi": null
+    },
+    {
+     "at": "2026-11-19T00:17:55.738Z",
+     "clock": "11:55 1st",
+     "score": "0-0",
+     "phase": "scout",
+     "grade": "B",
+     "action": "SCOUT",
+     "pick": null,
+     "focus": "MIA",
+     "kalshi": 0.855,
+     "note": "No runs yet",
+     "log": "2026-11-18 | MIL@MIA | 11:55 Q1 | 0-0 | B | no bet | K 86c (-590) | No runs yet"
+    },
+    {
+     "at": "2026-11-19T00:23:20.964Z",
+     "clock": "8:13 1st",
+     "score": "5-11",
+     "phase": "scout",
+     "grade": "C",
+     "action": "SCOUT",
+     "pick": null,
+     "focus": "MIA",
+     "kalshi": 0.885,
+     "note": "No runs yet",
+     "log": "2026-11-18 | MIL@MIA | 8:13 Q1 | 5-11 | C | no bet | K 89c (-770) | No runs yet"
+    },
+    {
+     "at": "2026-11-19T00:24:07.573Z",
+     "clock": "7:27 1st",
+     "score": "7-11",
+     "phase": "scout",
+     "grade": "B",
+     "action": "SCOUT",
+     "pick": null,
+     "focus": "MIA",
+     "kalshi": 0.875,
+     "note": "No runs yet",
+     "log": "2026-11-18 | MIL@MIA | 7:27 Q1 | 7-11 | B | no bet | K 88c (-700) | No runs yet"
+    },
+    {
+     "at": "2026-11-19T00:24:54.044Z",
+     "clock": "7:04 1st",
+     "score": "7-11",
+     "phase": "scout",
+     "grade": "C",
+     "action": "SCOUT",
+     "pick": null,
+     "focus": "MIA",
+     "kalshi": 0.885,
+     "note": "No runs yet",
+     "log": "2026-11-18 | MIL@MIA | 7:04 Q1 | 7-11 | C | no bet | K 89c (-770) | No runs yet"
+    },
+    {
+     "at": "2026-11-19T00:25:40.501Z",
+     "clock": "6:49 1st",
+     "score": "7-14",
+     "phase": "scout",
+     "grade": "B",
+     "action": "SCOUT",
+     "pick": null,
+     "focus": "MIL",
+     "kalshi": 0.095,
+     "note": "No runs yet",
+     "log": "2026-11-18 | MIL@MIA | 6:49 Q1 | 7-14 | B | no bet | K 10c (+953) | No runs yet"
+    },
+    {
+     "at": "2026-11-19T01:00:31.335Z",
+     "clock": "8:52 2nd",
+     "score": "28-44",
+     "phase": "scout",
+     "grade": "C",
+     "action": "SCOUT",
+     "pick": null,
+     "focus": "MIA",
+     "kalshi": 0.955,
+     "note": "MIA's 10-2 run is unanswered",
+     "log": "2026-11-18 | MIL@MIA | 8:52 Q2 | 28-44 | C | no bet | K 96c (-2122) | MIA's 10-2 run is unanswered"
+    },
+    {
+     "at": "2026-11-19T01:01:17.753Z",
+     "clock": "8:27 2nd",
+     "score": "28-44",
+     "phase": "scout",
+     "grade": "B",
+     "action": "SCOUT",
+     "pick": null,
+     "focus": "MIA",
+     "kalshi": 0.965,
+     "note": "MIA's 10-2 run is unanswered",
+     "log": "2026-11-18 | MIL@MIA | 8:27 Q2 | 28-44 | B | no bet | K 97c (-2757) | MIA's 10-2 run is unanswered"
+    },
+    {
+     "at": "2026-11-19T01:03:36.857Z",
+     "clock": "7:26 2nd",
+     "score": "31-48",
+     "phase": "scout",
+     "grade": "C",
+     "action": "SCOUT",
+     "pick": null,
+     "focus": "MIA",
+     "kalshi": 0.965,
+     "note": "MIA's 14-2 run is unanswered",
+     "log": "2026-11-18 | MIL@MIA | 7:26 Q2 | 31-48 | C | no bet | K 97c (-2757) | MIA's 14-2 run is unanswered"
+    },
+    {
+     "at": "2026-11-19T01:04:23.262Z",
+     "clock": "6:49 2nd",
+     "score": "33-48",
+     "phase": "scout",
+     "grade": "B",
+     "action": "SCOUT",
+     "pick": null,
+     "focus": "MIA",
+     "kalshi": 0.975,
+     "note": "MIL answered MIA's 14-2 with 5-0",
+     "log": "2026-11-18 | MIL@MIA | 6:49 Q2 | 33-48 | B | no bet | K 98c (-3900) | MIL answered MIA's 14-2 with 5-0"
+    },
+    {
+     "at": "2026-11-19T01:10:35.517Z",
+     "clock": "5:46 2nd",
+     "score": "36-55",
+     "phase": "scout",
+     "grade": "A",
+     "action": "SCOUT",
+     "pick": null,
+     "focus": "MIL",
+     "kalshi": 0.025,
+     "note": "MIL answered MIA's 14-2 with 5-0",
+     "log": "2026-11-18 | MIL@MIA | 5:46 Q2 | 36-55 | A | no bet | K 3c (+3900) | MIL answered MIA's 14-2 with 5-0"
+    },
+    {
+     "at": "2026-11-19T01:11:22.072Z",
+     "clock": "5:41 2nd",
+     "score": "36-56",
+     "phase": "scout",
+     "grade": "B",
+     "action": "SCOUT",
+     "pick": null,
+     "focus": "MIA",
+     "kalshi": 0.975,
+     "note": "MIL answered MIA's 14-2 with 5-0",
+     "log": "2026-11-18 | MIL@MIA | 5:41 Q2 | 36-56 | B | no bet | K 98c (-3900) | MIL answered MIA's 14-2 with 5-0"
+    },
+    {
+     "at": "2026-11-19T01:23:45.373Z",
+     "clock": "1:49 2nd",
+     "score": "46-70",
+     "phase": "scout",
+     "grade": "A",
+     "action": "SCOUT",
+     "pick": null,
+     "focus": "MIL",
+     "kalshi": 0.015,
+     "note": "MIL answered MIA's 10-0 with 4-0",
+     "log": "2026-11-18 | MIL@MIA | 1:49 Q2 | 46-70 | A | no bet | K 2c (+6567) | MIL answered MIA's 10-0 with 4-0"
+    },
+    {
+     "at": "2026-11-19T01:25:18.254Z",
+     "clock": "1:26 2nd",
+     "score": "46-71",
+     "phase": "scout",
+     "grade": "B",
+     "action": "SCOUT",
+     "pick": null,
+     "focus": "MIA",
+     "kalshi": 0.995,
+     "note": "MIL answered MIA's 10-0 with 4-0",
+     "log": "2026-11-18 | MIL@MIA | 1:26 Q2 | 46-71 | B | no bet | K 100c (-19900) | MIL answered MIA's 10-0 with 4-0"
+    },
+    {
+     "at": "2026-11-19T01:45:26.937Z",
+     "clock": "12:00 3rd",
+     "score": "48-74",
+     "phase": "q3",
+     "grade": "B",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "MIL",
+     "kalshi": 0.01,
+     "note": "MIL answered MIA's 10-0 with 4-0",
+     "log": "2026-11-18 | MIL@MIA | 12:00 Q3 | 48-74 | B | no bet | K 1c (+9900) | MIL answered MIA's 10-0 with 4-0"
+    },
+    {
+     "at": "2026-11-19T01:46:13.561Z",
+     "clock": "11:24 3rd",
+     "score": "48-74",
+     "phase": "q3",
+     "grade": "A",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "MIL",
+     "kalshi": 0.01,
+     "note": "MIL answered MIA's 10-0 with 4-0",
+     "log": "2026-11-18 | MIL@MIA | 11:24 Q3 | 48-74 | A | no bet | K 1c (+9900) | MIL answered MIA's 10-0 with 4-0"
+    },
+    {
+     "at": "2026-11-19T01:46:59.858Z",
+     "clock": "11:04 3rd",
+     "score": "48-74",
+     "phase": "q3",
+     "grade": "B",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "MIL",
+     "kalshi": 0.01,
+     "note": "MIL answered MIA's 10-0 with 4-0",
+     "log": "2026-11-18 | MIL@MIA | 11:04 Q3 | 48-74 | B | no bet | K 1c (+9900) | MIL answered MIA's 10-0 with 4-0"
+    },
+    {
+     "at": "2026-11-19T01:47:46.272Z",
+     "clock": "10:43 3rd",
+     "score": "48-74",
+     "phase": "q3",
+     "grade": "A",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "MIL",
+     "kalshi": 0.01,
+     "note": "MIL answered MIA's 10-0 with 4-0",
+     "log": "2026-11-18 | MIL@MIA | 10:43 Q3 | 48-74 | A | no bet | K 1c (+9900) | MIL answered MIA's 10-0 with 4-0"
+    },
+    {
+     "at": "2026-11-19T01:52:24.934Z",
+     "clock": "9:18 3rd",
+     "score": "50-80",
+     "phase": "q3",
+     "grade": "B",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "MIL",
+     "kalshi": 0.01,
+     "note": "MIA's 8-2 run is unanswered",
+     "log": "2026-11-18 | MIL@MIA | 9:18 Q3 | 50-80 | B | no bet | K 1c (+9900) | MIA's 8-2 run is unanswered"
+    },
+    {
+     "at": "2026-11-19T01:59:23.205Z",
+     "clock": "7:32 3rd",
+     "score": "59-81",
+     "phase": "q3",
+     "grade": "A",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "MIL",
+     "kalshi": 0.01,
+     "note": "MIL answered MIA's 8-2 with a 9-1 run; MIA has not responded",
+     "log": "2026-11-18 | MIL@MIA | 7:32 Q3 | 59-81 | A | no bet | K 1c (+9900) | MIL answered MIA's 8-2 with a 9-1 run; MIA has not responded"
+    },
+    {
+     "at": "2026-11-19T02:03:16.160Z",
+     "clock": "5:38 3rd",
+     "score": "61-88",
+     "phase": "q3",
+     "grade": "B",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "MIA",
+     "kalshi": 0.995,
+     "note": "MIA answered MIL's 11-1 with a 7-0 run; MIL has not responded",
+     "log": "2026-11-18 | MIL@MIA | 5:38 Q3 | 61-88 | B | no bet | K 100c (-19900) | MIA answered MIL's 11-1 with a 7-0 run; MIL has not responded"
+    },
+    {
+     "at": "2026-11-19T02:08:41.576Z",
+     "clock": "3:31 3rd",
+     "score": "71-93",
+     "phase": "q3",
+     "grade": "A",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "MIL",
+     "kalshi": 0.01,
+     "note": "MIL answered MIA's 10-2 with a 8-2 run; MIA has not responded",
+     "log": "2026-11-18 | MIL@MIA | 3:31 Q3 | 71-93 | A | no bet | K 1c (+9900) | MIL answered MIA's 10-2 with a 8-2 run; MIA has not responded"
+    },
+    {
+     "at": "2026-11-19T02:17:59.467Z",
+     "clock": "7.3 3rd",
+     "score": "84-112",
+     "phase": "q3",
+     "grade": "A",
+     "action": "LEAN",
+     "pick": "MIA",
+     "focus": "MIA",
+     "kalshi": 0.995,
+     "note": "MIA answered MIL's 8-2 with a 8-2 run; MIL has not responded",
+     "log": "2026-11-18 | MIL@MIA | 7.3 Q3 | 84-112 | A | lean MIA | K 100c (-19900) | MIA answered MIL's 8-2 with a 8-2 run; MIL has not responded"
+    },
+    {
+     "at": "2026-11-19T02:18:46.056Z",
+     "clock": "0.0 3rd",
+     "score": "86-112",
+     "phase": "end3",
+     "grade": "A",
+     "action": "LEAN",
+     "pick": "MIA",
+     "focus": "MIA",
+     "kalshi": 0.995,
+     "note": "MIA answered MIL's 8-2 with a 8-2 run; MIL has not responded",
+     "log": "2026-11-18 | MIL@MIA | 0.0 Q3 | 86-112 | A | lean MIA | K 100c (-19900) | MIA answered MIL's 8-2 with a 8-2 run; MIL has not responded"
+    },
+    {
+     "at": "2026-11-19T02:21:51.886Z",
+     "clock": "12:00 4th",
+     "score": "86-112",
+     "phase": "q4early",
+     "grade": "B",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "MIA",
+     "kalshi": 0.995,
+     "note": "MIA answered MIL's 8-2 with a 8-2 run; MIL has not responded",
+     "log": "2026-11-18 | MIL@MIA | 12:00 Q4 | 86-112 | B | no bet | K 100c (-19900) | MIA answered MIL's 8-2 with a 8-2 run; MIL has not responded"
+    },
+    {
+     "at": "2026-11-19T02:25:44.134Z",
+     "clock": "10:14 4th",
+     "score": "93-116",
+     "phase": "q4early",
+     "grade": "A",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "MIL",
+     "kalshi": 0.01,
+     "note": "MIL answered MIA's 8-2 with 5-0",
+     "log": "2026-11-18 | MIL@MIA | 10:14 Q4 | 93-116 | A | no bet | K 1c (+9900) | MIL answered MIA's 8-2 with 5-0"
+    },
+    {
+     "at": "2026-11-19T02:27:17.106Z",
+     "clock": "9:19 4th",
+     "score": "94-118",
+     "phase": "primary",
+     "grade": "A",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "MIL",
+     "kalshi": 0.01,
+     "note": "MIL answered MIA's 8-2 with a 8-2 run; MIA has not responded",
+     "log": "2026-11-18 | MIL@MIA | 9:19 Q4 | 94-118 | A | no bet | K 1c (+9900) | MIL answered MIA's 8-2 with a 8-2 run; MIA has not responded"
+    },
+    {
+     "at": "2026-11-19T02:28:49.868Z",
+     "clock": "8:20 4th",
+     "score": "97-127",
+     "phase": "primary",
+     "grade": "A",
+     "action": "BET",
+     "pick": "MIA",
+     "focus": "MIA",
+     "kalshi": 0.995,
+     "note": "MIA answered MIL's 8-2 with a 6-0 run; MIL has not responded",
+     "log": "2026-11-18 | MIL@MIA | 8:20 Q4 | 97-127 | A | MIA ML | K 100c (-19900) | MIA answered MIL's 8-2 with a 6-0 run; MIL has not responded"
+    },
+    {
+     "at": "2026-11-19T02:33:28.590Z",
+     "clock": "7:13 4th",
+     "score": "100-127",
+     "phase": "confirm",
+     "grade": "A",
+     "action": "BET",
+     "pick": "MIA",
+     "focus": "MIA",
+     "kalshi": 0.995,
+     "note": "MIA answered MIL's 8-2 with a 6-0 run; MIL has not responded",
+     "log": "2026-11-18 | MIL@MIA | 7:13 Q4 | 100-127 | A | MIA ML | K 100c (-19900) | MIA answered MIL's 8-2 with a 6-0 run; MIL has not responded"
+    },
+    {
+     "at": "2026-11-19T02:35:01.871Z",
+     "clock": "6:51 4th",
+     "score": "100-128",
+     "phase": "confirm",
+     "grade": "A+",
+     "action": "BET",
+     "pick": "MIA",
+     "focus": "MIA",
+     "kalshi": 0.995,
+     "note": "MIA answered MIL's 8-2 with a 6-0 run; MIL has not responded",
+     "log": "2026-11-18 | MIL@MIA | 6:51 Q4 | 100-128 | A+ | MIA ML | K 100c (-19900) | MIA answered MIL's 8-2 with a 6-0 run; MIL has not responded"
+    },
+    {
+     "at": "2026-11-19T02:35:48.300Z",
+     "clock": "6:13 4th",
+     "score": "102-128",
+     "phase": "confirm",
+     "grade": "A",
+     "action": "BET",
+     "pick": "MIA",
+     "focus": "MIA",
+     "kalshi": 0.995,
+     "note": "MIA answered MIL's 8-2 with a 6-0 run; MIL has not responded",
+     "log": "2026-11-18 | MIL@MIA | 6:13 Q4 | 102-128 | A | MIA ML | K 100c (-19900) | MIA answered MIL's 8-2 with a 6-0 run; MIL has not responded"
+    },
+    {
+     "at": "2026-11-19T02:36:34.688Z",
+     "clock": "5:34 4th",
+     "score": "104-128",
+     "phase": "late",
+     "grade": "A",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "MIL",
+     "kalshi": 0.01,
+     "note": "MIL answered MIA's 6-0 with a 7-1 run; MIA has not responded",
+     "log": "2026-11-18 | MIL@MIA | 5:34 Q4 | 104-128 | A | no bet | K 1c (+9900) | MIL answered MIA's 6-0 with a 7-1 run; MIA has not responded"
+    },
+    {
+     "at": "2026-11-19T02:45:51.869Z",
+     "clock": "3:46 4th",
+     "score": "112-132",
+     "phase": "under4",
+     "grade": "B",
+     "action": "NO NEW BET",
+     "pick": null,
+     "focus": "MIA",
+     "kalshi": 0.995,
+     "note": "MIA answered MIL's 15-1 with 4-0",
+     "log": "2026-11-18 | MIL@MIA | 3:46 Q4 | 112-132 | B | no bet | K 100c (-19900) | MIA answered MIL's 15-1 with 4-0"
+    },
+    {
+     "at": "2026-11-19T02:48:57.957Z",
+     "clock": "2:54 4th",
+     "score": "114-135",
+     "phase": "under4",
+     "grade": "A",
+     "action": "NO NEW BET",
+     "pick": "MIA",
+     "focus": "MIA",
+     "kalshi": 0.995,
+     "note": "MIA answered MIL's 15-1 with 4-0",
+     "log": "2026-11-18 | MIL@MIA | 2:54 Q4 | 114-135 | A | no bet | K 100c (-19900) | MIA answered MIL's 15-1 with 4-0"
+    },
+    {
+     "at": "2026-11-19T02:50:30.896Z",
+     "clock": "2:14 4th",
+     "score": "118-135",
+     "phase": "under4",
+     "grade": "B",
+     "action": "NO NEW BET",
+     "pick": null,
+     "focus": "MIA",
+     "kalshi": 0.995,
+     "note": "MIA answered MIL's 15-1 with 4-0",
+     "log": "2026-11-18 | MIL@MIA | 2:14 Q4 | 118-135 | B | no bet | K 100c (-19900) | MIA answered MIL's 15-1 with 4-0"
+    },
+    {
+     "at": "2026-11-19T02:51:17.188Z",
+     "clock": "1:22 4th",
+     "score": "119-137",
+     "phase": "under4",
+     "grade": "A",
+     "action": "NO NEW BET",
+     "pick": "MIA",
+     "focus": "MIA",
+     "kalshi": 0.995,
+     "note": "MIA answered MIL's 15-1 with 4-0",
+     "log": "2026-11-18 | MIL@MIA | 1:22 Q4 | 119-137 | A | no bet | K 100c (-19900) | MIA answered MIL's 15-1 with 4-0"
+    },
+    {
+     "at": "2026-11-19T02:52:03.769Z",
+     "clock": "1:22 4th",
+     "score": "122-137",
+     "phase": "under4",
+     "grade": "A",
+     "action": "NO NEW BET",
+     "pick": null,
+     "focus": "MIL",
+     "kalshi": 0.01,
+     "note": "MIL answered MIA's 6-0 with a 8-2 run; MIA has not responded",
+     "log": "2026-11-18 | MIL@MIA | 1:22 Q4 | 122-137 | A | no bet | K 1c (+9900) | MIL answered MIA's 6-0 with a 8-2 run; MIA has not responded"
+    },
+    {
+     "at": "2026-11-19T02:53:36.579Z",
+     "clock": "54.0 4th",
+     "score": "123-137",
+     "phase": "under4",
+     "grade": "B",
+     "action": "NO NEW BET",
+     "pick": null,
+     "focus": "MIA",
+     "kalshi": 0.995,
+     "note": "MIL answered MIA's 6-0 with a 9-2 run; MIA has not responded",
+     "log": "2026-11-18 | MIL@MIA | 54.0 Q4 | 123-137 | B | no bet | K 100c (-19900) | MIL answered MIA's 6-0 with a 9-2 run; MIA has not responded"
+    },
+    {
+     "at": "2026-11-19T02:54:22.980Z",
+     "clock": "32.3 4th",
+     "score": "125-137",
+     "phase": "under4",
+     "grade": "A",
+     "action": "NO NEW BET",
+     "pick": null,
+     "focus": "MIL",
+     "kalshi": 0.01,
+     "note": "MIL answered MIA's 6-0 with a 11-2 run; MIA has not responded",
+     "log": "2026-11-18 | MIL@MIA | 32.3 Q4 | 125-137 | A | no bet | K 1c (+9900) | MIL answered MIA's 6-0 with a 11-2 run; MIA has not responded"
+    },
+    {
+     "at": "2026-11-19T02:56:42.407Z",
+     "clock": "Final",
+     "score": "130-137",
+     "phase": "final",
+     "grade": "A",
+     "action": "FINAL",
+     "pick": null,
+     "focus": "MIL",
+     "kalshi": 0.01,
+     "note": "MIL answered MIA's 6-0 with a 16-2 run; MIA has not responded",
+     "log": "2026-11-18 | MIL@MIA | Final | 130-137 | A | no bet | K 1c (+9900) | MIL answered MIA's 6-0 with a 16-2 run; MIA has not responded"
+    }
+   ],
+   "kalshi": [
+    [
+     "2026-11-18T23:45:24.603Z",
+     0.145,
+     0.855
+    ],
+    [
+     "2026-11-19T00:18:42.324Z",
+     0.135,
+     0.865
+    ],
+    [
+     "2026-11-19T00:20:15.185Z",
+     0.125,
+     0.875
+    ],
+    [
+     "2026-11-19T00:21:47.929Z",
+     0.115,
+     0.885
+    ],
+    [
+     "2026-11-19T00:24:07.572Z",
+     0.115,
+     0.875
+    ],
+    [
+     "2026-11-19T00:24:54.043Z",
+     0.115,
+     0.885
+    ],
+    [
+     "2026-11-19T00:25:40.501Z",
+     0.095,
+     0.905
+    ],
+    [
+     "2026-11-19T00:29:33.054Z",
+     0.115,
+     0.885
+    ],
+    [
+     "2026-11-19T00:30:19.619Z",
+     0.085,
+     0.915
+    ],
+    [
+     "2026-11-19T00:31:06.008Z",
+     0.095,
+     0.905
+    ],
+    [
+     "2026-11-19T00:31:52.502Z",
+     0.075,
+     0.925
+    ],
+    [
+     "2026-11-19T00:34:11.939Z",
+     0.085,
+     0.915
+    ],
+    [
+     "2026-11-19T00:34:58.319Z",
+     0.075,
+     0.925
+    ],
+    [
+     "2026-11-19T00:35:44.746Z",
+     0.085,
+     0.915
+    ],
+    [
+     "2026-11-19T00:36:31.076Z",
+     0.075,
+     0.925
+    ],
+    [
+     "2026-11-19T00:37:17.408Z",
+     0.085,
+     0.915
+    ],
+    [
+     "2026-11-19T00:41:09.688Z",
+     0.095,
+     0.905
+    ],
+    [
+     "2026-11-19T00:41:56.041Z",
+     0.085,
+     0.915
+    ],
+    [
+     "2026-11-19T00:45:48.303Z",
+     0.065,
+     0.935
+    ],
+    [
+     "2026-11-19T00:47:21.253Z",
+     0.075,
+     0.925
+    ],
+    [
+     "2026-11-19T00:51:59.916Z",
+     0.065,
+     0.935
+    ],
+    [
+     "2026-11-19T00:52:46.805Z",
+     0.095,
+     0.905
+    ],
+    [
+     "2026-11-19T00:53:33.208Z",
+     0.085,
+     0.925
+    ],
+    [
+     "2026-11-19T00:54:19.590Z",
+     0.085,
+     0.915
+    ],
+    [
+     "2026-11-19T00:55:05.995Z",
+     0.075,
+     0.925
+    ],
+    [
+     "2026-11-19T00:55:52.683Z",
+     0.055,
+     0.945
+    ],
+    [
+     "2026-11-19T00:56:39.135Z",
+     0.045,
+     0.955
+    ],
+    [
+     "2026-11-19T01:01:17.752Z",
+     0.035,
+     0.965
+    ],
+    [
+     "2026-11-19T01:02:04.107Z",
+     0.025,
+     0.975
+    ],
+    [
+     "2026-11-19T01:02:50.479Z",
+     0.035,
+     0.965
+    ],
+    [
+     "2026-11-19T01:04:23.261Z",
+     0.035,
+     0.975
+    ],
+    [
+     "2026-11-19T01:05:10.021Z",
+     0.035,
+     0.965
+    ],
+    [
+     "2026-11-19T01:06:42.891Z",
+     0.025,
+     0.975
+    ],
+    [
+     "2026-11-19T01:12:08.468Z",
+     0.015,
+     0.985
+    ],
+    [
+     "2026-11-19T01:19:53.184Z",
+     0.01,
+     0.985
+    ],
+    [
+     "2026-11-19T01:20:39.528Z",
+     0.015,
+     0.985
+    ],
+    [
+     "2026-11-19T01:21:26.167Z",
+     0.01,
+     0.995
+    ],
+    [
+     "2026-11-19T01:22:12.488Z",
+     0.015,
+     0.995
+    ],
+    [
+     "2026-11-19T01:22:58.899Z",
+     0.015,
+     0.985
+    ],
+    [
+     "2026-11-19T01:25:18.252Z",
+     0.01,
+     0.995
+    ],
+    [
+     "2026-11-19T02:00:09.645Z",
+     0.015,
+     0.985
+    ],
+    [
+     "2026-11-19T02:01:42.648Z",
+     0.01,
+     0.995
+    ]
+   ],
+   "kalshiEvent": "KXNBAGAME-26NOV18MILMIA",
+   "last": {
+    "at": "2026-11-19T02:56:42.407Z",
+    "clock": "Final",
+    "score": "130-137",
+    "phase": "final",
+    "grade": "A",
+    "action": "FINAL",
+    "pick": null,
+    "focus": "MIL",
+    "kalshi": 0.01,
+    "note": "MIL answered MIA's 6-0 with a 16-2 run; MIA has not responded",
+    "log": "2026-11-18 | MIL@MIA | Final | 130-137 | A | no bet | K 1c (+9900) | MIL answered MIA's 6-0 with a 16-2 run; MIA has not responded"
+   },
+   "final": {
+    "score": "130-137",
+    "winner": "MIA"
+   }
+  }
+ },
+ "updated": "2026-11-19T02:56:42.407Z"
+}
