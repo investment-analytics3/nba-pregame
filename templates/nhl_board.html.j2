@@ -173,7 +173,9 @@ const flip = c => c==='g' ? 'r' : (c==='r' ? 'g' : c);
 const B2B_G = 'color:#fff;background:linear-gradient(180deg,#34C77B,#1A8A4C);text-shadow:0 1px 1px rgba(0,0,0,.25)', B2B_Y = 'color:#2A1C00;background:linear-gradient(180deg,#FADB80,#D9A12A)', B2B_R = 'color:#fff;background:linear-gradient(180deg,#D44444,#A12222)';
 function prPill(rank, isFav){
   if(rank==null) return '#–';
-  const c = rank<=TOP ? 'g' : (rank<BOT ? 'y' : 'r');
+  // Pill colors (owner Nov 20, as NBA/NFL): 1-10 green, 11-22 yellow, 23-32 red for the favorite;
+  // underdog flipped (top 10 red, bottom 10 green). Independent of the top-7/bottom-7 qualification range.
+  const c = rank<=10 ? 'g' : (rank<=N-10 ? 'y' : 'r');
   return `<span class="yn" style="${FORM[isFav?c:flip(c)]}">#${rank}</span>`;
 }
 function formPill(rec, isFav){

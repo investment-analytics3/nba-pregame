@@ -244,6 +244,8 @@ NHL rules (owner decisions Nov 12-13 2026; spec "NHL Board"):
   vs underdog season / last 5: offense vs defense, defense vs offense, shot share, goaltending, special teams; colors unchanged;
   last-5 cells of a counting matchup outlined, a "Matchup" line under the grid with "Pregame: favorites won 83% (34-7), vs 66%
   without. Leading after the 1st they held 92%, after the 2nd 23 of 23" (no-matchup leads after the 2nd also held 30 of 30).
+  PR pill (owner Nov 20, as NBA/NFL): favorite 1-10 green, 11-22 yellow, 23-32 red; underdog flipped (top 10 red, bottom 10
+  green). Not tied to the top-7/bottom-7 qualification range.
   Goalie label (owner Nov 15): "(starter)" / "(backup)" after the name; favorite starter green, backup red; underdog
   starter yellow, backup green; not posted grey.
 - Board: daily like the NBA (today's games, then tomorrow's preview once today's are final), tier locks 1 h before puck drop;
