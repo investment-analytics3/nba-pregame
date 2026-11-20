@@ -5957,5 +5957,467 @@
     "away": 28
    }
   }
+ },
+ "401858303": {
+  "at": "2026-11-20T15:30:38-08:00",
+  "week": 12,
+  "game": {
+   "id": "401858303",
+   "kick_utc": "2026-11-21T00:30:00+00:00",
+   "kick_pt": "Fri 4:30 PM PT",
+   "day_et": "2026-11-20",
+   "state": "pre",
+   "detail": "11/20 - 7:30 PM EST",
+   "neutral": false,
+   "venue": "Wallace Wade Stadium",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -11.5,
+   "open_spread": -8.5,
+   "line_source": "DraftKings",
+   "total": 41.5,
+   "fav_ml": -520.0,
+   "movement": 3.0,
+   "home": {
+    "code": 150,
+    "abbr": "DUKE",
+    "name": "Duke",
+    "display": "Duke Blue Devils",
+    "season": {
+     "off_epa": 0.1352,
+     "off_sr": 0.4422,
+     "def_epa": -0.0575,
+     "def_sr": 0.4144,
+     "games": 10,
+     "ranks": {
+      "off_epa": 31,
+      "off_sr": 68,
+      "def_epa": 29,
+      "def_sr": 52
+     }
+    },
+    "last3": {
+     "off_epa": 0.1422,
+     "off_sr": 0.4531,
+     "def_epa": -0.0562,
+     "def_sr": 0.4385,
+     "games": 3,
+     "ranks": {
+      "off_epa": 30,
+      "off_sr": 45,
+      "def_epa": 40,
+      "def_sr": 77
+     }
+    },
+    "net": 0.1926,
+    "net_rank": 18,
+    "record": "7-3",
+    "last2_results": [
+     "W",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "L"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Walker Eget",
+     "dropbacks": 286,
+     "epa_db": 0.204,
+     "rank": 31
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 16,
+     "fpi": 21,
+     "own_net": 18
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.79
+   },
+   "away": {
+    "code": 228,
+    "abbr": "CLEM",
+    "name": "Clemson",
+    "display": "Clemson Tigers",
+    "season": {
+     "off_epa": -0.1247,
+     "off_sr": 0.3822,
+     "def_epa": -0.0905,
+     "def_sr": 0.397,
+     "games": 10,
+     "ranks": {
+      "off_epa": 134,
+      "off_sr": 133,
+      "def_epa": 20,
+      "def_sr": 24
+     }
+    },
+    "last3": {
+     "off_epa": -0.1369,
+     "off_sr": 0.3184,
+     "def_epa": -0.0728,
+     "def_sr": 0.39,
+     "games": 3,
+     "ranks": {
+      "off_epa": 115,
+      "off_sr": 137,
+      "def_epa": 32,
+      "def_sr": 32
+     }
+    },
+    "net": -0.0341,
+    "net_rank": 96,
+    "record": "6-4",
+    "last2_results": [
+     "W",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "L"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Tait Reynolds",
+     "dropbacks": 269,
+     "epa_db": -0.178,
+     "rank": 128
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 71,
+     "fpi": 47,
+     "own_net": 96
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.209
+   },
+   "fav": 150,
+   "dog": 228,
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 16 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 DUKE last-3 top 25 in 0 of 4 \u00b7 \u2717 CLEM last-3 bottom 25 (114+) in 2 of 4 \u00b7 \u2713 DUKE season top half (1-69) in all four \u00b7 \u2717 CLEM season top 25: Def EPA allowed #20, Def success allowed #24"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "CLEM: consensus #71, ESPN FPI #47"
+     }
+    ],
+    "fails": [
+     "Score 16 (watch list from 18, qualifies at 28)"
+    ],
+    "hero": {
+     "score": 16,
+     "band": "red",
+     "parts": {
+      "fav_strength": 0,
+      "dog_weakness": 10,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 1
+     },
+     "max": 40
+    },
+    "call": "No track",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for DUKE yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV20CLEMDUKE",
+    "fav_prob": 0.805,
+    "bid": 0.8,
+    "ask": 0.81
+   },
+   "locked_at": "2026-11-20T15:30:38-08:00"
+  }
+ },
+ "401866468": {
+  "at": "2026-11-20T15:30:38-08:00",
+  "week": 12,
+  "game": {
+   "id": "401866468",
+   "kick_utc": "2026-11-21T00:30:00+00:00",
+   "kick_pt": "Fri 4:30 PM PT",
+   "day_et": "2026-11-20",
+   "state": "pre",
+   "detail": "11/20 - 7:30 PM EST",
+   "neutral": false,
+   "venue": "Glass Bowl",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -16.5,
+   "open_spread": -15.5,
+   "line_source": "DraftKings",
+   "total": 45.5,
+   "fav_ml": -800.0,
+   "movement": 1.0,
+   "home": {
+    "code": 2649,
+    "abbr": "TOL",
+    "name": "Toledo",
+    "display": "Toledo Rockets",
+    "season": {
+     "off_epa": 0.1098,
+     "off_sr": 0.4467,
+     "def_epa": -0.0931,
+     "def_sr": 0.364,
+     "games": 10,
+     "ranks": {
+      "off_epa": 39,
+      "off_sr": 59,
+      "def_epa": 19,
+      "def_sr": 4
+     }
+    },
+    "last3": {
+     "off_epa": 0.0334,
+     "off_sr": 0.4037,
+     "def_epa": -0.2187,
+     "def_sr": 0.3405,
+     "games": 3,
+     "ranks": {
+      "off_epa": 66,
+      "off_sr": 93,
+      "def_epa": 7,
+      "def_sr": 5
+     }
+    },
+    "net": 0.2029,
+    "net_rank": 16,
+    "record": "8-2",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "W"
+    ],
+    "rest": 9,
+    "qb": {
+     "regular": "John Alan Richter",
+     "dropbacks": 310,
+     "epa_db": 0.238,
+     "rank": 26
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 49,
+     "fpi": 81,
+     "own_net": 16
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.878
+   },
+   "away": {
+    "code": 189,
+    "abbr": "BGSU",
+    "name": "Bowling Green",
+    "display": "Bowling Green Falcons",
+    "season": {
+     "off_epa": -0.0885,
+     "off_sr": 0.4137,
+     "def_epa": 0.085,
+     "def_sr": 0.4542,
+     "games": 10,
+     "ranks": {
+      "off_epa": 131,
+      "off_sr": 113,
+      "def_epa": 104,
+      "def_sr": 105
+     }
+    },
+    "last3": {
+     "off_epa": -0.0221,
+     "off_sr": 0.4022,
+     "def_epa": 0.0497,
+     "def_sr": 0.3632,
+     "games": 3,
+     "ranks": {
+      "off_epa": 90,
+      "off_sr": 96,
+      "def_epa": 78,
+      "def_sr": 11
+     }
+    },
+    "net": -0.1734,
+    "net_rank": 133,
+    "record": "3-7",
+    "last2_results": [
+     "L",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "W"
+    ],
+    "rest": 10,
+    "qb": {
+     "regular": "Jay Kastantin",
+     "dropbacks": 242,
+     "epa_db": -0.023,
+     "rank": 104
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 131,
+     "fpi": 128,
+     "own_net": 133
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.122
+   },
+   "fav": 2649,
+   "dog": 189,
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 22 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 TOL last-3 top 25 in 2 of 4 \u00b7 \u2717 BGSU last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2713 TOL season top half (1-69) in all four \u00b7 \u2713 BGSU season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "BGSU: consensus #131, ESPN FPI #128"
+     }
+    ],
+    "fails": [
+     "Watch list: score 22 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 22,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 7,
+      "dog_weakness": 8,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "call": "Watch list",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for TOL yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": true,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV20BGSUTOL",
+    "fav_prob": 0.865,
+    "bid": 0.86,
+    "ask": 0.87
+   },
+   "locked_at": "2026-11-20T15:30:38-08:00",
+   "readout": {
+    "matchup": "BGSU @ TOL",
+    "summary": "All four previews pick Toledo (8-2) to win and cover. They cite Toledo's run game and a defense 3rd nationally in success rate allowed against a Bowling Green (3-7) offense ranked 121st in that stat and starting its backup QB. Dimers gives Toledo 88.3%. Nobody backs Bowling Green.",
+    "pick": "Toledo to win (all four sources); Toledo to cover per Predictem (-16), Pickdawgz (-15.5) and SportsChatPlace (-15.5)",
+    "predicted_score": "Toledo 34, BGSU 13 (Predictem); Toledo 32, BGSU 15 (Dimers)",
+    "injuries": "BGSU: QB Jay Kastantin injured, backup Austin Novosad made his first career start last game; RB Austyn Dendy has not played since Week 8 (Predictem, Nov 17). Toledo: RB Connor Walendzak returned vs UMass after an undisclosed injury (Predictem, Nov 17). No official availability report found.",
+    "sources": [
+     {
+      "site": "Predictem",
+      "url": "https://www.predictem.com/college-football/bowling-green-at-toledo-prediction-i-75-college-football-odds/"
+     },
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/cfb/predictions/2026_12_tol_bgsu"
+     },
+     {
+      "site": "Pickdawgz",
+      "url": "https://pickdawgz.com/college-football-picks/bowling-green-vs-toledo-prediction-11-20-2026-todays-college-football-picks/"
+     },
+     {
+      "site": "SportsChatPlace",
+      "url": "https://sportschatplace.com/college-football-picks/toledo-vs-bowling-green-prediction-football-picks-today-11-20-26/"
+     }
+    ],
+    "updated": "2026-11-20T05:46-08:00"
+   }
+  }
  }
 }
