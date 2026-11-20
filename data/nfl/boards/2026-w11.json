@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 11,
- "built_at": "2026-11-19T15:00:40-08:00",
- "built_label": "Thu Nov 19, 3:00 PM PT",
+ "built_at": "2026-11-19T16:00:55-08:00",
+ "built_label": "Thu Nov 19, 4:00 PM PT",
  "games": [
   {
    "id": "401873066",
@@ -24,7 +24,7 @@
    "open_spread": -5.5,
    "total": 44.5,
    "total_open": 45.5,
-   "fav_ml": -690.0,
+   "fav_ml": -750.0,
    "favorite": "home",
    "spread": -12.5,
    "movement": 7.0,
@@ -108,11 +108,6 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Jake Hummel",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
       "name": "Jaylin Smith",
       "pos": "CB",
       "status": "Questionable"
@@ -131,6 +126,11 @@
       "name": "Wyatt Teller",
       "pos": "G",
       "status": "Questionable"
+     },
+     {
+      "name": "Marvin Harrison Jr.",
+      "pos": "WR",
+      "status": "Out"
      }
     ],
     "power": {
@@ -209,24 +209,18 @@
     },
     "injuries_known": true,
     "key_out": [
+     "Bernhard Raimann",
      "Charvarius Ward",
      "Jalen Travis"
     ],
-    "key_questionable": [
-     "Sauce Gardner"
-    ],
+    "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Sauce Gardner",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Jalen Travis",
+      "name": "Bernhard Raimann",
       "pos": "OT",
       "status": "Out"
      },
@@ -236,13 +230,18 @@
       "status": "Out"
      },
      {
+      "name": "Jalen Travis",
+      "pos": "OT",
+      "status": "Out"
+     },
+     {
       "name": "Charvarius Ward",
       "pos": "CB",
       "status": "Out"
      },
      {
-      "name": "Will Mallory",
-      "pos": "TE",
+      "name": "Riley Leonard",
+      "pos": "QB",
       "status": "Out"
      }
     ],
@@ -355,10 +354,6 @@
      {
       "level": "yellow",
       "text": "Line crossed key number 7, 10"
-     },
-     {
-      "level": "yellow",
-      "text": "Underdog questionable: Sauce Gardner"
      }
     ],
     "under": {
@@ -546,7 +541,6 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
-     "Christian Benford",
      "Dalton Kincaid",
      "Dorian Williams"
     ],
@@ -555,6 +549,11 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Ray Davis",
+      "pos": "RB",
+      "status": "Questionable"
+     },
      {
       "name": "T.J. Sanders",
       "pos": "DT",
@@ -573,11 +572,6 @@
      {
       "name": "Dorian Williams",
       "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Christian Benford",
-      "pos": "CB",
       "status": "Questionable"
      }
     ],
@@ -797,7 +791,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Christian Benford, Dalton Kincaid, Dorian Williams"
+      "text": "Favorite questionable: Dalton Kincaid, Dorian Williams"
      },
      {
       "level": "yellow",
@@ -1361,7 +1355,7 @@
    "open_spread": -6.5,
    "total": 48.5,
    "total_open": 46.5,
-   "fav_ml": -610.0,
+   "fav_ml": -600.0,
    "favorite": "home",
    "spread": -11.5,
    "movement": 5.0,
@@ -1805,7 +1799,7 @@
    "open_spread": -6.5,
    "total": 55.5,
    "total_open": 48.5,
-   "fav_ml": -388.0,
+   "fav_ml": -387.0,
    "favorite": "home",
    "spread": -8.5,
    "movement": 2.0,
@@ -2002,6 +1996,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Tyjae Spears",
+      "pos": "RB",
+      "status": "Questionable"
+     },
+     {
       "name": "Carnell Tate",
       "pos": "WR",
       "status": "Questionable"
@@ -2019,11 +2018,6 @@
      {
       "name": "Anthony Hill Jr.",
       "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Tony Adams",
-      "pos": "S",
       "status": "Questionable"
      }
     ],
@@ -2876,29 +2870,18 @@
     },
     "injuries_known": true,
     "key_out": [],
-    "key_questionable": [
-     "Max Melton",
-     "Walter Nolen"
-    ],
+    "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
-    "qb_reset": "G.Minshew, 54 dropbacks this season",
+    "qb_out": [
+     "Gardner Minshew II"
+    ],
+    "qb_active": false,
+    "qb_reset": "Gardner Minshew II out",
     "injury_list": [
      {
       "name": "Carson Beck",
       "pos": "QB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Walter Nolen III",
-      "pos": "DT",
-      "status": "Questionable"
-     },
-     {
-      "name": "Max Melton",
-      "pos": "CB",
       "status": "Questionable"
      },
      {
@@ -2909,6 +2892,16 @@
      {
       "name": "James Conner",
       "pos": "RB",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Gardner Minshew II",
+      "pos": "QB",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Jordan Burch",
+      "pos": "LB",
       "status": "Injured Reserve"
      }
     ],
@@ -3016,7 +3009,7 @@
     "flags": [
      {
       "level": "red",
-      "text": "Underdog QB change (G.Minshew, 54 dropbacks this season): call capped at Lean"
+      "text": "Underdog QB change (Gardner Minshew II out): call capped at Lean"
      },
      {
       "level": "yellow",
@@ -3025,10 +3018,6 @@
      {
       "level": "yellow",
       "text": "Favorite questionable: Jaylon Moore, Kenneth Walker III, Trey Smith"
-     },
-     {
-      "level": "yellow",
-      "text": "Underdog questionable: Max Melton, Walter Nolen"
      }
     ],
     "under": {
@@ -3676,6 +3665,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Charlie Kolar",
+      "pos": "TE",
+      "status": "Questionable"
+     },
+     {
       "name": "Ladd McConkey",
       "pos": "WR",
       "status": "Questionable"
@@ -3683,11 +3677,6 @@
      {
       "name": "Daiyan Henley",
       "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Charlie Kolar",
-      "pos": "TE",
       "status": "Questionable"
      },
      {
@@ -4032,7 +4021,7 @@
    "open_spread": -8.5,
    "total": 40.5,
    "total_open": 41.5,
-   "fav_ml": -588.0,
+   "fav_ml": -586.0,
    "favorite": "home",
    "spread": -10.0,
    "movement": 1.5,
@@ -4478,13 +4467,13 @@
    },
    "line_source": "Draft Kings",
    "open_spread": 5.5,
-   "total": 37.5,
+   "total": 38.5,
    "total_open": 42.5,
-   "fav_ml": -208.0,
+   "fav_ml": -205.0,
    "favorite": "away",
    "spread": -4.5,
    "movement": 10.0,
-   "total_move": -5.0,
+   "total_move": -4.0,
    "fav_home": false,
    "home": {
     "code": "PHI",
@@ -4566,6 +4555,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Smael Mondon Jr.",
+      "pos": "LB",
+      "status": "Questionable"
+     },
+     {
       "name": "Will Shipley",
       "pos": "RB",
       "status": "Injured Reserve"
@@ -4583,11 +4577,6 @@
      {
       "name": "Zack Baun",
       "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Jonathan Jones",
-      "pos": "CB",
       "status": "Questionable"
      }
     ],
@@ -4824,7 +4813,7 @@
       16,
       29
      ],
-     "total_move": -5.0,
+     "total_move": -4.0,
      "note": ""
     },
     "call": "Watch list",
@@ -4927,7 +4916,7 @@
    "open_spread": -3.5,
    "total": 46.5,
    "total_open": 46.5,
-   "fav_ml": -174.0,
+   "fav_ml": -175.0,
    "favorite": "home",
    "spread": -3.5,
    "movement": 0.0,
@@ -5003,14 +4992,18 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
-     "Ji'Ayir Brown",
-     "Upton Stout"
+     "Ji'Ayir Brown"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Jordan James",
+      "pos": "RB",
+      "status": "Questionable"
+     },
      {
       "name": "Mike Evans",
       "pos": "WR",
@@ -5029,11 +5022,6 @@
      {
       "name": "Mac Jones",
       "pos": "QB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Upton Stout",
-      "pos": "CB",
       "status": "Questionable"
      }
     ],
@@ -5259,7 +5247,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Ji'Ayir Brown, Upton Stout"
+      "text": "Favorite questionable: Ji'Ayir Brown"
      },
      {
       "level": "yellow",
@@ -5381,7 +5369,7 @@
    "open_spread": -1.5,
    "total": 53.5,
    "total_open": 52.5,
-   "fav_ml": -290.0,
+   "fav_ml": -283.0,
    "favorite": "away",
    "spread": -6.0,
    "movement": 4.5,
@@ -5851,6 +5839,6 @@
   "watch": 7,
   "green": 1,
   "edge_clears": 0,
-  "built_label": "Thu Nov 19, 3:00 PM PT"
+  "built_label": "Thu Nov 19, 4:00 PM PT"
  }
 }
