@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 11,
- "built_at": "2026-11-19T16:00:55-08:00",
- "built_label": "Thu Nov 19, 4:00 PM PT",
+ "built_at": "2026-11-19T17:01:01-08:00",
+ "built_label": "Thu Nov 19, 5:01 PM PT",
  "games": [
   {
    "id": "401873066",
@@ -99,7 +99,7 @@
     },
     "injuries_known": true,
     "key_out": [
-     "Danielle Hunter"
+     "Woody Marks"
     ],
     "key_questionable": [],
     "key_long_term": [],
@@ -108,28 +108,28 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Jaylin Smith",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Danielle Hunter",
-      "pos": "DE",
-      "status": "Out"
-     },
-     {
-      "name": "Brevin Jordan",
-      "pos": "TE",
-      "status": "Out"
-     },
-     {
       "name": "Wyatt Teller",
       "pos": "G",
-      "status": "Questionable"
+      "status": "Out"
+     },
+     {
+      "name": "Nate Thomas",
+      "pos": "OT",
+      "status": "Out"
+     },
+     {
+      "name": "Woody Marks",
+      "pos": "RB",
+      "status": "Out"
      },
      {
       "name": "Marvin Harrison Jr.",
       "pos": "WR",
+      "status": "Out"
+     },
+     {
+      "name": "Jake Andrews",
+      "pos": "C",
       "status": "Out"
      }
     ],
@@ -210,8 +210,8 @@
     "injuries_known": true,
     "key_out": [
      "Bernhard Raimann",
-     "Charvarius Ward",
-     "Jalen Travis"
+     "Jalen Travis",
+     "Sauce Gardner"
     ],
     "key_questionable": [],
     "key_long_term": [],
@@ -219,6 +219,16 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Riley Leonard",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "name": "Sauce Gardner",
+      "pos": "CB",
+      "status": "Out"
+     },
      {
       "name": "Bernhard Raimann",
       "pos": "OT",
@@ -232,16 +242,6 @@
      {
       "name": "Jalen Travis",
       "pos": "OT",
-      "status": "Out"
-     },
-     {
-      "name": "Charvarius Ward",
-      "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "name": "Riley Leonard",
-      "pos": "QB",
       "status": "Out"
      }
     ],
@@ -279,7 +279,7 @@
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
       "pass": false,
-      "detail": "HOU key starter out: Danielle Hunter"
+      "detail": "HOU key starter out: Woody Marks"
      },
      {
       "rule": "Power",
@@ -318,11 +318,11 @@
      "off_epa"
     ],
     "fails": [
-     "HOU key starter out: Danielle Hunter",
+     "HOU key starter out: Woody Marks",
      "Would be on the watch list otherwise (score 19)"
     ],
     "failed": [
-     "HOU key starter out: Danielle Hunter",
+     "HOU key starter out: Woody Marks",
      "Would be on the watch list otherwise (score 19)"
     ],
     "hero": {
@@ -1734,12 +1734,6 @@
     ]
    },
    "fav_defense_top10": false,
-   "kalshi": {
-    "event": "KXNFLGAME-26NOV22NOCHI",
-    "fav_prob": 0.845,
-    "bid": 0.84,
-    "ask": 0.85
-   },
    "votes": {
     "fav": 6,
     "dog": 5,
@@ -2177,12 +2171,6 @@
     ]
    },
    "fav_defense_top10": false,
-   "kalshi": {
-    "event": "KXNFLGAME-26NOV22TENDAL",
-    "fav_prob": 0.765,
-    "bid": 0.76,
-    "ask": 0.77
-   },
    "votes": {
     "fav": 6,
     "dog": 5,
@@ -3064,12 +3052,6 @@
     ]
    },
    "fav_defense_top10": true,
-   "kalshi": {
-    "event": "KXNFLGAME-26NOV22ARIKC",
-    "fav_prob": 0.915,
-    "bid": 0.91,
-    "ask": 0.92
-   },
    "votes": {
     "fav": 7,
     "dog": 4,
@@ -3129,7 +3111,7 @@
    "open_spread": -1.5,
    "total": 46.5,
    "total_open": 46.5,
-   "fav_ml": -263.0,
+   "fav_ml": -259.0,
    "favorite": "away",
    "spread": -6.0,
    "movement": 4.5,
@@ -4021,10 +4003,10 @@
    "open_spread": -8.5,
    "total": 40.5,
    "total_open": 41.5,
-   "fav_ml": -586.0,
+   "fav_ml": -620.0,
    "favorite": "home",
-   "spread": -10.0,
-   "movement": 1.5,
+   "spread": -10.5,
+   "movement": 2.0,
    "total_move": -1.0,
    "fav_home": true,
    "home": {
@@ -4916,7 +4898,7 @@
    "open_spread": -3.5,
    "total": 46.5,
    "total_open": 46.5,
-   "fav_ml": -175.0,
+   "fav_ml": -174.0,
    "favorite": "home",
    "spread": -3.5,
    "movement": 0.0,
@@ -5000,6 +4982,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Isaac Guerendo",
+      "pos": "RB",
+      "status": "Out"
+     },
+     {
       "name": "Jordan James",
       "pos": "RB",
       "status": "Questionable"
@@ -5017,11 +5004,6 @@
      {
       "name": "Ji'Ayir Brown",
       "pos": "S",
-      "status": "Questionable"
-     },
-     {
-      "name": "Mac Jones",
-      "pos": "QB",
       "status": "Questionable"
      }
     ],
@@ -5298,12 +5280,6 @@
     ]
    },
    "fav_defense_top10": false,
-   "kalshi": {
-    "event": "KXNFLGAME-26NOV22MINSF",
-    "fav_prob": 0.605,
-    "bid": 0.6,
-    "ask": 0.61
-   },
    "votes": {
     "fav": 8,
     "dog": 5,
@@ -5369,7 +5345,7 @@
    "open_spread": -1.5,
    "total": 53.5,
    "total_open": 52.5,
-   "fav_ml": -283.0,
+   "fav_ml": -279.0,
    "favorite": "away",
    "spread": -6.0,
    "movement": 4.5,
@@ -5839,6 +5815,6 @@
   "watch": 7,
   "green": 1,
   "edge_clears": 0,
-  "built_label": "Thu Nov 19, 4:00 PM PT"
+  "built_label": "Thu Nov 19, 5:01 PM PT"
  }
 }
