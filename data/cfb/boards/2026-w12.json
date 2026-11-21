@@ -1,234 +1,16 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-21T15:15:31-08:00",
- "built_label": "Sat Nov 21, 3:15 PM PT",
+ "built_at": "2026-11-21T15:30:39-08:00",
+ "built_label": "Sat Nov 21, 3:30 PM PT",
  "games": [
-  {
-   "id": "401869946",
-   "kick_utc": "2026-11-21T20:00:00+00:00",
-   "kick_pt": "Sat 12:00 PM PT",
-   "day_et": "2026-11-21",
-   "state": "in",
-   "detail": "2:16 - 4th",
-   "neutral": false,
-   "venue": "Our Lady of Lourdes Stadium",
-   "favorite": "home",
-   "fav_home": true,
-   "spread": -10.5,
-   "open_spread": -7.5,
-   "line_source": "Draft Kings",
-   "total": 49.5,
-   "fav_ml": -395.0,
-   "movement": 3.0,
-   "home": {
-    "code": 309,
-    "abbr": "UL",
-    "name": "Louisiana",
-    "display": "Louisiana Ragin' Cajuns",
-    "season": {
-     "off_epa": 0.0871,
-     "off_sr": 0.4737,
-     "def_epa": -0.0063,
-     "def_sr": 0.4358,
-     "games": 10,
-     "ranks": {
-      "off_epa": 59,
-      "off_sr": 31,
-      "def_epa": 52,
-      "def_sr": 78
-     }
-    },
-    "last3": {
-     "off_epa": 0.113,
-     "off_sr": 0.5191,
-     "def_epa": 0.0531,
-     "def_sr": 0.4601,
-     "games": 3,
-     "ranks": {
-      "off_epa": 39,
-      "off_sr": 8,
-      "def_epa": 80,
-      "def_sr": 96
-     }
-    },
-    "net": 0.0934,
-    "net_rank": 46,
-    "record": "7-3",
-    "last2_results": [
-     "W",
-     "W"
-    ],
-    "last3_results": [
-     "L",
-     "W",
-     "W"
-    ],
-    "rest": 8,
-    "qb": {
-     "regular": "Lunch Winfield",
-     "dropbacks": 240,
-     "epa_db": -0.013,
-     "rank": 99
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 67,
-     "fpi": 82,
-     "own_net": 46
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.808
-   },
-   "away": {
-    "code": 324,
-    "abbr": "CCU",
-    "name": "Coastal",
-    "display": "Coastal Carolina Chanticleers",
-    "season": {
-     "off_epa": 0.0061,
-     "off_sr": 0.4112,
-     "def_epa": 0.0367,
-     "def_sr": 0.4489,
-     "games": 10,
-     "ranks": {
-      "off_epa": 94,
-      "off_sr": 116,
-      "def_epa": 73,
-      "def_sr": 96
-     }
-    },
-    "last3": {
-     "off_epa": -0.103,
-     "off_sr": 0.3906,
-     "def_epa": -0.1609,
-     "def_sr": 0.4183,
-     "games": 3,
-     "ranks": {
-      "off_epa": 106,
-      "off_sr": 110,
-      "def_epa": 14,
-      "def_sr": 55
-     }
-    },
-    "net": -0.0306,
-    "net_rank": 92,
-    "record": "4-6",
-    "last2_results": [
-     "L",
-     "W"
-    ],
-    "last3_results": [
-     "W",
-     "L",
-     "W"
-    ],
-    "rest": 7,
-    "qb": {
-     "regular": "Deuce Bailey",
-     "dropbacks": 316,
-     "epa_db": 0.08,
-     "rank": 71
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 107,
-     "fpi": 112,
-     "own_net": 92
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.192
-   },
-   "fav": 309,
-   "dog": 324,
-   "scoring": {
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 17 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 UL last-3 top 25 in 1 of 4 \u00b7 \u2717 CCU last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2717 UL season outside 1-69: Def success allowed #78 \u00b7 \u2713 CCU season top 25 in none"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key player newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "No injury report (warning only; health assumed full)"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
-      "pass": true,
-      "detail": "CCU: consensus #107, ESPN FPI #112"
-     }
-    ],
-    "fails": [
-     "Score 17 (watch list from 18, qualifies at 28)"
-    ],
-    "hero": {
-     "score": 17,
-     "band": "red",
-     "parts": {
-      "fav_strength": 2,
-      "dog_weakness": 8,
-      "health": 4,
-      "home": 1,
-      "rest": 0,
-      "form": 2
-     },
-     "max": 40
-    },
-    "call": "No track",
-    "flags": [
-     {
-      "level": "yellow",
-      "text": "No injury report for UL yet: check before betting"
-     }
-    ]
-   },
-   "fav_defense_top25": false,
-   "kalshi": {
-    "event": "KXNCAAFGAME-26NOV21CCARULL",
-    "fav_prob": 0.775,
-    "bid": 0.77,
-    "ask": 0.78
-   },
-   "locked_at": "2026-11-21T11:00:42-08:00",
-   "score": {
-    "home": 38,
-    "away": 24
-   }
-  },
   {
    "id": "401856755",
    "kick_utc": "2026-11-21T20:30:00+00:00",
    "kick_pt": "Sat 12:30 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "13:34 - 4th",
+   "detail": "7:31 - 4th",
    "neutral": false,
    "venue": "DKR-Texas Memorial Stadium",
    "favorite": "home",
@@ -438,7 +220,7 @@
    },
    "locked_at": "2026-11-21T11:30:55-08:00",
    "score": {
-    "home": 38,
+    "home": 45,
     "away": 3
    }
   },
@@ -448,7 +230,7 @@
    "kick_pt": "Sat 12:30 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "11:46 - 4th",
+   "detail": "7:31 - 4th",
    "neutral": false,
    "venue": "Doak Campbell Stadium",
    "favorite": "home",
@@ -657,7 +439,7 @@
    "locked_at": "2026-11-21T11:30:55-08:00",
    "score": {
     "home": 10,
-    "away": 21
+    "away": 28
    }
   },
   {
@@ -666,7 +448,7 @@
    "kick_pt": "Sat 12:30 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "13:45 - 4th",
+   "detail": "7:33 - 4th",
    "neutral": false,
    "venue": "Pratt & Whitney Stadium",
    "favorite": "home",
@@ -884,7 +666,7 @@
    "kick_pt": "Sat 3:00 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "11:17 - 1st",
+   "detail": "8:13 - 1st",
    "neutral": false,
    "venue": "UFCU Stadium",
    "favorite": "home",
@@ -1128,8 +910,8 @@
     "updated": "2026-11-21T05:49-08:00"
    },
    "score": {
-    "home": 0,
-    "away": 0
+    "home": 7,
+    "away": 7
    }
   },
   {
@@ -1137,8 +919,8 @@
    "kick_utc": "2026-11-21T23:15:00+00:00",
    "kick_pt": "Sat 3:15 PM PT",
    "day_et": "2026-11-21",
-   "state": "pre",
-   "detail": "11/21 - 6:15 PM EST",
+   "state": "in",
+   "detail": "11:42 - 1st",
    "neutral": false,
    "venue": "Los Angeles Memorial Coliseum",
    "favorite": "home",
@@ -1831,8 +1613,8 @@
    "fav_home": false,
    "spread": -14.5,
    "open_spread": -10.5,
-   "line_source": "DraftKings",
-   "total": 50.5,
+   "line_source": "Draft Kings",
+   "total": 51.5,
    "fav_ml": -800.0,
    "movement": 4.0,
    "home": {
@@ -2037,7 +1819,8 @@
     "fav_prob": 0.865,
     "bid": 0.86,
     "ask": 0.87
-   }
+   },
+   "locked_at": "2026-11-21T15:30:39-08:00"
   },
   {
    "id": "401858306",
@@ -2052,7 +1835,7 @@
    "fav_home": true,
    "spread": -10.5,
    "open_spread": -12.5,
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "total": 50.5,
    "fav_ml": -455.0,
    "movement": -2.0,
@@ -2253,6 +2036,7 @@
     "bid": 0.79,
     "ask": 0.8
    },
+   "locked_at": "2026-11-21T15:30:39-08:00",
    "readout": {
     "matchup": "PITT @ LOU",
     "summary": "Everyone picks No. 21 Louisville (7-3) to win; the split is the -13.5 spread. Predictem and PickDawgz take Louisville -14, citing its run game against Pitt's unsettled QB spot (Geriner questionable). TheRX takes Pitt +13.5, noting Pitt allows 71.2 rushing yards a game. Models: Dimers 85.2%, numberFire 80.5%, ESPN 77.5%.",
@@ -4390,6 +4174,224 @@
     "home": 17,
     "away": 16
    }
+  },
+  {
+   "id": "401869946",
+   "kick_utc": "2026-11-21T20:00:00+00:00",
+   "kick_pt": "Sat 12:00 PM PT",
+   "day_et": "2026-11-21",
+   "state": "post",
+   "detail": "Final",
+   "neutral": false,
+   "venue": "Our Lady of Lourdes Stadium",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -10.5,
+   "open_spread": -7.5,
+   "line_source": "Draft Kings",
+   "total": 49.5,
+   "fav_ml": -395.0,
+   "movement": 3.0,
+   "home": {
+    "code": 309,
+    "abbr": "UL",
+    "name": "Louisiana",
+    "display": "Louisiana Ragin' Cajuns",
+    "season": {
+     "off_epa": 0.0871,
+     "off_sr": 0.4737,
+     "def_epa": -0.0063,
+     "def_sr": 0.4358,
+     "games": 10,
+     "ranks": {
+      "off_epa": 59,
+      "off_sr": 31,
+      "def_epa": 52,
+      "def_sr": 78
+     }
+    },
+    "last3": {
+     "off_epa": 0.113,
+     "off_sr": 0.5191,
+     "def_epa": 0.0531,
+     "def_sr": 0.4601,
+     "games": 3,
+     "ranks": {
+      "off_epa": 39,
+      "off_sr": 8,
+      "def_epa": 80,
+      "def_sr": 96
+     }
+    },
+    "net": 0.0934,
+    "net_rank": 46,
+    "record": "7-3",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "W",
+     "W"
+    ],
+    "rest": 8,
+    "qb": {
+     "regular": "Lunch Winfield",
+     "dropbacks": 240,
+     "epa_db": -0.013,
+     "rank": 99
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 67,
+     "fpi": 82,
+     "own_net": 46
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.808
+   },
+   "away": {
+    "code": 324,
+    "abbr": "CCU",
+    "name": "Coastal",
+    "display": "Coastal Carolina Chanticleers",
+    "season": {
+     "off_epa": 0.0061,
+     "off_sr": 0.4112,
+     "def_epa": 0.0367,
+     "def_sr": 0.4489,
+     "games": 10,
+     "ranks": {
+      "off_epa": 94,
+      "off_sr": 116,
+      "def_epa": 73,
+      "def_sr": 96
+     }
+    },
+    "last3": {
+     "off_epa": -0.103,
+     "off_sr": 0.3906,
+     "def_epa": -0.1609,
+     "def_sr": 0.4183,
+     "games": 3,
+     "ranks": {
+      "off_epa": 106,
+      "off_sr": 110,
+      "def_epa": 14,
+      "def_sr": 55
+     }
+    },
+    "net": -0.0306,
+    "net_rank": 92,
+    "record": "4-6",
+    "last2_results": [
+     "L",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "L",
+     "W"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Deuce Bailey",
+     "dropbacks": 316,
+     "epa_db": 0.08,
+     "rank": 71
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 107,
+     "fpi": 112,
+     "own_net": 92
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.192
+   },
+   "fav": 309,
+   "dog": 324,
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 17 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 UL last-3 top 25 in 1 of 4 \u00b7 \u2717 CCU last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2717 UL season outside 1-69: Def success allowed #78 \u00b7 \u2713 CCU season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "CCU: consensus #107, ESPN FPI #112"
+     }
+    ],
+    "fails": [
+     "Score 17 (watch list from 18, qualifies at 28)"
+    ],
+    "hero": {
+     "score": 17,
+     "band": "red",
+     "parts": {
+      "fav_strength": 2,
+      "dog_weakness": 8,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "call": "No track",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for UL yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV21CCARULL",
+    "fav_prob": 0.775,
+    "bid": 0.77,
+    "ask": 0.78
+   },
+   "locked_at": "2026-11-21T11:00:42-08:00",
+   "score": {
+    "home": 38,
+    "away": 24
+   }
   }
  ],
  "notes": [],
@@ -4399,15 +4401,15 @@
  ],
  "data_through": "Week 12",
  "n_fbs": 138,
- "other_fbs_games": 25,
+ "other_fbs_games": 23,
  "summary": {
   "season": 2026,
   "week": 12,
   "games": 19,
-  "upcoming": 5,
+  "upcoming": 4,
   "qualified": 0,
   "watch": 4,
-  "other_fbs_games": 25,
-  "built_label": "Sat Nov 21, 3:15 PM PT"
+  "other_fbs_games": 23,
+  "built_label": "Sat Nov 21, 3:30 PM PT"
  }
 }

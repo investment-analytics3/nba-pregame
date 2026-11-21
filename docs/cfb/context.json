@@ -1,49 +1,8 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-21T15:15:31-08:00",
+ "built_at": "2026-11-21T15:30:39-08:00",
  "games": [
-  {
-   "id": "401869946",
-   "kick_utc": "2026-11-21T20:00:00+00:00",
-   "kick_pt": "Sat 12:00 PM PT",
-   "day_et": "2026-11-21",
-   "away_abbr": "CCU",
-   "home_abbr": "UL",
-   "fav_abbr": "UL",
-   "dog_abbr": "CCU",
-   "fav_home": true,
-   "spread": -10.5,
-   "away_names": [
-    "Coastal Carolina Chanticleers",
-    "Coastal"
-   ],
-   "home_names": [
-    "Louisiana Ragin' Cajuns",
-    "Louisiana"
-   ],
-   "tier": "out",
-   "tier_label": "No track",
-   "tracked": false,
-   "alerts": false,
-   "call": "No track",
-   "hero": 17,
-   "fav_defense_top10": false,
-   "fav_def_rank_l3": 80,
-   "def_hold": false,
-   "qbs": {
-    "CCU": {
-     "regular": "Deuce Bailey",
-     "rank": 71
-    },
-    "UL": {
-     "regular": "Lunch Winfield",
-     "rank": 99
-    }
-   },
-   "kalshi_event": "KXNCAAFGAME-26NOV21CCARULL",
-   "locked": true
-  },
   {
    "id": "401856755",
    "kick_utc": "2026-11-21T20:30:00+00:00",
@@ -370,7 +329,7 @@
     }
    },
    "kalshi_event": "KXNCAAFGAME-26NOV21UGASCAR",
-   "locked": false
+   "locked": true
   },
   {
    "id": "401858306",
@@ -411,7 +370,7 @@
     }
    },
    "kalshi_event": "KXNCAAFGAME-26NOV21PITTLOU",
-   "locked": false
+   "locked": true
   },
   {
    "id": "401866465",
@@ -780,6 +739,47 @@
     }
    },
    "kalshi_event": "KXNCAAFGAME-26NOV21ULMAPP",
+   "locked": true
+  },
+  {
+   "id": "401869946",
+   "kick_utc": "2026-11-21T20:00:00+00:00",
+   "kick_pt": "Sat 12:00 PM PT",
+   "day_et": "2026-11-21",
+   "away_abbr": "CCU",
+   "home_abbr": "UL",
+   "fav_abbr": "UL",
+   "dog_abbr": "CCU",
+   "fav_home": true,
+   "spread": -10.5,
+   "away_names": [
+    "Coastal Carolina Chanticleers",
+    "Coastal"
+   ],
+   "home_names": [
+    "Louisiana Ragin' Cajuns",
+    "Louisiana"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "alerts": false,
+   "call": "No track",
+   "hero": 17,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 80,
+   "def_hold": false,
+   "qbs": {
+    "CCU": {
+     "regular": "Deuce Bailey",
+     "rank": 71
+    },
+    "UL": {
+     "regular": "Lunch Winfield",
+     "rank": 99
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV21CCARULL",
    "locked": true
   }
  ]
