@@ -35,6 +35,9 @@
 <script>
 (function(){
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+// Team logo in the matchup badge (owner Nov 21). Falls back to the abbreviation if the image fails.
+const logoUrl = t => `https://a.espncdn.com/i/teamlogos/nfl/500-dark/${String(t.abbr||'').toLowerCase()}.png`;
+const logo = t => `<img src="${esc(logoUrl(t))}" alt="${esc(t.abbr)}" title="${esc(t.abbr)}" loading="lazy" style="width:30px;height:30px;object-fit:contain" data-t="${esc(t.abbr)}" onerror="this.replaceWith(document.createTextNode(this.dataset.t))">`;
 const M = ['off_epa','off_sr','def_epa','def_sr'];
 const MH = {off_epa:['OFF','EPA'], off_sr:['OFF','SR'], def_epa:['DEF','EPA'], def_sr:['DEF','SR']};
 const MN = {off_epa:'Off EPA/play', off_sr:'Off success rate', def_epa:'Def EPA allowed', def_sr:'Def success allowed'};
@@ -130,7 +133,7 @@ function card(g){
     ${edgeBar(sc.edge)}${pills(g)}${flags}
     <div class="row between small"><span class="muted">${why}</span><span style="font-weight:600;color:#9CC6FF;white-space:nowrap">${g.state==='in'?'Live read ›':'Details ›'}</span></div></article>`;
 }
-const side = (g,t) => `<div class="tm ${t.code===g.fav?'fav':''}"><span class="badge">${esc(t.abbr)}</span><span><b>${t===g.home?'<span style="color:#7C869E">@ </span>':''}${esc(t.abbr)}${t.code===g.fav?' '+line(g.spread):''}</b><br><span class="muted">${esc(t.record)} · L2 ${formPill(t.last2_results, t.code===g.fav)} · PR ${prPill(t.power, t.code===g.fav)}</span></span></div>`;
+const side = (g,t) => `<div class="tm ${t.code===g.fav?'fav':''}"><span class="badge">${logo(t)}</span><span><b>${t===g.home?'<span style="color:#7C869E">@ </span>':''}${esc(t.abbr)}${t.code===g.fav?' '+line(g.spread):''}</b><br><span class="muted">${esc(t.record)} · L2 ${formPill(t.last2_results, t.code===g.fav)} · PR ${prPill(t.power, t.code===g.fav)}</span></span></div>`;
 const subLine = (g,fav,k,fpi,ex) => [g.total!=null?'Total '+g.total+(g.total_move? ' ('+line(g.total_move)+')':''):'', g.movement? 'Line moved '+line(g.movement)+' toward fav':'', fpi, ex, k].filter(Boolean).join(' · ');
 
 function detail(g){

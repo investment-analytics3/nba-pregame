@@ -366,6 +366,12 @@ often: always `git pull --rebase origin main` before pushing.
   `KXNBAGAME-26NOV08PHICHI`); it refuses requests that carry a browser `Origin` header, so only the tracker
   calls it. Price check never changes the grade.
 
+## Team logos (owner Nov 21)
+
+Every board's matchup badge shows the team logo (`logo(t)` in each template; text abbreviation if the image fails):
+ESPN CDN `a.espncdn.com/i/teamlogos/<nba|nfl>/500-dark/<espn abbr>.png`, college `ncaa/500-dark/<ESPN team id>.png`,
+NHL `assets.nhle.com/logos/nhl/svg/<NHL tricode>_dark.svg`. All verified from GitHub's servers Nov 21 (the workspace can't reach them).
+
 ## Privacy
 
 - Every page carries `<meta name="robots" content="noindex, ...">`; keep it on all templates.
