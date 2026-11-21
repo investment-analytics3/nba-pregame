@@ -8,6 +8,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          while read u; do
-            r=$(curl -s -o /tmp/f -w "%{http_code} %{content_type} %{size_download}" "$u"); echo "R $r $(md5sum </tmp/f | cut -c1-8) $u"
-          done < urls.txt
+          n=0; while read u; do n=$((n+1)); curl -s -o /tmp/f "$u"; echo "B64START $n"; base64 -w0 /tmp/f; echo; echo "B64END $n"; done < urls.txt
