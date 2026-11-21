@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 11,
- "built_at": "2026-11-21T07:40:29-08:00",
- "built_label": "Sat Nov 21, 7:40 AM PT",
+ "built_at": "2026-11-21T09:49:40-08:00",
+ "built_label": "Sat Nov 21, 9:49 AM PT",
  "games": [
   {
    "id": "401873070",
@@ -24,7 +24,7 @@
    "open_spread": -11.5,
    "total": 44.5,
    "total_open": 47.5,
-   "fav_ml": -1640.0,
+   "fav_ml": -1540.0,
    "favorite": "home",
    "spread": -16.5,
    "movement": 5.0,
@@ -100,7 +100,6 @@
     "injuries_known": true,
     "key_out": [
      "Christian Benford",
-     "Dalton Kincaid",
      "Dorian Williams"
     ],
     "key_questionable": [],
@@ -109,6 +108,11 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Ed Oliver",
+      "pos": "DT",
+      "status": "Questionable"
+     },
      {
       "name": "Damar Hamlin",
       "pos": "S",
@@ -128,11 +132,6 @@
       "name": "Christian Benford",
       "pos": "CB",
       "status": "Out"
-     },
-     {
-      "name": "Dalton Kincaid",
-      "pos": "TE",
-      "status": "Doubtful"
      }
     ],
     "power": {
@@ -279,7 +278,7 @@
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
       "pass": false,
-      "detail": "BUF key starter out: Christian Benford, Dalton Kincaid, Dorian Williams"
+      "detail": "BUF key starter out: Christian Benford, Dorian Williams"
      },
      {
       "rule": "Power",
@@ -316,11 +315,11 @@
     ],
     "qualifiers": [],
     "fails": [
-     "BUF key starter out: Christian Benford, Dalton Kincaid, Dorian Williams",
+     "BUF key starter out: Christian Benford, Dorian Williams",
      "Would be on the watch list otherwise (score 26)"
     ],
     "failed": [
-     "BUF key starter out: Christian Benford, Dalton Kincaid, Dorian Williams",
+     "BUF key starter out: Christian Benford, Dorian Williams",
      "Would be on the watch list otherwise (score 26)"
     ],
     "hero": {
@@ -907,7 +906,7 @@
    "open_spread": -6.5,
    "total": 48.5,
    "total_open": 46.5,
-   "fav_ml": -610.0,
+   "fav_ml": -599.0,
    "favorite": "home",
    "spread": -11.5,
    "movement": 5.0,
@@ -1409,7 +1408,7 @@
    "open_spread": -6.5,
    "total": 54.5,
    "total_open": 48.5,
-   "fav_ml": -378.0,
+   "fav_ml": -370.0,
    "favorite": "home",
    "spread": -7.5,
    "movement": 1.0,
@@ -1604,6 +1603,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Carnell Tate",
+      "pos": "WR",
+      "status": "Questionable"
+     },
+     {
       "name": "Micah Robinson",
       "pos": "CB",
       "status": "Questionable"
@@ -1621,11 +1625,6 @@
      {
       "name": "Tyjae Spears",
       "pos": "RB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Carnell Tate",
-      "pos": "WR",
       "status": "Questionable"
      }
     ],
@@ -1850,13 +1849,13 @@
    },
    "line_source": "DraftKings",
    "open_spread": -4.5,
-   "total": 45.5,
+   "total": 46.5,
    "total_open": 49.5,
-   "fav_ml": -236.0,
+   "fav_ml": -220.0,
    "favorite": "home",
-   "spread": -5.5,
-   "movement": 1.0,
-   "total_move": -4.0,
+   "spread": -4.5,
+   "movement": 0.0,
+   "total_move": -3.0,
    "fav_home": true,
    "home": {
     "code": "DET",
@@ -2191,7 +2190,7 @@
       7,
       28
      ],
-     "total_move": -4.0,
+     "total_move": -3.0,
      "note": ""
     },
     "call": "Watch list",
@@ -2354,10 +2353,10 @@
    "open_spread": -11.5,
    "total": 40.5,
    "total_open": 44.5,
-   "fav_ml": -1660.0,
+   "fav_ml": -1480.0,
    "favorite": "home",
-   "spread": -16.5,
-   "movement": 5.0,
+   "spread": -15.5,
+   "movement": 4.0,
    "total_move": -4.0,
    "fav_home": true,
    "home": {
@@ -2696,7 +2695,7 @@
      },
      {
       "level": "yellow",
-      "text": "Line moved +5 toward the favorite (4+): downgrade"
+      "text": "Line moved +4 toward the favorite (4+): downgrade"
      }
     ],
     "under": {
@@ -4195,7 +4194,7 @@
    "open_spread": 5.5,
    "total": 37.5,
    "total_open": 42.5,
-   "fav_ml": -197.0,
+   "fav_ml": -196.0,
    "favorite": "away",
    "spread": -3.5,
    "movement": 9.0,
@@ -4382,9 +4381,10 @@
      "rank": 28
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Nick Herbig"
+    ],
     "key_questionable": [
-     "Nick Herbig",
      "Patrick Queen"
     ],
     "key_long_term": [],
@@ -4400,7 +4400,7 @@
      {
       "name": "Nick Herbig",
       "pos": "LB",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
       "name": "Patrick Queen",
@@ -4429,9 +4429,9 @@
    "dog": "PHI",
    "scoring": {
     "qualified": false,
-    "tier": "watch",
-    "tier_label": "Watch list",
-    "tracked": true,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
     "alerts": false,
     "routes": [],
     "route": "",
@@ -4440,7 +4440,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 20 of 40"
+      "detail": "Score 19 of 40"
      },
      {
       "rule": "B",
@@ -4451,8 +4451,8 @@
      {
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "Clear"
+      "pass": false,
+      "detail": "PIT key starter out: Nick Herbig"
      },
      {
       "rule": "Power",
@@ -4489,18 +4489,20 @@
     ],
     "qualifiers": [],
     "fails": [
-     "Watch list: score 20 (qualifies at 28)"
+     "PIT key starter out: Nick Herbig",
+     "Would be on the watch list otherwise (score 19)"
     ],
     "failed": [
-     "Watch list: score 20 (qualifies at 28)"
+     "PIT key starter out: Nick Herbig",
+     "Would be on the watch list otherwise (score 19)"
     ],
     "hero": {
-     "score": 20,
+     "score": 19,
      "band": "yellow",
      "parts": {
       "fav_strength": 1,
       "dog_weakness": 14,
-      "health": 4,
+      "health": 3,
       "home": 0,
       "rest": 0,
       "form": 1
@@ -4526,7 +4528,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Nick Herbig, Patrick Queen"
+      "text": "Favorite questionable: Patrick Queen"
      }
     ],
     "under": {
@@ -4538,7 +4540,7 @@
      "total_move": -5.0,
      "note": ""
     },
-    "call": "Watch list",
+    "call": "No track",
     "matchups": [
      {
       "key": "def_def",
@@ -4616,46 +4618,6 @@
      }
     ],
     "notes": ""
-   },
-   "readout": {
-    "matchup": "PIT @ PHI",
-    "summary": "The Steelers are the clear pick. Philadelphia is 2-7, Jalen Hurts is out (blood clots) and Joe Milton starts, and the offense is tied for 30th in scoring (ESPN). Pittsburgh leads the NFL in EPA per rush against a weak Eagles run defense (SI). The only dissent is ESPN's Maldonado, who has the Eagles winning 20-17. Every projection is low-scoring.",
-    "pick": "Steelers (CBS Prisco, NFL.com 5-0, ESPN Moody and Walder, Dimers model); dissent: Eagles 20-17 (ESPN, Maldonado); ATS: Steelers -4.5 (SI/FanDuel)",
-    "predicted_score": "Steelers 26-13 (Pete Prisco, CBS, Nov 18); NFL.com: 14-10 (Bergman), 22-18 (Cersosimo), 22-14 (Filice), 21-12 (Kownack), 21-16 (Parr); ESPN: Eagles 20-17 (Maldonado), Steelers 23-16 (Moody), Steelers 25-18 (Walder); Steelers 21-16 (Dimers model, Nov 19; its graphic shows 22-16)",
-    "moneyline": "Steelers -210 / Eagles +176 (FanDuel, per SI); Steelers -194 / Eagles +194 (Dimers, Nov 19, book not named); spread PIT -3.5 to -4.5 (Dimers -3.5, CBS -4, ESPN/SI -4.5), total 37.5-38.5",
-    "win_probability": "ESPN FPI: PIT 63.9%, average margin 3.6 points (ESPN Week 11 preview, Nov 20 2026); Dimers model PIT 67.4%",
-    "injuries": "Final reports Fri Nov 20 2026 (steelers.com). Steelers: Questionable LB Patrick Queen (hand), WR Michael Pittman Jr. (foot), WR Roman Wilson (hand), S DeShon Elliott (knee), G Gennings Dunker (knee), all full participants Friday; LB Nick Herbig (hip/ribs) did not practice Friday. G Mason McCormick (ankle) is on IR (ESPN). Eagles: Out LB Zack Baun (back), WR Dontayvion Wicks (ankle/foot); Doubtful LB Smael Mondon (ankle); Questionable RB Will Shipley (foot/illness); WR DeVonta Smith (hamstring) has no designation and is expected back. QB Jalen Hurts is out indefinitely (blood clots in his lungs) and Joe Milton starts (PhillyVoice).",
-    "sources": [
-     {
-      "site": "CBS Sports (Prisco)",
-      "url": "https://www.cbssports.com/nfl/priscos-picks/"
-     },
-     {
-      "site": "NFL.com",
-      "url": "https://www.nfl.com/news/nfl-picks-week-11-2026-nfl-season"
-     },
-     {
-      "site": "ESPN",
-      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026"
-     },
-     {
-      "site": "Sports Illustrated",
-      "url": "https://www.si.com/betting/steelers-vs-eagles-prediction-odds-spread-injuries-trends-for-nfl-week-11-2026"
-     },
-     {
-      "site": "Dimers",
-      "url": "https://www.dimers.com/nfl/predictions/2026_11_phi_pit"
-     },
-     {
-      "site": "Pittsburgh Steelers (official injury report, both teams)",
-      "url": "https://www.steelers.com/news/week-11-injury-report-eagles"
-     },
-     {
-      "site": "PhillyVoice (Eagles injuries, QB)",
-      "url": "https://www.phillyvoice.com/eagles-steelers-week-11-injury-report-analysis/"
-     }
-    ],
-    "updated": "2026-11-21T05:49-08:00"
    }
   },
   {
@@ -4680,8 +4642,8 @@
    "total_open": 46.5,
    "fav_ml": -172.0,
    "favorite": "home",
-   "spread": -3.0,
-   "movement": -0.5,
+   "spread": -3.5,
+   "movement": 0.0,
    "total_move": 0.0,
    "fav_home": true,
    "home": {
@@ -5009,10 +4971,6 @@
      },
      {
       "level": "yellow",
-      "text": "Line crossed key number 3"
-     },
-     {
-      "level": "yellow",
       "text": "Favorite questionable: Dre Greenlaw"
      },
      {
@@ -5135,7 +5093,7 @@
    "open_spread": -1.5,
    "total": 53.5,
    "total_open": 52.5,
-   "fav_ml": -298.0,
+   "fav_ml": -303.0,
    "favorite": "away",
    "spread": -6.0,
    "movement": 4.5,
@@ -5221,6 +5179,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Rachaad White",
+      "pos": "RB",
+      "status": "Questionable"
+     },
+     {
       "name": "Laremy Tunsil",
       "pos": "OT",
       "status": "Injured Reserve"
@@ -5228,11 +5191,6 @@
      {
       "name": "Treylon Burks",
       "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "name": "Rachaad White",
-      "pos": "RB",
       "status": "Questionable"
      },
      {
@@ -5321,19 +5279,21 @@
      "rank": 4
     },
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
+    "key_out": [
      "Dalton Risner"
     ],
+    "key_questionable": [],
     "key_long_term": [],
-    "interior_ol_out": [],
+    "interior_ol_out": [
+     "Dalton Risner"
+    ],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
       "name": "Dalton Risner",
       "pos": "G",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
       "name": "Swayze Bozeman",
@@ -5367,9 +5327,9 @@
    "dog": "WAS",
    "scoring": {
     "qualified": false,
-    "tier": "watch",
-    "tier_label": "Watch list",
-    "tracked": true,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
     "alerts": false,
     "routes": [],
     "route": "",
@@ -5378,7 +5338,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 22 of 40"
+      "detail": "Score 20 of 40"
      },
      {
       "rule": "B",
@@ -5389,8 +5349,8 @@
      {
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "Clear"
+      "pass": false,
+      "detail": "CIN key starter out: Dalton Risner"
      },
      {
       "rule": "Power",
@@ -5430,18 +5390,20 @@
      "off_sr"
     ],
     "fails": [
-     "Watch list: score 22 (qualifies at 28)"
+     "CIN key starter out: Dalton Risner",
+     "Would be on the watch list otherwise (score 20)"
     ],
     "failed": [
-     "Watch list: score 22 (qualifies at 28)"
+     "CIN key starter out: Dalton Risner",
+     "Would be on the watch list otherwise (score 20)"
     ],
     "hero": {
-     "score": 22,
+     "score": 20,
      "band": "yellow",
      "parts": {
       "fav_strength": 8,
       "dog_weakness": 8,
-      "health": 4,
+      "health": 2,
       "home": 0,
       "rest": 0,
       "form": 2
@@ -5459,15 +5421,15 @@
     "flags": [
      {
       "level": "yellow",
+      "text": "Favorite interior OL out: Dalton Risner"
+     },
+     {
+      "level": "yellow",
       "text": "Line moved +4.5 toward the favorite (4+): downgrade"
      },
      {
       "level": "yellow",
       "text": "Line crossed key number 3"
-     },
-     {
-      "level": "yellow",
-      "text": "Favorite questionable: Dalton Risner"
      },
      {
       "level": "yellow",
@@ -5483,7 +5445,7 @@
      "total_move": 1.0,
      "note": ""
     },
-    "call": "Watch list",
+    "call": "No track",
     "matchups": [
      {
       "key": "def_def",
@@ -6029,7 +5991,7 @@
  "power_sources": {
   "nfl_com_url": "https://www.nfl.com/news/nfl-power-rankings-week-11-2026-nfl-season"
  },
- "votes_status": "gathered 2026-11-19T09:58-08:00",
+ "votes_status": "gathered 2026-11-21T10:05-08:00",
  "votes_missing": [],
  "summary": {
   "season": 2026,
@@ -6038,9 +6000,9 @@
   "upcoming": 12,
   "tracked": 0,
   "qualified": 0,
-  "watch": 6,
+  "watch": 4,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Sat Nov 21, 7:40 AM PT"
+  "built_label": "Sat Nov 21, 9:49 AM PT"
  }
 }
