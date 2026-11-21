@@ -1,0 +1,13 @@
+name: logo-check
+on:
+  push:
+    branches: [dev-logo-check]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          while read u; do
+            r=$(curl -s -o /tmp/f -w "%{http_code} %{content_type} %{size_download}" "$u"); echo "R $r $(md5sum </tmp/f | cut -c1-8) $u"
+          done < urls.txt
