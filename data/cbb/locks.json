@@ -7860,7 +7860,1418 @@
     "bid": 0.8,
     "ask": 0.81
    },
-   "locked_at": "2026-11-21T13:45:31-08:00"
+   "locked_at": "2026-11-21T13:45:31-08:00",
+   "score": {
+    "home": 0,
+    "away": 0
+   }
+  }
+ },
+ "401925897": {
+  "at": "2026-11-21T14:00:50-08:00",
+  "day": "2026-11-21",
+  "game": {
+   "id": "401925897",
+   "tip_utc": "2026-11-21T23:00:00+00:00",
+   "tip_pt": "3:00 PM PT",
+   "day_et": "2026-11-21",
+   "state": "pre",
+   "detail": "11/21 - 6:00 PM EST",
+   "neutral": false,
+   "venue": "Joseph G. Echols Hall",
+   "favorite": "away",
+   "spread": {
+    "spread": 11.5,
+    "details": "UNCW -11.5",
+    "provider": "DraftKings",
+    "ml_home": 600,
+    "ml_away": -900
+   },
+   "home": {
+    "id": "2450",
+    "abbr": "NORF",
+    "name": "Norfolk State",
+    "display": "Norfolk State Spartans",
+    "mascot": "Spartans",
+    "record": "2-4",
+    "l3_record": "0-3",
+    "games": 4,
+    "season": {
+     "efg": 45.25,
+     "opp_efg": 65.38,
+     "off": 98.65,
+     "def": 128.8,
+     "net": -30.15,
+     "poss_per_game": 67.2,
+     "ranks": {
+      "efg": 296,
+      "off": 264,
+      "opp_efg": 363,
+      "def": 353,
+      "net": 335
+     }
+    },
+    "last3": {
+     "efg": 46.25,
+     "opp_efg": 64.56,
+     "off": 98.04,
+     "def": 123.57,
+     "net": -25.53,
+     "poss_per_game": 65.3,
+     "ranks": {
+      "efg": 283,
+      "off": 274,
+      "opp_efg": 360,
+      "def": 330,
+      "net": 319
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401920308,
+      "date": "2026-11-17",
+      "site": "away",
+      "opp_id": 59,
+      "opp": "GT",
+      "d1_opp": true,
+      "pts": 79,
+      "opp_pts": 93,
+      "metrics": {
+       "efg": 46.27,
+       "opp_efg": 71.15,
+       "off": 109.87,
+       "def": 129.35,
+       "net": -19.47
+      },
+      "opp_power_rank": 110
+     },
+     {
+      "game_id": 401925896,
+      "date": "2026-11-15",
+      "site": "away",
+      "opp_id": 2247,
+      "opp": "GAST",
+      "d1_opp": true,
+      "pts": 53,
+      "opp_pts": 78,
+      "metrics": {
+       "efg": 43.86,
+       "opp_efg": 64.81,
+       "off": 88.67,
+       "def": 130.49,
+       "net": -41.82
+      },
+      "opp_power_rank": 178
+     },
+     {
+      "game_id": 401925895,
+      "date": "2026-11-11",
+      "site": "home",
+      "opp_id": 295,
+      "opp": "ODU",
+      "d1_opp": true,
+      "pts": 60,
+      "opp_pts": 71,
+      "metrics": {
+       "efg": 50.0,
+       "opp_efg": 57.69,
+       "off": 93.51,
+       "def": 110.66,
+       "net": -17.14
+      },
+      "opp_power_rank": 140
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+11.5",
+    "b2b": false,
+    "power": {
+     "rank": 349,
+     "bpi": 348,
+     "own_net": 335
+    },
+    "key_players": [
+     "Bahsil Laster",
+     "Jordan Skyers",
+     "Chris Walker",
+     "Keon Mitchell",
+     "Justin Jones",
+     "J.C. Riley Jr."
+    ],
+    "top_scorers": [
+     {
+      "name": "Bahsil Laster",
+      "ppg": 16.7
+     },
+     {
+      "name": "Jordan Skyers",
+      "ppg": 15.7
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "350",
+    "abbr": "UNCW",
+    "name": "UNC Wilmington",
+    "display": "UNC Wilmington Seahawks",
+    "mascot": "Seahawks",
+    "record": "4-1",
+    "l3_record": "2-1",
+    "games": 3,
+    "season": {
+     "efg": 56.15,
+     "opp_efg": 51.83,
+     "off": 119.35,
+     "def": 110.91,
+     "net": 8.43,
+     "poss_per_game": 79.0,
+     "ranks": {
+      "efg": 51,
+      "off": 61,
+      "opp_efg": 210,
+      "def": 225,
+      "net": 120
+     }
+    },
+    "last3": {
+     "efg": 56.15,
+     "opp_efg": 51.83,
+     "off": 119.35,
+     "def": 110.91,
+     "net": 8.43,
+     "poss_per_game": 79.0,
+     "ranks": {
+      "efg": 72,
+      "off": 68,
+      "opp_efg": 207,
+      "def": 232,
+      "net": 105
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401919808,
+      "date": "2026-11-18",
+      "site": "away",
+      "opp_id": 112358,
+      "opp": "LIU",
+      "d1_opp": true,
+      "pts": 114,
+      "opp_pts": 115,
+      "metrics": {
+       "efg": 56.94,
+       "opp_efg": 66.67,
+       "off": 128.81,
+       "def": 129.94,
+       "net": -1.13
+      },
+      "opp_power_rank": 294
+     },
+     {
+      "game_id": 401934189,
+      "date": "2026-11-14",
+      "site": "home",
+      "opp_id": 2410,
+      "opp": "MNTT",
+      "d1_opp": false,
+      "pts": 100,
+      "opp_pts": 41,
+      "metrics": {
+       "efg": 56.49,
+       "opp_efg": 24.31,
+       "off": 124.07,
+       "def": 50.87,
+       "net": 73.2
+      },
+      "opp_power_rank": null
+     },
+     {
+      "game_id": 401926863,
+      "date": "2026-11-11",
+      "site": "home",
+      "opp_id": 2309,
+      "opp": "KENT",
+      "d1_opp": true,
+      "pts": 91,
+      "opp_pts": 73,
+      "metrics": {
+       "efg": 60.53,
+       "opp_efg": 43.65,
+       "off": 130.72,
+       "def": 104.87,
+       "net": 25.86
+      },
+      "opp_power_rank": 248
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-11.5",
+    "b2b": false,
+    "power": {
+     "rank": 122,
+     "bpi": 128,
+     "own_net": 120
+    },
+    "key_players": [
+     "Gavin Walsh",
+     "Patrick Wessler",
+     "Tahlan Pettway",
+     "CJ Luster II",
+     "Tyler Nelson",
+     "Xavier Brown"
+    ],
+    "top_scorers": [
+     {
+      "name": "Patrick Wessler",
+      "ppg": 22.8
+     },
+     {
+      "name": "Tahlan Pettway",
+      "ppg": 15.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "UNCW",
+    "dog": "NORF",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 15 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 UNCW last-3 top 50 in 0 of 4 \u00b7 \u2717 NORF last-3 bottom 50 (316+) in 2 of 4 \u00b7 \u2717 UNCW season outside 1-182: Opp eFG% #210, Def Eff #225 \u00b7 \u2713 NORF season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "NORF: consensus #349, BPI #348, our net #335"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 15 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for UNCW: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 15,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 0,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 12,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "UNCW",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 51,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 61,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 210,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 225,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "UNCW",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 72,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 68,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 207,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 232,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "NORF",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 363,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 353,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 296,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 264,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "NORF",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 360,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 330,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 283,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 274,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "cells": [
+       {
+        "team": "UNCW",
+        "role": "fav",
+        "window": "season",
+        "metric": "off",
+        "rank": 61,
+        "color": "yellow"
+       },
+       {
+        "team": "UNCW",
+        "role": "fav",
+        "window": "last3",
+        "metric": "off",
+        "rank": 68,
+        "color": "yellow"
+       },
+       {
+        "team": "NORF",
+        "role": "dog",
+        "window": "season",
+        "metric": "def",
+        "rank": 353,
+        "color": "green"
+       },
+       {
+        "team": "NORF",
+        "role": "dog",
+        "window": "last3",
+        "metric": "def",
+        "rank": 330,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shoot",
+      "label": "Shooting vs shot defense",
+      "fav_metric": "efg",
+      "dog_metric": "opp_efg",
+      "cells": [
+       {
+        "team": "UNCW",
+        "role": "fav",
+        "window": "season",
+        "metric": "efg",
+        "rank": 51,
+        "color": "yellow"
+       },
+       {
+        "team": "UNCW",
+        "role": "fav",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 72,
+        "color": "yellow"
+       },
+       {
+        "team": "NORF",
+        "role": "dog",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 363,
+        "color": "green"
+       },
+       {
+        "team": "NORF",
+        "role": "dog",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 360,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "cells": [
+       {
+        "team": "UNCW",
+        "role": "fav",
+        "window": "season",
+        "metric": "def",
+        "rank": 225,
+        "color": "red"
+       },
+       {
+        "team": "UNCW",
+        "role": "fav",
+        "window": "last3",
+        "metric": "def",
+        "rank": 232,
+        "color": "red"
+       },
+       {
+        "team": "NORF",
+        "role": "dog",
+        "window": "season",
+        "metric": "off",
+        "rank": 264,
+        "color": "green"
+       },
+       {
+        "team": "NORF",
+        "role": "dog",
+        "window": "last3",
+        "metric": "off",
+        "rank": 274,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shotd",
+      "label": "Shot defense vs shooting",
+      "fav_metric": "opp_efg",
+      "dog_metric": "efg",
+      "cells": [
+       {
+        "team": "UNCW",
+        "role": "fav",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 210,
+        "color": "red"
+       },
+       {
+        "team": "UNCW",
+        "role": "fav",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 207,
+        "color": "red"
+       },
+       {
+        "team": "NORF",
+        "role": "dog",
+        "window": "season",
+        "metric": "efg",
+        "rank": 296,
+        "color": "green"
+       },
+       {
+        "team": "NORF",
+        "role": "dog",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 283,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "off",
+      "dog_metric": "off",
+      "fav_rank": 68,
+      "dog_rank": 274,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def",
+      "dog_metric": "def",
+      "fav_rank": 232,
+      "dog_rank": 330,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "fav_rank": 232,
+      "dog_rank": 274,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "fav_rank": 68,
+      "dog_rank": 330,
+      "counts": false,
+      "met": false
+     }
+    ]
+   },
+   "summary": "No track: score 15 (watch list from 18, qualifies at 28). Biggest edge over the last 3: UNCW eFG% (#72) against NORF Opp eFG% (#360). UNCW 2-1 in its last 3, NORF 0-3. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV21UNCWNORF",
+    "fav_prob": 0.875,
+    "bid": 0.87,
+    "ask": 0.88
+   },
+   "locked_at": "2026-11-21T14:00:50-08:00"
+  }
+ },
+ "401911023": {
+  "at": "2026-11-21T14:00:50-08:00",
+  "day": "2026-11-21",
+  "game": {
+   "id": "401911023",
+   "tip_utc": "2026-11-21T23:00:00+00:00",
+   "tip_pt": "3:00 PM PT",
+   "day_et": "2026-11-21",
+   "state": "pre",
+   "detail": "11/21 - 6:00 PM EST",
+   "neutral": false,
+   "venue": "Mullins Center",
+   "favorite": "home",
+   "spread": {
+    "spread": 12.5,
+    "details": "MASS -12.5",
+    "provider": "DraftKings",
+    "ml_home": -800,
+    "ml_away": 550
+   },
+   "home": {
+    "id": "113",
+    "abbr": "MASS",
+    "name": "Massachusetts",
+    "display": "Massachusetts Minutemen",
+    "mascot": "Minutemen",
+    "record": "2-2",
+    "l3_record": "1-2",
+    "games": 4,
+    "season": {
+     "efg": 47.36,
+     "opp_efg": 42.91,
+     "off": 99.45,
+     "def": 99.09,
+     "net": 0.36,
+     "poss_per_game": 69.6,
+     "ranks": {
+      "efg": 259,
+      "off": 259,
+      "opp_efg": 24,
+      "def": 88,
+      "net": 172
+     }
+    },
+    "last3": {
+     "efg": 46.96,
+     "opp_efg": 43.99,
+     "off": 98.03,
+     "def": 102.78,
+     "net": -4.76,
+     "poss_per_game": 70.0,
+     "ranks": {
+      "efg": 262,
+      "off": 275,
+      "opp_efg": 40,
+      "def": 117,
+      "net": 212
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401911020,
+      "date": "2026-11-17",
+      "site": "home",
+      "opp_id": 2803,
+      "opp": "BRY",
+      "d1_opp": true,
+      "pts": 79,
+      "opp_pts": 83,
+      "metrics": {
+       "efg": 50.0,
+       "opp_efg": 50.78,
+       "off": 102.33,
+       "def": 107.51,
+       "net": -5.18
+      },
+      "opp_power_rank": 292
+     },
+     {
+      "game_id": 401911012,
+      "date": "2026-11-11",
+      "site": "home",
+      "opp_id": 2349,
+      "opp": "UML",
+      "d1_opp": true,
+      "pts": 72,
+      "opp_pts": 62,
+      "metrics": {
+       "efg": 46.97,
+       "opp_efg": 40.83,
+       "off": 95.43,
+       "def": 82.17,
+       "net": 13.25
+      },
+      "opp_power_rank": 165
+     },
+     {
+      "game_id": 401909552,
+      "date": "2026-11-06",
+      "site": "away",
+      "opp_id": 103,
+      "opp": "BC",
+      "d1_opp": true,
+      "pts": 55,
+      "opp_pts": 71,
+      "metrics": {
+       "efg": 43.52,
+       "opp_efg": 39.83,
+       "off": 95.65,
+       "def": 123.48,
+       "net": -27.83
+      },
+      "opp_power_rank": 62
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-12.5",
+    "b2b": false,
+    "power": {
+     "rank": 174,
+     "bpi": 191,
+     "own_net": 172
+    },
+    "key_players": [
+     "Danny Carbuccia",
+     "Dwayne Wimbley Jr.",
+     "Jordan Clayton",
+     "Junjie Wang",
+     "Abdullah Ahmed"
+    ],
+    "top_scorers": [
+     {
+      "name": "Junjie Wang",
+      "ppg": 16.5
+     },
+     {
+      "name": "Dwayne Wimbley Jr.",
+      "ppg": 13.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "311",
+    "abbr": "ME",
+    "name": "Maine",
+    "display": "Maine Black Bears",
+    "mascot": "Black Bears",
+    "record": "2-4",
+    "l3_record": "1-2",
+    "games": 6,
+    "season": {
+     "efg": 52.56,
+     "opp_efg": 45.04,
+     "off": 93.25,
+     "def": 102.1,
+     "net": -8.85,
+     "poss_per_game": 69.7,
+     "ranks": {
+      "efg": 128,
+      "off": 304,
+      "opp_efg": 48,
+      "def": 121,
+      "net": 228
+     }
+    },
+    "last3": {
+     "efg": 57.35,
+     "opp_efg": 44.1,
+     "off": 95.58,
+     "def": 98.47,
+     "net": -2.9,
+     "poss_per_game": 69.1,
+     "ranks": {
+      "efg": 53,
+      "off": 294,
+      "opp_efg": 44,
+      "def": 69,
+      "net": 204
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401923304,
+      "date": "2026-11-19",
+      "site": "away",
+      "opp_id": 2514,
+      "opp": "QUIN",
+      "d1_opp": true,
+      "pts": 69,
+      "opp_pts": 67,
+      "metrics": {
+       "efg": 61.36,
+       "opp_efg": 35.62,
+       "off": 97.72,
+       "def": 94.88,
+       "net": 2.83
+      },
+      "opp_power_rank": 247
+     },
+     {
+      "game_id": 401923303,
+      "date": "2026-11-14",
+      "site": "home",
+      "opp_id": 2182,
+      "opp": "DREX",
+      "d1_opp": true,
+      "pts": 64,
+      "opp_pts": 66,
+      "metrics": {
+       "efg": 57.29,
+       "opp_efg": 57.14,
+       "off": 96.64,
+       "def": 99.66,
+       "net": -3.02
+      },
+      "opp_power_rank": 200
+     },
+     {
+      "game_id": 401920063,
+      "date": "2026-11-10",
+      "site": "away",
+      "opp_id": 227,
+      "opp": "URI",
+      "d1_opp": true,
+      "pts": 65,
+      "opp_pts": 71,
+      "metrics": {
+       "efg": 53.41,
+       "opp_efg": 43.75,
+       "off": 92.43,
+       "def": 100.96,
+       "net": -8.53
+      },
+      "opp_power_rank": 85
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+12.5",
+    "b2b": false,
+    "power": {
+     "rank": 265,
+     "bpi": 299,
+     "own_net": 228
+    },
+    "key_players": [
+     "DeAndre Williams",
+     "Ace Flagg",
+     "Villiam Garcia Adsten",
+     "Killian Gribben",
+     "Hudson Franz",
+     "Darius Lopes"
+    ],
+    "top_scorers": [
+     {
+      "name": "Hudson Franz",
+      "ppg": 10.3
+     },
+     {
+      "name": "DeAndre Williams",
+      "ppg": 8.5
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "MASS",
+    "dog": "ME",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 11 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 MASS last-3 top 50 in 1 of 4 \u00b7 \u2717 ME last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2717 MASS season outside 1-182: eFG% #259, Off Eff #259 \u00b7 \u2717 ME season top 50: Opp eFG% #48"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "ME: consensus #265, BPI #299, our net #228"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 11 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for MASS: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 11,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 2,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 6,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "MASS",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 259,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 259,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 24,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 88,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "MASS",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 262,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 275,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 40,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 117,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "ME",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 48,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 121,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 128,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 304,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "ME",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 44,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 69,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 53,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 294,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "cells": [
+       {
+        "team": "MASS",
+        "role": "fav",
+        "window": "season",
+        "metric": "off",
+        "rank": 259,
+        "color": "red"
+       },
+       {
+        "team": "MASS",
+        "role": "fav",
+        "window": "last3",
+        "metric": "off",
+        "rank": 275,
+        "color": "red"
+       },
+       {
+        "team": "ME",
+        "role": "dog",
+        "window": "season",
+        "metric": "def",
+        "rank": 121,
+        "color": "yellow"
+       },
+       {
+        "team": "ME",
+        "role": "dog",
+        "window": "last3",
+        "metric": "def",
+        "rank": 69,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "key": "shoot",
+      "label": "Shooting vs shot defense",
+      "fav_metric": "efg",
+      "dog_metric": "opp_efg",
+      "cells": [
+       {
+        "team": "MASS",
+        "role": "fav",
+        "window": "season",
+        "metric": "efg",
+        "rank": 259,
+        "color": "red"
+       },
+       {
+        "team": "MASS",
+        "role": "fav",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 262,
+        "color": "red"
+       },
+       {
+        "team": "ME",
+        "role": "dog",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 48,
+        "color": "red"
+       },
+       {
+        "team": "ME",
+        "role": "dog",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 44,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "cells": [
+       {
+        "team": "MASS",
+        "role": "fav",
+        "window": "season",
+        "metric": "def",
+        "rank": 88,
+        "color": "yellow"
+       },
+       {
+        "team": "MASS",
+        "role": "fav",
+        "window": "last3",
+        "metric": "def",
+        "rank": 117,
+        "color": "yellow"
+       },
+       {
+        "team": "ME",
+        "role": "dog",
+        "window": "season",
+        "metric": "off",
+        "rank": 304,
+        "color": "green"
+       },
+       {
+        "team": "ME",
+        "role": "dog",
+        "window": "last3",
+        "metric": "off",
+        "rank": 294,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shotd",
+      "label": "Shot defense vs shooting",
+      "fav_metric": "opp_efg",
+      "dog_metric": "efg",
+      "cells": [
+       {
+        "team": "MASS",
+        "role": "fav",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 24,
+        "color": "green"
+       },
+       {
+        "team": "MASS",
+        "role": "fav",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 40,
+        "color": "green"
+       },
+       {
+        "team": "ME",
+        "role": "dog",
+        "window": "season",
+        "metric": "efg",
+        "rank": 128,
+        "color": "yellow"
+       },
+       {
+        "team": "ME",
+        "role": "dog",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 53,
+        "color": "yellow"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "off",
+      "dog_metric": "off",
+      "fav_rank": 275,
+      "dog_rank": 294,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def",
+      "dog_metric": "def",
+      "fav_rank": 117,
+      "dog_rank": 69,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "fav_rank": 117,
+      "dog_rank": 294,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "fav_rank": 275,
+      "dog_rank": 69,
+      "counts": false,
+      "met": false
+     }
+    ]
+   },
+   "summary": "No track: score 11 (watch list from 18, qualifies at 28). Biggest edge over the last 3: MASS Def Eff (#117) against ME Off Eff (#294). MASS 1-2 in its last 3, ME 1-2. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV21MEMASS",
+    "fav_prob": 0.865,
+    "bid": 0.86,
+    "ask": 0.87
+   },
+   "locked_at": "2026-11-21T14:00:50-08:00"
   }
  }
 }
