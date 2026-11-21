@@ -3,8 +3,8 @@
  "date_label": "Saturday, November 21",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-21T10:00:46-08:00",
- "built_label": "Sat Nov 21, 10:00 AM PT",
+ "built_at": "2026-11-21T11:15:37-08:00",
+ "built_label": "Sat Nov 21, 11:15 AM PT",
  "metrics_through": "2026-11-20",
  "metrics_through_label": "Nov 20",
  "n_d1": 365,
@@ -21,8 +21,8 @@
    "tip_utc": "2026-11-21T19:00:00+00:00",
    "tip_pt": "11:00 AM PT",
    "day_et": "2026-11-21",
-   "state": "pre",
-   "detail": "11/21 - 2:00 PM EST",
+   "state": "in",
+   "detail": "13:39 - 1st",
    "neutral": false,
    "venue": "LJVM Coliseum",
    "favorite": "home",
@@ -714,7 +714,11 @@
     "bid": 0.91,
     "ask": 0.92
    },
-   "locked_at": "2026-11-21T10:00:46-08:00"
+   "locked_at": "2026-11-21T10:00:46-08:00",
+   "score": {
+    "home": 9,
+    "away": 6
+   }
   },
   {
    "id": "401925897",
@@ -729,7 +733,7 @@
    "spread": {
     "spread": 12.5,
     "details": "UNCW -12.5",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": 625,
     "ml_away": -950
    },
@@ -1428,7 +1432,7 @@
    "spread": {
     "spread": 11.5,
     "details": "ELON -11.5",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -900,
     "ml_away": 600
    },
@@ -2126,7 +2130,7 @@
    "spread": {
     "spread": 12.5,
     "details": "MASS -12.5",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -800,
     "ml_away": 550
    },
@@ -2824,7 +2828,7 @@
    "spread": {
     "spread": 13.5,
     "details": "LMU -13.5",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -1200,
     "ml_away": 750
    },
@@ -3515,8 +3519,8 @@
  "notes": [
   "1 box score from Nov 20 not available yet; picked up on a later build."
  ],
- "other_games": 42,
- "no_line_games": 3,
+ "other_games": 29,
+ "no_line_games": 14,
  "summary": {
   "date": "2026-11-21",
   "date_label": "Saturday, November 21",
@@ -3527,7 +3531,7 @@
   "would_qualify": 0,
   "early": true,
   "cutover": "Dec 15",
-  "other_games": 42,
-  "built_label": "Sat Nov 21, 10:00 AM PT"
+  "other_games": 29,
+  "built_label": "Sat Nov 21, 11:15 AM PT"
  }
 }
