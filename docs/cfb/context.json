@@ -1,49 +1,8 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-21T14:00:46-08:00",
+ "built_at": "2026-11-21T14:15:33-08:00",
  "games": [
-  {
-   "id": "401871079",
-   "kick_utc": "2026-11-21T19:00:00+00:00",
-   "kick_pt": "Sat 11:00 AM PT",
-   "day_et": "2026-11-21",
-   "away_abbr": "MOST",
-   "home_abbr": "JXST",
-   "fav_abbr": "JXST",
-   "dog_abbr": "MOST",
-   "fav_home": true,
-   "spread": -11.5,
-   "away_names": [
-    "Missouri State Bears",
-    "Missouri St"
-   ],
-   "home_names": [
-    "Jacksonville State Gamecocks",
-    "Jax State"
-   ],
-   "tier": "out",
-   "tier_label": "No track",
-   "tracked": false,
-   "alerts": false,
-   "call": "No track",
-   "hero": 14,
-   "fav_defense_top10": false,
-   "fav_def_rank_l3": 51,
-   "def_hold": false,
-   "qbs": {
-    "MOST": {
-     "regular": "Henry Belin IV",
-     "rank": 82
-    },
-    "JXST": {
-     "regular": "Caden Creel",
-     "rank": 36
-    }
-   },
-   "kalshi_event": "KXNCAAFGAME-26NOV21MOSUJVST",
-   "locked": true
-  },
   {
    "id": "401869929",
    "kick_utc": "2026-11-21T19:30:00+00:00",
@@ -329,7 +288,7 @@
     }
    },
    "kalshi_event": "KXNCAAFGAME-26NOV21MDUSC",
-   "locked": false
+   "locked": true
   },
   {
    "id": "401856865",
@@ -780,6 +739,47 @@
     }
    },
    "kalshi_event": "KXNCAAFGAME-26NOV21WKULIB",
+   "locked": true
+  },
+  {
+   "id": "401871079",
+   "kick_utc": "2026-11-21T19:00:00+00:00",
+   "kick_pt": "Sat 11:00 AM PT",
+   "day_et": "2026-11-21",
+   "away_abbr": "MOST",
+   "home_abbr": "JXST",
+   "fav_abbr": "JXST",
+   "dog_abbr": "MOST",
+   "fav_home": true,
+   "spread": -11.5,
+   "away_names": [
+    "Missouri State Bears",
+    "Missouri St"
+   ],
+   "home_names": [
+    "Jacksonville State Gamecocks",
+    "Jax State"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "alerts": false,
+   "call": "No track",
+   "hero": 14,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 51,
+   "def_hold": false,
+   "qbs": {
+    "MOST": {
+     "regular": "Henry Belin IV",
+     "rank": 82
+    },
+    "JXST": {
+     "regular": "Caden Creel",
+     "rank": 36
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV21MOSUJVST",
    "locked": true
   }
  ]

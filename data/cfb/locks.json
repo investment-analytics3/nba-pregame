@@ -7165,8 +7165,8 @@
    "kick_utc": "2026-11-21T19:00:00+00:00",
    "kick_pt": "Sat 11:00 AM PT",
    "day_et": "2026-11-21",
-   "state": "in",
-   "detail": "2:00 - 4th",
+   "state": "post",
+   "detail": "Final",
    "neutral": false,
    "venue": "AmFirst Stadium",
    "favorite": "home",
@@ -7388,7 +7388,7 @@
    "kick_pt": "Sat 11:30 AM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "10:10 - 4th",
+   "detail": "3:40 - 4th",
    "neutral": false,
    "venue": "Kidd Brewer Stadium",
    "favorite": "home",
@@ -7597,7 +7597,7 @@
    "locked_at": "2026-11-21T10:30:41-08:00",
    "score": {
     "home": 7,
-    "away": 3
+    "away": 10
    }
   }
  },
@@ -7610,7 +7610,7 @@
    "kick_pt": "Sat 12:00 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "8:57 - 3rd",
+   "detail": "6:18 - 3rd",
    "neutral": false,
    "venue": "Our Lady of Lourdes Stadium",
    "favorite": "home",
@@ -7818,7 +7818,7 @@
    },
    "locked_at": "2026-11-21T11:00:42-08:00",
    "score": {
-    "home": 21,
+    "home": 28,
     "away": 10
    }
   }
@@ -7832,7 +7832,7 @@
    "kick_pt": "Sat 12:30 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "0:53 - 2nd",
+   "detail": "Halftime",
    "neutral": false,
    "venue": "DKR-Texas Memorial Stadium",
    "favorite": "home",
@@ -8042,7 +8042,7 @@
    },
    "locked_at": "2026-11-21T11:30:55-08:00",
    "score": {
-    "home": 24,
+    "home": 31,
     "away": 3
    }
   }
@@ -8056,7 +8056,7 @@
    "kick_pt": "Sat 12:30 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "0:38 - 2nd",
+   "detail": "Halftime",
    "neutral": false,
    "venue": "Doak Campbell Stadium",
    "favorite": "home",
@@ -8264,7 +8264,7 @@
    },
    "locked_at": "2026-11-21T11:30:55-08:00",
    "score": {
-    "home": 7,
+    "home": 10,
     "away": 7
    }
   }
@@ -8278,7 +8278,7 @@
    "kick_pt": "Sat 12:30 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "0:05 - 2nd",
+   "detail": "Halftime",
    "neutral": false,
    "venue": "Pratt & Whitney Stadium",
    "favorite": "home",
@@ -8742,7 +8742,231 @@
      }
     ],
     "updated": "2026-11-21T05:49-08:00"
+   },
+   "score": {
+    "home": 0,
+    "away": 0
    }
+  }
+ },
+ "401858534": {
+  "at": "2026-11-21T14:15:33-08:00",
+  "week": 12,
+  "game": {
+   "id": "401858534",
+   "kick_utc": "2026-11-21T23:15:00+00:00",
+   "kick_pt": "Sat 3:15 PM PT",
+   "day_et": "2026-11-21",
+   "state": "pre",
+   "detail": "11/21 - 6:15 PM EST",
+   "neutral": false,
+   "venue": "Los Angeles Memorial Coliseum",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -17.5,
+   "open_spread": -16.5,
+   "line_source": "DraftKings",
+   "total": 57.5,
+   "fav_ml": -950.0,
+   "movement": 1.0,
+   "home": {
+    "code": 30,
+    "abbr": "USC",
+    "name": "USC",
+    "display": "USC Trojans",
+    "season": {
+     "off_epa": 0.1594,
+     "off_sr": 0.5142,
+     "def_epa": 0.1709,
+     "def_sr": 0.4579,
+     "games": 10,
+     "ranks": {
+      "off_epa": 26,
+      "off_sr": 5,
+      "def_epa": 128,
+      "def_sr": 112
+     }
+    },
+    "last3": {
+     "off_epa": -0.033,
+     "off_sr": 0.4896,
+     "def_epa": 0.0985,
+     "def_sr": 0.4472,
+     "games": 3,
+     "ranks": {
+      "off_epa": 95,
+      "off_sr": 22,
+      "def_epa": 94,
+      "def_sr": 86
+     }
+    },
+    "net": -0.0114,
+    "net_rank": 89,
+    "record": "7-3",
+    "last2_results": [
+     "W",
+     "L"
+    ],
+    "last3_results": [
+     "L",
+     "W",
+     "L"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Jayden Maiava",
+     "dropbacks": 352,
+     "epa_db": 0.296,
+     "rank": 13
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 54,
+     "fpi": 18,
+     "own_net": 89,
+     "ap": 18,
+     "cfp": 18
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.932
+   },
+   "away": {
+    "code": 120,
+    "abbr": "MD",
+    "name": "Maryland",
+    "display": "Maryland Terrapins",
+    "season": {
+     "off_epa": -0.0081,
+     "off_sr": 0.4147,
+     "def_epa": 0.0278,
+     "def_sr": 0.4113,
+     "games": 10,
+     "ranks": {
+      "off_epa": 101,
+      "off_sr": 112,
+      "def_epa": 65,
+      "def_sr": 47
+     }
+    },
+    "last3": {
+     "off_epa": 0.0106,
+     "off_sr": 0.4061,
+     "def_epa": -0.07,
+     "def_sr": 0.38,
+     "games": 3,
+     "ranks": {
+      "off_epa": 83,
+      "off_sr": 89,
+      "def_epa": 33,
+      "def_sr": 20
+     }
+    },
+    "net": -0.0359,
+    "net_rank": 98,
+    "record": "4-6",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "W",
+     "W"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Malik Washington",
+     "dropbacks": 308,
+     "epa_db": -0.04,
+     "rank": 110
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 90,
+     "fpi": 79,
+     "own_net": 98
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.069
+   },
+   "fav": 30,
+   "dog": 120,
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 16 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 USC last-3 top 25 in 1 of 4 \u00b7 \u2717 MD last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2717 USC season outside 1-69: Def EPA allowed #128, Def success allowed #112 \u00b7 \u2713 MD season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "MD: consensus #90, ESPN FPI #79"
+     }
+    ],
+    "fails": [
+     "Score 16 (watch list from 18, qualifies at 28)"
+    ],
+    "hero": {
+     "score": 16,
+     "band": "red",
+     "parts": {
+      "fav_strength": 3,
+      "dog_weakness": 7,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 1
+     },
+     "max": 40
+    },
+    "call": "No track",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for USC yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV21MDUSC",
+    "fav_prob": 0.895,
+    "bid": 0.89,
+    "ask": 0.9
+   },
+   "locked_at": "2026-11-21T14:15:33-08:00"
   }
  }
 }
