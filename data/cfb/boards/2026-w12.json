@@ -1,267 +1,16 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-21T12:45:41-08:00",
- "built_label": "Sat Nov 21, 12:45 PM PT",
+ "built_at": "2026-11-21T13:45:32-08:00",
+ "built_label": "Sat Nov 21, 1:45 PM PT",
  "games": [
-  {
-   "id": "401871080",
-   "kick_utc": "2026-11-21T18:00:00+00:00",
-   "kick_pt": "Sat 10:00 AM PT",
-   "day_et": "2026-11-21",
-   "state": "in",
-   "detail": "9:35 - 4th",
-   "neutral": false,
-   "venue": "Williams Stadium (VA)",
-   "favorite": "home",
-   "fav_home": true,
-   "spread": -17.5,
-   "open_spread": -14.5,
-   "line_source": "Draft Kings",
-   "total": 53.5,
-   "fav_ml": -1000.0,
-   "movement": 3.0,
-   "home": {
-    "code": 2335,
-    "abbr": "LIB",
-    "name": "Liberty",
-    "display": "Liberty Flames",
-    "season": {
-     "off_epa": 0.1535,
-     "off_sr": 0.5125,
-     "def_epa": -0.0992,
-     "def_sr": 0.3854,
-     "games": 10,
-     "ranks": {
-      "off_epa": 28,
-      "off_sr": 6,
-      "def_epa": 17,
-      "def_sr": 18
-     }
-    },
-    "last3": {
-     "off_epa": 0.2196,
-     "off_sr": 0.5867,
-     "def_epa": -0.018,
-     "def_sr": 0.4198,
-     "games": 3,
-     "ranks": {
-      "off_epa": 8,
-      "off_sr": 1,
-      "def_epa": 56,
-      "def_sr": 61
-     }
-    },
-    "net": 0.2527,
-    "net_rank": 7,
-    "record": "9-1",
-    "last2_results": [
-     "W",
-     "W"
-    ],
-    "last3_results": [
-     "W",
-     "W",
-     "W"
-    ],
-    "rest": 6,
-    "qb": {
-     "regular": "Deshawn Purdie",
-     "dropbacks": 212,
-     "epa_db": 0.189,
-     "rank": 38
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 26,
-     "fpi": 54,
-     "own_net": 7,
-     "ap": 22
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.92
-   },
-   "away": {
-    "code": 98,
-    "abbr": "WKU",
-    "name": "Western KY",
-    "display": "Western Kentucky Hilltoppers",
-    "season": {
-     "off_epa": 0.0093,
-     "off_sr": 0.4309,
-     "def_epa": 0.0733,
-     "def_sr": 0.4307,
-     "games": 10,
-     "ranks": {
-      "off_epa": 93,
-      "off_sr": 91,
-      "def_epa": 102,
-      "def_sr": 69
-     }
-    },
-    "last3": {
-     "off_epa": 0.1435,
-     "off_sr": 0.4955,
-     "def_epa": 0.1448,
-     "def_sr": 0.4837,
-     "games": 3,
-     "ranks": {
-      "off_epa": 29,
-      "off_sr": 17,
-      "def_epa": 114,
-      "def_sr": 114
-     }
-    },
-    "net": -0.064,
-    "net_rank": 108,
-    "record": "4-6",
-    "last2_results": [
-     "L",
-     "W"
-    ],
-    "last3_results": [
-     "L",
-     "L",
-     "W"
-    ],
-    "rest": 6,
-    "qb": {
-     "regular": "Brock Glenn",
-     "dropbacks": 207,
-     "epa_db": -0.054,
-     "rank": 113
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 119,
-     "fpi": 118,
-     "own_net": 108
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.08
-   },
-   "fav": 2335,
-   "dog": 98,
-   "scoring": {
-    "qualified": false,
-    "tier": "watch",
-    "tier_label": "Watch list",
-    "tracked": true,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 24 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 LIB last-3 top 25 in 2 of 4 \u00b7 \u2717 WKU last-3 bottom 25 (114+) in 2 of 4 \u00b7 \u2713 LIB season top half (1-69) in all four \u00b7 \u2713 WKU season top 25 in none"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key player newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "No injury report (warning only; health assumed full)"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
-      "pass": true,
-      "detail": "WKU: consensus #119, ESPN FPI #118"
-     }
-    ],
-    "fails": [
-     "Watch list: score 24 (qualifies at 28)"
-    ],
-    "hero": {
-     "score": 24,
-     "band": "yellow",
-     "parts": {
-      "fav_strength": 8,
-      "dog_weakness": 9,
-      "health": 4,
-      "home": 1,
-      "rest": 0,
-      "form": 2
-     },
-     "max": 40
-    },
-    "call": "Watch list",
-    "flags": [
-     {
-      "level": "yellow",
-      "text": "No injury report for LIB yet: check before betting"
-     }
-    ]
-   },
-   "fav_defense_top25": false,
-   "kalshi": {
-    "event": "KXNCAAFGAME-26NOV21WKULIB",
-    "fav_prob": 0.885,
-    "bid": 0.88,
-    "ask": 0.89
-   },
-   "locked_at": "2026-11-21T09:00:39-08:00",
-   "readout": {
-    "matchup": "WKU @ LIB",
-    "summary": "Every source picks Liberty (9-1, nine straight wins) at home against WKU (4-6, 1-5 on the road). SportsChatPlace takes Liberty -17.5. Bang The Book cites Liberty's defense (14.5 points allowed a game). Models agree: Dimers 90.3%, numberFire 95.8%. No source picks WKU.",
-    "pick": "Liberty to win (all sources); Liberty -17.5 (SportsChatPlace)",
-    "predicted_score": "Liberty 35, WKU 17 (Dimers)",
-    "moneyline": "LIB -770 / WKU +750 (Dimers, Nov 20); LIB -877 / WKU +590 (FanDuel, Nov 18); LIB -900 / WKU +600 (Bang The Book, Nov 20)",
-    "win_probability": "Liberty 90.3% (Dimers, Nov 20); 95.8% (numberFire via FanDuel Research)",
-    "injuries": "SportsLine list (dated Nov 13-14, no game statuses): WKU WR Nigel Johnson (undisclosed), RB Sincere Baines (undisclosed), WR K.D. Hutchinson (knee); Liberty WR Bryce Randolph (undisclosed), K Tyler Black (lower body), RB Justin Marshall (leg). Bang The Book (Nov 20): no player statuses for either team. No official availability report found.",
-    "sources": [
-     {
-      "site": "Dimers",
-      "url": "https://www.dimers.com/cfb/predictions/2026_12_lib_wku"
-     },
-     {
-      "site": "SportsChatPlace",
-      "url": "https://sportschatplace.com/college-football-picks/liberty-vs-western-kentucky-prediction-football-picks-today-11-21-26/amp/"
-     },
-     {
-      "site": "FanDuel Research",
-      "url": "https://www.fanduel.com/research/liberty-vs-western-kentucky-college-football-odds-picks-best-bets-for-11-21-2026"
-     },
-     {
-      "site": "Bang The Book",
-      "url": "https://bangthebook.com/western-kentucky-hilltoppers-vs-liberty-flames-prediction-2026-11-21/"
-     },
-     {
-      "site": "SportsLine (odds + injury list)",
-      "url": "https://www.sportsline.com/college-football/game-forecast/NCAAF_20261121_WKY@LIB/"
-     }
-    ],
-    "updated": "2026-11-21T05:49-08:00"
-   },
-   "score": {
-    "home": 35,
-    "away": 7
-   }
-  },
   {
    "id": "401871079",
    "kick_utc": "2026-11-21T19:00:00+00:00",
    "kick_pt": "Sat 11:00 AM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "9:51 - 4th",
    "neutral": false,
    "venue": "AmFirst Stadium",
    "favorite": "home",
@@ -469,8 +218,8 @@
    },
    "locked_at": "2026-11-21T10:00:39-08:00",
    "score": {
-    "home": 3,
-    "away": 13
+    "home": 18,
+    "away": 20
    }
   },
   {
@@ -479,7 +228,7 @@
    "kick_pt": "Sat 11:30 AM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "0:56 - 2nd",
+   "detail": "15:00 - 4th",
    "neutral": false,
    "venue": "Kidd Brewer Stadium",
    "favorite": "home",
@@ -697,7 +446,7 @@
    "kick_pt": "Sat 12:00 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "15:00 - 2nd",
+   "detail": "End of 3rd",
    "neutral": false,
    "venue": "Our Lady of Lourdes Stadium",
    "favorite": "home",
@@ -905,8 +654,8 @@
    },
    "locked_at": "2026-11-21T11:00:42-08:00",
    "score": {
-    "home": 7,
-    "away": 0
+    "home": 21,
+    "away": 10
    }
   },
   {
@@ -915,7 +664,7 @@
    "kick_pt": "Sat 12:30 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "11:03 - 1st",
+   "detail": "2:27 - 2nd",
    "neutral": false,
    "venue": "DKR-Texas Memorial Stadium",
    "favorite": "home",
@@ -1125,8 +874,8 @@
    },
    "locked_at": "2026-11-21T11:30:55-08:00",
    "score": {
-    "home": 0,
-    "away": 0
+    "home": 17,
+    "away": 3
    }
   },
   {
@@ -1135,7 +884,7 @@
    "kick_pt": "Sat 12:30 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "9:38 - 1st",
+   "detail": "6:16 - 2nd",
    "neutral": false,
    "venue": "Doak Campbell Stadium",
    "favorite": "home",
@@ -1344,7 +1093,7 @@
    "locked_at": "2026-11-21T11:30:55-08:00",
    "score": {
     "home": 7,
-    "away": 0
+    "away": 7
    }
   },
   {
@@ -1353,7 +1102,7 @@
    "kick_pt": "Sat 12:30 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "8:32 - 1st",
+   "detail": "2:27 - 2nd",
    "neutral": false,
    "venue": "Pratt & Whitney Stadium",
    "favorite": "home",
@@ -1561,8 +1310,8 @@
    },
    "locked_at": "2026-11-21T11:30:55-08:00",
    "score": {
-    "home": 6,
-    "away": 0
+    "home": 17,
+    "away": 14
    }
   },
   {
@@ -1578,7 +1327,7 @@
    "fav_home": true,
    "spread": -13.5,
    "open_spread": -14.5,
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "total": 61.5,
    "fav_ml": -575.0,
    "movement": -1.0,
@@ -1827,7 +1576,7 @@
    "fav_home": true,
    "spread": -17.5,
    "open_spread": -16.5,
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "total": 57.5,
    "fav_ml": -950.0,
    "movement": 1.0,
@@ -2042,7 +1791,7 @@
    "fav_home": false,
    "spread": -10.0,
    "open_spread": -10.5,
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "total": 53.5,
    "fav_ml": -375.0,
    "movement": -0.5,
@@ -2239,9 +1988,9 @@
    "fav_defense_top25": false,
    "kalshi": {
     "event": "KXNCAAFGAME-26NOV21ARIZKSU",
-    "fav_prob": 0.755,
-    "bid": 0.75,
-    "ask": 0.76
+    "fav_prob": 0.765,
+    "bid": 0.76,
+    "ask": 0.77
    }
   },
   {
@@ -2257,7 +2006,7 @@
    "fav_home": true,
    "spread": -14.5,
    "open_spread": -16.5,
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "total": 54.5,
    "fav_ml": -600.0,
    "movement": -2.0,
@@ -2498,8 +2247,8 @@
    "fav_home": false,
    "spread": -14.5,
    "open_spread": -10.5,
-   "line_source": "DraftKings",
-   "total": 51.5,
+   "line_source": "Draft Kings",
+   "total": 50.5,
    "fav_ml": -750.0,
    "movement": 4.0,
    "home": {
@@ -2719,7 +2468,7 @@
    "fav_home": true,
    "spread": -11.5,
    "open_spread": -12.5,
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "total": 50.5,
    "fav_ml": -485.0,
    "movement": -1.0,
@@ -4370,6 +4119,257 @@
     "home": 34,
     "away": 27
    }
+  },
+  {
+   "id": "401871080",
+   "kick_utc": "2026-11-21T18:00:00+00:00",
+   "kick_pt": "Sat 10:00 AM PT",
+   "day_et": "2026-11-21",
+   "state": "post",
+   "detail": "Final",
+   "neutral": false,
+   "venue": "Williams Stadium (VA)",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -17.5,
+   "open_spread": -14.5,
+   "line_source": "Draft Kings",
+   "total": 53.5,
+   "fav_ml": -1000.0,
+   "movement": 3.0,
+   "home": {
+    "code": 2335,
+    "abbr": "LIB",
+    "name": "Liberty",
+    "display": "Liberty Flames",
+    "season": {
+     "off_epa": 0.1535,
+     "off_sr": 0.5125,
+     "def_epa": -0.0992,
+     "def_sr": 0.3854,
+     "games": 10,
+     "ranks": {
+      "off_epa": 28,
+      "off_sr": 6,
+      "def_epa": 17,
+      "def_sr": 18
+     }
+    },
+    "last3": {
+     "off_epa": 0.2196,
+     "off_sr": 0.5867,
+     "def_epa": -0.018,
+     "def_sr": 0.4198,
+     "games": 3,
+     "ranks": {
+      "off_epa": 8,
+      "off_sr": 1,
+      "def_epa": 56,
+      "def_sr": 61
+     }
+    },
+    "net": 0.2527,
+    "net_rank": 7,
+    "record": "9-1",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "W"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Deshawn Purdie",
+     "dropbacks": 212,
+     "epa_db": 0.189,
+     "rank": 38
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 26,
+     "fpi": 54,
+     "own_net": 7,
+     "ap": 22
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.92
+   },
+   "away": {
+    "code": 98,
+    "abbr": "WKU",
+    "name": "Western KY",
+    "display": "Western Kentucky Hilltoppers",
+    "season": {
+     "off_epa": 0.0093,
+     "off_sr": 0.4309,
+     "def_epa": 0.0733,
+     "def_sr": 0.4307,
+     "games": 10,
+     "ranks": {
+      "off_epa": 93,
+      "off_sr": 91,
+      "def_epa": 102,
+      "def_sr": 69
+     }
+    },
+    "last3": {
+     "off_epa": 0.1435,
+     "off_sr": 0.4955,
+     "def_epa": 0.1448,
+     "def_sr": 0.4837,
+     "games": 3,
+     "ranks": {
+      "off_epa": 29,
+      "off_sr": 17,
+      "def_epa": 114,
+      "def_sr": 114
+     }
+    },
+    "net": -0.064,
+    "net_rank": 108,
+    "record": "4-6",
+    "last2_results": [
+     "L",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "W"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Brock Glenn",
+     "dropbacks": 207,
+     "epa_db": -0.054,
+     "rank": 113
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 119,
+     "fpi": 118,
+     "own_net": 108
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.08
+   },
+   "fav": 2335,
+   "dog": 98,
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 24 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 LIB last-3 top 25 in 2 of 4 \u00b7 \u2717 WKU last-3 bottom 25 (114+) in 2 of 4 \u00b7 \u2713 LIB season top half (1-69) in all four \u00b7 \u2713 WKU season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "WKU: consensus #119, ESPN FPI #118"
+     }
+    ],
+    "fails": [
+     "Watch list: score 24 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 24,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 8,
+      "dog_weakness": 9,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "call": "Watch list",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for LIB yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV21WKULIB",
+    "fav_prob": 0.885,
+    "bid": 0.88,
+    "ask": 0.89
+   },
+   "locked_at": "2026-11-21T09:00:39-08:00",
+   "readout": {
+    "matchup": "WKU @ LIB",
+    "summary": "Every source picks Liberty (9-1, nine straight wins) at home against WKU (4-6, 1-5 on the road). SportsChatPlace takes Liberty -17.5. Bang The Book cites Liberty's defense (14.5 points allowed a game). Models agree: Dimers 90.3%, numberFire 95.8%. No source picks WKU.",
+    "pick": "Liberty to win (all sources); Liberty -17.5 (SportsChatPlace)",
+    "predicted_score": "Liberty 35, WKU 17 (Dimers)",
+    "moneyline": "LIB -770 / WKU +750 (Dimers, Nov 20); LIB -877 / WKU +590 (FanDuel, Nov 18); LIB -900 / WKU +600 (Bang The Book, Nov 20)",
+    "win_probability": "Liberty 90.3% (Dimers, Nov 20); 95.8% (numberFire via FanDuel Research)",
+    "injuries": "SportsLine list (dated Nov 13-14, no game statuses): WKU WR Nigel Johnson (undisclosed), RB Sincere Baines (undisclosed), WR K.D. Hutchinson (knee); Liberty WR Bryce Randolph (undisclosed), K Tyler Black (lower body), RB Justin Marshall (leg). Bang The Book (Nov 20): no player statuses for either team. No official availability report found.",
+    "sources": [
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/cfb/predictions/2026_12_lib_wku"
+     },
+     {
+      "site": "SportsChatPlace",
+      "url": "https://sportschatplace.com/college-football-picks/liberty-vs-western-kentucky-prediction-football-picks-today-11-21-26/amp/"
+     },
+     {
+      "site": "FanDuel Research",
+      "url": "https://www.fanduel.com/research/liberty-vs-western-kentucky-college-football-odds-picks-best-bets-for-11-21-2026"
+     },
+     {
+      "site": "Bang The Book",
+      "url": "https://bangthebook.com/western-kentucky-hilltoppers-vs-liberty-flames-prediction-2026-11-21/"
+     },
+     {
+      "site": "SportsLine (odds + injury list)",
+      "url": "https://www.sportsline.com/college-football/game-forecast/NCAAF_20261121_WKY@LIB/"
+     }
+    ],
+    "updated": "2026-11-21T05:49-08:00"
+   },
+   "score": {
+    "home": 45,
+    "away": 14
+   }
   }
  ],
  "notes": [],
@@ -4379,15 +4379,15 @@
  ],
  "data_through": "Week 12",
  "n_fbs": 138,
- "other_fbs_games": 31,
+ "other_fbs_games": 28,
  "summary": {
   "season": 2026,
   "week": 12,
   "games": 19,
   "upcoming": 6,
   "qualified": 0,
-  "watch": 5,
-  "other_fbs_games": 31,
-  "built_label": "Sat Nov 21, 12:45 PM PT"
+  "watch": 4,
+  "other_fbs_games": 28,
+  "built_label": "Sat Nov 21, 1:45 PM PT"
  }
 }
