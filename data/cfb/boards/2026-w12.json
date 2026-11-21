@@ -1,234 +1,16 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-21T14:15:33-08:00",
- "built_label": "Sat Nov 21, 2:15 PM PT",
+ "built_at": "2026-11-21T14:45:39-08:00",
+ "built_label": "Sat Nov 21, 2:45 PM PT",
  "games": [
-  {
-   "id": "401869929",
-   "kick_utc": "2026-11-21T19:30:00+00:00",
-   "kick_pt": "Sat 11:30 AM PT",
-   "day_et": "2026-11-21",
-   "state": "in",
-   "detail": "3:40 - 4th",
-   "neutral": false,
-   "venue": "Kidd Brewer Stadium",
-   "favorite": "home",
-   "fav_home": true,
-   "spread": -14.0,
-   "open_spread": -13.5,
-   "line_source": "DraftKings",
-   "total": 50.5,
-   "fav_ml": -625.0,
-   "movement": 0.5,
-   "home": {
-    "code": 2026,
-    "abbr": "APP",
-    "name": "App State",
-    "display": "App State Mountaineers",
-    "season": {
-     "off_epa": 0.0488,
-     "off_sr": 0.4592,
-     "def_epa": 0.0101,
-     "def_sr": 0.4347,
-     "games": 10,
-     "ranks": {
-      "off_epa": 78,
-      "off_sr": 45,
-      "def_epa": 58,
-      "def_sr": 76
-     }
-    },
-    "last3": {
-     "off_epa": -0.12,
-     "off_sr": 0.432,
-     "def_epa": 0.0297,
-     "def_sr": 0.4252,
-     "games": 3,
-     "ranks": {
-      "off_epa": 111,
-      "off_sr": 68,
-      "def_epa": 71,
-      "def_sr": 67
-     }
-    },
-    "net": 0.0387,
-    "net_rank": 67,
-    "record": "6-4",
-    "last2_results": [
-     "L",
-     "W"
-    ],
-    "last3_results": [
-     "L",
-     "L",
-     "W"
-    ],
-    "rest": 6,
-    "qb": {
-     "regular": "Malachi Singleton",
-     "dropbacks": 309,
-     "epa_db": 0.102,
-     "rank": 61
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 88,
-     "fpi": 107,
-     "own_net": 67
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.875
-   },
-   "away": {
-    "code": 2433,
-    "abbr": "ULM",
-    "name": "UL Monroe",
-    "display": "UL Monroe Warhawks",
-    "season": {
-     "off_epa": 0.0294,
-     "off_sr": 0.4402,
-     "def_epa": 0.1828,
-     "def_sr": 0.465,
-     "games": 10,
-     "ranks": {
-      "off_epa": 84,
-      "off_sr": 74,
-      "def_epa": 131,
-      "def_sr": 121
-     }
-    },
-    "last3": {
-     "off_epa": 0.063,
-     "off_sr": 0.4344,
-     "def_epa": 0.1377,
-     "def_sr": 0.4647,
-     "games": 3,
-     "ranks": {
-      "off_epa": 54,
-      "off_sr": 62,
-      "def_epa": 112,
-      "def_sr": 101
-     }
-    },
-    "net": -0.1534,
-    "net_rank": 129,
-    "record": "2-8",
-    "last2_results": [
-     "W",
-     "L"
-    ],
-    "last3_results": [
-     "L",
-     "W",
-     "L"
-    ],
-    "rest": 8,
-    "qb": {
-     "regular": "Aidan Armenta",
-     "dropbacks": 221,
-     "epa_db": 0.109,
-     "rank": 58
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 134,
-     "fpi": 135,
-     "own_net": 129
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.125
-   },
-   "fav": 2026,
-   "dog": 2433,
-   "scoring": {
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 16 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 APP last-3 top 25 in 0 of 4 \u00b7 \u2717 ULM last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2717 APP season outside 1-69: Off EPA/play #78, Def success allowed #76 \u00b7 \u2713 ULM season top 25 in none"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key player newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "No injury report (warning only; health assumed full)"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
-      "pass": true,
-      "detail": "ULM: consensus #134, ESPN FPI #135"
-     }
-    ],
-    "fails": [
-     "Score 16 (watch list from 18, qualifies at 28)"
-    ],
-    "hero": {
-     "score": 16,
-     "band": "red",
-     "parts": {
-      "fav_strength": 0,
-      "dog_weakness": 10,
-      "health": 4,
-      "home": 1,
-      "rest": 0,
-      "form": 1
-     },
-     "max": 40
-    },
-    "call": "No track",
-    "flags": [
-     {
-      "level": "yellow",
-      "text": "No injury report for APP yet: check before betting"
-     }
-    ]
-   },
-   "fav_defense_top25": false,
-   "kalshi": {
-    "event": "KXNCAAFGAME-26NOV21ULMAPP",
-    "fav_prob": 0.845,
-    "bid": 0.84,
-    "ask": 0.85
-   },
-   "locked_at": "2026-11-21T10:30:41-08:00",
-   "score": {
-    "home": 7,
-    "away": 10
-   }
-  },
   {
    "id": "401869946",
    "kick_utc": "2026-11-21T20:00:00+00:00",
    "kick_pt": "Sat 12:00 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "6:18 - 3rd",
+   "detail": "6:44 - 4th",
    "neutral": false,
    "venue": "Our Lady of Lourdes Stadium",
    "favorite": "home",
@@ -436,8 +218,8 @@
    },
    "locked_at": "2026-11-21T11:00:42-08:00",
    "score": {
-    "home": 28,
-    "away": 10
+    "home": 31,
+    "away": 17
    }
   },
   {
@@ -446,7 +228,7 @@
    "kick_pt": "Sat 12:30 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "10:13 - 3rd",
    "neutral": false,
    "venue": "DKR-Texas Memorial Stadium",
    "favorite": "home",
@@ -656,7 +438,7 @@
    },
    "locked_at": "2026-11-21T11:30:55-08:00",
    "score": {
-    "home": 31,
+    "home": 38,
     "away": 3
    }
   },
@@ -666,7 +448,7 @@
    "kick_pt": "Sat 12:30 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "9:00 - 3rd",
    "neutral": false,
    "venue": "Doak Campbell Stadium",
    "favorite": "home",
@@ -884,7 +666,7 @@
    "kick_pt": "Sat 12:30 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "7:50 - 3rd",
    "neutral": false,
    "venue": "Pratt & Whitney Stadium",
    "favorite": "home",
@@ -1564,7 +1346,11 @@
     "bid": 0.89,
     "ask": 0.9
    },
-   "locked_at": "2026-11-21T14:15:33-08:00"
+   "locked_at": "2026-11-21T14:15:33-08:00",
+   "score": {
+    "home": 0,
+    "away": 0
+   }
   },
   {
    "id": "401856865",
@@ -1796,7 +1582,7 @@
    "open_spread": -16.5,
    "line_source": "DraftKings",
    "total": 54.5,
-   "fav_ml": -600.0,
+   "fav_ml": -625.0,
    "movement": -2.0,
    "home": {
     "code": 2348,
@@ -2254,12 +2040,12 @@
    "venue": "L&N Federal Credit Union Stadium",
    "favorite": "home",
    "fav_home": true,
-   "spread": -11.5,
+   "spread": -10.5,
    "open_spread": -12.5,
    "line_source": "DraftKings",
    "total": 50.5,
-   "fav_ml": -485.0,
-   "movement": -1.0,
+   "fav_ml": -455.0,
+   "movement": -2.0,
    "home": {
     "code": 97,
     "abbr": "LOU",
@@ -4376,6 +4162,224 @@
     "home": 25,
     "away": 20
    }
+  },
+  {
+   "id": "401869929",
+   "kick_utc": "2026-11-21T19:30:00+00:00",
+   "kick_pt": "Sat 11:30 AM PT",
+   "day_et": "2026-11-21",
+   "state": "post",
+   "detail": "Final/OT",
+   "neutral": false,
+   "venue": "Kidd Brewer Stadium",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -14.0,
+   "open_spread": -13.5,
+   "line_source": "DraftKings",
+   "total": 50.5,
+   "fav_ml": -625.0,
+   "movement": 0.5,
+   "home": {
+    "code": 2026,
+    "abbr": "APP",
+    "name": "App State",
+    "display": "App State Mountaineers",
+    "season": {
+     "off_epa": 0.0488,
+     "off_sr": 0.4592,
+     "def_epa": 0.0101,
+     "def_sr": 0.4347,
+     "games": 10,
+     "ranks": {
+      "off_epa": 78,
+      "off_sr": 45,
+      "def_epa": 58,
+      "def_sr": 76
+     }
+    },
+    "last3": {
+     "off_epa": -0.12,
+     "off_sr": 0.432,
+     "def_epa": 0.0297,
+     "def_sr": 0.4252,
+     "games": 3,
+     "ranks": {
+      "off_epa": 111,
+      "off_sr": 68,
+      "def_epa": 71,
+      "def_sr": 67
+     }
+    },
+    "net": 0.0387,
+    "net_rank": 67,
+    "record": "6-4",
+    "last2_results": [
+     "L",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "W"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Malachi Singleton",
+     "dropbacks": 309,
+     "epa_db": 0.102,
+     "rank": 61
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 88,
+     "fpi": 107,
+     "own_net": 67
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.875
+   },
+   "away": {
+    "code": 2433,
+    "abbr": "ULM",
+    "name": "UL Monroe",
+    "display": "UL Monroe Warhawks",
+    "season": {
+     "off_epa": 0.0294,
+     "off_sr": 0.4402,
+     "def_epa": 0.1828,
+     "def_sr": 0.465,
+     "games": 10,
+     "ranks": {
+      "off_epa": 84,
+      "off_sr": 74,
+      "def_epa": 131,
+      "def_sr": 121
+     }
+    },
+    "last3": {
+     "off_epa": 0.063,
+     "off_sr": 0.4344,
+     "def_epa": 0.1377,
+     "def_sr": 0.4647,
+     "games": 3,
+     "ranks": {
+      "off_epa": 54,
+      "off_sr": 62,
+      "def_epa": 112,
+      "def_sr": 101
+     }
+    },
+    "net": -0.1534,
+    "net_rank": 129,
+    "record": "2-8",
+    "last2_results": [
+     "W",
+     "L"
+    ],
+    "last3_results": [
+     "L",
+     "W",
+     "L"
+    ],
+    "rest": 8,
+    "qb": {
+     "regular": "Aidan Armenta",
+     "dropbacks": 221,
+     "epa_db": 0.109,
+     "rank": 58
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 134,
+     "fpi": 135,
+     "own_net": 129
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.125
+   },
+   "fav": 2026,
+   "dog": 2433,
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 16 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 APP last-3 top 25 in 0 of 4 \u00b7 \u2717 ULM last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2717 APP season outside 1-69: Off EPA/play #78, Def success allowed #76 \u00b7 \u2713 ULM season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "ULM: consensus #134, ESPN FPI #135"
+     }
+    ],
+    "fails": [
+     "Score 16 (watch list from 18, qualifies at 28)"
+    ],
+    "hero": {
+     "score": 16,
+     "band": "red",
+     "parts": {
+      "fav_strength": 0,
+      "dog_weakness": 10,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 1
+     },
+     "max": 40
+    },
+    "call": "No track",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for APP yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV21ULMAPP",
+    "fav_prob": 0.845,
+    "bid": 0.84,
+    "ask": 0.85
+   },
+   "locked_at": "2026-11-21T10:30:41-08:00",
+   "score": {
+    "home": 17,
+    "away": 16
+   }
   }
  ],
  "notes": [],
@@ -4385,7 +4389,7 @@
  ],
  "data_through": "Week 12",
  "n_fbs": 138,
- "other_fbs_games": 28,
+ "other_fbs_games": 26,
  "summary": {
   "season": 2026,
   "week": 12,
@@ -4393,7 +4397,7 @@
   "upcoming": 6,
   "qualified": 0,
   "watch": 4,
-  "other_fbs_games": 28,
-  "built_label": "Sat Nov 21, 2:15 PM PT"
+  "other_fbs_games": 26,
+  "built_label": "Sat Nov 21, 2:45 PM PT"
  }
 }
