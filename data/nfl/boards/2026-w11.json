@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 11,
- "built_at": "2026-11-20T07:00:44-08:00",
- "built_label": "Fri Nov 20, 7:00 AM PT",
+ "built_at": "2026-11-21T05:50:15-08:00",
+ "built_label": "Sat Nov 21, 5:50 AM PT",
  "games": [
   {
    "id": "401873070",
@@ -98,40 +98,41 @@
      "rank": 6
     },
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
+    "key_out": [
      "Christian Benford",
-     "Dalton Kincaid"
+     "Dalton Kincaid",
+     "Dorian Williams"
     ],
+    "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Damar Hamlin",
+      "pos": "S",
+      "status": "Questionable"
+     },
+     {
+      "name": "Jackson Hawes",
+      "pos": "TE",
+      "status": "Questionable"
+     },
+     {
+      "name": "Dorian Williams",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
       "name": "Christian Benford",
       "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Dee Alford",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Ray Davis",
-      "pos": "RB",
-      "status": "Questionable"
-     },
-     {
-      "name": "T.J. Sanders",
-      "pos": "DT",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
       "name": "Dalton Kincaid",
       "pos": "TE",
-      "status": "Questionable"
+      "status": "Doubtful"
      }
     ],
     "power": {
@@ -211,9 +212,7 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
-     "Aaron Brewer",
-     "Caleb Douglas",
-     "Chris Bell"
+     "Aaron Brewer"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -221,29 +220,29 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Chris Bell",
-      "pos": "WR",
-      "status": "Questionable"
+      "name": "Jaylin Simpson",
+      "pos": "S",
+      "status": "Doubtful"
      },
      {
-      "name": "Caleb Douglas",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "name": "Andrew Meyer",
-      "pos": "C",
-      "status": "Questionable"
-     },
-     {
-      "name": "Darrell Baker Jr.",
-      "pos": "CB",
+      "name": "Bradley Pinion",
+      "pos": "P",
       "status": "Out"
      },
      {
       "name": "Aaron Brewer",
       "pos": "C",
       "status": "Questionable"
+     },
+     {
+      "name": "Marcellas Dial Jr.",
+      "pos": "CB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Jared Wayne",
+      "pos": "WR",
+      "status": "Out"
      }
     ],
     "power": {
@@ -257,9 +256,9 @@
    "dog": "MIA",
    "scoring": {
     "qualified": false,
-    "tier": "watch",
-    "tier_label": "Watch list",
-    "tracked": true,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
     "alerts": false,
     "routes": [],
     "route": "",
@@ -268,7 +267,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 27 of 40"
+      "detail": "Score 26 of 40"
      },
      {
       "rule": "B",
@@ -279,8 +278,8 @@
      {
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "Clear"
+      "pass": false,
+      "detail": "BUF key starter out: Christian Benford, Dalton Kincaid, Dorian Williams"
      },
      {
       "rule": "Power",
@@ -317,18 +316,20 @@
     ],
     "qualifiers": [],
     "fails": [
-     "Watch list: score 27 (qualifies at 28)"
+     "BUF key starter out: Christian Benford, Dalton Kincaid, Dorian Williams",
+     "Would be on the watch list otherwise (score 26)"
     ],
     "failed": [
-     "Watch list: score 27 (qualifies at 28)"
+     "BUF key starter out: Christian Benford, Dalton Kincaid, Dorian Williams",
+     "Would be on the watch list otherwise (score 26)"
     ],
     "hero": {
-     "score": 27,
+     "score": 26,
      "band": "yellow",
      "parts": {
       "fav_strength": 7,
       "dog_weakness": 13,
-      "health": 4,
+      "health": 3,
       "home": 1,
       "rest": 0,
       "form": 2
@@ -350,11 +351,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Christian Benford, Dalton Kincaid"
-     },
-     {
-      "level": "yellow",
-      "text": "Underdog questionable: Aaron Brewer, Caleb Douglas, Chris Bell"
+      "text": "Underdog questionable: Aaron Brewer"
      }
     ],
     "under": {
@@ -366,7 +363,7 @@
      "total_move": -3.0,
      "note": ""
     },
-    "call": "Watch list",
+    "call": "No track",
     "matchups": [
      {
       "key": "def_def",
@@ -466,7 +463,7 @@
    "open_spread": 4.5,
    "total": 43.5,
    "total_open": 46.5,
-   "fav_ml": -148.0,
+   "fav_ml": -149.0,
    "favorite": "home",
    "spread": -3.0,
    "movement": 7.5,
@@ -540,9 +537,10 @@
      "rank": 17
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Bobby Okereke"
+    ],
     "key_questionable": [
-     "Bobby Okereke",
      "Darren Waller",
      "Tommy Tremble"
     ],
@@ -552,28 +550,28 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Isaiah Simmons",
+      "pos": "S",
+      "status": "Out"
+     },
+     {
       "name": "Tommy Tremble",
       "pos": "TE",
       "status": "Questionable"
      },
      {
-      "name": "Jonathon Brooks",
-      "pos": "RB",
+      "name": "Mike Jackson",
+      "pos": "CB",
       "status": "Injured Reserve"
-     },
-     {
-      "name": "Darren Waller",
-      "pos": "TE",
-      "status": "Questionable"
      },
      {
       "name": "Bobby Okereke",
       "pos": "LB",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
-      "name": "Isaiah Simmons",
-      "pos": "S",
+      "name": "Darren Waller",
+      "pos": "TE",
       "status": "Questionable"
      }
     ],
@@ -653,31 +651,30 @@
     },
     "injuries_known": true,
     "key_out": [
-     "Marlon Humphrey"
-    ],
-    "key_questionable": [
      "Jaylinn Hawkins",
+     "Marlon Humphrey",
      "Nnamdi Madubuike"
     ],
+    "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Jaylinn Hawkins",
+      "pos": "S",
+      "status": "Out"
+     },
+     {
       "name": "Nnamdi Madubuike",
       "pos": "DT",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
       "name": "Marlon Humphrey",
       "pos": "CB",
       "status": "Out"
-     },
-     {
-      "name": "Jaylinn Hawkins",
-      "pos": "S",
-      "status": "Questionable"
      },
      {
       "name": "Lamar Jackson",
@@ -712,7 +709,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 17 of 40"
+      "detail": "Score 16 of 40"
      },
      {
       "rule": "B",
@@ -723,8 +720,8 @@
      {
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "Clear"
+      "pass": false,
+      "detail": "CAR key starter out: Bobby Okereke"
      },
      {
       "rule": "Power",
@@ -761,18 +758,18 @@
     ],
     "qualifiers": [],
     "fails": [
-     "Score 17 (watch list from 18, qualifies at 28)"
+     "CAR key starter out: Bobby Okereke"
     ],
     "failed": [
-     "Score 17 (watch list from 18, qualifies at 28)"
+     "CAR key starter out: Bobby Okereke"
     ],
     "hero": {
-     "score": 17,
+     "score": 16,
      "band": "red",
      "parts": {
       "fav_strength": 0,
       "dog_weakness": 11,
-      "health": 4,
+      "health": 3,
       "home": 1,
       "rest": 0,
       "form": 1
@@ -798,11 +795,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Bobby Okereke, Darren Waller, Tommy Tremble"
-     },
-     {
-      "level": "yellow",
-      "text": "Underdog questionable: Jaylinn Hawkins, Nnamdi Madubuike"
+      "text": "Favorite questionable: Darren Waller, Tommy Tremble"
      }
     ],
     "under": {
@@ -998,11 +991,11 @@
      {
       "name": "Kyler Gordon",
       "pos": "CB",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
-      "name": "Jeffery Simmons",
-      "pos": "DT",
+      "name": "Zavion Thomas",
+      "pos": "WR",
       "status": "Questionable"
      },
      {
@@ -1097,6 +1090,7 @@
     },
     "injuries_known": true,
     "key_out": [
+     "Asim Richards",
      "Erik McCoy",
      "Taliese Fuaga"
     ],
@@ -1111,24 +1105,24 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Asim Richards",
+      "pos": "OT",
+      "status": "Out"
+     },
+     {
       "name": "Erik McCoy",
       "pos": "C",
-      "status": "Doubtful"
+      "status": "Out"
      },
      {
       "name": "Taliese Fuaga",
       "pos": "OT",
-      "status": "Doubtful"
-     },
-     {
-      "name": "Jordyn Tyson",
-      "pos": "WR",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
       "name": "Martin Emerson Jr.",
       "pos": "CB",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
       "name": "Pete Werner",
@@ -1138,7 +1132,7 @@
     ],
     "power": {
      "consensus": 22,
-     "fpi": 20,
+     "fpi": 21,
      "nfl_com": 25
     },
     "fpi_win": 0.212
@@ -1176,7 +1170,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "NO: consensus #22, ESPN FPI #20, NFL.com #25"
+      "detail": "NO: consensus #22, ESPN FPI #21, NFL.com #25"
      }
     ],
     "context": [
@@ -1337,6 +1331,62 @@
      }
     ],
     "notes": ""
+   },
+   "readout": {
+    "matchup": "NO @ CHI",
+    "summary": "Every pick is Chicago (7-2, off a bye) to win. The reasons: an improved Bears defense against a Saints line missing three starters, and Caleb Williams bouncing back from a four-interception game. The spread leans New Orleans +11.5: SI, CBS's simulation model and 4 of 7 CBS experts take it, pointing to the Saints' close losses and eight straight road covers.",
+    "pick": "Bears straight up (unanimous: CBS Prisco and Breech, NFL.com 5-0, ESPN panel, Dimers model); ATS: Saints +11.5 (SI/DraftKings, CBS SportsLine model; CBS: Prisco, Dubin, Wilson, Sullivan) vs Bears -11.5 (CBS: Breech, Richard, Eisenberg)",
+    "predicted_score": "Bears 24-16 (CBS, Pete Prisco, Nov 19); Bears 31-20 (CBS, John Breech, Nov 17); Bears 42-17 (NFL.com, Gennaro Filice); NFL.com panel: 40-17, 42-24, 42-17, 38-24, 30-17; ESPN: Bears 27-20 (Maldonado), 30-17 (Moody), 34-20 (Walder); Bears 28-17 (Dimers model; its widget shows 29-18)",
+    "moneyline": "DraftKings Bears -700 / Saints +500 (SI, Nov 17 2026); Bears -770 / Saints +540 (NFL.com, lines as of Nov 19, book not named); spread CHI -11.5 (opened -9.5 per CBS), total 48.5",
+    "win_probability": "ESPN FPI: Bears 78.5%, average margin 7.9 points (ESPN Week 11 guide, Nov 20 2026); Dimers model: Bears 82.7%",
+    "injuries": "Final reports Fri Nov 20 2026. Saints: Out C Erik McCoy (biceps), T Taliese Fuaga (knee), T Asim Richards (knee), CB Martin Emerson Jr. (concussion), S Justin Reid (personal matter); Questionable CB Decamerion Richardson (thigh), LB Pete Werner (hamstring); WR Jordyn Tyson (chest) and RB CJ Donaldson (shoulder) no designation; RB Alvin Kamara rest day. Bears: Out CB Kyler Gordon (shoulder); Questionable WR Zavion Thomas (ankle); no designation for DT Jeffery Simmons (knee), WR Luther Burden III (concussion), RB Kyle Monangai (toe; expected back for the first time since Week 4), CB Malik Muhammad (toe).",
+    "sources": [
+     {
+      "site": "CBS Sports (Prisco)",
+      "url": "https://www.cbssports.com/nfl/news/priscos-week-11-nfl-picks-odds-expert-picks-predictions/"
+     },
+     {
+      "site": "CBS Sports (Breech score predictions)",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-11-picks-score-predictions-49ers-vikings-mexico/"
+     },
+     {
+      "site": "CBS Sports (expert picks hub)",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-11-expert-picks-odds-best-bets-teasers-predictions-survivor-picks/"
+     },
+     {
+      "site": "CBS Sports (SportsLine simulations)",
+      "url": "https://www.cbssports.com/betting/news/nfl-odds-picks-predictions-bets-week-11-2026/"
+     },
+     {
+      "site": "ESPN",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026"
+     },
+     {
+      "site": "NFL.com",
+      "url": "https://www.nfl.com/news/nfl-picks-week-11-2026-nfl-season"
+     },
+     {
+      "site": "Sports Illustrated (odds, pick)",
+      "url": "https://www.si.com/betting/saints-vs-bears-prediction-odds-spread-injuries-trends-for-nfl-week-11-2026"
+     },
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/nfl/predictions/2026_11_chi_no"
+     },
+     {
+      "site": "New Orleans Saints (official injury report, Friday)",
+      "url": "https://www.neworleanssaints.com/news/injury-report-chicago-bears-vs-new-orleans-saints-2026-nfl-week-11-friday"
+     },
+     {
+      "site": "Shaw Local (Bears injury report)",
+      "url": "https://www.shawlocal.com/bears/2026/11/20/chicago-bears-injury-report-kyler-gordon-ruled-out-against-new-orleans-saints-in-week-11/"
+     },
+     {
+      "site": "Yahoo (final Saints vs. Bears injury report)",
+      "url": "https://sports.yahoo.com/articles/final-saints-vs-bears-injury-224339683.html"
+     }
+    ],
+    "updated": "2026-11-21T05:49-08:00"
    }
   },
   {
@@ -1359,10 +1409,10 @@
    "open_spread": -6.5,
    "total": 54.5,
    "total_open": 48.5,
-   "fav_ml": -381.0,
+   "fav_ml": -377.0,
    "favorite": "home",
-   "spread": -8.5,
-   "movement": 2.0,
+   "spread": -7.5,
+   "movement": 1.0,
    "total_move": 6.0,
    "fav_home": true,
    "home": {
@@ -1433,11 +1483,9 @@
      "rank": 8
     },
     "injuries_known": true,
-    "key_out": [
-     "Jake Ferguson"
-    ],
+    "key_out": [],
     "key_questionable": [
-     "Donovan Ezeiruaku"
+     "Jaishawn Barham"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -1445,19 +1493,14 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "P.J. Locke",
+      "pos": "S",
+      "status": "Out"
+     },
+     {
       "name": "Jalen Thompson",
       "pos": "S",
       "status": "Injured Reserve"
-     },
-     {
-      "name": "Donovan Ezeiruaku",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Shavon Revel Jr.",
-      "pos": "CB",
-      "status": "Questionable"
      },
      {
       "name": "Luke Schoonmaker",
@@ -1465,9 +1508,14 @@
       "status": "Questionable"
      },
      {
-      "name": "Jake Ferguson",
-      "pos": "TE",
+      "name": "Jonathan Mingo",
+      "pos": "WR",
       "status": "Out"
+     },
+     {
+      "name": "Jaishawn Barham",
+      "pos": "LB",
+      "status": "Questionable"
      }
     ],
     "power": {
@@ -1548,15 +1596,28 @@
     "key_out": [],
     "key_questionable": [
      "Anthony Hill",
-     "Carnell Tate",
-     "Cody Barton",
-     "Kevin Winston"
+     "Carnell Tate"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Micah Robinson",
+      "pos": "CB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Anthony Hill Jr.",
+      "pos": "LB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Tony Adams",
+      "pos": "S",
+      "status": "Questionable"
+     },
      {
       "name": "Tyjae Spears",
       "pos": "RB",
@@ -1566,26 +1627,11 @@
       "name": "Carnell Tate",
       "pos": "WR",
       "status": "Questionable"
-     },
-     {
-      "name": "Kevin Winston Jr.",
-      "pos": "S",
-      "status": "Questionable"
-     },
-     {
-      "name": "Cody Barton",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Anthony Hill Jr.",
-      "pos": "LB",
-      "status": "Questionable"
      }
     ],
     "power": {
-     "consensus": 27,
-     "fpi": 29,
+     "consensus": 28,
+     "fpi": 30,
      "nfl_com": 24
     },
     "fpi_win": 0.194
@@ -1594,9 +1640,9 @@
    "dog": "TEN",
    "scoring": {
     "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
     "alerts": false,
     "routes": [],
     "route": "",
@@ -1605,7 +1651,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 24 of 40"
+      "detail": "Score 25 of 40"
      },
      {
       "rule": "B",
@@ -1616,14 +1662,14 @@
      {
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
-      "pass": false,
-      "detail": "DAL key starter out: Jake Ferguson"
+      "pass": true,
+      "detail": "Clear"
      },
      {
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "TEN: consensus #27, ESPN FPI #29, NFL.com #24"
+      "detail": "TEN: consensus #28, ESPN FPI #30, NFL.com #24"
      }
     ],
     "context": [
@@ -1657,20 +1703,18 @@
      "off_sr"
     ],
     "fails": [
-     "DAL key starter out: Jake Ferguson",
-     "Would be on the watch list otherwise (score 24)"
+     "Watch list: score 25 (qualifies at 28)"
     ],
     "failed": [
-     "DAL key starter out: Jake Ferguson",
-     "Would be on the watch list otherwise (score 24)"
+     "Watch list: score 25 (qualifies at 28)"
     ],
     "hero": {
-     "score": 24,
+     "score": 25,
      "band": "yellow",
      "parts": {
       "fav_strength": 6,
       "dog_weakness": 13,
-      "health": 3,
+      "health": 4,
       "home": 1,
       "rest": 0,
       "form": 1
@@ -1692,11 +1736,11 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Donovan Ezeiruaku"
+      "text": "Favorite questionable: Jaishawn Barham"
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Anthony Hill, Carnell Tate, Cody Barton, Kevin Winston"
+      "text": "Underdog questionable: Anthony Hill, Carnell Tate"
      }
     ],
     "under": {
@@ -1708,7 +1752,7 @@
      "total_move": 6.0,
      "note": ""
     },
-    "call": "No track",
+    "call": "Watch list",
     "matchups": [
      {
       "key": "def_def",
@@ -1808,10 +1852,10 @@
    "open_spread": -4.5,
    "total": 45.5,
    "total_open": 49.5,
-   "fav_ml": -258.0,
+   "fav_ml": -236.0,
    "favorite": "home",
-   "spread": -6.0,
-   "movement": 1.5,
+   "spread": -5.5,
+   "movement": 1.0,
    "total_move": -4.0,
    "fav_home": true,
    "home": {
@@ -1894,14 +1938,19 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "D.J. Reed",
+      "pos": "CB",
+      "status": "Questionable"
+     },
+     {
       "name": "Sione Vaki",
       "pos": "RB",
       "status": "Questionable"
      },
      {
-      "name": "D.J. Reed",
-      "pos": "CB",
-      "status": "Questionable"
+      "name": "Cade Mays",
+      "pos": "C",
+      "status": "Out"
      },
      {
       "name": "Aidan Hutchinson",
@@ -1911,11 +1960,6 @@
      {
       "name": "Tyler Lacy",
       "pos": "DT",
-      "status": "Questionable"
-     },
-     {
-      "name": "Ennis Rakestraw Jr.",
-      "pos": "CB",
       "status": "Questionable"
      }
     ],
@@ -1994,9 +2038,10 @@
      "rank": 36
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Antoine Winfield Jr."
+    ],
     "key_questionable": [
-     "Antoine Winfield Jr.",
      "Baker Mayfield",
      "YaYa Diaby"
     ],
@@ -2006,23 +2051,23 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Baker Mayfield",
-      "pos": "QB",
-      "status": "Questionable"
-     },
-     {
       "name": "Josh Hayes",
       "pos": "CB",
       "status": "Injured Reserve"
      },
      {
-      "name": "Antoine Winfield Jr.",
-      "pos": "S",
+      "name": "Yaya Diaby",
+      "pos": "LB",
       "status": "Questionable"
      },
      {
-      "name": "Yaya Diaby",
-      "pos": "LB",
+      "name": "Antoine Winfield Jr.",
+      "pos": "S",
+      "status": "Out"
+     },
+     {
+      "name": "Baker Mayfield",
+      "pos": "QB",
       "status": "Questionable"
      },
      {
@@ -2137,7 +2182,7 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Antoine Winfield Jr., Baker Mayfield, YaYa Diaby"
+      "text": "Underdog questionable: Baker Mayfield, YaYa Diaby"
      }
     ],
     "under": {
@@ -2186,9 +2231,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV22TBDET",
-    "fav_prob": 0.705,
-    "bid": 0.7,
-    "ask": 0.71
+    "fav_prob": 0.685,
+    "bid": 0.68,
+    "ask": 0.69
    },
    "votes": {
     "fav": 5,
@@ -2227,6 +2272,66 @@
      }
     ],
     "notes": "SI gives a moneyline pick only (Buccaneers +230); not counted. CBS = Sullivan + Dajani + Dubin."
+   },
+   "readout": {
+    "matchup": "TB @ DET",
+    "summary": "Detroit is the straight-up pick everywhere: the Lions have won five straight and Baker Mayfield is questionable (foot/thumb), though Todd Bowles said Friday he was 'trending in the right direction'. Most expect a close game: SI and 4 of 7 CBS experts take Tampa Bay +6.5 (Bucs off a bye, Lions back from Germany), and FPI has Detroit by only 2.9.",
+    "pick": "Lions straight up (unanimous: CBS Prisco and Breech, NFL.com 5-0, ESPN panel, Dimers model); ATS split: Buccaneers +6.5 (SI/DraftKings; CBS: Prisco, Breech, Richard, Eisenberg) vs Lions -6.5 (CBS: Dubin, Wilson, Sullivan)",
+    "predicted_score": "Lions 22-17 (CBS, Pete Prisco, Nov 19); Lions 23-20 (CBS, John Breech, Nov 17); Lions 24-16 (CBS, Jared Dubin); Lions 20-16 (NFL.com, Jeremy Bergman); NFL.com panel: 20-16, 25-21, 24-19, 23-14, 20-12; ESPN: Lions 27-21 (Maldonado), 27-23 (Moody), 30-20 (Walder); Lions 26-20 (Dimers model; its widget shows 27-20)",
+    "moneyline": "DraftKings Lions -278 / Buccaneers +225 (SI, Nov 17 2026); Lions -260 / Buccaneers +215 (NFL.com, lines as of Nov 19, book not named); Buccaneers +280 and DET -7 at DraftKings on Nov 18 when Mayfield looked likely to miss (SI); spread DET -6.5 to -7 (opened -4.5 to -5.5), total 43.5-46.5",
+    "win_probability": "ESPN FPI: Lions 61.3%, average margin 2.9 points (ESPN Week 11 guide, Nov 20 2026); Dimers model: Lions 71.9%",
+    "injuries": "Final reports Fri Nov 20 2026. Buccaneers: Questionable QB Baker Mayfield (foot/right thumb; DNP Wed, limited Thu and Fri; Bowles: 'trending in the right direction', rookie Jalon Daniels starts if he can't), OLB Yaya Diaby (knee; full practice Friday); Out S Antoine Winfield Jr. (ankle), CB Josh Hayes (knee); T Tristan Wirfs (toe) and TE Cade Otton (thumb) no designation. Lions: Out C Cade Mays (ankle); Questionable LB Joe Bachie (knee), CB Khalil Dorsey (ankle), DL Tyler Lacy (shoulder), CB Ennis Rakestraw Jr. (shoulder), CB D.J. Reed (hip), RB Sione Vaki (ankle); S Kerby Joseph (knee) no designation, expected season debut; OL Miles Frazier (personal) missed Friday with no designation; Edge Aidan Hutchinson out for the season (knee).",
+    "sources": [
+     {
+      "site": "CBS Sports (Prisco)",
+      "url": "https://www.cbssports.com/nfl/news/priscos-week-11-nfl-picks-odds-expert-picks-predictions/"
+     },
+     {
+      "site": "CBS Sports (Breech score predictions)",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-11-picks-score-predictions-49ers-vikings-mexico/"
+     },
+     {
+      "site": "CBS Sports (expert picks hub)",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-11-expert-picks-odds-best-bets-teasers-predictions-survivor-picks/"
+     },
+     {
+      "site": "ESPN",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026"
+     },
+     {
+      "site": "NFL.com",
+      "url": "https://www.nfl.com/news/nfl-picks-week-11-2026-nfl-season"
+     },
+     {
+      "site": "Sports Illustrated (odds, pick)",
+      "url": "https://www.si.com/betting/buccaneers-vs-lions-prediction-odds-spread-injuries-trends-for-nfl-week-11-2026"
+     },
+     {
+      "site": "Sports Illustrated (Mayfield odds move, Nov 18)",
+      "url": "https://www.si.com/betting/baker-mayfield-injury-uncertainty-continues-to-shift-buccaneers-vs-lions-odds-for-nfl-week-11-2026"
+     },
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/nfl/predictions/2026_11_det_tb"
+     },
+     {
+      "site": "NFL.com (Mayfield questionable)",
+      "url": "https://www.nfl.com/news/buccaneers-baker-mayfield-questionable-to-play-vs-lions"
+     },
+     {
+      "site": "NBC Sports (Mayfield trending to start, Nov 20)",
+      "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-20/mayfield-foot-trending-to-start-vs-lions"
+     },
+     {
+      "site": "Tampa Bay Buccaneers (official injury report, Nov 20)",
+      "url": "https://www.buccaneers.com/news/buccaneers-lions-injury-report-nov-20-week-11-2026"
+     },
+     {
+      "site": "Detroit Lions (official injury report, Nov 20)",
+      "url": "https://www.detroitlions.com/news/lions-vs-buccaneers-injury-report-nov-20-mays-joseph-reed"
+     }
+    ],
+    "updated": "2026-11-21T05:49-08:00"
    }
   },
   {
@@ -2249,7 +2354,7 @@
    "open_spread": -11.5,
    "total": 40.5,
    "total_open": 44.5,
-   "fav_ml": -1420.0,
+   "fav_ml": -1660.0,
    "favorite": "home",
    "spread": -16.5,
    "movement": 5.0,
@@ -2323,41 +2428,43 @@
      "rank": 7
     },
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
+    "key_out": [
      "Jaylon Moore",
      "Kenneth Walker III",
      "Trey Smith"
     ],
+    "key_questionable": [],
     "key_long_term": [],
-    "interior_ol_out": [],
+    "interior_ol_out": [
+     "Trey Smith"
+    ],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
-     {
-      "name": "Kenneth Walker III",
-      "pos": "RB",
-      "status": "Questionable"
-     },
      {
       "name": "Omarr Norman-Lott",
       "pos": "DT",
       "status": "Questionable"
      },
      {
-      "name": "Trey Smith",
-      "pos": "G",
-      "status": "Questionable"
-     },
-     {
       "name": "Jaylon Moore",
       "pos": "OT",
+      "status": "Out"
+     },
+     {
+      "name": "Trey Smith",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "name": "Peter Woods",
+      "pos": "DT",
       "status": "Questionable"
      },
      {
-      "name": "Jared Wiley",
-      "pos": "TE",
-      "status": "Injured Reserve"
+      "name": "Kenneth Walker III",
+      "pos": "RB",
+      "status": "Out"
      }
     ],
     "power": {
@@ -2365,7 +2472,7 @@
      "fpi": 5,
      "nfl_com": 9
     },
-    "fpi_win": 0.88
+    "fpi_win": 0.885
    },
    "away": {
     "code": "ARI",
@@ -2436,9 +2543,7 @@
     },
     "injuries_known": true,
     "key_out": [],
-    "key_questionable": [
-     "Hjalte Froholdt"
-    ],
+    "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [
@@ -2448,18 +2553,18 @@
     "qb_reset": "Gardner Minshew II out",
     "injury_list": [
      {
-      "name": "Hjalte Froholdt",
-      "pos": "C",
-      "status": "Questionable"
+      "name": "Jon Gaines II",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "name": "Zachary Carter",
+      "pos": "DT",
+      "status": "Injured Reserve"
      },
      {
       "name": "Carson Beck",
       "pos": "QB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Roy Lopez",
-      "pos": "DT",
       "status": "Questionable"
      },
      {
@@ -2475,30 +2580,30 @@
     ],
     "power": {
      "consensus": 31,
-     "fpi": 27,
+     "fpi": 29,
      "nfl_com": 31
     },
-    "fpi_win": 0.119
+    "fpi_win": 0.114
    },
    "fav": "KC",
    "dog": "ARI",
    "scoring": {
-    "qualified": true,
-    "tier": "qualified",
-    "tier_label": "Qualified",
-    "tracked": true,
-    "alerts": true,
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
     "routes": [
-     "Score 33",
+     "Score 31",
      "Last-3 mismatch"
     ],
-    "route": "Score 33 + Last-3 mismatch",
+    "route": "Score 31 + Last-3 mismatch",
     "rules": [
      {
       "rule": "A",
       "name": "Hero score 28+",
       "pass": true,
-      "detail": "Score 33 of 40"
+      "detail": "Score 31 of 40"
      },
      {
       "rule": "B",
@@ -2509,14 +2614,14 @@
      {
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "Clear"
+      "pass": false,
+      "detail": "KC key starter out: Jaylon Moore, Kenneth Walker III, Trey Smith"
      },
      {
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "ARI: consensus #31, ESPN FPI #27, NFL.com #31"
+      "detail": "ARI: consensus #31, ESPN FPI #29, NFL.com #31"
      }
     ],
     "context": [
@@ -2551,15 +2656,21 @@
      "def_epa",
      "def_sr"
     ],
-    "fails": [],
-    "failed": [],
+    "fails": [
+     "KC key starter out: Jaylon Moore, Kenneth Walker III, Trey Smith",
+     "Would be qualified otherwise (score 31)"
+    ],
+    "failed": [
+     "KC key starter out: Jaylon Moore, Kenneth Walker III, Trey Smith",
+     "Would be qualified otherwise (score 31)"
+    ],
     "hero": {
-     "score": 33,
+     "score": 31,
      "band": "green",
      "parts": {
       "fav_strength": 11,
       "dog_weakness": 15,
-      "health": 4,
+      "health": 2,
       "home": 1,
       "rest": 0,
       "form": 2
@@ -2581,15 +2692,11 @@
      },
      {
       "level": "yellow",
+      "text": "Favorite interior OL out: Trey Smith"
+     },
+     {
+      "level": "yellow",
       "text": "Line moved +5 toward the favorite (4+): downgrade"
-     },
-     {
-      "level": "yellow",
-      "text": "Favorite questionable: Jaylon Moore, Kenneth Walker III, Trey Smith"
-     },
-     {
-      "level": "yellow",
-      "text": "Underdog questionable: Hjalte Froholdt"
      }
     ],
     "under": {
@@ -2601,7 +2708,7 @@
      "total_move": -4.0,
      "note": ""
     },
-    "call": "Lean (QB cap)",
+    "call": "No track",
     "matchups": [
      {
       "key": "def_def",
@@ -2701,7 +2808,7 @@
    "open_spread": -1.5,
    "total": 46.5,
    "total_open": 46.5,
-   "fav_ml": -255.0,
+   "fav_ml": -253.0,
    "favorite": "away",
    "spread": -6.0,
    "movement": 4.5,
@@ -2785,11 +2892,6 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Nic Jones",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
       "name": "Tyrone Tracy Jr.",
       "pos": "RB",
       "status": "Injured Reserve"
@@ -2808,11 +2910,16 @@
       "name": "Chauncey Golston",
       "pos": "DE",
       "status": "Injured Reserve"
+     },
+     {
+      "name": "Jaxson Dart",
+      "pos": "QB",
+      "status": "Injured Reserve"
      }
     ],
     "power": {
      "consensus": 19,
-     "fpi": 21,
+     "fpi": 22,
      "nfl_com": 16
     },
     "fpi_win": 0.185
@@ -2885,40 +2992,43 @@
      "rank": 2
     },
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
-     "Bhayshul Tuten",
-     "Jakobi Meyers"
+    "key_out": [
+     "Robert Hainsey"
     ],
-    "key_long_term": [],
-    "interior_ol_out": [],
+    "key_questionable": [],
+    "key_long_term": [
+     "Eric Murray"
+    ],
+    "interior_ol_out": [
+     "Robert Hainsey"
+    ],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
-      "name": "LeQuint Allen Jr.",
-      "pos": "RB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Bhayshul Tuten",
-      "pos": "RB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Chris Rodriguez Jr.",
-      "pos": "RB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Jakobi Meyers",
-      "pos": "WR",
-      "status": "Questionable"
+      "name": "B.J. Green II",
+      "pos": "DE",
+      "status": "Injured Reserve"
      },
      {
       "name": "Danny Striggow",
       "pos": "DE",
       "status": "Questionable"
+     },
+     {
+      "name": "Matt Dickerson",
+      "pos": "DE",
+      "status": "Questionable"
+     },
+     {
+      "name": "Robert Hainsey",
+      "pos": "C",
+      "status": "Out"
+     },
+     {
+      "name": "Eric Murray",
+      "pos": "S",
+      "status": "Injured Reserve"
      }
     ],
     "power": {
@@ -2932,9 +3042,9 @@
    "dog": "NYG",
    "scoring": {
     "qualified": false,
-    "tier": "watch",
-    "tier_label": "Watch list",
-    "tracked": true,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
     "alerts": false,
     "routes": [],
     "route": "",
@@ -2943,7 +3053,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 26 of 40"
+      "detail": "Score 24 of 40"
      },
      {
       "rule": "B",
@@ -2954,14 +3064,14 @@
      {
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "Clear"
+      "pass": false,
+      "detail": "JAX key starter out: Robert Hainsey (on injured reserve, not counted: Eric Murray)"
      },
      {
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "NYG: consensus #19, ESPN FPI #21, NFL.com #16"
+      "detail": "NYG: consensus #19, ESPN FPI #22, NFL.com #16"
      }
     ],
     "context": [
@@ -2997,18 +3107,20 @@
      "def_sr"
     ],
     "fails": [
-     "Watch list: score 26 (qualifies at 28)"
+     "JAX key starter out: Robert Hainsey",
+     "Would be on the watch list otherwise (score 24)"
     ],
     "failed": [
-     "Watch list: score 26 (qualifies at 28)"
+     "JAX key starter out: Robert Hainsey",
+     "Would be on the watch list otherwise (score 24)"
     ],
     "hero": {
-     "score": 26,
+     "score": 24,
      "band": "yellow",
      "parts": {
       "fav_strength": 14,
       "dog_weakness": 6,
-      "health": 4,
+      "health": 2,
       "home": 0,
       "rest": 0,
       "form": 2
@@ -3026,15 +3138,15 @@
     "flags": [
      {
       "level": "yellow",
+      "text": "Favorite interior OL out: Robert Hainsey"
+     },
+     {
+      "level": "yellow",
       "text": "Line moved +4.5 toward the favorite (4+): downgrade"
      },
      {
       "level": "yellow",
       "text": "Line crossed key number 3"
-     },
-     {
-      "level": "yellow",
-      "text": "Favorite questionable: Bhayshul Tuten, Jakobi Meyers"
      }
     ],
     "under": {
@@ -3046,7 +3158,7 @@
      "total_move": 0.0,
      "note": ""
     },
-    "call": "Watch list",
+    "call": "No track",
     "matchups": [
      {
       "key": "def_def",
@@ -3083,9 +3195,9 @@
    "fav_defense_top10": true,
    "kalshi": {
     "event": "KXNFLGAME-26NOV22JACNYG",
-    "fav_prob": 0.715,
-    "bid": 0.71,
-    "ask": 0.72
+    "fav_prob": 0.705,
+    "bid": 0.7,
+    "ask": 0.71
    },
    "votes": {
     "fav": 9,
@@ -3150,13 +3262,13 @@
    },
    "line_source": "DraftKings",
    "open_spread": -9.5,
-   "total": 41.5,
+   "total": 42.5,
    "total_open": 41.5,
-   "fav_ml": -169.0,
+   "fav_ml": -171.0,
    "favorite": "home",
    "spread": -3.0,
    "movement": -6.5,
-   "total_move": 0.0,
+   "total_move": 1.0,
    "fav_home": true,
    "home": {
     "code": "LAC",
@@ -3226,10 +3338,11 @@
      "rank": 35
     },
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
-     "Charlie Kolar",
+    "key_out": [
      "Daiyan Henley"
+    ],
+    "key_questionable": [
+     "Tarheeb Still"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -3237,29 +3350,29 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Charlie Kolar",
-      "pos": "TE",
+      "name": "Isas Waxter",
+      "pos": "CB",
       "status": "Questionable"
      },
      {
-      "name": "Ladd McConkey",
-      "pos": "WR",
+      "name": "Rodney Shelley",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "name": "Kendall Williamson",
+      "pos": "S",
+      "status": "Out"
+     },
+     {
+      "name": "Tarheeb Still",
+      "pos": "CB",
       "status": "Questionable"
      },
      {
       "name": "Daiyan Henley",
       "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Donte Jackson",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Kendall Williamson",
-      "pos": "S",
-      "status": "Questionable"
+      "status": "Out"
      }
     ],
     "power": {
@@ -3267,7 +3380,7 @@
      "fpi": 18,
      "nfl_com": 27
     },
-    "fpi_win": 0.704
+    "fpi_win": 0.634
    },
    "away": {
     "code": "NYJ",
@@ -3337,11 +3450,12 @@
      "rank": 16
     },
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
-     "Geno Smith",
-     "Harrison Phillips",
+    "key_out": [
      "Isaiah Williams"
+    ],
+    "key_questionable": [
+     "Dylan Parham",
+     "Harrison Phillips"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -3349,37 +3463,37 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Dylan Parham",
+      "pos": "G",
+      "status": "Questionable"
+     },
+     {
       "name": "Harrison Phillips",
       "pos": "DT",
       "status": "Questionable"
      },
      {
-      "name": "Geno Smith",
-      "pos": "QB",
+      "name": "David Onyemata",
+      "pos": "DT",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Trevin Wallace",
+      "pos": "LB",
       "status": "Questionable"
      },
      {
       "name": "Isaiah Williams",
       "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "name": "Omar Cooper Jr.",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "name": "Joseph Ossai",
-      "pos": "DE",
-      "status": "Questionable"
+      "status": "Out"
      }
     ],
     "power": {
-     "consensus": 30,
-     "fpi": 30,
+     "consensus": 26,
+     "fpi": 24,
      "nfl_com": 26
     },
-    "fpi_win": 0.294
+    "fpi_win": 0.363
    },
    "fav": "LAC",
    "dog": "NYJ",
@@ -3396,7 +3510,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 17 of 40"
+      "detail": "Score 16 of 40"
      },
      {
       "rule": "B",
@@ -3407,14 +3521,14 @@
      {
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "Clear"
+      "pass": false,
+      "detail": "LAC key starter out: Daiyan Henley"
      },
      {
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "NYJ: consensus #30, ESPN FPI #30, NFL.com #26"
+      "detail": "NYJ: consensus #26, ESPN FPI #24, NFL.com #26"
      }
     ],
     "context": [
@@ -3445,18 +3559,18 @@
     ],
     "qualifiers": [],
     "fails": [
-     "Score 17 (watch list from 18, qualifies at 28)"
+     "LAC key starter out: Daiyan Henley"
     ],
     "failed": [
-     "Score 17 (watch list from 18, qualifies at 28)"
+     "LAC key starter out: Daiyan Henley"
     ],
     "hero": {
-     "score": 17,
+     "score": 16,
      "band": "red",
      "parts": {
       "fav_strength": 0,
       "dog_weakness": 11,
-      "health": 4,
+      "health": 3,
       "home": 1,
       "rest": 0,
       "form": 1
@@ -3478,11 +3592,11 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Charlie Kolar, Daiyan Henley"
+      "text": "Favorite questionable: Tarheeb Still"
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Geno Smith, Harrison Phillips, Isaiah Williams"
+      "text": "Underdog questionable: Dylan Parham, Harrison Phillips"
      }
     ],
     "under": {
@@ -3491,7 +3605,7 @@
       32,
       20
      ],
-     "total_move": 0.0,
+     "total_move": 1.0,
      "note": ""
     },
     "call": "No track",
@@ -3670,9 +3784,7 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
-     "Brandon Jones",
-     "Jaylen Waddle",
-     "Riley Moss"
+     "Brandon Jones"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -3680,14 +3792,9 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Jaylen Waddle",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "name": "Riley Moss",
-      "pos": "CB",
-      "status": "Questionable"
+      "name": "Caleb Lohner",
+      "pos": "TE",
+      "status": "Injured Reserve"
      },
      {
       "name": "Brandon Jones",
@@ -3695,13 +3802,18 @@
       "status": "Questionable"
      },
      {
-      "name": "Caleb Lohner",
-      "pos": "TE",
+      "name": "Eyioma Uwazurike",
+      "pos": "DE",
       "status": "Injured Reserve"
      },
      {
-      "name": "Eyioma Uwazurike",
-      "pos": "DE",
+      "name": "RJ Harvey",
+      "pos": "RB",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Tyler Badie",
+      "pos": "RB",
       "status": "Injured Reserve"
      }
     ],
@@ -3780,10 +3892,11 @@
      "rank": 12
     },
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
-     "Brock Bowers",
+    "key_out": [
      "Tonka Hemingway"
+    ],
+    "key_questionable": [
+     "Brock Bowers"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -3791,14 +3904,14 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Trey Zuhn III",
-      "pos": "C",
+      "name": "Folorunso Fatukasi",
+      "pos": "DT",
       "status": "Questionable"
      },
      {
-      "name": "Ian Thomas",
-      "pos": "TE",
-      "status": "Questionable"
+      "name": "Tonka Hemingway",
+      "pos": "DT",
+      "status": "Out"
      },
      {
       "name": "Brock Bowers",
@@ -3806,18 +3919,18 @@
       "status": "Questionable"
      },
      {
-      "name": "Tonka Hemingway",
-      "pos": "DT",
+      "name": "Matt Gay",
+      "pos": "PK",
       "status": "Questionable"
      },
      {
-      "name": "Folorunso Fatukasi",
-      "pos": "DT",
-      "status": "Questionable"
+      "name": "Patrick Johnson",
+      "pos": "DE",
+      "status": "Injured Reserve"
      }
     ],
     "power": {
-     "consensus": 26,
+     "consensus": 27,
      "fpi": 31,
      "nfl_com": 21
     },
@@ -3856,7 +3969,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "LV: consensus #26, ESPN FPI #31, NFL.com #21"
+      "detail": "LV: consensus #27, ESPN FPI #31, NFL.com #21"
      }
     ],
     "context": [
@@ -3920,11 +4033,11 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Brandon Jones, Jaylen Waddle, Riley Moss"
+      "text": "Favorite questionable: Brandon Jones"
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Brock Bowers, Tonka Hemingway"
+      "text": "Underdog questionable: Brock Bowers"
      }
     ],
     "under": {
@@ -4020,6 +4133,46 @@
      }
     ],
     "notes": "CBS = Sullivan + Dajani + Dubin."
+   },
+   "readout": {
+    "matchup": "LV @ DEN",
+    "summary": "Every source picks Denver. Rookie Fernando Mendoza makes his first road start against Denver's pass rush, and the Broncos come off a bye. Las Vegas can't run (league-low 2.9 yards per carry, ESPN) and ranks last in defensive DVOA. Covers, SI and Dimers favor Denver to cover; ESPN's Walder sees it closer, at 24-20.",
+    "pick": "Broncos (unanimous: CBS Prisco, NFL.com 5-0, ESPN 3-0, Dimers model); ATS: Broncos -9.5 (Covers, SI/FanDuel)",
+    "predicted_score": "Broncos 31-14 (Pete Prisco, CBS, Nov 18); NFL.com: 23-9 (Bergman), 24-15 (Cersosimo), 34-17 (Filice), 24-16 (Kownack), 27-13 (Parr); ESPN: 27-13 (Maldonado), 27-13 (Moody), 24-20 (Walder); Broncos 25-15 (Dimers model, Nov 19)",
+    "moneyline": "Broncos -550 / Raiders +410 (FanDuel, per SI, Nov 17); Broncos -488 / Raiders +456 (Dimers, Nov 19, book not named); spread DEN -10 / -10.5 (ESPN, CBS), total 40.5",
+    "win_probability": "ESPN FPI: DEN 86.3%, average margin 10.9 points (ESPN Week 11 preview, Nov 20 2026); Dimers model DEN 80.8%; Kalshi DEN 83% (per Covers, Nov 18)",
+    "injuries": "Final reports Fri Nov 20 2026 (raiders.com). Raiders: Out DT Tonka Hemingway (stinger); Questionable TE Brock Bowers (ankle/quadricep, limited Friday), DT Folorunso Fatukasi (toe), K Matt Gay (right hip). Broncos: Out TE Caleb Lohner (foot); Questionable S Brandon Jones (hamstring); WR Jaylen Waddle, CBs Riley Moss and Kris Abrams-Draine, S Talanoa Hufanga practiced fully, no game status.",
+    "sources": [
+     {
+      "site": "CBS Sports (Prisco)",
+      "url": "https://www.cbssports.com/nfl/priscos-picks/"
+     },
+     {
+      "site": "NFL.com",
+      "url": "https://www.nfl.com/news/nfl-picks-week-11-2026-nfl-season"
+     },
+     {
+      "site": "ESPN",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026"
+     },
+     {
+      "site": "Covers",
+      "url": "https://www.covers.com/nfl/raiders-vs-broncos-prediction-picks-odds-early-leans-week-11-2026"
+     },
+     {
+      "site": "Sports Illustrated",
+      "url": "https://www.si.com/betting/raiders-vs-broncos-prediction-odds-spread-injuries-trends-for-nfl-week-11-2026"
+     },
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/nfl/predictions/2026_11_den_lv"
+     },
+     {
+      "site": "Las Vegas Raiders (official injury report, both teams)",
+      "url": "https://www.raiders.com/news/raiders-broncos-week-11-injury-report"
+     }
+    ],
+    "updated": "2026-11-21T05:49-08:00"
    }
   },
   {
@@ -4040,13 +4193,13 @@
    },
    "line_source": "DraftKings",
    "open_spread": 5.5,
-   "total": 38.5,
+   "total": 37.5,
    "total_open": 42.5,
-   "fav_ml": -196.0,
+   "fav_ml": -197.0,
    "favorite": "away",
    "spread": -3.5,
    "movement": 9.0,
-   "total_move": -4.0,
+   "total_move": -5.0,
    "fav_home": false,
    "home": {
     "code": "PHI",
@@ -4116,21 +4269,22 @@
      "rank": 32
     },
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
+    "key_out": [
      "Dontayvion Wicks",
-     "Nolan Smith",
      "Zack Baun"
     ],
-    "key_long_term": [],
+    "key_questionable": [],
+    "key_long_term": [
+     "Jalen Hurts"
+    ],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Smael Mondon Jr.",
+      "name": "Zack Baun",
       "pos": "LB",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
       "name": "Will Shipley",
@@ -4138,24 +4292,24 @@
       "status": "Injured Reserve"
      },
      {
+      "name": "Smael Mondon Jr.",
+      "pos": "LB",
+      "status": "Doubtful"
+     },
+     {
       "name": "Dontayvion Wicks",
       "pos": "WR",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
-      "name": "Nolan Smith Jr.",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Zack Baun",
-      "pos": "LB",
-      "status": "Questionable"
+      "name": "Jalen Hurts",
+      "pos": "QB",
+      "status": "Injured Reserve"
      }
     ],
     "power": {
-     "consensus": 28,
-     "fpi": 24,
+     "consensus": 30,
+     "fpi": 25,
      "nfl_com": 32
     },
     "fpi_win": 0.362
@@ -4230,15 +4384,29 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
-     "Nick Herbig"
+     "Nick Herbig",
+     "Patrick Queen"
     ],
-    "key_long_term": [
-     "Mason McCormick"
-    ],
+    "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "DeShon Elliott",
+      "pos": "S",
+      "status": "Questionable"
+     },
+     {
+      "name": "Nick Herbig",
+      "pos": "LB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Patrick Queen",
+      "pos": "LB",
+      "status": "Questionable"
+     },
      {
       "name": "Roman Wilson",
       "pos": "WR",
@@ -4247,21 +4415,6 @@
      {
       "name": "Michael Pittman Jr.",
       "pos": "WR",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Nick Herbig",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Gennings Dunker",
-      "pos": "G",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Mason McCormick",
-      "pos": "G",
       "status": "Injured Reserve"
      }
     ],
@@ -4299,13 +4452,13 @@
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
       "pass": true,
-      "detail": "Clear (on injured reserve, not counted: Mason McCormick)"
+      "detail": "Clear"
      },
      {
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "PHI: consensus #28, ESPN FPI #24, NFL.com #32"
+      "detail": "PHI: consensus #30, ESPN FPI #25, NFL.com #32"
      }
     ],
     "context": [
@@ -4373,11 +4526,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Nick Herbig"
-     },
-     {
-      "level": "yellow",
-      "text": "Underdog questionable: Dontayvion Wicks, Nolan Smith, Zack Baun"
+      "text": "Favorite questionable: Nick Herbig, Patrick Queen"
      }
     ],
     "under": {
@@ -4386,7 +4535,7 @@
       16,
       29
      ],
-     "total_move": -4.0,
+     "total_move": -5.0,
      "note": ""
     },
     "call": "Watch list",
@@ -4426,9 +4575,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV22PITPHI",
-    "fav_prob": 0.665,
-    "bid": 0.66,
-    "ask": 0.67
+    "fav_prob": 0.655,
+    "bid": 0.65,
+    "ask": 0.66
    },
    "votes": {
     "fav": 8,
@@ -4467,6 +4616,46 @@
      }
     ],
     "notes": ""
+   },
+   "readout": {
+    "matchup": "PIT @ PHI",
+    "summary": "The Steelers are the clear pick. Philadelphia is 2-7, Jalen Hurts is out (blood clots) and Joe Milton starts, and the offense is tied for 30th in scoring (ESPN). Pittsburgh leads the NFL in EPA per rush against a weak Eagles run defense (SI). The only dissent is ESPN's Maldonado, who has the Eagles winning 20-17. Every projection is low-scoring.",
+    "pick": "Steelers (CBS Prisco, NFL.com 5-0, ESPN Moody and Walder, Dimers model); dissent: Eagles 20-17 (ESPN, Maldonado); ATS: Steelers -4.5 (SI/FanDuel)",
+    "predicted_score": "Steelers 26-13 (Pete Prisco, CBS, Nov 18); NFL.com: 14-10 (Bergman), 22-18 (Cersosimo), 22-14 (Filice), 21-12 (Kownack), 21-16 (Parr); ESPN: Eagles 20-17 (Maldonado), Steelers 23-16 (Moody), Steelers 25-18 (Walder); Steelers 21-16 (Dimers model, Nov 19; its graphic shows 22-16)",
+    "moneyline": "Steelers -210 / Eagles +176 (FanDuel, per SI); Steelers -194 / Eagles +194 (Dimers, Nov 19, book not named); spread PIT -3.5 to -4.5 (Dimers -3.5, CBS -4, ESPN/SI -4.5), total 37.5-38.5",
+    "win_probability": "ESPN FPI: PIT 63.9%, average margin 3.6 points (ESPN Week 11 preview, Nov 20 2026); Dimers model PIT 67.4%",
+    "injuries": "Final reports Fri Nov 20 2026 (steelers.com). Steelers: Questionable LB Patrick Queen (hand), WR Michael Pittman Jr. (foot), WR Roman Wilson (hand), S DeShon Elliott (knee), G Gennings Dunker (knee), all full participants Friday; LB Nick Herbig (hip/ribs) did not practice Friday. G Mason McCormick (ankle) is on IR (ESPN). Eagles: Out LB Zack Baun (back), WR Dontayvion Wicks (ankle/foot); Doubtful LB Smael Mondon (ankle); Questionable RB Will Shipley (foot/illness); WR DeVonta Smith (hamstring) has no designation and is expected back. QB Jalen Hurts is out indefinitely (blood clots in his lungs) and Joe Milton starts (PhillyVoice).",
+    "sources": [
+     {
+      "site": "CBS Sports (Prisco)",
+      "url": "https://www.cbssports.com/nfl/priscos-picks/"
+     },
+     {
+      "site": "NFL.com",
+      "url": "https://www.nfl.com/news/nfl-picks-week-11-2026-nfl-season"
+     },
+     {
+      "site": "ESPN",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026"
+     },
+     {
+      "site": "Sports Illustrated",
+      "url": "https://www.si.com/betting/steelers-vs-eagles-prediction-odds-spread-injuries-trends-for-nfl-week-11-2026"
+     },
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/nfl/predictions/2026_11_phi_pit"
+     },
+     {
+      "site": "Pittsburgh Steelers (official injury report, both teams)",
+      "url": "https://www.steelers.com/news/week-11-injury-report-eagles"
+     },
+     {
+      "site": "PhillyVoice (Eagles injuries, QB)",
+      "url": "https://www.phillyvoice.com/eagles-steelers-week-11-injury-report-analysis/"
+     }
+    ],
+    "updated": "2026-11-21T05:49-08:00"
    }
   },
   {
@@ -4491,8 +4680,8 @@
    "total_open": 46.5,
    "fav_ml": -172.0,
    "favorite": "home",
-   "spread": -3.5,
-   "movement": 0.0,
+   "spread": -3.0,
+   "movement": -0.5,
    "total_move": 0.0,
    "fav_home": true,
    "home": {
@@ -4573,19 +4762,19 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "C.J. West",
+      "pos": "DT",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Nate Hobbs",
+      "pos": "CB",
+      "status": "Injured Reserve"
+     },
+     {
       "name": "Dre Greenlaw",
       "pos": "LB",
       "status": "Questionable"
-     },
-     {
-      "name": "Mac Jones",
-      "pos": "QB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Isaac Guerendo",
-      "pos": "RB",
-      "status": "Out"
      },
      {
       "name": "Jordan James",
@@ -4593,8 +4782,8 @@
       "status": "Questionable"
      },
      {
-      "name": "Mike Evans",
-      "pos": "WR",
+      "name": "Mac Jones",
+      "pos": "QB",
       "status": "Questionable"
      }
     ],
@@ -4673,12 +4862,12 @@
      "rank": 12
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Jordan Addison",
+     "Kyler Murray"
+    ],
     "key_questionable": [
-     "Andrew Van Ginkel",
-     "Blake Cashman",
-     "Isaiah Rodgers",
-     "T.J. Hockenson"
+     "Isaiah Rodgers"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -4686,19 +4875,14 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Blake Cashman",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
       "name": "Isaiah Rodgers",
       "pos": "CB",
       "status": "Questionable"
      },
      {
-      "name": "T.J. Hockenson",
-      "pos": "TE",
-      "status": "Questionable"
+      "name": "Kyler Murray",
+      "pos": "QB",
+      "status": "Out"
      },
      {
       "name": "Bo Richter",
@@ -4706,9 +4890,14 @@
       "status": "Injured Reserve"
      },
      {
-      "name": "Andrew Van Ginkel",
-      "pos": "LB",
+      "name": "Jay Ward",
+      "pos": "S",
       "status": "Questionable"
+     },
+     {
+      "name": "Jordan Addison",
+      "pos": "WR",
+      "status": "Out"
      }
     ],
     "power": {
@@ -4820,11 +5009,15 @@
      },
      {
       "level": "yellow",
+      "text": "Line crossed key number 3"
+     },
+     {
+      "level": "yellow",
       "text": "Favorite questionable: Dre Greenlaw"
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Andrew Van Ginkel, Blake Cashman, Isaiah Rodgers, T.J. Hockenson"
+      "text": "Underdog questionable: Isaiah Rodgers"
      }
     ],
     "under": {
@@ -4942,7 +5135,7 @@
    "open_spread": -1.5,
    "total": 53.5,
    "total_open": 52.5,
-   "fav_ml": -294.0,
+   "fav_ml": -298.0,
    "favorite": "away",
    "spread": -6.0,
    "movement": 4.5,
@@ -5018,18 +5211,28 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
-     "Quan Martin"
+     "Quan Martin",
+     "Rachaad White",
+     "Treylon Burks"
     ],
-    "key_long_term": [
-     "Daron Payne"
-    ],
+    "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Quan Martin",
-      "pos": "S",
+      "name": "Laremy Tunsil",
+      "pos": "OT",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Treylon Burks",
+      "pos": "WR",
+      "status": "Questionable"
+     },
+     {
+      "name": "Rachaad White",
+      "pos": "RB",
       "status": "Questionable"
      },
      {
@@ -5038,19 +5241,9 @@
       "status": "Injured Reserve"
      },
      {
-      "name": "Laremy Tunsil",
-      "pos": "OT",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Dyami Brown",
-      "pos": "WR",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Daron Payne",
-      "pos": "DT",
-      "status": "Injured Reserve"
+      "name": "Quan Martin",
+      "pos": "S",
+      "status": "Questionable"
      }
     ],
     "power": {
@@ -5278,7 +5471,7 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Quan Martin"
+      "text": "Underdog questionable: Quan Martin, Rachaad White, Treylon Burks"
      }
     ],
     "under": {
@@ -5482,13 +5675,13 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Keylan Rutledge",
-      "pos": "G",
+      "name": "Kayshon Boutte",
+      "pos": "WR",
       "status": "Questionable"
      },
      {
-      "name": "Kayshon Boutte",
-      "pos": "WR",
+      "name": "Keylan Rutledge",
+      "pos": "G",
       "status": "Questionable"
      },
      {
@@ -5592,14 +5785,14 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Seth McGowan",
-      "pos": "RB",
-      "status": "Questionable"
-     },
-     {
       "name": "Riley Leonard",
       "pos": "QB",
       "status": "Out"
+     },
+     {
+      "name": "Seth McGowan",
+      "pos": "RB",
+      "status": "Questionable"
      },
      {
       "name": "Sauce Gardner",
@@ -5618,8 +5811,8 @@
      }
     ],
     "power": {
-     "consensus": 25,
-     "fpi": 22,
+     "consensus": 23,
+     "fpi": 20,
      "nfl_com": 29
     }
    },
@@ -5656,7 +5849,7 @@
       "rule": "Power",
       "name": "Underdog not top 10 in any power ranking",
       "pass": true,
-      "detail": "IND: consensus #25, ESPN FPI #22, NFL.com #29"
+      "detail": "IND: consensus #23, ESPN FPI #20, NFL.com #29"
      }
     ],
     "context": [
@@ -5843,11 +6036,11 @@
   "week": 11,
   "games": 13,
   "upcoming": 12,
-  "tracked": 1,
-  "qualified": 1,
-  "watch": 7,
-  "green": 1,
+  "tracked": 0,
+  "qualified": 0,
+  "watch": 6,
+  "green": 0,
   "edge_clears": 0,
-  "built_label": "Fri Nov 20, 7:00 AM PT"
+  "built_label": "Sat Nov 21, 5:50 AM PT"
  }
 }
