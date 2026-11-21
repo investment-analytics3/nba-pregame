@@ -370,7 +370,8 @@ often: always `git pull --rebase origin main` before pushing.
 
 Every board's matchup badge shows the team logo (`logo(t)` in each template; text abbreviation if the image fails):
 ESPN CDN `a.espncdn.com/i/teamlogos/<nba|nfl>/500-dark/<espn abbr>.png`, college `ncaa/500-dark/<ESPN team id>.png`,
-NHL `assets.nhle.com/logos/nhl/svg/<NHL tricode>_dark.svg`. All verified from GitHub's servers Nov 21 (the workspace can't reach them).
+NHL `assets.nhle.com/logos/nhl/svg/<NHL tricode>_dark.svg`. Landing page cards show league logos (`leagues/500-dark/<nba|nfl|nhl>.png`;
+both college cards use the NCAA logo `i/espn/misc_logos/500/ncaa.png`; hidden if the image fails). All verified from GitHub's servers Nov 21 (the workspace can't reach them).
 
 ## Privacy
 

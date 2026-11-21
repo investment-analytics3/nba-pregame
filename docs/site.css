@@ -72,3 +72,7 @@ th:first-child,td:first-child{text-align:left}
 .stat{display:flex;gap:18px;flex-wrap:wrap}.stat div{display:flex;flex-direction:column}.stat b{font-family:'Barlow Condensed',Inter,sans-serif;font-size:30px;line-height:1}.stat span{font-size:11px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
 @media (max-width:420px){h1.title{font-size:36px}.donut{width:84px;height:84px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* League logos on the landing page (owner Nov 21) */
+.sport h2.league{display:flex;align-items:center;gap:8px}
+.sport h2.league .lg{width:30px;height:30px;object-fit:contain;flex:none}
