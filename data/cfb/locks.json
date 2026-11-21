@@ -6427,5 +6427,251 @@
     "away": 0
    }
   }
+ },
+ "401858529": {
+  "at": "2026-11-20T16:15:39-08:00",
+  "week": 12,
+  "game": {
+   "id": "401858529",
+   "kick_utc": "2026-11-21T01:00:00+00:00",
+   "kick_pt": "Fri 5:00 PM PT",
+   "day_et": "2026-11-20",
+   "state": "pre",
+   "detail": "11/20 - 8:00 PM EST",
+   "neutral": false,
+   "venue": "Spartan Stadium",
+   "favorite": "away",
+   "fav_home": false,
+   "spread": -17.5,
+   "open_spread": -12.5,
+   "line_source": "Draft Kings",
+   "total": 42.5,
+   "fav_ml": -1200.0,
+   "movement": 5.0,
+   "home": {
+    "code": 127,
+    "abbr": "MSU",
+    "name": "Michigan St",
+    "display": "Michigan State Spartans",
+    "season": {
+     "off_epa": -0.0669,
+     "off_sr": 0.4239,
+     "def_epa": 0.0561,
+     "def_sr": 0.4204,
+     "games": 10,
+     "ranks": {
+      "off_epa": 125,
+      "off_sr": 101,
+      "def_epa": 90,
+      "def_sr": 58
+     }
+    },
+    "last3": {
+     "off_epa": -0.1893,
+     "off_sr": 0.3571,
+     "def_epa": -0.0483,
+     "def_sr": 0.4011,
+     "games": 3,
+     "ranks": {
+      "off_epa": 129,
+      "off_sr": 122,
+      "def_epa": 42,
+      "def_sr": 42
+     }
+    },
+    "net": -0.123,
+    "net_rank": 123,
+    "record": "3-7",
+    "last2_results": [
+     "W",
+     "L"
+    ],
+    "last3_results": [
+     "L",
+     "W",
+     "L"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Alessio Milivojevic",
+     "dropbacks": 247,
+     "epa_db": 0.029,
+     "rank": 84
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 95,
+     "fpi": 63,
+     "own_net": 123
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.137
+   },
+   "away": {
+    "code": 2483,
+    "abbr": "ORE",
+    "name": "Oregon",
+    "display": "Oregon Ducks",
+    "season": {
+     "off_epa": 0.1038,
+     "off_sr": 0.4236,
+     "def_epa": -0.0741,
+     "def_sr": 0.3893,
+     "games": 10,
+     "ranks": {
+      "off_epa": 43,
+      "off_sr": 102,
+      "def_epa": 24,
+      "def_sr": 21
+     }
+    },
+    "last3": {
+     "off_epa": 0.2089,
+     "off_sr": 0.3854,
+     "def_epa": -0.0132,
+     "def_sr": 0.4069,
+     "games": 3,
+     "ranks": {
+      "off_epa": 12,
+      "off_sr": 111,
+      "def_epa": 58,
+      "def_sr": 46
+     }
+    },
+    "net": 0.1778,
+    "net_rank": 19,
+    "record": "7-3",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "W"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Dylan Raiola",
+     "dropbacks": 220,
+     "epa_db": 0.222,
+     "rank": 29
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 12,
+     "fpi": 9,
+     "own_net": 19,
+     "ap": 14,
+     "cfp": 13
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.863
+   },
+   "fav": 2483,
+   "dog": 127,
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 20 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 ORE last-3 top 25 in 1 of 4 \u00b7 \u2717 MSU last-3 bottom 25 (114+) in 2 of 4 \u00b7 \u2717 ORE season outside 1-69: Off success #102 \u00b7 \u2713 MSU season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "MSU: consensus #95, ESPN FPI #63"
+     }
+    ],
+    "fails": [
+     "Watch list: score 20 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 20,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 3,
+      "dog_weakness": 11,
+      "health": 4,
+      "home": 0,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "call": "Watch list",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for ORE yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV20OREMSU",
+    "fav_prob": 0.895,
+    "bid": 0.89,
+    "ask": 0.9
+   },
+   "locked_at": "2026-11-20T16:15:39-08:00",
+   "readout": {
+    "matchup": "ORE @ MSU",
+    "summary": "All four sources pick Oregon. They point to QB Dylan Raiola's run (934 yards, 9 TD, 0 INT over the last three wins) and a Michigan State offense without QB Alessio Milivojevic. SI and TheRX take Oregon on the spread, though TheRX warns MSU's defense makes it no sure cover.",
+    "pick": "Oregon to win (all four sources); Oregon -15.5 (SI), Oregon -17 lean (TheRX); SportsLine's spread pick is paywalled",
+    "predicted_score": "Oregon 31, MSU 14 (Detroit Free Press); Oregon 31, MSU 10 (TheRX)",
+    "injuries": "Big Ten availability report as of Wed Nov 18 (via Detroit Free Press, Nov 20). MSU OUT: QB Alessio Milivojevic (left arm), DT Ben Roberts, S Devin Vaught, LB Jordan Hall, RB Marvis Parrish, TE Jayden Savoury, RB Cam Edwards, FB Jay Coyne, OL Tristan Comer, TE Joe Caudill; DOUBTFUL CB Tyron Chappell; QUESTIONABLE QB Cam Fancher (right knee), WR Rodney Bullard Jr., CB Tre Bell, RB Jaziun Patterson, S Michael Richard, LG Conner Moore, TE Brennan Parachek (true freshman Kayd Coffman may start at QB). Oregon OUT: QB Dante Moore (head injury; Raiola starts), RB Jordon Dawvison, DB Aaron Flowers, LB Brayden Platt, LB Teitum Tuioti, DL Matthew Johnson, OL Trent Ferguson, OL Dave Iuli; DOUBTFUL LB Jerry Mixon; QUESTIONABLE DL Bear Alexander.",
+    "sources": [
+     {
+      "site": "Detroit Free Press (via Yahoo Sports)",
+      "url": "https://sports.yahoo.com/articles/michigan-state-oregon-scouting-report-100819312.html"
+     },
+     {
+      "site": "TheRX",
+      "url": "https://www.therx.com/college-football/oregon-michigan-state-prediction-week-12-november-20-2026/55760/"
+     },
+     {
+      "site": "Sports Illustrated",
+      "url": "https://www.si.com/betting/oregon-vs-michigan-state-prediction-odds-and-key-players-to-watch-for-college-football-week-12-2026"
+     },
+     {
+      "site": "CBS Sports",
+      "url": "https://www.cbssports.com/betting/news/oregon-michigan-state-prediction-odds-time-week-12-friday-college-football-picks/"
+     }
+    ],
+    "updated": "2026-11-20T05:46-08:00"
+   }
+  }
  }
 }
