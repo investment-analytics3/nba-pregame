@@ -8,7 +8,7 @@
    "tip_pt": "10:00 AM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "End of 1st",
+   "detail": "10:31 - 2nd",
    "neutral": false,
    "venue": "Lenovo Center",
    "favorite": "home",
@@ -775,9 +775,791 @@
    },
    "locked_at": "2026-11-21T09:00:41-08:00",
    "score": {
-    "home": 0,
-    "away": 2
+    "home": 2,
+    "away": 3
    }
+  }
+ },
+ "401892755": {
+  "at": "2026-11-21T11:30:48-08:00",
+  "day": "2026-11-21",
+  "game": {
+   "id": "401892755",
+   "tip_utc": "2026-11-21T20:30:00+00:00",
+   "tip_pt": "12:30 PM PT",
+   "day_et": "2026-11-21",
+   "state": "pre",
+   "detail": "11/21 - 3:30 PM EST",
+   "neutral": false,
+   "venue": "Scotiabank Saddledome",
+   "favorite": "home",
+   "line": {
+    "details": "CGY -162",
+    "provider": "Draft Kings",
+    "ml_home": -162,
+    "ml_away": null,
+    "puck_line": -1.5,
+    "total": 5.5,
+    "fav_price": 0.6183
+   },
+   "spread": {
+    "details": "CGY -162",
+    "provider": "Draft Kings",
+    "puck_line": -1.5
+   },
+   "home": {
+    "id": "3",
+    "abbr": "CGY",
+    "espn_abbr": "CGY",
+    "name": "Calgary",
+    "display": "Calgary Flames",
+    "record": "10-12-1",
+    "l3_record": "1-2-0",
+    "games": 23,
+    "pts_pct": 0.457,
+    "season": {
+     "xgf": 48.08,
+     "xga60": 2.655,
+     "xgf60": 2.459,
+     "cf": 49.49,
+     "gsax": -0.336,
+     "st": 107.4,
+     "pp": 24.6,
+     "pk": 82.9,
+     "ranks": {
+      "xgf": 21,
+      "xga60": 24,
+      "gsax": 25,
+      "st": 8,
+      "xgf60": 20
+     }
+    },
+    "last5": {
+     "xgf": 47.75,
+     "xga60": 2.717,
+     "xgf60": 2.483,
+     "cf": 51.42,
+     "gsax": -0.184,
+     "st": 102.1,
+     "pp": 15.4,
+     "pk": 86.7,
+     "ranks": {
+      "xgf": 21,
+      "xga60": 23,
+      "gsax": 23,
+      "st": 11,
+      "xgf60": 15
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 2026020355,
+      "date": "2026-11-19",
+      "site": "home",
+      "opp": "MIN",
+      "pts": 1,
+      "opp_pts": 4,
+      "extra": false,
+      "opp_power_rank": 2
+     },
+     {
+      "game_id": 2026020343,
+      "date": "2026-11-17",
+      "site": "away",
+      "opp": "SJS",
+      "pts": 5,
+      "opp_pts": 2,
+      "extra": false,
+      "opp_power_rank": 29
+     },
+     {
+      "game_id": 2026020328,
+      "date": "2026-11-15",
+      "site": "away",
+      "opp": "ANA",
+      "pts": 1,
+      "opp_pts": 6,
+      "extra": false,
+      "opp_power_rank": 20
+     }
+    ],
+    "trend_games": [
+     {
+      "date": "2026-11-11",
+      "opp": "NYR",
+      "metrics": {
+       "xgf": 52.31,
+       "xga60": 1.855,
+       "xgf60": 2.034,
+       "gsax": -0.002,
+       "st": 116.7
+      }
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "LAK",
+      "metrics": {
+       "xgf": 45.14,
+       "xga60": 3.139,
+       "xgf60": 2.583,
+       "gsax": 0.76,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-15",
+      "opp": "ANA",
+      "metrics": {
+       "xgf": 37.97,
+       "xga60": 4.164,
+       "xgf60": 2.548,
+       "gsax": -1.177,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-17",
+      "opp": "SJS",
+      "metrics": {
+       "xgf": 53.22,
+       "xga60": 2.584,
+       "xgf60": 2.94,
+       "gsax": 0.829,
+       "st": 125.0
+      }
+     },
+     {
+      "date": "2026-11-19",
+      "opp": "MIN",
+      "metrics": {
+       "xgf": 57.59,
+       "xga60": 1.752,
+       "xgf60": 2.378,
+       "gsax": -1.329,
+       "st": 66.7
+      }
+     }
+    ],
+    "is_fav": true,
+    "b2b": false,
+    "power": {
+     "rank": 25,
+     "own": 25,
+     "avg": 25.0,
+     "espn": 25,
+     "nhl_com": null
+    },
+    "goalie": {
+     "name": "Dustin Wolf",
+     "last": "Wolf",
+     "espn_id": "4587952",
+     "confirmed": false
+    },
+    "goalie_status": "regular",
+    "regular_goalie_name": "D. Wolf",
+    "goalies": [
+     {
+      "id": "8481692",
+      "name": "D. Wolf",
+      "starts": 12
+     },
+     {
+      "id": "8482445",
+      "name": "D. Cooley",
+      "starts": 10
+     },
+     {
+      "id": "8482949",
+      "name": "A. Sergeev",
+      "starts": 1
+     }
+    ],
+    "key_skaters": [
+     "K. Bahl",
+     "S. Nemec",
+     "Z. Whitecloud",
+     "J. Farabee",
+     "J. Middleton",
+     "M. Backlund"
+    ],
+    "injuries": [
+     {
+      "name": "Jonathan Huberdeau",
+      "last": "Huberdeau",
+      "status": "Injured Reserve",
+      "date": "2026-11-19T04:00Z",
+      "comment": "Huberdeau (hip) had three assists in AHL Calgary's 4-3 win over Coachella Valley on Wednesday."
+     },
+     {
+      "name": "Kevin Bahl",
+      "last": "Bahl",
+      "status": "Injured Reserve",
+      "date": "2026-11-08T16:17Z",
+      "comment": "Bahl will undergo surgery for a ruptured Achilles tendon and won't play again in the 2026-27 season, the Flames announced Sunday."
+     },
+     {
+      "name": "Connor Zary",
+      "last": "Zary",
+      "status": "Out",
+      "date": "2026-10-30T16:44Z",
+      "comment": "out"
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [],
+    "key_long_term": [
+     "Kevin Bahl"
+    ],
+    "spread_text": "-162"
+   },
+   "away": {
+    "id": "4",
+    "abbr": "CHI",
+    "espn_abbr": "CHI",
+    "name": "Chicago",
+    "display": "Chicago Blackhawks",
+    "record": "6-14-2",
+    "l3_record": "1-1-1",
+    "games": 22,
+    "pts_pct": 0.318,
+    "season": {
+     "xgf": 41.12,
+     "xga60": 2.906,
+     "xgf60": 2.03,
+     "cf": 45.52,
+     "gsax": -0.496,
+     "st": 97.5,
+     "pp": 17.2,
+     "pk": 80.3,
+     "ranks": {
+      "xgf": 31,
+      "xga60": 29,
+      "gsax": 29,
+      "st": 19,
+      "xgf60": 30
+     }
+    },
+    "last5": {
+     "xgf": 43.95,
+     "xga60": 2.648,
+     "xgf60": 2.076,
+     "cf": 44.44,
+     "gsax": -1.13,
+     "st": 119.8,
+     "pp": 42.9,
+     "pk": 76.9,
+     "ranks": {
+      "xgf": 28,
+      "xga60": 20,
+      "gsax": 28,
+      "st": 5,
+      "xgf60": 27
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 2026020353,
+      "date": "2026-11-19",
+      "site": "home",
+      "opp": "CBJ",
+      "pts": 2,
+      "opp_pts": 4,
+      "extra": false,
+      "opp_power_rank": 28
+     },
+     {
+      "game_id": 2026020338,
+      "date": "2026-11-17",
+      "site": "home",
+      "opp": "TOR",
+      "pts": 6,
+      "opp_pts": 3,
+      "extra": false,
+      "opp_power_rank": 27
+     },
+     {
+      "game_id": 2026020312,
+      "date": "2026-11-14",
+      "site": "home",
+      "opp": "WPG",
+      "pts": 4,
+      "opp_pts": 5,
+      "extra": true,
+      "opp_power_rank": 22
+     }
+    ],
+    "trend_games": [
+     {
+      "date": "2026-11-07",
+      "opp": "CAR",
+      "metrics": {
+       "xgf": 30.7,
+       "xga60": 4.389,
+       "xgf60": 1.944,
+       "gsax": -4.5,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-12",
+      "opp": "BUF",
+      "metrics": {
+       "xgf": 46.5,
+       "xga60": 1.86,
+       "xgf60": 1.617,
+       "gsax": 0.082,
+       "st": 95.0
+      }
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "WPG",
+      "metrics": {
+       "xgf": 50.96,
+       "xga60": 1.786,
+       "xgf60": 1.856,
+       "gsax": -0.631,
+       "st": 166.7
+      }
+     },
+     {
+      "date": "2026-11-17",
+      "opp": "TOR",
+      "metrics": {
+       "xgf": 48.39,
+       "xga60": 2.802,
+       "xgf60": 2.627,
+       "gsax": -0.061,
+       "st": 166.7
+      }
+     },
+     {
+      "date": "2026-11-19",
+      "opp": "CBJ",
+      "metrics": {
+       "xgf": 53.49,
+       "xga60": 2.043,
+       "xgf60": 2.349,
+       "gsax": -0.538,
+       "st": 75.0
+      }
+     }
+    ],
+    "is_fav": false,
+    "b2b": false,
+    "power": {
+     "rank": 31,
+     "own": 31,
+     "avg": 31.0,
+     "espn": 31,
+     "nhl_com": null
+    },
+    "goalie": {
+     "name": "Spencer Knight",
+     "last": "Knight",
+     "espn_id": "4565234",
+     "confirmed": false
+    },
+    "goalie_status": "regular",
+    "regular_goalie_name": "S. Knight",
+    "goalies": [
+     {
+      "id": "8481519",
+      "name": "S. Knight",
+      "starts": 18
+     },
+     {
+      "id": "8482821",
+      "name": "A. Soderblom",
+      "starts": 4
+     }
+    ],
+    "key_skaters": [
+     "A. Vlasic",
+     "A. Levshunov",
+     "C. Bedard",
+     "W. Kaiser",
+     "I. Cole",
+     "R. Kantserov"
+    ],
+    "injuries": [
+     {
+      "name": "Bowen Byram",
+      "last": "Byram",
+      "status": "Injured Reserve",
+      "date": "2026-11-21T19:01Z",
+      "comment": "Byram (upper body) won't play against Calgary on Saturday, Scott Powers of The Athletic reports."
+     },
+     {
+      "name": "Connor Bedard",
+      "last": "Bedard",
+      "status": "Out",
+      "date": "2026-11-19T16:45Z",
+      "comment": "out"
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [
+     "Connor Bedard"
+    ],
+    "key_questionable": [],
+    "key_long_term": [],
+    "spread_text": ""
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "CGY",
+    "dog": "CHI",
+    "in_range": false,
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "rules": [
+     {
+      "rule": "Range",
+      "name": "Top-7 team vs bottom-7 team (consensus power rank)",
+      "pass": false,
+      "detail": "CGY #25 vs CHI #31"
+     },
+     {
+      "rule": "A",
+      "name": "Analysis Score 22+",
+      "pass": false,
+      "detail": "Score 18 of 40"
+     },
+     {
+      "rule": "Goalie",
+      "name": "CGY's regular goalie starts",
+      "pass": true,
+      "detail": "Dustin Wolf (probable)"
+     },
+     {
+      "rule": "Matchup",
+      "name": "CGY top 7 vs CHI bottom 7 in a matchup (last 5)",
+      "pass": false,
+      "detail": "None: offense vs offense, defense vs defense or defense vs offense (xGF/60, xGA/60): capped at the Watch list"
+     }
+    ],
+    "fails": [
+     "Not a top-7 vs bottom-7 matchup (CGY #25, CHI #31)"
+    ],
+    "warnings": [],
+    "flags": [],
+    "score": 18,
+    "max": 40,
+    "band": "yellow",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 1,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 12,
+      "max": 16
+     },
+     {
+      "key": "goalies",
+      "label": "Goalies + health",
+      "points": 3,
+      "max": 4
+     },
+     {
+      "key": "home",
+      "label": "Home ice",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 0,
+      "max": 2
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xga60",
+      "scored": false,
+      "cells": [
+       {
+        "team": "CGY",
+        "role": "fav",
+        "window": "season",
+        "metric": "xgf60",
+        "rank": 20,
+        "color": "yellow"
+       },
+       {
+        "team": "CGY",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xgf60",
+        "rank": 15,
+        "color": "yellow"
+       },
+       {
+        "team": "CHI",
+        "role": "dog",
+        "window": "season",
+        "metric": "xga60",
+        "rank": 29,
+        "color": "green"
+       },
+       {
+        "team": "CHI",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xga60",
+        "rank": 20,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "xga60",
+      "dog_metric": "xgf60",
+      "scored": false,
+      "cells": [
+       {
+        "team": "CGY",
+        "role": "fav",
+        "window": "season",
+        "metric": "xga60",
+        "rank": 24,
+        "color": "red"
+       },
+       {
+        "team": "CGY",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xga60",
+        "rank": 23,
+        "color": "red"
+       },
+       {
+        "team": "CHI",
+        "role": "dog",
+        "window": "season",
+        "metric": "xgf60",
+        "rank": 30,
+        "color": "green"
+       },
+       {
+        "team": "CHI",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xgf60",
+        "rank": 27,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "share",
+      "label": "Shot share",
+      "fav_metric": "xgf",
+      "dog_metric": "xgf",
+      "scored": true,
+      "cells": [
+       {
+        "team": "CGY",
+        "role": "fav",
+        "window": "season",
+        "metric": "xgf",
+        "rank": 21,
+        "color": "yellow"
+       },
+       {
+        "team": "CGY",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xgf",
+        "rank": 21,
+        "color": "yellow"
+       },
+       {
+        "team": "CHI",
+        "role": "dog",
+        "window": "season",
+        "metric": "xgf",
+        "rank": 31,
+        "color": "green"
+       },
+       {
+        "team": "CHI",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xgf",
+        "rank": 28,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "goalie",
+      "label": "Goaltending",
+      "fav_metric": "gsax",
+      "dog_metric": "gsax",
+      "scored": true,
+      "cells": [
+       {
+        "team": "CGY",
+        "role": "fav",
+        "window": "season",
+        "metric": "gsax",
+        "rank": 25,
+        "color": "red"
+       },
+       {
+        "team": "CGY",
+        "role": "fav",
+        "window": "last5",
+        "metric": "gsax",
+        "rank": 23,
+        "color": "red"
+       },
+       {
+        "team": "CHI",
+        "role": "dog",
+        "window": "season",
+        "metric": "gsax",
+        "rank": 29,
+        "color": "green"
+       },
+       {
+        "team": "CHI",
+        "role": "dog",
+        "window": "last5",
+        "metric": "gsax",
+        "rank": 28,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "st",
+      "label": "Special teams",
+      "fav_metric": "st",
+      "dog_metric": "st",
+      "scored": true,
+      "cells": [
+       {
+        "team": "CGY",
+        "role": "fav",
+        "window": "season",
+        "metric": "st",
+        "rank": 8,
+        "color": "green"
+       },
+       {
+        "team": "CGY",
+        "role": "fav",
+        "window": "last5",
+        "metric": "st",
+        "rank": 11,
+        "color": "yellow"
+       },
+       {
+        "team": "CHI",
+        "role": "dog",
+        "window": "season",
+        "metric": "st",
+        "rank": 19,
+        "color": "yellow"
+       },
+       {
+        "team": "CHI",
+        "role": "dog",
+        "window": "last5",
+        "metric": "st",
+        "rank": 5,
+        "color": "deep-red"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xgf60",
+      "fav_rank": 15,
+      "dog_rank": 27,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "xga60",
+      "dog_metric": "xga60",
+      "fav_rank": 23,
+      "dog_rank": 20,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "xga60",
+      "dog_metric": "xgf60",
+      "fav_rank": 23,
+      "dog_rank": 27,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xga60",
+      "fav_rank": 15,
+      "dog_rank": 20,
+      "counts": false,
+      "met": false
+     }
+    ],
+    "labels": {
+     "xgf60": "xGF/60 5v5",
+     "xgf": "xGF% 5v5",
+     "xga60": "xGA/60 5v5",
+     "gsax": "GSAx/gm",
+     "st": "PP%+PK%",
+     "pts": "Points %"
+    }
+   },
+   "summary": "Not a top-7 vs bottom-7 matchup (CGY #25, CHI #31). Dustin Wolf in goal for CGY (probable). CGY 1-2-0 in its last 3, CHI 1-1-1.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNHLGAME-26NOV21CHICGY",
+    "fav_prob": 0.595,
+    "bid": 0.59,
+    "ask": 0.6
+   },
+   "locked_at": "2026-11-21T11:30:48-08:00"
   }
  }
 }
