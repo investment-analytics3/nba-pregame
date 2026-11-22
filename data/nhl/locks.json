@@ -3154,7 +3154,7 @@
    "tip_pt": "4:00 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "0:13 - 1st",
+   "detail": "End of 1st",
    "neutral": false,
    "venue": "TD Garden",
    "favorite": "home",
@@ -3919,7 +3919,7 @@
    "tip_pt": "4:00 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "5:22 - 1st",
+   "detail": "End of 1st",
    "neutral": false,
    "venue": "Scotiabank Arena",
    "favorite": "home",
@@ -4726,8 +4726,8 @@
    },
    "locked_at": "2026-11-21T15:00:57-08:00",
    "score": {
-    "home": 0,
-    "away": 0
+    "home": 2,
+    "away": 1
    }
   }
  },
@@ -4740,7 +4740,7 @@
    "tip_pt": "4:00 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "2:04 - 1st",
+   "detail": "End of 1st",
    "neutral": false,
    "venue": "Bell Centre",
    "favorite": "home",
@@ -5540,7 +5540,7 @@
    "tip_pt": "4:00 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "3:40 - 1st",
+   "detail": "End of 1st",
    "neutral": false,
    "venue": "Canadian Tire Centre",
    "favorite": "home",
@@ -6340,7 +6340,7 @@
    "tip_pt": "4:00 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "End of 1st",
+   "detail": "19:31 - 2nd",
    "neutral": false,
    "venue": "Little Caesars Arena",
    "favorite": "away",
@@ -7131,7 +7131,7 @@
    "tip_pt": "4:00 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "2:45 - 1st",
+   "detail": "End of 1st",
    "neutral": false,
    "venue": "Enterprise Center",
    "favorite": "away",
@@ -7918,7 +7918,7 @@
    "locked_at": "2026-11-21T15:00:57-08:00",
    "score": {
     "home": 4,
-    "away": 2
+    "away": 3
    }
   }
  },
@@ -7931,7 +7931,7 @@
    "tip_pt": "4:00 PM PT",
    "day_et": "2026-11-21",
    "state": "in",
-   "detail": "4:42 - 1st",
+   "detail": "End of 1st",
    "neutral": false,
    "venue": "Canada Life Centre",
    "favorite": "away",
@@ -8695,9 +8695,816 @@
    },
    "locked_at": "2026-11-21T15:00:57-08:00",
    "score": {
-    "home": 1,
+    "home": 2,
     "away": 2
    }
+  }
+ },
+ "401892765": {
+  "at": "2026-11-21T17:00:49-08:00",
+  "day": "2026-11-21",
+  "game": {
+   "id": "401892765",
+   "tip_utc": "2026-11-22T02:00:00+00:00",
+   "tip_pt": "6:00 PM PT",
+   "day_et": "2026-11-21",
+   "state": "pre",
+   "detail": "11/21 - 9:00 PM EST",
+   "neutral": false,
+   "venue": "Delta Center",
+   "favorite": "home",
+   "line": {
+    "details": "UTAH -166",
+    "provider": "Draft Kings",
+    "ml_home": -166,
+    "ml_away": null,
+    "puck_line": -1.5,
+    "total": 6.5,
+    "fav_price": 0.6241
+   },
+   "spread": {
+    "details": "UTAH -166",
+    "provider": "Draft Kings",
+    "puck_line": -1.5
+   },
+   "home": {
+    "id": "129764",
+    "abbr": "UTA",
+    "espn_abbr": "UTA",
+    "name": "Utah",
+    "display": "Utah Mammoth",
+    "record": "11-9-3",
+    "l3_record": "1-1-1",
+    "games": 23,
+    "pts_pct": 0.543,
+    "season": {
+     "xgf": 57.23,
+     "xga60": 2.164,
+     "xgf60": 2.895,
+     "cf": 52.72,
+     "gsax": -0.568,
+     "st": 103.6,
+     "pp": 32.9,
+     "pk": 70.7,
+     "ranks": {
+      "xgf": 2,
+      "xga60": 3,
+      "gsax": 31,
+      "st": 13,
+      "xgf60": 2
+     }
+    },
+    "last5": {
+     "xgf": 56.02,
+     "xga60": 2.145,
+     "xgf60": 2.733,
+     "cf": 54.37,
+     "gsax": 0.038,
+     "st": 94.9,
+     "pp": 22.2,
+     "pk": 72.7,
+     "ranks": {
+      "xgf": 7,
+      "xga60": 7,
+      "gsax": 20,
+      "st": 17,
+      "xgf60": 10
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 2026020346,
+      "date": "2026-11-18",
+      "site": "home",
+      "opp": "COL",
+      "pts": 4,
+      "opp_pts": 1,
+      "extra": false,
+      "opp_power_rank": 10
+     },
+     {
+      "game_id": 2026020332,
+      "date": "2026-11-16",
+      "site": "home",
+      "opp": "VAN",
+      "pts": 2,
+      "opp_pts": 3,
+      "extra": false,
+      "opp_power_rank": 32
+     },
+     {
+      "game_id": 2026020323,
+      "date": "2026-11-14",
+      "site": "home",
+      "opp": "SJS",
+      "pts": 5,
+      "opp_pts": 6,
+      "extra": true,
+      "opp_power_rank": 29
+     }
+    ],
+    "trend_games": [
+     {
+      "date": "2026-11-11",
+      "opp": "VGK",
+      "metrics": {
+       "xgf": 52.37,
+       "xga60": 2.298,
+       "xgf60": 2.526,
+       "gsax": -1.758,
+       "st": 33.3
+      }
+     },
+     {
+      "date": "2026-11-12",
+      "opp": "STL",
+      "metrics": {
+       "xgf": 62.08,
+       "xga60": 1.962,
+       "xgf60": 3.212,
+       "gsax": 2.817,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "SJS",
+      "metrics": {
+       "xgf": 53.95,
+       "xga60": 1.893,
+       "xgf60": 2.217,
+       "gsax": -1.856,
+       "st": 93.3
+      }
+     },
+     {
+      "date": "2026-11-16",
+      "opp": "VAN",
+      "metrics": {
+       "xgf": 63.1,
+       "xga60": 2.497,
+       "xgf60": 4.272,
+       "gsax": -0.049,
+       "st": 80.0
+      }
+     },
+     {
+      "date": "2026-11-18",
+      "opp": "COL",
+      "metrics": {
+       "xgf": 41.27,
+       "xga60": 2.031,
+       "xgf60": 1.427,
+       "gsax": 1.034,
+       "st": 133.3
+      }
+     }
+    ],
+    "is_fav": true,
+    "b2b": false,
+    "power": {
+     "rank": 12,
+     "own": 9,
+     "avg": 13.0,
+     "espn": 15,
+     "nhl_com": 15
+    },
+    "goalie": {
+     "name": "Sebastian Cossa",
+     "last": "Cossa",
+     "espn_id": "4874732",
+     "confirmed": true
+    },
+    "goalie_status": "backup",
+    "regular_goalie_name": "K. Vejmelka",
+    "goalies": [
+     {
+      "id": "8478872",
+      "name": "K. Vejmelka",
+      "starts": 15
+     },
+     {
+      "id": "8482657",
+      "name": "S. Cossa",
+      "starts": 8
+     }
+    ],
+    "key_skaters": [
+     "M. Sergachev",
+     "M. Weegar",
+     "C. Keller",
+     "N. Schmidt",
+     "L. Cooley",
+     "V. Trocheck"
+    ],
+    "injuries": [
+     {
+      "name": "John Marino",
+      "last": "Marino",
+      "status": "Injured Reserve",
+      "date": "2026-11-20T20:04Z",
+      "comment": "Marino (upper body) is day-to-day and close to returning, per Cole Bagley of KSL Sports on Friday."
+     },
+     {
+      "name": "Dylan Guenther",
+      "last": "Guenther",
+      "status": "Injured Reserve",
+      "date": "2026-11-20T19:59Z",
+      "comment": "Guenther (upper body) was upgraded to day-to-day ahead of Saturday's matchup with Anaheim, Cole Bagley of KSL Sports reports."
+     },
+     {
+      "name": "Nick Schmaltz",
+      "last": "Schmaltz",
+      "status": "Injured Reserve",
+      "date": "2026-11-17T22:14Z",
+      "comment": "ir"
+     },
+     {
+      "name": "Nate Schmidt",
+      "last": "Schmidt",
+      "status": "Injured Reserve",
+      "date": "2026-11-12T19:30Z",
+      "comment": "The Mammoth announced Thursday that Schmidt (upper body) is considered week-to-week, Cole Bagley of KSL Sports reports."
+     },
+     {
+      "name": "Maveric Lamoureux",
+      "last": "Lamoureux",
+      "status": "Injured Reserve",
+      "date": "2026-09-28T21:02Z",
+      "comment": "ir"
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [],
+    "key_long_term": [
+     "Nate Schmidt"
+    ],
+    "spread_text": "-166"
+   },
+   "away": {
+    "id": "25",
+    "abbr": "ANA",
+    "espn_abbr": "ANA",
+    "name": "Anaheim",
+    "display": "Anaheim Ducks",
+    "record": "11-11-1",
+    "l3_record": "1-2-0",
+    "games": 23,
+    "pts_pct": 0.5,
+    "season": {
+     "xgf": 45.83,
+     "xga60": 2.962,
+     "xgf60": 2.506,
+     "cf": 48.82,
+     "gsax": -0.551,
+     "st": 113.2,
+     "pp": 36.2,
+     "pk": 76.9,
+     "ranks": {
+      "xgf": 27,
+      "xga60": 30,
+      "gsax": 30,
+      "st": 2,
+      "xgf60": 18
+     }
+    },
+    "last5": {
+     "xgf": 48.84,
+     "xga60": 3.198,
+     "xgf60": 3.052,
+     "cf": 48.01,
+     "gsax": -1.492,
+     "st": 93.7,
+     "pp": 9.1,
+     "pk": 84.6,
+     "ranks": {
+      "xgf": 17,
+      "xga60": 31,
+      "gsax": 31,
+      "st": 18,
+      "xgf60": 4
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 2026020356,
+      "date": "2026-11-19",
+      "site": "away",
+      "opp": "COL",
+      "pts": 0,
+      "opp_pts": 4,
+      "extra": false,
+      "opp_power_rank": 10
+     },
+     {
+      "game_id": 2026020339,
+      "date": "2026-11-17",
+      "site": "away",
+      "opp": "STL",
+      "pts": 6,
+      "opp_pts": 8,
+      "extra": false,
+      "opp_power_rank": 17
+     },
+     {
+      "game_id": 2026020328,
+      "date": "2026-11-15",
+      "site": "home",
+      "opp": "CGY",
+      "pts": 6,
+      "opp_pts": 1,
+      "extra": false,
+      "opp_power_rank": 25
+     }
+    ],
+    "trend_games": [
+     {
+      "date": "2026-11-11",
+      "opp": "NSH",
+      "metrics": {
+       "xgf": 47.05,
+       "xga60": 3.544,
+       "xgf60": 3.149,
+       "gsax": -1.017,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "NYI",
+      "metrics": {
+       "xgf": 55.36,
+       "xga60": 2.29,
+       "xgf60": 2.841,
+       "gsax": -3.671,
+       "st": 75.0
+      }
+     },
+     {
+      "date": "2026-11-15",
+      "opp": "CGY",
+      "metrics": {
+       "xgf": 62.03,
+       "xga60": 2.548,
+       "xgf60": 4.164,
+       "gsax": 1.398,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-17",
+      "opp": "STL",
+      "metrics": {
+       "xgf": 32.69,
+       "xga60": 4.78,
+       "xgf60": 2.321,
+       "gsax": -2.811,
+       "st": 133.3
+      }
+     },
+     {
+      "date": "2026-11-19",
+      "opp": "COL",
+      "metrics": {
+       "xgf": 48.87,
+       "xga60": 2.903,
+       "xgf60": 2.775,
+       "gsax": -1.358,
+       "st": 66.7
+      }
+     }
+    ],
+    "is_fav": false,
+    "b2b": false,
+    "power": {
+     "rank": 20,
+     "own": 26,
+     "avg": 19.33,
+     "espn": 16,
+     "nhl_com": 16
+    },
+    "goalie": {
+     "name": "Ville Husso",
+     "last": "Husso",
+     "espn_id": "3151137",
+     "confirmed": true
+    },
+    "goalie_status": "backup",
+    "regular_goalie_name": "L. Dostal",
+    "goalies": [
+     {
+      "id": "8480843",
+      "name": "L. Dostal",
+      "starts": 12
+     },
+     {
+      "id": "8478024",
+      "name": "V. Husso",
+      "starts": 6
+     },
+     {
+      "id": "8476316",
+      "name": "L. Brossoit",
+      "starts": 5
+     }
+    ],
+    "key_skaters": [
+     "J. LaCombe",
+     "M. Granlund",
+     "L. Carlsson",
+     "B. Sennecke",
+     "T. Luneau",
+     "P. Mintyukov"
+    ],
+    "injuries": [
+     {
+      "name": "Beckett Sennecke",
+      "last": "Sennecke",
+      "status": "Injured Reserve",
+      "date": "2026-11-21T18:32Z",
+      "comment": "Sennecke (upper body) was placed on injured reserve Saturday."
+     },
+     {
+      "name": "Ryan Poehling",
+      "last": "Poehling",
+      "status": "Injured Reserve",
+      "date": "2026-11-20T03:31Z",
+      "comment": "Poehling (knee) is on the Ducks' current road trip and has resumed skating, Derek Lee of The Hockey News reports Thursday."
+     },
+     {
+      "name": "A.J. Greer",
+      "last": "Greer",
+      "status": "Injured Reserve",
+      "date": "2026-11-02T18:46Z",
+      "comment": "Greer (upper body) was placed on injured reserve Monday."
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [],
+    "key_long_term": [
+     "Beckett Sennecke"
+    ],
+    "spread_text": ""
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "UTA",
+    "dog": "ANA",
+    "in_range": false,
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "rules": [
+     {
+      "rule": "Range",
+      "name": "Top-7 team vs bottom-7 team (consensus power rank)",
+      "pass": false,
+      "detail": "UTA #12 vs ANA #20"
+     },
+     {
+      "rule": "A",
+      "name": "Analysis Score 22+",
+      "pass": true,
+      "detail": "Score 22 of 40"
+     },
+     {
+      "rule": "Goalie",
+      "name": "UTA's regular goalie starts",
+      "pass": false,
+      "detail": "Sebastian Cossa listed instead of K. Vejmelka: capped at the Watch list"
+     },
+     {
+      "rule": "Matchup",
+      "name": "UTA top 7 vs ANA bottom 7 in a matchup (last 5)",
+      "pass": true,
+      "detail": "Defense vs defense: UTA #7 vs ANA #31"
+     }
+    ],
+    "fails": [
+     "Not a top-7 vs bottom-7 matchup (UTA #12, ANA #20)"
+    ],
+    "warnings": [
+     "Info: ANA starting its backup goalie (Ville Husso)"
+    ],
+    "flags": [
+     "UTA backup goalie starting (Sebastian Cossa)"
+    ],
+    "score": 22,
+    "max": 40,
+    "band": "green",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 6,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 12,
+      "max": 16
+     },
+     {
+      "key": "goalies",
+      "label": "Goalies + health",
+      "points": 2,
+      "max": 4
+     },
+     {
+      "key": "home",
+      "label": "Home ice",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 0,
+      "max": 2
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xga60",
+      "scored": false,
+      "cells": [
+       {
+        "team": "UTA",
+        "role": "fav",
+        "window": "season",
+        "metric": "xgf60",
+        "rank": 2,
+        "color": "green"
+       },
+       {
+        "team": "UTA",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xgf60",
+        "rank": 10,
+        "color": "green"
+       },
+       {
+        "team": "ANA",
+        "role": "dog",
+        "window": "season",
+        "metric": "xga60",
+        "rank": 30,
+        "color": "green"
+       },
+       {
+        "team": "ANA",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xga60",
+        "rank": 31,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "xga60",
+      "dog_metric": "xgf60",
+      "scored": false,
+      "cells": [
+       {
+        "team": "UTA",
+        "role": "fav",
+        "window": "season",
+        "metric": "xga60",
+        "rank": 3,
+        "color": "green"
+       },
+       {
+        "team": "UTA",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xga60",
+        "rank": 7,
+        "color": "green"
+       },
+       {
+        "team": "ANA",
+        "role": "dog",
+        "window": "season",
+        "metric": "xgf60",
+        "rank": 18,
+        "color": "yellow"
+       },
+       {
+        "team": "ANA",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xgf60",
+        "rank": 4,
+        "color": "deep-red"
+       }
+      ]
+     },
+     {
+      "key": "share",
+      "label": "Shot share",
+      "fav_metric": "xgf",
+      "dog_metric": "xgf",
+      "scored": true,
+      "cells": [
+       {
+        "team": "UTA",
+        "role": "fav",
+        "window": "season",
+        "metric": "xgf",
+        "rank": 2,
+        "color": "green"
+       },
+       {
+        "team": "UTA",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xgf",
+        "rank": 7,
+        "color": "green"
+       },
+       {
+        "team": "ANA",
+        "role": "dog",
+        "window": "season",
+        "metric": "xgf",
+        "rank": 27,
+        "color": "green"
+       },
+       {
+        "team": "ANA",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xgf",
+        "rank": 17,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "key": "goalie",
+      "label": "Goaltending",
+      "fav_metric": "gsax",
+      "dog_metric": "gsax",
+      "scored": true,
+      "cells": [
+       {
+        "team": "UTA",
+        "role": "fav",
+        "window": "season",
+        "metric": "gsax",
+        "rank": 31,
+        "color": "red"
+       },
+       {
+        "team": "UTA",
+        "role": "fav",
+        "window": "last5",
+        "metric": "gsax",
+        "rank": 20,
+        "color": "yellow"
+       },
+       {
+        "team": "ANA",
+        "role": "dog",
+        "window": "season",
+        "metric": "gsax",
+        "rank": 30,
+        "color": "green"
+       },
+       {
+        "team": "ANA",
+        "role": "dog",
+        "window": "last5",
+        "metric": "gsax",
+        "rank": 31,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "st",
+      "label": "Special teams",
+      "fav_metric": "st",
+      "dog_metric": "st",
+      "scored": true,
+      "cells": [
+       {
+        "team": "UTA",
+        "role": "fav",
+        "window": "season",
+        "metric": "st",
+        "rank": 13,
+        "color": "yellow"
+       },
+       {
+        "team": "UTA",
+        "role": "fav",
+        "window": "last5",
+        "metric": "st",
+        "rank": 17,
+        "color": "yellow"
+       },
+       {
+        "team": "ANA",
+        "role": "dog",
+        "window": "season",
+        "metric": "st",
+        "rank": 2,
+        "color": "deep-red"
+       },
+       {
+        "team": "ANA",
+        "role": "dog",
+        "window": "last5",
+        "metric": "st",
+        "rank": 18,
+        "color": "yellow"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xgf60",
+      "fav_rank": 10,
+      "dog_rank": 4,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "xga60",
+      "dog_metric": "xga60",
+      "fav_rank": 7,
+      "dog_rank": 31,
+      "counts": true,
+      "met": true
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "xga60",
+      "dog_metric": "xgf60",
+      "fav_rank": 7,
+      "dog_rank": 4,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xga60",
+      "fav_rank": 10,
+      "dog_rank": 31,
+      "counts": false,
+      "met": false
+     }
+    ],
+    "labels": {
+     "xgf60": "xGF/60 5v5",
+     "xgf": "xGF% 5v5",
+     "xga60": "xGA/60 5v5",
+     "gsax": "GSAx/gm",
+     "st": "PP%+PK%",
+     "pts": "Points %"
+    }
+   },
+   "summary": "Not a top-7 vs bottom-7 matchup (UTA #12, ANA #20). UTA start their backup goalie, Sebastian Cossa (regular: K. Vejmelka). Biggest edge over the last 5: xGA/60 5v5 (UTA #7, ANA #31). UTA 1-1-1 in its last 3, ANA 1-2-0.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNHLGAME-26NOV21ANAUTA",
+    "fav_prob": 0.595,
+    "bid": 0.59,
+    "ask": 0.6
+   },
+   "locked_at": "2026-11-21T17:00:49-08:00"
   }
  }
 }
