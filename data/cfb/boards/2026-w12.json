@@ -1,2099 +1,9 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-21T15:30:39-08:00",
- "built_label": "Sat Nov 21, 3:30 PM PT",
+ "built_at": "2026-11-21T21:00:38-08:00",
+ "built_label": "Sat Nov 21, 9:00 PM PT",
  "games": [
-  {
-   "id": "401856755",
-   "kick_utc": "2026-11-21T20:30:00+00:00",
-   "kick_pt": "Sat 12:30 PM PT",
-   "day_et": "2026-11-21",
-   "state": "in",
-   "detail": "7:31 - 4th",
-   "neutral": false,
-   "venue": "DKR-Texas Memorial Stadium",
-   "favorite": "home",
-   "fav_home": true,
-   "spread": -18.5,
-   "open_spread": -21.0,
-   "line_source": "Draft Kings",
-   "total": 46.5,
-   "fav_ml": -1350.0,
-   "movement": -2.5,
-   "home": {
-    "code": 251,
-    "abbr": "TEX",
-    "name": "Texas",
-    "display": "Texas Longhorns",
-    "season": {
-     "off_epa": -0.0165,
-     "off_sr": 0.4279,
-     "def_epa": -0.1348,
-     "def_sr": 0.3665,
-     "games": 10,
-     "ranks": {
-      "off_epa": 110,
-      "off_sr": 96,
-      "def_epa": 5,
-      "def_sr": 6
-     }
-    },
-    "last3": {
-     "off_epa": -0.029,
-     "off_sr": 0.3989,
-     "def_epa": -0.1414,
-     "def_sr": 0.3448,
-     "games": 3,
-     "ranks": {
-      "off_epa": 93,
-      "off_sr": 101,
-      "def_epa": 17,
-      "def_sr": 6
-     }
-    },
-    "net": 0.1183,
-    "net_rank": 37,
-    "record": "8-2",
-    "last2_results": [
-     "W",
-     "W"
-    ],
-    "last3_results": [
-     "W",
-     "W",
-     "W"
-    ],
-    "rest": 6,
-    "qb": {
-     "regular": "Arch Manning",
-     "dropbacks": 325,
-     "epa_db": -0.039,
-     "rank": 109
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 17,
-     "fpi": 6,
-     "own_net": 37,
-     "ap": 8,
-     "cfp": 5
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.942
-   },
-   "away": {
-    "code": 8,
-    "abbr": "ARK",
-    "name": "Arkansas",
-    "display": "Arkansas Razorbacks",
-    "season": {
-     "off_epa": -0.0216,
-     "off_sr": 0.4226,
-     "def_epa": 0.0233,
-     "def_sr": 0.4348,
-     "games": 10,
-     "ranks": {
-      "off_epa": 113,
-      "off_sr": 103,
-      "def_epa": 63,
-      "def_sr": 77
-     }
-    },
-    "last3": {
-     "off_epa": -0.0444,
-     "off_sr": 0.4085,
-     "def_epa": -0.074,
-     "def_sr": 0.4057,
-     "games": 3,
-     "ranks": {
-      "off_epa": 97,
-      "off_sr": 86,
-      "def_epa": 31,
-      "def_sr": 45
-     }
-    },
-    "net": -0.0449,
-    "net_rank": 100,
-    "record": "4-6",
-    "last2_results": [
-     "L",
-     "W"
-    ],
-    "last3_results": [
-     "L",
-     "L",
-     "W"
-    ],
-    "rest": 6,
-    "qb": {
-     "regular": "KJ Jackson",
-     "dropbacks": 324,
-     "epa_db": 0.018,
-     "rank": 87
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 74,
-     "fpi": 51,
-     "own_net": 100
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.059
-   },
-   "fav": 251,
-   "dog": 8,
-   "scoring": {
-    "qualified": false,
-    "tier": "watch",
-    "tier_label": "Watch list",
-    "tracked": true,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 22 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 TEX last-3 top 25 in 2 of 4 \u00b7 \u2717 ARK last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2717 TEX season outside 1-69: Off EPA/play #110, Off success #96 \u00b7 \u2713 ARK season top 25 in none"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key player newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "No injury report (warning only; health assumed full)"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
-      "pass": true,
-      "detail": "ARK: consensus #74, ESPN FPI #51"
-     }
-    ],
-    "fails": [
-     "Watch list: score 22 (qualifies at 28)"
-    ],
-    "hero": {
-     "score": 22,
-     "band": "yellow",
-     "parts": {
-      "fav_strength": 7,
-      "dog_weakness": 8,
-      "health": 4,
-      "home": 1,
-      "rest": 0,
-      "form": 2
-     },
-     "max": 40
-    },
-    "call": "Watch list",
-    "flags": [
-     {
-      "level": "yellow",
-      "text": "No injury report for TEX yet: check before betting"
-     }
-    ]
-   },
-   "fav_defense_top25": true,
-   "kalshi": {
-    "event": "KXNCAAFGAME-26NOV21ARKTEX",
-    "fav_prob": 0.905,
-    "bid": 0.9,
-    "ask": 0.91
-   },
-   "locked_at": "2026-11-21T11:30:55-08:00",
-   "score": {
-    "home": 45,
-    "away": 3
-   }
-  },
-  {
-   "id": "401858304",
-   "kick_utc": "2026-11-21T20:30:00+00:00",
-   "kick_pt": "Sat 12:30 PM PT",
-   "day_et": "2026-11-21",
-   "state": "in",
-   "detail": "7:31 - 4th",
-   "neutral": false,
-   "venue": "Doak Campbell Stadium",
-   "favorite": "home",
-   "fav_home": true,
-   "spread": -10.5,
-   "open_spread": -10.0,
-   "line_source": "Draft Kings",
-   "total": 56.5,
-   "fav_ml": -395.0,
-   "movement": 0.5,
-   "home": {
-    "code": 52,
-    "abbr": "FSU",
-    "name": "Florida St",
-    "display": "Florida State Seminoles",
-    "season": {
-     "off_epa": 0.1125,
-     "off_sr": 0.4448,
-     "def_epa": 0.0964,
-     "def_sr": 0.4484,
-     "games": 10,
-     "ranks": {
-      "off_epa": 38,
-      "off_sr": 62,
-      "def_epa": 108,
-      "def_sr": 95
-     }
-    },
-    "last3": {
-     "off_epa": 0.0122,
-     "off_sr": 0.4339,
-     "def_epa": -0.0583,
-     "def_sr": 0.3854,
-     "games": 3,
-     "ranks": {
-      "off_epa": 80,
-      "off_sr": 63,
-      "def_epa": 37,
-      "def_sr": 27
-     }
-    },
-    "net": 0.0161,
-    "net_rank": 77,
-    "record": "5-5",
-    "last2_results": [
-     "W",
-     "W"
-    ],
-    "last3_results": [
-     "L",
-     "W",
-     "W"
-    ],
-    "rest": 7,
-    "qb": {
-     "regular": "Ashton Daniels",
-     "dropbacks": 288,
-     "epa_db": 0.159,
-     "rank": 44
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 60,
-     "fpi": 39,
-     "own_net": 77
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.806
-   },
-   "away": {
-    "code": 152,
-    "abbr": "NCSU",
-    "name": "NC State",
-    "display": "NC State Wolfpack",
-    "season": {
-     "off_epa": 0.1072,
-     "off_sr": 0.4481,
-     "def_epa": 0.1118,
-     "def_sr": 0.4424,
-     "games": 10,
-     "ranks": {
-      "off_epa": 41,
-      "off_sr": 54,
-      "def_epa": 111,
-      "def_sr": 85
-     }
-    },
-    "last3": {
-     "off_epa": -0.0454,
-     "off_sr": 0.4121,
-     "def_epa": 0.0454,
-     "def_sr": 0.4306,
-     "games": 3,
-     "ranks": {
-      "off_epa": 98,
-      "off_sr": 83,
-      "def_epa": 75,
-      "def_sr": 70
-     }
-    },
-    "net": -0.0046,
-    "net_rank": 88,
-    "record": "4-6",
-    "last2_results": [
-     "L",
-     "L"
-    ],
-    "last3_results": [
-     "W",
-     "L",
-     "L"
-    ],
-    "rest": 7,
-    "qb": {
-     "regular": "CJ Bailey",
-     "dropbacks": 310,
-     "epa_db": 0.195,
-     "rank": 33
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 84,
-     "fpi": 75,
-     "own_net": 88
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.194
-   },
-   "fav": 52,
-   "dog": 152,
-   "scoring": {
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 15 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 FSU last-3 top 25 in 0 of 4 \u00b7 \u2717 NCSU last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2717 FSU season outside 1-69: Def EPA allowed #108, Def success allowed #95 \u00b7 \u2713 NCSU season top 25 in none"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key player newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "No injury report (warning only; health assumed full)"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
-      "pass": true,
-      "detail": "NCSU: consensus #84, ESPN FPI #75"
-     }
-    ],
-    "fails": [
-     "Score 15 (watch list from 18, qualifies at 28)"
-    ],
-    "hero": {
-     "score": 15,
-     "band": "red",
-     "parts": {
-      "fav_strength": 0,
-      "dog_weakness": 8,
-      "health": 4,
-      "home": 1,
-      "rest": 0,
-      "form": 2
-     },
-     "max": 40
-    },
-    "call": "No track",
-    "flags": [
-     {
-      "level": "yellow",
-      "text": "No injury report for FSU yet: check before betting"
-     }
-    ]
-   },
-   "fav_defense_top25": false,
-   "kalshi": {
-    "event": "KXNCAAFGAME-26NOV21NCSTFSU",
-    "fav_prob": 0.785,
-    "bid": 0.78,
-    "ask": 0.79
-   },
-   "locked_at": "2026-11-21T11:30:55-08:00",
-   "score": {
-    "home": 10,
-    "away": 28
-   }
-  },
-  {
-   "id": "401861968",
-   "kick_utc": "2026-11-21T20:30:00+00:00",
-   "kick_pt": "Sat 12:30 PM PT",
-   "day_et": "2026-11-21",
-   "state": "in",
-   "detail": "7:33 - 4th",
-   "neutral": false,
-   "venue": "Pratt & Whitney Stadium",
-   "favorite": "home",
-   "fav_home": true,
-   "spread": -14.0,
-   "open_spread": -14.5,
-   "line_source": "Draft Kings",
-   "total": 48.5,
-   "fav_ml": -600.0,
-   "movement": -0.5,
-   "home": {
-    "code": 41,
-    "abbr": "CONN",
-    "name": "UConn",
-    "display": "UConn Huskies",
-    "season": {
-     "off_epa": 0.1657,
-     "off_sr": 0.4403,
-     "def_epa": 0.0841,
-     "def_sr": 0.4539,
-     "games": 10,
-     "ranks": {
-      "off_epa": 22,
-      "off_sr": 73,
-      "def_epa": 103,
-      "def_sr": 103
-     }
-    },
-    "last3": {
-     "off_epa": 0.1894,
-     "off_sr": 0.4785,
-     "def_epa": 0.1346,
-     "def_sr": 0.4749,
-     "games": 3,
-     "ranks": {
-      "off_epa": 17,
-      "off_sr": 30,
-      "def_epa": 111,
-      "def_sr": 107
-     }
-    },
-    "net": 0.0817,
-    "net_rank": 51,
-    "record": "5-5",
-    "last2_results": [
-     "L",
-     "W"
-    ],
-    "last3_results": [
-     "L",
-     "L",
-     "W"
-    ],
-    "rest": 7,
-    "qb": {
-     "regular": "Kalieb Osborne",
-     "dropbacks": 302,
-     "epa_db": 0.121,
-     "rank": 55
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 69,
-     "fpi": 86,
-     "own_net": 51
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.825
-   },
-   "away": {
-    "code": 295,
-    "abbr": "ODU",
-    "name": "Old Dominion",
-    "display": "Old Dominion Monarchs",
-    "season": {
-     "off_epa": -0.2285,
-     "off_sr": 0.3455,
-     "def_epa": -0.1172,
-     "def_sr": 0.3718,
-     "games": 10,
-     "ranks": {
-      "off_epa": 138,
-      "off_sr": 137,
-      "def_epa": 7,
-      "def_sr": 10
-     }
-    },
-    "last3": {
-     "off_epa": -0.2698,
-     "off_sr": 0.3586,
-     "def_epa": -0.1757,
-     "def_sr": 0.3687,
-     "games": 3,
-     "ranks": {
-      "off_epa": 136,
-      "off_sr": 120,
-      "def_epa": 12,
-      "def_sr": 13
-     }
-    },
-    "net": -0.1113,
-    "net_rank": 120,
-    "record": "3-7",
-    "last2_results": [
-     "L",
-     "W"
-    ],
-    "last3_results": [
-     "L",
-     "L",
-     "W"
-    ],
-    "rest": 14,
-    "qb": {
-     "regular": "Jaxon Potter",
-     "dropbacks": 125,
-     "epa_db": -0.29,
-     "rank": 133
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 124,
-     "fpi": 121,
-     "own_net": 120
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.175
-   },
-   "fav": 41,
-   "dog": 295,
-   "scoring": {
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 16 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 CONN last-3 top 25 in 1 of 4 \u00b7 \u2717 ODU last-3 bottom 25 (114+) in 2 of 4 \u00b7 \u2717 CONN season outside 1-69: Off success #73, Def EPA allowed #103, Def success allowed #103 \u00b7 \u2717 ODU season top 25: Def EPA allowed #7, Def success allowed #10"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key player newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "No injury report (warning only; health assumed full)"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
-      "pass": true,
-      "detail": "ODU: consensus #124, ESPN FPI #121"
-     }
-    ],
-    "fails": [
-     "Score 16 (watch list from 18, qualifies at 28)"
-    ],
-    "hero": {
-     "score": 16,
-     "band": "red",
-     "parts": {
-      "fav_strength": 2,
-      "dog_weakness": 8,
-      "health": 4,
-      "home": 1,
-      "rest": 0,
-      "form": 1
-     },
-     "max": 40
-    },
-    "call": "No track",
-    "flags": [
-     {
-      "level": "yellow",
-      "text": "No injury report for CONN yet: check before betting"
-     }
-    ]
-   },
-   "fav_defense_top25": false,
-   "kalshi": {
-    "event": "KXNCAAFGAME-26NOV21ODUCONN",
-    "fav_prob": 0.835,
-    "bid": 0.83,
-    "ask": 0.84
-   },
-   "locked_at": "2026-11-21T11:30:55-08:00",
-   "score": {
-    "home": 26,
-    "away": 14
-   }
-  },
-  {
-   "id": "401860920",
-   "kick_utc": "2026-11-21T23:00:00+00:00",
-   "kick_pt": "Sat 3:00 PM PT",
-   "day_et": "2026-11-21",
-   "state": "in",
-   "detail": "8:13 - 1st",
-   "neutral": false,
-   "venue": "UFCU Stadium",
-   "favorite": "home",
-   "fav_home": true,
-   "spread": -13.5,
-   "open_spread": -14.5,
-   "line_source": "DraftKings",
-   "total": 61.5,
-   "fav_ml": -575.0,
-   "movement": -1.0,
-   "home": {
-    "code": 326,
-    "abbr": "TXST",
-    "name": "Texas St",
-    "display": "Texas State Bobcats",
-    "season": {
-     "off_epa": 0.1894,
-     "off_sr": 0.492,
-     "def_epa": 0.1164,
-     "def_sr": 0.4521,
-     "games": 10,
-     "ranks": {
-      "off_epa": 15,
-      "off_sr": 21,
-      "def_epa": 114,
-      "def_sr": 98
-     }
-    },
-    "last3": {
-     "off_epa": 0.2951,
-     "off_sr": 0.4954,
-     "def_epa": 0.1672,
-     "def_sr": 0.4413,
-     "games": 3,
-     "ranks": {
-      "off_epa": 4,
-      "off_sr": 18,
-      "def_epa": 118,
-      "def_sr": 80
-     }
-    },
-    "net": 0.073,
-    "net_rank": 53,
-    "record": "6-4",
-    "last2_results": [
-     "W",
-     "W"
-    ],
-    "last3_results": [
-     "L",
-     "W",
-     "W"
-    ],
-    "rest": 7,
-    "qb": {
-     "regular": "Brad Jackson",
-     "dropbacks": 297,
-     "epa_db": 0.329,
-     "rank": 7
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 56,
-     "fpi": 55,
-     "own_net": 53
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.8
-   },
-   "away": {
-    "code": 265,
-    "abbr": "WSU",
-    "name": "Washington St",
-    "display": "Washington State Cougars",
-    "season": {
-     "off_epa": 0.0009,
-     "off_sr": 0.4463,
-     "def_epa": 0.0415,
-     "def_sr": 0.4119,
-     "games": 10,
-     "ranks": {
-      "off_epa": 97,
-      "off_sr": 60,
-      "def_epa": 79,
-      "def_sr": 48
-     }
-    },
-    "last3": {
-     "off_epa": 0.1825,
-     "off_sr": 0.5484,
-     "def_epa": 0.0883,
-     "def_sr": 0.4012,
-     "games": 3,
-     "ranks": {
-      "off_epa": 18,
-      "off_sr": 2,
-      "def_epa": 93,
-      "def_sr": 43
-     }
-    },
-    "net": -0.0406,
-    "net_rank": 99,
-    "record": "2-8",
-    "last2_results": [
-     "L",
-     "W"
-    ],
-    "last3_results": [
-     "L",
-     "L",
-     "W"
-    ],
-    "rest": 6,
-    "qb": {
-     "regular": "Caden Pinnick",
-     "dropbacks": 196,
-     "epa_db": -0.227,
-     "rank": 131
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 95,
-     "fpi": 90,
-     "own_net": 99
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.2
-   },
-   "fav": 326,
-   "dog": 265,
-   "scoring": {
-    "qualified": false,
-    "tier": "watch",
-    "tier_label": "Watch list",
-    "tracked": true,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 18 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 TXST last-3 top 25 in 2 of 4 \u00b7 \u2717 WSU last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2717 TXST season outside 1-69: Def EPA allowed #114, Def success allowed #98 \u00b7 \u2713 WSU season top 25 in none"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key player newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "No injury report (warning only; health assumed full)"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
-      "pass": true,
-      "detail": "WSU: consensus #95, ESPN FPI #90"
-     }
-    ],
-    "fails": [
-     "Watch list: score 18 (qualifies at 28)"
-    ],
-    "hero": {
-     "score": 18,
-     "band": "yellow",
-     "parts": {
-      "fav_strength": 5,
-      "dog_weakness": 6,
-      "health": 4,
-      "home": 1,
-      "rest": 0,
-      "form": 2
-     },
-     "max": 40
-    },
-    "call": "Watch list",
-    "flags": [
-     {
-      "level": "yellow",
-      "text": "No injury report for TXST yet: check before betting"
-     }
-    ]
-   },
-   "fav_defense_top25": false,
-   "kalshi": {
-    "event": "KXNCAAFGAME-26NOV21WSUTXST",
-    "fav_prob": 0.825,
-    "bid": 0.82,
-    "ask": 0.83
-   },
-   "locked_at": "2026-11-21T14:00:46-08:00",
-   "readout": {
-    "matchup": "WSU @ TXST",
-    "summary": "All sources pick Texas State (6-4, 5-1 at home) over Washington State (2-8, winless away). The Cougars On SI writer expects the Bobcats to wear WSU down physically, 37-28. Dimers projects 37-24 (82.7%), numberFire 94.7%. No source picks WSU, and nobody makes a spread pick at -13.5.",
-    "pick": "Texas State to win (Cougars On SI, Bang The Book, Dimers, numberFire); no spread pick found",
-    "predicted_score": "Texas State 37, WSU 24 (Dimers); Texas State 37, WSU 28 (Cougars On SI, Nov 16, when the line was WSU +10.5)",
-    "moneyline": "TXST -488 / WSU +475 (Dimers, Nov 20); TXST -581 / WSU +430 (FanDuel, Nov 19); TXST -535 / WSU +400 (Bang The Book, Nov 20)",
-    "win_probability": "Texas State 82.7% (Dimers, Nov 20); 94.7% (numberFire via FanDuel Research)",
-    "injuries": "SportsLine list (read Nov 20, no game statuses): WSU WR Darrius Clemons (undisclosed, listed Nov 17), TE Hudson Cedarland (leg, Oct 1), WR Tony Freeman (knee, Sep 13); Texas State one QB (elbow, listed Jul 22, name not shown). Bang The Book (Nov 20): no player statuses for either team. No official availability report found.",
-    "sources": [
-     {
-      "site": "Dimers",
-      "url": "https://www.dimers.com/cfb/predictions/2026_12_txst_wsu"
-     },
-     {
-      "site": "Washington State Cougars On SI (via Yahoo Sports)",
-      "url": "https://sports.yahoo.com/articles/washington-state-vs-texas-state-183400682.html"
-     },
-     {
-      "site": "FanDuel Research",
-      "url": "https://www.fanduel.com/research/texas-state-vs-washington-state-college-football-odds-picks-best-bets-for-11-21-2026"
-     },
-     {
-      "site": "Bang The Book",
-      "url": "https://bangthebook.com/washington-state-cougars-vs-texas-state-bobcats-prediction-2026-11-21/"
-     },
-     {
-      "site": "SportsLine (odds + injury list)",
-      "url": "https://www.sportsline.com/college-football/game-forecast/NCAAF_20261121_WASHST@TXSTSM/"
-     },
-     {
-      "site": "FOX 13 Seattle",
-      "url": "https://www.fox13seattle.com/sports/how-watch-wsu-cougars-vs-texas-state"
-     }
-    ],
-    "updated": "2026-11-21T05:49-08:00"
-   },
-   "score": {
-    "home": 7,
-    "away": 7
-   }
-  },
-  {
-   "id": "401858534",
-   "kick_utc": "2026-11-21T23:15:00+00:00",
-   "kick_pt": "Sat 3:15 PM PT",
-   "day_et": "2026-11-21",
-   "state": "in",
-   "detail": "11:42 - 1st",
-   "neutral": false,
-   "venue": "Los Angeles Memorial Coliseum",
-   "favorite": "home",
-   "fav_home": true,
-   "spread": -17.5,
-   "open_spread": -16.5,
-   "line_source": "DraftKings",
-   "total": 57.5,
-   "fav_ml": -950.0,
-   "movement": 1.0,
-   "home": {
-    "code": 30,
-    "abbr": "USC",
-    "name": "USC",
-    "display": "USC Trojans",
-    "season": {
-     "off_epa": 0.1594,
-     "off_sr": 0.5142,
-     "def_epa": 0.1709,
-     "def_sr": 0.4579,
-     "games": 10,
-     "ranks": {
-      "off_epa": 26,
-      "off_sr": 5,
-      "def_epa": 128,
-      "def_sr": 112
-     }
-    },
-    "last3": {
-     "off_epa": -0.033,
-     "off_sr": 0.4896,
-     "def_epa": 0.0985,
-     "def_sr": 0.4472,
-     "games": 3,
-     "ranks": {
-      "off_epa": 95,
-      "off_sr": 22,
-      "def_epa": 94,
-      "def_sr": 86
-     }
-    },
-    "net": -0.0114,
-    "net_rank": 89,
-    "record": "7-3",
-    "last2_results": [
-     "W",
-     "L"
-    ],
-    "last3_results": [
-     "L",
-     "W",
-     "L"
-    ],
-    "rest": 7,
-    "qb": {
-     "regular": "Jayden Maiava",
-     "dropbacks": 352,
-     "epa_db": 0.296,
-     "rank": 13
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 54,
-     "fpi": 18,
-     "own_net": 89,
-     "ap": 18,
-     "cfp": 18
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.932
-   },
-   "away": {
-    "code": 120,
-    "abbr": "MD",
-    "name": "Maryland",
-    "display": "Maryland Terrapins",
-    "season": {
-     "off_epa": -0.0081,
-     "off_sr": 0.4147,
-     "def_epa": 0.0278,
-     "def_sr": 0.4113,
-     "games": 10,
-     "ranks": {
-      "off_epa": 101,
-      "off_sr": 112,
-      "def_epa": 65,
-      "def_sr": 47
-     }
-    },
-    "last3": {
-     "off_epa": 0.0106,
-     "off_sr": 0.4061,
-     "def_epa": -0.07,
-     "def_sr": 0.38,
-     "games": 3,
-     "ranks": {
-      "off_epa": 83,
-      "off_sr": 89,
-      "def_epa": 33,
-      "def_sr": 20
-     }
-    },
-    "net": -0.0359,
-    "net_rank": 98,
-    "record": "4-6",
-    "last2_results": [
-     "W",
-     "W"
-    ],
-    "last3_results": [
-     "L",
-     "W",
-     "W"
-    ],
-    "rest": 7,
-    "qb": {
-     "regular": "Malik Washington",
-     "dropbacks": 308,
-     "epa_db": -0.04,
-     "rank": 110
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 90,
-     "fpi": 79,
-     "own_net": 98
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.069
-   },
-   "fav": 30,
-   "dog": 120,
-   "scoring": {
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 16 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 USC last-3 top 25 in 1 of 4 \u00b7 \u2717 MD last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2717 USC season outside 1-69: Def EPA allowed #128, Def success allowed #112 \u00b7 \u2713 MD season top 25 in none"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key player newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "No injury report (warning only; health assumed full)"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
-      "pass": true,
-      "detail": "MD: consensus #90, ESPN FPI #79"
-     }
-    ],
-    "fails": [
-     "Score 16 (watch list from 18, qualifies at 28)"
-    ],
-    "hero": {
-     "score": 16,
-     "band": "red",
-     "parts": {
-      "fav_strength": 3,
-      "dog_weakness": 7,
-      "health": 4,
-      "home": 1,
-      "rest": 0,
-      "form": 1
-     },
-     "max": 40
-    },
-    "call": "No track",
-    "flags": [
-     {
-      "level": "yellow",
-      "text": "No injury report for USC yet: check before betting"
-     }
-    ]
-   },
-   "fav_defense_top25": false,
-   "kalshi": {
-    "event": "KXNCAAFGAME-26NOV21MDUSC",
-    "fav_prob": 0.895,
-    "bid": 0.89,
-    "ask": 0.9
-   },
-   "locked_at": "2026-11-21T14:15:33-08:00",
-   "score": {
-    "home": 0,
-    "away": 0
-   }
-  },
-  {
-   "id": "401856865",
-   "kick_utc": "2026-11-22T00:00:00+00:00",
-   "kick_pt": "Sat 4:00 PM PT",
-   "day_et": "2026-11-21",
-   "state": "pre",
-   "detail": "11/21 - 7:00 PM EST",
-   "neutral": false,
-   "venue": "Bill Snyder Family Stadium",
-   "favorite": "away",
-   "fav_home": false,
-   "spread": -10.0,
-   "open_spread": -10.5,
-   "line_source": "DraftKings",
-   "total": 53.5,
-   "fav_ml": -375.0,
-   "movement": -0.5,
-   "home": {
-    "code": 2306,
-    "abbr": "KSU",
-    "name": "Kansas St",
-    "display": "Kansas State Wildcats",
-    "season": {
-     "off_epa": 0.0929,
-     "off_sr": 0.4674,
-     "def_epa": 0.0354,
-     "def_sr": 0.4033,
-     "games": 10,
-     "ranks": {
-      "off_epa": 55,
-      "off_sr": 38,
-      "def_epa": 71,
-      "def_sr": 30
-     }
-    },
-    "last3": {
-     "off_epa": -0.0025,
-     "off_sr": 0.4472,
-     "def_epa": 0.1285,
-     "def_sr": 0.456,
-     "games": 3,
-     "ranks": {
-      "off_epa": 86,
-      "off_sr": 50,
-      "def_epa": 109,
-      "def_sr": 94
-     }
-    },
-    "net": 0.0575,
-    "net_rank": 57,
-    "record": "4-6",
-    "last2_results": [
-     "L",
-     "L"
-    ],
-    "last3_results": [
-     "L",
-     "L",
-     "L"
-    ],
-    "rest": 7,
-    "qb": {
-     "regular": "Avery Johnson",
-     "dropbacks": 191,
-     "epa_db": 0.189,
-     "rank": 37
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 62,
-     "fpi": 63,
-     "own_net": 57
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.26
-   },
-   "away": {
-    "code": 12,
-    "abbr": "ARIZ",
-    "name": "Arizona",
-    "display": "Arizona Wildcats",
-    "season": {
-     "off_epa": 0.1361,
-     "off_sr": 0.4728,
-     "def_epa": 0.0362,
-     "def_sr": 0.4055,
-     "games": 10,
-     "ranks": {
-      "off_epa": 30,
-      "off_sr": 33,
-      "def_epa": 72,
-      "def_sr": 36
-     }
-    },
-    "last3": {
-     "off_epa": 0.0748,
-     "off_sr": 0.4047,
-     "def_epa": 0.1746,
-     "def_sr": 0.4607,
-     "games": 3,
-     "ranks": {
-      "off_epa": 51,
-      "off_sr": 90,
-      "def_epa": 121,
-      "def_sr": 97
-     }
-    },
-    "net": 0.0998,
-    "net_rank": 44,
-    "record": "7-3",
-    "last2_results": [
-     "W",
-     "L"
-    ],
-    "last3_results": [
-     "L",
-     "W",
-     "L"
-    ],
-    "rest": 6,
-    "qb": {
-     "regular": "Noah Fifita",
-     "dropbacks": 374,
-     "epa_db": 0.267,
-     "rank": 21
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 27,
-     "fpi": 22,
-     "own_net": 44,
-     "ap": 19,
-     "cfp": 19
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.74
-   },
-   "fav": 12,
-   "dog": 2306,
-   "scoring": {
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 13 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 ARIZ last-3 top 25 in 0 of 4 \u00b7 \u2717 KSU last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2717 ARIZ season outside 1-69: Def EPA allowed #72 \u00b7 \u2713 KSU season top 25 in none"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key player newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "No injury report (warning only; health assumed full)"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
-      "pass": true,
-      "detail": "KSU: consensus #62, ESPN FPI #63"
-     }
-    ],
-    "fails": [
-     "Score 13 (watch list from 18, qualifies at 28)"
-    ],
-    "hero": {
-     "score": 13,
-     "band": "red",
-     "parts": {
-      "fav_strength": 0,
-      "dog_weakness": 8,
-      "health": 4,
-      "home": 0,
-      "rest": 0,
-      "form": 1
-     },
-     "max": 40
-    },
-    "call": "No track",
-    "flags": [
-     {
-      "level": "yellow",
-      "text": "No injury report for ARIZ yet: check before betting"
-     }
-    ]
-   },
-   "fav_defense_top25": false,
-   "kalshi": {
-    "event": "KXNCAAFGAME-26NOV21ARIZKSU",
-    "fav_prob": 0.765,
-    "bid": 0.76,
-    "ask": 0.77
-   },
-   "locked_at": "2026-11-21T15:00:47-08:00",
-   "score": {
-    "home": 0,
-    "away": 0
-   }
-  },
-  {
-   "id": "401869938",
-   "kick_utc": "2026-11-22T00:00:00+00:00",
-   "kick_pt": "Sat 4:00 PM PT",
-   "day_et": "2026-11-21",
-   "state": "pre",
-   "detail": "11/21 - 7:00 PM EST",
-   "neutral": false,
-   "venue": "Joe Aillet Stadium",
-   "favorite": "home",
-   "fav_home": true,
-   "spread": -14.5,
-   "open_spread": -16.5,
-   "line_source": "DraftKings",
-   "total": 54.5,
-   "fav_ml": -625.0,
-   "movement": -2.0,
-   "home": {
-    "code": 2348,
-    "abbr": "LT",
-    "name": "Louisiana Tech",
-    "display": "Louisiana Tech Bulldogs",
-    "season": {
-     "off_epa": 0.0826,
-     "off_sr": 0.4222,
-     "def_epa": -0.1164,
-     "def_sr": 0.383,
-     "games": 10,
-     "ranks": {
-      "off_epa": 61,
-      "off_sr": 104,
-      "def_epa": 8,
-      "def_sr": 15
-     }
-    },
-    "last3": {
-     "off_epa": 0.0551,
-     "off_sr": 0.4348,
-     "def_epa": -0.19,
-     "def_sr": 0.3874,
-     "games": 3,
-     "ranks": {
-      "off_epa": 57,
-      "off_sr": 61,
-      "def_epa": 10,
-      "def_sr": 28
-     }
-    },
-    "net": 0.199,
-    "net_rank": 17,
-    "record": "8-2",
-    "last2_results": [
-     "W",
-     "W"
-    ],
-    "last3_results": [
-     "W",
-     "W",
-     "W"
-    ],
-    "rest": 7,
-    "qb": {
-     "regular": "Blake Baker",
-     "dropbacks": 207,
-     "epa_db": 0.199,
-     "rank": 32
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 37,
-     "fpi": 66,
-     "own_net": 17
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.849
-   },
-   "away": {
-    "code": 2032,
-    "abbr": "ARST",
-    "name": "Arkansas St",
-    "display": "Arkansas State Red Wolves",
-    "season": {
-     "off_epa": 0.0697,
-     "off_sr": 0.4789,
-     "def_epa": 0.1169,
-     "def_sr": 0.4657,
-     "games": 10,
-     "ranks": {
-      "off_epa": 71,
-      "off_sr": 30,
-      "def_epa": 115,
-      "def_sr": 122
-     }
-    },
-    "last3": {
-     "off_epa": 0.0318,
-     "off_sr": 0.4574,
-     "def_epa": 0.1124,
-     "def_sr": 0.4565,
-     "games": 3,
-     "ranks": {
-      "off_epa": 69,
-      "off_sr": 42,
-      "def_epa": 100,
-      "def_sr": 95
-     }
-    },
-    "net": -0.0472,
-    "net_rank": 101,
-    "record": "4-6",
-    "last2_results": [
-     "L",
-     "L"
-    ],
-    "last3_results": [
-     "W",
-     "L",
-     "L"
-    ],
-    "rest": 7,
-    "qb": {
-     "regular": "Trey Owens",
-     "dropbacks": 318,
-     "epa_db": 0.041,
-     "rank": 80
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 111,
-     "fpi": 109,
-     "own_net": 101
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.152
-   },
-   "fav": 2348,
-   "dog": 2032,
-   "scoring": {
-    "qualified": false,
-    "tier": "watch",
-    "tier_label": "Watch list",
-    "tracked": true,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 22 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 LT last-3 top 25 in 1 of 4 \u00b7 \u2717 ARST last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2717 LT season outside 1-69: Off success #104 \u00b7 \u2713 ARST season top 25 in none"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key player newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "No injury report (warning only; health assumed full)"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
-      "pass": true,
-      "detail": "ARST: consensus #111, ESPN FPI #109"
-     }
-    ],
-    "fails": [
-     "Watch list: score 22 (qualifies at 28)"
-    ],
-    "hero": {
-     "score": 22,
-     "band": "yellow",
-     "parts": {
-      "fav_strength": 5,
-      "dog_weakness": 10,
-      "health": 4,
-      "home": 1,
-      "rest": 0,
-      "form": 2
-     },
-     "max": 40
-    },
-    "call": "Watch list",
-    "flags": [
-     {
-      "level": "yellow",
-      "text": "No injury report for LT yet: check before betting"
-     }
-    ]
-   },
-   "fav_defense_top25": false,
-   "kalshi": {
-    "event": "KXNCAAFGAME-26NOV21ARSTLT",
-    "fav_prob": 0.845,
-    "bid": 0.84,
-    "ask": 0.85
-   },
-   "locked_at": "2026-11-21T15:00:47-08:00",
-   "readout": {
-    "matchup": "ARST @ LT",
-    "summary": "Every source favors Louisiana Tech (8-2, 5-0 at home). Doc's Sports takes the Bulldogs -14.5, citing LT's 36.5 points a game against an Arkansas State (4-6) defense allowing 26.5 and a weak ARST run game. Bang The Book picks LT on the moneyline; Dimers gives LT 84.9%. No source picks Arkansas State.",
-    "pick": "Louisiana Tech to win (all sources); Louisiana Tech -14.5 (Doc's Sports)",
-    "predicted_score": "Louisiana Tech 34, Arkansas State 19 (Dimers, Nov 20)",
-    "moneyline": "LT -525 / ARST +506 (Dimers, Nov 20); LT -600 / ARST +440 (Bang The Book, Nov 21)",
-    "win_probability": "Louisiana Tech 84.9% (Dimers, Nov 20)",
-    "injuries": "Only old entries found: ARST RB Devin Spencer (knee, listed Aug 16); LT one WR undisclosed (listed Oct 7, name not shown) (SportsLine). Bang The Book (Nov 21): no player statuses for either team. No game-week availability report found.",
-    "sources": [
-     {
-      "site": "Doc's Sports",
-      "url": "https://www.docsports.com/free-picks/football/2026/arkansas-state-red-wolves-vs-louisiana-tech-bulldogs-prediction-11-21-2026-college-football-picks-best-bets-odds.html"
-     },
-     {
-      "site": "Dimers",
-      "url": "https://www.dimers.com/cfb/predictions/2026_12_lt_arst"
-     },
-     {
-      "site": "Bang The Book",
-      "url": "https://bangthebook.com/arkansas-state-red-wolves-vs-louisiana-tech-bulldogs-prediction-2026-11-21/"
-     },
-     {
-      "site": "SportsLine (odds + injury list)",
-      "url": "https://www.sportsline.com/college-football/game-forecast/NCAAF_20261121_ARKST@LATECH/"
-     }
-    ],
-    "updated": "2026-11-21T05:49-08:00"
-   },
-   "score": {
-    "home": 0,
-    "away": 0
-   }
-  },
-  {
-   "id": "401856753",
-   "kick_utc": "2026-11-22T00:30:00+00:00",
-   "kick_pt": "Sat 4:30 PM PT",
-   "day_et": "2026-11-21",
-   "state": "pre",
-   "detail": "11/21 - 7:30 PM EST",
-   "neutral": false,
-   "venue": "Williams-Brice Stadium",
-   "favorite": "away",
-   "fav_home": false,
-   "spread": -14.5,
-   "open_spread": -10.5,
-   "line_source": "Draft Kings",
-   "total": 51.5,
-   "fav_ml": -800.0,
-   "movement": 4.0,
-   "home": {
-    "code": 2579,
-    "abbr": "SC",
-    "name": "South Carolina",
-    "display": "South Carolina Gamecocks",
-    "season": {
-     "off_epa": 0.0932,
-     "off_sr": 0.4443,
-     "def_epa": 0.0584,
-     "def_sr": 0.4505,
-     "games": 10,
-     "ranks": {
-      "off_epa": 53,
-      "off_sr": 64,
-      "def_epa": 92,
-      "def_sr": 97
-     }
-    },
-    "last3": {
-     "off_epa": -0.0704,
-     "off_sr": 0.3515,
-     "def_epa": 0.0024,
-     "def_sr": 0.4348,
-     "games": 3,
-     "ranks": {
-      "off_epa": 103,
-      "off_sr": 127,
-      "def_epa": 62,
-      "def_sr": 74
-     }
-    },
-    "net": 0.0348,
-    "net_rank": 72,
-    "record": "6-4",
-    "last2_results": [
-     "W",
-     "L"
-    ],
-    "last3_results": [
-     "W",
-     "W",
-     "L"
-    ],
-    "rest": 6,
-    "qb": {
-     "regular": "LaNorris Sellers",
-     "dropbacks": 293,
-     "epa_db": 0.087,
-     "rank": 69
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 53,
-     "fpi": 33,
-     "own_net": 72,
-     "cfp": 21
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.131
-   },
-   "away": {
-    "code": 61,
-    "abbr": "UGA",
-    "name": "Georgia",
-    "display": "Georgia Bulldogs",
-    "season": {
-     "off_epa": 0.2101,
-     "off_sr": 0.5183,
-     "def_epa": -0.0469,
-     "def_sr": 0.4038,
-     "games": 10,
-     "ranks": {
-      "off_epa": 11,
-      "off_sr": 4,
-      "def_epa": 33,
-      "def_sr": 31
-     }
-    },
-    "last3": {
-     "off_epa": 0.1547,
-     "off_sr": 0.4973,
-     "def_epa": -0.1255,
-     "def_sr": 0.4233,
-     "games": 3,
-     "ranks": {
-      "off_epa": 25,
-      "off_sr": 16,
-      "def_epa": 19,
-      "def_sr": 64
-     }
-    },
-    "net": 0.257,
-    "net_rank": 6,
-    "record": "9-1",
-    "last2_results": [
-     "W",
-     "W"
-    ],
-    "last3_results": [
-     "W",
-     "W",
-     "W"
-    ],
-    "rest": 7,
-    "qb": {
-     "regular": "Gunner Stockton",
-     "dropbacks": 230,
-     "epa_db": 0.274,
-     "rank": 18
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 2,
-     "fpi": 1,
-     "own_net": 6,
-     "ap": 1,
-     "cfp": 1
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.869
-   },
-   "fav": 61,
-   "dog": 2579,
-   "scoring": {
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 21 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2713 UGA last-3 top 25 in 3 of 4 \u00b7 \u2717 SC last-3 bottom 25 (114+) in 1 of 4 \u00b7 \u2713 UGA season top half (1-69) in all four \u00b7 \u2713 SC season top 25 in none"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key player newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "No injury report (warning only; health assumed full)"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
-      "pass": false,
-      "detail": "SC ranked: CFP #21"
-     }
-    ],
-    "fails": [
-     "SC ranked: CFP #21",
-     "Would be on the watch list otherwise (score 21)"
-    ],
-    "hero": {
-     "score": 21,
-     "band": "yellow",
-     "parts": {
-      "fav_strength": 6,
-      "dog_weakness": 9,
-      "health": 4,
-      "home": 0,
-      "rest": 0,
-      "form": 2
-     },
-     "max": 40
-    },
-    "call": "No track",
-    "flags": [
-     {
-      "level": "red",
-      "text": "SC ranked: CFP #21 (no track)"
-     },
-     {
-      "level": "yellow",
-      "text": "No injury report for UGA yet: check before betting"
-     }
-    ]
-   },
-   "fav_defense_top25": false,
-   "kalshi": {
-    "event": "KXNCAAFGAME-26NOV21UGASCAR",
-    "fav_prob": 0.865,
-    "bid": 0.86,
-    "ask": 0.87
-   },
-   "locked_at": "2026-11-21T15:30:39-08:00"
-  },
-  {
-   "id": "401858306",
-   "kick_utc": "2026-11-22T00:30:00+00:00",
-   "kick_pt": "Sat 4:30 PM PT",
-   "day_et": "2026-11-21",
-   "state": "pre",
-   "detail": "11/21 - 7:30 PM EST",
-   "neutral": false,
-   "venue": "L&N Federal Credit Union Stadium",
-   "favorite": "home",
-   "fav_home": true,
-   "spread": -10.5,
-   "open_spread": -12.5,
-   "line_source": "Draft Kings",
-   "total": 50.5,
-   "fav_ml": -455.0,
-   "movement": -2.0,
-   "home": {
-    "code": 97,
-    "abbr": "LOU",
-    "name": "Louisville",
-    "display": "Louisville Cardinals",
-    "season": {
-     "off_epa": 0.2418,
-     "off_sr": 0.5065,
-     "def_epa": 0.0012,
-     "def_sr": 0.413,
-     "games": 10,
-     "ranks": {
-      "off_epa": 6,
-      "off_sr": 8,
-      "def_epa": 55,
-      "def_sr": 51
-     }
-    },
-    "last3": {
-     "off_epa": 0.2057,
-     "off_sr": 0.5272,
-     "def_epa": -0.0986,
-     "def_sr": 0.3713,
-     "games": 3,
-     "ranks": {
-      "off_epa": 13,
-      "off_sr": 5,
-      "def_epa": 24,
-      "def_sr": 15
-     }
-    },
-    "net": 0.2406,
-    "net_rank": 8,
-    "record": "7-3",
-    "last2_results": [
-     "W",
-     "W"
-    ],
-    "last3_results": [
-     "W",
-     "W",
-     "W"
-    ],
-    "rest": 7,
-    "qb": {
-     "regular": "Lincoln Kienholz",
-     "dropbacks": 280,
-     "epa_db": 0.284,
-     "rank": 17
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 10,
-     "fpi": 16,
-     "own_net": 8,
-     "ap": 21,
-     "cfp": 23
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.77
-   },
-   "away": {
-    "code": 221,
-    "abbr": "PITT",
-    "name": "Pitt",
-    "display": "Pittsburgh Panthers",
-    "season": {
-     "off_epa": 0.0306,
-     "off_sr": 0.4284,
-     "def_epa": -0.0716,
-     "def_sr": 0.3658,
-     "games": 10,
-     "ranks": {
-      "off_epa": 83,
-      "off_sr": 94,
-      "def_epa": 25,
-      "def_sr": 5
-     }
-    },
-    "last3": {
-     "off_epa": -0.116,
-     "off_sr": 0.3761,
-     "def_epa": -0.0606,
-     "def_sr": 0.375,
-     "games": 3,
-     "ranks": {
-      "off_epa": 110,
-      "off_sr": 117,
-      "def_epa": 36,
-      "def_sr": 16
-     }
-    },
-    "net": 0.1022,
-    "net_rank": 42,
-    "record": "6-4",
-    "last2_results": [
-     "W",
-     "L"
-    ],
-    "last3_results": [
-     "L",
-     "W",
-     "L"
-    ],
-    "rest": 8,
-    "qb": {
-     "regular": "Mason Heintschel",
-     "dropbacks": 153,
-     "epa_db": 0.309,
-     "rank": 11
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 38,
-     "fpi": 43,
-     "own_net": 42
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.23
-   },
-   "fav": 97,
-   "dog": 221,
-   "scoring": {
-    "qualified": false,
-    "tier": "watch",
-    "tier_label": "Watch list",
-    "tracked": true,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 22 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2713 LOU last-3 top 25 in 4 of 4 \u00b7 \u2717 PITT last-3 bottom 25 (114+) in 1 of 4 \u00b7 \u2713 LOU season top half (1-69) in all four \u00b7 \u2717 PITT season top 25: Def EPA allowed #25, Def success allowed #5"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key player newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "No injury report (warning only; health assumed full)"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
-      "pass": true,
-      "detail": "PITT: consensus #38, ESPN FPI #43"
-     }
-    ],
-    "fails": [
-     "Watch list: score 22 (qualifies at 28)"
-    ],
-    "hero": {
-     "score": 22,
-     "band": "yellow",
-     "parts": {
-      "fav_strength": 9,
-      "dog_weakness": 6,
-      "health": 4,
-      "home": 1,
-      "rest": 0,
-      "form": 2
-     },
-     "max": 40
-    },
-    "call": "Watch list",
-    "flags": [
-     {
-      "level": "yellow",
-      "text": "No injury report for LOU yet: check before betting"
-     }
-    ]
-   },
-   "fav_defense_top25": false,
-   "kalshi": {
-    "event": "KXNCAAFGAME-26NOV21PITTLOU",
-    "fav_prob": 0.795,
-    "bid": 0.79,
-    "ask": 0.8
-   },
-   "locked_at": "2026-11-21T15:30:39-08:00",
-   "readout": {
-    "matchup": "PITT @ LOU",
-    "summary": "Everyone picks No. 21 Louisville (7-3) to win; the split is the -13.5 spread. Predictem and PickDawgz take Louisville -14, citing its run game against Pitt's unsettled QB spot (Geriner questionable). TheRX takes Pitt +13.5, noting Pitt allows 71.2 rushing yards a game. Models: Dimers 85.2%, numberFire 80.5%, ESPN 77.5%.",
-    "pick": "Louisville to win (all sources); Louisville -14 (Predictem, PickDawgz); Pitt +13.5 and Under 50.5 (TheRX)",
-    "predicted_score": "Louisville 34, Pitt 17 (Predictem); Louisville 32, Pitt 18 (Dimers); Louisville 27, Pitt 16 (TheRX); Louisville 34, Pitt 21 (FOX Sports Pittsburgh/iHeart algorithm)",
-    "moneyline": "LOU -471 / PITT +456 (Dimers, Nov 20); LOU -610 / PITT +460 (FanDuel, Nov 19); LOU -575 / PITT +425 (PickDawgz, Nov 19); LOU -525 / PITT +400 (BookMaker via TheRX)",
-    "win_probability": "Louisville 85.2% (Dimers, Nov 20); 80.5% (numberFire via FanDuel Research); 77.5% (ESPN, via Big Red Louie)",
-    "injuries": "ACC availability report (Nov 19, via TheRX and Big Red Louie): Pitt QB Holden Geriner QUESTIONABLE (Narduzzi: starter 'if he's available', TribLive Nov 19; freshman Corey Dailey starts otherwise); Pitt OUT: QB Mason Heintschel (season-ending ACL), RB La'Vell Wright, TE Elijah Lagg, TE Max Hunt, LB Cameron Lindsey, WR Tyreek Robinson, DB Allen Bryant, DB Isaac Patterson, WR Rodney Dunbar; DL Eliyt Nairne and DL Sean FitzSimmons QUESTIONABLE. Louisville OUT: DB Antonio Watts, P Jacob Baker, OT Bryten Close, TE Hamilton Atkins, DL Sam Dawson, OL Anwar O'Neal, WR Payton Cook; PROBABLE: RB Keyjuan Brown, CB Jabari Mack, OL Cason Henry; TE Travis Egan probable (Courier Journal) or questionable (TheRX); LB Stanquan Clark suspended for the first half (post-game brawl at North Carolina). No reasons given for most statuses. Game-day report not found.",
-    "sources": [
-     {
-      "site": "Predictem",
-      "url": "https://www.predictem.com/?p=216165"
-     },
-     {
-      "site": "TheRX",
-      "url": "https://www.therx.com/college-football/pitt-louisville-prediction-november-21-2026/55861/"
-     },
-     {
-      "site": "PickDawgz",
-      "url": "https://pickdawgz.com/college-football-picks/pittsburgh-vs-louisville-prediction-11-21-2026-todays-college-football-picks/"
-     },
-     {
-      "site": "Dimers",
-      "url": "https://www.dimers.com/cfb/predictions/2026_12_lou_pitt"
-     },
-     {
-      "site": "FanDuel Research",
-      "url": "https://fanduel.com/research/louisville-vs-pittsburgh-college-football-odds-picks-best-bets-for-11-21-2026"
-     },
-     {
-      "site": "FOX Sports Pittsburgh (iHeart)",
-      "url": "https://foxsportspgh.iheart.com/content/2026-11-20-pitt-vs-louisville-football-prediction-odds-nov-21/"
-     },
-     {
-      "site": "Big Red Louie (availability report)",
-      "url": "https://bigredlouie.com/louisville-football-vs-pitt-how-to-watch-odds-injuries-more-for-week-12-matchup-"
-     },
-     {
-      "site": "Courier Journal (via Yahoo Sports)",
-      "url": "https://sports.yahoo.com/articles/miss-louisville-footballs-week-12-010441540.html"
-     },
-     {
-      "site": "TribLive",
-      "url": "https://community.triblive.com/news/4188869"
-     },
-     {
-      "site": "Cardinal Sports Zone",
-      "url": "https://cardinalsportszone.com/2026/11/20/everything-you-need-to-know-2026-louisville-v-pitt/"
-     },
-     {
-      "site": "SportsLine (odds + injury list)",
-      "url": "https://www.sportsline.com/college-football/game-forecast/NCAAF_20261121_PITT@LVILLE/"
-     }
-    ],
-    "updated": "2026-11-21T05:49-08:00"
-   }
-  },
   {
    "id": "401866465",
    "kick_utc": "2026-11-17T23:00:00+00:00",
@@ -4392,6 +2302,2104 @@
     "home": 38,
     "away": 24
    }
+  },
+  {
+   "id": "401856755",
+   "kick_utc": "2026-11-21T20:30:00+00:00",
+   "kick_pt": "Sat 12:30 PM PT",
+   "day_et": "2026-11-21",
+   "state": "post",
+   "detail": "Final",
+   "neutral": false,
+   "venue": "DKR-Texas Memorial Stadium",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -18.5,
+   "open_spread": -21.0,
+   "line_source": "Draft Kings",
+   "total": 46.5,
+   "fav_ml": -1350.0,
+   "movement": -2.5,
+   "home": {
+    "code": 251,
+    "abbr": "TEX",
+    "name": "Texas",
+    "display": "Texas Longhorns",
+    "season": {
+     "off_epa": -0.0165,
+     "off_sr": 0.4279,
+     "def_epa": -0.1348,
+     "def_sr": 0.3665,
+     "games": 10,
+     "ranks": {
+      "off_epa": 110,
+      "off_sr": 96,
+      "def_epa": 5,
+      "def_sr": 6
+     }
+    },
+    "last3": {
+     "off_epa": -0.029,
+     "off_sr": 0.3989,
+     "def_epa": -0.1414,
+     "def_sr": 0.3448,
+     "games": 3,
+     "ranks": {
+      "off_epa": 93,
+      "off_sr": 101,
+      "def_epa": 17,
+      "def_sr": 6
+     }
+    },
+    "net": 0.1183,
+    "net_rank": 37,
+    "record": "8-2",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "W"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Arch Manning",
+     "dropbacks": 325,
+     "epa_db": -0.039,
+     "rank": 109
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 17,
+     "fpi": 6,
+     "own_net": 37,
+     "ap": 8,
+     "cfp": 5
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.942
+   },
+   "away": {
+    "code": 8,
+    "abbr": "ARK",
+    "name": "Arkansas",
+    "display": "Arkansas Razorbacks",
+    "season": {
+     "off_epa": -0.0216,
+     "off_sr": 0.4226,
+     "def_epa": 0.0233,
+     "def_sr": 0.4348,
+     "games": 10,
+     "ranks": {
+      "off_epa": 113,
+      "off_sr": 103,
+      "def_epa": 63,
+      "def_sr": 77
+     }
+    },
+    "last3": {
+     "off_epa": -0.0444,
+     "off_sr": 0.4085,
+     "def_epa": -0.074,
+     "def_sr": 0.4057,
+     "games": 3,
+     "ranks": {
+      "off_epa": 97,
+      "off_sr": 86,
+      "def_epa": 31,
+      "def_sr": 45
+     }
+    },
+    "net": -0.0449,
+    "net_rank": 100,
+    "record": "4-6",
+    "last2_results": [
+     "L",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "W"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "KJ Jackson",
+     "dropbacks": 324,
+     "epa_db": 0.018,
+     "rank": 87
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 74,
+     "fpi": 51,
+     "own_net": 100
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.059
+   },
+   "fav": 251,
+   "dog": 8,
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 22 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 TEX last-3 top 25 in 2 of 4 \u00b7 \u2717 ARK last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2717 TEX season outside 1-69: Off EPA/play #110, Off success #96 \u00b7 \u2713 ARK season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "ARK: consensus #74, ESPN FPI #51"
+     }
+    ],
+    "fails": [
+     "Watch list: score 22 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 22,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 7,
+      "dog_weakness": 8,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "call": "Watch list",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for TEX yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": true,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV21ARKTEX",
+    "fav_prob": 0.905,
+    "bid": 0.9,
+    "ask": 0.91
+   },
+   "locked_at": "2026-11-21T11:30:55-08:00",
+   "score": {
+    "home": 45,
+    "away": 3
+   }
+  },
+  {
+   "id": "401858304",
+   "kick_utc": "2026-11-21T20:30:00+00:00",
+   "kick_pt": "Sat 12:30 PM PT",
+   "day_et": "2026-11-21",
+   "state": "post",
+   "detail": "Final",
+   "neutral": false,
+   "venue": "Doak Campbell Stadium",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -10.5,
+   "open_spread": -10.0,
+   "line_source": "Draft Kings",
+   "total": 56.5,
+   "fav_ml": -395.0,
+   "movement": 0.5,
+   "home": {
+    "code": 52,
+    "abbr": "FSU",
+    "name": "Florida St",
+    "display": "Florida State Seminoles",
+    "season": {
+     "off_epa": 0.1125,
+     "off_sr": 0.4448,
+     "def_epa": 0.0964,
+     "def_sr": 0.4484,
+     "games": 10,
+     "ranks": {
+      "off_epa": 38,
+      "off_sr": 62,
+      "def_epa": 108,
+      "def_sr": 95
+     }
+    },
+    "last3": {
+     "off_epa": 0.0122,
+     "off_sr": 0.4339,
+     "def_epa": -0.0583,
+     "def_sr": 0.3854,
+     "games": 3,
+     "ranks": {
+      "off_epa": 80,
+      "off_sr": 63,
+      "def_epa": 37,
+      "def_sr": 27
+     }
+    },
+    "net": 0.0161,
+    "net_rank": 77,
+    "record": "5-5",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "W",
+     "W"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Ashton Daniels",
+     "dropbacks": 288,
+     "epa_db": 0.159,
+     "rank": 44
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 60,
+     "fpi": 39,
+     "own_net": 77
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.806
+   },
+   "away": {
+    "code": 152,
+    "abbr": "NCSU",
+    "name": "NC State",
+    "display": "NC State Wolfpack",
+    "season": {
+     "off_epa": 0.1072,
+     "off_sr": 0.4481,
+     "def_epa": 0.1118,
+     "def_sr": 0.4424,
+     "games": 10,
+     "ranks": {
+      "off_epa": 41,
+      "off_sr": 54,
+      "def_epa": 111,
+      "def_sr": 85
+     }
+    },
+    "last3": {
+     "off_epa": -0.0454,
+     "off_sr": 0.4121,
+     "def_epa": 0.0454,
+     "def_sr": 0.4306,
+     "games": 3,
+     "ranks": {
+      "off_epa": 98,
+      "off_sr": 83,
+      "def_epa": 75,
+      "def_sr": 70
+     }
+    },
+    "net": -0.0046,
+    "net_rank": 88,
+    "record": "4-6",
+    "last2_results": [
+     "L",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "L",
+     "L"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "CJ Bailey",
+     "dropbacks": 310,
+     "epa_db": 0.195,
+     "rank": 33
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 84,
+     "fpi": 75,
+     "own_net": 88
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.194
+   },
+   "fav": 52,
+   "dog": 152,
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 15 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 FSU last-3 top 25 in 0 of 4 \u00b7 \u2717 NCSU last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2717 FSU season outside 1-69: Def EPA allowed #108, Def success allowed #95 \u00b7 \u2713 NCSU season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "NCSU: consensus #84, ESPN FPI #75"
+     }
+    ],
+    "fails": [
+     "Score 15 (watch list from 18, qualifies at 28)"
+    ],
+    "hero": {
+     "score": 15,
+     "band": "red",
+     "parts": {
+      "fav_strength": 0,
+      "dog_weakness": 8,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "call": "No track",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for FSU yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV21NCSTFSU",
+    "fav_prob": 0.785,
+    "bid": 0.78,
+    "ask": 0.79
+   },
+   "locked_at": "2026-11-21T11:30:55-08:00",
+   "score": {
+    "home": 10,
+    "away": 28
+   }
+  },
+  {
+   "id": "401861968",
+   "kick_utc": "2026-11-21T20:30:00+00:00",
+   "kick_pt": "Sat 12:30 PM PT",
+   "day_et": "2026-11-21",
+   "state": "post",
+   "detail": "Final",
+   "neutral": false,
+   "venue": "Pratt & Whitney Stadium",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -14.0,
+   "open_spread": -14.5,
+   "line_source": "Draft Kings",
+   "total": 48.5,
+   "fav_ml": -600.0,
+   "movement": -0.5,
+   "home": {
+    "code": 41,
+    "abbr": "CONN",
+    "name": "UConn",
+    "display": "UConn Huskies",
+    "season": {
+     "off_epa": 0.1657,
+     "off_sr": 0.4403,
+     "def_epa": 0.0841,
+     "def_sr": 0.4539,
+     "games": 10,
+     "ranks": {
+      "off_epa": 22,
+      "off_sr": 73,
+      "def_epa": 103,
+      "def_sr": 103
+     }
+    },
+    "last3": {
+     "off_epa": 0.1894,
+     "off_sr": 0.4785,
+     "def_epa": 0.1346,
+     "def_sr": 0.4749,
+     "games": 3,
+     "ranks": {
+      "off_epa": 17,
+      "off_sr": 30,
+      "def_epa": 111,
+      "def_sr": 107
+     }
+    },
+    "net": 0.0817,
+    "net_rank": 51,
+    "record": "5-5",
+    "last2_results": [
+     "L",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "W"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Kalieb Osborne",
+     "dropbacks": 302,
+     "epa_db": 0.121,
+     "rank": 55
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 69,
+     "fpi": 86,
+     "own_net": 51
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.825
+   },
+   "away": {
+    "code": 295,
+    "abbr": "ODU",
+    "name": "Old Dominion",
+    "display": "Old Dominion Monarchs",
+    "season": {
+     "off_epa": -0.2285,
+     "off_sr": 0.3455,
+     "def_epa": -0.1172,
+     "def_sr": 0.3718,
+     "games": 10,
+     "ranks": {
+      "off_epa": 138,
+      "off_sr": 137,
+      "def_epa": 7,
+      "def_sr": 10
+     }
+    },
+    "last3": {
+     "off_epa": -0.2698,
+     "off_sr": 0.3586,
+     "def_epa": -0.1757,
+     "def_sr": 0.3687,
+     "games": 3,
+     "ranks": {
+      "off_epa": 136,
+      "off_sr": 120,
+      "def_epa": 12,
+      "def_sr": 13
+     }
+    },
+    "net": -0.1113,
+    "net_rank": 120,
+    "record": "3-7",
+    "last2_results": [
+     "L",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "W"
+    ],
+    "rest": 14,
+    "qb": {
+     "regular": "Jaxon Potter",
+     "dropbacks": 125,
+     "epa_db": -0.29,
+     "rank": 133
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 124,
+     "fpi": 121,
+     "own_net": 120
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.175
+   },
+   "fav": 41,
+   "dog": 295,
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 16 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 CONN last-3 top 25 in 1 of 4 \u00b7 \u2717 ODU last-3 bottom 25 (114+) in 2 of 4 \u00b7 \u2717 CONN season outside 1-69: Off success #73, Def EPA allowed #103, Def success allowed #103 \u00b7 \u2717 ODU season top 25: Def EPA allowed #7, Def success allowed #10"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "ODU: consensus #124, ESPN FPI #121"
+     }
+    ],
+    "fails": [
+     "Score 16 (watch list from 18, qualifies at 28)"
+    ],
+    "hero": {
+     "score": 16,
+     "band": "red",
+     "parts": {
+      "fav_strength": 2,
+      "dog_weakness": 8,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 1
+     },
+     "max": 40
+    },
+    "call": "No track",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for CONN yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV21ODUCONN",
+    "fav_prob": 0.835,
+    "bid": 0.83,
+    "ask": 0.84
+   },
+   "locked_at": "2026-11-21T11:30:55-08:00",
+   "score": {
+    "home": 29,
+    "away": 21
+   }
+  },
+  {
+   "id": "401860920",
+   "kick_utc": "2026-11-21T23:00:00+00:00",
+   "kick_pt": "Sat 3:00 PM PT",
+   "day_et": "2026-11-21",
+   "state": "post",
+   "detail": "Final",
+   "neutral": false,
+   "venue": "UFCU Stadium",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -13.5,
+   "open_spread": -14.5,
+   "line_source": "DraftKings",
+   "total": 61.5,
+   "fav_ml": -575.0,
+   "movement": -1.0,
+   "home": {
+    "code": 326,
+    "abbr": "TXST",
+    "name": "Texas St",
+    "display": "Texas State Bobcats",
+    "season": {
+     "off_epa": 0.1894,
+     "off_sr": 0.492,
+     "def_epa": 0.1164,
+     "def_sr": 0.4521,
+     "games": 10,
+     "ranks": {
+      "off_epa": 15,
+      "off_sr": 21,
+      "def_epa": 114,
+      "def_sr": 98
+     }
+    },
+    "last3": {
+     "off_epa": 0.2951,
+     "off_sr": 0.4954,
+     "def_epa": 0.1672,
+     "def_sr": 0.4413,
+     "games": 3,
+     "ranks": {
+      "off_epa": 4,
+      "off_sr": 18,
+      "def_epa": 118,
+      "def_sr": 80
+     }
+    },
+    "net": 0.073,
+    "net_rank": 53,
+    "record": "6-4",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "W",
+     "W"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Brad Jackson",
+     "dropbacks": 297,
+     "epa_db": 0.329,
+     "rank": 7
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 56,
+     "fpi": 55,
+     "own_net": 53
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.8
+   },
+   "away": {
+    "code": 265,
+    "abbr": "WSU",
+    "name": "Washington St",
+    "display": "Washington State Cougars",
+    "season": {
+     "off_epa": 0.0009,
+     "off_sr": 0.4463,
+     "def_epa": 0.0415,
+     "def_sr": 0.4119,
+     "games": 10,
+     "ranks": {
+      "off_epa": 97,
+      "off_sr": 60,
+      "def_epa": 79,
+      "def_sr": 48
+     }
+    },
+    "last3": {
+     "off_epa": 0.1825,
+     "off_sr": 0.5484,
+     "def_epa": 0.0883,
+     "def_sr": 0.4012,
+     "games": 3,
+     "ranks": {
+      "off_epa": 18,
+      "off_sr": 2,
+      "def_epa": 93,
+      "def_sr": 43
+     }
+    },
+    "net": -0.0406,
+    "net_rank": 99,
+    "record": "2-8",
+    "last2_results": [
+     "L",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "W"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Caden Pinnick",
+     "dropbacks": 196,
+     "epa_db": -0.227,
+     "rank": 131
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 95,
+     "fpi": 90,
+     "own_net": 99
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.2
+   },
+   "fav": 326,
+   "dog": 265,
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 18 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 TXST last-3 top 25 in 2 of 4 \u00b7 \u2717 WSU last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2717 TXST season outside 1-69: Def EPA allowed #114, Def success allowed #98 \u00b7 \u2713 WSU season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "WSU: consensus #95, ESPN FPI #90"
+     }
+    ],
+    "fails": [
+     "Watch list: score 18 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 18,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 5,
+      "dog_weakness": 6,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "call": "Watch list",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for TXST yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV21WSUTXST",
+    "fav_prob": 0.825,
+    "bid": 0.82,
+    "ask": 0.83
+   },
+   "locked_at": "2026-11-21T14:00:46-08:00",
+   "readout": {
+    "matchup": "WSU @ TXST",
+    "summary": "All sources pick Texas State (6-4, 5-1 at home) over Washington State (2-8, winless away). The Cougars On SI writer expects the Bobcats to wear WSU down physically, 37-28. Dimers projects 37-24 (82.7%), numberFire 94.7%. No source picks WSU, and nobody makes a spread pick at -13.5.",
+    "pick": "Texas State to win (Cougars On SI, Bang The Book, Dimers, numberFire); no spread pick found",
+    "predicted_score": "Texas State 37, WSU 24 (Dimers); Texas State 37, WSU 28 (Cougars On SI, Nov 16, when the line was WSU +10.5)",
+    "moneyline": "TXST -488 / WSU +475 (Dimers, Nov 20); TXST -581 / WSU +430 (FanDuel, Nov 19); TXST -535 / WSU +400 (Bang The Book, Nov 20)",
+    "win_probability": "Texas State 82.7% (Dimers, Nov 20); 94.7% (numberFire via FanDuel Research)",
+    "injuries": "SportsLine list (read Nov 20, no game statuses): WSU WR Darrius Clemons (undisclosed, listed Nov 17), TE Hudson Cedarland (leg, Oct 1), WR Tony Freeman (knee, Sep 13); Texas State one QB (elbow, listed Jul 22, name not shown). Bang The Book (Nov 20): no player statuses for either team. No official availability report found.",
+    "sources": [
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/cfb/predictions/2026_12_txst_wsu"
+     },
+     {
+      "site": "Washington State Cougars On SI (via Yahoo Sports)",
+      "url": "https://sports.yahoo.com/articles/washington-state-vs-texas-state-183400682.html"
+     },
+     {
+      "site": "FanDuel Research",
+      "url": "https://www.fanduel.com/research/texas-state-vs-washington-state-college-football-odds-picks-best-bets-for-11-21-2026"
+     },
+     {
+      "site": "Bang The Book",
+      "url": "https://bangthebook.com/washington-state-cougars-vs-texas-state-bobcats-prediction-2026-11-21/"
+     },
+     {
+      "site": "SportsLine (odds + injury list)",
+      "url": "https://www.sportsline.com/college-football/game-forecast/NCAAF_20261121_WASHST@TXSTSM/"
+     },
+     {
+      "site": "FOX 13 Seattle",
+      "url": "https://www.fox13seattle.com/sports/how-watch-wsu-cougars-vs-texas-state"
+     }
+    ],
+    "updated": "2026-11-21T05:49-08:00"
+   },
+   "score": {
+    "home": 42,
+    "away": 14
+   }
+  },
+  {
+   "id": "401858534",
+   "kick_utc": "2026-11-21T23:15:00+00:00",
+   "kick_pt": "Sat 3:15 PM PT",
+   "day_et": "2026-11-21",
+   "state": "post",
+   "detail": "Final",
+   "neutral": false,
+   "venue": "Los Angeles Memorial Coliseum",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -17.5,
+   "open_spread": -16.5,
+   "line_source": "DraftKings",
+   "total": 57.5,
+   "fav_ml": -950.0,
+   "movement": 1.0,
+   "home": {
+    "code": 30,
+    "abbr": "USC",
+    "name": "USC",
+    "display": "USC Trojans",
+    "season": {
+     "off_epa": 0.1594,
+     "off_sr": 0.5142,
+     "def_epa": 0.1709,
+     "def_sr": 0.4579,
+     "games": 10,
+     "ranks": {
+      "off_epa": 26,
+      "off_sr": 5,
+      "def_epa": 128,
+      "def_sr": 112
+     }
+    },
+    "last3": {
+     "off_epa": -0.033,
+     "off_sr": 0.4896,
+     "def_epa": 0.0985,
+     "def_sr": 0.4472,
+     "games": 3,
+     "ranks": {
+      "off_epa": 95,
+      "off_sr": 22,
+      "def_epa": 94,
+      "def_sr": 86
+     }
+    },
+    "net": -0.0114,
+    "net_rank": 89,
+    "record": "7-3",
+    "last2_results": [
+     "W",
+     "L"
+    ],
+    "last3_results": [
+     "L",
+     "W",
+     "L"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Jayden Maiava",
+     "dropbacks": 352,
+     "epa_db": 0.296,
+     "rank": 13
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 54,
+     "fpi": 18,
+     "own_net": 89,
+     "ap": 18,
+     "cfp": 18
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.932
+   },
+   "away": {
+    "code": 120,
+    "abbr": "MD",
+    "name": "Maryland",
+    "display": "Maryland Terrapins",
+    "season": {
+     "off_epa": -0.0081,
+     "off_sr": 0.4147,
+     "def_epa": 0.0278,
+     "def_sr": 0.4113,
+     "games": 10,
+     "ranks": {
+      "off_epa": 101,
+      "off_sr": 112,
+      "def_epa": 65,
+      "def_sr": 47
+     }
+    },
+    "last3": {
+     "off_epa": 0.0106,
+     "off_sr": 0.4061,
+     "def_epa": -0.07,
+     "def_sr": 0.38,
+     "games": 3,
+     "ranks": {
+      "off_epa": 83,
+      "off_sr": 89,
+      "def_epa": 33,
+      "def_sr": 20
+     }
+    },
+    "net": -0.0359,
+    "net_rank": 98,
+    "record": "4-6",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "W",
+     "W"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Malik Washington",
+     "dropbacks": 308,
+     "epa_db": -0.04,
+     "rank": 110
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 90,
+     "fpi": 79,
+     "own_net": 98
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.069
+   },
+   "fav": 30,
+   "dog": 120,
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 16 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 USC last-3 top 25 in 1 of 4 \u00b7 \u2717 MD last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2717 USC season outside 1-69: Def EPA allowed #128, Def success allowed #112 \u00b7 \u2713 MD season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "MD: consensus #90, ESPN FPI #79"
+     }
+    ],
+    "fails": [
+     "Score 16 (watch list from 18, qualifies at 28)"
+    ],
+    "hero": {
+     "score": 16,
+     "band": "red",
+     "parts": {
+      "fav_strength": 3,
+      "dog_weakness": 7,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 1
+     },
+     "max": 40
+    },
+    "call": "No track",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for USC yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV21MDUSC",
+    "fav_prob": 0.895,
+    "bid": 0.89,
+    "ask": 0.9
+   },
+   "locked_at": "2026-11-21T14:15:33-08:00",
+   "score": {
+    "home": 35,
+    "away": 21
+   }
+  },
+  {
+   "id": "401856865",
+   "kick_utc": "2026-11-22T00:00:00+00:00",
+   "kick_pt": "Sat 4:00 PM PT",
+   "day_et": "2026-11-21",
+   "state": "post",
+   "detail": "Final/OT",
+   "neutral": false,
+   "venue": "Bill Snyder Family Stadium",
+   "favorite": "away",
+   "fav_home": false,
+   "spread": -10.0,
+   "open_spread": -10.5,
+   "line_source": "DraftKings",
+   "total": 53.5,
+   "fav_ml": -375.0,
+   "movement": -0.5,
+   "home": {
+    "code": 2306,
+    "abbr": "KSU",
+    "name": "Kansas St",
+    "display": "Kansas State Wildcats",
+    "season": {
+     "off_epa": 0.0929,
+     "off_sr": 0.4674,
+     "def_epa": 0.0354,
+     "def_sr": 0.4033,
+     "games": 10,
+     "ranks": {
+      "off_epa": 55,
+      "off_sr": 38,
+      "def_epa": 71,
+      "def_sr": 30
+     }
+    },
+    "last3": {
+     "off_epa": -0.0025,
+     "off_sr": 0.4472,
+     "def_epa": 0.1285,
+     "def_sr": 0.456,
+     "games": 3,
+     "ranks": {
+      "off_epa": 86,
+      "off_sr": 50,
+      "def_epa": 109,
+      "def_sr": 94
+     }
+    },
+    "net": 0.0575,
+    "net_rank": 57,
+    "record": "4-6",
+    "last2_results": [
+     "L",
+     "L"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "L"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Avery Johnson",
+     "dropbacks": 191,
+     "epa_db": 0.189,
+     "rank": 37
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 62,
+     "fpi": 63,
+     "own_net": 57
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.26
+   },
+   "away": {
+    "code": 12,
+    "abbr": "ARIZ",
+    "name": "Arizona",
+    "display": "Arizona Wildcats",
+    "season": {
+     "off_epa": 0.1361,
+     "off_sr": 0.4728,
+     "def_epa": 0.0362,
+     "def_sr": 0.4055,
+     "games": 10,
+     "ranks": {
+      "off_epa": 30,
+      "off_sr": 33,
+      "def_epa": 72,
+      "def_sr": 36
+     }
+    },
+    "last3": {
+     "off_epa": 0.0748,
+     "off_sr": 0.4047,
+     "def_epa": 0.1746,
+     "def_sr": 0.4607,
+     "games": 3,
+     "ranks": {
+      "off_epa": 51,
+      "off_sr": 90,
+      "def_epa": 121,
+      "def_sr": 97
+     }
+    },
+    "net": 0.0998,
+    "net_rank": 44,
+    "record": "7-3",
+    "last2_results": [
+     "W",
+     "L"
+    ],
+    "last3_results": [
+     "L",
+     "W",
+     "L"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Noah Fifita",
+     "dropbacks": 374,
+     "epa_db": 0.267,
+     "rank": 21
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 27,
+     "fpi": 22,
+     "own_net": 44,
+     "ap": 19,
+     "cfp": 19
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.74
+   },
+   "fav": 12,
+   "dog": 2306,
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 13 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 ARIZ last-3 top 25 in 0 of 4 \u00b7 \u2717 KSU last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2717 ARIZ season outside 1-69: Def EPA allowed #72 \u00b7 \u2713 KSU season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "KSU: consensus #62, ESPN FPI #63"
+     }
+    ],
+    "fails": [
+     "Score 13 (watch list from 18, qualifies at 28)"
+    ],
+    "hero": {
+     "score": 13,
+     "band": "red",
+     "parts": {
+      "fav_strength": 0,
+      "dog_weakness": 8,
+      "health": 4,
+      "home": 0,
+      "rest": 0,
+      "form": 1
+     },
+     "max": 40
+    },
+    "call": "No track",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for ARIZ yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV21ARIZKSU",
+    "fav_prob": 0.765,
+    "bid": 0.76,
+    "ask": 0.77
+   },
+   "locked_at": "2026-11-21T15:00:47-08:00",
+   "score": {
+    "home": 28,
+    "away": 35
+   }
+  },
+  {
+   "id": "401869938",
+   "kick_utc": "2026-11-22T00:00:00+00:00",
+   "kick_pt": "Sat 4:00 PM PT",
+   "day_et": "2026-11-21",
+   "state": "post",
+   "detail": "Final",
+   "neutral": false,
+   "venue": "Joe Aillet Stadium",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -14.5,
+   "open_spread": -16.5,
+   "line_source": "DraftKings",
+   "total": 54.5,
+   "fav_ml": -625.0,
+   "movement": -2.0,
+   "home": {
+    "code": 2348,
+    "abbr": "LT",
+    "name": "Louisiana Tech",
+    "display": "Louisiana Tech Bulldogs",
+    "season": {
+     "off_epa": 0.0826,
+     "off_sr": 0.4222,
+     "def_epa": -0.1164,
+     "def_sr": 0.383,
+     "games": 10,
+     "ranks": {
+      "off_epa": 61,
+      "off_sr": 104,
+      "def_epa": 8,
+      "def_sr": 15
+     }
+    },
+    "last3": {
+     "off_epa": 0.0551,
+     "off_sr": 0.4348,
+     "def_epa": -0.19,
+     "def_sr": 0.3874,
+     "games": 3,
+     "ranks": {
+      "off_epa": 57,
+      "off_sr": 61,
+      "def_epa": 10,
+      "def_sr": 28
+     }
+    },
+    "net": 0.199,
+    "net_rank": 17,
+    "record": "8-2",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "W"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Blake Baker",
+     "dropbacks": 207,
+     "epa_db": 0.199,
+     "rank": 32
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 37,
+     "fpi": 66,
+     "own_net": 17
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.849
+   },
+   "away": {
+    "code": 2032,
+    "abbr": "ARST",
+    "name": "Arkansas St",
+    "display": "Arkansas State Red Wolves",
+    "season": {
+     "off_epa": 0.0697,
+     "off_sr": 0.4789,
+     "def_epa": 0.1169,
+     "def_sr": 0.4657,
+     "games": 10,
+     "ranks": {
+      "off_epa": 71,
+      "off_sr": 30,
+      "def_epa": 115,
+      "def_sr": 122
+     }
+    },
+    "last3": {
+     "off_epa": 0.0318,
+     "off_sr": 0.4574,
+     "def_epa": 0.1124,
+     "def_sr": 0.4565,
+     "games": 3,
+     "ranks": {
+      "off_epa": 69,
+      "off_sr": 42,
+      "def_epa": 100,
+      "def_sr": 95
+     }
+    },
+    "net": -0.0472,
+    "net_rank": 101,
+    "record": "4-6",
+    "last2_results": [
+     "L",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "L",
+     "L"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Trey Owens",
+     "dropbacks": 318,
+     "epa_db": 0.041,
+     "rank": 80
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 111,
+     "fpi": 109,
+     "own_net": 101
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.152
+   },
+   "fav": 2348,
+   "dog": 2032,
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 22 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 LT last-3 top 25 in 1 of 4 \u00b7 \u2717 ARST last-3 bottom 25 (114+) in 0 of 4 \u00b7 \u2717 LT season outside 1-69: Off success #104 \u00b7 \u2713 ARST season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "ARST: consensus #111, ESPN FPI #109"
+     }
+    ],
+    "fails": [
+     "Watch list: score 22 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 22,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 5,
+      "dog_weakness": 10,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "call": "Watch list",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for LT yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV21ARSTLT",
+    "fav_prob": 0.845,
+    "bid": 0.84,
+    "ask": 0.85
+   },
+   "locked_at": "2026-11-21T15:00:47-08:00",
+   "readout": {
+    "matchup": "ARST @ LT",
+    "summary": "Every source favors Louisiana Tech (8-2, 5-0 at home). Doc's Sports takes the Bulldogs -14.5, citing LT's 36.5 points a game against an Arkansas State (4-6) defense allowing 26.5 and a weak ARST run game. Bang The Book picks LT on the moneyline; Dimers gives LT 84.9%. No source picks Arkansas State.",
+    "pick": "Louisiana Tech to win (all sources); Louisiana Tech -14.5 (Doc's Sports)",
+    "predicted_score": "Louisiana Tech 34, Arkansas State 19 (Dimers, Nov 20)",
+    "moneyline": "LT -525 / ARST +506 (Dimers, Nov 20); LT -600 / ARST +440 (Bang The Book, Nov 21)",
+    "win_probability": "Louisiana Tech 84.9% (Dimers, Nov 20)",
+    "injuries": "Only old entries found: ARST RB Devin Spencer (knee, listed Aug 16); LT one WR undisclosed (listed Oct 7, name not shown) (SportsLine). Bang The Book (Nov 21): no player statuses for either team. No game-week availability report found.",
+    "sources": [
+     {
+      "site": "Doc's Sports",
+      "url": "https://www.docsports.com/free-picks/football/2026/arkansas-state-red-wolves-vs-louisiana-tech-bulldogs-prediction-11-21-2026-college-football-picks-best-bets-odds.html"
+     },
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/cfb/predictions/2026_12_lt_arst"
+     },
+     {
+      "site": "Bang The Book",
+      "url": "https://bangthebook.com/arkansas-state-red-wolves-vs-louisiana-tech-bulldogs-prediction-2026-11-21/"
+     },
+     {
+      "site": "SportsLine (odds + injury list)",
+      "url": "https://www.sportsline.com/college-football/game-forecast/NCAAF_20261121_ARKST@LATECH/"
+     }
+    ],
+    "updated": "2026-11-21T05:49-08:00"
+   },
+   "score": {
+    "home": 48,
+    "away": 3
+   }
+  },
+  {
+   "id": "401856753",
+   "kick_utc": "2026-11-22T00:30:00+00:00",
+   "kick_pt": "Sat 4:30 PM PT",
+   "day_et": "2026-11-21",
+   "state": "post",
+   "detail": "Final",
+   "neutral": false,
+   "venue": "Williams-Brice Stadium",
+   "favorite": "away",
+   "fav_home": false,
+   "spread": -14.5,
+   "open_spread": -10.5,
+   "line_source": "Draft Kings",
+   "total": 51.5,
+   "fav_ml": -800.0,
+   "movement": 4.0,
+   "home": {
+    "code": 2579,
+    "abbr": "SC",
+    "name": "South Carolina",
+    "display": "South Carolina Gamecocks",
+    "season": {
+     "off_epa": 0.0932,
+     "off_sr": 0.4443,
+     "def_epa": 0.0584,
+     "def_sr": 0.4505,
+     "games": 10,
+     "ranks": {
+      "off_epa": 53,
+      "off_sr": 64,
+      "def_epa": 92,
+      "def_sr": 97
+     }
+    },
+    "last3": {
+     "off_epa": -0.0704,
+     "off_sr": 0.3515,
+     "def_epa": 0.0024,
+     "def_sr": 0.4348,
+     "games": 3,
+     "ranks": {
+      "off_epa": 103,
+      "off_sr": 127,
+      "def_epa": 62,
+      "def_sr": 74
+     }
+    },
+    "net": 0.0348,
+    "net_rank": 72,
+    "record": "6-4",
+    "last2_results": [
+     "W",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "L"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "LaNorris Sellers",
+     "dropbacks": 293,
+     "epa_db": 0.087,
+     "rank": 69
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 53,
+     "fpi": 33,
+     "own_net": 72,
+     "cfp": 21
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.131
+   },
+   "away": {
+    "code": 61,
+    "abbr": "UGA",
+    "name": "Georgia",
+    "display": "Georgia Bulldogs",
+    "season": {
+     "off_epa": 0.2101,
+     "off_sr": 0.5183,
+     "def_epa": -0.0469,
+     "def_sr": 0.4038,
+     "games": 10,
+     "ranks": {
+      "off_epa": 11,
+      "off_sr": 4,
+      "def_epa": 33,
+      "def_sr": 31
+     }
+    },
+    "last3": {
+     "off_epa": 0.1547,
+     "off_sr": 0.4973,
+     "def_epa": -0.1255,
+     "def_sr": 0.4233,
+     "games": 3,
+     "ranks": {
+      "off_epa": 25,
+      "off_sr": 16,
+      "def_epa": 19,
+      "def_sr": 64
+     }
+    },
+    "net": 0.257,
+    "net_rank": 6,
+    "record": "9-1",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "W"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Gunner Stockton",
+     "dropbacks": 230,
+     "epa_db": 0.274,
+     "rank": 18
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 2,
+     "fpi": 1,
+     "own_net": 6,
+     "ap": 1,
+     "cfp": 1
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.869
+   },
+   "fav": 61,
+   "dog": 2579,
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 21 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2713 UGA last-3 top 25 in 3 of 4 \u00b7 \u2717 SC last-3 bottom 25 (114+) in 1 of 4 \u00b7 \u2713 UGA season top half (1-69) in all four \u00b7 \u2713 SC season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": false,
+      "detail": "SC ranked: CFP #21"
+     }
+    ],
+    "fails": [
+     "SC ranked: CFP #21",
+     "Would be on the watch list otherwise (score 21)"
+    ],
+    "hero": {
+     "score": 21,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 6,
+      "dog_weakness": 9,
+      "health": 4,
+      "home": 0,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "call": "No track",
+    "flags": [
+     {
+      "level": "red",
+      "text": "SC ranked: CFP #21 (no track)"
+     },
+     {
+      "level": "yellow",
+      "text": "No injury report for UGA yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV21UGASCAR",
+    "fav_prob": 0.865,
+    "bid": 0.86,
+    "ask": 0.87
+   },
+   "locked_at": "2026-11-21T15:30:39-08:00",
+   "score": {
+    "home": 6,
+    "away": 34
+   }
+  },
+  {
+   "id": "401858306",
+   "kick_utc": "2026-11-22T00:30:00+00:00",
+   "kick_pt": "Sat 4:30 PM PT",
+   "day_et": "2026-11-21",
+   "state": "post",
+   "detail": "Final",
+   "neutral": false,
+   "venue": "L&N Federal Credit Union Stadium",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -10.5,
+   "open_spread": -12.5,
+   "line_source": "Draft Kings",
+   "total": 50.5,
+   "fav_ml": -455.0,
+   "movement": -2.0,
+   "home": {
+    "code": 97,
+    "abbr": "LOU",
+    "name": "Louisville",
+    "display": "Louisville Cardinals",
+    "season": {
+     "off_epa": 0.2418,
+     "off_sr": 0.5065,
+     "def_epa": 0.0012,
+     "def_sr": 0.413,
+     "games": 10,
+     "ranks": {
+      "off_epa": 6,
+      "off_sr": 8,
+      "def_epa": 55,
+      "def_sr": 51
+     }
+    },
+    "last3": {
+     "off_epa": 0.2057,
+     "off_sr": 0.5272,
+     "def_epa": -0.0986,
+     "def_sr": 0.3713,
+     "games": 3,
+     "ranks": {
+      "off_epa": 13,
+      "off_sr": 5,
+      "def_epa": 24,
+      "def_sr": 15
+     }
+    },
+    "net": 0.2406,
+    "net_rank": 8,
+    "record": "7-3",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "W"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Lincoln Kienholz",
+     "dropbacks": 280,
+     "epa_db": 0.284,
+     "rank": 17
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 10,
+     "fpi": 16,
+     "own_net": 8,
+     "ap": 21,
+     "cfp": 23
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.77
+   },
+   "away": {
+    "code": 221,
+    "abbr": "PITT",
+    "name": "Pitt",
+    "display": "Pittsburgh Panthers",
+    "season": {
+     "off_epa": 0.0306,
+     "off_sr": 0.4284,
+     "def_epa": -0.0716,
+     "def_sr": 0.3658,
+     "games": 10,
+     "ranks": {
+      "off_epa": 83,
+      "off_sr": 94,
+      "def_epa": 25,
+      "def_sr": 5
+     }
+    },
+    "last3": {
+     "off_epa": -0.116,
+     "off_sr": 0.3761,
+     "def_epa": -0.0606,
+     "def_sr": 0.375,
+     "games": 3,
+     "ranks": {
+      "off_epa": 110,
+      "off_sr": 117,
+      "def_epa": 36,
+      "def_sr": 16
+     }
+    },
+    "net": 0.1022,
+    "net_rank": 42,
+    "record": "6-4",
+    "last2_results": [
+     "W",
+     "L"
+    ],
+    "last3_results": [
+     "L",
+     "W",
+     "L"
+    ],
+    "rest": 8,
+    "qb": {
+     "regular": "Mason Heintschel",
+     "dropbacks": 153,
+     "epa_db": 0.309,
+     "rank": 11
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 38,
+     "fpi": 43,
+     "own_net": 42
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.23
+   },
+   "fav": 97,
+   "dog": 221,
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 22 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2713 LOU last-3 top 25 in 4 of 4 \u00b7 \u2717 PITT last-3 bottom 25 (114+) in 1 of 4 \u00b7 \u2713 LOU season top half (1-69) in all four \u00b7 \u2717 PITT season top 25: Def EPA allowed #25, Def success allowed #5"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "PITT: consensus #38, ESPN FPI #43"
+     }
+    ],
+    "fails": [
+     "Watch list: score 22 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 22,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 9,
+      "dog_weakness": 6,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "call": "Watch list",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for LOU yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV21PITTLOU",
+    "fav_prob": 0.795,
+    "bid": 0.79,
+    "ask": 0.8
+   },
+   "locked_at": "2026-11-21T15:30:39-08:00",
+   "readout": {
+    "matchup": "PITT @ LOU",
+    "summary": "Everyone picks No. 21 Louisville (7-3) to win; the split is the -13.5 spread. Predictem and PickDawgz take Louisville -14, citing its run game against Pitt's unsettled QB spot (Geriner questionable). TheRX takes Pitt +13.5, noting Pitt allows 71.2 rushing yards a game. Models: Dimers 85.2%, numberFire 80.5%, ESPN 77.5%.",
+    "pick": "Louisville to win (all sources); Louisville -14 (Predictem, PickDawgz); Pitt +13.5 and Under 50.5 (TheRX)",
+    "predicted_score": "Louisville 34, Pitt 17 (Predictem); Louisville 32, Pitt 18 (Dimers); Louisville 27, Pitt 16 (TheRX); Louisville 34, Pitt 21 (FOX Sports Pittsburgh/iHeart algorithm)",
+    "moneyline": "LOU -471 / PITT +456 (Dimers, Nov 20); LOU -610 / PITT +460 (FanDuel, Nov 19); LOU -575 / PITT +425 (PickDawgz, Nov 19); LOU -525 / PITT +400 (BookMaker via TheRX)",
+    "win_probability": "Louisville 85.2% (Dimers, Nov 20); 80.5% (numberFire via FanDuel Research); 77.5% (ESPN, via Big Red Louie)",
+    "injuries": "ACC availability report (Nov 19, via TheRX and Big Red Louie): Pitt QB Holden Geriner QUESTIONABLE (Narduzzi: starter 'if he's available', TribLive Nov 19; freshman Corey Dailey starts otherwise); Pitt OUT: QB Mason Heintschel (season-ending ACL), RB La'Vell Wright, TE Elijah Lagg, TE Max Hunt, LB Cameron Lindsey, WR Tyreek Robinson, DB Allen Bryant, DB Isaac Patterson, WR Rodney Dunbar; DL Eliyt Nairne and DL Sean FitzSimmons QUESTIONABLE. Louisville OUT: DB Antonio Watts, P Jacob Baker, OT Bryten Close, TE Hamilton Atkins, DL Sam Dawson, OL Anwar O'Neal, WR Payton Cook; PROBABLE: RB Keyjuan Brown, CB Jabari Mack, OL Cason Henry; TE Travis Egan probable (Courier Journal) or questionable (TheRX); LB Stanquan Clark suspended for the first half (post-game brawl at North Carolina). No reasons given for most statuses. Game-day report not found.",
+    "sources": [
+     {
+      "site": "Predictem",
+      "url": "https://www.predictem.com/?p=216165"
+     },
+     {
+      "site": "TheRX",
+      "url": "https://www.therx.com/college-football/pitt-louisville-prediction-november-21-2026/55861/"
+     },
+     {
+      "site": "PickDawgz",
+      "url": "https://pickdawgz.com/college-football-picks/pittsburgh-vs-louisville-prediction-11-21-2026-todays-college-football-picks/"
+     },
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/cfb/predictions/2026_12_lou_pitt"
+     },
+     {
+      "site": "FanDuel Research",
+      "url": "https://fanduel.com/research/louisville-vs-pittsburgh-college-football-odds-picks-best-bets-for-11-21-2026"
+     },
+     {
+      "site": "FOX Sports Pittsburgh (iHeart)",
+      "url": "https://foxsportspgh.iheart.com/content/2026-11-20-pitt-vs-louisville-football-prediction-odds-nov-21/"
+     },
+     {
+      "site": "Big Red Louie (availability report)",
+      "url": "https://bigredlouie.com/louisville-football-vs-pitt-how-to-watch-odds-injuries-more-for-week-12-matchup-"
+     },
+     {
+      "site": "Courier Journal (via Yahoo Sports)",
+      "url": "https://sports.yahoo.com/articles/miss-louisville-footballs-week-12-010441540.html"
+     },
+     {
+      "site": "TribLive",
+      "url": "https://community.triblive.com/news/4188869"
+     },
+     {
+      "site": "Cardinal Sports Zone",
+      "url": "https://cardinalsportszone.com/2026/11/20/everything-you-need-to-know-2026-louisville-v-pitt/"
+     },
+     {
+      "site": "SportsLine (odds + injury list)",
+      "url": "https://www.sportsline.com/college-football/game-forecast/NCAAF_20261121_PITT@LVILLE/"
+     }
+    ],
+    "updated": "2026-11-21T05:49-08:00"
+   },
+   "score": {
+    "home": 42,
+    "away": 10
+   }
   }
  ],
  "notes": [],
@@ -4401,15 +4409,15 @@
  ],
  "data_through": "Week 12",
  "n_fbs": 138,
- "other_fbs_games": 23,
+ "other_fbs_games": 5,
  "summary": {
   "season": 2026,
   "week": 12,
   "games": 19,
-  "upcoming": 4,
+  "upcoming": 0,
   "qualified": 0,
-  "watch": 4,
-  "other_fbs_games": 23,
-  "built_label": "Sat Nov 21, 3:30 PM PT"
+  "watch": 0,
+  "other_fbs_games": 5,
+  "built_label": "Sat Nov 21, 9:00 PM PT"
  }
 }
