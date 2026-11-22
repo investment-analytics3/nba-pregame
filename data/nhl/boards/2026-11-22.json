@@ -3,8 +3,8 @@
  "date_label": "Sunday, November 22",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-22T14:00:45-08:00",
- "built_label": "Sun Nov 22, 2:00 PM PT",
+ "built_at": "2026-11-22T14:45:40-08:00",
+ "built_label": "Sun Nov 22, 2:45 PM PT",
  "metrics_through": "2026-11-21",
  "metrics_through_label": "Nov 21",
  "max": 40,
@@ -28,8 +28,8 @@
    "tip_utc": "2026-11-22T22:00:00+00:00",
    "tip_pt": "2:00 PM PT",
    "day_et": "2026-11-22",
-   "state": "pre",
-   "detail": "11/22 - 5:00 PM EST",
+   "state": "in",
+   "detail": "1:35 - 1st",
    "neutral": false,
    "venue": "Benchmark International Arena",
    "favorite": "home",
@@ -806,7 +806,11 @@
     "bid": 0.65,
     "ask": 0.66
    },
-   "locked_at": "2026-11-22T13:00:40-08:00"
+   "locked_at": "2026-11-22T13:00:40-08:00",
+   "score": {
+    "home": 1,
+    "away": 1
+   }
   },
   {
    "id": "401892771",
@@ -1184,7 +1188,7 @@
      "name": "Arturs Silovs",
      "last": "Silovs",
      "espn_id": "4576894",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "regular",
     "regular_goalie_name": "A. Silovs",
@@ -1209,6 +1213,13 @@
      "D. Carlile"
     ],
     "injuries": [
+     {
+      "name": "Declan Carlile",
+      "last": "Carlile",
+      "status": "Out",
+      "date": "2026-11-22T22:10Z",
+      "comment": "Carlile (lower body) won't play against Dallas on Sunday, per King Jemison of the Pittsburgh Post-Gazette."
+     },
      {
       "name": "Bryan Rust",
       "last": "Rust",
@@ -1246,7 +1257,9 @@
      }
     ],
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Declan Carlile"
+    ],
     "key_questionable": [],
     "key_long_term": [],
     "spread_text": ""
@@ -3234,7 +3247,7 @@
     "ml_home": -125,
     "ml_away": null,
     "puck_line": -1.5,
-    "total": 6.5,
+    "total": 5.5,
     "fav_price": 0.5556
    },
    "spread": {
@@ -4024,9 +4037,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV22EDMSTL",
-    "fav_prob": 0.525,
-    "bid": 0.52,
-    "ask": 0.53
+    "fav_prob": 0.535,
+    "bid": 0.53,
+    "ask": 0.54
    }
   }
  ],
@@ -4039,7 +4052,7 @@
   "in_range": 0,
   "qualified": 0,
   "watch": 0,
-  "built_label": "Sun Nov 22, 2:00 PM PT"
+  "built_label": "Sun Nov 22, 2:45 PM PT"
  },
  "power_table": [
   {
