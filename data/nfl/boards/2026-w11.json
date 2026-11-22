@@ -1,436 +1,9 @@
 {
  "season": 2026,
  "week": 11,
- "built_at": "2026-11-22T13:15:36-08:00",
- "built_label": "Sun Nov 22, 1:15 PM PT",
+ "built_at": "2026-11-22T14:15:36-08:00",
+ "built_label": "Sun Nov 22, 2:15 PM PT",
  "games": [
-  {
-   "id": "401873068",
-   "nflverse_id": "2026_11_BAL_CAR",
-   "kick_utc": "2026-11-22T18:00:00+00:00",
-   "kick_pt": "Sun 10:00 AM PT",
-   "day_et": "2026-11-22",
-   "state": "in",
-   "detail": "0:36 - 4th",
-   "neutral": false,
-   "venue": "Bank of America Stadium",
-   "home_code": "CAR",
-   "away_code": "BAL",
-   "score": {
-    "home": 35,
-    "away": 33
-   },
-   "line_source": "DraftKings",
-   "open_spread": 4.5,
-   "total": 44.5,
-   "total_open": 46.5,
-   "fav_ml": -135.0,
-   "favorite": "home",
-   "spread": -2.5,
-   "movement": 7.0,
-   "total_move": -2.0,
-   "fav_home": true,
-   "home": {
-    "code": "CAR",
-    "abbr": "CAR",
-    "season": {
-     "games": 9,
-     "off_epa": 0.0207,
-     "off_sr": 0.4173,
-     "def_epa": 0.027,
-     "def_sr": 0.4332,
-     "off_pass_epa": 0.0579,
-     "off_rush_epa": -0.0479,
-     "def_pass_epa": 0.1001,
-     "def_rush_epa": -0.0893,
-     "ranks": {
-      "off_epa": 13,
-      "off_sr": 24,
-      "def_epa": 20,
-      "def_sr": 12
-     }
-    },
-    "last3": {
-     "games": 3,
-     "off_epa": -0.0209,
-     "off_sr": 0.3894,
-     "def_epa": 0.016,
-     "def_sr": 0.432,
-     "off_pass_epa": -0.0232,
-     "off_rush_epa": -0.0168,
-     "def_pass_epa": 0.1613,
-     "def_rush_epa": -0.2545,
-     "ranks": {
-      "off_epa": 18,
-      "off_sr": 27,
-      "def_epa": 16,
-      "def_sr": 17
-     }
-    },
-    "net": -0.0063,
-    "net_rank": 17,
-    "adjusted": {
-     "off": 0.0531,
-     "def": 0.0704,
-     "net": 0.0037,
-     "recent_net": -0.0206,
-     "sr_off": 0.4173,
-     "sr_def": 0.4332
-    },
-    "record": "4-5",
-    "last2_results": [
-     "W",
-     "L"
-    ],
-    "last3_results": [
-     "W",
-     "L",
-     "L"
-    ],
-    "rest": 7,
-    "qb": {
-     "regular": "B.Young",
-     "regular_id": "00-0039150",
-     "season_leader": "B.Young",
-     "reset": false,
-     "dropbacks": 367,
-     "epa_db": 0.0317,
-     "rank": 17
-    },
-    "injuries_known": true,
-    "key_out": [
-     "Bobby Okereke"
-    ],
-    "key_questionable": [],
-    "key_long_term": [],
-    "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [
-     {
-      "name": "Ja'Tavion Sanders",
-      "pos": "TE",
-      "status": "Out"
-     },
-     {
-      "name": "Haynes King",
-      "pos": "QB",
-      "status": "Out"
-     },
-     {
-      "name": "Marco Wilson",
-      "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "name": "Bobby Okereke",
-      "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "name": "AJ Dillon",
-      "pos": "RB",
-      "status": "Out"
-     }
-    ],
-    "power": {
-     "consensus": 18,
-     "fpi": 17,
-     "nfl_com": 19
-    }
-   },
-   "away": {
-    "code": "BAL",
-    "abbr": "BAL",
-    "season": {
-     "games": 10,
-     "off_epa": -0.0068,
-     "off_sr": 0.4355,
-     "def_epa": 0.0266,
-     "def_sr": 0.4444,
-     "off_pass_epa": 0.0363,
-     "off_rush_epa": -0.0661,
-     "def_pass_epa": 0.0829,
-     "def_rush_epa": -0.0558,
-     "ranks": {
-      "off_epa": 19,
-      "off_sr": 13,
-      "def_epa": 19,
-      "def_sr": 21
-     }
-    },
-    "last3": {
-     "games": 3,
-     "off_epa": -0.2042,
-     "off_sr": 0.3678,
-     "def_epa": 0.0153,
-     "def_sr": 0.4531,
-     "off_pass_epa": -0.2749,
-     "off_rush_epa": -0.0939,
-     "def_pass_epa": 0.0938,
-     "def_rush_epa": -0.0632,
-     "ranks": {
-      "off_epa": 31,
-      "off_sr": 31,
-      "def_epa": 15,
-      "def_sr": 23
-     }
-    },
-    "net": -0.0334,
-    "net_rank": 21,
-    "adjusted": {
-     "off": 0.038,
-     "def": 0.0279,
-     "net": 0.0116,
-     "recent_net": -0.0123,
-     "sr_off": 0.4355,
-     "sr_def": 0.4444
-    },
-    "record": "4-6",
-    "last2_results": [
-     "L",
-     "L"
-    ],
-    "last3_results": [
-     "L",
-     "L",
-     "L"
-    ],
-    "rest": 6,
-    "qb": {
-     "regular": "J.Brissett",
-     "regular_id": "00-0033119",
-     "season_leader": "T.Huntley",
-     "reset": true,
-     "dropbacks": 372,
-     "epa_db": -0.0558,
-     "rank": 26
-    },
-    "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
-     "Derrick Henry"
-    ],
-    "key_long_term": [],
-    "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [
-     {
-      "name": "Derrick Henry",
-      "pos": "RB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Elijah Sarratt",
-      "pos": "WR",
-      "status": "Out"
-     },
-     {
-      "name": "Adam Randall",
-      "pos": "RB",
-      "status": "Out"
-     },
-     {
-      "name": "Kedon Slovis",
-      "pos": "QB",
-      "status": "Out"
-     },
-     {
-      "name": "Emery Jones Jr.",
-      "pos": "OT",
-      "status": "Out"
-     }
-    ],
-    "power": {
-     "consensus": 29,
-     "fpi": 28,
-     "nfl_com": 28
-    }
-   },
-   "fav": "CAR",
-   "dog": "BAL",
-   "scoring": {
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 16 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 CAR last-3 top 10 in 0 of 4 \u00b7 \u2713 BAL last-3 bottom 10 (23-32) in 3 of 4 \u00b7 \u2717 CAR season outside top 15: Off success #24, Def EPA allowed #20 \u00b7 \u2713 BAL season top 10 in none"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key starter newly out or doubtful for the favorite",
-      "pass": false,
-      "detail": "CAR key starter out: Bobby Okereke"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not top 10 in any power ranking",
-      "pass": true,
-      "detail": "BAL: consensus #29, ESPN FPI #28, NFL.com #28"
-     }
-    ],
-    "context": [
-     {
-      "n": 1,
-      "ok": false,
-      "text": "Favorite top 10 (season) in a core metric",
-      "detail": "none"
-     },
-     {
-      "n": 2,
-      "ok": false,
-      "text": "Also top 10 over its last 3 in that same metric",
-      "detail": "none"
-     },
-     {
-      "n": 3,
-      "ok": true,
-      "text": "Underdog not top 10 in any metric over its last 3",
-      "detail": "none"
-     },
-     {
-      "n": 4,
-      "ok": true,
-      "text": "Underdog not 3-0 in its last 3",
-      "detail": "0-3"
-     }
-    ],
-    "qualifiers": [],
-    "fails": [
-     "CAR key starter out: Bobby Okereke"
-    ],
-    "failed": [
-     "CAR key starter out: Bobby Okereke"
-    ],
-    "hero": {
-     "score": 16,
-     "band": "red",
-     "parts": {
-      "fav_strength": 0,
-      "dog_weakness": 11,
-      "health": 3,
-      "home": 1,
-      "rest": 0,
-      "form": 1
-     },
-     "max": 40
-    },
-    "edge": {
-     "gap": 0.027,
-     "required": 0.35,
-     "clears": false,
-     "short_by": 0.323,
-     "adjusted_gap": -0.008,
-     "adjusted_recent_gap": -0.008
-    },
-    "flags": [
-     {
-      "level": "yellow",
-      "text": "Line moved +7 toward the favorite (4+): downgrade"
-     },
-     {
-      "level": "yellow",
-      "text": "Underdog questionable: Derrick Henry"
-     }
-    ],
-    "under": {
-     "passes": false,
-     "ranks": [
-      13,
-      19
-     ],
-     "total_move": -2.0,
-     "note": ""
-    },
-    "call": "No track",
-    "matchups": [
-     {
-      "key": "def_def",
-      "label": "Defense vs defense",
-      "fav_metric": "def_sr",
-      "dog_metric": "def_sr",
-      "fav_rank": 17,
-      "dog_rank": 23,
-      "in_range": false,
-      "met": false
-     },
-     {
-      "key": "def_off",
-      "label": "Defense vs offense",
-      "fav_metric": "def_sr",
-      "dog_metric": "off_sr",
-      "fav_rank": 17,
-      "dog_rank": 31,
-      "in_range": false,
-      "met": false
-     },
-     {
-      "key": "off_def",
-      "label": "Offense vs defense",
-      "fav_metric": "off_sr",
-      "dog_metric": "def_sr",
-      "fav_rank": 27,
-      "dog_rank": 23,
-      "in_range": false,
-      "met": false
-     }
-    ]
-   },
-   "fav_defense_top10": false,
-   "votes": {
-    "fav": 6,
-    "dog": 5,
-    "support": 0.545,
-    "sources": [
-     {
-      "site": "CBS Sports (Sullivan)",
-      "url": "https://www.cbssports.com/nfl/news/week-11-picks-best-bets-ats-odds-chargers-jets-titans-cowboys/",
-      "fav": 1,
-      "dog": 0
-     },
-     {
-      "site": "Bleacher Report",
-      "url": "https://bleacherreport.com/articles/25534898-bleacher-reports-expert-week-11-2026-nfl-picks",
-      "fav": 2,
-      "dog": 5
-     },
-     {
-      "site": "Covers",
-      "url": "https://www.covers.com/nfl/picks-against-the-spread-week-11-2026",
-      "fav": 1,
-      "dog": 0
-     },
-     {
-      "site": "SI",
-      "url": "https://www.si.com/betting/road-to-272-bets-nfl-week-11-picks-for-every-game-01m7kaz0pxg6",
-      "fav": 1,
-      "dog": 0
-     },
-     {
-      "site": "Yahoo Sports",
-      "url": "https://sports.yahoo.com/nfl/betting/article/week-11-nfl-picks-against-the-spread-predictions-for-every-game-cowboys-have-been-bad-but-their-season-isnt-dead-yet-135142600.html",
-      "fav": 1,
-      "dog": 0
-     }
-    ],
-    "notes": ""
-   }
-  },
   {
    "id": "401873074",
    "nflverse_id": "2026_11_NYJ_LAC",
@@ -438,16 +11,16 @@
    "kick_pt": "Sun 1:05 PM PT",
    "day_et": "2026-11-22",
    "state": "in",
-   "detail": "10:25 - 1st",
+   "detail": "1:08 - 2nd",
    "neutral": false,
    "venue": "SoFi Stadium",
    "home_code": "LAC",
    "away_code": "NYJ",
    "score": {
-    "home": 0,
-    "away": 3
+    "home": 3,
+    "away": 17
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -9.5,
    "total": 43.5,
    "total_open": 41.5,
@@ -526,15 +99,21 @@
     },
     "injuries_known": true,
     "key_out": [
-     "Daiyan Henley",
      "Tarheeb Still"
     ],
-    "key_questionable": [],
+    "key_questionable": [
+     "Akheem Mesidor"
+    ],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Akheem Mesidor",
+      "pos": "LB",
+      "status": "Questionable"
+     },
      {
       "name": "Tarheeb Still",
       "pos": "CB",
@@ -553,11 +132,6 @@
      {
       "name": "Kendall Williamson",
       "pos": "S",
-      "status": "Out"
-     },
-     {
-      "name": "Daiyan Henley",
-      "pos": "LB",
       "status": "Out"
      }
     ],
@@ -703,7 +277,7 @@
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
       "pass": false,
-      "detail": "LAC key starter out: Daiyan Henley, Tarheeb Still"
+      "detail": "LAC key starter out: Tarheeb Still"
      },
      {
       "rule": "Power",
@@ -740,10 +314,10 @@
     ],
     "qualifiers": [],
     "fails": [
-     "LAC key starter out: Daiyan Henley, Tarheeb Still"
+     "LAC key starter out: Tarheeb Still"
     ],
     "failed": [
-     "LAC key starter out: Daiyan Henley, Tarheeb Still"
+     "LAC key starter out: Tarheeb Still"
     ],
     "hero": {
      "score": 16,
@@ -770,6 +344,10 @@
      {
       "level": "yellow",
       "text": "Line crossed key number 3, 7"
+     },
+     {
+      "level": "yellow",
+      "text": "Favorite questionable: Akheem Mesidor"
      }
     ],
     "under": {
@@ -861,21 +439,21 @@
    "kick_utc": "2026-11-22T21:25:00+00:00",
    "kick_pt": "Sun 1:25 PM PT",
    "day_et": "2026-11-22",
-   "state": "pre",
-   "detail": "11/22 - 4:25 PM EST",
+   "state": "in",
+   "detail": "10:35 - 2nd",
    "neutral": false,
    "venue": "Empower Field at Mile High",
    "home_code": "DEN",
    "away_code": "LV",
    "score": {
-    "home": 0,
+    "home": 16,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -8.5,
    "total": 41.5,
    "total_open": 41.5,
-   "fav_ml": -650.0,
+   "fav_ml": -660.0,
    "favorite": "home",
    "spread": -11.5,
    "movement": 3.0,
@@ -988,8 +566,7 @@
      "consensus": 10,
      "fpi": 12,
      "nfl_com": 7
-    },
-    "fpi_win": 0.865
+    }
    },
    "away": {
     "code": "LV",
@@ -1098,8 +675,7 @@
      "consensus": 27,
      "fpi": 31,
      "nfl_com": 21
-    },
-    "fpi_win": 0.134
+    }
    },
    "fav": "DEN",
    "dog": "LV",
@@ -1243,12 +819,6 @@
     ]
    },
    "fav_defense_top10": false,
-   "kalshi": {
-    "event": "KXNFLGAME-26NOV22LVDEN",
-    "fav_prob": 0.845,
-    "bid": 0.84,
-    "ask": 0.85
-   },
    "votes": {
     "fav": 8,
     "dog": 5,
@@ -1300,25 +870,25 @@
    "kick_utc": "2026-11-22T21:25:00+00:00",
    "kick_pt": "Sun 1:25 PM PT",
    "day_et": "2026-11-22",
-   "state": "pre",
-   "detail": "11/22 - 4:25 PM EST",
+   "state": "in",
+   "detail": "0:47 - 1st",
    "neutral": false,
    "venue": "MetLife Stadium",
    "home_code": "NYG",
    "away_code": "JAX",
    "score": {
-    "home": 0,
-    "away": 0
+    "home": 10,
+    "away": 3
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -1.5,
-   "total": 45.5,
+   "total": 44.5,
    "total_open": 46.5,
-   "fav_ml": -262.0,
+   "fav_ml": -256.0,
    "favorite": "away",
    "spread": -6.0,
    "movement": 4.5,
-   "total_move": -1.0,
+   "total_move": -2.0,
    "fav_home": false,
    "home": {
     "code": "NYG",
@@ -1389,12 +959,19 @@
     },
     "injuries_known": true,
     "key_out": [],
-    "key_questionable": [],
+    "key_questionable": [
+     "Greg Newsome II"
+    ],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Greg Newsome II",
+      "pos": "CB",
+      "status": "Questionable"
+     },
      {
       "name": "Jason Pinnock",
       "pos": "S",
@@ -1414,19 +991,13 @@
       "name": "J.C. Davis",
       "pos": "OT",
       "status": "Out"
-     },
-     {
-      "name": "Greg Desrosiers Jr.",
-      "pos": "RB",
-      "status": "Out"
      }
     ],
     "power": {
      "consensus": 19,
      "fpi": 22,
      "nfl_com": 16
-    },
-    "fpi_win": 0.185
+    }
    },
    "away": {
     "code": "JAX",
@@ -1537,8 +1108,7 @@
      "consensus": 2,
      "fpi": 2,
      "nfl_com": 3
-    },
-    "fpi_win": 0.814
+    }
    },
    "fav": "JAX",
    "dog": "NYG",
@@ -1649,6 +1219,10 @@
      {
       "level": "yellow",
       "text": "Line crossed key number 3"
+     },
+     {
+      "level": "yellow",
+      "text": "Underdog questionable: Greg Newsome II"
      }
     ],
     "under": {
@@ -1657,7 +1231,7 @@
       4,
       11
      ],
-     "total_move": -1.0,
+     "total_move": -2.0,
      "note": ""
     },
     "call": "No track",
@@ -1695,12 +1269,6 @@
     ]
    },
    "fav_defense_top10": true,
-   "kalshi": {
-    "event": "KXNFLGAME-26NOV22JACNYG",
-    "fav_prob": 0.725,
-    "bid": 0.72,
-    "ask": 0.73
-   },
    "votes": {
     "fav": 9,
     "dog": 4,
@@ -1762,7 +1330,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -3.5,
    "total": 46.5,
    "total_open": 46.5,
@@ -2215,7 +1783,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -1.5,
    "total": 54.5,
    "total_open": 52.5,
@@ -2673,7 +2241,7 @@
     "home": 26,
     "away": 3
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -5.5,
    "total": 44.5,
    "total_open": 45.5,
@@ -3109,7 +2677,7 @@
     "home": 26,
     "away": 9
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -11.5,
    "total": 45.5,
    "total_open": 47.5,
@@ -3520,6 +3088,435 @@
    }
   },
   {
+   "id": "401873068",
+   "nflverse_id": "2026_11_BAL_CAR",
+   "kick_utc": "2026-11-22T18:00:00+00:00",
+   "kick_pt": "Sun 10:00 AM PT",
+   "day_et": "2026-11-22",
+   "state": "post",
+   "detail": "Final",
+   "neutral": false,
+   "venue": "Bank of America Stadium",
+   "home_code": "CAR",
+   "away_code": "BAL",
+   "score": {
+    "home": 35,
+    "away": 33
+   },
+   "line_source": "Draft Kings",
+   "open_spread": 4.5,
+   "total": 44.5,
+   "total_open": 46.5,
+   "fav_ml": -135.0,
+   "favorite": "home",
+   "spread": -2.5,
+   "movement": 7.0,
+   "total_move": -2.0,
+   "fav_home": true,
+   "home": {
+    "code": "CAR",
+    "abbr": "CAR",
+    "season": {
+     "games": 9,
+     "off_epa": 0.0207,
+     "off_sr": 0.4173,
+     "def_epa": 0.027,
+     "def_sr": 0.4332,
+     "off_pass_epa": 0.0579,
+     "off_rush_epa": -0.0479,
+     "def_pass_epa": 0.1001,
+     "def_rush_epa": -0.0893,
+     "ranks": {
+      "off_epa": 13,
+      "off_sr": 24,
+      "def_epa": 20,
+      "def_sr": 12
+     }
+    },
+    "last3": {
+     "games": 3,
+     "off_epa": -0.0209,
+     "off_sr": 0.3894,
+     "def_epa": 0.016,
+     "def_sr": 0.432,
+     "off_pass_epa": -0.0232,
+     "off_rush_epa": -0.0168,
+     "def_pass_epa": 0.1613,
+     "def_rush_epa": -0.2545,
+     "ranks": {
+      "off_epa": 18,
+      "off_sr": 27,
+      "def_epa": 16,
+      "def_sr": 17
+     }
+    },
+    "net": -0.0063,
+    "net_rank": 17,
+    "adjusted": {
+     "off": 0.0531,
+     "def": 0.0704,
+     "net": 0.0037,
+     "recent_net": -0.0206,
+     "sr_off": 0.4173,
+     "sr_def": 0.4332
+    },
+    "record": "4-5",
+    "last2_results": [
+     "W",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "L",
+     "L"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "B.Young",
+     "regular_id": "00-0039150",
+     "season_leader": "B.Young",
+     "reset": false,
+     "dropbacks": 367,
+     "epa_db": 0.0317,
+     "rank": 17
+    },
+    "injuries_known": true,
+    "key_out": [
+     "Bobby Okereke"
+    ],
+    "key_questionable": [
+     "Jalen Coker"
+    ],
+    "key_long_term": [],
+    "interior_ol_out": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [
+     {
+      "name": "Jalen Coker",
+      "pos": "WR",
+      "status": "Questionable"
+     },
+     {
+      "name": "Ja'Tavion Sanders",
+      "pos": "TE",
+      "status": "Out"
+     },
+     {
+      "name": "Haynes King",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "name": "Marco Wilson",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "name": "Bobby Okereke",
+      "pos": "LB",
+      "status": "Out"
+     }
+    ],
+    "power": {
+     "consensus": 18,
+     "fpi": 17,
+     "nfl_com": 19
+    }
+   },
+   "away": {
+    "code": "BAL",
+    "abbr": "BAL",
+    "season": {
+     "games": 10,
+     "off_epa": -0.0068,
+     "off_sr": 0.4355,
+     "def_epa": 0.0266,
+     "def_sr": 0.4444,
+     "off_pass_epa": 0.0363,
+     "off_rush_epa": -0.0661,
+     "def_pass_epa": 0.0829,
+     "def_rush_epa": -0.0558,
+     "ranks": {
+      "off_epa": 19,
+      "off_sr": 13,
+      "def_epa": 19,
+      "def_sr": 21
+     }
+    },
+    "last3": {
+     "games": 3,
+     "off_epa": -0.2042,
+     "off_sr": 0.3678,
+     "def_epa": 0.0153,
+     "def_sr": 0.4531,
+     "off_pass_epa": -0.2749,
+     "off_rush_epa": -0.0939,
+     "def_pass_epa": 0.0938,
+     "def_rush_epa": -0.0632,
+     "ranks": {
+      "off_epa": 31,
+      "off_sr": 31,
+      "def_epa": 15,
+      "def_sr": 23
+     }
+    },
+    "net": -0.0334,
+    "net_rank": 21,
+    "adjusted": {
+     "off": 0.038,
+     "def": 0.0279,
+     "net": 0.0116,
+     "recent_net": -0.0123,
+     "sr_off": 0.4355,
+     "sr_def": 0.4444
+    },
+    "record": "4-6",
+    "last2_results": [
+     "L",
+     "L"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "L"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "J.Brissett",
+     "regular_id": "00-0033119",
+     "season_leader": "T.Huntley",
+     "reset": true,
+     "dropbacks": 372,
+     "epa_db": -0.0558,
+     "rank": 26
+    },
+    "injuries_known": true,
+    "key_out": [
+     "Nnamdi Madubuike"
+    ],
+    "key_questionable": [],
+    "key_long_term": [],
+    "interior_ol_out": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [
+     {
+      "name": "Elijah Sarratt",
+      "pos": "WR",
+      "status": "Out"
+     },
+     {
+      "name": "Adam Randall",
+      "pos": "RB",
+      "status": "Out"
+     },
+     {
+      "name": "Kedon Slovis",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "name": "Emery Jones Jr.",
+      "pos": "OT",
+      "status": "Out"
+     },
+     {
+      "name": "Nnamdi Madubuike",
+      "pos": "DT",
+      "status": "Out"
+     }
+    ],
+    "power": {
+     "consensus": 29,
+     "fpi": 28,
+     "nfl_com": 28
+    }
+   },
+   "fav": "CAR",
+   "dog": "BAL",
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 16 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 CAR last-3 top 10 in 0 of 4 \u00b7 \u2713 BAL last-3 bottom 10 (23-32) in 3 of 4 \u00b7 \u2717 CAR season outside top 15: Off success #24, Def EPA allowed #20 \u00b7 \u2713 BAL season top 10 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter newly out or doubtful for the favorite",
+      "pass": false,
+      "detail": "CAR key starter out: Bobby Okereke"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": true,
+      "detail": "BAL: consensus #29, ESPN FPI #28, NFL.com #28"
+     }
+    ],
+    "context": [
+     {
+      "n": 1,
+      "ok": false,
+      "text": "Favorite top 10 (season) in a core metric",
+      "detail": "none"
+     },
+     {
+      "n": 2,
+      "ok": false,
+      "text": "Also top 10 over its last 3 in that same metric",
+      "detail": "none"
+     },
+     {
+      "n": 3,
+      "ok": true,
+      "text": "Underdog not top 10 in any metric over its last 3",
+      "detail": "none"
+     },
+     {
+      "n": 4,
+      "ok": true,
+      "text": "Underdog not 3-0 in its last 3",
+      "detail": "0-3"
+     }
+    ],
+    "qualifiers": [],
+    "fails": [
+     "CAR key starter out: Bobby Okereke"
+    ],
+    "failed": [
+     "CAR key starter out: Bobby Okereke"
+    ],
+    "hero": {
+     "score": 16,
+     "band": "red",
+     "parts": {
+      "fav_strength": 0,
+      "dog_weakness": 11,
+      "health": 3,
+      "home": 1,
+      "rest": 0,
+      "form": 1
+     },
+     "max": 40
+    },
+    "edge": {
+     "gap": 0.027,
+     "required": 0.35,
+     "clears": false,
+     "short_by": 0.323,
+     "adjusted_gap": -0.008,
+     "adjusted_recent_gap": -0.008
+    },
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "Line moved +7 toward the favorite (4+): downgrade"
+     },
+     {
+      "level": "yellow",
+      "text": "Favorite questionable: Jalen Coker"
+     }
+    ],
+    "under": {
+     "passes": false,
+     "ranks": [
+      13,
+      19
+     ],
+     "total_move": -2.0,
+     "note": ""
+    },
+    "call": "No track",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 17,
+      "dog_rank": 23,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 17,
+      "dog_rank": 31,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 27,
+      "dog_rank": 23,
+      "in_range": false,
+      "met": false
+     }
+    ]
+   },
+   "fav_defense_top10": false,
+   "votes": {
+    "fav": 6,
+    "dog": 5,
+    "support": 0.545,
+    "sources": [
+     {
+      "site": "CBS Sports (Sullivan)",
+      "url": "https://www.cbssports.com/nfl/news/week-11-picks-best-bets-ats-odds-chargers-jets-titans-cowboys/",
+      "fav": 1,
+      "dog": 0
+     },
+     {
+      "site": "Bleacher Report",
+      "url": "https://bleacherreport.com/articles/25534898-bleacher-reports-expert-week-11-2026-nfl-picks",
+      "fav": 2,
+      "dog": 5
+     },
+     {
+      "site": "Covers",
+      "url": "https://www.covers.com/nfl/picks-against-the-spread-week-11-2026",
+      "fav": 1,
+      "dog": 0
+     },
+     {
+      "site": "SI",
+      "url": "https://www.si.com/betting/road-to-272-bets-nfl-week-11-picks-for-every-game-01m7kaz0pxg6",
+      "fav": 1,
+      "dog": 0
+     },
+     {
+      "site": "Yahoo Sports",
+      "url": "https://sports.yahoo.com/nfl/betting/article/week-11-nfl-picks-against-the-spread-predictions-for-every-game-cowboys-have-been-bad-but-their-season-isnt-dead-yet-135142600.html",
+      "fav": 1,
+      "dog": 0
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
    "id": "401873071",
    "nflverse_id": "2026_11_NO_CHI",
    "kick_utc": "2026-11-22T18:00:00+00:00",
@@ -3535,7 +3532,7 @@
     "home": 21,
     "away": 13
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -6.5,
    "total": 48.5,
    "total_open": 46.5,
@@ -3623,7 +3620,7 @@
      {
       "name": "Roschon Johnson",
       "pos": "RB",
-      "status": "Out"
+      "status": "Questionable"
      },
      {
       "name": "Case Keenum",
@@ -4028,7 +4025,7 @@
     "home": 51,
     "away": 30
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -6.5,
    "total": 54.5,
    "total_open": 48.5,
@@ -4468,7 +4465,7 @@
     "home": 31,
     "away": 21
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -4.5,
    "total": 48.5,
    "total_open": 49.5,
@@ -4897,7 +4894,7 @@
     "home": 34,
     "away": 7
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -11.5,
    "total": 40.5,
    "total_open": 44.5,
@@ -5327,7 +5324,7 @@
     "home": 19,
     "away": 16
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": 5.5,
    "total": 37.5,
    "total_open": 42.5,
@@ -5776,12 +5773,12 @@
   "season": 2026,
   "week": 11,
   "games": 13,
-  "upcoming": 4,
+  "upcoming": 2,
   "tracked": 0,
   "qualified": 0,
   "watch": 0,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Sun Nov 22, 1:15 PM PT"
+  "built_label": "Sun Nov 22, 2:15 PM PT"
  }
 }
