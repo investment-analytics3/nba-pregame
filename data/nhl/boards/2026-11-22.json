@@ -3,8 +3,8 @@
  "date_label": "Sunday, November 22",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-22T08:00:42-08:00",
- "built_label": "Sun Nov 22, 8:00 AM PT",
+ "built_at": "2026-11-22T08:15:39-08:00",
+ "built_label": "Sun Nov 22, 8:15 AM PT",
  "metrics_through": "2026-11-21",
  "metrics_through_label": "Nov 21",
  "max": 40,
@@ -35,7 +35,7 @@
    "favorite": "home",
    "line": {
     "details": "TB -218",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -218,
     "ml_away": null,
     "puck_line": -1.5,
@@ -44,7 +44,7 @@
    },
    "spread": {
     "details": "TB -218",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -817,7 +817,7 @@
    "favorite": "home",
    "line": {
     "details": "DAL -225",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -225,
     "ml_away": null,
     "puck_line": -1.5,
@@ -826,7 +826,7 @@
    },
    "spread": {
     "details": "DAL -225",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -975,7 +975,7 @@
      "name": "Jake Oettinger",
      "last": "Oettinger",
      "espn_id": "4196914",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "regular",
     "regular_goalie_name": "J. Oettinger",
@@ -1027,6 +1027,13 @@
       "status": "Injured Reserve",
       "date": "2026-11-14T15:10Z",
       "comment": "Bichsel (lower body) was placed on injured reserve Saturday."
+     },
+     {
+      "name": "Matt Duchene",
+      "last": "Duchene",
+      "status": "Injured Reserve",
+      "date": "2026-10-12T16:46Z",
+      "comment": "Duchene will be out for approximately three months after undergoing surgery to repair a core injury, the team announced Monday."
      }
     ],
     "injuries_known": true,
@@ -1279,7 +1286,7 @@
       "rule": "Goalie",
       "name": "DAL's regular goalie starts",
       "pass": true,
-      "detail": "Jake Oettinger (probable)"
+      "detail": "Jake Oettinger (confirmed)"
      },
      {
       "rule": "Matchup",
@@ -1592,7 +1599,7 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (DAL #10, PIT #24). Jake Oettinger in goal for DAL (probable). DAL 3-0-0 in its last 3, PIT 0-3-0; PIT played yesterday.",
+   "summary": "Not a top-7 vs bottom-7 matchup (DAL #10, PIT #24). Jake Oettinger in goal for DAL (confirmed). DAL 3-0-0 in its last 3, PIT 0-3-0; PIT played yesterday.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV22PITDAL",
@@ -1613,7 +1620,7 @@
    "favorite": "away",
    "line": {
     "details": "CHI -112",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": null,
     "ml_away": -112,
     "puck_line": 1.5,
@@ -1622,7 +1629,7 @@
    },
    "spread": {
     "details": "CHI -112",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": 1.5
    },
    "home": {
@@ -2416,7 +2423,7 @@
    "favorite": "away",
    "line": {
     "details": "CAR -162",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": null,
     "ml_away": -162,
     "puck_line": 1.5,
@@ -2425,7 +2432,7 @@
    },
    "spread": {
     "details": "CAR -162",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": 1.5
    },
    "home": {
@@ -3214,7 +3221,7 @@
    "favorite": "home",
    "line": {
     "details": "STL -125",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -125,
     "ml_away": null,
     "puck_line": -1.5,
@@ -3223,7 +3230,7 @@
    },
    "spread": {
     "details": "STL -125",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -4023,7 +4030,7 @@
   "in_range": 0,
   "qualified": 0,
   "watch": 0,
-  "built_label": "Sun Nov 22, 8:00 AM PT"
+  "built_label": "Sun Nov 22, 8:15 AM PT"
  },
  "power_table": [
   {
