@@ -3,8 +3,8 @@
  "date_label": "Sunday, November 22",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-22T12:45:45-08:00",
- "built_label": "Sun Nov 22, 12:45 PM PT",
+ "built_at": "2026-11-22T13:00:40-08:00",
+ "built_label": "Sun Nov 22, 1:00 PM PT",
  "metrics_through": "2026-11-21",
  "metrics_through_label": "Nov 21",
  "max": 40,
@@ -35,7 +35,7 @@
    "favorite": "home",
    "line": {
     "details": "TB -218",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -218,
     "ml_away": null,
     "puck_line": -1.5,
@@ -44,7 +44,7 @@
    },
    "spread": {
     "details": "TB -218",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -190,12 +190,12 @@
      "nhl_com": 8
     },
     "goalie": {
-     "name": "Andrei Vasilevskiy",
-     "last": "Vasilevskiy",
-     "espn_id": "2976847",
-     "confirmed": false
+     "name": "Dennis Hildeby",
+     "last": "Hildeby",
+     "espn_id": "5174160",
+     "confirmed": true
     },
-    "goalie_status": "regular",
+    "goalie_status": "backup",
     "regular_goalie_name": "A. Vasilevskiy",
     "goalies": [
      {
@@ -219,18 +219,18 @@
     ],
     "injuries": [
      {
+      "name": "Zemgus Girgensons",
+      "last": "Girgensons",
+      "status": "Out",
+      "date": "2026-11-22T20:52Z",
+      "comment": "Girgensons (upper body) won't play against Buffalo on Sunday, per Benjamin Pierce of the Lightning's official site."
+     },
+     {
       "name": "Conor Geekie",
       "last": "Geekie",
       "status": "Injured Reserve",
       "date": "2026-11-21T20:20Z",
       "comment": "Geekie (upper body) is out indefinitely, according to Eduardo A. Encina of the Tampa Bay Times on Saturday."
-     },
-     {
-      "name": "Zemgus Girgensons",
-      "last": "Girgensons",
-      "status": "Day-To-Day",
-      "date": "2026-11-20T14:41Z",
-      "comment": "day-to-day"
      },
      {
       "name": "Brandon Hagel",
@@ -477,13 +477,13 @@
       "rule": "A",
       "name": "Analysis Score 22+",
       "pass": true,
-      "detail": "Score 26 of 40"
+      "detail": "Score 24 of 40"
      },
      {
       "rule": "Goalie",
       "name": "TBL's regular goalie starts",
-      "pass": true,
-      "detail": "Andrei Vasilevskiy (probable)"
+      "pass": false,
+      "detail": "Dennis Hildeby listed instead of A. Vasilevskiy: capped at the Watch list"
      },
      {
       "rule": "Matchup",
@@ -496,8 +496,10 @@
      "Not a top-7 vs bottom-7 matchup (TBL #4, BUF #20)"
     ],
     "warnings": [],
-    "flags": [],
-    "score": 26,
+    "flags": [
+     "TBL backup goalie starting (Dennis Hildeby)"
+    ],
+    "score": 24,
     "max": 40,
     "band": "green",
     "parts": [
@@ -516,7 +518,7 @@
      {
       "key": "goalies",
       "label": "Goalies + health",
-      "points": 3,
+      "points": 1,
       "max": 4
      },
      {
@@ -796,14 +798,15 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (TBL #4, BUF #20). Andrei Vasilevskiy in goal for TBL (probable). Biggest edge over the last 5: xGF% 5v5 (TBL #3, BUF #29). TBL 2-1-0 in its last 3, BUF 1-2-0; BUF played yesterday.",
+   "summary": "Not a top-7 vs bottom-7 matchup (TBL #4, BUF #20). TBL start their backup goalie, Dennis Hildeby (regular: A. Vasilevskiy). Biggest edge over the last 5: xGF% 5v5 (TBL #3, BUF #29). TBL 2-1-0 in its last 3, BUF 1-2-0; BUF played yesterday.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV22BUFTB",
-    "fav_prob": 0.675,
-    "bid": 0.67,
-    "ask": 0.68
-   }
+    "fav_prob": 0.655,
+    "bid": 0.65,
+    "ask": 0.66
+   },
+   "locked_at": "2026-11-22T13:00:40-08:00"
   },
   {
    "id": "401892771",
@@ -817,7 +820,7 @@
    "favorite": "home",
    "line": {
     "details": "DAL -230",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -230,
     "ml_away": null,
     "puck_line": -1.5,
@@ -826,7 +829,7 @@
    },
    "spread": {
     "details": "DAL -230",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -1027,6 +1030,13 @@
       "status": "Injured Reserve",
       "date": "2026-11-14T15:10Z",
       "comment": "Bichsel (lower body) was placed on injured reserve Saturday."
+     },
+     {
+      "name": "Matt Duchene",
+      "last": "Duchene",
+      "status": "Injured Reserve",
+      "date": "2026-10-12T16:46Z",
+      "comment": "Duchene will be out for approximately three months after undergoing surgery to repair a core injury, the team announced Monday."
      }
     ],
     "injuries_known": true,
@@ -1613,7 +1623,7 @@
    "favorite": "away",
    "line": {
     "details": "CHI -115",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": null,
     "ml_away": -115,
     "puck_line": 1.5,
@@ -1622,7 +1632,7 @@
    },
    "spread": {
     "details": "CHI -115",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": 1.5
    },
    "home": {
@@ -3227,7 +3237,7 @@
    "favorite": "home",
    "line": {
     "details": "STL -125",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -125,
     "ml_away": null,
     "puck_line": -1.5,
@@ -3236,7 +3246,7 @@
    },
    "spread": {
     "details": "STL -125",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -4036,7 +4046,7 @@
   "in_range": 0,
   "qualified": 0,
   "watch": 0,
-  "built_label": "Sun Nov 22, 12:45 PM PT"
+  "built_label": "Sun Nov 22, 1:00 PM PT"
  },
  "power_table": [
   {
