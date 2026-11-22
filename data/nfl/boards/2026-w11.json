@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 11,
- "built_at": "2026-11-22T10:15:33-08:00",
- "built_label": "Sun Nov 22, 10:15 AM PT",
+ "built_at": "2026-11-22T11:15:39-08:00",
+ "built_label": "Sun Nov 22, 11:15 AM PT",
  "games": [
   {
    "id": "401873070",
@@ -11,14 +11,14 @@
    "kick_pt": "Sun 10:00 AM PT",
    "day_et": "2026-11-22",
    "state": "in",
-   "detail": "9:33 - 1st",
+   "detail": "1:51 - 2nd",
    "neutral": false,
    "venue": "Highmark Stadium",
    "home_code": "BUF",
    "away_code": "MIA",
    "score": {
-    "home": 3,
-    "away": 0
+    "home": 20,
+    "away": 3
    },
    "line_source": "Draft Kings",
    "open_spread": -11.5,
@@ -437,14 +437,14 @@
    "kick_pt": "Sun 10:00 AM PT",
    "day_et": "2026-11-22",
    "state": "in",
-   "detail": "11:29 - 1st",
+   "detail": "5:06 - 2nd",
    "neutral": false,
    "venue": "Bank of America Stadium",
    "home_code": "CAR",
    "away_code": "BAL",
    "score": {
-    "home": 0,
-    "away": 2
+    "home": 20,
+    "away": 19
    },
    "line_source": "Draft Kings",
    "open_spread": 4.5,
@@ -860,24 +860,24 @@
    "kick_pt": "Sun 10:00 AM PT",
    "day_et": "2026-11-22",
    "state": "in",
-   "detail": "10:01 - 1st",
+   "detail": "3:27 - 2nd",
    "neutral": false,
    "venue": "Soldier Field",
    "home_code": "CHI",
    "away_code": "NO",
    "score": {
-    "home": 3,
-    "away": 0
+    "home": 16,
+    "away": 7
    },
    "line_source": "Draft Kings",
    "open_spread": -6.5,
-   "total": 47.5,
+   "total": 48.5,
    "total_open": 46.5,
-   "fav_ml": -640.0,
+   "fav_ml": -700.0,
    "favorite": "home",
-   "spread": -11.5,
-   "movement": 5.0,
-   "total_move": 1.0,
+   "spread": -12.5,
+   "movement": 6.0,
+   "total_move": 2.0,
    "fav_home": true,
    "home": {
     "code": "CHI",
@@ -955,6 +955,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Roschon Johnson",
+      "pos": "RB",
+      "status": "Questionable"
+     },
+     {
       "name": "Case Keenum",
       "pos": "QB",
       "status": "Out"
@@ -972,11 +977,6 @@
      {
       "name": "Keyshaun Elliott",
       "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "name": "Kyler Gordon",
-      "pos": "CB",
       "status": "Out"
      }
     ],
@@ -1195,7 +1195,7 @@
     "flags": [
      {
       "level": "yellow",
-      "text": "Line moved +5 toward the favorite (4+): downgrade"
+      "text": "Line moved +6 toward the favorite (4+): downgrade"
      },
      {
       "level": "yellow",
@@ -1208,7 +1208,7 @@
       10,
       22
      ],
-     "total_move": 1.0,
+     "total_move": 2.0,
      "note": ""
     },
     "call": "Watch list",
@@ -1348,14 +1348,14 @@
    "kick_pt": "Sun 10:00 AM PT",
    "day_et": "2026-11-22",
    "state": "in",
-   "detail": "9:01 - 1st",
+   "detail": "4:08 - 2nd",
    "neutral": false,
    "venue": "AT&T Stadium",
    "home_code": "DAL",
    "away_code": "TEN",
    "score": {
-    "home": 0,
-    "away": 0
+    "home": 27,
+    "away": 6
    },
    "line_source": "Draft Kings",
    "open_spread": -6.5,
@@ -1437,17 +1437,21 @@
     "injuries_known": true,
     "key_out": [
      "Jaishawn Barham",
-     "Jake Ferguson",
-     "Tyler Booker"
+     "Jake Ferguson"
     ],
-    "key_questionable": [],
+    "key_questionable": [
+     "Dee Winters"
+    ],
     "key_long_term": [],
-    "interior_ol_out": [
-     "Tyler Booker"
-    ],
+    "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Dee Winters",
+      "pos": "LB",
+      "status": "Questionable"
+     },
      {
       "name": "Jaishawn Barham",
       "pos": "LB",
@@ -1466,11 +1470,6 @@
      {
       "name": "Jake Ferguson",
       "pos": "TE",
-      "status": "Out"
-     },
-     {
-      "name": "Tyler Booker",
-      "pos": "G",
       "status": "Out"
      }
     ],
@@ -1602,7 +1601,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 23 of 40"
+      "detail": "Score 24 of 40"
      },
      {
       "rule": "B",
@@ -1614,7 +1613,7 @@
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
       "pass": false,
-      "detail": "DAL key starter out: Jaishawn Barham, Jake Ferguson, Tyler Booker"
+      "detail": "DAL key starter out: Jaishawn Barham, Jake Ferguson"
      },
      {
       "rule": "Power",
@@ -1654,20 +1653,20 @@
      "off_sr"
     ],
     "fails": [
-     "DAL key starter out: Jaishawn Barham, Jake Ferguson, Tyler Booker",
-     "Would be on the watch list otherwise (score 23)"
+     "DAL key starter out: Jaishawn Barham, Jake Ferguson",
+     "Would be on the watch list otherwise (score 24)"
     ],
     "failed": [
-     "DAL key starter out: Jaishawn Barham, Jake Ferguson, Tyler Booker",
-     "Would be on the watch list otherwise (score 23)"
+     "DAL key starter out: Jaishawn Barham, Jake Ferguson",
+     "Would be on the watch list otherwise (score 24)"
     ],
     "hero": {
-     "score": 23,
+     "score": 24,
      "band": "yellow",
      "parts": {
       "fav_strength": 6,
       "dog_weakness": 13,
-      "health": 2,
+      "health": 3,
       "home": 1,
       "rest": 0,
       "form": 1
@@ -1685,11 +1684,11 @@
     "flags": [
      {
       "level": "yellow",
-      "text": "Favorite interior OL out: Tyler Booker"
+      "text": "Line crossed key number 7"
      },
      {
       "level": "yellow",
-      "text": "Line crossed key number 7"
+      "text": "Favorite questionable: Dee Winters"
      }
     ],
     "under": {
@@ -1782,13 +1781,13 @@
    "kick_pt": "Sun 10:00 AM PT",
    "day_et": "2026-11-22",
    "state": "in",
-   "detail": "11:04 - 1st",
+   "detail": "0:14 - 2nd",
    "neutral": false,
    "venue": "Ford Field",
    "home_code": "DET",
    "away_code": "TB",
    "score": {
-    "home": 0,
+    "home": 10,
     "away": 0
    },
    "line_source": "Draft Kings",
@@ -1879,6 +1878,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Khalil Dorsey",
+      "pos": "CB",
+      "status": "Questionable"
+     },
+     {
       "name": "Ennis Rakestraw Jr.",
       "pos": "CB",
       "status": "Out"
@@ -1895,11 +1899,6 @@
      },
      {
       "name": "Tyrus Wheat",
-      "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "name": "Amen Ogbongbemiga",
       "pos": "LB",
       "status": "Out"
      }
@@ -1981,12 +1980,19 @@
     "key_out": [
      "Antoine Winfield Jr."
     ],
-    "key_questionable": [],
+    "key_questionable": [
+     "Jacob Parrish"
+    ],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Jacob Parrish",
+      "pos": "CB",
+      "status": "Questionable"
+     },
      {
       "name": "Easton Stick",
       "pos": "QB",
@@ -2005,11 +2011,6 @@
      {
       "name": "Trevor Keegan",
       "pos": "G",
-      "status": "Out"
-     },
-     {
-      "name": "DeMonte Capehart",
-      "pos": "DT",
       "status": "Out"
      }
     ],
@@ -2113,7 +2114,12 @@
      "adjusted_gap": 0.031,
      "adjusted_recent_gap": 0.038
     },
-    "flags": [],
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "Underdog questionable: Jacob Parrish"
+     }
+    ],
     "under": {
      "passes": false,
      "ranks": [
@@ -2204,14 +2210,14 @@
    "kick_pt": "Sun 10:00 AM PT",
    "day_et": "2026-11-22",
    "state": "in",
-   "detail": "9:40 - 1st",
+   "detail": "1:10 - 2nd",
    "neutral": false,
    "venue": "Arrowhead Stadium",
    "home_code": "KC",
    "away_code": "ARI",
    "score": {
-    "home": 7,
-    "away": 0
+    "home": 24,
+    "away": 7
    },
    "line_source": "Draft Kings",
    "open_spread": -11.5,
@@ -2642,14 +2648,14 @@
    "kick_pt": "Sun 10:00 AM PT",
    "day_et": "2026-11-22",
    "state": "in",
-   "detail": "8:40 - 1st",
+   "detail": "1:01 - 2nd",
    "neutral": false,
    "venue": "Lincoln Financial Field",
    "home_code": "PHI",
    "away_code": "PIT",
    "score": {
-    "home": 3,
-    "away": 0
+    "home": 13,
+    "away": 3
    },
    "line_source": "Draft Kings",
    "open_spread": 5.5,
@@ -2837,12 +2843,19 @@
     },
     "injuries_known": true,
     "key_out": [],
-    "key_questionable": [],
+    "key_questionable": [
+     "Alex Highsmith"
+    ],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Alex Highsmith",
+      "pos": "LB",
+      "status": "Questionable"
+     },
      {
       "name": "Kaden Wetjen",
       "pos": "WR",
@@ -2861,11 +2874,6 @@
      {
       "name": "Sean Murphy-Bunting",
       "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "name": "Eli Heidenreich",
-      "pos": "RB",
       "status": "Out"
      }
     ],
@@ -2973,6 +2981,10 @@
      {
       "level": "yellow",
       "text": "Line crossed key number 3"
+     },
+     {
+      "level": "yellow",
+      "text": "Favorite questionable: Alex Highsmith"
      }
     ],
     "under": {
@@ -5824,6 +5836,6 @@
   "watch": 3,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Sun Nov 22, 10:15 AM PT"
+  "built_label": "Sun Nov 22, 11:15 AM PT"
  }
 }
