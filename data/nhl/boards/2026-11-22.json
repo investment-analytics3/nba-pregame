@@ -3,10 +3,10 @@
  "date_label": "Sunday, November 22",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-21T23:15:34-08:00",
- "built_label": "Sat Nov 21, 11:15 PM PT",
- "metrics_through": "2026-11-19",
- "metrics_through_label": "Nov 19",
+ "built_at": "2026-11-22T06:00:51-08:00",
+ "built_label": "Sun Nov 22, 6:00 AM PT",
+ "metrics_through": "2026-11-21",
+ "metrics_through_label": "Nov 21",
  "max": 40,
  "top": 7,
  "bottom_from": 26,
@@ -35,7 +35,7 @@
    "favorite": "home",
    "line": {
     "details": "TB -205",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -205,
     "ml_away": null,
     "puck_line": -1.5,
@@ -44,7 +44,7 @@
    },
    "spread": {
     "details": "TB -205",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -68,10 +68,10 @@
      "pk": 75.5,
      "ranks": {
       "xgf": 3,
-      "xga60": 7,
+      "xga60": 6,
       "gsax": 11,
       "st": 23,
-      "xgf60": 4
+      "xgf60": 3
      }
     },
     "last5": {
@@ -86,8 +86,8 @@
      "ranks": {
       "xgf": 3,
       "xga60": 5,
-      "gsax": 4,
-      "st": 9,
+      "gsax": 2,
+      "st": 8,
       "xgf60": 2
      }
     },
@@ -100,7 +100,7 @@
       "pts": 3,
       "opp_pts": 1,
       "extra": false,
-      "opp_power_rank": 6
+      "opp_power_rank": 7
      },
      {
       "game_id": 2026020334,
@@ -110,7 +110,7 @@
       "pts": 5,
       "opp_pts": 2,
       "extra": false,
-      "opp_power_rank": 15
+      "opp_power_rank": 16
      },
      {
       "game_id": 2026020316,
@@ -256,43 +256,53 @@
     "display": "Buffalo Sabres",
     "record": "9-10-4",
     "l3_record": "1-2-0",
-    "games": 22,
-    "pts_pct": 0.5,
+    "games": 23,
+    "pts_pct": 0.478,
     "season": {
-     "xgf": 49.17,
-     "xga60": 2.617,
-     "xgf60": 2.531,
-     "cf": 48.83,
-     "gsax": -0.234,
-     "st": 87.5,
-     "pp": 16.7,
-     "pk": 70.8,
+     "xgf": 49.51,
+     "xga60": 2.597,
+     "xgf60": 2.547,
+     "cf": 48.65,
+     "gsax": -0.286,
+     "st": 88.2,
+     "pp": 16.2,
+     "pk": 72.0,
      "ranks": {
       "xgf": 20,
-      "xga60": 22,
+      "xga60": 19,
       "gsax": 21,
       "st": 29,
-      "xgf60": 17
+      "xgf60": 16
      }
     },
     "last5": {
-     "xgf": 41.76,
-     "xga60": 2.736,
-     "xgf60": 1.962,
-     "cf": 46.32,
-     "gsax": -0.826,
-     "st": 95.8,
-     "pp": 23.5,
-     "pk": 72.2,
+     "xgf": 44.62,
+     "xga60": 2.445,
+     "xgf60": 1.97,
+     "cf": 43.62,
+     "gsax": -0.227,
+     "st": 101.1,
+     "pp": 18.8,
+     "pk": 82.4,
      "ranks": {
-      "xgf": 30,
-      "xga60": 24,
-      "gsax": 27,
-      "st": 16,
-      "xgf60": 31
+      "xgf": 29,
+      "xga60": 19,
+      "gsax": 18,
+      "st": 13,
+      "xgf60": 27
      }
     },
     "last3_games": [
+     {
+      "game_id": 2026020361,
+      "date": "2026-11-21",
+      "site": "away",
+      "opp": "FLA",
+      "pts": 3,
+      "opp_pts": 4,
+      "extra": false,
+      "opp_power_rank": 14
+     },
      {
       "game_id": 2026020351,
       "date": "2026-11-19",
@@ -301,7 +311,7 @@
       "pts": 6,
       "opp_pts": 3,
       "extra": false,
-      "opp_power_rank": 15
+      "opp_power_rank": 16
      },
      {
       "game_id": 2026020337,
@@ -312,30 +322,9 @@
       "opp_pts": 4,
       "extra": false,
       "opp_power_rank": 30
-     },
-     {
-      "game_id": 2026020322,
-      "date": "2026-11-14",
-      "site": "away",
-      "opp": "DAL",
-      "pts": 0,
-      "opp_pts": 2,
-      "extra": false,
-      "opp_power_rank": 11
      }
     ],
     "trend_games": [
-     {
-      "date": "2026-11-11",
-      "opp": "TBL",
-      "metrics": {
-       "xgf": 44.51,
-       "xga60": 3.598,
-       "xgf60": 2.887,
-       "gsax": -4.429,
-       "st": 83.3
-      }
-     },
      {
       "date": "2026-11-12",
       "opp": "CHI",
@@ -379,14 +368,25 @@
        "gsax": 0.812,
        "st": 116.7
       }
+     },
+     {
+      "date": "2026-11-21",
+      "opp": "FLA",
+      "metrics": {
+       "xgf": 56.84,
+       "xga60": 2.182,
+       "xgf60": 2.874,
+       "gsax": -1.432,
+       "st": 100.0
+      }
      }
     ],
     "is_fav": false,
-    "b2b": false,
+    "b2b": true,
     "power": {
-     "rank": 19,
-     "own": 19,
-     "avg": 19.0,
+     "rank": 20,
+     "own": 20,
+     "avg": 19.5,
      "espn": 19,
      "nhl_com": null
     },
@@ -412,7 +412,7 @@
      {
       "id": "8479312",
       "name": "A. Lyon",
-      "starts": 3
+      "starts": 4
      }
     ],
     "key_skaters": [
@@ -471,13 +471,13 @@
       "rule": "Range",
       "name": "Top-7 team vs bottom-7 team (consensus power rank)",
       "pass": false,
-      "detail": "TBL #4 vs BUF #19"
+      "detail": "TBL #4 vs BUF #20"
      },
      {
       "rule": "A",
       "name": "Analysis Score 22+",
       "pass": true,
-      "detail": "Score 28 of 40"
+      "detail": "Score 26 of 40"
      },
      {
       "rule": "Goalie",
@@ -489,15 +489,15 @@
       "rule": "Matchup",
       "name": "TBL top 7 vs BUF bottom 7 in a matchup (last 5)",
       "pass": true,
-      "detail": "Offense vs offense: TBL #2 vs BUF #31; Defense vs offense: TBL #5 vs BUF #31"
+      "detail": "Offense vs offense: TBL #2 vs BUF #27; Defense vs offense: TBL #5 vs BUF #27"
      }
     ],
     "fails": [
-     "Not a top-7 vs bottom-7 matchup (TBL #4, BUF #19)"
+     "Not a top-7 vs bottom-7 matchup (TBL #4, BUF #20)"
     ],
     "warnings": [],
     "flags": [],
-    "score": 28,
+    "score": 26,
     "max": 40,
     "band": "green",
     "parts": [
@@ -510,7 +510,7 @@
      {
       "key": "dog_metrics",
       "label": "Underdog metrics",
-      "points": 12,
+      "points": 10,
       "max": 16
      },
      {
@@ -551,7 +551,7 @@
         "role": "fav",
         "window": "season",
         "metric": "xgf60",
-        "rank": 4,
+        "rank": 3,
         "color": "green"
        },
        {
@@ -567,7 +567,7 @@
         "role": "dog",
         "window": "season",
         "metric": "xga60",
-        "rank": 22,
+        "rank": 19,
         "color": "yellow"
        },
        {
@@ -575,8 +575,8 @@
         "role": "dog",
         "window": "last5",
         "metric": "xga60",
-        "rank": 24,
-        "color": "green"
+        "rank": 19,
+        "color": "yellow"
        }
       ]
      },
@@ -592,7 +592,7 @@
         "role": "fav",
         "window": "season",
         "metric": "xga60",
-        "rank": 7,
+        "rank": 6,
         "color": "green"
        },
        {
@@ -608,7 +608,7 @@
         "role": "dog",
         "window": "season",
         "metric": "xgf60",
-        "rank": 17,
+        "rank": 16,
         "color": "yellow"
        },
        {
@@ -616,7 +616,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "xgf60",
-        "rank": 31,
+        "rank": 27,
         "color": "green"
        }
       ]
@@ -657,7 +657,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "xgf",
-        "rank": 30,
+        "rank": 29,
         "color": "green"
        }
       ]
@@ -682,7 +682,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "gsax",
-        "rank": 4,
+        "rank": 2,
         "color": "green"
        },
        {
@@ -698,8 +698,8 @@
         "role": "dog",
         "window": "last5",
         "metric": "gsax",
-        "rank": 27,
-        "color": "green"
+        "rank": 18,
+        "color": "yellow"
        }
       ]
      },
@@ -723,7 +723,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "st",
-        "rank": 9,
+        "rank": 8,
         "color": "green"
        },
        {
@@ -739,7 +739,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "st",
-        "rank": 16,
+        "rank": 13,
         "color": "yellow"
        }
       ]
@@ -752,7 +752,7 @@
       "fav_metric": "xgf60",
       "dog_metric": "xgf60",
       "fav_rank": 2,
-      "dog_rank": 31,
+      "dog_rank": 27,
       "counts": true,
       "met": true
      },
@@ -762,7 +762,7 @@
       "fav_metric": "xga60",
       "dog_metric": "xga60",
       "fav_rank": 5,
-      "dog_rank": 24,
+      "dog_rank": 19,
       "counts": true,
       "met": false
      },
@@ -772,7 +772,7 @@
       "fav_metric": "xga60",
       "dog_metric": "xgf60",
       "fav_rank": 5,
-      "dog_rank": 31,
+      "dog_rank": 27,
       "counts": true,
       "met": true
      },
@@ -782,7 +782,7 @@
       "fav_metric": "xgf60",
       "dog_metric": "xga60",
       "fav_rank": 2,
-      "dog_rank": 24,
+      "dog_rank": 19,
       "counts": false,
       "met": false
      }
@@ -796,13 +796,13 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (TBL #4, BUF #19). Andrei Vasilevskiy in goal for TBL (probable). Biggest edge over the last 5: xGF% 5v5 (TBL #3, BUF #30). TBL 2-1-0 in its last 3, BUF 1-2-0.",
+   "summary": "Not a top-7 vs bottom-7 matchup (TBL #4, BUF #20). Andrei Vasilevskiy in goal for TBL (probable). Biggest edge over the last 5: xGF% 5v5 (TBL #3, BUF #29). TBL 2-1-0 in its last 3, BUF 1-2-0; BUF played yesterday.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV22BUFTB",
-    "fav_prob": 0.655,
-    "bid": 0.65,
-    "ask": 0.66
+    "fav_prob": 0.665,
+    "bid": 0.66,
+    "ask": 0.67
    }
   },
   {
@@ -817,7 +817,7 @@
    "favorite": "home",
    "line": {
     "details": "DAL -225",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -225,
     "ml_away": null,
     "puck_line": -1.5,
@@ -826,7 +826,7 @@
    },
    "spread": {
     "details": "DAL -225",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -849,11 +849,11 @@
      "pp": 21.4,
      "pk": 89.2,
      "ranks": {
-      "xgf": 15,
-      "xga60": 6,
-      "gsax": 5,
-      "st": 4,
-      "xgf60": 23
+      "xgf": 14,
+      "xga60": 5,
+      "gsax": 4,
+      "st": 3,
+      "xgf60": 22
      }
     },
     "last5": {
@@ -866,10 +866,10 @@
      "pp": 7.7,
      "pk": 85.7,
      "ranks": {
-      "xgf": 13,
-      "xga60": 14,
-      "gsax": 21,
-      "st": 19,
+      "xgf": 15,
+      "xga60": 13,
+      "gsax": 12,
+      "st": 22,
       "xgf60": 17
      }
     },
@@ -882,7 +882,7 @@
       "pts": 4,
       "opp_pts": 3,
       "extra": true,
-      "opp_power_rank": 7
+      "opp_power_rank": 6
      },
      {
       "game_id": 2026020342,
@@ -892,7 +892,7 @@
       "pts": 4,
       "opp_pts": 3,
       "extra": true,
-      "opp_power_rank": 7
+      "opp_power_rank": 6
      },
      {
       "game_id": 2026020327,
@@ -902,7 +902,7 @@
       "pts": 2,
       "opp_pts": 1,
       "extra": true,
-      "opp_power_rank": 13
+      "opp_power_rank": 14
      }
     ],
     "trend_games": [
@@ -965,9 +965,9 @@
     "is_fav": true,
     "b2b": false,
     "power": {
-     "rank": 11,
-     "own": 10,
-     "avg": 9.67,
+     "rank": 10,
+     "own": 9,
+     "avg": 9.33,
      "espn": 10,
      "nhl_com": 9
     },
@@ -1027,6 +1027,13 @@
       "status": "Injured Reserve",
       "date": "2026-11-14T15:10Z",
       "comment": "Bichsel (lower body) was placed on injured reserve Saturday."
+     },
+     {
+      "name": "Matt Duchene",
+      "last": "Duchene",
+      "status": "Injured Reserve",
+      "date": "2026-10-12T16:46Z",
+      "comment": "Duchene will be out for approximately three months after undergoing surgery to repair a core injury, the team announced Monday."
      }
     ],
     "injuries_known": true,
@@ -1042,44 +1049,54 @@
     "name": "Pittsburgh",
     "display": "Pittsburgh Penguins",
     "record": "7-13-2",
-    "l3_record": "1-2-0",
-    "games": 21,
-    "pts_pct": 0.381,
+    "l3_record": "0-3-0",
+    "games": 22,
+    "pts_pct": 0.364,
     "season": {
-     "xgf": 52.18,
-     "xga60": 2.588,
-     "xgf60": 2.824,
-     "cf": 50.92,
-     "gsax": -0.302,
-     "st": 96.9,
-     "pp": 16.9,
-     "pk": 80.0,
+     "xgf": 51.71,
+     "xga60": 2.585,
+     "xgf60": 2.768,
+     "cf": 50.45,
+     "gsax": -0.357,
+     "st": 97.4,
+     "pp": 16.7,
+     "pk": 80.7,
      "ranks": {
-      "xgf": 11,
-      "xga60": 19,
-      "gsax": 23,
+      "xgf": 12,
+      "xga60": 18,
+      "gsax": 24,
       "st": 20,
-      "xgf60": 5
+      "xgf60": 7
      }
     },
     "last5": {
-     "xgf": 51.3,
-     "xga60": 2.652,
-     "xgf60": 2.794,
-     "cf": 52.19,
-     "gsax": 0.191,
-     "st": 91.7,
-     "pp": 16.7,
-     "pk": 75.0,
+     "xgf": 51.41,
+     "xga60": 2.514,
+     "xgf60": 2.66,
+     "cf": 50.72,
+     "gsax": -0.488,
+     "st": 90.0,
+     "pp": 10.0,
+     "pk": 80.0,
      "ranks": {
-      "xgf": 11,
-      "xga60": 21,
-      "gsax": 14,
-      "st": 22,
-      "xgf60": 9
+      "xgf": 13,
+      "xga60": 20,
+      "gsax": 24,
+      "st": 26,
+      "xgf60": 10
      }
     },
     "last3_games": [
+     {
+      "game_id": 2026020362,
+      "date": "2026-11-21",
+      "site": "away",
+      "opp": "NSH",
+      "pts": 3,
+      "opp_pts": 4,
+      "extra": false,
+      "opp_power_rank": 13
+     },
      {
       "game_id": 2026020350,
       "date": "2026-11-19",
@@ -1088,7 +1105,7 @@
       "pts": 2,
       "opp_pts": 5,
       "extra": false,
-      "opp_power_rank": 17
+      "opp_power_rank": 18
      },
      {
       "game_id": 2026020317,
@@ -1099,30 +1116,9 @@
       "opp_pts": 4,
       "extra": false,
       "opp_power_rank": 9
-     },
-     {
-      "game_id": 2026020298,
-      "date": "2026-11-11",
-      "site": "away",
-      "opp": "SJS",
-      "pts": 3,
-      "opp_pts": 2,
-      "extra": true,
-      "opp_power_rank": 29
      }
     ],
     "trend_games": [
-     {
-      "date": "2026-11-07",
-      "opp": "LAK",
-      "metrics": {
-       "xgf": 41.49,
-       "xga60": 3.189,
-       "xgf60": 2.261,
-       "gsax": 1.876,
-       "st": 100.0
-      }
-     },
      {
       "date": "2026-11-08",
       "opp": "ANA",
@@ -1166,14 +1162,25 @@
        "gsax": -0.462,
        "st": 100.0
       }
+     },
+     {
+      "date": "2026-11-21",
+      "opp": "NSH",
+      "metrics": {
+       "xgf": 39.89,
+       "xga60": 2.518,
+       "xgf60": 1.671,
+       "gsax": -1.523,
+       "st": 100.0
+      }
      }
     ],
     "is_fav": false,
-    "b2b": false,
+    "b2b": true,
     "power": {
      "rank": 24,
-     "own": 20,
-     "avg": 24.0,
+     "own": 21,
+     "avg": 24.5,
      "espn": 28,
      "nhl_com": null
     },
@@ -1194,7 +1201,7 @@
      {
       "id": "8483703",
       "name": "S. Murashov",
-      "starts": 8
+      "starts": 9
      }
     ],
     "key_skaters": [
@@ -1267,13 +1274,13 @@
       "rule": "Range",
       "name": "Top-7 team vs bottom-7 team (consensus power rank)",
       "pass": false,
-      "detail": "DAL #11 vs PIT #24"
+      "detail": "DAL #10 vs PIT #24"
      },
      {
       "rule": "A",
       "name": "Analysis Score 22+",
-      "pass": false,
-      "detail": "Score 21 of 40"
+      "pass": true,
+      "detail": "Score 24 of 40"
      },
      {
       "rule": "Goalie",
@@ -1289,24 +1296,24 @@
      }
     ],
     "fails": [
-     "Not a top-7 vs bottom-7 matchup (DAL #11, PIT #24)"
+     "Not a top-7 vs bottom-7 matchup (DAL #10, PIT #24)"
     ],
     "warnings": [],
     "flags": [],
-    "score": 21,
+    "score": 24,
     "max": 40,
-    "band": "yellow",
+    "band": "green",
     "parts": [
      {
       "key": "fav_metrics",
       "label": "Favorite metrics",
-      "points": 5,
+      "points": 6,
       "max": 16
      },
      {
       "key": "dog_metrics",
       "label": "Underdog metrics",
-      "points": 9,
+      "points": 11,
       "max": 16
      },
      {
@@ -1347,8 +1354,8 @@
         "role": "fav",
         "window": "season",
         "metric": "xgf60",
-        "rank": 23,
-        "color": "red"
+        "rank": 22,
+        "color": "yellow"
        },
        {
         "team": "DAL",
@@ -1363,7 +1370,7 @@
         "role": "dog",
         "window": "season",
         "metric": "xga60",
-        "rank": 19,
+        "rank": 18,
         "color": "yellow"
        },
        {
@@ -1371,7 +1378,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "xga60",
-        "rank": 21,
+        "rank": 20,
         "color": "yellow"
        }
       ]
@@ -1388,7 +1395,7 @@
         "role": "fav",
         "window": "season",
         "metric": "xga60",
-        "rank": 6,
+        "rank": 5,
         "color": "green"
        },
        {
@@ -1396,7 +1403,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "xga60",
-        "rank": 14,
+        "rank": 13,
         "color": "yellow"
        },
        {
@@ -1404,15 +1411,15 @@
         "role": "dog",
         "window": "season",
         "metric": "xgf60",
-        "rank": 5,
-        "color": "deep-red"
+        "rank": 7,
+        "color": "red"
        },
        {
         "team": "PIT",
         "role": "dog",
         "window": "last5",
         "metric": "xgf60",
-        "rank": 9,
+        "rank": 10,
         "color": "red"
        }
       ]
@@ -1429,7 +1436,7 @@
         "role": "fav",
         "window": "season",
         "metric": "xgf",
-        "rank": 15,
+        "rank": 14,
         "color": "yellow"
        },
        {
@@ -1437,7 +1444,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "xgf",
-        "rank": 13,
+        "rank": 15,
         "color": "yellow"
        },
        {
@@ -1445,7 +1452,7 @@
         "role": "dog",
         "window": "season",
         "metric": "xgf",
-        "rank": 11,
+        "rank": 12,
         "color": "yellow"
        },
        {
@@ -1453,7 +1460,7 @@
         "role": "dog",
         "window": "last5",
         "metric": "xgf",
-        "rank": 11,
+        "rank": 13,
         "color": "yellow"
        }
       ]
@@ -1470,7 +1477,7 @@
         "role": "fav",
         "window": "season",
         "metric": "gsax",
-        "rank": 5,
+        "rank": 4,
         "color": "green"
        },
        {
@@ -1478,7 +1485,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "gsax",
-        "rank": 21,
+        "rank": 12,
         "color": "yellow"
        },
        {
@@ -1486,7 +1493,7 @@
         "role": "dog",
         "window": "season",
         "metric": "gsax",
-        "rank": 23,
+        "rank": 24,
         "color": "green"
        },
        {
@@ -1494,8 +1501,8 @@
         "role": "dog",
         "window": "last5",
         "metric": "gsax",
-        "rank": 14,
-        "color": "yellow"
+        "rank": 24,
+        "color": "green"
        }
       ]
      },
@@ -1511,7 +1518,7 @@
         "role": "fav",
         "window": "season",
         "metric": "st",
-        "rank": 4,
+        "rank": 3,
         "color": "green"
        },
        {
@@ -1519,7 +1526,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "st",
-        "rank": 19,
+        "rank": 22,
         "color": "yellow"
        },
        {
@@ -1535,8 +1542,8 @@
         "role": "dog",
         "window": "last5",
         "metric": "st",
-        "rank": 22,
-        "color": "yellow"
+        "rank": 26,
+        "color": "green"
        }
       ]
      }
@@ -1548,7 +1555,7 @@
       "fav_metric": "xgf60",
       "dog_metric": "xgf60",
       "fav_rank": 17,
-      "dog_rank": 9,
+      "dog_rank": 10,
       "counts": true,
       "met": false
      },
@@ -1557,8 +1564,8 @@
       "label": "Defense vs defense",
       "fav_metric": "xga60",
       "dog_metric": "xga60",
-      "fav_rank": 14,
-      "dog_rank": 21,
+      "fav_rank": 13,
+      "dog_rank": 20,
       "counts": true,
       "met": false
      },
@@ -1567,8 +1574,8 @@
       "label": "Defense vs offense",
       "fav_metric": "xga60",
       "dog_metric": "xgf60",
-      "fav_rank": 14,
-      "dog_rank": 9,
+      "fav_rank": 13,
+      "dog_rank": 10,
       "counts": true,
       "met": false
      },
@@ -1578,7 +1585,7 @@
       "fav_metric": "xgf60",
       "dog_metric": "xga60",
       "fav_rank": 17,
-      "dog_rank": 21,
+      "dog_rank": 20,
       "counts": false,
       "met": false
      }
@@ -1592,823 +1599,13 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (DAL #11, PIT #24). Jake Oettinger in goal for DAL (probable). DAL 3-0-0 in its last 3, PIT 1-2-0.",
+   "summary": "Not a top-7 vs bottom-7 matchup (DAL #10, PIT #24). Jake Oettinger in goal for DAL (probable). DAL 3-0-0 in its last 3, PIT 0-3-0; PIT played yesterday.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV22PITDAL",
-    "fav_prob": 0.665,
-    "bid": 0.66,
-    "ask": 0.67
-   }
-  },
-  {
-   "id": "401892770",
-   "tip_utc": "2026-11-23T00:00:00+00:00",
-   "tip_pt": "4:00 PM PT",
-   "day_et": "2026-11-22",
-   "state": "pre",
-   "detail": "11/22 - 7:00 PM EST",
-   "neutral": false,
-   "venue": "Enterprise Center",
-   "favorite": "away",
-   "line": {
-    "details": "EDM -118",
-    "provider": "Draft Kings",
-    "ml_home": null,
-    "ml_away": -118,
-    "puck_line": 1.5,
-    "total": 6.5,
-    "fav_price": 0.5413
-   },
-   "spread": {
-    "details": "EDM -118",
-    "provider": "Draft Kings",
-    "puck_line": 1.5
-   },
-   "home": {
-    "id": "19",
-    "abbr": "STL",
-    "espn_abbr": "STL",
-    "name": "St. Louis",
-    "display": "St. Louis Blues",
-    "record": "12-9-2",
-    "l3_record": "2-1-0",
-    "games": 22,
-    "pts_pct": 0.545,
-    "season": {
-     "xgf": 52.1,
-     "xga60": 2.475,
-     "xgf60": 2.691,
-     "cf": 47.52,
-     "gsax": -0.093,
-     "st": 99.3,
-     "pp": 15.4,
-     "pk": 83.9,
-     "ranks": {
-      "xgf": 12,
-      "xga60": 16,
-      "gsax": 14,
-      "st": 17,
-      "xgf60": 8
-     }
-    },
-    "last5": {
-     "xgf": 57.45,
-     "xga60": 2.345,
-     "xgf60": 3.166,
-     "cf": 48.58,
-     "gsax": 0.121,
-     "st": 87.1,
-     "pp": 7.1,
-     "pk": 80.0,
-     "ranks": {
-      "xgf": 5,
-      "xga60": 12,
-      "gsax": 16,
-      "st": 25,
-      "xgf60": 3
-     }
-    },
-    "last3_games": [
-     {
-      "game_id": 2026020350,
-      "date": "2026-11-19",
-      "site": "away",
-      "opp": "PIT",
-      "pts": 5,
-      "opp_pts": 2,
-      "extra": false,
-      "opp_power_rank": 24
-     },
-     {
-      "game_id": 2026020339,
-      "date": "2026-11-17",
-      "site": "home",
-      "opp": "ANA",
-      "pts": 8,
-      "opp_pts": 6,
-      "extra": false,
-      "opp_power_rank": 20
-     },
-     {
-      "game_id": 2026020320,
-      "date": "2026-11-14",
-      "site": "home",
-      "opp": "FLA",
-      "pts": 1,
-      "opp_pts": 4,
-      "extra": false,
-      "opp_power_rank": 13
-     }
-    ],
-    "trend_games": [
-     {
-      "date": "2026-11-10",
-      "opp": "DET",
-      "metrics": {
-       "xgf": 70.13,
-       "xga60": 1.564,
-       "xgf60": 3.672,
-       "gsax": 0.809,
-       "st": 100.0
-      }
-     },
-     {
-      "date": "2026-11-12",
-      "opp": "UTA",
-      "metrics": {
-       "xgf": 37.92,
-       "xga60": 3.212,
-       "xgf60": 1.962,
-       "gsax": 3.128,
-       "st": 100.0
-      }
-     },
-     {
-      "date": "2026-11-14",
-      "opp": "FLA",
-      "metrics": {
-       "xgf": 55.01,
-       "xga60": 1.784,
-       "xgf60": 2.182,
-       "gsax": -1.756,
-       "st": 83.3
-      }
-     },
-     {
-      "date": "2026-11-17",
-      "opp": "ANA",
-      "metrics": {
-       "xgf": 67.31,
-       "xga60": 2.321,
-       "xgf60": 4.78,
-       "gsax": -2.704,
-       "st": 66.7
-      }
-     },
-     {
-      "date": "2026-11-19",
-      "opp": "PIT",
-      "metrics": {
-       "xgf": 50.33,
-       "xga60": 3.014,
-       "xgf60": 3.055,
-       "gsax": 1.129,
-       "st": 100.0
-      }
-     }
-    ],
-    "is_fav": false,
-    "b2b": false,
-    "power": {
-     "rank": 17,
-     "own": 15,
-     "avg": 18.0,
-     "espn": 21,
-     "nhl_com": null
-    },
-    "goalie": {
-     "name": "Joel Hofer",
-     "last": "Hofer",
-     "espn_id": "4587909",
-     "confirmed": false
-    },
-    "goalie_status": "regular",
-    "regular_goalie_name": "J. Hofer",
-    "goalies": [
-     {
-      "id": "8480981",
-      "name": "J. Hofer",
-      "starts": 16
-     },
-     {
-      "id": "8476412",
-      "name": "J. Binnington",
-      "starts": 6
-     }
-    ],
-    "key_skaters": [
-     "P. Broberg",
-     "C. Fowler",
-     "C. Parayko",
-     "R. Thomas",
-     "J. Snuggerud",
-     "B. Carlo"
-    ],
-    "injuries": [
-     {
-      "name": "Connor McMichael",
-      "last": "McMichael",
-      "status": "Out",
-      "date": "2026-11-20T18:15Z",
-      "comment": "out"
-     },
-     {
-      "name": "Torey Krug",
-      "last": "Krug",
-      "status": "Injured Reserve",
-      "date": "2026-10-13T01:42Z",
-      "comment": "Krug (ankle) was placed on long-term injured reserve by the Blues on Monday, per PuckPedia."
-     },
-     {
-      "name": "Dillon Dube",
-      "last": "Dube",
-      "status": "Injured Reserve",
-      "date": "2026-10-10T21:13Z",
-      "comment": "ir"
-     },
-     {
-      "name": "Tyler Tucker",
-      "last": "Tucker",
-      "status": "Injured Reserve",
-      "date": "2026-09-30T19:39Z",
-      "comment": "Tucker had arthroscopic knee surgery and will be re-assessed in six weeks, the team announced Wednesday."
-     }
-    ],
-    "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [],
-    "key_long_term": [],
-    "spread_text": ""
-   },
-   "away": {
-    "id": "6",
-    "abbr": "EDM",
-    "espn_abbr": "EDM",
-    "name": "Edmonton",
-    "display": "Edmonton Oilers",
-    "record": "17-5-3",
-    "l3_record": "2-1-0",
-    "games": 24,
-    "pts_pct": 0.771,
-    "season": {
-     "xgf": 46.74,
-     "xga60": 2.308,
-     "xgf60": 2.025,
-     "cf": 47.72,
-     "gsax": 0.241,
-     "st": 111.3,
-     "pp": 32.9,
-     "pk": 78.4,
-     "ranks": {
-      "xgf": 26,
-      "xga60": 9,
-      "gsax": 9,
-      "st": 3,
-      "xgf60": 31
-     }
-    },
-    "last5": {
-     "xgf": 38.25,
-     "xga60": 2.48,
-     "xgf60": 1.536,
-     "cf": 45.29,
-     "gsax": 1.399,
-     "st": 134.3,
-     "pp": 45.5,
-     "pk": 88.9,
-     "ranks": {
-      "xgf": 31,
-      "xga60": 16,
-      "gsax": 1,
-      "st": 1,
-      "xgf60": 32
-     }
-    },
-    "last3_games": [
-     {
-      "game_id": 2026020349,
-      "date": "2026-11-19",
-      "site": "away",
-      "opp": "TBL",
-      "pts": 1,
-      "opp_pts": 3,
-      "extra": false,
-      "opp_power_rank": 4
-     },
-     {
-      "game_id": 2026020335,
-      "date": "2026-11-17",
-      "site": "away",
-      "opp": "FLA",
-      "pts": 5,
-      "opp_pts": 2,
-      "extra": false,
-      "opp_power_rank": 13
-     },
-     {
-      "game_id": 2026020326,
-      "date": "2026-11-15",
-      "site": "away",
-      "opp": "PHI",
-      "pts": 5,
-      "opp_pts": 2,
-      "extra": false,
-      "opp_power_rank": 30
-     }
-    ],
-    "trend_games": [
-     {
-      "date": "2026-11-11",
-      "opp": "PHI",
-      "metrics": {
-       "xgf": 38.16,
-       "xga60": 3.054,
-       "xgf60": 1.885,
-       "gsax": 1.132,
-       "st": 175.0
-      }
-     },
-     {
-      "date": "2026-11-14",
-      "opp": "TOR",
-      "metrics": {
-       "xgf": 51.4,
-       "xga60": 1.244,
-       "xgf60": 1.316,
-       "gsax": 1.455,
-       "st": 100.0
-      }
-     },
-     {
-      "date": "2026-11-15",
-      "opp": "PHI",
-      "metrics": {
-       "xgf": 31.04,
-       "xga60": 3.856,
-       "xgf60": 1.736,
-       "gsax": 3.79,
-       "st": 166.7
-      }
-     },
-     {
-      "date": "2026-11-17",
-      "opp": "FLA",
-      "metrics": {
-       "xgf": 40.57,
-       "xga60": 1.491,
-       "xgf60": 1.017,
-       "gsax": 0.216,
-       "st": 166.7
-      }
-     },
-     {
-      "date": "2026-11-19",
-      "opp": "TBL",
-      "metrics": {
-       "xgf": 35.43,
-       "xga60": 3.25,
-       "xgf60": 1.784,
-       "gsax": 0.4,
-       "st": 50.0
-      }
-     }
-    ],
-    "is_fav": true,
-    "b2b": false,
-    "power": {
-     "rank": 6,
-     "own": 13,
-     "avg": 6.67,
-     "espn": 4,
-     "nhl_com": 3
-    },
-    "goalie": {
-     "name": "Tristan Jarry",
-     "last": "Jarry",
-     "espn_id": "3042020",
-     "confirmed": false
-    },
-    "goalie_status": "backup",
-    "regular_goalie_name": "D. Levi",
-    "goalies": [
-     {
-      "id": "8482221",
-      "name": "D. Levi",
-      "starts": 12
-     },
-     {
-      "id": "8477465",
-      "name": "T. Jarry",
-      "starts": 10
-     },
-     {
-      "id": "8477035",
-      "name": "M. Tomkins",
-      "starts": 2
-     }
-    ],
-    "key_skaters": [
-     "E. Bouchard",
-     "C. McDavid",
-     "R. Shea",
-     "L. Draisaitl",
-     "M. Ekholm",
-     "C. Murphy"
-    ],
-    "injuries": [
-     {
-      "name": "Ryan Nugent-Hopkins",
-      "last": "Nugent-Hopkins",
-      "status": "Out",
-      "date": "2026-11-21T21:28Z",
-      "comment": "Nugent-Hopkins (undisclosed) is slated to return to the lineup against Vegas on Tuesday, Paige Martin of Oilers TV reports."
-     },
-     {
-      "name": "Zach Hyman",
-      "last": "Hyman",
-      "status": "Day-To-Day",
-      "date": "2026-11-21T20:26Z",
-      "comment": "day-to-day"
-     },
-     {
-      "name": "Alec Regula",
-      "last": "Regula",
-      "status": "Injured Reserve",
-      "date": "2026-10-01T14:11Z",
-      "comment": "Regula (undisclosed) was designated for long-term injured reserve Thursday."
-     },
-     {
-      "name": "Matt Savoie",
-      "last": "Savoie",
-      "status": "Injured Reserve",
-      "date": "2026-10-01T14:05Z",
-      "comment": "Savoie (lower body) was shifted to long-term injured reserve Thursday."
-     },
-     {
-      "name": "Frederik Andersen",
-      "last": "Andersen",
-      "status": "Injured Reserve",
-      "date": "2026-09-29T17:53Z",
-      "comment": "Andersen (knee) isn't expected back until \"maybe\" December, head coach Mike Babcock told NHL.com on Tuesday."
-     },
-     {
-      "name": "Mattias Janmark",
-      "last": "Janmark",
-      "status": "Injured Reserve",
-      "date": "2026-09-29T17:52Z",
-      "comment": "Janmark (undisclosed) does not have a timetable for his return from injury."
-     }
-    ],
-    "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [],
-    "key_long_term": [],
-    "spread_text": "-118"
-   },
-   "scoring": {
-    "scored": true,
-    "fav": "EDM",
-    "dog": "STL",
-    "in_range": false,
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "qualifiers": [],
-    "would_qualify": false,
-    "rules": [
-     {
-      "rule": "Range",
-      "name": "Top-7 team vs bottom-7 team (consensus power rank)",
-      "pass": false,
-      "detail": "EDM #6 vs STL #17"
-     },
-     {
-      "rule": "A",
-      "name": "Analysis Score 22+",
-      "pass": false,
-      "detail": "Score 19 of 40"
-     },
-     {
-      "rule": "Goalie",
-      "name": "EDM's regular goalie starts",
-      "pass": false,
-      "detail": "Tristan Jarry listed instead of D. Levi: capped at the Watch list"
-     },
-     {
-      "rule": "Matchup",
-      "name": "EDM top 7 vs STL bottom 7 in a matchup (last 5)",
-      "pass": false,
-      "detail": "None: offense vs offense, defense vs defense or defense vs offense (xGF/60, xGA/60): capped at the Watch list"
-     }
-    ],
-    "fails": [
-     "Not a top-7 vs bottom-7 matchup (EDM #6, STL #17)"
-    ],
-    "warnings": [],
-    "flags": [
-     "EDM backup goalie starting (Tristan Jarry)"
-    ],
-    "score": 19,
-    "max": 40,
-    "band": "yellow",
-    "parts": [
-     {
-      "key": "fav_metrics",
-      "label": "Favorite metrics",
-      "points": 8,
-      "max": 16
-     },
-     {
-      "key": "dog_metrics",
-      "label": "Underdog metrics",
-      "points": 8,
-      "max": 16
-     },
-     {
-      "key": "goalies",
-      "label": "Goalies + health",
-      "points": 1,
-      "max": 4
-     },
-     {
-      "key": "home",
-      "label": "Home ice",
-      "points": 0,
-      "max": 1
-     },
-     {
-      "key": "rest",
-      "label": "Rest",
-      "points": 1,
-      "max": 1
-     },
-     {
-      "key": "form",
-      "label": "Last-3 form",
-      "points": 1,
-      "max": 2
-     }
-    ],
-    "grid": [
-     {
-      "key": "off_def",
-      "label": "Offense vs defense",
-      "fav_metric": "xgf60",
-      "dog_metric": "xga60",
-      "scored": false,
-      "cells": [
-       {
-        "team": "EDM",
-        "role": "fav",
-        "window": "season",
-        "metric": "xgf60",
-        "rank": 31,
-        "color": "red"
-       },
-       {
-        "team": "EDM",
-        "role": "fav",
-        "window": "last5",
-        "metric": "xgf60",
-        "rank": 32,
-        "color": "red"
-       },
-       {
-        "team": "STL",
-        "role": "dog",
-        "window": "season",
-        "metric": "xga60",
-        "rank": 16,
-        "color": "yellow"
-       },
-       {
-        "team": "STL",
-        "role": "dog",
-        "window": "last5",
-        "metric": "xga60",
-        "rank": 12,
-        "color": "yellow"
-       }
-      ]
-     },
-     {
-      "key": "def_off",
-      "label": "Defense vs offense",
-      "fav_metric": "xga60",
-      "dog_metric": "xgf60",
-      "scored": false,
-      "cells": [
-       {
-        "team": "EDM",
-        "role": "fav",
-        "window": "season",
-        "metric": "xga60",
-        "rank": 9,
-        "color": "green"
-       },
-       {
-        "team": "EDM",
-        "role": "fav",
-        "window": "last5",
-        "metric": "xga60",
-        "rank": 16,
-        "color": "yellow"
-       },
-       {
-        "team": "STL",
-        "role": "dog",
-        "window": "season",
-        "metric": "xgf60",
-        "rank": 8,
-        "color": "red"
-       },
-       {
-        "team": "STL",
-        "role": "dog",
-        "window": "last5",
-        "metric": "xgf60",
-        "rank": 3,
-        "color": "deep-red"
-       }
-      ]
-     },
-     {
-      "key": "share",
-      "label": "Shot share",
-      "fav_metric": "xgf",
-      "dog_metric": "xgf",
-      "scored": true,
-      "cells": [
-       {
-        "team": "EDM",
-        "role": "fav",
-        "window": "season",
-        "metric": "xgf",
-        "rank": 26,
-        "color": "red"
-       },
-       {
-        "team": "EDM",
-        "role": "fav",
-        "window": "last5",
-        "metric": "xgf",
-        "rank": 31,
-        "color": "red"
-       },
-       {
-        "team": "STL",
-        "role": "dog",
-        "window": "season",
-        "metric": "xgf",
-        "rank": 12,
-        "color": "yellow"
-       },
-       {
-        "team": "STL",
-        "role": "dog",
-        "window": "last5",
-        "metric": "xgf",
-        "rank": 5,
-        "color": "deep-red"
-       }
-      ]
-     },
-     {
-      "key": "goalie",
-      "label": "Goaltending",
-      "fav_metric": "gsax",
-      "dog_metric": "gsax",
-      "scored": true,
-      "cells": [
-       {
-        "team": "EDM",
-        "role": "fav",
-        "window": "season",
-        "metric": "gsax",
-        "rank": 9,
-        "color": "green"
-       },
-       {
-        "team": "EDM",
-        "role": "fav",
-        "window": "last5",
-        "metric": "gsax",
-        "rank": 1,
-        "color": "green"
-       },
-       {
-        "team": "STL",
-        "role": "dog",
-        "window": "season",
-        "metric": "gsax",
-        "rank": 14,
-        "color": "yellow"
-       },
-       {
-        "team": "STL",
-        "role": "dog",
-        "window": "last5",
-        "metric": "gsax",
-        "rank": 16,
-        "color": "yellow"
-       }
-      ]
-     },
-     {
-      "key": "st",
-      "label": "Special teams",
-      "fav_metric": "st",
-      "dog_metric": "st",
-      "scored": true,
-      "cells": [
-       {
-        "team": "EDM",
-        "role": "fav",
-        "window": "season",
-        "metric": "st",
-        "rank": 3,
-        "color": "green"
-       },
-       {
-        "team": "EDM",
-        "role": "fav",
-        "window": "last5",
-        "metric": "st",
-        "rank": 1,
-        "color": "green"
-       },
-       {
-        "team": "STL",
-        "role": "dog",
-        "window": "season",
-        "metric": "st",
-        "rank": 17,
-        "color": "yellow"
-       },
-       {
-        "team": "STL",
-        "role": "dog",
-        "window": "last5",
-        "metric": "st",
-        "rank": 25,
-        "color": "green"
-       }
-      ]
-     }
-    ],
-    "matchups": [
-     {
-      "key": "off_off",
-      "label": "Offense vs offense",
-      "fav_metric": "xgf60",
-      "dog_metric": "xgf60",
-      "fav_rank": 32,
-      "dog_rank": 3,
-      "counts": true,
-      "met": false
-     },
-     {
-      "key": "def_def",
-      "label": "Defense vs defense",
-      "fav_metric": "xga60",
-      "dog_metric": "xga60",
-      "fav_rank": 16,
-      "dog_rank": 12,
-      "counts": true,
-      "met": false
-     },
-     {
-      "key": "def_off",
-      "label": "Defense vs offense",
-      "fav_metric": "xga60",
-      "dog_metric": "xgf60",
-      "fav_rank": 16,
-      "dog_rank": 3,
-      "counts": true,
-      "met": false
-     },
-     {
-      "key": "off_def",
-      "label": "Offense vs defense",
-      "fav_metric": "xgf60",
-      "dog_metric": "xga60",
-      "fav_rank": 32,
-      "dog_rank": 12,
-      "counts": false,
-      "met": false
-     }
-    ],
-    "labels": {
-     "xgf60": "xGF/60 5v5",
-     "xgf": "xGF% 5v5",
-     "xga60": "xGA/60 5v5",
-     "gsax": "GSAx/gm",
-     "st": "PP%+PK%",
-     "pts": "Points %"
-    }
-   },
-   "summary": "Not a top-7 vs bottom-7 matchup (EDM #6, STL #17). EDM start their backup goalie, Tristan Jarry (regular: D. Levi). Biggest edge over the last 5: PP%+PK% (EDM #1, STL #25). EDM 2-1-0 in its last 3, STL 2-1-0.",
-   "lean": "No lean",
-   "kalshi": {
-    "event": "KXNHLGAME-26NOV22EDMSTL",
-    "fav_prob": 0.515,
-    "bid": 0.51,
-    "ask": 0.52
+    "fav_prob": 0.675,
+    "bid": 0.67,
+    "ask": 0.68
    }
   },
   {
@@ -2420,20 +1617,20 @@
    "detail": "11/22 - 8:00 PM EST",
    "neutral": false,
    "venue": "Rogers Arena",
-   "favorite": "home",
+   "favorite": "away",
    "line": {
-    "details": "VAN -112",
-    "provider": "Draft Kings",
-    "ml_home": -112,
-    "ml_away": null,
-    "puck_line": -1.5,
+    "details": "CHI -112",
+    "provider": "DraftKings",
+    "ml_home": null,
+    "ml_away": -112,
+    "puck_line": 1.5,
     "total": 6.5,
     "fav_price": 0.5283
    },
    "spread": {
-    "details": "VAN -112",
-    "provider": "Draft Kings",
-    "puck_line": -1.5
+    "details": "CHI -112",
+    "provider": "DraftKings",
+    "puck_line": 1.5
    },
    "home": {
     "id": "22",
@@ -2443,43 +1640,53 @@
     "display": "Vancouver Canucks",
     "record": "6-18-1",
     "l3_record": "2-1-0",
-    "games": 24,
-    "pts_pct": 0.229,
+    "games": 25,
+    "pts_pct": 0.26,
     "season": {
-     "xgf": 39.41,
-     "xga60": 3.015,
-     "xgf60": 1.961,
-     "cf": 45.55,
-     "gsax": -0.674,
-     "st": 85.3,
-     "pp": 20.8,
-     "pk": 64.6,
+     "xgf": 39.21,
+     "xga60": 2.981,
+     "xgf60": 1.923,
+     "cf": 45.45,
+     "gsax": -0.649,
+     "st": 86.5,
+     "pp": 21.5,
+     "pk": 65.0,
      "ranks": {
       "xgf": 32,
       "xga60": 32,
       "gsax": 32,
-      "st": 31,
+      "st": 30,
       "xgf60": 32
      }
     },
     "last5": {
-     "xgf": 35.97,
-     "xga60": 3.687,
-     "xgf60": 2.072,
-     "cf": 46.48,
-     "gsax": 1.05,
-     "st": 88.9,
-     "pp": 27.8,
-     "pk": 61.1,
+     "xgf": 34.87,
+     "xga60": 3.676,
+     "xgf60": 1.968,
+     "cf": 44.25,
+     "gsax": 1.02,
+     "st": 98.0,
+     "pp": 33.3,
+     "pk": 64.7,
      "ranks": {
       "xgf": 32,
       "xga60": 32,
-      "gsax": 3,
-      "st": 24,
+      "gsax": 1,
+      "st": 18,
       "xgf60": 28
      }
     },
     "last3_games": [
+     {
+      "game_id": 2026020371,
+      "date": "2026-11-21",
+      "site": "home",
+      "opp": "MIN",
+      "pts": 4,
+      "opp_pts": 3,
+      "extra": true,
+      "opp_power_rank": 2
+     },
      {
       "game_id": 2026020357,
       "date": "2026-11-19",
@@ -2499,30 +1706,9 @@
       "opp_pts": 2,
       "extra": false,
       "opp_power_rank": 12
-     },
-     {
-      "game_id": 2026020329,
-      "date": "2026-11-15",
-      "site": "away",
-      "opp": "VGK",
-      "pts": 6,
-      "opp_pts": 3,
-      "extra": false,
-      "opp_power_rank": 7
      }
     ],
     "trend_games": [
-     {
-      "date": "2026-11-09",
-      "opp": "PHI",
-      "metrics": {
-       "xgf": 41.96,
-       "xga60": 2.116,
-       "xgf60": 1.53,
-       "gsax": 0.103,
-       "st": 70.0
-      }
-     },
      {
       "date": "2026-11-13",
       "opp": "NYR",
@@ -2566,10 +1752,21 @@
        "gsax": 1.232,
        "st": 100.0
       }
+     },
+     {
+      "date": "2026-11-21",
+      "opp": "MIN",
+      "metrics": {
+       "xgf": 33.39,
+       "xga60": 2.293,
+       "xgf60": 1.149,
+       "gsax": -0.047,
+       "st": 150.0
+      }
      }
     ],
-    "is_fav": true,
-    "b2b": false,
+    "is_fav": false,
+    "b2b": true,
     "power": {
      "rank": 32,
      "own": 32,
@@ -2589,7 +1786,7 @@
      {
       "id": "8482447",
       "name": "L. Meril\u00e4inen",
-      "starts": 15
+      "starts": 16
      },
      {
       "id": "8480947",
@@ -2653,7 +1850,7 @@
     ],
     "key_questionable": [],
     "key_long_term": [],
-    "spread_text": "-112"
+    "spread_text": ""
    },
    "away": {
     "id": "4",
@@ -2662,44 +1859,54 @@
     "name": "Chicago",
     "display": "Chicago Blackhawks",
     "record": "7-14-2",
-    "l3_record": "1-1-1",
-    "games": 22,
-    "pts_pct": 0.318,
+    "l3_record": "2-1-0",
+    "games": 23,
+    "pts_pct": 0.348,
     "season": {
-     "xgf": 41.12,
-     "xga60": 2.906,
-     "xgf60": 2.03,
-     "cf": 45.52,
-     "gsax": -0.496,
-     "st": 97.5,
-     "pp": 17.2,
-     "pk": 80.3,
+     "xgf": 41.2,
+     "xga60": 2.892,
+     "xgf60": 2.027,
+     "cf": 45.75,
+     "gsax": -0.444,
+     "st": 98.2,
+     "pp": 18.2,
+     "pk": 80.0,
      "ranks": {
       "xgf": 31,
       "xga60": 29,
-      "gsax": 29,
+      "gsax": 27,
       "st": 19,
       "xgf60": 30
      }
     },
     "last5": {
-     "xgf": 43.95,
-     "xga60": 2.648,
-     "xgf60": 2.076,
-     "cf": 44.44,
-     "gsax": -1.13,
-     "st": 119.8,
-     "pp": 42.9,
-     "pk": 76.9,
+     "xgf": 48.49,
+     "xga60": 2.217,
+     "xgf60": 2.086,
+     "cf": 47.56,
+     "gsax": -0.092,
+     "st": 118.8,
+     "pp": 43.8,
+     "pk": 75.0,
      "ranks": {
-      "xgf": 28,
-      "xga60": 20,
-      "gsax": 28,
-      "st": 5,
-      "xgf60": 27
+      "xgf": 21,
+      "xga60": 10,
+      "gsax": 13,
+      "st": 2,
+      "xgf60": 26
      }
     },
     "last3_games": [
+     {
+      "game_id": 2026020360,
+      "date": "2026-11-21",
+      "site": "away",
+      "opp": "CGY",
+      "pts": 4,
+      "opp_pts": 3,
+      "extra": true,
+      "opp_power_rank": 25
+     },
      {
       "game_id": 2026020353,
       "date": "2026-11-19",
@@ -2718,31 +1925,10 @@
       "pts": 6,
       "opp_pts": 3,
       "extra": false,
-      "opp_power_rank": 27
-     },
-     {
-      "game_id": 2026020312,
-      "date": "2026-11-14",
-      "site": "home",
-      "opp": "WPG",
-      "pts": 4,
-      "opp_pts": 5,
-      "extra": true,
-      "opp_power_rank": 22
+      "opp_power_rank": 26
      }
     ],
     "trend_games": [
-     {
-      "date": "2026-11-07",
-      "opp": "CAR",
-      "metrics": {
-       "xgf": 30.7,
-       "xga60": 4.389,
-       "xgf60": 1.944,
-       "gsax": -4.5,
-       "st": 100.0
-      }
-     },
      {
       "date": "2026-11-12",
       "opp": "BUF",
@@ -2786,10 +1972,21 @@
        "gsax": -0.538,
        "st": 75.0
       }
+     },
+     {
+      "date": "2026-11-21",
+      "opp": "CGY",
+      "metrics": {
+       "xgf": 43.11,
+       "xga60": 2.597,
+       "xgf60": 1.968,
+       "gsax": 0.69,
+       "st": 125.0
+      }
      }
     ],
-    "is_fav": false,
-    "b2b": false,
+    "is_fav": true,
+    "b2b": true,
     "power": {
      "rank": 31,
      "own": 31,
@@ -2809,7 +2006,7 @@
      {
       "id": "8481519",
       "name": "S. Knight",
-      "starts": 18
+      "starts": 19
      },
      {
       "id": "8482821",
@@ -2854,12 +2051,12 @@
     ],
     "key_questionable": [],
     "key_long_term": [],
-    "spread_text": ""
+    "spread_text": "-112"
    },
    "scoring": {
     "scored": true,
-    "fav": "VAN",
-    "dog": "CHI",
+    "fav": "CHI",
+    "dog": "VAN",
     "in_range": false,
     "qualified": false,
     "tier": "out",
@@ -2875,7 +2072,7 @@
       "rule": "Range",
       "name": "Top-7 team vs bottom-7 team (consensus power rank)",
       "pass": false,
-      "detail": "VAN #32 vs CHI #31"
+      "detail": "CHI #31 vs VAN #32"
      },
      {
       "rule": "A",
@@ -2885,26 +2082,27 @@
      },
      {
       "rule": "Goalie",
-      "name": "VAN's regular goalie starts",
+      "name": "CHI's regular goalie starts",
       "pass": false,
-      "detail": "Nikita Tolopilo listed instead of L. Meril\u00e4inen: capped at the Watch list"
+      "detail": "Drew Commesso listed instead of S. Knight: capped at the Watch list"
      },
      {
       "rule": "Matchup",
-      "name": "VAN top 7 vs CHI bottom 7 in a matchup (last 5)",
+      "name": "CHI top 7 vs VAN bottom 7 in a matchup (last 5)",
       "pass": false,
       "detail": "None: offense vs offense, defense vs defense or defense vs offense (xGF/60, xGA/60): capped at the Watch list"
      }
     ],
     "fails": [
-     "Not a top-7 vs bottom-7 matchup (VAN #32, CHI #31)"
+     "Not a top-7 vs bottom-7 matchup (CHI #31, VAN #32)"
     ],
     "warnings": [
-     "Info: CHI starting its backup goalie (Drew Commesso)",
-     "VAN key skater out: Elias Pettersson"
+     "Info: VAN starting its backup goalie (Nikita Tolopilo)",
+     "CHI key skater out: Connor Bedard",
+     "CHI played yesterday (back-to-back)"
     ],
     "flags": [
-     "VAN backup goalie starting (Nikita Tolopilo)"
+     "CHI backup goalie starting (Drew Commesso)"
     ],
     "score": 18,
     "max": 40,
@@ -2913,13 +2111,13 @@
      {
       "key": "fav_metrics",
       "label": "Favorite metrics",
-      "points": 2,
+      "points": 3,
       "max": 16
      },
      {
       "key": "dog_metrics",
       "label": "Underdog metrics",
-      "points": 12,
+      "points": 13,
       "max": 16
      },
      {
@@ -2931,13 +2129,13 @@
      {
       "key": "home",
       "label": "Home ice",
-      "points": 1,
+      "points": 0,
       "max": 1
      },
      {
       "key": "rest",
       "label": "Rest",
-      "points": 1,
+      "points": 0,
       "max": 1
      },
      {
@@ -2956,36 +2154,36 @@
       "scored": false,
       "cells": [
        {
-        "team": "VAN",
+        "team": "CHI",
         "role": "fav",
         "window": "season",
         "metric": "xgf60",
-        "rank": 32,
-        "color": "red"
-       },
-       {
-        "team": "VAN",
-        "role": "fav",
-        "window": "last5",
-        "metric": "xgf60",
-        "rank": 28,
+        "rank": 30,
         "color": "red"
        },
        {
         "team": "CHI",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xgf60",
+        "rank": 26,
+        "color": "red"
+       },
+       {
+        "team": "VAN",
         "role": "dog",
         "window": "season",
         "metric": "xga60",
-        "rank": 29,
+        "rank": 32,
         "color": "green"
        },
        {
-        "team": "CHI",
+        "team": "VAN",
         "role": "dog",
         "window": "last5",
         "metric": "xga60",
-        "rank": 20,
-        "color": "yellow"
+        "rank": 32,
+        "color": "green"
        }
       ]
      },
@@ -2997,35 +2195,35 @@
       "scored": false,
       "cells": [
        {
-        "team": "VAN",
+        "team": "CHI",
         "role": "fav",
         "window": "season",
         "metric": "xga60",
-        "rank": 32,
-        "color": "red"
-       },
-       {
-        "team": "VAN",
-        "role": "fav",
-        "window": "last5",
-        "metric": "xga60",
-        "rank": 32,
+        "rank": 29,
         "color": "red"
        },
        {
         "team": "CHI",
-        "role": "dog",
-        "window": "season",
-        "metric": "xgf60",
-        "rank": 30,
+        "role": "fav",
+        "window": "last5",
+        "metric": "xga60",
+        "rank": 10,
         "color": "green"
        },
        {
-        "team": "CHI",
+        "team": "VAN",
+        "role": "dog",
+        "window": "season",
+        "metric": "xgf60",
+        "rank": 32,
+        "color": "green"
+       },
+       {
+        "team": "VAN",
         "role": "dog",
         "window": "last5",
         "metric": "xgf60",
-        "rank": 27,
+        "rank": 28,
         "color": "green"
        }
       ]
@@ -3038,35 +2236,35 @@
       "scored": true,
       "cells": [
        {
-        "team": "VAN",
-        "role": "fav",
-        "window": "season",
-        "metric": "xgf",
-        "rank": 32,
-        "color": "red"
-       },
-       {
-        "team": "VAN",
-        "role": "fav",
-        "window": "last5",
-        "metric": "xgf",
-        "rank": 32,
-        "color": "red"
-       },
-       {
         "team": "CHI",
-        "role": "dog",
+        "role": "fav",
         "window": "season",
         "metric": "xgf",
         "rank": 31,
-        "color": "green"
+        "color": "red"
        },
        {
         "team": "CHI",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xgf",
+        "rank": 21,
+        "color": "yellow"
+       },
+       {
+        "team": "VAN",
+        "role": "dog",
+        "window": "season",
+        "metric": "xgf",
+        "rank": 32,
+        "color": "green"
+       },
+       {
+        "team": "VAN",
         "role": "dog",
         "window": "last5",
         "metric": "xgf",
-        "rank": 28,
+        "rank": 32,
         "color": "green"
        }
       ]
@@ -3079,36 +2277,36 @@
       "scored": true,
       "cells": [
        {
-        "team": "VAN",
+        "team": "CHI",
         "role": "fav",
         "window": "season",
         "metric": "gsax",
-        "rank": 32,
+        "rank": 27,
         "color": "red"
        },
        {
-        "team": "VAN",
+        "team": "CHI",
         "role": "fav",
         "window": "last5",
         "metric": "gsax",
-        "rank": 3,
-        "color": "green"
+        "rank": 13,
+        "color": "yellow"
        },
        {
-        "team": "CHI",
+        "team": "VAN",
         "role": "dog",
         "window": "season",
         "metric": "gsax",
-        "rank": 29,
+        "rank": 32,
         "color": "green"
        },
        {
-        "team": "CHI",
+        "team": "VAN",
         "role": "dog",
         "window": "last5",
         "metric": "gsax",
-        "rank": 28,
-        "color": "green"
+        "rank": 1,
+        "color": "deep-red"
        }
       ]
      },
@@ -3120,24 +2318,8 @@
       "scored": true,
       "cells": [
        {
-        "team": "VAN",
-        "role": "fav",
-        "window": "season",
-        "metric": "st",
-        "rank": 31,
-        "color": "red"
-       },
-       {
-        "team": "VAN",
-        "role": "fav",
-        "window": "last5",
-        "metric": "st",
-        "rank": 24,
-        "color": "red"
-       },
-       {
         "team": "CHI",
-        "role": "dog",
+        "role": "fav",
         "window": "season",
         "metric": "st",
         "rank": 19,
@@ -3145,11 +2327,27 @@
        },
        {
         "team": "CHI",
+        "role": "fav",
+        "window": "last5",
+        "metric": "st",
+        "rank": 2,
+        "color": "green"
+       },
+       {
+        "team": "VAN",
+        "role": "dog",
+        "window": "season",
+        "metric": "st",
+        "rank": 30,
+        "color": "green"
+       },
+       {
+        "team": "VAN",
         "role": "dog",
         "window": "last5",
         "metric": "st",
-        "rank": 5,
-        "color": "deep-red"
+        "rank": 18,
+        "color": "yellow"
        }
       ]
      }
@@ -3160,8 +2358,8 @@
       "label": "Offense vs offense",
       "fav_metric": "xgf60",
       "dog_metric": "xgf60",
-      "fav_rank": 28,
-      "dog_rank": 27,
+      "fav_rank": 26,
+      "dog_rank": 28,
       "counts": true,
       "met": false
      },
@@ -3170,8 +2368,8 @@
       "label": "Defense vs defense",
       "fav_metric": "xga60",
       "dog_metric": "xga60",
-      "fav_rank": 32,
-      "dog_rank": 20,
+      "fav_rank": 10,
+      "dog_rank": 32,
       "counts": true,
       "met": false
      },
@@ -3180,8 +2378,8 @@
       "label": "Defense vs offense",
       "fav_metric": "xga60",
       "dog_metric": "xgf60",
-      "fav_rank": 32,
-      "dog_rank": 27,
+      "fav_rank": 10,
+      "dog_rank": 28,
       "counts": true,
       "met": false
      },
@@ -3190,8 +2388,8 @@
       "label": "Offense vs defense",
       "fav_metric": "xgf60",
       "dog_metric": "xga60",
-      "fav_rank": 28,
-      "dog_rank": 20,
+      "fav_rank": 26,
+      "dog_rank": 32,
       "counts": false,
       "met": false
      }
@@ -3205,13 +2403,13 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (VAN #32, CHI #31). VAN start their backup goalie, Nikita Tolopilo (regular: L. Meril\u00e4inen). Biggest edge over the last 5: GSAx/gm (VAN #3, CHI #28). VAN 2-1-0 in its last 3, CHI 1-1-1.",
+   "summary": "Not a top-7 vs bottom-7 matchup (CHI #31, VAN #32). CHI start their backup goalie, Drew Commesso (regular: S. Knight). Biggest edge over the last 5: xGA/60 5v5 (CHI #10, VAN #32). CHI 2-1-0 in its last 3, VAN 2-1-0; CHI and VAN played yesterday.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV22CHIVAN",
-    "fav_prob": 0.5,
-    "bid": 0.49,
-    "ask": 0.51
+    "fav_prob": 0.515,
+    "bid": 0.51,
+    "ask": 0.52
    }
   },
   {
@@ -3225,17 +2423,17 @@
    "venue": "Madison Square Garden",
    "favorite": "away",
    "line": {
-    "details": "CAR -155",
-    "provider": "Draft Kings",
+    "details": "CAR -162",
+    "provider": "DraftKings",
     "ml_home": null,
-    "ml_away": -155,
+    "ml_away": -162,
     "puck_line": 1.5,
     "total": 6.5,
-    "fav_price": 0.6078
+    "fav_price": 0.6183
    },
    "spread": {
-    "details": "CAR -155",
-    "provider": "Draft Kings",
+    "details": "CAR -162",
+    "provider": "DraftKings",
     "puck_line": 1.5
    },
    "home": {
@@ -3260,7 +2458,7 @@
      "ranks": {
       "xgf": 8,
       "xga60": 12,
-      "gsax": 7,
+      "gsax": 6,
       "st": 6,
       "xgf60": 11
      }
@@ -3275,10 +2473,10 @@
      "pp": 17.6,
      "pk": 84.6,
      "ranks": {
-      "xgf": 6,
+      "xgf": 5,
       "xga60": 3,
-      "gsax": 6,
-      "st": 10,
+      "gsax": 3,
+      "st": 11,
       "xgf60": 11
      }
     },
@@ -3374,7 +2572,7 @@
     "is_fav": false,
     "b2b": false,
     "power": {
-     "rank": 16,
+     "rank": 15,
      "own": 11,
      "avg": 14.5,
      "espn": 18,
@@ -3487,17 +2685,17 @@
     "display": "Carolina Hurricanes",
     "record": "17-3-3",
     "l3_record": "2-0-1",
-    "games": 22,
-    "pts_pct": 0.795,
+    "games": 23,
+    "pts_pct": 0.804,
     "season": {
-     "xgf": 60.34,
-     "xga60": 2.136,
-     "xgf60": 3.25,
-     "cf": 56.67,
-     "gsax": 0.205,
+     "xgf": 60.83,
+     "xga60": 2.1,
+     "xgf60": 3.262,
+     "cf": 56.72,
+     "gsax": 0.077,
      "st": 106.1,
-     "pp": 19.2,
-     "pk": 87.0,
+     "pp": 19.5,
+     "pk": 86.7,
      "ranks": {
       "xgf": 1,
       "xga60": 1,
@@ -3507,23 +2705,33 @@
      }
     },
     "last5": {
-     "xgf": 61.52,
-     "xga60": 2.196,
-     "xgf60": 3.512,
-     "cf": 57.84,
-     "gsax": 0.482,
-     "st": 121.4,
-     "pp": 21.4,
-     "pk": 100.0,
+     "xgf": 65.85,
+     "xga60": 1.82,
+     "xgf60": 3.51,
+     "cf": 57.2,
+     "gsax": -0.175,
+     "st": 117.6,
+     "pp": 26.7,
+     "pk": 90.9,
      "ranks": {
       "xgf": 1,
-      "xga60": 9,
-      "gsax": 8,
-      "st": 4,
+      "xga60": 2,
+      "gsax": 15,
+      "st": 3,
       "xgf60": 1
      }
     },
     "last3_games": [
+     {
+      "game_id": 2026020359,
+      "date": "2026-11-21",
+      "site": "home",
+      "opp": "EDM",
+      "pts": 7,
+      "opp_pts": 4,
+      "extra": false,
+      "opp_power_rank": 7
+     },
      {
       "game_id": 2026020352,
       "date": "2026-11-19",
@@ -3543,30 +2751,9 @@
       "opp_pts": 1,
       "extra": false,
       "opp_power_rank": 21
-     },
-     {
-      "game_id": 2026020309,
-      "date": "2026-11-12",
-      "site": "away",
-      "opp": "SEA",
-      "pts": 4,
-      "opp_pts": 1,
-      "extra": false,
-      "opp_power_rank": 21
      }
     ],
     "trend_games": [
-     {
-      "date": "2026-11-05",
-      "opp": "NYI",
-      "metrics": {
-       "xgf": 51.85,
-       "xga60": 3.316,
-       "xgf60": 3.57,
-       "gsax": 0.536,
-       "st": 100.0
-      }
-     },
      {
       "date": "2026-11-07",
       "opp": "CHI",
@@ -3610,10 +2797,21 @@
        "gsax": 1.132,
        "st": 100.0
       }
+     },
+     {
+      "date": "2026-11-21",
+      "opp": "EDM",
+      "metrics": {
+       "xgf": 74.99,
+       "xga60": 1.19,
+       "xgf60": 3.569,
+       "gsax": -2.75,
+       "st": 108.3
+      }
      }
     ],
     "is_fav": true,
-    "b2b": false,
+    "b2b": true,
     "power": {
      "rank": 1,
      "own": 1,
@@ -3633,7 +2831,7 @@
      {
       "id": "8481611",
       "name": "P. Kochetkov",
-      "starts": 14
+      "starts": 15
      },
      {
       "id": "8483548",
@@ -3662,7 +2860,7 @@
     "key_out": [],
     "key_questionable": [],
     "key_long_term": [],
-    "spread_text": "-155"
+    "spread_text": "-162"
    },
    "scoring": {
     "scored": true,
@@ -3683,7 +2881,7 @@
       "rule": "Range",
       "name": "Top-7 team vs bottom-7 team (consensus power rank)",
       "pass": false,
-      "detail": "CAR #1 vs NYR #16"
+      "detail": "CAR #1 vs NYR #15"
      },
      {
       "rule": "A",
@@ -3705,9 +2903,11 @@
      }
     ],
     "fails": [
-     "Not a top-7 vs bottom-7 matchup (CAR #1, NYR #16)"
+     "Not a top-7 vs bottom-7 matchup (CAR #1, NYR #15)"
     ],
-    "warnings": [],
+    "warnings": [
+     "CAR played yesterday (back-to-back)"
+    ],
     "flags": [
      "CAR backup goalie starting (Brandon Bussi)"
     ],
@@ -3724,7 +2924,7 @@
      {
       "key": "dog_metrics",
       "label": "Underdog metrics",
-      "points": 1,
+      "points": 2,
       "max": 16
      },
      {
@@ -3742,7 +2942,7 @@
      {
       "key": "rest",
       "label": "Rest",
-      "points": 1,
+      "points": 0,
       "max": 1
      },
      {
@@ -3814,7 +3014,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "xga60",
-        "rank": 9,
+        "rank": 2,
         "color": "green"
        },
        {
@@ -3871,8 +3071,8 @@
         "role": "dog",
         "window": "last5",
         "metric": "xgf",
-        "rank": 6,
-        "color": "red"
+        "rank": 5,
+        "color": "deep-red"
        }
       ]
      },
@@ -3896,15 +3096,15 @@
         "role": "fav",
         "window": "last5",
         "metric": "gsax",
-        "rank": 8,
-        "color": "green"
+        "rank": 15,
+        "color": "yellow"
        },
        {
         "team": "NYR",
         "role": "dog",
         "window": "season",
         "metric": "gsax",
-        "rank": 7,
+        "rank": 6,
         "color": "red"
        },
        {
@@ -3912,8 +3112,8 @@
         "role": "dog",
         "window": "last5",
         "metric": "gsax",
-        "rank": 6,
-        "color": "red"
+        "rank": 3,
+        "color": "deep-red"
        }
       ]
      },
@@ -3937,7 +3137,7 @@
         "role": "fav",
         "window": "last5",
         "metric": "st",
-        "rank": 4,
+        "rank": 3,
         "color": "green"
        },
        {
@@ -3953,8 +3153,8 @@
         "role": "dog",
         "window": "last5",
         "metric": "st",
-        "rank": 10,
-        "color": "red"
+        "rank": 11,
+        "color": "yellow"
        }
       ]
      }
@@ -3975,7 +3175,7 @@
       "label": "Defense vs defense",
       "fav_metric": "xga60",
       "dog_metric": "xga60",
-      "fav_rank": 9,
+      "fav_rank": 2,
       "dog_rank": 3,
       "counts": true,
       "met": false
@@ -3985,7 +3185,7 @@
       "label": "Defense vs offense",
       "fav_metric": "xga60",
       "dog_metric": "xgf60",
-      "fav_rank": 9,
+      "fav_rank": 2,
       "dog_rank": 11,
       "counts": true,
       "met": false
@@ -4010,13 +3210,824 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (CAR #1, NYR #16). CAR start their backup goalie, Brandon Bussi (regular: P. Kochetkov). CAR 2-0-1 in its last 3, NYR 3-0-0.",
+   "summary": "Not a top-7 vs bottom-7 matchup (CAR #1, NYR #15). CAR start their backup goalie, Brandon Bussi (regular: P. Kochetkov). CAR 2-0-1 in its last 3, NYR 3-0-0; CAR played yesterday.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV22CARNYR",
     "fav_prob": 0.595,
     "bid": 0.59,
     "ask": 0.6
+   }
+  },
+  {
+   "id": "401892770",
+   "tip_utc": "2026-11-23T00:00:00+00:00",
+   "tip_pt": "4:00 PM PT",
+   "day_et": "2026-11-22",
+   "state": "pre",
+   "detail": "11/22 - 7:00 PM EST",
+   "neutral": false,
+   "venue": "Enterprise Center",
+   "favorite": "home",
+   "line": {
+    "details": "STL -105",
+    "provider": "DraftKings",
+    "ml_home": -105,
+    "ml_away": null,
+    "puck_line": -1.5,
+    "total": 5.5,
+    "fav_price": 0.5122
+   },
+   "spread": {
+    "details": "STL -105",
+    "provider": "DraftKings",
+    "puck_line": -1.5
+   },
+   "home": {
+    "id": "19",
+    "abbr": "STL",
+    "espn_abbr": "STL",
+    "name": "St. Louis",
+    "display": "St. Louis Blues",
+    "record": "12-9-2",
+    "l3_record": "3-0-0",
+    "games": 23,
+    "pts_pct": 0.565,
+    "season": {
+     "xgf": 51.57,
+     "xga60": 2.528,
+     "xgf60": 2.692,
+     "cf": 47.38,
+     "gsax": -0.153,
+     "st": 101.2,
+     "pp": 17.9,
+     "pk": 83.3,
+     "ranks": {
+      "xgf": 13,
+      "xga60": 17,
+      "gsax": 18,
+      "st": 15,
+      "xgf60": 9
+     }
+    },
+    "last5": {
+     "xgf": 51.55,
+     "xga60": 2.781,
+     "xgf60": 2.959,
+     "cf": 46.65,
+     "gsax": -0.337,
+     "st": 98.4,
+     "pp": 21.4,
+     "pk": 76.9,
+     "ranks": {
+      "xgf": 12,
+      "xga60": 28,
+      "gsax": 21,
+      "st": 17,
+      "xgf60": 4
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 2026020368,
+      "date": "2026-11-21",
+      "site": "home",
+      "opp": "NJD",
+      "pts": 9,
+      "opp_pts": 6,
+      "extra": false,
+      "opp_power_rank": 5
+     },
+     {
+      "game_id": 2026020350,
+      "date": "2026-11-19",
+      "site": "away",
+      "opp": "PIT",
+      "pts": 5,
+      "opp_pts": 2,
+      "extra": false,
+      "opp_power_rank": 24
+     },
+     {
+      "game_id": 2026020339,
+      "date": "2026-11-17",
+      "site": "home",
+      "opp": "ANA",
+      "pts": 8,
+      "opp_pts": 6,
+      "extra": false,
+      "opp_power_rank": 19
+     }
+    ],
+    "trend_games": [
+     {
+      "date": "2026-11-12",
+      "opp": "UTA",
+      "metrics": {
+       "xgf": 37.92,
+       "xga60": 3.212,
+       "xgf60": 1.962,
+       "gsax": 3.128,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "FLA",
+      "metrics": {
+       "xgf": 55.01,
+       "xga60": 1.784,
+       "xgf60": 2.182,
+       "gsax": -1.756,
+       "st": 83.3
+      }
+     },
+     {
+      "date": "2026-11-17",
+      "opp": "ANA",
+      "metrics": {
+       "xgf": 67.31,
+       "xga60": 2.321,
+       "xgf60": 4.78,
+       "gsax": -2.704,
+       "st": 66.7
+      }
+     },
+     {
+      "date": "2026-11-19",
+      "opp": "PIT",
+      "metrics": {
+       "xgf": 50.33,
+       "xga60": 3.014,
+       "xgf60": 3.055,
+       "gsax": 1.129,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-21",
+      "opp": "NJD",
+      "metrics": {
+       "xgf": 42.72,
+       "xga60": 3.62,
+       "xgf60": 2.7,
+       "gsax": -1.485,
+       "st": 175.0
+      }
+     }
+    ],
+    "is_fav": true,
+    "b2b": true,
+    "power": {
+     "rank": 18,
+     "own": 14,
+     "avg": 17.5,
+     "espn": 21,
+     "nhl_com": null
+    },
+    "goalie": {
+     "name": "Joel Hofer",
+     "last": "Hofer",
+     "espn_id": "4587909",
+     "confirmed": false
+    },
+    "goalie_status": "regular",
+    "regular_goalie_name": "J. Hofer",
+    "goalies": [
+     {
+      "id": "8480981",
+      "name": "J. Hofer",
+      "starts": 16
+     },
+     {
+      "id": "8476412",
+      "name": "J. Binnington",
+      "starts": 7
+     }
+    ],
+    "key_skaters": [
+     "P. Broberg",
+     "C. Fowler",
+     "C. Parayko",
+     "R. Thomas",
+     "B. Carlo",
+     "J. Snuggerud"
+    ],
+    "injuries": [
+     {
+      "name": "Connor McMichael",
+      "last": "McMichael",
+      "status": "Day-To-Day",
+      "date": "2026-11-22T13:40Z",
+      "comment": "day-to-day"
+     },
+     {
+      "name": "Torey Krug",
+      "last": "Krug",
+      "status": "Injured Reserve",
+      "date": "2026-10-13T01:42Z",
+      "comment": "Krug (ankle) was placed on long-term injured reserve by the Blues on Monday, per PuckPedia."
+     },
+     {
+      "name": "Dillon Dube",
+      "last": "Dube",
+      "status": "Injured Reserve",
+      "date": "2026-10-10T21:13Z",
+      "comment": "ir"
+     },
+     {
+      "name": "Tyler Tucker",
+      "last": "Tucker",
+      "status": "Injured Reserve",
+      "date": "2026-09-30T19:39Z",
+      "comment": "Tucker had arthroscopic knee surgery and will be re-assessed in six weeks, the team announced Wednesday."
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [],
+    "key_long_term": [],
+    "spread_text": "-105"
+   },
+   "away": {
+    "id": "6",
+    "abbr": "EDM",
+    "espn_abbr": "EDM",
+    "name": "Edmonton",
+    "display": "Edmonton Oilers",
+    "record": "17-5-3",
+    "l3_record": "1-2-0",
+    "games": 25,
+    "pts_pct": 0.74,
+    "season": {
+     "xgf": 45.89,
+     "xga60": 2.353,
+     "xgf60": 1.996,
+     "cf": 47.49,
+     "gsax": 0.098,
+     "st": 109.9,
+     "pp": 31.7,
+     "pk": 78.2,
+     "ranks": {
+      "xgf": 28,
+      "xga60": 11,
+      "gsax": 9,
+      "st": 4,
+      "xgf60": 31
+     }
+    },
+    "last5": {
+     "xgf": 35.35,
+     "xga60": 2.548,
+     "xgf60": 1.393,
+     "cf": 44.54,
+     "gsax": 0.505,
+     "st": 120.1,
+     "pp": 31.2,
+     "pk": 88.9,
+     "ranks": {
+      "xgf": 31,
+      "xga60": 21,
+      "gsax": 4,
+      "st": 1,
+      "xgf60": 32
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 2026020359,
+      "date": "2026-11-21",
+      "site": "away",
+      "opp": "CAR",
+      "pts": 4,
+      "opp_pts": 7,
+      "extra": false,
+      "opp_power_rank": 1
+     },
+     {
+      "game_id": 2026020349,
+      "date": "2026-11-19",
+      "site": "away",
+      "opp": "TBL",
+      "pts": 1,
+      "opp_pts": 3,
+      "extra": false,
+      "opp_power_rank": 4
+     },
+     {
+      "game_id": 2026020335,
+      "date": "2026-11-17",
+      "site": "away",
+      "opp": "FLA",
+      "pts": 5,
+      "opp_pts": 2,
+      "extra": false,
+      "opp_power_rank": 14
+     }
+    ],
+    "trend_games": [
+     {
+      "date": "2026-11-14",
+      "opp": "TOR",
+      "metrics": {
+       "xgf": 51.4,
+       "xga60": 1.244,
+       "xgf60": 1.316,
+       "gsax": 1.455,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-15",
+      "opp": "PHI",
+      "metrics": {
+       "xgf": 31.04,
+       "xga60": 3.856,
+       "xgf60": 1.736,
+       "gsax": 3.79,
+       "st": 166.7
+      }
+     },
+     {
+      "date": "2026-11-17",
+      "opp": "FLA",
+      "metrics": {
+       "xgf": 40.57,
+       "xga60": 1.491,
+       "xgf60": 1.017,
+       "gsax": 0.216,
+       "st": 166.7
+      }
+     },
+     {
+      "date": "2026-11-19",
+      "opp": "TBL",
+      "metrics": {
+       "xgf": 35.43,
+       "xga60": 3.25,
+       "xgf60": 1.784,
+       "gsax": 0.4,
+       "st": 50.0
+      }
+     },
+     {
+      "date": "2026-11-21",
+      "opp": "CAR",
+      "metrics": {
+       "xgf": 25.01,
+       "xga60": 3.569,
+       "xgf60": 1.19,
+       "gsax": -3.333,
+       "st": 91.7
+      }
+     }
+    ],
+    "is_fav": false,
+    "b2b": true,
+    "power": {
+     "rank": 7,
+     "own": 16,
+     "avg": 7.67,
+     "espn": 4,
+     "nhl_com": 3
+    },
+    "goalie": {
+     "name": "Tristan Jarry",
+     "last": "Jarry",
+     "espn_id": "3042020",
+     "confirmed": false
+    },
+    "goalie_status": "backup",
+    "regular_goalie_name": "D. Levi",
+    "goalies": [
+     {
+      "id": "8482221",
+      "name": "D. Levi",
+      "starts": 13
+     },
+     {
+      "id": "8477465",
+      "name": "T. Jarry",
+      "starts": 10
+     },
+     {
+      "id": "8477035",
+      "name": "M. Tomkins",
+      "starts": 2
+     }
+    ],
+    "key_skaters": [
+     "E. Bouchard",
+     "C. McDavid",
+     "R. Shea",
+     "L. Draisaitl",
+     "M. Ekholm",
+     "C. Murphy"
+    ],
+    "injuries": [
+     {
+      "name": "Ryan Nugent-Hopkins",
+      "last": "Nugent-Hopkins",
+      "status": "Out",
+      "date": "2026-11-21T21:28Z",
+      "comment": "Nugent-Hopkins (undisclosed) is slated to return to the lineup against Vegas on Tuesday, Paige Martin of Oilers TV reports."
+     },
+     {
+      "name": "Zach Hyman",
+      "last": "Hyman",
+      "status": "Day-To-Day",
+      "date": "2026-11-21T20:26Z",
+      "comment": "day-to-day"
+     },
+     {
+      "name": "Alec Regula",
+      "last": "Regula",
+      "status": "Injured Reserve",
+      "date": "2026-10-01T14:11Z",
+      "comment": "Regula (undisclosed) was designated for long-term injured reserve Thursday."
+     },
+     {
+      "name": "Matt Savoie",
+      "last": "Savoie",
+      "status": "Injured Reserve",
+      "date": "2026-10-01T14:05Z",
+      "comment": "Savoie (lower body) was shifted to long-term injured reserve Thursday."
+     },
+     {
+      "name": "Frederik Andersen",
+      "last": "Andersen",
+      "status": "Injured Reserve",
+      "date": "2026-09-29T17:53Z",
+      "comment": "Andersen (knee) isn't expected back until \"maybe\" December, head coach Mike Babcock told NHL.com on Tuesday."
+     },
+     {
+      "name": "Mattias Janmark",
+      "last": "Janmark",
+      "status": "Injured Reserve",
+      "date": "2026-09-29T17:52Z",
+      "comment": "Janmark (undisclosed) does not have a timetable for his return from injury."
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [],
+    "key_long_term": [],
+    "spread_text": ""
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "STL",
+    "dog": "EDM",
+    "in_range": false,
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "rules": [
+     {
+      "rule": "Range",
+      "name": "Top-7 team vs bottom-7 team (consensus power rank)",
+      "pass": false,
+      "detail": "STL #18 vs EDM #7"
+     },
+     {
+      "rule": "A",
+      "name": "Analysis Score 22+",
+      "pass": false,
+      "detail": "Score 13 of 40"
+     },
+     {
+      "rule": "Goalie",
+      "name": "STL's regular goalie starts",
+      "pass": true,
+      "detail": "Joel Hofer (probable)"
+     },
+     {
+      "rule": "Matchup",
+      "name": "STL top 7 vs EDM bottom 7 in a matchup (last 5)",
+      "pass": true,
+      "detail": "Offense vs offense: STL #4 vs EDM #32"
+     }
+    ],
+    "fails": [
+     "Not a top-7 vs bottom-7 matchup (STL #18, EDM #7)"
+    ],
+    "warnings": [
+     "Info: EDM starting its backup goalie (Tristan Jarry)",
+     "STL played yesterday (back-to-back)"
+    ],
+    "flags": [],
+    "score": 13,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 0,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 6,
+      "max": 16
+     },
+     {
+      "key": "goalies",
+      "label": "Goalies + health",
+      "points": 4,
+      "max": 4
+     },
+     {
+      "key": "home",
+      "label": "Home ice",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 2,
+      "max": 2
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xga60",
+      "scored": false,
+      "cells": [
+       {
+        "team": "STL",
+        "role": "fav",
+        "window": "season",
+        "metric": "xgf60",
+        "rank": 9,
+        "color": "green"
+       },
+       {
+        "team": "STL",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xgf60",
+        "rank": 4,
+        "color": "green"
+       },
+       {
+        "team": "EDM",
+        "role": "dog",
+        "window": "season",
+        "metric": "xga60",
+        "rank": 11,
+        "color": "yellow"
+       },
+       {
+        "team": "EDM",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xga60",
+        "rank": 21,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "xga60",
+      "dog_metric": "xgf60",
+      "scored": false,
+      "cells": [
+       {
+        "team": "STL",
+        "role": "fav",
+        "window": "season",
+        "metric": "xga60",
+        "rank": 17,
+        "color": "yellow"
+       },
+       {
+        "team": "STL",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xga60",
+        "rank": 28,
+        "color": "red"
+       },
+       {
+        "team": "EDM",
+        "role": "dog",
+        "window": "season",
+        "metric": "xgf60",
+        "rank": 31,
+        "color": "green"
+       },
+       {
+        "team": "EDM",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xgf60",
+        "rank": 32,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "share",
+      "label": "Shot share",
+      "fav_metric": "xgf",
+      "dog_metric": "xgf",
+      "scored": true,
+      "cells": [
+       {
+        "team": "STL",
+        "role": "fav",
+        "window": "season",
+        "metric": "xgf",
+        "rank": 13,
+        "color": "yellow"
+       },
+       {
+        "team": "STL",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xgf",
+        "rank": 12,
+        "color": "yellow"
+       },
+       {
+        "team": "EDM",
+        "role": "dog",
+        "window": "season",
+        "metric": "xgf",
+        "rank": 28,
+        "color": "green"
+       },
+       {
+        "team": "EDM",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xgf",
+        "rank": 31,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "goalie",
+      "label": "Goaltending",
+      "fav_metric": "gsax",
+      "dog_metric": "gsax",
+      "scored": true,
+      "cells": [
+       {
+        "team": "STL",
+        "role": "fav",
+        "window": "season",
+        "metric": "gsax",
+        "rank": 18,
+        "color": "yellow"
+       },
+       {
+        "team": "STL",
+        "role": "fav",
+        "window": "last5",
+        "metric": "gsax",
+        "rank": 21,
+        "color": "yellow"
+       },
+       {
+        "team": "EDM",
+        "role": "dog",
+        "window": "season",
+        "metric": "gsax",
+        "rank": 9,
+        "color": "red"
+       },
+       {
+        "team": "EDM",
+        "role": "dog",
+        "window": "last5",
+        "metric": "gsax",
+        "rank": 4,
+        "color": "deep-red"
+       }
+      ]
+     },
+     {
+      "key": "st",
+      "label": "Special teams",
+      "fav_metric": "st",
+      "dog_metric": "st",
+      "scored": true,
+      "cells": [
+       {
+        "team": "STL",
+        "role": "fav",
+        "window": "season",
+        "metric": "st",
+        "rank": 15,
+        "color": "yellow"
+       },
+       {
+        "team": "STL",
+        "role": "fav",
+        "window": "last5",
+        "metric": "st",
+        "rank": 17,
+        "color": "yellow"
+       },
+       {
+        "team": "EDM",
+        "role": "dog",
+        "window": "season",
+        "metric": "st",
+        "rank": 4,
+        "color": "deep-red"
+       },
+       {
+        "team": "EDM",
+        "role": "dog",
+        "window": "last5",
+        "metric": "st",
+        "rank": 1,
+        "color": "deep-red"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xgf60",
+      "fav_rank": 4,
+      "dog_rank": 32,
+      "counts": true,
+      "met": true
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "xga60",
+      "dog_metric": "xga60",
+      "fav_rank": 28,
+      "dog_rank": 21,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "xga60",
+      "dog_metric": "xgf60",
+      "fav_rank": 28,
+      "dog_rank": 32,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xga60",
+      "fav_rank": 4,
+      "dog_rank": 21,
+      "counts": false,
+      "met": false
+     }
+    ],
+    "labels": {
+     "xgf60": "xGF/60 5v5",
+     "xgf": "xGF% 5v5",
+     "xga60": "xGA/60 5v5",
+     "gsax": "GSAx/gm",
+     "st": "PP%+PK%",
+     "pts": "Points %"
+    }
+   },
+   "summary": "Not a top-7 vs bottom-7 matchup (STL #18, EDM #7). Joel Hofer in goal for STL (probable). Biggest edge over the last 5: xGF% 5v5 (STL #12, EDM #31). STL 3-0-0 in its last 3, EDM 1-2-0; STL and EDM played yesterday.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNHLGAME-26NOV22EDMSTL",
+    "fav_prob": 0.495,
+    "bid": 0.49,
+    "ask": 0.5
    }
   }
  ],
@@ -4029,7 +4040,7 @@
   "in_range": 0,
   "qualified": 0,
   "watch": 0,
-  "built_label": "Sat Nov 21, 11:15 PM PT"
+  "built_label": "Sun Nov 22, 6:00 AM PT"
  },
  "power_table": [
   {
@@ -4043,16 +4054,16 @@
   {
    "abbr": "MIN",
    "rank": 2,
-   "own": 5,
-   "avg": 3.0,
+   "own": 4,
+   "avg": 2.67,
    "espn": 2,
    "nhl_com": 2
   },
   {
    "abbr": "BOS",
    "rank": 3,
-   "own": 6,
-   "avg": 4.33,
+   "own": 5,
+   "avg": 4.0,
    "espn": 3,
    "nhl_com": 4
   },
@@ -4067,26 +4078,26 @@
   {
    "abbr": "NJD",
    "rank": 5,
-   "own": 3,
-   "avg": 5.0,
+   "own": 6,
+   "avg": 6.0,
    "espn": 6,
    "nhl_com": 6
   },
   {
-   "abbr": "EDM",
-   "rank": 6,
-   "own": 13,
-   "avg": 6.67,
-   "espn": 4,
-   "nhl_com": 3
-  },
-  {
    "abbr": "VGK",
-   "rank": 7,
+   "rank": 6,
    "own": 7,
    "avg": 7.0,
    "espn": 7,
    "nhl_com": 7
+  },
+  {
+   "abbr": "EDM",
+   "rank": 7,
+   "own": 16,
+   "avg": 7.67,
+   "espn": 4,
+   "nhl_com": 3
   },
   {
    "abbr": "MTL",
@@ -4099,98 +4110,98 @@
   {
    "abbr": "OTT",
    "rank": 9,
-   "own": 4,
-   "avg": 9.0,
+   "own": 3,
+   "avg": 8.67,
    "espn": 12,
    "nhl_com": 11
   },
   {
-   "abbr": "COL",
-   "rank": 10,
-   "own": 8,
-   "avg": 9.0,
-   "espn": 9,
-   "nhl_com": 10
-  },
-  {
    "abbr": "DAL",
-   "rank": 11,
-   "own": 10,
-   "avg": 9.67,
+   "rank": 10,
+   "own": 9,
+   "avg": 9.33,
    "espn": 10,
    "nhl_com": 9
   },
   {
+   "abbr": "COL",
+   "rank": 11,
+   "own": 10,
+   "avg": 9.67,
+   "espn": 9,
+   "nhl_com": 10
+  },
+  {
    "abbr": "UTA",
    "rank": 12,
-   "own": 9,
-   "avg": 13.0,
+   "own": 8,
+   "avg": 12.67,
    "espn": 15,
    "nhl_com": 15
   },
   {
-   "abbr": "FLA",
-   "rank": 13,
-   "own": 14,
-   "avg": 13.67,
-   "espn": 14,
-   "nhl_com": 13
-  },
-  {
    "abbr": "NSH",
-   "rank": 14,
+   "rank": 13,
    "own": 18,
    "avg": 13.67,
    "espn": 11,
    "nhl_com": 12
   },
   {
-   "abbr": "WSH",
-   "rank": 15,
-   "own": 16,
-   "avg": 14.33,
-   "espn": 13,
-   "nhl_com": 14
+   "abbr": "FLA",
+   "rank": 14,
+   "own": 15,
+   "avg": 14.0,
+   "espn": 14,
+   "nhl_com": 13
   },
   {
    "abbr": "NYR",
-   "rank": 16,
+   "rank": 15,
    "own": 11,
    "avg": 14.5,
    "espn": 18,
    "nhl_com": null
   },
   {
-   "abbr": "STL",
-   "rank": 17,
-   "own": 15,
-   "avg": 18.0,
-   "espn": 21,
-   "nhl_com": null
+   "abbr": "WSH",
+   "rank": 16,
+   "own": 17,
+   "avg": 14.67,
+   "espn": 13,
+   "nhl_com": 14
   },
   {
    "abbr": "NYI",
-   "rank": 18,
-   "own": 17,
-   "avg": 18.5,
+   "rank": 17,
+   "own": 13,
+   "avg": 16.5,
    "espn": 20,
    "nhl_com": null
   },
   {
-   "abbr": "BUF",
-   "rank": 19,
-   "own": 19,
-   "avg": 19.0,
-   "espn": 19,
+   "abbr": "STL",
+   "rank": 18,
+   "own": 14,
+   "avg": 17.5,
+   "espn": 21,
    "nhl_com": null
   },
   {
    "abbr": "ANA",
-   "rank": 20,
+   "rank": 19,
    "own": 26,
    "avg": 19.33,
    "espn": 16,
    "nhl_com": 16
+  },
+  {
+   "abbr": "BUF",
+   "rank": 20,
+   "own": 20,
+   "avg": 19.5,
+   "espn": 19,
+   "nhl_com": null
   },
   {
    "abbr": "SEA",
@@ -4203,8 +4214,8 @@
   {
    "abbr": "WPG",
    "rank": 22,
-   "own": 21,
-   "avg": 21.5,
+   "own": 19,
+   "avg": 20.5,
    "espn": 22,
    "nhl_com": null
   },
@@ -4219,33 +4230,33 @@
   {
    "abbr": "PIT",
    "rank": 24,
-   "own": 20,
-   "avg": 24.0,
+   "own": 21,
+   "avg": 24.5,
    "espn": 28,
    "nhl_com": null
   },
   {
    "abbr": "CGY",
    "rank": 25,
-   "own": 25,
-   "avg": 25.0,
+   "own": 24,
+   "avg": 24.5,
    "espn": 25,
    "nhl_com": null
   },
   {
-   "abbr": "LAK",
-   "rank": 26,
-   "own": 24,
-   "avg": 26.5,
-   "espn": 29,
-   "nhl_com": null
-  },
-  {
    "abbr": "TOR",
-   "rank": 27,
+   "rank": 26,
    "own": 30,
    "avg": 26.5,
    "espn": 23,
+   "nhl_com": null
+  },
+  {
+   "abbr": "LAK",
+   "rank": 27,
+   "own": 25,
+   "avg": 27.0,
+   "espn": 29,
    "nhl_com": null
   },
   {
