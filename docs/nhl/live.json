@@ -71,7 +71,91 @@
      "prob": 0.435
     }
    }
+  },
+  "401892766": {
+   "day_et": "2026-11-21",
+   "away": "MIN",
+   "home": "VAN",
+   "fav": "MIN",
+   "dog": "VAN",
+   "fav_rank": 2,
+   "dog_rank": 32,
+   "tier": "watch",
+   "score": 26,
+   "fav_goalie": "Jesper Wallstedt",
+   "fav_goalie_status": "regular",
+   "end1": {
+    "at": "2026-11-21T19:49:05-08:00",
+    "late": false,
+    "clock": "P1 0:00",
+    "score": "MIN 0 - VAN 0",
+    "lead": 0,
+    "engine": {
+     "clock": "End of 1st",
+     "phase": "end1",
+     "grade": "C",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "MIN",
+     "headline": "NO BET",
+     "who_answered": "No run yet",
+     "control": "MIN",
+     "xg_share": 75,
+     "att_share": 66,
+     "gates": [],
+     "reason": "Tied",
+     "readouts": [
+      {
+       "key": "end1",
+       "text": "1st period: MIN 0-0 VAN \u00b7 shots 10-4 \u00b7 xG 0.9-0.3",
+       "trend": "MIN controlling play (75% of expected goals, 66% of shot attempts)."
+      }
+     ],
+     "shots": {
+      "home": 4,
+      "away": 10
+     },
+     "xg": {
+      "home": 0.3,
+      "away": 0.88
+     },
+     "hold1": {
+      "level": "n/a",
+      "applies": false,
+      "meets": false,
+      "lead": 0,
+      "text": "MIN tied after the 1st: the hold check is for one-goal leads.",
+      "backtest": null,
+      "items": []
+     },
+     "hold2": null,
+     "period_shots": [
+      {
+       "home": 4,
+       "away": 10
+      },
+      {
+       "home": 0,
+       "away": 0
+      },
+      {
+       "home": 0,
+       "away": 0
+      }
+     ],
+     "checklist": null,
+     "log": "2026-11-21 | MIN@VAN | End of 1st | 0-0 | C | NO BET | \u2013 | Tied"
+    },
+    "kalshi": {
+     "event": "KXNHLGAME-26NOV21MINVAN",
+     "bid": 0.71,
+     "ask": 0.72,
+     "last": 0.72,
+     "prob": 0.715
+    },
+    "hold1": "n/a"
+   }
   }
  },
- "updated": "2026-11-15T18:47:34-08:00"
+ "updated": "2026-11-21T19:49:07-08:00"
 }
