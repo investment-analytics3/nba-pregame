@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 11,
- "built_at": "2026-11-22T14:15:36-08:00",
- "built_label": "Sun Nov 22, 2:15 PM PT",
+ "built_at": "2026-11-22T15:15:37-08:00",
+ "built_label": "Sun Nov 22, 3:15 PM PT",
  "games": [
   {
    "id": "401873074",
@@ -11,14 +11,14 @@
    "kick_pt": "Sun 1:05 PM PT",
    "day_et": "2026-11-22",
    "state": "in",
-   "detail": "1:08 - 2nd",
+   "detail": "11:12 - 4th",
    "neutral": false,
    "venue": "SoFi Stadium",
    "home_code": "LAC",
    "away_code": "NYJ",
    "score": {
-    "home": 3,
-    "away": 17
+    "home": 17,
+    "away": 20
    },
    "line_source": "Draft Kings",
    "open_spread": -9.5,
@@ -110,6 +110,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Keaton Mitchell",
+      "pos": "RB",
+      "status": "Questionable"
+     },
+     {
       "name": "Akheem Mesidor",
       "pos": "LB",
       "status": "Questionable"
@@ -127,11 +132,6 @@
      {
       "name": "KeAndre Lambert-Smith",
       "pos": "WR",
-      "status": "Out"
-     },
-     {
-      "name": "Kendall Williamson",
-      "pos": "S",
       "status": "Out"
      }
     ],
@@ -440,14 +440,14 @@
    "kick_pt": "Sun 1:25 PM PT",
    "day_et": "2026-11-22",
    "state": "in",
-   "detail": "10:35 - 2nd",
+   "detail": "14:55 - 3rd",
    "neutral": false,
    "venue": "Empower Field at Mile High",
    "home_code": "DEN",
    "away_code": "LV",
    "score": {
-    "home": 16,
-    "away": 0
+    "home": 17,
+    "away": 10
    },
    "line_source": "Draft Kings",
    "open_spread": -8.5,
@@ -636,15 +636,30 @@
      "rank": 12
     },
     "injuries_known": true,
-    "key_out": [
-     "Tonka Hemingway"
+    "key_out": [],
+    "key_questionable": [
+     "Adam Butler"
     ],
-    "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Dareke Young",
+      "pos": "WR",
+      "status": "Questionable"
+     },
+     {
+      "name": "Adam Butler",
+      "pos": "DT",
+      "status": "Questionable"
+     },
+     {
+      "name": "Tim Keenan III",
+      "pos": "DT",
+      "status": "Questionable"
+     },
      {
       "name": "Dont'e Thornton Jr.",
       "pos": "WR",
@@ -653,21 +668,6 @@
      {
       "name": "Dalton Johnson",
       "pos": "S",
-      "status": "Out"
-     },
-     {
-      "name": "Tristin McCollum",
-      "pos": "S",
-      "status": "Out"
-     },
-     {
-      "name": "Bryce Cabeldue",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "name": "Tonka Hemingway",
-      "pos": "DT",
       "status": "Out"
      }
     ],
@@ -773,6 +773,10 @@
      {
       "level": "yellow",
       "text": "Line crossed key number 10"
+     },
+     {
+      "level": "yellow",
+      "text": "Underdog questionable: Adam Butler"
      }
     ],
     "under": {
@@ -871,14 +875,14 @@
    "kick_pt": "Sun 1:25 PM PT",
    "day_et": "2026-11-22",
    "state": "in",
-   "detail": "0:47 - 1st",
+   "detail": "14:54 - 3rd",
    "neutral": false,
    "venue": "MetLife Stadium",
    "home_code": "NYG",
    "away_code": "JAX",
    "score": {
-    "home": 10,
-    "away": 3
+    "home": 20,
+    "away": 6
    },
    "line_source": "Draft Kings",
    "open_spread": -1.5,
@@ -1067,17 +1071,20 @@
      "rank": 2
     },
     "injuries_known": true,
-    "key_out": [
-     "Robert Hainsey"
+    "key_out": [],
+    "key_questionable": [
+     "Jarrian Jones"
     ],
-    "key_questionable": [],
     "key_long_term": [],
-    "interior_ol_out": [
-     "Robert Hainsey"
-    ],
+    "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Jarrian Jones",
+      "pos": "CB",
+      "status": "Questionable"
+     },
      {
       "name": "Matt Dickerson",
       "pos": "DE",
@@ -1097,11 +1104,6 @@
       "name": "Albert Regis",
       "pos": "DT",
       "status": "Out"
-     },
-     {
-      "name": "Robert Hainsey",
-      "pos": "C",
-      "status": "Out"
      }
     ],
     "power": {
@@ -1114,9 +1116,9 @@
    "dog": "NYG",
    "scoring": {
     "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
     "alerts": false,
     "routes": [],
     "route": "",
@@ -1125,7 +1127,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 24 of 40"
+      "detail": "Score 26 of 40"
      },
      {
       "rule": "B",
@@ -1136,8 +1138,8 @@
      {
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
-      "pass": false,
-      "detail": "JAX key starter out: Robert Hainsey"
+      "pass": true,
+      "detail": "Clear"
      },
      {
       "rule": "Power",
@@ -1179,20 +1181,18 @@
      "def_sr"
     ],
     "fails": [
-     "JAX key starter out: Robert Hainsey",
-     "Would be on the watch list otherwise (score 24)"
+     "Watch list: score 26 (qualifies at 28)"
     ],
     "failed": [
-     "JAX key starter out: Robert Hainsey",
-     "Would be on the watch list otherwise (score 24)"
+     "Watch list: score 26 (qualifies at 28)"
     ],
     "hero": {
-     "score": 24,
+     "score": 26,
      "band": "yellow",
      "parts": {
       "fav_strength": 14,
       "dog_weakness": 6,
-      "health": 2,
+      "health": 4,
       "home": 0,
       "rest": 0,
       "form": 2
@@ -1210,15 +1210,15 @@
     "flags": [
      {
       "level": "yellow",
-      "text": "Favorite interior OL out: Robert Hainsey"
-     },
-     {
-      "level": "yellow",
       "text": "Line moved +4.5 toward the favorite (4+): downgrade"
      },
      {
       "level": "yellow",
       "text": "Line crossed key number 3"
+     },
+     {
+      "level": "yellow",
+      "text": "Favorite questionable: Jarrian Jones"
      },
      {
       "level": "yellow",
@@ -1234,7 +1234,7 @@
      "total_move": -2.0,
      "note": ""
     },
-    "call": "No track",
+    "call": "Watch list",
     "matchups": [
      {
       "key": "def_def",
@@ -1332,13 +1332,13 @@
    },
    "line_source": "Draft Kings",
    "open_spread": -3.5,
-   "total": 46.5,
+   "total": 45.5,
    "total_open": 46.5,
-   "fav_ml": -190.0,
+   "fav_ml": -194.0,
    "favorite": "home",
    "spread": -3.5,
    "movement": 0.0,
-   "total_move": 0.0,
+   "total_move": -1.0,
    "fav_home": true,
    "home": {
     "code": "SF",
@@ -1678,7 +1678,7 @@
       1,
       30
      ],
-     "total_move": 0.0,
+     "total_move": -1.0,
      "note": ""
     },
     "call": "No track",
@@ -5412,6 +5412,16 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Saquon Barkley",
+      "pos": "RB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Jonathan Jones",
+      "pos": "CB",
+      "status": "Questionable"
+     },
+     {
       "name": "Quinyon Mitchell",
       "pos": "CB",
       "status": "Questionable"
@@ -5424,16 +5434,6 @@
      {
       "name": "Cole Payton",
       "pos": "QB",
-      "status": "Out"
-     },
-     {
-      "name": "Jake Majors",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "name": "Mac McWilliams",
-      "pos": "CB",
       "status": "Out"
      }
     ],
@@ -5776,9 +5776,9 @@
   "upcoming": 2,
   "tracked": 0,
   "qualified": 0,
-  "watch": 0,
+  "watch": 1,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Sun Nov 22, 2:15 PM PT"
+  "built_label": "Sun Nov 22, 3:15 PM PT"
  }
 }
