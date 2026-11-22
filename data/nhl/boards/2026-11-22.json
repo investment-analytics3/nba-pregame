@@ -3,8 +3,8 @@
  "date_label": "Sunday, November 22",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-22T07:00:48-08:00",
- "built_label": "Sun Nov 22, 7:00 AM PT",
+ "built_at": "2026-11-22T08:00:42-08:00",
+ "built_label": "Sun Nov 22, 8:00 AM PT",
  "metrics_through": "2026-11-21",
  "metrics_through_label": "Nov 21",
  "max": 40,
@@ -2019,9 +2019,9 @@
      {
       "name": "Connor Bedard",
       "last": "Bedard",
-      "status": "Out",
-      "date": "2026-11-22T00:07Z",
-      "comment": "Bedard will undergo surgery on his injured right shoulder in the coming week, Ben Pope of the Chicago Sun-Times reports."
+      "status": "Injured Reserve",
+      "date": "2026-11-22T15:10Z",
+      "comment": "Bedard (shoulder) was placed on injured reserve Sunday."
      },
      {
       "name": "Anton Frondell",
@@ -2039,11 +2039,11 @@
      }
     ],
     "injuries_known": true,
-    "key_out": [
+    "key_out": [],
+    "key_questionable": [],
+    "key_long_term": [
      "Connor Bedard"
     ],
-    "key_questionable": [],
-    "key_long_term": [],
     "spread_text": "-112"
    },
    "scoring": {
@@ -2071,7 +2071,7 @@
       "rule": "A",
       "name": "Analysis Score 22+",
       "pass": false,
-      "detail": "Score 18 of 40"
+      "detail": "Score 19 of 40"
      },
      {
       "rule": "Goalie",
@@ -2091,13 +2091,12 @@
     ],
     "warnings": [
      "Info: VAN starting its backup goalie (Nikita Tolopilo)",
-     "CHI key skater out: Connor Bedard",
      "CHI played yesterday (back-to-back)"
     ],
     "flags": [
      "CHI backup goalie starting (Drew Commesso)"
     ],
-    "score": 18,
+    "score": 19,
     "max": 40,
     "band": "yellow",
     "parts": [
@@ -2116,7 +2115,7 @@
      {
       "key": "goalies",
       "label": "Goalies + health",
-      "points": 1,
+      "points": 2,
       "max": 4
      },
      {
@@ -2627,13 +2626,6 @@
       "comment": "ir"
      },
      {
-      "name": "Sean Durzi",
-      "last": "Durzi",
-      "status": "Injured Reserve",
-      "date": "2026-11-20T19:51Z",
-      "comment": "Durzi (lower body) will likely be a game-time decision for Sunday's matchup against the Hurricanes, Jim Cerny of NHL.com reports."
-     },
-     {
       "name": "Joe Veleno",
       "last": "Veleno",
       "status": "Injured Reserve",
@@ -2665,9 +2657,7 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [],
-    "key_long_term": [
-     "Sean Durzi"
-    ],
+    "key_long_term": [],
     "spread_text": ""
    },
    "away": {
@@ -2816,7 +2806,7 @@
      "name": "Brandon Bussi",
      "last": "Bussi",
      "espn_id": "4996097",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "backup",
     "regular_goalie_name": "P. Kochetkov",
@@ -3207,9 +3197,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV22CARNYR",
-    "fav_prob": 0.6,
+    "fav_prob": 0.595,
     "bid": 0.59,
-    "ask": 0.61
+    "ask": 0.6
    }
   },
   {
@@ -3223,16 +3213,16 @@
    "venue": "Enterprise Center",
    "favorite": "home",
    "line": {
-    "details": "STL -105",
+    "details": "STL -125",
     "provider": "Draft Kings",
-    "ml_home": -105,
+    "ml_home": -125,
     "ml_away": null,
     "puck_line": -1.5,
     "total": 5.5,
-    "fav_price": 0.5122
+    "fav_price": 0.5556
    },
    "spread": {
-    "details": "STL -105",
+    "details": "STL -125",
     "provider": "Draft Kings",
     "puck_line": -1.5
    },
@@ -3440,7 +3430,7 @@
     "key_out": [],
     "key_questionable": [],
     "key_long_term": [],
-    "spread_text": "-105"
+    "spread_text": "-125"
    },
    "away": {
     "id": "6",
@@ -4018,9 +4008,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV22EDMSTL",
-    "fav_prob": 0.515,
-    "bid": 0.51,
-    "ask": 0.52
+    "fav_prob": 0.535,
+    "bid": 0.53,
+    "ask": 0.54
    }
   }
  ],
@@ -4033,7 +4023,7 @@
   "in_range": 0,
   "qualified": 0,
   "watch": 0,
-  "built_label": "Sun Nov 22, 7:00 AM PT"
+  "built_label": "Sun Nov 22, 8:00 AM PT"
  },
  "power_table": [
   {
