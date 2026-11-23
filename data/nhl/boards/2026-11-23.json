@@ -3,8 +3,8 @@
  "date_label": "Monday, November 23",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-23T09:00:47-08:00",
- "built_label": "Mon Nov 23, 9:00 AM PT",
+ "built_at": "2026-11-23T10:00:48-08:00",
+ "built_label": "Mon Nov 23, 10:00 AM PT",
  "metrics_through": "2026-11-22",
  "metrics_through_label": "Nov 22",
  "max": 40,
@@ -30,16 +30,16 @@
    "venue": "Canadian Tire Centre",
    "favorite": "home",
    "line": {
-    "details": "OTT -245",
+    "details": "OTT -258",
     "provider": "DraftKings",
-    "ml_home": -245,
+    "ml_home": -258,
     "ml_away": null,
     "puck_line": -1.5,
     "total": 5.5,
-    "fav_price": 0.7101
+    "fav_price": 0.7207
    },
    "spread": {
-    "details": "OTT -245",
+    "details": "OTT -258",
     "provider": "DraftKings",
     "puck_line": -1.5
    },
@@ -251,7 +251,7 @@
     "key_out": [],
     "key_questionable": [],
     "key_long_term": [],
-    "spread_text": "-245"
+    "spread_text": "-258"
    },
    "away": {
     "id": "3",
@@ -395,12 +395,12 @@
      "espn": 25
     },
     "goalie": {
-     "name": "Dustin Wolf",
-     "last": "Wolf",
-     "espn_id": "4587952",
-     "confirmed": false
+     "name": "Devin Cooley",
+     "last": "Cooley",
+     "espn_id": "4319911",
+     "confirmed": true
     },
-    "goalie_status": "regular",
+    "goalie_status": "backup",
     "regular_goalie_name": "D. Wolf",
     "goalies": [
      {
@@ -483,7 +483,7 @@
       "rule": "A",
       "name": "Analysis Score 22+",
       "pass": true,
-      "detail": "Score 24 of 40"
+      "detail": "Score 25 of 40"
      },
      {
       "rule": "Goalie",
@@ -501,9 +501,11 @@
     "fails": [
      "Not a top-7 vs bottom-7 matchup (OTT #7, CGY #25)"
     ],
-    "warnings": [],
+    "warnings": [
+     "Info: CGY starting its backup goalie (Devin Cooley)"
+    ],
     "flags": [],
-    "score": 24,
+    "score": 25,
     "max": 40,
     "band": "green",
     "parts": [
@@ -522,7 +524,7 @@
      {
       "key": "goalies",
       "label": "Goalies + health",
-      "points": 3,
+      "points": 4,
       "max": 4
      },
      {
@@ -980,7 +982,7 @@
      "name": "Ilya Sorokin",
      "last": "Sorokin",
      "espn_id": "3151981",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "regular",
     "regular_goalie_name": "I. Sorokin",
@@ -1171,7 +1173,7 @@
      "name": "Anthony Stolarz",
      "last": "Stolarz",
      "espn_id": "3067313",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "backup",
     "regular_goalie_name": "S. Bobrovsky",
@@ -1311,7 +1313,7 @@
       "rule": "Goalie",
       "name": "NYI's regular goalie starts",
       "pass": true,
-      "detail": "Ilya Sorokin (probable)"
+      "detail": "Ilya Sorokin (confirmed)"
      },
      {
       "rule": "Matchup",
@@ -1626,7 +1628,7 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (NYI #17, TOR #27). Ilya Sorokin in goal for NYI (probable). Biggest edge over the last 5: GSAx/gm (NYI #5, TOR #27). NYI 2-0-1 in its last 3, TOR 0-2-1.",
+   "summary": "Not a top-7 vs bottom-7 matchup (NYI #17, TOR #27). Ilya Sorokin in goal for NYI (confirmed). Biggest edge over the last 5: GSAx/gm (NYI #5, TOR #27). NYI 2-0-1 in its last 3, TOR 0-2-1.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV23TORNYI",
@@ -2013,12 +2015,12 @@
      "espn": 15
     },
     "goalie": {
-     "name": "Karel Vejmelka",
-     "last": "Vejmelka",
-     "espn_id": "3942065",
-     "confirmed": false
+     "name": "Sebastian Cossa",
+     "last": "Cossa",
+     "espn_id": "4874732",
+     "confirmed": true
     },
-    "goalie_status": "regular",
+    "goalie_status": "backup",
     "regular_goalie_name": "K. Vejmelka",
     "goalies": [
      {
@@ -2042,11 +2044,18 @@
     ],
     "injuries": [
      {
-      "name": "Clayton Keller",
-      "last": "Keller",
-      "status": "Day-To-Day",
-      "date": "2026-11-22T13:40Z",
-      "comment": "day-to-day"
+      "name": "Michael Carcone",
+      "last": "Carcone",
+      "status": "Out",
+      "date": "2026-11-23T17:49Z",
+      "comment": "out"
+     },
+     {
+      "name": "Dylan Guenther",
+      "last": "Guenther",
+      "status": "Injured Reserve",
+      "date": "2026-11-23T17:47Z",
+      "comment": "Guenther (upper body) has been ruled out for Monday's game against the Jets, Ken Wiebe of The Winnipeg Free Press reports."
      },
      {
       "name": "John Marino",
@@ -2054,13 +2063,6 @@
       "status": "Injured Reserve",
       "date": "2026-11-20T20:04Z",
       "comment": "Marino (upper body) is day-to-day and close to returning, per Cole Bagley of KSL Sports on Friday."
-     },
-     {
-      "name": "Dylan Guenther",
-      "last": "Guenther",
-      "status": "Injured Reserve",
-      "date": "2026-11-20T19:59Z",
-      "comment": "Guenther (upper body) was upgraded to day-to-day ahead of Saturday's matchup with Anaheim, Cole Bagley of KSL Sports reports."
      },
      {
       "name": "Nick Schmaltz",
@@ -2086,9 +2088,7 @@
     ],
     "injuries_known": true,
     "key_out": [],
-    "key_questionable": [
-     "Clayton Keller"
-    ],
+    "key_questionable": [],
     "key_long_term": [
      "Nate Schmidt"
     ],
@@ -2118,14 +2118,14 @@
      {
       "rule": "A",
       "name": "Analysis Score 22+",
-      "pass": true,
-      "detail": "Score 23 of 40"
+      "pass": false,
+      "detail": "Score 21 of 40"
      },
      {
       "rule": "Goalie",
       "name": "UTA's regular goalie starts",
-      "pass": true,
-      "detail": "Karel Vejmelka (probable)"
+      "pass": false,
+      "detail": "Sebastian Cossa listed instead of K. Vejmelka: capped at the Watch list"
      },
      {
       "rule": "Matchup",
@@ -2138,10 +2138,12 @@
      "Not a top-7 vs bottom-7 matchup (UTA #12, WPG #21)"
     ],
     "warnings": [],
-    "flags": [],
-    "score": 23,
+    "flags": [
+     "UTA backup goalie starting (Sebastian Cossa)"
+    ],
+    "score": 21,
     "max": 40,
-    "band": "green",
+    "band": "yellow",
     "parts": [
      {
       "key": "fav_metrics",
@@ -2158,7 +2160,7 @@
      {
       "key": "goalies",
       "label": "Goalies + health",
-      "points": 3,
+      "points": 1,
       "max": 4
      },
      {
@@ -2438,781 +2440,13 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (UTA #12, WPG #21). Karel Vejmelka in goal for UTA (probable). Biggest edge over the last 5: xGA/60 5v5 (UTA #6, WPG #29). UTA 2-1-0 in its last 3, WPG 1-1-1.",
+   "summary": "Not a top-7 vs bottom-7 matchup (UTA #12, WPG #21). UTA start their backup goalie, Sebastian Cossa (regular: K. Vejmelka). Biggest edge over the last 5: xGA/60 5v5 (UTA #6, WPG #29). UTA 2-1-0 in its last 3, WPG 1-1-1.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV23UTAWPG",
-    "fav_prob": 0.505,
-    "bid": 0.5,
-    "ask": 0.51
-   }
-  },
-  {
-   "id": "401892773",
-   "tip_utc": "2026-11-24T00:00:00+00:00",
-   "tip_pt": "4:00 PM PT",
-   "day_et": "2026-11-23",
-   "state": "pre",
-   "detail": "11/23 - 7:00 PM EST",
-   "neutral": false,
-   "venue": "Prudential Center",
-   "favorite": "home",
-   "line": {
-    "details": "NJ -205",
-    "provider": "DraftKings",
-    "ml_home": -205,
-    "ml_away": null,
-    "puck_line": -1.5,
-    "total": 6.5,
-    "fav_price": 0.6721
-   },
-   "spread": {
-    "details": "NJ -205",
-    "provider": "DraftKings",
-    "puck_line": -1.5
-   },
-   "home": {
-    "id": "11",
-    "abbr": "NJD",
-    "espn_abbr": "NJ",
-    "name": "New Jersey",
-    "display": "New Jersey Devils",
-    "record": "15-8-0",
-    "l3_record": "1-2-0",
-    "games": 23,
-    "pts_pct": 0.652,
-    "season": {
-     "xgf": 55.46,
-     "xga60": 2.241,
-     "xgf60": 2.79,
-     "cf": 51.67,
-     "gsax": -0.591,
-     "st": 85.1,
-     "pp": 20.3,
-     "pk": 64.8,
-     "ranks": {
-      "xgf": 4,
-      "xga60": 5,
-      "gsax": 31,
-      "st": 30,
-      "xgf60": 5
-     }
-    },
-    "last5": {
-     "xgf": 48.36,
-     "xga60": 2.701,
-     "xgf60": 2.529,
-     "cf": 48.53,
-     "gsax": -1.123,
-     "st": 77.3,
-     "pp": 21.1,
-     "pk": 56.2,
-     "ranks": {
-      "xgf": 22,
-      "xga60": 21,
-      "gsax": 29,
-      "st": 32,
-      "xgf60": 14
-     }
-    },
-    "last3_games": [
-     {
-      "game_id": 2026020368,
-      "date": "2026-11-21",
-      "site": "away",
-      "opp": "STL",
-      "pts": 6,
-      "opp_pts": 9,
-      "extra": false,
-      "opp_power_rank": 18
-     },
-     {
-      "game_id": 2026020345,
-      "date": "2026-11-18",
-      "site": "home",
-      "opp": "MTL",
-      "pts": 2,
-      "opp_pts": 3,
-      "extra": false,
-      "opp_power_rank": 11
-     },
-     {
-      "game_id": 2026020318,
-      "date": "2026-11-14",
-      "site": "away",
-      "opp": "WSH",
-      "pts": 7,
-      "opp_pts": 4,
-      "extra": false,
-      "opp_power_rank": 16
-     }
-    ],
-    "trend_games": [
-     {
-      "date": "2026-11-10",
-      "opp": "WPG",
-      "metrics": {
-       "xgf": 50.54,
-       "xga60": 1.761,
-       "xgf60": 1.799,
-       "gsax": -0.9,
-       "st": 33.3
-      }
-     },
-     {
-      "date": "2026-11-12",
-      "opp": "WSH",
-      "metrics": {
-       "xgf": 50.09,
-       "xga60": 1.833,
-       "xgf60": 1.84,
-       "gsax": 0.349,
-       "st": 75.0
-      }
-     },
-     {
-      "date": "2026-11-14",
-      "opp": "WSH",
-      "metrics": {
-       "xgf": 37.89,
-       "xga60": 4.373,
-       "xgf60": 2.667,
-       "gsax": 0.28,
-       "st": 141.7
-      }
-     },
-     {
-      "date": "2026-11-18",
-      "opp": "MTL",
-      "metrics": {
-       "xgf": 45.31,
-       "xga60": 3.168,
-       "xgf60": 2.625,
-       "gsax": 0.071,
-       "st": 80.0
-      }
-     },
-     {
-      "date": "2026-11-21",
-      "opp": "STL",
-      "metrics": {
-       "xgf": 57.28,
-       "xga60": 2.7,
-       "xgf60": 3.62,
-       "gsax": -5.415,
-       "st": 25.0
-      }
-     }
-    ],
-    "is_fav": true,
-    "b2b": false,
-    "power": {
-     "rank": 5,
-     "own": 6,
-     "avg": 6.0,
-     "espn": 6
-    },
-    "goalie": {
-     "name": "Connor Hellebuyck",
-     "last": "Hellebuyck",
-     "espn_id": "3020225",
-     "confirmed": true
-    },
-    "goalie_status": "backup",
-    "regular_goalie_name": "J. Allen",
-    "goalies": [
-     {
-      "id": "8474596",
-      "name": "J. Allen",
-      "starts": 10
-     },
-     {
-      "id": "8476945",
-      "name": "C. Hellebuyck",
-      "starts": 9
-     },
-     {
-      "id": "8482076",
-      "name": "N. Daws",
-      "starts": 4
-     }
-    ],
-    "key_skaters": [
-     "L. Hughes",
-     "B. Pesce",
-     "J. Hughes",
-     "D. Hamilton",
-     "J. Siegenthaler",
-     "N. Hischier"
-    ],
-    "injuries": [
-     {
-      "name": "Anthony Mantha",
-      "last": "Mantha",
-      "status": "Injured Reserve",
-      "date": "2026-11-17T18:07Z",
-      "comment": "Mantha (neck) is expected to miss about one month after undergoing surgery, per Kristy Flannery of The Hockey News."
-     },
-     {
-      "name": "Johnathan Kovacevic",
-      "last": "Kovacevic",
-      "status": "Injured Reserve",
-      "date": "2026-11-17T17:39Z",
-      "comment": "Kovacevic (ankle) is expected to be sidelined for 4-6 weeks, per Kristy Flannery of The Hockey News."
-     },
-     {
-      "name": "Seamus Casey",
-      "last": "Casey",
-      "status": "Injured Reserve",
-      "date": "2026-11-13T23:49Z",
-      "comment": "Casey (knee) was moved to long-term injured reserve on Friday, per PuckPedia."
-     }
-    ],
-    "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [],
-    "key_long_term": [],
-    "spread_text": "-205"
-   },
-   "away": {
-    "id": "29",
-    "abbr": "CBJ",
-    "espn_abbr": "CBJ",
-    "name": "Columbus",
-    "display": "Columbus Blue Jackets",
-    "record": "9-12-0",
-    "l3_record": "2-1-0",
-    "games": 21,
-    "pts_pct": 0.429,
-    "season": {
-     "xgf": 47.65,
-     "xga60": 2.648,
-     "xgf60": 2.411,
-     "cf": 49.23,
-     "gsax": -0.022,
-     "st": 90.5,
-     "pp": 19.6,
-     "pk": 70.9,
-     "ranks": {
-      "xgf": 23,
-      "xga60": 25,
-      "gsax": 11,
-      "st": 26,
-      "xgf60": 21
-     }
-    },
-    "last5": {
-     "xgf": 47.55,
-     "xga60": 2.685,
-     "xgf60": 2.434,
-     "cf": 49.9,
-     "gsax": -0.521,
-     "st": 104.2,
-     "pp": 37.5,
-     "pk": 66.7,
-     "ranks": {
-      "xgf": 23,
-      "xga60": 20,
-      "gsax": 24,
-      "st": 11,
-      "xgf60": 19
-     }
-    },
-    "last3_games": [
-     {
-      "game_id": 2026020364,
-      "date": "2026-11-21",
-      "site": "away",
-      "opp": "TOR",
-      "pts": 4,
-      "opp_pts": 3,
-      "extra": false,
-      "opp_power_rank": 27
-     },
-     {
-      "game_id": 2026020353,
-      "date": "2026-11-19",
-      "site": "away",
-      "opp": "CHI",
-      "pts": 4,
-      "opp_pts": 2,
-      "extra": false,
-      "opp_power_rank": 31
-     },
-     {
-      "game_id": 2026020336,
-      "date": "2026-11-17",
-      "site": "away",
-      "opp": "NYI",
-      "pts": 1,
-      "opp_pts": 5,
-      "extra": false,
-      "opp_power_rank": 17
-     }
-    ],
-    "trend_games": [
-     {
-      "date": "2026-11-12",
-      "opp": "TBL",
-      "metrics": {
-       "xgf": 37.47,
-       "xga60": 3.352,
-       "xgf60": 2.008,
-       "gsax": -0.041,
-       "st": 150.0
-      }
-     },
-     {
-      "date": "2026-11-14",
-      "opp": "PHI",
-      "metrics": {
-       "xgf": 55.56,
-       "xga60": 2.148,
-       "xgf60": 2.686,
-       "gsax": -2.031,
-       "st": 66.7
-      }
-     },
-     {
-      "date": "2026-11-17",
-      "opp": "NYI",
-      "metrics": {
-       "xgf": 41.45,
-       "xga60": 3.759,
-       "xgf60": 2.662,
-       "gsax": -0.375,
-       "st": 50.0
-      }
-     },
-     {
-      "date": "2026-11-19",
-      "opp": "CHI",
-      "metrics": {
-       "xgf": 46.51,
-       "xga60": 2.349,
-       "xgf60": 2.043,
-       "gsax": 0.452,
-       "st": 125.0
-      }
-     },
-     {
-      "date": "2026-11-21",
-      "opp": "TOR",
-      "metrics": {
-       "xgf": 63.71,
-       "xga60": 1.579,
-       "xgf60": 2.772,
-       "gsax": -0.608,
-       "st": 100.0
-      }
-     }
-    ],
-    "is_fav": false,
-    "b2b": false,
-    "power": {
-     "rank": 26,
-     "own": 26,
-     "avg": 26.5,
-     "espn": 27
-    },
-    "goalie": {
-     "name": "Jet Greaves",
-     "last": "Greaves",
-     "espn_id": "4894366",
-     "confirmed": false
-    },
-    "goalie_status": "backup",
-    "regular_goalie_name": "C. Talbot",
-    "goalies": [
-     {
-      "id": "8475660",
-      "name": "C. Talbot",
-      "starts": 11
-     },
-     {
-      "id": "8482982",
-      "name": "J. Greaves",
-      "starts": 10
-     }
-    ],
-    "key_skaters": [
-     "Z. Werenski",
-     "D. Severson",
-     "D. Mateychuk",
-     "A. Fantilli",
-     "C. Coyle",
-     "M. Knies"
-    ],
-    "injuries": [
-     {
-      "name": "Sean Monahan",
-      "last": "Monahan",
-      "status": "Out",
-      "date": "2026-11-16T17:42Z",
-      "comment": "out"
-     }
-    ],
-    "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [],
-    "key_long_term": [],
-    "spread_text": ""
-   },
-   "scoring": {
-    "scored": true,
-    "fav": "NJD",
-    "dog": "CBJ",
-    "in_range": true,
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "qualifiers": [],
-    "would_qualify": false,
-    "rules": [
-     {
-      "rule": "Range",
-      "name": "Top-7 team vs bottom-7 team (consensus power rank)",
-      "pass": true,
-      "detail": "NJD #5 vs CBJ #26"
-     },
-     {
-      "rule": "A",
-      "name": "Analysis Score 22+",
-      "pass": false,
-      "detail": "Score 21 of 40"
-     },
-     {
-      "rule": "Goalie",
-      "name": "NJD's regular goalie starts",
-      "pass": false,
-      "detail": "Connor Hellebuyck listed instead of J. Allen: capped at the Watch list"
-     },
-     {
-      "rule": "Matchup",
-      "name": "NJD top 7 vs CBJ bottom 7 in a matchup (last 5)",
-      "pass": false,
-      "detail": "None: offense vs offense, defense vs defense or defense vs offense (xGF/60, xGA/60): capped at the Watch list"
-     }
-    ],
-    "fails": [
-     "Score 21 (qualifies at 22)"
-    ],
-    "warnings": [
-     "Info: CBJ starting its backup goalie (Jet Greaves)"
-    ],
-    "flags": [
-     "NJD backup goalie starting (Connor Hellebuyck)"
-    ],
-    "score": 21,
-    "max": 40,
-    "band": "yellow",
-    "parts": [
-     {
-      "key": "fav_metrics",
-      "label": "Favorite metrics",
-      "points": 4,
-      "max": 16
-     },
-     {
-      "key": "dog_metrics",
-      "label": "Underdog metrics",
-      "points": 13,
-      "max": 16
-     },
-     {
-      "key": "goalies",
-      "label": "Goalies + health",
-      "points": 2,
-      "max": 4
-     },
-     {
-      "key": "home",
-      "label": "Home ice",
-      "points": 1,
-      "max": 1
-     },
-     {
-      "key": "rest",
-      "label": "Rest",
-      "points": 1,
-      "max": 1
-     },
-     {
-      "key": "form",
-      "label": "Last-3 form",
-      "points": 0,
-      "max": 2
-     }
-    ],
-    "grid": [
-     {
-      "key": "off_def",
-      "label": "Offense vs defense",
-      "fav_metric": "xgf60",
-      "dog_metric": "xga60",
-      "scored": false,
-      "cells": [
-       {
-        "team": "NJD",
-        "role": "fav",
-        "window": "season",
-        "metric": "xgf60",
-        "rank": 5,
-        "color": "green"
-       },
-       {
-        "team": "NJD",
-        "role": "fav",
-        "window": "last5",
-        "metric": "xgf60",
-        "rank": 14,
-        "color": "yellow"
-       },
-       {
-        "team": "CBJ",
-        "role": "dog",
-        "window": "season",
-        "metric": "xga60",
-        "rank": 25,
-        "color": "green"
-       },
-       {
-        "team": "CBJ",
-        "role": "dog",
-        "window": "last5",
-        "metric": "xga60",
-        "rank": 20,
-        "color": "yellow"
-       }
-      ]
-     },
-     {
-      "key": "def_off",
-      "label": "Defense vs offense",
-      "fav_metric": "xga60",
-      "dog_metric": "xgf60",
-      "scored": false,
-      "cells": [
-       {
-        "team": "NJD",
-        "role": "fav",
-        "window": "season",
-        "metric": "xga60",
-        "rank": 5,
-        "color": "green"
-       },
-       {
-        "team": "NJD",
-        "role": "fav",
-        "window": "last5",
-        "metric": "xga60",
-        "rank": 21,
-        "color": "yellow"
-       },
-       {
-        "team": "CBJ",
-        "role": "dog",
-        "window": "season",
-        "metric": "xgf60",
-        "rank": 21,
-        "color": "yellow"
-       },
-       {
-        "team": "CBJ",
-        "role": "dog",
-        "window": "last5",
-        "metric": "xgf60",
-        "rank": 19,
-        "color": "yellow"
-       }
-      ]
-     },
-     {
-      "key": "share",
-      "label": "Shot share",
-      "fav_metric": "xgf",
-      "dog_metric": "xgf",
-      "scored": true,
-      "cells": [
-       {
-        "team": "NJD",
-        "role": "fav",
-        "window": "season",
-        "metric": "xgf",
-        "rank": 4,
-        "color": "green"
-       },
-       {
-        "team": "NJD",
-        "role": "fav",
-        "window": "last5",
-        "metric": "xgf",
-        "rank": 22,
-        "color": "yellow"
-       },
-       {
-        "team": "CBJ",
-        "role": "dog",
-        "window": "season",
-        "metric": "xgf",
-        "rank": 23,
-        "color": "green"
-       },
-       {
-        "team": "CBJ",
-        "role": "dog",
-        "window": "last5",
-        "metric": "xgf",
-        "rank": 23,
-        "color": "green"
-       }
-      ]
-     },
-     {
-      "key": "goalie",
-      "label": "Goaltending",
-      "fav_metric": "gsax",
-      "dog_metric": "gsax",
-      "scored": true,
-      "cells": [
-       {
-        "team": "NJD",
-        "role": "fav",
-        "window": "season",
-        "metric": "gsax",
-        "rank": 31,
-        "color": "red"
-       },
-       {
-        "team": "NJD",
-        "role": "fav",
-        "window": "last5",
-        "metric": "gsax",
-        "rank": 29,
-        "color": "red"
-       },
-       {
-        "team": "CBJ",
-        "role": "dog",
-        "window": "season",
-        "metric": "gsax",
-        "rank": 11,
-        "color": "yellow"
-       },
-       {
-        "team": "CBJ",
-        "role": "dog",
-        "window": "last5",
-        "metric": "gsax",
-        "rank": 24,
-        "color": "green"
-       }
-      ]
-     },
-     {
-      "key": "st",
-      "label": "Special teams",
-      "fav_metric": "st",
-      "dog_metric": "st",
-      "scored": true,
-      "cells": [
-       {
-        "team": "NJD",
-        "role": "fav",
-        "window": "season",
-        "metric": "st",
-        "rank": 30,
-        "color": "red"
-       },
-       {
-        "team": "NJD",
-        "role": "fav",
-        "window": "last5",
-        "metric": "st",
-        "rank": 32,
-        "color": "red"
-       },
-       {
-        "team": "CBJ",
-        "role": "dog",
-        "window": "season",
-        "metric": "st",
-        "rank": 26,
-        "color": "green"
-       },
-       {
-        "team": "CBJ",
-        "role": "dog",
-        "window": "last5",
-        "metric": "st",
-        "rank": 11,
-        "color": "yellow"
-       }
-      ]
-     }
-    ],
-    "matchups": [
-     {
-      "key": "off_off",
-      "label": "Offense vs offense",
-      "fav_metric": "xgf60",
-      "dog_metric": "xgf60",
-      "fav_rank": 14,
-      "dog_rank": 19,
-      "counts": true,
-      "met": false
-     },
-     {
-      "key": "def_def",
-      "label": "Defense vs defense",
-      "fav_metric": "xga60",
-      "dog_metric": "xga60",
-      "fav_rank": 21,
-      "dog_rank": 20,
-      "counts": true,
-      "met": false
-     },
-     {
-      "key": "def_off",
-      "label": "Defense vs offense",
-      "fav_metric": "xga60",
-      "dog_metric": "xgf60",
-      "fav_rank": 21,
-      "dog_rank": 19,
-      "counts": true,
-      "met": false
-     },
-     {
-      "key": "off_def",
-      "label": "Offense vs defense",
-      "fav_metric": "xgf60",
-      "dog_metric": "xga60",
-      "fav_rank": 14,
-      "dog_rank": 20,
-      "counts": false,
-      "met": false
-     }
-    ],
-    "labels": {
-     "xgf60": "xGF/60 5v5",
-     "xgf": "xGF% 5v5",
-     "xga60": "xGA/60 5v5",
-     "gsax": "GSAx/gm",
-     "st": "PP%+PK%",
-     "pts": "Points %"
-    }
-   },
-   "summary": "Score 21 (qualifies at 22). NJD start their backup goalie, Connor Hellebuyck (regular: J. Allen). NJD 1-2-0 in its last 3, CBJ 2-1-0.",
-   "lean": "No lean",
-   "kalshi": {
-    "event": "KXNHLGAME-26NOV23CBJNJ",
-    "fav_prob": 0.645,
-    "bid": 0.64,
-    "ask": 0.65
+    "fav_prob": 0.495,
+    "bid": 0.49,
+    "ask": 0.5
    }
   },
   {
@@ -3412,9 +2646,9 @@
      {
       "name": "Kiefer Sherwood",
       "last": "Sherwood",
-      "status": "Out",
-      "date": "2026-11-17T19:39Z",
-      "comment": "out"
+      "status": "Injured Reserve",
+      "date": "2026-11-23T17:45Z",
+      "comment": "Sherwood (upper body) was placed on injured reserve Monday."
      },
      {
       "name": "Igor Chernyshov",
@@ -4002,349 +3236,361 @@
    }
   },
   {
-   "id": "401892778",
-   "tip_utc": "2026-11-24T02:40:00+00:00",
-   "tip_pt": "6:40 PM PT",
+   "id": "401892773",
+   "tip_utc": "2026-11-24T00:00:00+00:00",
+   "tip_pt": "4:00 PM PT",
    "day_et": "2026-11-23",
    "state": "pre",
-   "detail": "11/23 - 9:40 PM EST",
+   "detail": "11/23 - 7:00 PM EST",
    "neutral": false,
-   "venue": "Climate Pledge Arena",
+   "venue": "Prudential Center",
    "favorite": "home",
    "line": {
-    "details": "SEA -118",
+    "details": "NJ -205",
     "provider": "DraftKings",
-    "ml_home": -118,
+    "ml_home": -205,
     "ml_away": null,
     "puck_line": -1.5,
     "total": 6.5,
-    "fav_price": 0.5413
+    "fav_price": 0.6721
    },
    "spread": {
-    "details": "SEA -118",
+    "details": "NJ -205",
     "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
-    "id": "124292",
-    "abbr": "SEA",
-    "espn_abbr": "SEA",
-    "name": "Seattle",
-    "display": "Seattle Kraken",
-    "record": "10-9-1",
+    "id": "11",
+    "abbr": "NJD",
+    "espn_abbr": "NJ",
+    "name": "New Jersey",
+    "display": "New Jersey Devils",
+    "record": "15-8-0",
     "l3_record": "1-2-0",
-    "games": 20,
-    "pts_pct": 0.525,
+    "games": 23,
+    "pts_pct": 0.652,
     "season": {
-     "xgf": 46.05,
-     "xga60": 2.718,
-     "xgf60": 2.32,
-     "cf": 47.72,
-     "gsax": -0.321,
-     "st": 82.0,
-     "pp": 24.6,
-     "pk": 57.4,
+     "xgf": 55.46,
+     "xga60": 2.241,
+     "xgf60": 2.79,
+     "cf": 51.67,
+     "gsax": -0.591,
+     "st": 85.1,
+     "pp": 20.3,
+     "pk": 64.8,
      "ranks": {
-      "xgf": 27,
-      "xga60": 27,
-      "gsax": 23,
-      "st": 32,
-      "xgf60": 24
+      "xgf": 4,
+      "xga60": 5,
+      "gsax": 31,
+      "st": 30,
+      "xgf60": 5
      }
     },
     "last5": {
-     "xgf": 47.32,
-     "xga60": 2.767,
-     "xgf60": 2.486,
-     "cf": 46.48,
-     "gsax": -0.203,
-     "st": 83.3,
-     "pp": 33.3,
-     "pk": 50.0,
+     "xgf": 48.36,
+     "xga60": 2.701,
+     "xgf60": 2.529,
+     "cf": 48.53,
+     "gsax": -1.123,
+     "st": 77.3,
+     "pp": 21.1,
+     "pk": 56.2,
      "ranks": {
-      "xgf": 24,
-      "xga60": 25,
-      "gsax": 19,
-      "st": 29,
-      "xgf60": 15
+      "xgf": 22,
+      "xga60": 21,
+      "gsax": 29,
+      "st": 32,
+      "xgf60": 14
      }
     },
     "last3_games": [
      {
-      "game_id": 2026020372,
+      "game_id": 2026020368,
       "date": "2026-11-21",
       "site": "away",
-      "opp": "SJS",
-      "pts": 3,
-      "opp_pts": 4,
+      "opp": "STL",
+      "pts": 6,
+      "opp_pts": 9,
       "extra": false,
-      "opp_power_rank": 29
+      "opp_power_rank": 18
      },
      {
-      "game_id": 2026020357,
-      "date": "2026-11-19",
+      "game_id": 2026020345,
+      "date": "2026-11-18",
       "site": "home",
-      "opp": "VAN",
-      "pts": 5,
-      "opp_pts": 1,
+      "opp": "MTL",
+      "pts": 2,
+      "opp_pts": 3,
       "extra": false,
-      "opp_power_rank": 32
+      "opp_power_rank": 11
      },
      {
-      "game_id": 2026020321,
+      "game_id": 2026020318,
       "date": "2026-11-14",
       "site": "away",
-      "opp": "CAR",
-      "pts": 1,
-      "opp_pts": 5,
+      "opp": "WSH",
+      "pts": 7,
+      "opp_pts": 4,
       "extra": false,
-      "opp_power_rank": 1
+      "opp_power_rank": 16
      }
     ],
     "trend_games": [
      {
-      "date": "2026-11-07",
-      "opp": "NYR",
+      "date": "2026-11-10",
+      "opp": "WPG",
       "metrics": {
-       "xgf": 44.89,
-       "xga60": 3.049,
-       "xgf60": 2.484,
-       "gsax": -0.462,
-       "st": 116.7
-      }
-     },
-     {
-      "date": "2026-11-12",
-      "opp": "CAR",
-      "metrics": {
-       "xgf": 39.96,
-       "xga60": 2.715,
-       "xgf60": 1.808,
-       "gsax": -0.629,
-       "st": 66.7
-      }
-     },
-     {
-      "date": "2026-11-14",
-      "opp": "CAR",
-      "metrics": {
-       "xgf": 18.82,
-       "xga60": 4.069,
-       "xgf60": 0.944,
-       "gsax": 0.108,
+       "xgf": 50.54,
+       "xga60": 1.761,
+       "xgf60": 1.799,
+       "gsax": -0.9,
        "st": 33.3
       }
      },
      {
-      "date": "2026-11-19",
-      "opp": "VAN",
+      "date": "2026-11-12",
+      "opp": "WSH",
       "metrics": {
-       "xgf": 72.83,
-       "xga60": 1.813,
-       "xgf60": 4.861,
-       "gsax": 1.514,
-       "st": 100.0
+       "xgf": 50.09,
+       "xga60": 1.833,
+       "xgf60": 1.84,
+       "gsax": 0.349,
+       "st": 75.0
+      }
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "WSH",
+      "metrics": {
+       "xgf": 37.89,
+       "xga60": 4.373,
+       "xgf60": 2.667,
+       "gsax": 0.28,
+       "st": 141.7
+      }
+     },
+     {
+      "date": "2026-11-18",
+      "opp": "MTL",
+      "metrics": {
+       "xgf": 45.31,
+       "xga60": 3.168,
+       "xgf60": 2.625,
+       "gsax": 0.071,
+       "st": 80.0
       }
      },
      {
       "date": "2026-11-21",
-      "opp": "SJS",
+      "opp": "STL",
       "metrics": {
-       "xgf": 52.86,
-       "xga60": 2.168,
-       "xgf60": 2.432,
-       "gsax": -1.547,
-       "st": 83.3
+       "xgf": 57.28,
+       "xga60": 2.7,
+       "xgf60": 3.62,
+       "gsax": -5.415,
+       "st": 25.0
       }
      }
     ],
     "is_fav": true,
     "b2b": false,
     "power": {
-     "rank": 20,
-     "own": 23,
-     "avg": 20.0,
-     "espn": 17
+     "rank": 5,
+     "own": 6,
+     "avg": 6.0,
+     "espn": 6
     },
     "goalie": {
-     "name": "Philipp Grubauer",
-     "last": "Grubauer",
-     "espn_id": "5657",
-     "confirmed": false
+     "name": "Connor Hellebuyck",
+     "last": "Hellebuyck",
+     "espn_id": "3020225",
+     "confirmed": true
     },
-    "goalie_status": "regular",
-    "regular_goalie_name": "P. Grubauer",
+    "goalie_status": "backup",
+    "regular_goalie_name": "J. Allen",
     "goalies": [
      {
-      "id": "8475831",
-      "name": "P. Grubauer",
-      "starts": 11
+      "id": "8474596",
+      "name": "J. Allen",
+      "starts": 10
      },
      {
-      "id": "8478916",
-      "name": "J. Daccord",
+      "id": "8476945",
+      "name": "C. Hellebuyck",
       "starts": 9
+     },
+     {
+      "id": "8482076",
+      "name": "N. Daws",
+      "starts": 4
      }
     ],
     "key_skaters": [
-     "B. Montour",
-     "V. Dunn",
-     "R. Evans",
-     "A. Larsson",
-     "M. Beniers",
-     "C. Stephenson"
+     "L. Hughes",
+     "B. Pesce",
+     "J. Hughes",
+     "D. Hamilton",
+     "J. Siegenthaler",
+     "N. Hischier"
     ],
     "injuries": [
      {
-      "name": "Jake O'Brien",
-      "last": "O'Brien",
+      "name": "Anthony Mantha",
+      "last": "Mantha",
       "status": "Injured Reserve",
-      "date": "2026-11-19T20:30Z",
-      "comment": "The Kraken indicated Thursday that O'Brien (lower body) remains week-to-week, Mike Benton of the Kraken Audio Network reports."
+      "date": "2026-11-17T18:07Z",
+      "comment": "Mantha (neck) is expected to miss about one month after undergoing surgery, per Kristy Flannery of The Hockey News."
      },
      {
-      "name": "Jared McCann",
-      "last": "McCann",
+      "name": "Johnathan Kovacevic",
+      "last": "Kovacevic",
       "status": "Injured Reserve",
-      "date": "2026-10-25T17:08Z",
-      "comment": "McCann (lower body) will be out for approximately 10 weeks, the team announced Sunday."
+      "date": "2026-11-17T17:39Z",
+      "comment": "Kovacevic (ankle) is expected to be sidelined for 4-6 weeks, per Kristy Flannery of The Hockey News."
+     },
+     {
+      "name": "Seamus Casey",
+      "last": "Casey",
+      "status": "Injured Reserve",
+      "date": "2026-11-13T23:49Z",
+      "comment": "Casey (knee) was moved to long-term injured reserve on Friday, per PuckPedia."
      }
     ],
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [],
     "key_long_term": [],
-    "spread_text": "-118"
+    "spread_text": "-205"
    },
    "away": {
-    "id": "25",
-    "abbr": "ANA",
-    "espn_abbr": "ANA",
-    "name": "Anaheim",
-    "display": "Anaheim Ducks",
-    "record": "11-12-1",
-    "l3_record": "0-3-0",
-    "games": 24,
-    "pts_pct": 0.479,
+    "id": "29",
+    "abbr": "CBJ",
+    "espn_abbr": "CBJ",
+    "name": "Columbus",
+    "display": "Columbus Blue Jackets",
+    "record": "9-12-0",
+    "l3_record": "2-1-0",
+    "games": 21,
+    "pts_pct": 0.429,
     "season": {
-     "xgf": 46.04,
-     "xga60": 2.923,
-     "xgf60": 2.494,
-     "cf": 49.15,
-     "gsax": -0.532,
-     "st": 113.2,
-     "pp": 35.7,
-     "pk": 77.5,
+     "xgf": 47.65,
+     "xga60": 2.648,
+     "xgf60": 2.411,
+     "cf": 49.23,
+     "gsax": -0.022,
+     "st": 90.5,
+     "pp": 19.6,
+     "pk": 70.9,
      "ranks": {
-      "xgf": 28,
-      "xga60": 30,
-      "gsax": 28,
-      "st": 2,
-      "xgf60": 18
+      "xgf": 23,
+      "xga60": 25,
+      "gsax": 11,
+      "st": 26,
+      "xgf60": 21
      }
     },
     "last5": {
-     "xgf": 49.61,
-     "xga60": 2.914,
-     "xgf60": 2.869,
-     "cf": 49.72,
-     "gsax": -1.304,
-     "st": 93.3,
-     "pp": 10.0,
-     "pk": 83.3,
+     "xgf": 47.55,
+     "xga60": 2.685,
+     "xgf60": 2.434,
+     "cf": 49.9,
+     "gsax": -0.521,
+     "st": 104.2,
+     "pp": 37.5,
+     "pk": 66.7,
      "ranks": {
-      "xgf": 17,
-      "xga60": 30,
-      "gsax": 31,
-      "st": 23,
-      "xgf60": 6
+      "xgf": 23,
+      "xga60": 20,
+      "gsax": 24,
+      "st": 11,
+      "xgf60": 19
      }
     },
     "last3_games": [
      {
-      "game_id": 2026020370,
+      "game_id": 2026020364,
       "date": "2026-11-21",
       "site": "away",
-      "opp": "UTA",
-      "pts": 2,
+      "opp": "TOR",
+      "pts": 4,
       "opp_pts": 3,
       "extra": false,
-      "opp_power_rank": 12
+      "opp_power_rank": 27
      },
      {
-      "game_id": 2026020356,
+      "game_id": 2026020353,
       "date": "2026-11-19",
       "site": "away",
-      "opp": "COL",
-      "pts": 0,
-      "opp_pts": 4,
+      "opp": "CHI",
+      "pts": 4,
+      "opp_pts": 2,
       "extra": false,
-      "opp_power_rank": 9
+      "opp_power_rank": 31
      },
      {
-      "game_id": 2026020339,
+      "game_id": 2026020336,
       "date": "2026-11-17",
       "site": "away",
-      "opp": "STL",
-      "pts": 6,
-      "opp_pts": 8,
+      "opp": "NYI",
+      "pts": 1,
+      "opp_pts": 5,
       "extra": false,
-      "opp_power_rank": 18
+      "opp_power_rank": 17
      }
     ],
     "trend_games": [
      {
+      "date": "2026-11-12",
+      "opp": "TBL",
+      "metrics": {
+       "xgf": 37.47,
+       "xga60": 3.352,
+       "xgf60": 2.008,
+       "gsax": -0.041,
+       "st": 150.0
+      }
+     },
+     {
       "date": "2026-11-14",
-      "opp": "NYI",
+      "opp": "PHI",
       "metrics": {
-       "xgf": 55.36,
-       "xga60": 2.29,
-       "xgf60": 2.841,
-       "gsax": -3.671,
-       "st": 75.0
-      }
-     },
-     {
-      "date": "2026-11-15",
-      "opp": "CGY",
-      "metrics": {
-       "xgf": 62.03,
-       "xga60": 2.548,
-       "xgf60": 4.164,
-       "gsax": 1.398,
-       "st": 100.0
-      }
-     },
-     {
-      "date": "2026-11-17",
-      "opp": "STL",
-      "metrics": {
-       "xgf": 32.69,
-       "xga60": 4.78,
-       "xgf60": 2.321,
-       "gsax": -2.811,
-       "st": 133.3
-      }
-     },
-     {
-      "date": "2026-11-19",
-      "opp": "COL",
-      "metrics": {
-       "xgf": 48.87,
-       "xga60": 2.903,
-       "xgf60": 2.775,
-       "gsax": -1.358,
+       "xgf": 55.56,
+       "xga60": 2.148,
+       "xgf60": 2.686,
+       "gsax": -2.031,
        "st": 66.7
       }
      },
      {
-      "date": "2026-11-21",
-      "opp": "UTA",
+      "date": "2026-11-17",
+      "opp": "NYI",
       "metrics": {
-       "xgf": 51.29,
-       "xga60": 2.131,
-       "xgf60": 2.244,
-       "gsax": -0.078,
+       "xgf": 41.45,
+       "xga60": 3.759,
+       "xgf60": 2.662,
+       "gsax": -0.375,
+       "st": 50.0
+      }
+     },
+     {
+      "date": "2026-11-19",
+      "opp": "CHI",
+      "metrics": {
+       "xgf": 46.51,
+       "xga60": 2.349,
+       "xgf60": 2.043,
+       "gsax": 0.452,
+       "st": 125.0
+      }
+     },
+     {
+      "date": "2026-11-21",
+      "opp": "TOR",
+      "metrics": {
+       "xgf": 63.71,
+       "xga60": 1.579,
+       "xgf60": 2.772,
+       "gsax": -0.608,
        "st": 100.0
       }
      }
@@ -4352,89 +3598,59 @@
     "is_fav": false,
     "b2b": false,
     "power": {
-     "rank": 22,
-     "own": 27,
-     "avg": 21.5,
-     "espn": 16
+     "rank": 26,
+     "own": 26,
+     "avg": 26.5,
+     "espn": 27
     },
     "goalie": {
-     "name": "Lukas Dostal",
-     "last": "Dostal",
-     "espn_id": "4588165",
-     "confirmed": false
+     "name": "Cam Talbot",
+     "last": "Talbot",
+     "espn_id": "5734",
+     "confirmed": true
     },
     "goalie_status": "regular",
-    "regular_goalie_name": "L. Dostal",
+    "regular_goalie_name": "C. Talbot",
     "goalies": [
      {
-      "id": "8480843",
-      "name": "L. Dostal",
-      "starts": 12
+      "id": "8475660",
+      "name": "C. Talbot",
+      "starts": 11
      },
      {
-      "id": "8478024",
-      "name": "V. Husso",
-      "starts": 7
-     },
-     {
-      "id": "8476316",
-      "name": "L. Brossoit",
-      "starts": 5
+      "id": "8482982",
+      "name": "J. Greaves",
+      "starts": 10
      }
     ],
     "key_skaters": [
-     "J. LaCombe",
-     "M. Granlund",
-     "T. Luneau",
-     "B. Sennecke",
-     "L. Carlsson",
-     "P. Mintyukov"
+     "Z. Werenski",
+     "D. Severson",
+     "D. Mateychuk",
+     "A. Fantilli",
+     "C. Coyle",
+     "M. Knies"
     ],
     "injuries": [
      {
-      "name": "Leo Carlsson",
-      "last": "Carlsson",
-      "status": "Day-To-Day",
-      "date": "2026-11-22T21:11Z",
-      "comment": "Carlsson (upper body) is day-to-day, according to Eric Stephens of The Athletic on Sunday."
-     },
-     {
-      "name": "Beckett Sennecke",
-      "last": "Sennecke",
-      "status": "Injured Reserve",
-      "date": "2026-11-21T18:32Z",
-      "comment": "Sennecke (upper body) was placed on injured reserve Saturday."
-     },
-     {
-      "name": "Ryan Poehling",
-      "last": "Poehling",
-      "status": "Injured Reserve",
-      "date": "2026-11-20T03:31Z",
-      "comment": "Poehling (knee) is on the Ducks' current road trip and has resumed skating, Derek Lee of The Hockey News reports Thursday."
-     },
-     {
-      "name": "A.J. Greer",
-      "last": "Greer",
-      "status": "Injured Reserve",
-      "date": "2026-11-02T18:46Z",
-      "comment": "Greer (upper body) was placed on injured reserve Monday."
+      "name": "Sean Monahan",
+      "last": "Monahan",
+      "status": "Out",
+      "date": "2026-11-16T17:42Z",
+      "comment": "out"
      }
     ],
     "injuries_known": true,
     "key_out": [],
-    "key_questionable": [
-     "Leo Carlsson"
-    ],
-    "key_long_term": [
-     "Beckett Sennecke"
-    ],
+    "key_questionable": [],
+    "key_long_term": [],
     "spread_text": ""
    },
    "scoring": {
     "scored": true,
-    "fav": "SEA",
-    "dog": "ANA",
-    "in_range": false,
+    "fav": "NJD",
+    "dog": "CBJ",
+    "in_range": true,
     "qualified": false,
     "tier": "out",
     "tier_label": "No track",
@@ -4448,41 +3664,43 @@
      {
       "rule": "Range",
       "name": "Top-7 team vs bottom-7 team (consensus power rank)",
-      "pass": false,
-      "detail": "SEA #20 vs ANA #22"
+      "pass": true,
+      "detail": "NJD #5 vs CBJ #26"
      },
      {
       "rule": "A",
       "name": "Analysis Score 22+",
       "pass": false,
-      "detail": "Score 18 of 40"
+      "detail": "Score 20 of 40"
      },
      {
       "rule": "Goalie",
-      "name": "SEA's regular goalie starts",
-      "pass": true,
-      "detail": "Philipp Grubauer (probable)"
+      "name": "NJD's regular goalie starts",
+      "pass": false,
+      "detail": "Connor Hellebuyck listed instead of J. Allen: capped at the Watch list"
      },
      {
       "rule": "Matchup",
-      "name": "SEA top 7 vs ANA bottom 7 in a matchup (last 5)",
+      "name": "NJD top 7 vs CBJ bottom 7 in a matchup (last 5)",
       "pass": false,
       "detail": "None: offense vs offense, defense vs defense or defense vs offense (xGF/60, xGA/60): capped at the Watch list"
      }
     ],
     "fails": [
-     "Not a top-7 vs bottom-7 matchup (SEA #20, ANA #22)"
+     "Score 20 (qualifies at 22)"
     ],
     "warnings": [],
-    "flags": [],
-    "score": 18,
+    "flags": [
+     "NJD backup goalie starting (Connor Hellebuyck)"
+    ],
+    "score": 20,
     "max": 40,
     "band": "yellow",
     "parts": [
      {
       "key": "fav_metrics",
       "label": "Favorite metrics",
-      "points": 0,
+      "points": 4,
       "max": 16
      },
      {
@@ -4494,7 +3712,7 @@
      {
       "key": "goalies",
       "label": "Goalies + health",
-      "points": 3,
+      "points": 1,
       "max": 4
      },
      {
@@ -4525,36 +3743,36 @@
       "scored": false,
       "cells": [
        {
-        "team": "SEA",
+        "team": "NJD",
         "role": "fav",
         "window": "season",
         "metric": "xgf60",
-        "rank": 24,
-        "color": "red"
+        "rank": 5,
+        "color": "green"
        },
        {
-        "team": "SEA",
+        "team": "NJD",
         "role": "fav",
         "window": "last5",
         "metric": "xgf60",
-        "rank": 15,
+        "rank": 14,
         "color": "yellow"
        },
        {
-        "team": "ANA",
+        "team": "CBJ",
         "role": "dog",
         "window": "season",
         "metric": "xga60",
-        "rank": 30,
+        "rank": 25,
         "color": "green"
        },
        {
-        "team": "ANA",
+        "team": "CBJ",
         "role": "dog",
         "window": "last5",
         "metric": "xga60",
-        "rank": 30,
-        "color": "green"
+        "rank": 20,
+        "color": "yellow"
        }
       ]
      },
@@ -4566,36 +3784,36 @@
       "scored": false,
       "cells": [
        {
-        "team": "SEA",
+        "team": "NJD",
         "role": "fav",
         "window": "season",
         "metric": "xga60",
-        "rank": 27,
-        "color": "red"
+        "rank": 5,
+        "color": "green"
        },
        {
-        "team": "SEA",
+        "team": "NJD",
         "role": "fav",
         "window": "last5",
         "metric": "xga60",
-        "rank": 25,
-        "color": "red"
-       },
-       {
-        "team": "ANA",
-        "role": "dog",
-        "window": "season",
-        "metric": "xgf60",
-        "rank": 18,
+        "rank": 21,
         "color": "yellow"
        },
        {
-        "team": "ANA",
+        "team": "CBJ",
+        "role": "dog",
+        "window": "season",
+        "metric": "xgf60",
+        "rank": 21,
+        "color": "yellow"
+       },
+       {
+        "team": "CBJ",
         "role": "dog",
         "window": "last5",
         "metric": "xgf60",
-        "rank": 6,
-        "color": "red"
+        "rank": 19,
+        "color": "yellow"
        }
       ]
      },
@@ -4607,36 +3825,36 @@
       "scored": true,
       "cells": [
        {
-        "team": "SEA",
+        "team": "NJD",
         "role": "fav",
         "window": "season",
         "metric": "xgf",
-        "rank": 27,
-        "color": "red"
-       },
-       {
-        "team": "SEA",
-        "role": "fav",
-        "window": "last5",
-        "metric": "xgf",
-        "rank": 24,
-        "color": "red"
-       },
-       {
-        "team": "ANA",
-        "role": "dog",
-        "window": "season",
-        "metric": "xgf",
-        "rank": 28,
+        "rank": 4,
         "color": "green"
        },
        {
-        "team": "ANA",
+        "team": "NJD",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xgf",
+        "rank": 22,
+        "color": "yellow"
+       },
+       {
+        "team": "CBJ",
+        "role": "dog",
+        "window": "season",
+        "metric": "xgf",
+        "rank": 23,
+        "color": "green"
+       },
+       {
+        "team": "CBJ",
         "role": "dog",
         "window": "last5",
         "metric": "xgf",
-        "rank": 17,
-        "color": "yellow"
+        "rank": 23,
+        "color": "green"
        }
       ]
      },
@@ -4648,35 +3866,35 @@
       "scored": true,
       "cells": [
        {
-        "team": "SEA",
+        "team": "NJD",
         "role": "fav",
         "window": "season",
         "metric": "gsax",
-        "rank": 23,
+        "rank": 31,
         "color": "red"
        },
        {
-        "team": "SEA",
+        "team": "NJD",
         "role": "fav",
         "window": "last5",
         "metric": "gsax",
-        "rank": 19,
-        "color": "yellow"
+        "rank": 29,
+        "color": "red"
        },
        {
-        "team": "ANA",
+        "team": "CBJ",
         "role": "dog",
         "window": "season",
         "metric": "gsax",
-        "rank": 28,
-        "color": "green"
+        "rank": 11,
+        "color": "yellow"
        },
        {
-        "team": "ANA",
+        "team": "CBJ",
         "role": "dog",
         "window": "last5",
         "metric": "gsax",
-        "rank": 31,
+        "rank": 24,
         "color": "green"
        }
       ]
@@ -4689,36 +3907,36 @@
       "scored": true,
       "cells": [
        {
-        "team": "SEA",
+        "team": "NJD",
         "role": "fav",
         "window": "season",
+        "metric": "st",
+        "rank": 30,
+        "color": "red"
+       },
+       {
+        "team": "NJD",
+        "role": "fav",
+        "window": "last5",
         "metric": "st",
         "rank": 32,
         "color": "red"
        },
        {
-        "team": "SEA",
-        "role": "fav",
-        "window": "last5",
-        "metric": "st",
-        "rank": 29,
-        "color": "red"
-       },
-       {
-        "team": "ANA",
+        "team": "CBJ",
         "role": "dog",
         "window": "season",
         "metric": "st",
-        "rank": 2,
-        "color": "deep-red"
+        "rank": 26,
+        "color": "green"
        },
        {
-        "team": "ANA",
+        "team": "CBJ",
         "role": "dog",
         "window": "last5",
         "metric": "st",
-        "rank": 23,
-        "color": "green"
+        "rank": 11,
+        "color": "yellow"
        }
       ]
      }
@@ -4729,8 +3947,8 @@
       "label": "Offense vs offense",
       "fav_metric": "xgf60",
       "dog_metric": "xgf60",
-      "fav_rank": 15,
-      "dog_rank": 6,
+      "fav_rank": 14,
+      "dog_rank": 19,
       "counts": true,
       "met": false
      },
@@ -4739,8 +3957,8 @@
       "label": "Defense vs defense",
       "fav_metric": "xga60",
       "dog_metric": "xga60",
-      "fav_rank": 25,
-      "dog_rank": 30,
+      "fav_rank": 21,
+      "dog_rank": 20,
       "counts": true,
       "met": false
      },
@@ -4749,8 +3967,8 @@
       "label": "Defense vs offense",
       "fav_metric": "xga60",
       "dog_metric": "xgf60",
-      "fav_rank": 25,
-      "dog_rank": 6,
+      "fav_rank": 21,
+      "dog_rank": 19,
       "counts": true,
       "met": false
      },
@@ -4759,8 +3977,8 @@
       "label": "Offense vs defense",
       "fav_metric": "xgf60",
       "dog_metric": "xga60",
-      "fav_rank": 15,
-      "dog_rank": 30,
+      "fav_rank": 14,
+      "dog_rank": 20,
       "counts": false,
       "met": false
      }
@@ -4774,13 +3992,13 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (SEA #20, ANA #22). Philipp Grubauer in goal for SEA (probable). SEA 1-2-0 in its last 3, ANA 0-3-0.",
+   "summary": "Score 20 (qualifies at 22). NJD start their backup goalie, Connor Hellebuyck (regular: J. Allen). NJD 1-2-0 in its last 3, CBJ 2-1-0.",
    "lean": "No lean",
    "kalshi": {
-    "event": "KXNHLGAME-26NOV23ANASEA",
-    "fav_prob": 0.525,
-    "bid": 0.52,
-    "ask": 0.53
+    "event": "KXNHLGAME-26NOV23CBJNJ",
+    "fav_prob": 0.645,
+    "bid": 0.64,
+    "ask": 0.65
    }
   },
   {
@@ -5197,13 +4415,6 @@
     ],
     "injuries": [
      {
-      "name": "Artemi Panarin",
-      "last": "Panarin",
-      "status": "Day-To-Day",
-      "date": "2026-11-22T13:40Z",
-      "comment": "day-to-day"
-     },
-     {
       "name": "Trevor Moore",
       "last": "Moore",
       "status": "Day-To-Day",
@@ -5220,9 +4431,7 @@
     ],
     "injuries_known": true,
     "key_out": [],
-    "key_questionable": [
-     "Artemi Panarin"
-    ],
+    "key_questionable": [],
     "key_long_term": [],
     "spread_text": ""
    },
@@ -5580,6 +4789,790 @@
     "bid": 0.57,
     "ask": 0.58
    }
+  },
+  {
+   "id": "401892778",
+   "tip_utc": "2026-11-24T02:40:00+00:00",
+   "tip_pt": "6:40 PM PT",
+   "day_et": "2026-11-23",
+   "state": "pre",
+   "detail": "11/23 - 9:40 PM EST",
+   "neutral": false,
+   "venue": "Climate Pledge Arena",
+   "favorite": "home",
+   "line": {
+    "details": "SEA -118",
+    "provider": "DraftKings",
+    "ml_home": -118,
+    "ml_away": null,
+    "puck_line": -1.5,
+    "total": 6.5,
+    "fav_price": 0.5413
+   },
+   "spread": {
+    "details": "SEA -118",
+    "provider": "DraftKings",
+    "puck_line": -1.5
+   },
+   "home": {
+    "id": "124292",
+    "abbr": "SEA",
+    "espn_abbr": "SEA",
+    "name": "Seattle",
+    "display": "Seattle Kraken",
+    "record": "10-9-1",
+    "l3_record": "1-2-0",
+    "games": 20,
+    "pts_pct": 0.525,
+    "season": {
+     "xgf": 46.05,
+     "xga60": 2.718,
+     "xgf60": 2.32,
+     "cf": 47.72,
+     "gsax": -0.321,
+     "st": 82.0,
+     "pp": 24.6,
+     "pk": 57.4,
+     "ranks": {
+      "xgf": 27,
+      "xga60": 27,
+      "gsax": 23,
+      "st": 32,
+      "xgf60": 24
+     }
+    },
+    "last5": {
+     "xgf": 47.32,
+     "xga60": 2.767,
+     "xgf60": 2.486,
+     "cf": 46.48,
+     "gsax": -0.203,
+     "st": 83.3,
+     "pp": 33.3,
+     "pk": 50.0,
+     "ranks": {
+      "xgf": 24,
+      "xga60": 25,
+      "gsax": 19,
+      "st": 29,
+      "xgf60": 15
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 2026020372,
+      "date": "2026-11-21",
+      "site": "away",
+      "opp": "SJS",
+      "pts": 3,
+      "opp_pts": 4,
+      "extra": false,
+      "opp_power_rank": 29
+     },
+     {
+      "game_id": 2026020357,
+      "date": "2026-11-19",
+      "site": "home",
+      "opp": "VAN",
+      "pts": 5,
+      "opp_pts": 1,
+      "extra": false,
+      "opp_power_rank": 32
+     },
+     {
+      "game_id": 2026020321,
+      "date": "2026-11-14",
+      "site": "away",
+      "opp": "CAR",
+      "pts": 1,
+      "opp_pts": 5,
+      "extra": false,
+      "opp_power_rank": 1
+     }
+    ],
+    "trend_games": [
+     {
+      "date": "2026-11-07",
+      "opp": "NYR",
+      "metrics": {
+       "xgf": 44.89,
+       "xga60": 3.049,
+       "xgf60": 2.484,
+       "gsax": -0.462,
+       "st": 116.7
+      }
+     },
+     {
+      "date": "2026-11-12",
+      "opp": "CAR",
+      "metrics": {
+       "xgf": 39.96,
+       "xga60": 2.715,
+       "xgf60": 1.808,
+       "gsax": -0.629,
+       "st": 66.7
+      }
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "CAR",
+      "metrics": {
+       "xgf": 18.82,
+       "xga60": 4.069,
+       "xgf60": 0.944,
+       "gsax": 0.108,
+       "st": 33.3
+      }
+     },
+     {
+      "date": "2026-11-19",
+      "opp": "VAN",
+      "metrics": {
+       "xgf": 72.83,
+       "xga60": 1.813,
+       "xgf60": 4.861,
+       "gsax": 1.514,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-21",
+      "opp": "SJS",
+      "metrics": {
+       "xgf": 52.86,
+       "xga60": 2.168,
+       "xgf60": 2.432,
+       "gsax": -1.547,
+       "st": 83.3
+      }
+     }
+    ],
+    "is_fav": true,
+    "b2b": false,
+    "power": {
+     "rank": 20,
+     "own": 23,
+     "avg": 20.0,
+     "espn": 17
+    },
+    "goalie": {
+     "name": "Joey Daccord",
+     "last": "Daccord",
+     "espn_id": "3942073",
+     "confirmed": false
+    },
+    "goalie_status": "backup",
+    "regular_goalie_name": "P. Grubauer",
+    "goalies": [
+     {
+      "id": "8475831",
+      "name": "P. Grubauer",
+      "starts": 11
+     },
+     {
+      "id": "8478916",
+      "name": "J. Daccord",
+      "starts": 9
+     }
+    ],
+    "key_skaters": [
+     "B. Montour",
+     "V. Dunn",
+     "R. Evans",
+     "A. Larsson",
+     "M. Beniers",
+     "C. Stephenson"
+    ],
+    "injuries": [
+     {
+      "name": "Jake O'Brien",
+      "last": "O'Brien",
+      "status": "Injured Reserve",
+      "date": "2026-11-19T20:30Z",
+      "comment": "The Kraken indicated Thursday that O'Brien (lower body) remains week-to-week, Mike Benton of the Kraken Audio Network reports."
+     },
+     {
+      "name": "Jared McCann",
+      "last": "McCann",
+      "status": "Injured Reserve",
+      "date": "2026-10-25T17:08Z",
+      "comment": "McCann (lower body) will be out for approximately 10 weeks, the team announced Sunday."
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [],
+    "key_long_term": [],
+    "spread_text": "-118"
+   },
+   "away": {
+    "id": "25",
+    "abbr": "ANA",
+    "espn_abbr": "ANA",
+    "name": "Anaheim",
+    "display": "Anaheim Ducks",
+    "record": "11-12-1",
+    "l3_record": "0-3-0",
+    "games": 24,
+    "pts_pct": 0.479,
+    "season": {
+     "xgf": 46.04,
+     "xga60": 2.923,
+     "xgf60": 2.494,
+     "cf": 49.15,
+     "gsax": -0.532,
+     "st": 113.2,
+     "pp": 35.7,
+     "pk": 77.5,
+     "ranks": {
+      "xgf": 28,
+      "xga60": 30,
+      "gsax": 28,
+      "st": 2,
+      "xgf60": 18
+     }
+    },
+    "last5": {
+     "xgf": 49.61,
+     "xga60": 2.914,
+     "xgf60": 2.869,
+     "cf": 49.72,
+     "gsax": -1.304,
+     "st": 93.3,
+     "pp": 10.0,
+     "pk": 83.3,
+     "ranks": {
+      "xgf": 17,
+      "xga60": 30,
+      "gsax": 31,
+      "st": 23,
+      "xgf60": 6
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 2026020370,
+      "date": "2026-11-21",
+      "site": "away",
+      "opp": "UTA",
+      "pts": 2,
+      "opp_pts": 3,
+      "extra": false,
+      "opp_power_rank": 12
+     },
+     {
+      "game_id": 2026020356,
+      "date": "2026-11-19",
+      "site": "away",
+      "opp": "COL",
+      "pts": 0,
+      "opp_pts": 4,
+      "extra": false,
+      "opp_power_rank": 9
+     },
+     {
+      "game_id": 2026020339,
+      "date": "2026-11-17",
+      "site": "away",
+      "opp": "STL",
+      "pts": 6,
+      "opp_pts": 8,
+      "extra": false,
+      "opp_power_rank": 18
+     }
+    ],
+    "trend_games": [
+     {
+      "date": "2026-11-14",
+      "opp": "NYI",
+      "metrics": {
+       "xgf": 55.36,
+       "xga60": 2.29,
+       "xgf60": 2.841,
+       "gsax": -3.671,
+       "st": 75.0
+      }
+     },
+     {
+      "date": "2026-11-15",
+      "opp": "CGY",
+      "metrics": {
+       "xgf": 62.03,
+       "xga60": 2.548,
+       "xgf60": 4.164,
+       "gsax": 1.398,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-17",
+      "opp": "STL",
+      "metrics": {
+       "xgf": 32.69,
+       "xga60": 4.78,
+       "xgf60": 2.321,
+       "gsax": -2.811,
+       "st": 133.3
+      }
+     },
+     {
+      "date": "2026-11-19",
+      "opp": "COL",
+      "metrics": {
+       "xgf": 48.87,
+       "xga60": 2.903,
+       "xgf60": 2.775,
+       "gsax": -1.358,
+       "st": 66.7
+      }
+     },
+     {
+      "date": "2026-11-21",
+      "opp": "UTA",
+      "metrics": {
+       "xgf": 51.29,
+       "xga60": 2.131,
+       "xgf60": 2.244,
+       "gsax": -0.078,
+       "st": 100.0
+      }
+     }
+    ],
+    "is_fav": false,
+    "b2b": false,
+    "power": {
+     "rank": 22,
+     "own": 27,
+     "avg": 21.5,
+     "espn": 16
+    },
+    "goalie": {
+     "name": "Lukas Dostal",
+     "last": "Dostal",
+     "espn_id": "4588165",
+     "confirmed": false
+    },
+    "goalie_status": "regular",
+    "regular_goalie_name": "L. Dostal",
+    "goalies": [
+     {
+      "id": "8480843",
+      "name": "L. Dostal",
+      "starts": 12
+     },
+     {
+      "id": "8478024",
+      "name": "V. Husso",
+      "starts": 7
+     },
+     {
+      "id": "8476316",
+      "name": "L. Brossoit",
+      "starts": 5
+     }
+    ],
+    "key_skaters": [
+     "J. LaCombe",
+     "M. Granlund",
+     "T. Luneau",
+     "B. Sennecke",
+     "L. Carlsson",
+     "P. Mintyukov"
+    ],
+    "injuries": [
+     {
+      "name": "Leo Carlsson",
+      "last": "Carlsson",
+      "status": "Day-To-Day",
+      "date": "2026-11-22T21:11Z",
+      "comment": "Carlsson (upper body) is day-to-day, according to Eric Stephens of The Athletic on Sunday."
+     },
+     {
+      "name": "Beckett Sennecke",
+      "last": "Sennecke",
+      "status": "Injured Reserve",
+      "date": "2026-11-21T18:32Z",
+      "comment": "Sennecke (upper body) was placed on injured reserve Saturday."
+     },
+     {
+      "name": "Ryan Poehling",
+      "last": "Poehling",
+      "status": "Injured Reserve",
+      "date": "2026-11-20T03:31Z",
+      "comment": "Poehling (knee) is on the Ducks' current road trip and has resumed skating, Derek Lee of The Hockey News reports Thursday."
+     },
+     {
+      "name": "A.J. Greer",
+      "last": "Greer",
+      "status": "Injured Reserve",
+      "date": "2026-11-02T18:46Z",
+      "comment": "Greer (upper body) was placed on injured reserve Monday."
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [
+     "Leo Carlsson"
+    ],
+    "key_long_term": [
+     "Beckett Sennecke"
+    ],
+    "spread_text": ""
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "SEA",
+    "dog": "ANA",
+    "in_range": false,
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "rules": [
+     {
+      "rule": "Range",
+      "name": "Top-7 team vs bottom-7 team (consensus power rank)",
+      "pass": false,
+      "detail": "SEA #20 vs ANA #22"
+     },
+     {
+      "rule": "A",
+      "name": "Analysis Score 22+",
+      "pass": false,
+      "detail": "Score 16 of 40"
+     },
+     {
+      "rule": "Goalie",
+      "name": "SEA's regular goalie starts",
+      "pass": false,
+      "detail": "Joey Daccord listed instead of P. Grubauer: capped at the Watch list"
+     },
+     {
+      "rule": "Matchup",
+      "name": "SEA top 7 vs ANA bottom 7 in a matchup (last 5)",
+      "pass": false,
+      "detail": "None: offense vs offense, defense vs defense or defense vs offense (xGF/60, xGA/60): capped at the Watch list"
+     }
+    ],
+    "fails": [
+     "Not a top-7 vs bottom-7 matchup (SEA #20, ANA #22)"
+    ],
+    "warnings": [],
+    "flags": [
+     "SEA backup goalie starting (Joey Daccord)"
+    ],
+    "score": 16,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 0,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 13,
+      "max": 16
+     },
+     {
+      "key": "goalies",
+      "label": "Goalies + health",
+      "points": 1,
+      "max": 4
+     },
+     {
+      "key": "home",
+      "label": "Home ice",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 0,
+      "max": 2
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xga60",
+      "scored": false,
+      "cells": [
+       {
+        "team": "SEA",
+        "role": "fav",
+        "window": "season",
+        "metric": "xgf60",
+        "rank": 24,
+        "color": "red"
+       },
+       {
+        "team": "SEA",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xgf60",
+        "rank": 15,
+        "color": "yellow"
+       },
+       {
+        "team": "ANA",
+        "role": "dog",
+        "window": "season",
+        "metric": "xga60",
+        "rank": 30,
+        "color": "green"
+       },
+       {
+        "team": "ANA",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xga60",
+        "rank": 30,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "xga60",
+      "dog_metric": "xgf60",
+      "scored": false,
+      "cells": [
+       {
+        "team": "SEA",
+        "role": "fav",
+        "window": "season",
+        "metric": "xga60",
+        "rank": 27,
+        "color": "red"
+       },
+       {
+        "team": "SEA",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xga60",
+        "rank": 25,
+        "color": "red"
+       },
+       {
+        "team": "ANA",
+        "role": "dog",
+        "window": "season",
+        "metric": "xgf60",
+        "rank": 18,
+        "color": "yellow"
+       },
+       {
+        "team": "ANA",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xgf60",
+        "rank": 6,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "key": "share",
+      "label": "Shot share",
+      "fav_metric": "xgf",
+      "dog_metric": "xgf",
+      "scored": true,
+      "cells": [
+       {
+        "team": "SEA",
+        "role": "fav",
+        "window": "season",
+        "metric": "xgf",
+        "rank": 27,
+        "color": "red"
+       },
+       {
+        "team": "SEA",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xgf",
+        "rank": 24,
+        "color": "red"
+       },
+       {
+        "team": "ANA",
+        "role": "dog",
+        "window": "season",
+        "metric": "xgf",
+        "rank": 28,
+        "color": "green"
+       },
+       {
+        "team": "ANA",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xgf",
+        "rank": 17,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "key": "goalie",
+      "label": "Goaltending",
+      "fav_metric": "gsax",
+      "dog_metric": "gsax",
+      "scored": true,
+      "cells": [
+       {
+        "team": "SEA",
+        "role": "fav",
+        "window": "season",
+        "metric": "gsax",
+        "rank": 23,
+        "color": "red"
+       },
+       {
+        "team": "SEA",
+        "role": "fav",
+        "window": "last5",
+        "metric": "gsax",
+        "rank": 19,
+        "color": "yellow"
+       },
+       {
+        "team": "ANA",
+        "role": "dog",
+        "window": "season",
+        "metric": "gsax",
+        "rank": 28,
+        "color": "green"
+       },
+       {
+        "team": "ANA",
+        "role": "dog",
+        "window": "last5",
+        "metric": "gsax",
+        "rank": 31,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "st",
+      "label": "Special teams",
+      "fav_metric": "st",
+      "dog_metric": "st",
+      "scored": true,
+      "cells": [
+       {
+        "team": "SEA",
+        "role": "fav",
+        "window": "season",
+        "metric": "st",
+        "rank": 32,
+        "color": "red"
+       },
+       {
+        "team": "SEA",
+        "role": "fav",
+        "window": "last5",
+        "metric": "st",
+        "rank": 29,
+        "color": "red"
+       },
+       {
+        "team": "ANA",
+        "role": "dog",
+        "window": "season",
+        "metric": "st",
+        "rank": 2,
+        "color": "deep-red"
+       },
+       {
+        "team": "ANA",
+        "role": "dog",
+        "window": "last5",
+        "metric": "st",
+        "rank": 23,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xgf60",
+      "fav_rank": 15,
+      "dog_rank": 6,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "xga60",
+      "dog_metric": "xga60",
+      "fav_rank": 25,
+      "dog_rank": 30,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "xga60",
+      "dog_metric": "xgf60",
+      "fav_rank": 25,
+      "dog_rank": 6,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xga60",
+      "fav_rank": 15,
+      "dog_rank": 30,
+      "counts": false,
+      "met": false
+     }
+    ],
+    "labels": {
+     "xgf60": "xGF/60 5v5",
+     "xgf": "xGF% 5v5",
+     "xga60": "xGA/60 5v5",
+     "gsax": "GSAx/gm",
+     "st": "PP%+PK%",
+     "pts": "Points %"
+    }
+   },
+   "summary": "Not a top-7 vs bottom-7 matchup (SEA #20, ANA #22). SEA start their backup goalie, Joey Daccord (regular: P. Grubauer). SEA 1-2-0 in its last 3, ANA 0-3-0.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNHLGAME-26NOV23ANASEA",
+    "fav_prob": 0.525,
+    "bid": 0.52,
+    "ask": 0.53
+   }
   }
  ],
  "notes": [],
@@ -5591,7 +5584,7 @@
   "in_range": 2,
   "qualified": 0,
   "watch": 0,
-  "built_label": "Mon Nov 23, 9:00 AM PT"
+  "built_label": "Mon Nov 23, 10:00 AM PT"
  },
  "power_table": [
   {
