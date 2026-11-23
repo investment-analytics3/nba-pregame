@@ -1,26 +1,67 @@
 {
  "season": 2026,
  "week": 13,
- "built_at": "2026-11-22T07:00:44-08:00",
+ "built_at": "2026-11-22T18:00:45-08:00",
  "games": [
   {
-   "id": "401866472",
+   "id": "401856879",
+   "kick_utc": "2026-11-27T01:00:00+00:00",
+   "kick_pt": "Thu 5:00 PM PT",
+   "day_et": "2026-11-26",
+   "away_abbr": "TCU",
+   "home_abbr": "TTU",
+   "fav_abbr": "TTU",
+   "dog_abbr": "TCU",
+   "fav_home": true,
+   "spread": -12.5,
+   "away_names": [
+    "TCU Horned Frogs",
+    "TCU"
+   ],
+   "home_names": [
+    "Texas Tech Red Raiders",
+    "Texas Tech"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "alerts": false,
+   "call": "No track",
+   "hero": 13,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 44,
+   "def_hold": false,
+   "qbs": {
+    "TCU": {
+     "regular": "Jaden Craig",
+     "rank": 60
+    },
+    "TTU": {
+     "regular": "Will Hammond",
+     "rank": 64
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV26TCUTTU",
+   "locked": false
+  },
+  {
+   "id": "401856762",
    "kick_utc": "2026-11-27T17:00:00+00:00",
    "kick_pt": "Fri 9:00 AM PT",
    "day_et": "2026-11-27",
-   "away_abbr": "BUFF",
-   "home_abbr": "AKR",
-   "fav_abbr": "BUFF",
-   "dog_abbr": "AKR",
-   "fav_home": false,
-   "spread": -10.0,
+   "away_abbr": "MSST",
+   "home_abbr": "MISS",
+   "fav_abbr": "MISS",
+   "dog_abbr": "MSST",
+   "fav_home": true,
+   "spread": -18.5,
    "away_names": [
-    "Buffalo Bulls",
-    "Buffalo"
+    "Mississippi State Bulldogs",
+    "Mississippi St"
    ],
    "home_names": [
-    "Akron Zips",
-    "Akron"
+    "Ole Miss Rebels",
+    "Ole Miss"
    ],
    "tier": "out",
    "tier_label": "No track",
@@ -29,19 +70,142 @@
    "call": "No track",
    "hero": 17,
    "fav_defense_top10": false,
-   "fav_def_rank_l3": 40,
+   "fav_def_rank_l3": 94,
    "def_hold": false,
    "qbs": {
-    "BUFF": {
-     "regular": "Jason Wright",
-     "rank": 100
+    "MSST": {
+     "regular": "Kamario Taylor",
+     "rank": 48
     },
-    "AKR": {
-     "regular": "Brayden Roggow",
-     "rank": 129
+    "MISS": {
+     "regular": "Trinidad Chambliss",
+     "rank": 39
     }
    },
-   "kalshi_event": "KXNCAAFGAME-26NOV27BUFFAKR",
+   "kalshi_event": "KXNCAAFGAME-26NOV27MSSTMISS",
+   "locked": false
+  },
+  {
+   "id": "401862838",
+   "kick_utc": "2026-11-27T20:30:00+00:00",
+   "kick_pt": "Fri 12:30 PM PT",
+   "day_et": "2026-11-27",
+   "away_abbr": "TEM",
+   "home_abbr": "MEM",
+   "fav_abbr": "MEM",
+   "dog_abbr": "TEM",
+   "fav_home": true,
+   "spread": -17.5,
+   "away_names": [
+    "Temple Owls",
+    "Temple"
+   ],
+   "home_names": [
+    "Memphis Tigers",
+    "Memphis"
+   ],
+   "tier": "watch",
+   "tier_label": "Watch list",
+   "tracked": true,
+   "alerts": false,
+   "call": "Watch list",
+   "hero": 24,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 111,
+   "def_hold": false,
+   "qbs": {
+    "TEM": {
+     "regular": "Ajani Sheppard",
+     "rank": 70
+    },
+    "MEM": {
+     "regular": "Marcus Stokes",
+     "rank": 25
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV27TEMMEM",
+   "locked": false
+  },
+  {
+   "id": "401864549",
+   "kick_utc": "2026-11-27T20:30:00+00:00",
+   "kick_pt": "Fri 12:30 PM PT",
+   "day_et": "2026-11-27",
+   "away_abbr": "NDSU",
+   "home_abbr": "SJSU",
+   "fav_abbr": "NDSU",
+   "dog_abbr": "SJSU",
+   "fav_home": false,
+   "spread": -10.0,
+   "away_names": [
+    "North Dakota State Bison",
+    "N Dakota St"
+   ],
+   "home_names": [
+    "San Jos\u00e9 State Spartans",
+    "San Jos\u00e9 St"
+   ],
+   "tier": "watch",
+   "tier_label": "Watch list",
+   "tracked": true,
+   "alerts": false,
+   "call": "Watch list",
+   "hero": 23,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 22,
+   "def_hold": false,
+   "qbs": {
+    "NDSU": {
+     "regular": "Nathan Hayes",
+     "rank": 76
+    },
+    "SJSU": {
+     "regular": "Luke Weaver",
+     "rank": 59
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV27NDSUSJSU",
+   "locked": false
+  },
+  {
+   "id": "401856756",
+   "kick_utc": "2026-11-28T00:30:00+00:00",
+   "kick_pt": "Fri 4:30 PM PT",
+   "day_et": "2026-11-27",
+   "away_abbr": "TEX",
+   "home_abbr": "TA&M",
+   "fav_abbr": "TEX",
+   "dog_abbr": "TA&M",
+   "fav_home": false,
+   "spread": -11.5,
+   "away_names": [
+    "Texas Longhorns",
+    "Texas"
+   ],
+   "home_names": [
+    "Texas A&M Aggies",
+    "Texas A&M"
+   ],
+   "tier": "watch",
+   "tier_label": "Watch list",
+   "tracked": true,
+   "alerts": false,
+   "call": "Watch list",
+   "hero": 21,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 31,
+   "def_hold": false,
+   "qbs": {
+    "TEX": {
+     "regular": "Arch Manning",
+     "rank": 94
+    },
+    "TA&M": {
+     "regular": "Marcel Reed",
+     "rank": 126
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV27TEXTXAM",
    "locked": false
   },
   {
@@ -54,7 +218,7 @@
    "fav_abbr": "OSU",
    "dog_abbr": "MICH",
    "fav_home": true,
-   "spread": -11.5,
+   "spread": -10.0,
    "away_names": [
     "Michigan Wolverines",
     "Michigan"
@@ -86,6 +250,252 @@
    "locked": false
   },
   {
+   "id": "401862842",
+   "kick_utc": "2026-11-28T17:00:00+00:00",
+   "kick_pt": "Sat 9:00 AM PT",
+   "day_et": "2026-11-28",
+   "away_abbr": "NAVY",
+   "home_abbr": "CLT",
+   "fav_abbr": "NAVY",
+   "dog_abbr": "CLT",
+   "fav_home": false,
+   "spread": -16.5,
+   "away_names": [
+    "Navy Midshipmen",
+    "Navy"
+   ],
+   "home_names": [
+    "Charlotte 49ers",
+    "Charlotte"
+   ],
+   "tier": "watch",
+   "tier_label": "Watch list",
+   "tracked": true,
+   "alerts": false,
+   "call": "Watch list",
+   "hero": 23,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 117,
+   "def_hold": false,
+   "qbs": {
+    "NAVY": {
+     "regular": "Jackson Gutierrez",
+     "rank": 44
+    },
+    "CLT": {
+     "regular": "Conner Harrell",
+     "rank": 125
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV28NAVYCHAR",
+   "locked": false
+  },
+  {
+   "id": "401856758",
+   "kick_utc": "2026-11-28T17:45:00+00:00",
+   "kick_pt": "Sat 9:45 AM PT",
+   "day_et": "2026-11-28",
+   "away_abbr": "LSU",
+   "home_abbr": "ARK",
+   "fav_abbr": "LSU",
+   "dog_abbr": "ARK",
+   "fav_home": false,
+   "spread": -13.5,
+   "away_names": [
+    "LSU Tigers",
+    "LSU"
+   ],
+   "home_names": [
+    "Arkansas Razorbacks",
+    "Arkansas"
+   ],
+   "tier": "watch",
+   "tier_label": "Watch list",
+   "tracked": true,
+   "alerts": false,
+   "call": "Watch list",
+   "hero": 18,
+   "fav_defense_top10": true,
+   "fav_def_rank_l3": 24,
+   "def_hold": false,
+   "qbs": {
+    "LSU": {
+     "regular": "Sam Leavitt",
+     "rank": 51
+    },
+    "ARK": {
+     "regular": "KJ Jackson",
+     "rank": 105
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV28LSUARK",
+   "locked": false
+  },
+  {
+   "id": "401869947",
+   "kick_utc": "2026-11-28T19:00:00+00:00",
+   "kick_pt": "Sat 11:00 AM PT",
+   "day_et": "2026-11-28",
+   "away_abbr": "CCU",
+   "home_abbr": "JMU",
+   "fav_abbr": "JMU",
+   "dog_abbr": "CCU",
+   "fav_home": true,
+   "spread": -15.5,
+   "away_names": [
+    "Coastal Carolina Chanticleers",
+    "Coastal"
+   ],
+   "home_names": [
+    "James Madison Dukes",
+    "James Madison"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "alerts": false,
+   "call": "No track",
+   "hero": 15,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 67,
+   "def_hold": false,
+   "qbs": {
+    "CCU": {
+     "regular": "Deuce Bailey",
+     "rank": 78
+    },
+    "JMU": {
+     "regular": "Camden Coleman",
+     "rank": 56
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV28CCARJMU",
+   "locked": false
+  },
+  {
+   "id": "401871063",
+   "kick_utc": "2026-11-28T19:00:00+00:00",
+   "kick_pt": "Sat 11:00 AM PT",
+   "day_et": "2026-11-28",
+   "away_abbr": "LIB",
+   "home_abbr": "MOST",
+   "fav_abbr": "LIB",
+   "dog_abbr": "MOST",
+   "fav_home": false,
+   "spread": -15.5,
+   "away_names": [
+    "Liberty Flames",
+    "Liberty"
+   ],
+   "home_names": [
+    "Missouri State Bears",
+    "Missouri St"
+   ],
+   "tier": "qualified",
+   "tier_label": "Qualified",
+   "tracked": true,
+   "alerts": true,
+   "call": "Qualified",
+   "hero": 28,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 59,
+   "def_hold": false,
+   "qbs": {
+    "LIB": {
+     "regular": "Deshawn Purdie",
+     "rank": 26
+    },
+    "MOST": {
+     "regular": "Henry Belin IV",
+     "rank": 92
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV28LIBMOSU",
+   "locked": false
+  },
+  {
+   "id": "401871082",
+   "kick_utc": "2026-11-28T19:00:00+00:00",
+   "kick_pt": "Sat 11:00 AM PT",
+   "day_et": "2026-11-28",
+   "away_abbr": "SHSU",
+   "home_abbr": "FIU",
+   "fav_abbr": "FIU",
+   "dog_abbr": "SHSU",
+   "fav_home": true,
+   "spread": -11.5,
+   "away_names": [
+    "Sam Houston Bearkats",
+    "Sam Houston"
+   ],
+   "home_names": [
+    "Florida International Panthers",
+    "FIU"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "alerts": false,
+   "call": "No track",
+   "hero": 17,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 110,
+   "def_hold": false,
+   "qbs": {
+    "SHSU": {
+     "regular": "Landyn Locke",
+     "rank": 115
+    },
+    "FIU": {
+     "regular": "JJ Kohl",
+     "rank": 81
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV28SHSUFIU",
+   "locked": false
+  },
+  {
+   "id": "401856876",
+   "kick_utc": "2026-11-28T20:30:00+00:00",
+   "kick_pt": "Sat 12:30 PM PT",
+   "day_et": "2026-11-28",
+   "away_abbr": "CIN",
+   "home_abbr": "BYU",
+   "fav_abbr": "BYU",
+   "dog_abbr": "CIN",
+   "fav_home": true,
+   "spread": -14.5,
+   "away_names": [
+    "Cincinnati Bearcats",
+    "Cincinnati"
+   ],
+   "home_names": [
+    "BYU Cougars",
+    "BYU"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "alerts": false,
+   "call": "No track",
+   "hero": 16,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 55,
+   "def_hold": false,
+   "qbs": {
+    "CIN": {
+     "regular": "JC French IV",
+     "rank": 58
+    },
+    "BYU": {
+     "regular": "Bear Bachmeier",
+     "rank": 53
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV28CINBYU",
+   "locked": false
+  },
+  {
    "id": "401858312",
    "kick_utc": "2026-11-28T20:30:00+00:00",
    "kick_pt": "Sat 12:30 PM PT",
@@ -95,7 +505,7 @@
    "fav_abbr": "WAKE",
    "dog_abbr": "DUKE",
    "fav_home": true,
-   "spread": -13.5,
+   "spread": -14.0,
    "away_names": [
     "Duke Blue Devils",
     "Duke"
@@ -136,7 +546,7 @@
    "fav_abbr": "TENN",
    "dog_abbr": "VAN",
    "fav_home": false,
-   "spread": -13.5,
+   "spread": -11.5,
    "away_names": [
     "Tennessee Volunteers",
     "Tennessee"
@@ -177,7 +587,7 @@
    "fav_abbr": "ALA",
    "dog_abbr": "AUB",
    "fav_home": true,
-   "spread": -14.0,
+   "spread": -16.5,
    "away_names": [
     "Auburn Tigers",
     "Auburn"
@@ -218,7 +628,7 @@
    "fav_abbr": "ORE",
    "dog_abbr": "WASH",
    "fav_home": true,
-   "spread": -12.5,
+   "spread": -14.0,
    "away_names": [
     "Washington Huskies",
     "Washington"
@@ -247,6 +657,47 @@
     }
    },
    "kalshi_event": "KXNCAAFGAME-26NOV28WASHORE",
+   "locked": false
+  },
+  {
+   "id": "401864547",
+   "kick_utc": "2026-11-29T04:00:00+00:00",
+   "kick_pt": "Sat 8:00 PM PT",
+   "day_et": "2026-11-28",
+   "away_abbr": "SAC",
+   "home_abbr": "HAW",
+   "fav_abbr": "HAW",
+   "dog_abbr": "SAC",
+   "fav_home": true,
+   "spread": -13.5,
+   "away_names": [
+    "Sacramento State Hornets",
+    "Sacramento St"
+   ],
+   "home_names": [
+    "Hawai'i Rainbow Warriors",
+    "Hawai'i"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "alerts": false,
+   "call": "No track",
+   "hero": 17,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 26,
+   "def_hold": false,
+   "qbs": {
+    "SAC": {
+     "regular": "Jackson Sharman",
+     "rank": 121
+    },
+    "HAW": {
+     "regular": "Micah Alejado",
+     "rank": 96
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV28SACHAW",
    "locked": false
   }
  ]
