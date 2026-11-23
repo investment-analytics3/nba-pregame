@@ -1,11 +1,11 @@
 {
  "date": "2026-11-23",
- "built_at": "2026-11-23T09:43:12-08:00",
+ "built_at": "2026-11-23T12:00:25-08:00",
  "retro": false,
  "metrics_through": "2026-11-22",
- "injury_source": "NBA official injury report + ESPN backup",
- "injury_report_time": "2026-11-23T12:30:00-05:00",
- "injury_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_12_30PM.pdf",
+ "injury_source": "NBA official injury report",
+ "injury_report_time": "2026-11-23T15:00:00-05:00",
+ "injury_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_03_00PM.pdf",
  "first_tip_utc": "2026-11-24T00:00Z",
  "games": [
   {
@@ -125,7 +125,7 @@
      },
      {
       "player": "Ryan Dunn",
-      "status": "Questionable",
+      "status": "Available",
       "reason": "Injury: Right Quad Soreness",
       "is_key": false,
       "key_info": null,
@@ -254,7 +254,7 @@
      },
      {
       "player": "Trey Murphy III",
-      "status": "Probable",
+      "status": "Available",
       "reason": "Injury: Bilateral Patellar Tendinopathy",
       "is_key": true,
       "key_info": {
@@ -291,6 +291,14 @@
       "counts_as_out": true
      },
      {
+      "player": "Julian Reese",
+      "status": "Out",
+      "reason": "G League two-way",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
       "player": "Trendon Watford",
       "status": "Out",
       "reason": "Injury: Right Ankle Sprain",
@@ -300,7 +308,7 @@
      },
      {
       "player": "Bryce McGowens",
-      "status": "Probable",
+      "status": "Available",
       "reason": "Injury: Left Elbow Infection",
       "is_key": false,
       "key_info": null,
@@ -308,15 +316,7 @@
      },
      {
       "player": "Jaron Pierre Jr.",
-      "status": "Probable",
-      "reason": "G League two-way",
-      "is_key": false,
-      "key_info": null,
-      "counts_as_out": false
-     },
-     {
-      "player": "Julian Reese",
-      "status": "Questionable",
+      "status": "Available",
       "reason": "G League two-way",
       "is_key": false,
       "key_info": null,
@@ -324,7 +324,7 @@
      },
      {
       "player": "Malik Dia",
-      "status": "Questionable",
+      "status": "Available",
       "reason": "G League two-way",
       "is_key": false,
       "key_info": null,
@@ -1825,8 +1825,8 @@
    },
    "spread": {
     "favorite_id": "16",
-    "spread": 11.5,
-    "details": "MIN -11.5",
+    "spread": 10.5,
+    "details": "MIN -10.5",
     "provider": "DraftKings",
     "ml_home": -620,
     "ml_away": 455
@@ -3954,8 +3954,8 @@
      },
      {
       "player": "Ousmane Dieng",
-      "status": "Questionable",
-      "reason": "Injury: Left Finger Fracture",
+      "status": "Available",
+      "reason": "-",
       "is_key": false,
       "key_info": null,
       "counts_as_out": false
@@ -4111,6 +4111,14 @@
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
+     },
+     {
+      "player": "Jaden Bradley",
+      "status": "Questionable",
+      "reason": "Injury: Right Ankle Sprain",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": false
      }
     ],
     "injuries_known": true,
@@ -4829,9 +4837,66 @@
       "opp_power_rank": 27
      }
     ],
-    "injuries": [],
+    "injuries": [
+     {
+      "player": "Caleb Wilson",
+      "status": "Out",
+      "reason": "Injury: Right Metacarpal Fracture",
+      "is_key": true,
+      "key_info": {
+       "name": "Caleb Wilson",
+       "starts": 10,
+       "team_games": 16,
+       "mpg": 30.7,
+       "ppg": 18.9,
+       "why": "starter"
+      },
+      "counts_as_out": true
+     },
+     {
+      "player": "Norman Powell",
+      "status": "Out",
+      "reason": "Injury: Right Hamstring Strain",
+      "is_key": true,
+      "key_info": {
+       "name": "Norman Powell",
+       "starts": 13,
+       "team_games": 16,
+       "mpg": 29.5,
+       "ppg": 20.8,
+       "why": "starter"
+      },
+      "counts_as_out": true
+     },
+     {
+      "player": "Jalen Smith",
+      "status": "Probable",
+      "reason": "Injury: Gastrointestinal Illness",
+      "is_key": true,
+      "key_info": {
+       "name": "Jalen Smith",
+       "starts": 14,
+       "team_games": 16,
+       "mpg": 25.3,
+       "ppg": 14.3,
+       "why": "starter"
+      },
+      "counts_as_out": false
+     },
+     {
+      "player": "Nic Claxton",
+      "status": "Questionable",
+      "reason": "Injury: Illness",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": false
+     }
+    ],
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Caleb Wilson",
+     "Norman Powell"
+    ],
     "key_questionable": []
    },
    "spread": {
@@ -4857,7 +4922,9 @@
     "fails": [
      "Favorite key player out: Evan Mobley"
     ],
-    "warnings": [],
+    "warnings": [
+     "Info: CHI without Caleb Wilson, Norman Powell"
+    ],
     "rules": [
      {
       "rule": "A",
@@ -6279,8 +6346,8 @@
     "spread": 2.5,
     "details": "PHI -2.5",
     "provider": "DraftKings",
-    "ml_home": -130,
-    "ml_away": 110
+    "ml_home": -135,
+    "ml_away": 114
    },
    "favorite": "home",
    "scoring": {
@@ -6829,8 +6896,7 @@
      {
       "player": "Chet Holmgren",
       "status": "Out",
-      "reason": "Holmgren underwent a biological treatment Friday to address a small patellar tendon tear and will miss at least 8-10 weeks, Nick Crain of Slam reports.",
-      "source": "ESPN",
+      "reason": "Injury: Right Knee/Injury Recovery",
       "is_key": true,
       "key_info": {
        "name": "Chet Holmgren",
@@ -6845,8 +6911,7 @@
      {
       "player": "Jalen Williams",
       "status": "Out",
-      "reason": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before the end of the regular season, Tim MacMahon of ESPN.com reports.",
-      "source": "ESPN",
+      "reason": "Injury: Left Ankle Surgery",
       "is_key": true,
       "key_info": {
        "name": "Jalen Williams",
@@ -6859,26 +6924,41 @@
       "counts_as_out": true
      },
      {
-      "player": "Shai Gilgeous-Alexander",
-      "status": "Day-To-Day",
-      "reason": "Gilgeous-Alexander (back/neck) is listed as out for Sunday's game against the Heat.",
-      "source": "ESPN",
-      "is_key": true,
-      "key_info": {
-       "name": "Shai Gilgeous-Alexander",
-       "starts": 16,
-       "team_games": 17,
-       "mpg": 33.5,
-       "ppg": 31.7,
-       "why": "starter"
-      },
-      "counts_as_out": false
+      "player": "Aday Mara",
+      "status": "Out",
+      "reason": "Injury: Right Shin Contusion",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Alex Caruso",
+      "status": "Out",
+      "reason": "Injury: Right Hip Impingement",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
      },
      {
       "player": "Cason Wallace",
       "status": "Out",
-      "reason": "Wallace underwent surgery Friday to repair a torn labrum in his left shoulder and will be re-evaluated before the end of the regular season, Clemente Almanza of USA Today reports.",
-      "source": "ESPN",
+      "reason": "Injury: Left Shoulder Surgery",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Jaylin Williams",
+      "status": "Out",
+      "reason": "Injury: Low Back Spasms",
+      "is_key": false,
+      "key_info": null,
+      "counts_as_out": true
+     },
+     {
+      "player": "Nikola Topic",
+      "status": "Out",
+      "reason": "Injury: Left Hip Strain",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -6886,47 +6966,10 @@
      {
       "player": "Thomas Sorber",
       "status": "Out",
-      "reason": "Sorber underwent an arthroscopic knee procedure Tuesday to address inflammation at the patellofemoral joint in his right knee, and he's expected to return to on-court activities in 6-8 weeks, Steve McGehee of News 9 Oklahoma City reports.",
-      "source": "ESPN",
+      "reason": "Injury: Right Knee Surgery",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
-     },
-     {
-      "player": "Aday Mara",
-      "status": "Day-To-Day",
-      "reason": "Mara (shin) is listed as out for Sunday's game versus Miami.",
-      "source": "ESPN",
-      "is_key": false,
-      "key_info": null,
-      "counts_as_out": false
-     },
-     {
-      "player": "Alex Caruso",
-      "status": "Day-To-Day",
-      "reason": "Caruso (hip) won't play Sunday against the Heat.",
-      "source": "ESPN",
-      "is_key": false,
-      "key_info": null,
-      "counts_as_out": false
-     },
-     {
-      "player": "Jaylin Williams",
-      "status": "Day-To-Day",
-      "reason": "Williams (back) is listed as out for Sunday's game against Miami.",
-      "source": "ESPN",
-      "is_key": false,
-      "key_info": null,
-      "counts_as_out": false
-     },
-     {
-      "player": "Nikola Topic",
-      "status": "Day-To-Day",
-      "reason": "Topic (hip) is listed as out for Sunday's game versus the Heat.",
-      "source": "ESPN",
-      "is_key": false,
-      "key_info": null,
-      "counts_as_out": false
      }
     ],
     "injuries_known": true,
@@ -7038,10 +7081,24 @@
     ],
     "injuries": [
      {
+      "player": "Aaron Nesmith",
+      "status": "Out",
+      "reason": "Injury: Right Foot Soreness",
+      "is_key": true,
+      "key_info": {
+       "name": "Aaron Nesmith",
+       "starts": 14,
+       "team_games": 17,
+       "mpg": 27.3,
+       "ppg": 10.7,
+       "why": "starter"
+      },
+      "counts_as_out": true
+     },
+     {
       "player": "Tyrese Haliburton",
       "status": "Out",
-      "reason": "Haliburton (hamstring) is expected to miss at least two more weeks, Shams Charania of ESPN reports.",
-      "source": "ESPN",
+      "reason": "Injury: Left Hamstring Strain",
       "is_key": true,
       "key_info": {
        "name": "Tyrese Haliburton",
@@ -7054,10 +7111,24 @@
       "counts_as_out": true
      },
      {
+      "player": "Pascal Siakam",
+      "status": "Questionable",
+      "reason": "Injury: Left Hip Injury Management",
+      "is_key": true,
+      "key_info": {
+       "name": "Pascal Siakam",
+       "starts": 16,
+       "team_games": 17,
+       "mpg": 32.3,
+       "ppg": 23.1,
+       "why": "starter"
+      },
+      "counts_as_out": false
+     },
+     {
       "player": "Ben Sheppard",
       "status": "Out",
-      "reason": "Head coach Rick Carlise confirmed Sheppard will miss \"months\" after undergoing surgery to repair a torn meniscus in his left knee, Tony East of Forbes.com reports.",
-      "source": "ESPN",
+      "reason": "Injury: Left Meniscus Surgery",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
@@ -7065,35 +7136,36 @@
      {
       "player": "Johnny Furphy",
       "status": "Out",
-      "reason": "Furphy (knee) is practicing with the G League's Noblesville Boom, per Alex Golden of SI.com.",
-      "source": "ESPN",
+      "reason": "Injury: Right ACLRepair/Surgery",
       "is_key": false,
       "key_info": null,
       "counts_as_out": true
      },
      {
       "player": "T.J. McConnell",
-      "status": "Day-To-Day",
-      "reason": "McConnell (hamstring) is listed as out for Sunday's game in New York.",
-      "source": "ESPN",
+      "status": "Out",
+      "reason": "Injury: Left Hamstring Soreness",
       "is_key": false,
       "key_info": null,
-      "counts_as_out": false
+      "counts_as_out": true
      }
     ],
     "injuries_known": true,
     "key_out": [
+     "Aaron Nesmith",
      "Tyrese Haliburton"
     ],
-    "key_questionable": []
+    "key_questionable": [
+     "Pascal Siakam"
+    ]
    },
    "spread": {
     "favorite_id": "25",
-    "spread": 4.5,
-    "details": "OKC -4.5",
+    "spread": 5.5,
+    "details": "OKC -5.5",
     "provider": "DraftKings",
-    "ml_home": 160,
-    "ml_away": -191
+    "ml_home": 189,
+    "ml_away": -228
    },
    "favorite": "away",
    "scoring": {
@@ -7111,7 +7183,7 @@
      "Favorite key player out: Chet Holmgren, Jalen Williams"
     ],
     "warnings": [
-     "Info: IND without Tyrese Haliburton"
+     "Info: IND without Aaron Nesmith, Tyrese Haliburton"
     ],
     "rules": [
      {
