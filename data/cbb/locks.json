@@ -2155,7 +2155,7 @@
    "tip_pt": "2:00 PM PT",
    "day_et": "2026-11-23",
    "state": "in",
-   "detail": "19:45 - 2nd",
+   "detail": "15:07 - 2nd",
    "neutral": true,
    "venue": "Lahaina Civic Center",
    "favorite": "home",
@@ -2885,8 +2885,8 @@
     "updated": "2026-11-23T05:35-08:00"
    },
    "score": {
-    "home": 31,
-    "away": 39
+    "home": 43,
+    "away": 45
    }
   }
  },
@@ -3594,6 +3594,710 @@
     "home": 0,
     "away": 0
    }
+  }
+ },
+ "401919032": {
+  "at": "2026-11-23T15:30:38-08:00",
+  "day": "2026-11-23",
+  "game": {
+   "id": "401919032",
+   "tip_utc": "2026-11-24T00:30:00+00:00",
+   "tip_pt": "4:30 PM PT",
+   "day_et": "2026-11-23",
+   "state": "pre",
+   "detail": "11/23 - 7:30 PM EST",
+   "neutral": false,
+   "venue": "Charles Koch Arena",
+   "favorite": "home",
+   "spread": {
+    "spread": 19.5,
+    "details": "WICH -19.5",
+    "provider": "DraftKings",
+    "ml_home": -4000,
+    "ml_away": 1600
+   },
+   "home": {
+    "id": "2724",
+    "abbr": "WICH",
+    "name": "Wichita State",
+    "display": "Wichita State Shockers",
+    "mascot": "Shockers",
+    "record": "5-1",
+    "l3_record": "2-1",
+    "games": 4,
+    "season": {
+     "efg": 52.78,
+     "opp_efg": 45.47,
+     "off": 111.4,
+     "def": 99.89,
+     "net": 11.51,
+     "poss_per_game": 73.8,
+     "ranks": {
+      "efg": 142,
+      "off": 133,
+      "opp_efg": 65,
+      "def": 99,
+      "net": 104
+     }
+    },
+    "last3": {
+     "efg": 57.55,
+     "opp_efg": 47.46,
+     "off": 113.82,
+     "def": 103.81,
+     "net": 10.02,
+     "poss_per_game": 73.2,
+     "ranks": {
+      "efg": 50,
+      "off": 107,
+      "opp_efg": 109,
+      "def": 134,
+      "net": 97
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401919031,
+      "date": "2026-11-21",
+      "site": "home",
+      "opp_id": 167,
+      "opp": "UNM",
+      "d1_opp": true,
+      "pts": 85,
+      "opp_pts": 60,
+      "metrics": {
+       "efg": 58.33,
+       "opp_efg": 40.68,
+       "off": 119.24,
+       "def": 84.17,
+       "net": 35.07
+      },
+      "opp_power_rank": 73
+     },
+     {
+      "game_id": 401911232,
+      "date": "2026-11-18",
+      "site": "away",
+      "opp_id": 2350,
+      "opp": "LUC",
+      "d1_opp": true,
+      "pts": 79,
+      "opp_pts": 75,
+      "metrics": {
+       "efg": 57.78,
+       "opp_efg": 56.14,
+       "off": 114.78,
+       "def": 108.97,
+       "net": 5.81
+      },
+      "opp_power_rank": 106
+     },
+     {
+      "game_id": 401919029,
+      "date": "2026-11-08",
+      "site": "away",
+      "opp_id": 30,
+      "opp": "USC",
+      "d1_opp": true,
+      "pts": 86,
+      "opp_pts": 93,
+      "metrics": {
+       "efg": 56.48,
+       "opp_efg": 45.9,
+       "off": 108.14,
+       "def": 116.94,
+       "net": -8.8
+      },
+      "opp_power_rank": 7
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-19.5",
+    "b2b": false,
+    "power": {
+     "rank": 92,
+     "bpi": 76,
+     "own_net": 104
+    },
+    "key_players": [
+     "Jahari Long",
+     "William Berg",
+     "Dillon Battie",
+     "Bryce Heard",
+     "Kenyon Giles"
+    ],
+    "top_scorers": [
+     {
+      "name": "William Berg",
+      "ppg": 20.5
+     },
+     {
+      "name": "Kenyon Giles",
+      "ppg": 12.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "357",
+    "abbr": "AMCC",
+    "name": "Texas A&M-Corpus Christi",
+    "display": "Texas A&M-Corpus Christi Islanders",
+    "mascot": "Islanders",
+    "record": "2-4",
+    "l3_record": "1-2",
+    "games": 4,
+    "season": {
+     "efg": 50.0,
+     "opp_efg": 48.99,
+     "off": 99.74,
+     "def": 105.65,
+     "net": -5.91,
+     "poss_per_game": 67.7,
+     "ranks": {
+      "efg": 208,
+      "off": 256,
+      "opp_efg": 132,
+      "def": 166,
+      "net": 210
+     }
+    },
+    "last3": {
+     "efg": 51.97,
+     "opp_efg": 47.67,
+     "off": 103.42,
+     "def": 105.35,
+     "net": -1.92,
+     "poss_per_game": 69.3,
+     "ranks": {
+      "efg": 156,
+      "off": 222,
+      "opp_efg": 110,
+      "def": 152,
+      "net": 192
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401925099,
+      "date": "2026-11-21",
+      "site": "away",
+      "opp_id": 198,
+      "opp": "ORU",
+      "d1_opp": true,
+      "pts": 74,
+      "opp_pts": 78,
+      "metrics": {
+       "efg": 53.57,
+       "opp_efg": 55.95,
+       "off": 102.49,
+       "def": 108.03,
+       "net": -5.54
+      },
+      "opp_power_rank": 237
+     },
+     {
+      "game_id": 401921097,
+      "date": "2026-11-17",
+      "site": "away",
+      "opp_id": 242,
+      "opp": "RICE",
+      "d1_opp": true,
+      "pts": 74,
+      "opp_pts": 81,
+      "metrics": {
+       "efg": 50.0,
+       "opp_efg": 49.17,
+       "off": 105.81,
+       "def": 115.82,
+       "net": -10.01
+      },
+      "opp_power_rank": 187
+     },
+     {
+      "game_id": 401925098,
+      "date": "2026-11-10",
+      "site": "home",
+      "opp_id": 2937,
+      "opp": "DCC",
+      "d1_opp": false,
+      "pts": 102,
+      "opp_pts": 58,
+      "metrics": {
+       "efg": 56.49,
+       "opp_efg": 50.0,
+       "off": 137.93,
+       "def": 78.43,
+       "net": 59.5
+      },
+      "opp_power_rank": null
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+19.5",
+    "b2b": false,
+    "power": {
+     "rank": 194,
+     "bpi": 187,
+     "own_net": 210
+    },
+    "key_players": [
+     "Daniel Michelini-Jackson",
+     "Dan Mukuna",
+     "CJ Worsham",
+     "Sebastian Robinson",
+     "Desmond Kent Jr.",
+     "Bin Basil",
+     "Isaiah Lewis"
+    ],
+    "top_scorers": [
+     {
+      "name": "Daniel Michelini-Jackson",
+      "ppg": 11.5
+     },
+     {
+      "name": "CJ Worsham",
+      "ppg": 8.4
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "WICH",
+    "dog": "AMCC",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 13 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 WICH last-3 top 50 in 1 of 4 \u00b7 \u2717 AMCC last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2713 WICH season top half (1-182) in all four \u00b7 \u2713 AMCC season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "AMCC: consensus #194, BPI #187, our net #210"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 13 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for WICH: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 13,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 1,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 8,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "WICH",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 142,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 133,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 65,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 99,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "WICH",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 50,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 107,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 109,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 134,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "AMCC",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 132,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 166,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 208,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 256,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "AMCC",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 110,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 152,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 156,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 222,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "cells": [
+       {
+        "team": "WICH",
+        "role": "fav",
+        "window": "season",
+        "metric": "off",
+        "rank": 133,
+        "color": "yellow"
+       },
+       {
+        "team": "WICH",
+        "role": "fav",
+        "window": "last3",
+        "metric": "off",
+        "rank": 107,
+        "color": "yellow"
+       },
+       {
+        "team": "AMCC",
+        "role": "dog",
+        "window": "season",
+        "metric": "def",
+        "rank": 166,
+        "color": "green"
+       },
+       {
+        "team": "AMCC",
+        "role": "dog",
+        "window": "last3",
+        "metric": "def",
+        "rank": 152,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shoot",
+      "label": "Shooting vs shot defense",
+      "fav_metric": "efg",
+      "dog_metric": "opp_efg",
+      "cells": [
+       {
+        "team": "WICH",
+        "role": "fav",
+        "window": "season",
+        "metric": "efg",
+        "rank": 142,
+        "color": "yellow"
+       },
+       {
+        "team": "WICH",
+        "role": "fav",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 50,
+        "color": "green"
+       },
+       {
+        "team": "AMCC",
+        "role": "dog",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 132,
+        "color": "yellow"
+       },
+       {
+        "team": "AMCC",
+        "role": "dog",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 110,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "cells": [
+       {
+        "team": "WICH",
+        "role": "fav",
+        "window": "season",
+        "metric": "def",
+        "rank": 99,
+        "color": "yellow"
+       },
+       {
+        "team": "WICH",
+        "role": "fav",
+        "window": "last3",
+        "metric": "def",
+        "rank": 134,
+        "color": "yellow"
+       },
+       {
+        "team": "AMCC",
+        "role": "dog",
+        "window": "season",
+        "metric": "off",
+        "rank": 256,
+        "color": "green"
+       },
+       {
+        "team": "AMCC",
+        "role": "dog",
+        "window": "last3",
+        "metric": "off",
+        "rank": 222,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shotd",
+      "label": "Shot defense vs shooting",
+      "fav_metric": "opp_efg",
+      "dog_metric": "efg",
+      "cells": [
+       {
+        "team": "WICH",
+        "role": "fav",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 65,
+        "color": "yellow"
+       },
+       {
+        "team": "WICH",
+        "role": "fav",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 109,
+        "color": "yellow"
+       },
+       {
+        "team": "AMCC",
+        "role": "dog",
+        "window": "season",
+        "metric": "efg",
+        "rank": 208,
+        "color": "green"
+       },
+       {
+        "team": "AMCC",
+        "role": "dog",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 156,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "off",
+      "dog_metric": "off",
+      "fav_rank": 107,
+      "dog_rank": 222,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def",
+      "dog_metric": "def",
+      "fav_rank": 134,
+      "dog_rank": 152,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "fav_rank": 134,
+      "dog_rank": 222,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "fav_rank": 107,
+      "dog_rank": 152,
+      "counts": false,
+      "met": false
+     }
+    ]
+   },
+   "summary": "No track: score 13 (watch list from 18, qualifies at 28). WICH 2-1 in its last 3, AMCC 1-2. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV23AMCCWICH",
+    "fav_prob": 0.965,
+    "bid": 0.96,
+    "ask": 0.97
+   },
+   "locked_at": "2026-11-23T15:30:38-08:00"
   }
  }
 }
