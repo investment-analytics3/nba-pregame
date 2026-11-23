@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 11,
- "built_at": "2026-11-23T09:15:35-08:00",
- "built_label": "Mon Nov 23, 9:15 AM PT",
+ "built_at": "2026-11-23T10:15:37-08:00",
+ "built_label": "Mon Nov 23, 10:15 AM PT",
  "games": [
   {
    "id": "401873078",
@@ -24,7 +24,7 @@
    "open_spread": -1.5,
    "total": 54.5,
    "total_open": 52.5,
-   "fav_ml": -302.0,
+   "fav_ml": -301.0,
    "favorite": "away",
    "spread": -6.0,
    "movement": 4.5,
@@ -557,7 +557,6 @@
     },
     "injuries_known": true,
     "key_out": [
-     "Danielle Hunter",
      "Woody Marks"
     ],
     "key_questionable": [],
@@ -566,6 +565,11 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Chris Braswell",
+      "pos": "DE",
+      "status": "Out"
+     },
      {
       "name": "Wyatt Teller",
       "pos": "G",
@@ -584,11 +588,6 @@
      {
       "name": "Marvin Harrison Jr.",
       "pos": "WR",
-      "status": "Out"
-     },
-     {
-      "name": "Danielle Hunter",
-      "pos": "DE",
       "status": "Out"
      }
     ],
@@ -736,7 +735,7 @@
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
       "pass": false,
-      "detail": "HOU key starter out: Danielle Hunter, Woody Marks"
+      "detail": "HOU key starter out: Woody Marks"
      },
      {
       "rule": "Power",
@@ -775,11 +774,11 @@
      "off_epa"
     ],
     "fails": [
-     "HOU key starter out: Danielle Hunter, Woody Marks",
+     "HOU key starter out: Woody Marks",
      "Would be on the watch list otherwise (score 19)"
     ],
     "failed": [
-     "HOU key starter out: Danielle Hunter, Woody Marks",
+     "HOU key starter out: Woody Marks",
      "Would be on the watch list otherwise (score 19)"
     ],
     "hero": {
@@ -1101,15 +1100,23 @@
      "rank": 29
     },
     "injuries_known": true,
-    "key_out": [
-     "Dante Trader"
-    ],
+    "key_out": [],
     "key_questionable": [],
-    "key_long_term": [],
+    "key_long_term": [
+     "Malik Willis"
+    ],
     "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
+    "qb_out": [
+     "Malik Willis"
+    ],
+    "qb_active": false,
+    "qb_reset": "Malik Willis out",
     "injury_list": [
+     {
+      "name": "Malik Willis",
+      "pos": "QB",
+      "status": "Injured Reserve"
+     },
      {
       "name": "Jared Wayne",
       "pos": "WR",
@@ -1127,11 +1134,6 @@
      },
      {
       "name": "Jaylin Simpson",
-      "pos": "S",
-      "status": "Out"
-     },
-     {
-      "name": "Dante Trader Jr.",
       "pos": "S",
       "status": "Out"
      }
@@ -1235,6 +1237,10 @@
      "adjusted_recent_gap": 0.138
     },
     "flags": [
+     {
+      "level": "red",
+      "text": "Underdog QB change (Malik Willis out): call capped at Lean"
+     },
      {
       "level": "yellow",
       "text": "Line moved +5 toward the favorite (4+): downgrade"
@@ -2912,6 +2918,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Elijah Simmons",
+      "pos": "DT",
+      "status": "Questionable"
+     },
+     {
       "name": "Antoine Winfield Jr.",
       "pos": "S",
       "status": "Out"
@@ -2929,11 +2940,6 @@
      {
       "name": "Josh Hayes",
       "pos": "CB",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Jalen McMillan",
-      "pos": "WR",
       "status": "Injured Reserve"
      }
     ],
@@ -5822,6 +5828,6 @@
   "watch": 0,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Mon Nov 23, 9:15 AM PT"
+  "built_label": "Mon Nov 23, 10:15 AM PT"
  }
 }
