@@ -11925,7 +11925,7 @@
    "tip_pt": "2:00 PM PT",
    "day_et": "2026-11-22",
    "state": "in",
-   "detail": "0:49 - 2nd",
+   "detail": "End of 2nd",
    "neutral": false,
    "venue": "Benchmark International Arena",
    "favorite": "home",
@@ -14340,6 +14340,822 @@
     "ask": 0.68
    },
    "locked_at": "2026-11-22T15:00:44-08:00"
+  }
+ },
+ "401892772": {
+  "at": "2026-11-22T16:00:45-08:00",
+  "day": "2026-11-22",
+  "game": {
+   "id": "401892772",
+   "tip_utc": "2026-11-23T01:00:00+00:00",
+   "tip_pt": "5:00 PM PT",
+   "day_et": "2026-11-22",
+   "state": "pre",
+   "detail": "11/22 - 8:00 PM EST",
+   "neutral": false,
+   "venue": "Rogers Arena",
+   "favorite": "away",
+   "line": {
+    "details": "CHI -115",
+    "provider": "DraftKings",
+    "ml_home": null,
+    "ml_away": -115,
+    "puck_line": 1.5,
+    "total": 6.5,
+    "fav_price": 0.5349
+   },
+   "spread": {
+    "details": "CHI -115",
+    "provider": "DraftKings",
+    "puck_line": 1.5
+   },
+   "home": {
+    "id": "22",
+    "abbr": "VAN",
+    "espn_abbr": "VAN",
+    "name": "Vancouver",
+    "display": "Vancouver Canucks",
+    "record": "6-18-1",
+    "l3_record": "2-1-0",
+    "games": 25,
+    "pts_pct": 0.26,
+    "season": {
+     "xgf": 39.21,
+     "xga60": 2.981,
+     "xgf60": 1.923,
+     "cf": 45.45,
+     "gsax": -0.649,
+     "st": 86.5,
+     "pp": 21.5,
+     "pk": 65.0,
+     "ranks": {
+      "xgf": 32,
+      "xga60": 32,
+      "gsax": 32,
+      "st": 30,
+      "xgf60": 32
+     }
+    },
+    "last5": {
+     "xgf": 34.87,
+     "xga60": 3.676,
+     "xgf60": 1.968,
+     "cf": 44.25,
+     "gsax": 1.02,
+     "st": 98.0,
+     "pp": 33.3,
+     "pk": 64.7,
+     "ranks": {
+      "xgf": 32,
+      "xga60": 32,
+      "gsax": 1,
+      "st": 18,
+      "xgf60": 28
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 2026020371,
+      "date": "2026-11-21",
+      "site": "home",
+      "opp": "MIN",
+      "pts": 4,
+      "opp_pts": 3,
+      "extra": true,
+      "opp_power_rank": 2
+     },
+     {
+      "game_id": 2026020357,
+      "date": "2026-11-19",
+      "site": "away",
+      "opp": "SEA",
+      "pts": 1,
+      "opp_pts": 5,
+      "extra": false,
+      "opp_power_rank": 21
+     },
+     {
+      "game_id": 2026020332,
+      "date": "2026-11-16",
+      "site": "away",
+      "opp": "UTA",
+      "pts": 3,
+      "opp_pts": 2,
+      "extra": false,
+      "opp_power_rank": 12
+     }
+    ],
+    "trend_games": [
+     {
+      "date": "2026-11-13",
+      "opp": "NYR",
+      "metrics": {
+       "xgf": 34.96,
+       "xga60": 3.868,
+       "xgf60": 2.079,
+       "gsax": -0.805,
+       "st": 50.0
+      }
+     },
+     {
+      "date": "2026-11-15",
+      "opp": "VGK",
+      "metrics": {
+       "xgf": 42.49,
+       "xga60": 3.335,
+       "xgf60": 2.464,
+       "gsax": 1.35,
+       "st": 110.0
+      }
+     },
+     {
+      "date": "2026-11-16",
+      "opp": "UTA",
+      "metrics": {
+       "xgf": 36.9,
+       "xga60": 4.272,
+       "xgf60": 2.497,
+       "gsax": 3.371,
+       "st": 120.0
+      }
+     },
+     {
+      "date": "2026-11-19",
+      "opp": "SEA",
+      "metrics": {
+       "xgf": 27.17,
+       "xga60": 4.861,
+       "xgf60": 1.813,
+       "gsax": 1.232,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-21",
+      "opp": "MIN",
+      "metrics": {
+       "xgf": 33.39,
+       "xga60": 2.293,
+       "xgf60": 1.149,
+       "gsax": -0.047,
+       "st": 150.0
+      }
+     }
+    ],
+    "is_fav": false,
+    "b2b": true,
+    "power": {
+     "rank": 32,
+     "own": 32,
+     "avg": 32.0,
+     "espn": 32,
+     "nhl_com": null
+    },
+    "goalie": {
+     "name": "Nikita Tolopilo",
+     "last": "Tolopilo",
+     "espn_id": "5188534",
+     "confirmed": false
+    },
+    "goalie_status": "backup",
+    "regular_goalie_name": "L. Meril\u00e4inen",
+    "goalies": [
+     {
+      "id": "8482447",
+      "name": "L. Meril\u00e4inen",
+      "starts": 16
+     },
+     {
+      "id": "8480947",
+      "name": "K. Lankinen",
+      "starts": 8
+     },
+     {
+      "id": "8484268",
+      "name": "N. Tolopilo",
+      "starts": 1
+     }
+    ],
+    "key_skaters": [
+     "F. Hronek",
+     "Z. Buium",
+     "E. Pettersson",
+     "T. Willander",
+     "B. Boeser",
+     "E. Pettersson"
+    ],
+    "injuries": [
+     {
+      "name": "Elias Pettersson",
+      "last": "Pettersson",
+      "status": "Out",
+      "date": "2026-11-21T19:10Z",
+      "comment": "Pettersson (upper body) isn't expected to play against Chicago on Sunday, per Canucks play-by-play announcer Brendan Batchelor."
+     },
+     {
+      "name": "Brendan Gallagher",
+      "last": "Gallagher",
+      "status": "Injured Reserve",
+      "date": "2026-11-21T17:13Z",
+      "comment": "Gallagher (lower body) was placed on injured reserve Saturday."
+     },
+     {
+      "name": "Guillaume Brisebois",
+      "last": "Brisebois",
+      "status": "Injured Reserve",
+      "date": "2026-11-13T22:59Z",
+      "comment": "ir"
+     },
+     {
+      "name": "Mackenzie MacEachern",
+      "last": "MacEachern",
+      "status": "Injured Reserve",
+      "date": "2026-09-29T17:03Z",
+      "comment": "ir-nr"
+     },
+     {
+      "name": "Thatcher Demko",
+      "last": "Demko",
+      "status": "Injured Reserve",
+      "date": "2026-09-28T17:58Z",
+      "comment": "Co-president of hockey operations Henrik Sedin said Monday that he hopes Demko (hip) will be ready to return before Christmas, Kevin Woodley of NHL.com reports."
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [
+     "Elias Pettersson"
+    ],
+    "key_questionable": [],
+    "key_long_term": [],
+    "spread_text": ""
+   },
+   "away": {
+    "id": "4",
+    "abbr": "CHI",
+    "espn_abbr": "CHI",
+    "name": "Chicago",
+    "display": "Chicago Blackhawks",
+    "record": "7-14-2",
+    "l3_record": "2-1-0",
+    "games": 23,
+    "pts_pct": 0.348,
+    "season": {
+     "xgf": 41.2,
+     "xga60": 2.892,
+     "xgf60": 2.027,
+     "cf": 45.75,
+     "gsax": -0.444,
+     "st": 98.2,
+     "pp": 18.2,
+     "pk": 80.0,
+     "ranks": {
+      "xgf": 31,
+      "xga60": 29,
+      "gsax": 27,
+      "st": 19,
+      "xgf60": 30
+     }
+    },
+    "last5": {
+     "xgf": 48.49,
+     "xga60": 2.217,
+     "xgf60": 2.086,
+     "cf": 47.56,
+     "gsax": -0.092,
+     "st": 118.8,
+     "pp": 43.8,
+     "pk": 75.0,
+     "ranks": {
+      "xgf": 21,
+      "xga60": 10,
+      "gsax": 13,
+      "st": 2,
+      "xgf60": 26
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 2026020360,
+      "date": "2026-11-21",
+      "site": "away",
+      "opp": "CGY",
+      "pts": 4,
+      "opp_pts": 3,
+      "extra": true,
+      "opp_power_rank": 25
+     },
+     {
+      "game_id": 2026020353,
+      "date": "2026-11-19",
+      "site": "home",
+      "opp": "CBJ",
+      "pts": 2,
+      "opp_pts": 4,
+      "extra": false,
+      "opp_power_rank": 28
+     },
+     {
+      "game_id": 2026020338,
+      "date": "2026-11-17",
+      "site": "home",
+      "opp": "TOR",
+      "pts": 6,
+      "opp_pts": 3,
+      "extra": false,
+      "opp_power_rank": 26
+     }
+    ],
+    "trend_games": [
+     {
+      "date": "2026-11-12",
+      "opp": "BUF",
+      "metrics": {
+       "xgf": 46.5,
+       "xga60": 1.86,
+       "xgf60": 1.617,
+       "gsax": 0.082,
+       "st": 95.0
+      }
+     },
+     {
+      "date": "2026-11-14",
+      "opp": "WPG",
+      "metrics": {
+       "xgf": 50.96,
+       "xga60": 1.786,
+       "xgf60": 1.856,
+       "gsax": -0.631,
+       "st": 166.7
+      }
+     },
+     {
+      "date": "2026-11-17",
+      "opp": "TOR",
+      "metrics": {
+       "xgf": 48.39,
+       "xga60": 2.802,
+       "xgf60": 2.627,
+       "gsax": -0.061,
+       "st": 166.7
+      }
+     },
+     {
+      "date": "2026-11-19",
+      "opp": "CBJ",
+      "metrics": {
+       "xgf": 53.49,
+       "xga60": 2.043,
+       "xgf60": 2.349,
+       "gsax": -0.538,
+       "st": 75.0
+      }
+     },
+     {
+      "date": "2026-11-21",
+      "opp": "CGY",
+      "metrics": {
+       "xgf": 43.11,
+       "xga60": 2.597,
+       "xgf60": 1.968,
+       "gsax": 0.69,
+       "st": 125.0
+      }
+     }
+    ],
+    "is_fav": true,
+    "b2b": true,
+    "power": {
+     "rank": 31,
+     "own": 31,
+     "avg": 31.0,
+     "espn": 31,
+     "nhl_com": null
+    },
+    "goalie": {
+     "name": "Drew Commesso",
+     "last": "Commesso",
+     "espn_id": "4697450",
+     "confirmed": false
+    },
+    "goalie_status": "backup",
+    "regular_goalie_name": "S. Knight",
+    "goalies": [
+     {
+      "id": "8481519",
+      "name": "S. Knight",
+      "starts": 19
+     },
+     {
+      "id": "8482821",
+      "name": "A. Soderblom",
+      "starts": 4
+     }
+    ],
+    "key_skaters": [
+     "A. Vlasic",
+     "A. Levshunov",
+     "C. Bedard",
+     "W. Kaiser",
+     "I. Cole",
+     "R. Kantserov"
+    ],
+    "injuries": [
+     {
+      "name": "Anton Frondell",
+      "last": "Frondell",
+      "status": "Out",
+      "date": "2026-11-22T23:45Z",
+      "comment": "out"
+     },
+     {
+      "name": "Wyatt Kaiser",
+      "last": "Kaiser",
+      "status": "Suspension",
+      "date": "2026-11-22T18:51Z",
+      "comment": "Kaiser was suspended for three games by the NHL Department of Player Safety on Sunday for an illegal check to the head against Calgary's Martin Pospisil (upper body) on Saturday."
+     },
+     {
+      "name": "Connor Bedard",
+      "last": "Bedard",
+      "status": "Injured Reserve",
+      "date": "2026-11-22T15:10Z",
+      "comment": "Bedard (shoulder) was placed on injured reserve Sunday."
+     },
+     {
+      "name": "Bowen Byram",
+      "last": "Byram",
+      "status": "Injured Reserve",
+      "date": "2026-11-21T19:21Z",
+      "comment": "Byram (upper body) didn't accompany his teammates on Chicago's three-game road trip, per Mark Lazerus of The Athletic on Saturday."
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [],
+    "key_long_term": [
+     "Wyatt Kaiser",
+     "Connor Bedard"
+    ],
+    "spread_text": "-115"
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "CHI",
+    "dog": "VAN",
+    "in_range": false,
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "rules": [
+     {
+      "rule": "Range",
+      "name": "Top-7 team vs bottom-7 team (consensus power rank)",
+      "pass": false,
+      "detail": "CHI #31 vs VAN #32"
+     },
+     {
+      "rule": "A",
+      "name": "Analysis Score 22+",
+      "pass": false,
+      "detail": "Score 19 of 40"
+     },
+     {
+      "rule": "Goalie",
+      "name": "CHI's regular goalie starts",
+      "pass": false,
+      "detail": "Drew Commesso listed instead of S. Knight: capped at the Watch list"
+     },
+     {
+      "rule": "Matchup",
+      "name": "CHI top 7 vs VAN bottom 7 in a matchup (last 5)",
+      "pass": false,
+      "detail": "None: offense vs offense, defense vs defense or defense vs offense (xGF/60, xGA/60): capped at the Watch list"
+     }
+    ],
+    "fails": [
+     "Not a top-7 vs bottom-7 matchup (CHI #31, VAN #32)"
+    ],
+    "warnings": [
+     "Info: VAN starting its backup goalie (Nikita Tolopilo)",
+     "CHI played yesterday (back-to-back)"
+    ],
+    "flags": [
+     "CHI backup goalie starting (Drew Commesso)"
+    ],
+    "score": 19,
+    "max": 40,
+    "band": "yellow",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 3,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 13,
+      "max": 16
+     },
+     {
+      "key": "goalies",
+      "label": "Goalies + health",
+      "points": 2,
+      "max": 4
+     },
+     {
+      "key": "home",
+      "label": "Home ice",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xga60",
+      "scored": false,
+      "cells": [
+       {
+        "team": "CHI",
+        "role": "fav",
+        "window": "season",
+        "metric": "xgf60",
+        "rank": 30,
+        "color": "red"
+       },
+       {
+        "team": "CHI",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xgf60",
+        "rank": 26,
+        "color": "red"
+       },
+       {
+        "team": "VAN",
+        "role": "dog",
+        "window": "season",
+        "metric": "xga60",
+        "rank": 32,
+        "color": "green"
+       },
+       {
+        "team": "VAN",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xga60",
+        "rank": 32,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "xga60",
+      "dog_metric": "xgf60",
+      "scored": false,
+      "cells": [
+       {
+        "team": "CHI",
+        "role": "fav",
+        "window": "season",
+        "metric": "xga60",
+        "rank": 29,
+        "color": "red"
+       },
+       {
+        "team": "CHI",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xga60",
+        "rank": 10,
+        "color": "green"
+       },
+       {
+        "team": "VAN",
+        "role": "dog",
+        "window": "season",
+        "metric": "xgf60",
+        "rank": 32,
+        "color": "green"
+       },
+       {
+        "team": "VAN",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xgf60",
+        "rank": 28,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "share",
+      "label": "Shot share",
+      "fav_metric": "xgf",
+      "dog_metric": "xgf",
+      "scored": true,
+      "cells": [
+       {
+        "team": "CHI",
+        "role": "fav",
+        "window": "season",
+        "metric": "xgf",
+        "rank": 31,
+        "color": "red"
+       },
+       {
+        "team": "CHI",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xgf",
+        "rank": 21,
+        "color": "yellow"
+       },
+       {
+        "team": "VAN",
+        "role": "dog",
+        "window": "season",
+        "metric": "xgf",
+        "rank": 32,
+        "color": "green"
+       },
+       {
+        "team": "VAN",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xgf",
+        "rank": 32,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "goalie",
+      "label": "Goaltending",
+      "fav_metric": "gsax",
+      "dog_metric": "gsax",
+      "scored": true,
+      "cells": [
+       {
+        "team": "CHI",
+        "role": "fav",
+        "window": "season",
+        "metric": "gsax",
+        "rank": 27,
+        "color": "red"
+       },
+       {
+        "team": "CHI",
+        "role": "fav",
+        "window": "last5",
+        "metric": "gsax",
+        "rank": 13,
+        "color": "yellow"
+       },
+       {
+        "team": "VAN",
+        "role": "dog",
+        "window": "season",
+        "metric": "gsax",
+        "rank": 32,
+        "color": "green"
+       },
+       {
+        "team": "VAN",
+        "role": "dog",
+        "window": "last5",
+        "metric": "gsax",
+        "rank": 1,
+        "color": "deep-red"
+       }
+      ]
+     },
+     {
+      "key": "st",
+      "label": "Special teams",
+      "fav_metric": "st",
+      "dog_metric": "st",
+      "scored": true,
+      "cells": [
+       {
+        "team": "CHI",
+        "role": "fav",
+        "window": "season",
+        "metric": "st",
+        "rank": 19,
+        "color": "yellow"
+       },
+       {
+        "team": "CHI",
+        "role": "fav",
+        "window": "last5",
+        "metric": "st",
+        "rank": 2,
+        "color": "green"
+       },
+       {
+        "team": "VAN",
+        "role": "dog",
+        "window": "season",
+        "metric": "st",
+        "rank": 30,
+        "color": "green"
+       },
+       {
+        "team": "VAN",
+        "role": "dog",
+        "window": "last5",
+        "metric": "st",
+        "rank": 18,
+        "color": "yellow"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xgf60",
+      "fav_rank": 26,
+      "dog_rank": 28,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "xga60",
+      "dog_metric": "xga60",
+      "fav_rank": 10,
+      "dog_rank": 32,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "xga60",
+      "dog_metric": "xgf60",
+      "fav_rank": 10,
+      "dog_rank": 28,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xga60",
+      "fav_rank": 26,
+      "dog_rank": 32,
+      "counts": false,
+      "met": false
+     }
+    ],
+    "labels": {
+     "xgf60": "xGF/60 5v5",
+     "xgf": "xGF% 5v5",
+     "xga60": "xGA/60 5v5",
+     "gsax": "GSAx/gm",
+     "st": "PP%+PK%",
+     "pts": "Points %"
+    }
+   },
+   "summary": "Not a top-7 vs bottom-7 matchup (CHI #31, VAN #32). CHI start their backup goalie, Drew Commesso (regular: S. Knight). Biggest edge over the last 5: xGA/60 5v5 (CHI #10, VAN #32). CHI 2-1-0 in its last 3, VAN 2-1-0; CHI and VAN played yesterday.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNHLGAME-26NOV22CHIVAN",
+    "fav_prob": 0.515,
+    "bid": 0.51,
+    "ask": 0.52
+   },
+   "locked_at": "2026-11-22T16:00:45-08:00"
   }
  }
 }
