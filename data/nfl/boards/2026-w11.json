@@ -1,455 +1,9 @@
 {
  "season": 2026,
  "week": 11,
- "built_at": "2026-11-22T17:15:36-08:00",
- "built_label": "Sun Nov 22, 5:15 PM PT",
+ "built_at": "2026-11-22T21:00:40-08:00",
+ "built_label": "Sun Nov 22, 9:00 PM PT",
  "games": [
-  {
-   "id": "401873077",
-   "nflverse_id": "2026_11_MIN_SF",
-   "kick_utc": "2026-11-23T01:20:00+00:00",
-   "kick_pt": "Sun 5:20 PM PT",
-   "day_et": "2026-11-22",
-   "state": "pre",
-   "detail": "11/22 - 8:20 PM EST",
-   "neutral": true,
-   "venue": "Estadio Banorte",
-   "home_code": "SF",
-   "away_code": "MIN",
-   "score": {
-    "home": 0,
-    "away": 0
-   },
-   "line_source": "DraftKings",
-   "open_spread": -3.5,
-   "total": 45.5,
-   "total_open": 46.5,
-   "fav_ml": -205.0,
-   "favorite": "home",
-   "spread": -4.5,
-   "movement": 1.0,
-   "total_move": -1.0,
-   "fav_home": true,
-   "home": {
-    "code": "SF",
-    "abbr": "SF",
-    "season": {
-     "games": 9,
-     "off_epa": 0.1832,
-     "off_sr": 0.5227,
-     "def_epa": -0.0057,
-     "def_sr": 0.4452,
-     "off_pass_epa": 0.3021,
-     "off_rush_epa": 0.0256,
-     "def_pass_epa": 0.0677,
-     "def_rush_epa": -0.1346,
-     "ranks": {
-      "off_epa": 1,
-      "off_sr": 1,
-      "def_epa": 10,
-      "def_sr": 22
-     }
-    },
-    "last3": {
-     "games": 3,
-     "off_epa": 0.2181,
-     "off_sr": 0.53,
-     "def_epa": 0.0709,
-     "def_sr": 0.4742,
-     "off_pass_epa": 0.3139,
-     "off_rush_epa": 0.091,
-     "def_pass_epa": 0.1328,
-     "def_rush_epa": -0.0522,
-     "ranks": {
-      "off_epa": 2,
-      "off_sr": 2,
-      "def_epa": 23,
-      "def_sr": 28
-     }
-    },
-    "net": 0.1888,
-    "net_rank": 2,
-    "adjusted": {
-     "off": 0.184,
-     "def": -0.0365,
-     "net": 0.125,
-     "recent_net": 0.1258,
-     "sr_off": 0.5227,
-     "sr_def": 0.4452
-    },
-    "record": "8-1",
-    "last2_results": [
-     "W",
-     "W"
-    ],
-    "last3_results": [
-     "W",
-     "W",
-     "L"
-    ],
-    "rest": 7,
-    "qb": {
-     "regular": "B.Purdy",
-     "regular_id": "00-0037834",
-     "season_leader": "B.Purdy",
-     "reset": false,
-     "dropbacks": 277,
-     "epa_db": 0.2737,
-     "rank": 3
-    },
-    "injuries_known": true,
-    "key_out": [
-     "Dre Greenlaw"
-    ],
-    "key_questionable": [],
-    "key_long_term": [],
-    "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [
-     {
-      "name": "Dre Greenlaw",
-      "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "name": "Khalid Kareem",
-      "pos": "DE",
-      "status": "Out"
-     },
-     {
-      "name": "Demarcus Robinson",
-      "pos": "WR",
-      "status": "Out"
-     },
-     {
-      "name": "Kurtis Rourke",
-      "pos": "QB",
-      "status": "Out"
-     },
-     {
-      "name": "Enrique Cruz Jr.",
-      "pos": "OT",
-      "status": "Out"
-     }
-    ],
-    "power": {
-     "consensus": 1,
-     "fpi": 1,
-     "nfl_com": 1
-    },
-    "fpi_win": 0.63
-   },
-   "away": {
-    "code": "MIN",
-    "abbr": "MIN",
-    "season": {
-     "games": 9,
-     "off_epa": -0.0959,
-     "off_sr": 0.3822,
-     "def_epa": -0.1399,
-     "def_sr": 0.3777,
-     "off_pass_epa": -0.0601,
-     "off_rush_epa": -0.1502,
-     "def_pass_epa": -0.1445,
-     "def_rush_epa": -0.1338,
-     "ranks": {
-      "off_epa": 30,
-      "off_sr": 30,
-      "def_epa": 1,
-      "def_sr": 1
-     }
-    },
-    "last3": {
-     "games": 3,
-     "off_epa": -0.1461,
-     "off_sr": 0.4132,
-     "def_epa": -0.0783,
-     "def_sr": 0.4279,
-     "off_pass_epa": -0.1537,
-     "off_rush_epa": -0.1317,
-     "def_pass_epa": -0.0709,
-     "def_rush_epa": -0.0865,
-     "ranks": {
-      "off_epa": 29,
-      "off_sr": 20,
-      "def_epa": 7,
-      "def_sr": 16
-     }
-    },
-    "net": 0.0441,
-    "net_rank": 10,
-    "adjusted": {
-     "off": -0.0791,
-     "def": -0.152,
-     "net": 0.0133,
-     "recent_net": 0.0106,
-     "sr_off": 0.3822,
-     "sr_def": 0.3777
-    },
-    "record": "7-2",
-    "last2_results": [
-     "W",
-     "L"
-    ],
-    "last3_results": [
-     "W",
-     "L",
-     "L"
-    ],
-    "rest": 7,
-    "qb": {
-     "regular": "K.Cousins",
-     "regular_id": "00-0029604",
-     "season_leader": "K.Murray",
-     "reset": true,
-     "dropbacks": 362,
-     "epa_db": 0.11,
-     "rank": 12
-    },
-    "injuries_known": true,
-    "key_out": [
-     "Isaiah Rodgers",
-     "Jordan Addison",
-     "Kyler Murray"
-    ],
-    "key_questionable": [],
-    "key_long_term": [],
-    "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [
-     {
-      "name": "Jay Ward",
-      "pos": "S",
-      "status": "Out"
-     },
-     {
-      "name": "Isaiah Rodgers",
-      "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "name": "Max Brosmer",
-      "pos": "QB",
-      "status": "Out"
-     },
-     {
-      "name": "Kyler Murray",
-      "pos": "QB",
-      "status": "Out"
-     },
-     {
-      "name": "Jordan Addison",
-      "pos": "WR",
-      "status": "Out"
-     }
-    ],
-    "power": {
-     "consensus": 7,
-     "fpi": 9,
-     "nfl_com": 5
-    },
-    "fpi_win": 0.367
-   },
-   "fav": "SF",
-   "dog": "MIN",
-   "scoring": {
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 22 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 SF last-3 top 10 in 2 of 4 \u00b7 \u2717 MIN last-3 bottom 10 (23-32) in 1 of 4 \u00b7 \u2717 SF season outside top 15: Def success allowed #22 \u00b7 \u2717 MIN season top 10: Def EPA allowed #1, Def success allowed #1"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key starter newly out or doubtful for the favorite",
-      "pass": false,
-      "detail": "SF key starter out: Dre Greenlaw"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not top 10 in any power ranking",
-      "pass": false,
-      "detail": "MIN top 10 in power ranking: consensus #7, ESPN FPI #9, NFL.com #5"
-     }
-    ],
-    "context": [
-     {
-      "n": 1,
-      "ok": true,
-      "text": "Favorite top 10 (season) in a core metric",
-      "detail": "Off EPA/play, Off success, Def EPA allowed"
-     },
-     {
-      "n": 2,
-      "ok": true,
-      "text": "Also top 10 over its last 3 in that same metric",
-      "detail": "Off EPA/play, Off success"
-     },
-     {
-      "n": 3,
-      "ok": false,
-      "text": "Underdog not top 10 in any metric over its last 3",
-      "detail": "Def EPA allowed"
-     },
-     {
-      "n": 4,
-      "ok": true,
-      "text": "Underdog not 3-0 in its last 3",
-      "detail": "1-2"
-     }
-    ],
-    "qualifiers": [
-     "off_epa",
-     "off_sr"
-    ],
-    "fails": [
-     "MIN top 10 in power ranking: consensus #7, ESPN FPI #9, NFL.com #5",
-     "SF key starter out: Dre Greenlaw",
-     "Would be on the watch list otherwise (score 22)"
-    ],
-    "failed": [
-     "MIN top 10 in power ranking: consensus #7, ESPN FPI #9, NFL.com #5",
-     "SF key starter out: Dre Greenlaw",
-     "Would be on the watch list otherwise (score 22)"
-    ],
-    "hero": {
-     "score": 22,
-     "band": "yellow",
-     "parts": {
-      "fav_strength": 9,
-      "dog_weakness": 8,
-      "health": 3,
-      "home": 0,
-      "rest": 0,
-      "form": 2
-     },
-     "max": 40
-    },
-    "edge": {
-     "gap": 0.145,
-     "required": 0.35,
-     "clears": false,
-     "short_by": 0.205,
-     "adjusted_gap": 0.112,
-     "adjusted_recent_gap": 0.115
-    },
-    "flags": [
-     {
-      "level": "red",
-      "text": "MIN top 10 in power ranking: consensus #7, ESPN FPI #9, NFL.com #5 (no track)"
-     }
-    ],
-    "under": {
-     "passes": false,
-     "ranks": [
-      1,
-      30
-     ],
-     "total_move": -1.0,
-     "note": ""
-    },
-    "call": "No track",
-    "matchups": [
-     {
-      "key": "def_def",
-      "label": "Defense vs defense",
-      "fav_metric": "def_sr",
-      "dog_metric": "def_sr",
-      "fav_rank": 28,
-      "dog_rank": 16,
-      "in_range": false,
-      "met": false
-     },
-     {
-      "key": "def_off",
-      "label": "Defense vs offense",
-      "fav_metric": "def_sr",
-      "dog_metric": "off_sr",
-      "fav_rank": 28,
-      "dog_rank": 20,
-      "in_range": false,
-      "met": false
-     },
-     {
-      "key": "off_def",
-      "label": "Offense vs defense",
-      "fav_metric": "off_sr",
-      "dog_metric": "def_sr",
-      "fav_rank": 2,
-      "dog_rank": 16,
-      "in_range": false,
-      "met": false
-     }
-    ]
-   },
-   "fav_defense_top10": false,
-   "kalshi": {
-    "event": "KXNFLGAME-26NOV22MINSF",
-    "fav_prob": 0.665,
-    "bid": 0.66,
-    "ask": 0.67
-   },
-   "votes": {
-    "fav": 8,
-    "dog": 5,
-    "support": 0.615,
-    "sources": [
-     {
-      "site": "CBS Sports (Sullivan)",
-      "url": "https://www.cbssports.com/nfl/news/week-11-picks-best-bets-ats-odds-chargers-jets-titans-cowboys/",
-      "fav": 0,
-      "dog": 1
-     },
-     {
-      "site": "CBS Sports (Dajani, Dubin)",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-11-experts-picks-colts-at-texans-vikings-vs-49ers/",
-      "fav": 2,
-      "dog": 0
-     },
-     {
-      "site": "Bleacher Report",
-      "url": "https://bleacherreport.com/articles/25534898-bleacher-reports-expert-week-11-2026-nfl-picks",
-      "fav": 5,
-      "dog": 2
-     },
-     {
-      "site": "Covers",
-      "url": "https://www.covers.com/nfl/picks-against-the-spread-week-11-2026",
-      "fav": 1,
-      "dog": 0
-     },
-     {
-      "site": "SI",
-      "url": "https://www.si.com/betting/road-to-272-bets-nfl-week-11-picks-for-every-game-01m7kaz0pxg6",
-      "fav": 0,
-      "dog": 1
-     },
-     {
-      "site": "Yahoo Sports",
-      "url": "https://sports.yahoo.com/nfl/betting/article/week-11-nfl-picks-against-the-spread-predictions-for-every-game-cowboys-have-been-bad-but-their-season-isnt-dead-yet-135142600.html",
-      "fav": 0,
-      "dog": 1
-     }
-    ],
-    "notes": "CBS = Sullivan + Dajani + Dubin."
-   }
-  },
   {
    "id": "401873078",
    "nflverse_id": "2026_11_CIN_WAS",
@@ -4538,13 +4092,13 @@
       "status": "Questionable"
      },
      {
-      "name": "Keaton Mitchell",
-      "pos": "RB",
+      "name": "Akheem Mesidor",
+      "pos": "LB",
       "status": "Questionable"
      },
      {
-      "name": "Akheem Mesidor",
-      "pos": "LB",
+      "name": "Keaton Mitchell",
+      "pos": "RB",
       "status": "Questionable"
      },
      {
@@ -5059,7 +4613,9 @@
      "rank": 12
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Brock Bowers"
+    ],
     "key_questionable": [
      "Adam Butler"
     ],
@@ -5068,6 +4624,11 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Brock Bowers",
+      "pos": "TE",
+      "status": "Out"
+     },
      {
       "name": "JJ Pegues",
       "pos": "DT",
@@ -5087,11 +4648,6 @@
       "name": "Dareke Young",
       "pos": "WR",
       "status": "Questionable"
-     },
-     {
-      "name": "Dont'e Thornton Jr.",
-      "pos": "WR",
-      "status": "Out"
      }
     ],
     "power": {
@@ -5736,6 +5292,445 @@
     ],
     "notes": "CBS = Sullivan + Dajani + Dubin."
    }
+  },
+  {
+   "id": "401873077",
+   "nflverse_id": "2026_11_MIN_SF",
+   "kick_utc": "2026-11-23T01:20:00+00:00",
+   "kick_pt": "Sun 5:20 PM PT",
+   "day_et": "2026-11-22",
+   "state": "post",
+   "detail": "Final",
+   "neutral": true,
+   "venue": "Estadio Banorte",
+   "home_code": "SF",
+   "away_code": "MIN",
+   "score": {
+    "home": 35,
+    "away": 10
+   },
+   "line_source": "DraftKings",
+   "open_spread": -3.5,
+   "total": 45.5,
+   "total_open": 46.5,
+   "fav_ml": -198.0,
+   "favorite": "home",
+   "spread": -3.5,
+   "movement": 0.0,
+   "total_move": -1.0,
+   "fav_home": true,
+   "home": {
+    "code": "SF",
+    "abbr": "SF",
+    "season": {
+     "games": 9,
+     "off_epa": 0.1832,
+     "off_sr": 0.5227,
+     "def_epa": -0.0057,
+     "def_sr": 0.4452,
+     "off_pass_epa": 0.3021,
+     "off_rush_epa": 0.0256,
+     "def_pass_epa": 0.0677,
+     "def_rush_epa": -0.1346,
+     "ranks": {
+      "off_epa": 1,
+      "off_sr": 1,
+      "def_epa": 10,
+      "def_sr": 22
+     }
+    },
+    "last3": {
+     "games": 3,
+     "off_epa": 0.2181,
+     "off_sr": 0.53,
+     "def_epa": 0.0709,
+     "def_sr": 0.4742,
+     "off_pass_epa": 0.3139,
+     "off_rush_epa": 0.091,
+     "def_pass_epa": 0.1328,
+     "def_rush_epa": -0.0522,
+     "ranks": {
+      "off_epa": 2,
+      "off_sr": 2,
+      "def_epa": 23,
+      "def_sr": 28
+     }
+    },
+    "net": 0.1888,
+    "net_rank": 2,
+    "adjusted": {
+     "off": 0.184,
+     "def": -0.0365,
+     "net": 0.125,
+     "recent_net": 0.1258,
+     "sr_off": 0.5227,
+     "sr_def": 0.4452
+    },
+    "record": "8-1",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "L"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "B.Purdy",
+     "regular_id": "00-0037834",
+     "season_leader": "B.Purdy",
+     "reset": false,
+     "dropbacks": 277,
+     "epa_db": 0.2737,
+     "rank": 3
+    },
+    "injuries_known": true,
+    "key_out": [
+     "Colton McKivitz",
+     "Dre Greenlaw"
+    ],
+    "key_questionable": [],
+    "key_long_term": [],
+    "interior_ol_out": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [
+     {
+      "name": "Colton McKivitz",
+      "pos": "OT",
+      "status": "Out"
+     },
+     {
+      "name": "Dre Greenlaw",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
+      "name": "Khalid Kareem",
+      "pos": "DE",
+      "status": "Out"
+     },
+     {
+      "name": "Demarcus Robinson",
+      "pos": "WR",
+      "status": "Out"
+     },
+     {
+      "name": "Kurtis Rourke",
+      "pos": "QB",
+      "status": "Out"
+     }
+    ],
+    "power": {
+     "consensus": 1,
+     "fpi": 1,
+     "nfl_com": 1
+    }
+   },
+   "away": {
+    "code": "MIN",
+    "abbr": "MIN",
+    "season": {
+     "games": 9,
+     "off_epa": -0.0959,
+     "off_sr": 0.3822,
+     "def_epa": -0.1399,
+     "def_sr": 0.3777,
+     "off_pass_epa": -0.0601,
+     "off_rush_epa": -0.1502,
+     "def_pass_epa": -0.1445,
+     "def_rush_epa": -0.1338,
+     "ranks": {
+      "off_epa": 30,
+      "off_sr": 30,
+      "def_epa": 1,
+      "def_sr": 1
+     }
+    },
+    "last3": {
+     "games": 3,
+     "off_epa": -0.1461,
+     "off_sr": 0.4132,
+     "def_epa": -0.0783,
+     "def_sr": 0.4279,
+     "off_pass_epa": -0.1537,
+     "off_rush_epa": -0.1317,
+     "def_pass_epa": -0.0709,
+     "def_rush_epa": -0.0865,
+     "ranks": {
+      "off_epa": 29,
+      "off_sr": 20,
+      "def_epa": 7,
+      "def_sr": 16
+     }
+    },
+    "net": 0.0441,
+    "net_rank": 10,
+    "adjusted": {
+     "off": -0.0791,
+     "def": -0.152,
+     "net": 0.0133,
+     "recent_net": 0.0106,
+     "sr_off": 0.3822,
+     "sr_def": 0.3777
+    },
+    "record": "7-2",
+    "last2_results": [
+     "W",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "L",
+     "L"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "K.Cousins",
+     "regular_id": "00-0029604",
+     "season_leader": "K.Murray",
+     "reset": true,
+     "dropbacks": 362,
+     "epa_db": 0.11,
+     "rank": 12
+    },
+    "injuries_known": true,
+    "key_out": [
+     "Isaiah Rodgers",
+     "Jordan Addison",
+     "Kyler Murray"
+    ],
+    "key_questionable": [],
+    "key_long_term": [],
+    "interior_ol_out": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [
+     {
+      "name": "Jay Ward",
+      "pos": "S",
+      "status": "Out"
+     },
+     {
+      "name": "Isaiah Rodgers",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "name": "Max Brosmer",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "name": "Kyler Murray",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "name": "Jordan Addison",
+      "pos": "WR",
+      "status": "Out"
+     }
+    ],
+    "power": {
+     "consensus": 7,
+     "fpi": 9,
+     "nfl_com": 5
+    }
+   },
+   "fav": "SF",
+   "dog": "MIN",
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 22 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 SF last-3 top 10 in 2 of 4 \u00b7 \u2717 MIN last-3 bottom 10 (23-32) in 1 of 4 \u00b7 \u2717 SF season outside top 15: Def success allowed #22 \u00b7 \u2717 MIN season top 10: Def EPA allowed #1, Def success allowed #1"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter newly out or doubtful for the favorite",
+      "pass": false,
+      "detail": "SF key starter out: Colton McKivitz, Dre Greenlaw"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": false,
+      "detail": "MIN top 10 in power ranking: consensus #7, ESPN FPI #9, NFL.com #5"
+     }
+    ],
+    "context": [
+     {
+      "n": 1,
+      "ok": true,
+      "text": "Favorite top 10 (season) in a core metric",
+      "detail": "Off EPA/play, Off success, Def EPA allowed"
+     },
+     {
+      "n": 2,
+      "ok": true,
+      "text": "Also top 10 over its last 3 in that same metric",
+      "detail": "Off EPA/play, Off success"
+     },
+     {
+      "n": 3,
+      "ok": false,
+      "text": "Underdog not top 10 in any metric over its last 3",
+      "detail": "Def EPA allowed"
+     },
+     {
+      "n": 4,
+      "ok": true,
+      "text": "Underdog not 3-0 in its last 3",
+      "detail": "1-2"
+     }
+    ],
+    "qualifiers": [
+     "off_epa",
+     "off_sr"
+    ],
+    "fails": [
+     "MIN top 10 in power ranking: consensus #7, ESPN FPI #9, NFL.com #5",
+     "SF key starter out: Colton McKivitz, Dre Greenlaw",
+     "Would be on the watch list otherwise (score 22)"
+    ],
+    "failed": [
+     "MIN top 10 in power ranking: consensus #7, ESPN FPI #9, NFL.com #5",
+     "SF key starter out: Colton McKivitz, Dre Greenlaw",
+     "Would be on the watch list otherwise (score 22)"
+    ],
+    "hero": {
+     "score": 22,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 9,
+      "dog_weakness": 8,
+      "health": 3,
+      "home": 0,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "edge": {
+     "gap": 0.145,
+     "required": 0.35,
+     "clears": false,
+     "short_by": 0.205,
+     "adjusted_gap": 0.112,
+     "adjusted_recent_gap": 0.115
+    },
+    "flags": [
+     {
+      "level": "red",
+      "text": "MIN top 10 in power ranking: consensus #7, ESPN FPI #9, NFL.com #5 (no track)"
+     }
+    ],
+    "under": {
+     "passes": false,
+     "ranks": [
+      1,
+      30
+     ],
+     "total_move": -1.0,
+     "note": ""
+    },
+    "call": "No track",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 28,
+      "dog_rank": 16,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 28,
+      "dog_rank": 20,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 2,
+      "dog_rank": 16,
+      "in_range": false,
+      "met": false
+     }
+    ]
+   },
+   "fav_defense_top10": false,
+   "votes": {
+    "fav": 8,
+    "dog": 5,
+    "support": 0.615,
+    "sources": [
+     {
+      "site": "CBS Sports (Sullivan)",
+      "url": "https://www.cbssports.com/nfl/news/week-11-picks-best-bets-ats-odds-chargers-jets-titans-cowboys/",
+      "fav": 0,
+      "dog": 1
+     },
+     {
+      "site": "CBS Sports (Dajani, Dubin)",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-11-experts-picks-colts-at-texans-vikings-vs-49ers/",
+      "fav": 2,
+      "dog": 0
+     },
+     {
+      "site": "Bleacher Report",
+      "url": "https://bleacherreport.com/articles/25534898-bleacher-reports-expert-week-11-2026-nfl-picks",
+      "fav": 5,
+      "dog": 2
+     },
+     {
+      "site": "Covers",
+      "url": "https://www.covers.com/nfl/picks-against-the-spread-week-11-2026",
+      "fav": 1,
+      "dog": 0
+     },
+     {
+      "site": "SI",
+      "url": "https://www.si.com/betting/road-to-272-bets-nfl-week-11-picks-for-every-game-01m7kaz0pxg6",
+      "fav": 0,
+      "dog": 1
+     },
+     {
+      "site": "Yahoo Sports",
+      "url": "https://sports.yahoo.com/nfl/betting/article/week-11-nfl-picks-against-the-spread-predictions-for-every-game-cowboys-have-been-bad-but-their-season-isnt-dead-yet-135142600.html",
+      "fav": 0,
+      "dog": 1
+     }
+    ],
+    "notes": "CBS = Sullivan + Dajani + Dubin."
+   }
   }
  ],
  "notes": [],
@@ -5767,12 +5762,12 @@
   "season": 2026,
   "week": 11,
   "games": 13,
-  "upcoming": 2,
+  "upcoming": 1,
   "tracked": 0,
   "qualified": 0,
   "watch": 0,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Sun Nov 22, 5:15 PM PT"
+  "built_label": "Sun Nov 22, 9:00 PM PT"
  }
 }
