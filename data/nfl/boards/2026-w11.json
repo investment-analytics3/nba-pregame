@@ -1,438 +1,9 @@
 {
  "season": 2026,
  "week": 11,
- "built_at": "2026-11-22T15:15:37-08:00",
- "built_label": "Sun Nov 22, 3:15 PM PT",
+ "built_at": "2026-11-22T16:15:35-08:00",
+ "built_label": "Sun Nov 22, 4:15 PM PT",
  "games": [
-  {
-   "id": "401873074",
-   "nflverse_id": "2026_11_NYJ_LAC",
-   "kick_utc": "2026-11-22T21:05:00+00:00",
-   "kick_pt": "Sun 1:05 PM PT",
-   "day_et": "2026-11-22",
-   "state": "in",
-   "detail": "11:12 - 4th",
-   "neutral": false,
-   "venue": "SoFi Stadium",
-   "home_code": "LAC",
-   "away_code": "NYJ",
-   "score": {
-    "home": 17,
-    "away": 20
-   },
-   "line_source": "Draft Kings",
-   "open_spread": -9.5,
-   "total": 43.5,
-   "total_open": 41.5,
-   "fav_ml": -167.0,
-   "favorite": "home",
-   "spread": -3.0,
-   "movement": -6.5,
-   "total_move": 2.0,
-   "fav_home": true,
-   "home": {
-    "code": "LAC",
-    "abbr": "LAC",
-    "season": {
-     "games": 9,
-     "off_epa": -0.1603,
-     "off_sr": 0.3624,
-     "def_epa": 0.0101,
-     "def_sr": 0.4382,
-     "off_pass_epa": -0.1412,
-     "off_rush_epa": -0.1881,
-     "def_pass_epa": 0.059,
-     "def_rush_epa": -0.0564,
-     "ranks": {
-      "off_epa": 32,
-      "off_sr": 32,
-      "def_epa": 15,
-      "def_sr": 14
-     }
-    },
-    "last3": {
-     "games": 3,
-     "off_epa": -0.1436,
-     "off_sr": 0.3704,
-     "def_epa": 0.0622,
-     "def_sr": 0.4421,
-     "off_pass_epa": -0.0979,
-     "off_rush_epa": -0.2046,
-     "def_pass_epa": 0.1233,
-     "def_rush_epa": -0.0475,
-     "ranks": {
-      "off_epa": 28,
-      "off_sr": 29,
-      "def_epa": 21,
-      "def_sr": 20
-     }
-    },
-    "net": -0.1703,
-    "net_rank": 32,
-    "adjusted": {
-     "off": -0.1961,
-     "def": -0.025,
-     "net": -0.1077,
-     "recent_net": -0.1038,
-     "sr_off": 0.3624,
-     "sr_def": 0.4382
-    },
-    "record": "1-8",
-    "last2_results": [
-     "W",
-     "L"
-    ],
-    "last3_results": [
-     "W",
-     "L",
-     "L"
-    ],
-    "rest": 6,
-    "qb": {
-     "regular": "J.Herbert",
-     "regular_id": "00-0036355",
-     "season_leader": "J.Herbert",
-     "reset": false,
-     "dropbacks": 285,
-     "epa_db": -0.2112,
-     "rank": 35
-    },
-    "injuries_known": true,
-    "key_out": [
-     "Tarheeb Still"
-    ],
-    "key_questionable": [
-     "Akheem Mesidor"
-    ],
-    "key_long_term": [],
-    "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [
-     {
-      "name": "Keaton Mitchell",
-      "pos": "RB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Akheem Mesidor",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Tarheeb Still",
-      "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "name": "Brenen Thompson",
-      "pos": "WR",
-      "status": "Out"
-     },
-     {
-      "name": "KeAndre Lambert-Smith",
-      "pos": "WR",
-      "status": "Out"
-     }
-    ],
-    "power": {
-     "consensus": 21,
-     "fpi": 18,
-     "nfl_com": 27
-    }
-   },
-   "away": {
-    "code": "NYJ",
-    "abbr": "NYJ",
-    "season": {
-     "games": 10,
-     "off_epa": -0.0103,
-     "off_sr": 0.4475,
-     "def_epa": 0.0819,
-     "def_sr": 0.4711,
-     "off_pass_epa": 0.0445,
-     "off_rush_epa": -0.098,
-     "def_pass_epa": 0.1824,
-     "def_rush_epa": -0.0453,
-     "ranks": {
-      "off_epa": 20,
-      "off_sr": 10,
-      "def_epa": 30,
-      "def_sr": 31
-     }
-    },
-    "last3": {
-     "games": 3,
-     "off_epa": -0.0603,
-     "off_sr": 0.4518,
-     "def_epa": 0.2313,
-     "def_sr": 0.5278,
-     "off_pass_epa": -0.0692,
-     "off_rush_epa": -0.0442,
-     "def_pass_epa": 0.331,
-     "def_rush_epa": 0.1293,
-     "ranks": {
-      "off_epa": 23,
-      "off_sr": 9,
-      "def_epa": 32,
-      "def_sr": 31
-     }
-    },
-    "net": -0.0922,
-    "net_rank": 25,
-    "adjusted": {
-     "off": -0.0332,
-     "def": 0.075,
-     "net": -0.0499,
-     "recent_net": -0.066,
-     "sr_off": 0.4475,
-     "sr_def": 0.4711
-    },
-    "record": "2-8",
-    "last2_results": [
-     "L",
-     "L"
-    ],
-    "last3_results": [
-     "L",
-     "L",
-     "L"
-    ],
-    "rest": 7,
-    "qb": {
-     "regular": "G.Smith",
-     "regular_id": "00-0030565",
-     "season_leader": "G.Smith",
-     "reset": false,
-     "dropbacks": 323,
-     "epa_db": 0.0533,
-     "rank": 16
-    },
-    "injuries_known": true,
-    "key_out": [
-     "Isaiah Williams"
-    ],
-    "key_questionable": [],
-    "key_long_term": [],
-    "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [
-     {
-      "name": "Trevin Wallace",
-      "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "name": "Isaiah Williams",
-      "pos": "WR",
-      "status": "Out"
-     },
-     {
-      "name": "Jelani Woods",
-      "pos": "TE",
-      "status": "Out"
-     },
-     {
-      "name": "Nate Lynn",
-      "pos": "DE",
-      "status": "Out"
-     },
-     {
-      "name": "Omar Cooper Jr.",
-      "pos": "WR",
-      "status": "Out"
-     }
-    ],
-    "power": {
-     "consensus": 26,
-     "fpi": 24,
-     "nfl_com": 26
-    }
-   },
-   "fav": "LAC",
-   "dog": "NYJ",
-   "scoring": {
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 16 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 LAC last-3 top 10 in 0 of 4 \u00b7 \u2713 NYJ last-3 bottom 10 (23-32) in 3 of 4 \u00b7 \u2717 LAC season outside top 15: Off EPA/play #32, Off success #32 \u00b7 \u2717 NYJ season top 10: Off success #10"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key starter newly out or doubtful for the favorite",
-      "pass": false,
-      "detail": "LAC key starter out: Tarheeb Still"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not top 10 in any power ranking",
-      "pass": true,
-      "detail": "NYJ: consensus #26, ESPN FPI #24, NFL.com #26"
-     }
-    ],
-    "context": [
-     {
-      "n": 1,
-      "ok": false,
-      "text": "Favorite top 10 (season) in a core metric",
-      "detail": "none"
-     },
-     {
-      "n": 2,
-      "ok": false,
-      "text": "Also top 10 over its last 3 in that same metric",
-      "detail": "none"
-     },
-     {
-      "n": 3,
-      "ok": false,
-      "text": "Underdog not top 10 in any metric over its last 3",
-      "detail": "Off success"
-     },
-     {
-      "n": 4,
-      "ok": true,
-      "text": "Underdog not 3-0 in its last 3",
-      "detail": "0-3"
-     }
-    ],
-    "qualifiers": [],
-    "fails": [
-     "LAC key starter out: Tarheeb Still"
-    ],
-    "failed": [
-     "LAC key starter out: Tarheeb Still"
-    ],
-    "hero": {
-     "score": 16,
-     "band": "red",
-     "parts": {
-      "fav_strength": 0,
-      "dog_weakness": 11,
-      "health": 3,
-      "home": 1,
-      "rest": 0,
-      "form": 1
-     },
-     "max": 40
-    },
-    "edge": {
-     "gap": -0.078,
-     "required": 0.35,
-     "clears": false,
-     "short_by": 0.428,
-     "adjusted_gap": -0.058,
-     "adjusted_recent_gap": -0.038
-    },
-    "flags": [
-     {
-      "level": "yellow",
-      "text": "Line crossed key number 3, 7"
-     },
-     {
-      "level": "yellow",
-      "text": "Favorite questionable: Akheem Mesidor"
-     }
-    ],
-    "under": {
-     "passes": false,
-     "ranks": [
-      32,
-      20
-     ],
-     "total_move": 2.0,
-     "note": ""
-    },
-    "call": "No track",
-    "matchups": [
-     {
-      "key": "def_def",
-      "label": "Defense vs defense",
-      "fav_metric": "def_sr",
-      "dog_metric": "def_sr",
-      "fav_rank": 20,
-      "dog_rank": 31,
-      "in_range": false,
-      "met": false
-     },
-     {
-      "key": "def_off",
-      "label": "Defense vs offense",
-      "fav_metric": "def_sr",
-      "dog_metric": "off_sr",
-      "fav_rank": 20,
-      "dog_rank": 9,
-      "in_range": false,
-      "met": false
-     },
-     {
-      "key": "off_def",
-      "label": "Offense vs defense",
-      "fav_metric": "off_sr",
-      "dog_metric": "def_sr",
-      "fav_rank": 29,
-      "dog_rank": 31,
-      "in_range": false,
-      "met": false
-     }
-    ]
-   },
-   "fav_defense_top10": false,
-   "votes": {
-    "fav": 6,
-    "dog": 5,
-    "support": 0.545,
-    "sources": [
-     {
-      "site": "CBS Sports (Sullivan)",
-      "url": "https://www.cbssports.com/nfl/news/week-11-picks-best-bets-ats-odds-chargers-jets-titans-cowboys/",
-      "fav": 0,
-      "dog": 1
-     },
-     {
-      "site": "Bleacher Report",
-      "url": "https://bleacherreport.com/articles/25534898-bleacher-reports-expert-week-11-2026-nfl-picks",
-      "fav": 5,
-      "dog": 2
-     },
-     {
-      "site": "Covers",
-      "url": "https://www.covers.com/nfl/picks-against-the-spread-week-11-2026",
-      "fav": 1,
-      "dog": 0
-     },
-     {
-      "site": "SI",
-      "url": "https://www.si.com/betting/road-to-272-bets-nfl-week-11-picks-for-every-game-01m7kaz0pxg6",
-      "fav": 0,
-      "dog": 1
-     },
-     {
-      "site": "Yahoo Sports",
-      "url": "https://sports.yahoo.com/nfl/betting/article/week-11-nfl-picks-against-the-spread-predictions-for-every-game-cowboys-have-been-bad-but-their-season-isnt-dead-yet-135142600.html",
-      "fav": 0,
-      "dog": 1
-     }
-    ],
-    "notes": ""
-   }
-  },
   {
    "id": "401873075",
    "nflverse_id": "2026_11_LV_DEN",
@@ -440,16 +11,16 @@
    "kick_pt": "Sun 1:25 PM PT",
    "day_et": "2026-11-22",
    "state": "in",
-   "detail": "14:55 - 3rd",
+   "detail": "6:35 - 4th",
    "neutral": false,
    "venue": "Empower Field at Mile High",
    "home_code": "DEN",
    "away_code": "LV",
    "score": {
-    "home": 17,
-    "away": 10
+    "home": 31,
+    "away": 17
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -8.5,
    "total": 41.5,
    "total_open": 41.5,
@@ -646,8 +217,8 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Dareke Young",
-      "pos": "WR",
+      "name": "Tim Keenan III",
+      "pos": "DT",
       "status": "Questionable"
      },
      {
@@ -656,8 +227,8 @@
       "status": "Questionable"
      },
      {
-      "name": "Tim Keenan III",
-      "pos": "DT",
+      "name": "Dareke Young",
+      "pos": "WR",
       "status": "Questionable"
      },
      {
@@ -875,16 +446,16 @@
    "kick_pt": "Sun 1:25 PM PT",
    "day_et": "2026-11-22",
    "state": "in",
-   "detail": "14:54 - 3rd",
+   "detail": "11:02 - 4th",
    "neutral": false,
    "venue": "MetLife Stadium",
    "home_code": "NYG",
    "away_code": "JAX",
    "score": {
     "home": 20,
-    "away": 6
+    "away": 9
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 44.5,
    "total_open": 46.5,
@@ -1330,15 +901,15 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -3.5,
-   "total": 45.5,
+   "total": 44.5,
    "total_open": 46.5,
-   "fav_ml": -194.0,
+   "fav_ml": -197.0,
    "favorite": "home",
-   "spread": -3.5,
-   "movement": 0.0,
-   "total_move": -1.0,
+   "spread": -4.5,
+   "movement": 1.0,
+   "total_move": -2.0,
    "fav_home": true,
    "home": {
     "code": "SF",
@@ -1418,11 +989,6 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Mike Evans",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
       "name": "Nate Hobbs",
       "pos": "CB",
       "status": "Injured Reserve"
@@ -1441,6 +1007,11 @@
       "name": "Mac Jones",
       "pos": "QB",
       "status": "Questionable"
+     },
+     {
+      "name": "Isaac Guerendo",
+      "pos": "RB",
+      "status": "Out"
      }
     ],
     "power": {
@@ -1519,21 +1090,20 @@
     },
     "injuries_known": true,
     "key_out": [
+     "Isaiah Rodgers",
      "Jordan Addison",
      "Kyler Murray"
     ],
-    "key_questionable": [
-     "Isaiah Rodgers"
-    ],
+    "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Isaiah Rodgers",
-      "pos": "CB",
-      "status": "Questionable"
+      "name": "Jay Ward",
+      "pos": "S",
+      "status": "Out"
      },
      {
       "name": "Kyler Murray",
@@ -1541,18 +1111,18 @@
       "status": "Out"
      },
      {
-      "name": "Bo Richter",
-      "pos": "LB",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Jay Ward",
-      "pos": "S",
-      "status": "Questionable"
+      "name": "Isaiah Rodgers",
+      "pos": "CB",
+      "status": "Out"
      },
      {
       "name": "Jordan Addison",
       "pos": "WR",
+      "status": "Out"
+     },
+     {
+      "name": "Max Brosmer",
+      "pos": "QB",
       "status": "Out"
      }
     ],
@@ -1666,10 +1236,6 @@
      {
       "level": "yellow",
       "text": "Favorite questionable: Dre Greenlaw"
-     },
-     {
-      "level": "yellow",
-      "text": "Underdog questionable: Isaiah Rodgers"
      }
     ],
     "under": {
@@ -1678,7 +1244,7 @@
       1,
       30
      ],
-     "total_move": -1.0,
+     "total_move": -2.0,
      "note": ""
     },
     "call": "No track",
@@ -1783,7 +1349,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 54.5,
    "total_open": 52.5,
@@ -2241,7 +1807,7 @@
     "home": 26,
     "away": 3
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -5.5,
    "total": 44.5,
    "total_open": 45.5,
@@ -2677,7 +2243,7 @@
     "home": 26,
     "away": 9
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -11.5,
    "total": 45.5,
    "total_open": 47.5,
@@ -3103,7 +2669,7 @@
     "home": 35,
     "away": 33
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 4.5,
    "total": 44.5,
    "total_open": 46.5,
@@ -3532,7 +3098,7 @@
     "home": 21,
     "away": 13
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -6.5,
    "total": 48.5,
    "total_open": 46.5,
@@ -4025,7 +3591,7 @@
     "home": 51,
     "away": 30
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -6.5,
    "total": 54.5,
    "total_open": 48.5,
@@ -4465,7 +4031,7 @@
     "home": 31,
     "away": 21
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -4.5,
    "total": 48.5,
    "total_open": 49.5,
@@ -4894,7 +4460,7 @@
     "home": 34,
     "away": 7
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -11.5,
    "total": 40.5,
    "total_open": 44.5,
@@ -5324,7 +4890,7 @@
     "home": 19,
     "away": 16
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 5.5,
    "total": 37.5,
    "total_open": 42.5,
@@ -5742,6 +5308,435 @@
     ],
     "notes": ""
    }
+  },
+  {
+   "id": "401873074",
+   "nflverse_id": "2026_11_NYJ_LAC",
+   "kick_utc": "2026-11-22T21:05:00+00:00",
+   "kick_pt": "Sun 1:05 PM PT",
+   "day_et": "2026-11-22",
+   "state": "post",
+   "detail": "Final",
+   "neutral": false,
+   "venue": "SoFi Stadium",
+   "home_code": "LAC",
+   "away_code": "NYJ",
+   "score": {
+    "home": 24,
+    "away": 27
+   },
+   "line_source": "DraftKings",
+   "open_spread": -9.5,
+   "total": 43.5,
+   "total_open": 41.5,
+   "fav_ml": -167.0,
+   "favorite": "home",
+   "spread": -3.0,
+   "movement": -6.5,
+   "total_move": 2.0,
+   "fav_home": true,
+   "home": {
+    "code": "LAC",
+    "abbr": "LAC",
+    "season": {
+     "games": 9,
+     "off_epa": -0.1603,
+     "off_sr": 0.3624,
+     "def_epa": 0.0101,
+     "def_sr": 0.4382,
+     "off_pass_epa": -0.1412,
+     "off_rush_epa": -0.1881,
+     "def_pass_epa": 0.059,
+     "def_rush_epa": -0.0564,
+     "ranks": {
+      "off_epa": 32,
+      "off_sr": 32,
+      "def_epa": 15,
+      "def_sr": 14
+     }
+    },
+    "last3": {
+     "games": 3,
+     "off_epa": -0.1436,
+     "off_sr": 0.3704,
+     "def_epa": 0.0622,
+     "def_sr": 0.4421,
+     "off_pass_epa": -0.0979,
+     "off_rush_epa": -0.2046,
+     "def_pass_epa": 0.1233,
+     "def_rush_epa": -0.0475,
+     "ranks": {
+      "off_epa": 28,
+      "off_sr": 29,
+      "def_epa": 21,
+      "def_sr": 20
+     }
+    },
+    "net": -0.1703,
+    "net_rank": 32,
+    "adjusted": {
+     "off": -0.1961,
+     "def": -0.025,
+     "net": -0.1077,
+     "recent_net": -0.1038,
+     "sr_off": 0.3624,
+     "sr_def": 0.4382
+    },
+    "record": "1-8",
+    "last2_results": [
+     "W",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "L",
+     "L"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "J.Herbert",
+     "regular_id": "00-0036355",
+     "season_leader": "J.Herbert",
+     "reset": false,
+     "dropbacks": 285,
+     "epa_db": -0.2112,
+     "rank": 35
+    },
+    "injuries_known": true,
+    "key_out": [
+     "Tarheeb Still"
+    ],
+    "key_questionable": [
+     "Akheem Mesidor"
+    ],
+    "key_long_term": [],
+    "interior_ol_out": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [
+     {
+      "name": "Keaton Mitchell",
+      "pos": "RB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Akheem Mesidor",
+      "pos": "LB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Tarheeb Still",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "name": "Brenen Thompson",
+      "pos": "WR",
+      "status": "Out"
+     },
+     {
+      "name": "KeAndre Lambert-Smith",
+      "pos": "WR",
+      "status": "Out"
+     }
+    ],
+    "power": {
+     "consensus": 21,
+     "fpi": 18,
+     "nfl_com": 27
+    }
+   },
+   "away": {
+    "code": "NYJ",
+    "abbr": "NYJ",
+    "season": {
+     "games": 10,
+     "off_epa": -0.0103,
+     "off_sr": 0.4475,
+     "def_epa": 0.0819,
+     "def_sr": 0.4711,
+     "off_pass_epa": 0.0445,
+     "off_rush_epa": -0.098,
+     "def_pass_epa": 0.1824,
+     "def_rush_epa": -0.0453,
+     "ranks": {
+      "off_epa": 20,
+      "off_sr": 10,
+      "def_epa": 30,
+      "def_sr": 31
+     }
+    },
+    "last3": {
+     "games": 3,
+     "off_epa": -0.0603,
+     "off_sr": 0.4518,
+     "def_epa": 0.2313,
+     "def_sr": 0.5278,
+     "off_pass_epa": -0.0692,
+     "off_rush_epa": -0.0442,
+     "def_pass_epa": 0.331,
+     "def_rush_epa": 0.1293,
+     "ranks": {
+      "off_epa": 23,
+      "off_sr": 9,
+      "def_epa": 32,
+      "def_sr": 31
+     }
+    },
+    "net": -0.0922,
+    "net_rank": 25,
+    "adjusted": {
+     "off": -0.0332,
+     "def": 0.075,
+     "net": -0.0499,
+     "recent_net": -0.066,
+     "sr_off": 0.4475,
+     "sr_def": 0.4711
+    },
+    "record": "2-8",
+    "last2_results": [
+     "L",
+     "L"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "L"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "G.Smith",
+     "regular_id": "00-0030565",
+     "season_leader": "G.Smith",
+     "reset": false,
+     "dropbacks": 323,
+     "epa_db": 0.0533,
+     "rank": 16
+    },
+    "injuries_known": true,
+    "key_out": [
+     "Isaiah Williams"
+    ],
+    "key_questionable": [],
+    "key_long_term": [],
+    "interior_ol_out": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [
+     {
+      "name": "Trevin Wallace",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
+      "name": "Isaiah Williams",
+      "pos": "WR",
+      "status": "Out"
+     },
+     {
+      "name": "Jelani Woods",
+      "pos": "TE",
+      "status": "Out"
+     },
+     {
+      "name": "Nate Lynn",
+      "pos": "DE",
+      "status": "Out"
+     },
+     {
+      "name": "Omar Cooper Jr.",
+      "pos": "WR",
+      "status": "Out"
+     }
+    ],
+    "power": {
+     "consensus": 26,
+     "fpi": 24,
+     "nfl_com": 26
+    }
+   },
+   "fav": "LAC",
+   "dog": "NYJ",
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 16 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 LAC last-3 top 10 in 0 of 4 \u00b7 \u2713 NYJ last-3 bottom 10 (23-32) in 3 of 4 \u00b7 \u2717 LAC season outside top 15: Off EPA/play #32, Off success #32 \u00b7 \u2717 NYJ season top 10: Off success #10"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter newly out or doubtful for the favorite",
+      "pass": false,
+      "detail": "LAC key starter out: Tarheeb Still"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": true,
+      "detail": "NYJ: consensus #26, ESPN FPI #24, NFL.com #26"
+     }
+    ],
+    "context": [
+     {
+      "n": 1,
+      "ok": false,
+      "text": "Favorite top 10 (season) in a core metric",
+      "detail": "none"
+     },
+     {
+      "n": 2,
+      "ok": false,
+      "text": "Also top 10 over its last 3 in that same metric",
+      "detail": "none"
+     },
+     {
+      "n": 3,
+      "ok": false,
+      "text": "Underdog not top 10 in any metric over its last 3",
+      "detail": "Off success"
+     },
+     {
+      "n": 4,
+      "ok": true,
+      "text": "Underdog not 3-0 in its last 3",
+      "detail": "0-3"
+     }
+    ],
+    "qualifiers": [],
+    "fails": [
+     "LAC key starter out: Tarheeb Still"
+    ],
+    "failed": [
+     "LAC key starter out: Tarheeb Still"
+    ],
+    "hero": {
+     "score": 16,
+     "band": "red",
+     "parts": {
+      "fav_strength": 0,
+      "dog_weakness": 11,
+      "health": 3,
+      "home": 1,
+      "rest": 0,
+      "form": 1
+     },
+     "max": 40
+    },
+    "edge": {
+     "gap": -0.078,
+     "required": 0.35,
+     "clears": false,
+     "short_by": 0.428,
+     "adjusted_gap": -0.058,
+     "adjusted_recent_gap": -0.038
+    },
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "Line crossed key number 3, 7"
+     },
+     {
+      "level": "yellow",
+      "text": "Favorite questionable: Akheem Mesidor"
+     }
+    ],
+    "under": {
+     "passes": false,
+     "ranks": [
+      32,
+      20
+     ],
+     "total_move": 2.0,
+     "note": ""
+    },
+    "call": "No track",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 20,
+      "dog_rank": 31,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 20,
+      "dog_rank": 9,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 29,
+      "dog_rank": 31,
+      "in_range": false,
+      "met": false
+     }
+    ]
+   },
+   "fav_defense_top10": false,
+   "votes": {
+    "fav": 6,
+    "dog": 5,
+    "support": 0.545,
+    "sources": [
+     {
+      "site": "CBS Sports (Sullivan)",
+      "url": "https://www.cbssports.com/nfl/news/week-11-picks-best-bets-ats-odds-chargers-jets-titans-cowboys/",
+      "fav": 0,
+      "dog": 1
+     },
+     {
+      "site": "Bleacher Report",
+      "url": "https://bleacherreport.com/articles/25534898-bleacher-reports-expert-week-11-2026-nfl-picks",
+      "fav": 5,
+      "dog": 2
+     },
+     {
+      "site": "Covers",
+      "url": "https://www.covers.com/nfl/picks-against-the-spread-week-11-2026",
+      "fav": 1,
+      "dog": 0
+     },
+     {
+      "site": "SI",
+      "url": "https://www.si.com/betting/road-to-272-bets-nfl-week-11-picks-for-every-game-01m7kaz0pxg6",
+      "fav": 0,
+      "dog": 1
+     },
+     {
+      "site": "Yahoo Sports",
+      "url": "https://sports.yahoo.com/nfl/betting/article/week-11-nfl-picks-against-the-spread-predictions-for-every-game-cowboys-have-been-bad-but-their-season-isnt-dead-yet-135142600.html",
+      "fav": 0,
+      "dog": 1
+     }
+    ],
+    "notes": ""
+   }
   }
  ],
  "notes": [],
@@ -5779,6 +5774,6 @@
   "watch": 1,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Sun Nov 22, 3:15 PM PT"
+  "built_label": "Sun Nov 22, 4:15 PM PT"
  }
 }
