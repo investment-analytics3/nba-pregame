@@ -3605,7 +3605,7 @@
    "tip_pt": "4:30 PM PT",
    "day_et": "2026-11-23",
    "state": "in",
-   "detail": "15:11 - 2nd",
+   "detail": "10:46 - 2nd",
    "neutral": false,
    "venue": "Charles Koch Arena",
    "favorite": "home",
@@ -4299,8 +4299,8 @@
    },
    "locked_at": "2026-11-23T15:30:38-08:00",
    "score": {
-    "home": 50,
-    "away": 37
+    "home": 59,
+    "away": 45
    }
   }
  },
@@ -4313,7 +4313,7 @@
    "tip_pt": "5:00 PM PT",
    "day_et": "2026-11-23",
    "state": "in",
-   "detail": "5:02 - 1st",
+   "detail": "Halftime",
    "neutral": false,
    "venue": "Dean E. Smith Center",
    "favorite": "home",
@@ -5007,7 +5007,7 @@
    },
    "locked_at": "2026-11-23T16:00:42-08:00",
    "score": {
-    "home": 40,
+    "home": 51,
     "away": 15
    }
   }
@@ -5719,6 +5719,710 @@
     "home": 0,
     "away": 0
    }
+  }
+ },
+ "401918057": {
+  "at": "2026-11-23T18:00:46-08:00",
+  "day": "2026-11-23",
+  "game": {
+   "id": "401918057",
+   "tip_utc": "2026-11-24T03:00:00+00:00",
+   "tip_pt": "7:00 PM PT",
+   "day_et": "2026-11-23",
+   "state": "pre",
+   "detail": "11/23 - 10:00 PM EST",
+   "neutral": false,
+   "venue": "Haas Pavilion",
+   "favorite": "home",
+   "spread": {
+    "spread": 18.5,
+    "details": "CAL -18.5",
+    "provider": "DraftKings",
+    "ml_home": -5000,
+    "ml_away": 1800
+   },
+   "home": {
+    "id": "25",
+    "abbr": "CAL",
+    "name": "California",
+    "display": "California Golden Bears",
+    "mascot": "Golden Bears",
+    "record": "4-2",
+    "l3_record": "2-1",
+    "games": 4,
+    "season": {
+     "efg": 47.87,
+     "opp_efg": 51.46,
+     "off": 108.57,
+     "def": 105.66,
+     "net": 2.91,
+     "poss_per_game": 68.6,
+     "ranks": {
+      "efg": 260,
+      "off": 161,
+      "opp_efg": 197,
+      "def": 167,
+      "net": 155
+     }
+    },
+    "last3": {
+     "efg": 46.77,
+     "opp_efg": 49.71,
+     "off": 112.45,
+     "def": 99.74,
+     "net": 12.71,
+     "poss_per_game": 68.2,
+     "ranks": {
+      "efg": 270,
+      "off": 124,
+      "opp_efg": 151,
+      "def": 89,
+      "net": 81
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401918056,
+      "date": "2026-11-19",
+      "site": "home",
+      "opp_id": 2837,
+      "opp": "ETAM",
+      "d1_opp": true,
+      "pts": 86,
+      "opp_pts": 54,
+      "metrics": {
+       "efg": 60.16,
+       "opp_efg": 45.0,
+       "off": 126.1,
+       "def": 79.18,
+       "net": 46.92
+      },
+      "opp_power_rank": 260
+     },
+     {
+      "game_id": 401918055,
+      "date": "2026-11-14",
+      "site": "home",
+      "opp_id": 3101,
+      "opp": "UTU",
+      "d1_opp": true,
+      "pts": 79,
+      "opp_pts": 73,
+      "metrics": {
+       "efg": 42.96,
+       "opp_efg": 58.62,
+       "off": 117.19,
+       "def": 108.29,
+       "net": 8.9
+      },
+      "opp_power_rank": 272
+     },
+     {
+      "game_id": 401918054,
+      "date": "2026-11-11",
+      "site": "home",
+      "opp_id": 30,
+      "opp": "USC",
+      "d1_opp": true,
+      "pts": 65,
+      "opp_pts": 77,
+      "metrics": {
+       "efg": 37.88,
+       "opp_efg": 45.31,
+       "off": 94.31,
+       "def": 111.72,
+       "net": -17.41
+      },
+      "opp_power_rank": 7
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-18.5",
+    "b2b": false,
+    "power": {
+     "rank": 124,
+     "bpi": 108,
+     "own_net": 155
+    },
+    "key_players": [
+     "Nojus Indrusaitis",
+     "Michael Cooper",
+     "Jordan Ross",
+     "Sammie Yeanay",
+     "Jake Wilkins",
+     "Mantas Kocanas"
+    ],
+    "top_scorers": [
+     {
+      "name": "Nojus Indrusaitis",
+      "ppg": 17.2
+     },
+     {
+      "name": "Michael Cooper",
+      "ppg": 17.2
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "2011",
+    "abbr": "ALST",
+    "name": "Alabama State",
+    "display": "Alabama State Hornets",
+    "mascot": "Hornets",
+    "record": "2-4",
+    "l3_record": "1-2",
+    "games": 4,
+    "season": {
+     "efg": 49.17,
+     "opp_efg": 55.53,
+     "off": 99.25,
+     "def": 116.45,
+     "net": -17.2,
+     "poss_per_game": 69.8,
+     "ranks": {
+      "efg": 222,
+      "off": 259,
+      "opp_efg": 290,
+      "def": 283,
+      "net": 280
+     }
+    },
+    "last3": {
+     "efg": 53.18,
+     "opp_efg": 55.82,
+     "off": 107.82,
+     "def": 116.51,
+     "net": -8.69,
+     "poss_per_game": 65.2,
+     "ranks": {
+      "efg": 131,
+      "off": 172,
+      "opp_efg": 289,
+      "def": 286,
+      "net": 239
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401925664,
+      "date": "2026-11-20",
+      "site": "away",
+      "opp_id": 278,
+      "opp": "FRES",
+      "d1_opp": true,
+      "pts": 68,
+      "opp_pts": 80,
+      "metrics": {
+       "efg": 47.62,
+       "opp_efg": 62.22,
+       "off": 99.73,
+       "def": 117.32,
+       "net": -17.6
+      },
+      "opp_power_rank": 226
+     },
+     {
+      "game_id": 401911521,
+      "date": "2026-11-17",
+      "site": "away",
+      "opp_id": 302,
+      "opp": "UCD",
+      "d1_opp": true,
+      "pts": 75,
+      "opp_pts": 68,
+      "metrics": {
+       "efg": 54.55,
+       "opp_efg": 45.92,
+       "off": 109.31,
+       "def": 99.11,
+       "net": 10.2
+      },
+      "opp_power_rank": 191
+     },
+     {
+      "game_id": 401911472,
+      "date": "2026-11-15",
+      "site": "away",
+      "opp_id": 23,
+      "opp": "SJSU",
+      "d1_opp": true,
+      "pts": 68,
+      "opp_pts": 80,
+      "metrics": {
+       "efg": 58.18,
+       "opp_efg": 59.62,
+       "off": 115.47,
+       "def": 135.85,
+       "net": -20.38
+      },
+      "opp_power_rank": 173
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+18.5",
+    "b2b": false,
+    "power": {
+     "rank": 332,
+     "bpi": 358,
+     "own_net": 280
+    },
+    "key_players": [
+     "Paul McMillan IV",
+     "Mike James",
+     "Damarion Bonds",
+     "Trey Miller",
+     "Terrance Hampton",
+     "Tre Powell"
+    ],
+    "top_scorers": [
+     {
+      "name": "Paul McMillan IV",
+      "ppg": 16.3
+     },
+     {
+      "name": "Terrance Hampton",
+      "ppg": 11.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "CAL",
+    "dog": "ALST",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 12 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 CAL last-3 top 50 in 0 of 4 \u00b7 \u2717 ALST last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2717 CAL season outside 1-182: eFG% #260, Opp eFG% #197 \u00b7 \u2713 ALST season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "ALST: consensus #332, BPI #358, our net #280"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 12 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for CAL: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 12,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 0,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 8,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "CAL",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 260,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 161,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 197,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 167,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "CAL",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 270,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 124,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 151,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 89,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "ALST",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 290,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 283,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 222,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 259,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "ALST",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 289,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 286,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 131,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 172,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "cells": [
+       {
+        "team": "CAL",
+        "role": "fav",
+        "window": "season",
+        "metric": "off",
+        "rank": 161,
+        "color": "red"
+       },
+       {
+        "team": "CAL",
+        "role": "fav",
+        "window": "last3",
+        "metric": "off",
+        "rank": 124,
+        "color": "yellow"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "season",
+        "metric": "def",
+        "rank": 283,
+        "color": "green"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "last3",
+        "metric": "def",
+        "rank": 286,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shoot",
+      "label": "Shooting vs shot defense",
+      "fav_metric": "efg",
+      "dog_metric": "opp_efg",
+      "cells": [
+       {
+        "team": "CAL",
+        "role": "fav",
+        "window": "season",
+        "metric": "efg",
+        "rank": 260,
+        "color": "red"
+       },
+       {
+        "team": "CAL",
+        "role": "fav",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 270,
+        "color": "red"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 290,
+        "color": "green"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 289,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "cells": [
+       {
+        "team": "CAL",
+        "role": "fav",
+        "window": "season",
+        "metric": "def",
+        "rank": 167,
+        "color": "red"
+       },
+       {
+        "team": "CAL",
+        "role": "fav",
+        "window": "last3",
+        "metric": "def",
+        "rank": 89,
+        "color": "yellow"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "season",
+        "metric": "off",
+        "rank": 259,
+        "color": "green"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "last3",
+        "metric": "off",
+        "rank": 172,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shotd",
+      "label": "Shot defense vs shooting",
+      "fav_metric": "opp_efg",
+      "dog_metric": "efg",
+      "cells": [
+       {
+        "team": "CAL",
+        "role": "fav",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 197,
+        "color": "red"
+       },
+       {
+        "team": "CAL",
+        "role": "fav",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 151,
+        "color": "red"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "season",
+        "metric": "efg",
+        "rank": 222,
+        "color": "green"
+       },
+       {
+        "team": "ALST",
+        "role": "dog",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 131,
+        "color": "yellow"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "off",
+      "dog_metric": "off",
+      "fav_rank": 124,
+      "dog_rank": 172,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def",
+      "dog_metric": "def",
+      "fav_rank": 89,
+      "dog_rank": 286,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "fav_rank": 89,
+      "dog_rank": 172,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "fav_rank": 124,
+      "dog_rank": 286,
+      "counts": false,
+      "met": false
+     }
+    ]
+   },
+   "summary": "No track: score 12 (watch list from 18, qualifies at 28). Biggest edge over the last 3: CAL Off Eff (#124) against ALST Def Eff (#286). CAL 2-1 in its last 3, ALST 1-2. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV23ALSTCAL",
+    "fav_prob": 0.955,
+    "bid": 0.95,
+    "ask": 0.96
+   },
+   "locked_at": "2026-11-23T18:00:46-08:00"
   }
  }
 }
