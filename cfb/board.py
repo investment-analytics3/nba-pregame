@@ -182,11 +182,11 @@ def build(now: datetime | None = None, refresh: bool = True) -> dict:
 
 def attach_readouts(board: dict, data_dir: str):
     """Analyst readouts (owner Nov 10), written on game-day mornings by the owner's Claude scheduled task
-    "Football analyst readouts" into <data_dir>/readouts/<Eastern date>.json. Attached to tracked games
+    "Football analyst readouts" into <data_dir>/readouts/<Eastern date>.json. Attached to tracked games and any game scoring over 20 (owner Nov 23)
     (Qualified + Watch list) only; information only, never changes a tier or call."""
     cache = {}
     for g in board.get("games", []):
-        if not (g.get("scoring") or {}).get("tracked"):
+        if not scoring.readout_ok(g.get("scoring")):
             g.pop("readout", None)
             continue
         day = g.get("day_et")

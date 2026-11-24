@@ -153,9 +153,10 @@ function detail(g){
 }
 
 // Analyst readout (owner Nov 10): written on game-day mornings for Qualified + Watch list games; information only.
+const readoutOk = sc => !!(sc.tracked ?? sc.qualified) || ((typeof sc.score==='number'?sc.score:(sc.hero||{}).score)||0) > 20;   // owner Nov 23: tracked or score over 20
 function readoutPanel(g){
   const sc = g.scoring||{};
-  if(!sc.tracked) return '';
+  if(!readoutOk(sc)) return '';
   const r = g.readout;
   if(!r) return `<div class="panel" style="padding:16px 18px;margin-top:14px"><h3 style="margin:0 0 6px">Analyst readout</h3><div class="small muted">Not gathered yet. It's added on the morning of game day.</div></div>`;
   const when = r.updated ? new Date(r.updated).toLocaleString('en-US',{timeZone:'America/Los_Angeles',hour:'numeric',minute:'2-digit',month:'short',day:'numeric'})+' PT' : '';

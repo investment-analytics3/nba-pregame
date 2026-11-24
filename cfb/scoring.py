@@ -164,3 +164,16 @@ def score_game(game: dict, fav: dict, dog: dict, n_fbs: int = 138) -> dict:
         call = "Lean (QB cap)"
     return {**{k: v for k, v in q.items() if k != "power_fail"}, "hero": hs, "call": call,
             "flags": flags(fav, dog, q["power_fail"])}
+
+
+# Analyst readouts (owner Nov 23): written for tracked games AND any game whose score is over 20, even when a gate
+# (injury, power, range) keeps it off the tracked list. Information only; never changes a tier.
+READOUT_SCORE = 20
+
+
+def readout_ok(sc: dict) -> bool:
+    sc = sc or {}
+    s = sc.get("score")
+    if not isinstance(s, (int, float)):
+        s = (sc.get("hero") or {}).get("score")
+    return bool(sc.get("tracked", sc.get("qualified"))) or (isinstance(s, (int, float)) and s > READOUT_SCORE)

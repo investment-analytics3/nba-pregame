@@ -382,10 +382,11 @@ function detailView(g){
   return h;
 }
 
-// Analyst readout (Qualified + Watch list games): what published previews say. Information only.
+// Analyst readout (Qualified + Watch list games, and any game scoring over 20): what published previews say. Information only.
+const readoutOk = sc => !!(sc.tracked ?? sc.qualified) || ((typeof sc.score==='number'?sc.score:(sc.hero||{}).score)||0) > 20;   // owner Nov 23: tracked or score over 20
 function readoutPanel(g){
   const sc = g.scoring||{};
-  if(!(sc.tracked ?? sc.qualified)) return '';
+  if(!readoutOk(sc)) return '';
   const r = g.readout;
   if(!r) return `<div class="panel pad" style="margin-top:16px"><h3 style="margin:0 0 6px">Analyst readout</h3><div style="font-size:13.5px;color:var(--muted)">Not gathered yet. It's added each morning before the board.</div></div>`;
   const when = r.updated ? new Date(r.updated).toLocaleString('en-US',{timeZone:'America/Los_Angeles',hour:'numeric',minute:'2-digit',month:'short',day:'numeric'})+' PT' : '';

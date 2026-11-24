@@ -203,7 +203,7 @@ def page_data(slate: dict, kind: str, change_list: list[str] | None, earlier_lab
             t["top_scorers"] = top_scorers(players, t["id"], out)
             c = closers.get(t["abbr"], [])
             t["closers"] = c.get("closers", []) if isinstance(c, dict) else c
-        ro = readouts.get(str(g["id"])) if sc.get("tracked", sc.get("qualified")) else None
+        ro = readouts.get(str(g["id"])) if scoring.readout_ok(sc) else None
         games.append({**g, "summary": text, "lean": lean, "readout": ro})
     built = datetime.fromisoformat(slate["built_at"])
     return {

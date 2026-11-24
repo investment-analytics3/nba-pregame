@@ -254,7 +254,7 @@ def _game(ev, tip, tm, pw, rows, pb, inj, ds, k_events) -> dict:
 def attach_readouts(board: dict, data_dir: str):
     cache = {}
     for g in board.get("games", []):
-        if not (g.get("scoring") or {}).get("tracked"):
+        if not scoring.readout_ok(g.get("scoring")):
             g.pop("readout", None)
             continue
         day = g.get("day_et")

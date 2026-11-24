@@ -271,3 +271,16 @@ def score_game(game: dict, fav: dict, dog: dict) -> dict:
                               "context", "qualifiers", "fails", "failed")} | {
             "hero": hs, "edge": e, "flags": flags(game, fav, dog, e, q.get("power_fail")), "under": under_gate(game, fav, dog),
             "call": call(q, e, fav, dog), "matchups": matchups(game, fav, dog)}
+
+
+# Analyst readouts (owner Nov 23): written for tracked games AND any game whose score is over 20, even when a gate
+# (injury, power, range) keeps it off the tracked list. Information only; never changes a tier.
+READOUT_SCORE = 20
+
+
+def readout_ok(sc: dict) -> bool:
+    sc = sc or {}
+    s = sc.get("score")
+    if not isinstance(s, (int, float)):
+        s = (sc.get("hero") or {}).get("score")
+    return bool(sc.get("tracked", sc.get("qualified"))) or (isinstance(s, (int, float)) and s > READOUT_SCORE)

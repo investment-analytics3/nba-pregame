@@ -255,11 +255,11 @@ def _game(ev, tip, tm, pw, rows, pb, ds, n, k_events) -> dict:
 
 def attach_readouts(board: dict, data_dir: str):
     """Analyst readouts, written each morning by the owner's Claude scheduled task into
-    <data_dir>/readouts/<Eastern date>.json. Attached to tracked games (Qualified + Watch list) only;
+    <data_dir>/readouts/<Eastern date>.json. Attached to tracked games and any game scoring over 20 (owner Nov 23) (Qualified + Watch list) only;
     information only, never changes a tier."""
     cache = {}
     for g in board.get("games", []):
-        if not (g.get("scoring") or {}).get("tracked"):
+        if not scoring.readout_ok(g.get("scoring")):
             g.pop("readout", None)
             continue
         day = g.get("day_et")

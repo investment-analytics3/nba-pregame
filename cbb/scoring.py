@@ -256,3 +256,16 @@ def order_games(games: list[dict]) -> list[dict]:
     order = {"qualified": 0, "watch": 1, "out": 2}
     return sorted(games, key=lambda g: (order.get((g.get("scoring") or {}).get("tier"), 2),
                                         -((g.get("scoring") or {}).get("score") or -1), g.get("tip_utc") or ""))
+
+
+# Analyst readouts (owner Nov 23): written for tracked games AND any game whose score is over 20, even when a gate
+# (injury, power, range) keeps it off the tracked list. Information only; never changes a tier.
+READOUT_SCORE = 20
+
+
+def readout_ok(sc: dict) -> bool:
+    sc = sc or {}
+    s = sc.get("score")
+    if not isinstance(s, (int, float)):
+        s = (sc.get("hero") or {}).get("score")
+    return bool(sc.get("tracked", sc.get("qualified"))) or (isinstance(s, (int, float)) and s > READOUT_SCORE)
