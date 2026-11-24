@@ -3,8 +3,8 @@
  "date_label": "Tuesday, November 24",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-24T10:00:49-08:00",
- "built_label": "Tue Nov 24, 10:00 AM PT",
+ "built_at": "2026-11-24T10:49:21-08:00",
+ "built_label": "Tue Nov 24, 10:49 AM PT",
  "metrics_through": "2026-11-23",
  "metrics_through_label": "Nov 23",
  "max": 40,
@@ -12,7 +12,16 @@
  "bottom_from": 26,
  "match_top": 7,
  "match_bottom_from": 26,
- "power_sources": {},
+ "power_sources": {
+  "espn": {
+   "date": "2026-11-20",
+   "url": "https://www.espn.com/nhl/story/_/id/50532384/nhl-2026-27-power-rankings-top-teams-players-stats-projections-standings-fantasy-hockey"
+  },
+  "nhl_com": {
+   "date": "2026-11-19",
+   "url": "https://www.nhl.com/news/super-16-nhl-power-rankings-november-19-2026"
+  }
+ },
  "games": [
   {
    "id": "401892780",
@@ -91,7 +100,7 @@
       "pts": 4,
       "opp_pts": 5,
       "extra": true,
-      "opp_power_rank": 16
+      "opp_power_rank": 18
      },
      {
       "game_id": 2026020359,
@@ -111,7 +120,7 @@
       "pts": 1,
       "opp_pts": 3,
       "extra": false,
-      "opp_power_rank": 3
+      "opp_power_rank": 2
      }
     ],
     "trend_games": [
@@ -174,9 +183,11 @@
     "is_fav": false,
     "b2b": false,
     "power": {
-     "rank": 14,
+     "rank": 6,
      "own": 14,
-     "avg": 14.0
+     "avg": 6.0,
+     "espn": 2,
+     "nhl_com": 2
     },
     "goalie": {
      "name": "Devon Levi",
@@ -307,7 +318,7 @@
       "pts": 5,
       "opp_pts": 4,
       "extra": true,
-      "opp_power_rank": 20
+      "opp_power_rank": 19
      },
      {
       "game_id": 2026020358,
@@ -317,7 +328,7 @@
       "pts": 3,
       "opp_pts": 4,
       "extra": true,
-      "opp_power_rank": 8
+      "opp_power_rank": 9
      },
      {
       "game_id": 2026020342,
@@ -327,7 +338,7 @@
       "pts": 3,
       "opp_pts": 4,
       "extra": true,
-      "opp_power_rank": 8
+      "opp_power_rank": 9
      }
     ],
     "trend_games": [
@@ -392,13 +403,15 @@
     "power": {
      "rank": 7,
      "own": 7,
-     "avg": 7.0
+     "avg": 7.33,
+     "espn": 9,
+     "nhl_com": 6
     },
     "goalie": {
      "name": "Carter Hart",
      "last": "Hart",
      "espn_id": "4064582",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "regular",
     "regular_goalie_name": "C. Hart",
@@ -448,7 +461,7 @@
       "rule": "Range",
       "name": "Top-7 team vs bottom-7 team (consensus power rank)",
       "pass": false,
-      "detail": "VGK #7 vs EDM #14"
+      "detail": "VGK #7 vs EDM #6"
      },
      {
       "rule": "A",
@@ -460,7 +473,7 @@
       "rule": "Goalie",
       "name": "VGK's regular goalie starts",
       "pass": true,
-      "detail": "Carter Hart (probable)"
+      "detail": "Carter Hart (confirmed)"
      },
      {
       "rule": "Matchup",
@@ -470,7 +483,7 @@
      }
     ],
     "fails": [
-     "Not a top-7 vs bottom-7 matchup (VGK #7, EDM #14)"
+     "Not a top-7 vs bottom-7 matchup (VGK #7, EDM #6)"
     ],
     "warnings": [],
     "flags": [],
@@ -773,7 +786,7 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (VGK #7, EDM #14). Carter Hart in goal for VGK (probable). Biggest edge over the last 5: xGF% 5v5 (VGK #5, EDM #31). VGK 1-0-2 in its last 3, EDM 0-2-1.",
+   "summary": "Not a top-7 vs bottom-7 matchup (VGK #7, EDM #6). Carter Hart in goal for VGK (confirmed). Biggest edge over the last 5: xGF% 5v5 (VGK #5, EDM #31). VGK 1-0-2 in its last 3, EDM 0-2-1.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV24VGKEDM",
@@ -783,9 +796,7 @@
    }
   }
  ],
- "notes": [
-  "No published power rankings saved yet: the consensus is our own rank only."
- ],
+ "notes": [],
  "summary": {
   "date": "2026-11-24",
   "date_label": "Tuesday, November 24",
@@ -794,200 +805,264 @@
   "in_range": 0,
   "qualified": 0,
   "watch": 0,
-  "built_label": "Tue Nov 24, 10:00 AM PT"
+  "built_label": "Tue Nov 24, 10:49 AM PT"
  },
  "power_table": [
   {
    "abbr": "CAR",
    "rank": 1,
    "own": 1,
-   "avg": 1.0
-  },
-  {
-   "abbr": "OTT",
-   "rank": 2,
-   "own": 2,
-   "avg": 2.0
+   "avg": 1.0,
+   "espn": 1,
+   "nhl_com": 1
   },
   {
    "abbr": "TBL",
-   "rank": 3,
+   "rank": 2,
    "own": 3,
-   "avg": 3.0
+   "avg": 4.0,
+   "espn": 4,
+   "nhl_com": 5
+  },
+  {
+   "abbr": "MIN",
+   "rank": 3,
+   "own": 6,
+   "avg": 4.0,
+   "espn": 3,
+   "nhl_com": 3
   },
   {
    "abbr": "NJD",
    "rank": 4,
    "own": 4,
-   "avg": 4.0
+   "avg": 4.33,
+   "espn": 5,
+   "nhl_com": 4
   },
   {
-   "abbr": "BOS",
+   "abbr": "OTT",
    "rank": 5,
-   "own": 5,
-   "avg": 5.0
+   "own": 2,
+   "avg": 5.33,
+   "espn": 6,
+   "nhl_com": 8
   },
   {
-   "abbr": "MIN",
+   "abbr": "EDM",
    "rank": 6,
-   "own": 6,
-   "avg": 6.0
+   "own": 14,
+   "avg": 6.0,
+   "espn": 2,
+   "nhl_com": 2
   },
   {
    "abbr": "VGK",
    "rank": 7,
    "own": 7,
-   "avg": 7.0
+   "avg": 7.33,
+   "espn": 9,
+   "nhl_com": 6
+  },
+  {
+   "abbr": "BOS",
+   "rank": 8,
+   "own": 5,
+   "avg": 7.67,
+   "espn": 7,
+   "nhl_com": 11
   },
   {
    "abbr": "DAL",
-   "rank": 8,
-   "own": 8,
-   "avg": 8.0
-  },
-  {
-   "abbr": "COL",
    "rank": 9,
-   "own": 9,
-   "avg": 9.0
-  },
-  {
-   "abbr": "UTA",
-   "rank": 10,
-   "own": 10,
-   "avg": 10.0
-  },
-  {
-   "abbr": "NYR",
-   "rank": 11,
-   "own": 11,
-   "avg": 11.0
+   "own": 8,
+   "avg": 8.33,
+   "espn": 10,
+   "nhl_com": 7
   },
   {
    "abbr": "MTL",
-   "rank": 12,
+   "rank": 10,
    "own": 12,
-   "avg": 12.0
+   "avg": 9.67,
+   "espn": 8,
+   "nhl_com": 9
+  },
+  {
+   "abbr": "COL",
+   "rank": 11,
+   "own": 9,
+   "avg": 10.0,
+   "espn": 11,
+   "nhl_com": 10
+  },
+  {
+   "abbr": "NYR",
+   "rank": 12,
+   "own": 11,
+   "avg": 12.0,
+   "espn": 12,
+   "nhl_com": 13
   },
   {
    "abbr": "FLA",
    "rank": 13,
    "own": 13,
-   "avg": 13.0
+   "avg": 13.0,
+   "espn": 14,
+   "nhl_com": 12
   },
   {
-   "abbr": "EDM",
+   "abbr": "UTA",
    "rank": 14,
-   "own": 14,
-   "avg": 14.0
-  },
-  {
-   "abbr": "WSH",
-   "rank": 15,
-   "own": 15,
-   "avg": 15.0
-  },
-  {
-   "abbr": "STL",
-   "rank": 16,
-   "own": 16,
-   "avg": 16.0
-  },
-  {
-   "abbr": "NYI",
-   "rank": 17,
-   "own": 17,
-   "avg": 17.0
+   "own": 10,
+   "avg": 14.0,
+   "espn": 16,
+   "nhl_com": 16
   },
   {
    "abbr": "NSH",
-   "rank": 18,
+   "rank": 15,
    "own": 18,
-   "avg": 18.0
+   "avg": 15.0,
+   "espn": 13,
+   "nhl_com": 14
   },
   {
-   "abbr": "BUF",
-   "rank": 19,
-   "own": 19,
-   "avg": 19.0
+   "abbr": "NYI",
+   "rank": 16,
+   "own": 17,
+   "avg": 15.67,
+   "espn": 15,
+   "nhl_com": 15
+  },
+  {
+   "abbr": "WSH",
+   "rank": 17,
+   "own": 15,
+   "avg": 16.0,
+   "espn": 17,
+   "nhl_com": null
+  },
+  {
+   "abbr": "STL",
+   "rank": 18,
+   "own": 16,
+   "avg": 17.5,
+   "espn": 19,
+   "nhl_com": null
   },
   {
    "abbr": "WPG",
-   "rank": 20,
+   "rank": 19,
    "own": 20,
-   "avg": 20.0
+   "avg": 20.0,
+   "espn": 20,
+   "nhl_com": null
   },
   {
-   "abbr": "PIT",
-   "rank": 21,
-   "own": 21,
-   "avg": 21.0
-  },
-  {
-   "abbr": "DET",
-   "rank": 22,
-   "own": 22,
-   "avg": 22.0
+   "abbr": "BUF",
+   "rank": 20,
+   "own": 19,
+   "avg": 20.5,
+   "espn": 22,
+   "nhl_com": null
   },
   {
    "abbr": "SEA",
-   "rank": 23,
+   "rank": 21,
    "own": 23,
-   "avg": 23.0
-  },
-  {
-   "abbr": "CGY",
-   "rank": 24,
-   "own": 24,
-   "avg": 24.0
-  },
-  {
-   "abbr": "LAK",
-   "rank": 25,
-   "own": 25,
-   "avg": 25.0
-  },
-  {
-   "abbr": "CBJ",
-   "rank": 26,
-   "own": 26,
-   "avg": 26.0
-  },
-  {
-   "abbr": "PHI",
-   "rank": 27,
-   "own": 27,
-   "avg": 27.0
+   "avg": 22.0,
+   "espn": 21,
+   "nhl_com": null
   },
   {
    "abbr": "ANA",
-   "rank": 28,
+   "rank": 22,
    "own": 28,
-   "avg": 28.0
+   "avg": 23.0,
+   "espn": 18,
+   "nhl_com": null
+  },
+  {
+   "abbr": "PIT",
+   "rank": 23,
+   "own": 21,
+   "avg": 23.5,
+   "espn": 26,
+   "nhl_com": null
+  },
+  {
+   "abbr": "DET",
+   "rank": 24,
+   "own": 22,
+   "avg": 23.5,
+   "espn": 25,
+   "nhl_com": null
+  },
+  {
+   "abbr": "CGY",
+   "rank": 25,
+   "own": 24,
+   "avg": 23.5,
+   "espn": 23,
+   "nhl_com": null
   },
   {
    "abbr": "SJS",
-   "rank": 29,
+   "rank": 26,
    "own": 29,
-   "avg": 29.0
+   "avg": 26.5,
+   "espn": 24,
+   "nhl_com": null
+  },
+  {
+   "abbr": "LAK",
+   "rank": 27,
+   "own": 25,
+   "avg": 27.0,
+   "espn": 29,
+   "nhl_com": null
+  },
+  {
+   "abbr": "PHI",
+   "rank": 28,
+   "own": 27,
+   "avg": 27.5,
+   "espn": 28,
+   "nhl_com": null
+  },
+  {
+   "abbr": "CBJ",
+   "rank": 29,
+   "own": 26,
+   "avg": 28.0,
+   "espn": 30,
+   "nhl_com": null
   },
   {
    "abbr": "TOR",
    "rank": 30,
    "own": 30,
-   "avg": 30.0
+   "avg": 28.5,
+   "espn": 27,
+   "nhl_com": null
   },
   {
    "abbr": "CHI",
    "rank": 31,
    "own": 31,
-   "avg": 31.0
+   "avg": 31.0,
+   "espn": 31,
+   "nhl_com": null
   },
   {
    "abbr": "VAN",
    "rank": 32,
    "own": 32,
-   "avg": 32.0
+   "avg": 32.0,
+   "espn": 32,
+   "nhl_com": null
   }
  ]
 }
