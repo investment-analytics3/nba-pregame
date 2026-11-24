@@ -330,7 +330,11 @@ often: always `git pull --rebase origin main` before pushing.
   L2 shows each team's season record in the second game of back-to-backs (`b2b_record`, build_slate `b2b_records`).
   Power rank + L3 record are pills (`prPill`/`formPill`): favorite top 10 / 3-0 green, 11-20 / 2-1 yellow, else red;
   underdog flipped (top 10 / 3-0 red, 11-20 / 2-1 yellow, 21-30 / 1-2 / 0-3 green).
-- Analyst readout (Nov 10): L2 bottom panel for tracked games (`readoutPanel`), from `data/readouts/<date>.json`
+- Analyst readouts, ALL boards (owner Nov 23): written for tracked games AND any game scoring over 20 (`scoring.readout_ok`,
+  `READOUT_SCORE = 20`; JS `readoutOk`), even when a gate (injury, power, range) keeps it off the tracked list; context rows
+  carry `readout`. Preferred sources (owner): Yahoo/NBC Sports (Rotoworld), FanDuel Research (numberFire), SI Betting,
+  Action Network, Sports Betting Dime. NHL readouts: `data/nhl/readouts/<date>.json` (README there), task "NHL analyst readouts".
+- Analyst readout (Nov 10): L2 bottom panel (`readoutPanel`), from `data/readouts/<date>.json`
   (format + rules: `data/readouts/README.md`; loaded by `board.load_readouts`). Written by the owner's Claude scheduled
   task "NBA analyst readouts" (daily 9:41 AM PT), which commits only that file and dispatches `board.yml` preview with
   send=false. Information only.

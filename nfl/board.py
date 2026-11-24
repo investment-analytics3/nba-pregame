@@ -290,7 +290,7 @@ def write(board: dict) -> dict:
     ctx = {"season": board["season"], "week": board["week"], "built_at": board["built_at"], "games": [
         {"id": g["id"], "nflverse_id": g["nflverse_id"], "kick_utc": g["kick_utc"], "day_et": g["day_et"],
          "home": g["home_code"], "away": g["away_code"], "fav": g.get("fav"), "dog": g.get("dog"), "spread": g.get("spread"),
-         "fav_defense_top10": g.get("fav_defense_top10"), "tracked": bool(g["scoring"].get("tracked")),
+         "fav_defense_top10": g.get("fav_defense_top10"), "tracked": bool(g["scoring"].get("tracked")), "readout": scoring.readout_ok(g["scoring"]),
          "alerts": bool(g["scoring"].get("alerts")), "tier": g["scoring"].get("tier"),
          "tier_label": g["scoring"].get("tier_label"),
          "kalshi_away": sources.kalshi_code(g["away_code"]), "kalshi_home": sources.kalshi_code(g["home_code"]),

@@ -298,7 +298,7 @@ def context_row(g: dict, board: dict) -> dict:
             "away_abbr": g["away"]["abbr"], "home_abbr": g["home"]["abbr"], "fav_abbr": fav["abbr"], "dog_abbr": dog["abbr"],
             "fav_home": g["favorite"] == "home", "spread": -abs(g["spread"]["spread"]),
             "away_names": [g["away"].get("name"), g["away"].get("display")], "home_names": [g["home"].get("name"), g["home"].get("display")],
-            "tier": sc["tier"], "tier_label": sc["tier_label"], "tracked": sc["tracked"], "alerts": sc["alerts"],
+            "tier": sc["tier"], "tier_label": sc["tier_label"], "tracked": sc["tracked"], "readout": scoring.readout_ok(sc), "alerts": sc["alerts"],
             "score": sc["score"], "fav_b2b": bool(fav.get("b2b")), "fav_defense": {"last3": fd("last3"), "season": fd("season")},
             "kalshi_event": (g.get("kalshi") or {}).get("event"), "locked": bool(g.get("locked_at"))}
 

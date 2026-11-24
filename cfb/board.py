@@ -298,7 +298,7 @@ def context_row(g: dict) -> dict:
             "away_abbr": g["away"]["abbr"], "home_abbr": g["home"]["abbr"], "fav_abbr": fav["abbr"], "dog_abbr": dog["abbr"],
             "fav_home": g["fav_home"], "spread": g["spread"],
             "away_names": [g["away"].get("display"), g["away"].get("name")], "home_names": [g["home"].get("display"), g["home"].get("name")],
-            "tier": sc["tier"], "tier_label": sc["tier_label"], "tracked": sc["tracked"], "alerts": sc["alerts"],
+            "tier": sc["tier"], "tier_label": sc["tier_label"], "tracked": sc["tracked"], "readout": scoring.readout_ok(sc), "alerts": sc["alerts"],
             "call": sc["call"], "hero": sc["hero"]["score"], "fav_defense_top10": bool(g.get("fav_defense_top25")),
             "fav_def_rank_l3": ((fav.get("last3") or {}).get("ranks") or {}).get("def_epa"),
             "def_hold": (((fav.get("last3") or {}).get("ranks") or {}).get("def_epa") or 999) <= scoring.DEF_HOLD_RANK,

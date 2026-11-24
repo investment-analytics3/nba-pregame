@@ -288,7 +288,7 @@ def context_row(g: dict) -> dict:
             "away_abbr": g["away"]["abbr"], "home_abbr": g["home"]["abbr"], "away_espn": g["away"]["espn_abbr"], "home_espn": g["home"]["espn_abbr"],
             "fav_abbr": fav["abbr"], "fav_espn": fav["espn_abbr"], "dog_abbr": dog["abbr"], "fav_home": g["favorite"] == "home",
             "away_names": [g["away"].get("name"), g["away"].get("display")], "home_names": [g["home"].get("name"), g["home"].get("display")],
-            "tier": sc["tier"], "tier_label": sc["tier_label"], "tracked": sc["tracked"], "alerts": sc["alerts"], "score": sc["score"],
+            "tier": sc["tier"], "tier_label": sc["tier_label"], "tracked": sc["tracked"], "readout": scoring.readout_ok(sc), "alerts": sc["alerts"], "score": sc["score"],
             "in_range": sc["in_range"], "fav_rank": (fav.get("power") or {}).get("rank"), "dog_rank": (dog.get("power") or {}).get("rank"),
             "fav_def_rank": ((fav.get("season") or {}).get("ranks") or {}).get("xga60"),
             "dog_def_rank": ((dog.get("season") or {}).get("ranks") or {}).get("xga60"),
