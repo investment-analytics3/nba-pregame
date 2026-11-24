@@ -1,258 +1,167 @@
 {
- "date": "2026-11-23",
- "built_at": "2026-11-23T17:30:25-05:00",
+ "date": "2026-11-24",
+ "built_at": "2026-11-24T00:45:26-05:00",
  "games": [
   {
-   "id": "401910042",
+   "id": "401909315",
    "fav_defense": {
     "season": {
      "opp_efg": {
-      "v": 54.51,
-      "r": 19
+      "v": 50.21,
+      "r": 2
      },
      "def": {
-      "v": 113.53,
-      "r": 22
+      "v": 103.56,
+      "r": 2
      }
     },
     "last3": {
      "opp_efg": {
-      "v": 51.96,
-      "r": 10
+      "v": 47.15,
+      "r": 1
      },
      "def": {
-      "v": 105.99,
-      "r": 9
+      "v": 99.35,
+      "r": 1
      }
     }
    },
    "fav_b2b": false,
-   "tip_utc": "2026-11-24T01:00Z",
+   "tip_utc": "2026-11-25T01:00Z",
    "tip_pt": "5:00 PM PT",
-   "fav": "PHX",
-   "dog": "NO",
+   "fav": "BOS",
+   "dog": "WSH",
    "qualifiers": [
-    "eFG%"
+    "Opp eFG%",
+    "Def Eff"
    ],
    "tier": "watch",
    "route": "",
-   "score": 23,
+   "score": 19,
    "band": "yellow",
-   "spread": "PHX -3.5",
+   "spread": "BOS -10.5",
    "away": {
-    "id": "21",
-    "abbr": "PHX",
-    "name": "Suns",
-    "display": "Phoenix Suns",
-    "record": "8-7"
+    "id": "2",
+    "abbr": "BOS",
+    "name": "Celtics",
+    "display": "Boston Celtics",
+    "record": "11-6"
    },
    "home": {
-    "id": "3",
-    "abbr": "NO",
-    "name": "Pelicans",
-    "display": "New Orleans Pelicans",
-    "record": "5-13"
-   }
-  },
-  {
-   "id": "401910043",
-   "fav_defense": {
-    "season": {
-     "opp_efg": {
-      "v": 53.62,
-      "r": 13
-     },
-     "def": {
-      "v": 110.69,
-      "r": 11
-     }
-    },
-    "last3": {
-     "opp_efg": {
-      "v": 59.06,
-      "r": 26
-     },
-     "def": {
-      "v": 121.3,
-      "r": 26
-     }
-    }
-   },
-   "fav_b2b": false,
-   "tip_utc": "2026-11-24T01:30Z",
-   "tip_pt": "5:30 PM PT",
-   "fav": "HOU",
-   "dog": "LAC",
-   "qualifiers": [
-    "Off Eff"
-   ],
-   "tier": "watch",
-   "route": "",
-   "score": 20,
-   "band": "yellow",
-   "spread": "HOU -12.5",
-   "away": {
-    "id": "12",
-    "abbr": "LAC",
-    "name": "Clippers",
-    "display": "LA Clippers",
-    "record": "4-11"
-   },
-   "home": {
-    "id": "10",
-    "abbr": "HOU",
-    "name": "Rockets",
-    "display": "Houston Rockets",
-    "record": "12-5"
+    "id": "27",
+    "abbr": "WSH",
+    "name": "Wizards",
+    "display": "Washington Wizards",
+    "record": "7-11"
    }
   }
  ],
  "closers": {
-  "PHX": {
+  "BOS": {
    "closers": [
-    "Devin Booker",
-    "Miles Bridges"
+    "Jayson Tatum",
+    "Paul George"
    ],
    "elite": [],
    "source": "draft",
    "season": {
-    "Devin Booker": {
-     "ppm": 0.727,
-     "ppg": 24.7,
+    "Jayson Tatum": {
+     "ppm": 0.769,
+     "ppg": 26.4,
      "gp": 15
     },
-    "Miles Bridges": {
-     "ppm": 0.51,
-     "ppg": 14.8,
-     "gp": 15
+    "Paul George": {
+     "ppm": 0.659,
+     "ppg": 19.9,
+     "gp": 14
     }
    }
   },
-  "HOU": {
+  "WSH": {
    "closers": [
-    "Kevin Durant",
-    "Alperen Sengun"
+    "Trae Young",
+    "Kyshawn George"
    ],
    "elite": [],
    "source": "draft",
    "season": {
-    "Kevin Durant": {
-     "ppm": 0.625,
-     "ppg": 21.0,
-     "gp": 17
-    },
-    "Alperen Sengun": {
-     "ppm": 0.669,
-     "ppg": 22.1,
-     "gp": 15
-    }
-   }
-  },
-  "NO": {
-   "closers": [
-    "Zion Williamson",
-    "Jeremiah Fears"
-   ],
-   "elite": [],
-   "source": "draft",
-   "season": {
-    "Zion Williamson": {
-     "ppm": 0.669,
-     "ppg": 21.7,
-     "gp": 16
-    },
-    "Jeremiah Fears": {
-     "ppm": 0.55,
-     "ppg": 16.7,
+    "Trae Young": {
+     "ppm": 0.493,
+     "ppg": 17.1,
      "gp": 18
-    }
-   }
-  },
-  "LAC": {
-   "closers": [
-    "Darius Garland",
-    "Rui Hachimura"
-   ],
-   "elite": [],
-   "source": "draft",
-   "season": {
-    "Darius Garland": {
-     "ppm": 0.633,
-     "ppg": 20.9,
-     "gp": 15
     },
-    "Rui Hachimura": {
-     "ppm": 0.481,
-     "ppg": 14.0,
-     "gp": 13
+    "Kyshawn George": {
+     "ppm": 0.525,
+     "ppg": 17.8,
+     "gp": 18
     }
    }
   }
  },
  "league": {
   "opp_efg": [
-   49.47,
+   50.19,
    50.21,
-   50.76,
+   50.9,
    50.93,
    51.17,
-   51.22,
-   51.41,
-   52.15,
-   52.39,
+   51.28,
+   51.5,
+   52.08,
+   52.32,
    52.53,
-   53.25,
+   53.43,
+   53.55,
    53.6,
-   53.62,
-   53.74,
+   53.87,
    53.99,
+   54.09,
+   54.19,
+   54.19,
    54.26,
-   54.36,
-   54.42,
-   54.51,
    54.74,
-   55.1,
-   55.23,
+   54.83,
+   55.11,
    55.27,
-   55.31,
-   56.06,
+   55.47,
+   56.14,
    56.21,
-   56.39,
-   56.45,
-   56.62,
-   56.62
+   56.28,
+   56.54,
+   56.61,
+   57.11
   ],
   "def": [
-   101.58,
+   102.21,
    103.56,
-   103.74,
+   104.14,
    104.99,
-   107.15,
    107.42,
    107.58,
-   107.87,
-   108.9,
+   108.04,
+   108.12,
+   109.16,
+   109.99,
+   110.37,
    110.65,
-   110.69,
-   110.77,
-   110.88,
-   110.89,
    111.08,
-   111.64,
-   112.02,
+   111.08,
+   111.88,
+   112.16,
+   112.37,
    112.49,
-   112.82,
-   113.11,
+   112.75,
+   112.98,
    113.24,
-   113.53,
+   113.6,
    113.66,
    113.8,
-   114.99,
-   115.96,
-   116.17,
-   116.57,
-   117.24,
-   118.65
+   115.11,
+   115.73,
+   116.78,
+   117.2,
+   117.35,
+   118.14
   ]
  },
  "fav10": {
