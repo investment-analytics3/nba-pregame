@@ -2155,7 +2155,7 @@
    "tip_pt": "2:00 PM PT",
    "day_et": "2026-11-23",
    "state": "in",
-   "detail": "10:51 - 2nd",
+   "detail": "6:22 - 2nd",
    "neutral": true,
    "venue": "Lahaina Civic Center",
    "favorite": "home",
@@ -2885,8 +2885,8 @@
     "updated": "2026-11-23T05:35-08:00"
    },
    "score": {
-    "home": 48,
-    "away": 52
+    "home": 61,
+    "away": 61
    }
   }
  },
@@ -2899,7 +2899,7 @@
    "tip_pt": "3:30 PM PT",
    "day_et": "2026-11-23",
    "state": "in",
-   "detail": "12:27 - 1st",
+   "detail": "6:34 - 1st",
    "neutral": false,
    "venue": "Zidian Family Arena at Beeghly Center",
    "favorite": "home",
@@ -3591,8 +3591,8 @@
    },
    "locked_at": "2026-11-23T14:30:53-08:00",
    "score": {
-    "home": 15,
-    "away": 6
+    "home": 21,
+    "away": 15
    }
   }
  },
@@ -4302,6 +4302,710 @@
     "home": 0,
     "away": 0
    }
+  }
+ },
+ "401913102": {
+  "at": "2026-11-23T16:00:42-08:00",
+  "day": "2026-11-23",
+  "game": {
+   "id": "401913102",
+   "tip_utc": "2026-11-24T01:00:00+00:00",
+   "tip_pt": "5:00 PM PT",
+   "day_et": "2026-11-23",
+   "state": "pre",
+   "detail": "11/23 - 8:00 PM EST",
+   "neutral": false,
+   "venue": "Dean E. Smith Center",
+   "favorite": "home",
+   "spread": {
+    "spread": 18.5,
+    "details": "UNC -18.5",
+    "provider": "DraftKings",
+    "ml_home": -3600,
+    "ml_away": 1500
+   },
+   "home": {
+    "id": "153",
+    "abbr": "UNC",
+    "name": "North Carolina",
+    "display": "North Carolina Tar Heels",
+    "mascot": "Tar Heels",
+    "record": "4-1",
+    "l3_record": "2-1",
+    "games": 4,
+    "season": {
+     "efg": 50.74,
+     "opp_efg": 42.99,
+     "off": 116.63,
+     "def": 98.15,
+     "net": 18.49,
+     "poss_per_game": 74.4,
+     "ranks": {
+      "efg": 187,
+      "off": 81,
+      "opp_efg": 30,
+      "def": 85,
+      "net": 75
+     }
+    },
+    "last3": {
+     "efg": 50.93,
+     "opp_efg": 43.16,
+     "off": 117.73,
+     "def": 97.01,
+     "net": 20.72,
+     "poss_per_game": 75.6,
+     "ranks": {
+      "efg": 182,
+      "off": 76,
+      "opp_efg": 29,
+      "def": 63,
+      "net": 56
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401912710,
+      "date": "2026-11-20",
+      "site": "home",
+      "opp_id": 276,
+      "opp": "MRSH",
+      "d1_opp": true,
+      "pts": 88,
+      "opp_pts": 72,
+      "metrics": {
+       "efg": 55.07,
+       "opp_efg": 42.47,
+       "off": 117.92,
+       "def": 96.48,
+       "net": 21.44
+      },
+      "opp_power_rank": 153
+     },
+     {
+      "game_id": 401906782,
+      "date": "2026-11-13",
+      "site": "home",
+      "opp_id": 61,
+      "opp": "UGA",
+      "d1_opp": true,
+      "pts": 70,
+      "opp_pts": 78,
+      "metrics": {
+       "efg": 39.04,
+       "opp_efg": 48.57,
+       "off": 95.14,
+       "def": 106.01,
+       "net": -10.87
+      },
+      "opp_power_rank": 44
+     },
+     {
+      "game_id": 401913100,
+      "date": "2026-11-06",
+      "site": "home",
+      "opp_id": 2747,
+      "opp": "WOF",
+      "d1_opp": true,
+      "pts": 109,
+      "opp_pts": 70,
+      "metrics": {
+       "efg": 58.9,
+       "opp_efg": 38.41,
+       "off": 138.7,
+       "def": 89.07,
+       "net": 49.63
+      },
+      "opp_power_rank": 281
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-18.5",
+    "b2b": false,
+    "power": {
+     "rank": 61,
+     "bpi": 49,
+     "own_net": 75
+    },
+    "key_players": [
+     "Terrence Brown",
+     "Matt Able",
+     "Jarin Stevenson",
+     "Maximo Adams",
+     "Neo Avdalas",
+     "Sayon Keita"
+    ],
+    "top_scorers": [
+     {
+      "name": "Terrence Brown",
+      "ppg": 18.0
+     },
+     {
+      "name": "Matt Able",
+      "ppg": 13.2
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "2405",
+    "abbr": "MONM",
+    "name": "Monmouth",
+    "display": "Monmouth Hawks",
+    "mascot": "Hawks",
+    "record": "1-4",
+    "l3_record": "1-2",
+    "games": 4,
+    "season": {
+     "efg": 46.17,
+     "opp_efg": 50.4,
+     "off": 93.08,
+     "def": 107.02,
+     "net": -13.94,
+     "poss_per_game": 71.7,
+     "ranks": {
+      "efg": 288,
+      "off": 309,
+      "opp_efg": 169,
+      "def": 188,
+      "net": 260
+     }
+    },
+    "last3": {
+     "efg": 44.97,
+     "opp_efg": 51.62,
+     "off": 96.41,
+     "def": 108.22,
+     "net": -11.81,
+     "poss_per_game": 70.5,
+     "ranks": {
+      "efg": 306,
+      "off": 288,
+      "opp_efg": 195,
+      "def": 188,
+      "net": 256
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401924736,
+      "date": "2026-11-20",
+      "site": "away",
+      "opp_id": 163,
+      "opp": "PRIN",
+      "d1_opp": true,
+      "pts": 64,
+      "opp_pts": 75,
+      "metrics": {
+       "efg": 44.55,
+       "opp_efg": 53.39,
+       "off": 91.74,
+       "def": 107.51,
+       "net": -15.77
+      },
+      "opp_power_rank": 139
+     },
+     {
+      "game_id": 401924857,
+      "date": "2026-11-12",
+      "site": "away",
+      "opp_id": 2514,
+      "opp": "QUIN",
+      "d1_opp": true,
+      "pts": 74,
+      "opp_pts": 70,
+      "metrics": {
+       "efg": 43.94,
+       "opp_efg": 45.08,
+       "off": 105.68,
+       "def": 99.96,
+       "net": 5.71
+      },
+      "opp_power_rank": 251
+     },
+     {
+      "game_id": 401920062,
+      "date": "2026-11-07",
+      "site": "away",
+      "opp_id": 227,
+      "opp": "URI",
+      "d1_opp": true,
+      "pts": 66,
+      "opp_pts": 84,
+      "metrics": {
+       "efg": 46.55,
+       "opp_efg": 56.15,
+       "off": 91.91,
+       "def": 116.97,
+       "net": -25.07
+      },
+      "opp_power_rank": 88
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+18.5",
+    "b2b": false,
+    "power": {
+     "rank": 218,
+     "bpi": 175,
+     "own_net": 260
+    },
+    "key_players": [
+     "Stefanos Spartalis",
+     "Jack Collins",
+     "Ashton Walker",
+     "Madison Durr",
+     "Jakai Sanders",
+     "Stephen Osei"
+    ],
+    "top_scorers": [
+     {
+      "name": "Madison Durr",
+      "ppg": 13.2
+     },
+     {
+      "name": "Ashton Walker",
+      "ppg": 13.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "UNC",
+    "dog": "MONM",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 14 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 UNC last-3 top 50 in 1 of 4 \u00b7 \u2717 MONM last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2717 UNC season outside 1-182: eFG% #187 \u00b7 \u2713 MONM season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "MONM: consensus #218, BPI #175, our net #260"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 14 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for UNC: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 14,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 2,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 8,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "UNC",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 187,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 81,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 30,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 85,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "UNC",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 182,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 76,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 29,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 63,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "MONM",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 169,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 188,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 288,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 309,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "MONM",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 195,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 188,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 306,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 288,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "cells": [
+       {
+        "team": "UNC",
+        "role": "fav",
+        "window": "season",
+        "metric": "off",
+        "rank": 81,
+        "color": "yellow"
+       },
+       {
+        "team": "UNC",
+        "role": "fav",
+        "window": "last3",
+        "metric": "off",
+        "rank": 76,
+        "color": "yellow"
+       },
+       {
+        "team": "MONM",
+        "role": "dog",
+        "window": "season",
+        "metric": "def",
+        "rank": 188,
+        "color": "green"
+       },
+       {
+        "team": "MONM",
+        "role": "dog",
+        "window": "last3",
+        "metric": "def",
+        "rank": 188,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shoot",
+      "label": "Shooting vs shot defense",
+      "fav_metric": "efg",
+      "dog_metric": "opp_efg",
+      "cells": [
+       {
+        "team": "UNC",
+        "role": "fav",
+        "window": "season",
+        "metric": "efg",
+        "rank": 187,
+        "color": "red"
+       },
+       {
+        "team": "UNC",
+        "role": "fav",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 182,
+        "color": "red"
+       },
+       {
+        "team": "MONM",
+        "role": "dog",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 169,
+        "color": "green"
+       },
+       {
+        "team": "MONM",
+        "role": "dog",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 195,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "cells": [
+       {
+        "team": "UNC",
+        "role": "fav",
+        "window": "season",
+        "metric": "def",
+        "rank": 85,
+        "color": "yellow"
+       },
+       {
+        "team": "UNC",
+        "role": "fav",
+        "window": "last3",
+        "metric": "def",
+        "rank": 63,
+        "color": "yellow"
+       },
+       {
+        "team": "MONM",
+        "role": "dog",
+        "window": "season",
+        "metric": "off",
+        "rank": 309,
+        "color": "green"
+       },
+       {
+        "team": "MONM",
+        "role": "dog",
+        "window": "last3",
+        "metric": "off",
+        "rank": 288,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shotd",
+      "label": "Shot defense vs shooting",
+      "fav_metric": "opp_efg",
+      "dog_metric": "efg",
+      "cells": [
+       {
+        "team": "UNC",
+        "role": "fav",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 30,
+        "color": "green"
+       },
+       {
+        "team": "UNC",
+        "role": "fav",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 29,
+        "color": "green"
+       },
+       {
+        "team": "MONM",
+        "role": "dog",
+        "window": "season",
+        "metric": "efg",
+        "rank": 288,
+        "color": "green"
+       },
+       {
+        "team": "MONM",
+        "role": "dog",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 306,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "off",
+      "dog_metric": "off",
+      "fav_rank": 76,
+      "dog_rank": 288,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def",
+      "dog_metric": "def",
+      "fav_rank": 63,
+      "dog_rank": 188,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "fav_rank": 63,
+      "dog_rank": 288,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "fav_rank": 76,
+      "dog_rank": 188,
+      "counts": false,
+      "met": false
+     }
+    ]
+   },
+   "summary": "No track: score 14 (watch list from 18, qualifies at 28). Biggest edge over the last 3: UNC Opp eFG% (#29) against MONM eFG% (#306). UNC 2-1 in its last 3, MONM 1-2. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV23MONMUNC",
+    "fav_prob": 0.955,
+    "bid": 0.95,
+    "ask": 0.96
+   },
+   "locked_at": "2026-11-23T16:00:42-08:00"
   }
  }
 }
