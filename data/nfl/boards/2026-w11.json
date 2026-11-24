@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 11,
- "built_at": "2026-11-23T14:15:35-08:00",
- "built_label": "Mon Nov 23, 2:15 PM PT",
+ "built_at": "2026-11-23T16:00:57-08:00",
+ "built_label": "Mon Nov 23, 4:00 PM PT",
  "games": [
   {
    "id": "401873078",
@@ -24,7 +24,7 @@
    "open_spread": -1.5,
    "total": 54.5,
    "total_open": 52.5,
-   "fav_ml": -304.0,
+   "fav_ml": -301.0,
    "favorite": "away",
    "spread": -6.0,
    "movement": 4.5,
@@ -98,41 +98,39 @@
      "rank": 20
     },
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
-     "Amik Robertson",
-     "Lucas Patrick",
-     "Rachaad White"
+    "key_out": [
+     "Amik Robertson"
     ],
+    "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Lucas Patrick",
+      "name": "Tanoa Togiai",
       "pos": "G",
-      "status": "Questionable"
+      "status": "Out"
+     },
+     {
+      "name": "Athan Kaliakmanis",
+      "pos": "QB",
+      "status": "Out"
      },
      {
       "name": "Amik Robertson",
       "pos": "CB",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
-      "name": "Rachaad White",
+      "name": "Robert Henry Jr.",
       "pos": "RB",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
-      "name": "Laremy Tunsil",
-      "pos": "OT",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Dyami Brown",
-      "pos": "WR",
-      "status": "Injured Reserve"
+      "name": "Ricky Barber",
+      "pos": "DT",
+      "status": "Out"
      }
     ],
     "power": {
@@ -222,29 +220,29 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Jalen Davis",
-      "pos": "CB",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Kyle Dugger",
-      "pos": "S",
-      "status": "Questionable"
-     },
-     {
       "name": "Dalton Risner",
       "pos": "G",
       "status": "Out"
      },
      {
-      "name": "Dax Hill",
-      "pos": "CB",
-      "status": "Questionable"
+      "name": "Landon Robinson",
+      "pos": "DT",
+      "status": "Out"
      },
      {
-      "name": "Andrei Iosivas",
-      "pos": "WR",
-      "status": "Injured Reserve"
+      "name": "Kyle Dugger",
+      "pos": "S",
+      "status": "Out"
+     },
+     {
+      "name": "Cam Grandy",
+      "pos": "TE",
+      "status": "Out"
+     },
+     {
+      "name": "Myles Hinton",
+      "pos": "OT",
+      "status": "Out"
      }
     ],
     "power": {
@@ -361,10 +359,6 @@
      {
       "level": "yellow",
       "text": "Line crossed key number 3"
-     },
-     {
-      "level": "yellow",
-      "text": "Underdog questionable: Amik Robertson, Lucas Patrick, Rachaad White"
      }
     ],
     "under": {
@@ -413,9 +407,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV23CINWAS",
-    "fav_prob": 0.725,
-    "bid": 0.72,
-    "ask": 0.73
+    "fav_prob": 0.735,
+    "bid": 0.73,
+    "ask": 0.74
    },
    "votes": {
     "fav": 10,
@@ -989,40 +983,41 @@
     },
     "injuries_known": true,
     "key_out": [
-     "Christian Benford",
-     "Dalton Kincaid",
-     "Dorian Williams"
+     "Dalton Kincaid"
     ],
-    "key_questionable": [],
+    "key_questionable": [
+     "O'Cyrus Torrence",
+     "Spencer Brown"
+    ],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Dorian Williams",
+      "name": "Greg Rousseau",
       "pos": "LB",
-      "status": "Out"
+      "status": "Questionable"
      },
      {
-      "name": "Christian Benford",
-      "pos": "CB",
-      "status": "Out"
+      "name": "Damar Hamlin",
+      "pos": "S",
+      "status": "Questionable"
      },
      {
-      "name": "T.J. Sanders",
-      "pos": "DT",
-      "status": "Out"
+      "name": "Spencer Brown",
+      "pos": "OT",
+      "status": "Questionable"
+     },
+     {
+      "name": "O'Cyrus Torrence",
+      "pos": "G",
+      "status": "Questionable"
      },
      {
       "name": "Dalton Kincaid",
       "pos": "TE",
       "status": "Out"
-     },
-     {
-      "name": "Ar'maj Reed-Adams",
-      "pos": "G",
-      "status": "Injured Reserve"
      }
     ],
     "power": {
@@ -1170,7 +1165,7 @@
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
       "pass": false,
-      "detail": "BUF key starter out: Christian Benford, Dalton Kincaid, Dorian Williams"
+      "detail": "BUF key starter out: Dalton Kincaid"
      },
      {
       "rule": "Power",
@@ -1207,11 +1202,11 @@
     ],
     "qualifiers": [],
     "fails": [
-     "BUF key starter out: Christian Benford, Dalton Kincaid, Dorian Williams",
+     "BUF key starter out: Dalton Kincaid",
      "Would be on the watch list otherwise (score 26)"
     ],
     "failed": [
-     "BUF key starter out: Christian Benford, Dalton Kincaid, Dorian Williams",
+     "BUF key starter out: Dalton Kincaid",
      "Would be on the watch list otherwise (score 26)"
     ],
     "hero": {
@@ -1243,6 +1238,10 @@
      {
       "level": "yellow",
       "text": "Line moved +5 toward the favorite (4+): downgrade"
+     },
+     {
+      "level": "yellow",
+      "text": "Favorite questionable: O'Cyrus Torrence, Spencer Brown"
      }
     ],
     "under": {
@@ -2355,6 +2354,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Jake Ferguson",
+      "pos": "TE",
+      "status": "Out"
+     },
+     {
       "name": "DaRon Bland",
       "pos": "CB",
       "status": "Injured Reserve"
@@ -2367,11 +2371,6 @@
      {
       "name": "Jonathan Mingo",
       "pos": "WR",
-      "status": "Out"
-     },
-     {
-      "name": "Jake Ferguson",
-      "pos": "TE",
       "status": "Out"
      },
      {
@@ -3229,13 +3228,13 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Trey Smith",
-      "pos": "G",
+      "name": "Kenneth Walker III",
+      "pos": "RB",
       "status": "Out"
      },
      {
-      "name": "Kenneth Walker III",
-      "pos": "RB",
+      "name": "Trey Smith",
+      "pos": "G",
       "status": "Out"
      },
      {
@@ -3337,6 +3336,11 @@
     "qb_reset": "G.Minshew, 54 dropbacks this season",
     "injury_list": [
      {
+      "name": "Jeremiyah Love",
+      "pos": "RB",
+      "status": "Injured Reserve"
+     },
+     {
       "name": "Jon Gaines II",
       "pos": "G",
       "status": "Out"
@@ -3354,11 +3358,6 @@
      {
       "name": "Zachary Carter",
       "pos": "DT",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "James Conner",
-      "pos": "RB",
       "status": "Injured Reserve"
      }
     ],
@@ -3661,39 +3660,37 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
-     "Quinyon Mitchell"
+     "Dallas Goedert"
     ],
-    "key_long_term": [
-     "Zack Baun"
-    ],
+    "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Smael Mondon Jr.",
+      "name": "Will Shipley",
+      "pos": "RB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Tanner McKee",
+      "pos": "QB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Arnold Ebiketie",
       "pos": "LB",
-      "status": "Out"
+      "status": "Questionable"
+     },
+     {
+      "name": "Dallas Goedert",
+      "pos": "TE",
+      "status": "Questionable"
      },
      {
       "name": "Saquon Barkley",
       "pos": "RB",
       "status": "Questionable"
-     },
-     {
-      "name": "Jonathan Jones",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Quinyon Mitchell",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Zack Baun",
-      "pos": "LB",
-      "status": "Injured Reserve"
      }
     ],
     "power": {
@@ -3917,7 +3914,7 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Quinyon Mitchell"
+      "text": "Underdog questionable: Dallas Goedert"
      }
     ],
     "under": {
@@ -5806,6 +5803,6 @@
   "watch": 0,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Mon Nov 23, 2:15 PM PT"
+  "built_label": "Mon Nov 23, 4:00 PM PT"
  }
 }
