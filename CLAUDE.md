@@ -208,7 +208,7 @@ College basketball rules (owner decisions Nov 11 2026; spec "College Basketball 
   2025-26): any of the three 98-7 (93%) vs 90% without; fav offense vs dog defense 88% (shown, doesn't count). Line also says
   leads held 98% at halftime and at 2H 10:00 (no-matchup games 97%).
 - Analyst readouts: `data/cbb/readouts/<date>.json` (format: README there), owner's Claude scheduled task "College hoops
-  analyst readouts" (daily 5:13 AM PT, tracked games, max 12), commits only that file and dispatches `cbb.yml`
+  analyst readouts" (5:13 AM + 10:13 PM PT; tracked or score over 20, no cap since Nov 25), commits only that file and dispatches `cbb.yml`
   force_build=true, send=false. The readout's injury line is the only injury check.
 
 ## NHL (separate pipeline like the others: own folder, workflows, concurrency groups `nhl-data`, `nhl-live`)
