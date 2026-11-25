@@ -9976,8 +9976,8 @@
    "tip_utc": "2026-11-25T18:00:00+00:00",
    "tip_pt": "10:00 AM PT",
    "day_et": "2026-11-25",
-   "state": "in",
-   "detail": "3:18 - 2nd",
+   "state": "post",
+   "detail": "Final",
    "neutral": false,
    "venue": "Stony Brook Arena",
    "favorite": "home",
@@ -10670,8 +10670,8 @@
    },
    "locked_at": "2026-11-25T09:00:50-08:00",
    "score": {
-    "home": 60,
-    "away": 57
+    "home": 69,
+    "away": 63
    }
   }
  },
@@ -10684,7 +10684,7 @@
    "tip_pt": "10:00 AM PT",
    "day_et": "2026-11-25",
    "state": "in",
-   "detail": "7:55 - 2nd",
+   "detail": "2:27 - 2nd",
    "neutral": false,
    "venue": "Millett Hall",
    "favorite": "home",
@@ -11378,8 +11378,8 @@
    },
    "locked_at": "2026-11-25T09:00:50-08:00",
    "score": {
-    "home": 65,
-    "away": 52
+    "home": 77,
+    "away": 61
    }
   }
  },
@@ -11392,7 +11392,7 @@
    "tip_pt": "11:00 AM PT",
    "day_et": "2026-11-25",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "18:30 - 2nd",
    "neutral": false,
    "venue": "Levien Gymnasium",
    "favorite": "home",
@@ -12155,7 +12155,7 @@
     "updated": "2026-11-25T05:40-08:00"
    },
    "score": {
-    "home": 25,
+    "home": 27,
     "away": 13
    }
   }
@@ -12169,7 +12169,7 @@
    "tip_pt": "10:30 AM PT",
    "day_et": "2026-11-25",
    "state": "in",
-   "detail": "16:17 - 2nd",
+   "detail": "11:16 - 2nd",
    "neutral": true,
    "venue": "Suncoast Credit Union Arena",
    "favorite": "home",
@@ -12862,8 +12862,764 @@
    },
    "locked_at": "2026-11-25T10:33:11-08:00",
    "score": {
-    "home": 43,
-    "away": 33
+    "home": 53,
+    "away": 39
+   }
+  }
+ },
+ "401920858": {
+  "at": "2026-11-25T12:00:48-08:00",
+  "day": "2026-11-25",
+  "game": {
+   "id": "401920858",
+   "tip_utc": "2026-11-25T21:00:00+00:00",
+   "tip_pt": "1:00 PM PT",
+   "day_et": "2026-11-25",
+   "state": "pre",
+   "detail": "11/25 - 4:00 PM EST",
+   "neutral": false,
+   "venue": "Cam Henderson Center",
+   "favorite": "home",
+   "spread": {
+    "spread": 13.5,
+    "details": "MRSH -13.5",
+    "provider": "Draft Kings",
+    "ml_home": -1200,
+    "ml_away": 750
+   },
+   "home": {
+    "id": "276",
+    "abbr": "MRSH",
+    "name": "Marshall",
+    "display": "Marshall Thundering Herd",
+    "mascot": "Thundering Herd",
+    "record": "2-4",
+    "l3_record": "1-2",
+    "games": 6,
+    "season": {
+     "efg": 48.96,
+     "opp_efg": 47.44,
+     "off": 101.16,
+     "def": 100.04,
+     "net": 1.12,
+     "poss_per_game": 74.5,
+     "ranks": {
+      "efg": 237,
+      "off": 247,
+      "opp_efg": 90,
+      "def": 96,
+      "net": 166
+     }
+    },
+    "last3": {
+     "efg": 43.75,
+     "opp_efg": 49.18,
+     "off": 96.66,
+     "def": 99.88,
+     "net": -3.22,
+     "poss_per_game": 72.4,
+     "ranks": {
+      "efg": 320,
+      "off": 293,
+      "opp_efg": 131,
+      "def": 89,
+      "net": 208
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401912710,
+      "date": "2026-11-20",
+      "site": "away",
+      "opp_id": 153,
+      "opp": "UNC",
+      "d1_opp": true,
+      "pts": 72,
+      "opp_pts": 88,
+      "metrics": {
+       "efg": 42.47,
+       "opp_efg": 55.07,
+       "off": 96.48,
+       "def": 117.92,
+       "net": -21.44
+      },
+      "opp_power_rank": 42
+     },
+     {
+      "game_id": 401920857,
+      "date": "2026-11-17",
+      "site": "home",
+      "opp_id": 2193,
+      "opp": "ETSU",
+      "d1_opp": true,
+      "pts": 67,
+      "opp_pts": 55,
+      "metrics": {
+       "efg": 46.77,
+       "opp_efg": 43.97,
+       "off": 99.31,
+       "def": 81.53,
+       "net": 17.79
+      },
+      "opp_power_rank": 178
+     },
+     {
+      "game_id": 401920750,
+      "date": "2026-11-14",
+      "site": "away",
+      "opp_id": 2754,
+      "opp": "YSU",
+      "d1_opp": true,
+      "pts": 71,
+      "opp_pts": 74,
+      "metrics": {
+       "efg": 42.11,
+       "opp_efg": 47.37,
+       "off": 94.45,
+       "def": 98.44,
+       "net": -3.99
+      },
+      "opp_power_rank": 266
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-13.5",
+    "b2b": false,
+    "power": {
+     "rank": 157,
+     "bpi": 151,
+     "own_net": 166
+    },
+    "key_players": [
+     "Noah Otshudi",
+     "Bryce Slay",
+     "Emmanuel Manyuon",
+     "Luke Rasmussen",
+     "Fazl Oshodi",
+     "Khaman Maker",
+     "Colt Langdon"
+    ],
+    "top_scorers": [
+     {
+      "name": "Noah Otshudi",
+      "ppg": 20.2
+     },
+     {
+      "name": "Bryce Slay",
+      "ppg": 16.3
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "2504",
+    "abbr": "PV",
+    "name": "Prairie View A&M",
+    "display": "Prairie View A&M Panthers",
+    "mascot": "Panthers",
+    "record": "2-4",
+    "l3_record": "0-3",
+    "games": 4,
+    "season": {
+     "efg": 43.25,
+     "opp_efg": 55.61,
+     "off": 89.35,
+     "def": 123.36,
+     "net": -34.0,
+     "poss_per_game": 69.1,
+     "ranks": {
+      "efg": 334,
+      "off": 336,
+      "opp_efg": 310,
+      "def": 344,
+      "net": 354
+     }
+    },
+    "last3": {
+     "efg": 43.82,
+     "opp_efg": 59.59,
+     "off": 86.71,
+     "def": 128.64,
+     "net": -41.94,
+     "poss_per_game": 70.7,
+     "ranks": {
+      "efg": 319,
+      "off": 344,
+      "opp_efg": 333,
+      "def": 350,
+      "net": 360
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401916317,
+      "date": "2026-11-16",
+      "site": "away",
+      "opp_id": 194,
+      "opp": "OSU",
+      "d1_opp": true,
+      "pts": 59,
+      "opp_pts": 86,
+      "metrics": {
+       "efg": 46.61,
+       "opp_efg": 62.24,
+       "off": 89.11,
+       "def": 129.88,
+       "net": -40.78
+      },
+      "opp_power_rank": 67
+     },
+     {
+      "game_id": 401921825,
+      "date": "2026-11-13",
+      "site": "away",
+      "opp_id": 238,
+      "opp": "VAN",
+      "d1_opp": true,
+      "pts": 62,
+      "opp_pts": 89,
+      "metrics": {
+       "efg": 45.9,
+       "opp_efg": 61.67,
+       "off": 89.39,
+       "def": 128.31,
+       "net": -38.93
+      },
+      "opp_power_rank": 4
+     },
+     {
+      "game_id": 401918969,
+      "date": "2026-11-10",
+      "site": "away",
+      "opp_id": 2567,
+      "opp": "SMU",
+      "d1_opp": true,
+      "pts": 63,
+      "opp_pts": 98,
+      "metrics": {
+       "efg": 39.39,
+       "opp_efg": 55.56,
+       "off": 82.21,
+       "def": 127.87,
+       "net": -45.67
+      },
+      "opp_power_rank": 36
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+13.5",
+    "b2b": false,
+    "power": {
+     "rank": 355,
+     "bpi": 343,
+     "own_net": 354
+    },
+    "key_players": [
+     "Elijah Mitchell",
+     "Michael Eley",
+     "Davis Bynum",
+     "Anthony Gause",
+     "Micah Bell",
+     "Jaylen Wharton"
+    ],
+    "top_scorers": [
+     {
+      "name": "Michael Eley",
+      "ppg": 16.5
+     },
+     {
+      "name": "Davis Bynum",
+      "ppg": 12.7
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "MRSH",
+    "dog": "PV",
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 18 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 MRSH last-3 top 50 in 0 of 4 \u00b7 \u2713 PV last-3 bottom 50 (316+) in 4 of 4 \u00b7 \u2717 MRSH season outside 1-182: eFG% #237, Off Eff #247 \u00b7 \u2713 PV season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "PV: consensus #355, BPI #343, our net #354"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Watch list: score 18 (qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for MRSH: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 18,
+    "max": 40,
+    "band": "yellow",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 0,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 15,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "MRSH",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 237,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 247,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 90,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 96,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "MRSH",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 320,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 293,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 131,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 89,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "PV",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 310,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 344,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 334,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 336,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "PV",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 333,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 350,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 319,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 344,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "cells": [
+       {
+        "team": "MRSH",
+        "role": "fav",
+        "window": "season",
+        "metric": "off",
+        "rank": 247,
+        "color": "red"
+       },
+       {
+        "team": "MRSH",
+        "role": "fav",
+        "window": "last3",
+        "metric": "off",
+        "rank": 293,
+        "color": "red"
+       },
+       {
+        "team": "PV",
+        "role": "dog",
+        "window": "season",
+        "metric": "def",
+        "rank": 344,
+        "color": "green"
+       },
+       {
+        "team": "PV",
+        "role": "dog",
+        "window": "last3",
+        "metric": "def",
+        "rank": 350,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shoot",
+      "label": "Shooting vs shot defense",
+      "fav_metric": "efg",
+      "dog_metric": "opp_efg",
+      "cells": [
+       {
+        "team": "MRSH",
+        "role": "fav",
+        "window": "season",
+        "metric": "efg",
+        "rank": 237,
+        "color": "red"
+       },
+       {
+        "team": "MRSH",
+        "role": "fav",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 320,
+        "color": "red"
+       },
+       {
+        "team": "PV",
+        "role": "dog",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 310,
+        "color": "green"
+       },
+       {
+        "team": "PV",
+        "role": "dog",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 333,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "cells": [
+       {
+        "team": "MRSH",
+        "role": "fav",
+        "window": "season",
+        "metric": "def",
+        "rank": 96,
+        "color": "yellow"
+       },
+       {
+        "team": "MRSH",
+        "role": "fav",
+        "window": "last3",
+        "metric": "def",
+        "rank": 89,
+        "color": "yellow"
+       },
+       {
+        "team": "PV",
+        "role": "dog",
+        "window": "season",
+        "metric": "off",
+        "rank": 336,
+        "color": "green"
+       },
+       {
+        "team": "PV",
+        "role": "dog",
+        "window": "last3",
+        "metric": "off",
+        "rank": 344,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shotd",
+      "label": "Shot defense vs shooting",
+      "fav_metric": "opp_efg",
+      "dog_metric": "efg",
+      "cells": [
+       {
+        "team": "MRSH",
+        "role": "fav",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 90,
+        "color": "yellow"
+       },
+       {
+        "team": "MRSH",
+        "role": "fav",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 131,
+        "color": "yellow"
+       },
+       {
+        "team": "PV",
+        "role": "dog",
+        "window": "season",
+        "metric": "efg",
+        "rank": 334,
+        "color": "green"
+       },
+       {
+        "team": "PV",
+        "role": "dog",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 319,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "off",
+      "dog_metric": "off",
+      "fav_rank": 293,
+      "dog_rank": 344,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def",
+      "dog_metric": "def",
+      "fav_rank": 89,
+      "dog_rank": 350,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "fav_rank": 89,
+      "dog_rank": 344,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "fav_rank": 293,
+      "dog_rank": 350,
+      "counts": false,
+      "met": false
+     }
+    ]
+   },
+   "summary": "Watch list: score 18 (qualifies at 28). Biggest edge over the last 3: MRSH Def Eff (#89) against PV Off Eff (#344). MRSH 1-2 in its last 3, PV 0-3. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "Lean: MRSH (watch list)",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV25PVMRSH",
+    "fav_prob": 0.905,
+    "bid": 0.9,
+    "ask": 0.91
+   },
+   "locked_at": "2026-11-25T12:00:48-08:00",
+   "readout": {
+    "matchup": "PV @ MRSH",
+    "fav": "MRSH",
+    "dog": "PV",
+    "summary": "Previews remain thin and no source makes a moneyline pick. Both teams are 2-4; Marshall has lost to Ohio State, Toledo, Youngstown State and North Carolina, and Prairie View has lost four straight. The two computer previews (iHeart and Bleacher Nation, same data provider) project Marshall 80-69, an 11-point win short of the 15.5 spread, and iHeart takes Prairie View +15.5 and the Under 151.5. Prairie View allows 82.7 points (331st) and 48.4% shooting (338th), but Marshall shoots only 42.7% (282nd). Covers trends: Prairie View covered in 14 of its last 16 road games, Marshall in 5 of its last 18 at home. Noah Otshudi (20.2) leads Marshall; Michael Eley (16.5) leads Prairie View. No injuries reported.",
+    "picks": [
+     {
+      "source": "iHeart (Fox Sports 1380)",
+      "side": "dog",
+      "bet": "Prairie View +15.5 (spread pick only); Under 151.5",
+      "price": "Marshall -1587",
+      "note": "No reason given; projects Marshall 80-69"
+     }
+    ],
+    "scores": [
+     {
+      "source": "iHeart (Fox Sports 1380)",
+      "fav": 80,
+      "dog": 69
+     },
+     {
+      "source": "Bleacher Nation (computer pick)",
+      "fav": 80,
+      "dog": 69
+     }
+    ],
+    "injuries": {
+     "fav": [],
+     "dog": [],
+     "note": "None reported in the sources read (iHeart, Bleacher Nation, Scores24, Covers; RotoWire's injury table did not load)."
+    },
+    "sources": [
+     {
+      "site": "iHeart (Fox Sports 1380)",
+      "url": "https://khey1380.iheart.com/content/2026-11-25-prairie-view-am-vs-marshall-predictions-nov-25/"
+     },
+     {
+      "site": "Bleacher Nation (Sun Belt computer picks)",
+      "url": "https://www.bleachernation.com/picks/2026/11/25/sun-belt-basketball-predictions-computer-picks-and-best-bets-november-25-2/"
+     },
+     {
+      "site": "Scores24",
+      "url": "https://scores24.live/en/basketball/m-25-11-2026-marshall-thundering-herd-prairie-view-a-m-panthers-prediction"
+     },
+     {
+      "site": "Covers (Marshall picks page)",
+      "url": "https://www.covers.com/sport/basketball/ncaab/teams/main/marshall-thundering-herd/picks"
+     }
+    ],
+    "updated": "2026-11-25T05:40-08:00"
    }
   }
  }
