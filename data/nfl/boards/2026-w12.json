@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-25T09:30:40-08:00",
- "built_label": "Wed Nov 25, 9:30 AM PT",
+ "built_at": "2026-11-25T10:30:40-08:00",
+ "built_label": "Wed Nov 25, 10:30 AM PT",
  "games": [
   {
    "id": "401873079",
@@ -22,13 +22,13 @@
    },
    "line_source": "DraftKings",
    "open_spread": -3.5,
-   "total": 44.5,
+   "total": 43.5,
    "total_open": 49.5,
-   "fav_ml": -137.0,
+   "fav_ml": -141.0,
    "favorite": "home",
    "spread": -2.5,
    "movement": -1.0,
-   "total_move": -5.0,
+   "total_move": -6.0,
    "fav_home": true,
    "home": {
     "code": "LA",
@@ -372,7 +372,7 @@
       8,
       14
      ],
-     "total_move": -5.0,
+     "total_move": -6.0,
      "note": ""
     },
     "call": "No track",
@@ -1265,39 +1265,41 @@
     },
     "injuries_known": true,
     "key_out": [],
-    "key_questionable": [
-     "Quinyon Mitchell"
+    "key_questionable": [],
+    "key_long_term": [
+     "Dontayvion Wicks",
+     "Jalen Hurts",
+     "Zack Baun"
     ],
-    "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "qb_reset": "J.Milton, 64 dropbacks this season",
     "injury_list": [
      {
-      "name": "Arnold Ebiketie",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Quinyon Mitchell",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Will Shipley",
-      "pos": "RB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Smael Mondon Jr.",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
       "name": "Jonathan Jones",
       "pos": "CB",
-      "status": "Questionable"
+      "status": "Out"
+     },
+     {
+      "name": "Arnold Ebiketie",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
+      "name": "Zack Baun",
+      "pos": "LB",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Dontayvion Wicks",
+      "pos": "WR",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Jalen Hurts",
+      "pos": "QB",
+      "status": "Injured Reserve"
      }
     ],
     "power": {
@@ -1418,10 +1420,6 @@
      {
       "level": "yellow",
       "text": "Favorite questionable: Dee Winters"
-     },
-     {
-      "level": "yellow",
-      "text": "Underdog questionable: Quinyon Mitchell"
      }
     ],
     "under": {
@@ -1695,6 +1693,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Noah Gray",
+      "pos": "TE",
+      "status": "Questionable"
+     },
+     {
       "name": "Peter Woods",
       "pos": "DT",
       "status": "Questionable"
@@ -1708,11 +1711,6 @@
       "name": "Jaylon Moore",
       "pos": "OT",
       "status": "Out"
-     },
-     {
-      "name": "Noah Gray",
-      "pos": "TE",
-      "status": "Questionable"
      },
      {
       "name": "Kenneth Walker III",
@@ -2307,7 +2305,7 @@
    "open_spread": -6.5,
    "total": 50.5,
    "total_open": 48.5,
-   "fav_ml": -620.0,
+   "fav_ml": -559.0,
    "favorite": "home",
    "spread": -10.0,
    "movement": 3.5,
@@ -3126,7 +3124,7 @@
    "open_spread": 2.5,
    "total": 41.5,
    "total_open": 47.5,
-   "fav_ml": -335.0,
+   "fav_ml": -348.0,
    "favorite": "away",
    "spread": -6.5,
    "movement": 9.0,
@@ -5156,7 +5154,7 @@
    "open_spread": -4.5,
    "total": 41.5,
    "total_open": 47.5,
-   "fav_ml": -326.0,
+   "fav_ml": -330.0,
    "favorite": "away",
    "spread": -7.0,
    "movement": 2.5,
@@ -6807,6 +6805,6 @@
   "watch": 9,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Wed Nov 25, 9:30 AM PT"
+  "built_label": "Wed Nov 25, 10:30 AM PT"
  }
 }
