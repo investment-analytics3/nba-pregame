@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-24T23:15:37-08:00",
- "built_label": "Tue Nov 24, 11:15 PM PT",
+ "built_at": "2026-11-25T05:46:49-08:00",
+ "built_label": "Wed Nov 25, 5:46 AM PT",
  "games": [
   {
    "id": "401873079",
@@ -20,15 +20,15 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -3.5,
-   "total": 43.5,
+   "total": 44.5,
    "total_open": 49.5,
-   "fav_ml": -135.0,
+   "fav_ml": -137.0,
    "favorite": "home",
    "spread": -2.5,
    "movement": -1.0,
-   "total_move": -6.0,
+   "total_move": -5.0,
    "fav_home": true,
    "home": {
     "code": "LA",
@@ -372,7 +372,7 @@
       8,
       14
      ],
-     "total_move": -6.0,
+     "total_move": -5.0,
      "note": ""
     },
     "call": "No track",
@@ -418,16 +418,190 @@
    },
    "readout": {
     "matchup": "GB @ LAR",
-    "summary": "No track: off the tracked list (hero 26, a gate blocks it), readout only. Most straight-up picks take the Rams at home (CBS Breech, Covers AI, Dimers model), but it is close: WagerTalk picks Green Bay outright. The spread is split, and three sources lean Under. Both sides are short-handed: Rams without Puka Nacua and Davante Adams; Micah Parsons expected back for Green Bay.",
-    "pick": "Rams straight up (CBS Breech, Covers, Dimers by win probability) vs Packers (WagerTalk/GoldSheet); ATS split: Rams -3/-2.5 (SI Dewey, Covers) vs Packers +2.5 (Pickswise, WagerTalk); Under 43.5-44.5 (Covers, Pickswise, WagerTalk)",
-    "predicted_score": "Rams 20-17 (CBS, John Breech, Nov 24); Rams 24-19 (Covers AI, Nov 24); Packers 21-20 (WagerTalk GoldSheet, Nov 24); Dimers model about Rams 23-20",
-    "moneyline": "DraftKings Rams -150 / Packers +127, spread LAR -3, total 44.5 (SI, Nov 23 2026); WagerTalk: opened LAR -3, total 45.5; Nov 24 LAR -2.5, total 43.5; Dimers: Rams -127 / Packers +163 (book not named)",
-    "win_probability": "Dimers model: Rams 62.6%; Covers (market-based): Rams 55%",
-    "injuries": "No official final report yet at writing (Nov 24 evening). Rams: WR Puka Nacua out for season (knee); WR Davante Adams out (hamstring, IR per SI); Kam Curl, Myles Garrett, Kyren Williams listed questionable by SI (reasons not stated). Packers: EDGE Micah Parsons returning from ACL tear, reported cleared (WagerTalk) but SI lists him questionable (PUP); RB Josh Jacobs questionable (finger); Sean Rhyan, Zaire Franklin, Brandon Cisse, Skyy Moore, Bo Melton, Isaiah McDuffie questionable per SI (reasons not stated).",
+    "fav": "LAR",
+    "dog": "GB",
+    "summary": "No track: Rams key starter out (C Coleman Shelton); would be on the Watch list otherwise (score 26). The analysts are split almost evenly. CBS, Covers, Dimers, SI's Dewey and numberFire (76.8%) favor the Rams at home, pointing to a run game averaging 163.5 yards over four weeks and a defense allowing about 13 points a game during a four-game win streak. TheLines, WagerTalk and Pickswise back Green Bay, arguing the Rams beat weak teams and are thin on offense without Puka Nacua and Davante Adams (both on IR), plus OL Steve Avila and Coleman Shelton (out). Micah Parsons was activated and is expected to debut on a snap count; Josh Jacobs is questionable (finger). The Under is the most common bet (SI, TheLines, WagerTalk, Pickswise, Covers).",
+    "picks": [
+     {
+      "source": "FanDuel Research (numberFire)",
+      "side": "fav",
+      "bet": "No bet named; model picks Rams",
+      "price": "Rams 76.8% (numberFire); FanDuel LAR -142 / GB +120",
+      "note": "Model only; Rams 6-3 ATS as 2.5+ point favorites"
+     },
+     {
+      "source": "CBS Sports (John Breech)",
+      "side": "fav",
+      "bet": "Rams straight up",
+      "note": "Packers can't run; Love must throw into Garrett and Donald"
+     },
+     {
+      "source": "SI Betting (Peter Dewey)",
+      "side": "fav",
+      "bet": "Rams -3",
+      "price": "DraftKings LAR -150 / GB +127",
+      "note": "Rams at home; Packers short-handed (Nov 23 article)"
+     },
+     {
+      "source": "Covers (AI predictions)",
+      "side": "fav",
+      "bet": "Rams -2.5, Under",
+      "price": "Rams 55% (market-based)",
+      "note": "Projects a low-scoring Rams win"
+     },
+     {
+      "source": "Dimers",
+      "side": "fav",
+      "bet": "Rams by model win probability",
+      "price": "Rams 62.6%",
+      "note": "Simulation model"
+     },
+     {
+      "source": "TheLines (Justin Bales)",
+      "side": "dog",
+      "bet": "GB +2.5 (-108) best bet; GB ML +120; Under 44.5 (-120)",
+      "price": "FanDuel GB +120",
+      "note": "Rams missing key offense; Packers getting healthier"
+     },
+     {
+      "source": "WagerTalk (GoldSheet)",
+      "side": "dog",
+      "bet": "Packers ML (best bet); GB +2.5 (-110); Under 43.5 (+100)",
+      "note": "Rams' streak came against sub-.500 teams; Parsons back"
+     },
+     {
+      "source": "Pickswise",
+      "side": "dog",
+      "bet": "Packers +2.5, Under",
+      "note": "Spread backs Green Bay"
+     }
+    ],
+    "scores": [
+     {
+      "source": "CBS Sports (John Breech)",
+      "fav": 20,
+      "dog": 17
+     },
+     {
+      "source": "Covers (AI predictions)",
+      "fav": 24,
+      "dog": 19
+     },
+     {
+      "source": "Dimers",
+      "fav": 23,
+      "dog": 20
+     },
+     {
+      "source": "WagerTalk (GoldSheet)",
+      "fav": 20,
+      "dog": 21
+     }
+    ],
+    "injuries": {
+     "fav": [
+      {
+       "player": "Coleman Shelton",
+       "status": "Out",
+       "note": "C, hamstring (final report Nov 24)"
+      },
+      {
+       "player": "Steve Avila",
+       "status": "Out",
+       "note": "LG, hamstring (Nov 24)"
+      },
+      {
+       "player": "Terrance Ferguson",
+       "status": "Out",
+       "note": "TE, ankle/hamstring; IR for the season (Nov 24)"
+      },
+      {
+       "player": "Puka Nacua",
+       "status": "Out",
+       "note": "WR, knee; injured reserve (Packers On SI, Nov 24)"
+      },
+      {
+       "player": "Davante Adams",
+       "status": "Out",
+       "note": "WR, hamstring; injured reserve (Nov 24)"
+      },
+      {
+       "player": "Kyren Williams",
+       "status": "No designation",
+       "note": "RB, toe; full practice Mon-Tue (Nov 24)"
+      },
+      {
+       "player": "Myles Garrett",
+       "status": "No designation",
+       "note": "OLB, knee/rest; limited Tue (Nov 24)"
+      },
+      {
+       "player": "Kam Curl",
+       "status": "No designation",
+       "note": "S, toe; limited Mon-Tue (Nov 24)"
+      },
+      {
+       "player": "Kobie Turner",
+       "status": "No designation",
+       "note": "DE, groin; activated off IR (Nov 24)"
+      }
+     ],
+     "dog": [
+      {
+       "player": "Micah Parsons",
+       "status": "Questionable",
+       "note": "EDGE, knee; activated from PUP Tue, expected to debut on a snap count (ESPN, Nov 23-24)"
+      },
+      {
+       "player": "Josh Jacobs",
+       "status": "Questionable",
+       "note": "RB, finger; limited all week (Nov 24)"
+      },
+      {
+       "player": "Sean Rhyan",
+       "status": "Questionable",
+       "note": "C/G, ankle (Nov 24)"
+      },
+      {
+       "player": "Kevin Zeitler",
+       "status": "Questionable",
+       "note": "G, triceps (Nov 24)"
+      },
+      {
+       "player": "Zaire Franklin",
+       "status": "Questionable",
+       "note": "LB, shin (Nov 24)"
+      },
+      {
+       "player": "Travis Glover",
+       "status": "Questionable",
+       "note": "G/T, shoulder (Nov 24)"
+      },
+      {
+       "player": "Bo Melton",
+       "status": "Questionable",
+       "note": "WR, thigh (Nov 24)"
+      },
+      {
+       "player": "Skyy Moore",
+       "status": "Questionable",
+       "note": "WR, ankle (Nov 24)"
+      }
+     ],
+     "note": "Final injury reports, Nov 24 (therams.com, packers.com, Packers On SI via Yahoo, Roundtable via Yahoo; ESPN for Parsons). No Packers player ruled out."
+    },
     "sources": [
+     {
+      "site": "FanDuel Research (numberFire)",
+      "url": "https://www.fanduel.com/research/rams-vs-packers-predictions-odds-picks-best-bets-for-nfl-week-12-2026"
+     },
      {
       "site": "SI Betting (Peter Dewey)",
       "url": "https://www.si.com/betting/packers-vs-rams-prediction-odds-spread-injuries-trends-for-nfl-week-12-2026"
+     },
+     {
+      "site": "SI Betting (Iain MacMillan, Road to 272)",
+      "url": "https://www.si.com/betting/road-to-272-bets-nfl-week-12-picks-for-every-game-01m84yf8vqvp"
      },
      {
       "site": "CBS Sports (John Breech)",
@@ -442,19 +616,43 @@
       "url": "https://www.dimers.com/nfl/predictions/2026_12_la_gb"
      },
      {
-      "site": "Yahoo Sports / ClutchPoints",
-      "url": "https://sports.yahoo.com/articles/packers-vs-rams-bold-predictions-231636640.html"
+      "site": "TheLines (Justin Bales)",
+      "url": "https://www.thelines.com/nfl/picks/packers-vs-rams-prediction-odds-picks-for-nov-25-back-green-bay/"
+     },
+     {
+      "site": "WagerTalk (GoldSheet)",
+      "url": "https://www.wagertalk.com/news/nfl/packers-vs-rams-predictions-picks-and-odds-november-25-2026/"
      },
      {
       "site": "Pickswise",
       "url": "https://www.pickswise.com/nfl/games/los-angeles-rams-green-bay-packers-nfl-2026-11-25-2000/picks/"
      },
      {
-      "site": "WagerTalk (GoldSheet)",
-      "url": "https://www.wagertalk.com/news/nfl/packers-vs-rams-predictions-picks-and-odds-november-25-2026/"
+      "site": "FantasyAlarm (Mark Lammey)",
+      "url": "https://www.fantasyalarm.com/articles/nfl/predictions/packers-vs-rams-predictions-picks-odds-wednesday-night-football-week-12/199040"
+     },
+     {
+      "site": "Rams official injury report",
+      "url": "https://www.therams.com/news/rams-injury-report-week-12-2026-vs-packers-steve-avila-terrance-ferguson-coleman-shelton-kobie-turner"
+     },
+     {
+      "site": "Packers official injury report",
+      "url": "https://www.packers.com/news/packers-list-eight-questionable-vs-rams-week-12-injury-report"
+     },
+     {
+      "site": "ESPN (Rob Demovsky)",
+      "url": "https://www.espn.com/nfl/story/_/id/50577301/sources-packers-micah-parsons-cleared-return-wednesday"
+     },
+     {
+      "site": "Yahoo Sports (Packers On SI)",
+      "url": "https://sports.yahoo.com/nfl/articles/packers-rams-final-injury-report-200310557.html"
+     },
+     {
+      "site": "Yahoo Sports (Roundtable)",
+      "url": "https://sports.yahoo.com/nfl/articles/rams-final-week-12-injury-214338418.html"
      }
     ],
-    "updated": "2026-11-24T19:55-08:00"
+    "updated": "2026-11-25T05:58-08:00"
    }
   },
   {
@@ -473,11 +671,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 2.5,
    "total": 55.5,
    "total_open": 51.5,
-   "fav_ml": -121.0,
+   "fav_ml": -122.0,
    "favorite": "away",
    "spread": -1.5,
    "movement": 4.0,
@@ -876,15 +1074,15 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
-   "total": 48.5,
+   "total": 47.5,
    "total_open": 49.5,
-   "fav_ml": -468.0,
+   "fav_ml": -474.0,
    "favorite": "home",
    "spread": -8.5,
    "movement": 7.0,
-   "total_move": -1.0,
+   "total_move": -2.0,
    "fav_home": true,
    "home": {
     "code": "DAL",
@@ -1232,7 +1430,7 @@
       3,
       29
      ],
-     "total_move": -1.0,
+     "total_move": -2.0,
      "note": ""
     },
     "call": "No track",
@@ -1293,11 +1491,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -2.5,
    "total": 46.5,
    "total_open": 49.5,
-   "fav_ml": -150.0,
+   "fav_ml": -151.0,
    "favorite": "home",
    "spread": -3.0,
    "movement": 0.5,
@@ -1705,11 +1903,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 36.5,
    "total_open": 41.5,
-   "fav_ml": -203.0,
+   "fav_ml": -202.0,
    "favorite": "away",
    "spread": -3.5,
    "movement": 2.0,
@@ -1825,7 +2023,7 @@
      "fpi": 16,
      "nfl_com": 21
     },
-    "fpi_win": 0.384
+    "fpi_win": 0.513
    },
    "away": {
     "code": "DEN",
@@ -1935,7 +2133,7 @@
      "fpi": 13,
      "nfl_com": 3
     },
-    "fpi_win": 0.613
+    "fpi_win": 0.483
    },
    "fav": "DEN",
    "dog": "PIT",
@@ -2104,11 +2302,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -6.5,
    "total": 50.5,
    "total_open": 48.5,
-   "fav_ml": -588.0,
+   "fav_ml": -620.0,
    "favorite": "home",
    "spread": -10.0,
    "movement": 3.5,
@@ -2512,11 +2710,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 47.5,
    "total_open": 45.5,
-   "fav_ml": -308.0,
+   "fav_ml": -322.0,
    "favorite": "home",
    "spread": -7.0,
    "movement": 5.5,
@@ -2923,7 +3121,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 2.5,
    "total": 41.5,
    "total_open": 47.5,
@@ -3327,7 +3525,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -5.5,
    "total": 48.5,
    "total_open": 45.5,
@@ -3738,11 +3936,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 1.5,
    "total": 40.5,
    "total_open": 41.5,
-   "fav_ml": -195.0,
+   "fav_ml": -196.0,
    "favorite": "away",
    "spread": -3.5,
    "movement": 5.0,
@@ -4148,11 +4346,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -4.5,
    "total": 41.5,
    "total_open": 43.5,
-   "fav_ml": -324.0,
+   "fav_ml": -319.0,
    "favorite": "home",
    "spread": -7.0,
    "movement": 2.5,
@@ -4554,7 +4752,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -2.5,
    "total": 35.5,
    "total_open": 45.5,
@@ -4953,11 +5151,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -4.5,
    "total": 41.5,
    "total_open": 47.5,
-   "fav_ml": -337.0,
+   "fav_ml": -333.0,
    "favorite": "away",
    "spread": -7.0,
    "movement": 2.5,
@@ -5355,7 +5553,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 45.5,
    "total_open": 46.5,
@@ -5777,11 +5975,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -2.5,
    "total": 40.5,
    "total_open": 39.5,
-   "fav_ml": -219.0,
+   "fav_ml": -220.0,
    "favorite": "home",
    "spread": -4.5,
    "movement": 2.0,
@@ -6185,7 +6383,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -3.5,
    "total": 43.5,
    "total_open": 44.5,
@@ -6568,9 +6766,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV30CARTB",
-    "fav_prob": 0.595,
-    "bid": 0.59,
-    "ask": 0.6
+    "fav_prob": 0.585,
+    "bid": 0.58,
+    "ask": 0.59
    }
   }
  ],
@@ -6608,6 +6806,6 @@
   "watch": 9,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Tue Nov 24, 11:15 PM PT"
+  "built_label": "Wed Nov 25, 5:46 AM PT"
  }
 }
