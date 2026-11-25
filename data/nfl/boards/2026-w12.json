@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-25T10:33:01-08:00",
- "built_label": "Wed Nov 25, 10:33 AM PT",
+ "built_at": "2026-11-25T10:53:33-08:00",
+ "built_label": "Wed Nov 25, 10:53 AM PT",
  "games": [
   {
    "id": "401873079",
@@ -2305,7 +2305,7 @@
    "open_spread": -6.5,
    "total": 50.5,
    "total_open": 48.5,
-   "fav_ml": -559.0,
+   "fav_ml": -561.0,
    "favorite": "home",
    "spread": -10.0,
    "movement": 3.5,
@@ -3124,7 +3124,7 @@
    "open_spread": 2.5,
    "total": 41.5,
    "total_open": 47.5,
-   "fav_ml": -348.0,
+   "fav_ml": -340.0,
    "favorite": "away",
    "spread": -6.5,
    "movement": 9.0,
@@ -3201,7 +3201,6 @@
     "key_out": [],
     "key_questionable": [
      "Bernhard Raimann",
-     "Charvarius Ward",
      "Jalen Travis"
     ],
     "key_long_term": [],
@@ -3209,6 +3208,11 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Alec Pierce",
+      "pos": "WR",
+      "status": "Injured Reserve"
+     },
      {
       "name": "Caden Curry",
       "pos": "LB",
@@ -3227,11 +3231,6 @@
      {
       "name": "Jalen Travis",
       "pos": "OT",
-      "status": "Questionable"
-     },
-     {
-      "name": "Charvarius Ward",
-      "pos": "CB",
       "status": "Questionable"
      }
     ],
@@ -3454,7 +3453,7 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Bernhard Raimann, Charvarius Ward, Jalen Travis"
+      "text": "Underdog questionable: Bernhard Raimann, Jalen Travis"
      }
     ],
     "under": {
@@ -5978,7 +5977,7 @@
    "open_spread": -2.5,
    "total": 40.5,
    "total_open": 39.5,
-   "fav_ml": -226.0,
+   "fav_ml": -229.0,
    "favorite": "home",
    "spread": -4.5,
    "movement": 2.0,
@@ -6805,6 +6804,6 @@
   "watch": 9,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Wed Nov 25, 10:33 AM PT"
+  "built_label": "Wed Nov 25, 10:53 AM PT"
  }
 }
