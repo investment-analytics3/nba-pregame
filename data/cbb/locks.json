@@ -9267,6 +9267,10 @@
      }
     ],
     "updated": "2026-11-24T05:45-08:00"
+   },
+   "score": {
+    "home": 0,
+    "away": 0
    }
   }
  },
@@ -9970,7 +9974,11 @@
     "bid": 0.82,
     "ask": 0.83
    },
-   "locked_at": "2026-11-24T15:30:42-08:00"
+   "locked_at": "2026-11-24T15:30:42-08:00",
+   "score": {
+    "home": 0,
+    "away": 0
+   }
   }
  },
  "401917904": {
@@ -10675,7 +10683,1417 @@
     "bid": 0.92,
     "ask": 0.93
    },
-   "locked_at": "2026-11-24T15:30:42-08:00"
+   "locked_at": "2026-11-24T15:30:42-08:00",
+   "score": {
+    "home": 0,
+    "away": 0
+   }
+  }
+ },
+ "401929421": {
+  "at": "2026-11-24T16:00:47-08:00",
+  "day": "2026-11-24",
+  "game": {
+   "id": "401929421",
+   "tip_utc": "2026-11-25T01:00:00+00:00",
+   "tip_pt": "5:00 PM PT",
+   "day_et": "2026-11-24",
+   "state": "pre",
+   "detail": "11/24 - 8:00 PM EST",
+   "neutral": false,
+   "venue": "Mitchell Center",
+   "favorite": "home",
+   "spread": {
+    "spread": 17.5,
+    "details": "USA -17.5",
+    "provider": "DraftKings",
+    "ml_home": -2400,
+    "ml_away": 1200
+   },
+   "home": {
+    "id": "6",
+    "abbr": "USA",
+    "name": "South Alabama",
+    "display": "South Alabama Jaguars",
+    "mascot": "Jaguars",
+    "record": "4-4",
+    "l3_record": "2-1",
+    "games": 7,
+    "season": {
+     "efg": 53.88,
+     "opp_efg": 57.58,
+     "off": 110.61,
+     "def": 119.33,
+     "net": -8.73,
+     "poss_per_game": 65.5,
+     "ranks": {
+      "efg": 96,
+      "off": 136,
+      "opp_efg": 333,
+      "def": 320,
+      "net": 233
+     }
+    },
+    "last3": {
+     "efg": 52.74,
+     "opp_efg": 57.53,
+     "off": 105.82,
+     "def": 123.9,
+     "net": -18.08,
+     "poss_per_game": 62.7,
+     "ranks": {
+      "efg": 140,
+      "off": 202,
+      "opp_efg": 322,
+      "def": 339,
+      "net": 301
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401922252,
+      "date": "2026-11-22",
+      "site": "home",
+      "opp_id": 2697,
+      "opp": "UWF",
+      "d1_opp": true,
+      "pts": 79,
+      "opp_pts": 66,
+      "metrics": {
+       "efg": 56.9,
+       "opp_efg": 53.57,
+       "off": 121.61,
+       "def": 101.6,
+       "net": 20.01
+      },
+      "opp_power_rank": 249
+     },
+     {
+      "game_id": 401929459,
+      "date": "2026-11-20",
+      "site": "away",
+      "opp_id": 2567,
+      "opp": "SMU",
+      "d1_opp": true,
+      "pts": 55,
+      "opp_pts": 101,
+      "metrics": {
+       "efg": 46.36,
+       "opp_efg": 64.0,
+       "off": 83.95,
+       "def": 154.17,
+       "net": -70.22
+      },
+      "opp_power_rank": 36
+     },
+     {
+      "game_id": 401930568,
+      "date": "2026-11-17",
+      "site": "home",
+      "opp_id": 2590,
+      "opp": "SPRH",
+      "d1_opp": false,
+      "pts": 122,
+      "opp_pts": 69,
+      "metrics": {
+       "efg": 65.38,
+       "opp_efg": 38.95,
+       "off": 141.74,
+       "def": 80.16,
+       "net": 61.57
+      },
+      "opp_power_rank": null
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-17.5",
+    "b2b": false,
+    "power": {
+     "rank": 240,
+     "bpi": 240,
+     "own_net": 233
+    },
+    "key_players": [
+     "Jalen Langsy",
+     "Aaron Goldstein",
+     "Stephen Williams",
+     "Diego Roman",
+     "Davaughn Hueitt",
+     "Peyton Law",
+     "Samuel Shoptaw"
+    ],
+    "top_scorers": [
+     {
+      "name": "Jalen Langsy",
+      "ppg": 19.9
+     },
+     {
+      "name": "Stephen Williams",
+      "ppg": 16.9
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "50",
+    "abbr": "FAMU",
+    "name": "Florida A&M",
+    "display": "Florida A&M Rattlers",
+    "mascot": "Rattlers",
+    "record": "0-6",
+    "l3_record": "0-3",
+    "games": 5,
+    "season": {
+     "efg": 45.12,
+     "opp_efg": 54.12,
+     "off": 86.59,
+     "def": 126.12,
+     "net": -39.53,
+     "poss_per_game": 74.4,
+     "ranks": {
+      "efg": 308,
+      "off": 346,
+      "opp_efg": 269,
+      "def": 350,
+      "net": 360
+     }
+    },
+    "last3": {
+     "efg": 43.02,
+     "opp_efg": 53.64,
+     "off": 85.99,
+     "def": 120.12,
+     "net": -34.12,
+     "poss_per_game": 73.3,
+     "ranks": {
+      "efg": 326,
+      "off": 347,
+      "opp_efg": 252,
+      "def": 322,
+      "net": 347
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401929420,
+      "date": "2026-11-18",
+      "site": "away",
+      "opp_id": 2636,
+      "opp": "UTSA",
+      "d1_opp": true,
+      "pts": 78,
+      "opp_pts": 98,
+      "metrics": {
+       "efg": 42.54,
+       "opp_efg": 47.33,
+       "off": 96.09,
+       "def": 120.73,
+       "net": -24.64
+      },
+      "opp_power_rank": 176
+     },
+     {
+      "game_id": 401929419,
+      "date": "2026-11-16",
+      "site": "away",
+      "opp_id": 2638,
+      "opp": "UTEP",
+      "d1_opp": true,
+      "pts": 46,
+      "opp_pts": 79,
+      "metrics": {
+       "efg": 44.44,
+       "opp_efg": 52.99,
+       "off": 68.21,
+       "def": 117.15,
+       "net": -48.93
+      },
+      "opp_power_rank": 112
+     },
+     {
+      "game_id": 401921005,
+      "date": "2026-11-11",
+      "site": "home",
+      "opp_id": 140,
+      "opp": "KC",
+      "d1_opp": true,
+      "pts": 65,
+      "opp_pts": 87,
+      "metrics": {
+       "efg": 42.54,
+       "opp_efg": 61.72,
+       "off": 91.32,
+       "def": 122.23,
+       "net": -30.91
+      },
+      "opp_power_rank": 246
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+17.5",
+    "b2b": false,
+    "power": {
+     "rank": 364,
+     "bpi": 364,
+     "own_net": 360
+    },
+    "key_players": [
+     "Antonio Baker Jr.",
+     "Jaden Kempson",
+     "Daisean Williford",
+     "Jayden Joseph",
+     "Ralph Martino Jr.",
+     "Ben Ndour",
+     "Joel Mokweza"
+    ],
+    "top_scorers": [
+     {
+      "name": "Jaden Kempson",
+      "ppg": 16.3
+     },
+     {
+      "name": "Daisean Williford",
+      "ppg": 13.8
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "USA",
+    "dog": "FAMU",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 17 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 USA last-3 top 50 in 0 of 4 \u00b7 \u2713 FAMU last-3 bottom 50 (316+) in 3 of 4 \u00b7 \u2717 USA season outside 1-182: Opp eFG% #333, Def Eff #320 \u00b7 \u2713 FAMU season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "FAMU: consensus #364, BPI #364, our net #360"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 17 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for USA: check news before betting"
+    ],
+    "score": 17,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 0,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 13,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "USA",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 96,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 136,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 333,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 320,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "USA",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 140,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 202,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 322,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 339,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "FAMU",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 269,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 350,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 308,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 346,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "FAMU",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 252,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 322,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 326,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 347,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "cells": [
+       {
+        "team": "USA",
+        "role": "fav",
+        "window": "season",
+        "metric": "off",
+        "rank": 136,
+        "color": "yellow"
+       },
+       {
+        "team": "USA",
+        "role": "fav",
+        "window": "last3",
+        "metric": "off",
+        "rank": 202,
+        "color": "red"
+       },
+       {
+        "team": "FAMU",
+        "role": "dog",
+        "window": "season",
+        "metric": "def",
+        "rank": 350,
+        "color": "green"
+       },
+       {
+        "team": "FAMU",
+        "role": "dog",
+        "window": "last3",
+        "metric": "def",
+        "rank": 322,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shoot",
+      "label": "Shooting vs shot defense",
+      "fav_metric": "efg",
+      "dog_metric": "opp_efg",
+      "cells": [
+       {
+        "team": "USA",
+        "role": "fav",
+        "window": "season",
+        "metric": "efg",
+        "rank": 96,
+        "color": "yellow"
+       },
+       {
+        "team": "USA",
+        "role": "fav",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 140,
+        "color": "yellow"
+       },
+       {
+        "team": "FAMU",
+        "role": "dog",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 269,
+        "color": "green"
+       },
+       {
+        "team": "FAMU",
+        "role": "dog",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 252,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "cells": [
+       {
+        "team": "USA",
+        "role": "fav",
+        "window": "season",
+        "metric": "def",
+        "rank": 320,
+        "color": "red"
+       },
+       {
+        "team": "USA",
+        "role": "fav",
+        "window": "last3",
+        "metric": "def",
+        "rank": 339,
+        "color": "red"
+       },
+       {
+        "team": "FAMU",
+        "role": "dog",
+        "window": "season",
+        "metric": "off",
+        "rank": 346,
+        "color": "green"
+       },
+       {
+        "team": "FAMU",
+        "role": "dog",
+        "window": "last3",
+        "metric": "off",
+        "rank": 347,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shotd",
+      "label": "Shot defense vs shooting",
+      "fav_metric": "opp_efg",
+      "dog_metric": "efg",
+      "cells": [
+       {
+        "team": "USA",
+        "role": "fav",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 333,
+        "color": "red"
+       },
+       {
+        "team": "USA",
+        "role": "fav",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 322,
+        "color": "red"
+       },
+       {
+        "team": "FAMU",
+        "role": "dog",
+        "window": "season",
+        "metric": "efg",
+        "rank": 308,
+        "color": "green"
+       },
+       {
+        "team": "FAMU",
+        "role": "dog",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 326,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "off",
+      "dog_metric": "off",
+      "fav_rank": 202,
+      "dog_rank": 347,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def",
+      "dog_metric": "def",
+      "fav_rank": 339,
+      "dog_rank": 322,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "fav_rank": 339,
+      "dog_rank": 347,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "fav_rank": 202,
+      "dog_rank": 322,
+      "counts": false,
+      "met": false
+     }
+    ]
+   },
+   "summary": "No track: score 17 (watch list from 18, qualifies at 28). Biggest edge over the last 3: USA Off Eff (#202) against FAMU Def Eff (#322). USA 2-1 in its last 3, FAMU 0-3.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV24FAMUUSA",
+    "fav_prob": 0.945,
+    "bid": 0.94,
+    "ask": 0.95
+   },
+   "locked_at": "2026-11-24T16:00:47-08:00"
+  }
+ },
+ "401924723": {
+  "at": "2026-11-24T16:00:47-08:00",
+  "day": "2026-11-24",
+  "game": {
+   "id": "401924723",
+   "tip_utc": "2026-11-25T01:00:00+00:00",
+   "tip_pt": "5:00 PM PT",
+   "day_et": "2026-11-24",
+   "state": "pre",
+   "detail": "11/24 - 8:00 PM EST",
+   "neutral": false,
+   "venue": "Newman Arena",
+   "favorite": "home",
+   "spread": {
+    "spread": 11.5,
+    "details": "COR -11.5",
+    "provider": "DraftKings",
+    "ml_home": -700,
+    "ml_away": 500
+   },
+   "home": {
+    "id": "172",
+    "abbr": "COR",
+    "name": "Cornell",
+    "display": "Cornell Big Red",
+    "mascot": "Big Red",
+    "record": "3-3",
+    "l3_record": "1-2",
+    "games": 5,
+    "season": {
+     "efg": 52.66,
+     "opp_efg": 48.73,
+     "off": 103.8,
+     "def": 108.71,
+     "net": -4.92,
+     "poss_per_game": 73.2,
+     "ranks": {
+      "efg": 128,
+      "off": 211,
+      "opp_efg": 124,
+      "def": 197,
+      "net": 213
+     }
+    },
+    "last3": {
+     "efg": 53.37,
+     "opp_efg": 50.0,
+     "off": 104.96,
+     "def": 110.44,
+     "net": -5.48,
+     "poss_per_game": 73.0,
+     "ranks": {
+      "efg": 130,
+      "off": 214,
+      "opp_efg": 154,
+      "def": 219,
+      "net": 229
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401924722,
+      "date": "2026-11-21",
+      "site": "away",
+      "opp_id": 2415,
+      "opp": "MORG",
+      "d1_opp": true,
+      "pts": 84,
+      "opp_pts": 63,
+      "metrics": {
+       "efg": 59.38,
+       "opp_efg": 38.97,
+       "off": 114.38,
+       "def": 85.79,
+       "net": 28.6
+      },
+      "opp_power_rank": 295
+     },
+     {
+      "game_id": 401924721,
+      "date": "2026-11-18",
+      "site": "away",
+      "opp_id": 183,
+      "opp": "SYR",
+      "d1_opp": true,
+      "pts": 82,
+      "opp_pts": 91,
+      "metrics": {
+       "efg": 54.69,
+       "opp_efg": 57.63,
+       "off": 110.57,
+       "def": 122.7,
+       "net": -12.14
+      },
+      "opp_power_rank": 83
+     },
+     {
+      "game_id": 401911263,
+      "date": "2026-11-11",
+      "site": "away",
+      "opp_id": 179,
+      "opp": "SBU",
+      "d1_opp": true,
+      "pts": 64,
+      "opp_pts": 88,
+      "metrics": {
+       "efg": 46.15,
+       "opp_efg": 54.76,
+       "off": 89.48,
+       "def": 123.03,
+       "net": -33.55
+      },
+      "opp_power_rank": 95
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-11.5",
+    "b2b": false,
+    "power": {
+     "rank": 191,
+     "bpi": 185,
+     "own_net": 213
+    },
+    "key_players": [
+     "Anthony Nimani",
+     "Quinn Gibson",
+     "Mateen Rafiq",
+     "Kaspar Sepp",
+     "Jacob Beccles"
+    ],
+    "top_scorers": [
+     {
+      "name": "Anthony Nimani",
+      "ppg": 11.8
+     },
+     {
+      "name": "Mateen Rafiq",
+      "ppg": 11.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "2083",
+    "abbr": "BUCK",
+    "name": "Bucknell",
+    "display": "Bucknell Bison",
+    "mascot": "Bison",
+    "record": "1-5",
+    "l3_record": "1-2",
+    "games": 6,
+    "season": {
+     "efg": 48.81,
+     "opp_efg": 53.46,
+     "off": 94.35,
+     "def": 119.33,
+     "net": -24.98,
+     "poss_per_game": 68.7,
+     "ranks": {
+      "efg": 238,
+      "off": 300,
+      "opp_efg": 261,
+      "def": 321,
+      "net": 320
+     }
+    },
+    "last3": {
+     "efg": 50.29,
+     "opp_efg": 47.46,
+     "off": 96.06,
+     "def": 105.71,
+     "net": -9.65,
+     "poss_per_game": 69.1,
+     "ranks": {
+      "efg": 205,
+      "off": 299,
+      "opp_efg": 101,
+      "def": 154,
+      "net": 251
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401924884,
+      "date": "2026-11-21",
+      "site": "home",
+      "opp_id": 2561,
+      "opp": "SIE",
+      "d1_opp": true,
+      "pts": 87,
+      "opp_pts": 93,
+      "metrics": {
+       "efg": 62.5,
+       "opp_efg": 49.19,
+       "off": 110.99,
+       "def": 118.64,
+       "net": -7.65
+      },
+      "opp_power_rank": 226
+     },
+     {
+      "game_id": 401924941,
+      "date": "2026-11-17",
+      "site": "home",
+      "opp_id": 2006,
+      "opp": "AKR",
+      "d1_opp": true,
+      "pts": 53,
+      "opp_pts": 49,
+      "metrics": {
+       "efg": 43.27,
+       "opp_efg": 35.34,
+       "off": 85.64,
+       "def": 79.18,
+       "net": 6.46
+      },
+      "opp_power_rank": 130
+     },
+     {
+      "game_id": 401924704,
+      "date": "2026-11-13",
+      "site": "home",
+      "opp_id": 171,
+      "opp": "COLU",
+      "d1_opp": true,
+      "pts": 59,
+      "opp_pts": 77,
+      "metrics": {
+       "efg": 44.35,
+       "opp_efg": 57.89,
+       "off": 88.21,
+       "def": 115.12,
+       "net": -26.91
+      },
+      "opp_power_rank": 101
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+11.5",
+    "b2b": false,
+    "power": {
+     "rank": 334,
+     "bpi": 340,
+     "own_net": 320
+    },
+    "key_players": [
+     "Aleksander Pachucki",
+     "Luca Soroa Schaller",
+     "Jayden Williams",
+     "Rocco Lamuno",
+     "Patrick O'Brien"
+    ],
+    "top_scorers": [
+     {
+      "name": "Aleksander Pachucki",
+      "ppg": 16.0
+     },
+     {
+      "name": "Rocco Lamuno",
+      "ppg": 10.8
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "COR",
+    "dog": "BUCK",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 12 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 COR last-3 top 50 in 0 of 4 \u00b7 \u2717 BUCK last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2717 COR season outside 1-182: Off Eff #211, Def Eff #197 \u00b7 \u2713 BUCK season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "BUCK: consensus #334, BPI #340, our net #320"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 12 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for COR: check news before betting"
+    ],
+    "score": 12,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 0,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 9,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "COR",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 128,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 211,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 124,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 197,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "COR",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 130,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 214,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 154,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 219,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "BUCK",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 261,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 321,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 238,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 300,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "BUCK",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 101,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 154,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 205,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 299,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "cells": [
+       {
+        "team": "COR",
+        "role": "fav",
+        "window": "season",
+        "metric": "off",
+        "rank": 211,
+        "color": "red"
+       },
+       {
+        "team": "COR",
+        "role": "fav",
+        "window": "last3",
+        "metric": "off",
+        "rank": 214,
+        "color": "red"
+       },
+       {
+        "team": "BUCK",
+        "role": "dog",
+        "window": "season",
+        "metric": "def",
+        "rank": 321,
+        "color": "green"
+       },
+       {
+        "team": "BUCK",
+        "role": "dog",
+        "window": "last3",
+        "metric": "def",
+        "rank": 154,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shoot",
+      "label": "Shooting vs shot defense",
+      "fav_metric": "efg",
+      "dog_metric": "opp_efg",
+      "cells": [
+       {
+        "team": "COR",
+        "role": "fav",
+        "window": "season",
+        "metric": "efg",
+        "rank": 128,
+        "color": "yellow"
+       },
+       {
+        "team": "COR",
+        "role": "fav",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 130,
+        "color": "yellow"
+       },
+       {
+        "team": "BUCK",
+        "role": "dog",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 261,
+        "color": "green"
+       },
+       {
+        "team": "BUCK",
+        "role": "dog",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 101,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "cells": [
+       {
+        "team": "COR",
+        "role": "fav",
+        "window": "season",
+        "metric": "def",
+        "rank": 197,
+        "color": "red"
+       },
+       {
+        "team": "COR",
+        "role": "fav",
+        "window": "last3",
+        "metric": "def",
+        "rank": 219,
+        "color": "red"
+       },
+       {
+        "team": "BUCK",
+        "role": "dog",
+        "window": "season",
+        "metric": "off",
+        "rank": 300,
+        "color": "green"
+       },
+       {
+        "team": "BUCK",
+        "role": "dog",
+        "window": "last3",
+        "metric": "off",
+        "rank": 299,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shotd",
+      "label": "Shot defense vs shooting",
+      "fav_metric": "opp_efg",
+      "dog_metric": "efg",
+      "cells": [
+       {
+        "team": "COR",
+        "role": "fav",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 124,
+        "color": "yellow"
+       },
+       {
+        "team": "COR",
+        "role": "fav",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 154,
+        "color": "red"
+       },
+       {
+        "team": "BUCK",
+        "role": "dog",
+        "window": "season",
+        "metric": "efg",
+        "rank": 238,
+        "color": "green"
+       },
+       {
+        "team": "BUCK",
+        "role": "dog",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 205,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "off",
+      "dog_metric": "off",
+      "fav_rank": 214,
+      "dog_rank": 299,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def",
+      "dog_metric": "def",
+      "fav_rank": 219,
+      "dog_rank": 154,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "fav_rank": 219,
+      "dog_rank": 299,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "fav_rank": 214,
+      "dog_rank": 154,
+      "counts": false,
+      "met": false
+     }
+    ]
+   },
+   "summary": "No track: score 12 (watch list from 18, qualifies at 28). COR 1-2 in its last 3, BUCK 1-2.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV24BUCKCOR",
+    "fav_prob": 0.865,
+    "bid": 0.86,
+    "ask": 0.87
+   },
+   "locked_at": "2026-11-24T16:00:47-08:00"
   }
  }
 }
