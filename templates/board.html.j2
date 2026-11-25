@@ -441,7 +441,7 @@ function readoutPanel(g){
   const sc = g.scoring||{};
   if(!readoutOk(sc)) return '';
   const r = g.readout;
-  if(!r) return `<div class="panel pad" style="margin-top:16px"><h3 style="margin:0 0 6px">Analyst readout</h3><div style="font-size:13.5px;color:var(--muted)">Not gathered yet. It's added each morning before the board.</div></div>`;
+  if(!r) return `<div class="panel pad" style="margin-top:16px"><h3 style="margin:0 0 6px">Analyst readout</h3><div style="font-size:13.5px;color:var(--muted)">Not gathered yet. Readouts are written the night before, once tomorrow's games are posted (about 10:45 PM PT), and refreshed on game-day morning (about 9:45 AM PT).</div></div>`;
   const when = r.updated ? new Date(r.updated).toLocaleString('en-US',{timeZone:'America/Los_Angeles',hour:'numeric',minute:'2-digit',month:'short',day:'numeric'})+' PT' : '';
   const row = (k,v) => v ? `<div style="display:grid;grid-template-columns:110px minmax(0,1fr);gap:10px;padding:8px 0;border-top:1px solid var(--line);font-size:13.5px"><span style="color:var(--dim);font-weight:600">${k}</span><span style="color:#D3D9E5">${esc(v)}</span></div>` : '';
   const src = (r.sources||[]).filter(x=>x && x.url && /^https?:\/\//.test(x.url)).map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener noreferrer">${esc(x.site||'source')}</a>`).join(' · ');
