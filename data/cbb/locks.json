@@ -9976,8 +9976,8 @@
    "tip_utc": "2026-11-25T18:00:00+00:00",
    "tip_pt": "10:00 AM PT",
    "day_et": "2026-11-25",
-   "state": "pre",
-   "detail": "11/25 - 1:00 PM EST",
+   "state": "in",
+   "detail": "6:18 - 1st",
    "neutral": false,
    "venue": "Stony Brook Arena",
    "favorite": "home",
@@ -10670,8 +10670,8 @@
    },
    "locked_at": "2026-11-25T09:00:50-08:00",
    "score": {
-    "home": 0,
-    "away": 0
+    "home": 23,
+    "away": 18
    }
   }
  },
@@ -10683,8 +10683,8 @@
    "tip_utc": "2026-11-25T18:00:00+00:00",
    "tip_pt": "10:00 AM PT",
    "day_et": "2026-11-25",
-   "state": "pre",
-   "detail": "11/25 - 1:00 PM EST",
+   "state": "in",
+   "detail": "7:03 - 1st",
    "neutral": false,
    "venue": "Millett Hall",
    "favorite": "home",
@@ -11378,8 +11378,8 @@
    },
    "locked_at": "2026-11-25T09:00:50-08:00",
    "score": {
-    "home": 0,
-    "away": 0
+    "home": 22,
+    "away": 21
    }
   }
  },
@@ -12153,7 +12153,714 @@
      }
     ],
     "updated": "2026-11-25T05:40-08:00"
+   },
+   "score": {
+    "home": 0,
+    "away": 0
    }
+  }
+ },
+ "401919007": {
+  "at": "2026-11-25T10:33:11-08:00",
+  "day": "2026-11-25",
+  "game": {
+   "id": "401919007",
+   "tip_utc": "2026-11-25T18:30:00+00:00",
+   "tip_pt": "10:30 AM PT",
+   "day_et": "2026-11-25",
+   "state": "pre",
+   "detail": "11/25 - 1:30 PM EST",
+   "neutral": true,
+   "venue": "Suncoast Credit Union Arena",
+   "favorite": "home",
+   "spread": {
+    "spread": 10.5,
+    "details": "DAV -10.5",
+    "provider": "DraftKings",
+    "ml_home": -500,
+    "ml_away": 380
+   },
+   "home": {
+    "id": "2166",
+    "abbr": "DAV",
+    "name": "Davidson",
+    "display": "Davidson Wildcats",
+    "mascot": "Wildcats",
+    "record": "4-2",
+    "l3_record": "1-2",
+    "games": 6,
+    "season": {
+     "efg": 51.95,
+     "opp_efg": 44.36,
+     "off": 108.89,
+     "def": 93.15,
+     "net": 15.74,
+     "poss_per_game": 65.7,
+     "ranks": {
+      "efg": 158,
+      "off": 158,
+      "opp_efg": 32,
+      "def": 38,
+      "net": 83
+     }
+    },
+    "last3": {
+     "efg": 48.31,
+     "opp_efg": 46.6,
+     "off": 104.94,
+     "def": 95.64,
+     "net": 9.31,
+     "poss_per_game": 64.5,
+     "ranks": {
+      "efg": 247,
+      "off": 210,
+      "opp_efg": 83,
+      "def": 52,
+      "net": 103
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401921700,
+      "date": "2026-11-23",
+      "site": "home",
+      "opp_id": 2460,
+      "opp": "UNI",
+      "d1_opp": true,
+      "pts": 79,
+      "opp_pts": 48,
+      "metrics": {
+       "efg": 62.73,
+       "opp_efg": 38.54,
+       "off": 123.8,
+       "def": 75.22,
+       "net": 48.58
+      },
+      "opp_power_rank": 243
+     },
+     {
+      "game_id": 401925775,
+      "date": "2026-11-17",
+      "site": "home",
+      "opp_id": 2429,
+      "opp": "CLT",
+      "d1_opp": true,
+      "pts": 66,
+      "opp_pts": 73,
+      "metrics": {
+       "efg": 45.97,
+       "opp_efg": 52.68,
+       "off": 98.75,
+       "def": 109.22,
+       "net": -10.47
+      },
+      "opp_power_rank": 121
+     },
+     {
+      "game_id": 401925774,
+      "date": "2026-11-14",
+      "site": "home",
+      "opp_id": 47,
+      "opp": "HOW",
+      "d1_opp": true,
+      "pts": 58,
+      "opp_pts": 64,
+      "metrics": {
+       "efg": 37.5,
+       "opp_efg": 47.41,
+       "off": 92.38,
+       "def": 101.93,
+       "net": -9.56
+      },
+      "opp_power_rank": 180
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-10.5",
+    "b2b": false,
+    "power": {
+     "rank": 94,
+     "bpi": 104,
+     "own_net": 83
+    },
+    "key_players": [
+     "Josh Scovens",
+     "Nick Janowski",
+     "Sam Brown",
+     "Ian Platteeuw",
+     "Jackson Keith"
+    ],
+    "top_scorers": [
+     {
+      "name": "Josh Scovens",
+      "ppg": 16.3
+     },
+     {
+      "name": "Nick Janowski",
+      "ppg": 15.2
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "2655",
+    "abbr": "TULN",
+    "name": "Tulane",
+    "display": "Tulane Green Wave",
+    "mascot": "Green Wave",
+    "record": "2-4",
+    "l3_record": "0-3",
+    "games": 6,
+    "season": {
+     "efg": 48.33,
+     "opp_efg": 51.48,
+     "off": 106.24,
+     "def": 107.41,
+     "net": -1.17,
+     "poss_per_game": 71.4,
+     "ranks": {
+      "efg": 254,
+      "off": 186,
+      "opp_efg": 195,
+      "def": 178,
+      "net": 185
+     }
+    },
+    "last3": {
+     "efg": 43.44,
+     "opp_efg": 48.95,
+     "off": 96.21,
+     "def": 105.68,
+     "net": -9.47,
+     "poss_per_game": 66.9,
+     "ranks": {
+      "efg": 327,
+      "off": 299,
+      "opp_efg": 128,
+      "def": 148,
+      "net": 248
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401919006,
+      "date": "2026-11-23",
+      "site": "away",
+      "opp_id": 2247,
+      "opp": "GAST",
+      "d1_opp": true,
+      "pts": 63,
+      "opp_pts": 73,
+      "metrics": {
+       "efg": 43.0,
+       "opp_efg": 57.41,
+       "off": 96.61,
+       "def": 111.94,
+       "net": -15.33
+      },
+      "opp_power_rank": 168
+     },
+     {
+      "game_id": 401919005,
+      "date": "2026-11-19",
+      "site": "away",
+      "opp_id": 2348,
+      "opp": "LT",
+      "d1_opp": true,
+      "pts": 67,
+      "opp_pts": 74,
+      "metrics": {
+       "efg": 47.22,
+       "opp_efg": 45.89,
+       "off": 99.08,
+       "def": 109.43,
+       "net": -10.35
+      },
+      "opp_power_rank": 152
+     },
+     {
+      "game_id": 401919004,
+      "date": "2026-11-14",
+      "site": "away",
+      "opp_id": 2006,
+      "opp": "AKR",
+      "d1_opp": true,
+      "pts": 63,
+      "opp_pts": 65,
+      "metrics": {
+       "efg": 40.18,
+       "opp_efg": 45.24,
+       "off": 92.97,
+       "def": 95.92,
+       "net": -2.95
+      },
+      "opp_power_rank": 106
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+10.5",
+    "b2b": false,
+    "power": {
+     "rank": 187,
+     "bpi": 199,
+     "own_net": 185
+    },
+    "key_players": [
+     "Krystian Lewis",
+     "KJ Greene",
+     "TJ Nadeau",
+     "Tyler Ringgold",
+     "Joah Chappelle",
+     "Carson Schwieger"
+    ],
+    "top_scorers": [
+     {
+      "name": "Krystian Lewis",
+      "ppg": 22.0
+     },
+     {
+      "name": "TJ Nadeau",
+      "ppg": 13.8
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "DAV",
+    "dog": "TULN",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 13 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 DAV last-3 top 50 in 0 of 4 \u00b7 \u2717 TULN last-3 bottom 50 (316+) in 1 of 4 \u00b7 \u2713 DAV season top half (1-182) in all four \u00b7 \u2713 TULN season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "TULN: consensus #187, BPI #199, our net #185"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 13 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for DAV: check news before betting",
+     "Neutral-site game: no home-court point"
+    ],
+    "score": 13,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 2,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 9,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "DAV",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 158,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 158,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 32,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 38,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "DAV",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 247,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 210,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 83,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 52,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "TULN",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 195,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 178,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 254,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 186,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "TULN",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 128,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 148,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 327,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 299,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "cells": [
+       {
+        "team": "DAV",
+        "role": "fav",
+        "window": "season",
+        "metric": "off",
+        "rank": 158,
+        "color": "red"
+       },
+       {
+        "team": "DAV",
+        "role": "fav",
+        "window": "last3",
+        "metric": "off",
+        "rank": 210,
+        "color": "red"
+       },
+       {
+        "team": "TULN",
+        "role": "dog",
+        "window": "season",
+        "metric": "def",
+        "rank": 178,
+        "color": "green"
+       },
+       {
+        "team": "TULN",
+        "role": "dog",
+        "window": "last3",
+        "metric": "def",
+        "rank": 148,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "key": "shoot",
+      "label": "Shooting vs shot defense",
+      "fav_metric": "efg",
+      "dog_metric": "opp_efg",
+      "cells": [
+       {
+        "team": "DAV",
+        "role": "fav",
+        "window": "season",
+        "metric": "efg",
+        "rank": 158,
+        "color": "red"
+       },
+       {
+        "team": "DAV",
+        "role": "fav",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 247,
+        "color": "red"
+       },
+       {
+        "team": "TULN",
+        "role": "dog",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 195,
+        "color": "green"
+       },
+       {
+        "team": "TULN",
+        "role": "dog",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 128,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "cells": [
+       {
+        "team": "DAV",
+        "role": "fav",
+        "window": "season",
+        "metric": "def",
+        "rank": 38,
+        "color": "green"
+       },
+       {
+        "team": "DAV",
+        "role": "fav",
+        "window": "last3",
+        "metric": "def",
+        "rank": 52,
+        "color": "yellow"
+       },
+       {
+        "team": "TULN",
+        "role": "dog",
+        "window": "season",
+        "metric": "off",
+        "rank": 186,
+        "color": "green"
+       },
+       {
+        "team": "TULN",
+        "role": "dog",
+        "window": "last3",
+        "metric": "off",
+        "rank": 299,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shotd",
+      "label": "Shot defense vs shooting",
+      "fav_metric": "opp_efg",
+      "dog_metric": "efg",
+      "cells": [
+       {
+        "team": "DAV",
+        "role": "fav",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 32,
+        "color": "green"
+       },
+       {
+        "team": "DAV",
+        "role": "fav",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 83,
+        "color": "yellow"
+       },
+       {
+        "team": "TULN",
+        "role": "dog",
+        "window": "season",
+        "metric": "efg",
+        "rank": 254,
+        "color": "green"
+       },
+       {
+        "team": "TULN",
+        "role": "dog",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 327,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "off",
+      "dog_metric": "off",
+      "fav_rank": 210,
+      "dog_rank": 299,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def",
+      "dog_metric": "def",
+      "fav_rank": 52,
+      "dog_rank": 148,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "fav_rank": 52,
+      "dog_rank": 299,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "fav_rank": 210,
+      "dog_rank": 148,
+      "counts": false,
+      "met": false
+     }
+    ]
+   },
+   "summary": "No track: score 13 (watch list from 18, qualifies at 28). Biggest edge over the last 3: DAV Def Eff (#52) against TULN Off Eff (#299). DAV 1-2 in its last 3, TULN 0-3.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV25TULNDAV",
+    "fav_prob": 0.805,
+    "bid": 0.8,
+    "ask": 0.81
+   },
+   "locked_at": "2026-11-25T10:33:11-08:00"
   }
  }
 }
