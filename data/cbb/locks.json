@@ -11391,8 +11391,8 @@
    "tip_utc": "2026-11-25T19:00:00+00:00",
    "tip_pt": "11:00 AM PT",
    "day_et": "2026-11-25",
-   "state": "in",
-   "detail": "3:48 - 2nd",
+   "state": "post",
+   "detail": "Final",
    "neutral": false,
    "venue": "Levien Gymnasium",
    "favorite": "home",
@@ -12155,8 +12155,8 @@
     "updated": "2026-11-25T05:40-08:00"
    },
    "score": {
-    "home": 58,
-    "away": 38
+    "home": 65,
+    "away": 44
    }
   }
  },
@@ -14455,6 +14455,709 @@
     "home": 0,
     "away": 0
    }
+  }
+ },
+ "401920237": {
+  "at": "2026-11-25T13:00:49-08:00",
+  "day": "2026-11-25",
+  "game": {
+   "id": "401920237",
+   "tip_utc": "2026-11-25T22:00:00+00:00",
+   "tip_pt": "2:00 PM PT",
+   "day_et": "2026-11-25",
+   "state": "pre",
+   "detail": "11/25 - 5:00 PM EST",
+   "neutral": false,
+   "venue": "Leede Arena",
+   "favorite": "home",
+   "spread": {
+    "spread": 11.5,
+    "details": "DART -11.5",
+    "provider": "DraftKings",
+    "ml_home": -800,
+    "ml_away": 550
+   },
+   "home": {
+    "id": "159",
+    "abbr": "DART",
+    "name": "Dartmouth",
+    "display": "Dartmouth Big Green",
+    "mascot": "Big Green",
+    "record": "4-2",
+    "l3_record": "2-1",
+    "games": 4,
+    "season": {
+     "efg": 53.26,
+     "opp_efg": 54.15,
+     "off": 107.67,
+     "def": 109.82,
+     "net": -2.15,
+     "poss_per_game": 69.7,
+     "ranks": {
+      "efg": 113,
+      "off": 169,
+      "opp_efg": 273,
+      "def": 213,
+      "net": 190
+     }
+    },
+    "last3": {
+     "efg": 53.39,
+     "opp_efg": 56.73,
+     "off": 110.39,
+     "def": 116.6,
+     "net": -6.21,
+     "poss_per_game": 69.8,
+     "ranks": {
+      "efg": 124,
+      "off": 144,
+      "opp_efg": 304,
+      "def": 292,
+      "net": 233
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401920236,
+      "date": "2026-11-17",
+      "site": "home",
+      "opp_id": 126890,
+      "opp": "UMA",
+      "d1_opp": false,
+      "pts": 117,
+      "opp_pts": 67,
+      "metrics": {
+       "efg": 59.86,
+       "opp_efg": 40.77,
+       "off": 145.36,
+       "def": 83.24,
+       "net": 62.12
+      },
+      "opp_power_rank": null
+     },
+     {
+      "game_id": 401920235,
+      "date": "2026-11-15",
+      "site": "away",
+      "opp_id": 104,
+      "opp": "BU",
+      "d1_opp": true,
+      "pts": 75,
+      "opp_pts": 90,
+      "metrics": {
+       "efg": 54.46,
+       "opp_efg": 63.83,
+       "off": 107.89,
+       "def": 129.47,
+       "net": -21.58
+      },
+      "opp_power_rank": 184
+     },
+     {
+      "game_id": 401920234,
+      "date": "2026-11-11",
+      "site": "away",
+      "opp_id": 399,
+      "opp": "UALB",
+      "d1_opp": true,
+      "pts": 85,
+      "opp_pts": 76,
+      "metrics": {
+       "efg": 63.39,
+       "opp_efg": 50.76,
+       "off": 123.34,
+       "def": 110.28,
+       "net": 13.06
+      },
+      "opp_power_rank": 280
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-11.5",
+    "b2b": false,
+    "power": {
+     "rank": 223,
+     "bpi": 259,
+     "own_net": 190
+    },
+    "key_players": [
+     "Cameron McNamee",
+     "Cam Hiatt",
+     "Landon Williams",
+     "Nikola Abusara",
+     "Acen Jimenez",
+     "Dan Civello"
+    ],
+    "top_scorers": [
+     {
+      "name": "Cameron McNamee",
+      "ppg": 13.8
+     },
+     {
+      "name": "Anton Strelnikov",
+      "ppg": 12.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "107",
+    "abbr": "HC",
+    "name": "Holy Cross",
+    "display": "Holy Cross Crusaders",
+    "mascot": "Crusaders",
+    "record": "0-6",
+    "l3_record": "0-3",
+    "games": 6,
+    "season": {
+     "efg": 43.57,
+     "opp_efg": 52.49,
+     "off": 87.93,
+     "def": 113.61,
+     "net": -25.68,
+     "poss_per_game": 72.0,
+     "ranks": {
+      "efg": 332,
+      "off": 344,
+      "opp_efg": 229,
+      "def": 267,
+      "net": 324
+     }
+    },
+    "last3": {
+     "efg": 43.64,
+     "opp_efg": 46.95,
+     "off": 87.68,
+     "def": 99.34,
+     "net": -11.66,
+     "poss_per_game": 71.5,
+     "ranks": {
+      "efg": 323,
+      "off": 342,
+      "opp_efg": 88,
+      "def": 82,
+      "net": 260
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401920357,
+      "date": "2026-11-20",
+      "site": "home",
+      "opp_id": 108,
+      "opp": "HARV",
+      "d1_opp": true,
+      "pts": 65,
+      "opp_pts": 77,
+      "metrics": {
+       "efg": 51.96,
+       "opp_efg": 55.56,
+       "off": 95.71,
+       "def": 113.38,
+       "net": -17.67
+      },
+      "opp_power_rank": 229
+     },
+     {
+      "game_id": 401911309,
+      "date": "2026-11-18",
+      "site": "home",
+      "opp_id": 225,
+      "opp": "BRWN",
+      "d1_opp": true,
+      "pts": 63,
+      "opp_pts": 74,
+      "metrics": {
+       "efg": 42.59,
+       "opp_efg": 44.12,
+       "off": 86.64,
+       "def": 101.77,
+       "net": -15.13
+      },
+      "opp_power_rank": 224
+     },
+     {
+      "game_id": 401921287,
+      "date": "2026-11-15",
+      "site": "home",
+      "opp_id": 399,
+      "opp": "UALB",
+      "d1_opp": true,
+      "pts": 60,
+      "opp_pts": 62,
+      "metrics": {
+       "efg": 38.24,
+       "opp_efg": 41.67,
+       "off": 81.31,
+       "def": 84.03,
+       "net": -2.71
+      },
+      "opp_power_rank": 280
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+11.5",
+    "b2b": false,
+    "power": {
+     "rank": 345,
+     "bpi": 358,
+     "own_net": 324
+    },
+    "key_players": [
+     "Aidan Richard",
+     "Tristen Wilson",
+     "Jaelon Germany",
+     "Kole Hanson",
+     "Chuck Hare"
+    ],
+    "top_scorers": [
+     {
+      "name": "Tristen Wilson",
+      "ppg": 12.0
+     },
+     {
+      "name": "Arius Alijosius",
+      "ppg": 9.0
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "DART",
+    "dog": "HC",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 16 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 DART last-3 top 50 in 0 of 4 \u00b7 \u2717 HC last-3 bottom 50 (316+) in 2 of 4 \u00b7 \u2717 DART season outside 1-182: Opp eFG% #273, Def Eff #213 \u00b7 \u2713 HC season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "HC: consensus #345, BPI #358, our net #324"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 16 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for DART: check news before betting",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 16,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 0,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 12,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "DART",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 113,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 169,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 273,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 213,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "DART",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 124,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 144,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 304,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 292,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "HC",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 229,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 267,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 332,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 344,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "HC",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 88,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 82,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 323,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 342,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "cells": [
+       {
+        "team": "DART",
+        "role": "fav",
+        "window": "season",
+        "metric": "off",
+        "rank": 169,
+        "color": "red"
+       },
+       {
+        "team": "DART",
+        "role": "fav",
+        "window": "last3",
+        "metric": "off",
+        "rank": 144,
+        "color": "yellow"
+       },
+       {
+        "team": "HC",
+        "role": "dog",
+        "window": "season",
+        "metric": "def",
+        "rank": 267,
+        "color": "green"
+       },
+       {
+        "team": "HC",
+        "role": "dog",
+        "window": "last3",
+        "metric": "def",
+        "rank": 82,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "key": "shoot",
+      "label": "Shooting vs shot defense",
+      "fav_metric": "efg",
+      "dog_metric": "opp_efg",
+      "cells": [
+       {
+        "team": "DART",
+        "role": "fav",
+        "window": "season",
+        "metric": "efg",
+        "rank": 113,
+        "color": "yellow"
+       },
+       {
+        "team": "DART",
+        "role": "fav",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 124,
+        "color": "yellow"
+       },
+       {
+        "team": "HC",
+        "role": "dog",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 229,
+        "color": "green"
+       },
+       {
+        "team": "HC",
+        "role": "dog",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 88,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "cells": [
+       {
+        "team": "DART",
+        "role": "fav",
+        "window": "season",
+        "metric": "def",
+        "rank": 213,
+        "color": "red"
+       },
+       {
+        "team": "DART",
+        "role": "fav",
+        "window": "last3",
+        "metric": "def",
+        "rank": 292,
+        "color": "red"
+       },
+       {
+        "team": "HC",
+        "role": "dog",
+        "window": "season",
+        "metric": "off",
+        "rank": 344,
+        "color": "green"
+       },
+       {
+        "team": "HC",
+        "role": "dog",
+        "window": "last3",
+        "metric": "off",
+        "rank": 342,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shotd",
+      "label": "Shot defense vs shooting",
+      "fav_metric": "opp_efg",
+      "dog_metric": "efg",
+      "cells": [
+       {
+        "team": "DART",
+        "role": "fav",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 273,
+        "color": "red"
+       },
+       {
+        "team": "DART",
+        "role": "fav",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 304,
+        "color": "red"
+       },
+       {
+        "team": "HC",
+        "role": "dog",
+        "window": "season",
+        "metric": "efg",
+        "rank": 332,
+        "color": "green"
+       },
+       {
+        "team": "HC",
+        "role": "dog",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 323,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "off",
+      "dog_metric": "off",
+      "fav_rank": 144,
+      "dog_rank": 342,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def",
+      "dog_metric": "def",
+      "fav_rank": 292,
+      "dog_rank": 82,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "fav_rank": 292,
+      "dog_rank": 342,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "fav_rank": 144,
+      "dog_rank": 82,
+      "counts": false,
+      "met": false
+     }
+    ]
+   },
+   "summary": "No track: score 16 (watch list from 18, qualifies at 28). DART 2-1 in its last 3, HC 0-3. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV25HCDART",
+    "fav_prob": 0.865,
+    "bid": 0.86,
+    "ask": 0.87
+   },
+   "locked_at": "2026-11-25T13:00:49-08:00"
   }
  }
 }
