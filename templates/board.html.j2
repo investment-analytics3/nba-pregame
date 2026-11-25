@@ -384,6 +384,54 @@ function detailView(g){
 
 // Analyst readout (Qualified + Watch list games, and any game scoring over 20): what published previews say. Information only.
 const readoutOk = sc => !!(sc.tracked ?? sc.qualified) || ((typeof sc.score==='number'?sc.score:(sc.hero||{}).score)||0) > 20;   // owner Nov 23: tracked or score over 20
+// Analyst readout body (format v2, owner Nov 24): picks table with a tally, predicted scores with the average
+// margin, goalies (NHL) and injuries per team. Older v1 readouts (plain text fields) still show as text rows.
+function readoutBody(r){
+  const F = r.fav || 'Favorite', D = r.dog || 'Underdog';
+  const line = 'border-top:1px solid var(--line)';
+  const H = t => `<div style="margin:16px 0 6px;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);font-weight:700">${t}</div>`;
+  const row = (k,v) => v ? `<div style="display:grid;grid-template-columns:110px minmax(0,1fr);gap:10px;padding:8px 0;${line};font-size:13.5px"><span style="color:var(--dim);font-weight:600">${k}</span><span style="color:#D3D9E5">${esc(v)}</span></div>` : '';
+  // rows: arrays of cells; a row may carry .sub (text shown on its own line under the row, e.g. a source's reason)
+  const table = (heads, rows) => `<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13px">
+    <thead><tr>${heads.map(h=>`<th style="text-align:left;padding:6px 8px 6px 0;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--dim);font-weight:700;border-bottom:1px solid var(--line)">${h}</th>`).join('')}</tr></thead>
+    <tbody>${rows.map(c=>`<tr>${c.map((x,i)=>`<td style="text-align:left;padding:7px 8px 7px 0;${c.sub?'':line+';'}${line};vertical-align:top;color:${i?'#D3D9E5':'#E6EAF2'};white-space:${i===c.length-1&&c.wrap?'normal':'nowrap'}">${x}</td>`).join('')}</tr>${c.sub?`<tr><td colspan="${c.length}" style="text-align:left;padding:0 8px 8px 0;font-size:12.5px;line-height:1.45;color:var(--muted);white-space:normal">${c.sub}</td></tr>`:''}`).join('')}</tbody></table></div>`;
+  const team = side => side==='fav' ? `<span style="display:inline-block;padding:2px 8px;border-radius:999px;font-size:11.5px;font-weight:700;background:rgba(47,195,115,.18);color:#86EFAC;border:1px solid rgba(47,195,115,.45)">${esc(F)}</span>`
+    : (side==='dog' ? `<span style="display:inline-block;padding:2px 8px;border-radius:999px;font-size:11.5px;font-weight:700;background:rgba(220,50,50,.16);color:#FCA5A5;border:1px solid rgba(220,50,50,.45)">${esc(D)}</span>` : '–');
+  const STAT = s => { const v = String(s||'').toLowerCase();
+    const c = /out|ir\b|suspend/.test(v) ? '#FCA5A5' : (/doubt/.test(v) ? '#FDBA74' : (/question|game-time|gtd/.test(v) ? '#FDE68A' : (/probable|day-to-day|available|confirmed/.test(v) ? '#86EFAC' : '#C7CEDC')));
+    return `<b style="color:${c}">${esc(s||'–')}</b>`; };
+  let h = '';
+  const picks = Array.isArray(r.picks) ? r.picks.filter(Boolean) : [];
+  if (picks.length) {
+    const nf = picks.filter(p=>p.side==='fav').length, nd = picks.filter(p=>p.side==='dog').length, n = nf + nd;
+    const pf = n ? Math.round(100*nf/n) : 0;
+    h += H('Picks') + `<div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:14px;margin-bottom:8px">
+      <span><b style="font-size:18px;color:#fff">${nf}</b> for ${esc(F)} · <b style="font-size:18px;color:#fff">${nd}</b> for ${esc(D)}</span>
+      ${n ? `<span style="flex:1;min-width:120px;max-width:260px;height:8px;border-radius:999px;background:rgba(220,50,50,.45);overflow:hidden"><span style="display:block;height:100%;width:${pf}%;background:#2FC373"></span></span>` : ''}</div>`
+      + table(['Source','Pick','Bet','Price'], picks.map(p => Object.assign([esc(p.source||''), team(p.side), esc(p.bet||'–'), esc(p.price||'–')], {sub: p.note ? esc(p.note) : ''})));
+  } else h += row('Pick', r.pick);
+  const scores = Array.isArray(r.scores) ? r.scores.filter(s => s && s.fav!=null && s.dog!=null) : [];
+  if (scores.length) {
+    const avg = scores.reduce((a,s)=>a + (+s.fav - +s.dog), 0) / scores.length;
+    h += H('Predicted scores') + table(['Source', esc(F), esc(D), 'Margin'], scores.map(s => [esc(s.source||''), String(+s.fav), String(+s.dog), `${(+s.fav - +s.dog) > 0 ? esc(F)+' by '+(+s.fav - +s.dog) : ((+s.fav - +s.dog) < 0 ? esc(D)+' by '+(+s.dog - +s.fav) : 'Tie')}`]))
+      + `<div style="font-size:12.5px;color:var(--muted);margin-top:6px">Average margin: ${avg >= 0 ? esc(F) : esc(D)} by ${Math.abs(avg).toFixed(1)}${scores.length > 1 ? ` (${scores.length} projections)` : ''}</div>`;
+  } else h += row('Predicted score', r.predicted_score);
+  const gl = r.goalies;
+  if (gl && (gl.fav || gl.dog)) h += H('Starting goalies') + table(['Team','Goalie','Status'],
+    [['fav', F], ['dog', D]].filter(([k]) => gl[k]).map(([k, t]) => [team(k), esc(gl[k].name||'–'), STAT(gl[k].status||'Unknown')]));
+  const inj = r.injuries;
+  if (inj && typeof inj === 'object') {
+    h += H('Injuries');
+    for (const [k, t] of [['fav', F], ['dog', D]]) {
+      const list = Array.isArray(inj[k]) ? inj[k].filter(Boolean) : [];
+      h += `<div style="margin:8px 0 4px;font-size:13px;font-weight:700;color:#E6EAF2">${team(k)} <span style="margin-left:6px;color:var(--muted);font-weight:600">${k==='fav'?'Favorite':'Underdog'}</span></div>`
+        + (list.length ? table(['Player','Status','Note'], list.map(p => Object.assign([esc(p.player||''), STAT(p.status), esc(p.note||'')], {wrap: true})))
+                       : `<div style="font-size:13px;color:var(--muted);padding:4px 0 2px">None reported.</div>`);
+    }
+    if (inj.note) h += `<div style="font-size:12.5px;color:var(--muted);margin-top:6px">${esc(inj.note)}</div>`;
+  } else h += row('Injuries', inj);
+  return h;
+}
 function readoutPanel(g){
   const sc = g.scoring||{};
   if(!readoutOk(sc)) return '';
@@ -394,7 +442,7 @@ function readoutPanel(g){
   const src = (r.sources||[]).filter(x=>x && x.url && /^https?:\/\//.test(x.url)).map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener noreferrer">${esc(x.site||'source')}</a>`).join(' · ');
   return `<div class="panel pad" style="margin-top:16px"><div class="row between" style="margin-bottom:10px;gap:10px;flex-wrap:wrap"><h3 style="margin:0">Analyst readout</h3><span style="font-size:12px;color:var(--dim)">${esc(when)}</span></div>
     <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#E6EAF2">${esc(r.summary)}</p>
-    ${row('Pick',r.pick)}${row('Predicted score',r.predicted_score)}${row('Injuries',r.injuries)}
+    ${readoutBody(r)}
     ${src?`<div style="padding-top:8px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)">Sources: ${src}</div>`:''}
     <div style="font-size:11.5px;color:var(--dim);margin-top:6px">From published previews; information only, never changes the tier or grade.</div></div>`;
 }
