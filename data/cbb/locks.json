@@ -13554,8 +13554,8 @@
    "tip_utc": "2026-11-25T03:30:00+00:00",
    "tip_pt": "7:30 PM PT",
    "day_et": "2026-11-24",
-   "state": "pre",
-   "detail": "11/24 - 11:18 PM EST",
+   "state": "in",
+   "detail": "15:05 - 1st",
    "neutral": true,
    "venue": "Michelob ULTRA Arena",
    "favorite": "home",
@@ -14250,9 +14250,714 @@
    },
    "locked_at": "2026-11-24T18:30:39-08:00",
    "score": {
-    "home": 0,
-    "away": 0
+    "home": 10,
+    "away": 6
    }
+  }
+ },
+ "401909800": {
+  "at": "2026-11-24T20:30:40-08:00",
+  "day": "2026-11-24",
+  "game": {
+   "id": "401909800",
+   "tip_utc": "2026-11-25T05:30:00+00:00",
+   "tip_pt": "9:30 PM PT",
+   "day_et": "2026-11-25",
+   "state": "pre",
+   "detail": "11/25 - 12:30 AM EST",
+   "neutral": true,
+   "venue": "T-Mobile Arena",
+   "favorite": "away",
+   "spread": {
+    "spread": 15.5,
+    "details": "GONZ -15.5",
+    "provider": "Draft Kings",
+    "ml_home": 950,
+    "ml_away": -1650
+   },
+   "home": {
+    "id": "2306",
+    "abbr": "KSU",
+    "name": "Kansas State",
+    "display": "Kansas State Wildcats",
+    "mascot": "Wildcats",
+    "record": "3-2",
+    "l3_record": "2-1",
+    "games": 5,
+    "season": {
+     "efg": 56.7,
+     "opp_efg": 49.67,
+     "off": 112.83,
+     "def": 98.1,
+     "net": 14.73,
+     "poss_per_game": 72.0,
+     "ranks": {
+      "efg": 48,
+      "off": 113,
+      "opp_efg": 148,
+      "def": 75,
+      "net": 88
+     }
+    },
+    "last3": {
+     "efg": 56.84,
+     "opp_efg": 50.84,
+     "off": 115.91,
+     "def": 97.94,
+     "net": 17.98,
+     "poss_per_game": 70.5,
+     "ranks": {
+      "efg": 64,
+      "off": 95,
+      "opp_efg": 183,
+      "def": 73,
+      "net": 67
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401909799,
+      "date": "2026-11-20",
+      "site": "home",
+      "opp_id": 2097,
+      "opp": "CAM",
+      "d1_opp": true,
+      "pts": 70,
+      "opp_pts": 80,
+      "metrics": {
+       "efg": 43.51,
+       "opp_efg": 62.5,
+       "off": 101.05,
+       "def": 115.48,
+       "net": -14.44
+      },
+      "opp_power_rank": 229
+     },
+     {
+      "game_id": 401909798,
+      "date": "2026-11-16",
+      "site": "home",
+      "opp_id": 149,
+      "opp": "MONT",
+      "d1_opp": true,
+      "pts": 86,
+      "opp_pts": 45,
+      "metrics": {
+       "efg": 62.5,
+       "opp_efg": 38.18,
+       "off": 131.27,
+       "def": 68.69,
+       "net": 62.58
+      },
+      "opp_power_rank": 253
+     },
+     {
+      "game_id": 401909492,
+      "date": "2026-11-10",
+      "site": "home",
+      "opp_id": 156,
+      "opp": "CREI",
+      "d1_opp": true,
+      "pts": 89,
+      "opp_pts": 82,
+      "metrics": {
+       "efg": 69.81,
+       "opp_efg": 51.49,
+       "off": 116.23,
+       "def": 107.08,
+       "net": 9.14
+      },
+      "opp_power_rank": 63
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+15.5",
+    "b2b": false,
+    "power": {
+     "rank": 90,
+     "bpi": 89,
+     "own_net": 88
+    },
+    "key_players": [
+     "Brandon Rechsteiner",
+     "Jaden Schutt",
+     "Isaiah Abraham",
+     "Timo Malovec",
+     "Brock Vice"
+    ],
+    "top_scorers": [
+     {
+      "name": "Brandon Rechsteiner",
+      "ppg": 19.2
+     },
+     {
+      "name": "Isaiah Abraham",
+      "ppg": 11.8
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "2250",
+    "abbr": "GONZ",
+    "name": "Gonzaga",
+    "display": "Gonzaga Bulldogs",
+    "mascot": "Bulldogs",
+    "record": "3-1",
+    "l3_record": "2-1",
+    "games": 4,
+    "season": {
+     "efg": 55.14,
+     "opp_efg": 50.67,
+     "off": 124.2,
+     "def": 103.07,
+     "net": 21.12,
+     "poss_per_game": 68.6,
+     "ranks": {
+      "efg": 68,
+      "off": 24,
+      "opp_efg": 174,
+      "def": 133,
+      "net": 64
+     }
+    },
+    "last3": {
+     "efg": 56.84,
+     "opp_efg": 50.3,
+     "off": 127.67,
+     "def": 102.43,
+     "net": 25.24,
+     "poss_per_game": 68.7,
+     "ranks": {
+      "efg": 63,
+      "off": 16,
+      "opp_efg": 167,
+      "def": 113,
+      "net": 42
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401925879,
+      "date": "2026-11-17",
+      "site": "home",
+      "opp_id": 147,
+      "opp": "MTST",
+      "d1_opp": true,
+      "pts": 74,
+      "opp_pts": 62,
+      "metrics": {
+       "efg": 51.85,
+       "opp_efg": 50.0,
+       "off": 112.44,
+       "def": 94.21,
+       "net": 18.23
+      },
+      "opp_power_rank": 145
+     },
+     {
+      "game_id": 401921689,
+      "date": "2026-11-14",
+      "site": "home",
+      "opp_id": 99,
+      "opp": "LSU",
+      "d1_opp": true,
+      "pts": 80,
+      "opp_pts": 81,
+      "metrics": {
+       "efg": 47.97,
+       "opp_efg": 52.31,
+       "off": 114.12,
+       "def": 115.55,
+       "net": -1.43
+      },
+      "opp_power_rank": 30
+     },
+     {
+      "game_id": 401928788,
+      "date": "2026-11-07",
+      "site": "home",
+      "opp_id": 166,
+      "opp": "NMSU",
+      "d1_opp": true,
+      "pts": 109,
+      "opp_pts": 68,
+      "metrics": {
+       "efg": 71.77,
+       "opp_efg": 47.92,
+       "off": 155.52,
+       "def": 97.02,
+       "net": 58.5
+      },
+      "opp_power_rank": 278
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-15.5",
+    "b2b": false,
+    "power": {
+     "rank": 37,
+     "bpi": 21,
+     "own_net": 64,
+     "ap": 22
+    },
+    "key_players": [
+     "Davis Fogle",
+     "Braden Huff",
+     "Isiah Harwell",
+     "Izan Almansa",
+     "Xaivian Lee",
+     "Massamba Diop"
+    ],
+    "top_scorers": [
+     {
+      "name": "Davis Fogle",
+      "ppg": 18.8
+     },
+     {
+      "name": "Braden Huff",
+      "ppg": 17.2
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "GONZ",
+    "dog": "KSU",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 13 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 GONZ last-3 top 50 in 1 of 4 \u00b7 \u2717 KSU last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2713 GONZ season top half (1-182) in all four \u00b7 \u2717 KSU season top 50: eFG% #48"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "KSU: consensus #90, BPI #89, our net #88"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 13 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for GONZ: check news before betting",
+     "Neutral-site game: no home-court point",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 13,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 3,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 7,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "GONZ",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 68,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 24,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 174,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 133,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "GONZ",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 63,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 16,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 167,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 113,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "KSU",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 148,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 75,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 48,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 113,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "KSU",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 183,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 73,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 64,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 95,
+        "color": "yellow"
+       }
+      ]
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "cells": [
+       {
+        "team": "GONZ",
+        "role": "fav",
+        "window": "season",
+        "metric": "off",
+        "rank": 24,
+        "color": "green"
+       },
+       {
+        "team": "GONZ",
+        "role": "fav",
+        "window": "last3",
+        "metric": "off",
+        "rank": 16,
+        "color": "green"
+       },
+       {
+        "team": "KSU",
+        "role": "dog",
+        "window": "season",
+        "metric": "def",
+        "rank": 75,
+        "color": "yellow"
+       },
+       {
+        "team": "KSU",
+        "role": "dog",
+        "window": "last3",
+        "metric": "def",
+        "rank": 73,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "key": "shoot",
+      "label": "Shooting vs shot defense",
+      "fav_metric": "efg",
+      "dog_metric": "opp_efg",
+      "cells": [
+       {
+        "team": "GONZ",
+        "role": "fav",
+        "window": "season",
+        "metric": "efg",
+        "rank": 68,
+        "color": "yellow"
+       },
+       {
+        "team": "GONZ",
+        "role": "fav",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 63,
+        "color": "yellow"
+       },
+       {
+        "team": "KSU",
+        "role": "dog",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 148,
+        "color": "yellow"
+       },
+       {
+        "team": "KSU",
+        "role": "dog",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 183,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "cells": [
+       {
+        "team": "GONZ",
+        "role": "fav",
+        "window": "season",
+        "metric": "def",
+        "rank": 133,
+        "color": "yellow"
+       },
+       {
+        "team": "GONZ",
+        "role": "fav",
+        "window": "last3",
+        "metric": "def",
+        "rank": 113,
+        "color": "yellow"
+       },
+       {
+        "team": "KSU",
+        "role": "dog",
+        "window": "season",
+        "metric": "off",
+        "rank": 113,
+        "color": "yellow"
+       },
+       {
+        "team": "KSU",
+        "role": "dog",
+        "window": "last3",
+        "metric": "off",
+        "rank": 95,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "key": "shotd",
+      "label": "Shot defense vs shooting",
+      "fav_metric": "opp_efg",
+      "dog_metric": "efg",
+      "cells": [
+       {
+        "team": "GONZ",
+        "role": "fav",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 174,
+        "color": "red"
+       },
+       {
+        "team": "GONZ",
+        "role": "fav",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 167,
+        "color": "red"
+       },
+       {
+        "team": "KSU",
+        "role": "dog",
+        "window": "season",
+        "metric": "efg",
+        "rank": 48,
+        "color": "red"
+       },
+       {
+        "team": "KSU",
+        "role": "dog",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 64,
+        "color": "yellow"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "off",
+      "dog_metric": "off",
+      "fav_rank": 16,
+      "dog_rank": 95,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def",
+      "dog_metric": "def",
+      "fav_rank": 113,
+      "dog_rank": 73,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "fav_rank": 113,
+      "dog_rank": 95,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "fav_rank": 16,
+      "dog_rank": 73,
+      "counts": false,
+      "met": false
+     }
+    ]
+   },
+   "summary": "No track: score 13 (watch list from 18, qualifies at 28). Biggest edge over the last 3: GONZ eFG% (#63) against KSU Opp eFG% (#183). GONZ 2-1 in its last 3, KSU 2-1. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV25GONZKSU",
+    "fav_prob": 0.915,
+    "bid": 0.91,
+    "ask": 0.92
+   },
+   "locked_at": "2026-11-24T20:30:40-08:00"
   }
  }
 }
