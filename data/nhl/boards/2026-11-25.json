@@ -3,8 +3,8 @@
  "date_label": "Wednesday, November 25",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-25T08:00:45-08:00",
- "built_label": "Wed Nov 25, 8:00 AM PT",
+ "built_at": "2026-11-25T09:00:46-08:00",
+ "built_label": "Wed Nov 25, 9:00 AM PT",
  "metrics_through": "2026-11-24",
  "metrics_through_label": "Nov 24",
  "max": 40,
@@ -34,16 +34,16 @@
    "venue": "TD Garden",
    "favorite": "home",
    "line": {
-    "details": "BOS -162",
+    "details": "BOS -170",
     "provider": "DraftKings",
-    "ml_home": -162,
+    "ml_home": -170,
     "ml_away": null,
     "puck_line": -1.5,
     "total": 6.5,
-    "fav_price": 0.6183
+    "fav_price": 0.6296
    },
    "spread": {
-    "details": "BOS -162",
+    "details": "BOS -170",
     "provider": "DraftKings",
     "puck_line": -1.5
    },
@@ -193,7 +193,7 @@
      "name": "Jeremy Swayman",
      "last": "Swayman",
      "espn_id": "4712036",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "regular",
     "regular_goalie_name": "J. Swayman",
@@ -230,7 +230,7 @@
     "key_out": [],
     "key_questionable": [],
     "key_long_term": [],
-    "spread_text": "-162"
+    "spread_text": "-170"
    },
    "away": {
     "id": "28",
@@ -375,12 +375,12 @@
      "nhl_com": null
     },
     "goalie": {
-     "name": "Stuart Skinner",
-     "last": "Skinner",
-     "espn_id": "4268767",
-     "confirmed": false
+     "name": "Nico Daws",
+     "last": "Daws",
+     "espn_id": "4697683",
+     "confirmed": true
     },
-    "goalie_status": "regular",
+    "goalie_status": "backup",
     "regular_goalie_name": "S. Skinner",
     "goalies": [
      {
@@ -470,13 +470,13 @@
       "rule": "A",
       "name": "Analysis Score 22+",
       "pass": true,
-      "detail": "Score 27 of 40"
+      "detail": "Score 28 of 40"
      },
      {
       "rule": "Goalie",
       "name": "BOS's regular goalie starts",
       "pass": true,
-      "detail": "Jeremy Swayman (probable)"
+      "detail": "Jeremy Swayman (confirmed)"
      },
      {
       "rule": "Matchup",
@@ -488,9 +488,11 @@
     "fails": [
      "Not a top-7 vs bottom-7 matchup (BOS #7, WPG #19)"
     ],
-    "warnings": [],
+    "warnings": [
+     "Info: WPG starting its backup goalie (Nico Daws)"
+    ],
     "flags": [],
-    "score": 27,
+    "score": 28,
     "max": 40,
     "band": "green",
     "parts": [
@@ -509,7 +511,7 @@
      {
       "key": "goalies",
       "label": "Goalies + health",
-      "points": 3,
+      "points": 4,
       "max": 4
      },
      {
@@ -789,7 +791,7 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (BOS #7, WPG #19). Jeremy Swayman in goal for BOS (probable). Biggest edge over the last 5: xGF% 5v5 (BOS #4, WPG #28). BOS 2-1-0 in its last 3, WPG 2-0-1.",
+   "summary": "Not a top-7 vs bottom-7 matchup (BOS #7, WPG #19). Jeremy Swayman in goal for BOS (confirmed). Biggest edge over the last 5: xGF% 5v5 (BOS #4, WPG #28). BOS 2-1-0 in its last 3, WPG 2-0-1.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV25WPGBOS",
@@ -2518,9 +2520,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV25CARTB",
-    "fav_prob": 0.545,
-    "bid": 0.54,
-    "ask": 0.55
+    "fav_prob": 0.525,
+    "bid": 0.52,
+    "ask": 0.53
    }
   },
   {
@@ -2693,7 +2695,7 @@
      "name": "Logan Thompson",
      "last": "Thompson",
      "espn_id": "4272888",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "regular",
     "regular_goalie_name": "L. Thompson",
@@ -2722,8 +2724,8 @@
       "name": "Vincent Desharnais",
       "last": "Desharnais",
       "status": "Injured Reserve",
-      "date": "2026-11-24T17:30Z",
-      "comment": "Desharnais (appendectomy) was a full participant in Tuesday's practice and has been upgraded to day-to-day, Tarik El-Bashir of Monumental Sports Network reports."
+      "date": "2026-11-25T16:03Z",
+      "comment": "Desharnais (appendectomy) is slated to miss Wednesday's game against the Flyers, Tarik El-Bashir of Monumental Sports Network reports."
      },
      {
       "name": "Rasmus Sandin",
@@ -2889,12 +2891,12 @@
      "nhl_com": null
     },
     "goalie": {
-     "name": "Dan Vladar",
-     "last": "Vladar",
-     "espn_id": "3942459",
-     "confirmed": false
+     "name": "Joseph Woll",
+     "last": "Woll",
+     "espn_id": "4271575",
+     "confirmed": true
     },
-    "goalie_status": "regular",
+    "goalie_status": "backup",
     "regular_goalie_name": "D. Vladar",
     "goalies": [
      {
@@ -2956,13 +2958,13 @@
       "rule": "A",
       "name": "Analysis Score 22+",
       "pass": false,
-      "detail": "Score 19 of 40"
+      "detail": "Score 20 of 40"
      },
      {
       "rule": "Goalie",
       "name": "WSH's regular goalie starts",
       "pass": true,
-      "detail": "Logan Thompson (probable)"
+      "detail": "Logan Thompson (confirmed)"
      },
      {
       "rule": "Matchup",
@@ -2974,9 +2976,11 @@
     "fails": [
      "Not a top-7 vs bottom-7 matchup (WSH #17, PHI #28)"
     ],
-    "warnings": [],
+    "warnings": [
+     "Info: PHI starting its backup goalie (Joseph Woll)"
+    ],
     "flags": [],
-    "score": 19,
+    "score": 20,
     "max": 40,
     "band": "yellow",
     "parts": [
@@ -2995,7 +2999,7 @@
      {
       "key": "goalies",
       "label": "Goalies + health",
-      "points": 3,
+      "points": 4,
       "max": 4
      },
      {
@@ -3275,13 +3279,13 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (WSH #17, PHI #28). Logan Thompson in goal for WSH (probable). Biggest edge over the last 5: PP%+PK% (WSH #12, PHI #31). WSH 0-3-0 in its last 3, PHI 3-0-0.",
+   "summary": "Not a top-7 vs bottom-7 matchup (WSH #17, PHI #28). Logan Thompson in goal for WSH (confirmed). Biggest edge over the last 5: PP%+PK% (WSH #12, PHI #31). WSH 0-3-0 in its last 3, PHI 3-0-0.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV25PHIWSH",
-    "fav_prob": 0.595,
-    "bid": 0.59,
-    "ask": 0.6
+    "fav_prob": 0.605,
+    "bid": 0.6,
+    "ask": 0.61
    }
   },
   {
@@ -3658,7 +3662,7 @@
      "name": "Leevi Merilainen",
      "last": "Merilainen",
      "espn_id": "4894703",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "backup",
     "regular_goalie_name": "L. Meril\u00e4inen",
@@ -3691,9 +3695,9 @@
      {
       "name": "Elias Pettersson",
       "last": "Pettersson",
-      "status": "Day-To-Day",
-      "date": "2026-11-23T14:10Z",
-      "comment": "day-to-day"
+      "status": "Out",
+      "date": "2026-11-25T16:25Z",
+      "comment": "out"
      },
      {
       "name": "Brendan Gallagher",
@@ -3725,10 +3729,10 @@
      }
     ],
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
+    "key_out": [
      "Elias Pettersson"
     ],
+    "key_questionable": [],
     "key_long_term": [],
     "spread_text": ""
    },
@@ -4084,9 +4088,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV25VANDET",
-    "fav_prob": 0.675,
+    "fav_prob": 0.68,
     "bid": 0.67,
-    "ask": 0.68
+    "ask": 0.69
    }
   },
   {
@@ -5097,13 +5101,6 @@
       "status": "Injured Reserve",
       "date": "2026-11-24T22:08Z",
       "comment": "ir"
-     },
-     {
-      "name": "Sean Monahan",
-      "last": "Monahan",
-      "status": "Day-To-Day",
-      "date": "2026-11-24T14:14Z",
-      "comment": "day-to-day"
      }
     ],
     "injuries_known": true,
@@ -5841,7 +5838,7 @@
      "name": "Jesper Wallstedt",
      "last": "Wallstedt",
      "espn_id": "4874737",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "regular",
     "regular_goalie_name": "J. Wallstedt",
@@ -6141,7 +6138,7 @@
       "rule": "Goalie",
       "name": "MIN's regular goalie starts",
       "pass": true,
-      "detail": "Jesper Wallstedt (probable)"
+      "detail": "Jesper Wallstedt (confirmed)"
      },
      {
       "rule": "Matchup",
@@ -6454,7 +6451,7 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (MIN #3, UTA #14). Jesper Wallstedt in goal for MIN (probable). MIN 2-0-1 in its last 3, UTA 2-1-0.",
+   "summary": "Not a top-7 vs bottom-7 matchup (MIN #3, UTA #14). Jesper Wallstedt in goal for MIN (confirmed). MIN 2-0-1 in its last 3, UTA 2-1-0.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV25UTAMIN",
@@ -7274,9 +7271,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV25MTLCOL",
-    "fav_prob": 0.52,
+    "fav_prob": 0.515,
     "bid": 0.51,
-    "ask": 0.53
+    "ask": 0.52
    }
   },
   {
@@ -8232,7 +8229,7 @@
      "name": "Ilya Sorokin",
      "last": "Sorokin",
      "espn_id": "3151981",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "regular",
     "regular_goalie_name": "I. Sorokin",
@@ -8547,7 +8544,7 @@
       "rule": "Goalie",
       "name": "NYI's regular goalie starts",
       "pass": true,
-      "detail": "Ilya Sorokin (probable)"
+      "detail": "Ilya Sorokin (confirmed)"
      },
      {
       "rule": "Matchup",
@@ -8860,7 +8857,7 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (NYI #16, STL #18). Ilya Sorokin in goal for NYI (probable). Biggest edge over the last 5: GSAx/gm (NYI #11, STL #28). NYI 1-1-1 in its last 3, STL 3-0-0.",
+   "summary": "Not a top-7 vs bottom-7 matchup (NYI #16, STL #18). Ilya Sorokin in goal for NYI (confirmed). Biggest edge over the last 5: GSAx/gm (NYI #11, STL #28). NYI 1-1-1 in its last 3, STL 3-0-0.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV25STLNYI",
@@ -8880,16 +8877,16 @@
    "venue": "PPG Paints Arena",
    "favorite": "home",
    "line": {
-    "details": "PIT -162",
+    "details": "PIT -175",
     "provider": "DraftKings",
-    "ml_home": -162,
+    "ml_home": -175,
     "ml_away": null,
     "puck_line": -1.5,
     "total": 6.5,
-    "fav_price": 0.6183
+    "fav_price": 0.6364
    },
    "spread": {
-    "details": "PIT -162",
+    "details": "PIT -175",
     "provider": "DraftKings",
     "puck_line": -1.5
    },
@@ -9039,7 +9036,7 @@
      "name": "Arturs Silovs",
      "last": "Silovs",
      "espn_id": "4576894",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "regular",
     "regular_goalie_name": "A. Silovs",
@@ -9065,18 +9062,11 @@
     ],
     "injuries": [
      {
-      "name": "Evgeni Malkin",
-      "last": "Malkin",
-      "status": "Day-To-Day",
-      "date": "2026-11-23T14:10Z",
-      "comment": "day-to-day"
-     },
-     {
-      "name": "Declan Carlile",
-      "last": "Carlile",
-      "status": "Day-To-Day",
-      "date": "2026-11-23T14:10Z",
-      "comment": "day-to-day"
+      "name": "Egor Chinakhov",
+      "last": "Chinakhov",
+      "status": "Out",
+      "date": "2026-11-25T16:25Z",
+      "comment": "out"
      },
      {
       "name": "Bryan Rust",
@@ -9109,11 +9099,9 @@
     ],
     "injuries_known": true,
     "key_out": [],
-    "key_questionable": [
-     "Declan Carlile"
-    ],
+    "key_questionable": [],
     "key_long_term": [],
-    "spread_text": "-162"
+    "spread_text": "-175"
    },
    "away": {
     "id": "3",
@@ -9261,7 +9249,7 @@
      "name": "Dustin Wolf",
      "last": "Wolf",
      "espn_id": "4587952",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "regular",
     "regular_goalie_name": "D. Wolf",
@@ -9294,9 +9282,9 @@
      {
       "name": "Morgan Frost",
       "last": "Frost",
-      "status": "Day-To-Day",
-      "date": "2026-11-24T04:24Z",
-      "comment": "Frost sustained an upper-body injury during Monday's 2-1 loss to the Senators, and head coach Ryan Huska did not have an update on the center's status after the game, Flames TV host Brendan Parker reports."
+      "status": "Out",
+      "date": "2026-11-25T16:35Z",
+      "comment": "Frost (upper body) has been ruled out for Wednesday's game against the Penguins, Eric Francis of Sportsnet reports."
      },
      {
       "name": "Martin Pospisil",
@@ -9359,7 +9347,7 @@
       "rule": "Goalie",
       "name": "PIT's regular goalie starts",
       "pass": true,
-      "detail": "Arturs Silovs (probable)"
+      "detail": "Arturs Silovs (confirmed)"
      },
      {
       "rule": "Matchup",
@@ -9672,7 +9660,7 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (PIT #23, CGY #25). Arturs Silovs in goal for PIT (probable). PIT 0-3-0 in its last 3, CGY 0-2-1.",
+   "summary": "Not a top-7 vs bottom-7 matchup (PIT #23, CGY #25). Arturs Silovs in goal for PIT (confirmed). PIT 0-3-0 in its last 3, CGY 0-2-1.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV25CGYPIT",
@@ -10626,12 +10614,12 @@
      "nhl_com": null
     },
     "goalie": {
-     "name": "Alex Lyon",
-     "last": "Lyon",
-     "espn_id": "3654006",
+     "name": "Ukko-Pekka Luukkonen",
+     "last": "Luukkonen",
+     "espn_id": "4233889",
      "confirmed": false
     },
-    "goalie_status": "backup",
+    "goalie_status": "regular",
     "regular_goalie_name": "U. Luukkonen",
     "goalies": [
      {
@@ -10960,13 +10948,13 @@
       "rule": "A",
       "name": "Analysis Score 22+",
       "pass": false,
-      "detail": "Score 7 of 40"
+      "detail": "Score 9 of 40"
      },
      {
       "rule": "Goalie",
       "name": "BUF's regular goalie starts",
-      "pass": false,
-      "detail": "Alex Lyon listed instead of U. Luukkonen: capped at the Watch list"
+      "pass": true,
+      "detail": "Ukko-Pekka Luukkonen (probable)"
      },
      {
       "rule": "Matchup",
@@ -10981,10 +10969,8 @@
     "warnings": [
      "Info: NYR starting its backup goalie (Joonas Korpisalo)"
     ],
-    "flags": [
-     "BUF backup goalie starting (Alex Lyon)"
-    ],
-    "score": 7,
+    "flags": [],
+    "score": 9,
     "max": 40,
     "band": "red",
     "parts": [
@@ -11003,7 +10989,7 @@
      {
       "key": "goalies",
       "label": "Goalies + health",
-      "points": 2,
+      "points": 4,
       "max": 4
      },
      {
@@ -11283,7 +11269,7 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (BUF #20, NYR #12). BUF start their backup goalie, Alex Lyon (regular: U. Luukkonen). BUF 2-1-0 in its last 3, NYR 2-1-0.",
+   "summary": "Not a top-7 vs bottom-7 matchup (BUF #20, NYR #12). Ukko-Pekka Luukkonen in goal for BUF (probable). BUF 2-1-0 in its last 3, NYR 2-1-0.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV25NYRBUF",
@@ -11302,7 +11288,7 @@
   "in_range": 1,
   "qualified": 0,
   "watch": 0,
-  "built_label": "Wed Nov 25, 8:00 AM PT"
+  "built_label": "Wed Nov 25, 9:00 AM PT"
  },
  "power_table": [
   {
