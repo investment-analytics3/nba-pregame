@@ -1,0 +1,847 @@
+{
+ "date": "2026-11-24",
+ "games": {
+  "401909315": {
+   "label": "BOS @ WSH",
+   "alerts": {
+    "end3": {
+     "at": "2026-11-25T03:01:30.103Z",
+     "clock": "12:00 4th",
+     "grade": "A",
+     "action": "NO BET",
+     "score": "104-89",
+     "ready": false,
+     "favLead": 15,
+     "kalshiFav": 0.975,
+     "defense": {
+      "opp_efg": 52.1,
+      "def": 121.5,
+      "opp_efg_rank": 9,
+      "def_rank": 30,
+      "poss": 73
+     },
+     "checklist": {
+      "passed": 4,
+      "total": 7,
+      "items": [
+       {
+        "key": "lead",
+        "pass": true,
+        "detail": "BOS up 15"
+       },
+       {
+        "key": "opp_efg",
+        "pass": true,
+        "detail": "last 3 #1 · tonight 52.1% #9"
+       },
+       {
+        "key": "def",
+        "pass": false,
+        "detail": "last 3 #1 · tonight 121.5 #30"
+       },
+       {
+        "key": "closer",
+        "pass": true,
+        "detail": "Jayson Tatum, Paul George"
+       },
+       {
+        "key": "run",
+        "pass": false,
+        "detail": "WSH's 8-2 (Q3 20.5) not answered"
+       },
+       {
+        "key": "three",
+        "pass": false,
+        "detail": "game 11/31, last 12 min 5/10"
+       },
+       {
+        "key": "b2b",
+        "pass": true,
+        "detail": "rested"
+       }
+      ]
+     }
+    }
+   },
+   "checkpoints": [
+    {
+     "at": "2026-11-25T00:45:27.635Z",
+     "clock": "Pregame",
+     "score": "0-0",
+     "phase": "pre",
+     "grade": "–",
+     "action": "PREGAME",
+     "pick": null,
+     "kalshi": null
+    },
+    {
+     "at": "2026-11-25T01:14:04.750Z",
+     "clock": "11:40 1st",
+     "score": "0-0",
+     "phase": "scout",
+     "grade": "C",
+     "action": "SCOUT",
+     "pick": null,
+     "focus": "BOS",
+     "kalshi": 0.785,
+     "note": "No runs yet",
+     "log": "2026-11-24 | BOS@WSH | 11:40 Q1 | 0-0 | C | no bet | K 79c (-365) | No runs yet"
+    },
+    {
+     "at": "2026-11-25T01:16:24.008Z",
+     "clock": "10:04 1st",
+     "score": "7-2",
+     "phase": "scout",
+     "grade": "B",
+     "action": "SCOUT",
+     "pick": null,
+     "focus": "BOS",
+     "kalshi": 0.855,
+     "note": "BOS's 7-0 run is unanswered",
+     "log": "2026-11-24 | BOS@WSH | 10:04 Q1 | 7-2 | B | no bet | K 86c (-590) | BOS's 7-0 run is unanswered"
+    },
+    {
+     "at": "2026-11-25T01:33:25.021Z",
+     "clock": "4:17 1st",
+     "score": "22-16",
+     "phase": "scout",
+     "grade": "C",
+     "action": "SCOUT",
+     "pick": null,
+     "focus": "BOS",
+     "kalshi": 0.845,
+     "note": "WSH answered BOS's 8-0 with a 7-1 run; BOS has not responded",
+     "log": "2026-11-24 | BOS@WSH | 4:17 Q1 | 22-16 | C | no bet | K 85c (-545) | WSH answered BOS's 8-0 with a 7-1 run; BOS has not responded"
+    },
+    {
+     "at": "2026-11-25T01:34:11.440Z",
+     "clock": "3:26 1st",
+     "score": "25-16",
+     "phase": "scout",
+     "grade": "B",
+     "action": "SCOUT",
+     "pick": null,
+     "focus": "BOS",
+     "kalshi": 0.875,
+     "note": "WSH answered BOS's 8-0 with a 7-1 run; BOS has not responded",
+     "log": "2026-11-24 | BOS@WSH | 3:26 Q1 | 25-16 | B | no bet | K 88c (-700) | WSH answered BOS's 8-0 with a 7-1 run; BOS has not responded"
+    },
+    {
+     "at": "2026-11-25T01:36:30.719Z",
+     "clock": "1:46 1st",
+     "score": "28-21",
+     "phase": "scout",
+     "grade": "A",
+     "action": "SCOUT",
+     "pick": null,
+     "focus": "WSH",
+     "kalshi": 0.155,
+     "note": "WSH answered BOS's 8-0 with a 7-1 run; BOS has not responded",
+     "log": "2026-11-24 | BOS@WSH | 1:46 Q1 | 28-21 | A | no bet | K 16c (+545) | WSH answered BOS's 8-0 with a 7-1 run; BOS has not responded"
+    },
+    {
+     "at": "2026-11-25T01:43:28.046Z",
+     "clock": "12:00 2nd",
+     "score": "34-28",
+     "phase": "scout",
+     "grade": "C",
+     "action": "SCOUT",
+     "pick": null,
+     "focus": "BOS",
+     "kalshi": 0.845,
+     "note": "WSH answered BOS's 8-0 with a 7-1 run; BOS has not responded",
+     "log": "2026-11-24 | BOS@WSH | 12:00 Q2 | 34-28 | C | no bet | K 85c (-545) | WSH answered BOS's 8-0 with a 7-1 run; BOS has not responded"
+    },
+    {
+     "at": "2026-11-25T01:44:14.314Z",
+     "clock": "11:14 2nd",
+     "score": "36-28",
+     "phase": "scout",
+     "grade": "B",
+     "action": "SCOUT",
+     "pick": null,
+     "focus": "BOS",
+     "kalshi": 0.865,
+     "note": "WSH answered BOS's 8-0 with a 7-1 run; BOS has not responded",
+     "log": "2026-11-24 | BOS@WSH | 11:14 Q2 | 36-28 | B | no bet | K 87c (-641) | WSH answered BOS's 8-0 with a 7-1 run; BOS has not responded"
+    },
+    {
+     "at": "2026-11-25T01:45:47.809Z",
+     "clock": "10:31 2nd",
+     "score": "42-28",
+     "phase": "scout",
+     "grade": "A",
+     "action": "SCOUT",
+     "pick": "BOS",
+     "focus": "BOS",
+     "kalshi": 0.905,
+     "note": "BOS answered WSH's 7-1 with a 11-2 run; WSH has not responded",
+     "log": "2026-11-24 | BOS@WSH | 10:31 Q2 | 42-28 | A | no bet | K 91c (-953) | BOS answered WSH's 7-1 with a 11-2 run; WSH has not responded"
+    },
+    {
+     "at": "2026-11-25T01:58:55.475Z",
+     "clock": "5:42 2nd",
+     "score": "57-34",
+     "phase": "scout",
+     "grade": "A+",
+     "action": "SCOUT",
+     "pick": "BOS",
+     "focus": "BOS",
+     "kalshi": 0.965,
+     "note": "BOS answered WSH's 7-1 with a 9-0 run; WSH has not responded",
+     "log": "2026-11-24 | BOS@WSH | 5:42 Q2 | 57-34 | A+ | no bet | K 97c (-2757) | BOS answered WSH's 7-1 with a 9-0 run; WSH has not responded"
+    },
+    {
+     "at": "2026-11-25T01:59:41.714Z",
+     "clock": "5:10 2nd",
+     "score": "57-34",
+     "phase": "scout",
+     "grade": "A",
+     "action": "SCOUT",
+     "pick": "BOS",
+     "focus": "BOS",
+     "kalshi": 0.965,
+     "note": "BOS answered WSH's 7-1 with a 9-0 run; WSH has not responded",
+     "log": "2026-11-24 | BOS@WSH | 5:10 Q2 | 57-34 | A | no bet | K 97c (-2757) | BOS answered WSH's 7-1 with a 9-0 run; WSH has not responded"
+    },
+    {
+     "at": "2026-11-25T02:12:03.822Z",
+     "clock": "0.0 2nd",
+     "score": "80-49",
+     "phase": "scout",
+     "grade": "B",
+     "action": "SCOUT",
+     "pick": null,
+     "focus": "BOS",
+     "kalshi": 0.995,
+     "note": "BOS answered WSH's 7-1 with a 8-2 run; WSH has not responded",
+     "log": "2026-11-24 | BOS@WSH | 0.0 Q2 | 80-49 | B | no bet | K 100c (-19900) | BOS answered WSH's 7-1 with a 8-2 run; WSH has not responded"
+    },
+    {
+     "at": "2026-11-25T02:28:17.611Z",
+     "clock": "11:40 3rd",
+     "score": "80-49",
+     "phase": "q3",
+     "grade": "B",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "BOS",
+     "kalshi": 0.995,
+     "note": "BOS answered WSH's 7-1 with a 8-2 run; WSH has not responded",
+     "log": "2026-11-24 | BOS@WSH | 11:40 Q3 | 80-49 | B | no bet | K 100c (-19900) | BOS answered WSH's 7-1 with a 8-2 run; WSH has not responded"
+    },
+    {
+     "at": "2026-11-25T02:32:55.479Z",
+     "clock": "8:32 3rd",
+     "score": "86-61",
+     "phase": "q3",
+     "grade": "A",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "WSH",
+     "kalshi": 0.01,
+     "note": "WSH answered BOS's 8-2 with a 6-0 run; BOS has not responded",
+     "log": "2026-11-24 | BOS@WSH | 8:32 Q3 | 86-61 | A | no bet | K 1c (+9900) | WSH answered BOS's 8-2 with a 6-0 run; BOS has not responded"
+    },
+    {
+     "at": "2026-11-25T02:33:41.889Z",
+     "clock": "8:22 3rd",
+     "score": "88-61",
+     "phase": "q3",
+     "grade": "B",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "WSH",
+     "kalshi": 0.01,
+     "note": "WSH answered BOS's 8-2 with a 6-0 run; BOS has not responded",
+     "log": "2026-11-24 | BOS@WSH | 8:22 Q3 | 88-61 | B | no bet | K 1c (+9900) | WSH answered BOS's 8-2 with a 6-0 run; BOS has not responded"
+    },
+    {
+     "at": "2026-11-25T02:34:28.191Z",
+     "clock": "8:05 3rd",
+     "score": "88-63",
+     "phase": "q3",
+     "grade": "A",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "WSH",
+     "kalshi": 0.01,
+     "note": "WSH answered BOS's 8-2 with a 8-2 run; BOS has not responded",
+     "log": "2026-11-24 | BOS@WSH | 8:05 Q3 | 88-63 | A | no bet | K 1c (+9900) | WSH answered BOS's 8-2 with a 8-2 run; BOS has not responded"
+    },
+    {
+     "at": "2026-11-25T02:35:14.408Z",
+     "clock": "7:51 3rd",
+     "score": "88-65",
+     "phase": "q3",
+     "grade": "B",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "BOS",
+     "kalshi": 0.985,
+     "note": "WSH answered BOS's 8-2 with a 10-2 run; BOS has not responded",
+     "log": "2026-11-24 | BOS@WSH | 7:51 Q3 | 88-65 | B | no bet | K 99c (-6567) | WSH answered BOS's 8-2 with a 10-2 run; BOS has not responded"
+    },
+    {
+     "at": "2026-11-25T02:40:38.979Z",
+     "clock": "6:00 3rd",
+     "score": "92-70",
+     "phase": "q3",
+     "grade": "A",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "WSH",
+     "kalshi": 0.015,
+     "note": "WSH answered BOS's 8-2 with a 10-2 run; BOS has not responded",
+     "log": "2026-11-24 | BOS@WSH | 6:00 Q3 | 92-70 | A | no bet | K 2c (+6567) | WSH answered BOS's 8-2 with a 10-2 run; BOS has not responded"
+    },
+    {
+     "at": "2026-11-25T02:42:11.732Z",
+     "clock": "5:15 3rd",
+     "score": "94-70",
+     "phase": "q3",
+     "grade": "B",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "BOS",
+     "kalshi": 0.985,
+     "note": "WSH answered BOS's 8-2 with a 10-2 run; BOS has not responded",
+     "log": "2026-11-24 | BOS@WSH | 5:15 Q3 | 94-70 | B | no bet | K 99c (-6567) | WSH answered BOS's 8-2 with a 10-2 run; BOS has not responded"
+    },
+    {
+     "at": "2026-11-25T02:44:30.912Z",
+     "clock": "4:30 3rd",
+     "score": "94-74",
+     "phase": "q3",
+     "grade": "A",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "WSH",
+     "kalshi": 0.015,
+     "note": "WSH answered BOS's 8-2 with a 10-2 run; BOS has not responded",
+     "log": "2026-11-24 | BOS@WSH | 4:30 Q3 | 94-74 | A | no bet | K 2c (+6567) | WSH answered BOS's 8-2 with a 10-2 run; BOS has not responded"
+    },
+    {
+     "at": "2026-11-25T02:53:00.508Z",
+     "clock": "1:59 3rd",
+     "score": "100-81",
+     "phase": "q3",
+     "grade": "B",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "BOS",
+     "kalshi": 0.985,
+     "note": "BOS answered WSH's 13-2 with a 6-0 run; WSH has not responded",
+     "log": "2026-11-24 | BOS@WSH | 1:59 Q3 | 100-81 | B | no bet | K 99c (-6567) | BOS answered WSH's 13-2 with a 6-0 run; WSH has not responded"
+    },
+    {
+     "at": "2026-11-25T02:57:38.754Z",
+     "clock": "18.7 3rd",
+     "score": "104-88",
+     "phase": "q3",
+     "grade": "A",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "WSH",
+     "kalshi": 0.025,
+     "note": "WSH answered BOS's 8-0 with a 8-2 run; BOS has not responded",
+     "log": "2026-11-24 | BOS@WSH | 18.7 Q3 | 104-88 | A | no bet | K 3c (+3900) | WSH answered BOS's 8-0 with a 8-2 run; BOS has not responded"
+    },
+    {
+     "at": "2026-11-25T03:01:30.103Z",
+     "clock": "12:00 4th",
+     "score": "104-89",
+     "phase": "q4early",
+     "grade": "A",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "WSH",
+     "kalshi": 0.025,
+     "note": "WSH answered BOS's 8-0 with a 8-2 run; BOS has not responded",
+     "log": "2026-11-24 | BOS@WSH | 12:00 Q4 | 104-89 | A | no bet | K 3c (+3900) | WSH answered BOS's 8-0 with a 8-2 run; BOS has not responded"
+    },
+    {
+     "at": "2026-11-25T03:06:08.173Z",
+     "clock": "9:47 4th",
+     "score": "108-92",
+     "phase": "primary",
+     "grade": "B",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "WSH",
+     "kalshi": 0.015,
+     "note": "WSH answered BOS's 8-0 with a 8-2 run; BOS has not responded",
+     "log": "2026-11-24 | BOS@WSH | 9:47 Q4 | 108-92 | B | no bet | K 2c (+6567) | WSH answered BOS's 8-0 with a 8-2 run; BOS has not responded"
+    },
+    {
+     "at": "2026-11-25T03:06:54.421Z",
+     "clock": "9:15 4th",
+     "score": "109-94",
+     "phase": "primary",
+     "grade": "A",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "WSH",
+     "kalshi": 0.015,
+     "note": "WSH answered BOS's 8-0 with a 8-2 run; BOS has not responded",
+     "log": "2026-11-24 | BOS@WSH | 9:15 Q4 | 109-94 | A | no bet | K 2c (+6567) | WSH answered BOS's 8-0 with a 8-2 run; BOS has not responded"
+    },
+    {
+     "at": "2026-11-25T03:10:45.928Z",
+     "clock": "7:40 4th",
+     "score": "109-96",
+     "phase": "confirm",
+     "grade": "A",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "WSH",
+     "kalshi": 0.025,
+     "note": "WSH answered BOS's 8-0 with a 8-2 run; BOS has not responded",
+     "log": "2026-11-24 | BOS@WSH | 7:40 Q4 | 109-96 | A | no bet | K 3c (+3900) | WSH answered BOS's 8-0 with a 8-2 run; BOS has not responded"
+    },
+    {
+     "at": "2026-11-25T03:12:18.558Z",
+     "clock": "7:15 4th",
+     "score": "110-98",
+     "phase": "confirm",
+     "grade": "B",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "WSH",
+     "kalshi": 0.045,
+     "note": "WSH answered BOS's 8-0 with a 9-2 run; BOS has not responded",
+     "log": "2026-11-24 | BOS@WSH | 7:15 Q4 | 110-98 | B | no bet | K 5c (+2122) | WSH answered BOS's 8-0 with a 9-2 run; BOS has not responded"
+    },
+    {
+     "at": "2026-11-25T03:19:15.094Z",
+     "clock": "5:53 4th",
+     "score": "116-104",
+     "phase": "late",
+     "grade": "B",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "BOS",
+     "kalshi": 0.985,
+     "note": "WSH answered BOS's 8-0 with a 9-2 run; BOS has not responded",
+     "log": "2026-11-24 | BOS@WSH | 5:53 Q4 | 116-104 | B | no bet | K 99c (-6567) | WSH answered BOS's 8-0 with a 9-2 run; BOS has not responded"
+    },
+    {
+     "at": "2026-11-25T03:20:01.370Z",
+     "clock": "5:40 4th",
+     "score": "116-104",
+     "phase": "late",
+     "grade": "A",
+     "action": "NO BET",
+     "pick": null,
+     "focus": "WSH",
+     "kalshi": 0.015,
+     "note": "WSH answered BOS's 8-0 with a 9-2 run; BOS has not responded",
+     "log": "2026-11-24 | BOS@WSH | 5:40 Q4 | 116-104 | A | no bet | K 2c (+6567) | WSH answered BOS's 8-0 with a 9-2 run; BOS has not responded"
+    },
+    {
+     "at": "2026-11-25T03:22:20.774Z",
+     "clock": "3:59 4th",
+     "score": "117-110",
+     "phase": "under4",
+     "grade": "A",
+     "action": "NO NEW BET",
+     "pick": null,
+     "focus": "WSH",
+     "kalshi": 0.055,
+     "note": "WSH answered BOS's 8-0 with a 9-1 run; BOS has not responded",
+     "log": "2026-11-24 | BOS@WSH | 3:59 Q4 | 117-110 | A | no bet | K 6c (+1718) | WSH answered BOS's 8-0 with a 9-1 run; BOS has not responded"
+    },
+    {
+     "at": "2026-11-25T03:30:04.152Z",
+     "clock": "1:34 4th",
+     "score": "122-112",
+     "phase": "under4",
+     "grade": "B",
+     "action": "NO NEW BET",
+     "pick": null,
+     "focus": "BOS",
+     "kalshi": 0.995,
+     "note": "BOS answered WSH's 11-1 with 5-0",
+     "log": "2026-11-24 | BOS@WSH | 1:34 Q4 | 122-112 | B | no bet | K 100c (-19900) | BOS answered WSH's 11-1 with 5-0"
+    },
+    {
+     "at": "2026-11-25T03:33:09.822Z",
+     "clock": "50.0 4th",
+     "score": "127-114",
+     "phase": "under4",
+     "grade": "A",
+     "action": "NO NEW BET",
+     "pick": "BOS",
+     "focus": "BOS",
+     "kalshi": 0.995,
+     "note": "BOS answered WSH's 11-1 with a 10-2 run; WSH has not responded",
+     "log": "2026-11-24 | BOS@WSH | 50.0 Q4 | 127-114 | A | no bet | K 100c (-19900) | BOS answered WSH's 11-1 with a 10-2 run; WSH has not responded"
+    },
+    {
+     "at": "2026-11-25T03:37:01.294Z",
+     "clock": "Final",
+     "score": "131-116",
+     "phase": "final",
+     "grade": "A",
+     "action": "FINAL",
+     "pick": "BOS",
+     "focus": "BOS",
+     "kalshi": 0.995,
+     "note": "BOS answered WSH's 11-1 with a 12-2 run; WSH has not responded",
+     "log": "2026-11-24 | BOS@WSH | Final | 131-116 | A | no bet | K 100c (-19900) | BOS answered WSH's 11-1 with a 12-2 run; WSH has not responded"
+    }
+   ],
+   "kalshi": [
+    [
+     "2026-11-25T00:45:27.635Z",
+     0.785,
+     0.215
+    ],
+    [
+     "2026-11-25T01:14:04.747Z",
+     0.785,
+     0.225
+    ],
+    [
+     "2026-11-25T01:14:51.118Z",
+     0.785,
+     0.215
+    ],
+    [
+     "2026-11-25T01:15:37.656Z",
+     0.815,
+     0.185
+    ],
+    [
+     "2026-11-25T01:16:24.007Z",
+     0.855,
+     0.145
+    ],
+    [
+     "2026-11-25T01:20:15.929Z",
+     0.845,
+     0.155
+    ],
+    [
+     "2026-11-25T01:21:02.362Z",
+     0.815,
+     0.185
+    ],
+    [
+     "2026-11-25T01:21:48.601Z",
+     0.835,
+     0.165
+    ],
+    [
+     "2026-11-25T01:22:35.863Z",
+     0.825,
+     0.175
+    ],
+    [
+     "2026-11-25T01:23:22.298Z",
+     0.815,
+     0.185
+    ],
+    [
+     "2026-11-25T01:24:08.709Z",
+     0.815,
+     0.175
+    ],
+    [
+     "2026-11-25T01:24:54.942Z",
+     0.825,
+     0.175
+    ],
+    [
+     "2026-11-25T01:27:14.107Z",
+     0.845,
+     0.145
+    ],
+    [
+     "2026-11-25T01:28:00.476Z",
+     0.875,
+     0.125
+    ],
+    [
+     "2026-11-25T01:28:46.911Z",
+     0.905,
+     0.095
+    ],
+    [
+     "2026-11-25T01:29:33.167Z",
+     0.885,
+     0.115
+    ],
+    [
+     "2026-11-25T01:30:19.545Z",
+     0.875,
+     0.125
+    ],
+    [
+     "2026-11-25T01:31:05.846Z",
+     0.855,
+     0.145
+    ],
+    [
+     "2026-11-25T01:31:52.333Z",
+     0.865,
+     0.135
+    ],
+    [
+     "2026-11-25T01:32:38.717Z",
+     0.855,
+     0.15
+    ],
+    [
+     "2026-11-25T01:33:25.020Z",
+     0.845,
+     0.155
+    ],
+    [
+     "2026-11-25T01:34:11.439Z",
+     0.875,
+     0.125
+    ],
+    [
+     "2026-11-25T01:35:44.294Z",
+     0.855,
+     0.145
+    ],
+    [
+     "2026-11-25T01:36:30.718Z",
+     0.835,
+     0.155
+    ],
+    [
+     "2026-11-25T01:37:17.034Z",
+     0.825,
+     0.165
+    ],
+    [
+     "2026-11-25T01:38:03.324Z",
+     0.835,
+     0.165
+    ],
+    [
+     "2026-11-25T01:38:49.652Z",
+     0.855,
+     0.145
+    ],
+    [
+     "2026-11-25T01:40:22.285Z",
+     0.845,
+     0.155
+    ],
+    [
+     "2026-11-25T01:44:14.313Z",
+     0.865,
+     0.135
+    ],
+    [
+     "2026-11-25T01:45:01.003Z",
+     0.885,
+     0.115
+    ],
+    [
+     "2026-11-25T01:45:47.808Z",
+     0.905,
+     0.085
+    ],
+    [
+     "2026-11-25T01:47:20.583Z",
+     0.905,
+     0.095
+    ],
+    [
+     "2026-11-25T01:49:39.703Z",
+     0.875,
+     0.125
+    ],
+    [
+     "2026-11-25T01:50:25.956Z",
+     0.915,
+     0.085
+    ],
+    [
+     "2026-11-25T01:51:12.294Z",
+     0.935,
+     0.065
+    ],
+    [
+     "2026-11-25T01:54:17.517Z",
+     0.945,
+     0.055
+    ],
+    [
+     "2026-11-25T01:55:03.941Z",
+     0.965,
+     0.035
+    ],
+    [
+     "2026-11-25T02:04:19.996Z",
+     0.975,
+     0.025
+    ],
+    [
+     "2026-11-25T02:05:52.986Z",
+     0.985,
+     0.015
+    ],
+    [
+     "2026-11-25T02:08:11.702Z",
+     0.995,
+     0.01
+    ],
+    [
+     "2026-11-25T02:34:28.189Z",
+     0.985,
+     0.01
+    ],
+    [
+     "2026-11-25T02:35:14.406Z",
+     0.985,
+     0.015
+    ],
+    [
+     "2026-11-25T02:46:03.460Z",
+     0.975,
+     0.025
+    ],
+    [
+     "2026-11-25T02:46:49.944Z",
+     0.965,
+     0.035
+    ],
+    [
+     "2026-11-25T02:47:36.157Z",
+     0.955,
+     0.045
+    ],
+    [
+     "2026-11-25T02:50:41.541Z",
+     0.935,
+     0.06
+    ],
+    [
+     "2026-11-25T02:51:27.933Z",
+     0.945,
+     0.055
+    ],
+    [
+     "2026-11-25T02:52:14.188Z",
+     0.975,
+     0.025
+    ],
+    [
+     "2026-11-25T02:53:00.507Z",
+     0.985,
+     0.015
+    ],
+    [
+     "2026-11-25T02:55:19.767Z",
+     0.975,
+     0.025
+    ],
+    [
+     "2026-11-25T03:03:49.093Z",
+     0.985,
+     0.015
+    ],
+    [
+     "2026-11-25T03:08:27.060Z",
+     0.975,
+     0.025
+    ],
+    [
+     "2026-11-25T03:09:13.305Z",
+     0.985,
+     0.025
+    ],
+    [
+     "2026-11-25T03:09:59.621Z",
+     0.985,
+     0.015
+    ],
+    [
+     "2026-11-25T03:10:45.927Z",
+     0.975,
+     0.025
+    ],
+    [
+     "2026-11-25T03:12:18.555Z",
+     0.955,
+     0.045
+    ],
+    [
+     "2026-11-25T03:13:04.864Z",
+     0.975,
+     0.025
+    ],
+    [
+     "2026-11-25T03:16:56.335Z",
+     0.975,
+     0.015
+    ],
+    [
+     "2026-11-25T03:17:42.602Z",
+     0.985,
+     0.015
+    ],
+    [
+     "2026-11-25T03:21:34.472Z",
+     0.975,
+     0.025
+    ],
+    [
+     "2026-11-25T03:22:20.771Z",
+     0.945,
+     0.055
+    ],
+    [
+     "2026-11-25T03:24:39.899Z",
+     0.935,
+     0.065
+    ],
+    [
+     "2026-11-25T03:26:12.593Z",
+     0.915,
+     0.085
+    ],
+    [
+     "2026-11-25T03:26:58.835Z",
+     0.925,
+     0.075
+    ],
+    [
+     "2026-11-25T03:28:31.466Z",
+     0.945,
+     0.045
+    ],
+    [
+     "2026-11-25T03:29:17.883Z",
+     0.995,
+     0.01
+    ]
+   ],
+   "kalshiEvent": "KXNBAGAME-26NOV24BOSWAS",
+   "last": {
+    "at": "2026-11-25T03:37:01.294Z",
+    "clock": "Final",
+    "score": "131-116",
+    "phase": "final",
+    "grade": "A",
+    "action": "FINAL",
+    "pick": "BOS",
+    "focus": "BOS",
+    "kalshi": 0.995,
+    "note": "BOS answered WSH's 11-1 with a 12-2 run; WSH has not responded",
+    "log": "2026-11-24 | BOS@WSH | Final | 131-116 | A | no bet | K 100c (-19900) | BOS answered WSH's 11-1 with a 12-2 run; WSH has not responded"
+   },
+   "final": {
+    "score": "131-116",
+    "winner": "BOS"
+   }
+  }
+ },
+ "updated": "2026-11-25T03:37:01.294Z"
+}
