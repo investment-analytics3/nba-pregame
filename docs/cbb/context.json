@@ -1,7 +1,7 @@
 {
  "date": "2026-11-25",
  "season": 2027,
- "built_at": "2026-11-24T22:15:47-08:00",
+ "built_at": "2026-11-24T23:15:35-08:00",
  "league": {
   "opp_efg": [
    32.01,
@@ -67,7 +67,6 @@
    45.81,
    45.82,
    45.87,
-   45.87,
    45.88,
    45.89,
    46.01,
@@ -85,6 +84,7 @@
    46.9,
    46.94,
    47.06,
+   47.07,
    47.22,
    47.23,
    47.28,
@@ -116,7 +116,6 @@
    48.45,
    48.46,
    48.49,
-   48.53,
    48.56,
    48.63,
    48.63,
@@ -157,6 +156,7 @@
    49.75,
    49.76,
    49.87,
+   50.0,
    50.0,
    50.0,
    50.0,
@@ -381,7 +381,6 @@
    83.79,
    84.37,
    85.2,
-   85.38,
    86.13,
    86.4,
    87.1,
@@ -390,6 +389,7 @@
    87.94,
    88.06,
    88.19,
+   88.74,
    89.3,
    89.76,
    89.94,
@@ -502,7 +502,6 @@
    103.03,
    103.04,
    103.07,
-   103.15,
    103.22,
    103.25,
    103.25,
@@ -539,6 +538,7 @@
    106.19,
    106.23,
    106.48,
+   106.78,
    106.79,
    106.94,
    106.99,
@@ -824,13 +824,13 @@
      },
      "def": {
       "v": 86.31,
-      "r": 15
+      "r": 14
      }
     },
     "season": {
      "opp_efg": {
       "v": 45.89,
-      "r": 66
+      "r": 65
      },
      "def": {
       "v": 93.82,
@@ -871,7 +871,7 @@
     "last3": {
      "opp_efg": {
       "v": 49.18,
-      "r": 132
+      "r": 131
      },
      "def": {
       "v": 99.88,
@@ -1028,7 +1028,7 @@
      },
      "def": {
       "v": 91.29,
-      "r": 29
+      "r": 28
      }
     },
     "season": {
@@ -1038,7 +1038,7 @@
      },
      "def": {
       "v": 88.06,
-      "r": 18
+      "r": 17
      }
     }
    },
@@ -1094,6 +1094,57 @@
     }
    },
    "kalshi_event": "KXNCAAMBGAME-26NOV25COOKRICH",
+   "locked": false
+  },
+  {
+   "id": "401911029",
+   "tip_utc": "2026-11-25T18:00:00+00:00",
+   "tip_pt": "10:00 AM PT",
+   "day_et": "2026-11-25",
+   "away_abbr": "EKU",
+   "home_abbr": "M-OH",
+   "fav_abbr": "M-OH",
+   "dog_abbr": "EKU",
+   "fav_home": true,
+   "spread": -14.5,
+   "away_names": [
+    "Eastern Kentucky",
+    "Eastern Kentucky Colonels"
+   ],
+   "home_names": [
+    "Miami (OH)",
+    "Miami (OH) RedHawks"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "readout": false,
+   "alerts": false,
+   "score": 14,
+   "fav_b2b": false,
+   "fav_defense": {
+    "last3": {
+     "opp_efg": {
+      "v": 50.0,
+      "r": 151
+     },
+     "def": {
+      "v": 103.15,
+      "r": 125
+     }
+    },
+    "season": {
+     "opp_efg": {
+      "v": 49.6,
+      "r": 139
+     },
+     "def": {
+      "v": 103.45,
+      "r": 135
+     }
+    }
+   },
+   "kalshi_event": "KXNCAAMBGAME-26NOV25EKYMOH",
    "locked": false
   },
   {
@@ -1181,7 +1232,7 @@
      },
      "def": {
       "v": 107.28,
-      "r": 172
+      "r": 171
      }
     },
     "season": {
@@ -1196,57 +1247,6 @@
     }
    },
    "kalshi_event": "KXNCAAMBGAME-26NOV25LINWSTON",
-   "locked": false
-  },
-  {
-   "id": "401911029",
-   "tip_utc": "2026-11-25T18:00:00+00:00",
-   "tip_pt": "10:00 AM PT",
-   "day_et": "2026-11-25",
-   "away_abbr": "EKU",
-   "home_abbr": "M-OH",
-   "fav_abbr": "M-OH",
-   "dog_abbr": "EKU",
-   "fav_home": true,
-   "spread": -14.5,
-   "away_names": [
-    "Eastern Kentucky",
-    "Eastern Kentucky Colonels"
-   ],
-   "home_names": [
-    "Miami (OH)",
-    "Miami (OH) RedHawks"
-   ],
-   "tier": "out",
-   "tier_label": "No track",
-   "tracked": false,
-   "readout": false,
-   "alerts": false,
-   "score": 13,
-   "fav_b2b": false,
-   "fav_defense": {
-    "last3": {
-     "opp_efg": {
-      "v": 50.0,
-      "r": 152
-     },
-     "def": {
-      "v": 103.15,
-      "r": 125
-     }
-    },
-    "season": {
-     "opp_efg": {
-      "v": 49.6,
-      "r": 140
-     },
-     "def": {
-      "v": 103.45,
-      "r": 136
-     }
-    }
-   },
-   "kalshi_event": "KXNCAAMBGAME-26NOV25EKYMOH",
    "locked": false
   },
   {
@@ -1279,11 +1279,11 @@
     "last3": {
      "opp_efg": {
       "v": 50.0,
-      "r": 153
+      "r": 152
      },
      "def": {
       "v": 107.69,
-      "r": 176
+      "r": 175
      }
     },
     "season": {
