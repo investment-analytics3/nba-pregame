@@ -1,75 +1,245 @@
 {
   "date": "2026-11-25",
-  "updated": "2026-11-24T22:30-08:00",
+  "updated": "2026-11-25T05:40-08:00",
   "games": {
     "401921670": {
       "matchup": "SC @ USC",
       "fav": "USC",
       "dog": "SC",
-      "summary": "Every source read backs unbeaten USC (6-0) over unbeaten South Carolina (5-0) in a neutral-site game at Acrisure Arena in Palm Springs. Bang The Book takes USC on the moneyline (-600), Pick Dawgz takes USC against the spread, and the CappersPicks AI model projects USC by 22 (88-66). The reasons: USC scores 94.2 a game on 52% shooting, ranks 31st/20th in adjusted offense/defense against South Carolina's 89th/95th, and is 9th in defensive eFG%; South Carolina has not yet played away from home. Alijah Arenas (21.3) and Rodney Rice lead USC; Juan Fernandez (15.2) leads South Carolina. CappersPicks lists USC center Eric Reibe out (foot); Bang The Book's status check showed none.",
+      "summary": "Five of six sources back unbeaten USC (6-0) over unbeaten South Carolina (5-0) at Acrisure Arena in Palm Desert, a neutral site. Bang The Book takes USC on the moneyline, Pick Dawgz and iHeart take USC against the spread, and the CappersPicks AI model projects USC by 22 (88-66); iHeart and Bleacher Nation both project USC 81-66. The case: USC scores 94.2 a game on 52% shooting and ranks 9th in defensive eFG%, while South Carolina has yet to play away from home. Alijah Arenas (21.3) leads USC; Juan Fernandez (15.2) leads South Carolina. Doc's Sports is the lone dissent, taking South Carolina without a line or reason. USC center Eric Reibe has been out all season (foot, offseason surgery; ClutchPoints Nov 19), so it is not new.",
       "picks": [
-        {"source": "Bang The Book", "side": "fav", "bet": "USC ML", "price": "USC -600", "note": "Higher scoring and assist averages; already won away from home"},
-        {"source": "Pick Dawgz", "side": "fav", "bet": "USC -8.5 (article's pick; its odds table shows -11.5)", "price": "USC -600", "note": "Top-35 offense and defense; a step up in class for South Carolina"},
-        {"source": "CappersPicks (AI)", "side": "fav", "bet": "USC to win (4 stars)", "price": "USC -611", "note": "AI projects USC by 22"}
+        {
+          "source": "Bang The Book",
+          "side": "fav",
+          "bet": "USC ML",
+          "price": "USC -600",
+          "note": "Higher scoring and assist averages; already won away from home"
+        },
+        {
+          "source": "Pick Dawgz",
+          "side": "fav",
+          "bet": "USC -8.5 (article's pick; its odds table shows -11.5)",
+          "price": "USC -600",
+          "note": "Top-35 offense and defense; a step up in class for South Carolina"
+        },
+        {
+          "source": "CappersPicks (AI)",
+          "side": "fav",
+          "bet": "USC to win (4 stars)",
+          "price": "USC -611",
+          "note": "AI projects USC by 22"
+        },
+        {
+          "source": "iHeart (104.9 Fox Sports)",
+          "side": "fav",
+          "bet": "USC -10.5; Under 147.5",
+          "price": "USC -694",
+          "note": "No reason given; projects USC 81-66"
+        },
+        {
+          "source": "Doc's Sports",
+          "side": "dog",
+          "bet": "Take South Carolina (no line given)",
+          "note": "Stats recap only; no reason given"
+        }
       ],
       "scores": [
-        {"source": "CappersPicks (AI)", "fav": 88, "dog": 66}
+        {
+          "source": "CappersPicks (AI)",
+          "fav": 88,
+          "dog": 66
+        },
+        {
+          "source": "iHeart (104.9 Fox Sports)",
+          "fav": 81,
+          "dog": 66
+        },
+        {
+          "source": "Bleacher Nation (computer pick)",
+          "fav": 81,
+          "dog": 66
+        }
       ],
       "injuries": {
-        "fav": [{"player": "Eric Reibe", "status": "Out", "note": "C, foot (CappersPicks injury table, no date given)"}],
-        "dog": [
-          {"player": "Grant Polk", "status": "Out", "note": "G, lower leg (CappersPicks, no date given)"},
-          {"player": "Mathias Alessanco", "status": "Out", "note": "F, knee/ACL (CappersPicks, no date given)"}
+        "fav": [
+          {
+            "player": "Eric Reibe",
+            "status": "Out",
+            "note": "C, foot; re-aggravated offseason injury, rehab after surgery, has not played this season (ClutchPoints Nov 19, per 247Sports)"
+          },
+          {
+            "player": "Onyeka Joe Agu",
+            "status": "Out",
+            "note": "F (freshman), groin; has not played this season (ClutchPoints Nov 19)"
+          }
         ],
-        "note": "Only CappersPicks lists injuries; Bang The Book's status check (Nov 25 01:02 UTC) returned none for either team. Recheck in the morning run."
+        "dog": [
+          {
+            "player": "Grant Polk",
+            "status": "Out",
+            "note": "G, lower leg (CappersPicks, no date given)"
+          },
+          {
+            "player": "Mathias Alessanco",
+            "status": "Out",
+            "note": "F, knee/ACL (CappersPicks, no date given)"
+          }
+        ],
+        "note": "USC's two absences are season-long (out since before the opener), not new. South Carolina statuses come from one source without a date. No morning preview reported new injuries."
       },
       "sources": [
-        {"site": "Bang The Book", "url": "https://bangthebook.com/south-carolina-gamecocks-vs-usc-trojans-prediction-2026-11-25/"},
-        {"site": "Pick Dawgz", "url": "https://pickdawgz.com/college-basketball-picks/south-carolina-vs-usc-prediction-11-25-2026-todays-college-basketball-picks/"},
-        {"site": "CappersPicks (AI)", "url": "https://www.capperspicks.com/free-picks/ai/usc-trojans-at-south-carolina-gamecocks-pick-ncaa-basketball-prediction-preview-odds-11-25-2026/"},
-        {"site": "BettingNews (odds, stats)", "url": "https://www.bettingnews.com/ncaab/matchup/2026-11-25-south_carolina_gamecocks-usc_trojans-n-1/"}
+        {
+          "site": "Bang The Book",
+          "url": "https://bangthebook.com/south-carolina-gamecocks-vs-usc-trojans-prediction-2026-11-25/"
+        },
+        {
+          "site": "Pick Dawgz",
+          "url": "https://pickdawgz.com/college-basketball-picks/south-carolina-vs-usc-prediction-11-25-2026-todays-college-basketball-picks/"
+        },
+        {
+          "site": "CappersPicks (AI)",
+          "url": "https://www.capperspicks.com/free-picks/ai/usc-trojans-at-south-carolina-gamecocks-pick-ncaa-basketball-prediction-preview-odds-11-25-2026/"
+        },
+        {
+          "site": "BettingNews (odds, stats)",
+          "url": "https://www.bettingnews.com/ncaab/matchup/2026-11-25-south_carolina_gamecocks-usc_trojans-n-1/"
+        },
+        {
+          "site": "iHeart (104.9 Fox Sports)",
+          "url": "https://1049foxsports.iheart.com/content/2026-11-25-usc-vs-south-carolina-predictions-nov-25/"
+        },
+        {
+          "site": "Bleacher Nation (SEC computer picks)",
+          "url": "https://www.bleachernation.com/picks/2026/11/25/sec-basketball-predictions-computer-picks-and-best-bets-november-25-2/"
+        },
+        {
+          "site": "Doc's Sports",
+          "url": "https://www.docsports.com/free-picks/ncaa-college-basketball/2026/south-carolina-gamecocks-vs-usc-trojans-prediction-11-25-2026-college-basketball-picks-best-bets-odds.html"
+        },
+        {
+          "site": "ClutchPoints (injuries)",
+          "url": "https://clutchpoints.com/ncaa-basketball/usc-basketball-news-trojans-unfortunate-injury-updates-tarleton-clash"
+        }
       ]
     },
     "401924705": {
       "matchup": "SPU @ COLU",
       "fav": "COLU",
       "dog": "SPU",
-      "summary": "Both sources read expect Columbia (5-1, first in the early Ivy table) to beat winless Saint Peter's (0-6) at home. Bang The Book takes Columbia on the moneyline at -1450, citing its shooting (47%, 83.0 points a game) and passing (17.3 assists); Saint Peter's averages 48.8 points on 31% shooting. Columbia has won five straight, including 75-53 over Northwestern. Scores24 also picks Columbia to win, but its editorial bet is Saint Peter's +15.5, noting the Peacocks covered +15.5 in 14 of their last 16 road games. Leaders: Gerard O'Keefe (16.5) for Columbia, Bryce Eaton (13.0) for Saint Peter's. No injuries reported.",
+      "summary": "All four sources expect Columbia (5-1) to beat winless Saint Peter's (0-6) at home. Dimers' model gives Columbia a 91.9% chance (-1450) and projects 73-59, though its value bet is Over 125.5. Bang The Book takes Columbia on the moneyline, citing its shooting (47%, 83.0 points a game) against a Saint Peter's offense scoring 48.8 on 31% shooting; Doc's Sports also takes Columbia. Columbia beat Boston 80-71 last time out; Saint Peter's lost 67-52 at Stony Brook, shooting 4 of 19 from three. The contrarian note: Scores24 picks Columbia to win but bets Saint Peter's +15.5, as the Peacocks covered that number in 14 of their last 16 road games. No injuries reported.",
       "picks": [
-        {"source": "Bang The Book", "side": "fav", "bet": "Columbia ML", "price": "Columbia -1450", "note": "Stronger shooting and passing; Saint Peter's scores 48.8 a game"},
-        {"source": "Scores24", "side": "fav", "bet": "Columbia to win (1.08); editorial bet Saint Peter's +15.5 (-110)", "note": "Peacocks covered +15.5 in 14 of last 16 road games"}
+        {
+          "source": "Bang The Book",
+          "side": "fav",
+          "bet": "Columbia ML",
+          "price": "Columbia -1450",
+          "note": "Stronger shooting and passing; Saint Peter's scores 48.8 a game"
+        },
+        {
+          "source": "Dimers",
+          "side": "fav",
+          "bet": "Over 125.5 (-108); model favors Columbia",
+          "price": "Columbia -1450 (91.9%)",
+          "note": "Model gives the over 57.3% vs 51.9% implied"
+        },
+        {
+          "source": "Doc's Sports",
+          "side": "fav",
+          "bet": "Take Columbia (no line given)",
+          "note": "Stats recap; Saint Peter's 0-6 and shot 31.5% last game"
+        },
+        {
+          "source": "Scores24",
+          "side": "fav",
+          "bet": "Columbia to win (1.08); editorial bet Saint Peter's +15.5 (-110)",
+          "note": "Peacocks covered +15.5 in 14 of last 16 road games"
+        }
       ],
-      "scores": [],
+      "scores": [
+        {
+          "source": "Dimers",
+          "fav": 73,
+          "dog": 59
+        }
+      ],
       "injuries": {
         "fav": [],
         "dog": [],
-        "note": "None reported: Bang The Book's status check (Nov 25 01:00 UTC) returned no player statuses; Scores24 has no injury section."
+        "note": "None reported: Bang The Book's status check (Nov 25 01:00 UTC) returned no statuses; Dimers, Doc's Sports and Scores24 mention none."
       },
       "sources": [
-        {"site": "Bang The Book", "url": "https://bangthebook.com/saint-peter-s-peacocks-vs-columbia-lions-prediction-2026-11-25/"},
-        {"site": "Scores24", "url": "https://scores24.live/en/basketball/m-25-11-2026-columbia-lions-saint-peter-s-peacocks-prediction"}
+        {
+          "site": "Bang The Book",
+          "url": "https://bangthebook.com/saint-peter-s-peacocks-vs-columbia-lions-prediction-2026-11-25/"
+        },
+        {
+          "site": "Scores24",
+          "url": "https://scores24.live/en/basketball/m-25-11-2026-columbia-lions-saint-peter-s-peacocks-prediction"
+        },
+        {
+          "site": "Dimers",
+          "url": "https://www.dimers.com/cbb/news/st-peters-vs-columbia-prediction-11-25-2026-ac"
+        },
+        {
+          "site": "Dimers (predictions page)",
+          "url": "https://www.dimers.com/cbb/predictions/2026_25_clmb_spc"
+        },
+        {
+          "site": "Doc's Sports",
+          "url": "https://www.docsports.com/free-picks/ncaa-college-basketball/2026/st-peters-peacocks-vs-columbia-lions-prediction-11-25-2026-college-basketball-picks-best-bets-odds.html"
+        }
       ]
     },
     "401920858": {
       "matchup": "PV @ MRSH",
       "fav": "MRSH",
       "dog": "PV",
-      "summary": "Previews are thin: no source read gives a moneyline pick or a predicted score. Both teams are 2-4; Marshall lost to Ohio State, Toledo, Youngstown State and North Carolina, while Prairie View has lost four straight. The iHeart preview takes Prairie View +16.5 against the spread without a reason; its numbers show Prairie View allowing 82.7 points (331st) and 48.4% shooting (338th), while Marshall shoots 42.7% (279th). Covers trends note Prairie View covered in 14 of its last 16 road games and Marshall in only 5 of its last 18 home games. Scores24 only makes first-half and total picks (Marshall first half, Over 151.5). Noah Otshudi (20.2) leads Marshall. No injuries reported.",
+      "summary": "Previews remain thin and no source makes a moneyline pick. Both teams are 2-4; Marshall has lost to Ohio State, Toledo, Youngstown State and North Carolina, and Prairie View has lost four straight. The two computer previews (iHeart and Bleacher Nation, same data provider) project Marshall 80-69, an 11-point win short of the 15.5 spread, and iHeart takes Prairie View +15.5 and the Under 151.5. Prairie View allows 82.7 points (331st) and 48.4% shooting (338th), but Marshall shoots only 42.7% (282nd). Covers trends: Prairie View covered in 14 of its last 16 road games, Marshall in 5 of its last 18 at home. Noah Otshudi (20.2) leads Marshall; Michael Eley (16.5) leads Prairie View. No injuries reported.",
       "picks": [
-        {"source": "iHeart (Ticket 760)", "side": "dog", "bet": "Prairie View +16.5 (spread pick only)", "note": "No reason given"}
+        {
+          "source": "iHeart (Fox Sports 1380)",
+          "side": "dog",
+          "bet": "Prairie View +15.5 (spread pick only); Under 151.5",
+          "price": "Marshall -1587",
+          "note": "No reason given; projects Marshall 80-69"
+        }
       ],
-      "scores": [],
+      "scores": [
+        {
+          "source": "iHeart (Fox Sports 1380)",
+          "fav": 80,
+          "dog": 69
+        },
+        {
+          "source": "Bleacher Nation (computer pick)",
+          "fav": 80,
+          "dog": 69
+        }
+      ],
       "injuries": {
         "fav": [],
         "dog": [],
-        "note": "None reported in the sources read (iHeart, Scores24, Covers, RotoWire)."
+        "note": "None reported in the sources read (iHeart, Bleacher Nation, Scores24, Covers; RotoWire's injury table did not load)."
       },
       "sources": [
-        {"site": "iHeart (Ticket 760)", "url": "https://ticket760.iheart.com/content/2026-11-25-prairie-view-am-vs-marshall-predictions-nov-25/"},
-        {"site": "Scores24", "url": "https://scores24.live/en/basketball/m-25-11-2026-marshall-thundering-herd-prairie-view-a-m-panthers-prediction"},
-        {"site": "Covers (Marshall picks page)", "url": "https://www.covers.com/sport/basketball/ncaab/teams/main/marshall-thundering-herd/picks"}
+        {
+          "site": "iHeart (Fox Sports 1380)",
+          "url": "https://khey1380.iheart.com/content/2026-11-25-prairie-view-am-vs-marshall-predictions-nov-25/"
+        },
+        {
+          "site": "Bleacher Nation (Sun Belt computer picks)",
+          "url": "https://www.bleachernation.com/picks/2026/11/25/sun-belt-basketball-predictions-computer-picks-and-best-bets-november-25-2/"
+        },
+        {
+          "site": "Scores24",
+          "url": "https://scores24.live/en/basketball/m-25-11-2026-marshall-thundering-herd-prairie-view-a-m-panthers-prediction"
+        },
+        {
+          "site": "Covers (Marshall picks page)",
+          "url": "https://www.covers.com/sport/basketball/ncaab/teams/main/marshall-thundering-herd/picks"
+        }
       ]
     }
   },
-  "notes": "Night-before pass (evening run, Nov 24 PT); the morning run will refresh. Covered the three Watch list games; no No-track game scored over 20. None of the owner's preferred sources (Yahoo/NBC, FanDuel Research, SI Betting, Action Network, Sports Betting Dime) had previews for these games yet; Bleacher Nation pages failed to load. SC @ USC is listed by the previews at Acrisure Arena, Palm Springs (neutral site), not at USC. USC injury (Eric Reibe out) comes from one source without a date; unconfirmed. Spread figures differ by source (USC -8.5 to -11.5, Marshall -15.5/-16.5). Columbia and Marshall have fewer than three sources making picks."
+  "notes": "Morning refresh (game-day pass, Nov 25 PT) of the night-before file. Covered the three Watch list games; no No-track game scored over 20. None of the owner's preferred sources (Yahoo/NBC, FanDuel Research, SI Betting, Action Network, Sports Betting Dime) had previews for these games. SC @ USC is at Acrisure Arena (Palm Desert per iHeart; Doc's Sports says Palm Springs), a neutral site. USC's Eric Reibe and Onyeka Joe Agu are season-long absences (ClutchPoints Nov 19), not new. iHeart and Bleacher Nation use the same computer model, so their identical scores are one projection, not two. Marshall has only one pick (a spread pick on the underdog); Columbia's Dimers pick is a total, with the side from its model. Spread figures differ by source (USC -8.5 to -11.5)."
 }
