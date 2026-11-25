@@ -3,8 +3,8 @@
  "date_label": "Wednesday, November 25",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-24T23:15:35-08:00",
- "built_label": "Tue Nov 24, 11:15 PM PT",
+ "built_at": "2026-11-25T05:20:17-08:00",
+ "built_label": "Wed Nov 25, 5:20 AM PT",
  "metrics_through": "2026-11-24",
  "metrics_through_label": "Nov 24",
  "n_d1": 365,
@@ -30,8 +30,8 @@
     "spread": 10.5,
     "details": "USC -10.5",
     "provider": "DraftKings",
-    "ml_home": -625,
-    "ml_away": 455
+    "ml_home": -700,
+    "ml_away": 500
    },
    "home": {
     "id": "30",
@@ -89,7 +89,7 @@
        "def": 83.57,
        "net": 38.8
       },
-      "opp_power_rank": 315
+      "opp_power_rank": 288
      },
      {
       "game_id": 401926773,
@@ -107,7 +107,7 @@
        "def": 71.72,
        "net": 63.28
       },
-      "opp_power_rank": 261
+      "opp_power_rank": 258
      },
      {
       "game_id": 401926772,
@@ -133,7 +133,7 @@
     "b2b": false,
     "power": {
      "rank": 5,
-     "bpi": 17,
+     "bpi": 18,
      "own_net": 4,
      "ap": 18
     },
@@ -216,7 +216,7 @@
        "def": 104.54,
        "net": 11.62
       },
-      "opp_power_rank": 193
+      "opp_power_rank": 195
      },
      {
       "game_id": 401911392,
@@ -252,15 +252,15 @@
        "def": 63.41,
        "net": 55.67
       },
-      "opp_power_rank": 333
+      "opp_power_rank": 335
      }
     ],
     "is_fav": false,
     "spread_text": "+10.5",
     "b2b": false,
     "power": {
-     "rank": 53,
-     "bpi": 85,
+     "rank": 54,
+     "bpi": 86,
      "own_net": 24
     },
     "key_players": [
@@ -323,7 +323,7 @@
       "rule": "Power",
       "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
       "pass": true,
-      "detail": "SC: consensus #53, BPI #85, our net #24"
+      "detail": "SC: consensus #54, BPI #86, our net #24"
      },
      {
       "rule": "Early",
@@ -711,15 +711,15 @@
    "lean": "Lean: USC (watch list)",
    "kalshi": {
     "event": "KXNCAAMBGAME-26NOV25SCARUSC",
-    "fav_prob": 0.85,
-    "bid": 0.84,
+    "fav_prob": 0.855,
+    "bid": 0.85,
     "ask": 0.86
    },
    "readout": {
     "matchup": "SC @ USC",
     "fav": "USC",
     "dog": "SC",
-    "summary": "Every source read backs unbeaten USC (6-0) over unbeaten South Carolina (5-0) in a neutral-site game at Acrisure Arena in Palm Springs. Bang The Book takes USC on the moneyline (-600), Pick Dawgz takes USC against the spread, and the CappersPicks AI model projects USC by 22 (88-66). The reasons: USC scores 94.2 a game on 52% shooting, ranks 31st/20th in adjusted offense/defense against South Carolina's 89th/95th, and is 9th in defensive eFG%; South Carolina has not yet played away from home. Alijah Arenas (21.3) and Rodney Rice lead USC; Juan Fernandez (15.2) leads South Carolina. CappersPicks lists USC center Eric Reibe out (foot); Bang The Book's status check showed none.",
+    "summary": "Five of six sources back unbeaten USC (6-0) over unbeaten South Carolina (5-0) at Acrisure Arena in Palm Desert, a neutral site. Bang The Book takes USC on the moneyline, Pick Dawgz and iHeart take USC against the spread, and the CappersPicks AI model projects USC by 22 (88-66); iHeart and Bleacher Nation both project USC 81-66. The case: USC scores 94.2 a game on 52% shooting and ranks 9th in defensive eFG%, while South Carolina has yet to play away from home. Alijah Arenas (21.3) leads USC; Juan Fernandez (15.2) leads South Carolina. Doc's Sports is the lone dissent, taking South Carolina without a line or reason. USC center Eric Reibe has been out all season (foot, offseason surgery; ClutchPoints Nov 19), so it is not new.",
     "picks": [
      {
       "source": "Bang The Book",
@@ -741,12 +741,35 @@
       "bet": "USC to win (4 stars)",
       "price": "USC -611",
       "note": "AI projects USC by 22"
+     },
+     {
+      "source": "iHeart (104.9 Fox Sports)",
+      "side": "fav",
+      "bet": "USC -10.5; Under 147.5",
+      "price": "USC -694",
+      "note": "No reason given; projects USC 81-66"
+     },
+     {
+      "source": "Doc's Sports",
+      "side": "dog",
+      "bet": "Take South Carolina (no line given)",
+      "note": "Stats recap only; no reason given"
      }
     ],
     "scores": [
      {
       "source": "CappersPicks (AI)",
       "fav": 88,
+      "dog": 66
+     },
+     {
+      "source": "iHeart (104.9 Fox Sports)",
+      "fav": 81,
+      "dog": 66
+     },
+     {
+      "source": "Bleacher Nation (computer pick)",
+      "fav": 81,
       "dog": 66
      }
     ],
@@ -755,7 +778,12 @@
       {
        "player": "Eric Reibe",
        "status": "Out",
-       "note": "C, foot (CappersPicks injury table, no date given)"
+       "note": "C, foot; re-aggravated offseason injury, rehab after surgery, has not played this season (ClutchPoints Nov 19, per 247Sports)"
+      },
+      {
+       "player": "Onyeka Joe Agu",
+       "status": "Out",
+       "note": "F (freshman), groin; has not played this season (ClutchPoints Nov 19)"
       }
      ],
      "dog": [
@@ -770,7 +798,7 @@
        "note": "F, knee/ACL (CappersPicks, no date given)"
       }
      ],
-     "note": "Only CappersPicks lists injuries; Bang The Book's status check (Nov 25 01:02 UTC) returned none for either team. Recheck in the morning run."
+     "note": "USC's two absences are season-long (out since before the opener), not new. South Carolina statuses come from one source without a date. No morning preview reported new injuries."
     },
     "sources": [
      {
@@ -788,9 +816,25 @@
      {
       "site": "BettingNews (odds, stats)",
       "url": "https://www.bettingnews.com/ncaab/matchup/2026-11-25-south_carolina_gamecocks-usc_trojans-n-1/"
+     },
+     {
+      "site": "iHeart (104.9 Fox Sports)",
+      "url": "https://1049foxsports.iheart.com/content/2026-11-25-usc-vs-south-carolina-predictions-nov-25/"
+     },
+     {
+      "site": "Bleacher Nation (SEC computer picks)",
+      "url": "https://www.bleachernation.com/picks/2026/11/25/sec-basketball-predictions-computer-picks-and-best-bets-november-25-2/"
+     },
+     {
+      "site": "Doc's Sports",
+      "url": "https://www.docsports.com/free-picks/ncaa-college-basketball/2026/south-carolina-gamecocks-vs-usc-trojans-prediction-11-25-2026-college-basketball-picks-best-bets-odds.html"
+     },
+     {
+      "site": "ClutchPoints (injuries)",
+      "url": "https://clutchpoints.com/ncaa-basketball/usc-basketball-news-trojans-unfortunate-injury-updates-tarleton-clash"
      }
     ],
-    "updated": "2026-11-24T22:30-08:00"
+    "updated": "2026-11-25T05:40-08:00"
    }
   },
   {
@@ -866,7 +910,7 @@
        "def": 88.72,
        "net": 11.25
       },
-      "opp_power_rank": 187
+      "opp_power_rank": 184
      },
      {
       "game_id": 401920735,
@@ -884,7 +928,7 @@
        "def": 81.38,
        "net": 33.78
       },
-      "opp_power_rank": 121
+      "opp_power_rank": 114
      },
      {
       "game_id": 401924704,
@@ -902,15 +946,15 @@
        "def": 88.21,
        "net": 26.91
       },
-      "opp_power_rank": 337
+      "opp_power_rank": 339
      }
     ],
     "is_fav": true,
     "spread_text": "-14.5",
     "b2b": false,
     "power": {
-     "rank": 103,
-     "bpi": 131,
+     "rank": 100,
+     "bpi": 123,
      "own_net": 79
     },
     "key_players": [
@@ -992,7 +1036,7 @@
        "def": 108.7,
        "net": -24.34
       },
-      "opp_power_rank": 209
+      "opp_power_rank": 194
      },
      {
       "game_id": 401923325,
@@ -1010,7 +1054,7 @@
        "def": 104.12,
        "net": -23.66
       },
-      "opp_power_rank": 179
+      "opp_power_rank": 171
      },
      {
       "game_id": 401921821,
@@ -1028,15 +1072,15 @@
        "def": 119.08,
        "net": -55.67
       },
-      "opp_power_rank": 53
+      "opp_power_rank": 54
      }
     ],
     "is_fav": false,
     "spread_text": "+14.5",
     "b2b": false,
     "power": {
-     "rank": 333,
-     "bpi": 331,
+     "rank": 335,
+     "bpi": 336,
      "own_net": 325
     },
     "key_players": [
@@ -1100,7 +1144,7 @@
       "rule": "Power",
       "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
       "pass": true,
-      "detail": "SPU: consensus #333, BPI #331, our net #325"
+      "detail": "SPU: consensus #335, BPI #336, our net #325"
      },
      {
       "rule": "Early",
@@ -1495,7 +1539,7 @@
     "matchup": "SPU @ COLU",
     "fav": "COLU",
     "dog": "SPU",
-    "summary": "Both sources read expect Columbia (5-1, first in the early Ivy table) to beat winless Saint Peter's (0-6) at home. Bang The Book takes Columbia on the moneyline at -1450, citing its shooting (47%, 83.0 points a game) and passing (17.3 assists); Saint Peter's averages 48.8 points on 31% shooting. Columbia has won five straight, including 75-53 over Northwestern. Scores24 also picks Columbia to win, but its editorial bet is Saint Peter's +15.5, noting the Peacocks covered +15.5 in 14 of their last 16 road games. Leaders: Gerard O'Keefe (16.5) for Columbia, Bryce Eaton (13.0) for Saint Peter's. No injuries reported.",
+    "summary": "All four sources expect Columbia (5-1) to beat winless Saint Peter's (0-6) at home. Dimers' model gives Columbia a 91.9% chance (-1450) and projects 73-59, though its value bet is Over 125.5. Bang The Book takes Columbia on the moneyline, citing its shooting (47%, 83.0 points a game) against a Saint Peter's offense scoring 48.8 on 31% shooting; Doc's Sports also takes Columbia. Columbia beat Boston 80-71 last time out; Saint Peter's lost 67-52 at Stony Brook, shooting 4 of 19 from three. The contrarian note: Scores24 picks Columbia to win but bets Saint Peter's +15.5, as the Peacocks covered that number in 14 of their last 16 road games. No injuries reported.",
     "picks": [
      {
       "source": "Bang The Book",
@@ -1505,17 +1549,36 @@
       "note": "Stronger shooting and passing; Saint Peter's scores 48.8 a game"
      },
      {
+      "source": "Dimers",
+      "side": "fav",
+      "bet": "Over 125.5 (-108); model favors Columbia",
+      "price": "Columbia -1450 (91.9%)",
+      "note": "Model gives the over 57.3% vs 51.9% implied"
+     },
+     {
+      "source": "Doc's Sports",
+      "side": "fav",
+      "bet": "Take Columbia (no line given)",
+      "note": "Stats recap; Saint Peter's 0-6 and shot 31.5% last game"
+     },
+     {
       "source": "Scores24",
       "side": "fav",
       "bet": "Columbia to win (1.08); editorial bet Saint Peter's +15.5 (-110)",
       "note": "Peacocks covered +15.5 in 14 of last 16 road games"
      }
     ],
-    "scores": [],
+    "scores": [
+     {
+      "source": "Dimers",
+      "fav": 73,
+      "dog": 59
+     }
+    ],
     "injuries": {
      "fav": [],
      "dog": [],
-     "note": "None reported: Bang The Book's status check (Nov 25 01:00 UTC) returned no player statuses; Scores24 has no injury section."
+     "note": "None reported: Bang The Book's status check (Nov 25 01:00 UTC) returned no statuses; Dimers, Doc's Sports and Scores24 mention none."
     },
     "sources": [
      {
@@ -1525,9 +1588,21 @@
      {
       "site": "Scores24",
       "url": "https://scores24.live/en/basketball/m-25-11-2026-columbia-lions-saint-peter-s-peacocks-prediction"
+     },
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/cbb/news/st-peters-vs-columbia-prediction-11-25-2026-ac"
+     },
+     {
+      "site": "Dimers (predictions page)",
+      "url": "https://www.dimers.com/cbb/predictions/2026_25_clmb_spc"
+     },
+     {
+      "site": "Doc's Sports",
+      "url": "https://www.docsports.com/free-picks/ncaa-college-basketball/2026/st-peters-peacocks-vs-columbia-lions-prediction-11-25-2026-college-basketball-picks-best-bets-odds.html"
      }
     ],
-    "updated": "2026-11-24T22:30-08:00"
+    "updated": "2026-11-25T05:40-08:00"
    }
   },
   {
@@ -1603,7 +1678,7 @@
        "def": 117.92,
        "net": -21.44
       },
-      "opp_power_rank": 41
+      "opp_power_rank": 42
      },
      {
       "game_id": 401920857,
@@ -1621,7 +1696,7 @@
        "def": 81.53,
        "net": 17.79
       },
-      "opp_power_rank": 174
+      "opp_power_rank": 178
      },
      {
       "game_id": 401920750,
@@ -1639,15 +1714,15 @@
        "def": 98.44,
        "net": -3.99
       },
-      "opp_power_rank": 252
+      "opp_power_rank": 266
      }
     ],
     "is_fav": true,
     "spread_text": "-15.5",
     "b2b": false,
     "power": {
-     "rank": 156,
-     "bpi": 152,
+     "rank": 157,
+     "bpi": 151,
      "own_net": 166
     },
     "key_players": [
@@ -1748,7 +1823,7 @@
        "def": 128.31,
        "net": -38.93
       },
-      "opp_power_rank": 8
+      "opp_power_rank": 4
      },
      {
       "game_id": 401918969,
@@ -1766,7 +1841,7 @@
        "def": 127.87,
        "net": -45.67
       },
-      "opp_power_rank": 35
+      "opp_power_rank": 36
      }
     ],
     "is_fav": false,
@@ -1774,7 +1849,7 @@
     "b2b": false,
     "power": {
      "rank": 355,
-     "bpi": 345,
+     "bpi": 343,
      "own_net": 354
     },
     "key_players": [
@@ -1837,7 +1912,7 @@
       "rule": "Power",
       "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
       "pass": true,
-      "detail": "PV: consensus #355, BPI #345, our net #354"
+      "detail": "PV: consensus #355, BPI #343, our net #354"
      },
      {
       "rule": "Early",
@@ -2233,25 +2308,41 @@
     "matchup": "PV @ MRSH",
     "fav": "MRSH",
     "dog": "PV",
-    "summary": "Previews are thin: no source read gives a moneyline pick or a predicted score. Both teams are 2-4; Marshall lost to Ohio State, Toledo, Youngstown State and North Carolina, while Prairie View has lost four straight. The iHeart preview takes Prairie View +16.5 against the spread without a reason; its numbers show Prairie View allowing 82.7 points (331st) and 48.4% shooting (338th), while Marshall shoots 42.7% (279th). Covers trends note Prairie View covered in 14 of its last 16 road games and Marshall in only 5 of its last 18 home games. Scores24 only makes first-half and total picks (Marshall first half, Over 151.5). Noah Otshudi (20.2) leads Marshall. No injuries reported.",
+    "summary": "Previews remain thin and no source makes a moneyline pick. Both teams are 2-4; Marshall has lost to Ohio State, Toledo, Youngstown State and North Carolina, and Prairie View has lost four straight. The two computer previews (iHeart and Bleacher Nation, same data provider) project Marshall 80-69, an 11-point win short of the 15.5 spread, and iHeart takes Prairie View +15.5 and the Under 151.5. Prairie View allows 82.7 points (331st) and 48.4% shooting (338th), but Marshall shoots only 42.7% (282nd). Covers trends: Prairie View covered in 14 of its last 16 road games, Marshall in 5 of its last 18 at home. Noah Otshudi (20.2) leads Marshall; Michael Eley (16.5) leads Prairie View. No injuries reported.",
     "picks": [
      {
-      "source": "iHeart (Ticket 760)",
+      "source": "iHeart (Fox Sports 1380)",
       "side": "dog",
-      "bet": "Prairie View +16.5 (spread pick only)",
-      "note": "No reason given"
+      "bet": "Prairie View +15.5 (spread pick only); Under 151.5",
+      "price": "Marshall -1587",
+      "note": "No reason given; projects Marshall 80-69"
      }
     ],
-    "scores": [],
+    "scores": [
+     {
+      "source": "iHeart (Fox Sports 1380)",
+      "fav": 80,
+      "dog": 69
+     },
+     {
+      "source": "Bleacher Nation (computer pick)",
+      "fav": 80,
+      "dog": 69
+     }
+    ],
     "injuries": {
      "fav": [],
      "dog": [],
-     "note": "None reported in the sources read (iHeart, Scores24, Covers, RotoWire)."
+     "note": "None reported in the sources read (iHeart, Bleacher Nation, Scores24, Covers; RotoWire's injury table did not load)."
     },
     "sources": [
      {
-      "site": "iHeart (Ticket 760)",
-      "url": "https://ticket760.iheart.com/content/2026-11-25-prairie-view-am-vs-marshall-predictions-nov-25/"
+      "site": "iHeart (Fox Sports 1380)",
+      "url": "https://khey1380.iheart.com/content/2026-11-25-prairie-view-am-vs-marshall-predictions-nov-25/"
+     },
+     {
+      "site": "Bleacher Nation (Sun Belt computer picks)",
+      "url": "https://www.bleachernation.com/picks/2026/11/25/sun-belt-basketball-predictions-computer-picks-and-best-bets-november-25-2/"
      },
      {
       "site": "Scores24",
@@ -2262,7 +2353,7 @@
       "url": "https://www.covers.com/sport/basketball/ncaab/teams/main/marshall-thundering-herd/picks"
      }
     ],
-    "updated": "2026-11-24T22:30-08:00"
+    "updated": "2026-11-25T05:40-08:00"
    }
   },
   {
@@ -2279,8 +2370,8 @@
     "spread": 16.5,
     "details": "HAW -16.5",
     "provider": "DraftKings",
-    "ml_home": null,
-    "ml_away": null
+    "ml_home": -1650,
+    "ml_away": 950
    },
    "home": {
     "id": "62",
@@ -2302,7 +2393,7 @@
       "efg": 324,
       "off": 278,
       "opp_efg": 242,
-      "def": 120,
+      "def": 119,
       "net": 211
      }
     },
@@ -2338,7 +2429,7 @@
        "def": 116.52,
        "net": -23.6
       },
-      "opp_power_rank": 172
+      "opp_power_rank": 161
      },
      {
       "game_id": 401929003,
@@ -2356,7 +2447,7 @@
        "def": 111.41,
        "net": -10.68
       },
-      "opp_power_rank": 195
+      "opp_power_rank": 222
      },
      {
       "game_id": 401929002,
@@ -2374,15 +2465,15 @@
        "def": 84.9,
        "net": 12.32
       },
-      "opp_power_rank": 177
+      "opp_power_rank": 182
      }
     ],
     "is_fav": true,
     "spread_text": "-16.5",
     "b2b": false,
     "power": {
-     "rank": 185,
-     "bpi": 167,
+     "rank": 186,
+     "bpi": 171,
      "own_net": 211
     },
     "key_players": [
@@ -2482,7 +2573,7 @@
        "def": 132.28,
        "net": -51.97
       },
-      "opp_power_rank": 58
+      "opp_power_rank": 49
      },
      {
       "game_id": 401911519,
@@ -2500,15 +2591,15 @@
        "def": 110.24,
        "net": -16.33
       },
-      "opp_power_rank": 190
+      "opp_power_rank": 185
      }
     ],
     "is_fav": false,
     "spread_text": "+16.5",
     "b2b": false,
     "power": {
-     "rank": 350,
-     "bpi": 343,
+     "rank": 343,
+     "bpi": 334,
      "own_net": 346
     },
     "key_players": [
@@ -2571,7 +2662,7 @@
       "rule": "Power",
       "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
       "pass": true,
-      "detail": "UIW: consensus #350, BPI #343, our net #346"
+      "detail": "UIW: consensus #343, BPI #334, our net #346"
      },
      {
       "rule": "Early",
@@ -2663,7 +2754,7 @@
        },
        {
         "metric": "def",
-        "rank": 120,
+        "rank": 119,
         "color": "yellow"
        }
       ]
@@ -2842,7 +2933,7 @@
         "role": "fav",
         "window": "season",
         "metric": "def",
-        "rank": 120,
+        "rank": 119,
         "color": "yellow"
        },
        {
@@ -2972,8 +3063,8 @@
     "spread": 11.5,
     "details": "DART -11.5",
     "provider": "DraftKings",
-    "ml_home": -800,
-    "ml_away": 550
+    "ml_home": -750,
+    "ml_away": 525
    },
    "home": {
     "id": "159",
@@ -2993,7 +3084,7 @@
      "poss_per_game": 69.7,
      "ranks": {
       "efg": 113,
-      "off": 168,
+      "off": 169,
       "opp_efg": 273,
       "def": 213,
       "net": 190
@@ -3049,7 +3140,7 @@
        "def": 129.47,
        "net": -21.58
       },
-      "opp_power_rank": 187
+      "opp_power_rank": 184
      },
      {
       "game_id": 401920234,
@@ -3067,15 +3158,15 @@
        "def": 110.28,
        "net": 13.06
       },
-      "opp_power_rank": 281
+      "opp_power_rank": 280
      }
     ],
     "is_fav": true,
     "spread_text": "-11.5",
     "b2b": false,
     "power": {
-     "rank": 228,
-     "bpi": 260,
+     "rank": 223,
+     "bpi": 259,
      "own_net": 190
     },
     "key_players": [
@@ -3157,7 +3248,7 @@
        "def": 113.38,
        "net": -17.67
       },
-      "opp_power_rank": 211
+      "opp_power_rank": 229
      },
      {
       "game_id": 401911309,
@@ -3175,7 +3266,7 @@
        "def": 101.77,
        "net": -15.13
       },
-      "opp_power_rank": 223
+      "opp_power_rank": 224
      },
      {
       "game_id": 401921287,
@@ -3193,15 +3284,15 @@
        "def": 84.03,
        "net": -2.71
       },
-      "opp_power_rank": 281
+      "opp_power_rank": 280
      }
     ],
     "is_fav": false,
     "spread_text": "+11.5",
     "b2b": false,
     "power": {
-     "rank": 347,
-     "bpi": 360,
+     "rank": 345,
+     "bpi": 358,
      "own_net": 324
     },
     "key_players": [
@@ -3263,7 +3354,7 @@
       "rule": "Power",
       "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
       "pass": true,
-      "detail": "HC: consensus #347, BPI #360, our net #324"
+      "detail": "HC: consensus #345, BPI #358, our net #324"
      },
      {
       "rule": "Early",
@@ -3345,7 +3436,7 @@
        },
        {
         "metric": "off",
-        "rank": 168,
+        "rank": 169,
         "color": "red"
        },
        {
@@ -3454,7 +3545,7 @@
         "role": "fav",
         "window": "season",
         "metric": "off",
-        "rank": 168,
+        "rank": 169,
         "color": "red"
        },
        {
@@ -3651,9 +3742,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNCAAMBGAME-26NOV25HCDART",
-    "fav_prob": 0.855,
+    "fav_prob": 0.86,
     "bid": 0.85,
-    "ask": 0.86
+    "ask": 0.87
    }
   },
   {
@@ -3706,7 +3797,7 @@
      "poss_per_game": 67.2,
      "ranks": {
       "efg": 282,
-      "off": 176,
+      "off": 177,
       "opp_efg": 90,
       "def": 28,
       "net": 74
@@ -3729,7 +3820,7 @@
        "def": 85.72,
        "net": 15.21
       },
-      "opp_power_rank": 91
+      "opp_power_rank": 87
      },
      {
       "game_id": 401920075,
@@ -3747,7 +3838,7 @@
        "def": 89.3,
        "net": 34.23
       },
-      "opp_power_rank": 316
+      "opp_power_rank": 307
      },
      {
       "game_id": 401920074,
@@ -3765,15 +3856,15 @@
        "def": 99.92,
        "net": -1.61
       },
-      "opp_power_rank": 218
+      "opp_power_rank": 207
      }
     ],
     "is_fav": true,
     "spread_text": "-15.5",
     "b2b": false,
     "power": {
-     "rank": 79,
-     "bpi": 98,
+     "rank": 77,
+     "bpi": 96,
      "own_net": 58
     },
     "key_players": [
@@ -3855,7 +3946,7 @@
        "def": 104.46,
        "net": -8.47
       },
-      "opp_power_rank": 174
+      "opp_power_rank": 178
      },
      {
       "game_id": 401922047,
@@ -3873,7 +3964,7 @@
        "def": 102.22,
        "net": 8.07
       },
-      "opp_power_rank": 257
+      "opp_power_rank": 261
      },
      {
       "game_id": 401922046,
@@ -3898,8 +3989,8 @@
     "spread_text": "+15.5",
     "b2b": false,
     "power": {
-     "rank": 203,
-     "bpi": 218,
+     "rank": 202,
+     "bpi": 206,
      "own_net": 200
     },
     "key_players": [
@@ -3962,7 +4053,7 @@
       "rule": "Power",
       "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
       "pass": true,
-      "detail": "LONG: consensus #203, BPI #218, our net #200"
+      "detail": "LONG: consensus #202, BPI #206, our net #200"
      },
      {
       "rule": "Early",
@@ -4070,7 +4161,7 @@
        },
        {
         "metric": "off",
-        "rank": 176,
+        "rank": 177,
         "color": "red"
        },
        {
@@ -4160,7 +4251,7 @@
         "role": "fav",
         "window": "last3",
         "metric": "off",
-        "rank": 176,
+        "rank": 177,
         "color": "red"
        },
        {
@@ -4308,7 +4399,7 @@
       "label": "Offense vs offense",
       "fav_metric": "off",
       "dog_metric": "off",
-      "fav_rank": 176,
+      "fav_rank": 177,
       "dog_rank": 222,
       "counts": true,
       "met": false
@@ -4338,7 +4429,7 @@
       "label": "Offense vs defense",
       "fav_metric": "off",
       "dog_metric": "def",
-      "fav_rank": 176,
+      "fav_rank": 177,
       "dog_rank": 163,
       "counts": false,
       "met": false
@@ -4368,8 +4459,8 @@
     "spread": 11.5,
     "details": "RICH -11.5",
     "provider": "DraftKings",
-    "ml_home": null,
-    "ml_away": null
+    "ml_home": -800,
+    "ml_away": 550
    },
    "home": {
     "id": "257",
@@ -4391,7 +4482,7 @@
       "efg": 62,
       "off": 147,
       "opp_efg": 213,
-      "def": 174,
+      "def": 173,
       "net": 151
      }
     },
@@ -4427,7 +4518,7 @@
        "def": 116.31,
        "net": 5.29
       },
-      "opp_power_rank": 142
+      "opp_power_rank": 143
      },
      {
       "game_id": 401927396,
@@ -4445,7 +4536,7 @@
        "def": 117.33,
        "net": -20.03
       },
-      "opp_power_rank": 106
+      "opp_power_rank": 108
      },
      {
       "game_id": 401911240,
@@ -4463,7 +4554,7 @@
        "def": 121.34,
        "net": -24.27
       },
-      "opp_power_rank": 57
+      "opp_power_rank": 61
      }
     ],
     "is_fav": true,
@@ -4471,7 +4562,7 @@
     "b2b": false,
     "power": {
      "rank": 126,
-     "bpi": 109,
+     "bpi": 111,
      "own_net": 151
     },
     "key_players": [
@@ -4552,7 +4643,7 @@
        "def": 119.65,
        "net": -31.27
       },
-      "opp_power_rank": 52
+      "opp_power_rank": 48
      },
      {
       "game_id": 401925718,
@@ -4595,8 +4686,8 @@
     "spread_text": "+11.5",
     "b2b": false,
     "power": {
-     "rank": 264,
-     "bpi": 213,
+     "rank": 265,
+     "bpi": 210,
      "own_net": 316
     },
     "key_players": [
@@ -4659,7 +4750,7 @@
       "rule": "Power",
       "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
       "pass": true,
-      "detail": "BCU: consensus #264, BPI #213, our net #316"
+      "detail": "BCU: consensus #265, BPI #210, our net #316"
      },
      {
       "rule": "Early",
@@ -4750,7 +4841,7 @@
        },
        {
         "metric": "def",
-        "rank": 174,
+        "rank": 173,
         "color": "red"
        }
       ]
@@ -4929,7 +5020,7 @@
         "role": "fav",
         "window": "season",
         "metric": "def",
-        "rank": 174,
+        "rank": 173,
         "color": "red"
        },
        {
@@ -5046,9 +5137,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNCAAMBGAME-26NOV25COOKRICH",
-    "fav_prob": 0.845,
-    "bid": 0.84,
-    "ask": 0.85
+    "fav_prob": 0.855,
+    "bid": 0.85,
+    "ask": 0.86
    }
   },
   {
@@ -5124,7 +5215,7 @@
        "def": 93.08,
        "net": 17.06
       },
-      "opp_power_rank": 131
+      "opp_power_rank": 139
      },
      {
       "game_id": 401928843,
@@ -5160,15 +5251,15 @@
        "def": 109.78,
        "net": 11.26
       },
-      "opp_power_rank": 263
+      "opp_power_rank": 256
      }
     ],
     "is_fav": true,
     "spread_text": "-14.5",
     "b2b": false,
     "power": {
-     "rank": 105,
-     "bpi": 129,
+     "rank": 104,
+     "bpi": 115,
      "own_net": 97
     },
     "key_players": [
@@ -5268,7 +5359,7 @@
        "def": 121.49,
        "net": -4.61
       },
-      "opp_power_rank": 308
+      "opp_power_rank": 301
      },
      {
       "game_id": 401928841,
@@ -5286,15 +5377,15 @@
        "def": 76.1,
        "net": 24.85
       },
-      "opp_power_rank": 205
+      "opp_power_rank": 196
      }
     ],
     "is_fav": false,
     "spread_text": "+14.5",
     "b2b": false,
     "power": {
-     "rank": 207,
-     "bpi": 242,
+     "rank": 214,
+     "bpi": 254,
      "own_net": 181
     },
     "key_players": [
@@ -5357,7 +5448,7 @@
       "rule": "Power",
       "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
       "pass": true,
-      "detail": "EKU: consensus #207, BPI #242, our net #181"
+      "detail": "EKU: consensus #214, BPI #254, our net #181"
      },
      {
       "rule": "Early",
@@ -5764,8 +5855,8 @@
     "spread": 10.5,
     "details": "PEPP -10.5",
     "provider": "DraftKings",
-    "ml_home": -520,
-    "ml_away": 390
+    "ml_home": -575,
+    "ml_away": 425
    },
    "home": {
     "id": "2492",
@@ -5778,16 +5869,16 @@
     "games": 4,
     "season": {
      "efg": 58.33,
-     "opp_efg": 54.69,
-     "off": 117.49,
-     "def": 113.94,
-     "net": 3.55,
-     "poss_per_game": 70.4,
+     "opp_efg": 54.44,
+     "off": 118.11,
+     "def": 114.55,
+     "net": 3.57,
+     "poss_per_game": 70.1,
      "ranks": {
       "efg": 29,
-      "off": 67,
-      "opp_efg": 288,
-      "def": 271,
+      "off": 64,
+      "opp_efg": 281,
+      "def": 278,
       "net": 148
      }
     },
@@ -5823,7 +5914,7 @@
        "def": 90.76,
        "net": 39.52
       },
-      "opp_power_rank": 244
+      "opp_power_rank": 247
      },
      {
       "game_id": 401935675,
@@ -5859,15 +5950,15 @@
        "def": 131.37,
        "net": -11.94
       },
-      "opp_power_rank": 73
+      "opp_power_rank": 71
      }
     ],
     "is_fav": true,
     "spread_text": "-10.5",
     "b2b": false,
     "power": {
-     "rank": 140,
-     "bpi": 142,
+     "rank": 135,
+     "bpi": 128,
      "own_net": 148
     },
     "key_players": [
@@ -5912,7 +6003,7 @@
      "poss_per_game": 71.4,
      "ranks": {
       "efg": 17,
-      "off": 65,
+      "off": 66,
       "opp_efg": 216,
       "def": 230,
       "net": 125
@@ -5950,7 +6041,7 @@
        "def": 115.07,
        "net": -4.11
       },
-      "opp_power_rank": 259
+      "opp_power_rank": 255
      },
      {
       "game_id": 401920136,
@@ -5968,7 +6059,7 @@
        "def": 99.32,
        "net": 5.76
       },
-      "opp_power_rank": 262
+      "opp_power_rank": 270
      },
      {
       "game_id": 401920135,
@@ -5986,15 +6077,15 @@
        "def": 113.35,
        "net": 10.93
       },
-      "opp_power_rank": 313
+      "opp_power_rank": 308
      }
     ],
     "is_fav": false,
     "spread_text": "+10.5",
     "b2b": false,
     "power": {
-     "rank": 192,
-     "bpi": 266,
+     "rank": 189,
+     "bpi": 261,
      "own_net": 125
     },
     "key_players": [
@@ -6045,7 +6136,7 @@
       "rule": "B",
       "name": "Last-3 mismatch (3 of 4) with a season floor",
       "pass": false,
-      "detail": "\u2717 PEPP last-3 top 50 in 1 of 4 \u00b7 \u2717 CSUB last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2717 PEPP season outside 1-182: Opp eFG% #288, Def Eff #271 \u00b7 \u2717 CSUB season top 50: eFG% #17"
+      "detail": "\u2717 PEPP last-3 top 50 in 1 of 4 \u00b7 \u2717 CSUB last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2717 PEPP season outside 1-182: Opp eFG% #281, Def Eff #278 \u00b7 \u2717 CSUB season top 50: eFG% #17"
      },
      {
       "rule": "Injury",
@@ -6057,7 +6148,7 @@
       "rule": "Power",
       "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
       "pass": true,
-      "detail": "CSUB: consensus #192, BPI #266, our net #125"
+      "detail": "CSUB: consensus #189, BPI #261, our net #125"
      },
      {
       "rule": "Early",
@@ -6139,17 +6230,17 @@
        },
        {
         "metric": "off",
-        "rank": 67,
+        "rank": 64,
         "color": "yellow"
        },
        {
         "metric": "opp_efg",
-        "rank": 288,
+        "rank": 281,
         "color": "red"
        },
        {
         "metric": "def",
-        "rank": 271,
+        "rank": 278,
         "color": "red"
        }
       ]
@@ -6203,7 +6294,7 @@
        },
        {
         "metric": "off",
-        "rank": 65,
+        "rank": 66,
         "color": "yellow"
        }
       ]
@@ -6248,7 +6339,7 @@
         "role": "fav",
         "window": "season",
         "metric": "off",
-        "rank": 67,
+        "rank": 64,
         "color": "yellow"
        },
        {
@@ -6328,7 +6419,7 @@
         "role": "fav",
         "window": "season",
         "metric": "def",
-        "rank": 271,
+        "rank": 278,
         "color": "red"
        },
        {
@@ -6344,7 +6435,7 @@
         "role": "dog",
         "window": "season",
         "metric": "off",
-        "rank": 65,
+        "rank": 66,
         "color": "yellow"
        },
        {
@@ -6368,7 +6459,7 @@
         "role": "fav",
         "window": "season",
         "metric": "opp_efg",
-        "rank": 288,
+        "rank": 281,
         "color": "red"
        },
        {
@@ -6464,8 +6555,8 @@
     "spread": 10.5,
     "details": "STBK -10.5",
     "provider": "DraftKings",
-    "ml_home": -575,
-    "ml_away": 425
+    "ml_home": -600,
+    "ml_away": 440
    },
    "home": {
     "id": "2619",
@@ -6523,7 +6614,7 @@
        "def": 84.36,
        "net": 24.34
       },
-      "opp_power_rank": 333
+      "opp_power_rank": 335
      },
      {
       "game_id": 401926834,
@@ -6559,15 +6650,15 @@
        "def": 110.55,
        "net": -16.02
       },
-      "opp_power_rank": 160
+      "opp_power_rank": 159
      }
     ],
     "is_fav": true,
     "spread_text": "-10.5",
     "b2b": false,
     "power": {
-     "rank": 209,
-     "bpi": 216,
+     "rank": 194,
+     "bpi": 184,
      "own_net": 209
     },
     "key_players": [
@@ -6627,7 +6718,7 @@
       "efg": 255,
       "off": 323,
       "opp_efg": 11,
-      "def": 110,
+      "def": 109,
       "net": 252
      }
     },
@@ -6635,7 +6726,7 @@
      {
       "game_id": 401929035,
       "date": "2026-11-24",
-      "site": "neutral",
+      "site": "home",
       "opp_id": 2441,
       "opp": "NHVN",
       "d1_opp": true,
@@ -6648,7 +6739,7 @@
        "def": 94.44,
        "net": -4.5
       },
-      "opp_power_rank": 314
+      "opp_power_rank": 315
      },
      {
       "game_id": 401927388,
@@ -6666,7 +6757,7 @@
        "def": 112.29,
        "net": -9.7
       },
-      "opp_power_rank": 226
+      "opp_power_rank": 243
      },
      {
       "game_id": 401929040,
@@ -6684,22 +6775,21 @@
        "def": 98.62,
        "net": -16.19
       },
-      "opp_power_rank": 351
+      "opp_power_rank": 350
      }
     ],
     "is_fav": false,
     "spread_text": "+10.5",
     "b2b": true,
     "power": {
-     "rank": 305,
-     "bpi": 267,
+     "rank": 312,
+     "bpi": 275,
      "own_net": 331
     },
     "key_players": [
      "Xavier Spencer",
      "Shamiere Green",
      "Marsai Mason",
-     "Malek Archie",
      "Makhan Diouf",
      "Dom Clay",
      "Matar Diop"
@@ -6707,11 +6797,11 @@
     "top_scorers": [
      {
       "name": "Marsai Mason",
-      "ppg": 11.5
+      "ppg": 12.0
      },
      {
       "name": "Shamiere Green",
-      "ppg": 11.5
+      "ppg": 11.3
      }
     ],
     "injuries": [],
@@ -6756,7 +6846,7 @@
       "rule": "Power",
       "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
       "pass": true,
-      "detail": "LIN: consensus #305, BPI #267, our net #331"
+      "detail": "LIN: consensus #312, BPI #275, our net #331"
      },
      {
       "rule": "Early",
@@ -6919,7 +7009,7 @@
        },
        {
         "metric": "def",
-        "rank": 110,
+        "rank": 109,
         "color": "yellow"
        },
        {
@@ -6971,7 +7061,7 @@
         "role": "dog",
         "window": "last3",
         "metric": "def",
-        "rank": 110,
+        "rank": 109,
         "color": "yellow"
        }
       ]
@@ -7114,7 +7204,7 @@
       "fav_metric": "def",
       "dog_metric": "def",
       "fav_rank": 171,
-      "dog_rank": 110,
+      "dog_rank": 109,
       "counts": true,
       "met": false
      },
@@ -7134,7 +7224,7 @@
       "fav_metric": "off",
       "dog_metric": "def",
       "fav_rank": 232,
-      "dog_rank": 110,
+      "dog_rank": 109,
       "counts": false,
       "met": false
      }
@@ -7144,723 +7234,26 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNCAAMBGAME-26NOV25LINWSTON",
-    "fav_prob": 0.825,
-    "bid": 0.82,
-    "ask": 0.83
-   }
-  },
-  {
-   "id": "401911028",
-   "tip_utc": "2026-11-26T00:00:00+00:00",
-   "tip_pt": "4:00 PM PT",
-   "day_et": "2026-11-25",
-   "state": "pre",
-   "detail": "11/25 - 7:00 PM EST",
-   "neutral": false,
-   "venue": "Kohl Center",
-   "favorite": "home",
-   "spread": {
-    "spread": 19.5,
-    "details": "WIS -19.5",
-    "provider": "DraftKings",
-    "ml_home": -3600,
-    "ml_away": 1500
-   },
-   "home": {
-    "id": "275",
-    "abbr": "WIS",
-    "name": "Wisconsin",
-    "display": "Wisconsin Badgers",
-    "mascot": "Badgers",
-    "record": "4-2",
-    "l3_record": "1-2",
-    "games": 6,
-    "season": {
-     "efg": 50.69,
-     "opp_efg": 43.28,
-     "off": 106.61,
-     "def": 94.95,
-     "net": 11.66,
-     "poss_per_game": 70.0,
-     "ranks": {
-      "efg": 192,
-      "off": 180,
-      "opp_efg": 23,
-      "def": 51,
-      "net": 102
-     }
-    },
-    "last3": {
-     "efg": 48.3,
-     "opp_efg": 50.0,
-     "off": 100.99,
-     "def": 107.69,
-     "net": -6.7,
-     "poss_per_game": 69.6,
-     "ranks": {
-      "efg": 249,
-      "off": 256,
-      "opp_efg": 152,
-      "def": 175,
-      "net": 235
-     }
-    },
-    "last3_games": [
-     {
-      "game_id": 401921692,
-      "date": "2026-11-20",
-      "site": "away",
-      "opp_id": 93,
-      "opp": "MUR",
-      "d1_opp": true,
-      "pts": 53,
-      "opp_pts": 70,
-      "metrics": {
-       "efg": 40.52,
-       "opp_efg": 46.72,
-       "off": 76.94,
-       "def": 101.61,
-       "net": -24.68
-      },
-      "opp_power_rank": 62
-     },
-     {
-      "game_id": 401920888,
-      "date": "2026-11-19",
-      "site": "home",
-      "opp_id": 2550,
-      "opp": "HALL",
-      "d1_opp": true,
-      "pts": 69,
-      "opp_pts": 74,
-      "metrics": {
-       "efg": 54.63,
-       "opp_efg": 55.36,
-       "off": 106.77,
-       "def": 114.51,
-       "net": -7.74
-      },
-      "opp_power_rank": 72
-     },
-     {
-      "game_id": 401920896,
-      "date": "2026-11-15",
-      "site": "home",
-      "opp_id": 324,
-      "opp": "CCU",
-      "d1_opp": true,
-      "pts": 89,
-      "opp_pts": 81,
-      "metrics": {
-       "efg": 50.0,
-       "opp_efg": 48.61,
-       "off": 118.0,
-       "def": 107.39,
-       "net": 10.61
-      },
-      "opp_power_rank": 296
-     }
-    ],
-    "is_fav": true,
-    "spread_text": "-19.5",
-    "b2b": false,
-    "power": {
-     "rank": 85,
-     "bpi": 67,
-     "own_net": 102
-    },
-    "key_players": [
-     "Owen Foxwell",
-     "Braeden Carrington",
-     "Nolan Winter",
-     "Austin Rapp",
-     "Eian Elmer",
-     "Victory Onuetu"
-    ],
-    "top_scorers": [
-     {
-      "name": "Owen Foxwell",
-      "ppg": 15.0
-     },
-     {
-      "name": "Braeden Carrington",
-      "ppg": 12.7
-     }
-    ],
-    "injuries": [],
-    "injuries_known": false,
-    "key_out": [],
-    "key_questionable": []
-   },
-   "away": {
-    "id": "111",
-    "abbr": "NE",
-    "name": "Northeastern",
-    "display": "Northeastern Huskies",
-    "mascot": "Huskies",
-    "record": "2-4",
-    "l3_record": "1-2",
-    "games": 6,
-    "season": {
-     "efg": 54.23,
-     "opp_efg": 55.68,
-     "off": 108.83,
-     "def": 117.56,
-     "net": -8.73,
-     "poss_per_game": 72.6,
-     "ranks": {
-      "efg": 84,
-      "off": 159,
-      "opp_efg": 312,
-      "def": 309,
-      "net": 230
-     }
-    },
-    "last3": {
-     "efg": 56.15,
-     "opp_efg": 55.14,
-     "off": 114.68,
-     "def": 118.93,
-     "net": -4.25,
-     "poss_per_game": 70.6,
-     "ranks": {
-      "efg": 81,
-      "off": 107,
-      "opp_efg": 281,
-      "def": 313,
-      "net": 216
-     }
-    },
-    "last3_games": [
-     {
-      "game_id": 401919849,
-      "date": "2026-11-21",
-      "site": "away",
-      "opp_id": 284,
-      "opp": "STO",
-      "d1_opp": true,
-      "pts": 82,
-      "opp_pts": 95,
-      "metrics": {
-       "efg": 55.0,
-       "opp_efg": 60.53,
-       "off": 112.81,
-       "def": 130.7,
-       "net": -17.88
-      },
-      "opp_power_rank": 354
-     },
-     {
-      "game_id": 401902280,
-      "date": "2026-11-19",
-      "site": "away",
-      "opp_id": 2086,
-      "opp": "BTLR",
-      "d1_opp": true,
-      "pts": 77,
-      "opp_pts": 84,
-      "metrics": {
-       "efg": 47.69,
-       "opp_efg": 55.26,
-       "off": 101.8,
-       "def": 111.06,
-       "net": -9.25
-      },
-      "opp_power_rank": 93
-     },
-     {
-      "game_id": 401920747,
-      "date": "2026-11-13",
-      "site": "home",
-      "opp_id": 43,
-      "opp": "YALE",
-      "d1_opp": true,
-      "pts": 84,
-      "opp_pts": 73,
-      "metrics": {
-       "efg": 67.59,
-       "opp_efg": 50.7,
-       "off": 132.15,
-       "def": 114.85,
-       "net": 17.31
-      },
-      "opp_power_rank": 182
-     }
-    ],
-    "is_fav": false,
-    "spread_text": "+19.5",
-    "b2b": false,
-    "power": {
-     "rank": 229,
-     "bpi": 222,
-     "own_net": 230
-    },
-    "key_players": [
-     "Dorian Grosber",
-     "Mike Loughnane",
-     "Rashad King",
-     "Louis Bond",
-     "Brayden Young"
-    ],
-    "top_scorers": [
-     {
-      "name": "Rashad King",
-      "ppg": 24.0
-     },
-     {
-      "name": "Louis Bond",
-      "ppg": 19.0
-     }
-    ],
-    "injuries": [],
-    "injuries_known": false,
-    "key_out": [],
-    "key_questionable": []
-   },
-   "scoring": {
-    "scored": true,
-    "fav": "WIS",
-    "dog": "NE",
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "qualifiers": [],
-    "would_qualify": false,
-    "early": true,
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Analysis Score 28+",
-      "pass": false,
-      "detail": "Score 12 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 WIS last-3 top 50 in 0 of 4 \u00b7 \u2717 NE last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2717 WIS season outside 1-182: eFG% #192 \u00b7 \u2713 NE season top 50 in none"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key player out or doubtful for the favorite",
-      "pass": true,
-      "detail": "No injury list from ESPN (warning only; health assumed full)"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
-      "pass": true,
-      "detail": "NE: consensus #229, BPI #222, our net #230"
-     },
-     {
-      "rule": "Early",
-      "name": "qualifiers held on the Watch list until Dec 15",
-      "pass": true,
-      "detail": "Not a qualifier yet"
-     }
-    ],
-    "fails": [
-     "Score 12 (watch list from 18, qualifies at 28)"
-    ],
-    "warnings": [
-     "No injury list for WIS: check news before betting"
-    ],
-    "score": 12,
-    "max": 40,
-    "band": "red",
-    "parts": [
-     {
-      "key": "fav_metrics",
-      "label": "Favorite metrics",
-      "points": 1,
-      "max": 16
-     },
-     {
-      "key": "dog_metrics",
-      "label": "Underdog metrics",
-      "points": 8,
-      "max": 16
-     },
-     {
-      "key": "net",
-      "label": "Net rating",
-      "points": 0,
-      "max": 2
-     },
-     {
-      "key": "form",
-      "label": "Last-3 form",
-      "points": 0,
-      "max": 2
-     },
-     {
-      "key": "power",
-      "label": "Power rank",
-      "points": 0,
-      "max": 1
-     },
-     {
-      "key": "home",
-      "label": "Home court",
-      "points": 1,
-      "max": 1
-     },
-     {
-      "key": "health",
-      "label": "Health",
-      "points": 1,
-      "max": 1
-     },
-     {
-      "key": "rest",
-      "label": "Rest",
-      "points": 1,
-      "max": 1
-     }
-    ],
-    "pills": [
-     {
-      "team": "WIS",
-      "role": "fav",
-      "window": "season",
-      "cells": [
-       {
-        "metric": "efg",
-        "rank": 192,
-        "color": "red"
-       },
-       {
-        "metric": "off",
-        "rank": 180,
-        "color": "red"
-       },
-       {
-        "metric": "opp_efg",
-        "rank": 23,
-        "color": "green"
-       },
-       {
-        "metric": "def",
-        "rank": 51,
-        "color": "yellow"
-       }
-      ]
-     },
-     {
-      "team": "WIS",
-      "role": "fav",
-      "window": "last3",
-      "cells": [
-       {
-        "metric": "efg",
-        "rank": 249,
-        "color": "red"
-       },
-       {
-        "metric": "off",
-        "rank": 256,
-        "color": "red"
-       },
-       {
-        "metric": "opp_efg",
-        "rank": 152,
-        "color": "red"
-       },
-       {
-        "metric": "def",
-        "rank": 175,
-        "color": "red"
-       }
-      ]
-     },
-     {
-      "team": "NE",
-      "role": "dog",
-      "window": "season",
-      "cells": [
-       {
-        "metric": "opp_efg",
-        "rank": 312,
-        "color": "green"
-       },
-       {
-        "metric": "def",
-        "rank": 309,
-        "color": "green"
-       },
-       {
-        "metric": "efg",
-        "rank": 84,
-        "color": "yellow"
-       },
-       {
-        "metric": "off",
-        "rank": 159,
-        "color": "green"
-       }
-      ]
-     },
-     {
-      "team": "NE",
-      "role": "dog",
-      "window": "last3",
-      "cells": [
-       {
-        "metric": "opp_efg",
-        "rank": 281,
-        "color": "green"
-       },
-       {
-        "metric": "def",
-        "rank": 313,
-        "color": "green"
-       },
-       {
-        "metric": "efg",
-        "rank": 81,
-        "color": "yellow"
-       },
-       {
-        "metric": "off",
-        "rank": 107,
-        "color": "yellow"
-       }
-      ]
-     }
-    ],
-    "grid": [
-     {
-      "key": "off_def",
-      "label": "Offense vs defense",
-      "fav_metric": "off",
-      "dog_metric": "def",
-      "cells": [
-       {
-        "team": "WIS",
-        "role": "fav",
-        "window": "season",
-        "metric": "off",
-        "rank": 180,
-        "color": "red"
-       },
-       {
-        "team": "WIS",
-        "role": "fav",
-        "window": "last3",
-        "metric": "off",
-        "rank": 256,
-        "color": "red"
-       },
-       {
-        "team": "NE",
-        "role": "dog",
-        "window": "season",
-        "metric": "def",
-        "rank": 309,
-        "color": "green"
-       },
-       {
-        "team": "NE",
-        "role": "dog",
-        "window": "last3",
-        "metric": "def",
-        "rank": 313,
-        "color": "green"
-       }
-      ]
-     },
-     {
-      "key": "shoot",
-      "label": "Shooting vs shot defense",
-      "fav_metric": "efg",
-      "dog_metric": "opp_efg",
-      "cells": [
-       {
-        "team": "WIS",
-        "role": "fav",
-        "window": "season",
-        "metric": "efg",
-        "rank": 192,
-        "color": "red"
-       },
-       {
-        "team": "WIS",
-        "role": "fav",
-        "window": "last3",
-        "metric": "efg",
-        "rank": 249,
-        "color": "red"
-       },
-       {
-        "team": "NE",
-        "role": "dog",
-        "window": "season",
-        "metric": "opp_efg",
-        "rank": 312,
-        "color": "green"
-       },
-       {
-        "team": "NE",
-        "role": "dog",
-        "window": "last3",
-        "metric": "opp_efg",
-        "rank": 281,
-        "color": "green"
-       }
-      ]
-     },
-     {
-      "key": "def_off",
-      "label": "Defense vs offense",
-      "fav_metric": "def",
-      "dog_metric": "off",
-      "cells": [
-       {
-        "team": "WIS",
-        "role": "fav",
-        "window": "season",
-        "metric": "def",
-        "rank": 51,
-        "color": "yellow"
-       },
-       {
-        "team": "WIS",
-        "role": "fav",
-        "window": "last3",
-        "metric": "def",
-        "rank": 175,
-        "color": "red"
-       },
-       {
-        "team": "NE",
-        "role": "dog",
-        "window": "season",
-        "metric": "off",
-        "rank": 159,
-        "color": "green"
-       },
-       {
-        "team": "NE",
-        "role": "dog",
-        "window": "last3",
-        "metric": "off",
-        "rank": 107,
-        "color": "yellow"
-       }
-      ]
-     },
-     {
-      "key": "shotd",
-      "label": "Shot defense vs shooting",
-      "fav_metric": "opp_efg",
-      "dog_metric": "efg",
-      "cells": [
-       {
-        "team": "WIS",
-        "role": "fav",
-        "window": "season",
-        "metric": "opp_efg",
-        "rank": 23,
-        "color": "green"
-       },
-       {
-        "team": "WIS",
-        "role": "fav",
-        "window": "last3",
-        "metric": "opp_efg",
-        "rank": 152,
-        "color": "red"
-       },
-       {
-        "team": "NE",
-        "role": "dog",
-        "window": "season",
-        "metric": "efg",
-        "rank": 84,
-        "color": "yellow"
-       },
-       {
-        "team": "NE",
-        "role": "dog",
-        "window": "last3",
-        "metric": "efg",
-        "rank": 81,
-        "color": "yellow"
-       }
-      ]
-     }
-    ],
-    "matchups": [
-     {
-      "key": "off_off",
-      "label": "Offense vs offense",
-      "fav_metric": "off",
-      "dog_metric": "off",
-      "fav_rank": 256,
-      "dog_rank": 107,
-      "counts": true,
-      "met": false
-     },
-     {
-      "key": "def_def",
-      "label": "Defense vs defense",
-      "fav_metric": "def",
-      "dog_metric": "def",
-      "fav_rank": 175,
-      "dog_rank": 313,
-      "counts": true,
-      "met": false
-     },
-     {
-      "key": "def_off",
-      "label": "Defense vs offense",
-      "fav_metric": "def",
-      "dog_metric": "off",
-      "fav_rank": 175,
-      "dog_rank": 107,
-      "counts": true,
-      "met": false
-     },
-     {
-      "key": "off_def",
-      "label": "Offense vs defense",
-      "fav_metric": "off",
-      "dog_metric": "def",
-      "fav_rank": 256,
-      "dog_rank": 313,
-      "counts": false,
-      "met": false
-     }
-    ]
-   },
-   "summary": "No track: score 12 (watch list from 18, qualifies at 28). WIS 1-2 in its last 3, NE 1-2.",
-   "lean": "No lean",
-   "kalshi": {
-    "event": "KXNCAAMBGAME-26NOV25NEWIS",
-    "fav_prob": 0.965,
-    "bid": 0.96,
-    "ask": 0.97
+    "fav_prob": 0.835,
+    "bid": 0.83,
+    "ask": 0.84
    }
   }
  ],
  "notes": [],
- "other_games": 42,
+ "other_games": 45,
  "no_line_games": 3,
  "summary": {
   "date": "2026-11-25",
   "date_label": "Wednesday, November 25",
   "kind": "board",
-  "games": 11,
+  "games": 10,
   "qualified": 0,
   "watch": 3,
   "would_qualify": 0,
   "early": true,
   "cutover": "Dec 15",
-  "other_games": 42,
-  "built_label": "Tue Nov 24, 11:15 PM PT"
+  "other_games": 45,
+  "built_label": "Wed Nov 25, 5:20 AM PT"
  }
 }
