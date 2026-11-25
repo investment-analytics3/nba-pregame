@@ -96,7 +96,7 @@ background:linear-gradient(180deg,#3B6FD8,#2450B0);box-shadow:0 8px 22px rgba(36
 </style>
 </head>
 <body>
-<div class="wrap" style="padding-bottom:0"><nav class="nav" style="flex-wrap:wrap"><a href="../">Home</a><a href="./">College hoops</a><a class="on" href="game.html">Live</a><a href="live.html">Price log</a><a href="../nba/">NBA</a></nav></div>
+<div class="wrap" style="padding-bottom:0"><nav class="nav" style="flex-wrap:wrap"><a href="../">Home</a><a href="./">College hoops</a><a class="on" href="game.html">Live</a><a href="results.html">Results</a><a href="../nba/">NBA</a></nav></div>
 <main class="wrap" id="app" style="padding-top:16px"><p class="muted">Loading…</p></main>
 <div class="refresh" id="bar" hidden><div class="inner"><button id="rf" type="button"><span>Refresh now</span></button><span class="upd" id="upd"></span></div></div>
 <script src="engine.js"></script>
@@ -271,7 +271,7 @@ function render(g, r){
   const cps = [];
   session.forEach(x=>{ if(!cps.some(y=>y.clock===x.clock && y.grade===x.grade)) cps.push(x); });
   h += `<section class="panel pad"><h3>Grade history</h3>${cps.length?cps.slice(-12).reverse().map(x=>`<div class="hist"><span class="dim">${esc(x.clock)}</span><span class="cond" style="font-size:16px">${esc(x.score||'')}</span><span class="chip ${gradeCls(x.grade)}" style="justify-content:center">${esc(x.grade)}</span><span>${esc(x.action==='BET'?'BET '+x.pick:(x.action==='LEAN'?'LEAN '+x.pick:x.action))}</span></div>`).join(''):'<div class="dim" style="font-size:13px">No checkpoints yet.</div>'}
-      <div class="dim" style="font-size:12px;margin-top:8px">Reads taken while this page is open. Logged checkpoints (halftime, 2nd half 10:00) are on the <a href="live.html">price log</a>.</div></section>`;
+      <div class="dim" style="font-size:12px;margin-top:8px">Reads taken while this page is open.</div></section>`;
 
   // log line
   h += `<section class="panel pad"><h3>Tracker log line</h3><div class="logline" id="ll">${esc(r.logLine)}</div>

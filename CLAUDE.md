@@ -12,11 +12,11 @@ a phone alert. No AI runs in the daily pipeline; Claude is only used to change c
 
 - Landing page (L0, both sports): https://investment-analytics3.github.io/nba-pregame/  (`docs/index.html`, static)
 - NBA board (latest): https://investment-analytics3.github.io/nba-pregame/nba/
-- NFL board: https://investment-analytics3.github.io/nba-pregame/nfl/ · checkpoint log: .../nfl/live.html
+- NFL board: https://investment-analytics3.github.io/nba-pregame/nfl/ · results: .../nfl/results.html
 - NFL design spec (Claude Doc): https://claude.ai/artifact/A4Q6Nana5hMZYbJCSVNix2
-- College basketball board: https://investment-analytics3.github.io/nba-pregame/cbb/ · live: .../cbb/game.html · price log: .../cbb/live.html · spec (Claude Doc): https://claude.ai/artifact/1Kbd5AT6nBPU8ep6hph434 · backtest: `scripts/cbb_backtest.py` → `data/cbb/backtest.json`
-- NHL board: https://investment-analytics3.github.io/nba-pregame/nhl/ · live: .../nhl/game.html · price log: .../nhl/live.html · spec (Claude Doc): https://claude.ai/artifact/KnjF51pVAexeZGvjUrMCNX · backtest: `scripts/nhl_backtest.py` → `data/nhl/backtest.json`
-- College football board: https://investment-analytics3.github.io/nba-pregame/cfb/ · price log: .../cfb/live.html · spec (Claude Doc): https://claude.ai/artifact/GjAffxfWQBwayGjJ4s4gGc · backtest: `scripts/cfb_backtest.py` → `data/cfb/backtest.json` (+ `_games.csv`); early entry (end Q1 / half / end Q3 vs in-game WP, Nov 10: no edge vs a fair price; next = log real Kalshi prices): `scripts/cfb_early_backtest.py` → `data/cfb/early_backtest.json`; data = sportsdataverse `espn_cfb_pbp` release (reachable from the workspace) + cfbfastR-data schedules
+- College basketball board: https://investment-analytics3.github.io/nba-pregame/cbb/ · live: .../cbb/game.html · results: .../cbb/results.html · spec (Claude Doc): https://claude.ai/artifact/1Kbd5AT6nBPU8ep6hph434 · backtest: `scripts/cbb_backtest.py` → `data/cbb/backtest.json`
+- NHL board: https://investment-analytics3.github.io/nba-pregame/nhl/ · live: .../nhl/game.html · results: .../nhl/results.html · spec (Claude Doc): https://claude.ai/artifact/KnjF51pVAexeZGvjUrMCNX · backtest: `scripts/nhl_backtest.py` → `data/nhl/backtest.json`
+- College football board: https://investment-analytics3.github.io/nba-pregame/cfb/ · results: .../cfb/results.html · spec (Claude Doc): https://claude.ai/artifact/GjAffxfWQBwayGjJ4s4gGc · backtest: `scripts/cfb_backtest.py` → `data/cfb/backtest.json` (+ `_games.csv`); early entry (end Q1 / half / end Q3 vs in-game WP, Nov 10: no edge vs a fair price; next = log real Kalshi prices): `scripts/cfb_early_backtest.py` → `data/cfb/early_backtest.json`; data = sportsdataverse `espn_cfb_pbp` release (reachable from the workspace) + cfbfastR-data schedules
 - Results tracker: https://investment-analytics3.github.io/nba-pregame/results.html
 - Design spec (Claude Doc): https://claude.ai/artifact/TQV7dXo9KQM8aEmEEh8v8c
 - Original visual mockup (Claude Design): https://claude.ai/artifact/6NEsvvN1QmSv4QMxC2hCyu
@@ -369,6 +369,21 @@ often: always `git pull --rebase origin main` before pushing.
   Kalshi: public API (`api.elections.kalshi.com/trade-api/v2`, series `KXNBAGAME`, event
   `KXNBAGAME-26NOV08PHICHI`); it refuses requests that carry a browser `Origin` header, so only the tracker
   calls it. Price check never changes the grade.
+
+## Results pages, NFL / college football / college basketball / NHL (owner Nov 24: mirror the NBA page)
+
+`sportres/__init__.py` (one module for all four; `CONFIG` per sport) + `templates/sport_results.html.j2` →
+`docs/<sport>/results.html`, `docs/<sport>/results.csv` (two rows per game), `data/<sport>/results.json` (kept; a graded game
+is frozen). Each game is graded from the LAST saved board that held it (`data/<sport>/boards/*.json`; tiers lock before the
+start). Scores come from that board when it shows the game final, else from the ESPN scoreboard for that date (games 3 h+
+after the start; the last games of a night are usually still live when a daily board moves on). Runs after every build
+(`scripts/<sport>_build.py`, try/except, never blocks the build); locally `python -m sportres [sport] --no-fetch`.
+Cards: Qualified / Watch list / No track / All shown. Filters as the NBA page (Favorite/Opponent row toggle): date or week,
+team, record, form (L2 football, L3 basketball/hockey), PR, rest (football days) or B2B, NHL goalie (starter/backup), line
+bucket, winner, covered (NHL: puck line -1.5), tier, Analysis Score band or over 20, flag (matchup; college football: top-10
+last-3 defense), metric colors season + window (last 5 for NHL). Rows link to the game's Live page. Tests `tests/test_sportres.py`.
+The checkpoint / price log pages (`docs/<sport>/live.html`) are no longer linked from any page (owner Nov 24); the loggers
+still run (they feed the pushes and the Live pages' Kalshi prices).
 
 ## Team logos (owner Nov 21)
 

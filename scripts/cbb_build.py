@@ -25,6 +25,11 @@ def main() -> int:
     day = date.fromisoformat(sys.argv[sys.argv.index("--date") + 1]) if "--date" in sys.argv else None
     b = board.build(refresh="--no-refresh" not in sys.argv, day=day)
     s = board.write(b)
+    try:                                   # Results page (owner Nov 24): grade finished games, never block the build
+        import sportres
+        print(sportres.update("cbb"))
+    except Exception as e:
+        print(f"! results page not updated: {e}")
     if "--alert" in sys.argv:
         today = datetime.now(ET).date().isoformat()
         todays = [g for g in b["games"] if g["day_et"] == today and g["state"] == "pre"]
