@@ -1,82 +1,307 @@
 {
   "date": "2026-11-25",
-  "updated": "2026-11-24T22:19-08:00",
+  "updated": "2026-11-25T11:35-08:00",
   "games": {
     "401892781": {
       "matchup": "WPG @ BOS",
       "fav": "BOS",
       "dog": "WPG",
-      "summary": "No track: not a top-7 vs bottom-7 game (on the readout list for its 27 score). Night-before pass with few previews: Bang The Book takes Boston on the moneyline (-162), citing the Bruins' better goals-for (3.57) and goals-against (2.65) averages against Winnipeg's leaky defense (3.32 GA). The split view is CappersPicks' AI model, which projects a 2-0 Jets win; Winnipeg is 5-0 against the puck line in its last 5. Boston has lost three of its last five (0-3 LA, 2-6 MIN, 2-5 MTL) but won the last two, including 7-5 over Washington. Winnipeg is missing DeMelo, Namestnikov, Bjugstad and Rosen (all IR); Boston is without James Hagens. Daily Faceoff projects Swayman vs Stuart Skinner, neither confirmed. Books price Boston around -160 (about 62%), with 79% of public bets on the Bruins.",
+      "summary": "No track: not a top-7 vs bottom-7 game (on the readout list for its 28 score). Most previews back Boston at about -150 to -164 (roughly 59-62%): Doc's Sports, Bang The Book, BettorsInsider and Sports Interaction all take the Bruins, citing better goaltending and defense (2.62-2.65 goals against vs Winnipeg's 3.27), home ice and three days' rest against a Jets team that just flew east. BettorsInsider projects 4-2 Boston. The dissent is CappersPicks' AI model (2-0 Jets): Winnipeg is 8-1-1 in its last 10 and has a 23.3% power play against Boston's 79.5% penalty kill. Boston has won the last three meetings 16-7. Swayman vs Stuart Skinner (.887 this season) is expected but unconfirmed. Boston's James Hagens (back) remains out, practicing in a non-contact jersey.",
       "picks": [
-        {"source": "Bang The Book", "side": "fav", "bet": "Boston Bruins ML", "price": "BOS -162 (BetOnline)", "note": "Better goals-for and goals-against averages vs Winnipeg's defense"},
-        {"source": "CappersPicks (AI model)", "side": "dog", "bet": "Jets to win by 2 (score prediction only)", "price": "WPG +136 / BOS -162 (MyBookie)", "note": "Model projection; Jets 5-0 vs the puck line in last 5"}
+        {
+          "source": "Bang The Book",
+          "side": "fav",
+          "bet": "Boston Bruins ML",
+          "price": "BOS -162 (BetOnline)",
+          "note": "Better goals-for and goals-against averages vs Winnipeg's defense"
+        },
+        {
+          "source": "CappersPicks (AI model)",
+          "side": "dog",
+          "bet": "Jets to win by 2 (score prediction only)",
+          "price": "WPG +136 / BOS -162 (MyBookie)",
+          "note": "Model projection; Jets 5-0 vs the puck line in last 5"
+        },
+        {
+          "source": "Doc's Sports",
+          "side": "fav",
+          "bet": "Take Boston (-150)",
+          "price": "BOS -150 / WPG +138",
+          "note": "Stats write-up; Boston allows 61 goals to Winnipeg's 83"
+        },
+        {
+          "source": "BettorsInsider",
+          "side": "fav",
+          "bet": "Bruins moneyline",
+          "price": "BOS about -160 (~59%)",
+          "note": "Better goaltending and defense, home ice, rest vs travel"
+        },
+        {
+          "source": "Sports Interaction",
+          "side": "fav",
+          "bet": "Boston Bruins",
+          "price": "BOS -162 / WPG +136",
+          "note": "Boston's goaltending more reliable; Skinner inconsistent; Boston 9-4-0 at home"
+        }
       ],
       "scores": [
-        {"source": "CappersPicks (AI model)", "fav": 0, "dog": 2}
+        {
+          "source": "BettorsInsider",
+          "fav": 4,
+          "dog": 2
+        },
+        {
+          "source": "CappersPicks (AI model)",
+          "fav": 0,
+          "dog": 2
+        }
       ],
       "goalies": {
-        "fav": {"name": "Jeremy Swayman", "status": "Expected"},
-        "dog": {"name": "Stuart Skinner", "status": "Expected"}
+        "fav": {
+          "name": "Jeremy Swayman",
+          "status": "Expected"
+        },
+        "dog": {
+          "name": "Stuart Skinner",
+          "status": "Expected"
+        }
       },
       "injuries": {
         "fav": [
-          {"player": "James Hagens", "status": "Out", "note": "back; injured reserve (Nov 24 check)"}
+          {
+            "player": "James Hagens",
+            "status": "Out",
+            "note": "back; injured reserve, practiced in a non-contact jersey Tuesday (BettorsInsider, Nov 25)"
+          }
         ],
         "dog": [
-          {"player": "Dylan DeMelo", "status": "Out", "note": "lower body; injured reserve (Nov 24 check)"},
-          {"player": "Vladislav Namestnikov", "status": "Out", "note": "lower body; injured reserve (Nov 24 check)"},
-          {"player": "Nick Bjugstad", "status": "Out", "note": "pectoral; injured reserve (Nov 24 check)"},
-          {"player": "Isak Rosen", "status": "Out", "note": "undisclosed; injured reserve (Nov 24 check)"}
+          {
+            "player": "Dylan DeMelo",
+            "status": "Out",
+            "note": "lower body; injured reserve (Nov 24 check)"
+          },
+          {
+            "player": "Vladislav Namestnikov",
+            "status": "Out",
+            "note": "lower body; injured reserve (Nov 24 check)"
+          },
+          {
+            "player": "Nick Bjugstad",
+            "status": "Out",
+            "note": "pectoral; injured reserve (Nov 24 check)"
+          },
+          {
+            "player": "Isak Rosen",
+            "status": "Out",
+            "note": "undisclosed; injured reserve (Nov 24 check)"
+          }
         ],
-        "note": "Bang The Book and CappersPicks injury tables agree (Nov 24). Goalies are Daily Faceoff projections, listed as unconfirmed on Nov 24."
+        "note": "Bang The Book and CappersPicks injury tables agree (Nov 24); BettorsInsider (Nov 25) says Josh Morrissey is back. Sports Interaction's injury table conflicts with the projected lineups (lists McAvoy, Morrissey, Salomonsson out) and was not used. Goalies: Daily Faceoff and Yahoo/Boston Hockey Now list both as unconfirmed (Nov 25, 11:30 AM PT)."
       },
       "sources": [
-        {"site": "Bang The Book", "url": "https://bangthebook.com/winnipeg-jets-vs-boston-bruins-prediction-2026-11-25/"},
-        {"site": "CappersPicks", "url": "https://www.capperspicks.com/free-picks/ai/winnipeg-jets-at-boston-bruins-pick-nhl-prediction-preview-odds-11-25-2026/"},
-        {"site": "BettingNews (odds, form, public split)", "url": "https://www.bettingnews.com/nhl/matchup/2026-11-25-winnipeg_jets-boston_bruins-n-1/"},
-        {"site": "Daily Faceoff (starting goalies)", "url": "https://www.dailyfaceoff.com/starting-goalies/2026-11-25"}
+        {
+          "site": "Bang The Book",
+          "url": "https://bangthebook.com/winnipeg-jets-vs-boston-bruins-prediction-2026-11-25/"
+        },
+        {
+          "site": "CappersPicks",
+          "url": "https://www.capperspicks.com/free-picks/ai/winnipeg-jets-at-boston-bruins-pick-nhl-prediction-preview-odds-11-25-2026/"
+        },
+        {
+          "site": "BettingNews (odds, form, public split)",
+          "url": "https://www.bettingnews.com/nhl/matchup/2026-11-25-winnipeg_jets-boston_bruins-n-1/"
+        },
+        {
+          "site": "Doc's Sports",
+          "url": "https://www.docsports.com/free-picks/nhl-hockey/2026/winnipeg-jets-vs-boston-bruins-prediction-11-25-2026-nhl-picks-best-bets-odds.html"
+        },
+        {
+          "site": "BettorsInsider",
+          "url": "https://bettorsinsider.com/nhl/2026/11/25/jets-vs-bruins-prediction-boston-edge-at-td-garden/"
+        },
+        {
+          "site": "Sports Interaction",
+          "url": "https://news.sportsinteraction.com/nhl/story/jets-vs-bruins-odds-prediction-112526-217999"
+        },
+        {
+          "site": "Yahoo Sports (Boston Hockey Now: notes, lines, goalies)",
+          "url": "https://sports.yahoo.com/nhl/articles/bruins-game-24-notes-lines-120000959.html"
+        },
+        {
+          "site": "Daily Faceoff (starting goalies)",
+          "url": "https://www.dailyfaceoff.com/starting-goalies/2026-11-25"
+        }
       ]
     },
     "401892790": {
       "matchup": "NSH @ DAL",
       "fav": "DAL",
       "dog": "NSH",
-      "summary": "No track: not a top-7 vs bottom-7 game (on the readout list for its 23 score). All three previews with a pick back Dallas, priced around -170 (about 63%): the Stars are on a five-game win streak, have the lower goals-against average, and Oettinger posted a 33-save shutout of Pittsburgh on Nov 22. Expect a close game: the iHeart model projects 4-3 Dallas and takes Nashville +1.5, and CappersPicks' model has 3-2 Dallas. Nashville is 8-2-0 in its last 10 and 8-5 as an underdog, with a 24.7% power play against Dallas' 88.8% penalty kill. Dallas has several defensemen out (Bichsel, Capobianco) and Tyler Myers is day-to-day, possibly back Wednesday. Daily Faceoff projects Oettinger vs Saros, both unconfirmed.",
+      "summary": "No track: not a top-7 vs bottom-7 game (on the readout list for its 23 score). Five of six sources pick Dallas, priced about -170 (59-63%): the Stars have won five straight, holding every opponent to three goals or fewer, and Oettinger shut out Pittsburgh 1-0 last time. Most expect a tight game: projections run 4-3 (iHeart, Bleacher Nation) to 4-2 (CappersPicks), and four of Dallas' last five wins were by one goal. The contrarian view is Dimers' model, which gives Nashville 41.2% and calls the Predators moneyline the value bet; Nashville is 4-1 as a +140-or-longer underdog and won the earlier meeting. Saros vs Oettinger expected, both unconfirmed. Dallas is thin on defense (Bichsel, Capobianco out; Myers day-to-day).",
       "picks": [
-        {"source": "iHeart (Ticket 760)", "side": "fav", "bet": "Stars ML; also Predators +1.5 and Over 5.5", "price": "DAL -175", "note": "Computer projection model, Stars 4-3"},
-        {"source": "Bang The Book", "side": "fav", "bet": "Dallas Stars ML", "price": "DAL -170 / NSH +142 (BetOnline)", "note": "Lower goals-against average and five straight wins"},
-        {"source": "CappersPicks (AI model)", "side": "fav", "bet": "Stars to win by 1", "price": "DAL -171 / NSH +143 (MyBookie)", "note": "Model projection; Dallas won 4 of last 5"}
+        {
+          "source": "iHeart (Ticket 760)",
+          "side": "fav",
+          "bet": "Stars ML; also Predators +1.5 and Over 5.5",
+          "price": "DAL -175",
+          "note": "Computer projection model, Stars 4-3"
+        },
+        {
+          "source": "Bang The Book",
+          "side": "fav",
+          "bet": "Dallas Stars ML",
+          "price": "DAL -170 / NSH +142 (BetOnline)",
+          "note": "Lower goals-against average and five straight wins"
+        },
+        {
+          "source": "CappersPicks (AI model)",
+          "side": "fav",
+          "bet": "Stars to win by 1",
+          "price": "DAL -171 / NSH +143 (MyBookie)",
+          "note": "Model projection; Dallas won 4 of last 5"
+        },
+        {
+          "source": "Doc's Sports",
+          "side": "fav",
+          "bet": "Take Dallas (-170)",
+          "price": "DAL -170 / NSH +143",
+          "note": "Stats write-up; Dallas .696 points percentage vs Nashville .630"
+        },
+        {
+          "source": "CappersPicks (George)",
+          "side": "fav",
+          "bet": "Stars -1.5",
+          "price": "DAL -1.5 (+149)",
+          "note": "Dallas exploits space when Nashville's defensemen join the rush"
+        },
+        {
+          "source": "Bleacher Nation",
+          "side": "fav",
+          "bet": "Over 5.5 (projects Dallas 4-3)",
+          "price": "DAL -170 / NSH +140",
+          "note": "Computer projects 5.7 goals"
+        },
+        {
+          "source": "Dimers",
+          "side": "dog",
+          "bet": "Predators moneyline",
+          "price": "NSH 38¢ (model 41.2%; DAL 58.8%)",
+          "note": "Model edge of 3.2% over the price; model still favors Dallas"
+        }
       ],
       "scores": [
-        {"source": "iHeart (Ticket 760)", "fav": 4, "dog": 3},
-        {"source": "CappersPicks (AI model)", "fav": 3, "dog": 2}
+        {
+          "source": "iHeart (Ticket 760)",
+          "fav": 4,
+          "dog": 3
+        },
+        {
+          "source": "CappersPicks (AI model)",
+          "fav": 3,
+          "dog": 2
+        },
+        {
+          "source": "Bleacher Nation",
+          "fav": 4,
+          "dog": 3
+        },
+        {
+          "source": "CappersPicks (George)",
+          "fav": 4,
+          "dog": 2
+        }
       ],
       "goalies": {
-        "fav": {"name": "Jake Oettinger", "status": "Expected"},
-        "dog": {"name": "Juuse Saros", "status": "Expected"}
+        "fav": {
+          "name": "Jake Oettinger",
+          "status": "Expected"
+        },
+        "dog": {
+          "name": "Juuse Saros",
+          "status": "Expected"
+        }
       },
       "injuries": {
         "fav": [
-          {"player": "Tyler Myers", "status": "Day-to-day", "note": "upper body; RotoWire Nov 24: possibly back Wednesday (CappersPicks lists Questionable)"},
-          {"player": "Matt Duchene", "status": "Out", "note": "lower body (CappersPicks table, Nov 24)"},
-          {"player": "Lian Bichsel", "status": "Out", "note": "lower body; injured reserve"},
-          {"player": "Kyle Capobianco", "status": "Out", "note": "leg; long-term injured reserve"},
-          {"player": "Oskar Back", "status": "Out", "note": "injured reserve; RotoWire Nov 19: expected back within a week"},
-          {"player": "Jaxon Fuder", "status": "Out", "note": "undisclosed (CappersPicks table)"}
+          {
+            "player": "Tyler Myers",
+            "status": "Day-to-day",
+            "note": "upper body; RotoWire Nov 24: possibly back Wednesday (CappersPicks lists Questionable)"
+          },
+          {
+            "player": "Matt Duchene",
+            "status": "Out",
+            "note": "lower body (CappersPicks table, Nov 24)"
+          },
+          {
+            "player": "Lian Bichsel",
+            "status": "Out",
+            "note": "lower body; injured reserve"
+          },
+          {
+            "player": "Kyle Capobianco",
+            "status": "Out",
+            "note": "leg; long-term injured reserve"
+          },
+          {
+            "player": "Oskar Back",
+            "status": "Out",
+            "note": "injured reserve; RotoWire Nov 19: expected back within a week"
+          },
+          {
+            "player": "Jaxon Fuder",
+            "status": "Out",
+            "note": "undisclosed (CappersPicks table)"
+          }
         ],
         "dog": [
-          {"player": "William Trudeau", "status": "Out", "note": "upper body (CappersPicks table, Nov 24)"}
+          {
+            "player": "William Trudeau",
+            "status": "Out",
+            "note": "upper body (CappersPicks table, Nov 24)"
+          }
         ],
-        "note": "Sources differ: Bang The Book returned no Nashville statuses and did not list Duchene or Fuder. Goalies are Daily Faceoff projections (also RotoWire's lineup), unconfirmed on Nov 24."
+        "note": "Sources differ: Bang The Book returned no Nashville statuses and did not list Duchene or Fuder. Goalies are Daily Faceoff projections (also RotoWire's lineup), still unconfirmed on Daily Faceoff Nov 25, 11:30 AM PT; Doc's Sports names both starters. None of the Nov 25 previews gave injury updates."
       },
       "sources": [
-        {"site": "iHeart (Ticket 760)", "url": "https://ticket760.iheart.com/content/2026-11-24-predators-vs-stars-prediction-picks-nov-25/"},
-        {"site": "Bang The Book", "url": "https://bangthebook.com/nashville-predators-vs-dallas-stars-prediction-2026-11-25/"},
-        {"site": "CappersPicks", "url": "https://www.capperspicks.com/free-picks/ai/nashville-predators-at-dallas-stars-pick-nhl-prediction-preview-odds-11-25-2026/"},
-        {"site": "RotoWire (lineups, injury news)", "url": "https://www.rotowire.com/betting/nhl/game/stars-vs-predators-odds-2026-11-25-2998396"},
-        {"site": "Daily Faceoff (starting goalies)", "url": "https://www.dailyfaceoff.com/starting-goalies/2026-11-25"}
+        {
+          "site": "iHeart (Ticket 760)",
+          "url": "https://ticket760.iheart.com/content/2026-11-24-predators-vs-stars-prediction-picks-nov-25/"
+        },
+        {
+          "site": "Bang The Book",
+          "url": "https://bangthebook.com/nashville-predators-vs-dallas-stars-prediction-2026-11-25/"
+        },
+        {
+          "site": "CappersPicks",
+          "url": "https://www.capperspicks.com/free-picks/ai/nashville-predators-at-dallas-stars-pick-nhl-prediction-preview-odds-11-25-2026/"
+        },
+        {
+          "site": "RotoWire (lineups, injury news)",
+          "url": "https://www.rotowire.com/betting/nhl/game/stars-vs-predators-odds-2026-11-25-2998396"
+        },
+        {
+          "site": "Doc's Sports",
+          "url": "https://www.docsports.com/free-picks/nhl-hockey/2026/nashville-predators-vs-dallas-stars-prediction-11-25-2026-nhl-picks-best-bets-odds.html"
+        },
+        {
+          "site": "CappersPicks (George)",
+          "url": "https://www.capperspicks.com/free-picks/nhl-hockey/nashville-predators-vs-dallas-stars-betting-prediction-11-25-2026/"
+        },
+        {
+          "site": "Bleacher Nation",
+          "url": "https://www.bleachernation.com/picks/2026/11/25/stars-vs-predators-nhl-best-bets-odds-prediction-and-pick-nov-25/"
+        },
+        {
+          "site": "Dimers",
+          "url": "https://www.dimers.com/nhl/news/nashville-predators-vs-dallas-stars-prediction-11-25-2026-ac"
+        },
+        {
+          "site": "Daily Faceoff (starting goalies)",
+          "url": "https://www.dailyfaceoff.com/starting-goalies/2026-11-25"
+        }
       ]
     }
   },
-  "notes": "Evening run (night-before pass, written Nov 24 evening); the 11:17 AM PT morning run will refresh it. Covered the two games with readout=true; neither is tracked (both No track, out of range; scores 27 and 23). No previews yet from the preferred sources (Yahoo/NBC, FanDuel Research, SI, Action Network, Sports Betting Dime), so WPG@BOS has only two picks. No goalie confirmed yet: Daily Faceoff lists all four as unconfirmed, so they are marked Expected. The board's Jets goalie field is empty; Daily Faceoff projects Stuart Skinner. Tony's Picks (NSH@DAL) could not be opened and was not used. BettingNews showed expert splits (100% BOS) but no readable individual picks, so it is not in the picks table."
+  "notes": "Morning run (game-day refresh, 11:35 AM PT) of the Nov 24 night-before file. Covered the two readout=true games; neither is tracked (both No track, out of range; scores 28 and 23). Added Nov 24-25 previews: WPG@BOS now 5 picks (4 BOS, 1 WPG), NSH@DAL 7 picks (6 DAL, 1 NSH). No goalie confirmed yet (Daily Faceoff shows 1 of 28 confirmed league-wide), so all four stay Expected. Of the preferred sources only Yahoo Sports (Boston Hockey Now notes, no pick) had a page for these games; no FanDuel Research, SI, Action Network or Sports Betting Dime previews found. Daily Faceoff's best-bets article, DraftKings Network and Squawka could not be opened. Sports Interaction's injury table contradicts the projected lineups and was left out; its pick and verbatim -162 price were used. Dimers' figures came partly from a summarized page tail. Two Thehockeynews pages from earlier seasons were ignored."
 }
