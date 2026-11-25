@@ -333,7 +333,8 @@ often: always `git pull --rebase origin main` before pushing.
 - Analyst readouts, ALL boards (owner Nov 23): written for tracked games AND any game scoring over 20 (`scoring.readout_ok`,
   `READOUT_SCORE = 20`; JS `readoutOk`), even when a gate (injury, power, range) keeps it off the tracked list; context rows
   carry `readout`. Preferred sources (owner): Yahoo/NBC Sports (Rotoworld), FanDuel Research (numberFire), SI Betting,
-  Action Network, Sports Betting Dime. NHL readouts: `data/nhl/readouts/<date>.json` (README there), task "NHL analyst readouts".
+  Action Network, Sports Betting Dime. NHL readouts: `data/nhl/readouts/<date>.json` (README there), task "NHL analyst readouts" (11:17 AM PT game-day refresh +
+  10:17 PM PT night-before pass, owner Nov 24; NBA 9:41 AM / 10:41 PM, college hoops 5:13 AM / 10:13 PM, football 5:43 AM / 7:43 PM).
 - Analyst readout (Nov 10): L2 bottom panel (`readoutPanel`), from `data/readouts/<date>.json`
   (format + rules: `data/readouts/README.md`; loaded by `board.load_readouts`). Written by the owner's Claude scheduled
   task "NBA analyst readouts" (daily 9:41 AM PT), which commits only that file and dispatches `board.yml` preview with
