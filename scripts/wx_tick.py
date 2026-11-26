@@ -151,8 +151,11 @@ def probe():
         print("sample fields:", {k: m.get(k) for k in ("ticker", "status", "yes_sub_title", "strike_type", "floor_strike",
               "cap_strike", "yes_bid_dollars", "no_ask_dollars", "yes_bid_size_fp", "close_time", "volume_fp")})
     y = now.astimezone(PT).date() - timedelta(days=2)
-    old = kalshi.market(f"KXHIGHNY-{paper.date_code(y)}-B50.5") or {}
-    print("settled lookup:", {k: old.get(k) for k in ("ticker", "status", "result")})
+    from nba.http import get
+    body = get(f"{kalshi.KALSHI}/markets?event_ticker=KXHIGHNY-{paper.date_code(y)}&limit=20", headers=kalshi.HEADERS) or {}
+    for m in (body.get("markets") or [])[:12]:
+        one = kalshi.market(m["ticker"]) or {}
+        print("settled lookup:", {k: one.get(k) for k in ("ticker", "status", "result", "settlement_value_dollars", "expiration_value")})
     prev = [m for m in kalshi.open_markets("KXHIGHNY")][:1]
     print("open lookup:", {k: (kalshi.market(prev[0]["ticker"]) or {}).get(k) for k in ("ticker", "status", "result")} if prev else None)
 
