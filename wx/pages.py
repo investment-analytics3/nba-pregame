@@ -18,7 +18,7 @@ DOCS = os.path.join(ROOT, "docs", "wx")
 BOARD = os.path.join(DOCS, "index.html")
 PT = ZoneInfo("America/Los_Angeles")
 CSV_COLS = ["date", "group", "city", "kind", "event", "ticker", "bracket", "logged_utc", "hours_before", "yes_bid",
-            "no_price", "contracts", "fee", "cost", "max_win", "depth", "forecast", "status", "result", "pnl", "settled_utc"]
+            "no_price", "contracts", "fee", "cost", "max_win", "depth", "forecast", "actual", "status", "result", "pnl", "settled_utc"]
 
 
 def money(v) -> str:

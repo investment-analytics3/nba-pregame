@@ -125,11 +125,12 @@ class Tick(unittest.TestCase):
                 self.assertEqual(tick.scan(led, later, log=lambda *a: None), 2)
                 res = {"KXHIGHNY-26NOV20-T69": "no", "KXHIGHNY-26NOV20-B62.5": "no",
                        "KXHIGHLAX-26NOV20-T69": "no", "KXHIGHLAX-26NOV20-B62.5": "yes"}
-                with mock.patch("wx.kalshi.market", side_effect=lambda t: {"result": res[t]}):
+                with mock.patch("wx.kalshi.market", side_effect=lambda t: {"result": res[t], "expiration_value": "61.00"}):
                     self.assertEqual(tick.settle_open(led, datetime(2026, 11, 21, 6, 30, tzinfo=timezone.utc), log=lambda *a: None), 0)
                     self.assertEqual(tick.settle_open(led, datetime(2026, 11, 21, 16, tzinfo=timezone.utc), log=lambda *a: None), 4)
                 s = paper.stats([b for b in led["bets"] if b["group"] == "main"])
                 self.assertEqual((s["won"], s["lost"]), (3, 1))
+                self.assertEqual(led["bets"][0]["actual"], 61.0)
                 paper.save(led)
                 pages.publish(led, datetime(2026, 11, 21, 16, tzinfo=timezone.utc))
                 with open(os.path.join(tmp, "docs", "results.html")) as f:

@@ -114,9 +114,10 @@ def make_bet(group: str, series: str, m: dict, now: datetime, forecast: float | 
     }
 
 
-def settle(bet: dict, result: str, now: datetime) -> dict:
-    """result = the market's "yes"/"no". NO wins when the bracket settles NO."""
+def settle(bet: dict, result: str, now: datetime, actual=None) -> dict:
+    """result = the market's "yes"/"no". NO wins when the bracket settles NO. actual = official reading (F)."""
     won = result == "no"
+    bet["actual"] = num(actual)
     c, p = bet["contracts"], bet["no_price"]
     bet.update(status="won" if won else "lost", result=result,
                pnl=round((c * (1 - p) if won else -c * p) - bet["fee"], 2),

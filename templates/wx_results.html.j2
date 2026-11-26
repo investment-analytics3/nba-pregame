@@ -72,10 +72,11 @@
     <select id="fs"><option value="">Any status</option><option value="won">Won</option><option value="lost">Lost</option><option value="open">Open</option></select>
   </div>
   <div class="scroll"><table id="led">
-    <tr><th>Event date</th><th>Group</th><th>City</th><th style="text-align:left">Bracket (NO)</th><th>YES bid</th><th>NO price</th><th>Contracts</th><th>Cost</th><th>Result</th><th>P&amp;L</th><th>Logged (PT)</th></tr>
+    <tr><th>Event date</th><th>Group</th><th>City</th><th style="text-align:left">Bracket (NO)</th><th>YES bid</th><th>NO price</th><th>Contracts</th><th>Cost</th><th>Official</th><th>Result</th><th>P&amp;L</th><th>Logged</th></tr>
     {% for b in bets %}
     <tr data-g="{{ b.group }}" data-c="{{ b.city }}" data-s="{{ b.status }}"><td>{{ day_label(b.date) }}</td><td>{{ cfg.GROUPS[b.group].short }}</td><td>{{ b.city }}</td><td style="text-align:left">{{ b.bracket }}</td>
       <td>{{ "%.0f" | format(b.yes_bid * 100) }}c</td><td>{{ "%.0f" | format(b.no_price * 100) }}c</td><td>{{ b.contracts }}</td><td>${{ "%.2f" | format(b.cost) }}</td>
+      <td>{{ ("%.0f°" | format(b.actual)) if b.actual is not none else "—" }}</td>
       <td>{% if b.status == "won" %}<span class="chip cg">Won</span>{% elif b.status == "lost" %}<span class="chip cr">Lost</span>{% else %}<span class="chip cn">Open</span>{% endif %}</td>
       <td class="{{ 'okc' if (b.pnl or 0) > 0 else ('noc' if (b.pnl or 0) < 0 else '') }}">{{ (b.pnl | money) if b.pnl is not none else "—" }}</td>
       <td class="muted">{{ b.logged_utc[:16].replace("T", " ") }} UTC</td></tr>

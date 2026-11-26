@@ -99,7 +99,7 @@ def settle_open(led: dict, now: datetime, log=print) -> int:
         res = ((m or {}).get("result") or "").lower()
         if res in ("yes", "no"):
             for b in bets:
-                paper.settle(b, res, now)
+                paper.settle(b, res, now, (m or {}).get("expiration_value"))
                 n += 1
                 log(f"  settled {b['group']} {t} -> {res}: ${b['pnl']:+.2f}")
     return n
