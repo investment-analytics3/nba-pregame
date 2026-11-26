@@ -269,11 +269,32 @@ NHL rules (owner decisions Nov 12-13 2026; spec "NHL Board"):
 - Backtest 2024-26: 246 range games, favorite won 65% (priced 2025-26: 71% vs a 67% moneyline); score 22+ with regular goalie
   and rested 71% (94 games; priced 76% vs 69%, 33 games; re-run Nov 13 after the xGA/60 swap); small samples, review after a month.
 
+## Kalshi weather paper board (separate pipeline: `wx/`, `wx.yml`, concurrency group `wx-data`)
+
+Paper only (owner Nov 26 2026): reads Kalshi's public prices, never trades. Board https://investment-analytics3.github.io/nba-pregame/wx/ ·
+results .../wx/results.html · CSV .../wx/results.csv. Backtest + rationale: Claude project doc `weather/kalshi_longshot_backtest_findings.md`.
+
+| Path | Purpose |
+|---|---|
+| `wx/config.py` | Series by group (main 7 = KXHIGHNY/CHI/MIA/AUS/DEN/LAX/PHIL; other 17 highs; 24 lows) with station time zones, rule settings, backtest reference numbers |
+| `wx/kalshi.py` | `/markets?series_ticker=...&status=open`, `/markets/<ticker>` (`result` yes/no), Open-Meteo forecast high (display only) |
+| `wx/paper.py` | Close-time rule, due windows, `qualifies` (YES bid 1-4c), `make_bet` (NO at 1 - YES bid, 25 contracts or the book's size at that price, Kalshi taker fee ceil(0.07·C·P·(1-P))), `settle`, `stats` (record, win% vs avg NO price, c/contract + 90% range, ROI) |
+| `wx/pages.py`, `templates/wx_board.html.j2`, `templates/wx_results.html.j2` | `docs/wx/index.html`, `results.html`, `results.csv`, `summary.json` (landing card) |
+| `scripts/wx_tick.py` | The tick: scan due events, settle closed ones, publish (on change or hourly), daily push (`--send`); `--no-fetch --force-publish` rebuilds pages offline |
+| `data/wx/ledger.json`, `data/wx/state.json` | Every paper bet (frozen once settled) + checked events (pruned after 10 days); publish/push markers |
+
+Rules: about 32 h before close (≈5 PM local the day before) buy NO on every bracket with a best YES bid of 1-4c. Close =
+1:00 AM local clock time the day after the event (Phoenix: midnight), verified on 2,496 archived events; the tick still
+reads each market's own `close_time`. A check logs on the first tick inside [target - 3 h, target]. Groups: `main` (the
+rule, pushed), `evening` (main cities at 26.5 h), `other_highs`, `lows` (comparison, never pushed). One ntfy summary a day
+from 5:20 PM PT (tomorrow's main bets, settled since yesterday, running record). Tests: `tests/test_wx.py` (fixture: real
+Kalshi rows, `tests/fixtures/wx_markets.json`). Review with the owner after ~300-400 main-rule bets.
+
 ## Workflows (Actions)
 
 | Workflow file | Trigger | Notes |
 |---|---|---|
-| `scheduler.yml` | every 15 min from cron-job.org (workflow_dispatch, input `source`) + GitHub cron backup | the only automatic trigger: nightly update (from 3 AM PT, catch-up, marker `nightly` in `data/state.json`), board/Final (`board_decide`), starts `live.yml`; dispatches `nfl.yml`, `cfb.yml`, `cbb.yml`, `nhl.yml` (continue-on-error); pings healthchecks.io. Input `dry_run=true` decides only. Setup: `SCHEDULER.md` |
+| `scheduler.yml` | every 15 min from cron-job.org (workflow_dispatch, input `source`) + GitHub cron backup | the only automatic trigger: nightly update (from 3 AM PT, catch-up, marker `nightly` in `data/state.json`), board/Final (`board_decide`), starts `live.yml`; dispatches `nfl.yml`, `cfb.yml`, `cbb.yml`, `nhl.yml`, `wx.yml` (continue-on-error); pings healthchecks.io. Input `dry_run=true` decides only. Setup: `SCHEDULER.md` |
 | `update-data.yml` | manual | catch-up, grading, slate; commits `data/` and `docs/` |
 | `board.yml` | manual | inputs: `kind` (preview/board/final/auto), `send` (true/false) |
 | `rebuild-days.yml` | manual, input `days` | rebuild + grade unsent past days |

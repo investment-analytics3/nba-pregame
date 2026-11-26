@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weather · Results</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../site.css?v=20261121">
+<style>
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:16px;margin:20px 0 24px}
+.gc{padding:16px 18px;display:flex;flex-direction:column;gap:4px}
+.gc h3{margin:0 0 2px;font-size:19px;letter-spacing:.04em;text-transform:uppercase}
+.gc .what{font-size:12px;color:var(--muted);margin-bottom:6px}
+.gc .kv{background:none;padding:4px 0;border-top:1px solid var(--line);border-radius:0}
+.gc .kv b{color:#fff}
+.gc .bt{font-size:11.5px;color:var(--dim);margin-top:6px;line-height:1.45}
+.gc.main{border-color:rgba(47,195,115,.5)}
+.legend2{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:#9AA4BA;margin-top:6px}
+.legend2 i{display:inline-block;width:14px;height:3px;border-radius:2px;margin-right:6px;vertical-align:middle}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 12px}
+.filters select{background:#0E1424;color:#DCE2EE;border:1px solid #2A3550;border-radius:8px;padding:6px 8px;font:inherit;font-size:13px}
+.scroll{overflow:auto;max-height:70vh;border-radius:14px;border:1px solid var(--line)}
+.scroll table th{position:sticky;top:0;background:#151C2E;z-index:1}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="nav"><a href="./">Weather board</a><a class="on" href="results.html">Results</a><a href="../">All boards</a></div>
+  <div class="eyebrow" style="margin-top:18px">Kalshi daily temperature · paper results</div>
+  <h1 class="title cond">Weather results</h1>
+  <div class="small muted" style="margin-top:6px">Updated {{ built }} · <a href="results.csv">Download CSV</a></div>
+
+  <div class="cards">
+    {% for g in groups %}{% set s = g.stats %}
+    <div class="panel gc {{ 'main' if g.key == 'main' else '' }}">
+      <h3 class="cond">{{ g.label }}</h3>
+      <div class="what">{{ g.note }}{% if g.key != "main" %} · comparison only{% endif %}</div>
+      <div class="kv"><span>Settled bets</span><b>{{ s.settled }}{% if s.open %} <span class="muted" style="font-weight:500">+{{ s.open }} open</span>{% endif %}</b></div>
+      <div class="kv"><span>Record</span><b>{{ s.won }}-{{ s.lost }}</b></div>
+      <div class="kv"><span>Win rate vs avg NO price</span><b>{% if s.settled %}{{ s.win }}% vs {{ s.price }}c{% else %}—{% endif %}</b></div>
+      <div class="kv"><span>Paper P&amp;L</span><b class="{{ 'okc' if s.pnl > 0 else ('noc' if s.pnl < 0 else '') }}">{{ s.pnl | money }}</b></div>
+      <div class="kv"><span>Per contract (90% range)</span><b>{% if s.cpc is not none %}{{ "%+.2f" | format(s.cpc) }}c{% if s.ci %} <span class="muted" style="font-weight:500">({{ "%+.2f" | format(s.ci[0]) }} to {{ "%+.2f" | format(s.ci[1]) }})</span>{% endif %}{% else %}—{% endif %}</b></div>
+      <div class="kv"><span>Return on money risked</span><b>{{ ("%+.2f%%" | format(s.roi)) if s.roi is not none else "—" }}</b></div>
+      <div class="bt">Backtest (Oct 6 - Nov 25): {{ g.bt.trades }} bets, {{ g.bt.losses }} losses, {{ g.bt.win }}% vs {{ g.bt.price }}c, {{ "%+.2f" | format(g.bt.cpc) }}c per contract ({{ g.bt.ci }}).</div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="sec-head"><h2 class="cond">Cumulative paper P&amp;L</h2><span class="rule"></span></div>
+  <div class="panel" style="padding:16px 18px;margin-bottom:26px">
+    {% if chart %}{{ chart | safe }}
+    <div class="legend2"><span><i style="background:#2FC373"></i>Main rule</span><span><i style="background:#60A5FA"></i>Main cities, evening</span><span><i style="background:#E9B23A"></i>Other high-temp cities</span><span><i style="background:#C084FC"></i>Low-temp markets</span></div>
+    <div class="tiny">Dollars at {{ cfg.CONTRACTS }} contracts a bet, by event date. One loss costs about what 50 wins earn, so expect a sawtooth.</div>
+    {% else %}<div class="small muted">The chart starts once the first bets settle (the morning after the event).</div>{% endif %}
+  </div>
+
+  <div class="sec-head"><h2 class="cond">Main rule by city</h2><span class="rule"></span></div>
+  <div class="panel" style="padding:14px 18px;margin-bottom:26px"><div class="tw"><table>
+    <tr><th>City</th><th>Settled</th><th>Open</th><th>Record</th><th>Win %</th><th>Avg NO price</th><th>Paper P&amp;L</th><th>c/contract</th></tr>
+    {% for c in cities %}
+    <tr><td>{{ c.city }}</td><td>{{ c.settled }}</td><td>{{ c.open }}</td><td>{{ c.won }}-{{ c.lost }}</td><td>{{ c.win if c.win is not none else "—" }}</td><td>{{ ("%.1fc" | format(c.price)) if c.price is not none else "—" }}</td>
+      <td class="{{ 'okc' if c.pnl > 0 else ('noc' if c.pnl < 0 else '') }}">{{ c.pnl | money }}</td><td>{{ ("%+.2f" | format(c.cpc)) if c.cpc is not none else "—" }}</td></tr>
+    {% else %}<tr><td colspan="8" class="muted">No bets yet.</td></tr>{% endfor %}
+  </table></div></div>
+
+  <div class="sec-head"><h2 class="cond">Every paper bet</h2><span class="cnt" id="cnt">{{ bets | length }}</span><span class="rule"></span></div>
+  <div class="filters">
+    <select id="fg"><option value="">All groups</option>{% for g in groups %}<option value="{{ g.key }}" {{ 'selected' if g.key == 'main' else '' }}>{{ g.label }}</option>{% endfor %}</select>
+    <select id="fc"><option value="">All cities</option>{% for c in bets | map(attribute="city") | unique | sort %}<option>{{ c }}</option>{% endfor %}</select>
+    <select id="fs"><option value="">Any status</option><option value="won">Won</option><option value="lost">Lost</option><option value="open">Open</option></select>
+  </div>
+  <div class="scroll"><table id="led">
+    <tr><th>Event date</th><th>Group</th><th>City</th><th style="text-align:left">Bracket (NO)</th><th>YES bid</th><th>NO price</th><th>Contracts</th><th>Cost</th><th>Result</th><th>P&amp;L</th><th>Logged (PT)</th></tr>
+    {% for b in bets %}
+    <tr data-g="{{ b.group }}" data-c="{{ b.city }}" data-s="{{ b.status }}"><td>{{ day_label(b.date) }}</td><td>{{ cfg.GROUPS[b.group].short }}</td><td>{{ b.city }}</td><td style="text-align:left">{{ b.bracket }}</td>
+      <td>{{ "%.0f" | format(b.yes_bid * 100) }}c</td><td>{{ "%.0f" | format(b.no_price * 100) }}c</td><td>{{ b.contracts }}</td><td>${{ "%.2f" | format(b.cost) }}</td>
+      <td>{% if b.status == "won" %}<span class="chip cg">Won</span>{% elif b.status == "lost" %}<span class="chip cr">Lost</span>{% else %}<span class="chip cn">Open</span>{% endif %}</td>
+      <td class="{{ 'okc' if (b.pnl or 0) > 0 else ('noc' if (b.pnl or 0) < 0 else '') }}">{{ (b.pnl | money) if b.pnl is not none else "—" }}</td>
+      <td class="muted">{{ b.logged_utc[:16].replace("T", " ") }} UTC</td></tr>
+    {% endfor %}
+  </table></div>
+  <div class="tiny">Paper only: the system reads Kalshi's public prices and never places a bet. Fees are Kalshi's taker fee at the logged price.</div>
+</div>
+<script>
+(function(){
+  const fg = document.getElementById('fg'), fc = document.getElementById('fc'), fs = document.getElementById('fs');
+  const rows = [...document.querySelectorAll('#led tr[data-g]')], cnt = document.getElementById('cnt');
+  function apply(){
+    let n = 0;
+    rows.forEach(r => { const ok = (!fg.value || r.dataset.g === fg.value) && (!fc.value || r.dataset.c === fc.value) && (!fs.value || r.dataset.s === fs.value);
+      r.style.display = ok ? '' : 'none'; if (ok) n++; });
+    cnt.textContent = n;
+  }
+  [fg, fc, fs].forEach(el => el.addEventListener('change', apply)); apply();
+})();
+</script>
+</body>
+</html>
