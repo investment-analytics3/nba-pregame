@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-26T12:15:37-08:00",
- "built_label": "Thu Nov 26, 12:15 PM PT",
+ "built_at": "2026-11-26T13:15:35-08:00",
+ "built_label": "Thu Nov 26, 1:15 PM PT",
  "games": [
   {
    "id": "401873081",
@@ -11,16 +11,16 @@
    "kick_pt": "Thu 10:00 AM PT",
    "day_et": "2026-11-26",
    "state": "in",
-   "detail": "8:24 - 3rd",
+   "detail": "2:13 - 4th",
    "neutral": false,
    "venue": "Ford Field",
    "home_code": "DET",
    "away_code": "CHI",
    "score": {
-    "home": 19,
-    "away": 17
+    "home": 35,
+    "away": 32
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 2.5,
    "total": 56.5,
    "total_open": 51.5,
@@ -459,11 +459,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 49.5,
    "total_open": 49.5,
-   "fav_ml": -472.0,
+   "fav_ml": -447.0,
    "favorite": "home",
    "spread": -8.5,
    "movement": 7.0,
@@ -538,37 +538,40 @@
     },
     "injuries_known": true,
     "key_out": [
-     "Jake Ferguson"
+     "Jake Ferguson",
+     "Tyler Booker"
     ],
     "key_questionable": [],
     "key_long_term": [],
-    "interior_ol_out": [],
+    "interior_ol_out": [
+     "Tyler Booker"
+    ],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Jake Ferguson",
+      "pos": "TE",
+      "status": "Out"
+     },
+     {
+      "name": "Tyler Booker",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "name": "Jonathan Bullard",
+      "pos": "DT",
+      "status": "Out"
+     },
      {
       "name": "Devin Moore",
       "pos": "CB",
       "status": "Injured Reserve"
      },
      {
-      "name": "P.J. Locke",
-      "pos": "S",
-      "status": "Out"
-     },
-     {
-      "name": "Jonathan Mingo",
-      "pos": "WR",
-      "status": "Out"
-     },
-     {
-      "name": "Jalen Thompson",
-      "pos": "S",
-      "status": "Questionable"
-     },
-     {
-      "name": "Jake Ferguson",
-      "pos": "TE",
+      "name": "Jaishawn Barham",
+      "pos": "LB",
       "status": "Out"
      }
     ],
@@ -649,40 +652,36 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [],
-    "key_long_term": [
-     "Dontayvion Wicks",
-     "Jalen Hurts",
-     "Zack Baun"
-    ],
+    "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "qb_reset": "J.Milton, 64 dropbacks this season",
     "injury_list": [
      {
+      "name": "Cole Payton",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "name": "Grant Calcaterra",
+      "pos": "TE",
+      "status": "Out"
+     },
+     {
+      "name": "Ajani Cornelius",
+      "pos": "OT",
+      "status": "Out"
+     },
+     {
+      "name": "AJ Epenesa",
+      "pos": "DE",
+      "status": "Out"
+     },
+     {
       "name": "Arnold Ebiketie",
       "pos": "LB",
       "status": "Out"
-     },
-     {
-      "name": "Jonathan Jones",
-      "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "name": "Zack Baun",
-      "pos": "LB",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Dontayvion Wicks",
-      "pos": "WR",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Jalen Hurts",
-      "pos": "QB",
-      "status": "Injured Reserve"
      }
     ],
     "power": {
@@ -707,7 +706,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 25 of 40"
+      "detail": "Score 24 of 40"
      },
      {
       "rule": "B",
@@ -719,7 +718,7 @@
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
       "pass": false,
-      "detail": "DAL key starter out: Jake Ferguson"
+      "detail": "DAL key starter out: Jake Ferguson, Tyler Booker"
      },
      {
       "rule": "Power",
@@ -759,20 +758,20 @@
      "off_sr"
     ],
     "fails": [
-     "DAL key starter out: Jake Ferguson",
-     "Would be on the watch list otherwise (score 25)"
+     "DAL key starter out: Jake Ferguson, Tyler Booker",
+     "Would be on the watch list otherwise (score 24)"
     ],
     "failed": [
-     "DAL key starter out: Jake Ferguson",
-     "Would be on the watch list otherwise (score 25)"
+     "DAL key starter out: Jake Ferguson, Tyler Booker",
+     "Would be on the watch list otherwise (score 24)"
     ],
     "hero": {
-     "score": 25,
+     "score": 24,
      "band": "yellow",
      "parts": {
       "fav_strength": 8,
       "dog_weakness": 12,
-      "health": 3,
+      "health": 2,
       "home": 1,
       "rest": 0,
       "form": 1
@@ -791,6 +790,10 @@
      {
       "level": "red",
       "text": "Underdog QB change (J.Milton, 64 dropbacks this season): call capped at Lean"
+     },
+     {
+      "level": "yellow",
+      "text": "Favorite interior OL out: Tyler Booker"
      },
      {
       "level": "yellow",
@@ -1324,11 +1327,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -2.5,
    "total": 45.5,
    "total_open": 49.5,
-   "fav_ml": -153.0,
+   "fav_ml": -154.0,
    "favorite": "home",
    "spread": -3.0,
    "movement": 0.5,
@@ -1781,11 +1784,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 36.5,
    "total_open": 41.5,
-   "fav_ml": -232.0,
+   "fav_ml": -257.0,
    "favorite": "away",
    "spread": -4.5,
    "movement": 3.0,
@@ -2220,7 +2223,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -6.5,
    "total": 49.5,
    "total_open": 48.5,
@@ -2421,6 +2424,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Juwan Johnson",
+      "pos": "TE",
+      "status": "Questionable"
+     },
+     {
       "name": "Martin Emerson Jr.",
       "pos": "CB",
       "status": "Questionable"
@@ -2438,11 +2446,6 @@
      {
       "name": "David Edwards",
       "pos": "G",
-      "status": "Questionable"
-     },
-     {
-      "name": "Juwan Johnson",
-      "pos": "TE",
       "status": "Questionable"
      }
     ],
@@ -2665,7 +2668,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 47.5,
    "total_open": 45.5,
@@ -3124,7 +3127,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 2.5,
    "total": 41.5,
    "total_open": 47.5,
@@ -3571,11 +3574,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -5.5,
    "total": 49.5,
    "total_open": 45.5,
-   "fav_ml": -1180.0,
+   "fav_ml": -1260.0,
    "favorite": "home",
    "spread": -14.5,
    "movement": 9.0,
@@ -3653,7 +3656,8 @@
     "key_questionable": [
      "Bhayshul Tuten",
      "Cole Van Lanen",
-     "Jakobi Meyers"
+     "Jakobi Meyers",
+     "Parker Washington"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -3661,14 +3665,19 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Patrick Mekari",
-      "pos": "G",
-      "status": "Injured Reserve"
-     },
-     {
       "name": "Bhayshul Tuten",
       "pos": "RB",
       "status": "Questionable"
+     },
+     {
+      "name": "Parker Washington",
+      "pos": "WR",
+      "status": "Questionable"
+     },
+     {
+      "name": "Patrick Mekari",
+      "pos": "G",
+      "status": "Injured Reserve"
      },
      {
       "name": "Jakobi Meyers",
@@ -3678,11 +3687,6 @@
      {
       "name": "Cole Van Lanen",
       "pos": "OT",
-      "status": "Questionable"
-     },
-     {
-      "name": "Jonah Monheim",
-      "pos": "C",
       "status": "Questionable"
      }
     ],
@@ -3764,8 +3768,7 @@
     "key_out": [],
     "key_questionable": [
      "Cordale Flott",
-     "Dan Moore",
-     "John Franklin-Myers"
+     "Dan Moore"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -3773,13 +3776,13 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Cor'Dale Flott",
-      "pos": "CB",
+      "name": "Dorian Mausi",
+      "pos": "LB",
       "status": "Questionable"
      },
      {
-      "name": "John Franklin-Myers",
-      "pos": "DE",
+      "name": "Cor'Dale Flott",
+      "pos": "CB",
       "status": "Questionable"
      },
      {
@@ -3909,11 +3912,11 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Bhayshul Tuten, Cole Van Lanen, Jakobi Meyers"
+      "text": "Favorite questionable: Bhayshul Tuten, Cole Van Lanen, Jakobi Meyers, Parker Washington"
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Cordale Flott, Dan Moore, John Franklin-Myers"
+      "text": "Underdog questionable: Cordale Flott, Dan Moore"
      }
     ],
     "under": {
@@ -4021,7 +4024,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 1.5,
    "total": 39.5,
    "total_open": 41.5,
@@ -4212,14 +4215,18 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
-     "Harrison Phillips",
-     "Isaiah Williams"
+     "Harrison Phillips"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Omar Cooper Jr.",
+      "pos": "WR",
+      "status": "Questionable"
+     },
      {
       "name": "David Onyemata",
       "pos": "DT",
@@ -4234,11 +4241,6 @@
       "name": "T'Vondre Sweat",
       "pos": "DT",
       "status": "Injured Reserve"
-     },
-     {
-      "name": "Isaiah Williams",
-      "pos": "WR",
-      "status": "Questionable"
      },
      {
       "name": "Joseph Ossai",
@@ -4358,7 +4360,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Harrison Phillips, Isaiah Williams"
+      "text": "Favorite questionable: Harrison Phillips"
      },
      {
       "level": "yellow",
@@ -4470,7 +4472,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -4.5,
    "total": 41.5,
    "total_open": 43.5,
@@ -4918,11 +4920,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 2.5,
    "total": 35.5,
    "total_open": 45.5,
-   "fav_ml": -138.0,
+   "fav_ml": -137.0,
    "favorite": "away",
    "spread": -2.5,
    "movement": 5.0,
@@ -5008,14 +5010,14 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Deane Leonard",
-      "pos": "CB",
-      "status": "Injured Reserve"
-     },
-     {
       "name": "Justin Herbert",
       "pos": "QB",
       "status": "Questionable"
+     },
+     {
+      "name": "Deane Leonard",
+      "pos": "CB",
+      "status": "Injured Reserve"
      },
      {
       "name": "Akheem Mesidor",
@@ -5120,6 +5122,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "A.J. Brown",
+      "pos": "WR",
+      "status": "Doubtful"
+     },
+     {
       "name": "Walter Rouse",
       "pos": "OL",
       "status": "Questionable"
@@ -5138,11 +5145,6 @@
       "name": "Romeo Doubs",
       "pos": "WR",
       "status": "Injured Reserve"
-     },
-     {
-      "name": "A.J. Brown",
-      "pos": "WR",
-      "status": "Doubtful"
      }
     ],
     "power": {
@@ -5361,11 +5363,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -4.5,
    "total": 41.5,
    "total_open": 47.5,
-   "fav_ml": -351.0,
+   "fav_ml": -352.0,
    "favorite": "away",
    "spread": -6.5,
    "movement": 2.0,
@@ -5448,6 +5450,16 @@
     "qb_reset": "J.Johnson, 34 dropbacks this season",
     "injury_list": [
      {
+      "name": "Karson Sharar",
+      "pos": "LB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Hunter Long",
+      "pos": "TE",
+      "status": "Questionable"
+     },
+     {
       "name": "Carson Beck",
       "pos": "QB",
       "status": "Questionable"
@@ -5461,16 +5473,6 @@
       "name": "Jon Gaines II",
       "pos": "G",
       "status": "Questionable"
-     },
-     {
-      "name": "Cody Simon",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Zachary Carter",
-      "pos": "DT",
-      "status": "Injured Reserve"
      }
     ],
     "power": {
@@ -5552,7 +5554,6 @@
     "key_questionable": [
      "Amik Robertson",
      "Charles Omenihu",
-     "Stefon Diggs",
      "Treylon Burks"
     ],
     "key_long_term": [],
@@ -5560,6 +5561,11 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Treylon Burks",
+      "pos": "WR",
+      "status": "Questionable"
+     },
      {
       "name": "Amik Robertson",
       "pos": "CB",
@@ -5571,18 +5577,13 @@
       "status": "Questionable"
      },
      {
-      "name": "Treylon Burks",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "name": "Stefon Diggs",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
       "name": "Laremy Tunsil",
       "pos": "OT",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Dyami Brown",
+      "pos": "WR",
       "status": "Injured Reserve"
      }
     ],
@@ -5690,7 +5691,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Amik Robertson, Charles Omenihu, Stefon Diggs, Treylon Burks"
+      "text": "Favorite questionable: Amik Robertson, Charles Omenihu, Treylon Burks"
      }
     ],
     "under": {
@@ -5798,7 +5799,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 43.5,
    "total_open": 46.5,
@@ -6263,7 +6264,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -2.5,
    "total": 40.5,
    "total_open": 39.5,
@@ -6716,7 +6717,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -3.5,
    "total": 43.5,
    "total_open": 44.5,
@@ -7164,7 +7165,7 @@
     "home": 26,
     "away": 13
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -3.5,
    "total": 43.5,
    "total_open": 49.5,
@@ -7821,6 +7822,6 @@
   "watch": 8,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Thu Nov 26, 12:15 PM PT"
+  "built_label": "Thu Nov 26, 1:15 PM PT"
  }
 }
