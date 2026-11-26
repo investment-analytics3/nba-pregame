@@ -123,6 +123,9 @@ class Tick(unittest.TestCase):
                 self.assertEqual(tick.scan(led, now, log=lambda *a: None), 0)   # never twice
                 later = datetime(2026, 11, 20, 1, 5, tzinfo=timezone.utc)   # Los Angeles' window
                 self.assertEqual(tick.scan(led, later, log=lambda *a: None), 2)
+                for b in led["bets"]:
+                    b.pop("actual", None)          # bets logged before the field existed
+                pages.publish(led, later)          # pages must build with open (unsettled) bets
                 res = {"KXHIGHNY-26NOV20-T69": "no", "KXHIGHNY-26NOV20-B62.5": "no",
                        "KXHIGHLAX-26NOV20-T69": "no", "KXHIGHLAX-26NOV20-B62.5": "yes"}
                 with mock.patch("wx.kalshi.market", side_effect=lambda t: {"result": res[t], "expiration_value": "61.00"}):

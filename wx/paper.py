@@ -110,7 +110,7 @@ def make_bet(group: str, series: str, m: dict, now: datetime, forecast: float | 
         "yes_bid": bid, "no_price": price, "depth": depth, "contracts": contracts, "fee": f,
         "cost": round(price * contracts + f, 2), "max_win": round((1 - price) * contracts - f, 2),
         "forecast": forecast, "volume": num(m.get("volume_fp")),
-        "status": "open", "result": None, "pnl": None, "settled_utc": None,
+        "status": "open", "result": None, "pnl": None, "settled_utc": None, "actual": None,
     }
 
 
