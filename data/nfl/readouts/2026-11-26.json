@@ -1,13 +1,44 @@
 {
  "date": "2026-11-26",
- "updated": "2026-11-25T19:55-08:00",
+ "updated": "2026-11-26T05:58-08:00",
  "games": {
   "401873080": {
    "matchup": "PHI @ DAL",
    "fav": "DAL",
    "dog": "PHI",
-   "summary": "No track: Dallas key starter out (TE Jake Ferguson, knee/ankle; SI lists him Out); it would be on the Watch list otherwise (score 25). Analysts strongly favor Dallas: 15 of 19 published picks take the Cowboys, who opened -1.5 in May and are now -8.5 (FanDuel ML -446) after a 38-21 win in Philadelphia on Oct 26. The case is the mismatch on offense: Philadelphia is last in yards per game (256) and 31st in scoring (16.7) with ex-Cowboy Joe Milton starting at QB, while Dallas is 4th in scoring (30.6) and Prescott is playing well (hand wrapped, full practice). Dallas is also without G Tyler Booker, S P.J. Locke and WR Jonathan Mingo; Philadelphia is without CBs Jonathan Jones and OLB Arnold Ebiketie, but CB Quinyon Mitchell is cleared. Dissent: four columnists (DMN's Calvin Watkins; Delaware Online's Rimback, Ganassi, Jordan) pick a low-scoring Eagles upset.",
+   "summary": "No track: Dallas key starter out (TE Jake Ferguson, knee/ankle, ruled Out); it would be on the Watch list otherwise (score 25). Analysts back Dallas heavily: 20 of 26 published picks take the Cowboys (-8.5; moneyline -481 to -500, about 83%; ESPN FPI 82.9%), including all three ESPN analysts (30-20, 30-17, 31-20) and CBS (41-27). The case is the offense mismatch: Philadelphia is last in yards (255.6) and 31st in scoring (16.7) with Joe Milton starting while Hurts is on IR, and Prescott has 11 TDs and 1 INT over his last three games. Dallas is without Ferguson, G Tyler Booker, S P.J. Locke and WR Jonathan Mingo; Philadelphia is without CB Jonathan Jones and OLB Arnold Ebiketie, but CB Quinyon Mitchell has no designation. Dissent: Covers and FantasyLife take Eagles +8.5 (pass rush has 11 sacks in two games, Dallas run defense last), and four local columnists pick an outright Eagles upset.",
    "picks": [
+    {
+     "source": "CBS Sports (Garrett Podell)",
+     "side": "fav",
+     "bet": "DAL 41-27 (score pick)",
+     "note": "Eagles lack weapons for a shootout; Prescott 20-0 at home vs NFC East"
+    },
+    {
+     "source": "ESPN (Pamela Maldonado)",
+     "side": "fav",
+     "bet": "DAL 30-20 (score pick)",
+     "price": "FPI: DAL 82.9%",
+     "note": "Dallas games 21-7 to the over since 2025"
+    },
+    {
+     "source": "ESPN (Eric Moody)",
+     "side": "fav",
+     "bet": "DAL 30-17 (score pick)"
+    },
+    {
+     "source": "ESPN (Seth Walder)",
+     "side": "fav",
+     "bet": "DAL 31-20 (score pick)",
+     "note": "Bold call: Quinnen Williams multiple sacks"
+    },
+    {
+     "source": "ClutchPoints / Yahoo (Garrett Kerman)",
+     "side": "fav",
+     "bet": "DAL -8.5 (-110), Over 47.5",
+     "price": "DAL -481 / PHI +370",
+     "note": "Eagles can't move the ball; Dallas already won by 17"
+    },
     {
      "source": "Sportsgambler (Paul Thomas)",
      "side": "fav",
@@ -110,9 +141,43 @@
      "source": "Delaware Online (Bob Jordan)",
      "side": "dog",
      "bet": "PHI 13-10 (score pick)"
+    },
+    {
+     "source": "Covers (Jason Logan)",
+     "side": "dog",
+     "bet": "PHI +8.5 (spread pick)",
+     "price": "DAL 79% implied",
+     "note": "Eagles D 8th in EPA allowed since Week 9; pass rush surging"
+    },
+    {
+     "source": "FantasyLife (Justin Carlucci)",
+     "side": "dog",
+     "bet": "PHI +8.5 (-110, FanDuel)",
+     "price": "DAL -500 / PHI +385",
+     "note": "Recency bias after Dallas' 50-point win over Tennessee"
     }
    ],
    "scores": [
+    {
+     "source": "CBS Sports",
+     "fav": 41,
+     "dog": 27
+    },
+    {
+     "source": "ESPN Maldonado",
+     "fav": 30,
+     "dog": 20
+    },
+    {
+     "source": "ESPN Moody",
+     "fav": 30,
+     "dog": 17
+    },
+    {
+     "source": "ESPN Walder",
+     "fav": 31,
+     "dog": 20
+    },
     {
      "source": "Sportsgambler",
      "fav": 34,
@@ -209,7 +274,7 @@
      {
       "player": "Jake Ferguson",
       "status": "Out",
-      "note": "TE, knee/ankle; DNP all week, third straight missed game (SI, Nov 25)"
+      "note": "TE, knee/ankle; ruled out, third straight missed game (Cowboys.com / Dallas Sports Journal, Nov 25)"
      },
      {
       "player": "Tyler Booker",
@@ -229,20 +294,25 @@
      {
       "player": "Devin Moore",
       "status": "Questionable",
-      "note": "CB, hip; returning from IR (SI, Nov 25)"
+      "note": "CB, hip; on IR, must be activated to play (Cowboys.com, Nov 25)"
      },
      {
       "player": "Jalen Thompson",
       "status": "Questionable",
-      "note": "S, hamstring; returning from IR (SI, Nov 25)"
+      "note": "S, hamstring; on IR, must be activated to play (Cowboys.com, Nov 25)"
      },
      {
       "player": "Dak Prescott",
       "status": "Full participant",
-      "note": "QB, left hand wrapped; coach says it is fine (Nov 23-25 reports)"
+      "note": "QB, left hand; full all three days, no game designation (Dallas Sports Journal, Nov 25)"
      }
     ],
     "dog": [
+     {
+      "player": "Jalen Hurts",
+      "status": "Injured reserve",
+      "note": "QB, blood clots; on IR since Oct 17, Joe Milton starts (CBS / ClutchPoints, Nov 25)"
+     },
      {
       "player": "Arnold Ebiketie",
       "status": "Out",
@@ -256,7 +326,7 @@
      {
       "player": "Quinyon Mitchell",
       "status": "No designation",
-      "note": "CB, hamstring; 'good to go' (Eagles.com, Nov 25)"
+      "note": "CB, hamstring; full practice Wednesday, Fangio says he'll be fine (Dallas Sports Journal / ESPN, Nov 25-26)"
      },
      {
       "player": "Smael Mondon",
@@ -274,7 +344,7 @@
       "note": "RB, neck/illness (Wednesday report, Nov 25)"
      }
     ],
-    "note": "Wednesday estimated reports (walkthroughs) from Eagles.com and SI, Nov 25. Joe Milton starts at QB for Philadelphia (SI); no source gives a status for Jalen Hurts. Zack Baun is on injured reserve."
+    "note": "Final designations from Cowboys.com and Dallas Sports Journal (Nov 25) and the Eagles' Wednesday report. Zack Baun is on injured reserve."
    },
    "sources": [
     {
@@ -312,9 +382,37 @@
     {
      "site": "Yahoo Sports / Athlon",
      "url": "https://sports.yahoo.com/nfl/articles/cowboys-te-jake-ferguson-misses-212615687.html"
+    },
+    {
+     "site": "CBS Sports",
+     "url": "https://www.cbssports.com/nfl/news/cowboys-vs-eagles-thanksgiving-how-to-watch-odds-preview-prediction/"
+    },
+    {
+     "site": "ESPN",
+     "url": "https://www.espn.com/nfl/story/_/id/50582822/thanksgiving-games-picks-schedule-fantasy-odds-2026"
+    },
+    {
+     "site": "ClutchPoints",
+     "url": "https://clutchpoints.com/betting/eagles-vs-cowboys-prediction-odds-pick-for-week-12-thanksgiving-clash-2026"
+    },
+    {
+     "site": "Covers",
+     "url": "https://www.covers.com/nfl/eagles-vs-cowboys-prediction-picks-nov-26-2026"
+    },
+    {
+     "site": "FantasyLife",
+     "url": "https://www.fantasylife.com/articles/betting/cowboys-vs-eagles-thanksgiving-matchup-picks-odds-predictions"
+    },
+    {
+     "site": "Dallas Sports Journal",
+     "url": "https://dallassportsjournal.com/cowboys-eagles-final-injury-report-winters-barham-thompson/"
+    },
+    {
+     "site": "Dallas Cowboys",
+     "url": "https://www.dallascowboys.com/news/updates-november-2026"
     }
    ]
   }
  },
- "notes": "Night-before pass (evening run, Nov 25); the Thanksgiving morning run will refresh it with final injury designations and any new picks. Only PHI @ DAL is covered: CHI @ DET (16) and KC @ BUF (14) are No track at 20 or under. NBC Sports betting and PostSouth previews could not be opened; Covers and SI opening-odds pieces are May articles with stale lines, so left out. No Action Network, numberFire or SI Betting pick for this game was found yet. Injury conflicts: Mitchell is Limited in the Eagles.com table but 'full participant' in its text; Moore and Thompson listed Full by DSJ/Eagles.com but Questionable by SI (used SI's designations)."
+ "notes": "Game-day refresh (morning run, Nov 26) of the night-before pass. Added CBS, ESPN (3 analysts + FPI), ClutchPoints/Yahoo, Covers and FantasyLife picks and the final Cowboys designations. Only PHI @ DAL is covered: CHI @ DET (16) and KC @ BUF (14) are No track at 20 or under; the one college game today (TCU @ TTU, 13) is not covered. Covers and FantasyLife picked only the spread (Eagles +8.5), so they count as 'dog'. SI Betting's Week 12 Eagles-Cowboys pages are from the 2025 game and were left out; no 2026 Action Network, numberFire or Sports Betting Dime pick was found. Bleeding Green Nation's final injury report could not be opened. Mitchell's earlier Limited/Full conflict is settled: full practice Wednesday, no designation. Totals vary by book (47.5-48.5)."
 }
