@@ -30,14 +30,14 @@
   <div class="nav"><a href="./">Weather board</a><a class="on" href="results.html">Results</a><a href="../">All boards</a></div>
   <div class="eyebrow" style="margin-top:18px">Kalshi daily temperature · paper results</div>
   <h1 class="title cond">Weather results</h1>
-  <div class="small muted" style="margin-top:6px">Updated Thu Nov 26, 1:30 PM PT · <a href="results.csv">Download CSV</a></div>
+  <div class="small muted" style="margin-top:6px">Updated Thu Nov 26, 2:29 PM PT · <a href="results.csv">Download CSV</a></div>
 
   <div class="cards">
     
     <div class="panel gc main">
       <h3 class="cond">Main rule</h3>
       <div class="what">7 original high-temp cities, day before ~5 PM local</div>
-      <div class="kv"><span>Settled bets</span><b>0</b></div>
+      <div class="kv"><span>Settled bets</span><b>0 <span class="muted" style="font-weight:500">+5 open</span></b></div>
       <div class="kv"><span>Record</span><b>0-0</b></div>
       <div class="kv"><span>Win rate vs avg NO price</span><b>—</b></div>
       <div class="kv"><span>Paper P&amp;L</span><b class="">$0.00</b></div>
@@ -61,7 +61,7 @@
     <div class="panel gc ">
       <h3 class="cond">Other high-temp cities</h3>
       <div class="what">17 newer high-temp cities, day before ~5 PM local · comparison only</div>
-      <div class="kv"><span>Settled bets</span><b>0</b></div>
+      <div class="kv"><span>Settled bets</span><b>0 <span class="muted" style="font-weight:500">+11 open</span></b></div>
       <div class="kv"><span>Record</span><b>0-0</b></div>
       <div class="kv"><span>Win rate vs avg NO price</span><b>—</b></div>
       <div class="kv"><span>Paper P&amp;L</span><b class="">$0.00</b></div>
@@ -73,7 +73,7 @@
     <div class="panel gc ">
       <h3 class="cond">Low-temp markets</h3>
       <div class="what">24 low-temp cities, day before ~5 PM local · comparison only</div>
-      <div class="kv"><span>Settled bets</span><b>0</b></div>
+      <div class="kv"><span>Settled bets</span><b>0 <span class="muted" style="font-weight:500">+18 open</span></b></div>
       <div class="kv"><span>Record</span><b>0-0</b></div>
       <div class="kv"><span>Win rate vs avg NO price</span><b>—</b></div>
       <div class="kv"><span>Paper P&amp;L</span><b class="">$0.00</b></div>
@@ -92,17 +92,264 @@
   <div class="sec-head"><h2 class="cond">Main rule by city</h2><span class="rule"></span></div>
   <div class="panel" style="padding:14px 18px;margin-bottom:26px"><div class="tw"><table>
     <tr><th>City</th><th>Settled</th><th>Open</th><th>Record</th><th>Win %</th><th>Avg NO price</th><th>Paper P&amp;L</th><th>c/contract</th></tr>
-    <tr><td colspan="8" class="muted">No bets yet.</td></tr>
+    
+    <tr><td>Miami</td><td>0</td><td>2</td><td>0-0</td><td>—</td><td>—</td>
+      <td class="">$0.00</td><td>—</td></tr>
+    
+    <tr><td>New York</td><td>0</td><td>2</td><td>0-0</td><td>—</td><td>—</td>
+      <td class="">$0.00</td><td>—</td></tr>
+    
+    <tr><td>Philadelphia</td><td>0</td><td>1</td><td>0-0</td><td>—</td><td>—</td>
+      <td class="">$0.00</td><td>—</td></tr>
+    
   </table></div></div>
 
-  <div class="sec-head"><h2 class="cond">Every paper bet</h2><span class="cnt" id="cnt">0</span><span class="rule"></span></div>
+  <div class="sec-head"><h2 class="cond">Every paper bet</h2><span class="cnt" id="cnt">34</span><span class="rule"></span></div>
   <div class="filters">
     <select id="fg"><option value="">All groups</option><option value="main" selected>Main rule</option><option value="evening" >Main cities, evening</option><option value="other_highs" >Other high-temp cities</option><option value="lows" >Low-temp markets</option></select>
-    <select id="fc"><option value="">All cities</option></select>
+    <select id="fc"><option value="">All cities</option><option>Atlanta</option><option>Boston</option><option>Louisville</option><option>Miami</option><option>New York</option><option>Newark</option><option>Philadelphia</option><option>Trenton</option><option>Washington</option></select>
     <select id="fs"><option value="">Any status</option><option value="won">Won</option><option value="lost">Lost</option><option value="open">Open</option></select>
   </div>
   <div class="scroll"><table id="led">
     <tr><th>Event date</th><th>Group</th><th>City</th><th style="text-align:left">Bracket (NO)</th><th>YES bid</th><th>NO price</th><th>Contracts</th><th>Cost</th><th>Official</th><th>Result</th><th>P&amp;L</th><th>Logged</th></tr>
+    
+    <tr data-g="lows" data-c="Atlanta" data-s="open"><td>Fri Nov 27</td><td>Lows</td><td>Atlanta</td><td style="text-align:left">33° to 34°</td>
+      <td>1c</td><td>99c</td><td>25</td><td>$24.77</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="lows" data-c="Atlanta" data-s="open"><td>Fri Nov 27</td><td>Lows</td><td>Atlanta</td><td style="text-align:left">41° or above</td>
+      <td>1c</td><td>99c</td><td>25</td><td>$24.77</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="lows" data-c="Boston" data-s="open"><td>Fri Nov 27</td><td>Lows</td><td>Boston</td><td style="text-align:left">49° to 50°</td>
+      <td>3c</td><td>97c</td><td>16</td><td>$15.56</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="lows" data-c="Boston" data-s="open"><td>Fri Nov 27</td><td>Lows</td><td>Boston</td><td style="text-align:left">51° to 52°</td>
+      <td>1c</td><td>99c</td><td>25</td><td>$24.77</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="lows" data-c="Washington" data-s="open"><td>Fri Nov 27</td><td>Lows</td><td>Washington</td><td style="text-align:left">39° or below</td>
+      <td>2c</td><td>98c</td><td>25</td><td>$24.54</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="lows" data-c="Newark" data-s="open"><td>Fri Nov 27</td><td>Lows</td><td>Newark</td><td style="text-align:left">47° to 48°</td>
+      <td>4c</td><td>96c</td><td>13</td><td>$12.52</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="lows" data-c="Newark" data-s="open"><td>Fri Nov 27</td><td>Lows</td><td>Newark</td><td style="text-align:left">49° to 50°</td>
+      <td>1c</td><td>99c</td><td>25</td><td>$24.77</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="lows" data-c="Newark" data-s="open"><td>Fri Nov 27</td><td>Lows</td><td>Newark</td><td style="text-align:left">51° or above</td>
+      <td>1c</td><td>99c</td><td>25</td><td>$24.77</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="lows" data-c="Miami" data-s="open"><td>Fri Nov 27</td><td>Lows</td><td>Miami</td><td style="text-align:left">58° to 59°</td>
+      <td>3c</td><td>97c</td><td>25</td><td>$24.31</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="lows" data-c="New York" data-s="open"><td>Fri Nov 27</td><td>Lows</td><td>New York</td><td style="text-align:left">50° to 51°</td>
+      <td>1c</td><td>99c</td><td>25</td><td>$24.77</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="lows" data-c="New York" data-s="open"><td>Fri Nov 27</td><td>Lows</td><td>New York</td><td style="text-align:left">52° or above</td>
+      <td>1c</td><td>99c</td><td>25</td><td>$24.77</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="lows" data-c="Philadelphia" data-s="open"><td>Fri Nov 27</td><td>Lows</td><td>Philadelphia</td><td style="text-align:left">41° to 42°</td>
+      <td>3c</td><td>97c</td><td>25</td><td>$24.31</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="lows" data-c="Philadelphia" data-s="open"><td>Fri Nov 27</td><td>Lows</td><td>Philadelphia</td><td style="text-align:left">49° or above</td>
+      <td>1c</td><td>99c</td><td>25</td><td>$24.77</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="lows" data-c="Louisville" data-s="open"><td>Fri Nov 27</td><td>Lows</td><td>Louisville</td><td style="text-align:left">31° to 32°</td>
+      <td>1c</td><td>99c</td><td>25</td><td>$24.77</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="lows" data-c="Louisville" data-s="open"><td>Fri Nov 27</td><td>Lows</td><td>Louisville</td><td style="text-align:left">33° to 34°</td>
+      <td>2c</td><td>98c</td><td>25</td><td>$24.54</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="lows" data-c="Trenton" data-s="open"><td>Fri Nov 27</td><td>Lows</td><td>Trenton</td><td style="text-align:left">38° to 39°</td>
+      <td>2c</td><td>98c</td><td>25</td><td>$24.54</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="lows" data-c="Trenton" data-s="open"><td>Fri Nov 27</td><td>Lows</td><td>Trenton</td><td style="text-align:left">37° or below</td>
+      <td>1c</td><td>99c</td><td>25</td><td>$24.77</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="lows" data-c="Trenton" data-s="open"><td>Fri Nov 27</td><td>Lows</td><td>Trenton</td><td style="text-align:left">46° or above</td>
+      <td>2c</td><td>98c</td><td>15</td><td>$14.73</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="main" data-c="Miami" data-s="open"><td>Fri Nov 27</td><td>Main</td><td>Miami</td><td style="text-align:left">78° to 79°</td>
+      <td>2c</td><td>98c</td><td>25</td><td>$24.54</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="main" data-c="Miami" data-s="open"><td>Fri Nov 27</td><td>Main</td><td>Miami</td><td style="text-align:left">71° or below</td>
+      <td>2c</td><td>98c</td><td>25</td><td>$24.54</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="main" data-c="New York" data-s="open"><td>Fri Nov 27</td><td>Main</td><td>New York</td><td style="text-align:left">59° to 60°</td>
+      <td>2c</td><td>98c</td><td>25</td><td>$24.54</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="main" data-c="New York" data-s="open"><td>Fri Nov 27</td><td>Main</td><td>New York</td><td style="text-align:left">61° to 62°</td>
+      <td>1c</td><td>99c</td><td>25</td><td>$24.77</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="main" data-c="Philadelphia" data-s="open"><td>Fri Nov 27</td><td>Main</td><td>Philadelphia</td><td style="text-align:left">61° to 62°</td>
+      <td>1c</td><td>99c</td><td>25</td><td>$24.77</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="other_highs" data-c="Atlanta" data-s="open"><td>Fri Nov 27</td><td>Other highs</td><td>Atlanta</td><td style="text-align:left">47° to 48°</td>
+      <td>4c</td><td>96c</td><td>25</td><td>$24.07</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="other_highs" data-c="Atlanta" data-s="open"><td>Fri Nov 27</td><td>Other highs</td><td>Atlanta</td><td style="text-align:left">46° or below</td>
+      <td>2c</td><td>98c</td><td>25</td><td>$24.54</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="other_highs" data-c="Atlanta" data-s="open"><td>Fri Nov 27</td><td>Other highs</td><td>Atlanta</td><td style="text-align:left">55° or above</td>
+      <td>1c</td><td>99c</td><td>25</td><td>$24.77</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="other_highs" data-c="Boston" data-s="open"><td>Fri Nov 27</td><td>Other highs</td><td>Boston</td><td style="text-align:left">62° to 63°</td>
+      <td>1c</td><td>99c</td><td>25</td><td>$24.77</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="other_highs" data-c="Washington" data-s="open"><td>Fri Nov 27</td><td>Other highs</td><td>Washington</td><td style="text-align:left">58° to 59°</td>
+      <td>3c</td><td>97c</td><td>25</td><td>$24.31</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="other_highs" data-c="Washington" data-s="open"><td>Fri Nov 27</td><td>Other highs</td><td>Washington</td><td style="text-align:left">60° to 61°</td>
+      <td>2c</td><td>98c</td><td>7</td><td>$6.87</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="other_highs" data-c="Newark" data-s="open"><td>Fri Nov 27</td><td>Other highs</td><td>Newark</td><td style="text-align:left">61° to 62°</td>
+      <td>1c</td><td>99c</td><td>16</td><td>$15.86</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="other_highs" data-c="Louisville" data-s="open"><td>Fri Nov 27</td><td>Other highs</td><td>Louisville</td><td style="text-align:left">47° to 48°</td>
+      <td>2c</td><td>98c</td><td>25</td><td>$24.54</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="other_highs" data-c="Louisville" data-s="open"><td>Fri Nov 27</td><td>Other highs</td><td>Louisville</td><td style="text-align:left">49° to 50°</td>
+      <td>1c</td><td>99c</td><td>25</td><td>$24.77</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="other_highs" data-c="Trenton" data-s="open"><td>Fri Nov 27</td><td>Other highs</td><td>Trenton</td><td style="text-align:left">57° to 58°</td>
+      <td>3c</td><td>97c</td><td>25</td><td>$24.31</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
+    
+    <tr data-g="other_highs" data-c="Trenton" data-s="open"><td>Fri Nov 27</td><td>Other highs</td><td>Trenton</td><td style="text-align:left">59° to 60°</td>
+      <td>3c</td><td>97c</td><td>11</td><td>$10.70</td>
+      <td>—</td>
+      <td><span class="chip cn">Open</span></td>
+      <td class="">—</td>
+      <td class="muted">2026-11-26 22:29 UTC</td></tr>
     
   </table></div>
   <div class="tiny">Paper only: the system reads Kalshi's public prices and never places a bet. Fees are Kalshi's taker fee at the logged price.</div>
