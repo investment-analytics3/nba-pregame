@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-26T07:45:45-08:00",
- "built_label": "Thu Nov 26, 7:45 AM PT",
+ "built_at": "2026-11-26T08:45:38-08:00",
+ "built_label": "Thu Nov 26, 8:45 AM PT",
  "games": [
   {
    "id": "401873081",
@@ -24,7 +24,7 @@
    "open_spread": 2.5,
    "total": 56.5,
    "total_open": 51.5,
-   "fav_ml": -119.0,
+   "fav_ml": -116.0,
    "favorite": "away",
    "spread": -1.5,
    "movement": 4.0,
@@ -98,20 +98,20 @@
      "rank": 5
     },
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
+    "key_out": [
      "Chuck Clark",
      "D.J. Wonnum"
     ],
+    "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Skyler Gill-Howard",
-      "pos": "DT",
-      "status": "Injured Reserve"
+      "name": "DJ Wonnum",
+      "pos": "LB",
+      "status": "Out"
      },
      {
       "name": "Ennis Rakestraw Jr.",
@@ -119,19 +119,19 @@
       "status": "Out"
      },
      {
+      "name": "Tyrus Wheat",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
       "name": "Chuck Clark",
       "pos": "S",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
-      "name": "DJ Wonnum",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Cade Mays",
-      "pos": "C",
-      "status": "Injured Reserve"
+      "name": "Keith Abney II",
+      "pos": "CB",
+      "status": "Out"
      }
     ],
     "power": {
@@ -210,32 +210,30 @@
     },
     "injuries_known": true,
     "key_out": [],
-    "key_questionable": [
-     "Tyrique Stevenson"
-    ],
+    "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
-      "name": "D'Marco Jackson",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Tyrique Stevenson Sr.",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Kyler Gordon",
+      "name": "Isaac Yiadom",
       "pos": "CB",
       "status": "Out"
      },
      {
-      "name": "Roschon Johnson",
-      "pos": "RB",
+      "name": "Case Keenum",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "name": "Jayden Loving",
+      "pos": "DT",
+      "status": "Out"
+     },
+     {
+      "name": "Jordan McFadden",
+      "pos": "G",
       "status": "Out"
      },
      {
@@ -352,14 +350,6 @@
      {
       "level": "yellow",
       "text": "Line moved +4 toward the favorite (4+): downgrade"
-     },
-     {
-      "level": "yellow",
-      "text": "Favorite questionable: Tyrique Stevenson"
-     },
-     {
-      "level": "yellow",
-      "text": "Underdog questionable: Chuck Clark, D.J. Wonnum"
      }
     ],
     "under": {
@@ -433,7 +423,7 @@
    "open_spread": -1.5,
    "total": 49.5,
    "total_open": 49.5,
-   "fav_ml": -478.0,
+   "fav_ml": -469.0,
    "favorite": "home",
    "spread": -8.5,
    "movement": 7.0,
@@ -1254,7 +1244,7 @@
    "open_spread": -2.5,
    "total": 45.5,
    "total_open": 49.5,
-   "fav_ml": -154.0,
+   "fav_ml": -153.0,
    "favorite": "home",
    "spread": -3.0,
    "movement": 0.5,
@@ -1642,9 +1632,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV26KCBUF",
-    "fav_prob": 0.595,
-    "bid": 0.59,
-    "ask": 0.6
+    "fav_prob": 0.605,
+    "bid": 0.6,
+    "ask": 0.61
    }
   },
   {
@@ -1667,7 +1657,7 @@
    "open_spread": -1.5,
    "total": 36.5,
    "total_open": 41.5,
-   "fav_ml": -229.0,
+   "fav_ml": -228.0,
    "favorite": "away",
    "spread": -4.5,
    "movement": 3.0,
@@ -2471,7 +2461,7 @@
    "open_spread": -1.5,
    "total": 47.5,
    "total_open": 45.5,
-   "fav_ml": -332.0,
+   "fav_ml": -333.0,
    "favorite": "home",
    "spread": -6.5,
    "movement": 5.0,
@@ -5325,13 +5315,13 @@
    },
    "line_source": "Draft Kings",
    "open_spread": -1.5,
-   "total": 44.5,
+   "total": 43.5,
    "total_open": 46.5,
-   "fav_ml": -147.0,
+   "fav_ml": -150.0,
    "favorite": "home",
    "spread": -2.5,
    "movement": 1.0,
-   "total_move": -2.0,
+   "total_move": -3.0,
    "fav_home": true,
    "home": {
     "code": "SF",
@@ -5679,7 +5669,7 @@
       1,
       21
      ],
-     "total_move": -2.0,
+     "total_move": -3.0,
      "note": ""
     },
     "call": "No track",
@@ -7209,6 +7199,6 @@
   "watch": 9,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Thu Nov 26, 7:45 AM PT"
+  "built_label": "Thu Nov 26, 8:45 AM PT"
  }
 }
