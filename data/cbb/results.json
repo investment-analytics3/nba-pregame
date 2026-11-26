@@ -2,6 +2,378 @@
  "sport": "cbb",
  "games": [
   {
+   "id": "401920531",
+   "period": "2026-11-26",
+   "period_label": "2026-11-26",
+   "date": "2026-11-26",
+   "start_utc": "2026-11-27T04:30:00+00:00",
+   "favorite": "TTU",
+   "opponent": "ORE",
+   "fav_site": "neutral",
+   "fav_side": "away",
+   "line": "-10.5",
+   "line_num": 10.5,
+   "tier": "watch",
+   "tier_label": "Watch list",
+   "route": "",
+   "score": 18,
+   "band": "yellow",
+   "flag": "No",
+   "fav_team": {
+    "record": "5-1",
+    "form": "2-1",
+    "pr": 5,
+    "rest": "No"
+   },
+   "opp_team": {
+    "record": "3-2",
+    "form": "1-2",
+    "pr": 77,
+    "rest": "No"
+   },
+   "fav_metrics": {
+    "season": {
+     "off": {
+      "v": "112.8",
+      "r": 113,
+      "c": "yellow"
+     },
+     "efg": {
+      "v": "51.4%",
+      "r": 173,
+      "c": "red"
+     },
+     "def": {
+      "v": "78.0",
+      "r": 1,
+      "c": "green"
+     },
+     "opp_efg": {
+      "v": "42.1%",
+      "r": 14,
+      "c": "green"
+     }
+    },
+    "last3": {
+     "off": {
+      "v": "115.6",
+      "r": 95,
+      "c": "yellow"
+     },
+     "efg": {
+      "v": "53.1%",
+      "r": 128,
+      "c": "yellow"
+     },
+     "def": {
+      "v": "72.8",
+      "r": 1,
+      "c": "green"
+     },
+     "opp_efg": {
+      "v": "37.1%",
+      "r": 4,
+      "c": "green"
+     }
+    }
+   },
+   "opp_metrics": {
+    "season": {
+     "off": {
+      "v": "122.9",
+      "r": 27,
+      "c": "red"
+     },
+     "efg": {
+      "v": "61.3%",
+      "r": 10,
+      "c": "deep-red"
+     },
+     "def": {
+      "v": "106.8",
+      "r": 169,
+      "c": "green"
+     },
+     "opp_efg": {
+      "v": "50.0%",
+      "r": 155,
+      "c": "green"
+     }
+    },
+    "last3": {
+     "off": {
+      "v": "118.1",
+      "r": 61,
+      "c": "yellow"
+     },
+     "efg": {
+      "v": "58.2%",
+      "r": 42,
+      "c": "red"
+     },
+     "def": {
+      "v": "112.5",
+      "r": 246,
+      "c": "green"
+     },
+     "opp_efg": {
+      "v": "50.6%",
+      "r": 162,
+      "c": "green"
+     }
+    }
+   },
+   "live_page": "cbb/game.html?g=401920531"
+  },
+  {
+   "id": "401920539",
+   "period": "2026-11-26",
+   "period_label": "2026-11-26",
+   "date": "2026-11-26",
+   "start_utc": "2026-11-27T02:00:00+00:00",
+   "favorite": "ALA",
+   "opponent": "KSU",
+   "fav_site": "neutral",
+   "fav_side": "away",
+   "line": "-15.5",
+   "line_num": 15.5,
+   "tier": "out",
+   "tier_label": "No track",
+   "route": "",
+   "score": 12,
+   "band": "red",
+   "flag": "No",
+   "fav_team": {
+    "record": "5-1",
+    "form": "2-1",
+    "pr": 39,
+    "rest": "No"
+   },
+   "opp_team": {
+    "record": "3-3",
+    "form": "1-2",
+    "pr": 118,
+    "rest": "Yes"
+   },
+   "fav_metrics": {
+    "season": {
+     "off": {
+      "v": "121.9",
+      "r": 36,
+      "c": "green"
+     },
+     "efg": {
+      "v": "55.2%",
+      "r": 65,
+      "c": "yellow"
+     },
+     "def": {
+      "v": "100.8",
+      "r": 101,
+      "c": "yellow"
+     },
+     "opp_efg": {
+      "v": "46.2%",
+      "r": 65,
+      "c": "yellow"
+     }
+    },
+    "last3": {
+     "off": {
+      "v": "115.0",
+      "r": 99,
+      "c": "yellow"
+     },
+     "efg": {
+      "v": "49.4%",
+      "r": 232,
+      "c": "red"
+     },
+     "def": {
+      "v": "106.4",
+      "r": 164,
+      "c": "red"
+     },
+     "opp_efg": {
+      "v": "45.7%",
+      "r": 53,
+      "c": "yellow"
+     }
+    }
+   },
+   "opp_metrics": {
+    "season": {
+     "off": {
+      "v": "107.1",
+      "r": 174,
+      "c": "green"
+     },
+     "efg": {
+      "v": "53.8%",
+      "r": 95,
+      "c": "yellow"
+     },
+     "def": {
+      "v": "104.1",
+      "r": 144,
+      "c": "yellow"
+     },
+     "opp_efg": {
+      "v": "51.7%",
+      "r": 209,
+      "c": "green"
+     }
+    },
+    "last3": {
+     "off": {
+      "v": "102.8",
+      "r": 232,
+      "c": "green"
+     },
+     "efg": {
+      "v": "48.0%",
+      "r": 258,
+      "c": "green"
+     },
+     "def": {
+      "v": "107.1",
+      "r": 169,
+      "c": "green"
+     },
+     "opp_efg": {
+      "v": "54.3%",
+      "r": 268,
+      "c": "green"
+     }
+    }
+   },
+   "live_page": "cbb/game.html?g=401920539"
+  },
+  {
+   "id": "401912231",
+   "period": "2026-11-26",
+   "period_label": "2026-11-26",
+   "date": "2026-11-26",
+   "start_utc": "2026-11-26T17:00:00+00:00",
+   "favorite": "UTSA",
+   "opponent": "ARMY",
+   "fav_site": "home",
+   "fav_side": "home",
+   "line": "-13.5",
+   "line_num": 13.5,
+   "tier": "out",
+   "tier_label": "No track",
+   "route": "",
+   "score": 13,
+   "band": "red",
+   "flag": "No",
+   "fav_team": {
+    "record": "4-2",
+    "form": "2-1",
+    "pr": 171,
+    "rest": "No"
+   },
+   "opp_team": {
+    "record": "2-5",
+    "form": "0-3",
+    "pr": 314,
+    "rest": "No"
+   },
+   "fav_metrics": {
+    "season": {
+     "off": {
+      "v": "111.2",
+      "r": 137,
+      "c": "yellow"
+     },
+     "efg": {
+      "v": "51.6%",
+      "r": 167,
+      "c": "red"
+     },
+     "def": {
+      "v": "104.3",
+      "r": 149,
+      "c": "yellow"
+     },
+     "opp_efg": {
+      "v": "49.6%",
+      "r": 136,
+      "c": "yellow"
+     }
+    },
+    "last3": {
+     "off": {
+      "v": "115.7",
+      "r": 94,
+      "c": "yellow"
+     },
+     "efg": {
+      "v": "51.0%",
+      "r": 187,
+      "c": "red"
+     },
+     "def": {
+      "v": "105.7",
+      "r": 151,
+      "c": "red"
+     },
+     "opp_efg": {
+      "v": "48.3%",
+      "r": 110,
+      "c": "yellow"
+     }
+    }
+   },
+   "opp_metrics": {
+    "season": {
+     "off": {
+      "v": "95.2",
+      "r": 298,
+      "c": "green"
+     },
+     "efg": {
+      "v": "46.2%",
+      "r": 284,
+      "c": "green"
+     },
+     "def": {
+      "v": "114.1",
+      "r": 280,
+      "c": "green"
+     },
+     "opp_efg": {
+      "v": "53.1%",
+      "r": 253,
+      "c": "green"
+     }
+    },
+    "last3": {
+     "off": {
+      "v": "93.5",
+      "r": 318,
+      "c": "green"
+     },
+     "efg": {
+      "v": "46.0%",
+      "r": 303,
+      "c": "green"
+     },
+     "def": {
+      "v": "110.4",
+      "r": 217,
+      "c": "green"
+     },
+     "opp_efg": {
+      "v": "50.6%",
+      "r": 167,
+      "c": "green"
+     }
+    }
+   },
+   "live_page": "cbb/game.html?g=401912231"
+  },
+  {
    "id": "401929005",
    "period": "2026-11-25",
    "period_label": "2026-11-25",
