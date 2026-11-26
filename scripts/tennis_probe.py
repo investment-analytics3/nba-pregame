@@ -78,6 +78,7 @@ def kalshi():
     singles = [x["ticker"] for x in summary if x["open_events"] and any(k in x["ticker"] for k in ("GAME", "MATCH"))
                and "DOUBLES" not in x["ticker"] and "TABLE" not in x["ticker"] and "ITTF" not in x["ticker"]]
     for t in singles[:8]:
+        time.sleep(1.5)
         fetch(f"kalshi/settled_{t}.json", f"{KALSHI}/markets?series_ticker={t}&status=settled&limit=50",
               headers={"User-Agent": "tennis-probe/1.0"})
     with open(os.path.join(OUT, "kalshi", "summary.json"), "w") as f:
@@ -99,6 +100,15 @@ def others(deep: bool):
     fetch("ta/rune.js", "https://www.tennisabstract.com/jsmatches/HolgerRune.js")
     fetch("ta/squire.js", "https://www.tennisabstract.com/jsmatches/HenriSquire.js")
     fetch("ta/sabalenka_page.html", "https://www.tennisabstract.com/cgi-bin/wplayer.cgi?p=ArynaSabalenka")
+    for n in ("JannikSinner", "ArynaSabalenka", "LucaNardi", "KaranSingh", "AlexanderZverev"):
+        fetch(f"ta/frags_{n}.js", f"https://www.tennisabstract.com/jsfrags/{n}.js")
+    fetch("ta/nardi_classic.html", "https://www.tennisabstract.com/cgi-bin/player-classic.cgi?p=LucaNardi")
+    fetch("ta/zverev_classic.html", "https://www.tennisabstract.com/cgi-bin/player-classic.cgi?p=AlexanderZverev")
+    # Kalshi settled history (paged, paced) for the form metric
+    for t in ("KXATPMATCH", "KXWTAMATCH", "KXATPCHALLENGERMATCH", "KXITFMATCH"):
+        time.sleep(1.5)
+        fetch(f"kalshi/hist_{t}.json", f"{KALSHI}/events?series_ticker={t}&status=settled&with_nested_markets=true&limit=200",
+              headers={"User-Agent": "tennis-probe/1.0"}, limit=20_000_000)
     fetch("ta/sabalenka.js", "https://www.tennisabstract.com/jsmatches/ArynaSabalenka.js")
     # Sackmann raw files
     for f in ("tennis_atp/master/atp_matches_2025.csv", "tennis_atp/master/atp_matches_2026.csv",
