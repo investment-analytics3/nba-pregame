@@ -1,472 +1,33 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-26T13:15:35-08:00",
- "built_label": "Thu Nov 26, 1:15 PM PT",
+ "built_at": "2026-11-26T14:15:36-08:00",
+ "built_label": "Thu Nov 26, 2:15 PM PT",
  "games": [
-  {
-   "id": "401873081",
-   "nflverse_id": "2026_12_CHI_DET",
-   "kick_utc": "2026-11-26T18:00:00+00:00",
-   "kick_pt": "Thu 10:00 AM PT",
-   "day_et": "2026-11-26",
-   "state": "in",
-   "detail": "2:13 - 4th",
-   "neutral": false,
-   "venue": "Ford Field",
-   "home_code": "DET",
-   "away_code": "CHI",
-   "score": {
-    "home": 35,
-    "away": 32
-   },
-   "line_source": "DraftKings",
-   "open_spread": 2.5,
-   "total": 56.5,
-   "total_open": 51.5,
-   "fav_ml": -128.0,
-   "favorite": "away",
-   "spread": -1.5,
-   "movement": 4.0,
-   "total_move": 5.0,
-   "fav_home": false,
-   "home": {
-    "code": "DET",
-    "abbr": "DET",
-    "season": {
-     "games": 10,
-     "off_epa": 0.1316,
-     "off_sr": 0.5083,
-     "def_epa": 0.0652,
-     "def_sr": 0.4606,
-     "off_pass_epa": 0.217,
-     "off_rush_epa": 0.0197,
-     "def_pass_epa": 0.1263,
-     "def_rush_epa": -0.0694,
-     "ranks": {
-      "off_epa": 4,
-      "off_sr": 3,
-      "def_epa": 27,
-      "def_sr": 23
-     }
-    },
-    "last3": {
-     "games": 3,
-     "off_epa": 0.1633,
-     "off_sr": 0.5165,
-     "def_epa": -0.0678,
-     "def_sr": 0.3989,
-     "off_pass_epa": 0.1796,
-     "off_rush_epa": 0.1446,
-     "def_pass_epa": -0.0264,
-     "def_rush_epa": -0.1486,
-     "ranks": {
-      "off_epa": 5,
-      "off_sr": 5,
-      "def_epa": 9,
-      "def_sr": 9
-     }
-    },
-    "net": 0.0664,
-    "net_rank": 8,
-    "adjusted": {
-     "off": 0.1102,
-     "def": 0.0726,
-     "net": 0.037,
-     "recent_net": 0.0539,
-     "sr_off": 0.5083,
-     "sr_def": 0.4606
-    },
-    "record": "8-2",
-    "last2_results": [
-     "W",
-     "W"
-    ],
-    "last3_results": [
-     "W",
-     "W",
-     "W"
-    ],
-    "rest": 4,
-    "qb": {
-     "regular": "J.Goff",
-     "regular_id": "00-0033106",
-     "season_leader": "J.Goff",
-     "reset": false,
-     "dropbacks": 354,
-     "epa_db": 0.2015,
-     "rank": 5
-    },
-    "injuries_known": true,
-    "key_out": [
-     "Chuck Clark",
-     "D.J. Wonnum"
-    ],
-    "key_questionable": [],
-    "key_long_term": [],
-    "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [
-     {
-      "name": "DJ Wonnum",
-      "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "name": "Chuck Clark",
-      "pos": "S",
-      "status": "Out"
-     },
-     {
-      "name": "Ennis Rakestraw Jr.",
-      "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "name": "Tyrus Wheat",
-      "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "name": "Keith Abney II",
-      "pos": "CB",
-      "status": "Out"
-     }
-    ],
-    "power": {
-     "consensus": 5,
-     "fpi": 8,
-     "nfl_com": 5
-    }
-   },
-   "away": {
-    "code": "CHI",
-    "abbr": "CHI",
-    "season": {
-     "games": 10,
-     "off_epa": 0.0321,
-     "off_sr": 0.4647,
-     "def_epa": -0.0361,
-     "def_sr": 0.4221,
-     "off_pass_epa": 0.0893,
-     "off_rush_epa": -0.043,
-     "def_pass_epa": -0.0248,
-     "def_rush_epa": -0.0579,
-     "ranks": {
-      "off_epa": 10,
-      "off_sr": 10,
-      "def_epa": 7,
-      "def_sr": 7
-     }
-    },
-    "last3": {
-     "games": 3,
-     "off_epa": -0.0265,
-     "off_sr": 0.4492,
-     "def_epa": -0.1117,
-     "def_sr": 0.396,
-     "off_pass_epa": -0.0156,
-     "off_rush_epa": -0.0407,
-     "def_pass_epa": -0.1274,
-     "def_rush_epa": -0.0792,
-     "ranks": {
-      "off_epa": 18,
-      "off_sr": 14,
-      "def_epa": 6,
-      "def_sr": 8
-     }
-    },
-    "net": 0.0682,
-    "net_rank": 7,
-    "adjusted": {
-     "off": 0.1146,
-     "def": -0.0082,
-     "net": 0.072,
-     "recent_net": 0.0805,
-     "sr_off": 0.4647,
-     "sr_def": 0.4221
-    },
-    "record": "8-2",
-    "last2_results": [
-     "W",
-     "W"
-    ],
-    "last3_results": [
-     "W",
-     "W",
-     "W"
-    ],
-    "rest": 4,
-    "qb": {
-     "regular": "C.Williams",
-     "regular_id": "00-0039918",
-     "season_leader": "C.Williams",
-     "reset": false,
-     "dropbacks": 234,
-     "epa_db": 0.0972,
-     "rank": 11
-    },
-    "injuries_known": true,
-    "key_out": [
-     "Colston Loveland"
-    ],
-    "key_questionable": [],
-    "key_long_term": [],
-    "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [
-     {
-      "name": "Colston Loveland",
-      "pos": "TE",
-      "status": "Out"
-     },
-     {
-      "name": "Case Keenum",
-      "pos": "QB",
-      "status": "Out"
-     },
-     {
-      "name": "Isaac Yiadom",
-      "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "name": "Jayden Loving",
-      "pos": "DT",
-      "status": "Out"
-     },
-     {
-      "name": "Jordan McFadden",
-      "pos": "G",
-      "status": "Out"
-     }
-    ],
-    "power": {
-     "consensus": 8,
-     "fpi": 9,
-     "nfl_com": 7
-    }
-   },
-   "fav": "CHI",
-   "dog": "DET",
-   "scoring": {
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 15 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 CHI last-3 top 10 in 2 of 4 \u00b7 \u2717 DET last-3 bottom 10 (23-32) in 0 of 4 \u00b7 \u2713 CHI season top 15 in all four \u00b7 \u2717 DET season top 10: Off EPA/play #4, Off success #3"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key starter newly out or doubtful for the favorite",
-      "pass": false,
-      "detail": "CHI key starter out: Colston Loveland"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not top 10 in any power ranking",
-      "pass": false,
-      "detail": "DET top 10 in power ranking: consensus #5, ESPN FPI #8, NFL.com #5"
-     }
-    ],
-    "context": [
-     {
-      "n": 1,
-      "ok": true,
-      "text": "Favorite top 10 (season) in a core metric",
-      "detail": "Off EPA/play, Off success, Def EPA allowed, Def success allowed"
-     },
-     {
-      "n": 2,
-      "ok": true,
-      "text": "Also top 10 over its last 3 in that same metric",
-      "detail": "Def EPA allowed, Def success allowed"
-     },
-     {
-      "n": 3,
-      "ok": false,
-      "text": "Underdog not top 10 in any metric over its last 3",
-      "detail": "Off EPA/play, Off success, Def EPA allowed, Def success allowed"
-     },
-     {
-      "n": 4,
-      "ok": false,
-      "text": "Underdog not 3-0 in its last 3",
-      "detail": "3-0"
-     }
-    ],
-    "qualifiers": [
-     "def_epa",
-     "def_sr"
-    ],
-    "fails": [
-     "DET top 10 in power ranking: consensus #5, ESPN FPI #8, NFL.com #5",
-     "CHI key starter out: Colston Loveland"
-    ],
-    "failed": [
-     "DET top 10 in power ranking: consensus #5, ESPN FPI #8, NFL.com #5",
-     "CHI key starter out: Colston Loveland"
-    ],
-    "hero": {
-     "score": 15,
-     "band": "red",
-     "parts": {
-      "fav_strength": 6,
-      "dog_weakness": 4,
-      "health": 3,
-      "home": 0,
-      "rest": 0,
-      "form": 2
-     },
-     "max": 40
-    },
-    "edge": {
-     "gap": 0.002,
-     "required": 0.35,
-     "clears": false,
-     "short_by": 0.348,
-     "adjusted_gap": 0.035,
-     "adjusted_recent_gap": 0.027
-    },
-    "flags": [
-     {
-      "level": "red",
-      "text": "DET top 10 in power ranking: consensus #5, ESPN FPI #8, NFL.com #5 (no track)"
-     },
-     {
-      "level": "yellow",
-      "text": "Line moved +4 toward the favorite (4+): downgrade"
-     }
-    ],
-    "under": {
-     "passes": false,
-     "ranks": [
-      10,
-      4
-     ],
-     "total_move": 5.0,
-     "note": ""
-    },
-    "call": "No track",
-    "matchups": [
-     {
-      "key": "def_def",
-      "label": "Defense vs defense",
-      "fav_metric": "def_sr",
-      "dog_metric": "def_sr",
-      "fav_rank": 8,
-      "dog_rank": 9,
-      "in_range": false,
-      "met": false
-     },
-     {
-      "key": "def_off",
-      "label": "Defense vs offense",
-      "fav_metric": "def_sr",
-      "dog_metric": "off_sr",
-      "fav_rank": 8,
-      "dog_rank": 5,
-      "in_range": false,
-      "met": false
-     },
-     {
-      "key": "off_def",
-      "label": "Offense vs defense",
-      "fav_metric": "off_sr",
-      "dog_metric": "def_sr",
-      "fav_rank": 14,
-      "dog_rank": 9,
-      "in_range": false,
-      "met": false
-     }
-    ]
-   },
-   "fav_defense_top10": true,
-   "votes": {
-    "fav": 7,
-    "dog": 6,
-    "support": 0.538,
-    "sources": [
-     {
-      "site": "CBS Sports (Sullivan)",
-      "url": "https://www.cbssports.com/nfl/news/week-12-expert-picks-best-bets-lions-spoil-bears-thanksgiving/",
-      "fav": 0,
-      "dog": 1
-     },
-     {
-      "site": "CBS Sports (Dajani, Dubin)",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-12-picks-our-experts-face-off-on-bears-at-lions-chiefs-at-bills-and-more/",
-      "fav": 1,
-      "dog": 1
-     },
-     {
-      "site": "Bleacher Report",
-      "url": "https://bleacherreport.com/articles/25537117-bleacher-reports-expert-week-12-2026-nfl-picks",
-      "fav": 3,
-      "dog": 4
-     },
-     {
-      "site": "Covers",
-      "url": "https://www.covers.com/nfl/picks-against-the-spread-week-12-2026",
-      "fav": 1,
-      "dog": 0
-     },
-     {
-      "site": "SI",
-      "url": "https://www.si.com/betting/nfl-week-12-ats-picks-for-every-game-bet-the-vikings-to-cover-against-the-falcons-on-sunday-01m89ee8k9gt",
-      "fav": 1,
-      "dog": 0
-     },
-     {
-      "site": "Yahoo Sports",
-      "url": "https://sports.yahoo.com/nfl/betting/article/week-12-nfl-picks-against-the-spread-predictions-for-every-game-can-the-seahawks-or-anyone-stop-the-49ers-151851041.html",
-      "fav": 1,
-      "dog": 0
-     }
-    ],
-    "notes": "CBS = Sullivan + Dajani/Dubin; Prisco and Breech give scores only (not counted). CBS Dajani took Bears -1.5, Dubin Lions +1.5. Picks saved Thu morning before kickoff (10:00 AM PT)."
-   }
-  },
   {
    "id": "401873080",
    "nflverse_id": "2026_12_PHI_DAL",
    "kick_utc": "2026-11-26T21:30:00+00:00",
    "kick_pt": "Thu 1:30 PM PT",
    "day_et": "2026-11-26",
-   "state": "pre",
-   "detail": "11/26 - 4:30 PM EST",
+   "state": "in",
+   "detail": "5:46 - 1st",
    "neutral": false,
    "venue": "AT&T Stadium",
    "home_code": "DAL",
    "away_code": "PHI",
    "score": {
-    "home": 0,
+    "home": 7,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -1.5,
    "total": 49.5,
    "total_open": 49.5,
-   "fav_ml": -447.0,
+   "fav_ml": -512.0,
    "favorite": "home",
-   "spread": -8.5,
-   "movement": 7.0,
+   "spread": -9.5,
+   "movement": 8.0,
    "total_move": 0.0,
    "fav_home": true,
    "home": {
@@ -579,8 +140,7 @@
      "consensus": 14,
      "fpi": 13,
      "nfl_com": 16
-    },
-    "fpi_win": 0.822
+    }
    },
    "away": {
     "code": "PHI",
@@ -651,13 +211,20 @@
     },
     "injuries_known": true,
     "key_out": [],
-    "key_questionable": [],
+    "key_questionable": [
+     "Cooper DeJean"
+    ],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "qb_reset": "J.Milton, 64 dropbacks this season",
     "injury_list": [
+     {
+      "name": "Cooper DeJean",
+      "pos": "CB",
+      "status": "Questionable"
+     },
      {
       "name": "Cole Payton",
       "pos": "QB",
@@ -677,19 +244,13 @@
       "name": "AJ Epenesa",
       "pos": "DE",
       "status": "Out"
-     },
-     {
-      "name": "Arnold Ebiketie",
-      "pos": "LB",
-      "status": "Out"
      }
     ],
     "power": {
      "consensus": 28,
      "fpi": 28,
      "nfl_com": 24
-    },
-    "fpi_win": 0.176
+    }
    },
    "fav": "DAL",
    "dog": "PHI",
@@ -797,11 +358,15 @@
      },
      {
       "level": "yellow",
-      "text": "Line moved +7 toward the favorite (4+): downgrade"
+      "text": "Line moved +8 toward the favorite (4+): downgrade"
      },
      {
       "level": "yellow",
       "text": "Line crossed key number 3, 7"
+     },
+     {
+      "level": "yellow",
+      "text": "Underdog questionable: Cooper DeJean"
      }
     ],
     "under": {
@@ -848,12 +413,6 @@
     ]
    },
    "fav_defense_top10": false,
-   "kalshi": {
-    "event": "KXNFLGAME-26NOV26PHIDAL",
-    "fav_prob": 0.795,
-    "bid": 0.79,
-    "ask": 0.8
-   },
    "votes": {
     "fav": 6,
     "dog": 7,
@@ -1327,11 +886,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -2.5,
    "total": 45.5,
    "total_open": 49.5,
-   "fav_ml": -154.0,
+   "fav_ml": -153.0,
    "favorite": "home",
    "spread": -3.0,
    "movement": 0.5,
@@ -1784,7 +1343,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -1.5,
    "total": 36.5,
    "total_open": 41.5,
@@ -1984,6 +1543,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Tyler Badie",
+      "pos": "RB",
+      "status": "Injured Reserve"
+     },
+     {
       "name": "Sai'vion Jones",
       "pos": "DE",
       "status": "Out"
@@ -2001,11 +1565,6 @@
      {
       "name": "Jonah Elliss",
       "pos": "LB",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Tyler Badie",
-      "pos": "RB",
       "status": "Injured Reserve"
      }
     ],
@@ -2158,9 +1717,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV27DENPIT",
-    "fav_prob": 0.675,
-    "bid": 0.67,
-    "ask": 0.68
+    "fav_prob": 0.685,
+    "bid": 0.68,
+    "ask": 0.69
    },
    "votes": {
     "fav": 8,
@@ -2223,7 +1782,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -6.5,
    "total": 49.5,
    "total_open": 48.5,
@@ -2668,11 +2227,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -1.5,
    "total": 47.5,
    "total_open": 45.5,
-   "fav_ml": -333.0,
+   "fav_ml": -332.0,
    "favorite": "home",
    "spread": -6.5,
    "movement": 5.0,
@@ -2748,6 +2307,7 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
+     "Dalton Schultz",
      "Danielle Hunter",
      "Kayshon Boutte",
      "Sheldon Rankins",
@@ -2758,6 +2318,11 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Dalton Schultz",
+      "pos": "TE",
+      "status": "Questionable"
+     },
      {
       "name": "Sheldon Rankins",
       "pos": "DT",
@@ -2770,11 +2335,6 @@
      },
      {
       "name": "Kayshon Boutte",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "name": "Marvin Harrison Jr.",
       "pos": "WR",
       "status": "Questionable"
      },
@@ -2861,11 +2421,10 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
+     "Derrick Henry",
      "Jaylinn Hawkins",
-     "Mike Green",
      "Nnamdi Madubuike",
-     "Rashod Bateman",
-     "Zay Flowers"
+     "Olaivavega Ioane"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -2873,8 +2432,18 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Mike Green",
-      "pos": "LB",
+      "name": "Derrick Henry",
+      "pos": "RB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Olaivavega Ioane",
+      "pos": "G",
+      "status": "Questionable"
+     },
+     {
+      "name": "Chidobe Awuzie",
+      "pos": "CB",
       "status": "Questionable"
      },
      {
@@ -2885,16 +2454,6 @@
      {
       "name": "Nnamdi Madubuike",
       "pos": "DT",
-      "status": "Questionable"
-     },
-     {
-      "name": "Rashod Bateman",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "name": "Zay Flowers",
-      "pos": "WR",
       "status": "Questionable"
      }
     ],
@@ -3009,11 +2568,11 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Danielle Hunter, Kayshon Boutte, Sheldon Rankins, Woody Marks"
+      "text": "Favorite questionable: Dalton Schultz, Danielle Hunter, Kayshon Boutte, Sheldon Rankins"
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Jaylinn Hawkins, Mike Green, Nnamdi Madubuike, Rashod Bateman"
+      "text": "Underdog questionable: Derrick Henry, Jaylinn Hawkins, Nnamdi Madubuike, Olaivavega Ioane"
      }
     ],
     "under": {
@@ -3127,7 +2686,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": 2.5,
    "total": 41.5,
    "total_open": 47.5,
@@ -3329,6 +2888,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Isaiah Likely",
+      "pos": "TE",
+      "status": "Questionable"
+     },
+     {
       "name": "Dru Phillips",
       "pos": "CB",
       "status": "Questionable"
@@ -3341,11 +2905,6 @@
      {
       "name": "Arvell Reese",
       "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Isaiah Likely",
-      "pos": "TE",
       "status": "Questionable"
      },
      {
@@ -3574,7 +3133,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -5.5,
    "total": 49.5,
    "total_open": 45.5,
@@ -4024,7 +3583,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": 1.5,
    "total": 39.5,
    "total_open": 41.5,
@@ -4472,7 +4031,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -4.5,
    "total": 41.5,
    "total_open": 43.5,
@@ -4920,7 +4479,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": 2.5,
    "total": 35.5,
    "total_open": 45.5,
@@ -5010,6 +4569,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "David Njoku",
+      "pos": "TE",
+      "status": "Questionable"
+     },
+     {
       "name": "Justin Herbert",
       "pos": "QB",
       "status": "Questionable"
@@ -5027,11 +4591,6 @@
      {
       "name": "Tuli Tuipulotu",
       "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Brenen Thompson",
-      "pos": "WR",
       "status": "Questionable"
      }
     ],
@@ -5363,7 +4922,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -4.5,
    "total": 41.5,
    "total_open": 47.5,
@@ -5799,11 +5358,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -1.5,
    "total": 43.5,
    "total_open": 46.5,
-   "fav_ml": -154.0,
+   "fav_ml": -152.0,
    "favorite": "home",
    "spread": -3.0,
    "movement": 1.5,
@@ -6199,9 +5758,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV29SEASF",
-    "fav_prob": 0.585,
-    "bid": 0.58,
-    "ask": 0.59
+    "fav_prob": 0.575,
+    "bid": 0.57,
+    "ask": 0.58
    },
    "votes": {
     "fav": 11,
@@ -6264,7 +5823,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -2.5,
    "total": 40.5,
    "total_open": 39.5,
@@ -6344,6 +5903,7 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
+     "Elgton Jenkins",
      "Isaiah McGuire",
      "Quincy Williams",
      "Ronnie Hickman"
@@ -6356,11 +5916,6 @@
      {
       "name": "Quincy Williams",
       "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Blake Whiteheart",
-      "pos": "TE",
       "status": "Questionable"
      },
      {
@@ -6377,6 +5932,11 @@
       "name": "Raheim Sanders",
       "pos": "RB",
       "status": "Injured Reserve"
+     },
+     {
+      "name": "Elgton Jenkins",
+      "pos": "C",
+      "status": "Questionable"
      }
     ],
     "power": {
@@ -6599,7 +6159,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Isaiah McGuire, Quincy Williams, Ronnie Hickman"
+      "text": "Favorite questionable: Elgton Jenkins, Isaiah McGuire, Quincy Williams, Ronnie Hickman"
      },
      {
       "level": "yellow",
@@ -6717,7 +6277,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -3.5,
    "total": 43.5,
    "total_open": 44.5,
@@ -6907,8 +6467,9 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
-     "Bobby Okereke",
-     "Tetairoa McMillan"
+     "Darren Waller",
+     "Jaelan Phillips",
+     "Tommy Tremble"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -6916,27 +6477,27 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Thomas Incoom",
-      "pos": "LB",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Jonathon Brooks",
-      "pos": "RB",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Tetairoa McMillan",
-      "pos": "WR",
+      "name": "Darren Waller",
+      "pos": "TE",
       "status": "Questionable"
      },
      {
-      "name": "Brady Christensen",
-      "pos": "G",
-      "status": "Injured Reserve"
+      "name": "Tommy Tremble",
+      "pos": "TE",
+      "status": "Questionable"
      },
      {
-      "name": "Bobby Okereke",
+      "name": "Jaelan Phillips",
+      "pos": "LB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Feleipe Franks",
+      "pos": "TE",
+      "status": "Questionable"
+     },
+     {
+      "name": "Jackson Kuwatch",
       "pos": "LB",
       "status": "Questionable"
      }
@@ -7051,7 +6612,7 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Bobby Okereke, Tetairoa McMillan"
+      "text": "Underdog questionable: Darren Waller, Jaelan Phillips, Tommy Tremble"
      }
     ],
     "under": {
@@ -7165,7 +6726,7 @@
     "home": 26,
     "away": 13
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -3.5,
    "total": 43.5,
    "total_open": 49.5,
@@ -7785,6 +7346,448 @@
     ],
     "updated": "2026-11-25T05:58-08:00"
    }
+  },
+  {
+   "id": "401873081",
+   "nflverse_id": "2026_12_CHI_DET",
+   "kick_utc": "2026-11-26T18:00:00+00:00",
+   "kick_pt": "Thu 10:00 AM PT",
+   "day_et": "2026-11-26",
+   "state": "post",
+   "detail": "Final",
+   "neutral": false,
+   "venue": "Ford Field",
+   "home_code": "DET",
+   "away_code": "CHI",
+   "score": {
+    "home": 35,
+    "away": 39
+   },
+   "line_source": "Draft Kings",
+   "open_spread": 2.5,
+   "total": 56.5,
+   "total_open": 51.5,
+   "fav_ml": -128.0,
+   "favorite": "away",
+   "spread": -1.5,
+   "movement": 4.0,
+   "total_move": 5.0,
+   "fav_home": false,
+   "home": {
+    "code": "DET",
+    "abbr": "DET",
+    "season": {
+     "games": 10,
+     "off_epa": 0.1316,
+     "off_sr": 0.5083,
+     "def_epa": 0.0652,
+     "def_sr": 0.4606,
+     "off_pass_epa": 0.217,
+     "off_rush_epa": 0.0197,
+     "def_pass_epa": 0.1263,
+     "def_rush_epa": -0.0694,
+     "ranks": {
+      "off_epa": 4,
+      "off_sr": 3,
+      "def_epa": 27,
+      "def_sr": 23
+     }
+    },
+    "last3": {
+     "games": 3,
+     "off_epa": 0.1633,
+     "off_sr": 0.5165,
+     "def_epa": -0.0678,
+     "def_sr": 0.3989,
+     "off_pass_epa": 0.1796,
+     "off_rush_epa": 0.1446,
+     "def_pass_epa": -0.0264,
+     "def_rush_epa": -0.1486,
+     "ranks": {
+      "off_epa": 5,
+      "off_sr": 5,
+      "def_epa": 9,
+      "def_sr": 9
+     }
+    },
+    "net": 0.0664,
+    "net_rank": 8,
+    "adjusted": {
+     "off": 0.1102,
+     "def": 0.0726,
+     "net": 0.037,
+     "recent_net": 0.0539,
+     "sr_off": 0.5083,
+     "sr_def": 0.4606
+    },
+    "record": "8-2",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "W"
+    ],
+    "rest": 4,
+    "qb": {
+     "regular": "J.Goff",
+     "regular_id": "00-0033106",
+     "season_leader": "J.Goff",
+     "reset": false,
+     "dropbacks": 354,
+     "epa_db": 0.2015,
+     "rank": 5
+    },
+    "injuries_known": true,
+    "key_out": [
+     "Chuck Clark",
+     "D.J. Wonnum"
+    ],
+    "key_questionable": [],
+    "key_long_term": [],
+    "interior_ol_out": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [
+     {
+      "name": "DJ Wonnum",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
+      "name": "Chuck Clark",
+      "pos": "S",
+      "status": "Out"
+     },
+     {
+      "name": "Ennis Rakestraw Jr.",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "name": "Tyrus Wheat",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
+      "name": "Keith Abney II",
+      "pos": "CB",
+      "status": "Out"
+     }
+    ],
+    "power": {
+     "consensus": 5,
+     "fpi": 8,
+     "nfl_com": 5
+    }
+   },
+   "away": {
+    "code": "CHI",
+    "abbr": "CHI",
+    "season": {
+     "games": 10,
+     "off_epa": 0.0321,
+     "off_sr": 0.4647,
+     "def_epa": -0.0361,
+     "def_sr": 0.4221,
+     "off_pass_epa": 0.0893,
+     "off_rush_epa": -0.043,
+     "def_pass_epa": -0.0248,
+     "def_rush_epa": -0.0579,
+     "ranks": {
+      "off_epa": 10,
+      "off_sr": 10,
+      "def_epa": 7,
+      "def_sr": 7
+     }
+    },
+    "last3": {
+     "games": 3,
+     "off_epa": -0.0265,
+     "off_sr": 0.4492,
+     "def_epa": -0.1117,
+     "def_sr": 0.396,
+     "off_pass_epa": -0.0156,
+     "off_rush_epa": -0.0407,
+     "def_pass_epa": -0.1274,
+     "def_rush_epa": -0.0792,
+     "ranks": {
+      "off_epa": 18,
+      "off_sr": 14,
+      "def_epa": 6,
+      "def_sr": 8
+     }
+    },
+    "net": 0.0682,
+    "net_rank": 7,
+    "adjusted": {
+     "off": 0.1146,
+     "def": -0.0082,
+     "net": 0.072,
+     "recent_net": 0.0805,
+     "sr_off": 0.4647,
+     "sr_def": 0.4221
+    },
+    "record": "8-2",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "W"
+    ],
+    "rest": 4,
+    "qb": {
+     "regular": "C.Williams",
+     "regular_id": "00-0039918",
+     "season_leader": "C.Williams",
+     "reset": false,
+     "dropbacks": 234,
+     "epa_db": 0.0972,
+     "rank": 11
+    },
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [
+     "Caleb Williams",
+     "Colston Loveland"
+    ],
+    "key_long_term": [],
+    "interior_ol_out": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [
+     {
+      "name": "Caleb Williams",
+      "pos": "QB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Colston Loveland",
+      "pos": "TE",
+      "status": "Questionable"
+     },
+     {
+      "name": "Case Keenum",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "name": "Isaac Yiadom",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "name": "Jayden Loving",
+      "pos": "DT",
+      "status": "Out"
+     }
+    ],
+    "power": {
+     "consensus": 8,
+     "fpi": 9,
+     "nfl_com": 7
+    }
+   },
+   "fav": "CHI",
+   "dog": "DET",
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 16 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 CHI last-3 top 10 in 2 of 4 \u00b7 \u2717 DET last-3 bottom 10 (23-32) in 0 of 4 \u00b7 \u2713 CHI season top 15 in all four \u00b7 \u2717 DET season top 10: Off EPA/play #4, Off success #3"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "Clear"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": false,
+      "detail": "DET top 10 in power ranking: consensus #5, ESPN FPI #8, NFL.com #5"
+     }
+    ],
+    "context": [
+     {
+      "n": 1,
+      "ok": true,
+      "text": "Favorite top 10 (season) in a core metric",
+      "detail": "Off EPA/play, Off success, Def EPA allowed, Def success allowed"
+     },
+     {
+      "n": 2,
+      "ok": true,
+      "text": "Also top 10 over its last 3 in that same metric",
+      "detail": "Def EPA allowed, Def success allowed"
+     },
+     {
+      "n": 3,
+      "ok": false,
+      "text": "Underdog not top 10 in any metric over its last 3",
+      "detail": "Off EPA/play, Off success, Def EPA allowed, Def success allowed"
+     },
+     {
+      "n": 4,
+      "ok": false,
+      "text": "Underdog not 3-0 in its last 3",
+      "detail": "3-0"
+     }
+    ],
+    "qualifiers": [
+     "def_epa",
+     "def_sr"
+    ],
+    "fails": [
+     "DET top 10 in power ranking: consensus #5, ESPN FPI #8, NFL.com #5"
+    ],
+    "failed": [
+     "DET top 10 in power ranking: consensus #5, ESPN FPI #8, NFL.com #5"
+    ],
+    "hero": {
+     "score": 16,
+     "band": "red",
+     "parts": {
+      "fav_strength": 6,
+      "dog_weakness": 4,
+      "health": 4,
+      "home": 0,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "edge": {
+     "gap": 0.002,
+     "required": 0.35,
+     "clears": false,
+     "short_by": 0.348,
+     "adjusted_gap": 0.035,
+     "adjusted_recent_gap": 0.027
+    },
+    "flags": [
+     {
+      "level": "red",
+      "text": "DET top 10 in power ranking: consensus #5, ESPN FPI #8, NFL.com #5 (no track)"
+     },
+     {
+      "level": "yellow",
+      "text": "Line moved +4 toward the favorite (4+): downgrade"
+     },
+     {
+      "level": "yellow",
+      "text": "Favorite questionable: Caleb Williams, Colston Loveland"
+     }
+    ],
+    "under": {
+     "passes": false,
+     "ranks": [
+      10,
+      4
+     ],
+     "total_move": 5.0,
+     "note": ""
+    },
+    "call": "No track",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 8,
+      "dog_rank": 9,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 8,
+      "dog_rank": 5,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 14,
+      "dog_rank": 9,
+      "in_range": false,
+      "met": false
+     }
+    ]
+   },
+   "fav_defense_top10": true,
+   "votes": {
+    "fav": 7,
+    "dog": 6,
+    "support": 0.538,
+    "sources": [
+     {
+      "site": "CBS Sports (Sullivan)",
+      "url": "https://www.cbssports.com/nfl/news/week-12-expert-picks-best-bets-lions-spoil-bears-thanksgiving/",
+      "fav": 0,
+      "dog": 1
+     },
+     {
+      "site": "CBS Sports (Dajani, Dubin)",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-12-picks-our-experts-face-off-on-bears-at-lions-chiefs-at-bills-and-more/",
+      "fav": 1,
+      "dog": 1
+     },
+     {
+      "site": "Bleacher Report",
+      "url": "https://bleacherreport.com/articles/25537117-bleacher-reports-expert-week-12-2026-nfl-picks",
+      "fav": 3,
+      "dog": 4
+     },
+     {
+      "site": "Covers",
+      "url": "https://www.covers.com/nfl/picks-against-the-spread-week-12-2026",
+      "fav": 1,
+      "dog": 0
+     },
+     {
+      "site": "SI",
+      "url": "https://www.si.com/betting/nfl-week-12-ats-picks-for-every-game-bet-the-vikings-to-cover-against-the-falcons-on-sunday-01m89ee8k9gt",
+      "fav": 1,
+      "dog": 0
+     },
+     {
+      "site": "Yahoo Sports",
+      "url": "https://sports.yahoo.com/nfl/betting/article/week-12-nfl-picks-against-the-spread-predictions-for-every-game-can-the-seahawks-or-anyone-stop-the-49ers-151851041.html",
+      "fav": 1,
+      "dog": 0
+     }
+    ],
+    "notes": "CBS = Sullivan + Dajani/Dubin; Prisco and Breech give scores only (not counted). CBS Dajani took Bears -1.5, Dubin Lions +1.5. Picks saved Thu morning before kickoff (10:00 AM PT)."
+   }
   }
  ],
  "notes": [],
@@ -7816,12 +7819,12 @@
   "season": 2026,
   "week": 12,
   "games": 16,
-  "upcoming": 14,
+  "upcoming": 13,
   "tracked": 0,
   "qualified": 0,
   "watch": 8,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Thu Nov 26, 1:15 PM PT"
+  "built_label": "Thu Nov 26, 2:15 PM PT"
  }
 }
