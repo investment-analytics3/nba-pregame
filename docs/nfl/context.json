@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-25T23:15:36-08:00",
+ "built_at": "2026-11-26T05:45:44-08:00",
  "games": [
   {
    "id": "401873081",
@@ -123,7 +123,7 @@
    "away": "DEN",
    "fav": "DEN",
    "dog": "PIT",
-   "spread": -3.5,
+   "spread": -4.5,
    "fav_defense_top10": false,
    "tracked": true,
    "readout": true,
@@ -419,7 +419,7 @@
    "away": "WAS",
    "fav": "WAS",
    "dog": "ARI",
-   "spread": -7.0,
+   "spread": -6.5,
    "fav_defense_top10": false,
    "tracked": true,
    "readout": true,
@@ -569,11 +569,11 @@
    "dog": "GB",
    "spread": -2.5,
    "fav_defense_top10": true,
-   "tracked": false,
+   "tracked": true,
    "readout": true,
-   "alerts": false,
-   "tier": "out",
-   "tier_label": "No track",
+   "alerts": true,
+   "tier": "qualified",
+   "tier_label": "Qualified",
    "kalshi_away": "GB",
    "kalshi_home": "LAR",
    "away_abbr": "GB",
@@ -590,9 +590,9 @@
      "rank": 12
     }
    },
-   "hero": 26,
-   "band": "yellow",
-   "call": "No track",
+   "hero": 28,
+   "band": "green",
+   "call": "Track, edge short",
    "kick_pt": "Wed 5:00 PM PT"
   }
  ]
