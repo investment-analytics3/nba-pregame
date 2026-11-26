@@ -54,7 +54,7 @@ def kalshi():
     cursor = ""
     for i in range(10):
         code, body = fetch(f"kalshi/series_sports_{i}.json", f"{KALSHI}/series?category=Sports&limit=1000" +
-                           (f"&cursor={cursor}" if cursor else ""), headers={"User-Agent": "tennis-probe/1.0"})
+                           (f"&cursor={cursor}" if cursor else ""), headers={"User-Agent": "tennis-probe/1.0"}, limit=60_000_000)
         js = jload(body) or {}
         series += js.get("series") or []
         cursor = js.get("cursor") or ""
@@ -74,8 +74,10 @@ def kalshi():
         evs = (jload(body) or {}).get("events") or []
         summary.append({"ticker": t, "title": s.get("title"), "open_events": len(evs),
                         "sample": [e.get("title") for e in evs[:5]]})
-    # also settled events of the main match series (for grading format)
-    for t in [x["ticker"] for x in summary if x["open_events"]][:4]:
+    # also settled events of the singles match series (for grading format)
+    singles = [x["ticker"] for x in summary if x["open_events"] and any(k in x["ticker"] for k in ("GAME", "MATCH"))
+               and "DOUBLES" not in x["ticker"] and "TABLE" not in x["ticker"] and "ITTF" not in x["ticker"]]
+    for t in singles[:8]:
         fetch(f"kalshi/settled_{t}.json", f"{KALSHI}/markets?series_ticker={t}&status=settled&limit=50",
               headers={"User-Agent": "tennis-probe/1.0"})
     with open(os.path.join(OUT, "kalshi", "summary.json"), "w") as f:
@@ -90,6 +92,13 @@ def others(deep: bool):
     fetch("ta/atp_elo.html", "https://tennisabstract.com/reports/atp_elo_ratings.html")
     fetch("ta/wta_elo.html", "https://tennisabstract.com/reports/wta_elo_ratings.html")
     fetch("ta/sinner.js", "https://www.tennisabstract.com/jsmatches/JannikSinner.js")
+    fetch("ta/sinner_page.html", "https://www.tennisabstract.com/cgi-bin/player.cgi?p=JannikSinner")
+    fetch("ta/sinner_classic.html", "https://www.tennisabstract.com/cgi-bin/player-classic.cgi?p=JannikSinner")
+    fetch("ta/sinner_career.js", "https://www.tennisabstract.com/jsmatches/JannikSinnerCareer.js")
+    fetch("ta/alcaraz.js", "https://www.tennisabstract.com/jsmatches/CarlosAlcaraz.js")
+    fetch("ta/rune.js", "https://www.tennisabstract.com/jsmatches/HolgerRune.js")
+    fetch("ta/squire.js", "https://www.tennisabstract.com/jsmatches/HenriSquire.js")
+    fetch("ta/sabalenka_page.html", "https://www.tennisabstract.com/cgi-bin/wplayer.cgi?p=ArynaSabalenka")
     fetch("ta/sabalenka.js", "https://www.tennisabstract.com/jsmatches/ArynaSabalenka.js")
     # Sackmann raw files
     for f in ("tennis_atp/master/atp_matches_2025.csv", "tennis_atp/master/atp_matches_2026.csv",
