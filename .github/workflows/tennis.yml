@@ -1,0 +1,62 @@
+name: Tennis
+
+# The tennis tick (tracking only: no pushes, never trades). Started every 15 minutes by the NBA Scheduler, or by hand.
+# Own concurrency group; writes only data/tennis/ and docs/tennis/. scripts/tennis_tick.py decides what is due.
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "Who started this tick"
+        type: string
+        default: manual
+      force_publish:
+        description: "Rebuild the pages now"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tennis-data
+  cancel-in-progress: false
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install -q "Jinja2>=3.1,<4"
+
+      - name: Tick
+        run: |
+          echo "Started by: ${{ inputs.source || github.event_name }}"
+          python scripts/tennis_tick.py ${{ inputs.force_publish == true && '--force-publish' || '' }}
+
+      - name: Save to the repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/tennis/ docs/tennis/
+          if git diff --cached --quiet; then echo "Nothing to save."; exit 0; fi
+          git commit -q -m "Tennis: tick $(TZ=America/Los_Angeles date '+%Y-%m-%d %H:%M %Z')"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; git rebase --abort 2>/dev/null; sleep 5; done
+          exit 1
+
+      - name: Phone alert if the tick failed
+        if: failure()
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          curl -fsS -H "Title: Tennis tick FAILED" -H "Tags: warning" \
+            -H "Click: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            -d "The tennis tracking tick failed. Tap to see the details." "https://ntfy.sh/$NTFY_TOPIC" > /dev/null || true

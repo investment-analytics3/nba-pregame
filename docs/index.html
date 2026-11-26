@@ -12,7 +12,7 @@
 <body>
 <!-- Landing page (L0). Static: each sport's pipeline publishes its own pages and a small
      JSON this page reads (NBA: live/context.json, NFL: nfl/summary.json, college football: cfb/summary.json,
-     college basketball: cbb/summary.json, NHL: nhl/summary.json, Kalshi weather paper board: wx/summary.json). -->
+     college basketball: cbb/summary.json, NHL: nhl/summary.json, Kalshi weather paper board: wx/summary.json, tennis: tennis/summary.json). -->
 <div class="wrap">
   <div class="eyebrow">Moneyline system · pregame and live</div>
   <h1 class="title cond">Game Boards</h1>
@@ -52,6 +52,13 @@
       <div class="small muted" data-k="list"></div>
       <div class="small"><span style="color:#8FB8F5;font-weight:600">Open the NHL board ›</span></div>
     </a>
+    <a class="panel sport" href="tennis/" id="tennis">
+      <div class="row between"><h2 class="cond league" style="display:flex;align-items:center;gap:8px"><span style="font-size:24px;line-height:1" aria-hidden="true">&#127934;</span>Tennis</h2><span class="chip cn" data-k="date">tracking</span></div>
+      <div class="big" data-k="head">Loading…</div>
+      <div class="stat" data-k="stat"></div>
+      <div class="small muted" data-k="list"></div>
+      <div class="small"><span style="color:#8FB8F5;font-weight:600">Open the tennis board ›</span></div>
+    </a>
     <a class="panel sport" href="wx/" id="wx">
       <div class="row between"><h2 class="cond league" style="display:flex;align-items:center;gap:8px"><span style="font-size:26px;line-height:1" aria-hidden="true">&#127777;</span>Weather</h2><span class="chip cn" data-k="date">paper</span></div>
       <div class="big" data-k="head">Loading…</div>
@@ -60,7 +67,7 @@
       <div class="small"><span style="color:#8FB8F5;font-weight:600">Open the weather board ›</span></div>
     </a>
   </div>
-  <div class="small muted" style="margin-top:22px">Results: <a href="results.html">NBA</a> · <a href="nfl/results.html">NFL</a> · <a href="cfb/results.html">College football</a> · <a href="cbb/results.html">College hoops</a> · <a href="nhl/results.html">NHL</a> · <a href="wx/results.html">Weather</a><br>Live: <a href="live/">NBA</a> · <a href="nfl/game.html">NFL</a> · <a href="cfb/game.html">College football</a> · <a href="cbb/game.html">College hoops</a> · <a href="nhl/game.html">NHL</a></div>
+  <div class="small muted" style="margin-top:22px">Results: <a href="results.html">NBA</a> · <a href="nfl/results.html">NFL</a> · <a href="cfb/results.html">College football</a> · <a href="cbb/results.html">College hoops</a> · <a href="nhl/results.html">NHL</a> · <a href="wx/results.html">Weather</a> · <a href="tennis/results.html">Tennis</a><br>Live: <a href="live/">NBA</a> · <a href="nfl/game.html">NFL</a> · <a href="cfb/game.html">College football</a> · <a href="cbb/game.html">College hoops</a> · <a href="nhl/game.html">NHL</a></div>
 </div>
 <script>
 (function(){
@@ -111,6 +118,12 @@ get('nhl/summary.json').then(s => {
   set('nhl', 'stat', stat([[s.games ?? 0, 'games'], [s.in_range ?? 0, 'top 7 vs bottom 7'], [q, 'qualified']]));
   set('nhl', 'list', `Updated ${esc(s.built_label || '')}`);
 }).catch(() => set('nhl', 'head', 'NHL board not built yet'));
+get('tennis/summary.json').then(s => {
+  const n = (s.main ?? 0) + (s.itf ?? 0);
+  set('tennis', 'head', n ? `${n} favorite${n > 1 ? 's' : ''} at -800 or shorter` : 'No favorites at -800 or shorter right now');
+  set('tennis', 'stat', stat([[s.qualified ?? 0, 'qualified'], [`${s.won ?? 0}-${s.lost ?? 0}`, 'tracked record'], [s.open ?? 0, 'open']]));
+  set('tennis', 'list', `Main tour + Challenger ${s.main ?? 0} · ITF ${s.itf ?? 0} · Updated ${esc(s.built_label || '')}`);
+}).catch(() => set('tennis', 'head', 'Tennis board not built yet'));
 get('wx/summary.json').then(s => {
   const d = new Date(s.tomorrow + 'T12:00:00'), day = d.toLocaleDateString('en-US', {weekday: 'short', month: 'short', day: 'numeric'});
   const money = v => (v > 0 ? '+' : v < 0 ? '-' : '') + '$' + Math.abs(v || 0).toFixed(2);

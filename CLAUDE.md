@@ -290,11 +290,39 @@ rule, pushed), `evening` (main cities at 26.5 h), `other_highs`, `lows` (compari
 from 5:20 PM PT (tomorrow's main bets, settled since yesterday, running record). Tests: `tests/test_wx.py` (fixture: real
 Kalshi rows, `tests/fixtures/wx_markets.json`). Review with the owner after ~300-400 main-rule bets.
 
+## Tennis board (separate pipeline: `tennis/`, `tennis.yml`, concurrency group `tennis-data`)
+
+Tracking only (owner Nov 26 2026): no pushes, never trades. Board https://investment-analytics3.github.io/nba-pregame/tennis/ (tabs
+`#main`, `#itf`; match view `#e-<event>`) · results .../tennis/results.html · CSV .../tennis/results.csv.
+
+| Path | Purpose |
+|---|---|
+| `tennis/config.py` | Kalshi series → tab/tour/gender (main: KXATPMATCH, KXWTAMATCH, KXATPCHALLENGERMATCH, KXCHALLENGERMATCH, KXWTACHALLENGERMATCH; itf: KXITFMATCH, KXITFWMATCH), price tiers, rank cutoffs, metric point tables, log window |
+| `tennis/sources.py` | Kalshi events (nested markets, paged), `match_from_event`, `parse_rules` (tournament + round from `rules_primary`), `moneyline`; Tennis Abstract Elo report (`parse_elo`, keys from `?p=`) and player summary files `jsfrags/<key>.js` (`parse_frags`: 2026 SPW/RPW/DR from tour-years + chall-years, last ~20 matches with minutes); Last Word On Tennis preview links |
+| `tennis/history.py` | Settled Kalshi singles, 28 days, `data/tennis/history/<YYYY-MM>.json` (ITF form, played yesterday, change of event, grading) |
+| `tennis/scoring.py` | `score_match`: metrics, hero score, tier, section, flags, readout |
+| `tennis/ledger.py` | `data/tennis/ledger.json`: frozen rows, grading (void = Kalshi "scalar"), stats per $100 risked (taker fee included) |
+| `tennis/pages.py`, `templates/tennis_board.html.j2` (NHL board styles/ring), `templates/tennis_results.html.j2` | `docs/tennis/index.html`, `results.html`, `results.csv`, `summary.json` (landing card) |
+| `scripts/tennis_tick.py` | Tick: Elo daily, previews hourly, scan, player files (≤14/tick, cached 48 h in `data/tennis/players.json`), log, history hourly, grade, publish on change or hourly. `--no-fetch --force-publish` rebuilds offline |
+| `scripts/tennis_probe.py`, `tennis-probe.yml` | Developer probe → `dev-tennis-samples` branch (Kalshi + Tennis Abstract samples) |
+
+Rules (owner Nov 26): gate = favorite at -800 or shorter (Kalshi ask, 88.9c+), shown as American moneylines (cents in small print).
+Tiers: -800 to -1000, -1000 to -2000, shorter than -2000. Qualified = -1000 to -2000 AND favorite Tennis Abstract Elo rank 1-25 AND
+opponent 51+ or unrated; else Watch list; -2000+ = its own section. Rank pills: favorite 1-25 green / 26-50 yellow / 51+ red,
+opponent flipped. Logged once on the first tick 3-6 h before Kalshi's listed start (`occurrence_datetime` is an estimate; some
+matches settle before it), "late" down to 1 h. Main tab hero 0-20 (5 each): Elo edge (overall, 50/50 with surface Elo when the
+favorite's current event is on Tennis Abstract), serve + return (2026 SPW + RPW, favorite minus opponent), form (last two
+tournaments, wins weighted by opponent rank 1.5/1.2/1.0/0.8; <4 matches = thin, max 3), fatigue (7-day court time + 60 played
+yesterday + 60 change of event; 3 + (opp - fav)/90). ITF hero 0-10: Elo edge + form from Kalshi results. Flags: Elo well above
+official ranking (Elo ≤ 50, rank ≥ 2×Elo + 25), thin form. Kalshi, Tennis Abstract and Last Word On Tennis answer from GitHub;
+Predict.Tennis and tennis-data.co.uk block it (403), and the workspace reaches none of them. Tests: `tests/test_tennis.py`
+(fixtures `tests/fixtures/tennis/`).
+
 ## Workflows (Actions)
 
 | Workflow file | Trigger | Notes |
 |---|---|---|
-| `scheduler.yml` | every 15 min from cron-job.org (workflow_dispatch, input `source`) + GitHub cron backup | the only automatic trigger: nightly update (from 3 AM PT, catch-up, marker `nightly` in `data/state.json`), board/Final (`board_decide`), starts `live.yml`; dispatches `nfl.yml`, `cfb.yml`, `cbb.yml`, `nhl.yml`, `wx.yml` (continue-on-error); pings healthchecks.io. Input `dry_run=true` decides only. Setup: `SCHEDULER.md` |
+| `scheduler.yml` | every 15 min from cron-job.org (workflow_dispatch, input `source`) + GitHub cron backup | the only automatic trigger: nightly update (from 3 AM PT, catch-up, marker `nightly` in `data/state.json`), board/Final (`board_decide`), starts `live.yml`; dispatches `nfl.yml`, `cfb.yml`, `cbb.yml`, `nhl.yml`, `wx.yml`, `tennis.yml` (continue-on-error); pings healthchecks.io. Input `dry_run=true` decides only. Setup: `SCHEDULER.md` |
 | `update-data.yml` | manual | catch-up, grading, slate; commits `data/` and `docs/` |
 | `board.yml` | manual | inputs: `kind` (preview/board/final/auto), `send` (true/false) |
 | `rebuild-days.yml` | manual, input `days` | rebuild + grade unsent past days |

@@ -198,6 +198,18 @@ jobs:
               -f "inputs[source]=nba-scheduler" && echo "Weather tick started."
           fi
 
+      # ---- Tennis (tracking only) -------------------------------------------------
+      - name: "Tennis: start the tennis tick"
+        if: ${{ !cancelled() && inputs.dry_run != true }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -f .github/workflows/tennis.yml ]; then
+            gh api -X POST "repos/${{ github.repository }}/actions/workflows/tennis.yml/dispatches" -f ref=main \
+              -f "inputs[source]=nba-scheduler" && echo "Tennis tick started."
+          fi
+
       # ---- Health ping --------------------------------------------------------
       - name: Tell healthchecks.io this tick worked
         if: success()
