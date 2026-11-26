@@ -1,652 +1,9 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-25T19:47:28-08:00",
- "built_label": "Wed Nov 25, 7:47 PM PT",
+ "built_at": "2026-11-25T21:15:42-08:00",
+ "built_label": "Wed Nov 25, 9:15 PM PT",
  "games": [
-  {
-   "id": "401873079",
-   "nflverse_id": "2026_12_GB_LA",
-   "kick_utc": "2026-11-26T01:00:00+00:00",
-   "kick_pt": "Wed 5:00 PM PT",
-   "day_et": "2026-11-25",
-   "state": "in",
-   "detail": "14:39 - 4th",
-   "neutral": false,
-   "venue": "SoFi Stadium",
-   "home_code": "LA",
-   "away_code": "GB",
-   "score": {
-    "home": 20,
-    "away": 13
-   },
-   "line_source": "DraftKings",
-   "open_spread": -3.5,
-   "total": 43.5,
-   "total_open": 49.5,
-   "fav_ml": -142.0,
-   "favorite": "home",
-   "spread": -2.5,
-   "movement": -1.0,
-   "total_move": -6.0,
-   "fav_home": true,
-   "home": {
-    "code": "LA",
-    "abbr": "LAR",
-    "season": {
-     "games": 10,
-     "off_epa": 0.0793,
-     "off_sr": 0.5043,
-     "def_epa": -0.0749,
-     "def_sr": 0.4082,
-     "off_pass_epa": 0.1152,
-     "off_rush_epa": 0.0259,
-     "def_pass_epa": -0.0494,
-     "def_rush_epa": -0.1157,
-     "ranks": {
-      "off_epa": 8,
-      "off_sr": 5,
-      "def_epa": 4,
-      "def_sr": 3
-     }
-    },
-    "last3": {
-     "games": 3,
-     "off_epa": 0.097,
-     "off_sr": 0.4851,
-     "def_epa": -0.2636,
-     "def_sr": 0.3355,
-     "off_pass_epa": 0.1252,
-     "off_rush_epa": 0.0684,
-     "def_pass_epa": -0.2608,
-     "def_rush_epa": -0.2696,
-     "ranks": {
-      "off_epa": 8,
-      "off_sr": 8,
-      "def_epa": 1,
-      "def_sr": 1
-     }
-    },
-    "net": 0.1541,
-    "net_rank": 4,
-    "adjusted": {
-     "off": 0.076,
-     "def": -0.0424,
-     "net": 0.0626,
-     "recent_net": 0.0841,
-     "sr_off": 0.5043,
-     "sr_def": 0.4082
-    },
-    "record": "6-4",
-    "last2_results": [
-     "W",
-     "W"
-    ],
-    "last3_results": [
-     "W",
-     "W",
-     "W"
-    ],
-    "rest": 10,
-    "qb": {
-     "regular": "M.Stafford",
-     "regular_id": "00-0026498",
-     "season_leader": "M.Stafford",
-     "reset": false,
-     "dropbacks": 385,
-     "epa_db": 0.0959,
-     "rank": 12
-    },
-    "injuries_known": true,
-    "key_out": [
-     "Coleman Shelton"
-    ],
-    "key_questionable": [
-     "Davis Allen"
-    ],
-    "key_long_term": [],
-    "interior_ol_out": [
-     "Coleman Shelton"
-    ],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [
-     {
-      "name": "Davis Allen",
-      "pos": "TE",
-      "status": "Questionable"
-     },
-     {
-      "name": "Ty Simpson",
-      "pos": "QB",
-      "status": "Out"
-     },
-     {
-      "name": "Darryl Peterson III",
-      "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "name": "Coleman Shelton",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "name": "Desjuan Johnson",
-      "pos": "DE",
-      "status": "Out"
-     }
-    ],
-    "power": {
-     "consensus": 9,
-     "fpi": 5,
-     "nfl_com": 14
-    }
-   },
-   "away": {
-    "code": "GB",
-    "abbr": "GB",
-    "season": {
-     "games": 10,
-     "off_epa": 0.0205,
-     "off_sr": 0.4094,
-     "def_epa": -0.0185,
-     "def_sr": 0.4583,
-     "off_pass_epa": 0.1267,
-     "off_rush_epa": -0.1867,
-     "def_pass_epa": -0.0022,
-     "def_rush_epa": -0.0464,
-     "ranks": {
-      "off_epa": 14,
-      "off_sr": 29,
-      "def_epa": 9,
-      "def_sr": 22
-     }
-    },
-    "last3": {
-     "games": 3,
-     "off_epa": 0.0513,
-     "off_sr": 0.4368,
-     "def_epa": -0.0487,
-     "def_sr": 0.4286,
-     "off_pass_epa": 0.1975,
-     "off_rush_epa": -0.1728,
-     "def_pass_epa": -0.0632,
-     "def_rush_epa": -0.0198,
-     "ranks": {
-      "off_epa": 13,
-      "off_sr": 18,
-      "def_epa": 12,
-      "def_sr": 14
-     }
-    },
-    "net": 0.039,
-    "net_rank": 11,
-    "adjusted": {
-     "off": 0.0399,
-     "def": 0.0072,
-     "net": 0.021,
-     "recent_net": 0.0303,
-     "sr_off": 0.4094,
-     "sr_def": 0.4583
-    },
-    "record": "6-4",
-    "last2_results": [
-     "L",
-     "W"
-    ],
-    "last3_results": [
-     "L",
-     "W",
-     "W"
-    ],
-    "rest": 10,
-    "qb": {
-     "regular": "J.Love",
-     "regular_id": "00-0036264",
-     "season_leader": "J.Love",
-     "reset": false,
-     "dropbacks": 394,
-     "epa_db": 0.109,
-     "rank": 10
-    },
-    "injuries_known": true,
-    "key_out": [
-     "Christian Watson",
-     "Zaire Franklin"
-    ],
-    "key_questionable": [],
-    "key_long_term": [],
-    "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [
-     {
-      "name": "Christian Watson",
-      "pos": "WR",
-      "status": "Out"
-     },
-     {
-      "name": "Zaire Franklin",
-      "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "name": "Donovan Jennings",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "name": "Jager Burton",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "name": "Mekhi Becton",
-      "pos": "G",
-      "status": "Out"
-     }
-    ],
-    "power": {
-     "consensus": 13,
-     "fpi": 14,
-     "nfl_com": 11
-    }
-   },
-   "fav": "LA",
-   "dog": "GB",
-   "scoring": {
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 26 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2713 LAR last-3 top 10 in 4 of 4 \u00b7 \u2717 GB last-3 bottom 10 (23-32) in 0 of 4 \u00b7 \u2713 LAR season top 15 in all four \u00b7 \u2717 GB season top 10: Def EPA allowed #9"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key starter newly out or doubtful for the favorite",
-      "pass": false,
-      "detail": "LAR key starter out: Coleman Shelton"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not top 10 in any power ranking",
-      "pass": true,
-      "detail": "GB: consensus #13, ESPN FPI #14, NFL.com #11"
-     }
-    ],
-    "context": [
-     {
-      "n": 1,
-      "ok": true,
-      "text": "Favorite top 10 (season) in a core metric",
-      "detail": "Off EPA/play, Off success, Def EPA allowed, Def success allowed"
-     },
-     {
-      "n": 2,
-      "ok": true,
-      "text": "Also top 10 over its last 3 in that same metric",
-      "detail": "Off EPA/play, Off success, Def EPA allowed, Def success allowed"
-     },
-     {
-      "n": 3,
-      "ok": true,
-      "text": "Underdog not top 10 in any metric over its last 3",
-      "detail": "none"
-     },
-     {
-      "n": 4,
-      "ok": true,
-      "text": "Underdog not 3-0 in its last 3",
-      "detail": "2-1"
-     }
-    ],
-    "qualifiers": [
-     "off_epa",
-     "off_sr",
-     "def_epa",
-     "def_sr"
-    ],
-    "fails": [
-     "LAR key starter out: Coleman Shelton",
-     "Would be on the watch list otherwise (score 26)"
-    ],
-    "failed": [
-     "LAR key starter out: Coleman Shelton",
-     "Would be on the watch list otherwise (score 26)"
-    ],
-    "hero": {
-     "score": 26,
-     "band": "yellow",
-     "parts": {
-      "fav_strength": 13,
-      "dog_weakness": 8,
-      "health": 2,
-      "home": 1,
-      "rest": 0,
-      "form": 2
-     },
-     "max": 40
-    },
-    "edge": {
-     "gap": 0.115,
-     "required": 0.35,
-     "clears": false,
-     "short_by": 0.235,
-     "adjusted_gap": 0.042,
-     "adjusted_recent_gap": 0.054
-    },
-    "flags": [
-     {
-      "level": "yellow",
-      "text": "Favorite interior OL out: Coleman Shelton"
-     },
-     {
-      "level": "yellow",
-      "text": "Line crossed key number 3"
-     },
-     {
-      "level": "yellow",
-      "text": "Favorite questionable: Davis Allen"
-     }
-    ],
-    "under": {
-     "passes": false,
-     "ranks": [
-      8,
-      14
-     ],
-     "total_move": -6.0,
-     "note": ""
-    },
-    "call": "No track",
-    "matchups": [
-     {
-      "key": "def_def",
-      "label": "Defense vs defense",
-      "fav_metric": "def_sr",
-      "dog_metric": "def_sr",
-      "fav_rank": 1,
-      "dog_rank": 14,
-      "in_range": false,
-      "met": false
-     },
-     {
-      "key": "def_off",
-      "label": "Defense vs offense",
-      "fav_metric": "def_sr",
-      "dog_metric": "off_sr",
-      "fav_rank": 1,
-      "dog_rank": 18,
-      "in_range": false,
-      "met": false
-     },
-     {
-      "key": "off_def",
-      "label": "Offense vs defense",
-      "fav_metric": "off_sr",
-      "dog_metric": "def_sr",
-      "fav_rank": 8,
-      "dog_rank": 14,
-      "in_range": false,
-      "met": false
-     }
-    ]
-   },
-   "fav_defense_top10": true,
-   "readout": {
-    "matchup": "GB @ LAR",
-    "fav": "LAR",
-    "dog": "GB",
-    "summary": "No track: Rams key starter out (C Coleman Shelton); would be on the Watch list otherwise (score 26). The analysts are split almost evenly. CBS, Covers, Dimers, SI's Dewey and numberFire (76.8%) favor the Rams at home, pointing to a run game averaging 163.5 yards over four weeks and a defense allowing about 13 points a game during a four-game win streak. TheLines, WagerTalk and Pickswise back Green Bay, arguing the Rams beat weak teams and are thin on offense without Puka Nacua and Davante Adams (both on IR), plus OL Steve Avila and Coleman Shelton (out). Micah Parsons was activated and is expected to debut on a snap count; Josh Jacobs is questionable (finger). The Under is the most common bet (SI, TheLines, WagerTalk, Pickswise, Covers).",
-    "picks": [
-     {
-      "source": "FanDuel Research (numberFire)",
-      "side": "fav",
-      "bet": "No bet named; model picks Rams",
-      "price": "Rams 76.8% (numberFire); FanDuel LAR -142 / GB +120",
-      "note": "Model only; Rams 6-3 ATS as 2.5+ point favorites"
-     },
-     {
-      "source": "CBS Sports (John Breech)",
-      "side": "fav",
-      "bet": "Rams straight up",
-      "note": "Packers can't run; Love must throw into Garrett and Donald"
-     },
-     {
-      "source": "SI Betting (Peter Dewey)",
-      "side": "fav",
-      "bet": "Rams -3",
-      "price": "DraftKings LAR -150 / GB +127",
-      "note": "Rams at home; Packers short-handed (Nov 23 article)"
-     },
-     {
-      "source": "Covers (AI predictions)",
-      "side": "fav",
-      "bet": "Rams -2.5, Under",
-      "price": "Rams 55% (market-based)",
-      "note": "Projects a low-scoring Rams win"
-     },
-     {
-      "source": "Dimers",
-      "side": "fav",
-      "bet": "Rams by model win probability",
-      "price": "Rams 62.6%",
-      "note": "Simulation model"
-     },
-     {
-      "source": "TheLines (Justin Bales)",
-      "side": "dog",
-      "bet": "GB +2.5 (-108) best bet; GB ML +120; Under 44.5 (-120)",
-      "price": "FanDuel GB +120",
-      "note": "Rams missing key offense; Packers getting healthier"
-     },
-     {
-      "source": "WagerTalk (GoldSheet)",
-      "side": "dog",
-      "bet": "Packers ML (best bet); GB +2.5 (-110); Under 43.5 (+100)",
-      "note": "Rams' streak came against sub-.500 teams; Parsons back"
-     },
-     {
-      "source": "Pickswise",
-      "side": "dog",
-      "bet": "Packers +2.5, Under",
-      "note": "Spread backs Green Bay"
-     }
-    ],
-    "scores": [
-     {
-      "source": "CBS Sports (John Breech)",
-      "fav": 20,
-      "dog": 17
-     },
-     {
-      "source": "Covers (AI predictions)",
-      "fav": 24,
-      "dog": 19
-     },
-     {
-      "source": "Dimers",
-      "fav": 23,
-      "dog": 20
-     },
-     {
-      "source": "WagerTalk (GoldSheet)",
-      "fav": 20,
-      "dog": 21
-     }
-    ],
-    "injuries": {
-     "fav": [
-      {
-       "player": "Coleman Shelton",
-       "status": "Out",
-       "note": "C, hamstring (final report Nov 24)"
-      },
-      {
-       "player": "Steve Avila",
-       "status": "Out",
-       "note": "LG, hamstring (Nov 24)"
-      },
-      {
-       "player": "Terrance Ferguson",
-       "status": "Out",
-       "note": "TE, ankle/hamstring; IR for the season (Nov 24)"
-      },
-      {
-       "player": "Puka Nacua",
-       "status": "Out",
-       "note": "WR, knee; injured reserve (Packers On SI, Nov 24)"
-      },
-      {
-       "player": "Davante Adams",
-       "status": "Out",
-       "note": "WR, hamstring; injured reserve (Nov 24)"
-      },
-      {
-       "player": "Kyren Williams",
-       "status": "No designation",
-       "note": "RB, toe; full practice Mon-Tue (Nov 24)"
-      },
-      {
-       "player": "Myles Garrett",
-       "status": "No designation",
-       "note": "OLB, knee/rest; limited Tue (Nov 24)"
-      },
-      {
-       "player": "Kam Curl",
-       "status": "No designation",
-       "note": "S, toe; limited Mon-Tue (Nov 24)"
-      },
-      {
-       "player": "Kobie Turner",
-       "status": "No designation",
-       "note": "DE, groin; activated off IR (Nov 24)"
-      }
-     ],
-     "dog": [
-      {
-       "player": "Micah Parsons",
-       "status": "Questionable",
-       "note": "EDGE, knee; activated from PUP Tue, expected to debut on a snap count (ESPN, Nov 23-24)"
-      },
-      {
-       "player": "Josh Jacobs",
-       "status": "Questionable",
-       "note": "RB, finger; limited all week (Nov 24)"
-      },
-      {
-       "player": "Sean Rhyan",
-       "status": "Questionable",
-       "note": "C/G, ankle (Nov 24)"
-      },
-      {
-       "player": "Kevin Zeitler",
-       "status": "Questionable",
-       "note": "G, triceps (Nov 24)"
-      },
-      {
-       "player": "Zaire Franklin",
-       "status": "Questionable",
-       "note": "LB, shin (Nov 24)"
-      },
-      {
-       "player": "Travis Glover",
-       "status": "Questionable",
-       "note": "G/T, shoulder (Nov 24)"
-      },
-      {
-       "player": "Bo Melton",
-       "status": "Questionable",
-       "note": "WR, thigh (Nov 24)"
-      },
-      {
-       "player": "Skyy Moore",
-       "status": "Questionable",
-       "note": "WR, ankle (Nov 24)"
-      }
-     ],
-     "note": "Final injury reports, Nov 24 (therams.com, packers.com, Packers On SI via Yahoo, Roundtable via Yahoo; ESPN for Parsons). No Packers player ruled out."
-    },
-    "sources": [
-     {
-      "site": "FanDuel Research (numberFire)",
-      "url": "https://www.fanduel.com/research/rams-vs-packers-predictions-odds-picks-best-bets-for-nfl-week-12-2026"
-     },
-     {
-      "site": "SI Betting (Peter Dewey)",
-      "url": "https://www.si.com/betting/packers-vs-rams-prediction-odds-spread-injuries-trends-for-nfl-week-12-2026"
-     },
-     {
-      "site": "SI Betting (Iain MacMillan, Road to 272)",
-      "url": "https://www.si.com/betting/road-to-272-bets-nfl-week-12-picks-for-every-game-01m84yf8vqvp"
-     },
-     {
-      "site": "CBS Sports (John Breech)",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-12-breech-picks-score-predictions-bears-chiefs-rams-packers/"
-     },
-     {
-      "site": "Covers (AI predictions)",
-      "url": "https://covers.com/nfl/ai-predictions-week-12-2026"
-     },
-     {
-      "site": "Dimers",
-      "url": "https://www.dimers.com/nfl/predictions/2026_12_la_gb"
-     },
-     {
-      "site": "TheLines (Justin Bales)",
-      "url": "https://www.thelines.com/nfl/picks/packers-vs-rams-prediction-odds-picks-for-nov-25-back-green-bay/"
-     },
-     {
-      "site": "WagerTalk (GoldSheet)",
-      "url": "https://www.wagertalk.com/news/nfl/packers-vs-rams-predictions-picks-and-odds-november-25-2026/"
-     },
-     {
-      "site": "Pickswise",
-      "url": "https://www.pickswise.com/nfl/games/los-angeles-rams-green-bay-packers-nfl-2026-11-25-2000/picks/"
-     },
-     {
-      "site": "FantasyAlarm (Mark Lammey)",
-      "url": "https://www.fantasyalarm.com/articles/nfl/predictions/packers-vs-rams-predictions-picks-odds-wednesday-night-football-week-12/199040"
-     },
-     {
-      "site": "Rams official injury report",
-      "url": "https://www.therams.com/news/rams-injury-report-week-12-2026-vs-packers-steve-avila-terrance-ferguson-coleman-shelton-kobie-turner"
-     },
-     {
-      "site": "Packers official injury report",
-      "url": "https://www.packers.com/news/packers-list-eight-questionable-vs-rams-week-12-injury-report"
-     },
-     {
-      "site": "ESPN (Rob Demovsky)",
-      "url": "https://www.espn.com/nfl/story/_/id/50577301/sources-packers-micah-parsons-cleared-return-wednesday"
-     },
-     {
-      "site": "Yahoo Sports (Packers On SI)",
-      "url": "https://sports.yahoo.com/nfl/articles/packers-rams-final-injury-report-200310557.html"
-     },
-     {
-      "site": "Yahoo Sports (Roundtable)",
-      "url": "https://sports.yahoo.com/nfl/articles/rams-final-week-12-injury-214338418.html"
-     }
-    ],
-    "updated": "2026-11-25T05:58-08:00"
-   }
-  },
   {
    "id": "401873081",
    "nflverse_id": "2026_12_CHI_DET",
@@ -1076,7 +433,7 @@
    "open_spread": -1.5,
    "total": 48.5,
    "total_open": 49.5,
-   "fav_ml": -471.0,
+   "fav_ml": -447.0,
    "favorite": "home",
    "spread": -8.5,
    "movement": 7.0,
@@ -1797,13 +1154,13 @@
    },
    "line_source": "DraftKings",
    "open_spread": -2.5,
-   "total": 46.5,
+   "total": 45.5,
    "total_open": 49.5,
-   "fav_ml": -148.0,
+   "fav_ml": -151.0,
    "favorite": "home",
    "spread": -3.0,
    "movement": 0.5,
-   "total_move": -3.0,
+   "total_move": -4.0,
    "fav_home": true,
    "home": {
     "code": "BUF",
@@ -2147,7 +1504,7 @@
       6,
       5
      ],
-     "total_move": -3.0,
+     "total_move": -4.0,
      "note": ""
     },
     "call": "No track",
@@ -2187,9 +1544,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV26KCBUF",
-    "fav_prob": 0.575,
-    "bid": 0.57,
-    "ask": 0.58
+    "fav_prob": 0.585,
+    "bid": 0.58,
+    "ask": 0.59
    }
   },
   {
@@ -2212,7 +1569,7 @@
    "open_spread": -1.5,
    "total": 36.5,
    "total_open": 41.5,
-   "fav_ml": -202.0,
+   "fav_ml": -203.0,
    "favorite": "away",
    "spread": -3.5,
    "movement": 2.0,
@@ -2406,13 +1763,13 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Taylor Rapp",
-      "pos": "S",
+      "name": "Sai'vion Jones",
+      "pos": "DE",
       "status": "Out"
      },
      {
-      "name": "Sai'vion Jones",
-      "pos": "DE",
+      "name": "Taylor Rapp",
+      "pos": "S",
       "status": "Out"
      },
      {
@@ -2584,9 +1941,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV27DENPIT",
-    "fav_prob": 0.655,
-    "bid": 0.65,
-    "ask": 0.66
+    "fav_prob": 0.665,
+    "bid": 0.66,
+    "ask": 0.67
    }
   },
   {
@@ -2609,7 +1966,7 @@
    "open_spread": -6.5,
    "total": 49.5,
    "total_open": 48.5,
-   "fav_ml": -534.0,
+   "fav_ml": -536.0,
    "favorite": "home",
    "spread": -10.0,
    "movement": 3.5,
@@ -3016,7 +2373,7 @@
    "open_spread": -1.5,
    "total": 47.5,
    "total_open": 45.5,
-   "fav_ml": -333.0,
+   "fav_ml": -332.0,
    "favorite": "home",
    "spread": -6.5,
    "movement": 5.0,
@@ -5067,7 +4424,7 @@
    "open_spread": 2.5,
    "total": 35.5,
    "total_open": 45.5,
-   "fav_ml": -116.0,
+   "fav_ml": -119.0,
    "favorite": "away",
    "spread": -1.5,
    "movement": 4.0,
@@ -5143,7 +4500,7 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
-     "Daiyan Henley",
+     "Akheem Mesidor",
      "Dalvin Tomlinson",
      "Tarheeb Still",
      "Tuli Tuipulotu"
@@ -5153,6 +4510,11 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Akheem Mesidor",
+      "pos": "LB",
+      "status": "Questionable"
+     },
      {
       "name": "Tuli Tuipulotu",
       "pos": "LB",
@@ -5171,11 +4533,6 @@
      {
       "name": "Tarheeb Still",
       "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Daiyan Henley",
-      "pos": "LB",
       "status": "Questionable"
      }
     ],
@@ -5266,6 +4623,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Walter Rouse",
+      "pos": "OL",
+      "status": "Questionable"
+     },
+     {
       "name": "Carlton Davis III",
       "pos": "CB",
       "status": "Questionable"
@@ -5284,11 +4646,6 @@
       "name": "A.J. Brown",
       "pos": "WR",
       "status": "Doubtful"
-     },
-     {
-      "name": "Walter Rouse",
-      "pos": "OL",
-      "status": "Questionable"
      }
     ],
     "power": {
@@ -5399,7 +4756,7 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Daiyan Henley, Dalvin Tomlinson, Tarheeb Still, Tuli Tuipulotu"
+      "text": "Underdog questionable: Akheem Mesidor, Dalvin Tomlinson, Tarheeb Still, Tuli Tuipulotu"
      }
     ],
     "under": {
@@ -5473,7 +4830,7 @@
    "open_spread": -4.5,
    "total": 41.5,
    "total_open": 47.5,
-   "fav_ml": -324.0,
+   "fav_ml": -325.0,
    "favorite": "away",
    "spread": -7.0,
    "movement": 2.5,
@@ -6268,9 +5625,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV29SEASF",
-    "fav_prob": 0.565,
-    "bid": 0.56,
-    "ask": 0.57
+    "fav_prob": 0.575,
+    "bid": 0.57,
+    "ask": 0.58
    }
   },
   {
@@ -6491,6 +5848,11 @@
     "qb_reset": "F.Mendoza, 85 dropbacks this season",
     "injury_list": [
      {
+      "name": "Tonka Hemingway",
+      "pos": "DT",
+      "status": "Questionable"
+     },
+     {
       "name": "Adam Butler",
       "pos": "DT",
       "status": "Questionable"
@@ -6503,11 +5865,6 @@
      {
       "name": "Brock Bowers",
       "pos": "TE",
-      "status": "Questionable"
-     },
-     {
-      "name": "Tonka Hemingway",
-      "pos": "DT",
       "status": "Questionable"
      },
      {
@@ -7085,6 +6442,655 @@
     "bid": 0.59,
     "ask": 0.6
    }
+  },
+  {
+   "id": "401873079",
+   "nflverse_id": "2026_12_GB_LA",
+   "kick_utc": "2026-11-26T01:00:00+00:00",
+   "kick_pt": "Wed 5:00 PM PT",
+   "day_et": "2026-11-25",
+   "state": "post",
+   "detail": "Final",
+   "neutral": false,
+   "venue": "SoFi Stadium",
+   "home_code": "LA",
+   "away_code": "GB",
+   "score": {
+    "home": 26,
+    "away": 13
+   },
+   "line_source": "DraftKings",
+   "open_spread": -3.5,
+   "total": 43.5,
+   "total_open": 49.5,
+   "fav_ml": -142.0,
+   "favorite": "home",
+   "spread": -2.5,
+   "movement": -1.0,
+   "total_move": -6.0,
+   "fav_home": true,
+   "home": {
+    "code": "LA",
+    "abbr": "LAR",
+    "season": {
+     "games": 10,
+     "off_epa": 0.0793,
+     "off_sr": 0.5043,
+     "def_epa": -0.0749,
+     "def_sr": 0.4082,
+     "off_pass_epa": 0.1152,
+     "off_rush_epa": 0.0259,
+     "def_pass_epa": -0.0494,
+     "def_rush_epa": -0.1157,
+     "ranks": {
+      "off_epa": 8,
+      "off_sr": 5,
+      "def_epa": 4,
+      "def_sr": 3
+     }
+    },
+    "last3": {
+     "games": 3,
+     "off_epa": 0.097,
+     "off_sr": 0.4851,
+     "def_epa": -0.2636,
+     "def_sr": 0.3355,
+     "off_pass_epa": 0.1252,
+     "off_rush_epa": 0.0684,
+     "def_pass_epa": -0.2608,
+     "def_rush_epa": -0.2696,
+     "ranks": {
+      "off_epa": 8,
+      "off_sr": 8,
+      "def_epa": 1,
+      "def_sr": 1
+     }
+    },
+    "net": 0.1541,
+    "net_rank": 4,
+    "adjusted": {
+     "off": 0.076,
+     "def": -0.0424,
+     "net": 0.0626,
+     "recent_net": 0.0841,
+     "sr_off": 0.5043,
+     "sr_def": 0.4082
+    },
+    "record": "6-4",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "W"
+    ],
+    "rest": 10,
+    "qb": {
+     "regular": "M.Stafford",
+     "regular_id": "00-0026498",
+     "season_leader": "M.Stafford",
+     "reset": false,
+     "dropbacks": 385,
+     "epa_db": 0.0959,
+     "rank": 12
+    },
+    "injuries_known": true,
+    "key_out": [
+     "Coleman Shelton"
+    ],
+    "key_questionable": [
+     "Davis Allen",
+     "Tyler Higbee"
+    ],
+    "key_long_term": [],
+    "interior_ol_out": [
+     "Coleman Shelton"
+    ],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [
+     {
+      "name": "Tyler Higbee",
+      "pos": "TE",
+      "status": "Questionable"
+     },
+     {
+      "name": "Davis Allen",
+      "pos": "TE",
+      "status": "Questionable"
+     },
+     {
+      "name": "Ty Simpson",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "name": "Darryl Peterson III",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
+      "name": "Coleman Shelton",
+      "pos": "C",
+      "status": "Out"
+     }
+    ],
+    "power": {
+     "consensus": 9,
+     "fpi": 5,
+     "nfl_com": 14
+    }
+   },
+   "away": {
+    "code": "GB",
+    "abbr": "GB",
+    "season": {
+     "games": 10,
+     "off_epa": 0.0205,
+     "off_sr": 0.4094,
+     "def_epa": -0.0185,
+     "def_sr": 0.4583,
+     "off_pass_epa": 0.1267,
+     "off_rush_epa": -0.1867,
+     "def_pass_epa": -0.0022,
+     "def_rush_epa": -0.0464,
+     "ranks": {
+      "off_epa": 14,
+      "off_sr": 29,
+      "def_epa": 9,
+      "def_sr": 22
+     }
+    },
+    "last3": {
+     "games": 3,
+     "off_epa": 0.0513,
+     "off_sr": 0.4368,
+     "def_epa": -0.0487,
+     "def_sr": 0.4286,
+     "off_pass_epa": 0.1975,
+     "off_rush_epa": -0.1728,
+     "def_pass_epa": -0.0632,
+     "def_rush_epa": -0.0198,
+     "ranks": {
+      "off_epa": 13,
+      "off_sr": 18,
+      "def_epa": 12,
+      "def_sr": 14
+     }
+    },
+    "net": 0.039,
+    "net_rank": 11,
+    "adjusted": {
+     "off": 0.0399,
+     "def": 0.0072,
+     "net": 0.021,
+     "recent_net": 0.0303,
+     "sr_off": 0.4094,
+     "sr_def": 0.4583
+    },
+    "record": "6-4",
+    "last2_results": [
+     "L",
+     "W"
+    ],
+    "last3_results": [
+     "L",
+     "W",
+     "W"
+    ],
+    "rest": 10,
+    "qb": {
+     "regular": "J.Love",
+     "regular_id": "00-0036264",
+     "season_leader": "J.Love",
+     "reset": false,
+     "dropbacks": 394,
+     "epa_db": 0.109,
+     "rank": 10
+    },
+    "injuries_known": true,
+    "key_out": [
+     "Zaire Franklin"
+    ],
+    "key_questionable": [
+     "Christian Watson"
+    ],
+    "key_long_term": [],
+    "interior_ol_out": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [
+     {
+      "name": "Barryn Sorrell",
+      "pos": "DE",
+      "status": "Questionable"
+     },
+     {
+      "name": "Christian Watson",
+      "pos": "WR",
+      "status": "Questionable"
+     },
+     {
+      "name": "Zaire Franklin",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
+      "name": "Donovan Jennings",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "name": "Jager Burton",
+      "pos": "C",
+      "status": "Out"
+     }
+    ],
+    "power": {
+     "consensus": 13,
+     "fpi": 14,
+     "nfl_com": 11
+    }
+   },
+   "fav": "LA",
+   "dog": "GB",
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 26 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2713 LAR last-3 top 10 in 4 of 4 \u00b7 \u2717 GB last-3 bottom 10 (23-32) in 0 of 4 \u00b7 \u2713 LAR season top 15 in all four \u00b7 \u2717 GB season top 10: Def EPA allowed #9"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter newly out or doubtful for the favorite",
+      "pass": false,
+      "detail": "LAR key starter out: Coleman Shelton"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": true,
+      "detail": "GB: consensus #13, ESPN FPI #14, NFL.com #11"
+     }
+    ],
+    "context": [
+     {
+      "n": 1,
+      "ok": true,
+      "text": "Favorite top 10 (season) in a core metric",
+      "detail": "Off EPA/play, Off success, Def EPA allowed, Def success allowed"
+     },
+     {
+      "n": 2,
+      "ok": true,
+      "text": "Also top 10 over its last 3 in that same metric",
+      "detail": "Off EPA/play, Off success, Def EPA allowed, Def success allowed"
+     },
+     {
+      "n": 3,
+      "ok": true,
+      "text": "Underdog not top 10 in any metric over its last 3",
+      "detail": "none"
+     },
+     {
+      "n": 4,
+      "ok": true,
+      "text": "Underdog not 3-0 in its last 3",
+      "detail": "2-1"
+     }
+    ],
+    "qualifiers": [
+     "off_epa",
+     "off_sr",
+     "def_epa",
+     "def_sr"
+    ],
+    "fails": [
+     "LAR key starter out: Coleman Shelton",
+     "Would be on the watch list otherwise (score 26)"
+    ],
+    "failed": [
+     "LAR key starter out: Coleman Shelton",
+     "Would be on the watch list otherwise (score 26)"
+    ],
+    "hero": {
+     "score": 26,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 13,
+      "dog_weakness": 8,
+      "health": 2,
+      "home": 1,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "edge": {
+     "gap": 0.115,
+     "required": 0.35,
+     "clears": false,
+     "short_by": 0.235,
+     "adjusted_gap": 0.042,
+     "adjusted_recent_gap": 0.054
+    },
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "Favorite interior OL out: Coleman Shelton"
+     },
+     {
+      "level": "yellow",
+      "text": "Line crossed key number 3"
+     },
+     {
+      "level": "yellow",
+      "text": "Favorite questionable: Davis Allen, Tyler Higbee"
+     },
+     {
+      "level": "yellow",
+      "text": "Underdog questionable: Christian Watson"
+     }
+    ],
+    "under": {
+     "passes": false,
+     "ranks": [
+      8,
+      14
+     ],
+     "total_move": -6.0,
+     "note": ""
+    },
+    "call": "No track",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 1,
+      "dog_rank": 14,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 1,
+      "dog_rank": 18,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 8,
+      "dog_rank": 14,
+      "in_range": false,
+      "met": false
+     }
+    ]
+   },
+   "fav_defense_top10": true,
+   "readout": {
+    "matchup": "GB @ LAR",
+    "fav": "LAR",
+    "dog": "GB",
+    "summary": "No track: Rams key starter out (C Coleman Shelton); would be on the Watch list otherwise (score 26). The analysts are split almost evenly. CBS, Covers, Dimers, SI's Dewey and numberFire (76.8%) favor the Rams at home, pointing to a run game averaging 163.5 yards over four weeks and a defense allowing about 13 points a game during a four-game win streak. TheLines, WagerTalk and Pickswise back Green Bay, arguing the Rams beat weak teams and are thin on offense without Puka Nacua and Davante Adams (both on IR), plus OL Steve Avila and Coleman Shelton (out). Micah Parsons was activated and is expected to debut on a snap count; Josh Jacobs is questionable (finger). The Under is the most common bet (SI, TheLines, WagerTalk, Pickswise, Covers).",
+    "picks": [
+     {
+      "source": "FanDuel Research (numberFire)",
+      "side": "fav",
+      "bet": "No bet named; model picks Rams",
+      "price": "Rams 76.8% (numberFire); FanDuel LAR -142 / GB +120",
+      "note": "Model only; Rams 6-3 ATS as 2.5+ point favorites"
+     },
+     {
+      "source": "CBS Sports (John Breech)",
+      "side": "fav",
+      "bet": "Rams straight up",
+      "note": "Packers can't run; Love must throw into Garrett and Donald"
+     },
+     {
+      "source": "SI Betting (Peter Dewey)",
+      "side": "fav",
+      "bet": "Rams -3",
+      "price": "DraftKings LAR -150 / GB +127",
+      "note": "Rams at home; Packers short-handed (Nov 23 article)"
+     },
+     {
+      "source": "Covers (AI predictions)",
+      "side": "fav",
+      "bet": "Rams -2.5, Under",
+      "price": "Rams 55% (market-based)",
+      "note": "Projects a low-scoring Rams win"
+     },
+     {
+      "source": "Dimers",
+      "side": "fav",
+      "bet": "Rams by model win probability",
+      "price": "Rams 62.6%",
+      "note": "Simulation model"
+     },
+     {
+      "source": "TheLines (Justin Bales)",
+      "side": "dog",
+      "bet": "GB +2.5 (-108) best bet; GB ML +120; Under 44.5 (-120)",
+      "price": "FanDuel GB +120",
+      "note": "Rams missing key offense; Packers getting healthier"
+     },
+     {
+      "source": "WagerTalk (GoldSheet)",
+      "side": "dog",
+      "bet": "Packers ML (best bet); GB +2.5 (-110); Under 43.5 (+100)",
+      "note": "Rams' streak came against sub-.500 teams; Parsons back"
+     },
+     {
+      "source": "Pickswise",
+      "side": "dog",
+      "bet": "Packers +2.5, Under",
+      "note": "Spread backs Green Bay"
+     }
+    ],
+    "scores": [
+     {
+      "source": "CBS Sports (John Breech)",
+      "fav": 20,
+      "dog": 17
+     },
+     {
+      "source": "Covers (AI predictions)",
+      "fav": 24,
+      "dog": 19
+     },
+     {
+      "source": "Dimers",
+      "fav": 23,
+      "dog": 20
+     },
+     {
+      "source": "WagerTalk (GoldSheet)",
+      "fav": 20,
+      "dog": 21
+     }
+    ],
+    "injuries": {
+     "fav": [
+      {
+       "player": "Coleman Shelton",
+       "status": "Out",
+       "note": "C, hamstring (final report Nov 24)"
+      },
+      {
+       "player": "Steve Avila",
+       "status": "Out",
+       "note": "LG, hamstring (Nov 24)"
+      },
+      {
+       "player": "Terrance Ferguson",
+       "status": "Out",
+       "note": "TE, ankle/hamstring; IR for the season (Nov 24)"
+      },
+      {
+       "player": "Puka Nacua",
+       "status": "Out",
+       "note": "WR, knee; injured reserve (Packers On SI, Nov 24)"
+      },
+      {
+       "player": "Davante Adams",
+       "status": "Out",
+       "note": "WR, hamstring; injured reserve (Nov 24)"
+      },
+      {
+       "player": "Kyren Williams",
+       "status": "No designation",
+       "note": "RB, toe; full practice Mon-Tue (Nov 24)"
+      },
+      {
+       "player": "Myles Garrett",
+       "status": "No designation",
+       "note": "OLB, knee/rest; limited Tue (Nov 24)"
+      },
+      {
+       "player": "Kam Curl",
+       "status": "No designation",
+       "note": "S, toe; limited Mon-Tue (Nov 24)"
+      },
+      {
+       "player": "Kobie Turner",
+       "status": "No designation",
+       "note": "DE, groin; activated off IR (Nov 24)"
+      }
+     ],
+     "dog": [
+      {
+       "player": "Micah Parsons",
+       "status": "Questionable",
+       "note": "EDGE, knee; activated from PUP Tue, expected to debut on a snap count (ESPN, Nov 23-24)"
+      },
+      {
+       "player": "Josh Jacobs",
+       "status": "Questionable",
+       "note": "RB, finger; limited all week (Nov 24)"
+      },
+      {
+       "player": "Sean Rhyan",
+       "status": "Questionable",
+       "note": "C/G, ankle (Nov 24)"
+      },
+      {
+       "player": "Kevin Zeitler",
+       "status": "Questionable",
+       "note": "G, triceps (Nov 24)"
+      },
+      {
+       "player": "Zaire Franklin",
+       "status": "Questionable",
+       "note": "LB, shin (Nov 24)"
+      },
+      {
+       "player": "Travis Glover",
+       "status": "Questionable",
+       "note": "G/T, shoulder (Nov 24)"
+      },
+      {
+       "player": "Bo Melton",
+       "status": "Questionable",
+       "note": "WR, thigh (Nov 24)"
+      },
+      {
+       "player": "Skyy Moore",
+       "status": "Questionable",
+       "note": "WR, ankle (Nov 24)"
+      }
+     ],
+     "note": "Final injury reports, Nov 24 (therams.com, packers.com, Packers On SI via Yahoo, Roundtable via Yahoo; ESPN for Parsons). No Packers player ruled out."
+    },
+    "sources": [
+     {
+      "site": "FanDuel Research (numberFire)",
+      "url": "https://www.fanduel.com/research/rams-vs-packers-predictions-odds-picks-best-bets-for-nfl-week-12-2026"
+     },
+     {
+      "site": "SI Betting (Peter Dewey)",
+      "url": "https://www.si.com/betting/packers-vs-rams-prediction-odds-spread-injuries-trends-for-nfl-week-12-2026"
+     },
+     {
+      "site": "SI Betting (Iain MacMillan, Road to 272)",
+      "url": "https://www.si.com/betting/road-to-272-bets-nfl-week-12-picks-for-every-game-01m84yf8vqvp"
+     },
+     {
+      "site": "CBS Sports (John Breech)",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-12-breech-picks-score-predictions-bears-chiefs-rams-packers/"
+     },
+     {
+      "site": "Covers (AI predictions)",
+      "url": "https://covers.com/nfl/ai-predictions-week-12-2026"
+     },
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/nfl/predictions/2026_12_la_gb"
+     },
+     {
+      "site": "TheLines (Justin Bales)",
+      "url": "https://www.thelines.com/nfl/picks/packers-vs-rams-prediction-odds-picks-for-nov-25-back-green-bay/"
+     },
+     {
+      "site": "WagerTalk (GoldSheet)",
+      "url": "https://www.wagertalk.com/news/nfl/packers-vs-rams-predictions-picks-and-odds-november-25-2026/"
+     },
+     {
+      "site": "Pickswise",
+      "url": "https://www.pickswise.com/nfl/games/los-angeles-rams-green-bay-packers-nfl-2026-11-25-2000/picks/"
+     },
+     {
+      "site": "FantasyAlarm (Mark Lammey)",
+      "url": "https://www.fantasyalarm.com/articles/nfl/predictions/packers-vs-rams-predictions-picks-odds-wednesday-night-football-week-12/199040"
+     },
+     {
+      "site": "Rams official injury report",
+      "url": "https://www.therams.com/news/rams-injury-report-week-12-2026-vs-packers-steve-avila-terrance-ferguson-coleman-shelton-kobie-turner"
+     },
+     {
+      "site": "Packers official injury report",
+      "url": "https://www.packers.com/news/packers-list-eight-questionable-vs-rams-week-12-injury-report"
+     },
+     {
+      "site": "ESPN (Rob Demovsky)",
+      "url": "https://www.espn.com/nfl/story/_/id/50577301/sources-packers-micah-parsons-cleared-return-wednesday"
+     },
+     {
+      "site": "Yahoo Sports (Packers On SI)",
+      "url": "https://sports.yahoo.com/nfl/articles/packers-rams-final-injury-report-200310557.html"
+     },
+     {
+      "site": "Yahoo Sports (Roundtable)",
+      "url": "https://sports.yahoo.com/nfl/articles/rams-final-week-12-injury-214338418.html"
+     }
+    ],
+    "updated": "2026-11-25T05:58-08:00"
+   }
   }
  ],
  "notes": [],
@@ -7121,6 +7127,6 @@
   "watch": 9,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Wed Nov 25, 7:47 PM PT"
+  "built_label": "Wed Nov 25, 9:15 PM PT"
  }
 }
