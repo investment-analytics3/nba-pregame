@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-26T14:15:36-08:00",
- "built_label": "Thu Nov 26, 2:15 PM PT",
+ "built_at": "2026-11-26T15:30:46-08:00",
+ "built_label": "Thu Nov 26, 3:30 PM PT",
  "games": [
   {
    "id": "401873080",
@@ -11,14 +11,14 @@
    "kick_pt": "Thu 1:30 PM PT",
    "day_et": "2026-11-26",
    "state": "in",
-   "detail": "5:46 - 1st",
+   "detail": "Halftime",
    "neutral": false,
    "venue": "AT&T Stadium",
    "home_code": "DAL",
    "away_code": "PHI",
    "score": {
-    "home": 7,
-    "away": 0
+    "home": 28,
+    "away": 10
    },
    "line_source": "Draft Kings",
    "open_spread": -1.5,
@@ -210,7 +210,9 @@
      "rank": null
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Dallas Goedert"
+    ],
     "key_questionable": [
      "Cooper DeJean"
     ],
@@ -220,6 +222,16 @@
     "qb_active": true,
     "qb_reset": "J.Milton, 64 dropbacks this season",
     "injury_list": [
+     {
+      "name": "Dallas Goedert",
+      "pos": "TE",
+      "status": "Out"
+     },
+     {
+      "name": "Saquon Barkley",
+      "pos": "RB",
+      "status": "Questionable"
+     },
      {
       "name": "Cooper DeJean",
       "pos": "CB",
@@ -233,16 +245,6 @@
      {
       "name": "Grant Calcaterra",
       "pos": "TE",
-      "status": "Out"
-     },
-     {
-      "name": "Ajani Cornelius",
-      "pos": "OT",
-      "status": "Out"
-     },
-     {
-      "name": "AJ Epenesa",
-      "pos": "DE",
       "status": "Out"
      }
     ],
@@ -888,13 +890,13 @@
    },
    "line_source": "Draft Kings",
    "open_spread": -2.5,
-   "total": 45.5,
+   "total": 46.5,
    "total_open": 49.5,
-   "fav_ml": -153.0,
+   "fav_ml": -155.0,
    "favorite": "home",
    "spread": -3.0,
    "movement": 0.5,
-   "total_move": -4.0,
+   "total_move": -3.0,
    "fav_home": true,
    "home": {
     "code": "BUF",
@@ -1238,7 +1240,7 @@
       6,
       5
      ],
-     "total_move": -4.0,
+     "total_move": -3.0,
      "note": ""
     },
     "call": "No track",
@@ -1535,22 +1537,25 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [],
-    "key_long_term": [
-     "Jonah Elliss"
-    ],
+    "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Caleb Lohner",
+      "pos": "TE",
+      "status": "Injured Reserve"
+     },
+     {
       "name": "Tyler Badie",
       "pos": "RB",
-      "status": "Injured Reserve"
+      "status": "Questionable"
      },
      {
       "name": "Sai'vion Jones",
       "pos": "DE",
-      "status": "Out"
+      "status": "Injured Reserve"
      },
      {
       "name": "Taylor Rapp",
@@ -1561,11 +1566,6 @@
       "name": "J.K. Dobbins",
       "pos": "RB",
       "status": "Suspension"
-     },
-     {
-      "name": "Jonah Elliss",
-      "pos": "LB",
-      "status": "Injured Reserve"
      }
     ],
     "power": {
@@ -1602,7 +1602,7 @@
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
       "pass": true,
-      "detail": "Clear (on injured reserve, not counted: Jonah Elliss)"
+      "detail": "Clear"
      },
      {
       "rule": "Power",
@@ -2324,6 +2324,11 @@
       "status": "Questionable"
      },
      {
+      "name": "Kayshon Boutte",
+      "pos": "WR",
+      "status": "Questionable"
+     },
+     {
       "name": "Sheldon Rankins",
       "pos": "DT",
       "status": "Questionable"
@@ -2331,11 +2336,6 @@
      {
       "name": "Danielle Hunter",
       "pos": "DE",
-      "status": "Questionable"
-     },
-     {
-      "name": "Kayshon Boutte",
-      "pos": "WR",
       "status": "Questionable"
      },
      {
@@ -2432,6 +2432,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Jaylinn Hawkins",
+      "pos": "S",
+      "status": "Questionable"
+     },
+     {
       "name": "Derrick Henry",
       "pos": "RB",
       "status": "Questionable"
@@ -2444,11 +2449,6 @@
      {
       "name": "Chidobe Awuzie",
       "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Jaylinn Hawkins",
-      "pos": "S",
       "status": "Questionable"
      },
      {
@@ -2690,7 +2690,7 @@
    "open_spread": 2.5,
    "total": 41.5,
    "total_open": 47.5,
-   "fav_ml": -287.0,
+   "fav_ml": -286.0,
    "favorite": "away",
    "spread": -6.0,
    "movement": 8.5,
@@ -2888,6 +2888,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Abdul Carter",
+      "pos": "LB",
+      "status": "Questionable"
+     },
+     {
       "name": "Isaiah Likely",
       "pos": "TE",
       "status": "Questionable"
@@ -2895,11 +2900,6 @@
      {
       "name": "Dru Phillips",
       "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Abdul Carter",
-      "pos": "LB",
       "status": "Questionable"
      },
      {
@@ -4115,7 +4115,6 @@
     "key_questionable": [
      "Harrison Smith",
      "Isaiah Rodgers",
-     "Jalen Redmond",
      "Kyler Murray"
     ],
     "key_long_term": [],
@@ -4123,6 +4122,16 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Harrison Smith",
+      "pos": "S",
+      "status": "Questionable"
+     },
+     {
+      "name": "Myles Price",
+      "pos": "WR",
+      "status": "Questionable"
+     },
      {
       "name": "Kyler Murray",
       "pos": "QB",
@@ -4136,16 +4145,6 @@
      {
       "name": "Isaiah Rodgers",
       "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Harrison Smith",
-      "pos": "S",
-      "status": "Questionable"
-     },
-     {
-      "name": "Jalen Redmond",
-      "pos": "DT",
       "status": "Questionable"
      }
     ],
@@ -4367,7 +4366,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Harrison Smith, Isaiah Rodgers, Jalen Redmond, Kyler Murray"
+      "text": "Favorite questionable: Harrison Smith, Isaiah Rodgers, Kyler Murray"
      },
      {
       "level": "yellow",
@@ -4681,6 +4680,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Romeo Doubs",
+      "pos": "WR",
+      "status": "Injured Reserve"
+     },
+     {
       "name": "A.J. Brown",
       "pos": "WR",
       "status": "Doubtful"
@@ -4699,11 +4703,6 @@
       "name": "Reggie Gilliam",
       "pos": "FB",
       "status": "Questionable"
-     },
-     {
-      "name": "Romeo Doubs",
-      "pos": "WR",
-      "status": "Injured Reserve"
      }
     ],
     "power": {
@@ -4926,7 +4925,7 @@
    "open_spread": -4.5,
    "total": 41.5,
    "total_open": 47.5,
-   "fav_ml": -352.0,
+   "fav_ml": -351.0,
    "favorite": "away",
    "spread": -6.5,
    "movement": 2.0,
@@ -5438,8 +5437,7 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
-     "Deommodore Lenoir",
-     "Dre Greenlaw",
+     "Brock Purdy",
      "Jordan Watkins"
     ],
     "key_long_term": [
@@ -5450,6 +5448,21 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Jordan Watkins",
+      "pos": "WR",
+      "status": "Questionable"
+     },
+     {
+      "name": "Mike Evans",
+      "pos": "WR",
+      "status": "Questionable"
+     },
+     {
+      "name": "Brock Purdy",
+      "pos": "QB",
+      "status": "Questionable"
+     },
+     {
       "name": "Austen Pleasants",
       "pos": "OT",
       "status": "Injured Reserve"
@@ -5458,21 +5471,6 @@
       "name": "Colton McKivitz",
       "pos": "OT",
       "status": "Injured Reserve"
-     },
-     {
-      "name": "Jordan Watkins",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "name": "Deommodore Lenoir",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Dre Greenlaw",
-      "pos": "LB",
-      "status": "Questionable"
      }
     ],
     "power": {
@@ -5550,11 +5548,10 @@
      "rank": null
     },
     "injuries_known": true,
-    "key_out": [
-     "Abraham Lucas"
-    ],
+    "key_out": [],
     "key_questionable": [
-     "Ernest Jones"
+     "Ernest Jones",
+     "Jaxon Smith-Njigba"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -5563,28 +5560,28 @@
     "qb_reset": "D.Lock, 98 dropbacks this season",
     "injury_list": [
      {
-      "name": "Ernest Jones IV",
+      "name": "Drew Lock",
+      "pos": "QB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Uchenna Nwosu",
       "pos": "LB",
       "status": "Questionable"
      },
      {
-      "name": "Quenton Nelson",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "name": "Abraham Lucas",
-      "pos": "OT",
-      "status": "Out"
-     },
-     {
-      "name": "Nick Kallerup",
-      "pos": "TE",
+      "name": "Patrick O'Connell",
+      "pos": "LB",
       "status": "Questionable"
      },
      {
-      "name": "Drew Lock",
-      "pos": "QB",
+      "name": "Jaxon Smith-Njigba",
+      "pos": "WR",
+      "status": "Questionable"
+     },
+     {
+      "name": "Ernest Jones IV",
+      "pos": "LB",
       "status": "Questionable"
      }
     ],
@@ -5705,11 +5702,11 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Deommodore Lenoir, Dre Greenlaw, Jordan Watkins"
+      "text": "Favorite questionable: Brock Purdy, Jordan Watkins"
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Ernest Jones"
+      "text": "Underdog questionable: Ernest Jones, Jaxon Smith-Njigba"
      }
     ],
     "under": {
@@ -5903,7 +5900,7 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
-     "Elgton Jenkins",
+     "Denzel Boston",
      "Isaiah McGuire",
      "Quincy Williams",
      "Ronnie Hickman"
@@ -5913,6 +5910,11 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Denzel Boston",
+      "pos": "WR",
+      "status": "Questionable"
+     },
      {
       "name": "Quincy Williams",
       "pos": "LB",
@@ -5932,11 +5934,6 @@
       "name": "Raheim Sanders",
       "pos": "RB",
       "status": "Injured Reserve"
-     },
-     {
-      "name": "Elgton Jenkins",
-      "pos": "C",
-      "status": "Questionable"
      }
     ],
     "power": {
@@ -6159,7 +6156,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Elgton Jenkins, Isaiah McGuire, Quincy Williams, Ronnie Hickman"
+      "text": "Favorite questionable: Denzel Boston, Isaiah McGuire, Quincy Williams, Ronnie Hickman"
      },
      {
       "level": "yellow",
@@ -6357,7 +6354,8 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
-     "Antoine Winfield Jr."
+     "Antoine Winfield Jr.",
+     "Josiah Trotter"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -6365,13 +6363,18 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Christian Rozeboom",
-      "pos": "LB",
+      "name": "Jalen McMillan",
+      "pos": "WR",
       "status": "Injured Reserve"
      },
      {
-      "name": "Jalen McMillan",
-      "pos": "WR",
+      "name": "Josiah Trotter",
+      "pos": "LB",
+      "status": "Questionable"
+     },
+     {
+      "name": "Christian Rozeboom",
+      "pos": "LB",
       "status": "Injured Reserve"
      },
      {
@@ -6382,11 +6385,6 @@
      {
       "name": "Elijah Simmons",
       "pos": "DT",
-      "status": "Questionable"
-     },
-     {
-      "name": "Benjamin Morrison",
-      "pos": "CB",
       "status": "Questionable"
      }
     ],
@@ -6469,6 +6467,7 @@
     "key_questionable": [
      "Darren Waller",
      "Jaelan Phillips",
+     "Mitchell Evans",
      "Tommy Tremble"
     ],
     "key_long_term": [],
@@ -6477,7 +6476,7 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Darren Waller",
+      "name": "Mitchell Evans",
       "pos": "TE",
       "status": "Questionable"
      },
@@ -6487,17 +6486,17 @@
       "status": "Questionable"
      },
      {
-      "name": "Jaelan Phillips",
-      "pos": "LB",
-      "status": "Questionable"
+      "name": "Jonathon Brooks",
+      "pos": "RB",
+      "status": "Injured Reserve"
      },
      {
-      "name": "Feleipe Franks",
+      "name": "Darren Waller",
       "pos": "TE",
       "status": "Questionable"
      },
      {
-      "name": "Jackson Kuwatch",
+      "name": "Jaelan Phillips",
       "pos": "LB",
       "status": "Questionable"
      }
@@ -6608,11 +6607,11 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Antoine Winfield Jr."
+      "text": "Favorite questionable: Antoine Winfield Jr., Josiah Trotter"
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Darren Waller, Jaelan Phillips, Tommy Tremble"
+      "text": "Underdog questionable: Darren Waller, Jaelan Phillips, Mitchell Evans, Tommy Tremble"
      }
     ],
     "under": {
@@ -7825,6 +7824,6 @@
   "watch": 8,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Thu Nov 26, 2:15 PM PT"
+  "built_label": "Thu Nov 26, 3:30 PM PT"
  }
 }
