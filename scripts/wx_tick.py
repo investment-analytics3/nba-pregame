@@ -134,12 +134,39 @@ def push_text(led: dict, now: datetime) -> tuple[str, str] | None:
     return title, " ".join(lines)
 
 
+def probe():
+    """Live check of the fields the rule reads (no ledger or page changes)."""
+    now = datetime.now(timezone.utc)
+    for s in C.MAIN:
+        ms = kalshi.open_markets(s)
+        evs = sorted({m.get("event_ticker") for m in ms})
+        q = [m for m in ms if paper.qualifies(m)]
+        print(f"{s}: {len(ms)} open brackets, events {evs}, {len(q)} at 1-4c YES bid now")
+        for e in evs:
+            d = paper.event_date(e)
+            real = next(m["close_time"] for m in ms if m.get("event_ticker") == e)
+            print(f"   {e}: close {real} expected {paper.close_utc(s, d).isoformat()}")
+    m = next(iter(kalshi.open_markets("KXHIGHNY")), None)
+    if m:
+        print("sample fields:", {k: m.get(k) for k in ("ticker", "status", "yes_sub_title", "strike_type", "floor_strike",
+              "cap_strike", "yes_bid_dollars", "no_ask_dollars", "yes_bid_size_fp", "close_time", "volume_fp")})
+    y = now.astimezone(PT).date() - timedelta(days=2)
+    old = kalshi.market(f"KXHIGHNY-{paper.date_code(y)}-B50.5") or {}
+    print("settled lookup:", {k: old.get(k) for k in ("ticker", "status", "result")})
+    prev = [m for m in kalshi.open_markets("KXHIGHNY")][:1]
+    print("open lookup:", {k: (kalshi.market(prev[0]["ticker"]) or {}).get(k) for k in ("ticker", "status", "result")} if prev else None)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--send", action="store_true", help="allow the daily phone push")
     ap.add_argument("--force-publish", action="store_true")
     ap.add_argument("--no-fetch", action="store_true", help="no network: rebuild pages only")
+    ap.add_argument("--probe", action="store_true", help="print what Kalshi returns for the main series; change nothing")
     a = ap.parse_args()
+    if a.probe:
+        probe()
+        return
     now = datetime.now(timezone.utc).replace(microsecond=0)
     led, state = paper.load(), read_state()
     added = settled = 0
