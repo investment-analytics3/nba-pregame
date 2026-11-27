@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-26T21:00:42-08:00",
- "built_label": "Thu Nov 26, 9:00 PM PT",
+ "built_at": "2026-11-26T22:00:54-08:00",
+ "built_label": "Thu Nov 26, 10:00 PM PT",
  "games": [
   {
    "id": "401873083",
@@ -1921,8 +1921,8 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV29NYGIND",
-    "fav_prob": 0.725,
-    "bid": 0.72,
+    "fav_prob": 0.72,
+    "bid": 0.71,
     "ask": 0.73
    },
    "votes": {
@@ -3709,9 +3709,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV29NELAC",
-    "fav_prob": 0.545,
-    "bid": 0.54,
-    "ask": 0.55
+    "fav_prob": 0.555,
+    "bid": 0.55,
+    "ask": 0.56
    },
    "votes": {
     "fav": 4,
@@ -7711,15 +7711,20 @@
      "rank": 6
     },
     "injuries_known": true,
-    "key_out": [
-     "Kenneth Walker III"
+    "key_out": [],
+    "key_questionable": [
+     "Trey Smith"
     ],
-    "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Trey Smith",
+      "pos": "G",
+      "status": "Questionable"
+     },
      {
       "name": "Jalen Royals",
       "pos": "WR",
@@ -7738,11 +7743,6 @@
      {
       "name": "Melvin Smith Jr.",
       "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "name": "Kenneth Walker III",
-      "pos": "RB",
       "status": "Out"
      }
     ],
@@ -7854,6 +7854,10 @@
      {
       "level": "yellow",
       "text": "Line crossed key number 3"
+     },
+     {
+      "level": "yellow",
+      "text": "Underdog questionable: Trey Smith"
      }
     ],
     "under": {
@@ -7981,6 +7985,6 @@
   "watch": 8,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Thu Nov 26, 9:00 PM PT"
+  "built_label": "Thu Nov 26, 10:00 PM PT"
  }
 }
