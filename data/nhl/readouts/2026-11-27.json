@@ -1,47 +1,163 @@
 {
   "date": "2026-11-27",
-  "updated": "2026-11-26T22:40-08:00",
+  "updated": "2026-11-27T11:40-08:00",
   "games": {
     "401892805": {
       "matchup": "VGK @ SJS",
       "fav": "VGK",
       "dog": "SJS",
-      "summary": "Watch list game. The previews line up behind Vegas at about -205 to -212 (FanDuel and DraftKings -205): Bang The Book and the FOX Sports/iHeart computer pick take the Golden Knights moneyline, UltimateCapper takes Vegas -1.5 at +127, and both projected scores are 4-3 Vegas. Vegas is 15-6-5 with five straight road wins (8-2-2 away) but has allowed 3+ goals in each of its last five. San Jose is 11-14-2, 29th in goals against (3.67) and 30th in shots against, and lost 7-0 at Anaheim last time out. The split views are on the margin: FOX takes Sharks +1.5, Bleacher Nation's model leans Under 6.5, and Parlae's projection is a coin flip. Vegas's starter is unclear (Daily Faceoff projects Adin Hill, Parlae Carter Hart); Askarov is expected for San Jose, who are without Trouba, Sherwood and Chernyshov.",
+      "summary": "Watch list game. Analysts and models favor Vegas: the moneyline runs about -204 to -222 (PuckCast's book table, Nov 27 morning), and the models give the Golden Knights 63.8% (PuckCast, VGK grade B), 64.6% (BetMGM) and 67% (Covers). Bang The Book and the FOX Sports/iHeart computer take the Vegas moneyline, UltimateCapper takes Vegas -1.5, and both published final scores are 4-3 Vegas. Vegas is 15-6-5 with five straight road wins; San Jose is 11-14-2, 42.7% in 5v5 expected-goals share (Vegas 53.2%) and lost 7-0 at Anaheim last time out. The split is on the margin and total: Covers' top pick is Under 6.5, BetMGM's model has the Sharks covering +1.5 (57%), FOX takes Sharks +1.5 and Parlae projects a coin flip. Carter Hart is expected for Vegas and Yaroslav Askarov for San Jose (neither confirmed); the Sharks are without Trouba, Sherwood and Chernyshov.",
       "picks": [
-        {"source": "Bang The Book", "side": "fav", "bet": "Vegas Golden Knights to win Moneyline -205", "price": "VGK -205 / SJ +170", "note": "Better road record (8-2-2) and more productive offense"},
-        {"source": "FOX Sports (iHeart)", "side": "fav", "bet": "Moneyline: Golden Knights (-207); spread: Sharks +1.5", "price": "VGK -207", "note": "Computer projection 4-3 Vegas; Sharks 1 goal in their last 5 losses"},
-        {"source": "UltimateCapper", "side": "fav", "bet": "Golden Knights -1.5 +127", "price": "+127 (puck line)", "note": "VGK 5-0 last 5 road games, 38-13 in last 51 meetings"},
-        {"source": "Bleacher Nation", "side": "fav", "bet": "Under 6.5 (computer projects 6.4 goals)", "price": "VGK -205 / SJ +168", "note": "Projects Vegas 4-3; picks the total, not a side"}
+        {
+          "source": "Bang The Book",
+          "side": "fav",
+          "bet": "Vegas Golden Knights to win Moneyline -205",
+          "price": "VGK -205 / SJ +170",
+          "note": "Better road record (8-2-2) and more productive offense"
+        },
+        {
+          "source": "FOX Sports (iHeart)",
+          "side": "fav",
+          "bet": "Moneyline: Golden Knights (-207); spread: Sharks +1.5",
+          "price": "VGK -207",
+          "note": "Computer projection 4-3 Vegas; Sharks 1 goal in their last 5 losses"
+        },
+        {
+          "source": "UltimateCapper",
+          "side": "fav",
+          "bet": "Golden Knights -1.5 +127",
+          "price": "+127 (puck line)",
+          "note": "VGK 5-0 last 5 road games, 38-13 in last 51 meetings"
+        },
+        {
+          "source": "Bleacher Nation",
+          "side": "fav",
+          "bet": "Under 6.5 (computer projects 6.4 goals)",
+          "price": "VGK -205 / SJ +168",
+          "note": "Projects Vegas 4-3; picks the total, not a side"
+        },
+        {
+          "source": "PuckCast (model)",
+          "side": "fav",
+          "bet": "Golden Knights (grade B, edge 13.8)",
+          "price": "VGK 63.8% / SJS 36.2%",
+          "note": "5v5 xGF% 53.2 vs 42.7; projected xG 3.5-2.7"
+        },
+        {
+          "source": "Covers",
+          "side": "fav",
+          "bet": "Under 6.5 (top pick)",
+          "price": "VGK 67% win probability",
+          "note": "Sharks 31st in goals per game; Vegas top 10 limiting shots"
+        },
+        {
+          "source": "BetMGM (model)",
+          "side": "fav",
+          "bet": "Model: VGK to win (64.6%); Sharks +1.5 cover (57.0%)",
+          "price": "VGK -1.5 +115 / SJS +1.5 -140",
+          "note": "Picks the winner and the Sharks puck line; no straight bet"
+        }
       ],
       "scores": [
-        {"source": "Bleacher Nation", "fav": 4, "dog": 3},
-        {"source": "FOX Sports (iHeart)", "fav": 4, "dog": 3}
+        {
+          "source": "Bleacher Nation",
+          "fav": 4,
+          "dog": 3
+        },
+        {
+          "source": "FOX Sports (iHeart)",
+          "fav": 4,
+          "dog": 3
+        }
       ],
       "goalies": {
-        "fav": {"name": "Adin Hill (Daily Faceoff) or Carter Hart (Parlae)", "status": "Unknown"},
-        "dog": {"name": "Yaroslav Askarov", "status": "Expected"}
+        "fav": {
+          "name": "Carter Hart",
+          "status": "Expected"
+        },
+        "dog": {
+          "name": "Yaroslav Askarov",
+          "status": "Expected"
+        }
       },
       "injuries": {
         "fav": [
-          {"player": "Marc Gatcomb", "status": "Day-to-day", "note": "face (Bang The Book, Nov 26)"}
+          {
+            "player": "Marc Gatcomb",
+            "status": "Day-to-day",
+            "note": "face (Bang The Book, Nov 26; not on Parlae's Nov 27 list)"
+          }
         ],
         "dog": [
-          {"player": "Jacob Trouba", "status": "Out", "note": "lower body (Bang The Book / Parlae, Nov 26-27)"},
-          {"player": "Kiefer Sherwood", "status": "IR", "note": "upper body (Bang The Book / Parlae, Nov 26-27)"},
-          {"player": "Igor Chernyshov", "status": "IR", "note": "upper body (Bang The Book / Parlae, Nov 26-27)"},
-          {"player": "Quentin Musty", "status": "IR", "note": "upper body (Bang The Book, Nov 26)"},
-          {"player": "Kyle Keyser", "status": "IR", "note": "upper body (Bang The Book, Nov 26)"}
+          {
+            "player": "Jacob Trouba",
+            "status": "Out",
+            "note": "lower body (Bang The Book / Parlae, Nov 26-27)"
+          },
+          {
+            "player": "Kiefer Sherwood",
+            "status": "IR",
+            "note": "upper body (Bang The Book / Parlae, Nov 26-27)"
+          },
+          {
+            "player": "Igor Chernyshov",
+            "status": "IR",
+            "note": "upper body (Bang The Book / Parlae, Nov 26-27)"
+          },
+          {
+            "player": "Quentin Musty",
+            "status": "IR",
+            "note": "upper body (Bang The Book, Nov 26)"
+          },
+          {
+            "player": "Kyle Keyser",
+            "status": "IR",
+            "note": "upper body (Bang The Book, Nov 26)"
+          }
         ],
-        "note": "Night-before lists; no Vegas injuries in Parlae's notes."
+        "note": "Night-before lists (Nov 26-27); Parlae's Nov 27 update shows no Vegas rotation player with a designation, and no morning source changed the Sharks list."
       },
       "sources": [
-        {"site": "Bang The Book", "url": "https://bangthebook.com/vegas-golden-knights-vs-san-jose-sharks-prediction-2026-11-27/"},
-        {"site": "FOX Sports (iHeart)", "url": "https://foxsportsam1280.iheart.com/content/2026-11-26-golden-knights-vs-sharks-prediction-picks-nov-27/"},
-        {"site": "UltimateCapper", "url": "https://ultimatecapper.com/fridays-nhl-hockey-free-picks-predictions-11-27-26-236819/"},
-        {"site": "Bleacher Nation", "url": "https://www.bleachernation.com/picks/2026/11/26/golden-knights-vs-sharks-nhl-best-bets-odds-prediction-and-pick-nov-27/"},
-        {"site": "BettingNews", "url": "https://www.bettingnews.com/nhl/matchup/2026-11-27-vegas_golden_knights-san_jose_sharks-n-1/"},
-        {"site": "Parlae", "url": "https://parlae.io/fantasy/nhl/predictions/golden-knights-vs-sharks"},
-        {"site": "Daily Faceoff", "url": "https://www.dailyfaceoff.com/starting-goalies/2026-11-27"}
+        {
+          "site": "Bang The Book",
+          "url": "https://bangthebook.com/vegas-golden-knights-vs-san-jose-sharks-prediction-2026-11-27/"
+        },
+        {
+          "site": "FOX Sports (iHeart)",
+          "url": "https://foxsportsam1280.iheart.com/content/2026-11-26-golden-knights-vs-sharks-prediction-picks-nov-27/"
+        },
+        {
+          "site": "UltimateCapper",
+          "url": "https://ultimatecapper.com/fridays-nhl-hockey-free-picks-predictions-11-27-26-236819/"
+        },
+        {
+          "site": "Bleacher Nation",
+          "url": "https://www.bleachernation.com/picks/2026/11/26/golden-knights-vs-sharks-nhl-best-bets-odds-prediction-and-pick-nov-27/"
+        },
+        {
+          "site": "BettingNews",
+          "url": "https://www.bettingnews.com/nhl/matchup/2026-11-27-vegas_golden_knights-san_jose_sharks-n-1/"
+        },
+        {
+          "site": "Parlae",
+          "url": "https://parlae.io/fantasy/nhl/predictions/golden-knights-vs-sharks"
+        },
+        {
+          "site": "Daily Faceoff",
+          "url": "https://www.dailyfaceoff.com/starting-goalies/2026-11-27"
+        },
+        {
+          "site": "PuckCast",
+          "url": "https://puckcast.ai/matchup/2026020410"
+        },
+        {
+          "site": "Covers",
+          "url": "https://www.covers.com/nhl/golden-knights-vs-sharks-prediction-picks-nov-27-2026"
+        },
+        {
+          "site": "BetMGM",
+          "url": "https://sports.betmgm.com/en/blog/nhl/golden-knights-sharks-prediction-odds-picks-nov-27-2026-jaa/"
+        }
       ]
     },
     "401892795": {
@@ -50,42 +166,123 @@
       "dog": "TOR",
       "summary": "No track: not a top-7 vs bottom-7 game (Boston is 8th in the consensus power rank; on the readout list for its 25 score). Boston is about -156 to -159 at home (CBS -156, MyBookie -159), and the betting pages lean Bruins: CappersPicks' AI projects 4-1 Boston, and BettingNews shows 83% of public bets and all listed experts on Boston. Toronto is 9-14-3 and went 1-8-1 before beating the Islanders 4-2, while Boston (15-8-1) is 2-4 since Nov 12 and allowed nine goals in its last two. The dissent is real: Covers takes Leafs +1.5 as Marchenko returns from injury, and UltimateCapper takes Toronto +145 on the moneyline. Stolarz is confirmed for Toronto (Daily Faceoff); Swayman is expected for Boston. Toronto remains without Domi and Merzlikins; Boston's Hagens (back) is listed to return Nov 27.",
       "picks": [
-        {"source": "CappersPicks (AI model)", "side": "fav", "bet": "Bruins to win by 3 (4* AI play)", "price": "BOS -159 / TOR +134 (MyBookie)", "note": "Model projection 4-1 Boston"},
-        {"source": "Covers", "side": "dog", "bet": "Maple Leafs +1.5 (puck line)", "note": "Marchenko's return could spark Toronto's offense"},
-        {"source": "UltimateCapper", "side": "dog", "bet": "Maple Leafs +145", "price": "TOR +145", "note": "Trend-based pick; Over 4-1 in last 5 meetings"}
+        {
+          "source": "CappersPicks (AI model)",
+          "side": "fav",
+          "bet": "Bruins to win by 3 (4* AI play)",
+          "price": "BOS -159 / TOR +134 (MyBookie)",
+          "note": "Model projection 4-1 Boston"
+        },
+        {
+          "source": "Covers",
+          "side": "dog",
+          "bet": "Maple Leafs +1.5 (puck line)",
+          "note": "Marchenko's return could spark Toronto's offense"
+        },
+        {
+          "source": "UltimateCapper",
+          "side": "dog",
+          "bet": "Maple Leafs +145",
+          "price": "TOR +145",
+          "note": "Trend-based pick; Over 4-1 in last 5 meetings"
+        }
       ],
       "scores": [
-        {"source": "CappersPicks (AI model)", "fav": 4, "dog": 1}
+        {
+          "source": "CappersPicks (AI model)",
+          "fav": 4,
+          "dog": 1
+        }
       ],
       "goalies": {
-        "fav": {"name": "Jeremy Swayman", "status": "Expected"},
-        "dog": {"name": "Anthony Stolarz", "status": "Confirmed"}
+        "fav": {
+          "name": "Jeremy Swayman",
+          "status": "Expected"
+        },
+        "dog": {
+          "name": "Anthony Stolarz",
+          "status": "Confirmed"
+        }
       },
       "injuries": {
         "fav": [
-          {"player": "James Hagens", "status": "Out", "note": "back; CBS lists a Nov 27 return (CappersPicks/CBS, Nov 26)"}
+          {
+            "player": "James Hagens",
+            "status": "Out",
+            "note": "back; CBS lists a Nov 27 return (CappersPicks/CBS, Nov 26)"
+          }
         ],
         "dog": [
-          {"player": "Marchenko", "status": "Probable", "note": "lower body; full practice Wednesday, expected back Nov 27 (CappersPicks/CBS/Covers, Nov 26)"},
-          {"player": "Sissons", "status": "Out", "note": "lower body; full practice Wednesday, listed return Nov 27 (CBS, Nov 26)"},
-          {"player": "Blankenburg", "status": "Out", "note": "upper body; listed return Nov 27 (CBS, Nov 26)"},
-          {"player": "Roslovic", "status": "Doubtful", "note": "upper body (CappersPicks, Nov 26)"},
-          {"player": "Domi", "status": "Out", "note": "back; long term (CBS, Nov 26)"},
-          {"player": "Merzlikins", "status": "Out", "note": "shoulder; long term (CBS, Nov 26)"},
-          {"player": "Wood", "status": "Out", "note": "undisclosed (CappersPicks, Nov 26)"},
-          {"player": "Rifai", "status": "Out", "note": "lower body (CappersPicks, Nov 26)"}
+          {
+            "player": "Marchenko",
+            "status": "Probable",
+            "note": "lower body; full practice Wednesday, expected back Nov 27 (CappersPicks/CBS/Covers, Nov 26)"
+          },
+          {
+            "player": "Sissons",
+            "status": "Out",
+            "note": "lower body; full practice Wednesday, listed return Nov 27 (CBS, Nov 26)"
+          },
+          {
+            "player": "Blankenburg",
+            "status": "Out",
+            "note": "upper body; listed return Nov 27 (CBS, Nov 26)"
+          },
+          {
+            "player": "Roslovic",
+            "status": "Doubtful",
+            "note": "upper body (CappersPicks, Nov 26)"
+          },
+          {
+            "player": "Domi",
+            "status": "Out",
+            "note": "back; long term (CBS, Nov 26)"
+          },
+          {
+            "player": "Merzlikins",
+            "status": "Out",
+            "note": "shoulder; long term (CBS, Nov 26)"
+          },
+          {
+            "player": "Wood",
+            "status": "Out",
+            "note": "undisclosed (CappersPicks, Nov 26)"
+          },
+          {
+            "player": "Rifai",
+            "status": "Out",
+            "note": "lower body (CappersPicks, Nov 26)"
+          }
         ],
         "note": "Statuses from CappersPicks' injury table; CBS return dates added. Night-before lists, first names not given in the sources."
       },
       "sources": [
-        {"site": "CappersPicks", "url": "https://www.capperspicks.com/free-picks/ai/toronto-maple-leafs-at-boston-bruins-pick-nhl-prediction-preview-odds-11-27-2026/"},
-        {"site": "Covers", "url": "https://www.covers.com/nhl/maple-leafs-vs-bruins-prediction-picks-nov-27-2026"},
-        {"site": "UltimateCapper", "url": "https://ultimatecapper.com/fridays-nhl-hockey-free-picks-predictions-11-27-26-236819/"},
-        {"site": "CBS Sports", "url": "https://www.cbssports.com/nhl/gametracker/preview/NHL_20261127_TOR@BOS/"},
-        {"site": "BettingNews", "url": "https://www.bettingnews.com/nhl/matchup/2026-11-27-toronto_maple_leafs-boston_bruins-n-1/"},
-        {"site": "Daily Faceoff", "url": "https://www.dailyfaceoff.com/starting-goalies/2026-11-27"}
+        {
+          "site": "CappersPicks",
+          "url": "https://www.capperspicks.com/free-picks/ai/toronto-maple-leafs-at-boston-bruins-pick-nhl-prediction-preview-odds-11-27-2026/"
+        },
+        {
+          "site": "Covers",
+          "url": "https://www.covers.com/nhl/maple-leafs-vs-bruins-prediction-picks-nov-27-2026"
+        },
+        {
+          "site": "UltimateCapper",
+          "url": "https://ultimatecapper.com/fridays-nhl-hockey-free-picks-predictions-11-27-26-236819/"
+        },
+        {
+          "site": "CBS Sports",
+          "url": "https://www.cbssports.com/nhl/gametracker/preview/NHL_20261127_TOR@BOS/"
+        },
+        {
+          "site": "BettingNews",
+          "url": "https://www.bettingnews.com/nhl/matchup/2026-11-27-toronto_maple_leafs-boston_bruins-n-1/"
+        },
+        {
+          "site": "Daily Faceoff",
+          "url": "https://www.dailyfaceoff.com/starting-goalies/2026-11-27"
+        }
       ]
     }
   },
-  "notes": "Evening run (night-before pass, 10:40 PM PT Nov 26); the morning run will refresh goalies and injuries. Covered the two readout=true games: VGK @ SJS (Watch list, 24) and TOR @ BOS (No track, out of range, 25). Goalies: Daily Faceoff shows 2 of 30 confirmed; Stolarz is Confirmed there (CBS still says expected), Swayman, Askarov and the Vegas starter are unconfirmed. Vegas's starter conflicts (Daily Faceoff: Adin Hill; Parlae and the board: Carter Hart), so it is Unknown. None of the preferred sources (Yahoo/NBC, FanDuel Research, SI, Action Network, Sports Betting Dime) had previews for these games yet. Bang The Book's TOR @ BOS page and Tony's Picks' VGK @ SJS page failed to load. Covers' TOR win probabilities came from a summarized page tail and were left out. BettingNews and Covers matchup pages had no written picks (BettingNews used for odds and splits only). Toronto injury names appear as given (last names only)."
+  "notes": "Morning run (game-day refresh, 11:40 AM PT Nov 27). TOR @ BOS (No track, 25) had already started at 10 AM PT, so its night-before entry is kept unchanged. VGK @ SJS (Watch list, 24) refreshed: goalies now Carter Hart (Vegas) and Yaroslav Askarov (San Jose), both Expected per PuckCast (RotoWire data, 11:30 AM ET) and Parlae; this resolves the night-before Hill/Hart conflict in favor of Hart (matches the board), but no source confirms either starter. Daily Faceoff's page did not load this morning and Bleacher Nation's new game-day page failed. Added PuckCast, Covers and BetMGM picks; PuckCast's 3.5-2.7 and Parlae's 1.7-1.7 are expected-goal projections, not final scores, so they are not in the scores table. Covers' win probabilities (67/34) sum to 101 as published. None of the preferred sources (Yahoo/NBC, FanDuel Research, SI, Action Network, Sports Betting Dime) had a VGK @ SJS preview found for this date."
 }
