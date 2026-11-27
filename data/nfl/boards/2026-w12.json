@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-27T07:00:44-08:00",
- "built_label": "Fri Nov 27, 7:00 AM PT",
+ "built_at": "2026-11-27T08:00:41-08:00",
+ "built_label": "Fri Nov 27, 8:00 AM PT",
  "games": [
   {
    "id": "401873083",
@@ -20,11 +20,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 37.5,
    "total_open": 41.5,
-   "fav_ml": -242.0,
+   "fav_ml": -237.0,
    "favorite": "away",
    "spread": -4.5,
    "movement": 3.0,
@@ -718,11 +718,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -6.5,
    "total": 49.5,
    "total_open": 48.5,
-   "fav_ml": -562.0,
+   "fav_ml": -563.0,
    "favorite": "home",
    "spread": -10.0,
    "movement": 3.5,
@@ -1163,11 +1163,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 47.5,
    "total_open": 45.5,
-   "fav_ml": -332.0,
+   "fav_ml": -331.0,
    "favorite": "home",
    "spread": -6.5,
    "movement": 5.0,
@@ -1622,7 +1622,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 2.5,
    "total": 41.5,
    "total_open": 47.5,
@@ -2069,14 +2069,14 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -5.5,
    "total": 48.5,
    "total_open": 45.5,
-   "fav_ml": -1220.0,
+   "fav_ml": -1020.0,
    "favorite": "home",
-   "spread": -14.5,
-   "movement": 9.0,
+   "spread": -14.0,
+   "movement": 8.5,
    "total_move": 3.0,
    "fav_home": true,
    "home": {
@@ -2147,12 +2147,13 @@
      "rank": 4
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Parker Washington"
+    ],
     "key_questionable": [
      "Bhayshul Tuten",
      "Cole Van Lanen",
-     "Jakobi Meyers",
-     "Parker Washington"
+     "Jakobi Meyers"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -2167,7 +2168,7 @@
      {
       "name": "Parker Washington",
       "pos": "WR",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
       "name": "Patrick Mekari",
@@ -2307,9 +2308,9 @@
    "dog": "TEN",
    "scoring": {
     "qualified": false,
-    "tier": "watch",
-    "tier_label": "Watch list",
-    "tracked": true,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
     "alerts": false,
     "routes": [],
     "route": "",
@@ -2318,7 +2319,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 27 of 40"
+      "detail": "Score 26 of 40"
      },
      {
       "rule": "B",
@@ -2329,8 +2330,8 @@
      {
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "Clear"
+      "pass": false,
+      "detail": "JAX key starter out: Parker Washington"
      },
      {
       "rule": "Power",
@@ -2370,18 +2371,20 @@
      "def_sr"
     ],
     "fails": [
-     "Watch list: score 27 (qualifies at 28)"
+     "JAX key starter out: Parker Washington",
+     "Would be on the watch list otherwise (score 26)"
     ],
     "failed": [
-     "Watch list: score 27 (qualifies at 28)"
+     "JAX key starter out: Parker Washington",
+     "Would be on the watch list otherwise (score 26)"
     ],
     "hero": {
-     "score": 27,
+     "score": 26,
      "band": "yellow",
      "parts": {
       "fav_strength": 10,
       "dog_weakness": 11,
-      "health": 4,
+      "health": 3,
       "home": 1,
       "rest": 0,
       "form": 1
@@ -2399,7 +2402,7 @@
     "flags": [
      {
       "level": "yellow",
-      "text": "Line moved +9 toward the favorite (4+): downgrade"
+      "text": "Line moved +8.5 toward the favorite (4+): downgrade"
      },
      {
       "level": "yellow",
@@ -2407,7 +2410,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Bhayshul Tuten, Cole Van Lanen, Jakobi Meyers, Parker Washington"
+      "text": "Favorite questionable: Bhayshul Tuten, Cole Van Lanen, Jakobi Meyers"
      },
      {
       "level": "yellow",
@@ -2423,7 +2426,7 @@
      "total_move": 3.0,
      "note": ""
     },
-    "call": "Watch list",
+    "call": "No track",
     "matchups": [
      {
       "key": "def_def",
@@ -2519,7 +2522,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 1.5,
    "total": 39.5,
    "total_open": 41.5,
@@ -2608,13 +2611,13 @@
     "qb_reset": "K.McCord, 71 dropbacks this season",
     "injury_list": [
      {
-      "name": "Jared Wayne",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
       "name": "JuJu Brents",
       "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "name": "Jared Wayne",
+      "pos": "WR",
       "status": "Questionable"
      },
      {
@@ -2967,7 +2970,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -4.5,
    "total": 41.5,
    "total_open": 43.5,
@@ -3414,7 +3417,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 2.5,
    "total": 35.5,
    "total_open": 45.5,
@@ -3798,8 +3801,8 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV29NELAC",
-    "fav_prob": 0.555,
-    "bid": 0.55,
+    "fav_prob": 0.55,
+    "bid": 0.54,
     "ask": 0.56
    },
    "votes": {
@@ -3857,7 +3860,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -4.5,
    "total": 41.5,
    "total_open": 47.5,
@@ -4293,7 +4296,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 43.5,
    "total_open": 46.5,
@@ -4690,9 +4693,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV29SEASF",
-    "fav_prob": 0.575,
-    "bid": 0.57,
-    "ask": 0.58
+    "fav_prob": 0.585,
+    "bid": 0.58,
+    "ask": 0.59
    },
    "votes": {
     "fav": 11,
@@ -4755,7 +4758,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -2.5,
    "total": 39.5,
    "total_open": 39.5,
@@ -5209,7 +5212,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -3.5,
    "total": 43.5,
    "total_open": 44.5,
@@ -5661,7 +5664,7 @@
     "home": 26,
     "away": 13
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -3.5,
    "total": 43.5,
    "total_open": 49.5,
@@ -6298,7 +6301,7 @@
     "home": 35,
     "away": 39
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 2.5,
    "total": 56.5,
    "total_open": 51.5,
@@ -6497,13 +6500,13 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Caleb Williams",
-      "pos": "QB",
+      "name": "Colston Loveland",
+      "pos": "TE",
       "status": "Questionable"
      },
      {
-      "name": "Colston Loveland",
-      "pos": "TE",
+      "name": "Caleb Williams",
+      "pos": "QB",
       "status": "Questionable"
      },
      {
@@ -6740,7 +6743,7 @@
     "home": 38,
     "away": 39
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 49.5,
    "total_open": 49.5,
@@ -7613,7 +7616,7 @@
     "home": 13,
     "away": 10
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -2.5,
    "total": 46.5,
    "total_open": 49.5,
@@ -8071,9 +8074,9 @@
   "upcoming": 12,
   "tracked": 0,
   "qualified": 0,
-  "watch": 8,
+  "watch": 7,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Fri Nov 27, 7:00 AM PT"
+  "built_label": "Fri Nov 27, 8:00 AM PT"
  }
 }
