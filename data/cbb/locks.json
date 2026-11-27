@@ -8728,7 +8728,7 @@
    "tip_pt": "6:00 PM PT",
    "day_et": "2026-11-26",
    "state": "in",
-   "detail": "19:54 - 2nd",
+   "detail": "14:31 - 2nd",
    "neutral": true,
    "venue": "T-Mobile Arena",
    "favorite": "away",
@@ -9422,8 +9422,773 @@
    },
    "locked_at": "2026-11-26T17:00:53-08:00",
    "score": {
-    "home": 35,
-    "away": 51
+    "home": 50,
+    "away": 65
+   }
+  }
+ },
+ "401920531": {
+  "at": "2026-11-26T19:30:36-08:00",
+  "day": "2026-11-26",
+  "game": {
+   "id": "401920531",
+   "tip_utc": "2026-11-27T04:30:00+00:00",
+   "tip_pt": "8:30 PM PT",
+   "day_et": "2026-11-26",
+   "state": "pre",
+   "detail": "11/26 - 11:30 PM EST",
+   "neutral": true,
+   "venue": "Michelob ULTRA Arena",
+   "favorite": "away",
+   "spread": {
+    "spread": 10.5,
+    "details": "TTU -10.5",
+    "provider": "DraftKings",
+    "ml_home": 410,
+    "ml_away": -550
+   },
+   "home": {
+    "id": "2483",
+    "abbr": "ORE",
+    "name": "Oregon",
+    "display": "Oregon Ducks",
+    "mascot": "Ducks",
+    "record": "3-2",
+    "l3_record": "1-2",
+    "games": 5,
+    "season": {
+     "efg": 61.31,
+     "opp_efg": 50.0,
+     "off": 122.88,
+     "def": 106.78,
+     "net": 16.1,
+     "poss_per_game": 70.8,
+     "ranks": {
+      "efg": 10,
+      "off": 27,
+      "opp_efg": 155,
+      "def": 168,
+      "net": 84
+     }
+    },
+    "last3": {
+     "efg": 58.24,
+     "opp_efg": 50.56,
+     "off": 118.13,
+     "def": 112.46,
+     "net": 5.67,
+     "poss_per_game": 70.5,
+     "ranks": {
+      "efg": 43,
+      "off": 61,
+      "opp_efg": 159,
+      "def": 245,
+      "net": 135
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401915943,
+      "date": "2026-11-24",
+      "site": "away",
+      "opp_id": 2599,
+      "opp": "SJU",
+      "d1_opp": true,
+      "pts": 79,
+      "opp_pts": 90,
+      "metrics": {
+       "efg": 53.64,
+       "opp_efg": 56.03,
+       "off": 105.61,
+       "def": 120.32,
+       "net": -14.71
+      },
+      "opp_power_rank": 9
+     },
+     {
+      "game_id": 401930884,
+      "date": "2026-11-19",
+      "site": "home",
+      "opp_id": 204,
+      "opp": "ORST",
+      "d1_opp": true,
+      "pts": 71,
+      "opp_pts": 82,
+      "metrics": {
+       "efg": 46.83,
+       "opp_efg": 50.0,
+       "off": 101.92,
+       "def": 117.71,
+       "net": -15.79
+      },
+      "opp_power_rank": 49
+     },
+     {
+      "game_id": 401925738,
+      "date": "2026-11-11",
+      "site": "home",
+      "opp_id": 2400,
+      "opp": "MVSU",
+      "d1_opp": true,
+      "pts": 100,
+      "opp_pts": 66,
+      "metrics": {
+       "efg": 73.44,
+       "opp_efg": 45.9,
+       "off": 148.86,
+       "def": 98.25,
+       "net": 50.61
+      },
+      "opp_power_rank": 361
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+10.5",
+    "b2b": false,
+    "power": {
+     "rank": 77,
+     "bpi": 67,
+     "own_net": 84
+    },
+    "key_players": [
+     "Tyrone Riley IV",
+     "Fred Payne",
+     "Malique Ewin",
+     "Andrew Meadow",
+     "Jasper Johnson",
+     "Taylor Bol Bowen"
+    ],
+    "top_scorers": [
+     {
+      "name": "Tyrone Riley IV",
+      "ppg": 17.0
+     },
+     {
+      "name": "Fred Payne",
+      "ppg": 12.4
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "2641",
+    "abbr": "TTU",
+    "name": "Texas Tech",
+    "display": "Texas Tech Red Raiders",
+    "mascot": "Red Raiders",
+    "record": "5-1",
+    "l3_record": "2-1",
+    "games": 6,
+    "season": {
+     "efg": 51.36,
+     "opp_efg": 42.08,
+     "off": 112.78,
+     "def": 78.04,
+     "net": 34.74,
+     "poss_per_game": 70.0,
+     "ranks": {
+      "efg": 172,
+      "off": 113,
+      "opp_efg": 13,
+      "def": 1,
+      "net": 11
+     }
+    },
+    "last3": {
+     "efg": 53.12,
+     "opp_efg": 37.09,
+     "off": 115.56,
+     "def": 72.83,
+     "net": 42.73,
+     "poss_per_game": 68.7,
+     "ranks": {
+      "efg": 128,
+      "off": 97,
+      "opp_efg": 4,
+      "def": 1,
+      "net": 4
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401915942,
+      "date": "2026-11-24",
+      "site": "away",
+      "opp_id": 97,
+      "opp": "LOU",
+      "d1_opp": true,
+      "pts": 64,
+      "opp_pts": 72,
+      "metrics": {
+       "efg": 44.44,
+       "opp_efg": 48.11,
+       "off": 100.63,
+       "def": 113.21,
+       "net": -12.58
+      },
+      "opp_power_rank": 48
+     },
+     {
+      "game_id": 401921134,
+      "date": "2026-11-18",
+      "site": "home",
+      "opp_id": 2443,
+      "opp": "NOLA",
+      "d1_opp": true,
+      "pts": 86,
+      "opp_pts": 41,
+      "metrics": {
+       "efg": 60.66,
+       "opp_efg": 35.23,
+       "off": 122.77,
+       "def": 58.53,
+       "net": 64.24
+      },
+      "opp_power_rank": 345
+     },
+     {
+      "game_id": 401919847,
+      "date": "2026-11-14",
+      "site": "home",
+      "opp_id": 284,
+      "opp": "STO",
+      "d1_opp": true,
+      "pts": 88,
+      "opp_pts": 37,
+      "metrics": {
+       "efg": 54.41,
+       "opp_efg": 27.78,
+       "off": 121.69,
+       "def": 51.17,
+       "net": 70.53
+      },
+      "opp_power_rank": 353
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-10.5",
+    "b2b": false,
+    "power": {
+     "rank": 5,
+     "bpi": 9,
+     "own_net": 11,
+     "ap": 5
+    },
+    "key_players": [
+     "Cruz Davis",
+     "Donovan Atwell",
+     "Darrion Williams",
+     "Jamichael Stillwell",
+     "Dra Gibbs-Lawhorn",
+     "Bassala Bagayoko"
+    ],
+    "top_scorers": [
+     {
+      "name": "Cruz Davis",
+      "ppg": 15.5
+     },
+     {
+      "name": "Dra Gibbs-Lawhorn",
+      "ppg": 13.7
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "TTU",
+    "dog": "ORE",
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 18 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 TTU last-3 top 50 in 2 of 4 \u00b7 \u2717 ORE last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2713 TTU season top half (1-182) in all four \u00b7 \u2717 ORE season top 50: eFG% #10, Off Eff #27"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "ORE: consensus #77, BPI #67, our net #84"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Watch list: score 18 (qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for TTU: check news before betting",
+     "Neutral-site game: no home-court point"
+    ],
+    "score": 18,
+    "max": 40,
+    "band": "yellow",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 8,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 5,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 2,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "TTU",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 172,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 113,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 13,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 1,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "TTU",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 128,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 97,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 4,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 1,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "ORE",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 155,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 168,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 10,
+        "color": "deep-red"
+       },
+       {
+        "metric": "off",
+        "rank": 27,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "ORE",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 159,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 245,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 43,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 61,
+        "color": "yellow"
+       }
+      ]
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "cells": [
+       {
+        "team": "TTU",
+        "role": "fav",
+        "window": "season",
+        "metric": "off",
+        "rank": 113,
+        "color": "yellow"
+       },
+       {
+        "team": "TTU",
+        "role": "fav",
+        "window": "last3",
+        "metric": "off",
+        "rank": 97,
+        "color": "yellow"
+       },
+       {
+        "team": "ORE",
+        "role": "dog",
+        "window": "season",
+        "metric": "def",
+        "rank": 168,
+        "color": "green"
+       },
+       {
+        "team": "ORE",
+        "role": "dog",
+        "window": "last3",
+        "metric": "def",
+        "rank": 245,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shoot",
+      "label": "Shooting vs shot defense",
+      "fav_metric": "efg",
+      "dog_metric": "opp_efg",
+      "cells": [
+       {
+        "team": "TTU",
+        "role": "fav",
+        "window": "season",
+        "metric": "efg",
+        "rank": 172,
+        "color": "red"
+       },
+       {
+        "team": "TTU",
+        "role": "fav",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 128,
+        "color": "yellow"
+       },
+       {
+        "team": "ORE",
+        "role": "dog",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 155,
+        "color": "green"
+       },
+       {
+        "team": "ORE",
+        "role": "dog",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 159,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "cells": [
+       {
+        "team": "TTU",
+        "role": "fav",
+        "window": "season",
+        "metric": "def",
+        "rank": 1,
+        "color": "green"
+       },
+       {
+        "team": "TTU",
+        "role": "fav",
+        "window": "last3",
+        "metric": "def",
+        "rank": 1,
+        "color": "green"
+       },
+       {
+        "team": "ORE",
+        "role": "dog",
+        "window": "season",
+        "metric": "off",
+        "rank": 27,
+        "color": "red"
+       },
+       {
+        "team": "ORE",
+        "role": "dog",
+        "window": "last3",
+        "metric": "off",
+        "rank": 61,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "key": "shotd",
+      "label": "Shot defense vs shooting",
+      "fav_metric": "opp_efg",
+      "dog_metric": "efg",
+      "cells": [
+       {
+        "team": "TTU",
+        "role": "fav",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 13,
+        "color": "green"
+       },
+       {
+        "team": "TTU",
+        "role": "fav",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 4,
+        "color": "green"
+       },
+       {
+        "team": "ORE",
+        "role": "dog",
+        "window": "season",
+        "metric": "efg",
+        "rank": 10,
+        "color": "deep-red"
+       },
+       {
+        "team": "ORE",
+        "role": "dog",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 43,
+        "color": "red"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "off",
+      "dog_metric": "off",
+      "fav_rank": 97,
+      "dog_rank": 61,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def",
+      "dog_metric": "def",
+      "fav_rank": 1,
+      "dog_rank": 245,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "fav_rank": 1,
+      "dog_rank": 61,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "fav_rank": 97,
+      "dog_rank": 245,
+      "counts": false,
+      "met": false
+     }
+    ]
+   },
+   "summary": "Watch list: score 18 (qualifies at 28). Biggest edge over the last 3: TTU Off Eff (#97) against ORE Def Eff (#245). TTU 2-1 in its last 3, ORE 1-2.",
+   "lean": "Lean: TTU (watch list)",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV26TTUORE",
+    "fav_prob": 0.835,
+    "bid": 0.83,
+    "ask": 0.84
+   },
+   "locked_at": "2026-11-26T19:30:36-08:00",
+   "readout": {
+    "matchup": "TTU @ ORE",
+    "fav": "TTU",
+    "dog": "ORE",
+    "summary": "Both sources that make a call expect No. 5 Texas Tech (5-1) to beat Oregon in a Players Era 16 consolation game at Michelob ULTRA Arena in Las Vegas (neutral site, 11:30 PM ET). Beatline projects Texas Tech 75-70, citing its structured offense; The Breakdown projects 78-70. Both teams lost on Nov 24: Texas Tech fell 72-64 to No. 25 Louisville (6-for-27 from 3, outrebounded, Jamichael Stillwell in foul trouble) and Oregon lost 90-79 to No. 16 St. John's. The matchup the AP preview points to is Texas Tech's defense (opponents shoot 35.3%) against Oregon's 54.8% shooting; Cruz Davis (15.5 points) leads Texas Tech. No injuries were reported for either team. Both projections (5 and 8 points) are inside the board's 10.5-point line.",
+    "picks": [
+     {
+      "source": "Beatline Sports",
+      "side": "fav",
+      "bet": "Texas Tech to win (score projection, no line given)",
+      "note": "Structured offense and top-ranked standing give a slight edge"
+     },
+     {
+      "source": "The Breakdown",
+      "side": "fav",
+      "bet": "Texas Tech to win (projected score, no line given)",
+      "note": "Bracket projection; no reason given"
+     }
+    ],
+    "scores": [
+     {
+      "source": "Beatline Sports",
+      "fav": 75,
+      "dog": 70
+     },
+     {
+      "source": "The Breakdown",
+      "fav": 78,
+      "dog": 70
+     }
+    ],
+    "injuries": {
+     "fav": [],
+     "dog": [],
+     "note": "None reported. Beatline (Nov 25) says both teams have no reported injuries; the AP/Yahoo preview and Texas Tech's Nov 24 recap mention none. Not an official report."
+    },
+    "sources": [
+     {
+      "site": "Yahoo Sports (AP preview)",
+      "url": "https://sports.yahoo.com/mens-college-basketball/articles/no-5-texas-tech-red-092808246.html"
+     },
+     {
+      "site": "Beatline Sports",
+      "url": "https://www.beatlinesports.com/2026/11/25/beatline-cbb-ttu-at-ore-2026-11-27/"
+     },
+     {
+      "site": "The Breakdown",
+      "url": "https://getthebreakdown.com/tournaments/players-era-16-2026/"
+     },
+     {
+      "site": "Texas Tech Athletics (Louisville recap)",
+      "url": "https://texastech.com/news/2026/11/24/mens-basketball-no-5-tech-falls-to-no-25-louisville-at-players-era-16"
+     },
+     {
+      "site": "BettingNews",
+      "url": "https://www.bettingnews.com/ncaab/matchup/2026-11-26-texas_tech_red_raiders-oregon_ducks-n-1/"
+     }
+    ],
+    "updated": "2026-11-25T22:30-08:00"
    }
   }
  }
