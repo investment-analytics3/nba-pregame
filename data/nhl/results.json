@@ -11,8 +11,8 @@
    "opponent": "SEA",
    "fav_site": "home",
    "fav_side": "home",
-   "line": "-205",
-   "line_num": 0.6721,
+   "line": "-218",
+   "line_num": 0.6855,
    "tier": "out",
    "tier_label": "No track",
    "route": "",
@@ -159,8 +159,8 @@
    "opponent": "PIT",
    "fav_site": "home",
    "fav_side": "home",
-   "line": "-148",
-   "line_num": 0.5968,
+   "line": "-155",
+   "line_num": 0.6078,
    "tier": "out",
    "tier_label": "No track",
    "route": "",
@@ -899,8 +899,8 @@
    "opponent": "COL",
    "fav_site": "home",
    "fav_side": "home",
-   "line": "-125",
-   "line_num": 0.5556,
+   "line": "-130",
+   "line_num": 0.5652,
    "tier": "out",
    "tier_label": "No track",
    "route": "",
@@ -1052,7 +1052,7 @@
    "tier": "out",
    "tier_label": "No track",
    "route": "",
-   "score": 10,
+   "score": 11,
    "band": "red",
    "flag": "No",
    "fav_team": {
@@ -1068,8 +1068,8 @@
     "form": "1-2-0",
     "pr": 25,
     "rest": "No",
-    "goalie": "John Gibson",
-    "goalie_role": "Starter"
+    "goalie": "Daniil Tarasov",
+    "goalie_role": "Backup"
    },
    "fav_metrics": {
     "season": {
@@ -1191,27 +1191,19 @@
    "period_label": "2026-11-27",
    "date": "2026-11-27",
    "start_utc": "2026-11-27T20:00:00+00:00",
-   "favorite": "WSH",
-   "opponent": "FLA",
-   "fav_site": "home",
-   "fav_side": "home",
-   "line": "-108",
-   "line_num": 0.5192,
+   "favorite": "FLA",
+   "opponent": "WSH",
+   "fav_site": "away",
+   "fav_side": "away",
+   "line": "-112",
+   "line_num": 0.5283,
    "tier": "out",
    "tier_label": "No track",
    "route": "",
-   "score": 13,
-   "band": "red",
-   "flag": "Yes",
+   "score": 18,
+   "band": "yellow",
+   "flag": "No",
    "fav_team": {
-    "record": "11-11-0",
-    "form": "1-2-0",
-    "pr": 17,
-    "rest": "No",
-    "goalie": "Logan Thompson",
-    "goalie_role": "Starter"
-   },
-   "opp_team": {
     "record": "14-8-3",
     "form": "2-1-0",
     "pr": 12,
@@ -1219,73 +1211,25 @@
     "goalie": "Jacob Markstrom",
     "goalie_role": "Starter"
    },
-   "fav_metrics": {
-    "season": {
-     "xgf60": {
-      "v": "2.90",
-      "r": 2,
-      "c": "green"
-     },
-     "xga60": {
-      "v": "2.59",
-      "r": 19,
-      "c": "yellow"
-     },
-     "xgf": {
-      "v": "52.9%",
-      "r": 9,
-      "c": "green"
-     },
-     "gsax": {
-      "v": "-0.55",
-      "r": 30,
-      "c": "red"
-     },
-     "st": {
-      "v": "99.7",
-      "r": 19,
-      "c": "yellow"
-     }
-    },
-    "last5": {
-     "xgf60": {
-      "v": "2.97",
-      "r": 4,
-      "c": "green"
-     },
-     "xga60": {
-      "v": "2.35",
-      "r": 16,
-      "c": "yellow"
-     },
-     "xgf": {
-      "v": "55.9%",
-      "r": 5,
-      "c": "green"
-     },
-     "gsax": {
-      "v": "-2.16",
-      "r": 32,
-      "c": "red"
-     },
-     "st": {
-      "v": "102.4",
-      "r": 16,
-      "c": "yellow"
-     }
-    }
+   "opp_team": {
+    "record": "11-11-0",
+    "form": "1-2-0",
+    "pr": 17,
+    "rest": "No",
+    "goalie": "Logan Thompson",
+    "goalie_role": "Starter"
    },
-   "opp_metrics": {
+   "fav_metrics": {
     "season": {
      "xgf60": {
       "v": "2.32",
       "r": 23,
-      "c": "green"
+      "c": "red"
      },
      "xga60": {
       "v": "2.24",
       "r": 5,
-      "c": "deep-red"
+      "c": "green"
      },
      "xgf": {
       "v": "50.8%",
@@ -1300,33 +1244,89 @@
      "st": {
       "v": "108.3",
       "r": 6,
-      "c": "red"
+      "c": "green"
      }
     },
     "last5": {
      "xgf60": {
       "v": "1.83",
       "r": 31,
-      "c": "green"
+      "c": "red"
      },
      "xga60": {
       "v": "2.18",
       "r": 8,
-      "c": "red"
+      "c": "green"
      },
      "xgf": {
       "v": "45.6%",
       "r": 27,
-      "c": "green"
+      "c": "red"
      },
      "gsax": {
       "v": "+0.17",
       "r": 9,
-      "c": "red"
+      "c": "green"
      },
      "st": {
       "v": "103.1",
       "r": 15,
+      "c": "yellow"
+     }
+    }
+   },
+   "opp_metrics": {
+    "season": {
+     "xgf60": {
+      "v": "2.90",
+      "r": 2,
+      "c": "deep-red"
+     },
+     "xga60": {
+      "v": "2.59",
+      "r": 19,
+      "c": "yellow"
+     },
+     "xgf": {
+      "v": "52.9%",
+      "r": 9,
+      "c": "red"
+     },
+     "gsax": {
+      "v": "-0.55",
+      "r": 30,
+      "c": "green"
+     },
+     "st": {
+      "v": "99.7",
+      "r": 19,
+      "c": "yellow"
+     }
+    },
+    "last5": {
+     "xgf60": {
+      "v": "2.97",
+      "r": 4,
+      "c": "deep-red"
+     },
+     "xga60": {
+      "v": "2.35",
+      "r": 16,
+      "c": "yellow"
+     },
+     "xgf": {
+      "v": "55.9%",
+      "r": 5,
+      "c": "deep-red"
+     },
+     "gsax": {
+      "v": "-2.16",
+      "r": 32,
+      "c": "green"
+     },
+     "st": {
+      "v": "102.4",
+      "r": 16,
       "c": "yellow"
      }
     }
@@ -1787,8 +1787,8 @@
    "opponent": "NSH",
    "fav_site": "away",
    "fav_side": "away",
-   "line": "-112",
-   "line_num": 0.5283,
+   "line": "-118",
+   "line_num": 0.5413,
    "tier": "out",
    "tier_label": "No track",
    "route": "",
