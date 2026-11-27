@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-26T15:30:46-08:00",
- "built_label": "Thu Nov 26, 3:30 PM PT",
+ "built_at": "2026-11-26T16:30:51-08:00",
+ "built_label": "Thu Nov 26, 4:30 PM PT",
  "games": [
   {
    "id": "401873080",
@@ -11,16 +11,16 @@
    "kick_pt": "Thu 1:30 PM PT",
    "day_et": "2026-11-26",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "13:53 - 4th",
    "neutral": false,
    "venue": "AT&T Stadium",
    "home_code": "DAL",
    "away_code": "PHI",
    "score": {
-    "home": 28,
-    "away": 10
+    "home": 31,
+    "away": 17
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 49.5,
    "total_open": 49.5,
@@ -223,6 +223,11 @@
     "qb_reset": "J.Milton, 64 dropbacks this season",
     "injury_list": [
      {
+      "name": "Marcus Epps",
+      "pos": "S",
+      "status": "Out"
+     },
+     {
       "name": "Dallas Goedert",
       "pos": "TE",
       "status": "Out"
@@ -240,11 +245,6 @@
      {
       "name": "Cole Payton",
       "pos": "QB",
-      "status": "Out"
-     },
-     {
-      "name": "Grant Calcaterra",
-      "pos": "TE",
       "status": "Out"
      }
     ],
@@ -888,11 +888,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -2.5,
    "total": 46.5,
    "total_open": 49.5,
-   "fav_ml": -155.0,
+   "fav_ml": -157.0,
    "favorite": "home",
    "spread": -3.0,
    "movement": 0.5,
@@ -966,42 +966,39 @@
      "rank": 9
     },
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
-     "Christian Benford",
-     "Dalton Kincaid",
-     "Dorian Williams",
-     "O'Cyrus Torrence"
+    "key_out": [
+     "Christian Benford"
     ],
+    "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
-      "name": "T.J. Sanders",
-      "pos": "DT",
-      "status": "Questionable"
-     },
-     {
-      "name": "Dorian Williams",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
       "name": "Christian Benford",
       "pos": "CB",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
-      "name": "Dalton Kincaid",
-      "pos": "TE",
-      "status": "Questionable"
+      "name": "Jalon Kilgore",
+      "pos": "S",
+      "status": "Out"
      },
      {
-      "name": "O'Cyrus Torrence",
-      "pos": "G",
-      "status": "Questionable"
+      "name": "Jude Bowry",
+      "pos": "OT",
+      "status": "Out"
+     },
+     {
+      "name": "Mike Danna",
+      "pos": "DE",
+      "status": "Out"
+     },
+     {
+      "name": "Greg Gaines",
+      "pos": "DT",
+      "status": "Out"
      }
     ],
     "power": {
@@ -1080,40 +1077,37 @@
     },
     "injuries_known": true,
     "key_out": [
-     "Jaylon Moore",
      "Kenneth Walker III"
     ],
-    "key_questionable": [
-     "Noah Gray"
-    ],
+    "key_questionable": [],
     "key_long_term": [],
     "interior_ol_out": [],
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Peter Woods",
-      "pos": "DT",
-      "status": "Questionable"
-     },
-     {
-      "name": "Omarr Norman-Lott",
-      "pos": "DT",
+      "name": "Garrett Nussmeier",
+      "pos": "QB",
       "status": "Out"
      },
      {
-      "name": "Jaylon Moore",
+      "name": "Diego Pounds",
       "pos": "OT",
       "status": "Out"
      },
      {
-      "name": "Noah Gray",
-      "pos": "TE",
-      "status": "Questionable"
+      "name": "Melvin Smith Jr.",
+      "pos": "CB",
+      "status": "Out"
      },
      {
       "name": "Kenneth Walker III",
       "pos": "RB",
+      "status": "Out"
+     },
+     {
+      "name": "Marcus Harris",
+      "pos": "DT",
       "status": "Out"
      }
     ],
@@ -1139,7 +1133,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 14 of 40"
+      "detail": "Score 13 of 40"
      },
      {
       "rule": "B",
@@ -1150,8 +1144,8 @@
      {
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "Clear"
+      "pass": false,
+      "detail": "BUF key starter out: Christian Benford"
      },
      {
       "rule": "Power",
@@ -1190,18 +1184,20 @@
      "off_epa"
     ],
     "fails": [
-     "KC top 10 in power ranking: consensus #3, ESPN FPI #3, NFL.com #4"
+     "KC top 10 in power ranking: consensus #3, ESPN FPI #3, NFL.com #4",
+     "BUF key starter out: Christian Benford"
     ],
     "failed": [
-     "KC top 10 in power ranking: consensus #3, ESPN FPI #3, NFL.com #4"
+     "KC top 10 in power ranking: consensus #3, ESPN FPI #3, NFL.com #4",
+     "BUF key starter out: Christian Benford"
     ],
     "hero": {
-     "score": 14,
+     "score": 13,
      "band": "red",
      "parts": {
       "fav_strength": 7,
       "dog_weakness": 0,
-      "health": 4,
+      "health": 3,
       "home": 1,
       "rest": 0,
       "form": 2
@@ -1224,14 +1220,6 @@
      {
       "level": "yellow",
       "text": "Line crossed key number 3"
-     },
-     {
-      "level": "yellow",
-      "text": "Favorite questionable: Christian Benford, Dalton Kincaid, Dorian Williams, O'Cyrus Torrence"
-     },
-     {
-      "level": "yellow",
-      "text": "Underdog questionable: Noah Gray"
      }
     ],
     "under": {
@@ -1345,14 +1333,14 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 36.5,
    "total_open": 41.5,
-   "fav_ml": -257.0,
+   "fav_ml": -251.0,
    "favorite": "away",
-   "spread": -4.5,
-   "movement": 3.0,
+   "spread": -5.5,
+   "movement": 4.0,
    "total_move": -5.0,
    "fav_home": false,
    "home": {
@@ -1543,14 +1531,14 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Caleb Lohner",
-      "pos": "TE",
-      "status": "Injured Reserve"
-     },
-     {
       "name": "Tyler Badie",
       "pos": "RB",
       "status": "Questionable"
+     },
+     {
+      "name": "Caleb Lohner",
+      "pos": "TE",
+      "status": "Injured Reserve"
      },
      {
       "name": "Sai'vion Jones",
@@ -1668,6 +1656,10 @@
     "flags": [
      {
       "level": "yellow",
+      "text": "Line moved +4 toward the favorite (4+): downgrade"
+     },
+     {
+      "level": "yellow",
       "text": "Line crossed key number 3"
      }
     ],
@@ -1717,9 +1709,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV27DENPIT",
-    "fav_prob": 0.685,
-    "bid": 0.68,
-    "ask": 0.69
+    "fav_prob": 0.675,
+    "bid": 0.67,
+    "ask": 0.68
    },
    "votes": {
     "fav": 8,
@@ -1782,7 +1774,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -6.5,
    "total": 49.5,
    "total_open": 48.5,
@@ -2227,7 +2219,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 47.5,
    "total_open": 45.5,
@@ -2686,11 +2678,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 2.5,
    "total": 41.5,
    "total_open": 47.5,
-   "fav_ml": -286.0,
+   "fav_ml": -287.0,
    "favorite": "away",
    "spread": -6.0,
    "movement": 8.5,
@@ -3133,7 +3125,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -5.5,
    "total": 49.5,
    "total_open": 45.5,
@@ -3583,11 +3575,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 1.5,
    "total": 39.5,
    "total_open": 41.5,
-   "fav_ml": -241.0,
+   "fav_ml": -243.0,
    "favorite": "away",
    "spread": -4.5,
    "movement": 6.0,
@@ -4031,11 +4023,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -4.5,
    "total": 41.5,
    "total_open": 43.5,
-   "fav_ml": -310.0,
+   "fav_ml": -311.0,
    "favorite": "home",
    "spread": -7.0,
    "movement": 2.5,
@@ -4478,7 +4470,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 2.5,
    "total": 35.5,
    "total_open": 45.5,
@@ -4921,7 +4913,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -4.5,
    "total": 41.5,
    "total_open": 47.5,
@@ -5357,7 +5349,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -1.5,
    "total": 43.5,
    "total_open": 46.5,
@@ -5820,7 +5812,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -2.5,
    "total": 40.5,
    "total_open": 39.5,
@@ -6274,7 +6266,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -3.5,
    "total": 43.5,
    "total_open": 44.5,
@@ -6725,7 +6717,7 @@
     "home": 26,
     "away": 13
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": -3.5,
    "total": 43.5,
    "total_open": 49.5,
@@ -7362,7 +7354,7 @@
     "home": 35,
     "away": 39
    },
-   "line_source": "Draft Kings",
+   "line_source": "DraftKings",
    "open_spread": 2.5,
    "total": 56.5,
    "total_open": 51.5,
@@ -7824,6 +7816,6 @@
   "watch": 8,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Thu Nov 26, 3:30 PM PT"
+  "built_label": "Thu Nov 26, 4:30 PM PT"
  }
 }
