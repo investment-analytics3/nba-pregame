@@ -1,446 +1,9 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-26T19:46:44-08:00",
- "built_label": "Thu Nov 26, 7:46 PM PT",
+ "built_at": "2026-11-26T21:00:42-08:00",
+ "built_label": "Thu Nov 26, 9:00 PM PT",
  "games": [
-  {
-   "id": "401873082",
-   "nflverse_id": "2026_12_KC_BUF",
-   "kick_utc": "2026-11-27T01:20:00+00:00",
-   "kick_pt": "Thu 5:20 PM PT",
-   "day_et": "2026-11-26",
-   "state": "in",
-   "detail": "11:58 - 4th",
-   "neutral": false,
-   "venue": "Highmark Stadium",
-   "home_code": "BUF",
-   "away_code": "KC",
-   "score": {
-    "home": 10,
-    "away": 10
-   },
-   "line_source": "DraftKings",
-   "open_spread": -2.5,
-   "total": 46.5,
-   "total_open": 49.5,
-   "fav_ml": -163.0,
-   "favorite": "home",
-   "spread": -3.0,
-   "movement": 0.5,
-   "total_move": -3.0,
-   "fav_home": true,
-   "home": {
-    "code": "BUF",
-    "abbr": "BUF",
-    "season": {
-     "games": 10,
-     "off_epa": 0.1287,
-     "off_sr": 0.4798,
-     "def_epa": -0.0049,
-     "def_sr": 0.4537,
-     "off_pass_epa": 0.1796,
-     "off_rush_epa": 0.0625,
-     "def_pass_epa": 0.0057,
-     "def_rush_epa": -0.0265,
-     "ranks": {
-      "off_epa": 6,
-      "off_sr": 7,
-      "def_epa": 12,
-      "def_sr": 19
-     }
-    },
-    "last3": {
-     "games": 3,
-     "off_epa": 0.0751,
-     "off_sr": 0.4375,
-     "def_epa": -0.2426,
-     "def_sr": 0.3678,
-     "off_pass_epa": 0.0517,
-     "off_rush_epa": 0.1029,
-     "def_pass_epa": -0.3449,
-     "def_rush_epa": 0.0184,
-     "ranks": {
-      "off_epa": 9,
-      "off_sr": 17,
-      "def_epa": 2,
-      "def_sr": 4
-     }
-    },
-    "net": 0.1335,
-    "net_rank": 6,
-    "adjusted": {
-     "off": 0.1224,
-     "def": 0.0094,
-     "net": 0.0697,
-     "recent_net": 0.1014,
-     "sr_off": 0.4798,
-     "sr_def": 0.4537
-    },
-    "record": "9-1",
-    "last2_results": [
-     "W",
-     "W"
-    ],
-    "last3_results": [
-     "W",
-     "W",
-     "W"
-    ],
-    "rest": 4,
-    "qb": {
-     "regular": "J.Allen",
-     "regular_id": "00-0034857",
-     "season_leader": "J.Allen",
-     "reset": false,
-     "dropbacks": 327,
-     "epa_db": 0.1243,
-     "rank": 9
-    },
-    "injuries_known": true,
-    "key_out": [
-     "Christian Benford"
-    ],
-    "key_questionable": [],
-    "key_long_term": [],
-    "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [
-     {
-      "name": "Christian Benford",
-      "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "name": "Jalon Kilgore",
-      "pos": "S",
-      "status": "Out"
-     },
-     {
-      "name": "Jude Bowry",
-      "pos": "OT",
-      "status": "Out"
-     },
-     {
-      "name": "Mike Danna",
-      "pos": "DE",
-      "status": "Out"
-     },
-     {
-      "name": "Greg Gaines",
-      "pos": "DT",
-      "status": "Out"
-     }
-    ],
-    "power": {
-     "consensus": 2,
-     "fpi": 2,
-     "nfl_com": 2
-    }
-   },
-   "away": {
-    "code": "KC",
-    "abbr": "KC",
-    "season": {
-     "games": 10,
-     "off_epa": 0.1304,
-     "off_sr": 0.4921,
-     "def_epa": -0.0728,
-     "def_sr": 0.4088,
-     "off_pass_epa": 0.1804,
-     "off_rush_epa": 0.0543,
-     "def_pass_epa": -0.048,
-     "def_rush_epa": -0.1158,
-     "ranks": {
-      "off_epa": 5,
-      "off_sr": 6,
-      "def_epa": 5,
-      "def_sr": 4
-     }
-    },
-    "last3": {
-     "games": 3,
-     "off_epa": 0.2034,
-     "off_sr": 0.5101,
-     "def_epa": -0.2165,
-     "def_sr": 0.3874,
-     "off_pass_epa": 0.3312,
-     "off_rush_epa": 0.0263,
-     "def_pass_epa": -0.2468,
-     "def_rush_epa": -0.1549,
-     "ranks": {
-      "off_epa": 4,
-      "off_sr": 6,
-      "def_epa": 3,
-      "def_sr": 7
-     }
-    },
-    "net": 0.2033,
-    "net_rank": 2,
-    "adjusted": {
-     "off": 0.1296,
-     "def": 0.0134,
-     "net": 0.0724,
-     "recent_net": 0.0908,
-     "sr_off": 0.4921,
-     "sr_def": 0.4088
-    },
-    "record": "8-2",
-    "last2_results": [
-     "W",
-     "W"
-    ],
-    "last3_results": [
-     "W",
-     "W",
-     "W"
-    ],
-    "rest": 4,
-    "qb": {
-     "regular": "P.Mahomes",
-     "regular_id": "00-0033873",
-     "season_leader": "P.Mahomes",
-     "reset": false,
-     "dropbacks": 350,
-     "epa_db": 0.1872,
-     "rank": 6
-    },
-    "injuries_known": true,
-    "key_out": [
-     "Kenneth Walker III"
-    ],
-    "key_questionable": [],
-    "key_long_term": [],
-    "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [
-     {
-      "name": "Jalen Royals",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "name": "Garrett Nussmeier",
-      "pos": "QB",
-      "status": "Out"
-     },
-     {
-      "name": "Diego Pounds",
-      "pos": "OT",
-      "status": "Out"
-     },
-     {
-      "name": "Melvin Smith Jr.",
-      "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "name": "Kenneth Walker III",
-      "pos": "RB",
-      "status": "Out"
-     }
-    ],
-    "power": {
-     "consensus": 3,
-     "fpi": 3,
-     "nfl_com": 4
-    }
-   },
-   "fav": "BUF",
-   "dog": "KC",
-   "scoring": {
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 13 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2713 BUF last-3 top 10 in 3 of 4 \u00b7 \u2717 KC last-3 bottom 10 (23-32) in 0 of 4 \u00b7 \u2717 BUF season outside top 15: Def success allowed #19 \u00b7 \u2717 KC season top 10: Off EPA/play #5, Off success #6, Def EPA allowed #5, Def success allowed #4"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key starter newly out or doubtful for the favorite",
-      "pass": false,
-      "detail": "BUF key starter out: Christian Benford"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not top 10 in any power ranking",
-      "pass": false,
-      "detail": "KC top 10 in power ranking: consensus #3, ESPN FPI #3, NFL.com #4"
-     }
-    ],
-    "context": [
-     {
-      "n": 1,
-      "ok": true,
-      "text": "Favorite top 10 (season) in a core metric",
-      "detail": "Off EPA/play, Off success"
-     },
-     {
-      "n": 2,
-      "ok": true,
-      "text": "Also top 10 over its last 3 in that same metric",
-      "detail": "Off EPA/play"
-     },
-     {
-      "n": 3,
-      "ok": false,
-      "text": "Underdog not top 10 in any metric over its last 3",
-      "detail": "Off EPA/play, Off success, Def EPA allowed, Def success allowed"
-     },
-     {
-      "n": 4,
-      "ok": false,
-      "text": "Underdog not 3-0 in its last 3",
-      "detail": "3-0"
-     }
-    ],
-    "qualifiers": [
-     "off_epa"
-    ],
-    "fails": [
-     "KC top 10 in power ranking: consensus #3, ESPN FPI #3, NFL.com #4",
-     "BUF key starter out: Christian Benford"
-    ],
-    "failed": [
-     "KC top 10 in power ranking: consensus #3, ESPN FPI #3, NFL.com #4",
-     "BUF key starter out: Christian Benford"
-    ],
-    "hero": {
-     "score": 13,
-     "band": "red",
-     "parts": {
-      "fav_strength": 7,
-      "dog_weakness": 0,
-      "health": 3,
-      "home": 1,
-      "rest": 0,
-      "form": 2
-     },
-     "max": 40
-    },
-    "edge": {
-     "gap": -0.07,
-     "required": 0.35,
-     "clears": false,
-     "short_by": 0.42,
-     "adjusted_gap": -0.003,
-     "adjusted_recent_gap": 0.011
-    },
-    "flags": [
-     {
-      "level": "red",
-      "text": "KC top 10 in power ranking: consensus #3, ESPN FPI #3, NFL.com #4 (no track)"
-     },
-     {
-      "level": "yellow",
-      "text": "Line crossed key number 3"
-     }
-    ],
-    "under": {
-     "passes": false,
-     "ranks": [
-      6,
-      5
-     ],
-     "total_move": -3.0,
-     "note": ""
-    },
-    "call": "No track",
-    "matchups": [
-     {
-      "key": "def_def",
-      "label": "Defense vs defense",
-      "fav_metric": "def_sr",
-      "dog_metric": "def_sr",
-      "fav_rank": 4,
-      "dog_rank": 7,
-      "in_range": false,
-      "met": false
-     },
-     {
-      "key": "def_off",
-      "label": "Defense vs offense",
-      "fav_metric": "def_sr",
-      "dog_metric": "off_sr",
-      "fav_rank": 4,
-      "dog_rank": 6,
-      "in_range": false,
-      "met": false
-     },
-     {
-      "key": "off_def",
-      "label": "Offense vs defense",
-      "fav_metric": "off_sr",
-      "dog_metric": "def_sr",
-      "fav_rank": 17,
-      "dog_rank": 7,
-      "in_range": false,
-      "met": false
-     }
-    ]
-   },
-   "fav_defense_top10": false,
-   "votes": {
-    "fav": 6,
-    "dog": 7,
-    "support": 0.462,
-    "sources": [
-     {
-      "site": "CBS Sports (Sullivan)",
-      "url": "https://www.cbssports.com/nfl/news/week-12-expert-picks-best-bets-lions-spoil-bears-thanksgiving/",
-      "fav": 0,
-      "dog": 1
-     },
-     {
-      "site": "CBS Sports (Dajani, Dubin)",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-12-picks-our-experts-face-off-on-bears-at-lions-chiefs-at-bills-and-more/",
-      "fav": 1,
-      "dog": 1
-     },
-     {
-      "site": "Bleacher Report",
-      "url": "https://bleacherreport.com/articles/25537117-bleacher-reports-expert-week-12-2026-nfl-picks",
-      "fav": 4,
-      "dog": 3
-     },
-     {
-      "site": "Covers",
-      "url": "https://www.covers.com/nfl/picks-against-the-spread-week-12-2026",
-      "fav": 1,
-      "dog": 0
-     },
-     {
-      "site": "SI",
-      "url": "https://www.si.com/betting/nfl-week-12-ats-picks-for-every-game-bet-the-vikings-to-cover-against-the-falcons-on-sunday-01m89ee8k9gt",
-      "fav": 0,
-      "dog": 1
-     },
-     {
-      "site": "Yahoo Sports",
-      "url": "https://sports.yahoo.com/nfl/betting/article/week-12-nfl-picks-against-the-spread-predictions-for-every-game-can-the-seahawks-or-anyone-stop-the-49ers-151851041.html",
-      "fav": 0,
-      "dog": 1
-     }
-    ],
-    "notes": "CBS = Sullivan + Dajani/Dubin; Prisco and Breech give scores only (not counted). CBS Dajani Chiefs, Dubin Bills."
-   }
-  },
   {
    "id": "401873083",
    "nflverse_id": "2026_12_DEN_PIT",
@@ -457,15 +20,15 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -1.5,
-   "total": 36.5,
+   "total": 37.5,
    "total_open": 41.5,
-   "fav_ml": -249.0,
+   "fav_ml": -247.0,
    "favorite": "away",
    "spread": -4.5,
    "movement": 3.0,
-   "total_move": -5.0,
+   "total_move": -4.0,
    "fav_home": false,
    "home": {
     "code": "PIT",
@@ -789,7 +352,7 @@
       11,
       20
      ],
-     "total_move": -5.0,
+     "total_move": -4.0,
      "note": ""
     },
     "call": "Watch list",
@@ -1066,11 +629,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -6.5,
    "total": 49.5,
    "total_open": 48.5,
-   "fav_ml": -563.0,
+   "fav_ml": -562.0,
    "favorite": "home",
    "spread": -10.0,
    "movement": 3.5,
@@ -1511,7 +1074,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -1.5,
    "total": 47.5,
    "total_open": 45.5,
@@ -1970,7 +1533,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": 2.5,
    "total": 41.5,
    "total_open": 47.5,
@@ -2417,7 +1980,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -5.5,
    "total": 49.5,
    "total_open": 45.5,
@@ -2867,7 +2430,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": 1.5,
    "total": 39.5,
    "total_open": 41.5,
@@ -3315,7 +2878,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -4.5,
    "total": 41.5,
    "total_open": 43.5,
@@ -3762,7 +3325,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": 2.5,
    "total": 35.5,
    "total_open": 45.5,
@@ -4146,9 +3709,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV29NELAC",
-    "fav_prob": 0.535,
-    "bid": 0.53,
-    "ask": 0.54
+    "fav_prob": 0.545,
+    "bid": 0.54,
+    "ask": 0.55
    },
    "votes": {
     "fav": 4,
@@ -4205,11 +3768,11 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -4.5,
    "total": 41.5,
    "total_open": 47.5,
-   "fav_ml": -351.0,
+   "fav_ml": -352.0,
    "favorite": "away",
    "spread": -6.5,
    "movement": 2.0,
@@ -4641,7 +4204,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -1.5,
    "total": 43.5,
    "total_open": 46.5,
@@ -5103,7 +4666,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -2.5,
    "total": 40.5,
    "total_open": 39.5,
@@ -5557,7 +5120,7 @@
     "home": 0,
     "away": 0
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -3.5,
    "total": 43.5,
    "total_open": 44.5,
@@ -6009,7 +5572,7 @@
     "home": 26,
     "away": 13
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -3.5,
    "total": 43.5,
    "total_open": 49.5,
@@ -6646,7 +6209,7 @@
     "home": 35,
     "away": 39
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": 2.5,
    "total": 56.5,
    "total_open": 51.5,
@@ -7088,7 +6651,7 @@
     "home": 38,
     "away": 39
    },
-   "line_source": "DraftKings",
+   "line_source": "Draft Kings",
    "open_spread": -1.5,
    "total": 49.5,
    "total_open": 49.5,
@@ -7309,7 +6872,7 @@
      {
       "name": "Marcus Epps",
       "pos": "S",
-      "status": "Out"
+      "status": "Questionable"
      },
      {
       "name": "Saquon Barkley",
@@ -7944,6 +7507,443 @@
     ],
     "updated": "2026-11-26T05:58-08:00"
    }
+  },
+  {
+   "id": "401873082",
+   "nflverse_id": "2026_12_KC_BUF",
+   "kick_utc": "2026-11-27T01:20:00+00:00",
+   "kick_pt": "Thu 5:20 PM PT",
+   "day_et": "2026-11-26",
+   "state": "post",
+   "detail": "Final",
+   "neutral": false,
+   "venue": "Highmark Stadium",
+   "home_code": "BUF",
+   "away_code": "KC",
+   "score": {
+    "home": 13,
+    "away": 10
+   },
+   "line_source": "Draft Kings",
+   "open_spread": -2.5,
+   "total": 46.5,
+   "total_open": 49.5,
+   "fav_ml": -163.0,
+   "favorite": "home",
+   "spread": -3.0,
+   "movement": 0.5,
+   "total_move": -3.0,
+   "fav_home": true,
+   "home": {
+    "code": "BUF",
+    "abbr": "BUF",
+    "season": {
+     "games": 10,
+     "off_epa": 0.1287,
+     "off_sr": 0.4798,
+     "def_epa": -0.0049,
+     "def_sr": 0.4537,
+     "off_pass_epa": 0.1796,
+     "off_rush_epa": 0.0625,
+     "def_pass_epa": 0.0057,
+     "def_rush_epa": -0.0265,
+     "ranks": {
+      "off_epa": 6,
+      "off_sr": 7,
+      "def_epa": 12,
+      "def_sr": 19
+     }
+    },
+    "last3": {
+     "games": 3,
+     "off_epa": 0.0751,
+     "off_sr": 0.4375,
+     "def_epa": -0.2426,
+     "def_sr": 0.3678,
+     "off_pass_epa": 0.0517,
+     "off_rush_epa": 0.1029,
+     "def_pass_epa": -0.3449,
+     "def_rush_epa": 0.0184,
+     "ranks": {
+      "off_epa": 9,
+      "off_sr": 17,
+      "def_epa": 2,
+      "def_sr": 4
+     }
+    },
+    "net": 0.1335,
+    "net_rank": 6,
+    "adjusted": {
+     "off": 0.1224,
+     "def": 0.0094,
+     "net": 0.0697,
+     "recent_net": 0.1014,
+     "sr_off": 0.4798,
+     "sr_def": 0.4537
+    },
+    "record": "9-1",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "W"
+    ],
+    "rest": 4,
+    "qb": {
+     "regular": "J.Allen",
+     "regular_id": "00-0034857",
+     "season_leader": "J.Allen",
+     "reset": false,
+     "dropbacks": 327,
+     "epa_db": 0.1243,
+     "rank": 9
+    },
+    "injuries_known": true,
+    "key_out": [
+     "Christian Benford"
+    ],
+    "key_questionable": [],
+    "key_long_term": [],
+    "interior_ol_out": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [
+     {
+      "name": "Christian Benford",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "name": "Jalon Kilgore",
+      "pos": "S",
+      "status": "Out"
+     },
+     {
+      "name": "Jude Bowry",
+      "pos": "OT",
+      "status": "Out"
+     },
+     {
+      "name": "Mike Danna",
+      "pos": "DE",
+      "status": "Out"
+     },
+     {
+      "name": "Greg Gaines",
+      "pos": "DT",
+      "status": "Out"
+     }
+    ],
+    "power": {
+     "consensus": 2,
+     "fpi": 2,
+     "nfl_com": 2
+    }
+   },
+   "away": {
+    "code": "KC",
+    "abbr": "KC",
+    "season": {
+     "games": 10,
+     "off_epa": 0.1304,
+     "off_sr": 0.4921,
+     "def_epa": -0.0728,
+     "def_sr": 0.4088,
+     "off_pass_epa": 0.1804,
+     "off_rush_epa": 0.0543,
+     "def_pass_epa": -0.048,
+     "def_rush_epa": -0.1158,
+     "ranks": {
+      "off_epa": 5,
+      "off_sr": 6,
+      "def_epa": 5,
+      "def_sr": 4
+     }
+    },
+    "last3": {
+     "games": 3,
+     "off_epa": 0.2034,
+     "off_sr": 0.5101,
+     "def_epa": -0.2165,
+     "def_sr": 0.3874,
+     "off_pass_epa": 0.3312,
+     "off_rush_epa": 0.0263,
+     "def_pass_epa": -0.2468,
+     "def_rush_epa": -0.1549,
+     "ranks": {
+      "off_epa": 4,
+      "off_sr": 6,
+      "def_epa": 3,
+      "def_sr": 7
+     }
+    },
+    "net": 0.2033,
+    "net_rank": 2,
+    "adjusted": {
+     "off": 0.1296,
+     "def": 0.0134,
+     "net": 0.0724,
+     "recent_net": 0.0908,
+     "sr_off": 0.4921,
+     "sr_def": 0.4088
+    },
+    "record": "8-2",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "W"
+    ],
+    "rest": 4,
+    "qb": {
+     "regular": "P.Mahomes",
+     "regular_id": "00-0033873",
+     "season_leader": "P.Mahomes",
+     "reset": false,
+     "dropbacks": 350,
+     "epa_db": 0.1872,
+     "rank": 6
+    },
+    "injuries_known": true,
+    "key_out": [
+     "Kenneth Walker III"
+    ],
+    "key_questionable": [],
+    "key_long_term": [],
+    "interior_ol_out": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [
+     {
+      "name": "Jalen Royals",
+      "pos": "WR",
+      "status": "Questionable"
+     },
+     {
+      "name": "Garrett Nussmeier",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "name": "Diego Pounds",
+      "pos": "OT",
+      "status": "Out"
+     },
+     {
+      "name": "Melvin Smith Jr.",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "name": "Kenneth Walker III",
+      "pos": "RB",
+      "status": "Out"
+     }
+    ],
+    "power": {
+     "consensus": 3,
+     "fpi": 3,
+     "nfl_com": 4
+    }
+   },
+   "fav": "BUF",
+   "dog": "KC",
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 13 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2713 BUF last-3 top 10 in 3 of 4 \u00b7 \u2717 KC last-3 bottom 10 (23-32) in 0 of 4 \u00b7 \u2717 BUF season outside top 15: Def success allowed #19 \u00b7 \u2717 KC season top 10: Off EPA/play #5, Off success #6, Def EPA allowed #5, Def success allowed #4"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter newly out or doubtful for the favorite",
+      "pass": false,
+      "detail": "BUF key starter out: Christian Benford"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": false,
+      "detail": "KC top 10 in power ranking: consensus #3, ESPN FPI #3, NFL.com #4"
+     }
+    ],
+    "context": [
+     {
+      "n": 1,
+      "ok": true,
+      "text": "Favorite top 10 (season) in a core metric",
+      "detail": "Off EPA/play, Off success"
+     },
+     {
+      "n": 2,
+      "ok": true,
+      "text": "Also top 10 over its last 3 in that same metric",
+      "detail": "Off EPA/play"
+     },
+     {
+      "n": 3,
+      "ok": false,
+      "text": "Underdog not top 10 in any metric over its last 3",
+      "detail": "Off EPA/play, Off success, Def EPA allowed, Def success allowed"
+     },
+     {
+      "n": 4,
+      "ok": false,
+      "text": "Underdog not 3-0 in its last 3",
+      "detail": "3-0"
+     }
+    ],
+    "qualifiers": [
+     "off_epa"
+    ],
+    "fails": [
+     "KC top 10 in power ranking: consensus #3, ESPN FPI #3, NFL.com #4",
+     "BUF key starter out: Christian Benford"
+    ],
+    "failed": [
+     "KC top 10 in power ranking: consensus #3, ESPN FPI #3, NFL.com #4",
+     "BUF key starter out: Christian Benford"
+    ],
+    "hero": {
+     "score": 13,
+     "band": "red",
+     "parts": {
+      "fav_strength": 7,
+      "dog_weakness": 0,
+      "health": 3,
+      "home": 1,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "edge": {
+     "gap": -0.07,
+     "required": 0.35,
+     "clears": false,
+     "short_by": 0.42,
+     "adjusted_gap": -0.003,
+     "adjusted_recent_gap": 0.011
+    },
+    "flags": [
+     {
+      "level": "red",
+      "text": "KC top 10 in power ranking: consensus #3, ESPN FPI #3, NFL.com #4 (no track)"
+     },
+     {
+      "level": "yellow",
+      "text": "Line crossed key number 3"
+     }
+    ],
+    "under": {
+     "passes": false,
+     "ranks": [
+      6,
+      5
+     ],
+     "total_move": -3.0,
+     "note": ""
+    },
+    "call": "No track",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 4,
+      "dog_rank": 7,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 4,
+      "dog_rank": 6,
+      "in_range": false,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 17,
+      "dog_rank": 7,
+      "in_range": false,
+      "met": false
+     }
+    ]
+   },
+   "fav_defense_top10": false,
+   "votes": {
+    "fav": 6,
+    "dog": 7,
+    "support": 0.462,
+    "sources": [
+     {
+      "site": "CBS Sports (Sullivan)",
+      "url": "https://www.cbssports.com/nfl/news/week-12-expert-picks-best-bets-lions-spoil-bears-thanksgiving/",
+      "fav": 0,
+      "dog": 1
+     },
+     {
+      "site": "CBS Sports (Dajani, Dubin)",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-12-picks-our-experts-face-off-on-bears-at-lions-chiefs-at-bills-and-more/",
+      "fav": 1,
+      "dog": 1
+     },
+     {
+      "site": "Bleacher Report",
+      "url": "https://bleacherreport.com/articles/25537117-bleacher-reports-expert-week-12-2026-nfl-picks",
+      "fav": 4,
+      "dog": 3
+     },
+     {
+      "site": "Covers",
+      "url": "https://www.covers.com/nfl/picks-against-the-spread-week-12-2026",
+      "fav": 1,
+      "dog": 0
+     },
+     {
+      "site": "SI",
+      "url": "https://www.si.com/betting/nfl-week-12-ats-picks-for-every-game-bet-the-vikings-to-cover-against-the-falcons-on-sunday-01m89ee8k9gt",
+      "fav": 0,
+      "dog": 1
+     },
+     {
+      "site": "Yahoo Sports",
+      "url": "https://sports.yahoo.com/nfl/betting/article/week-12-nfl-picks-against-the-spread-predictions-for-every-game-can-the-seahawks-or-anyone-stop-the-49ers-151851041.html",
+      "fav": 0,
+      "dog": 1
+     }
+    ],
+    "notes": "CBS = Sullivan + Dajani/Dubin; Prisco and Breech give scores only (not counted). CBS Dajani Chiefs, Dubin Bills."
+   }
   }
  ],
  "notes": [],
@@ -7981,6 +7981,6 @@
   "watch": 8,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Thu Nov 26, 7:46 PM PT"
+  "built_label": "Thu Nov 26, 9:00 PM PT"
  }
 }
