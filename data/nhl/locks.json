@@ -6506,7 +6506,7 @@
    "tip_pt": "1:00 PM PT",
    "day_et": "2026-11-27",
    "state": "in",
-   "detail": "9:44 - 3rd",
+   "detail": "5:06 - 3rd",
    "neutral": false,
    "venue": "Grand Casino Arena",
    "favorite": "home",
@@ -7286,7 +7286,7 @@
    "locked_at": "2026-11-27T12:00:57-08:00",
    "score": {
     "home": 3,
-    "away": 0
+    "away": 1
    }
   }
  },
@@ -7299,7 +7299,7 @@
    "tip_pt": "1:00 PM PT",
    "day_et": "2026-11-27",
    "state": "in",
-   "detail": "11:39 - 3rd",
+   "detail": "5:07 - 3rd",
    "neutral": false,
    "venue": "Honda Center",
    "favorite": "away",
@@ -8087,7 +8087,7 @@
    "tip_pt": "1:00 PM PT",
    "day_et": "2026-11-27",
    "state": "in",
-   "detail": "12:09 - 3rd",
+   "detail": "5:45 - 3rd",
    "neutral": false,
    "venue": "SAP Center at San Jose",
    "favorite": "away",
@@ -9018,8 +9018,8 @@
     "updated": "2026-11-27T11:40-08:00"
    },
    "score": {
-    "home": 2,
-    "away": 0
+    "home": 3,
+    "away": 1
    }
   }
  },
@@ -9032,7 +9032,7 @@
    "tip_pt": "2:30 PM PT",
    "day_et": "2026-11-27",
    "state": "in",
-   "detail": "1:15 - 1st",
+   "detail": "End of 1st",
    "neutral": false,
    "venue": "United Center",
    "favorite": "away",
@@ -9864,9 +9864,805 @@
    },
    "locked_at": "2026-11-27T13:45:33-08:00",
    "score": {
-    "home": 1,
+    "home": 2,
     "away": 1
    }
+  }
+ },
+ "401892807": {
+  "at": "2026-11-27T15:30:43-08:00",
+  "day": "2026-11-27",
+  "game": {
+   "id": "401892807",
+   "tip_utc": "2026-11-28T00:30:00+00:00",
+   "tip_pt": "4:30 PM PT",
+   "day_et": "2026-11-27",
+   "state": "pre",
+   "detail": "11/27 - 7:30 PM EST",
+   "neutral": false,
+   "venue": "UBS Arena",
+   "favorite": "home",
+   "line": {
+    "details": "NYI -122",
+    "provider": "DraftKings",
+    "ml_home": -122,
+    "ml_away": null,
+    "puck_line": -1.5,
+    "total": 6.5,
+    "fav_price": 0.5495
+   },
+   "spread": {
+    "details": "NYI -122",
+    "provider": "DraftKings",
+    "puck_line": -1.5
+   },
+   "home": {
+    "id": "12",
+    "abbr": "NYI",
+    "espn_abbr": "NYI",
+    "name": "New York",
+    "display": "New York Islanders",
+    "record": "12-7-5",
+    "l3_record": "2-1-0",
+    "games": 24,
+    "pts_pct": 0.604,
+    "season": {
+     "xgf": 50.24,
+     "xga60": 2.598,
+     "xgf60": 2.623,
+     "cf": 49.15,
+     "gsax": 0.426,
+     "st": 102.0,
+     "pp": 15.7,
+     "pk": 86.3,
+     "ranks": {
+      "xgf": 16,
+      "xga60": 22,
+      "gsax": 2,
+      "st": 16,
+      "xgf60": 13
+     }
+    },
+    "last5": {
+     "xgf": 54.21,
+     "xga60": 2.377,
+     "xgf60": 2.813,
+     "cf": 49.72,
+     "gsax": 0.045,
+     "st": 89.1,
+     "pp": 9.1,
+     "pk": 80.0,
+     "ranks": {
+      "xgf": 7,
+      "xga60": 18,
+      "gsax": 14,
+      "st": 26,
+      "xgf60": 7
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 2026020390,
+      "date": "2026-11-25",
+      "site": "home",
+      "opp": "STL",
+      "pts": 3,
+      "opp_pts": 2,
+      "extra": true,
+      "opp_power_rank": 18
+     },
+     {
+      "game_id": 2026020381,
+      "date": "2026-11-23",
+      "site": "home",
+      "opp": "TOR",
+      "pts": 2,
+      "opp_pts": 4,
+      "extra": false,
+      "opp_power_rank": 30
+     },
+     {
+      "game_id": 2026020367,
+      "date": "2026-11-21",
+      "site": "away",
+      "opp": "DET",
+      "pts": 3,
+      "opp_pts": 2,
+      "extra": false,
+      "opp_power_rank": 25
+     }
+    ],
+    "trend_games": [
+     {
+      "date": "2026-11-17",
+      "opp": "CBJ",
+      "metrics": {
+       "xgf": 58.55,
+       "xga60": 2.662,
+       "xgf60": 3.759,
+       "gsax": 1.46,
+       "st": 150.0
+      }
+     },
+     {
+      "date": "2026-11-19",
+      "opp": "WPG",
+      "metrics": {
+       "xgf": 52.03,
+       "xga60": 2.389,
+       "xgf60": 2.591,
+       "gsax": -0.773,
+       "st": 50.0
+      }
+     },
+     {
+      "date": "2026-11-21",
+      "opp": "DET",
+      "metrics": {
+       "xgf": 57.07,
+       "xga60": 2.116,
+       "xgf60": 2.812,
+       "gsax": -0.002,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-23",
+      "opp": "TOR",
+      "metrics": {
+       "xgf": 42.08,
+       "xga60": 2.329,
+       "xgf60": 1.692,
+       "gsax": -0.57,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-25",
+      "opp": "STL",
+      "metrics": {
+       "xgf": 57.59,
+       "xga60": 2.373,
+       "xgf60": 3.221,
+       "gsax": 0.108,
+       "st": 100.0
+      }
+     }
+    ],
+    "is_fav": true,
+    "b2b": false,
+    "power": {
+     "rank": 15,
+     "own": 15,
+     "avg": 15.0,
+     "espn": 15,
+     "nhl_com": 15
+    },
+    "goalie": {
+     "name": "Semyon Varlamov",
+     "last": "Varlamov",
+     "espn_id": "3759",
+     "confirmed": true
+    },
+    "goalie_status": "backup",
+    "regular_goalie_name": "I. Sorokin",
+    "goalies": [
+     {
+      "id": "8478009",
+      "name": "I. Sorokin",
+      "starts": 17
+     },
+     {
+      "id": "8473575",
+      "name": "S. Varlamov",
+      "starts": 7
+     }
+    ],
+    "key_skaters": [
+     "M. Schaefer",
+     "B. Horvat",
+     "L. Stanley",
+     "A. Pelech",
+     "S. Holmstrom",
+     "T. DeAngelo"
+    ],
+    "injuries": [
+     {
+      "name": "Kyle Palmieri",
+      "last": "Palmieri",
+      "status": "Injured Reserve",
+      "date": "2026-11-27T15:49Z",
+      "comment": "Palmieri is expected to miss the next 6-8 months with a torn ACL and meniscus in his right knee, the team announced Friday."
+     },
+     {
+      "name": "Ryan Pulock",
+      "last": "Pulock",
+      "status": "Out",
+      "date": "2026-11-24T17:11Z",
+      "comment": "Pulock (shoulder) is expected to miss 1-2 weeks, Andrew Gross of Newsday reports Tuesday."
+     },
+     {
+      "name": "Alexander Romanov",
+      "last": "Romanov",
+      "status": "Injured Reserve",
+      "date": "2026-10-19T13:56Z",
+      "comment": "ir"
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [],
+    "key_long_term": [],
+    "spread_text": "-122"
+   },
+   "away": {
+    "id": "28",
+    "abbr": "WPG",
+    "espn_abbr": "WPG",
+    "name": "Winnipeg",
+    "display": "Winnipeg Jets",
+    "record": "13-9-4",
+    "l3_record": "2-0-1",
+    "games": 26,
+    "pts_pct": 0.577,
+    "season": {
+     "xgf": 47.05,
+     "xga60": 2.588,
+     "xgf60": 2.299,
+     "cf": 49.08,
+     "gsax": -0.094,
+     "st": 98.5,
+     "pp": 22.5,
+     "pk": 76.0,
+     "ranks": {
+      "xgf": 24,
+      "xga60": 20,
+      "gsax": 16,
+      "st": 20,
+      "xgf60": 26
+     }
+    },
+    "last5": {
+     "xgf": 45.23,
+     "xga60": 2.791,
+     "xgf60": 2.305,
+     "cf": 46.26,
+     "gsax": 0.518,
+     "st": 91.2,
+     "pp": 14.3,
+     "pk": 76.9,
+     "ranks": {
+      "xgf": 28,
+      "xga60": 29,
+      "gsax": 3,
+      "st": 23,
+      "xgf60": 20
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 2026020386,
+      "date": "2026-11-25",
+      "site": "away",
+      "opp": "BOS",
+      "pts": 4,
+      "opp_pts": 2,
+      "extra": false,
+      "opp_power_rank": 8
+     },
+     {
+      "game_id": 2026020382,
+      "date": "2026-11-23",
+      "site": "home",
+      "opp": "UTA",
+      "pts": 4,
+      "opp_pts": 2,
+      "extra": false,
+      "opp_power_rank": 14
+     },
+     {
+      "game_id": 2026020369,
+      "date": "2026-11-21",
+      "site": "home",
+      "opp": "VGK",
+      "pts": 4,
+      "opp_pts": 5,
+      "extra": true,
+      "opp_power_rank": 7
+     }
+    ],
+    "trend_games": [
+     {
+      "date": "2026-11-17",
+      "opp": "OTT",
+      "metrics": {
+       "xgf": 33.23,
+       "xga60": 3.506,
+       "xgf60": 1.745,
+       "gsax": 1.971,
+       "st": 66.7
+      }
+     },
+     {
+      "date": "2026-11-19",
+      "opp": "NYI",
+      "metrics": {
+       "xgf": 47.97,
+       "xga60": 2.591,
+       "xgf60": 2.389,
+       "gsax": -0.422,
+       "st": 150.0
+      }
+     },
+     {
+      "date": "2026-11-21",
+      "opp": "VGK",
+      "metrics": {
+       "xgf": 49.48,
+       "xga60": 3.025,
+       "xgf60": 2.963,
+       "gsax": -0.003,
+       "st": 50.0
+      }
+     },
+     {
+      "date": "2026-11-23",
+      "opp": "UTA",
+      "metrics": {
+       "xgf": 43.74,
+       "xga60": 2.474,
+       "xgf60": 1.924,
+       "gsax": 0.568,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-25",
+      "opp": "BOS",
+      "metrics": {
+       "xgf": 51.84,
+       "xga60": 2.33,
+       "xgf60": 2.508,
+       "gsax": 0.477,
+       "st": 50.0
+      }
+     }
+    ],
+    "is_fav": false,
+    "b2b": false,
+    "power": {
+     "rank": 19,
+     "own": 20,
+     "avg": 20.0,
+     "espn": 20,
+     "nhl_com": null
+    },
+    "goalie": {
+     "name": "Stuart Skinner",
+     "last": "Skinner",
+     "espn_id": "4268767",
+     "confirmed": true
+    },
+    "goalie_status": "regular",
+    "regular_goalie_name": "S. Skinner",
+    "goalies": [
+     {
+      "id": "8479973",
+      "name": "S. Skinner",
+      "starts": 18
+     },
+     {
+      "id": "8482076",
+      "name": "N. Daws",
+      "starts": 4
+     },
+     {
+      "id": "8483532",
+      "name": "C. Stevenson",
+      "starts": 4
+     }
+    ],
+    "key_skaters": [
+     "N. Pionk",
+     "D. Samberg",
+     "K. Connor",
+     "M. Scheifele",
+     "M. Ferraro",
+     "D. DeMelo"
+    ],
+    "injuries": [
+     {
+      "name": "Dylan DeMelo",
+      "last": "DeMelo",
+      "status": "Injured Reserve",
+      "date": "2026-11-19T16:39Z",
+      "comment": "DeMelo (lower body) is expected to be out of action for 4-6 weeks, Mitchell Clinton of the Jets' official site reports Thursday."
+     },
+     {
+      "name": "Isak Rosen",
+      "last": "Rosen",
+      "status": "Injured Reserve",
+      "date": "2026-11-17T15:15Z",
+      "comment": "ir"
+     },
+     {
+      "name": "Vladislav Namestnikov",
+      "last": "Namestnikov",
+      "status": "Injured Reserve",
+      "date": "2026-10-23T18:11Z",
+      "comment": "ir"
+     },
+     {
+      "name": "Nick Bjugstad",
+      "last": "Bjugstad",
+      "status": "Injured Reserve",
+      "date": "2026-10-23T16:48Z",
+      "comment": "Bjugstad (pectoral), Dawson Mercer, Nico Daws, Alexander Command and a pair of draft picks were traded to the Jets from the Devils on Friday in exchange for Connor Hellebuyck."
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [],
+    "key_long_term": [
+     "Dylan DeMelo"
+    ],
+    "spread_text": ""
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "NYI",
+    "dog": "WPG",
+    "in_range": false,
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "rules": [
+     {
+      "rule": "Range",
+      "name": "Top-7 team vs bottom-7 team (consensus power rank)",
+      "pass": false,
+      "detail": "NYI #15 vs WPG #19"
+     },
+     {
+      "rule": "A",
+      "name": "Analysis Score 22+",
+      "pass": false,
+      "detail": "Score 18 of 40"
+     },
+     {
+      "rule": "Goalie",
+      "name": "NYI's regular goalie starts",
+      "pass": false,
+      "detail": "Semyon Varlamov listed instead of I. Sorokin: capped at the Watch list"
+     },
+     {
+      "rule": "Matchup",
+      "name": "NYI top 7 vs WPG bottom 7 in a matchup (last 5)",
+      "pass": false,
+      "detail": "None: offense vs offense, defense vs defense or defense vs offense (xGF/60, xGA/60): capped at the Watch list"
+     }
+    ],
+    "fails": [
+     "Not a top-7 vs bottom-7 matchup (NYI #15, WPG #19)"
+    ],
+    "warnings": [],
+    "flags": [
+     "NYI backup goalie starting (Semyon Varlamov)"
+    ],
+    "score": 18,
+    "max": 40,
+    "band": "yellow",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 3,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 11,
+      "max": 16
+     },
+     {
+      "key": "goalies",
+      "label": "Goalies + health",
+      "points": 1,
+      "max": 4
+     },
+     {
+      "key": "home",
+      "label": "Home ice",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xga60",
+      "scored": false,
+      "cells": [
+       {
+        "team": "NYI",
+        "role": "fav",
+        "window": "season",
+        "metric": "xgf60",
+        "rank": 13,
+        "color": "yellow"
+       },
+       {
+        "team": "NYI",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xgf60",
+        "rank": 7,
+        "color": "green"
+       },
+       {
+        "team": "WPG",
+        "role": "dog",
+        "window": "season",
+        "metric": "xga60",
+        "rank": 20,
+        "color": "yellow"
+       },
+       {
+        "team": "WPG",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xga60",
+        "rank": 29,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "xga60",
+      "dog_metric": "xgf60",
+      "scored": false,
+      "cells": [
+       {
+        "team": "NYI",
+        "role": "fav",
+        "window": "season",
+        "metric": "xga60",
+        "rank": 22,
+        "color": "yellow"
+       },
+       {
+        "team": "NYI",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xga60",
+        "rank": 18,
+        "color": "yellow"
+       },
+       {
+        "team": "WPG",
+        "role": "dog",
+        "window": "season",
+        "metric": "xgf60",
+        "rank": 26,
+        "color": "green"
+       },
+       {
+        "team": "WPG",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xgf60",
+        "rank": 20,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "key": "share",
+      "label": "Shot share",
+      "fav_metric": "xgf",
+      "dog_metric": "xgf",
+      "scored": true,
+      "cells": [
+       {
+        "team": "NYI",
+        "role": "fav",
+        "window": "season",
+        "metric": "xgf",
+        "rank": 16,
+        "color": "yellow"
+       },
+       {
+        "team": "NYI",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xgf",
+        "rank": 7,
+        "color": "green"
+       },
+       {
+        "team": "WPG",
+        "role": "dog",
+        "window": "season",
+        "metric": "xgf",
+        "rank": 24,
+        "color": "green"
+       },
+       {
+        "team": "WPG",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xgf",
+        "rank": 28,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "goalie",
+      "label": "Goaltending",
+      "fav_metric": "gsax",
+      "dog_metric": "gsax",
+      "scored": true,
+      "cells": [
+       {
+        "team": "NYI",
+        "role": "fav",
+        "window": "season",
+        "metric": "gsax",
+        "rank": 2,
+        "color": "green"
+       },
+       {
+        "team": "NYI",
+        "role": "fav",
+        "window": "last5",
+        "metric": "gsax",
+        "rank": 14,
+        "color": "yellow"
+       },
+       {
+        "team": "WPG",
+        "role": "dog",
+        "window": "season",
+        "metric": "gsax",
+        "rank": 16,
+        "color": "yellow"
+       },
+       {
+        "team": "WPG",
+        "role": "dog",
+        "window": "last5",
+        "metric": "gsax",
+        "rank": 3,
+        "color": "deep-red"
+       }
+      ]
+     },
+     {
+      "key": "st",
+      "label": "Special teams",
+      "fav_metric": "st",
+      "dog_metric": "st",
+      "scored": true,
+      "cells": [
+       {
+        "team": "NYI",
+        "role": "fav",
+        "window": "season",
+        "metric": "st",
+        "rank": 16,
+        "color": "yellow"
+       },
+       {
+        "team": "NYI",
+        "role": "fav",
+        "window": "last5",
+        "metric": "st",
+        "rank": 26,
+        "color": "red"
+       },
+       {
+        "team": "WPG",
+        "role": "dog",
+        "window": "season",
+        "metric": "st",
+        "rank": 20,
+        "color": "yellow"
+       },
+       {
+        "team": "WPG",
+        "role": "dog",
+        "window": "last5",
+        "metric": "st",
+        "rank": 23,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xgf60",
+      "fav_rank": 7,
+      "dog_rank": 20,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "xga60",
+      "dog_metric": "xga60",
+      "fav_rank": 18,
+      "dog_rank": 29,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "xga60",
+      "dog_metric": "xgf60",
+      "fav_rank": 18,
+      "dog_rank": 20,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xga60",
+      "fav_rank": 7,
+      "dog_rank": 29,
+      "counts": false,
+      "met": true
+     }
+    ],
+    "labels": {
+     "xgf60": "xGF/60 5v5",
+     "xgf": "xGF% 5v5",
+     "xga60": "xGA/60 5v5",
+     "gsax": "GSAx/gm",
+     "st": "PP%+PK%",
+     "pts": "Points %"
+    }
+   },
+   "summary": "Not a top-7 vs bottom-7 matchup (NYI #15, WPG #19). NYI start their backup goalie, Semyon Varlamov (regular: I. Sorokin). Biggest edge over the last 5: xGF% 5v5 (NYI #7, WPG #28). NYI 2-1-0 in its last 3, WPG 2-0-1.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNHLGAME-26NOV27WPGNYI",
+    "fav_prob": 0.515,
+    "bid": 0.51,
+    "ask": 0.52
+   },
+   "locked_at": "2026-11-27T15:30:43-08:00"
   }
  }
 }
