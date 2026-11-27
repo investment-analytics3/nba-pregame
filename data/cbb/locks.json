@@ -2898,7 +2898,7 @@
    "tip_pt": "2:00 PM PT",
    "day_et": "2026-11-27",
    "state": "in",
-   "detail": "6:36 - 1st",
+   "detail": "0:20 - 1st",
    "neutral": false,
    "venue": "Allen Fieldhouse",
    "favorite": "home",
@@ -3590,8 +3590,8 @@
    },
    "locked_at": "2026-11-27T13:15:39-08:00",
    "score": {
-    "home": 20,
-    "away": 17
+    "home": 29,
+    "away": 23
    }
   }
  },
@@ -3604,7 +3604,7 @@
    "tip_pt": "2:00 PM PT",
    "day_et": "2026-11-27",
    "state": "in",
-   "detail": "0:11 - 1st",
+   "detail": "Halftime",
    "neutral": false,
    "venue": "Cassell Coliseum",
    "favorite": "home",
@@ -4297,7 +4297,7 @@
    },
    "locked_at": "2026-11-27T13:15:39-08:00",
    "score": {
-    "home": 32,
+    "home": 34,
     "away": 27
    }
   }
@@ -4311,7 +4311,7 @@
    "tip_pt": "2:30 PM PT",
    "day_et": "2026-11-27",
    "state": "in",
-   "detail": "17:53 - 1st",
+   "detail": "11:29 - 1st",
    "neutral": true,
    "venue": "T-Mobile Arena",
    "favorite": "away",
@@ -5004,9 +5004,714 @@
    },
    "locked_at": "2026-11-27T13:30:42-08:00",
    "score": {
-    "home": 0,
-    "away": 5
+    "home": 10,
+    "away": 20
    }
+  }
+ },
+ "401926756": {
+  "at": "2026-11-27T15:00:41-08:00",
+  "day": "2026-11-27",
+  "game": {
+   "id": "401926756",
+   "tip_utc": "2026-11-28T00:00:00+00:00",
+   "tip_pt": "4:00 PM PT",
+   "day_et": "2026-11-27",
+   "state": "pre",
+   "detail": "11/27 - 7:00 PM EST",
+   "neutral": true,
+   "venue": "Gilbert Arena",
+   "favorite": "home",
+   "spread": {
+    "spread": 13.5,
+    "details": "UCSB -13.5",
+    "provider": "DraftKings",
+    "ml_home": -1200,
+    "ml_away": 750
+   },
+   "home": {
+    "id": "2540",
+    "abbr": "UCSB",
+    "name": "UC Santa Barbara",
+    "display": "UC Santa Barbara Gauchos",
+    "mascot": "Gauchos",
+    "record": "6-0",
+    "l3_record": "3-0",
+    "games": 4,
+    "season": {
+     "efg": 60.78,
+     "opp_efg": 49.75,
+     "off": 127.79,
+     "def": 103.66,
+     "net": 24.12,
+     "poss_per_game": 66.3,
+     "ranks": {
+      "efg": 11,
+      "off": 6,
+      "opp_efg": 144,
+      "def": 136,
+      "net": 37
+     }
+    },
+    "last3": {
+     "efg": 58.44,
+     "opp_efg": 47.42,
+     "off": 123.75,
+     "def": 103.37,
+     "net": 20.38,
+     "poss_per_game": 67.1,
+     "ranks": {
+      "efg": 45,
+      "off": 32,
+      "opp_efg": 83,
+      "def": 116,
+      "net": 46
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401926184,
+      "date": "2026-11-24",
+      "site": "home",
+      "opp_id": 2430,
+      "opp": "UNCG",
+      "d1_opp": true,
+      "pts": 85,
+      "opp_pts": 65,
+      "metrics": {
+       "efg": 60.34,
+       "opp_efg": 40.62,
+       "off": 127.65,
+       "def": 97.62,
+       "net": 30.04
+      },
+      "opp_power_rank": 247
+     },
+     {
+      "game_id": 401928354,
+      "date": "2026-11-19",
+      "site": "away",
+      "opp_id": 2492,
+      "opp": "PEPP",
+      "d1_opp": true,
+      "pts": 88,
+      "opp_pts": 80,
+      "metrics": {
+       "efg": 64.71,
+       "opp_efg": 61.22,
+       "off": 131.37,
+       "def": 119.43,
+       "net": 11.94
+      },
+      "opp_power_rank": 134
+     },
+     {
+      "game_id": 401928353,
+      "date": "2026-11-15",
+      "site": "home",
+      "opp_id": 3185,
+      "opp": "UCME",
+      "d1_opp": false,
+      "pts": 97,
+      "opp_pts": 47,
+      "metrics": {
+       "efg": 72.32,
+       "opp_efg": 30.16,
+       "off": 136.93,
+       "def": 66.35,
+       "net": 70.58
+      },
+      "opp_power_rank": null
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-13.5",
+    "b2b": false,
+    "power": {
+     "rank": 69,
+     "bpi": 97,
+     "own_net": 37
+    },
+    "key_players": [
+     "Aidan Mahaney",
+     "CJ Shaw",
+     "RJ Smith",
+     "Marvin McGhee IV",
+     "Miro Little",
+     "Eric Dibami"
+    ],
+    "top_scorers": [
+     {
+      "name": "Aidan Mahaney",
+      "ppg": 13.4
+     },
+     {
+      "name": "Viljami Vartiainen",
+      "ppg": 10.3
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "2329",
+    "abbr": "LEH",
+    "name": "Lehigh",
+    "display": "Lehigh Mountain Hawks",
+    "mascot": "Mountain Hawks",
+    "record": "4-3",
+    "l3_record": "2-1",
+    "games": 6,
+    "season": {
+     "efg": 52.77,
+     "opp_efg": 51.45,
+     "off": 106.24,
+     "def": 105.28,
+     "net": 0.97,
+     "poss_per_game": 69.0,
+     "ranks": {
+      "efg": 125,
+      "off": 186,
+      "opp_efg": 197,
+      "def": 151,
+      "net": 167
+     }
+    },
+    "last3": {
+     "efg": 63.98,
+     "opp_efg": 50.89,
+     "off": 121.33,
+     "def": 105.61,
+     "net": 15.72,
+     "poss_per_game": 67.9,
+     "ranks": {
+      "efg": 4,
+      "off": 42,
+      "opp_efg": 170,
+      "def": 143,
+      "net": 61
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401911279,
+      "date": "2026-11-24",
+      "site": "home",
+      "opp_id": 2066,
+      "opp": "BING",
+      "d1_opp": true,
+      "pts": 83,
+      "opp_pts": 90,
+      "metrics": {
+       "efg": 60.58,
+       "opp_efg": 69.61,
+       "off": 115.44,
+       "def": 125.17,
+       "net": -9.74
+      },
+      "opp_power_rank": 251
+     },
+     {
+      "game_id": 401926755,
+      "date": "2026-11-20",
+      "site": "home",
+      "opp_id": 422,
+      "opp": "NEU",
+      "d1_opp": false,
+      "pts": 79,
+      "opp_pts": 38,
+      "metrics": {
+       "efg": 49.3,
+       "opp_efg": 28.33,
+       "off": 117.47,
+       "def": 56.51,
+       "net": 60.97
+      },
+      "opp_power_rank": null
+     },
+     {
+      "game_id": 401920921,
+      "date": "2026-11-17",
+      "site": "away",
+      "opp_id": 116,
+      "opp": "MSM",
+      "d1_opp": true,
+      "pts": 99,
+      "opp_pts": 65,
+      "metrics": {
+       "efg": 76.27,
+       "opp_efg": 43.22,
+       "off": 142.83,
+       "def": 93.78,
+       "net": 49.05
+      },
+      "opp_power_rank": 329
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+13.5",
+    "b2b": false,
+    "power": {
+     "rank": 200,
+     "bpi": 238,
+     "own_net": 167
+    },
+    "key_players": [
+     "Hank Alvey",
+     "Joshua Ingram",
+     "Jalen Vazquez",
+     "Edouard Benoit",
+     "Chris Tshibola",
+     "Peter Kramer"
+    ],
+    "top_scorers": [
+     {
+      "name": "Hank Alvey",
+      "ppg": 13.0
+     },
+     {
+      "name": "Edouard Benoit",
+      "ppg": 11.6
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "UCSB",
+    "dog": "LEH",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 17 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 UCSB last-3 top 50 in 2 of 4 \u00b7 \u2717 LEH last-3 bottom 50 (316+) in 0 of 4 \u00b7 \u2713 UCSB season top half (1-182) in all four \u00b7 \u2713 LEH season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "LEH: consensus #200, BPI #238, our net #167"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 17 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for UCSB: check news before betting",
+     "Neutral-site game: no home-court point",
+     "Fewer than 5 D-I games for a team: ranks are noisy"
+    ],
+    "score": 17,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 6,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 6,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 1,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 2,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "UCSB",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 11,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 6,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 144,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 136,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "UCSB",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 45,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 32,
+        "color": "green"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 83,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 116,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "team": "LEH",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 197,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 151,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 125,
+        "color": "yellow"
+       },
+       {
+        "metric": "off",
+        "rank": 186,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "LEH",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 170,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 143,
+        "color": "yellow"
+       },
+       {
+        "metric": "efg",
+        "rank": 4,
+        "color": "deep-red"
+       },
+       {
+        "metric": "off",
+        "rank": 42,
+        "color": "red"
+       }
+      ]
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "cells": [
+       {
+        "team": "UCSB",
+        "role": "fav",
+        "window": "season",
+        "metric": "off",
+        "rank": 6,
+        "color": "green"
+       },
+       {
+        "team": "UCSB",
+        "role": "fav",
+        "window": "last3",
+        "metric": "off",
+        "rank": 32,
+        "color": "green"
+       },
+       {
+        "team": "LEH",
+        "role": "dog",
+        "window": "season",
+        "metric": "def",
+        "rank": 151,
+        "color": "green"
+       },
+       {
+        "team": "LEH",
+        "role": "dog",
+        "window": "last3",
+        "metric": "def",
+        "rank": 143,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "key": "shoot",
+      "label": "Shooting vs shot defense",
+      "fav_metric": "efg",
+      "dog_metric": "opp_efg",
+      "cells": [
+       {
+        "team": "UCSB",
+        "role": "fav",
+        "window": "season",
+        "metric": "efg",
+        "rank": 11,
+        "color": "green"
+       },
+       {
+        "team": "UCSB",
+        "role": "fav",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 45,
+        "color": "green"
+       },
+       {
+        "team": "LEH",
+        "role": "dog",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 197,
+        "color": "green"
+       },
+       {
+        "team": "LEH",
+        "role": "dog",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 170,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "cells": [
+       {
+        "team": "UCSB",
+        "role": "fav",
+        "window": "season",
+        "metric": "def",
+        "rank": 136,
+        "color": "yellow"
+       },
+       {
+        "team": "UCSB",
+        "role": "fav",
+        "window": "last3",
+        "metric": "def",
+        "rank": 116,
+        "color": "yellow"
+       },
+       {
+        "team": "LEH",
+        "role": "dog",
+        "window": "season",
+        "metric": "off",
+        "rank": 186,
+        "color": "green"
+       },
+       {
+        "team": "LEH",
+        "role": "dog",
+        "window": "last3",
+        "metric": "off",
+        "rank": 42,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "key": "shotd",
+      "label": "Shot defense vs shooting",
+      "fav_metric": "opp_efg",
+      "dog_metric": "efg",
+      "cells": [
+       {
+        "team": "UCSB",
+        "role": "fav",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 144,
+        "color": "yellow"
+       },
+       {
+        "team": "UCSB",
+        "role": "fav",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 83,
+        "color": "yellow"
+       },
+       {
+        "team": "LEH",
+        "role": "dog",
+        "window": "season",
+        "metric": "efg",
+        "rank": 125,
+        "color": "yellow"
+       },
+       {
+        "team": "LEH",
+        "role": "dog",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 4,
+        "color": "deep-red"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "off",
+      "dog_metric": "off",
+      "fav_rank": 32,
+      "dog_rank": 42,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def",
+      "dog_metric": "def",
+      "fav_rank": 116,
+      "dog_rank": 143,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "fav_rank": 116,
+      "dog_rank": 42,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "fav_rank": 32,
+      "dog_rank": 143,
+      "counts": false,
+      "met": false
+     }
+    ]
+   },
+   "summary": "No track: score 17 (watch list from 18, qualifies at 28). Biggest edge over the last 3: UCSB eFG% (#45) against LEH Opp eFG% (#170). UCSB 3-0 in its last 3, LEH 2-1. Early in the season: fewer than 5 D-I games for a team, so the ranks move a lot.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV27UCSBLEH",
+    "fav_prob": 0.905,
+    "bid": 0.9,
+    "ask": 0.91
+   },
+   "locked_at": "2026-11-27T15:00:41-08:00"
   }
  }
 }
