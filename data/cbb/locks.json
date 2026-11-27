@@ -2192,7 +2192,7 @@
    "tip_pt": "12:00 PM PT",
    "day_et": "2026-11-27",
    "state": "in",
-   "detail": "14:10 - 2nd",
+   "detail": "7:36 - 2nd",
    "neutral": false,
    "venue": "Hinkle Fieldhouse",
    "favorite": "home",
@@ -2884,8 +2884,8 @@
    },
    "locked_at": "2026-11-27T11:00:48-08:00",
    "score": {
-    "home": 52,
-    "away": 29
+    "home": 70,
+    "away": 37
    }
   }
  },
@@ -3588,7 +3588,11 @@
     "bid": 0.84,
     "ask": 0.85
    },
-   "locked_at": "2026-11-27T13:15:39-08:00"
+   "locked_at": "2026-11-27T13:15:39-08:00",
+   "score": {
+    "home": 0,
+    "away": 0
+   }
   }
  },
  "401920382": {
@@ -4291,7 +4295,714 @@
     "bid": 0.94,
     "ask": 0.95
    },
-   "locked_at": "2026-11-27T13:15:39-08:00"
+   "locked_at": "2026-11-27T13:15:39-08:00",
+   "score": {
+    "home": 0,
+    "away": 0
+   }
+  }
+ },
+ "401920541": {
+  "at": "2026-11-27T13:30:42-08:00",
+  "day": "2026-11-27",
+  "game": {
+   "id": "401920541",
+   "tip_utc": "2026-11-27T22:30:00+00:00",
+   "tip_pt": "2:30 PM PT",
+   "day_et": "2026-11-27",
+   "state": "pre",
+   "detail": "11/27 - 5:30 PM EST",
+   "neutral": true,
+   "venue": "T-Mobile Arena",
+   "favorite": "away",
+   "spread": {
+    "spread": 10.5,
+    "details": "MICH -10.5",
+    "provider": "DraftKings",
+    "ml_home": 360,
+    "ml_away": -470
+   },
+   "home": {
+    "id": "2306",
+    "abbr": "KSU",
+    "name": "Kansas State",
+    "display": "Kansas State Wildcats",
+    "mascot": "Wildcats",
+    "record": "3-4",
+    "l3_record": "0-3",
+    "games": 7,
+    "season": {
+     "efg": 51.58,
+     "opp_efg": 52.9,
+     "off": 106.56,
+     "def": 106.56,
+     "net": 0.0,
+     "poss_per_game": 74.8,
+     "ranks": {
+      "efg": 162,
+      "off": 181,
+      "opp_efg": 248,
+      "def": 165,
+      "net": 178
+     }
+    },
+    "last3": {
+     "efg": 41.36,
+     "opp_efg": 61.08,
+     "off": 95.25,
+     "def": 122.28,
+     "net": -27.03,
+     "poss_per_game": 77.7,
+     "ranks": {
+      "efg": 345,
+      "off": 311,
+      "opp_efg": 347,
+      "def": 335,
+      "net": 336
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401920539,
+      "date": "2026-11-26",
+      "site": "home",
+      "opp_id": 333,
+      "opp": "ALA",
+      "d1_opp": true,
+      "pts": 91,
+      "opp_pts": 104,
+      "metrics": {
+       "efg": 40.91,
+       "opp_efg": 60.91,
+       "off": 104.03,
+       "def": 118.89,
+       "net": -14.86
+      },
+      "opp_power_rank": 38
+     },
+     {
+      "game_id": 401909800,
+      "date": "2026-11-25",
+      "site": "home",
+      "opp_id": 2250,
+      "opp": "GONZ",
+      "d1_opp": true,
+      "pts": 61,
+      "opp_pts": 101,
+      "metrics": {
+       "efg": 39.17,
+       "opp_efg": 60.14,
+       "off": 79.93,
+       "def": 132.35,
+       "net": -52.42
+      },
+      "opp_power_rank": 16
+     },
+     {
+      "game_id": 401909799,
+      "date": "2026-11-20",
+      "site": "home",
+      "opp_id": 2097,
+      "opp": "CAM",
+      "d1_opp": true,
+      "pts": 70,
+      "opp_pts": 80,
+      "metrics": {
+       "efg": 43.51,
+       "opp_efg": 62.5,
+       "off": 101.05,
+       "def": 115.48,
+       "net": -14.44
+      },
+      "opp_power_rank": 211
+     }
+    ],
+    "is_fav": false,
+    "spread_text": "+10.5",
+    "b2b": true,
+    "power": {
+     "rank": 137,
+     "bpi": 104,
+     "own_net": 178
+    },
+    "key_players": [
+     "Brandon Rechsteiner",
+     "Jaden Schutt",
+     "Isaiah Abraham",
+     "Timo Malovec",
+     "Brock Vice"
+    ],
+    "top_scorers": [
+     {
+      "name": "Brandon Rechsteiner",
+      "ppg": 18.7
+     },
+     {
+      "name": "Brock Vice",
+      "ppg": 11.6
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "away": {
+    "id": "130",
+    "abbr": "MICH",
+    "name": "Michigan",
+    "display": "Michigan Wolverines",
+    "mascot": "Wolverines",
+    "record": "3-4",
+    "l3_record": "0-3",
+    "games": 7,
+    "season": {
+     "efg": 49.07,
+     "opp_efg": 49.23,
+     "off": 110.05,
+     "def": 108.73,
+     "net": 1.32,
+     "poss_per_game": 75.8,
+     "ranks": {
+      "efg": 233,
+      "off": 144,
+      "opp_efg": 123,
+      "def": 193,
+      "net": 163
+     }
+    },
+    "last3": {
+     "efg": 43.25,
+     "opp_efg": 55.5,
+     "off": 99.92,
+     "def": 127.22,
+     "net": -27.29,
+     "poss_per_game": 72.1,
+     "ranks": {
+      "efg": 330,
+      "off": 263,
+      "opp_efg": 286,
+      "def": 352,
+      "net": 340
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 401920537,
+      "date": "2026-11-26",
+      "site": "home",
+      "opp_id": 2390,
+      "opp": "MIA",
+      "d1_opp": true,
+      "pts": 70,
+      "opp_pts": 97,
+      "metrics": {
+       "efg": 42.31,
+       "opp_efg": 63.28,
+       "off": 95.92,
+       "def": 132.92,
+       "net": -37.0
+      },
+      "opp_power_rank": 4
+     },
+     {
+      "game_id": 401909495,
+      "date": "2026-11-24",
+      "site": "home",
+      "opp_id": 156,
+      "opp": "CREI",
+      "d1_opp": true,
+      "pts": 73,
+      "opp_pts": 99,
+      "metrics": {
+       "efg": 42.54,
+       "opp_efg": 60.87,
+       "off": 100.03,
+       "def": 135.66,
+       "net": -35.63
+      },
+      "opp_power_rank": 47
+     },
+     {
+      "game_id": 401921776,
+      "date": "2026-11-21",
+      "site": "away",
+      "opp_id": 222,
+      "opp": "VILL",
+      "d1_opp": true,
+      "pts": 73,
+      "opp_pts": 79,
+      "metrics": {
+       "efg": 44.85,
+       "opp_efg": 42.54,
+       "off": 103.97,
+       "def": 112.52,
+       "net": -8.55
+      },
+      "opp_power_rank": 64
+     }
+    ],
+    "is_fav": true,
+    "spread_text": "-10.5",
+    "b2b": true,
+    "power": {
+     "rank": 105,
+     "bpi": 47,
+     "own_net": 163
+    },
+    "key_players": [
+     "Trey McKenney",
+     "Elliot Cadeau",
+     "J.P. Estrella",
+     "Roddy Gayle Jr.",
+     "Quinn Costello",
+     "Moustapha Thiam"
+    ],
+    "top_scorers": [
+     {
+      "name": "J.P. Estrella",
+      "ppg": 17.0
+     },
+     {
+      "name": "Trey McKenney",
+      "ppg": 16.6
+     }
+    ],
+    "injuries": [],
+    "injuries_known": false,
+    "key_out": [],
+    "key_questionable": []
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "MICH",
+    "dog": "KSU",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "early": true,
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Analysis Score 28+",
+      "pass": false,
+      "detail": "Score 12 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 MICH last-3 top 50 in 0 of 4 \u00b7 \u2713 KSU last-3 bottom 50 (316+) in 3 of 4 \u00b7 \u2717 MICH season outside 1-182: eFG% #233, Def Eff #193 \u00b7 \u2713 KSU season top 50 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury list from ESPN (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25 or ESPN BPI top 50",
+      "pass": true,
+      "detail": "KSU: consensus #137, BPI #104, our net #178"
+     },
+     {
+      "rule": "Early",
+      "name": "qualifiers held on the Watch list until Dec 15",
+      "pass": true,
+      "detail": "Not a qualifier yet"
+     }
+    ],
+    "fails": [
+     "Score 12 (watch list from 18, qualifies at 28)"
+    ],
+    "warnings": [
+     "No injury list for MICH: check news before betting",
+     "Neutral-site game: no home-court point"
+    ],
+    "score": 12,
+    "max": 40,
+    "band": "red",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 0,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 11,
+      "max": 16
+     },
+     {
+      "key": "net",
+      "label": "Net rating",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 0,
+      "max": 2
+     },
+     {
+      "key": "power",
+      "label": "Power rank",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "home",
+      "label": "Home court",
+      "points": 0,
+      "max": 1
+     },
+     {
+      "key": "health",
+      "label": "Health",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 0,
+      "max": 1
+     }
+    ],
+    "pills": [
+     {
+      "team": "MICH",
+      "role": "fav",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 233,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 144,
+        "color": "yellow"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 123,
+        "color": "yellow"
+       },
+       {
+        "metric": "def",
+        "rank": 193,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "MICH",
+      "role": "fav",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "efg",
+        "rank": 330,
+        "color": "red"
+       },
+       {
+        "metric": "off",
+        "rank": 263,
+        "color": "red"
+       },
+       {
+        "metric": "opp_efg",
+        "rank": 286,
+        "color": "red"
+       },
+       {
+        "metric": "def",
+        "rank": 352,
+        "color": "red"
+       }
+      ]
+     },
+     {
+      "team": "KSU",
+      "role": "dog",
+      "window": "season",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 248,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 165,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 162,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 181,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "team": "KSU",
+      "role": "dog",
+      "window": "last3",
+      "cells": [
+       {
+        "metric": "opp_efg",
+        "rank": 347,
+        "color": "green"
+       },
+       {
+        "metric": "def",
+        "rank": 335,
+        "color": "green"
+       },
+       {
+        "metric": "efg",
+        "rank": 345,
+        "color": "green"
+       },
+       {
+        "metric": "off",
+        "rank": 311,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "cells": [
+       {
+        "team": "MICH",
+        "role": "fav",
+        "window": "season",
+        "metric": "off",
+        "rank": 144,
+        "color": "yellow"
+       },
+       {
+        "team": "MICH",
+        "role": "fav",
+        "window": "last3",
+        "metric": "off",
+        "rank": 263,
+        "color": "red"
+       },
+       {
+        "team": "KSU",
+        "role": "dog",
+        "window": "season",
+        "metric": "def",
+        "rank": 165,
+        "color": "green"
+       },
+       {
+        "team": "KSU",
+        "role": "dog",
+        "window": "last3",
+        "metric": "def",
+        "rank": 335,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shoot",
+      "label": "Shooting vs shot defense",
+      "fav_metric": "efg",
+      "dog_metric": "opp_efg",
+      "cells": [
+       {
+        "team": "MICH",
+        "role": "fav",
+        "window": "season",
+        "metric": "efg",
+        "rank": 233,
+        "color": "red"
+       },
+       {
+        "team": "MICH",
+        "role": "fav",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 330,
+        "color": "red"
+       },
+       {
+        "team": "KSU",
+        "role": "dog",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 248,
+        "color": "green"
+       },
+       {
+        "team": "KSU",
+        "role": "dog",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 347,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "cells": [
+       {
+        "team": "MICH",
+        "role": "fav",
+        "window": "season",
+        "metric": "def",
+        "rank": 193,
+        "color": "red"
+       },
+       {
+        "team": "MICH",
+        "role": "fav",
+        "window": "last3",
+        "metric": "def",
+        "rank": 352,
+        "color": "red"
+       },
+       {
+        "team": "KSU",
+        "role": "dog",
+        "window": "season",
+        "metric": "off",
+        "rank": 181,
+        "color": "green"
+       },
+       {
+        "team": "KSU",
+        "role": "dog",
+        "window": "last3",
+        "metric": "off",
+        "rank": 311,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "shotd",
+      "label": "Shot defense vs shooting",
+      "fav_metric": "opp_efg",
+      "dog_metric": "efg",
+      "cells": [
+       {
+        "team": "MICH",
+        "role": "fav",
+        "window": "season",
+        "metric": "opp_efg",
+        "rank": 123,
+        "color": "yellow"
+       },
+       {
+        "team": "MICH",
+        "role": "fav",
+        "window": "last3",
+        "metric": "opp_efg",
+        "rank": 286,
+        "color": "red"
+       },
+       {
+        "team": "KSU",
+        "role": "dog",
+        "window": "season",
+        "metric": "efg",
+        "rank": 162,
+        "color": "green"
+       },
+       {
+        "team": "KSU",
+        "role": "dog",
+        "window": "last3",
+        "metric": "efg",
+        "rank": 345,
+        "color": "green"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "off",
+      "dog_metric": "off",
+      "fav_rank": 263,
+      "dog_rank": 311,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def",
+      "dog_metric": "def",
+      "fav_rank": 352,
+      "dog_rank": 335,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def",
+      "dog_metric": "off",
+      "fav_rank": 352,
+      "dog_rank": 311,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off",
+      "dog_metric": "def",
+      "fav_rank": 263,
+      "dog_rank": 335,
+      "counts": false,
+      "met": false
+     }
+    ]
+   },
+   "summary": "No track: score 12 (watch list from 18, qualifies at 28). MICH 0-3 in its last 3, KSU 0-3; MICH and KSU played yesterday.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNCAAMBGAME-26NOV27MICHKSU",
+    "fav_prob": 0.805,
+    "bid": 0.8,
+    "ask": 0.81
+   },
+   "locked_at": "2026-11-27T13:30:42-08:00"
   }
  }
 }
