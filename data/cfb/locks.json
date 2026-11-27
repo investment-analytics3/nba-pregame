@@ -4929,7 +4929,7 @@
    "kick_pt": "Fri 12:30 PM PT",
    "day_et": "2026-11-27",
    "state": "in",
-   "detail": "12:04 - 4th",
+   "detail": "6:27 - 4th",
    "neutral": false,
    "venue": "Simmons Bank Liberty Stadium",
    "favorite": "home",
@@ -5310,7 +5310,7 @@
    },
    "score": {
     "home": 31,
-    "away": 21
+    "away": 28
    }
   }
  },
@@ -5323,7 +5323,7 @@
    "kick_pt": "Fri 12:30 PM PT",
    "day_et": "2026-11-27",
    "state": "in",
-   "detail": "2:35 - 3rd",
+   "detail": "12:18 - 4th",
    "neutral": false,
    "venue": "CEFCU Stadium",
    "favorite": "away",
@@ -5531,8 +5531,499 @@
    },
    "locked_at": "2026-11-27T12:30:37-08:00",
    "score": {
-    "home": 17,
-    "away": 31
+    "home": 24,
+    "away": 38
+   }
+  }
+ },
+ "401856756": {
+  "at": "2026-11-27T15:30:39-08:00",
+  "week": 13,
+  "game": {
+   "id": "401856756",
+   "kick_utc": "2026-11-28T00:30:00+00:00",
+   "kick_pt": "Fri 4:30 PM PT",
+   "day_et": "2026-11-27",
+   "state": "pre",
+   "detail": "11/27 - 7:30 PM EST",
+   "neutral": false,
+   "venue": "Kyle Field",
+   "favorite": "away",
+   "fav_home": false,
+   "spread": -10.5,
+   "open_spread": -2.5,
+   "line_source": "DraftKings",
+   "total": 41.5,
+   "fav_ml": -455.0,
+   "movement": 8.0,
+   "home": {
+    "code": 245,
+    "abbr": "TA&M",
+    "name": "Texas A&M",
+    "display": "Texas A&M Aggies",
+    "season": {
+     "off_epa": -0.0787,
+     "off_sr": 0.4335,
+     "def_epa": -0.0393,
+     "def_sr": 0.3942,
+     "games": 11,
+     "ranks": {
+      "off_epa": 126,
+      "off_sr": 87,
+      "def_epa": 33,
+      "def_sr": 21
+     }
+    },
+    "last3": {
+     "off_epa": -0.2428,
+     "off_sr": 0.3702,
+     "def_epa": 0.0016,
+     "def_sr": 0.3911,
+     "games": 3,
+     "ranks": {
+      "off_epa": 136,
+      "off_sr": 122,
+      "def_epa": 52,
+      "def_sr": 30
+     }
+    },
+    "net": -0.0394,
+    "net_rank": 96,
+    "record": "4-7",
+    "last2_results": [
+     "L",
+     "L"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "L"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Marcel Reed",
+     "dropbacks": 301,
+     "epa_db": -0.136,
+     "rank": 125
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 64,
+     "fpi": 31,
+     "own_net": 96
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.162
+   },
+   "away": {
+    "code": 251,
+    "abbr": "TEX",
+    "name": "Texas",
+    "display": "Texas Longhorns",
+    "season": {
+     "off_epa": 0.0143,
+     "off_sr": 0.4393,
+     "def_epa": -0.147,
+     "def_sr": 0.3681,
+     "games": 11,
+     "ranks": {
+      "off_epa": 92,
+      "off_sr": 75,
+      "def_epa": 5,
+      "def_sr": 5
+     }
+    },
+    "last3": {
+     "off_epa": 0.1013,
+     "off_sr": 0.4583,
+     "def_epa": -0.0927,
+     "def_sr": 0.3636,
+     "games": 3,
+     "ranks": {
+      "off_epa": 48,
+      "off_sr": 42,
+      "def_epa": 30,
+      "def_sr": 16
+     }
+    },
+    "net": 0.1613,
+    "net_rank": 24,
+    "record": "9-2",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "W"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Arch Manning",
+     "dropbacks": 351,
+     "epa_db": 0.01,
+     "rank": 94
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 14,
+     "fpi": 3,
+     "own_net": 24,
+     "ap": 5,
+     "cfp": 3
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.839
+   },
+   "fav": 251,
+   "dog": 245,
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 21 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 TEX last-3 top 25 in 1 of 4 \u00b7 \u2717 TA&M last-3 bottom 25 (114+) in 2 of 4 \u00b7 \u2717 TEX season outside 1-69: Off EPA/play #92, Off success #75 \u00b7 \u2717 TA&M season top 25: Def success allowed #21"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "TA&M: consensus #64, ESPN FPI #31"
+     }
+    ],
+    "fails": [
+     "Watch list: score 21 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 21,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 5,
+      "dog_weakness": 10,
+      "health": 4,
+      "home": 0,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "call": "Watch list",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for TEX yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV27TEXTXAM",
+    "fav_prob": 0.805,
+    "bid": 0.8,
+    "ask": 0.81
+   },
+   "locked_at": "2026-11-27T15:30:39-08:00",
+   "readout": {
+    "matchup": "TEX @ TA&M",
+    "fav": "TEX",
+    "dog": "TA&M",
+    "summary": "The consensus is Texas, and the line has moved to -12.5 (ML about -485, total 40.5). Texas (9-2, five straight wins, top 5) can clinch a playoff spot behind a defense Covers and SI Betting rate as the country's best by adjusted EPA per play. Texas A&M (4-7, four straight losses) still hadn't named a starter between Brady Hart and Marcel Reed as of Friday, and its offense ranks 129th in EPA per play. CBS, Predictem, Sports Betting Dime and Covers back Texas on the spread, and all five AtoZ Sports staffers pick Texas by 14 to 21. SI Betting and BettorsInsider prefer the Under 40.5, and BettorsInsider also takes A&M +11.5. Texas edge Colin Simmons is questionable (ankle) and Richard Wesley was upgraded to probable; A&M has several players out, including WR Terry Bussey.",
+    "picks": [
+     {
+      "source": "FanDuel Research (numberFire)",
+      "side": "fav",
+      "bet": "Longhorns win (no bet named)",
+      "price": "TEX -490 (80.5%)",
+      "note": "Texas 3-2 ATS as 11.5+ favorites"
+     },
+     {
+      "source": "SI Betting",
+      "side": "fav",
+      "bet": "Under 40.5 (-112)",
+      "price": "TEX -485 (line -12.5)",
+      "note": "Texas defense vs A&M offense 129th in EPA/play"
+     },
+     {
+      "source": "NBC Sports (Yahoo, Vaughn Dalzell)",
+      "side": "fav",
+      "bet": "Lean 1Q Under 7.5 or Texas 1Q -2.5",
+      "price": "TEX -455 (Monday)",
+      "note": "low expectations for Reed vs Texas"
+     },
+     {
+      "source": "Yahoo Sports (AtoZ Sports staff)",
+      "side": "fav",
+      "bet": "Texas (5 of 5 staff)",
+      "note": "Texas getting healthier; Reed benched"
+     },
+     {
+      "source": "CBS Sports",
+      "side": "fav",
+      "bet": "Texas -11.5",
+      "note": "Aggies lack firepower to compete for four quarters"
+     },
+     {
+      "source": "Sports Betting Dime",
+      "side": "fav",
+      "bet": "Texas -10.5",
+      "note": "Texas better on both sides; 31.6 vs 22.6 points per game"
+     },
+     {
+      "source": "Covers",
+      "side": "fav",
+      "bet": "Texas -10.5; Over 41.5",
+      "price": "TEX 79%",
+      "note": "Texas defense leads nation in net adjusted EPA/play"
+     },
+     {
+      "source": "Predictem",
+      "side": "fav",
+      "bet": "Texas -11.5",
+      "note": "A&M offense stalled; Simmons-led front; SP+ Texas by 13"
+     },
+     {
+      "source": "Dimers",
+      "side": "fav",
+      "bet": "Texas to win (model)",
+      "price": "TEX -388 (82.2%)",
+      "note": "model of scoring trends and player stats"
+     },
+     {
+      "source": "BettorsInsider",
+      "side": "fav",
+      "bet": "Texas A&M +11.5; Under 40.5",
+      "price": "TEX -450 to -465",
+      "note": "Texas hasn't proven it can blow out a road opponent"
+     }
+    ],
+    "scores": [
+     {
+      "source": "Yahoo Sports (AtoZ, Justin Churchill)",
+      "fav": 31,
+      "dog": 10
+     },
+     {
+      "source": "Yahoo Sports (AtoZ, Rob Gregson)",
+      "fav": 35,
+      "dog": 20
+     },
+     {
+      "source": "Yahoo Sports (AtoZ, Tyler Forness)",
+      "fav": 34,
+      "dog": 16
+     },
+     {
+      "source": "Yahoo Sports (AtoZ, Craig Smith)",
+      "fav": 26,
+      "dog": 10
+     },
+     {
+      "source": "Yahoo Sports (AtoZ, Ryan Roberts)",
+      "fav": 27,
+      "dog": 14
+     },
+     {
+      "source": "Predictem",
+      "fav": 27,
+      "dog": 10
+     },
+     {
+      "source": "BettorsInsider",
+      "fav": 24,
+      "dog": 13
+     },
+     {
+      "source": "Dimers",
+      "fav": 27,
+      "dog": 15
+     }
+    ],
+    "injuries": {
+     "fav": [
+      {
+       "player": "Colin Simmons",
+       "status": "Questionable",
+       "note": "Edge, ankle; missed the Arkansas game (SEC report Nov 26 via Wisevoter; NBC Sports, Nov 27)"
+      },
+      {
+       "player": "Richard Wesley",
+       "status": "Probable",
+       "note": "Edge; upgraded from questionable (SEC report Nov 26 via Wisevoter, Nov 27)"
+      },
+      {
+       "player": "Andre Cojoe",
+       "status": "Questionable",
+       "note": "OL, initial report (SI, Nov 25)"
+      },
+      {
+       "player": "Hero Kanu",
+       "status": "Out",
+       "note": "DT, torn biceps (SI initial report, Nov 25; Houston Chronicle lists him questionable, Nov 27)"
+      },
+      {
+       "player": "Trevor Goosby",
+       "status": "Out",
+       "note": "LT, out for the season (SI, Nov 25)"
+      },
+      {
+       "player": "Kobe Black",
+       "status": "Out",
+       "note": "DB, knee, out for the season (SI, Nov 25; Houston Chronicle, Nov 27)"
+      },
+      {
+       "player": "Hollywood Smothers",
+       "status": "Out",
+       "note": "RB (SI initial report, Nov 25)"
+      },
+      {
+       "player": "Nick Townsend",
+       "status": "Out",
+       "note": "TE (SI initial report, Nov 25)"
+      }
+     ],
+     "dog": [
+      {
+       "player": "Marcel Reed / Brady Hart",
+       "status": "Unsettled",
+       "note": "QB starter still undecided Friday; Hart started the 28-7 loss at Oklahoma (Houston Chronicle via Yahoo, Wisevoter, Nov 27)"
+      },
+      {
+       "player": "Terry Bussey",
+       "status": "Out",
+       "note": "WR (BettorsInsider, Nov 26)"
+      },
+      {
+       "player": "Ashton Bethel-Roman",
+       "status": "Out",
+       "note": "WR (BettorsInsider, Nov 26)"
+      },
+      {
+       "player": "TK Norman",
+       "status": "Out",
+       "note": "WR (BettorsInsider, Nov 26)"
+      },
+      {
+       "player": "Blake Ivy",
+       "status": "Out",
+       "note": "OL (BettorsInsider, Nov 26)"
+      },
+      {
+       "player": "Trovon Baugh",
+       "status": "Out",
+       "note": "OL (BettorsInsider, Nov 26)"
+      },
+      {
+       "player": "Marcus Ratcliffe",
+       "status": "Out",
+       "note": "S (BettorsInsider, Nov 26)"
+      },
+      {
+       "player": "Landon Rink",
+       "status": "Out",
+       "note": "DT (BettorsInsider, Nov 26)"
+      },
+      {
+       "player": "Marco Jones",
+       "status": "Questionable",
+       "note": "DE, 3.5 sacks (BettorsInsider, Nov 26)"
+      }
+     ],
+     "note": "Texas statuses from the SEC report as relayed by SI (Nov 25), Wisevoter/On3 (Nov 26 update) and the Houston Chronicle (Nov 27); the official report and On3 pages could not be opened. Simmons' status is unclear (an On3 headline says not trending to play). A&M statuses still come from one article (BettorsInsider)."
+    },
+    "sources": [
+     {
+      "site": "SI Betting (prediction)",
+      "url": "https://www.si.com/betting/texas-vs-texas-a-m-prediction-odds-and-key-players-to-watch-for-college-football-week-13-2026"
+     },
+     {
+      "site": "SI Betting (best bets)",
+      "url": "https://www.si.com/betting/best-college-football-picks-and-predictions-today-for-week-13-bet-the-under-in-the-lone-star-showdown-01m8akqqn24y"
+     },
+     {
+      "site": "NBC Sports (Yahoo)",
+      "url": "https://sports.yahoo.com/betting/articles/texas-vs-texas-m-prediction-130633367.html"
+     },
+     {
+      "site": "Yahoo Sports (AtoZ Sports staff)",
+      "url": "https://sports.yahoo.com/college-football/articles/texas-vs-texas-m-final-135335822.html"
+     },
+     {
+      "site": "Houston Chronicle (Yahoo)",
+      "url": "https://sports.yahoo.com/college-football/articles/big-texas-m-against-texas-130000247.html"
+     },
+     {
+      "site": "FanDuel Research (numberFire)",
+      "url": "https://www.fanduel.com/research/texas-vs-texas-a-m-college-football-odds-picks-best-bets-for-11-27-2026"
+     },
+     {
+      "site": "CBS Sports",
+      "url": "https://www.cbssports.com/college-football/news/texas-vs-texas-a-m-prediction-pick-odds-spread-where-to-watch/"
+     },
+     {
+      "site": "Sports Betting Dime",
+      "url": "https://www.sportsbettingdime.com/news/college-football/early-texas-vs-texas-am-prediction-odds-lone-star-showdown-picks/"
+     },
+     {
+      "site": "Covers",
+      "url": "https://www.covers.com/ncaaf/top-25-predictions-week-13-2026"
+     },
+     {
+      "site": "BettorsInsider",
+      "url": "https://bettorsinsider.com/college-football/2026/11/26/texas-vs-texas-am-preview-odds-prediction-best-bet/"
+     },
+     {
+      "site": "Predictem",
+      "url": "https://www.predictem.com/college-football/texas-at-texas-am-prediction-lone-star-showdown-odds-nov-27/"
+     },
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/cfb/predictions/2026_13_txam_tex"
+     },
+     {
+      "site": "SI (Texas availability)",
+      "url": "https://www.si.com/college/texas/football/texas-longhorns-list-colin-simmons-2-others-as-questionable-vs-texas-am"
+     },
+     {
+      "site": "Wisevoter (availability update)",
+      "url": "https://wisevoter.com/world/us/tx/austin/2026/11/27/colin-simmons-questionable-texas-texas-am"
+     },
+     {
+      "site": "Wisevoter (A&M QB)",
+      "url": "https://wisevoter.com/world/us/tx/college-station/2026/11/27/hart-first-start-texas-am-oklahoma-loss"
+     }
+    ],
+    "updated": "2026-11-27T06:40-08:00"
    }
   }
  }
