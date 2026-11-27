@@ -1,898 +1,30 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-26T16:30:51-08:00",
- "built_label": "Thu Nov 26, 4:30 PM PT",
+ "built_at": "2026-11-26T19:46:44-08:00",
+ "built_label": "Thu Nov 26, 7:46 PM PT",
  "games": [
-  {
-   "id": "401873080",
-   "nflverse_id": "2026_12_PHI_DAL",
-   "kick_utc": "2026-11-26T21:30:00+00:00",
-   "kick_pt": "Thu 1:30 PM PT",
-   "day_et": "2026-11-26",
-   "state": "in",
-   "detail": "13:53 - 4th",
-   "neutral": false,
-   "venue": "AT&T Stadium",
-   "home_code": "DAL",
-   "away_code": "PHI",
-   "score": {
-    "home": 31,
-    "away": 17
-   },
-   "line_source": "DraftKings",
-   "open_spread": -1.5,
-   "total": 49.5,
-   "total_open": 49.5,
-   "fav_ml": -512.0,
-   "favorite": "home",
-   "spread": -9.5,
-   "movement": 8.0,
-   "total_move": 0.0,
-   "fav_home": true,
-   "home": {
-    "code": "DAL",
-    "abbr": "DAL",
-    "season": {
-     "games": 11,
-     "off_epa": 0.1433,
-     "off_sr": 0.5065,
-     "def_epa": 0.1268,
-     "def_sr": 0.4898,
-     "off_pass_epa": 0.2007,
-     "off_rush_epa": 0.0386,
-     "def_pass_epa": 0.1877,
-     "def_rush_epa": 0.0366,
-     "ranks": {
-      "off_epa": 3,
-      "off_sr": 4,
-      "def_epa": 32,
-      "def_sr": 29
-     }
-    },
-    "last3": {
-     "games": 3,
-     "off_epa": 0.2294,
-     "off_sr": 0.5268,
-     "def_epa": 0.144,
-     "def_sr": 0.5051,
-     "off_pass_epa": 0.2968,
-     "off_rush_epa": 0.1171,
-     "def_pass_epa": 0.1713,
-     "def_rush_epa": 0.1008,
-     "ranks": {
-      "off_epa": 3,
-      "off_sr": 2,
-      "def_epa": 29,
-      "def_sr": 29
-     }
-    },
-    "net": 0.0165,
-    "net_rank": 14,
-    "adjusted": {
-     "off": 0.1324,
-     "def": 0.1328,
-     "net": 0.0263,
-     "recent_net": 0.0368,
-     "sr_off": 0.5065,
-     "sr_def": 0.4898
-    },
-    "record": "5-6",
-    "last2_results": [
-     "W",
-     "L"
-    ],
-    "last3_results": [
-     "W",
-     "L",
-     "W"
-    ],
-    "rest": 4,
-    "qb": {
-     "regular": "D.Prescott",
-     "regular_id": "00-0033077",
-     "season_leader": "D.Prescott",
-     "reset": false,
-     "dropbacks": 440,
-     "epa_db": 0.1589,
-     "rank": 7
-    },
-    "injuries_known": true,
-    "key_out": [
-     "Jake Ferguson",
-     "Tyler Booker"
-    ],
-    "key_questionable": [],
-    "key_long_term": [],
-    "interior_ol_out": [
-     "Tyler Booker"
-    ],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [
-     {
-      "name": "Jake Ferguson",
-      "pos": "TE",
-      "status": "Out"
-     },
-     {
-      "name": "Tyler Booker",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "name": "Jonathan Bullard",
-      "pos": "DT",
-      "status": "Out"
-     },
-     {
-      "name": "Devin Moore",
-      "pos": "CB",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Jaishawn Barham",
-      "pos": "LB",
-      "status": "Out"
-     }
-    ],
-    "power": {
-     "consensus": 14,
-     "fpi": 13,
-     "nfl_com": 16
-    }
-   },
-   "away": {
-    "code": "PHI",
-    "abbr": "PHI",
-    "season": {
-     "games": 10,
-     "off_epa": -0.0844,
-     "off_sr": 0.3623,
-     "def_epa": 0.0552,
-     "def_sr": 0.4377,
-     "off_pass_epa": -0.0695,
-     "off_rush_epa": -0.111,
-     "def_pass_epa": 0.0986,
-     "def_rush_epa": -0.0089,
-     "ranks": {
-      "off_epa": 29,
-      "off_sr": 32,
-      "def_epa": 25,
-      "def_sr": 14
-     }
-    },
-    "last3": {
-     "games": 3,
-     "off_epa": -0.1563,
-     "off_sr": 0.3228,
-     "def_epa": -0.053,
-     "def_sr": 0.3655,
-     "off_pass_epa": -0.1698,
-     "off_rush_epa": -0.1339,
-     "def_pass_epa": -0.0143,
-     "def_rush_epa": -0.1232,
-     "ranks": {
-      "off_epa": 28,
-      "off_sr": 32,
-      "def_epa": 11,
-      "def_sr": 3
-     }
-    },
-    "net": -0.1395,
-    "net_rank": 28,
-    "adjusted": {
-     "off": -0.0602,
-     "def": 0.0171,
-     "net": -0.043,
-     "recent_net": -0.0472,
-     "sr_off": 0.3623,
-     "sr_def": 0.4377
-    },
-    "record": "3-7",
-    "last2_results": [
-     "W",
-     "L"
-    ],
-    "last3_results": [
-     "W",
-     "L",
-     "L"
-    ],
-    "rest": 4,
-    "qb": {
-     "regular": "J.Milton",
-     "regular_id": "00-0039398",
-     "season_leader": "J.Hurts",
-     "reset": true,
-     "dropbacks": 64,
-     "epa_db": -0.2824,
-     "rank": null
-    },
-    "injuries_known": true,
-    "key_out": [
-     "Dallas Goedert"
-    ],
-    "key_questionable": [
-     "Cooper DeJean"
-    ],
-    "key_long_term": [],
-    "interior_ol_out": [],
-    "qb_out": [],
-    "qb_active": true,
-    "qb_reset": "J.Milton, 64 dropbacks this season",
-    "injury_list": [
-     {
-      "name": "Marcus Epps",
-      "pos": "S",
-      "status": "Out"
-     },
-     {
-      "name": "Dallas Goedert",
-      "pos": "TE",
-      "status": "Out"
-     },
-     {
-      "name": "Saquon Barkley",
-      "pos": "RB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Cooper DeJean",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "name": "Cole Payton",
-      "pos": "QB",
-      "status": "Out"
-     }
-    ],
-    "power": {
-     "consensus": 28,
-     "fpi": 28,
-     "nfl_com": 24
-    }
-   },
-   "fav": "DAL",
-   "dog": "PHI",
-   "scoring": {
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 24 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 DAL last-3 top 10 in 2 of 4 \u00b7 \u2717 PHI last-3 bottom 10 (23-32) in 2 of 4 \u00b7 \u2717 DAL season outside top 15: Def EPA allowed #32, Def success allowed #29 \u00b7 \u2713 PHI season top 10 in none"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key starter newly out or doubtful for the favorite",
-      "pass": false,
-      "detail": "DAL key starter out: Jake Ferguson, Tyler Booker"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not top 10 in any power ranking",
-      "pass": true,
-      "detail": "PHI: consensus #28, ESPN FPI #28, NFL.com #24"
-     }
-    ],
-    "context": [
-     {
-      "n": 1,
-      "ok": true,
-      "text": "Favorite top 10 (season) in a core metric",
-      "detail": "Off EPA/play, Off success"
-     },
-     {
-      "n": 2,
-      "ok": true,
-      "text": "Also top 10 over its last 3 in that same metric",
-      "detail": "Off EPA/play, Off success"
-     },
-     {
-      "n": 3,
-      "ok": false,
-      "text": "Underdog not top 10 in any metric over its last 3",
-      "detail": "Def success allowed"
-     },
-     {
-      "n": 4,
-      "ok": true,
-      "text": "Underdog not 3-0 in its last 3",
-      "detail": "1-2"
-     }
-    ],
-    "qualifiers": [
-     "off_epa",
-     "off_sr"
-    ],
-    "fails": [
-     "DAL key starter out: Jake Ferguson, Tyler Booker",
-     "Would be on the watch list otherwise (score 24)"
-    ],
-    "failed": [
-     "DAL key starter out: Jake Ferguson, Tyler Booker",
-     "Would be on the watch list otherwise (score 24)"
-    ],
-    "hero": {
-     "score": 24,
-     "band": "yellow",
-     "parts": {
-      "fav_strength": 8,
-      "dog_weakness": 12,
-      "health": 2,
-      "home": 1,
-      "rest": 0,
-      "form": 1
-     },
-     "max": 40
-    },
-    "edge": {
-     "gap": 0.156,
-     "required": 0.35,
-     "clears": false,
-     "short_by": 0.194,
-     "adjusted_gap": 0.069,
-     "adjusted_recent_gap": 0.084
-    },
-    "flags": [
-     {
-      "level": "red",
-      "text": "Underdog QB change (J.Milton, 64 dropbacks this season): call capped at Lean"
-     },
-     {
-      "level": "yellow",
-      "text": "Favorite interior OL out: Tyler Booker"
-     },
-     {
-      "level": "yellow",
-      "text": "Line moved +8 toward the favorite (4+): downgrade"
-     },
-     {
-      "level": "yellow",
-      "text": "Line crossed key number 3, 7"
-     },
-     {
-      "level": "yellow",
-      "text": "Underdog questionable: Cooper DeJean"
-     }
-    ],
-    "under": {
-     "passes": false,
-     "ranks": [
-      3,
-      29
-     ],
-     "total_move": 0.0,
-     "note": ""
-    },
-    "call": "No track",
-    "matchups": [
-     {
-      "key": "def_def",
-      "label": "Defense vs defense",
-      "fav_metric": "def_sr",
-      "dog_metric": "def_sr",
-      "fav_rank": 29,
-      "dog_rank": 3,
-      "in_range": true,
-      "met": false
-     },
-     {
-      "key": "def_off",
-      "label": "Defense vs offense",
-      "fav_metric": "def_sr",
-      "dog_metric": "off_sr",
-      "fav_rank": 29,
-      "dog_rank": 32,
-      "in_range": true,
-      "met": false
-     },
-     {
-      "key": "off_def",
-      "label": "Offense vs defense",
-      "fav_metric": "off_sr",
-      "dog_metric": "def_sr",
-      "fav_rank": 2,
-      "dog_rank": 3,
-      "in_range": true,
-      "met": false
-     }
-    ]
-   },
-   "fav_defense_top10": false,
-   "votes": {
-    "fav": 6,
-    "dog": 7,
-    "support": 0.462,
-    "sources": [
-     {
-      "site": "CBS Sports (Sullivan)",
-      "url": "https://www.cbssports.com/nfl/news/week-12-expert-picks-best-bets-lions-spoil-bears-thanksgiving/",
-      "fav": 1,
-      "dog": 0
-     },
-     {
-      "site": "CBS Sports (Dajani, Dubin)",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-12-picks-our-experts-face-off-on-bears-at-lions-chiefs-at-bills-and-more/",
-      "fav": 1,
-      "dog": 1
-     },
-     {
-      "site": "Bleacher Report",
-      "url": "https://bleacherreport.com/articles/25537117-bleacher-reports-expert-week-12-2026-nfl-picks",
-      "fav": 3,
-      "dog": 4
-     },
-     {
-      "site": "Covers",
-      "url": "https://www.covers.com/nfl/picks-against-the-spread-week-12-2026",
-      "fav": 0,
-      "dog": 1
-     },
-     {
-      "site": "SI",
-      "url": "https://www.si.com/betting/nfl-week-12-ats-picks-for-every-game-bet-the-vikings-to-cover-against-the-falcons-on-sunday-01m89ee8k9gt",
-      "fav": 1,
-      "dog": 0
-     },
-     {
-      "site": "Yahoo Sports",
-      "url": "https://sports.yahoo.com/nfl/betting/article/week-12-nfl-picks-against-the-spread-predictions-for-every-game-can-the-seahawks-or-anyone-stop-the-49ers-151851041.html",
-      "fav": 0,
-      "dog": 1
-     }
-    ],
-    "notes": "CBS = Sullivan + Dajani/Dubin; Prisco and Breech give scores only (not counted). CBS Dajani Cowboys, Dubin Eagles."
-   },
-   "readout": {
-    "matchup": "PHI @ DAL",
-    "fav": "DAL",
-    "dog": "PHI",
-    "summary": "No track: Dallas key starter out (TE Jake Ferguson, knee/ankle, ruled Out); it would be on the Watch list otherwise (score 25). Analysts back Dallas heavily: 20 of 26 published picks take the Cowboys (-8.5; moneyline -481 to -500, about 83%; ESPN FPI 82.9%), including all three ESPN analysts (30-20, 30-17, 31-20) and CBS (41-27). The case is the offense mismatch: Philadelphia is last in yards (255.6) and 31st in scoring (16.7) with Joe Milton starting while Hurts is on IR, and Prescott has 11 TDs and 1 INT over his last three games. Dallas is without Ferguson, G Tyler Booker, S P.J. Locke and WR Jonathan Mingo; Philadelphia is without CB Jonathan Jones and OLB Arnold Ebiketie, but CB Quinyon Mitchell has no designation. Dissent: Covers and FantasyLife take Eagles +8.5 (pass rush has 11 sacks in two games, Dallas run defense last), and four local columnists pick an outright Eagles upset.",
-    "picks": [
-     {
-      "source": "CBS Sports (Garrett Podell)",
-      "side": "fav",
-      "bet": "DAL 41-27 (score pick)",
-      "note": "Eagles lack weapons for a shootout; Prescott 20-0 at home vs NFC East"
-     },
-     {
-      "source": "ESPN (Pamela Maldonado)",
-      "side": "fav",
-      "bet": "DAL 30-20 (score pick)",
-      "price": "FPI: DAL 82.9%",
-      "note": "Dallas games 21-7 to the over since 2025"
-     },
-     {
-      "source": "ESPN (Eric Moody)",
-      "side": "fav",
-      "bet": "DAL 30-17 (score pick)"
-     },
-     {
-      "source": "ESPN (Seth Walder)",
-      "side": "fav",
-      "bet": "DAL 31-20 (score pick)",
-      "note": "Bold call: Quinnen Williams multiple sacks"
-     },
-     {
-      "source": "ClutchPoints / Yahoo (Garrett Kerman)",
-      "side": "fav",
-      "bet": "DAL -8.5 (-110), Over 47.5",
-      "price": "DAL -481 / PHI +370",
-      "note": "Eagles can't move the ball; Dallas already won by 17"
-     },
-     {
-      "source": "Sportsgambler (Paul Thomas)",
-      "side": "fav",
-      "bet": "DAL -8.5 (-110)",
-      "price": "DAL -500 (BetMGM)",
-      "note": "Best bet; Prescott over 259.5 passing yards as a prop"
-     },
-     {
-      "source": "NBC Sports Philadelphia (Dan Roche)",
-      "side": "fav",
-      "bet": "DAL ML, Over 47.5",
-      "note": "Prescott over, Milton under on passing props"
-     },
-     {
-      "source": "Inside the Iggles",
-      "side": "fav",
-      "bet": "DAL 31-14 (score pick)",
-      "note": "Cowboys win the turnover battle"
-     },
-     {
-      "source": "Dallas Morning News (Tim Cowlishaw)",
-      "side": "fav",
-      "bet": "DAL 26-20 (score pick)",
-      "note": "Expects another five sacks from Dallas' blitzing front"
-     },
-     {
-      "source": "Dallas Morning News (Joseph Hoyt)",
-      "side": "fav",
-      "bet": "DAL 38-24 (score pick)",
-      "note": "Prescott playing fantastic of late"
-     },
-     {
-      "source": "Dallas Morning News (Damon Marx)",
-      "side": "fav",
-      "bet": "DAL 30-27 (score pick)",
-      "note": "Dallas plays well at home vs NFC East"
-     },
-     {
-      "source": "Dallas Morning News (Abraham Nudelstejer)",
-      "side": "fav",
-      "bet": "DAL 31-27 (score pick)"
-     },
-     {
-      "source": "Dallas Morning News (Kevin Sherrington)",
-      "side": "fav",
-      "bet": "DAL 31-27 (score pick)"
-     },
-     {
-      "source": "Dallas Morning News (Calvin Watkins)",
-      "side": "dog",
-      "bet": "PHI 23-20 (score pick)",
-      "note": "Contrarian upset pick"
-     },
-     {
-      "source": "Delaware Online (Martin Frank)",
-      "side": "fav",
-      "bet": "DAL 34-23 (score pick)"
-     },
-     {
-      "source": "Delaware Online (Greg Giesen)",
-      "side": "fav",
-      "bet": "DAL 45-10 (score pick)"
-     },
-     {
-      "source": "Delaware Online (Tom Rimback)",
-      "side": "dog",
-      "bet": "PHI 23-20 (score pick)"
-     },
-     {
-      "source": "Delaware Online (Bert Bainbridge)",
-      "side": "fav",
-      "bet": "DAL 34-24 (score pick)"
-     },
-     {
-      "source": "Delaware Online (Tom Haines)",
-      "side": "fav",
-      "bet": "DAL 31-23 (score pick)"
-     },
-     {
-      "source": "Delaware Online (Tom McGurk)",
-      "side": "fav",
-      "bet": "DAL 34-20 (score pick)"
-     },
-     {
-      "source": "Delaware Online (Tom Moore)",
-      "side": "fav",
-      "bet": "DAL 31-24 (score pick)"
-     },
-     {
-      "source": "Delaware Online (Michelle Ganassi)",
-      "side": "dog",
-      "bet": "PHI 28-21 (score pick)"
-     },
-     {
-      "source": "Delaware Online (Kevin Tresolini)",
-      "side": "fav",
-      "bet": "DAL 30-20 (score pick)"
-     },
-     {
-      "source": "Delaware Online (Bob Jordan)",
-      "side": "dog",
-      "bet": "PHI 13-10 (score pick)"
-     },
-     {
-      "source": "Covers (Jason Logan)",
-      "side": "dog",
-      "bet": "PHI +8.5 (spread pick)",
-      "price": "DAL 79% implied",
-      "note": "Eagles D 8th in EPA allowed since Week 9; pass rush surging"
-     },
-     {
-      "source": "FantasyLife (Justin Carlucci)",
-      "side": "dog",
-      "bet": "PHI +8.5 (-110, FanDuel)",
-      "price": "DAL -500 / PHI +385",
-      "note": "Recency bias after Dallas' 50-point win over Tennessee"
-     }
-    ],
-    "scores": [
-     {
-      "source": "CBS Sports",
-      "fav": 41,
-      "dog": 27
-     },
-     {
-      "source": "ESPN Maldonado",
-      "fav": 30,
-      "dog": 20
-     },
-     {
-      "source": "ESPN Moody",
-      "fav": 30,
-      "dog": 17
-     },
-     {
-      "source": "ESPN Walder",
-      "fav": 31,
-      "dog": 20
-     },
-     {
-      "source": "Sportsgambler",
-      "fav": 34,
-      "dog": 23
-     },
-     {
-      "source": "Inside the Iggles",
-      "fav": 31,
-      "dog": 14
-     },
-     {
-      "source": "DMN Cowlishaw",
-      "fav": 26,
-      "dog": 20
-     },
-     {
-      "source": "DMN Hoyt",
-      "fav": 38,
-      "dog": 24
-     },
-     {
-      "source": "DMN Marx",
-      "fav": 30,
-      "dog": 27
-     },
-     {
-      "source": "DMN Nudelstejer",
-      "fav": 31,
-      "dog": 27
-     },
-     {
-      "source": "DMN Sherrington",
-      "fav": 31,
-      "dog": 27
-     },
-     {
-      "source": "DMN Watkins",
-      "fav": 20,
-      "dog": 23
-     },
-     {
-      "source": "Delaware Online Frank",
-      "fav": 34,
-      "dog": 23
-     },
-     {
-      "source": "Delaware Online Giesen",
-      "fav": 45,
-      "dog": 10
-     },
-     {
-      "source": "Delaware Online Rimback",
-      "fav": 20,
-      "dog": 23
-     },
-     {
-      "source": "Delaware Online Bainbridge",
-      "fav": 34,
-      "dog": 24
-     },
-     {
-      "source": "Delaware Online Haines",
-      "fav": 31,
-      "dog": 23
-     },
-     {
-      "source": "Delaware Online McGurk",
-      "fav": 34,
-      "dog": 20
-     },
-     {
-      "source": "Delaware Online Moore",
-      "fav": 31,
-      "dog": 24
-     },
-     {
-      "source": "Delaware Online Ganassi",
-      "fav": 21,
-      "dog": 28
-     },
-     {
-      "source": "Delaware Online Tresolini",
-      "fav": 30,
-      "dog": 20
-     },
-     {
-      "source": "Delaware Online Jordan",
-      "fav": 10,
-      "dog": 13
-     }
-    ],
-    "injuries": {
-     "fav": [
-      {
-       "player": "Jake Ferguson",
-       "status": "Out",
-       "note": "TE, knee/ankle; ruled out, third straight missed game (Cowboys.com / Dallas Sports Journal, Nov 25)"
-      },
-      {
-       "player": "Tyler Booker",
-       "status": "Out",
-       "note": "G, ankle (SI, Nov 25)"
-      },
-      {
-       "player": "P.J. Locke",
-       "status": "Out",
-       "note": "S, concussion (SI, Nov 25)"
-      },
-      {
-       "player": "Jonathan Mingo",
-       "status": "Out",
-       "note": "WR, ankle (SI, Nov 25)"
-      },
-      {
-       "player": "Devin Moore",
-       "status": "Questionable",
-       "note": "CB, hip; on IR, must be activated to play (Cowboys.com, Nov 25)"
-      },
-      {
-       "player": "Jalen Thompson",
-       "status": "Questionable",
-       "note": "S, hamstring; on IR, must be activated to play (Cowboys.com, Nov 25)"
-      },
-      {
-       "player": "Dak Prescott",
-       "status": "Full participant",
-       "note": "QB, left hand; full all three days, no game designation (Dallas Sports Journal, Nov 25)"
-      }
-     ],
-     "dog": [
-      {
-       "player": "Jalen Hurts",
-       "status": "Injured reserve",
-       "note": "QB, blood clots; on IR since Oct 17, Joe Milton starts (CBS / ClutchPoints, Nov 25)"
-      },
-      {
-       "player": "Arnold Ebiketie",
-       "status": "Out",
-       "note": "OLB, oblique (Eagles.com / SI, Nov 25)"
-      },
-      {
-       "player": "Jonathan Jones",
-       "status": "Out",
-       "note": "CB, ankle (Eagles.com / SI, Nov 25)"
-      },
-      {
-       "player": "Quinyon Mitchell",
-       "status": "No designation",
-       "note": "CB, hamstring; full practice Wednesday, Fangio says he'll be fine (Dallas Sports Journal / ESPN, Nov 25-26)"
-      },
-      {
-       "player": "Smael Mondon",
-       "status": "Limited",
-       "note": "LB, ankle (Wednesday report, Nov 25)"
-      },
-      {
-       "player": "Will Shipley",
-       "status": "Limited",
-       "note": "RB, foot/illness (Wednesday report, Nov 25)"
-      },
-      {
-       "player": "Saquon Barkley",
-       "status": "Full participant",
-       "note": "RB, neck/illness (Wednesday report, Nov 25)"
-      }
-     ],
-     "note": "Final designations from Cowboys.com and Dallas Sports Journal (Nov 25) and the Eagles' Wednesday report. Zack Baun is on injured reserve."
-    },
-    "sources": [
-     {
-      "site": "Sportsgambler",
-      "url": "https://www.sportsgambler.com/betting-tips/nfl/philadelphia-eagles-vs-dallas-cowboys-prediction-odds-2026-11-26/"
-     },
-     {
-      "site": "Yahoo Sports / NBC Sports Philadelphia",
-      "url": "https://sports.yahoo.com/betting/articles/eagles-vs-cowboys-betting-guide-111809896.html"
-     },
-     {
-      "site": "Yahoo Sports / Dallas Morning News",
-      "url": "https://sports.yahoo.com/nfl/articles/expert-predictions-cowboys-eagles-dallas-160000575.html"
-     },
-     {
-      "site": "Yahoo Sports / Delaware Online",
-      "url": "https://sports.yahoo.com/nfl/articles/eagles-outscore-dak-prescott-cowboys-114547258.html"
-     },
-     {
-      "site": "Inside the Iggles",
-      "url": "https://insidetheiggles.com/eagles-vs-cowboys-thanksgiving-day-injury-updates-predictions-storylines-more"
-     },
-     {
-      "site": "Fox Sports",
-      "url": "https://amp.foxsports.com/stories/nfl/2026-nfl-thanksgiving-odds-lines-spreads-what-know-all-4-games"
-     },
-     {
-      "site": "Philadelphia Eagles",
-      "url": "https://www.philadelphiaeagles.com/news/eagles-at-cowboys-injury-report-2026-nfl-week-12-thanksgiving"
-     },
-     {
-      "site": "SI (Cowboys)",
-      "url": "https://www.si.com/nfl/cowboys/onsi/week-12-injury-report-cowboys-down-2-offensive-starters-on-thanksgiving"
-     },
-     {
-      "site": "Yahoo Sports / Athlon",
-      "url": "https://sports.yahoo.com/nfl/articles/cowboys-te-jake-ferguson-misses-212615687.html"
-     },
-     {
-      "site": "CBS Sports",
-      "url": "https://www.cbssports.com/nfl/news/cowboys-vs-eagles-thanksgiving-how-to-watch-odds-preview-prediction/"
-     },
-     {
-      "site": "ESPN",
-      "url": "https://www.espn.com/nfl/story/_/id/50582822/thanksgiving-games-picks-schedule-fantasy-odds-2026"
-     },
-     {
-      "site": "ClutchPoints",
-      "url": "https://clutchpoints.com/betting/eagles-vs-cowboys-prediction-odds-pick-for-week-12-thanksgiving-clash-2026"
-     },
-     {
-      "site": "Covers",
-      "url": "https://www.covers.com/nfl/eagles-vs-cowboys-prediction-picks-nov-26-2026"
-     },
-     {
-      "site": "FantasyLife",
-      "url": "https://www.fantasylife.com/articles/betting/cowboys-vs-eagles-thanksgiving-matchup-picks-odds-predictions"
-     },
-     {
-      "site": "Dallas Sports Journal",
-      "url": "https://dallassportsjournal.com/cowboys-eagles-final-injury-report-winters-barham-thompson/"
-     },
-     {
-      "site": "Dallas Cowboys",
-      "url": "https://www.dallascowboys.com/news/updates-november-2026"
-     }
-    ],
-    "updated": "2026-11-26T05:58-08:00"
-   }
-  },
   {
    "id": "401873082",
    "nflverse_id": "2026_12_KC_BUF",
    "kick_utc": "2026-11-27T01:20:00+00:00",
    "kick_pt": "Thu 5:20 PM PT",
    "day_et": "2026-11-26",
-   "state": "pre",
-   "detail": "11/26 - 8:20 PM EST",
+   "state": "in",
+   "detail": "11:58 - 4th",
    "neutral": false,
    "venue": "Highmark Stadium",
    "home_code": "BUF",
    "away_code": "KC",
    "score": {
-    "home": 0,
-    "away": 0
+    "home": 10,
+    "away": 10
    },
    "line_source": "DraftKings",
    "open_spread": -2.5,
    "total": 46.5,
    "total_open": 49.5,
-   "fav_ml": -157.0,
+   "fav_ml": -163.0,
    "favorite": "home",
    "spread": -3.0,
    "movement": 0.5,
@@ -1005,8 +137,7 @@
      "consensus": 2,
      "fpi": 2,
      "nfl_com": 2
-    },
-    "fpi_win": 0.526
+    }
    },
    "away": {
     "code": "KC",
@@ -1086,6 +217,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Jalen Royals",
+      "pos": "WR",
+      "status": "Questionable"
+     },
+     {
       "name": "Garrett Nussmeier",
       "pos": "QB",
       "status": "Out"
@@ -1104,19 +240,13 @@
       "name": "Kenneth Walker III",
       "pos": "RB",
       "status": "Out"
-     },
-     {
-      "name": "Marcus Harris",
-      "pos": "DT",
-      "status": "Out"
      }
     ],
     "power": {
      "consensus": 3,
      "fpi": 3,
      "nfl_com": 4
-    },
-    "fpi_win": 0.471
+    }
    },
    "fav": "BUF",
    "dog": "KC",
@@ -1266,12 +396,6 @@
     ]
    },
    "fav_defense_top10": false,
-   "kalshi": {
-    "event": "KXNFLGAME-26NOV26KCBUF",
-    "fav_prob": 0.605,
-    "bid": 0.6,
-    "ask": 0.61
-   },
    "votes": {
     "fav": 6,
     "dog": 7,
@@ -1337,10 +461,10 @@
    "open_spread": -1.5,
    "total": 36.5,
    "total_open": 41.5,
-   "fav_ml": -251.0,
+   "fav_ml": -249.0,
    "favorite": "away",
-   "spread": -5.5,
-   "movement": 4.0,
+   "spread": -4.5,
+   "movement": 3.0,
    "total_move": -5.0,
    "fav_home": false,
    "home": {
@@ -1423,16 +547,6 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Alex Highsmith",
-      "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "name": "Ben Skowronek",
-      "pos": "WR",
-      "status": "Injured Reserve"
-     },
-     {
       "name": "Cole Holcomb",
       "pos": "LB",
       "status": "Questionable"
@@ -1440,6 +554,16 @@
      {
       "name": "Gennings Dunker",
       "pos": "G",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Alex Highsmith",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
+      "name": "Ben Skowronek",
+      "pos": "WR",
       "status": "Injured Reserve"
      },
      {
@@ -1531,9 +655,9 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Tyler Badie",
-      "pos": "RB",
-      "status": "Questionable"
+      "name": "Sai'vion Jones",
+      "pos": "DE",
+      "status": "Injured Reserve"
      },
      {
       "name": "Caleb Lohner",
@@ -1541,9 +665,9 @@
       "status": "Injured Reserve"
      },
      {
-      "name": "Sai'vion Jones",
-      "pos": "DE",
-      "status": "Injured Reserve"
+      "name": "Tyler Badie",
+      "pos": "RB",
+      "status": "Questionable"
      },
      {
       "name": "Taylor Rapp",
@@ -1656,10 +780,6 @@
     "flags": [
      {
       "level": "yellow",
-      "text": "Line moved +4 toward the favorite (4+): downgrade"
-     },
-     {
-      "level": "yellow",
       "text": "Line crossed key number 3"
      }
     ],
@@ -1709,9 +829,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV27DENPIT",
-    "fav_prob": 0.675,
-    "bid": 0.67,
-    "ask": 0.68
+    "fav_prob": 0.685,
+    "bid": 0.68,
+    "ask": 0.69
    },
    "votes": {
     "fav": 8,
@@ -1756,6 +876,178 @@
      }
     ],
     "notes": "CBS = Sullivan + Dajani/Dubin; Prisco and Breech give scores only (not counted)."
+   },
+   "readout": {
+    "matchup": "DEN @ PIT",
+    "fav": "DEN",
+    "dog": "PIT",
+    "summary": "Analysts lean Denver straight up but split on the spread. The Broncos (8-2, six straight wins, 8-2 ATS) beat the Raiders 38-24 on Sunday, while the Steelers (6-4, 4-0 at home) turn to Mason Rudolph after Aaron Rodgers was benched. Sports Betting Dime backs Denver -4.5, citing its red-zone TD rate (67.7% vs 42.9%), and ATS.io says Denver's pass rush (31 sacks, 4th in blitz rate) will trouble Pittsburgh. The contrarian case comes from SI Betting and CBS Sports: Pittsburgh is far better at home and leads the league in rush EPA against a Denver run defense that ranks 26th; CBS picks the Steelers 23-20. ESPN's matchup predictor also leans Pittsburgh (51.9%) despite a -229 market. Rain and wind are expected, and Steelers pass rushers Herbig and Highsmith carry injury tags.",
+    "picks": [
+     {
+      "source": "Sports Betting Dime",
+      "side": "fav",
+      "bet": "Broncos -4.5 (+100); also Over 37.5, Bo Nix o200.5 pass yds",
+      "price": "DEN -203 (66% no-vig)",
+      "note": "Steelers can't finish drives; red zone TD 67.7% vs 42.9%"
+     },
+     {
+      "source": "SI Betting",
+      "side": "dog",
+      "bet": "Steelers +3 (-115)",
+      "price": "DEN -156",
+      "note": "PIT much better at home; rush EPA 1st vs DEN 26th"
+     },
+     {
+      "source": "CBS Sports",
+      "side": "dog",
+      "bet": "Steelers +3",
+      "note": "Steelers are the more desperate team"
+     },
+     {
+      "source": "ATS.io",
+      "side": "fav",
+      "bet": "Broncos to win",
+      "note": "Denver's pass rush causes problems for Pittsburgh's offense"
+     },
+     {
+      "source": "SportsGambler",
+      "side": "fav",
+      "bet": "Over 36.5 (-110)",
+      "price": "DEN -196 (66%)",
+      "note": "Over hit in 8 of Denver's last 10; picks DEN 23-21"
+     },
+     {
+      "source": "Mile High Huddle (SI)",
+      "side": "fav",
+      "bet": "Broncos (10 of 10 staff)",
+      "note": "Steelers QB change to Rudolph; weather game"
+     }
+    ],
+    "scores": [
+     {
+      "source": "CBS Sports",
+      "fav": 20,
+      "dog": 23
+     },
+     {
+      "source": "ATS.io",
+      "fav": 19,
+      "dog": 17
+     },
+     {
+      "source": "SportsGambler",
+      "fav": 23,
+      "dog": 21
+     },
+     {
+      "source": "Mile High Huddle (Chad Jensen)",
+      "fav": 23,
+      "dog": 16
+     }
+    ],
+    "injuries": {
+     "fav": [
+      {
+       "player": "Sai'vion Jones",
+       "status": "Out",
+       "note": "DE, hamstring (ESPN, Nov 26)"
+      },
+      {
+       "player": "Taylor Rapp",
+       "status": "Out",
+       "note": "S, quadriceps (ESPN, Nov 26)"
+      },
+      {
+       "player": "Brandon Jones",
+       "status": "Questionable",
+       "note": "S (SI Betting, Nov 23)"
+      },
+      {
+       "player": "J.K. Dobbins",
+       "status": "Suspended",
+       "note": "RB, reserve/suspension (ESPN, Nov 26)"
+      },
+      {
+       "player": "Tyler Badie",
+       "status": "IR",
+       "note": "RB, thumb (ESPN, Nov 26)"
+      },
+      {
+       "player": "Caleb Lohner",
+       "status": "IR",
+       "note": "TE, foot (ESPN, Nov 26)"
+      }
+     ],
+     "dog": [
+      {
+       "player": "Aaron Rodgers",
+       "status": "Benched",
+       "note": "QB; Mason Rudolph starts (Mile High Huddle, Nov 26)"
+      },
+      {
+       "player": "Nick Herbig",
+       "status": "Questionable",
+       "note": "LB, hip (ESPN, Nov 26)"
+      },
+      {
+       "player": "Alex Highsmith",
+       "status": "Questionable",
+       "note": "LB, ankle (SI Betting, Nov 23)"
+      },
+      {
+       "player": "DeShon Elliott",
+       "status": "Questionable",
+       "note": "S, knee (ESPN, Nov 26)"
+      },
+      {
+       "player": "Cole Holcomb",
+       "status": "Questionable",
+       "note": "LB, heel (ESPN, Nov 26)"
+      },
+      {
+       "player": "Michael Pittman Jr.",
+       "status": "IR",
+       "note": "WR, foot (ESPN, Nov 26)"
+      },
+      {
+       "player": "Gennings Dunker",
+       "status": "IR",
+       "note": "G, knee (ESPN, Nov 26)"
+      }
+     ],
+     "note": "Statuses from ESPN's game page (read Nov 26 evening) and SI Betting (Nov 23); sources disagree on some names. Final Friday game-day report not out yet."
+    },
+    "sources": [
+     {
+      "site": "Sports Betting Dime",
+      "url": "https://www.sportsbettingdime.com/news/nfl/broncos-steelers-predictions-expert-picks-black-friday-nov-27/"
+     },
+     {
+      "site": "SI Betting",
+      "url": "https://www.si.com/betting/broncos-vs-steelers-prediction-odds-spread-injuries-trends-for-nfl-week-12-2026"
+     },
+     {
+      "site": "CBS Sports",
+      "url": "https://www.cbssports.com/nfl/news/thanksgiving-games-black-friday-nfl-expert-picks-lions-bears-steelers/"
+     },
+     {
+      "site": "Mile High Huddle (SI)",
+      "url": "https://www.si.com/nfl/broncos/onsi/mile-high-roundtable-broncos-at-steelers-predictions-on-black-friday"
+     },
+     {
+      "site": "ATS.io",
+      "url": "https://ats.io/nfl/broncos-vs-steelers-prediction-preview-november-27-2026/"
+     },
+     {
+      "site": "SportsGambler",
+      "url": "https://www.sportsgambler.com/betting-tips/nfl/denver-broncos-vs-pittsburgh-steelers-prediction-odds-2026-11-27/"
+     },
+     {
+      "site": "ESPN (odds, injuries)",
+      "url": "https://www.espn.com/nfl/odds/_/gameId/401873083"
+     }
+    ],
+    "updated": "2026-11-26T19:46-08:00"
    }
   },
   {
@@ -1778,7 +1070,7 @@
    "open_spread": -6.5,
    "total": 49.5,
    "total_open": 48.5,
-   "fav_ml": -562.0,
+   "fav_ml": -563.0,
    "favorite": "home",
    "spread": -10.0,
    "movement": 3.5,
@@ -3579,10 +2871,10 @@
    "open_spread": 1.5,
    "total": 39.5,
    "total_open": 41.5,
-   "fav_ml": -243.0,
+   "fav_ml": -246.0,
    "favorite": "away",
-   "spread": -4.5,
-   "movement": 6.0,
+   "spread": -5.5,
+   "movement": 7.0,
    "total_move": -2.0,
    "fav_home": false,
    "home": {
@@ -3774,6 +3066,11 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Harrison Phillips",
+      "pos": "DT",
+      "status": "Questionable"
+     },
+     {
       "name": "Omar Cooper Jr.",
       "pos": "WR",
       "status": "Questionable"
@@ -3782,11 +3079,6 @@
       "name": "David Onyemata",
       "pos": "DT",
       "status": "Injured Reserve"
-     },
-     {
-      "name": "Harrison Phillips",
-      "pos": "DT",
-      "status": "Questionable"
      },
      {
       "name": "T'Vondre Sweat",
@@ -3903,7 +3195,7 @@
      },
      {
       "level": "yellow",
-      "text": "Line moved +6 toward the favorite (4+): downgrade"
+      "text": "Line moved +7 toward the favorite (4+): downgrade"
      },
      {
       "level": "yellow",
@@ -4027,7 +3319,7 @@
    "open_spread": -4.5,
    "total": 41.5,
    "total_open": 43.5,
-   "fav_ml": -311.0,
+   "fav_ml": -310.0,
    "favorite": "home",
    "spread": -7.0,
    "movement": 2.5,
@@ -5542,7 +4834,6 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
-     "Ernest Jones",
      "Jaxon Smith-Njigba"
     ],
     "key_long_term": [],
@@ -5551,6 +4842,11 @@
     "qb_active": true,
     "qb_reset": "D.Lock, 98 dropbacks this season",
     "injury_list": [
+     {
+      "name": "Anthony Bradford",
+      "pos": "G",
+      "status": "Questionable"
+     },
      {
       "name": "Drew Lock",
       "pos": "QB",
@@ -5569,11 +4865,6 @@
      {
       "name": "Jaxon Smith-Njigba",
       "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "name": "Ernest Jones IV",
-      "pos": "LB",
       "status": "Questionable"
      }
     ],
@@ -5698,7 +4989,7 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Ernest Jones, Jaxon Smith-Njigba"
+      "text": "Underdog questionable: Jaxon Smith-Njigba"
      }
     ],
     "under": {
@@ -6015,13 +5306,13 @@
     "qb_reset": "F.Mendoza, 85 dropbacks this season",
     "injury_list": [
      {
-      "name": "Brock Bowers",
-      "pos": "TE",
+      "name": "Tonka Hemingway",
+      "pos": "DT",
       "status": "Questionable"
      },
      {
-      "name": "Tonka Hemingway",
-      "pos": "DT",
+      "name": "Brock Bowers",
+      "pos": "TE",
       "status": "Questionable"
      },
      {
@@ -6347,6 +5638,7 @@
     "key_out": [],
     "key_questionable": [
      "Antoine Winfield Jr.",
+     "Jacob Parrish",
      "Josiah Trotter"
     ],
     "key_long_term": [],
@@ -6355,19 +5647,9 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Jalen McMillan",
-      "pos": "WR",
-      "status": "Injured Reserve"
-     },
-     {
-      "name": "Josiah Trotter",
-      "pos": "LB",
+      "name": "Jacob Parrish",
+      "pos": "CB",
       "status": "Questionable"
-     },
-     {
-      "name": "Christian Rozeboom",
-      "pos": "LB",
-      "status": "Injured Reserve"
      },
      {
       "name": "Antoine Winfield Jr.",
@@ -6375,9 +5657,19 @@
       "status": "Questionable"
      },
      {
-      "name": "Elijah Simmons",
-      "pos": "DT",
+      "name": "Josiah Trotter",
+      "pos": "LB",
       "status": "Questionable"
+     },
+     {
+      "name": "Jalen McMillan",
+      "pos": "WR",
+      "status": "Injured Reserve"
+     },
+     {
+      "name": "Christian Rozeboom",
+      "pos": "LB",
+      "status": "Injured Reserve"
      }
     ],
     "power": {
@@ -6457,8 +5749,8 @@
     "injuries_known": true,
     "key_out": [],
     "key_questionable": [
+     "Bobby Okereke",
      "Darren Waller",
-     "Jaelan Phillips",
      "Mitchell Evans",
      "Tommy Tremble"
     ],
@@ -6467,6 +5759,11 @@
     "qb_out": [],
     "qb_active": true,
     "injury_list": [
+     {
+      "name": "Bobby Okereke",
+      "pos": "LB",
+      "status": "Questionable"
+     },
      {
       "name": "Mitchell Evans",
       "pos": "TE",
@@ -6485,11 +5782,6 @@
      {
       "name": "Darren Waller",
       "pos": "TE",
-      "status": "Questionable"
-     },
-     {
-      "name": "Jaelan Phillips",
-      "pos": "LB",
       "status": "Questionable"
      }
     ],
@@ -6599,11 +5891,11 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Antoine Winfield Jr., Josiah Trotter"
+      "text": "Favorite questionable: Antoine Winfield Jr., Jacob Parrish, Josiah Trotter"
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Darren Waller, Jaelan Phillips, Mitchell Evans, Tommy Tremble"
+      "text": "Underdog questionable: Bobby Okereke, Darren Waller, Mitchell Evans, Tommy Tremble"
      }
     ],
     "under": {
@@ -7779,6 +7071,879 @@
     ],
     "notes": "CBS = Sullivan + Dajani/Dubin; Prisco and Breech give scores only (not counted). CBS Dajani took Bears -1.5, Dubin Lions +1.5. Picks saved Thu morning before kickoff (10:00 AM PT)."
    }
+  },
+  {
+   "id": "401873080",
+   "nflverse_id": "2026_12_PHI_DAL",
+   "kick_utc": "2026-11-26T21:30:00+00:00",
+   "kick_pt": "Thu 1:30 PM PT",
+   "day_et": "2026-11-26",
+   "state": "post",
+   "detail": "Final",
+   "neutral": false,
+   "venue": "AT&T Stadium",
+   "home_code": "DAL",
+   "away_code": "PHI",
+   "score": {
+    "home": 38,
+    "away": 39
+   },
+   "line_source": "DraftKings",
+   "open_spread": -1.5,
+   "total": 49.5,
+   "total_open": 49.5,
+   "fav_ml": -512.0,
+   "favorite": "home",
+   "spread": -9.5,
+   "movement": 8.0,
+   "total_move": 0.0,
+   "fav_home": true,
+   "home": {
+    "code": "DAL",
+    "abbr": "DAL",
+    "season": {
+     "games": 11,
+     "off_epa": 0.1433,
+     "off_sr": 0.5065,
+     "def_epa": 0.1268,
+     "def_sr": 0.4898,
+     "off_pass_epa": 0.2007,
+     "off_rush_epa": 0.0386,
+     "def_pass_epa": 0.1877,
+     "def_rush_epa": 0.0366,
+     "ranks": {
+      "off_epa": 3,
+      "off_sr": 4,
+      "def_epa": 32,
+      "def_sr": 29
+     }
+    },
+    "last3": {
+     "games": 3,
+     "off_epa": 0.2294,
+     "off_sr": 0.5268,
+     "def_epa": 0.144,
+     "def_sr": 0.5051,
+     "off_pass_epa": 0.2968,
+     "off_rush_epa": 0.1171,
+     "def_pass_epa": 0.1713,
+     "def_rush_epa": 0.1008,
+     "ranks": {
+      "off_epa": 3,
+      "off_sr": 2,
+      "def_epa": 29,
+      "def_sr": 29
+     }
+    },
+    "net": 0.0165,
+    "net_rank": 14,
+    "adjusted": {
+     "off": 0.1324,
+     "def": 0.1328,
+     "net": 0.0263,
+     "recent_net": 0.0368,
+     "sr_off": 0.5065,
+     "sr_def": 0.4898
+    },
+    "record": "5-6",
+    "last2_results": [
+     "W",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "L",
+     "W"
+    ],
+    "rest": 4,
+    "qb": {
+     "regular": "D.Prescott",
+     "regular_id": "00-0033077",
+     "season_leader": "D.Prescott",
+     "reset": false,
+     "dropbacks": 440,
+     "epa_db": 0.1589,
+     "rank": 7
+    },
+    "injuries_known": true,
+    "key_out": [
+     "Jake Ferguson",
+     "Tyler Booker"
+    ],
+    "key_questionable": [
+     "Quinnen Williams"
+    ],
+    "key_long_term": [],
+    "interior_ol_out": [
+     "Tyler Booker"
+    ],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [
+     {
+      "name": "Quinnen Williams",
+      "pos": "DT",
+      "status": "Questionable"
+     },
+     {
+      "name": "Jake Ferguson",
+      "pos": "TE",
+      "status": "Out"
+     },
+     {
+      "name": "Tyler Booker",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "name": "Jonathan Bullard",
+      "pos": "DT",
+      "status": "Out"
+     },
+     {
+      "name": "Devin Moore",
+      "pos": "CB",
+      "status": "Injured Reserve"
+     }
+    ],
+    "power": {
+     "consensus": 14,
+     "fpi": 13,
+     "nfl_com": 16
+    }
+   },
+   "away": {
+    "code": "PHI",
+    "abbr": "PHI",
+    "season": {
+     "games": 10,
+     "off_epa": -0.0844,
+     "off_sr": 0.3623,
+     "def_epa": 0.0552,
+     "def_sr": 0.4377,
+     "off_pass_epa": -0.0695,
+     "off_rush_epa": -0.111,
+     "def_pass_epa": 0.0986,
+     "def_rush_epa": -0.0089,
+     "ranks": {
+      "off_epa": 29,
+      "off_sr": 32,
+      "def_epa": 25,
+      "def_sr": 14
+     }
+    },
+    "last3": {
+     "games": 3,
+     "off_epa": -0.1563,
+     "off_sr": 0.3228,
+     "def_epa": -0.053,
+     "def_sr": 0.3655,
+     "off_pass_epa": -0.1698,
+     "off_rush_epa": -0.1339,
+     "def_pass_epa": -0.0143,
+     "def_rush_epa": -0.1232,
+     "ranks": {
+      "off_epa": 28,
+      "off_sr": 32,
+      "def_epa": 11,
+      "def_sr": 3
+     }
+    },
+    "net": -0.1395,
+    "net_rank": 28,
+    "adjusted": {
+     "off": -0.0602,
+     "def": 0.0171,
+     "net": -0.043,
+     "recent_net": -0.0472,
+     "sr_off": 0.3623,
+     "sr_def": 0.4377
+    },
+    "record": "3-7",
+    "last2_results": [
+     "W",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "L",
+     "L"
+    ],
+    "rest": 4,
+    "qb": {
+     "regular": "J.Milton",
+     "regular_id": "00-0039398",
+     "season_leader": "J.Hurts",
+     "reset": true,
+     "dropbacks": 64,
+     "epa_db": -0.2824,
+     "rank": null
+    },
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [
+     "Dallas Goedert",
+     "DeVonta Smith"
+    ],
+    "key_long_term": [],
+    "interior_ol_out": [],
+    "qb_out": [],
+    "qb_active": true,
+    "qb_reset": "J.Milton, 64 dropbacks this season",
+    "injury_list": [
+     {
+      "name": "DeVonta Smith",
+      "pos": "WR",
+      "status": "Questionable"
+     },
+     {
+      "name": "Dallas Goedert",
+      "pos": "TE",
+      "status": "Questionable"
+     },
+     {
+      "name": "Gabe Hall",
+      "pos": "DT",
+      "status": "Questionable"
+     },
+     {
+      "name": "Marcus Epps",
+      "pos": "S",
+      "status": "Out"
+     },
+     {
+      "name": "Saquon Barkley",
+      "pos": "RB",
+      "status": "Questionable"
+     }
+    ],
+    "power": {
+     "consensus": 28,
+     "fpi": 28,
+     "nfl_com": 24
+    }
+   },
+   "fav": "DAL",
+   "dog": "PHI",
+   "scoring": {
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 24 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 DAL last-3 top 10 in 2 of 4 \u00b7 \u2717 PHI last-3 bottom 10 (23-32) in 2 of 4 \u00b7 \u2717 DAL season outside top 15: Def EPA allowed #32, Def success allowed #29 \u00b7 \u2713 PHI season top 10 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key starter newly out or doubtful for the favorite",
+      "pass": false,
+      "detail": "DAL key starter out: Jake Ferguson, Tyler Booker"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not top 10 in any power ranking",
+      "pass": true,
+      "detail": "PHI: consensus #28, ESPN FPI #28, NFL.com #24"
+     }
+    ],
+    "context": [
+     {
+      "n": 1,
+      "ok": true,
+      "text": "Favorite top 10 (season) in a core metric",
+      "detail": "Off EPA/play, Off success"
+     },
+     {
+      "n": 2,
+      "ok": true,
+      "text": "Also top 10 over its last 3 in that same metric",
+      "detail": "Off EPA/play, Off success"
+     },
+     {
+      "n": 3,
+      "ok": false,
+      "text": "Underdog not top 10 in any metric over its last 3",
+      "detail": "Def success allowed"
+     },
+     {
+      "n": 4,
+      "ok": true,
+      "text": "Underdog not 3-0 in its last 3",
+      "detail": "1-2"
+     }
+    ],
+    "qualifiers": [
+     "off_epa",
+     "off_sr"
+    ],
+    "fails": [
+     "DAL key starter out: Jake Ferguson, Tyler Booker",
+     "Would be on the watch list otherwise (score 24)"
+    ],
+    "failed": [
+     "DAL key starter out: Jake Ferguson, Tyler Booker",
+     "Would be on the watch list otherwise (score 24)"
+    ],
+    "hero": {
+     "score": 24,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 8,
+      "dog_weakness": 12,
+      "health": 2,
+      "home": 1,
+      "rest": 0,
+      "form": 1
+     },
+     "max": 40
+    },
+    "edge": {
+     "gap": 0.156,
+     "required": 0.35,
+     "clears": false,
+     "short_by": 0.194,
+     "adjusted_gap": 0.069,
+     "adjusted_recent_gap": 0.084
+    },
+    "flags": [
+     {
+      "level": "red",
+      "text": "Underdog QB change (J.Milton, 64 dropbacks this season): call capped at Lean"
+     },
+     {
+      "level": "yellow",
+      "text": "Favorite interior OL out: Tyler Booker"
+     },
+     {
+      "level": "yellow",
+      "text": "Line moved +8 toward the favorite (4+): downgrade"
+     },
+     {
+      "level": "yellow",
+      "text": "Line crossed key number 3, 7"
+     },
+     {
+      "level": "yellow",
+      "text": "Favorite questionable: Quinnen Williams"
+     },
+     {
+      "level": "yellow",
+      "text": "Underdog questionable: Dallas Goedert, DeVonta Smith"
+     }
+    ],
+    "under": {
+     "passes": false,
+     "ranks": [
+      3,
+      29
+     ],
+     "total_move": 0.0,
+     "note": ""
+    },
+    "call": "No track",
+    "matchups": [
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "def_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 29,
+      "dog_rank": 3,
+      "in_range": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "def_sr",
+      "dog_metric": "off_sr",
+      "fav_rank": 29,
+      "dog_rank": 32,
+      "in_range": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "off_sr",
+      "dog_metric": "def_sr",
+      "fav_rank": 2,
+      "dog_rank": 3,
+      "in_range": true,
+      "met": false
+     }
+    ]
+   },
+   "fav_defense_top10": false,
+   "votes": {
+    "fav": 6,
+    "dog": 7,
+    "support": 0.462,
+    "sources": [
+     {
+      "site": "CBS Sports (Sullivan)",
+      "url": "https://www.cbssports.com/nfl/news/week-12-expert-picks-best-bets-lions-spoil-bears-thanksgiving/",
+      "fav": 1,
+      "dog": 0
+     },
+     {
+      "site": "CBS Sports (Dajani, Dubin)",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-12-picks-our-experts-face-off-on-bears-at-lions-chiefs-at-bills-and-more/",
+      "fav": 1,
+      "dog": 1
+     },
+     {
+      "site": "Bleacher Report",
+      "url": "https://bleacherreport.com/articles/25537117-bleacher-reports-expert-week-12-2026-nfl-picks",
+      "fav": 3,
+      "dog": 4
+     },
+     {
+      "site": "Covers",
+      "url": "https://www.covers.com/nfl/picks-against-the-spread-week-12-2026",
+      "fav": 0,
+      "dog": 1
+     },
+     {
+      "site": "SI",
+      "url": "https://www.si.com/betting/nfl-week-12-ats-picks-for-every-game-bet-the-vikings-to-cover-against-the-falcons-on-sunday-01m89ee8k9gt",
+      "fav": 1,
+      "dog": 0
+     },
+     {
+      "site": "Yahoo Sports",
+      "url": "https://sports.yahoo.com/nfl/betting/article/week-12-nfl-picks-against-the-spread-predictions-for-every-game-can-the-seahawks-or-anyone-stop-the-49ers-151851041.html",
+      "fav": 0,
+      "dog": 1
+     }
+    ],
+    "notes": "CBS = Sullivan + Dajani/Dubin; Prisco and Breech give scores only (not counted). CBS Dajani Cowboys, Dubin Eagles."
+   },
+   "readout": {
+    "matchup": "PHI @ DAL",
+    "fav": "DAL",
+    "dog": "PHI",
+    "summary": "No track: Dallas key starter out (TE Jake Ferguson, knee/ankle, ruled Out); it would be on the Watch list otherwise (score 25). Analysts back Dallas heavily: 20 of 26 published picks take the Cowboys (-8.5; moneyline -481 to -500, about 83%; ESPN FPI 82.9%), including all three ESPN analysts (30-20, 30-17, 31-20) and CBS (41-27). The case is the offense mismatch: Philadelphia is last in yards (255.6) and 31st in scoring (16.7) with Joe Milton starting while Hurts is on IR, and Prescott has 11 TDs and 1 INT over his last three games. Dallas is without Ferguson, G Tyler Booker, S P.J. Locke and WR Jonathan Mingo; Philadelphia is without CB Jonathan Jones and OLB Arnold Ebiketie, but CB Quinyon Mitchell has no designation. Dissent: Covers and FantasyLife take Eagles +8.5 (pass rush has 11 sacks in two games, Dallas run defense last), and four local columnists pick an outright Eagles upset.",
+    "picks": [
+     {
+      "source": "CBS Sports (Garrett Podell)",
+      "side": "fav",
+      "bet": "DAL 41-27 (score pick)",
+      "note": "Eagles lack weapons for a shootout; Prescott 20-0 at home vs NFC East"
+     },
+     {
+      "source": "ESPN (Pamela Maldonado)",
+      "side": "fav",
+      "bet": "DAL 30-20 (score pick)",
+      "price": "FPI: DAL 82.9%",
+      "note": "Dallas games 21-7 to the over since 2025"
+     },
+     {
+      "source": "ESPN (Eric Moody)",
+      "side": "fav",
+      "bet": "DAL 30-17 (score pick)"
+     },
+     {
+      "source": "ESPN (Seth Walder)",
+      "side": "fav",
+      "bet": "DAL 31-20 (score pick)",
+      "note": "Bold call: Quinnen Williams multiple sacks"
+     },
+     {
+      "source": "ClutchPoints / Yahoo (Garrett Kerman)",
+      "side": "fav",
+      "bet": "DAL -8.5 (-110), Over 47.5",
+      "price": "DAL -481 / PHI +370",
+      "note": "Eagles can't move the ball; Dallas already won by 17"
+     },
+     {
+      "source": "Sportsgambler (Paul Thomas)",
+      "side": "fav",
+      "bet": "DAL -8.5 (-110)",
+      "price": "DAL -500 (BetMGM)",
+      "note": "Best bet; Prescott over 259.5 passing yards as a prop"
+     },
+     {
+      "source": "NBC Sports Philadelphia (Dan Roche)",
+      "side": "fav",
+      "bet": "DAL ML, Over 47.5",
+      "note": "Prescott over, Milton under on passing props"
+     },
+     {
+      "source": "Inside the Iggles",
+      "side": "fav",
+      "bet": "DAL 31-14 (score pick)",
+      "note": "Cowboys win the turnover battle"
+     },
+     {
+      "source": "Dallas Morning News (Tim Cowlishaw)",
+      "side": "fav",
+      "bet": "DAL 26-20 (score pick)",
+      "note": "Expects another five sacks from Dallas' blitzing front"
+     },
+     {
+      "source": "Dallas Morning News (Joseph Hoyt)",
+      "side": "fav",
+      "bet": "DAL 38-24 (score pick)",
+      "note": "Prescott playing fantastic of late"
+     },
+     {
+      "source": "Dallas Morning News (Damon Marx)",
+      "side": "fav",
+      "bet": "DAL 30-27 (score pick)",
+      "note": "Dallas plays well at home vs NFC East"
+     },
+     {
+      "source": "Dallas Morning News (Abraham Nudelstejer)",
+      "side": "fav",
+      "bet": "DAL 31-27 (score pick)"
+     },
+     {
+      "source": "Dallas Morning News (Kevin Sherrington)",
+      "side": "fav",
+      "bet": "DAL 31-27 (score pick)"
+     },
+     {
+      "source": "Dallas Morning News (Calvin Watkins)",
+      "side": "dog",
+      "bet": "PHI 23-20 (score pick)",
+      "note": "Contrarian upset pick"
+     },
+     {
+      "source": "Delaware Online (Martin Frank)",
+      "side": "fav",
+      "bet": "DAL 34-23 (score pick)"
+     },
+     {
+      "source": "Delaware Online (Greg Giesen)",
+      "side": "fav",
+      "bet": "DAL 45-10 (score pick)"
+     },
+     {
+      "source": "Delaware Online (Tom Rimback)",
+      "side": "dog",
+      "bet": "PHI 23-20 (score pick)"
+     },
+     {
+      "source": "Delaware Online (Bert Bainbridge)",
+      "side": "fav",
+      "bet": "DAL 34-24 (score pick)"
+     },
+     {
+      "source": "Delaware Online (Tom Haines)",
+      "side": "fav",
+      "bet": "DAL 31-23 (score pick)"
+     },
+     {
+      "source": "Delaware Online (Tom McGurk)",
+      "side": "fav",
+      "bet": "DAL 34-20 (score pick)"
+     },
+     {
+      "source": "Delaware Online (Tom Moore)",
+      "side": "fav",
+      "bet": "DAL 31-24 (score pick)"
+     },
+     {
+      "source": "Delaware Online (Michelle Ganassi)",
+      "side": "dog",
+      "bet": "PHI 28-21 (score pick)"
+     },
+     {
+      "source": "Delaware Online (Kevin Tresolini)",
+      "side": "fav",
+      "bet": "DAL 30-20 (score pick)"
+     },
+     {
+      "source": "Delaware Online (Bob Jordan)",
+      "side": "dog",
+      "bet": "PHI 13-10 (score pick)"
+     },
+     {
+      "source": "Covers (Jason Logan)",
+      "side": "dog",
+      "bet": "PHI +8.5 (spread pick)",
+      "price": "DAL 79% implied",
+      "note": "Eagles D 8th in EPA allowed since Week 9; pass rush surging"
+     },
+     {
+      "source": "FantasyLife (Justin Carlucci)",
+      "side": "dog",
+      "bet": "PHI +8.5 (-110, FanDuel)",
+      "price": "DAL -500 / PHI +385",
+      "note": "Recency bias after Dallas' 50-point win over Tennessee"
+     }
+    ],
+    "scores": [
+     {
+      "source": "CBS Sports",
+      "fav": 41,
+      "dog": 27
+     },
+     {
+      "source": "ESPN Maldonado",
+      "fav": 30,
+      "dog": 20
+     },
+     {
+      "source": "ESPN Moody",
+      "fav": 30,
+      "dog": 17
+     },
+     {
+      "source": "ESPN Walder",
+      "fav": 31,
+      "dog": 20
+     },
+     {
+      "source": "Sportsgambler",
+      "fav": 34,
+      "dog": 23
+     },
+     {
+      "source": "Inside the Iggles",
+      "fav": 31,
+      "dog": 14
+     },
+     {
+      "source": "DMN Cowlishaw",
+      "fav": 26,
+      "dog": 20
+     },
+     {
+      "source": "DMN Hoyt",
+      "fav": 38,
+      "dog": 24
+     },
+     {
+      "source": "DMN Marx",
+      "fav": 30,
+      "dog": 27
+     },
+     {
+      "source": "DMN Nudelstejer",
+      "fav": 31,
+      "dog": 27
+     },
+     {
+      "source": "DMN Sherrington",
+      "fav": 31,
+      "dog": 27
+     },
+     {
+      "source": "DMN Watkins",
+      "fav": 20,
+      "dog": 23
+     },
+     {
+      "source": "Delaware Online Frank",
+      "fav": 34,
+      "dog": 23
+     },
+     {
+      "source": "Delaware Online Giesen",
+      "fav": 45,
+      "dog": 10
+     },
+     {
+      "source": "Delaware Online Rimback",
+      "fav": 20,
+      "dog": 23
+     },
+     {
+      "source": "Delaware Online Bainbridge",
+      "fav": 34,
+      "dog": 24
+     },
+     {
+      "source": "Delaware Online Haines",
+      "fav": 31,
+      "dog": 23
+     },
+     {
+      "source": "Delaware Online McGurk",
+      "fav": 34,
+      "dog": 20
+     },
+     {
+      "source": "Delaware Online Moore",
+      "fav": 31,
+      "dog": 24
+     },
+     {
+      "source": "Delaware Online Ganassi",
+      "fav": 21,
+      "dog": 28
+     },
+     {
+      "source": "Delaware Online Tresolini",
+      "fav": 30,
+      "dog": 20
+     },
+     {
+      "source": "Delaware Online Jordan",
+      "fav": 10,
+      "dog": 13
+     }
+    ],
+    "injuries": {
+     "fav": [
+      {
+       "player": "Jake Ferguson",
+       "status": "Out",
+       "note": "TE, knee/ankle; ruled out, third straight missed game (Cowboys.com / Dallas Sports Journal, Nov 25)"
+      },
+      {
+       "player": "Tyler Booker",
+       "status": "Out",
+       "note": "G, ankle (SI, Nov 25)"
+      },
+      {
+       "player": "P.J. Locke",
+       "status": "Out",
+       "note": "S, concussion (SI, Nov 25)"
+      },
+      {
+       "player": "Jonathan Mingo",
+       "status": "Out",
+       "note": "WR, ankle (SI, Nov 25)"
+      },
+      {
+       "player": "Devin Moore",
+       "status": "Questionable",
+       "note": "CB, hip; on IR, must be activated to play (Cowboys.com, Nov 25)"
+      },
+      {
+       "player": "Jalen Thompson",
+       "status": "Questionable",
+       "note": "S, hamstring; on IR, must be activated to play (Cowboys.com, Nov 25)"
+      },
+      {
+       "player": "Dak Prescott",
+       "status": "Full participant",
+       "note": "QB, left hand; full all three days, no game designation (Dallas Sports Journal, Nov 25)"
+      }
+     ],
+     "dog": [
+      {
+       "player": "Jalen Hurts",
+       "status": "Injured reserve",
+       "note": "QB, blood clots; on IR since Oct 17, Joe Milton starts (CBS / ClutchPoints, Nov 25)"
+      },
+      {
+       "player": "Arnold Ebiketie",
+       "status": "Out",
+       "note": "OLB, oblique (Eagles.com / SI, Nov 25)"
+      },
+      {
+       "player": "Jonathan Jones",
+       "status": "Out",
+       "note": "CB, ankle (Eagles.com / SI, Nov 25)"
+      },
+      {
+       "player": "Quinyon Mitchell",
+       "status": "No designation",
+       "note": "CB, hamstring; full practice Wednesday, Fangio says he'll be fine (Dallas Sports Journal / ESPN, Nov 25-26)"
+      },
+      {
+       "player": "Smael Mondon",
+       "status": "Limited",
+       "note": "LB, ankle (Wednesday report, Nov 25)"
+      },
+      {
+       "player": "Will Shipley",
+       "status": "Limited",
+       "note": "RB, foot/illness (Wednesday report, Nov 25)"
+      },
+      {
+       "player": "Saquon Barkley",
+       "status": "Full participant",
+       "note": "RB, neck/illness (Wednesday report, Nov 25)"
+      }
+     ],
+     "note": "Final designations from Cowboys.com and Dallas Sports Journal (Nov 25) and the Eagles' Wednesday report. Zack Baun is on injured reserve."
+    },
+    "sources": [
+     {
+      "site": "Sportsgambler",
+      "url": "https://www.sportsgambler.com/betting-tips/nfl/philadelphia-eagles-vs-dallas-cowboys-prediction-odds-2026-11-26/"
+     },
+     {
+      "site": "Yahoo Sports / NBC Sports Philadelphia",
+      "url": "https://sports.yahoo.com/betting/articles/eagles-vs-cowboys-betting-guide-111809896.html"
+     },
+     {
+      "site": "Yahoo Sports / Dallas Morning News",
+      "url": "https://sports.yahoo.com/nfl/articles/expert-predictions-cowboys-eagles-dallas-160000575.html"
+     },
+     {
+      "site": "Yahoo Sports / Delaware Online",
+      "url": "https://sports.yahoo.com/nfl/articles/eagles-outscore-dak-prescott-cowboys-114547258.html"
+     },
+     {
+      "site": "Inside the Iggles",
+      "url": "https://insidetheiggles.com/eagles-vs-cowboys-thanksgiving-day-injury-updates-predictions-storylines-more"
+     },
+     {
+      "site": "Fox Sports",
+      "url": "https://amp.foxsports.com/stories/nfl/2026-nfl-thanksgiving-odds-lines-spreads-what-know-all-4-games"
+     },
+     {
+      "site": "Philadelphia Eagles",
+      "url": "https://www.philadelphiaeagles.com/news/eagles-at-cowboys-injury-report-2026-nfl-week-12-thanksgiving"
+     },
+     {
+      "site": "SI (Cowboys)",
+      "url": "https://www.si.com/nfl/cowboys/onsi/week-12-injury-report-cowboys-down-2-offensive-starters-on-thanksgiving"
+     },
+     {
+      "site": "Yahoo Sports / Athlon",
+      "url": "https://sports.yahoo.com/nfl/articles/cowboys-te-jake-ferguson-misses-212615687.html"
+     },
+     {
+      "site": "CBS Sports",
+      "url": "https://www.cbssports.com/nfl/news/cowboys-vs-eagles-thanksgiving-how-to-watch-odds-preview-prediction/"
+     },
+     {
+      "site": "ESPN",
+      "url": "https://www.espn.com/nfl/story/_/id/50582822/thanksgiving-games-picks-schedule-fantasy-odds-2026"
+     },
+     {
+      "site": "ClutchPoints",
+      "url": "https://clutchpoints.com/betting/eagles-vs-cowboys-prediction-odds-pick-for-week-12-thanksgiving-clash-2026"
+     },
+     {
+      "site": "Covers",
+      "url": "https://www.covers.com/nfl/eagles-vs-cowboys-prediction-picks-nov-26-2026"
+     },
+     {
+      "site": "FantasyLife",
+      "url": "https://www.fantasylife.com/articles/betting/cowboys-vs-eagles-thanksgiving-matchup-picks-odds-predictions"
+     },
+     {
+      "site": "Dallas Sports Journal",
+      "url": "https://dallassportsjournal.com/cowboys-eagles-final-injury-report-winters-barham-thompson/"
+     },
+     {
+      "site": "Dallas Cowboys",
+      "url": "https://www.dallascowboys.com/news/updates-november-2026"
+     }
+    ],
+    "updated": "2026-11-26T05:58-08:00"
+   }
   }
  ],
  "notes": [],
@@ -7810,12 +7975,12 @@
   "season": 2026,
   "week": 12,
   "games": 16,
-  "upcoming": 13,
+  "upcoming": 12,
   "tracked": 0,
   "qualified": 0,
   "watch": 8,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Thu Nov 26, 4:30 PM PT"
+  "built_label": "Thu Nov 26, 7:46 PM PT"
  }
 }

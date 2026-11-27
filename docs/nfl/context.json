@@ -1,45 +1,8 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-26T16:30:51-08:00",
+ "built_at": "2026-11-26T19:46:44-08:00",
  "games": [
-  {
-   "id": "401873080",
-   "nflverse_id": "2026_12_PHI_DAL",
-   "kick_utc": "2026-11-26T21:30:00+00:00",
-   "day_et": "2026-11-26",
-   "home": "DAL",
-   "away": "PHI",
-   "fav": "DAL",
-   "dog": "PHI",
-   "spread": -9.5,
-   "fav_defense_top10": false,
-   "tracked": false,
-   "readout": true,
-   "alerts": false,
-   "tier": "out",
-   "tier_label": "No track",
-   "kalshi_away": "PHI",
-   "kalshi_home": "DAL",
-   "away_abbr": "PHI",
-   "home_abbr": "DAL",
-   "fav_abbr": "DAL",
-   "dog_abbr": "PHI",
-   "qbs": {
-    "PHI": {
-     "regular": "J.Milton",
-     "rank": null
-    },
-    "DAL": {
-     "regular": "D.Prescott",
-     "rank": 7
-    }
-   },
-   "hero": 24,
-   "band": "yellow",
-   "call": "No track",
-   "kick_pt": "Thu 1:30 PM PT"
-  },
   {
    "id": "401873082",
    "nflverse_id": "2026_12_KC_BUF",
@@ -86,7 +49,7 @@
    "away": "DEN",
    "fav": "DEN",
    "dog": "PIT",
-   "spread": -5.5,
+   "spread": -4.5,
    "fav_defense_top10": false,
    "tracked": true,
    "readout": true,
@@ -271,7 +234,7 @@
    "away": "NYJ",
    "fav": "NYJ",
    "dog": "MIA",
-   "spread": -4.5,
+   "spread": -5.5,
    "fav_defense_top10": false,
    "tracked": true,
    "readout": true,
@@ -594,6 +557,43 @@
    "band": "red",
    "call": "No track",
    "kick_pt": "Thu 10:00 AM PT"
+  },
+  {
+   "id": "401873080",
+   "nflverse_id": "2026_12_PHI_DAL",
+   "kick_utc": "2026-11-26T21:30:00+00:00",
+   "day_et": "2026-11-26",
+   "home": "DAL",
+   "away": "PHI",
+   "fav": "DAL",
+   "dog": "PHI",
+   "spread": -9.5,
+   "fav_defense_top10": false,
+   "tracked": false,
+   "readout": true,
+   "alerts": false,
+   "tier": "out",
+   "tier_label": "No track",
+   "kalshi_away": "PHI",
+   "kalshi_home": "DAL",
+   "away_abbr": "PHI",
+   "home_abbr": "DAL",
+   "fav_abbr": "DAL",
+   "dog_abbr": "PHI",
+   "qbs": {
+    "PHI": {
+     "regular": "J.Milton",
+     "rank": null
+    },
+    "DAL": {
+     "regular": "D.Prescott",
+     "rank": 7
+    }
+   },
+   "hero": 24,
+   "band": "yellow",
+   "call": "No track",
+   "kick_pt": "Thu 1:30 PM PT"
   }
  ]
 }
