@@ -3,8 +3,8 @@
  "date_label": "Friday, November 27",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-27T09:00:47-08:00",
- "built_label": "Fri Nov 27, 9:00 AM PT",
+ "built_at": "2026-11-27T09:45:48-08:00",
+ "built_label": "Fri Nov 27, 9:45 AM PT",
  "metrics_through": "2026-11-25",
  "metrics_through_label": "Nov 25",
  "max": 40,
@@ -35,7 +35,7 @@
    "favorite": "away",
    "line": {
     "details": "VGK -218",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": null,
     "ml_away": -218,
     "puck_line": 1.5,
@@ -44,7 +44,7 @@
    },
    "spread": {
     "details": "VGK -218",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": 1.5
    },
    "home": {
@@ -2643,7 +2643,7 @@
    "favorite": "away",
    "line": {
     "details": "DAL -142",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": null,
     "ml_away": -142,
     "puck_line": 1.5,
@@ -2652,7 +2652,7 @@
    },
    "spread": {
     "details": "DAL -142",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": 1.5
    },
    "home": {
@@ -3450,7 +3450,7 @@
    "favorite": "home",
    "line": {
     "details": "PHI -245",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -245,
     "ml_away": null,
     "puck_line": -1.5,
@@ -3459,7 +3459,7 @@
    },
    "spread": {
     "details": "PHI -245",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -4219,9 +4219,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV27VANPHI",
-    "fav_prob": 0.69,
+    "fav_prob": 0.685,
     "bid": 0.68,
-    "ask": 0.7
+    "ask": 0.69
    }
   },
   {
@@ -4236,7 +4236,7 @@
    "favorite": "away",
    "line": {
     "details": "LA -115",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": null,
     "ml_away": -115,
     "puck_line": 1.5,
@@ -4245,7 +4245,7 @@
    },
    "spread": {
     "details": "LA -115",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": 1.5
    },
    "home": {
@@ -4427,9 +4427,9 @@
      {
       "name": "Leo Carlsson",
       "last": "Carlsson",
-      "status": "Day-To-Day",
-      "date": "2026-11-26T14:08Z",
-      "comment": "day-to-day"
+      "status": "Injured Reserve",
+      "date": "2026-11-27T17:05Z",
+      "comment": "ir"
      },
      {
       "name": "Ryan Poehling",
@@ -4448,10 +4448,10 @@
     ],
     "injuries_known": true,
     "key_out": [],
-    "key_questionable": [
+    "key_questionable": [],
+    "key_long_term": [
      "Leo Carlsson"
     ],
-    "key_long_term": [],
     "spread_text": ""
    },
    "away": {
@@ -5015,7 +5015,7 @@
    "favorite": "away",
    "line": {
     "details": "NYR -175",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": null,
     "ml_away": -175,
     "puck_line": 1.5,
@@ -5024,7 +5024,7 @@
    },
    "spread": {
     "details": "NYR -175",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": 1.5
    },
    "home": {
@@ -5845,7 +5845,7 @@
    "favorite": "away",
    "line": {
     "details": "FLA -115",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": null,
     "ml_away": -115,
     "puck_line": 1.5,
@@ -5854,7 +5854,7 @@
    },
    "spread": {
     "details": "FLA -115",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": 1.5
    },
    "home": {
@@ -6195,7 +6195,7 @@
      "name": "Jacob Markstrom",
      "last": "Markstrom",
      "espn_id": "5452",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "regular",
     "regular_goalie_name": "J. Markstrom",
@@ -6270,7 +6270,7 @@
       "rule": "Goalie",
       "name": "FLA's regular goalie starts",
       "pass": true,
-      "detail": "Jacob Markstrom (probable)"
+      "detail": "Jacob Markstrom (confirmed)"
      },
      {
       "rule": "Matchup",
@@ -6583,13 +6583,13 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (FLA #12, WSH #17). Jacob Markstrom in goal for FLA (probable). Biggest edge over the last 5: GSAx/gm (FLA #9, WSH #32). FLA 2-1-0 in its last 3, WSH 1-2-0.",
+   "summary": "Not a top-7 vs bottom-7 matchup (FLA #12, WSH #17). Jacob Markstrom in goal for FLA (confirmed). Biggest edge over the last 5: GSAx/gm (FLA #9, WSH #32). FLA 2-1-0 in its last 3, WSH 1-2-0.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV27FLAWSH",
-    "fav_prob": 0.51,
+    "fav_prob": 0.505,
     "bid": 0.5,
-    "ask": 0.52
+    "ask": 0.51
    }
   },
   {
@@ -6604,7 +6604,7 @@
    "favorite": "home",
    "line": {
     "details": "NYI -125",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -125,
     "ml_away": null,
     "puck_line": -1.5,
@@ -6613,7 +6613,7 @@
    },
    "spread": {
     "details": "NYI -125",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -6961,7 +6961,7 @@
      "name": "Stuart Skinner",
      "last": "Skinner",
      "espn_id": "4268767",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "regular",
     "regular_goalie_name": "S. Skinner",
@@ -7384,6 +7384,819 @@
    }
   },
   {
+   "id": "401892808",
+   "tip_utc": "2026-11-28T01:00:00+00:00",
+   "tip_pt": "5:00 PM PT",
+   "day_et": "2026-11-27",
+   "state": "pre",
+   "detail": "11/27 - 8:00 PM EST",
+   "neutral": false,
+   "venue": "KeyBank Center",
+   "favorite": "home",
+   "line": {
+    "details": "BUF -142",
+    "provider": "DraftKings",
+    "ml_home": -142,
+    "ml_away": null,
+    "puck_line": -1.5,
+    "total": 6.5,
+    "fav_price": 0.5868
+   },
+   "spread": {
+    "details": "BUF -142",
+    "provider": "DraftKings",
+    "puck_line": -1.5
+   },
+   "home": {
+    "id": "2",
+    "abbr": "BUF",
+    "espn_abbr": "BUF",
+    "name": "Buffalo",
+    "display": "Buffalo Sabres",
+    "record": "11-10-4",
+    "l3_record": "2-1-0",
+    "games": 25,
+    "pts_pct": 0.52,
+    "season": {
+     "xgf": 49.66,
+     "xga60": 2.579,
+     "xgf60": 2.545,
+     "cf": 48.84,
+     "gsax": -0.167,
+     "st": 89.8,
+     "pp": 16.7,
+     "pk": 73.2,
+     "ranks": {
+      "xgf": 19,
+      "xga60": 17,
+      "gsax": 20,
+      "st": 28,
+      "xgf60": 15
+     }
+    },
+    "last5": {
+     "xgf": 49.57,
+     "xga60": 2.341,
+     "xgf60": 2.302,
+     "cf": 47.06,
+     "gsax": 0.13,
+     "st": 110.7,
+     "pp": 25.0,
+     "pk": 85.7,
+     "ranks": {
+      "xgf": 18,
+      "xga60": 14,
+      "gsax": 11,
+      "st": 9,
+      "xgf60": 21
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 2026020387,
+      "date": "2026-11-25",
+      "site": "home",
+      "opp": "NYR",
+      "pts": 5,
+      "opp_pts": 1,
+      "extra": false,
+      "opp_power_rank": 13
+     },
+     {
+      "game_id": 2026020374,
+      "date": "2026-11-22",
+      "site": "away",
+      "opp": "TBL",
+      "pts": 6,
+      "opp_pts": 2,
+      "extra": false,
+      "opp_power_rank": 4
+     },
+     {
+      "game_id": 2026020361,
+      "date": "2026-11-21",
+      "site": "away",
+      "opp": "FLA",
+      "pts": 3,
+      "opp_pts": 4,
+      "extra": false,
+      "opp_power_rank": 12
+     }
+    ],
+    "trend_games": [
+     {
+      "date": "2026-11-17",
+      "opp": "PHI",
+      "metrics": {
+       "xgf": 51.92,
+       "xga60": 1.993,
+       "xgf60": 2.152,
+       "gsax": -1.146,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-19",
+      "opp": "WSH",
+      "metrics": {
+       "xgf": 34.04,
+       "xga60": 2.771,
+       "xgf60": 1.43,
+       "gsax": 0.812,
+       "st": 116.7
+      }
+     },
+     {
+      "date": "2026-11-21",
+      "opp": "FLA",
+      "metrics": {
+       "xgf": 56.84,
+       "xga60": 2.182,
+       "xgf60": 2.874,
+       "gsax": -1.432,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-22",
+      "opp": "TBL",
+      "metrics": {
+       "xgf": 48.62,
+       "xga60": 2.957,
+       "xgf60": 2.798,
+       "gsax": 1.31,
+       "st": 125.0
+      }
+     },
+     {
+      "date": "2026-11-25",
+      "opp": "NYR",
+      "metrics": {
+       "xgf": 55.04,
+       "xga60": 1.861,
+       "xgf60": 2.278,
+       "gsax": 1.107,
+       "st": 100.0
+      }
+     }
+    ],
+    "is_fav": true,
+    "b2b": false,
+    "power": {
+     "rank": 20,
+     "own": 19,
+     "avg": 20.5,
+     "espn": 22,
+     "nhl_com": null
+    },
+    "goalie": {
+     "name": "Ukko-Pekka Luukkonen",
+     "last": "Luukkonen",
+     "espn_id": "4233889",
+     "confirmed": false
+    },
+    "goalie_status": "regular",
+    "regular_goalie_name": "U. Luukkonen",
+    "goalies": [
+     {
+      "id": "8480045",
+      "name": "U. Luukkonen",
+      "starts": 14
+     },
+     {
+      "id": "8481551",
+      "name": "C. Ellis",
+      "starts": 7
+     },
+     {
+      "id": "8479312",
+      "name": "A. Lyon",
+      "starts": 4
+     }
+    ],
+    "key_skaters": [
+     "O. Power",
+     "R. Dahlin",
+     "M. Samuelsson",
+     "Z. Benson",
+     "T. Thompson",
+     "J. Quinn"
+    ],
+    "injuries": [
+     {
+      "name": "Noah Ostlund",
+      "last": "Ostlund",
+      "status": "Out",
+      "date": "2026-11-27T16:31Z",
+      "comment": "Ostlund (undisclosed) is expected to miss Friday's game against Pittsburgh, per Rachel Lenzi of The Buffalo News."
+     },
+     {
+      "name": "Zach Benson",
+      "last": "Benson",
+      "status": "Out",
+      "date": "2026-11-27T16:30Z",
+      "comment": "Benson (upper body) will not play in Friday's home clash against the Penguins, per Rachel Lenzi of The Buffalo News."
+     },
+     {
+      "name": "Tyson Kozak",
+      "last": "Kozak",
+      "status": "Day-To-Day",
+      "date": "2026-11-26T14:08Z",
+      "comment": "day-to-day"
+     },
+     {
+      "name": "Konsta Helenius",
+      "last": "Helenius",
+      "status": "Injured Reserve",
+      "date": "2026-11-12T21:00Z",
+      "comment": "ir"
+     },
+     {
+      "name": "Matt Grzelcyk",
+      "last": "Grzelcyk",
+      "status": "Injured Reserve",
+      "date": "2026-10-13T20:51Z",
+      "comment": "Grzelcyk (lower body) suffered a \"flare-up\" and could be out for at least \"a few days,\" head coach Lindy Ruff told Rachel Lenzi of The Buffalo News on Tuesday."
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [
+     "Zach Benson"
+    ],
+    "key_questionable": [],
+    "key_long_term": [],
+    "spread_text": "-142"
+   },
+   "away": {
+    "id": "16",
+    "abbr": "PIT",
+    "espn_abbr": "PIT",
+    "name": "Pittsburgh",
+    "display": "Pittsburgh Penguins",
+    "record": "7-15-2",
+    "l3_record": "0-3-0",
+    "games": 24,
+    "pts_pct": 0.333,
+    "season": {
+     "xgf": 51.37,
+     "xga60": 2.596,
+     "xgf60": 2.742,
+     "cf": 50.5,
+     "gsax": -0.365,
+     "st": 100.2,
+     "pp": 17.9,
+     "pk": 82.3,
+     "ranks": {
+      "xgf": 12,
+      "xga60": 21,
+      "gsax": 26,
+      "st": 18,
+      "xgf60": 7
+     }
+    },
+    "last5": {
+     "xgf": 47.02,
+     "xga60": 2.731,
+     "xgf60": 2.424,
+     "cf": 49.49,
+     "gsax": -0.686,
+     "st": 116.7,
+     "pp": 16.7,
+     "pk": 100.0,
+     "ranks": {
+      "xgf": 25,
+      "xga60": 27,
+      "gsax": 24,
+      "st": 3,
+      "xgf60": 18
+     }
+    },
+    "last3_games": [
+     {
+      "game_id": 2026020391,
+      "date": "2026-11-25",
+      "site": "home",
+      "opp": "CGY",
+      "pts": 3,
+      "opp_pts": 6,
+      "extra": false,
+      "opp_power_rank": 22
+     },
+     {
+      "game_id": 2026020376,
+      "date": "2026-11-22",
+      "site": "away",
+      "opp": "DAL",
+      "pts": 0,
+      "opp_pts": 1,
+      "extra": false,
+      "opp_power_rank": 9
+     },
+     {
+      "game_id": 2026020362,
+      "date": "2026-11-21",
+      "site": "away",
+      "opp": "NSH",
+      "pts": 3,
+      "opp_pts": 4,
+      "extra": false,
+      "opp_power_rank": 16
+     }
+    ],
+    "trend_games": [
+     {
+      "date": "2026-11-14",
+      "opp": "OTT",
+      "metrics": {
+       "xgf": 49.01,
+       "xga60": 2.637,
+       "xgf60": 2.534,
+       "gsax": -0.553,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-19",
+      "opp": "STL",
+      "metrics": {
+       "xgf": 49.67,
+       "xga60": 3.055,
+       "xgf60": 3.014,
+       "gsax": -0.462,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-21",
+      "opp": "NSH",
+      "metrics": {
+       "xgf": 39.89,
+       "xga60": 2.518,
+       "xgf60": 1.671,
+       "gsax": -1.523,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-22",
+      "opp": "DAL",
+      "metrics": {
+       "xgf": 57.0,
+       "xga60": 2.196,
+       "xgf60": 2.911,
+       "gsax": 1.562,
+       "st": 100.0
+      }
+     },
+     {
+      "date": "2026-11-25",
+      "opp": "CGY",
+      "metrics": {
+       "xgf": 38.13,
+       "xga60": 3.249,
+       "xgf60": 2.002,
+       "gsax": -2.452,
+       "st": 140.0
+      }
+     }
+    ],
+    "is_fav": false,
+    "b2b": false,
+    "power": {
+     "rank": 24,
+     "own": 21,
+     "avg": 23.5,
+     "espn": 26,
+     "nhl_com": null
+    },
+    "goalie": {
+     "name": "Sergei Murashov",
+     "last": "Murashov",
+     "espn_id": "5188366",
+     "confirmed": true
+    },
+    "goalie_status": "backup",
+    "regular_goalie_name": "A. Silovs",
+    "goalies": [
+     {
+      "id": "8481668",
+      "name": "A. Silovs",
+      "starts": 15
+     },
+     {
+      "id": "8483703",
+      "name": "S. Murashov",
+      "starts": 9
+     }
+    ],
+    "key_skaters": [
+     "E. Karlsson",
+     "K. Letang",
+     "R. Rakell",
+     "S. Crosby",
+     "S. Girard",
+     "D. Carlile"
+    ],
+    "injuries": [
+     {
+      "name": "Egor Chinakhov",
+      "last": "Chinakhov",
+      "status": "Injured Reserve",
+      "date": "2026-11-26T03:11Z",
+      "comment": "ir"
+     },
+     {
+      "name": "Bryan Rust",
+      "last": "Rust",
+      "status": "Injured Reserve",
+      "date": "2026-11-20T16:56Z",
+      "comment": "Rust (lower body) is skating in a non-contact sweater Friday, Seth Rorabaugh of Tribune-Review Sports reports."
+     },
+     {
+      "name": "Nick Robertson",
+      "last": "Robertson",
+      "status": "Injured Reserve",
+      "date": "2026-11-20T16:08Z",
+      "comment": "ir"
+     },
+     {
+      "name": "Elmer Soderblom",
+      "last": "Soderblom",
+      "status": "Injured Reserve",
+      "date": "2026-11-02T15:52Z",
+      "comment": "Soderblom (upper body) is week-to-week, per Penguins PR on Monday."
+     },
+     {
+      "name": "Ryan Graves",
+      "last": "Graves",
+      "status": "Injured Reserve",
+      "date": "2026-09-27T15:21Z",
+      "comment": "Graves (lower body) is out indefinitely and was placed on injured reserve Sunday."
+     }
+    ],
+    "injuries_known": true,
+    "key_out": [],
+    "key_questionable": [],
+    "key_long_term": [],
+    "spread_text": ""
+   },
+   "scoring": {
+    "scored": true,
+    "fav": "BUF",
+    "dog": "PIT",
+    "in_range": false,
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "qualifiers": [],
+    "would_qualify": false,
+    "rules": [
+     {
+      "rule": "Range",
+      "name": "Top-7 team vs bottom-7 team (consensus power rank)",
+      "pass": false,
+      "detail": "BUF #20 vs PIT #24"
+     },
+     {
+      "rule": "A",
+      "name": "Analysis Score 22+",
+      "pass": false,
+      "detail": "Score 18 of 40"
+     },
+     {
+      "rule": "Goalie",
+      "name": "BUF's regular goalie starts",
+      "pass": true,
+      "detail": "Ukko-Pekka Luukkonen (probable)"
+     },
+     {
+      "rule": "Matchup",
+      "name": "BUF top 7 vs PIT bottom 7 in a matchup (last 5)",
+      "pass": false,
+      "detail": "None: offense vs offense, defense vs defense or defense vs offense (xGF/60, xGA/60): capped at the Watch list"
+     }
+    ],
+    "fails": [
+     "Not a top-7 vs bottom-7 matchup (BUF #20, PIT #24)"
+    ],
+    "warnings": [
+     "Info: PIT starting its backup goalie (Sergei Murashov)",
+     "BUF key skater out: Zach Benson"
+    ],
+    "flags": [],
+    "score": 18,
+    "max": 40,
+    "band": "yellow",
+    "parts": [
+     {
+      "key": "fav_metrics",
+      "label": "Favorite metrics",
+      "points": 1,
+      "max": 16
+     },
+     {
+      "key": "dog_metrics",
+      "label": "Underdog metrics",
+      "points": 11,
+      "max": 16
+     },
+     {
+      "key": "goalies",
+      "label": "Goalies + health",
+      "points": 3,
+      "max": 4
+     },
+     {
+      "key": "home",
+      "label": "Home ice",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "rest",
+      "label": "Rest",
+      "points": 1,
+      "max": 1
+     },
+     {
+      "key": "form",
+      "label": "Last-3 form",
+      "points": 1,
+      "max": 2
+     }
+    ],
+    "grid": [
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xga60",
+      "scored": false,
+      "cells": [
+       {
+        "team": "BUF",
+        "role": "fav",
+        "window": "season",
+        "metric": "xgf60",
+        "rank": 15,
+        "color": "yellow"
+       },
+       {
+        "team": "BUF",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xgf60",
+        "rank": 21,
+        "color": "yellow"
+       },
+       {
+        "team": "PIT",
+        "role": "dog",
+        "window": "season",
+        "metric": "xga60",
+        "rank": 21,
+        "color": "yellow"
+       },
+       {
+        "team": "PIT",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xga60",
+        "rank": 27,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "xga60",
+      "dog_metric": "xgf60",
+      "scored": false,
+      "cells": [
+       {
+        "team": "BUF",
+        "role": "fav",
+        "window": "season",
+        "metric": "xga60",
+        "rank": 17,
+        "color": "yellow"
+       },
+       {
+        "team": "BUF",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xga60",
+        "rank": 14,
+        "color": "yellow"
+       },
+       {
+        "team": "PIT",
+        "role": "dog",
+        "window": "season",
+        "metric": "xgf60",
+        "rank": 7,
+        "color": "red"
+       },
+       {
+        "team": "PIT",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xgf60",
+        "rank": 18,
+        "color": "yellow"
+       }
+      ]
+     },
+     {
+      "key": "share",
+      "label": "Shot share",
+      "fav_metric": "xgf",
+      "dog_metric": "xgf",
+      "scored": true,
+      "cells": [
+       {
+        "team": "BUF",
+        "role": "fav",
+        "window": "season",
+        "metric": "xgf",
+        "rank": 19,
+        "color": "yellow"
+       },
+       {
+        "team": "BUF",
+        "role": "fav",
+        "window": "last5",
+        "metric": "xgf",
+        "rank": 18,
+        "color": "yellow"
+       },
+       {
+        "team": "PIT",
+        "role": "dog",
+        "window": "season",
+        "metric": "xgf",
+        "rank": 12,
+        "color": "yellow"
+       },
+       {
+        "team": "PIT",
+        "role": "dog",
+        "window": "last5",
+        "metric": "xgf",
+        "rank": 25,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "goalie",
+      "label": "Goaltending",
+      "fav_metric": "gsax",
+      "dog_metric": "gsax",
+      "scored": true,
+      "cells": [
+       {
+        "team": "BUF",
+        "role": "fav",
+        "window": "season",
+        "metric": "gsax",
+        "rank": 20,
+        "color": "yellow"
+       },
+       {
+        "team": "BUF",
+        "role": "fav",
+        "window": "last5",
+        "metric": "gsax",
+        "rank": 11,
+        "color": "yellow"
+       },
+       {
+        "team": "PIT",
+        "role": "dog",
+        "window": "season",
+        "metric": "gsax",
+        "rank": 26,
+        "color": "green"
+       },
+       {
+        "team": "PIT",
+        "role": "dog",
+        "window": "last5",
+        "metric": "gsax",
+        "rank": 24,
+        "color": "green"
+       }
+      ]
+     },
+     {
+      "key": "st",
+      "label": "Special teams",
+      "fav_metric": "st",
+      "dog_metric": "st",
+      "scored": true,
+      "cells": [
+       {
+        "team": "BUF",
+        "role": "fav",
+        "window": "season",
+        "metric": "st",
+        "rank": 28,
+        "color": "red"
+       },
+       {
+        "team": "BUF",
+        "role": "fav",
+        "window": "last5",
+        "metric": "st",
+        "rank": 9,
+        "color": "green"
+       },
+       {
+        "team": "PIT",
+        "role": "dog",
+        "window": "season",
+        "metric": "st",
+        "rank": 18,
+        "color": "yellow"
+       },
+       {
+        "team": "PIT",
+        "role": "dog",
+        "window": "last5",
+        "metric": "st",
+        "rank": 3,
+        "color": "deep-red"
+       }
+      ]
+     }
+    ],
+    "matchups": [
+     {
+      "key": "off_off",
+      "label": "Offense vs offense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xgf60",
+      "fav_rank": 21,
+      "dog_rank": 18,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_def",
+      "label": "Defense vs defense",
+      "fav_metric": "xga60",
+      "dog_metric": "xga60",
+      "fav_rank": 14,
+      "dog_rank": 27,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "def_off",
+      "label": "Defense vs offense",
+      "fav_metric": "xga60",
+      "dog_metric": "xgf60",
+      "fav_rank": 14,
+      "dog_rank": 18,
+      "counts": true,
+      "met": false
+     },
+     {
+      "key": "off_def",
+      "label": "Offense vs defense",
+      "fav_metric": "xgf60",
+      "dog_metric": "xga60",
+      "fav_rank": 21,
+      "dog_rank": 27,
+      "counts": false,
+      "met": false
+     }
+    ],
+    "labels": {
+     "xgf60": "xGF/60 5v5",
+     "xgf": "xGF% 5v5",
+     "xga60": "xGA/60 5v5",
+     "gsax": "GSAx/gm",
+     "st": "PP%+PK%",
+     "pts": "Points %"
+    }
+   },
+   "summary": "Not a top-7 vs bottom-7 matchup (BUF #20, PIT #24). Ukko-Pekka Luukkonen in goal for BUF (probable). BUF 2-1-0 in its last 3, PIT 0-3-0.",
+   "lean": "No lean",
+   "kalshi": {
+    "event": "KXNHLGAME-26NOV27PITBUF",
+    "fav_prob": 0.555,
+    "bid": 0.55,
+    "ask": 0.56
+   }
+  },
+  {
    "id": "401892809",
    "tip_utc": "2026-11-28T01:00:00+00:00",
    "tip_pt": "5:00 PM PT",
@@ -7395,7 +8208,7 @@
    "favorite": "home",
    "line": {
     "details": "EDM -218",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -218,
     "ml_away": null,
     "puck_line": -1.5,
@@ -7404,7 +8217,7 @@
    },
    "spread": {
     "details": "EDM -218",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -8191,7 +9004,7 @@
    "favorite": "home",
    "line": {
     "details": "TB -142",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -142,
     "ml_away": null,
     "puck_line": -1.5,
@@ -8200,7 +9013,7 @@
    },
    "spread": {
     "details": "TB -142",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -8586,13 +9399,6 @@
     ],
     "injuries": [
      {
-      "name": "Hayden Hodgson",
-      "last": "Hodgson",
-      "status": "Injured Reserve",
-      "date": "2026-11-24T20:28Z",
-      "comment": "ir"
-     },
-     {
       "name": "Warren Foegele",
       "last": "Foegele",
       "status": "Injured Reserve",
@@ -8964,818 +9770,6 @@
     "fav_prob": 0.565,
     "bid": 0.56,
     "ask": 0.57
-   }
-  },
-  {
-   "id": "401892808",
-   "tip_utc": "2026-11-28T01:00:00+00:00",
-   "tip_pt": "5:00 PM PT",
-   "day_et": "2026-11-27",
-   "state": "pre",
-   "detail": "11/27 - 8:00 PM EST",
-   "neutral": false,
-   "venue": "KeyBank Center",
-   "favorite": "home",
-   "line": {
-    "details": "BUF -142",
-    "provider": "Draft Kings",
-    "ml_home": -142,
-    "ml_away": null,
-    "puck_line": -1.5,
-    "total": 6.5,
-    "fav_price": 0.5868
-   },
-   "spread": {
-    "details": "BUF -142",
-    "provider": "Draft Kings",
-    "puck_line": -1.5
-   },
-   "home": {
-    "id": "2",
-    "abbr": "BUF",
-    "espn_abbr": "BUF",
-    "name": "Buffalo",
-    "display": "Buffalo Sabres",
-    "record": "11-10-4",
-    "l3_record": "2-1-0",
-    "games": 25,
-    "pts_pct": 0.52,
-    "season": {
-     "xgf": 49.66,
-     "xga60": 2.579,
-     "xgf60": 2.545,
-     "cf": 48.84,
-     "gsax": -0.167,
-     "st": 89.8,
-     "pp": 16.7,
-     "pk": 73.2,
-     "ranks": {
-      "xgf": 19,
-      "xga60": 17,
-      "gsax": 20,
-      "st": 28,
-      "xgf60": 15
-     }
-    },
-    "last5": {
-     "xgf": 49.57,
-     "xga60": 2.341,
-     "xgf60": 2.302,
-     "cf": 47.06,
-     "gsax": 0.13,
-     "st": 110.7,
-     "pp": 25.0,
-     "pk": 85.7,
-     "ranks": {
-      "xgf": 18,
-      "xga60": 14,
-      "gsax": 11,
-      "st": 9,
-      "xgf60": 21
-     }
-    },
-    "last3_games": [
-     {
-      "game_id": 2026020387,
-      "date": "2026-11-25",
-      "site": "home",
-      "opp": "NYR",
-      "pts": 5,
-      "opp_pts": 1,
-      "extra": false,
-      "opp_power_rank": 13
-     },
-     {
-      "game_id": 2026020374,
-      "date": "2026-11-22",
-      "site": "away",
-      "opp": "TBL",
-      "pts": 6,
-      "opp_pts": 2,
-      "extra": false,
-      "opp_power_rank": 4
-     },
-     {
-      "game_id": 2026020361,
-      "date": "2026-11-21",
-      "site": "away",
-      "opp": "FLA",
-      "pts": 3,
-      "opp_pts": 4,
-      "extra": false,
-      "opp_power_rank": 12
-     }
-    ],
-    "trend_games": [
-     {
-      "date": "2026-11-17",
-      "opp": "PHI",
-      "metrics": {
-       "xgf": 51.92,
-       "xga60": 1.993,
-       "xgf60": 2.152,
-       "gsax": -1.146,
-       "st": 100.0
-      }
-     },
-     {
-      "date": "2026-11-19",
-      "opp": "WSH",
-      "metrics": {
-       "xgf": 34.04,
-       "xga60": 2.771,
-       "xgf60": 1.43,
-       "gsax": 0.812,
-       "st": 116.7
-      }
-     },
-     {
-      "date": "2026-11-21",
-      "opp": "FLA",
-      "metrics": {
-       "xgf": 56.84,
-       "xga60": 2.182,
-       "xgf60": 2.874,
-       "gsax": -1.432,
-       "st": 100.0
-      }
-     },
-     {
-      "date": "2026-11-22",
-      "opp": "TBL",
-      "metrics": {
-       "xgf": 48.62,
-       "xga60": 2.957,
-       "xgf60": 2.798,
-       "gsax": 1.31,
-       "st": 125.0
-      }
-     },
-     {
-      "date": "2026-11-25",
-      "opp": "NYR",
-      "metrics": {
-       "xgf": 55.04,
-       "xga60": 1.861,
-       "xgf60": 2.278,
-       "gsax": 1.107,
-       "st": 100.0
-      }
-     }
-    ],
-    "is_fav": true,
-    "b2b": false,
-    "power": {
-     "rank": 20,
-     "own": 19,
-     "avg": 20.5,
-     "espn": 22,
-     "nhl_com": null
-    },
-    "goalie": {
-     "name": "Ukko-Pekka Luukkonen",
-     "last": "Luukkonen",
-     "espn_id": "4233889",
-     "confirmed": false
-    },
-    "goalie_status": "regular",
-    "regular_goalie_name": "U. Luukkonen",
-    "goalies": [
-     {
-      "id": "8480045",
-      "name": "U. Luukkonen",
-      "starts": 14
-     },
-     {
-      "id": "8481551",
-      "name": "C. Ellis",
-      "starts": 7
-     },
-     {
-      "id": "8479312",
-      "name": "A. Lyon",
-      "starts": 4
-     }
-    ],
-    "key_skaters": [
-     "O. Power",
-     "R. Dahlin",
-     "M. Samuelsson",
-     "Z. Benson",
-     "T. Thompson",
-     "J. Quinn"
-    ],
-    "injuries": [
-     {
-      "name": "Noah Ostlund",
-      "last": "Ostlund",
-      "status": "Out",
-      "date": "2026-11-27T16:31Z",
-      "comment": "Ostlund (undisclosed) is expected to miss Friday's game against Pittsburgh, per Rachel Lenzi of The Buffalo News."
-     },
-     {
-      "name": "Zach Benson",
-      "last": "Benson",
-      "status": "Out",
-      "date": "2026-11-27T16:30Z",
-      "comment": "Benson (upper body) will not play in Friday's home clash against the Penguins, per Rachel Lenzi of The Buffalo News."
-     },
-     {
-      "name": "Tyson Kozak",
-      "last": "Kozak",
-      "status": "Day-To-Day",
-      "date": "2026-11-26T14:08Z",
-      "comment": "day-to-day"
-     },
-     {
-      "name": "Konsta Helenius",
-      "last": "Helenius",
-      "status": "Injured Reserve",
-      "date": "2026-11-12T21:00Z",
-      "comment": "ir"
-     },
-     {
-      "name": "Matt Grzelcyk",
-      "last": "Grzelcyk",
-      "status": "Injured Reserve",
-      "date": "2026-10-13T20:51Z",
-      "comment": "Grzelcyk (lower body) suffered a \"flare-up\" and could be out for at least \"a few days,\" head coach Lindy Ruff told Rachel Lenzi of The Buffalo News on Tuesday."
-     }
-    ],
-    "injuries_known": true,
-    "key_out": [
-     "Zach Benson"
-    ],
-    "key_questionable": [],
-    "key_long_term": [],
-    "spread_text": "-142"
-   },
-   "away": {
-    "id": "16",
-    "abbr": "PIT",
-    "espn_abbr": "PIT",
-    "name": "Pittsburgh",
-    "display": "Pittsburgh Penguins",
-    "record": "7-15-2",
-    "l3_record": "0-3-0",
-    "games": 24,
-    "pts_pct": 0.333,
-    "season": {
-     "xgf": 51.37,
-     "xga60": 2.596,
-     "xgf60": 2.742,
-     "cf": 50.5,
-     "gsax": -0.365,
-     "st": 100.2,
-     "pp": 17.9,
-     "pk": 82.3,
-     "ranks": {
-      "xgf": 12,
-      "xga60": 21,
-      "gsax": 26,
-      "st": 18,
-      "xgf60": 7
-     }
-    },
-    "last5": {
-     "xgf": 47.02,
-     "xga60": 2.731,
-     "xgf60": 2.424,
-     "cf": 49.49,
-     "gsax": -0.686,
-     "st": 116.7,
-     "pp": 16.7,
-     "pk": 100.0,
-     "ranks": {
-      "xgf": 25,
-      "xga60": 27,
-      "gsax": 24,
-      "st": 3,
-      "xgf60": 18
-     }
-    },
-    "last3_games": [
-     {
-      "game_id": 2026020391,
-      "date": "2026-11-25",
-      "site": "home",
-      "opp": "CGY",
-      "pts": 3,
-      "opp_pts": 6,
-      "extra": false,
-      "opp_power_rank": 22
-     },
-     {
-      "game_id": 2026020376,
-      "date": "2026-11-22",
-      "site": "away",
-      "opp": "DAL",
-      "pts": 0,
-      "opp_pts": 1,
-      "extra": false,
-      "opp_power_rank": 9
-     },
-     {
-      "game_id": 2026020362,
-      "date": "2026-11-21",
-      "site": "away",
-      "opp": "NSH",
-      "pts": 3,
-      "opp_pts": 4,
-      "extra": false,
-      "opp_power_rank": 16
-     }
-    ],
-    "trend_games": [
-     {
-      "date": "2026-11-14",
-      "opp": "OTT",
-      "metrics": {
-       "xgf": 49.01,
-       "xga60": 2.637,
-       "xgf60": 2.534,
-       "gsax": -0.553,
-       "st": 100.0
-      }
-     },
-     {
-      "date": "2026-11-19",
-      "opp": "STL",
-      "metrics": {
-       "xgf": 49.67,
-       "xga60": 3.055,
-       "xgf60": 3.014,
-       "gsax": -0.462,
-       "st": 100.0
-      }
-     },
-     {
-      "date": "2026-11-21",
-      "opp": "NSH",
-      "metrics": {
-       "xgf": 39.89,
-       "xga60": 2.518,
-       "xgf60": 1.671,
-       "gsax": -1.523,
-       "st": 100.0
-      }
-     },
-     {
-      "date": "2026-11-22",
-      "opp": "DAL",
-      "metrics": {
-       "xgf": 57.0,
-       "xga60": 2.196,
-       "xgf60": 2.911,
-       "gsax": 1.562,
-       "st": 100.0
-      }
-     },
-     {
-      "date": "2026-11-25",
-      "opp": "CGY",
-      "metrics": {
-       "xgf": 38.13,
-       "xga60": 3.249,
-       "xgf60": 2.002,
-       "gsax": -2.452,
-       "st": 140.0
-      }
-     }
-    ],
-    "is_fav": false,
-    "b2b": false,
-    "power": {
-     "rank": 24,
-     "own": 21,
-     "avg": 23.5,
-     "espn": 26,
-     "nhl_com": null
-    },
-    "goalie": {
-     "name": "Arturs Silovs",
-     "last": "Silovs",
-     "espn_id": "4576894",
-     "confirmed": false
-    },
-    "goalie_status": "regular",
-    "regular_goalie_name": "A. Silovs",
-    "goalies": [
-     {
-      "id": "8481668",
-      "name": "A. Silovs",
-      "starts": 15
-     },
-     {
-      "id": "8483703",
-      "name": "S. Murashov",
-      "starts": 9
-     }
-    ],
-    "key_skaters": [
-     "E. Karlsson",
-     "K. Letang",
-     "R. Rakell",
-     "S. Crosby",
-     "S. Girard",
-     "D. Carlile"
-    ],
-    "injuries": [
-     {
-      "name": "Egor Chinakhov",
-      "last": "Chinakhov",
-      "status": "Injured Reserve",
-      "date": "2026-11-26T03:11Z",
-      "comment": "ir"
-     },
-     {
-      "name": "Bryan Rust",
-      "last": "Rust",
-      "status": "Injured Reserve",
-      "date": "2026-11-20T16:56Z",
-      "comment": "Rust (lower body) is skating in a non-contact sweater Friday, Seth Rorabaugh of Tribune-Review Sports reports."
-     },
-     {
-      "name": "Nick Robertson",
-      "last": "Robertson",
-      "status": "Injured Reserve",
-      "date": "2026-11-20T16:08Z",
-      "comment": "ir"
-     },
-     {
-      "name": "Elmer Soderblom",
-      "last": "Soderblom",
-      "status": "Injured Reserve",
-      "date": "2026-11-02T15:52Z",
-      "comment": "Soderblom (upper body) is week-to-week, per Penguins PR on Monday."
-     },
-     {
-      "name": "Ryan Graves",
-      "last": "Graves",
-      "status": "Injured Reserve",
-      "date": "2026-09-27T15:21Z",
-      "comment": "Graves (lower body) is out indefinitely and was placed on injured reserve Sunday."
-     }
-    ],
-    "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [],
-    "key_long_term": [],
-    "spread_text": ""
-   },
-   "scoring": {
-    "scored": true,
-    "fav": "BUF",
-    "dog": "PIT",
-    "in_range": false,
-    "qualified": false,
-    "tier": "out",
-    "tier_label": "No track",
-    "tracked": false,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "qualifiers": [],
-    "would_qualify": false,
-    "rules": [
-     {
-      "rule": "Range",
-      "name": "Top-7 team vs bottom-7 team (consensus power rank)",
-      "pass": false,
-      "detail": "BUF #20 vs PIT #24"
-     },
-     {
-      "rule": "A",
-      "name": "Analysis Score 22+",
-      "pass": false,
-      "detail": "Score 17 of 40"
-     },
-     {
-      "rule": "Goalie",
-      "name": "BUF's regular goalie starts",
-      "pass": true,
-      "detail": "Ukko-Pekka Luukkonen (probable)"
-     },
-     {
-      "rule": "Matchup",
-      "name": "BUF top 7 vs PIT bottom 7 in a matchup (last 5)",
-      "pass": false,
-      "detail": "None: offense vs offense, defense vs defense or defense vs offense (xGF/60, xGA/60): capped at the Watch list"
-     }
-    ],
-    "fails": [
-     "Not a top-7 vs bottom-7 matchup (BUF #20, PIT #24)"
-    ],
-    "warnings": [
-     "BUF key skater out: Zach Benson"
-    ],
-    "flags": [],
-    "score": 17,
-    "max": 40,
-    "band": "red",
-    "parts": [
-     {
-      "key": "fav_metrics",
-      "label": "Favorite metrics",
-      "points": 1,
-      "max": 16
-     },
-     {
-      "key": "dog_metrics",
-      "label": "Underdog metrics",
-      "points": 11,
-      "max": 16
-     },
-     {
-      "key": "goalies",
-      "label": "Goalies + health",
-      "points": 2,
-      "max": 4
-     },
-     {
-      "key": "home",
-      "label": "Home ice",
-      "points": 1,
-      "max": 1
-     },
-     {
-      "key": "rest",
-      "label": "Rest",
-      "points": 1,
-      "max": 1
-     },
-     {
-      "key": "form",
-      "label": "Last-3 form",
-      "points": 1,
-      "max": 2
-     }
-    ],
-    "grid": [
-     {
-      "key": "off_def",
-      "label": "Offense vs defense",
-      "fav_metric": "xgf60",
-      "dog_metric": "xga60",
-      "scored": false,
-      "cells": [
-       {
-        "team": "BUF",
-        "role": "fav",
-        "window": "season",
-        "metric": "xgf60",
-        "rank": 15,
-        "color": "yellow"
-       },
-       {
-        "team": "BUF",
-        "role": "fav",
-        "window": "last5",
-        "metric": "xgf60",
-        "rank": 21,
-        "color": "yellow"
-       },
-       {
-        "team": "PIT",
-        "role": "dog",
-        "window": "season",
-        "metric": "xga60",
-        "rank": 21,
-        "color": "yellow"
-       },
-       {
-        "team": "PIT",
-        "role": "dog",
-        "window": "last5",
-        "metric": "xga60",
-        "rank": 27,
-        "color": "green"
-       }
-      ]
-     },
-     {
-      "key": "def_off",
-      "label": "Defense vs offense",
-      "fav_metric": "xga60",
-      "dog_metric": "xgf60",
-      "scored": false,
-      "cells": [
-       {
-        "team": "BUF",
-        "role": "fav",
-        "window": "season",
-        "metric": "xga60",
-        "rank": 17,
-        "color": "yellow"
-       },
-       {
-        "team": "BUF",
-        "role": "fav",
-        "window": "last5",
-        "metric": "xga60",
-        "rank": 14,
-        "color": "yellow"
-       },
-       {
-        "team": "PIT",
-        "role": "dog",
-        "window": "season",
-        "metric": "xgf60",
-        "rank": 7,
-        "color": "red"
-       },
-       {
-        "team": "PIT",
-        "role": "dog",
-        "window": "last5",
-        "metric": "xgf60",
-        "rank": 18,
-        "color": "yellow"
-       }
-      ]
-     },
-     {
-      "key": "share",
-      "label": "Shot share",
-      "fav_metric": "xgf",
-      "dog_metric": "xgf",
-      "scored": true,
-      "cells": [
-       {
-        "team": "BUF",
-        "role": "fav",
-        "window": "season",
-        "metric": "xgf",
-        "rank": 19,
-        "color": "yellow"
-       },
-       {
-        "team": "BUF",
-        "role": "fav",
-        "window": "last5",
-        "metric": "xgf",
-        "rank": 18,
-        "color": "yellow"
-       },
-       {
-        "team": "PIT",
-        "role": "dog",
-        "window": "season",
-        "metric": "xgf",
-        "rank": 12,
-        "color": "yellow"
-       },
-       {
-        "team": "PIT",
-        "role": "dog",
-        "window": "last5",
-        "metric": "xgf",
-        "rank": 25,
-        "color": "green"
-       }
-      ]
-     },
-     {
-      "key": "goalie",
-      "label": "Goaltending",
-      "fav_metric": "gsax",
-      "dog_metric": "gsax",
-      "scored": true,
-      "cells": [
-       {
-        "team": "BUF",
-        "role": "fav",
-        "window": "season",
-        "metric": "gsax",
-        "rank": 20,
-        "color": "yellow"
-       },
-       {
-        "team": "BUF",
-        "role": "fav",
-        "window": "last5",
-        "metric": "gsax",
-        "rank": 11,
-        "color": "yellow"
-       },
-       {
-        "team": "PIT",
-        "role": "dog",
-        "window": "season",
-        "metric": "gsax",
-        "rank": 26,
-        "color": "green"
-       },
-       {
-        "team": "PIT",
-        "role": "dog",
-        "window": "last5",
-        "metric": "gsax",
-        "rank": 24,
-        "color": "green"
-       }
-      ]
-     },
-     {
-      "key": "st",
-      "label": "Special teams",
-      "fav_metric": "st",
-      "dog_metric": "st",
-      "scored": true,
-      "cells": [
-       {
-        "team": "BUF",
-        "role": "fav",
-        "window": "season",
-        "metric": "st",
-        "rank": 28,
-        "color": "red"
-       },
-       {
-        "team": "BUF",
-        "role": "fav",
-        "window": "last5",
-        "metric": "st",
-        "rank": 9,
-        "color": "green"
-       },
-       {
-        "team": "PIT",
-        "role": "dog",
-        "window": "season",
-        "metric": "st",
-        "rank": 18,
-        "color": "yellow"
-       },
-       {
-        "team": "PIT",
-        "role": "dog",
-        "window": "last5",
-        "metric": "st",
-        "rank": 3,
-        "color": "deep-red"
-       }
-      ]
-     }
-    ],
-    "matchups": [
-     {
-      "key": "off_off",
-      "label": "Offense vs offense",
-      "fav_metric": "xgf60",
-      "dog_metric": "xgf60",
-      "fav_rank": 21,
-      "dog_rank": 18,
-      "counts": true,
-      "met": false
-     },
-     {
-      "key": "def_def",
-      "label": "Defense vs defense",
-      "fav_metric": "xga60",
-      "dog_metric": "xga60",
-      "fav_rank": 14,
-      "dog_rank": 27,
-      "counts": true,
-      "met": false
-     },
-     {
-      "key": "def_off",
-      "label": "Defense vs offense",
-      "fav_metric": "xga60",
-      "dog_metric": "xgf60",
-      "fav_rank": 14,
-      "dog_rank": 18,
-      "counts": true,
-      "met": false
-     },
-     {
-      "key": "off_def",
-      "label": "Offense vs defense",
-      "fav_metric": "xgf60",
-      "dog_metric": "xga60",
-      "fav_rank": 21,
-      "dog_rank": 27,
-      "counts": false,
-      "met": false
-     }
-    ],
-    "labels": {
-     "xgf60": "xGF/60 5v5",
-     "xgf": "xGF% 5v5",
-     "xga60": "xGA/60 5v5",
-     "gsax": "GSAx/gm",
-     "st": "PP%+PK%",
-     "pts": "Points %"
-    }
-   },
-   "summary": "Not a top-7 vs bottom-7 matchup (BUF #20, PIT #24). Ukko-Pekka Luukkonen in goal for BUF (probable). BUF 2-1-0 in its last 3, PIT 0-3-0.",
-   "lean": "No lean",
-   "kalshi": {
-    "event": "KXNHLGAME-26NOV27PITBUF",
-    "fav_prob": 0.555,
-    "bid": 0.55,
-    "ask": 0.56
    }
   },
   {
@@ -10601,7 +10595,7 @@
    "favorite": "home",
    "line": {
     "details": "MIN -125",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -125,
     "ml_away": null,
     "puck_line": -1.5,
@@ -10610,7 +10604,7 @@
    },
    "spread": {
     "details": "MIN -125",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -11385,7 +11379,7 @@
    "favorite": "home",
    "line": {
     "details": "CBJ -130",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -130,
     "ml_away": null,
     "puck_line": -1.5,
@@ -11394,7 +11388,7 @@
    },
    "spread": {
     "details": "CBJ -130",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -12156,7 +12150,7 @@
   "in_range": 1,
   "qualified": 0,
   "watch": 1,
-  "built_label": "Fri Nov 27, 9:00 AM PT"
+  "built_label": "Fri Nov 27, 9:45 AM PT"
  },
  "power_table": [
   {
