@@ -1,56 +1,74 @@
 {
   "date": "2026-11-27",
-  "updated": "2026-11-26T19:46-08:00",
+  "updated": "2026-11-27T06:40-08:00",
   "games": {
     "401873083": {
       "matchup": "DEN @ PIT",
       "fav": "DEN",
       "dog": "PIT",
-      "summary": "Analysts lean Denver straight up but split on the spread. The Broncos (8-2, six straight wins, 8-2 ATS) beat the Raiders 38-24 on Sunday, while the Steelers (6-4, 4-0 at home) turn to Mason Rudolph after Aaron Rodgers was benched. Sports Betting Dime backs Denver -4.5, citing its red-zone TD rate (67.7% vs 42.9%), and ATS.io says Denver's pass rush (31 sacks, 4th in blitz rate) will trouble Pittsburgh. The contrarian case comes from SI Betting and CBS Sports: Pittsburgh is far better at home and leads the league in rush EPA against a Denver run defense that ranks 26th; CBS picks the Steelers 23-20. ESPN's matchup predictor also leans Pittsburgh (51.9%) despite a -229 market. Rain and wind are expected, and Steelers pass rushers Herbig and Highsmith carry injury tags.",
+      "summary": "Most analysts back Denver straight up, and the case got stronger overnight. Pittsburgh released Aaron Rodgers on Thursday after his comments about Mike McCarthy, so Mason Rudolph makes his first start of the season after one practice as the starter. The Steelers also ruled out edge Alex Highsmith, though Nick Herbig is cleared and WR Michael Pittman Jr. came off IR. Covers, Sports Betting Dime and numberFire (61%) back the Broncos (8-2, six straight wins), as do ESPN's Moody and Walder, and DraftKings Network takes Denver to lead at halftime and at the end. The dissent comes from SI Betting, CBS (both written before the release) and ESPN's Maldonado (Steelers 20-17), with ESPN FPI giving Pittsburgh 51.3%. The forecast is about 42F with a 65% chance of rain and gusts to 28 mph.",
       "picks": [
         {"source": "Sports Betting Dime", "side": "fav", "bet": "Broncos -4.5 (+100); also Over 37.5, Bo Nix o200.5 pass yds", "price": "DEN -203 (66% no-vig)", "note": "Steelers can't finish drives; red zone TD 67.7% vs 42.9%"},
-        {"source": "SI Betting", "side": "dog", "bet": "Steelers +3 (-115)", "price": "DEN -156", "note": "PIT much better at home; rush EPA 1st vs DEN 26th"},
-        {"source": "CBS Sports", "side": "dog", "bet": "Steelers +3", "note": "Steelers are the more desperate team"},
+        {"source": "Covers", "side": "fav", "bet": "Broncos -4.5 (playable to -5.5); Jonah Coleman anytime TD", "price": "DEN 67% implied", "note": "Six straight wins; Rudolph gets one practice after the Rodgers release"},
+        {"source": "FanDuel Research (numberFire)", "side": "fav", "bet": "Broncos win (model 61%)", "price": "DEN -198", "note": "DEN 8-2 ATS, 3-0 ATS as a 3.5+ favorite"},
+        {"source": "DraftKings Network", "side": "fav", "bet": "Broncos lead at halftime and end of regulation (+100)", "price": "DEN -202", "note": "Rudolph a downgrade amid locker-room turmoil"},
+        {"source": "ESPN (Moody, Walder)", "side": "fav", "bet": "Broncos to win", "note": "two of three ESPN analysts pick Denver"},
         {"source": "ATS.io", "side": "fav", "bet": "Broncos to win", "note": "Denver's pass rush causes problems for Pittsburgh's offense"},
         {"source": "SportsGambler", "side": "fav", "bet": "Over 36.5 (-110)", "price": "DEN -196 (66%)", "note": "Over hit in 8 of Denver's last 10; picks DEN 23-21"},
-        {"source": "Mile High Huddle (SI)", "side": "fav", "bet": "Broncos (10 of 10 staff)", "note": "Steelers QB change to Rudolph; weather game"}
+        {"source": "Mile High Huddle (SI)", "side": "fav", "bet": "Broncos (10 of 10 staff)", "note": "Steelers QB change to Rudolph; weather game"},
+        {"source": "SI Betting", "side": "dog", "bet": "Steelers +3 (-115)", "price": "DEN -156", "note": "PIT better at home; rush EPA 1st vs DEN 26th (before the Rodgers release)"},
+        {"source": "CBS Sports", "side": "dog", "bet": "Steelers +3", "note": "Steelers the more desperate team (before the Rodgers release)"},
+        {"source": "ESPN (Maldonado)", "side": "dog", "bet": "Steelers to win", "note": "ESPN FPI also leans PIT 51.3%"}
       ],
       "scores": [
         {"source": "CBS Sports", "fav": 20, "dog": 23},
+        {"source": "ESPN (Maldonado)", "fav": 17, "dog": 20},
+        {"source": "ESPN (Moody)", "fav": 20, "dog": 16},
+        {"source": "ESPN (Walder)", "fav": 24, "dog": 16},
         {"source": "ATS.io", "fav": 19, "dog": 17},
         {"source": "SportsGambler", "fav": 23, "dog": 21},
         {"source": "Mile High Huddle (Chad Jensen)", "fav": 23, "dog": 16}
       ],
       "injuries": {
         "fav": [
-          {"player": "Sai'vion Jones", "status": "Out", "note": "DE, hamstring (ESPN, Nov 26)"},
-          {"player": "Taylor Rapp", "status": "Out", "note": "S, quadriceps (ESPN, Nov 26)"},
-          {"player": "Brandon Jones", "status": "Questionable", "note": "S (SI Betting, Nov 23)"},
-          {"player": "J.K. Dobbins", "status": "Suspended", "note": "RB, reserve/suspension (ESPN, Nov 26)"},
-          {"player": "Tyler Badie", "status": "IR", "note": "RB, thumb (ESPN, Nov 26)"},
-          {"player": "Caleb Lohner", "status": "IR", "note": "TE, foot (ESPN, Nov 26)"}
+          {"player": "Sai'vion Jones", "status": "Out", "note": "DE, hamstring; moved to IR (final report, Nov 26)"},
+          {"player": "Taylor Rapp", "status": "Out", "note": "S, quadriceps; DNP Thursday (final report, Nov 26)"},
+          {"player": "Caleb Lohner", "status": "Out", "note": "TE, foot (final report, Nov 26)"},
+          {"player": "Tyler Badie", "status": "Questionable", "note": "RB, thumb; elevated to the active roster (final report, Nov 26)"},
+          {"player": "Brandon Jones", "status": "Active", "note": "S, hamstring; full practice all week (final report, Nov 26)"},
+          {"player": "J.K. Dobbins", "status": "Suspended", "note": "RB, reserve/suspension (ESPN, Nov 26)"}
         ],
         "dog": [
-          {"player": "Aaron Rodgers", "status": "Benched", "note": "QB; Mason Rudolph starts (Mile High Huddle, Nov 26)"},
-          {"player": "Nick Herbig", "status": "Questionable", "note": "LB, hip (ESPN, Nov 26)"},
-          {"player": "Alex Highsmith", "status": "Questionable", "note": "LB, ankle (SI Betting, Nov 23)"},
-          {"player": "DeShon Elliott", "status": "Questionable", "note": "S, knee (ESPN, Nov 26)"},
-          {"player": "Cole Holcomb", "status": "Questionable", "note": "LB, heel (ESPN, Nov 26)"},
-          {"player": "Michael Pittman Jr.", "status": "IR", "note": "WR, foot (ESPN, Nov 26)"},
-          {"player": "Gennings Dunker", "status": "IR", "note": "G, knee (ESPN, Nov 26)"}
+          {"player": "Aaron Rodgers", "status": "Released", "note": "QB; released Thursday; Mason Rudolph starts (Bleacher Report, ClutchPoints, NFL.com, Nov 26)"},
+          {"player": "Alex Highsmith", "status": "Out", "note": "OLB, ankle; 5.5 sacks (final report, Nov 26)"},
+          {"player": "Ben Skowronek", "status": "Out", "note": "WR, calf; placed on IR (final report, Nov 26)"},
+          {"player": "Gennings Dunker", "status": "Out", "note": "G, knee; IR (final report, Nov 26)"},
+          {"player": "Cole Holcomb", "status": "Questionable", "note": "ILB, heel; limited Wed-Thu (final report, Nov 26)"},
+          {"player": "Nick Herbig", "status": "Active", "note": "OLB, hip/ribs; full practice Thursday, no designation (final report, Nov 26)"},
+          {"player": "DeShon Elliott", "status": "Active", "note": "S, knee; no designation (final report, Nov 26)"},
+          {"player": "Michael Pittman Jr.", "status": "Active", "note": "WR, foot; activated from IR (Bleacher Report, Nov 26)"}
         ],
-        "note": "Statuses from ESPN's game page (read Nov 26 evening) and SI Betting (Nov 23); sources disagree on some names. Final Friday game-day report not out yet."
+        "note": "Final Thursday (Nov 26) injury reports via Yahoo/Broncos On SI and ClutchPoints. No Denver key starter is Out or Doubtful. Covers still called Highsmith and Herbig iffy, but the final report has Highsmith Out and Herbig with no designation."
       },
       "sources": [
         {"site": "Sports Betting Dime", "url": "https://www.sportsbettingdime.com/news/nfl/broncos-steelers-predictions-expert-picks-black-friday-nov-27/"},
+        {"site": "Covers", "url": "https://www.covers.com/nfl/broncos-vs-steelers-prediction-picks-nov-27-2026"},
+        {"site": "FanDuel Research (numberFire)", "url": "https://www.fanduel.com/research/broncos-vs-steelers-predictions-odds-picks-best-bets-for-nfl-week-12-2026"},
+        {"site": "DraftKings Network", "url": "https://dknetwork.draftkings.com/2026/11/27/denver-broncos-vs-pittsburgh-steelers-prediction-pick-for-nfl-week-12-on-friday-11-27-26/"},
+        {"site": "ESPN (Week 12 picks)", "url": "https://africa.espn.com/nfl/story/_/id/50587851/week-12-picks-predictions-schedule-fantasy-odds-2026"},
         {"site": "SI Betting", "url": "https://www.si.com/betting/broncos-vs-steelers-prediction-odds-spread-injuries-trends-for-nfl-week-12-2026"},
         {"site": "CBS Sports", "url": "https://www.cbssports.com/nfl/news/thanksgiving-games-black-friday-nfl-expert-picks-lions-bears-steelers/"},
         {"site": "Mile High Huddle (SI)", "url": "https://www.si.com/nfl/broncos/onsi/mile-high-roundtable-broncos-at-steelers-predictions-on-black-friday"},
         {"site": "ATS.io", "url": "https://ats.io/nfl/broncos-vs-steelers-prediction-preview-november-27-2026/"},
         {"site": "SportsGambler", "url": "https://www.sportsgambler.com/betting-tips/nfl/denver-broncos-vs-pittsburgh-steelers-prediction-odds-2026-11-27/"},
+        {"site": "Yahoo Sports (injury report)", "url": "https://sports.yahoo.com/nfl/articles/broncos-vs-steelers-injury-report-224500219.html"},
+        {"site": "ClutchPoints (Steelers injury report)", "url": "https://clutchpoints.com/nfl/pittsburgh-steelers/steelers-news-heres-pittsburgh-injury-report-after-releasing-aaron-rodgers"},
+        {"site": "Bleacher Report (Rodgers release)", "url": "https://bleacherreport.com/articles/25537930-steelers-activate-star-wr-after-aaron-rodgers-release-mason-rudolph-named-qb1-vs-broncos"},
+        {"site": "NFL.com (Rudolph to start)", "url": "https://www.nfl.com/news/aaron-rodgers-will-be-inactive-for-steelers-friday-vs-broncos-mason-rudolph-to-start"},
+        {"site": "NFL Weather", "url": "https://www.nflweather.com/games/2026/week-12/broncos-at-steelers"},
         {"site": "ESPN (odds, injuries)", "url": "https://www.espn.com/nfl/odds/_/gameId/401873083"}
       ]
     }
   },
-  "notes": "Night-before pass (evening run Nov 26); the Friday morning run will refresh it. Lines moved: opened DEN -1.5, SI/CBS quote -3, ESPN/DraftKings now -4.5 (ML -229), total 36.5-38.5. SBD gives no predicted final score. One source (rg.org) failed to load. Mile High Huddle had 10 staff scores; only the author's is listed."
+  "notes": "Game-day refresh (Friday morning, Nov 27) of the night-before pass. Biggest change: Pittsburgh released Aaron Rodgers on Thursday (not just benched); Rudolph starts. Final Thursday injury reports added; old IR rows for Badie and Pittman dropped (Badie active/questionable, Pittman activated). New picks: Covers, numberFire, DraftKings Network, three ESPN analysts. SI Betting and CBS picked PIT before the release. Line: Covers (Nov 26) -4.5, but ESPN's Nov 27 picks page and DK Network show DEN -3.5 (ML -202, total 36.5); the ESPN odds page could not be re-read to confirm. Dobbins' suspended status not re-checked. No Action Network or Rotoworld article for this game was found."
 }
