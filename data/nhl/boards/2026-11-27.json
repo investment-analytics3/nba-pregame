@@ -3,8 +3,8 @@
  "date_label": "Friday, November 27",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-27T11:00:56-08:00",
- "built_label": "Fri Nov 27, 11:00 AM PT",
+ "built_at": "2026-11-27T11:24:50-08:00",
+ "built_label": "Fri Nov 27, 11:24 AM PT",
  "metrics_through": "2026-11-25",
  "metrics_through_label": "Nov 25",
  "max": 40,
@@ -35,7 +35,7 @@
    "favorite": "away",
    "line": {
     "details": "VGK -218",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": null,
     "ml_away": -218,
     "puck_line": 1.5,
@@ -44,7 +44,7 @@
    },
    "spread": {
     "details": "VGK -218",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": 1.5
    },
    "home": {
@@ -803,7 +803,7 @@
     "matchup": "VGK @ SJS",
     "fav": "VGK",
     "dog": "SJS",
-    "summary": "Watch list game. The previews line up behind Vegas at about -205 to -212 (FanDuel and DraftKings -205): Bang The Book and the FOX Sports/iHeart computer pick take the Golden Knights moneyline, UltimateCapper takes Vegas -1.5 at +127, and both projected scores are 4-3 Vegas. Vegas is 15-6-5 with five straight road wins (8-2-2 away) but has allowed 3+ goals in each of its last five. San Jose is 11-14-2, 29th in goals against (3.67) and 30th in shots against, and lost 7-0 at Anaheim last time out. The split views are on the margin: FOX takes Sharks +1.5, Bleacher Nation's model leans Under 6.5, and Parlae's projection is a coin flip. Vegas's starter is unclear (Daily Faceoff projects Adin Hill, Parlae Carter Hart); Askarov is expected for San Jose, who are without Trouba, Sherwood and Chernyshov.",
+    "summary": "Watch list game. Analysts and models favor Vegas: the moneyline runs about -204 to -222 (PuckCast's book table, Nov 27 morning), and the models give the Golden Knights 63.8% (PuckCast, VGK grade B), 64.6% (BetMGM) and 67% (Covers). Bang The Book and the FOX Sports/iHeart computer take the Vegas moneyline, UltimateCapper takes Vegas -1.5, and both published final scores are 4-3 Vegas. Vegas is 15-6-5 with five straight road wins; San Jose is 11-14-2, 42.7% in 5v5 expected-goals share (Vegas 53.2%) and lost 7-0 at Anaheim last time out. The split is on the margin and total: Covers' top pick is Under 6.5, BetMGM's model has the Sharks covering +1.5 (57%), FOX takes Sharks +1.5 and Parlae projects a coin flip. Carter Hart is expected for Vegas and Yaroslav Askarov for San Jose (neither confirmed); the Sharks are without Trouba, Sherwood and Chernyshov.",
     "picks": [
      {
       "source": "Bang The Book",
@@ -832,6 +832,27 @@
       "bet": "Under 6.5 (computer projects 6.4 goals)",
       "price": "VGK -205 / SJ +168",
       "note": "Projects Vegas 4-3; picks the total, not a side"
+     },
+     {
+      "source": "PuckCast (model)",
+      "side": "fav",
+      "bet": "Golden Knights (grade B, edge 13.8)",
+      "price": "VGK 63.8% / SJS 36.2%",
+      "note": "5v5 xGF% 53.2 vs 42.7; projected xG 3.5-2.7"
+     },
+     {
+      "source": "Covers",
+      "side": "fav",
+      "bet": "Under 6.5 (top pick)",
+      "price": "VGK 67% win probability",
+      "note": "Sharks 31st in goals per game; Vegas top 10 limiting shots"
+     },
+     {
+      "source": "BetMGM (model)",
+      "side": "fav",
+      "bet": "Model: VGK to win (64.6%); Sharks +1.5 cover (57.0%)",
+      "price": "VGK -1.5 +115 / SJS +1.5 -140",
+      "note": "Picks the winner and the Sharks puck line; no straight bet"
      }
     ],
     "scores": [
@@ -848,8 +869,8 @@
     ],
     "goalies": {
      "fav": {
-      "name": "Adin Hill (Daily Faceoff) or Carter Hart (Parlae)",
-      "status": "Unknown"
+      "name": "Carter Hart",
+      "status": "Expected"
      },
      "dog": {
       "name": "Yaroslav Askarov",
@@ -861,7 +882,7 @@
       {
        "player": "Marc Gatcomb",
        "status": "Day-to-day",
-       "note": "face (Bang The Book, Nov 26)"
+       "note": "face (Bang The Book, Nov 26; not on Parlae's Nov 27 list)"
       }
      ],
      "dog": [
@@ -891,7 +912,7 @@
        "note": "upper body (Bang The Book, Nov 26)"
       }
      ],
-     "note": "Night-before lists; no Vegas injuries in Parlae's notes."
+     "note": "Night-before lists (Nov 26-27); Parlae's Nov 27 update shows no Vegas rotation player with a designation, and no morning source changed the Sharks list."
     },
     "sources": [
      {
@@ -921,9 +942,21 @@
      {
       "site": "Daily Faceoff",
       "url": "https://www.dailyfaceoff.com/starting-goalies/2026-11-27"
+     },
+     {
+      "site": "PuckCast",
+      "url": "https://puckcast.ai/matchup/2026020410"
+     },
+     {
+      "site": "Covers",
+      "url": "https://www.covers.com/nhl/golden-knights-vs-sharks-prediction-picks-nov-27-2026"
+     },
+     {
+      "site": "BetMGM",
+      "url": "https://sports.betmgm.com/en/blog/nhl/golden-knights-sharks-prediction-odds-picks-nov-27-2026-jaa/"
      }
     ],
-    "updated": "2026-11-26T22:40-08:00"
+    "updated": "2026-11-27T11:40-08:00"
    }
   },
   {
@@ -932,7 +965,7 @@
    "tip_pt": "10:00 AM PT",
    "day_et": "2026-11-27",
    "state": "in",
-   "detail": "End of 1st",
+   "detail": "9:10 - 2nd",
    "neutral": false,
    "venue": "TD Garden",
    "favorite": "home",
@@ -1853,7 +1886,7 @@
       "url": "https://www.dailyfaceoff.com/starting-goalies/2026-11-27"
      }
     ],
-    "updated": "2026-11-26T22:40-08:00"
+    "updated": "2026-11-27T11:40-08:00"
    },
    "score": {
     "home": 1,
@@ -1866,7 +1899,7 @@
    "tip_pt": "10:00 AM PT",
    "day_et": "2026-11-27",
    "state": "in",
-   "detail": "End of 1st",
+   "detail": "10:24 - 2nd",
    "neutral": false,
    "venue": "Bridgestone Arena",
    "favorite": "away",
@@ -3445,7 +3478,7 @@
    "favorite": "away",
    "line": {
     "details": "LA -122",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": null,
     "ml_away": -122,
     "puck_line": 1.5,
@@ -3454,7 +3487,7 @@
    },
    "spread": {
     "details": "LA -122",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": 1.5
    },
    "home": {
@@ -4224,7 +4257,7 @@
    "favorite": "away",
    "line": {
     "details": "NYR -180",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": null,
     "ml_away": -180,
     "puck_line": 1.5,
@@ -4233,7 +4266,7 @@
    },
    "spread": {
     "details": "NYR -180",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": 1.5
    },
    "home": {
@@ -4412,6 +4445,13 @@
      "S. Rinzel"
     ],
     "injuries": [
+     {
+      "name": "Patrick Kane",
+      "last": "Kane",
+      "status": "Injured Reserve",
+      "date": "2026-11-27T18:55Z",
+      "comment": "Kane (foot) was placed on injured reserve Friday, per the NHL media site."
+     },
      {
       "name": "Tyler Bertuzzi",
       "last": "Bertuzzi",
@@ -5047,8 +5087,8 @@
    "tip_utc": "2026-11-27T19:00:00+00:00",
    "tip_pt": "11:00 AM PT",
    "day_et": "2026-11-27",
-   "state": "pre",
-   "detail": "11/27 - 2:00 PM EST",
+   "state": "in",
+   "detail": "12:21 - 1st",
    "neutral": false,
    "venue": "Enterprise Center",
    "favorite": "away",
@@ -5849,7 +5889,11 @@
     "bid": 0.54,
     "ask": 0.55
    },
-   "locked_at": "2026-11-27T10:00:47-08:00"
+   "locked_at": "2026-11-27T10:00:47-08:00",
+   "score": {
+    "home": 1,
+    "away": 0
+   }
   },
   {
    "id": "401892801",
@@ -6623,7 +6667,7 @@
    "favorite": "home",
    "line": {
     "details": "NYI -125",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -125,
     "ml_away": null,
     "puck_line": -1.5,
@@ -6632,7 +6676,7 @@
    },
    "spread": {
     "details": "NYI -125",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -7414,7 +7458,7 @@
    "favorite": "home",
    "line": {
     "details": "BUF -130",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -130,
     "ml_away": null,
     "puck_line": -1.5,
@@ -7423,7 +7467,7 @@
    },
    "spread": {
     "details": "BUF -130",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -8210,9 +8254,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV27PITBUF",
-    "fav_prob": 0.535,
-    "bid": 0.53,
-    "ask": 0.54
+    "fav_prob": 0.545,
+    "bid": 0.54,
+    "ask": 0.55
    }
   },
   {
@@ -8227,7 +8271,7 @@
    "favorite": "home",
    "line": {
     "details": "EDM -218",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "ml_home": -218,
     "ml_away": null,
     "puck_line": -1.5,
@@ -8236,7 +8280,7 @@
    },
    "spread": {
     "details": "EDM -218",
-    "provider": "Draft Kings",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -9798,7 +9842,7 @@
    "tip_pt": "10:00 AM PT",
    "day_et": "2026-11-27",
    "state": "in",
-   "detail": "20:00 - 2nd",
+   "detail": "5:36 - 2nd",
    "neutral": false,
    "venue": "Prudential Center",
    "favorite": "home",
@@ -10603,8 +10647,8 @@
    },
    "locked_at": "2026-11-27T09:00:47-08:00",
    "score": {
-    "home": 0,
-    "away": 1
+    "home": 2,
+    "away": 2
    }
   },
   {
@@ -10618,17 +10662,17 @@
    "venue": "Grand Casino Arena",
    "favorite": "home",
    "line": {
-    "details": "MIN -125",
-    "provider": "Draft Kings",
-    "ml_home": -125,
+    "details": "MIN -118",
+    "provider": "DraftKings",
+    "ml_home": -118,
     "ml_away": null,
     "puck_line": -1.5,
     "total": 6.5,
-    "fav_price": 0.5556
+    "fav_price": 0.5413
    },
    "spread": {
-    "details": "MIN -125",
-    "provider": "Draft Kings",
+    "details": "MIN -118",
+    "provider": "DraftKings",
     "puck_line": -1.5
    },
    "home": {
@@ -10828,7 +10872,7 @@
     "key_long_term": [
      "Quinn Hughes"
     ],
-    "spread_text": "-125"
+    "spread_text": "-118"
    },
    "away": {
     "id": "17",
@@ -12175,7 +12219,7 @@
   "in_range": 1,
   "qualified": 0,
   "watch": 1,
-  "built_label": "Fri Nov 27, 11:00 AM PT"
+  "built_label": "Fri Nov 27, 11:24 AM PT"
  },
  "power_table": [
   {
