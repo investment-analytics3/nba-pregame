@@ -4705,7 +4705,7 @@
    "kick_pt": "Fri 9:00 AM PT",
    "day_et": "2026-11-27",
    "state": "in",
-   "detail": "6:47 - 3rd",
+   "detail": "1:13 - 3rd",
    "neutral": false,
    "venue": "Vaught-Hemingway Stadium",
    "favorite": "home",
@@ -4915,8 +4915,398 @@
    },
    "locked_at": "2026-11-27T08:00:46-08:00",
    "score": {
-    "home": 13,
+    "home": 20,
     "away": 10
+   }
+  }
+ },
+ "401862838": {
+  "at": "2026-11-27T11:30:38-08:00",
+  "week": 13,
+  "game": {
+   "id": "401862838",
+   "kick_utc": "2026-11-27T20:30:00+00:00",
+   "kick_pt": "Fri 12:30 PM PT",
+   "day_et": "2026-11-27",
+   "state": "pre",
+   "detail": "11/27 - 3:30 PM EST",
+   "neutral": false,
+   "venue": "Simmons Bank Liberty Stadium",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -19.5,
+   "open_spread": -17.5,
+   "line_source": "DraftKings",
+   "total": 66.5,
+   "fav_ml": -1100.0,
+   "movement": 2.0,
+   "home": {
+    "code": 235,
+    "abbr": "MEM",
+    "name": "Memphis",
+    "display": "Memphis Tigers",
+    "season": {
+     "off_epa": 0.188,
+     "off_sr": 0.4826,
+     "def_epa": 0.0652,
+     "def_sr": 0.411,
+     "games": 11,
+     "ranks": {
+      "off_epa": 16,
+      "off_sr": 25,
+      "def_epa": 91,
+      "def_sr": 45
+     }
+    },
+    "last3": {
+     "off_epa": 0.2605,
+     "off_sr": 0.4931,
+     "def_epa": 0.146,
+     "def_sr": 0.4299,
+     "games": 3,
+     "ranks": {
+      "off_epa": 6,
+      "off_sr": 19,
+      "def_epa": 111,
+      "def_sr": 70
+     }
+    },
+    "net": 0.1228,
+    "net_rank": 31,
+    "record": "8-3",
+    "last2_results": [
+     "W",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "L"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Marcus Stokes",
+     "dropbacks": 342,
+     "epa_db": 0.216,
+     "rank": 30
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 38,
+     "fpi": 55,
+     "own_net": 31
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.906
+   },
+   "away": {
+    "code": 218,
+    "abbr": "TEM",
+    "name": "Temple",
+    "display": "Temple Owls",
+    "season": {
+     "off_epa": 0.0923,
+     "off_sr": 0.4358,
+     "def_epa": 0.1722,
+     "def_sr": 0.496,
+     "games": 11,
+     "ranks": {
+      "off_epa": 50,
+      "off_sr": 82,
+      "def_epa": 131,
+      "def_sr": 134
+     }
+    },
+    "last3": {
+     "off_epa": -0.0607,
+     "off_sr": 0.375,
+     "def_epa": 0.2083,
+     "def_sr": 0.5179,
+     "games": 3,
+     "ranks": {
+      "off_epa": 104,
+      "off_sr": 121,
+      "def_epa": 130,
+      "def_sr": 133
+     }
+    },
+    "net": -0.0798,
+    "net_rank": 112,
+    "record": "2-9",
+    "last2_results": [
+     "L",
+     "L"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "L"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Ajani Sheppard",
+     "dropbacks": 185,
+     "epa_db": 0.024,
+     "rank": 89
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 118,
+     "fpi": 114,
+     "own_net": 112
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.094
+   },
+   "fav": 235,
+   "dog": 218,
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 24 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 MEM last-3 top 25 in 2 of 4 \u00b7 \u2713 TEM last-3 bottom 25 (114+) in 3 of 4 \u00b7 \u2717 MEM season outside 1-69: Def EPA allowed #91 \u00b7 \u2713 TEM season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "TEM: consensus #118, ESPN FPI #114"
+     }
+    ],
+    "fails": [
+     "Watch list: score 24 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 24,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 5,
+      "dog_weakness": 13,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 1
+     },
+     "max": 40
+    },
+    "call": "Watch list",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for MEM yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV27TEMMEM",
+    "fav_prob": 0.895,
+    "bid": 0.89,
+    "ask": 0.9
+   },
+   "locked_at": "2026-11-27T11:30:38-08:00",
+   "readout": {
+    "matchup": "TEM @ MEM",
+    "fav": "MEM",
+    "dog": "TEM",
+    "summary": "Everyone expects Memphis to win; the split is whether it covers 18.5. Memphis (8-3, 5-0 at home) leads the nation in total offense (520.8 yards per game) and is about 91% to win in both ESPN's predictor and the Dimers model. Temple is 2-9 and has lost five straight. Covers, The Rx and Fox's model back Memphis on the spread, while Predictem and Doc's Sports take Temple +17.5 because Memphis allows 209.7 rushing yards a game. Dimers projects 41-22 and, like Covers and Fox, likes the Under. Temple coach K.C. Keeler expects Jaxon Smolik to take most snaps while Ajani Sheppard recovers from an ankle injury. Memphis has allowed 30+ points in four of its last five, so a backdoor cover is the risk.",
+    "picks": [
+     {
+      "source": "Covers",
+      "side": "fav",
+      "bet": "Memphis -17.5; Under 65.5",
+      "price": "MEM 89%",
+      "note": "Memphis more motivated; Temple playing out a 2-9 season"
+     },
+     {
+      "source": "Yahoo Sports (Commercial Appeal)",
+      "side": "fav",
+      "bet": "Memphis to win",
+      "note": "Memphis offense gets back on track; Temple lacks firepower"
+     },
+     {
+      "source": "Yahoo Sports (College Football News)",
+      "side": "fav",
+      "bet": "Memphis (line -17.5)",
+      "note": "Memphis takes this down with ease"
+     },
+     {
+      "source": "Fox Sports The Gambler",
+      "side": "fav",
+      "bet": "Memphis -18.5; Under 66.5",
+      "price": "MEM -1136",
+      "note": "team strength algorithm"
+     },
+     {
+      "source": "Dimers",
+      "side": "fav",
+      "bet": "Under 66.5 (model 55.2%); Memphis wins 91.5%",
+      "price": "MEM 89c (Novig)",
+      "note": "model cover chance at -18.5 only 50.4%"
+     },
+     {
+      "source": "BangTheBook",
+      "side": "fav",
+      "bet": "Memphis moneyline",
+      "price": "MEM -1050",
+      "note": "unbeaten at home; Temple lost five straight, allows 211.8 rush yds"
+     },
+     {
+      "source": "BetMGM",
+      "side": "fav",
+      "bet": "Model: Memphis wins (94.5%), Temple +17 covers (67.4%)",
+      "price": "MEM -900",
+      "note": "game simulations"
+     },
+     {
+      "source": "The Rx",
+      "side": "fav",
+      "bet": "Memphis -17.5 (-112); Over 66",
+      "price": "MEM -875",
+      "note": "Memphis offense and 5-0 home record"
+     },
+     {
+      "source": "Predictem",
+      "side": "fav",
+      "bet": "Temple +17.5 (spread only)",
+      "note": "Memphis allows 209.7 rush yds (131st); Temple runs 185.5"
+     },
+     {
+      "source": "Doc's Sports",
+      "side": "fav",
+      "bet": "Temple +17.5 (spread only)",
+      "note": "Temple's run game vs a soft Memphis run defense"
+     }
+    ],
+    "scores": [
+     {
+      "source": "Yahoo Sports (Commercial Appeal)",
+      "fav": 42,
+      "dog": 17
+     },
+     {
+      "source": "Yahoo Sports (College Football News)",
+      "fav": 44,
+      "dog": 20
+     },
+     {
+      "source": "Fox Sports The Gambler",
+      "fav": 41,
+      "dog": 18
+     },
+     {
+      "source": "Dimers",
+      "fav": 41,
+      "dog": 22
+     },
+     {
+      "source": "Predictem",
+      "fav": 40,
+      "dog": 26
+     }
+    ],
+    "injuries": {
+     "fav": [],
+     "dog": [
+      {
+       "player": "Ajani Sheppard",
+       "status": "Questionable",
+       "note": "QB, ankle; Jaxon Smolik expected to play most snaps, Sheppard possibly in packages (PHL Sports Now, Nov 27; Inquirer, Nov 23)"
+      },
+      {
+       "player": "Sam Brown V",
+       "status": "Out",
+       "note": "RB, out for the season (PHL Sports Now, Nov 27)"
+      }
+     ],
+     "note": "No official availability report; Temple also has injuries in the secondary, at running back and on the offensive line (Inquirer, PHL Sports Now). No source reports any Memphis injuries."
+    },
+    "sources": [
+     {
+      "site": "Yahoo Sports (Commercial Appeal)",
+      "url": "https://sports.yahoo.com/articles/memphis-vs-temple-scouting-report-123950809.html"
+     },
+     {
+      "site": "Yahoo Sports (College Football News)",
+      "url": "https://sports.yahoo.com/college-football/articles/college-football-black-friday-predictions-101902520.html"
+     },
+     {
+      "site": "Covers",
+      "url": "https://www.covers.com/ncaaf/temple-vs-memphis-prediction-picks-nov-27-2026"
+     },
+     {
+      "site": "Fox Sports The Gambler",
+      "url": "https://foxphlgambler.iheart.com/content/2026-11-26-temple-vs-memphis-football-prediction-odds-nov-27/"
+     },
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/cfb/news/temple-vs-memphis-prediction-11-27-2026-ac"
+     },
+     {
+      "site": "BangTheBook",
+      "url": "https://bangthebook.com/temple-owls-vs-memphis-tigers-prediction-2026-11-27/"
+     },
+     {
+      "site": "BetMGM",
+      "url": "https://sports.betmgm.com/en/blog/college-football/temple-memphis-prediction-odds-player-prop-bets-picks-ncaaf-week-13-jaa/"
+     },
+     {
+      "site": "Predictem",
+      "url": "https://www.predictem.com/college-football/temple-vs-memphis-black-friday-pick-odds-and-preview/"
+     },
+     {
+      "site": "The Rx",
+      "url": "https://www.therx.com/college-football/temple-memphis-aac-betting-picks-nov-27-2026/56188/"
+     },
+     {
+      "site": "Doc's Sports",
+      "url": "https://www.docsports.com/free-picks/football/2026/temple-owls-vs-memphis-tigers-prediction-11-27-2026-college-football-picks-best-bets-odds.html"
+     },
+     {
+      "site": "PHL Sports Now (Temple QB)",
+      "url": "https://phlsportsnow.com/temple-football-preview-can-the-owls-play-spoiler-at-memphis/"
+     },
+     {
+      "site": "Philadelphia Inquirer (Temple QB)",
+      "url": "https://www.inquirer.com/college-sports/temple/kc-keeler-lost-season-program-changes-memphis-preview-20261123.html"
+     },
+     {
+      "site": "ESPN (matchup predictor)",
+      "url": "https://www.espn.com/college-football/game/_/gameId/401862838/temple-memphis"
+     }
+    ],
+    "updated": "2026-11-27T06:40-08:00"
    }
   }
  }
