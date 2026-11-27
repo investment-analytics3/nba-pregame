@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-27T08:00:41-08:00",
- "built_label": "Fri Nov 27, 8:00 AM PT",
+ "built_at": "2026-11-27T09:15:32-08:00",
+ "built_label": "Fri Nov 27, 9:15 AM PT",
  "games": [
   {
    "id": "401873083",
@@ -722,7 +722,7 @@
    "open_spread": -6.5,
    "total": 49.5,
    "total_open": 48.5,
-   "fav_ml": -563.0,
+   "fav_ml": -558.0,
    "favorite": "home",
    "spread": -10.0,
    "movement": 3.5,
@@ -1626,7 +1626,7 @@
    "open_spread": 2.5,
    "total": 41.5,
    "total_open": 47.5,
-   "fav_ml": -282.0,
+   "fav_ml": -283.0,
    "favorite": "away",
    "spread": -6.0,
    "movement": 8.5,
@@ -2526,7 +2526,7 @@
    "open_spread": 1.5,
    "total": 39.5,
    "total_open": 41.5,
-   "fav_ml": -246.0,
+   "fav_ml": -249.0,
    "favorite": "away",
    "spread": -5.5,
    "movement": 7.0,
@@ -2721,13 +2721,13 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Harrison Phillips",
-      "pos": "DT",
-      "status": "Questionable"
-     },
-     {
       "name": "Omar Cooper Jr.",
       "pos": "WR",
+      "status": "Out"
+     },
+     {
+      "name": "Harrison Phillips",
+      "pos": "DT",
       "status": "Questionable"
      },
      {
@@ -3619,14 +3619,14 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Romeo Doubs",
-      "pos": "WR",
-      "status": "Injured Reserve"
-     },
-     {
       "name": "A.J. Brown",
       "pos": "WR",
       "status": "Doubtful"
+     },
+     {
+      "name": "Romeo Doubs",
+      "pos": "WR",
+      "status": "Injured Reserve"
      },
      {
       "name": "Walter Rouse",
@@ -3864,7 +3864,7 @@
    "open_spread": -4.5,
    "total": 41.5,
    "total_open": 47.5,
-   "fav_ml": -351.0,
+   "fav_ml": -348.0,
    "favorite": "away",
    "spread": -6.5,
    "movement": 2.0,
@@ -4693,8 +4693,8 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV29SEASF",
-    "fav_prob": 0.585,
-    "bid": 0.58,
+    "fav_prob": 0.58,
+    "bid": 0.57,
     "ask": 0.59
    },
    "votes": {
@@ -4762,7 +4762,7 @@
    "open_spread": -2.5,
    "total": 39.5,
    "total_open": 39.5,
-   "fav_ml": -244.0,
+   "fav_ml": -239.0,
    "favorite": "home",
    "spread": -4.5,
    "movement": 2.0,
@@ -5742,9 +5742,10 @@
      "rank": 12
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Davis Allen"
+    ],
     "key_questionable": [
-     "Davis Allen",
      "Tyler Higbee"
     ],
     "key_long_term": [],
@@ -5753,17 +5754,17 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Davis Allen",
+      "pos": "TE",
+      "status": "Doubtful"
+     },
+     {
       "name": "Bill Murray",
       "pos": "G",
       "status": "Questionable"
      },
      {
       "name": "Tyler Higbee",
-      "pos": "TE",
-      "status": "Questionable"
-     },
-     {
-      "name": "Davis Allen",
       "pos": "TE",
       "status": "Questionable"
      },
@@ -5898,21 +5899,19 @@
    "fav": "LA",
    "dog": "GB",
    "scoring": {
-    "qualified": true,
-    "tier": "qualified",
-    "tier_label": "Qualified",
-    "tracked": true,
-    "alerts": true,
-    "routes": [
-     "Score 28"
-    ],
-    "route": "Score 28",
+    "qualified": false,
+    "tier": "out",
+    "tier_label": "No track",
+    "tracked": false,
+    "alerts": false,
+    "routes": [],
+    "route": "",
     "rules": [
      {
       "rule": "A",
       "name": "Hero score 28+",
-      "pass": true,
-      "detail": "Score 28 of 40"
+      "pass": false,
+      "detail": "Score 27 of 40"
      },
      {
       "rule": "B",
@@ -5923,8 +5922,8 @@
      {
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "Clear"
+      "pass": false,
+      "detail": "LAR key starter out: Davis Allen"
      },
      {
       "rule": "Power",
@@ -5965,15 +5964,21 @@
      "def_epa",
      "def_sr"
     ],
-    "fails": [],
-    "failed": [],
+    "fails": [
+     "LAR key starter out: Davis Allen",
+     "Would be on the watch list otherwise (score 27)"
+    ],
+    "failed": [
+     "LAR key starter out: Davis Allen",
+     "Would be on the watch list otherwise (score 27)"
+    ],
     "hero": {
-     "score": 28,
-     "band": "green",
+     "score": 27,
+     "band": "yellow",
      "parts": {
       "fav_strength": 13,
       "dog_weakness": 8,
-      "health": 4,
+      "health": 3,
       "home": 1,
       "rest": 0,
       "form": 2
@@ -5995,7 +6000,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Davis Allen, Tyler Higbee"
+      "text": "Favorite questionable: Tyler Higbee"
      },
      {
       "level": "yellow",
@@ -6011,7 +6016,7 @@
      "total_move": -6.0,
      "note": ""
     },
-    "call": "Track, edge short",
+    "call": "No track",
     "matchups": [
      {
       "key": "def_def",
@@ -8077,6 +8082,6 @@
   "watch": 7,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Fri Nov 27, 8:00 AM PT"
+  "built_label": "Fri Nov 27, 9:15 AM PT"
  }
 }
