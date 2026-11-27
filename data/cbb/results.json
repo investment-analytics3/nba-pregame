@@ -2,6 +2,874 @@
  "sport": "cbb",
  "games": [
   {
+   "id": "401922264",
+   "period": "2026-11-27",
+   "period_label": "2026-11-27",
+   "date": "2026-11-27",
+   "start_utc": "2026-11-28T01:00:00+00:00",
+   "favorite": "WSU",
+   "opponent": "IDHO",
+   "fav_site": "home",
+   "fav_side": "home",
+   "line": "-11.5",
+   "line_num": 11.5,
+   "tier": "out",
+   "tier_label": "No track",
+   "route": "",
+   "score": 14,
+   "band": "red",
+   "flag": "No",
+   "fav_team": {
+    "record": "3-4",
+    "form": "2-1",
+    "pr": 163,
+    "rest": "No"
+   },
+   "opp_team": {
+    "record": "4-3",
+    "form": "2-1",
+    "pr": 255,
+    "rest": "No"
+   },
+   "fav_metrics": {
+    "season": {
+     "off": {
+      "v": "108.1",
+      "r": 166,
+      "c": "red"
+     },
+     "efg": {
+      "v": "50.0%",
+      "r": 213,
+      "c": "red"
+     },
+     "def": {
+      "v": "110.3",
+      "r": 227,
+      "c": "red"
+     },
+     "opp_efg": {
+      "v": "54.3%",
+      "r": 282,
+      "c": "red"
+     }
+    },
+    "last3": {
+     "off": {
+      "v": "110.3",
+      "r": 147,
+      "c": "yellow"
+     },
+     "efg": {
+      "v": "50.6%",
+      "r": 198,
+      "c": "red"
+     },
+     "def": {
+      "v": "101.3",
+      "r": 88,
+      "c": "yellow"
+     },
+     "opp_efg": {
+      "v": "46.8%",
+      "r": 66,
+      "c": "yellow"
+     }
+    }
+   },
+   "opp_metrics": {
+    "season": {
+     "off": {
+      "v": "105.8",
+      "r": 189,
+      "c": "green"
+     },
+     "efg": {
+      "v": "54.2%",
+      "r": 86,
+      "c": "yellow"
+     },
+     "def": {
+      "v": "117.8",
+      "r": 312,
+      "c": "green"
+     },
+     "opp_efg": {
+      "v": "56.1%",
+      "r": 320,
+      "c": "green"
+     }
+    },
+    "last3": {
+     "off": {
+      "v": "108.6",
+      "r": 163,
+      "c": "green"
+     },
+     "efg": {
+      "v": "56.7%",
+      "r": 64,
+      "c": "yellow"
+     },
+     "def": {
+      "v": "119.4",
+      "r": 319,
+      "c": "green"
+     },
+     "opp_efg": {
+      "v": "56.1%",
+      "r": 298,
+      "c": "green"
+     }
+    }
+   },
+   "live_page": "cbb/game.html?g=401922264"
+  },
+  {
+   "id": "401920737",
+   "period": "2026-11-27",
+   "period_label": "2026-11-27",
+   "date": "2026-11-27",
+   "start_utc": "2026-11-28T01:00:00+00:00",
+   "favorite": "NU",
+   "opponent": "NE",
+   "fav_site": "home",
+   "fav_side": "home",
+   "line": "-12.5",
+   "line_num": 12.5,
+   "tier": "out",
+   "tier_label": "No track",
+   "route": "",
+   "score": 15,
+   "band": "red",
+   "flag": "No",
+   "fav_team": {
+    "record": "4-3",
+    "form": "1-2",
+    "pr": 112,
+    "rest": "No"
+   },
+   "opp_team": {
+    "record": "2-5",
+    "form": "0-3",
+    "pr": 276,
+    "rest": "No"
+   },
+   "fav_metrics": {
+    "season": {
+     "off": {
+      "v": "109.1",
+      "r": 156,
+      "c": "red"
+     },
+     "efg": {
+      "v": "52.1%",
+      "r": 147,
+      "c": "yellow"
+     },
+     "def": {
+      "v": "104.4",
+      "r": 147,
+      "c": "yellow"
+     },
+     "opp_efg": {
+      "v": "48.9%",
+      "r": 115,
+      "c": "yellow"
+     }
+    },
+    "last3": {
+     "off": {
+      "v": "105.8",
+      "r": 202,
+      "c": "red"
+     },
+     "efg": {
+      "v": "52.1%",
+      "r": 151,
+      "c": "red"
+     },
+     "def": {
+      "v": "113.6",
+      "r": 260,
+      "c": "red"
+     },
+     "opp_efg": {
+      "v": "52.4%",
+      "r": 219,
+      "c": "red"
+     }
+    }
+   },
+   "opp_metrics": {
+    "season": {
+     "off": {
+      "v": "105.3",
+      "r": 198,
+      "c": "green"
+     },
+     "efg": {
+      "v": "52.0%",
+      "r": 149,
+      "c": "yellow"
+     },
+     "def": {
+      "v": "120.2",
+      "r": 330,
+      "c": "green"
+     },
+     "opp_efg": {
+      "v": "56.1%",
+      "r": 322,
+      "c": "green"
+     }
+    },
+    "last3": {
+     "off": {
+      "v": "99.4",
+      "r": 272,
+      "c": "green"
+     },
+     "efg": {
+      "v": "47.3%",
+      "r": 265,
+      "c": "green"
+     },
+     "def": {
+      "v": "126.0",
+      "r": 348,
+      "c": "green"
+     },
+     "opp_efg": {
+      "v": "58.1%",
+      "r": 320,
+      "c": "green"
+     }
+    }
+   },
+   "live_page": "cbb/game.html?g=401920737"
+  },
+  {
+   "id": "401926756",
+   "period": "2026-11-27",
+   "period_label": "2026-11-27",
+   "date": "2026-11-27",
+   "start_utc": "2026-11-28T00:00:00+00:00",
+   "favorite": "UCSB",
+   "opponent": "LEH",
+   "fav_site": "neutral",
+   "fav_side": "home",
+   "line": "-14.5",
+   "line_num": 14.5,
+   "tier": "out",
+   "tier_label": "No track",
+   "route": "",
+   "score": 17,
+   "band": "red",
+   "flag": "No",
+   "fav_team": {
+    "record": "6-0",
+    "form": "3-0",
+    "pr": 67,
+    "rest": "No"
+   },
+   "opp_team": {
+    "record": "4-3",
+    "form": "2-1",
+    "pr": 201,
+    "rest": "No"
+   },
+   "fav_metrics": {
+    "season": {
+     "off": {
+      "v": "127.8",
+      "r": 6,
+      "c": "green"
+     },
+     "efg": {
+      "v": "60.8%",
+      "r": 11,
+      "c": "green"
+     },
+     "def": {
+      "v": "103.7",
+      "r": 136,
+      "c": "yellow"
+     },
+     "opp_efg": {
+      "v": "49.8%",
+      "r": 143,
+      "c": "yellow"
+     }
+    },
+    "last3": {
+     "off": {
+      "v": "123.8",
+      "r": 33,
+      "c": "green"
+     },
+     "efg": {
+      "v": "58.4%",
+      "r": 44,
+      "c": "green"
+     },
+     "def": {
+      "v": "103.4",
+      "r": 117,
+      "c": "yellow"
+     },
+     "opp_efg": {
+      "v": "47.4%",
+      "r": 83,
+      "c": "yellow"
+     }
+    }
+   },
+   "opp_metrics": {
+    "season": {
+     "off": {
+      "v": "106.2",
+      "r": 186,
+      "c": "green"
+     },
+     "efg": {
+      "v": "52.8%",
+      "r": 126,
+      "c": "yellow"
+     },
+     "def": {
+      "v": "105.3",
+      "r": 151,
+      "c": "green"
+     },
+     "opp_efg": {
+      "v": "51.5%",
+      "r": 197,
+      "c": "green"
+     }
+    },
+    "last3": {
+     "off": {
+      "v": "121.3",
+      "r": 43,
+      "c": "red"
+     },
+     "efg": {
+      "v": "64.0%",
+      "r": 4,
+      "c": "deep-red"
+     },
+     "def": {
+      "v": "105.6",
+      "r": 144,
+      "c": "yellow"
+     },
+     "opp_efg": {
+      "v": "50.9%",
+      "r": 173,
+      "c": "green"
+     }
+    }
+   },
+   "live_page": "cbb/game.html?g=401926756"
+  },
+  {
+   "id": "401911380",
+   "period": "2026-11-27",
+   "period_label": "2026-11-27",
+   "date": "2026-11-27",
+   "start_utc": "2026-11-28T00:00:00+00:00",
+   "favorite": "ETSU",
+   "opponent": "CHSO",
+   "fav_site": "home",
+   "fav_side": "home",
+   "line": "-11.5",
+   "line_num": 11.5,
+   "tier": "out",
+   "tier_label": "No track",
+   "route": "",
+   "score": 13,
+   "band": "red",
+   "flag": "No",
+   "fav_team": {
+    "record": "3-3",
+    "form": "2-1",
+    "pr": 177,
+    "rest": "No"
+   },
+   "opp_team": {
+    "record": "2-5",
+    "form": "0-3",
+    "pr": 280,
+    "rest": "No"
+   },
+   "fav_metrics": {
+    "season": {
+     "off": {
+      "v": "100.9",
+      "r": 250,
+      "c": "red"
+     },
+     "efg": {
+      "v": "50.2%",
+      "r": 208,
+      "c": "red"
+     },
+     "def": {
+      "v": "105.6",
+      "r": 156,
+      "c": "red"
+     },
+     "opp_efg": {
+      "v": "48.5%",
+      "r": 104,
+      "c": "yellow"
+     }
+    },
+    "last3": {
+     "off": {
+      "v": "99.6",
+      "r": 267,
+      "c": "red"
+     },
+     "efg": {
+      "v": "47.5%",
+      "r": 260,
+      "c": "red"
+     },
+     "def": {
+      "v": "95.1",
+      "r": 36,
+      "c": "green"
+     },
+     "opp_efg": {
+      "v": "45.3%",
+      "r": 41,
+      "c": "green"
+     }
+    }
+   },
+   "opp_metrics": {
+    "season": {
+     "off": {
+      "v": "97.1",
+      "r": 284,
+      "c": "green"
+     },
+     "efg": {
+      "v": "48.3%",
+      "r": 255,
+      "c": "green"
+     },
+     "def": {
+      "v": "108.9",
+      "r": 195,
+      "c": "green"
+     },
+     "opp_efg": {
+      "v": "46.4%",
+      "r": 62,
+      "c": "yellow"
+     }
+    },
+    "last3": {
+     "off": {
+      "v": "95.6",
+      "r": 305,
+      "c": "green"
+     },
+     "efg": {
+      "v": "46.5%",
+      "r": 283,
+      "c": "green"
+     },
+     "def": {
+      "v": "110.5",
+      "r": 211,
+      "c": "green"
+     },
+     "opp_efg": {
+      "v": "43.4%",
+      "r": 24,
+      "c": "red"
+     }
+    }
+   },
+   "live_page": "cbb/game.html?g=401911380"
+  },
+  {
+   "id": "401920382",
+   "period": "2026-11-27",
+   "period_label": "2026-11-27",
+   "date": "2026-11-27",
+   "start_utc": "2026-11-27T22:00:00+00:00",
+   "favorite": "VT",
+   "opponent": "ODU",
+   "fav_site": "home",
+   "fav_side": "home",
+   "line": "-18.5",
+   "line_num": 18.5,
+   "tier": "out",
+   "tier_label": "No track",
+   "route": "",
+   "score": 14,
+   "band": "red",
+   "flag": "No",
+   "fav_team": {
+    "record": "6-1",
+    "form": "2-1",
+    "pr": 55,
+    "rest": "No"
+   },
+   "opp_team": {
+    "record": "6-1",
+    "form": "2-1",
+    "pr": 130,
+    "rest": "No"
+   },
+   "fav_metrics": {
+    "season": {
+     "off": {
+      "v": "123.2",
+      "r": 26,
+      "c": "green"
+     },
+     "efg": {
+      "v": "56.0%",
+      "r": 51,
+      "c": "yellow"
+     },
+     "def": {
+      "v": "103.8",
+      "r": 139,
+      "c": "yellow"
+     },
+     "opp_efg": {
+      "v": "54.4%",
+      "r": 285,
+      "c": "red"
+     }
+    },
+    "last3": {
+     "off": {
+      "v": "122.0",
+      "r": 39,
+      "c": "green"
+     },
+     "efg": {
+      "v": "57.1%",
+      "r": 58,
+      "c": "yellow"
+     },
+     "def": {
+      "v": "118.2",
+      "r": 307,
+      "c": "red"
+     },
+     "opp_efg": {
+      "v": "62.6%",
+      "r": 352,
+      "c": "red"
+     }
+    }
+   },
+   "opp_metrics": {
+    "season": {
+     "off": {
+      "v": "112.6",
+      "r": 114,
+      "c": "yellow"
+     },
+     "efg": {
+      "v": "54.0%",
+      "r": 90,
+      "c": "yellow"
+     },
+     "def": {
+      "v": "101.9",
+      "r": 108,
+      "c": "yellow"
+     },
+     "opp_efg": {
+      "v": "46.7%",
+      "r": 70,
+      "c": "yellow"
+     }
+    },
+    "last3": {
+     "off": {
+      "v": "112.1",
+      "r": 120,
+      "c": "yellow"
+     },
+     "efg": {
+      "v": "50.3%",
+      "r": 201,
+      "c": "green"
+     },
+     "def": {
+      "v": "113.1",
+      "r": 250,
+      "c": "green"
+     },
+     "opp_efg": {
+      "v": "47.9%",
+      "r": 96,
+      "c": "yellow"
+     }
+    }
+   },
+   "live_page": "cbb/game.html?g=401920382"
+  },
+  {
+   "id": "401909789",
+   "period": "2026-11-27",
+   "period_label": "2026-11-27",
+   "date": "2026-11-27",
+   "start_utc": "2026-11-27T22:00:00+00:00",
+   "favorite": "KU",
+   "opponent": "VILL",
+   "fav_site": "home",
+   "fav_side": "home",
+   "line": "-12.5",
+   "line_num": 12.5,
+   "tier": "out",
+   "tier_label": "No track",
+   "route": "",
+   "score": 15,
+   "band": "red",
+   "flag": "No",
+   "fav_team": {
+    "record": "6-1",
+    "form": "2-1",
+    "pr": 18,
+    "rest": "No"
+   },
+   "opp_team": {
+    "record": "5-2",
+    "form": "2-1",
+    "pr": 63,
+    "rest": "No"
+   },
+   "fav_metrics": {
+    "season": {
+     "off": {
+      "v": "120.6",
+      "r": 38,
+      "c": "green"
+     },
+     "efg": {
+      "v": "58.6%",
+      "r": 19,
+      "c": "green"
+     },
+     "def": {
+      "v": "95.4",
+      "r": 49,
+      "c": "green"
+     },
+     "opp_efg": {
+      "v": "44.8%",
+      "r": 31,
+      "c": "green"
+     }
+    },
+    "last3": {
+     "off": {
+      "v": "116.5",
+      "r": 82,
+      "c": "yellow"
+     },
+     "efg": {
+      "v": "52.3%",
+      "r": 148,
+      "c": "yellow"
+     },
+     "def": {
+      "v": "111.0",
+      "r": 220,
+      "c": "red"
+     },
+     "opp_efg": {
+      "v": "50.5%",
+      "r": 156,
+      "c": "red"
+     }
+    }
+   },
+   "opp_metrics": {
+    "season": {
+     "off": {
+      "v": "112.5",
+      "r": 115,
+      "c": "yellow"
+     },
+     "efg": {
+      "v": "52.0%",
+      "r": 151,
+      "c": "green"
+     },
+     "def": {
+      "v": "94.5",
+      "r": 40,
+      "c": "red"
+     },
+     "opp_efg": {
+      "v": "42.6%",
+      "r": 12,
+      "c": "deep-red"
+     }
+    },
+    "last3": {
+     "off": {
+      "v": "101.6",
+      "r": 243,
+      "c": "green"
+     },
+     "efg": {
+      "v": "46.0%",
+      "r": 298,
+      "c": "green"
+     },
+     "def": {
+      "v": "99.6",
+      "r": 72,
+      "c": "yellow"
+     },
+     "opp_efg": {
+      "v": "45.9%",
+      "r": 49,
+      "c": "red"
+     }
+    }
+   },
+   "live_page": "cbb/game.html?g=401909789"
+  },
+  {
+   "id": "401902282",
+   "period": "2026-11-27",
+   "period_label": "2026-11-27",
+   "date": "2026-11-27",
+   "start_utc": "2026-11-27T20:00:00+00:00",
+   "favorite": "BTLR",
+   "opponent": "BELL",
+   "fav_site": "home",
+   "fav_side": "home",
+   "line": "-19.5",
+   "line_num": 19.5,
+   "tier": "out",
+   "tier_label": "No track",
+   "route": "",
+   "score": 11,
+   "band": "red",
+   "flag": "No",
+   "fav_team": {
+    "record": "4-3",
+    "form": "2-1",
+    "pr": 90,
+    "rest": "No"
+   },
+   "opp_team": {
+    "record": "4-5",
+    "form": "3-0",
+    "pr": 271,
+    "rest": "No"
+   },
+   "fav_metrics": {
+    "season": {
+     "off": {
+      "v": "113.9",
+      "r": 98,
+      "c": "yellow"
+     },
+     "efg": {
+      "v": "53.1%",
+      "r": 115,
+      "c": "yellow"
+     },
+     "def": {
+      "v": "100.5",
+      "r": 94,
+      "c": "yellow"
+     },
+     "opp_efg": {
+      "v": "48.3%",
+      "r": 100,
+      "c": "yellow"
+     }
+    },
+    "last3": {
+     "off": {
+      "v": "115.3",
+      "r": 95,
+      "c": "yellow"
+     },
+     "efg": {
+      "v": "53.3%",
+      "r": 123,
+      "c": "yellow"
+     },
+     "def": {
+      "v": "101.3",
+      "r": 87,
+      "c": "yellow"
+     },
+     "opp_efg": {
+      "v": "46.5%",
+      "r": 61,
+      "c": "yellow"
+     }
+    }
+   },
+   "opp_metrics": {
+    "season": {
+     "off": {
+      "v": "104.7",
+      "r": 207,
+      "c": "green"
+     },
+     "efg": {
+      "v": "52.0%",
+      "r": 150,
+      "c": "yellow"
+     },
+     "def": {
+      "v": "118.1",
+      "r": 315,
+      "c": "green"
+     },
+     "opp_efg": {
+      "v": "53.7%",
+      "r": 275,
+      "c": "green"
+     }
+    },
+    "last3": {
+     "off": {
+      "v": "117.1",
+      "r": 71,
+      "c": "yellow"
+     },
+     "efg": {
+      "v": "59.1%",
+      "r": 34,
+      "c": "red"
+     },
+     "def": {
+      "v": "100.6",
+      "r": 83,
+      "c": "yellow"
+     },
+     "opp_efg": {
+      "v": "46.4%",
+      "r": 58,
+      "c": "yellow"
+     }
+    }
+   },
+   "live_page": "cbb/game.html?g=401902282"
+  },
+  {
    "id": "401920531",
    "period": "2026-11-26",
    "period_label": "2026-11-26",
