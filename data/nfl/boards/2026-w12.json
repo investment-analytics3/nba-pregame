@@ -1,8 +1,8 @@
 {
  "season": 2026,
  "week": 12,
- "built_at": "2026-11-27T09:15:32-08:00",
- "built_label": "Fri Nov 27, 9:15 AM PT",
+ "built_at": "2026-11-27T10:15:40-08:00",
+ "built_label": "Fri Nov 27, 10:15 AM PT",
  "games": [
   {
    "id": "401873083",
@@ -24,7 +24,7 @@
    "open_spread": -1.5,
    "total": 37.5,
    "total_open": 41.5,
-   "fav_ml": -237.0,
+   "fav_ml": -250.0,
    "favorite": "away",
    "spread": -4.5,
    "movement": 3.0,
@@ -1167,7 +1167,7 @@
    "open_spread": -1.5,
    "total": 47.5,
    "total_open": 45.5,
-   "fav_ml": -331.0,
+   "fav_ml": -332.0,
    "favorite": "home",
    "spread": -6.5,
    "movement": 5.0,
@@ -1255,13 +1255,13 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Dalton Schultz",
-      "pos": "TE",
+      "name": "Kayshon Boutte",
+      "pos": "WR",
       "status": "Questionable"
      },
      {
-      "name": "Kayshon Boutte",
-      "pos": "WR",
+      "name": "Dalton Schultz",
+      "pos": "TE",
       "status": "Questionable"
      },
      {
@@ -1626,7 +1626,7 @@
    "open_spread": 2.5,
    "total": 41.5,
    "total_open": 47.5,
-   "fav_ml": -283.0,
+   "fav_ml": -282.0,
    "favorite": "away",
    "spread": -6.0,
    "movement": 8.5,
@@ -2073,7 +2073,7 @@
    "open_spread": -5.5,
    "total": 48.5,
    "total_open": 45.5,
-   "fav_ml": -1020.0,
+   "fav_ml": -1000.0,
    "favorite": "home",
    "spread": -14.0,
    "movement": 8.5,
@@ -2261,9 +2261,10 @@
      "rank": 30
     },
     "injuries_known": true,
-    "key_out": [],
+    "key_out": [
+     "Cordale Flott"
+    ],
     "key_questionable": [
-     "Cordale Flott",
      "Dan Moore"
     ],
     "key_long_term": [],
@@ -2272,23 +2273,23 @@
     "qb_active": true,
     "injury_list": [
      {
+      "name": "Cor'Dale Flott",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "name": "Terrell Burgess",
+      "pos": "S",
+      "status": "Out"
+     },
+     {
       "name": "Dorian Mausi",
       "pos": "LB",
       "status": "Questionable"
      },
      {
-      "name": "Cor'Dale Flott",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
       "name": "Dan Moore Jr.",
       "pos": "OT",
-      "status": "Questionable"
-     },
-     {
-      "name": "Terrell Burgess",
-      "pos": "S",
       "status": "Questionable"
      },
      {
@@ -2414,7 +2415,7 @@
      },
      {
       "level": "yellow",
-      "text": "Underdog questionable: Cordale Flott, Dan Moore"
+      "text": "Underdog questionable: Dan Moore"
      }
     ],
     "under": {
@@ -2974,7 +2975,7 @@
    "open_spread": -4.5,
    "total": 41.5,
    "total_open": 43.5,
-   "fav_ml": -311.0,
+   "fav_ml": -321.0,
    "favorite": "home",
    "spread": -7.0,
    "movement": 2.5,
@@ -3174,13 +3175,13 @@
     "qb_active": true,
     "injury_list": [
      {
-      "name": "Kendal Daniels",
-      "pos": "LB",
+      "name": "Jahan Dotson",
+      "pos": "WR",
       "status": "Questionable"
      },
      {
-      "name": "Jahan Dotson",
-      "pos": "WR",
+      "name": "Kendal Daniels",
+      "pos": "LB",
       "status": "Questionable"
      },
      {
@@ -3947,6 +3948,11 @@
     "qb_reset": "J.Johnson, 34 dropbacks this season",
     "injury_list": [
      {
+      "name": "Carson Beck",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
       "name": "Karson Sharar",
       "pos": "LB",
       "status": "Questionable"
@@ -3954,11 +3960,6 @@
      {
       "name": "Hunter Long",
       "pos": "TE",
-      "status": "Questionable"
-     },
-     {
-      "name": "Carson Beck",
-      "pos": "QB",
       "status": "Questionable"
      },
      {
@@ -5147,9 +5148,9 @@
    "fav_defense_top10": false,
    "kalshi": {
     "event": "KXNFLGAME-26NOV29LVCLE",
-    "fav_prob": 0.685,
-    "bid": 0.68,
-    "ask": 0.69
+    "fav_prob": 0.675,
+    "bid": 0.67,
+    "ask": 0.68
    },
    "votes": {
     "fav": 1,
@@ -6494,10 +6495,11 @@
      "rank": 11
     },
     "injuries_known": true,
-    "key_out": [],
-    "key_questionable": [
-     "Caleb Williams",
+    "key_out": [
      "Colston Loveland"
+    ],
+    "key_questionable": [
+     "Caleb Williams"
     ],
     "key_long_term": [],
     "interior_ol_out": [],
@@ -6507,7 +6509,7 @@
      {
       "name": "Colston Loveland",
       "pos": "TE",
-      "status": "Questionable"
+      "status": "Doubtful"
      },
      {
       "name": "Caleb Williams",
@@ -6551,7 +6553,7 @@
       "rule": "A",
       "name": "Hero score 28+",
       "pass": false,
-      "detail": "Score 16 of 40"
+      "detail": "Score 15 of 40"
      },
      {
       "rule": "B",
@@ -6562,8 +6564,8 @@
      {
       "rule": "Injury",
       "name": "No key starter newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "Clear"
+      "pass": false,
+      "detail": "CHI key starter out: Colston Loveland"
      },
      {
       "rule": "Power",
@@ -6603,18 +6605,20 @@
      "def_sr"
     ],
     "fails": [
-     "DET top 10 in power ranking: consensus #5, ESPN FPI #8, NFL.com #5"
+     "DET top 10 in power ranking: consensus #5, ESPN FPI #8, NFL.com #5",
+     "CHI key starter out: Colston Loveland"
     ],
     "failed": [
-     "DET top 10 in power ranking: consensus #5, ESPN FPI #8, NFL.com #5"
+     "DET top 10 in power ranking: consensus #5, ESPN FPI #8, NFL.com #5",
+     "CHI key starter out: Colston Loveland"
     ],
     "hero": {
-     "score": 16,
+     "score": 15,
      "band": "red",
      "parts": {
       "fav_strength": 6,
       "dog_weakness": 4,
-      "health": 4,
+      "health": 3,
       "home": 0,
       "rest": 0,
       "form": 2
@@ -6640,7 +6644,7 @@
      },
      {
       "level": "yellow",
-      "text": "Favorite questionable: Caleb Williams, Colston Loveland"
+      "text": "Favorite questionable: Caleb Williams"
      }
     ],
     "under": {
@@ -8082,6 +8086,6 @@
   "watch": 7,
   "green": 0,
   "edge_clears": 0,
-  "built_label": "Fri Nov 27, 9:15 AM PT"
+  "built_label": "Fri Nov 27, 10:15 AM PT"
  }
 }
