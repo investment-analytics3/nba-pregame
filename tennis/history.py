@@ -23,7 +23,8 @@ class History:
 
     # ---- storage ----------------------------------------------------------------------------
     @classmethod
-    def load(cls, folder: str = DIR) -> "History":
+    def load(cls, folder: str | None = None) -> "History":
+        folder = folder or DIR
         rows = []
         if os.path.isdir(folder):
             for f in sorted(os.listdir(folder)):
@@ -32,7 +33,8 @@ class History:
                         rows += json.load(fh)
         return cls(rows)
 
-    def save(self, today: date, folder: str = DIR):
+    def save(self, today: date, folder: str | None = None):
+        folder = folder or DIR
         os.makedirs(folder, exist_ok=True)
         cut = (today - timedelta(days=C.HISTORY_DAYS)).isoformat()
         by_month = {}

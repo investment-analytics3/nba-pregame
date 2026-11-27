@@ -158,6 +158,29 @@ class Ledger(unittest.TestCase):
         self.assertEqual(st["avg_ml"], -1329)
 
 
+class PageScript(unittest.TestCase):
+    """The board is drawn by an inline script: a syntax error there leaves the page blank (Nov 27)."""
+
+    def test_board_script_parses(self):
+        import re
+        import shutil
+        import subprocess
+        from tennis import pages
+        node = shutil.which("node")
+        if not node:
+            self.skipTest("node not installed")
+        with tempfile.TemporaryDirectory() as tmp, \
+                mock.patch.object(pages, "DOCS", tmp), mock.patch.object(pages, "BOARD", os.path.join(tmp, "index.html")):
+            pages.publish({"matches": []}, [], {"m": elo_m(), "w": {}}, datetime(2026, 11, 27, tzinfo=timezone.utc))
+            with open(os.path.join(tmp, "index.html")) as f:
+                scripts = re.findall(r"<script>(.*?)</script>", f.read(), re.S)
+            js = os.path.join(tmp, "board.js")
+            with open(js, "w") as f:
+                f.write("\n".join(scripts))
+            r = subprocess.run([node, "--check", js], capture_output=True, text=True)
+            self.assertEqual(r.returncode, 0, r.stderr)
+
+
 class Tick(unittest.TestCase):
     """Scan logs ITF favorites in the 3-6 h window, history grades them, pages build."""
 

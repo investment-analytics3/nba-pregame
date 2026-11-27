@@ -192,7 +192,7 @@ function card(r, i){
   const chip = r.section==='watch' ? '<span class="chip" style="color:#2A1C00;background:linear-gradient(180deg,#FADB80,#D9A12A);letter-spacing:.08em;text-transform:uppercase">Watch list</span>'
     : (r.section==='short' ? '<span class="chip" style="color:#fff;background:linear-gradient(180deg,#D44444,#A12222);letter-spacing:.08em;text-transform:uppercase">-2000+</span>' : '');
   const lg = r.status==='logged' ? `<span class="chip" style="color:#C7CEDC;background:#1A2236;border:1px solid #2E3B5C" title="Price logged ${esc(r.logged_label)}">Logged ${ml(r.logged_ml)}${r.late?' · late':''}</span>`
-    : '<span class="chip" style="color:#9AA4BA;background:#121A2C;border:1px solid #26314B" title="The price is logged 5-8 hours (ITF 10-13) before Kalshi's listed time">Not logged yet</span>';
+    : '<span class="chip" style="color:#9AA4BA;background:#121A2C;border:1px solid #26314B" title="The price is logged 5-8 hours (ITF 10-13) before the time Kalshi lists">Not logged yet</span>';
   return `<button type="button" class="card card-in" style="animation-delay:${delay}ms" onclick="location.hash='e-${esc(r.event)}'">
     <div class="row between" style="align-items:flex-start"><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span class="tip">${esc(r.start_pt)}</span>
       <span style="font-size:12px;color:var(--muted)">${esc(r.tour)} · ${esc(tname(r))}${r.round?' · '+esc(r.round):''}${r.surface?' · '+esc(r.surface):''}</span></div>
