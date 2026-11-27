@@ -1,50 +1,8 @@
 {
  "season": 2026,
  "week": 13,
- "built_at": "2026-11-27T11:30:38-08:00",
+ "built_at": "2026-11-27T12:30:37-08:00",
  "games": [
-  {
-   "id": "401856762",
-   "kick_utc": "2026-11-27T17:00:00+00:00",
-   "kick_pt": "Fri 9:00 AM PT",
-   "day_et": "2026-11-27",
-   "away_abbr": "MSST",
-   "home_abbr": "MISS",
-   "fav_abbr": "MISS",
-   "dog_abbr": "MSST",
-   "fav_home": true,
-   "spread": -17.5,
-   "away_names": [
-    "Mississippi State Bulldogs",
-    "Mississippi St"
-   ],
-   "home_names": [
-    "Ole Miss Rebels",
-    "Ole Miss"
-   ],
-   "tier": "out",
-   "tier_label": "No track",
-   "tracked": false,
-   "readout": false,
-   "alerts": false,
-   "call": "No track",
-   "hero": 17,
-   "fav_defense_top10": false,
-   "fav_def_rank_l3": 95,
-   "def_hold": false,
-   "qbs": {
-    "MSST": {
-     "regular": "Kamario Taylor",
-     "rank": 47
-    },
-    "MISS": {
-     "regular": "Trinidad Chambliss",
-     "rank": 39
-    }
-   },
-   "kalshi_event": "KXNCAAFGAME-26NOV27MSSTMISS",
-   "locked": true
-  },
   {
    "id": "401862838",
    "kick_utc": "2026-11-27T20:30:00+00:00",
@@ -85,6 +43,48 @@
     }
    },
    "kalshi_event": "KXNCAAFGAME-26NOV27TEMMEM",
+   "locked": true
+  },
+  {
+   "id": "401864549",
+   "kick_utc": "2026-11-27T20:30:00+00:00",
+   "kick_pt": "Fri 12:30 PM PT",
+   "day_et": "2026-11-27",
+   "away_abbr": "NDSU",
+   "home_abbr": "SJSU",
+   "fav_abbr": "NDSU",
+   "dog_abbr": "SJSU",
+   "fav_home": false,
+   "spread": -10.5,
+   "away_names": [
+    "North Dakota State Bison",
+    "N Dakota St"
+   ],
+   "home_names": [
+    "San Jos\u00e9 State Spartans",
+    "San Jos\u00e9 St"
+   ],
+   "tier": "watch",
+   "tier_label": "Watch list",
+   "tracked": true,
+   "readout": true,
+   "alerts": false,
+   "call": "Watch list",
+   "hero": 23,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 22,
+   "def_hold": false,
+   "qbs": {
+    "NDSU": {
+     "regular": "Nathan Hayes",
+     "rank": 74
+    },
+    "SJSU": {
+     "regular": "Luke Weaver",
+     "rank": 59
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV27NDSUSJSU",
    "locked": true
   },
   {
@@ -673,6 +673,48 @@
     }
    },
    "kalshi_event": "KXNCAAFGAME-26NOV26TCUTTU",
+   "locked": true
+  },
+  {
+   "id": "401856762",
+   "kick_utc": "2026-11-27T17:00:00+00:00",
+   "kick_pt": "Fri 9:00 AM PT",
+   "day_et": "2026-11-27",
+   "away_abbr": "MSST",
+   "home_abbr": "MISS",
+   "fav_abbr": "MISS",
+   "dog_abbr": "MSST",
+   "fav_home": true,
+   "spread": -17.5,
+   "away_names": [
+    "Mississippi State Bulldogs",
+    "Mississippi St"
+   ],
+   "home_names": [
+    "Ole Miss Rebels",
+    "Ole Miss"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "readout": false,
+   "alerts": false,
+   "call": "No track",
+   "hero": 17,
+   "fav_defense_top10": false,
+   "fav_def_rank_l3": 95,
+   "def_hold": false,
+   "qbs": {
+    "MSST": {
+     "regular": "Kamario Taylor",
+     "rank": 47
+    },
+    "MISS": {
+     "regular": "Trinidad Chambliss",
+     "rank": 39
+    }
+   },
+   "kalshi_event": "KXNCAAFGAME-26NOV27MSSTMISS",
    "locked": true
   }
  ]

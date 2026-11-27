@@ -4704,8 +4704,8 @@
    "kick_utc": "2026-11-27T17:00:00+00:00",
    "kick_pt": "Fri 9:00 AM PT",
    "day_et": "2026-11-27",
-   "state": "in",
-   "detail": "1:13 - 3rd",
+   "state": "post",
+   "detail": "Final",
    "neutral": false,
    "venue": "Vaught-Hemingway Stadium",
    "favorite": "home",
@@ -4915,8 +4915,8 @@
    },
    "locked_at": "2026-11-27T08:00:46-08:00",
    "score": {
-    "home": 20,
-    "away": 10
+    "home": 41,
+    "away": 17
    }
   }
  },
@@ -5307,7 +5307,229 @@
      }
     ],
     "updated": "2026-11-27T06:40-08:00"
+   },
+   "score": {
+    "home": 0,
+    "away": 0
    }
+  }
+ },
+ "401864549": {
+  "at": "2026-11-27T12:30:37-08:00",
+  "week": 13,
+  "game": {
+   "id": "401864549",
+   "kick_utc": "2026-11-27T20:30:00+00:00",
+   "kick_pt": "Fri 12:30 PM PT",
+   "day_et": "2026-11-27",
+   "state": "pre",
+   "detail": "11/27 - 3:30 PM EST",
+   "neutral": false,
+   "venue": "CEFCU Stadium",
+   "favorite": "away",
+   "fav_home": false,
+   "spread": -10.5,
+   "open_spread": -11.5,
+   "line_source": "DraftKings",
+   "total": 40.5,
+   "fav_ml": -410.0,
+   "movement": -1.0,
+   "home": {
+    "code": 23,
+    "abbr": "SJSU",
+    "name": "San Jos\u00e9 St",
+    "display": "San Jos\u00e9 State Spartans",
+    "season": {
+     "off_epa": -0.0481,
+     "off_sr": 0.4021,
+     "def_epa": 0.0077,
+     "def_sr": 0.4591,
+     "games": 12,
+     "ranks": {
+      "off_epa": 122,
+      "off_sr": 122,
+      "def_epa": 56,
+      "def_sr": 113
+     }
+    },
+    "last3": {
+     "off_epa": -0.1267,
+     "off_sr": 0.3571,
+     "def_epa": 0.0343,
+     "def_sr": 0.4884,
+     "games": 3,
+     "ranks": {
+      "off_epa": 118,
+      "off_sr": 125,
+      "def_epa": 66,
+      "def_sr": 118
+     }
+    },
+    "net": -0.0558,
+    "net_rank": 100,
+    "record": "5-7",
+    "last2_results": [
+     "L",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "L",
+     "L"
+    ],
+    "rest": 5,
+    "qb": {
+     "regular": "Luke Weaver",
+     "dropbacks": 322,
+     "epa_db": 0.106,
+     "rank": 59
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 110,
+     "fpi": 112,
+     "own_net": 100
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.249
+   },
+   "away": {
+    "code": 2449,
+    "abbr": "NDSU",
+    "name": "N Dakota St",
+    "display": "North Dakota State Bison",
+    "season": {
+     "off_epa": -0.0189,
+     "off_sr": 0.424,
+     "def_epa": -0.1484,
+     "def_sr": 0.3988,
+     "games": 11,
+     "ranks": {
+      "off_epa": 115,
+      "off_sr": 98,
+      "def_epa": 4,
+      "def_sr": 25
+     }
+    },
+    "last3": {
+     "off_epa": 0.0409,
+     "off_sr": 0.4365,
+     "def_epa": -0.1256,
+     "def_sr": 0.4021,
+     "games": 3,
+     "ranks": {
+      "off_epa": 75,
+      "off_sr": 64,
+      "def_epa": 22,
+      "def_sr": 40
+     }
+    },
+    "net": 0.1295,
+    "net_rank": 29,
+    "record": "9-2",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "W"
+    ],
+    "rest": 5,
+    "qb": {
+     "regular": "Nathan Hayes",
+     "dropbacks": 283,
+     "epa_db": 0.052,
+     "rank": 74
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 52,
+     "fpi": 75,
+     "own_net": 29
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.751
+   },
+   "fav": 2449,
+   "dog": 23,
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 23 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 NDSU last-3 top 25 in 1 of 4 \u00b7 \u2713 SJSU last-3 bottom 25 (114+) in 3 of 4 \u00b7 \u2717 NDSU season outside 1-69: Off EPA/play #115, Off success #98 \u00b7 \u2713 SJSU season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "SJSU: consensus #110, ESPN FPI #112"
+     }
+    ],
+    "fails": [
+     "Watch list: score 23 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 23,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 4,
+      "dog_weakness": 13,
+      "health": 4,
+      "home": 0,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "call": "Watch list",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for NDSU yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV27NDSUSJSU",
+    "fav_prob": 0.785,
+    "bid": 0.78,
+    "ask": 0.79
+   },
+   "locked_at": "2026-11-27T12:30:37-08:00"
   }
  }
 }
