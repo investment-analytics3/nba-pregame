@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-27",
+  "updated": "2026-11-26T19:46-08:00",
+  "games": {
+    "401873083": {
+      "matchup": "DEN @ PIT",
+      "fav": "DEN",
+      "dog": "PIT",
+      "summary": "Analysts lean Denver straight up but split on the spread. The Broncos (8-2, six straight wins, 8-2 ATS) beat the Raiders 38-24 on Sunday, while the Steelers (6-4, 4-0 at home) turn to Mason Rudolph after Aaron Rodgers was benched. Sports Betting Dime backs Denver -4.5, citing its red-zone TD rate (67.7% vs 42.9%), and ATS.io says Denver's pass rush (31 sacks, 4th in blitz rate) will trouble Pittsburgh. The contrarian case comes from SI Betting and CBS Sports: Pittsburgh is far better at home and leads the league in rush EPA against a Denver run defense that ranks 26th; CBS picks the Steelers 23-20. ESPN's matchup predictor also leans Pittsburgh (51.9%) despite a -229 market. Rain and wind are expected, and Steelers pass rushers Herbig and Highsmith carry injury tags.",
+      "picks": [
+        {"source": "Sports Betting Dime", "side": "fav", "bet": "Broncos -4.5 (+100); also Over 37.5, Bo Nix o200.5 pass yds", "price": "DEN -203 (66% no-vig)", "note": "Steelers can't finish drives; red zone TD 67.7% vs 42.9%"},
+        {"source": "SI Betting", "side": "dog", "bet": "Steelers +3 (-115)", "price": "DEN -156", "note": "PIT much better at home; rush EPA 1st vs DEN 26th"},
+        {"source": "CBS Sports", "side": "dog", "bet": "Steelers +3", "note": "Steelers are the more desperate team"},
+        {"source": "ATS.io", "side": "fav", "bet": "Broncos to win", "note": "Denver's pass rush causes problems for Pittsburgh's offense"},
+        {"source": "SportsGambler", "side": "fav", "bet": "Over 36.5 (-110)", "price": "DEN -196 (66%)", "note": "Over hit in 8 of Denver's last 10; picks DEN 23-21"},
+        {"source": "Mile High Huddle (SI)", "side": "fav", "bet": "Broncos (10 of 10 staff)", "note": "Steelers QB change to Rudolph; weather game"}
+      ],
+      "scores": [
+        {"source": "CBS Sports", "fav": 20, "dog": 23},
+        {"source": "ATS.io", "fav": 19, "dog": 17},
+        {"source": "SportsGambler", "fav": 23, "dog": 21},
+        {"source": "Mile High Huddle (Chad Jensen)", "fav": 23, "dog": 16}
+      ],
+      "injuries": {
+        "fav": [
+          {"player": "Sai'vion Jones", "status": "Out", "note": "DE, hamstring (ESPN, Nov 26)"},
+          {"player": "Taylor Rapp", "status": "Out", "note": "S, quadriceps (ESPN, Nov 26)"},
+          {"player": "Brandon Jones", "status": "Questionable", "note": "S (SI Betting, Nov 23)"},
+          {"player": "J.K. Dobbins", "status": "Suspended", "note": "RB, reserve/suspension (ESPN, Nov 26)"},
+          {"player": "Tyler Badie", "status": "IR", "note": "RB, thumb (ESPN, Nov 26)"},
+          {"player": "Caleb Lohner", "status": "IR", "note": "TE, foot (ESPN, Nov 26)"}
+        ],
+        "dog": [
+          {"player": "Aaron Rodgers", "status": "Benched", "note": "QB; Mason Rudolph starts (Mile High Huddle, Nov 26)"},
+          {"player": "Nick Herbig", "status": "Questionable", "note": "LB, hip (ESPN, Nov 26)"},
+          {"player": "Alex Highsmith", "status": "Questionable", "note": "LB, ankle (SI Betting, Nov 23)"},
+          {"player": "DeShon Elliott", "status": "Questionable", "note": "S, knee (ESPN, Nov 26)"},
+          {"player": "Cole Holcomb", "status": "Questionable", "note": "LB, heel (ESPN, Nov 26)"},
+          {"player": "Michael Pittman Jr.", "status": "IR", "note": "WR, foot (ESPN, Nov 26)"},
+          {"player": "Gennings Dunker", "status": "IR", "note": "G, knee (ESPN, Nov 26)"}
+        ],
+        "note": "Statuses from ESPN's game page (read Nov 26 evening) and SI Betting (Nov 23); sources disagree on some names. Final Friday game-day report not out yet."
+      },
+      "sources": [
+        {"site": "Sports Betting Dime", "url": "https://www.sportsbettingdime.com/news/nfl/broncos-steelers-predictions-expert-picks-black-friday-nov-27/"},
+        {"site": "SI Betting", "url": "https://www.si.com/betting/broncos-vs-steelers-prediction-odds-spread-injuries-trends-for-nfl-week-12-2026"},
+        {"site": "CBS Sports", "url": "https://www.cbssports.com/nfl/news/thanksgiving-games-black-friday-nfl-expert-picks-lions-bears-steelers/"},
+        {"site": "Mile High Huddle (SI)", "url": "https://www.si.com/nfl/broncos/onsi/mile-high-roundtable-broncos-at-steelers-predictions-on-black-friday"},
+        {"site": "ATS.io", "url": "https://ats.io/nfl/broncos-vs-steelers-prediction-preview-november-27-2026/"},
+        {"site": "SportsGambler", "url": "https://www.sportsgambler.com/betting-tips/nfl/denver-broncos-vs-pittsburgh-steelers-prediction-odds-2026-11-27/"},
+        {"site": "ESPN (odds, injuries)", "url": "https://www.espn.com/nfl/odds/_/gameId/401873083"}
+      ]
+    }
+  },
+  "notes": "Night-before pass (evening run Nov 26); the Friday morning run will refresh it. Lines moved: opened DEN -1.5, SI/CBS quote -3, ESPN/DraftKings now -4.5 (ML -229), total 36.5-38.5. SBD gives no predicted final score. One source (rg.org) failed to load. Mile High Huddle had 10 staff scores; only the author's is listed."
+}
