@@ -192,7 +192,7 @@ function card(r, i){
   const chip = r.section==='watch' ? '<span class="chip" style="color:#2A1C00;background:linear-gradient(180deg,#FADB80,#D9A12A);letter-spacing:.08em;text-transform:uppercase">Watch list</span>'
     : (r.section==='short' ? '<span class="chip" style="color:#fff;background:linear-gradient(180deg,#D44444,#A12222);letter-spacing:.08em;text-transform:uppercase">-2000+</span>' : '');
   const lg = r.status==='logged' ? `<span class="chip" style="color:#C7CEDC;background:#1A2236;border:1px solid #2E3B5C" title="Price logged ${esc(r.logged_label)}">Logged ${ml(r.logged_ml)}${r.late?' · late':''}</span>`
-    : '<span class="chip" style="color:#9AA4BA;background:#121A2C;border:1px solid #26314B" title="The price is logged 3-6 hours before the listed start">Not logged yet</span>';
+    : '<span class="chip" style="color:#9AA4BA;background:#121A2C;border:1px solid #26314B" title="The price is logged 5-8 hours (ITF 10-13) before Kalshi's listed time">Not logged yet</span>';
   return `<button type="button" class="card card-in" style="animation-delay:${delay}ms" onclick="location.hash='e-${esc(r.event)}'">
     <div class="row between" style="align-items:flex-start"><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span class="tip">${esc(r.start_pt)}</span>
       <span style="font-size:12px;color:var(--muted)">${esc(r.tour)} · ${esc(tname(r))}${r.round?' · '+esc(r.round):''}${r.surface?' · '+esc(r.surface):''}</span></div>
@@ -227,10 +227,10 @@ function listView(){
   const rec = DATA.recent.filter(r=>r.tab===TAB);
   h += `<section><div class="sec-head"><h2 class="cond">Recent results</h2><span class="cnt">${rec.length}</span><div class="rule"></div><span style="font-size:12px;color:var(--dim)">last 48 hours · <a href="results.html">all results</a></span></div>
     <div class="panel" style="padding:6px 16px 10px;margin-bottom:26px">${rec.map(r=>`<div class="tbl-row" style="grid-template-columns:auto minmax(0,1fr) auto auto">
-      <span class="wl" style="${r.status==='won'?FORM.g:(r.status==='lost'?FORM.r:'background:#1C2438;color:#8B95AB')}">${r.status==='won'?'W':(r.status==='lost'?'L':'V')}</span>
+      <span class="wl" title="${esc(r.void_reason||'')}" style="${r.status==='won'?FORM.g:(r.status==='lost'?FORM.r:'background:#1C2438;color:#8B95AB')}">${r.status==='won'?'W':(r.status==='lost'?'L':'V')}</span>
       <span style="min-width:0">${esc(r.fav.name)} <span style="color:var(--dim)">vs ${esc(r.opp.name)} · ${esc(tname(r))}</span></span>
       <span class="cond" style="font-weight:700">${ml(r.ml)}</span><span style="font-size:12px;color:var(--dim)">${r.score}/${r.max}</span></div>`).join('') || '<div style="color:var(--muted);font-size:14px;padding:10px 0">Nothing graded in the last 48 hours.</div>'}</div></section>`;
-  h += `<p style="font-size:12px;color:var(--dim);line-height:1.6">Sources: prices and results from Kalshi (read-only) · Elo, serve/return and recent matches from Tennis Abstract · previews from Last Word On Tennis. Each match is logged once, 3-6 hours before Kalshi's listed start (listed starts are estimates). Tracking only, not betting advice.</p>`;
+  h += `<p style="font-size:12px;color:var(--dim);line-height:1.6">Sources: prices and results from Kalshi (read-only) · Elo, serve/return and recent matches from Tennis Abstract · previews from Last Word On Tennis. Each match's price is logged once, 5-8 hours (ITF 10-13 hours) before Kalshi's listed time, which usually runs after the real start (ITF times shown are estimates, about 4.5 hours earlier than Kalshi lists). A match that settles within 45 minutes of its log is graded void (the price was taken mid-match). Tracking only, not betting advice.</p>`;
   return h;
 }
 function detailView(r){

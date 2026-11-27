@@ -30,10 +30,15 @@ TIERS = [("t800", "-800 to -1000", 800 / 900, 1000 / 1100), ("t1000", "-1000 to 
 TOP, MID = 25, 50
 COMEBACK = (50, 2.0, 25)      # Elo rank <= 50 and official rank >= 2 x Elo rank + 25 -> "Elo well above ranking" flag
 
-# When the pregame price is logged: the first tick 3-6 h before Kalshi's listed start (listed starts are estimates;
-# some matches start well before them, so closer to the start risks an in-play price).
-LOG_WINDOW_H = (3.0, 6.0)
-LATE_LOG_H = 1.0              # first seen inside 3 h of the listed start: logged as "late" down to 1 h before
+# When the pregame price is logged, in hours before Kalshi's listed time (`occurrence_datetime`). The listed time is NOT
+# the start (measured Nov 26 on 200 settled events per series, settlement minus listed time): ITF median -3.0 h, 10th
+# percentile -4.4 h (91% settle before it); Challenger median -0.4 h, p10 -1.5 h; ATP/WTA median +1 to +2 h, p10 -1.5 h.
+# Windows sit before the earliest likely start. (window, late floor): logged on the first tick inside the window, or
+# "late" down to the floor when the price first reaches -800 after the window.
+LOG_WINDOW_H = {"main": (5.0, 8.0), "itf": (10.0, 13.0)}
+LATE_LOG_H = {"main": 4.0, "itf": 8.0}
+EST_START_H = {"main": 0.0, "itf": 4.5}     # shown start = listed time minus this (ITF listed times run ~4-5 h late)
+INPLAY_GUARD_MIN = 45         # settled within 45 min of the log = the price was taken mid-match: graded void
 STAKE = 100.0                 # results in dollars per $100 risked on the favorite
 FEE_RATE = 0.07
 

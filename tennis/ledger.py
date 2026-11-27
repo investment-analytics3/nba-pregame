@@ -54,9 +54,14 @@ def entry(sc: dict, now: datetime, late: bool) -> dict:
             "status": "open", "winner": None, "pnl": None, "graded_utc": None}
 
 
-def grade(row: dict, winner: str | None, void: bool, now: datetime):
-    if void:
-        row.update(status="void", pnl=0.0)
+def grade(row: dict, winner: str | None, void: bool, now: datetime, settled_ts: str | None = None):
+    inplay = False
+    if settled_ts and (winner or void):
+        st = datetime.fromisoformat(settled_ts.replace("Z", "+00:00"))
+        inplay = (st - datetime.fromisoformat(row["logged_utc"])).total_seconds() < C.INPLAY_GUARD_MIN * 60
+    if void or inplay:
+        row.update(status="void", pnl=0.0, void_reason="logged mid-match" if inplay and not void else "walkover / no ball played",
+                   winner=winner)
     elif winner:
         from tennis.sources import norm
         won = norm(winner) == norm(row["fav"]["name"])

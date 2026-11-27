@@ -4,7 +4,7 @@
   refresh  Tennis Abstract Elo (daily), Last Word On Tennis preview links (hourly)
   scan     open Kalshi singles matches (ATP, WTA, Challengers, ITF); favorites at -800 or shorter starting within 30 h
   players  Tennis Abstract summary files for main-tab players (cached 2 days, a few per tick)
-  log      each match once, 3-6 h before its listed start (down to 1 h as "late"), frozen in data/tennis/ledger.json
+  log      each match once, 5-8 h (ITF 10-13 h) before Kalshi's listed time, which runs late; frozen in data/tennis/ledger.json
   history  newly settled Kalshi matches (hourly): ITF form, played yesterday, travel, grading
   grade    logged matches from Kalshi's result (void = walkover / retirement before a ball)
   publish  docs/tennis/index.html, results.html, results.csv, summary.json (on change, else hourly)
@@ -88,7 +88,7 @@ def scan(now, log=print) -> list[dict]:
                 continue
             st = datetime.fromisoformat(m["start"].replace("Z", "+00:00"))
             h = (st - now).total_seconds() / 3600
-            if not (-3 <= h <= 30):
+            if not (-3 <= h <= 36):
                 continue
             prices = [S.price_of(p) or 0 for p in m["players"]]
             fav = 0 if prices[0] >= prices[1] else 1
@@ -160,8 +160,8 @@ def main():
             continue
         sc["hours"] = m["hours"]
         scored.append(sc)
-        lo, hi = C.LOG_WINDOW_H
-        if m["event"] not in have and C.LATE_LOG_H <= m["hours"] <= hi and sc["price"]:
+        lo, hi = C.LOG_WINDOW_H[sc["tab"]]
+        if m["event"] not in have and C.LATE_LOG_H[sc["tab"]] <= m["hours"] <= hi and sc["price"]:
             led["matches"].append(L.entry(sc, now, late=m["hours"] < lo))
             have.add(m["event"])
             logged += 1
@@ -173,13 +173,13 @@ def main():
             continue
         h = hist.rows.get(r["event"])
         if h:
-            L.grade(r, h["w"], h["v"], now)
+            L.grade(r, h["w"], h["v"], now, settled_ts=h.get("ts"))
         elif not a.no_fetch and direct < 20 and now - datetime.fromisoformat(r["start"].replace("Z", "+00:00")) > timedelta(hours=8):
             direct += 1
             e = S.kalshi_event(r["event"])
             m = S.match_from_event(e) if e else None
             if m and (m["winner"] or m["void"]):
-                L.grade(r, m["winner"], m["void"], now)
+                L.grade(r, m["winner"], m["void"], now, settled_ts=m.get("settled_ts"))
         graded += r["status"] != "open"
     if not a.no_fetch:
         L.save(led)

@@ -147,6 +147,12 @@ class Ledger(unittest.TestCase):
         L.grade(lo, "Some Qualifier", False, now)
         v = copy.deepcopy(r)
         L.grade(v, None, True, now)
+        early = copy.deepcopy(r)                             # settled 20 min after the log: price was mid-match
+        L.grade(early, "Jannik Sinner", False, now, settled_ts=(now + timedelta(minutes=20)).isoformat())
+        self.assertEqual((early["status"], early["void_reason"]), ("void", "logged mid-match"))
+        ok = copy.deepcopy(r)
+        L.grade(ok, "Jannik Sinner", False, now, settled_ts=(now + timedelta(hours=6)).isoformat())
+        self.assertEqual(ok["status"], "won")
         st = L.stats([w, lo, v])
         self.assertEqual((st["won"], st["lost"], st["void"], st["n"]), (1, 1, 1, 2))
         self.assertEqual(st["avg_ml"], -1329)
@@ -161,9 +167,9 @@ class Tick(unittest.TestCase):
         base = json.loads(read("kalshi_itf_open.json"))["events"]
         now = datetime.now(timezone.utc).replace(microsecond=0)
         evs = copy.deepcopy(base)
-        for i, e in enumerate(evs):              # listed starts 4 h, 10 h, ... from now
+        for i, e in enumerate(evs):              # ITF listed times 11 h, 17 h, ... from now (window 10-13 h)
             for mk in e["markets"]:
-                mk["occurrence_datetime"] = (now + timedelta(hours=4 + 6 * i)).isoformat().replace("+00:00", "Z")
+                mk["occurrence_datetime"] = (now + timedelta(hours=11 + 6 * i)).isoformat().replace("+00:00", "Z")
         with tempfile.TemporaryDirectory() as tmp:
             d = os.path.join(tmp, "data")
             with mock.patch.object(tick, "DATA", d), mock.patch.object(L, "DATA", d), \
@@ -178,7 +184,7 @@ class Tick(unittest.TestCase):
                 tick.main()
                 with open(os.path.join(d, "ledger.json")) as f:
                     led = json.load(f)
-                self.assertEqual([r["fav"]["name"] for r in led["matches"]], ["Karan Singh"])   # 93c, 4 h out
+                self.assertEqual([r["fav"]["name"] for r in led["matches"]], ["Karan Singh"])   # 93c, 11 h out
                 self.assertEqual(led["matches"][0]["tab"], "itf")
                 with open(os.path.join(tmp, "docs", "index.html")) as f:
                     html = f.read()

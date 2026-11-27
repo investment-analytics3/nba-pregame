@@ -1,7 +1,7 @@
 """Settled Kalshi singles matches (all tours), kept 28 days: ITF form, who played yesterday, travel, and grading.
 
 data/tennis/history/<YYYY-MM>.json = [{"e": event, "s": series, "d": play date, "t": tournament, "r": round,
-"p": [player, player], "w": winner or null, "v": void}, ...] (the play date is the settlement day, UTC).
+"p": [player, player], "w": winner or null, "v": void, "ts": settlement time}, ...] (play date = settlement day, UTC).
 """
 from __future__ import annotations
 
@@ -57,7 +57,8 @@ class History:
             return False
         new = m["event"] not in self.rows
         self.rows[m["event"]] = {"e": m["event"], "s": m["series"], "d": d, "t": m["tourney"], "r": m["round"],
-                                 "p": [p["name"] for p in m["players"]], "w": m["winner"], "v": m["void"]}
+                                 "p": [p["name"] for p in m["players"]], "w": m["winner"], "v": m["void"],
+                                 "ts": m["settled_ts"]}
         self._by_player = None
         return new
 

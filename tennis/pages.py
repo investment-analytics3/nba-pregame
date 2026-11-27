@@ -30,7 +30,12 @@ def show(row: dict, status: str) -> dict:
     """Board card from a ledger row or a live scored match (both carry the same compact fields)."""
     r = dict(row)
     r["status"] = status
-    r["start_pt"] = pt_label(r["start"]) if r.get("start") else ""
+    if r.get("start"):
+        off = C.EST_START_H.get(r.get("tab"), 0.0)
+        st = datetime.fromisoformat(r["start"].replace("Z", "+00:00")) - timedelta(hours=off)
+        r["start_pt"] = ("about " if off else "") + pt_label(st.isoformat())
+    else:
+        r["start_pt"] = ""
     return r
 
 
@@ -90,7 +95,7 @@ def publish(led: dict, scored: list[dict], elo: dict, now: datetime):
                                                                 pages_url=C.SITE + "/"))
     led_rows = sorted(rows, key=lambda r: r["start"], reverse=True)
     for r in led_rows:
-        r["start_pt"] = pt_label(r["start"])
+        r["start_pt"] = show(r, r["status"])["start_pt"]
         r["hero_band"] = band_of(r)
     with open(os.path.join(DOCS, "results.html"), "w") as f:
         f.write(env.get_template("tennis_results.html.j2").render(
