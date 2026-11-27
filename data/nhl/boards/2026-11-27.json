@@ -3,8 +3,8 @@
  "date_label": "Friday, November 27",
  "kind": "board",
  "season": 2027,
- "built_at": "2026-11-27T12:00:57-08:00",
- "built_label": "Fri Nov 27, 12:00 PM PT",
+ "built_at": "2026-11-27T13:00:42-08:00",
+ "built_label": "Fri Nov 27, 1:00 PM PT",
  "metrics_through": "2026-11-25",
  "metrics_through_label": "Nov 25",
  "max": 40,
@@ -965,8 +965,8 @@
    "tip_utc": "2026-11-27T18:00:00+00:00",
    "tip_pt": "10:00 AM PT",
    "day_et": "2026-11-27",
-   "state": "in",
-   "detail": "End of 2nd",
+   "state": "post",
+   "detail": "Final",
    "neutral": false,
    "venue": "TD Garden",
    "favorite": "home",
@@ -1891,7 +1891,7 @@
    },
    "score": {
     "home": 1,
-    "away": 2
+    "away": 3
    }
   },
   {
@@ -1899,8 +1899,8 @@
    "tip_utc": "2026-11-27T18:00:00+00:00",
    "tip_pt": "10:00 AM PT",
    "day_et": "2026-11-27",
-   "state": "in",
-   "detail": "20:00 - 3rd",
+   "state": "post",
+   "detail": "Final/SO",
    "neutral": false,
    "venue": "Bridgestone Arena",
    "favorite": "away",
@@ -2669,8 +2669,8 @@
    },
    "locked_at": "2026-11-27T09:00:47-08:00",
    "score": {
-    "home": 2,
-    "away": 3
+    "home": 5,
+    "away": 6
    }
   },
   {
@@ -2678,8 +2678,8 @@
    "tip_utc": "2026-11-27T20:00:00+00:00",
    "tip_pt": "12:00 PM PT",
    "day_et": "2026-11-27",
-   "state": "pre",
-   "detail": "11/27 - 3:00 PM EST",
+   "state": "in",
+   "detail": "20:00 - 2nd",
    "neutral": false,
    "venue": "Xfinity Mobile Arena",
    "favorite": "home",
@@ -3465,7 +3465,11 @@
     "bid": 0.68,
     "ask": 0.69
    },
-   "locked_at": "2026-11-27T11:00:56-08:00"
+   "locked_at": "2026-11-27T11:00:56-08:00",
+   "score": {
+    "home": 1,
+    "away": 0
+   }
   },
   {
    "id": "401892804",
@@ -4638,7 +4642,7 @@
      "name": "Dylan Garand",
      "last": "Garand",
      "espn_id": "4697705",
-     "confirmed": false
+     "confirmed": true
     },
     "goalie_status": "regular",
     "regular_goalie_name": "D. Garand",
@@ -4762,7 +4766,7 @@
       "rule": "Goalie",
       "name": "NYR's regular goalie starts",
       "pass": true,
-      "detail": "Dylan Garand (probable)"
+      "detail": "Dylan Garand (confirmed)"
      },
      {
       "rule": "Matchup",
@@ -5075,7 +5079,7 @@
      "pts": "Points %"
     }
    },
-   "summary": "Not a top-7 vs bottom-7 matchup (NYR #13, CHI #31). Dylan Garand in goal for NYR (probable). NYR 1-2-0 in its last 3, CHI 3-0-0.",
+   "summary": "Not a top-7 vs bottom-7 matchup (NYR #13, CHI #31). Dylan Garand in goal for NYR (confirmed). NYR 1-2-0 in its last 3, CHI 3-0-0.",
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV27NYRCHI",
@@ -5090,7 +5094,7 @@
    "tip_pt": "11:00 AM PT",
    "day_et": "2026-11-27",
    "state": "in",
-   "detail": "End of 1st",
+   "detail": "19:51 - 3rd",
    "neutral": false,
    "venue": "Enterprise Center",
    "favorite": "away",
@@ -5894,7 +5898,7 @@
    "locked_at": "2026-11-27T10:00:47-08:00",
    "score": {
     "home": 2,
-    "away": 0
+    "away": 2
    }
   },
   {
@@ -5902,8 +5906,8 @@
    "tip_utc": "2026-11-27T20:00:00+00:00",
    "tip_pt": "12:00 PM PT",
    "day_et": "2026-11-27",
-   "state": "pre",
-   "detail": "11/27 - 3:00 PM EST",
+   "state": "in",
+   "detail": "End of 1st",
    "neutral": false,
    "venue": "Capital One Arena",
    "favorite": "away",
@@ -6655,7 +6659,11 @@
     "bid": 0.51,
     "ask": 0.52
    },
-   "locked_at": "2026-11-27T11:00:56-08:00"
+   "locked_at": "2026-11-27T11:00:56-08:00",
+   "score": {
+    "home": 1,
+    "away": 0
+   }
   },
   {
    "id": "401892807",
@@ -7443,9 +7451,9 @@
    "lean": "No lean",
    "kalshi": {
     "event": "KXNHLGAME-26NOV27WPGNYI",
-    "fav_prob": 0.525,
-    "bid": 0.52,
-    "ask": 0.53
+    "fav_prob": 0.515,
+    "bid": 0.51,
+    "ask": 0.52
    }
   },
   {
@@ -9062,8 +9070,8 @@
    "tip_utc": "2026-11-27T20:00:00+00:00",
    "tip_pt": "12:00 PM PT",
    "day_et": "2026-11-27",
-   "state": "pre",
-   "detail": "11/27 - 3:00 PM EST",
+   "state": "in",
+   "detail": "End of 1st",
    "neutral": false,
    "venue": "Benchmark International Arena",
    "favorite": "home",
@@ -9836,15 +9844,19 @@
     "bid": 0.54,
     "ask": 0.55
    },
-   "locked_at": "2026-11-27T11:00:56-08:00"
+   "locked_at": "2026-11-27T11:00:56-08:00",
+   "score": {
+    "home": 0,
+    "away": 2
+   }
   },
   {
    "id": "401892796",
    "tip_utc": "2026-11-27T18:00:00+00:00",
    "tip_pt": "10:00 AM PT",
    "day_et": "2026-11-27",
-   "state": "in",
-   "detail": "17:41 - 3rd",
+   "state": "post",
+   "detail": "Final",
    "neutral": false,
    "venue": "Prudential Center",
    "favorite": "home",
@@ -10649,7 +10661,7 @@
    },
    "locked_at": "2026-11-27T09:00:47-08:00",
    "score": {
-    "home": 2,
+    "home": 5,
     "away": 3
    }
   },
@@ -11443,8 +11455,8 @@
    "tip_utc": "2026-11-27T20:00:00+00:00",
    "tip_pt": "12:00 PM PT",
    "day_et": "2026-11-27",
-   "state": "pre",
-   "detail": "11/27 - 3:00 PM EST",
+   "state": "in",
+   "detail": "20:00 - 2nd",
    "neutral": false,
    "venue": "Nationwide Arena",
    "favorite": "home",
@@ -12210,7 +12222,11 @@
     "bid": 0.55,
     "ask": 0.56
    },
-   "locked_at": "2026-11-27T11:00:56-08:00"
+   "locked_at": "2026-11-27T11:00:56-08:00",
+   "score": {
+    "home": 0,
+    "away": 1
+   }
   }
  ],
  "notes": [],
@@ -12222,7 +12238,7 @@
   "in_range": 1,
   "qualified": 0,
   "watch": 1,
-  "built_label": "Fri Nov 27, 12:00 PM PT"
+  "built_label": "Fri Nov 27, 1:00 PM PT"
  },
  "power_table": [
   {
