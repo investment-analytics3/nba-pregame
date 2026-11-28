@@ -1,7 +1,7 @@
 {
- "date": "2026-11-27",
+ "date": "2026-11-28",
  "season": 2027,
- "built_at": "2026-11-27T18:00:44-08:00",
+ "built_at": "2026-11-27T19:15:47-08:00",
  "league": {
   "opp_efg": [
    32.86,
@@ -740,23 +740,278 @@
  },
  "games": [
   {
-   "id": "401926756",
-   "tip_utc": "2026-11-28T00:00:00+00:00",
-   "tip_pt": "4:00 PM PT",
-   "day_et": "2026-11-27",
-   "away_abbr": "LEH",
-   "home_abbr": "UCSB",
-   "fav_abbr": "UCSB",
-   "dog_abbr": "LEH",
+   "id": "401920890",
+   "tip_utc": "2026-11-28T17:00:00+00:00",
+   "tip_pt": "9:00 AM PT",
+   "day_et": "2026-11-28",
+   "away_abbr": "SIE",
+   "home_abbr": "HALL",
+   "fav_abbr": "HALL",
+   "dog_abbr": "SIE",
+   "fav_home": true,
+   "spread": -17.5,
+   "away_names": [
+    "Siena",
+    "Siena Saints"
+   ],
+   "home_names": [
+    "Seton Hall",
+    "Seton Hall Pirates"
+   ],
+   "tier": "watch",
+   "tier_label": "Watch list",
+   "tracked": true,
+   "readout": true,
+   "alerts": false,
+   "score": 23,
+   "fav_b2b": false,
+   "fav_defense": {
+    "last3": {
+     "opp_efg": {
+      "v": 40.75,
+      "r": 8
+     },
+     "def": {
+      "v": 84.56,
+      "r": 4
+     }
+    },
+    "season": {
+     "opp_efg": {
+      "v": 42.84,
+      "r": 15
+     },
+     "def": {
+      "v": 87.94,
+      "r": 9
+     }
+    }
+   },
+   "kalshi_event": "KXNCAAMBGAME-26NOV28SIEHALL",
+   "locked": false
+  },
+  {
+   "id": "401922224",
+   "tip_utc": "2026-11-28T19:00:00+00:00",
+   "tip_pt": "11:00 AM PT",
+   "day_et": "2026-11-28",
+   "away_abbr": "UNF",
+   "home_abbr": "COLU",
+   "fav_abbr": "COLU",
+   "dog_abbr": "UNF",
+   "fav_home": true,
+   "spread": -15.5,
+   "away_names": [
+    "North Florida",
+    "North Florida Ospreys"
+   ],
+   "home_names": [
+    "Columbia",
+    "Columbia Lions"
+   ],
+   "tier": "watch",
+   "tier_label": "Watch list",
+   "tracked": true,
+   "readout": true,
+   "alerts": false,
+   "score": 22,
+   "fav_b2b": false,
+   "fav_defense": {
+    "last3": {
+     "opp_efg": {
+      "v": 36.34,
+      "r": 2
+     },
+     "def": {
+      "v": 80.91,
+      "r": 1
+     }
+    },
+    "season": {
+     "opp_efg": {
+      "v": 42.72,
+      "r": 13
+     },
+     "def": {
+      "v": 90.21,
+      "r": 19
+     }
+    }
+   },
+   "kalshi_event": "KXNCAAMBGAME-26NOV28UNFCLMB",
+   "locked": false
+  },
+  {
+   "id": "401920077",
+   "tip_utc": "2026-11-28T19:00:00+00:00",
+   "tip_pt": "11:00 AM PT",
+   "day_et": "2026-11-28",
+   "away_abbr": "MRST",
+   "home_abbr": "GMU",
+   "fav_abbr": "GMU",
+   "dog_abbr": "MRST",
+   "fav_home": true,
+   "spread": -19.5,
+   "away_names": [
+    "Marist",
+    "Marist Red Foxes"
+   ],
+   "home_names": [
+    "George Mason",
+    "George Mason Patriots"
+   ],
+   "tier": "watch",
+   "tier_label": "Watch list",
+   "tracked": true,
+   "readout": true,
+   "alerts": false,
+   "score": 20,
+   "fav_b2b": false,
+   "fav_defense": {
+    "last3": {
+     "opp_efg": {
+      "v": 47.42,
+      "r": 82
+     },
+     "def": {
+      "v": 86.2,
+      "r": 8
+     }
+    },
+    "season": {
+     "opp_efg": {
+      "v": 45.04,
+      "r": 35
+     },
+     "def": {
+      "v": 87.42,
+      "r": 7
+     }
+    }
+   },
+   "kalshi_event": "KXNCAAMBGAME-26NOV28MRSTGMU",
+   "locked": false
+  },
+  {
+   "id": "401920917",
+   "tip_utc": "2026-11-28T20:00:00+00:00",
+   "tip_pt": "12:00 PM PT",
+   "day_et": "2026-11-28",
+   "away_abbr": "NIU",
+   "home_abbr": "EIU",
+   "fav_abbr": "NIU",
+   "dog_abbr": "EIU",
+   "fav_home": false,
+   "spread": -11.5,
+   "away_names": [
+    "Northern Illinois",
+    "Northern Illinois Huskies"
+   ],
+   "home_names": [
+    "Eastern Illinois",
+    "Eastern Illinois Panthers"
+   ],
+   "tier": "watch",
+   "tier_label": "Watch list",
+   "tracked": true,
+   "readout": true,
+   "alerts": false,
+   "score": 18,
+   "fav_b2b": false,
+   "fav_defense": {
+    "last3": {
+     "opp_efg": {
+      "v": 48.2,
+      "r": 103
+     },
+     "def": {
+      "v": 110.86,
+      "r": 216
+     }
+    },
+    "season": {
+     "opp_efg": {
+      "v": 52.8,
+      "r": 245
+     },
+     "def": {
+      "v": 115.96,
+      "r": 296
+     }
+    }
+   },
+   "kalshi_event": "KXNCAAMBGAME-26NOV28NIUEIU",
+   "locked": false
+  },
+  {
+   "id": "401917549",
+   "tip_utc": "2026-11-28T21:00:00+00:00",
+   "tip_pt": "1:00 PM PT",
+   "day_et": "2026-11-28",
+   "away_abbr": "UNCO",
+   "home_abbr": "USD",
+   "fav_abbr": "USD",
+   "dog_abbr": "UNCO",
    "fav_home": true,
    "spread": -13.5,
    "away_names": [
-    "Lehigh",
-    "Lehigh Mountain Hawks"
+    "Northern Colorado",
+    "Northern Colorado Bears"
    ],
    "home_names": [
-    "UC Santa Barbara",
-    "UC Santa Barbara Gauchos"
+    "San Diego",
+    "San Diego Toreros"
+   ],
+   "tier": "watch",
+   "tier_label": "Watch list",
+   "tracked": true,
+   "readout": true,
+   "alerts": false,
+   "score": 18,
+   "fav_b2b": false,
+   "fav_defense": {
+    "last3": {
+     "opp_efg": {
+      "v": 42.42,
+      "r": 19
+     },
+     "def": {
+      "v": 89.78,
+      "r": 17
+     }
+    },
+    "season": {
+     "opp_efg": {
+      "v": 51.38,
+      "r": 195
+     },
+     "def": {
+      "v": 101.2,
+      "r": 101
+     }
+    }
+   },
+   "kalshi_event": "KXNCAAMBGAME-26NOV28UNCOUSD",
+   "locked": false
+  },
+  {
+   "id": "401921158",
+   "tip_utc": "2026-11-28T19:00:00+00:00",
+   "tip_pt": "11:00 AM PT",
+   "day_et": "2026-11-28",
+   "away_abbr": "DSU",
+   "home_abbr": "NCAT",
+   "fav_abbr": "NCAT",
+   "dog_abbr": "DSU",
+   "fav_home": true,
+   "spread": -10.5,
+   "away_names": [
+    "Delaware State",
+    "Delaware State Hornets"
+   ],
+   "home_names": [
+    "North Carolina A&T",
+    "North Carolina A&T Aggies"
    ],
    "tier": "out",
    "tier_label": "No track",
@@ -768,148 +1023,148 @@
    "fav_defense": {
     "last3": {
      "opp_efg": {
-      "v": 47.42,
-      "r": 83
+      "v": 43.12,
+      "r": 21
      },
      "def": {
-      "v": 103.37,
-      "r": 116
-     }
-    },
-    "season": {
-     "opp_efg": {
-      "v": 49.75,
-      "r": 144
-     },
-     "def": {
-      "v": 103.66,
-      "r": 136
-     }
-    }
-   },
-   "kalshi_event": "KXNCAAMBGAME-26NOV27UCSBLEH",
-   "locked": true
-  },
-  {
-   "id": "401909789",
-   "tip_utc": "2026-11-27T22:00:00+00:00",
-   "tip_pt": "2:00 PM PT",
-   "day_et": "2026-11-27",
-   "away_abbr": "VILL",
-   "home_abbr": "KU",
-   "fav_abbr": "KU",
-   "dog_abbr": "VILL",
-   "fav_home": true,
-   "spread": -10.5,
-   "away_names": [
-    "Villanova",
-    "Villanova Wildcats"
-   ],
-   "home_names": [
-    "Kansas",
-    "Kansas Jayhawks"
-   ],
-   "tier": "out",
-   "tier_label": "No track",
-   "tracked": false,
-   "readout": false,
-   "alerts": false,
-   "score": 15,
-   "fav_b2b": false,
-   "fav_defense": {
-    "last3": {
-     "opp_efg": {
-      "v": 50.53,
-      "r": 155
-     },
-     "def": {
-      "v": 111.01,
-      "r": 219
-     }
-    },
-    "season": {
-     "opp_efg": {
-      "v": 44.78,
+      "v": 93.6,
       "r": 30
+     }
+    },
+    "season": {
+     "opp_efg": {
+      "v": 46.11,
+      "r": 57
      },
      "def": {
-      "v": 95.43,
-      "r": 49
+      "v": 98.36,
+      "r": 71
      }
     }
    },
-   "kalshi_event": "KXNCAAMBGAME-26NOV27VILLKU",
-   "locked": true
+   "kalshi_event": "KXNCAAMBGAME-26NOV28DSUNCAT",
+   "locked": false
   },
   {
-   "id": "401920382",
-   "tip_utc": "2026-11-27T22:00:00+00:00",
-   "tip_pt": "2:00 PM PT",
-   "day_et": "2026-11-27",
-   "away_abbr": "ODU",
-   "home_abbr": "VT",
-   "fav_abbr": "VT",
-   "dog_abbr": "ODU",
+   "id": "401919736",
+   "tip_utc": "2026-11-28T19:00:00+00:00",
+   "tip_pt": "11:00 AM PT",
+   "day_et": "2026-11-28",
+   "away_abbr": "CHST",
+   "home_abbr": "BRAD",
+   "fav_abbr": "BRAD",
+   "dog_abbr": "CHST",
    "fav_home": true,
-   "spread": -17.5,
+   "spread": -15.5,
    "away_names": [
-    "Old Dominion",
-    "Old Dominion Monarchs"
+    "Chicago State",
+    "Chicago State Cougars"
    ],
    "home_names": [
-    "Virginia Tech",
-    "Virginia Tech Hokies"
+    "Bradley",
+    "Bradley Braves"
    ],
    "tier": "out",
    "tier_label": "No track",
    "tracked": false,
    "readout": false,
    "alerts": false,
-   "score": 15,
+   "score": 17,
    "fav_b2b": false,
    "fav_defense": {
     "last3": {
      "opp_efg": {
-      "v": 62.65,
-      "r": 352
+      "v": 55.33,
+      "r": 282
      },
      "def": {
-      "v": 118.17,
-      "r": 306
+      "v": 106.74,
+      "r": 159
      }
     },
     "season": {
      "opp_efg": {
-      "v": 54.39,
-      "r": 285
+      "v": 49.37,
+      "r": 128
      },
      "def": {
-      "v": 103.81,
-      "r": 139
+      "v": 99.86,
+      "r": 85
      }
     }
    },
-   "kalshi_event": "KXNCAAMBGAME-26NOV27ODUVT",
-   "locked": true
+   "kalshi_event": "KXNCAAMBGAME-26NOV28CHSBRAD",
+   "locked": false
   },
   {
-   "id": "401920737",
-   "tip_utc": "2026-11-28T01:00:00+00:00",
-   "tip_pt": "5:00 PM PT",
-   "day_et": "2026-11-27",
-   "away_abbr": "NE",
-   "home_abbr": "NU",
-   "fav_abbr": "NU",
-   "dog_abbr": "NE",
+   "id": "401920160",
+   "tip_utc": "2026-11-28T22:00:00+00:00",
+   "tip_pt": "2:00 PM PT",
+   "day_et": "2026-11-28",
+   "away_abbr": "WEB",
+   "home_abbr": "CSUF",
+   "fav_abbr": "CSUF",
+   "dog_abbr": "WEB",
    "fav_home": true,
-   "spread": -12.5,
+   "spread": -11.5,
    "away_names": [
-    "Northeastern",
-    "Northeastern Huskies"
+    "Weber State",
+    "Weber State Wildcats"
    ],
    "home_names": [
-    "Northwestern",
-    "Northwestern Wildcats"
+    "Cal State Fullerton",
+    "Cal State Fullerton Titans"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "readout": false,
+   "alerts": false,
+   "score": 17,
+   "fav_b2b": false,
+   "fav_defense": {
+    "last3": {
+     "opp_efg": {
+      "v": 45.9,
+      "r": 48
+     },
+     "def": {
+      "v": 104.14,
+      "r": 126
+     }
+    },
+    "season": {
+     "opp_efg": {
+      "v": 48.1,
+      "r": 96
+     },
+     "def": {
+      "v": 110.33,
+      "r": 228
+     }
+    }
+   },
+   "kalshi_event": "KXNCAAMBGAME-26NOV28WEBCSF",
+   "locked": false
+  },
+  {
+   "id": "401921186",
+   "tip_utc": "2026-11-28T23:00:00+00:00",
+   "tip_pt": "3:00 PM PT",
+   "day_et": "2026-11-28",
+   "away_abbr": "BUCK",
+   "home_abbr": "PENN",
+   "fav_abbr": "PENN",
+   "dog_abbr": "BUCK",
+   "fav_home": true,
+   "spread": -15.5,
+   "away_names": [
+    "Bucknell",
+    "Bucknell Bison"
+   ],
+   "home_names": [
+    "Pennsylvania",
+    "Pennsylvania Quakers"
    ],
    "tier": "out",
    "tier_label": "No track",
@@ -922,96 +1177,45 @@
     "last3": {
      "opp_efg": {
       "v": 52.38,
-      "r": 217
+      "r": 218
      },
      "def": {
-      "v": 113.61,
-      "r": 258
+      "v": 108.92,
+      "r": 190
      }
     },
     "season": {
      "opp_efg": {
-      "v": 48.93,
-      "r": 115
+      "v": 53.81,
+      "r": 278
      },
      "def": {
-      "v": 104.41,
-      "r": 146
+      "v": 109.23,
+      "r": 202
      }
     }
    },
-   "kalshi_event": "KXNCAAMBGAME-26NOV27NENW",
-   "locked": true
+   "kalshi_event": "KXNCAAMBGAME-26NOV28BUCKPENN",
+   "locked": false
   },
   {
-   "id": "401922264",
-   "tip_utc": "2026-11-28T01:00:00+00:00",
-   "tip_pt": "5:00 PM PT",
-   "day_et": "2026-11-27",
-   "away_abbr": "IDHO",
-   "home_abbr": "WSU",
-   "fav_abbr": "WSU",
-   "dog_abbr": "IDHO",
+   "id": "401911242",
+   "tip_utc": "2026-11-28T23:00:00+00:00",
+   "tip_pt": "3:00 PM PT",
+   "day_et": "2026-11-28",
+   "away_abbr": "VMI",
+   "home_abbr": "RICH",
+   "fav_abbr": "RICH",
+   "dog_abbr": "VMI",
    "fav_home": true,
-   "spread": -11.5,
+   "spread": -15.5,
    "away_names": [
-    "Idaho",
-    "Idaho Vandals"
+    "VMI",
+    "VMI Keydets"
    ],
    "home_names": [
-    "Washington State",
-    "Washington State Cougars"
-   ],
-   "tier": "out",
-   "tier_label": "No track",
-   "tracked": false,
-   "readout": false,
-   "alerts": false,
-   "score": 14,
-   "fav_b2b": false,
-   "fav_defense": {
-    "last3": {
-     "opp_efg": {
-      "v": 46.75,
-      "r": 68
-     },
-     "def": {
-      "v": 101.34,
-      "r": 86
-     }
-    },
-    "season": {
-     "opp_efg": {
-      "v": 54.29,
-      "r": 282
-     },
-     "def": {
-      "v": 110.33,
-      "r": 227
-     }
-    }
-   },
-   "kalshi_event": "KXNCAAMBGAME-26NOV27IDHOWSU",
-   "locked": true
-  },
-  {
-   "id": "401920541",
-   "tip_utc": "2026-11-27T22:30:00+00:00",
-   "tip_pt": "2:30 PM PT",
-   "day_et": "2026-11-27",
-   "away_abbr": "MICH",
-   "home_abbr": "KSU",
-   "fav_abbr": "MICH",
-   "dog_abbr": "KSU",
-   "fav_home": false,
-   "spread": -10.5,
-   "away_names": [
-    "Michigan",
-    "Michigan Wolverines"
-   ],
-   "home_names": [
-    "Kansas State",
-    "Kansas State Wildcats"
+    "Richmond",
+    "Richmond Spiders"
    ],
    "tier": "out",
    "tier_label": "No track",
@@ -1019,50 +1223,101 @@
    "readout": false,
    "alerts": false,
    "score": 12,
-   "fav_b2b": true,
+   "fav_b2b": false,
    "fav_defense": {
     "last3": {
      "opp_efg": {
-      "v": 55.5,
-      "r": 286
+      "v": 55.29,
+      "r": 281
      },
      "def": {
-      "v": 127.22,
-      "r": 352
+      "v": 117.37,
+      "r": 298
      }
     },
     "season": {
      "opp_efg": {
-      "v": 49.23,
-      "r": 123
+      "v": 52.66,
+      "r": 237
      },
      "def": {
-      "v": 108.73,
-      "r": 193
+      "v": 108.69,
+      "r": 192
      }
     }
    },
-   "kalshi_event": "KXNCAAMBGAME-26NOV27MICHKSU",
-   "locked": true
+   "kalshi_event": "KXNCAAMBGAME-26NOV28VMIRICH",
+   "locked": false
   },
   {
-   "id": "401902282",
-   "tip_utc": "2026-11-27T20:00:00+00:00",
-   "tip_pt": "12:00 PM PT",
-   "day_et": "2026-11-27",
-   "away_abbr": "BELL",
-   "home_abbr": "BTLR",
-   "fav_abbr": "BTLR",
-   "dog_abbr": "BELL",
+   "id": "401917550",
+   "tip_utc": "2026-11-29T00:00:00+00:00",
+   "tip_pt": "4:00 PM PT",
+   "day_et": "2026-11-28",
+   "away_abbr": "UTU",
+   "home_abbr": "SCU",
+   "fav_abbr": "SCU",
+   "dog_abbr": "UTU",
    "fav_home": true,
-   "spread": -18.5,
+   "spread": -17.5,
    "away_names": [
-    "Bellarmine",
-    "Bellarmine Knights"
+    "Utah Tech",
+    "Utah Tech Trailblazers"
    ],
    "home_names": [
-    "Butler",
-    "Butler Bulldogs"
+    "Santa Clara",
+    "Santa Clara Broncos"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "readout": false,
+   "alerts": false,
+   "score": 12,
+   "fav_b2b": false,
+   "fav_defense": {
+    "last3": {
+     "opp_efg": {
+      "v": 63.66,
+      "r": 356
+     },
+     "def": {
+      "v": 119.86,
+      "r": 322
+     }
+    },
+    "season": {
+     "opp_efg": {
+      "v": 51.91,
+      "r": 212
+     },
+     "def": {
+      "v": 105.77,
+      "r": 158
+     }
+    }
+   },
+   "kalshi_event": "KXNCAAMBGAME-26NOV28UTUSCU",
+   "locked": false
+  },
+  {
+   "id": "401929048",
+   "tip_utc": "2026-11-28T20:00:00+00:00",
+   "tip_pt": "12:00 PM PT",
+   "day_et": "2026-11-28",
+   "away_abbr": "WIU",
+   "home_abbr": "CCU",
+   "fav_abbr": "CCU",
+   "dog_abbr": "WIU",
+   "fav_home": true,
+   "spread": -11.5,
+   "away_names": [
+    "Western Illinois",
+    "Western Illinois Leathernecks"
+   ],
+   "home_names": [
+    "Coastal Carolina",
+    "Coastal Carolina Chanticleers"
    ],
    "tier": "out",
    "tier_label": "No track",
@@ -1074,27 +1329,78 @@
    "fav_defense": {
     "last3": {
      "opp_efg": {
-      "v": 46.45,
-      "r": 63
+      "v": 51.86,
+      "r": 198
      },
      "def": {
-      "v": 101.31,
-      "r": 85
+      "v": 108.97,
+      "r": 192
      }
     },
     "season": {
      "opp_efg": {
-      "v": 48.31,
-      "r": 100
+      "v": 51.24,
+      "r": 187
      },
      "def": {
-      "v": 100.53,
-      "r": 94
+      "v": 110.79,
+      "r": 234
      }
     }
    },
-   "kalshi_event": "KXNCAAMBGAME-26NOV27BELLBUT",
-   "locked": true
+   "kalshi_event": "KXNCAAMBGAME-26NOV28WIUCCAR",
+   "locked": false
+  },
+  {
+   "id": "401924913",
+   "tip_utc": "2026-11-28T20:00:00+00:00",
+   "tip_pt": "12:00 PM PT",
+   "day_et": "2026-11-28",
+   "away_abbr": "RGV",
+   "home_abbr": "UNLV",
+   "fav_abbr": "UNLV",
+   "dog_abbr": "RGV",
+   "fav_home": true,
+   "spread": -10.5,
+   "away_names": [
+    "UT Rio Grande Valley",
+    "UT Rio Grande Valley Vaqueros"
+   ],
+   "home_names": [
+    "UNLV",
+    "UNLV Rebels"
+   ],
+   "tier": "out",
+   "tier_label": "No track",
+   "tracked": false,
+   "readout": false,
+   "alerts": false,
+   "score": 11,
+   "fav_b2b": false,
+   "fav_defense": {
+    "last3": {
+     "opp_efg": {
+      "v": 53.14,
+      "r": 236
+     },
+     "def": {
+      "v": 107.06,
+      "r": 163
+     }
+    },
+    "season": {
+     "opp_efg": {
+      "v": 54.56,
+      "r": 290
+     },
+     "def": {
+      "v": 109.25,
+      "r": 203
+     }
+    }
+   },
+   "kalshi_event": "KXNCAAMBGAME-26NOV28UTRGVUNLV",
+   "locked": false
   }
  ]
 }
