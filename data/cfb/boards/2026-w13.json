@@ -1,624 +1,16 @@
 {
  "season": 2026,
  "week": 13,
- "built_at": "2026-11-27T15:30:39-08:00",
- "built_label": "Fri Nov 27, 3:30 PM PT",
+ "built_at": "2026-11-27T19:54:49-08:00",
+ "built_label": "Fri Nov 27, 7:54 PM PT",
  "games": [
-  {
-   "id": "401862838",
-   "kick_utc": "2026-11-27T20:30:00+00:00",
-   "kick_pt": "Fri 12:30 PM PT",
-   "day_et": "2026-11-27",
-   "state": "in",
-   "detail": "6:27 - 4th",
-   "neutral": false,
-   "venue": "Simmons Bank Liberty Stadium",
-   "favorite": "home",
-   "fav_home": true,
-   "spread": -19.5,
-   "open_spread": -17.5,
-   "line_source": "DraftKings",
-   "total": 66.5,
-   "fav_ml": -1100.0,
-   "movement": 2.0,
-   "home": {
-    "code": 235,
-    "abbr": "MEM",
-    "name": "Memphis",
-    "display": "Memphis Tigers",
-    "season": {
-     "off_epa": 0.188,
-     "off_sr": 0.4826,
-     "def_epa": 0.0652,
-     "def_sr": 0.411,
-     "games": 11,
-     "ranks": {
-      "off_epa": 16,
-      "off_sr": 25,
-      "def_epa": 91,
-      "def_sr": 45
-     }
-    },
-    "last3": {
-     "off_epa": 0.2605,
-     "off_sr": 0.4931,
-     "def_epa": 0.146,
-     "def_sr": 0.4299,
-     "games": 3,
-     "ranks": {
-      "off_epa": 6,
-      "off_sr": 19,
-      "def_epa": 111,
-      "def_sr": 70
-     }
-    },
-    "net": 0.1228,
-    "net_rank": 31,
-    "record": "8-3",
-    "last2_results": [
-     "W",
-     "L"
-    ],
-    "last3_results": [
-     "W",
-     "W",
-     "L"
-    ],
-    "rest": 6,
-    "qb": {
-     "regular": "Marcus Stokes",
-     "dropbacks": 342,
-     "epa_db": 0.216,
-     "rank": 30
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 38,
-     "fpi": 55,
-     "own_net": 31
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.906
-   },
-   "away": {
-    "code": 218,
-    "abbr": "TEM",
-    "name": "Temple",
-    "display": "Temple Owls",
-    "season": {
-     "off_epa": 0.0923,
-     "off_sr": 0.4358,
-     "def_epa": 0.1722,
-     "def_sr": 0.496,
-     "games": 11,
-     "ranks": {
-      "off_epa": 50,
-      "off_sr": 82,
-      "def_epa": 131,
-      "def_sr": 134
-     }
-    },
-    "last3": {
-     "off_epa": -0.0607,
-     "off_sr": 0.375,
-     "def_epa": 0.2083,
-     "def_sr": 0.5179,
-     "games": 3,
-     "ranks": {
-      "off_epa": 104,
-      "off_sr": 121,
-      "def_epa": 130,
-      "def_sr": 133
-     }
-    },
-    "net": -0.0798,
-    "net_rank": 112,
-    "record": "2-9",
-    "last2_results": [
-     "L",
-     "L"
-    ],
-    "last3_results": [
-     "L",
-     "L",
-     "L"
-    ],
-    "rest": 7,
-    "qb": {
-     "regular": "Ajani Sheppard",
-     "dropbacks": 185,
-     "epa_db": 0.024,
-     "rank": 89
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 118,
-     "fpi": 114,
-     "own_net": 112
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.094
-   },
-   "fav": 235,
-   "dog": 218,
-   "scoring": {
-    "qualified": false,
-    "tier": "watch",
-    "tier_label": "Watch list",
-    "tracked": true,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 24 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 MEM last-3 top 25 in 2 of 4 \u00b7 \u2713 TEM last-3 bottom 25 (114+) in 3 of 4 \u00b7 \u2717 MEM season outside 1-69: Def EPA allowed #91 \u00b7 \u2713 TEM season top 25 in none"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key player newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "No injury report (warning only; health assumed full)"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
-      "pass": true,
-      "detail": "TEM: consensus #118, ESPN FPI #114"
-     }
-    ],
-    "fails": [
-     "Watch list: score 24 (qualifies at 28)"
-    ],
-    "hero": {
-     "score": 24,
-     "band": "yellow",
-     "parts": {
-      "fav_strength": 5,
-      "dog_weakness": 13,
-      "health": 4,
-      "home": 1,
-      "rest": 0,
-      "form": 1
-     },
-     "max": 40
-    },
-    "call": "Watch list",
-    "flags": [
-     {
-      "level": "yellow",
-      "text": "No injury report for MEM yet: check before betting"
-     }
-    ]
-   },
-   "fav_defense_top25": false,
-   "kalshi": {
-    "event": "KXNCAAFGAME-26NOV27TEMMEM",
-    "fav_prob": 0.895,
-    "bid": 0.89,
-    "ask": 0.9
-   },
-   "locked_at": "2026-11-27T11:30:38-08:00",
-   "readout": {
-    "matchup": "TEM @ MEM",
-    "fav": "MEM",
-    "dog": "TEM",
-    "summary": "Everyone expects Memphis to win; the split is whether it covers 18.5. Memphis (8-3, 5-0 at home) leads the nation in total offense (520.8 yards per game) and is about 91% to win in both ESPN's predictor and the Dimers model. Temple is 2-9 and has lost five straight. Covers, The Rx and Fox's model back Memphis on the spread, while Predictem and Doc's Sports take Temple +17.5 because Memphis allows 209.7 rushing yards a game. Dimers projects 41-22 and, like Covers and Fox, likes the Under. Temple coach K.C. Keeler expects Jaxon Smolik to take most snaps while Ajani Sheppard recovers from an ankle injury. Memphis has allowed 30+ points in four of its last five, so a backdoor cover is the risk.",
-    "picks": [
-     {
-      "source": "Covers",
-      "side": "fav",
-      "bet": "Memphis -17.5; Under 65.5",
-      "price": "MEM 89%",
-      "note": "Memphis more motivated; Temple playing out a 2-9 season"
-     },
-     {
-      "source": "Yahoo Sports (Commercial Appeal)",
-      "side": "fav",
-      "bet": "Memphis to win",
-      "note": "Memphis offense gets back on track; Temple lacks firepower"
-     },
-     {
-      "source": "Yahoo Sports (College Football News)",
-      "side": "fav",
-      "bet": "Memphis (line -17.5)",
-      "note": "Memphis takes this down with ease"
-     },
-     {
-      "source": "Fox Sports The Gambler",
-      "side": "fav",
-      "bet": "Memphis -18.5; Under 66.5",
-      "price": "MEM -1136",
-      "note": "team strength algorithm"
-     },
-     {
-      "source": "Dimers",
-      "side": "fav",
-      "bet": "Under 66.5 (model 55.2%); Memphis wins 91.5%",
-      "price": "MEM 89c (Novig)",
-      "note": "model cover chance at -18.5 only 50.4%"
-     },
-     {
-      "source": "BangTheBook",
-      "side": "fav",
-      "bet": "Memphis moneyline",
-      "price": "MEM -1050",
-      "note": "unbeaten at home; Temple lost five straight, allows 211.8 rush yds"
-     },
-     {
-      "source": "BetMGM",
-      "side": "fav",
-      "bet": "Model: Memphis wins (94.5%), Temple +17 covers (67.4%)",
-      "price": "MEM -900",
-      "note": "game simulations"
-     },
-     {
-      "source": "The Rx",
-      "side": "fav",
-      "bet": "Memphis -17.5 (-112); Over 66",
-      "price": "MEM -875",
-      "note": "Memphis offense and 5-0 home record"
-     },
-     {
-      "source": "Predictem",
-      "side": "fav",
-      "bet": "Temple +17.5 (spread only)",
-      "note": "Memphis allows 209.7 rush yds (131st); Temple runs 185.5"
-     },
-     {
-      "source": "Doc's Sports",
-      "side": "fav",
-      "bet": "Temple +17.5 (spread only)",
-      "note": "Temple's run game vs a soft Memphis run defense"
-     }
-    ],
-    "scores": [
-     {
-      "source": "Yahoo Sports (Commercial Appeal)",
-      "fav": 42,
-      "dog": 17
-     },
-     {
-      "source": "Yahoo Sports (College Football News)",
-      "fav": 44,
-      "dog": 20
-     },
-     {
-      "source": "Fox Sports The Gambler",
-      "fav": 41,
-      "dog": 18
-     },
-     {
-      "source": "Dimers",
-      "fav": 41,
-      "dog": 22
-     },
-     {
-      "source": "Predictem",
-      "fav": 40,
-      "dog": 26
-     }
-    ],
-    "injuries": {
-     "fav": [],
-     "dog": [
-      {
-       "player": "Ajani Sheppard",
-       "status": "Questionable",
-       "note": "QB, ankle; Jaxon Smolik expected to play most snaps, Sheppard possibly in packages (PHL Sports Now, Nov 27; Inquirer, Nov 23)"
-      },
-      {
-       "player": "Sam Brown V",
-       "status": "Out",
-       "note": "RB, out for the season (PHL Sports Now, Nov 27)"
-      }
-     ],
-     "note": "No official availability report; Temple also has injuries in the secondary, at running back and on the offensive line (Inquirer, PHL Sports Now). No source reports any Memphis injuries."
-    },
-    "sources": [
-     {
-      "site": "Yahoo Sports (Commercial Appeal)",
-      "url": "https://sports.yahoo.com/articles/memphis-vs-temple-scouting-report-123950809.html"
-     },
-     {
-      "site": "Yahoo Sports (College Football News)",
-      "url": "https://sports.yahoo.com/college-football/articles/college-football-black-friday-predictions-101902520.html"
-     },
-     {
-      "site": "Covers",
-      "url": "https://www.covers.com/ncaaf/temple-vs-memphis-prediction-picks-nov-27-2026"
-     },
-     {
-      "site": "Fox Sports The Gambler",
-      "url": "https://foxphlgambler.iheart.com/content/2026-11-26-temple-vs-memphis-football-prediction-odds-nov-27/"
-     },
-     {
-      "site": "Dimers",
-      "url": "https://www.dimers.com/cfb/news/temple-vs-memphis-prediction-11-27-2026-ac"
-     },
-     {
-      "site": "BangTheBook",
-      "url": "https://bangthebook.com/temple-owls-vs-memphis-tigers-prediction-2026-11-27/"
-     },
-     {
-      "site": "BetMGM",
-      "url": "https://sports.betmgm.com/en/blog/college-football/temple-memphis-prediction-odds-player-prop-bets-picks-ncaaf-week-13-jaa/"
-     },
-     {
-      "site": "Predictem",
-      "url": "https://www.predictem.com/college-football/temple-vs-memphis-black-friday-pick-odds-and-preview/"
-     },
-     {
-      "site": "The Rx",
-      "url": "https://www.therx.com/college-football/temple-memphis-aac-betting-picks-nov-27-2026/56188/"
-     },
-     {
-      "site": "Doc's Sports",
-      "url": "https://www.docsports.com/free-picks/football/2026/temple-owls-vs-memphis-tigers-prediction-11-27-2026-college-football-picks-best-bets-odds.html"
-     },
-     {
-      "site": "PHL Sports Now (Temple QB)",
-      "url": "https://phlsportsnow.com/temple-football-preview-can-the-owls-play-spoiler-at-memphis/"
-     },
-     {
-      "site": "Philadelphia Inquirer (Temple QB)",
-      "url": "https://www.inquirer.com/college-sports/temple/kc-keeler-lost-season-program-changes-memphis-preview-20261123.html"
-     },
-     {
-      "site": "ESPN (matchup predictor)",
-      "url": "https://www.espn.com/college-football/game/_/gameId/401862838/temple-memphis"
-     }
-    ],
-    "updated": "2026-11-27T06:40-08:00"
-   },
-   "score": {
-    "home": 31,
-    "away": 28
-   }
-  },
-  {
-   "id": "401864549",
-   "kick_utc": "2026-11-27T20:30:00+00:00",
-   "kick_pt": "Fri 12:30 PM PT",
-   "day_et": "2026-11-27",
-   "state": "in",
-   "detail": "12:18 - 4th",
-   "neutral": false,
-   "venue": "CEFCU Stadium",
-   "favorite": "away",
-   "fav_home": false,
-   "spread": -10.5,
-   "open_spread": -11.5,
-   "line_source": "DraftKings",
-   "total": 40.5,
-   "fav_ml": -410.0,
-   "movement": -1.0,
-   "home": {
-    "code": 23,
-    "abbr": "SJSU",
-    "name": "San Jos\u00e9 St",
-    "display": "San Jos\u00e9 State Spartans",
-    "season": {
-     "off_epa": -0.0481,
-     "off_sr": 0.4021,
-     "def_epa": 0.0077,
-     "def_sr": 0.4591,
-     "games": 12,
-     "ranks": {
-      "off_epa": 122,
-      "off_sr": 122,
-      "def_epa": 56,
-      "def_sr": 113
-     }
-    },
-    "last3": {
-     "off_epa": -0.1267,
-     "off_sr": 0.3571,
-     "def_epa": 0.0343,
-     "def_sr": 0.4884,
-     "games": 3,
-     "ranks": {
-      "off_epa": 118,
-      "off_sr": 125,
-      "def_epa": 66,
-      "def_sr": 118
-     }
-    },
-    "net": -0.0558,
-    "net_rank": 100,
-    "record": "5-7",
-    "last2_results": [
-     "L",
-     "L"
-    ],
-    "last3_results": [
-     "W",
-     "L",
-     "L"
-    ],
-    "rest": 5,
-    "qb": {
-     "regular": "Luke Weaver",
-     "dropbacks": 322,
-     "epa_db": 0.106,
-     "rank": 59
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 110,
-     "fpi": 112,
-     "own_net": 100
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.249
-   },
-   "away": {
-    "code": 2449,
-    "abbr": "NDSU",
-    "name": "N Dakota St",
-    "display": "North Dakota State Bison",
-    "season": {
-     "off_epa": -0.0189,
-     "off_sr": 0.424,
-     "def_epa": -0.1484,
-     "def_sr": 0.3988,
-     "games": 11,
-     "ranks": {
-      "off_epa": 115,
-      "off_sr": 98,
-      "def_epa": 4,
-      "def_sr": 25
-     }
-    },
-    "last3": {
-     "off_epa": 0.0409,
-     "off_sr": 0.4365,
-     "def_epa": -0.1256,
-     "def_sr": 0.4021,
-     "games": 3,
-     "ranks": {
-      "off_epa": 75,
-      "off_sr": 64,
-      "def_epa": 22,
-      "def_sr": 40
-     }
-    },
-    "net": 0.1295,
-    "net_rank": 29,
-    "record": "9-2",
-    "last2_results": [
-     "W",
-     "W"
-    ],
-    "last3_results": [
-     "W",
-     "W",
-     "W"
-    ],
-    "rest": 5,
-    "qb": {
-     "regular": "Nathan Hayes",
-     "dropbacks": 283,
-     "epa_db": 0.052,
-     "rank": 74
-    },
-    "injuries_known": false,
-    "power": {
-     "consensus": 52,
-     "fpi": 75,
-     "own_net": 29
-    },
-    "key_out": [],
-    "key_long_term": [],
-    "key_questionable": [],
-    "qb_out": [],
-    "qb_active": true,
-    "injury_list": [],
-    "fpi_win": 0.751
-   },
-   "fav": 2449,
-   "dog": 23,
-   "scoring": {
-    "qualified": false,
-    "tier": "watch",
-    "tier_label": "Watch list",
-    "tracked": true,
-    "alerts": false,
-    "routes": [],
-    "route": "",
-    "rules": [
-     {
-      "rule": "A",
-      "name": "Hero score 28+",
-      "pass": false,
-      "detail": "Score 23 of 40"
-     },
-     {
-      "rule": "B",
-      "name": "Last-3 mismatch (3 of 4) with a season floor",
-      "pass": false,
-      "detail": "\u2717 NDSU last-3 top 25 in 1 of 4 \u00b7 \u2713 SJSU last-3 bottom 25 (114+) in 3 of 4 \u00b7 \u2717 NDSU season outside 1-69: Off EPA/play #115, Off success #98 \u00b7 \u2713 SJSU season top 25 in none"
-     },
-     {
-      "rule": "Injury",
-      "name": "No key player newly out or doubtful for the favorite",
-      "pass": true,
-      "detail": "No injury report (warning only; health assumed full)"
-     },
-     {
-      "rule": "Power",
-      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
-      "pass": true,
-      "detail": "SJSU: consensus #110, ESPN FPI #112"
-     }
-    ],
-    "fails": [
-     "Watch list: score 23 (qualifies at 28)"
-    ],
-    "hero": {
-     "score": 23,
-     "band": "yellow",
-     "parts": {
-      "fav_strength": 4,
-      "dog_weakness": 13,
-      "health": 4,
-      "home": 0,
-      "rest": 0,
-      "form": 2
-     },
-     "max": 40
-    },
-    "call": "Watch list",
-    "flags": [
-     {
-      "level": "yellow",
-      "text": "No injury report for NDSU yet: check before betting"
-     }
-    ]
-   },
-   "fav_defense_top25": false,
-   "kalshi": {
-    "event": "KXNCAAFGAME-26NOV27NDSUSJSU",
-    "fav_prob": 0.785,
-    "bid": 0.78,
-    "ask": 0.79
-   },
-   "locked_at": "2026-11-27T12:30:37-08:00",
-   "score": {
-    "home": 24,
-    "away": 38
-   }
-  },
   {
    "id": "401856756",
    "kick_utc": "2026-11-28T00:30:00+00:00",
    "kick_pt": "Fri 4:30 PM PT",
    "day_et": "2026-11-27",
-   "state": "pre",
-   "detail": "11/27 - 7:30 PM EST",
+   "state": "in",
+   "detail": "2:39 - 4th",
    "neutral": false,
    "venue": "Kyle Field",
    "favorite": "away",
@@ -1097,6 +489,10 @@
      }
     ],
     "updated": "2026-11-27T06:40-08:00"
+   },
+   "score": {
+    "home": 6,
+    "away": 16
    }
   },
   {
@@ -1309,15 +705,15 @@
    "fav_defense_top25": false,
    "kalshi": {
     "event": "KXNCAAFGAME-26NOV28MICHOSU",
-    "fav_prob": 0.775,
-    "bid": 0.77,
-    "ask": 0.78
+    "fav_prob": 0.785,
+    "bid": 0.78,
+    "ask": 0.79
    },
    "readout": {
     "matchup": "MICH @ OSU",
     "fav": "OSU",
     "dog": "MICH",
-    "summary": "Every source read picks Ohio State (7-4) to win at home, but most expect a close, low-scoring game. The line has dropped from 13.5 to about 10-10.5, the total is 37.5-38.5 and the moneyline is about OSU -395 to -430. The case for Ohio State is Jeremiah Smith, the nation's receiving leader, against a Michigan offense ranked 112th in EPA per play and 129th in scoring (18.3 points per game). Ohio State starts freshman Luke Fahey with Julian Sayin out, has lost three of four (including at Nebraska) and is 0-4 against the spread in its last four. The split is on the spread: SI Betting lays the 10, while CBS (six of nine CBS experts on Michigan ATS) and Predictem take Michigan +10.5. Michigan QB Bryce Underwood (hamstring) is questionable but expected to start.",
+    "summary": "Every source picks Ohio State (7-4) to win at home, but most expect a close, low-scoring game: the line has dropped from 13.5 to about 10-10.5, the total is 37.5-38.5 and the moneyline is about OSU -395 to -430. The case for Ohio State is Jeremiah Smith against a Michigan offense ranked 112th in EPA per play and scoring 18.3 points per game; Covers and The Big Lead (27-10) now join SI Betting in laying the points. Ohio State starts freshman Luke Fahey with Julian Sayin out (fractured elbow) and has lost three of four; its Friday report also drops S Terry Moore and RT Phillip Daniels to doubtful. CBS (six of nine experts) and Predictem take Michigan +10.5. Michigan QB Bryce Underwood (hamstring) is still questionable Friday but expected to start.",
     "picks": [
      {
       "source": "SI Betting (Iain MacMillan)",
@@ -1362,6 +758,18 @@
       "bet": "Model favors Ohio State",
       "price": "OSU 83.5% (ML -344)",
       "note": "model line OSU -10.5"
+     },
+     {
+      "source": "Covers (Rob Paul)",
+      "side": "fav",
+      "bet": "Ohio State -10.5 (to -12.5); top pick Under 37.5",
+      "note": "Michigan offense 96th in success rate; Unders 9 of 11"
+     },
+     {
+      "source": "The Big Lead",
+      "side": "fav",
+      "bet": "Ohio State -10.5; Under 37.5",
+      "note": "Michigan No. 75 offense vs OSU No. 15 defense"
      }
     ],
     "scores": [
@@ -1394,6 +802,11 @@
       "source": "SI Wolverine Digest (Westendorf)",
       "fav": 17,
       "dog": 13
+     },
+     {
+      "source": "The Big Lead",
+      "fav": 27,
+      "dog": 10
      }
     ],
     "injuries": {
@@ -1401,7 +814,7 @@
       {
        "player": "Julian Sayin",
        "status": "Out",
-       "note": "QB, starter; throwing-arm injury, Predictem calls it season-ending; Luke Fahey starts (Predictem Nov 25; LGHL/Yahoo Nov 27)"
+       "note": "QB, starter; fractured throwing elbow, fifth straight game missed; Luke Fahey starts (Friday report, Nov 27)"
       },
       {
        "player": "Christian Alliegro",
@@ -1411,14 +824,34 @@
       {
        "player": "Jay Timmons",
        "status": "Questionable",
-       "note": "CB (LGHL/Yahoo, Nov 27)"
+       "note": "CB (Friday report, Nov 27)"
+      },
+      {
+       "player": "Jermaine Mathews Jr.",
+       "status": "Questionable",
+       "note": "CB, added Friday (Nov 27)"
+      },
+      {
+       "player": "Terry Moore",
+       "status": "Doubtful",
+       "note": "S, down from questionable (Friday report, Nov 27)"
+      },
+      {
+       "player": "Phillip Daniels",
+       "status": "Doubtful",
+       "note": "RT, down from questionable (Friday report, Nov 27)"
+      },
+      {
+       "player": "Deshawn Stewart",
+       "status": "Out",
+       "note": "S, down from questionable (Friday report, Nov 27)"
       }
      ],
      "dog": [
       {
        "player": "Bryce Underwood",
        "status": "Questionable",
-       "note": "QB, starter; hamstring, expected to start barring a setback per ESPN's Pete Thamel; Tommy Carr backup (Big Ten report Nov 25; Yahoo Nov 26)"
+       "note": "QB, starter; hamstring, limited in practice; expected to start barring a setback (ESPN Thamel Nov 26); still questionable on Friday report (Nov 27); Tommy Carr backup"
       },
       {
        "player": "Rod Moore",
@@ -1457,13 +890,13 @@
       },
       {
        "player": "Nathaniel Owusu-Boateng",
-       "status": "Questionable",
-       "note": "LB (Nov 25)"
+       "status": "Doubtful",
+       "note": "LB, down from questionable (Friday report, Nov 27)"
       },
       {
        "player": "Jaylen Pile",
-       "status": "Questionable",
-       "note": "WR (Nov 25)"
+       "status": "Doubtful",
+       "note": "WR, down from questionable (Friday report, Nov 27)"
       },
       {
        "player": "JJ Buchanan",
@@ -1496,7 +929,7 @@
        "note": "OL (Nov 25)"
       }
      ],
-     "note": "Michigan statuses from its initial Big Ten availability report (Wed Nov 25) as reported by Yahoo/Wolverine Digest, plus the Nov 26 Underwood update. Ohio State statuses from the LGHL/Yahoo preview (Nov 27); no full Ohio State report could be opened. Recheck the game-day Big Ten report."
+     "note": "Friday availability reports (Nov 27) via Detroit Sports Nation; Michigan questionables Moore, Marsh, Marshall, Norton, Frazier, Daley and Jalen Hoffman unchanged. Earlier rows from Nov 25-27 previews."
     },
     "sources": [
      {
@@ -1538,9 +971,37 @@
      {
       "site": "Yahoo Sports / USA TODAY (Underwood questionable)",
       "url": "https://sports.yahoo.com/college-football/articles/bryce-underwood-injury-michigan-qb-014428895.html"
+     },
+     {
+      "site": "Detroit Sports Nation (Michigan Friday report)",
+      "url": "https://detroitsportsnation.com/michigan-football-friday-injury-report-ohio-state-2026/ddrysdale/college-sports/u-of-m-news/11/27/2026/511124/"
+     },
+     {
+      "site": "Detroit Sports Nation (Ohio State Friday report)",
+      "url": "https://detroitsportsnation.com/ohio-state-football-friday-injury-report-michigan-2026/ddrysdale/college-sports/u-of-m-news/11/27/2026/511129/"
+     },
+     {
+      "site": "ClickOnDetroit",
+      "url": "https://www.clickondetroit.com/all-about-ann-arbor/2026/11/26/michigan-football-qb-bryce-underwood-expected-to-play-vs-ohio-state-in-the-game-despite-hamstring-injury/"
+     },
+     {
+      "site": "Covers",
+      "url": "https://www.covers.com/ncaaf/michigan-vs-ohio-state-prediction-picks-nov-28-2026"
+     },
+     {
+      "site": "The Big Lead",
+      "url": "https://www.thebiglead.com/week-13-college-football-best-bets-ohio-state-northwestern-tulsa-ndsu-army-tennessee-hawaii-rivalry-games/"
+     },
+     {
+      "site": "CBS Sports (SportsLine model)",
+      "url": "https://www.cbssports.com/betting/news/michigan-ohio-state-prediction-odds-time-2026-college-football-rivalry-week-picks/"
+     },
+     {
+      "site": "Covers (Top 25 roundup)",
+      "url": "https://www.covers.com/ncaaf/top-25-predictions-week-13-2026"
      }
     ],
-    "updated": "2026-11-27T06:40-08:00"
+    "updated": "2026-11-27T20:15-08:00"
    }
   },
   {
@@ -1759,7 +1220,7 @@
     "matchup": "NAVY @ CLT",
     "fav": "NAVY",
     "dog": "CLT",
-    "summary": "Every source that names a winner picks Navy (4-6), which has won two straight, most recently 38-34 over Memphis with 335 rushing yards. Charlotte (1-10) has lost four in a row, the last 42-14 at Tulsa, and is 0-5 at home. The key matchup is Navy's run game (302.3 rush yards and 30.1 points per game) against a Charlotte defense allowing 184.7 rush yards and 36.7 points per game. The worries for Navy are a defense allowing 30.8 points per game, an 0-4 road record and a possible letdown before Army. Spread picks split: PickDawgz takes Navy -16.5, while Doc's Sports takes Charlotte +14.5 and BetMGM's model leans Charlotte to cover. Moneylines run about -750 to -900 and models give Navy roughly 83-89%. No injuries were reported for either team.",
+    "summary": "Every source that names a winner picks Navy (4-6), which has won two straight, most recently 38-34 over Memphis with 335 rushing yards. Charlotte (1-10) has lost four in a row, the last 42-14 at Tulsa, and is 0-5 at home. The key matchup is Navy's run game (302.3 rush yards and 30.1 points per game) against a Charlotte defense allowing 184.7 rush yards and 36.7 points per game. The worries for Navy are a defense allowing 30.8 points per game, an 0-4 road record and a possible letdown before Army. SB Nation adds Navy 35-14 and notes it has allowed 34+ in five straight. Spread picks split: PickDawgz and Sports Betting Dime take Navy -16.5, while Doc's Sports takes Charlotte +14.5 and BetMGM's model leans Charlotte to cover. Moneylines run about -750 to -900 and models give Navy roughly 83-89%. No injuries were reported for either team.",
     "picks": [
      {
       "source": "PickDawgz",
@@ -1794,6 +1255,19 @@
       "side": "dog",
       "bet": "Charlotte +14.5 (spread pick)",
       "note": "Navy defense allows 30.8 points/game (119th)"
+     },
+     {
+      "source": "Sports Betting Dime",
+      "side": "fav",
+      "bet": "Navy -16.5 + Over 54.5 (prediction market, Novig)",
+      "price": "51c",
+      "note": "Navy sustains drives; Charlotte gives Navy short fields"
+     },
+     {
+      "source": "SB Nation (via Yahoo)",
+      "side": "fav",
+      "bet": "Navy to win, 35-14",
+      "note": "QB Jackson Gutierrez vs Charlotte run D 113th"
      }
     ],
     "scores": [
@@ -1801,6 +1275,11 @@
       "source": "BettingNews",
       "fav": 34,
       "dog": 18
+     },
+     {
+      "source": "SB Nation (via Yahoo)",
+      "fav": 35,
+      "dog": 14
      }
     ],
     "injuries": {
@@ -1832,9 +1311,17 @@
      {
       "site": "Pickswise (odds board)",
       "url": "https://www.pickswise.com/college-football/games/charlotte-navy-college-football-2026-11-28-1100/"
+     },
+     {
+      "site": "Sports Betting Dime",
+      "url": "https://www.sportsbettingdime.com/news/college-football/prediction-market-picks-week-13-saturday-best-bets-nov-28-2026/"
+     },
+     {
+      "site": "Yahoo Sports (SB Nation)",
+      "url": "https://sports.yahoo.com/college-football/articles/2026-week-13-american-conference-063509030.html"
      }
     ],
-    "updated": "2026-11-27T06:40-08:00"
+    "updated": "2026-11-27T20:15-08:00"
    }
   },
   {
@@ -2053,7 +1540,7 @@
     "matchup": "LSU @ ARK",
     "fav": "LSU",
     "dog": "ARK",
-    "summary": "Every source expects LSU (6-5, 3-5 SEC) to win at Arkansas (4-7, 2-6 SEC), but they split on the 14.5-point spread. Tiger Rag's three staff picks have LSU winning by 21-28 and Pick Dawgz lays the points; Yahoo (23-20) and Beatline (24-17) predict a closer LSU win, and Doc's Sports takes Arkansas +12.5. LSU has lost three straight, all as favorites, but each of its six wins came by 21 or more. Arkansas has lost five in a row, most recently 45-3 at Texas; it scores 19.7 points per game (124th) and allows 4.4 yards per carry, worst in the SEC, against an LSU defense allowing 266.5 yards per game. LSU WRs Jackson Harris and Winston Watkins Jr. are questionable again. Yahoo adds that neither team has much to play for, which could keep it close.",
+    "summary": "Every source expects LSU (6-5, 3-5 SEC) to win at Arkansas (4-7, 2-6 SEC), but they split on the 14.5-point spread. Tiger Rag's three staff picks have LSU winning by 21-28 and Pick Dawgz lays the points; Yahoo (23-20) and Beatline (24-17) predict a closer LSU win, and Doc's Sports takes Arkansas +12.5. LSU has lost three straight, all as favorites, but each of its six wins came by 21 or more. Arkansas has lost five in a row, most recently 45-3 at Texas; it scores 19.7 points per game (124th) and allows 4.4 yards per carry, worst in the SEC, against an LSU defense allowing 266.5 yards per game. On Friday's report LSU ruled out WR Winston Watkins Jr. (its No. 2 receiver) and LB Whit Weeks, while WR Jackson Harris moved up to probable. Yahoo adds that neither team has much to play for, which could keep it close.",
     "picks": [
      {
       "source": "Pick Dawgz",
@@ -2126,17 +1613,68 @@
      "fav": [
       {
        "player": "Jackson Harris",
-       "status": "Questionable",
-       "note": "WR, missed the Tennessee game (Tiger Rag, Nov 26)"
+       "status": "Probable",
+       "note": "WR, up from questionable (Friday report, Nov 27)"
       },
       {
        "player": "Winston Watkins Jr.",
-       "status": "Questionable",
-       "note": "WR, missed the Tennessee game (Tiger Rag, Nov 26)"
+       "status": "Out",
+       "note": "WR, No. 2 receiver/slot; ruled out on Friday SEC report (Tiger Rag, Nov 27)"
+      },
+      {
+       "player": "Whit Weeks",
+       "status": "Out",
+       "note": "LB (Friday report, Nov 27)"
+      },
+      {
+       "player": "Malachi Thomas",
+       "status": "Out",
+       "note": "TE (Friday report, Nov 27)"
+      },
+      {
+       "player": "Jayce Brown",
+       "status": "Out",
+       "note": "WR (Friday report, Nov 27)"
+      },
+      {
+       "player": "Richard Anderson",
+       "status": "Out",
+       "note": "DT (Friday report, Nov 27)"
       }
      ],
-     "dog": [],
-     "note": "From Tiger Rag (Nov 26). BangTheBook found no statuses for either team (Nov 26); Beatline (Nov 23) reported no new Arkansas injuries. SEC availability report not found."
+     "dog": [
+      {
+       "player": "Phoenix Jackson",
+       "status": "Questionable",
+       "note": "LB (Friday report, Nov 27; unchanged three days)"
+      },
+      {
+       "player": "Brylan Green",
+       "status": "Questionable",
+       "note": "DB (Friday report, Nov 27; unchanged three days)"
+      },
+      {
+       "player": "Kavion Broussard",
+       "status": "Probable",
+       "note": "OL (Friday report, Nov 27; unchanged three days)"
+      },
+      {
+       "player": "Maddox Lassiter",
+       "status": "Out",
+       "note": "TE (Friday report, Nov 27; unchanged three days)"
+      },
+      {
+       "player": "Gavin Garretson",
+       "status": "Out",
+       "note": "TE (Friday report, Nov 27; unchanged three days)"
+      },
+      {
+       "player": "Braydon Lee",
+       "status": "Out",
+       "note": "DB (Friday report, Nov 27; unchanged three days)"
+      }
+     ],
+     "note": "Friday SEC availability report via Tiger Rag (Nov 27)."
     },
     "sources": [
      {
@@ -2162,9 +1700,13 @@
      {
       "site": "Beatline Sports",
       "url": "https://www.beatlinesports.com/2026/11/23/beatline-cfb-lsu-at-ark-2026-11-28/"
+     },
+     {
+      "site": "Tiger Rag (Friday report)",
+      "url": "https://www.tigerrag.com/lsu-wide-receiver-winston-watkins-jr-ruled-out-vs-arkansas/"
      }
     ],
-    "updated": "2026-11-27T06:40-08:00"
+    "updated": "2026-11-27T20:15-08:00"
    }
   },
   {
@@ -2589,9 +2131,9 @@
    "fav_defense_top25": false,
    "kalshi": {
     "event": "KXNCAAFGAME-26NOV28LIBMOSU",
-    "fav_prob": 0.895,
-    "bid": 0.89,
-    "ask": 0.9
+    "fav_prob": 0.885,
+    "bid": 0.88,
+    "ask": 0.89
    },
    "readout": {
     "matchup": "LIB @ MOST",
@@ -2707,7 +2249,7 @@
       "url": "https://scoregpt.app/ai-college-football-predictions/liberty-vs-missouri-state-2026-11-28"
      }
     ],
-    "updated": "2026-11-27T06:40-08:00"
+    "updated": "2026-11-27T20:15-08:00"
    }
   },
   {
@@ -3146,7 +2688,7 @@
     "matchup": "DUKE @ WAKE",
     "fav": "WAKE",
     "dog": "DUKE",
-    "summary": "No track: Duke is ESPN FPI #25 (power gate). All seven previews pick Wake Forest (10-1, already in the ACC title game) to win, with predicted scores from 27-14 to 38-21. They point to an offense leading the nation at 44.5 points per game, Gio Lopez (21 TD, 1 INT) and seven straight wins by 21+. Duke (7-4) has lost two straight and gained only 247 yards in a 20-10 loss to Clemson, when Walker Eget went 16 of 38 for 149 yards. Wake RB Ty Clark III is out for the season. Against the spread the sources split: Predictem and Pick Dawgz lay -14.5, while WagerTalk, Knup and Doc's back Duke +14.5, citing Duke's top-10 scoring defense (15.7 allowed), its four straight series wins and Wake having little reason to run up the score.",
+    "summary": "No track: Duke is ESPN FPI #25 (power gate). Eight of nine previews pick Wake Forest (10-1, already in the ACC title game) to win, with predicted scores from 27-14 to 38-21; the Duke-leaning Duke Basketball Report predicts a 38-35 Duke upset. They point to an offense leading the nation at 44.5 points per game, Gio Lopez (21 TD, 1 INT) and seven straight wins by 21+. Duke (7-4) has lost two straight and gained only 247 yards in a 20-10 loss to Clemson, when Walker Eget went 16 of 38 for 149 yards. Wake RB Ty Clark III is out for the season. Against the spread the sources split: Predictem and Pick Dawgz lay -14.5, while WagerTalk, Knup and Doc's back Duke +14.5, citing Duke's top-10 scoring defense (15.7 allowed), its four straight series wins and Wake having little reason to run up the score.",
     "picks": [
      {
       "source": "Predictem",
@@ -3191,6 +2733,18 @@
       "side": "dog",
       "bet": "Duke +14.5 (spread pick)",
       "note": "Duke defense allows 15.7 ppg (10th)"
+     },
+     {
+      "source": "Covers (Rob Paul)",
+      "side": "fav",
+      "bet": "Wake Forest -14.5 (to -16.5)",
+      "note": "Wake 1st in EPA/dropback; Duke pass D 107th in success rate"
+     },
+     {
+      "source": "Duke Basketball Report (SB Nation, via Yahoo)",
+      "side": "dog",
+      "bet": "Duke to win, 38-35",
+      "note": "Duke-leaning site; Duke turns Wake turnovers into points"
      }
     ],
     "scores": [
@@ -3213,6 +2767,11 @@
       "source": "Knup Sports",
       "fav": 35,
       "dog": 24
+     },
+     {
+      "source": "Duke Basketball Report",
+      "fav": 35,
+      "dog": 38
      }
     ],
     "injuries": {
@@ -3231,10 +2790,26 @@
        "player": "Devin Cook",
        "status": "Questionable",
        "note": "DB (Knup Sports, Nov 23)"
+      },
+      {
+       "player": "Langston Hardy",
+       "status": "Probable",
+       "note": "DL (Duke Basketball Report, Nov 27)"
       }
      ],
-     "dog": [],
-     "note": "From the previews; no official ACC availability report found and no Duke injury listed. QBs per Predictem: Gio Lopez (WAKE), Walker Eget (DUKE)."
+     "dog": [
+      {
+       "player": "Luke Mergott",
+       "status": "Out",
+       "note": "LB, out for the season (Duke Basketball Report, Nov 27)"
+      },
+      {
+       "player": "Kyon Loud",
+       "status": "Questionable",
+       "note": "CB (Duke Basketball Report, Nov 27)"
+      }
+     ],
+     "note": "From the previews (Nov 23-27); no official ACC availability report found."
     },
     "sources": [
      {
@@ -3264,9 +2839,17 @@
      {
       "site": "Doc's Sports",
       "url": "https://www.docsports.com/free-picks/football/2026/duke-blue-devils-vs-wake-forest-demon-deacons-prediction-11-28-2026-college-football-picks-best-bets-odds.html"
+     },
+     {
+      "site": "Yahoo Sports (Duke Basketball Report)",
+      "url": "https://sports.yahoo.com/college-football/articles/football-duke-wake-forest-preview-140000214.html"
+     },
+     {
+      "site": "Covers",
+      "url": "https://www.covers.com/ncaaf/top-25-predictions-week-13-2026"
      }
     ],
-    "updated": "2026-11-27T06:40-08:00"
+    "updated": "2026-11-27T20:15-08:00"
    }
   },
   {
@@ -3284,7 +2867,7 @@
    "open_spread": -12.5,
    "line_source": "DraftKings",
    "total": 55.5,
-   "fav_ml": -750.0,
+   "fav_ml": -800.0,
    "movement": 4.0,
    "home": {
     "code": 252,
@@ -3702,7 +3285,7 @@
     "matchup": "TENN @ VAN",
     "fav": "TENN",
     "dog": "VAN",
-    "summary": "Four of five previews back Tennessee to win and cover -13.5. Their case rests on a defense allowing 14.2 points per game that held LSU to 13 last week, and a run game averaging 213 yards against a Vanderbilt run defense ranked 92nd in opponent EPA per rush. Tennessee is 9-2, playing for a playoff spot and on three straight wins; Vanderbilt is 4-7 (1-7 SEC) after a 34-27 loss at Florida, its fourth loss in five. RB DeSean Bishop (lower body) and LB Arion Carter are questionable on Tennessee's Nov 26 report, and Vanderbilt QB Jared Curtis was hurt late at Florida but is expected to play. The contrarian is Rocky Top Insider's model: Tennessee by 12 (80.8%), so it takes Vanderbilt +13.5.",
+    "summary": "Six of seven previews back Tennessee to win and cover -13.5. Their case rests on a defense allowing 14.2 points per game that held LSU to 13 last week, and a run game averaging 213 yards against a Vanderbilt run defense ranked 92nd in opponent EPA per rush. Tennessee is 9-2, playing for a playoff spot and on three straight wins; Vanderbilt is 4-7 (1-7 SEC) after a 34-27 loss at Florida, its fourth loss in five. RB DeSean Bishop (lower body) and LB Arion Carter are still questionable on Friday's report, and Vanderbilt QB Jared Curtis was hurt late at Florida but is not on the report. The contrarian is Rocky Top Insider's model: Tennessee by 12 (80.8%), so it takes Vanderbilt +13.5.",
     "picks": [
      {
       "source": "SI Betting (Iain MacMillan)",
@@ -3737,6 +3320,18 @@
       "bet": "Vanderbilt +13.5 (spread pick); lean Over 42.5",
       "price": "TENN 80.8%; Kalshi 85c",
       "note": "model margin 12 falls short of 13.5"
+     },
+     {
+      "source": "Covers (Jason Ence)",
+      "side": "fav",
+      "bet": "Tennessee -13.5 (to -16.5); top pick Vanderbilt team total Under 15.5",
+      "note": "Vandy 7th percentile line yards allowed, 125th on 3rd down"
+     },
+     {
+      "source": "The Big Lead",
+      "side": "fav",
+      "bet": "Tennessee -13.5; Under 42.5",
+      "note": "Tennessee defense No. 1 in ESPN efficiency"
      }
     ],
     "scores": [
@@ -3749,6 +3344,11 @@
       "source": "Predictem",
       "fav": 30,
       "dog": 13
+     },
+     {
+      "source": "The Big Lead",
+      "fav": 27,
+      "dog": 10
      }
     ],
     "injuries": {
@@ -3756,12 +3356,12 @@
       {
        "player": "DeSean Bishop",
        "status": "Questionable",
-       "note": "RB, lower body; left the LSU game, Heupel said he 'looked good' Monday (Yahoo, Nov 26)"
+       "note": "RB, lower body; unchanged on Friday SEC report (Nov 27)"
       },
       {
        "player": "Arion Carter",
        "status": "Questionable",
-       "note": "LB, lower leg (Yahoo, Nov 26)"
+       "note": "LB, lower leg; unchanged on Friday SEC report (Nov 27)"
       },
       {
        "player": "Mike Matthews",
@@ -3803,7 +3403,7 @@
       {
        "player": "Jared Curtis",
        "status": "Expected to play",
-       "note": "QB, hurt late at Florida; Clark Lea expects him to play (Predictem, Nov 25); not on the Nov 26 report"
+       "note": "QB, hurt late at Florida; not on the Thursday or Friday reports (SI, Nov 27)"
       },
       {
        "player": "Clinton Azubuike",
@@ -3851,7 +3451,7 @@
        "note": "OL (Yahoo, Nov 26)"
       }
      ],
-     "note": "SEC availability report as published by Yahoo Sports Nov 26; Tennessee's Out entries are season-ending. Curtis status from Predictem. Later report updates not yet checked."
+     "note": "Friday SEC availability report (SI Volunteers, Rocky Top Insider, Nov 27); Rocky Top Insider says QB George MacIntyre has been banged up but is not listed."
     },
     "sources": [
      {
@@ -3877,9 +3477,29 @@
      {
       "site": "Yahoo Sports (injury report)",
       "url": "https://sports.yahoo.com/college-football/articles/tennessees-arion-carter-desean-bishop-012056966.html"
+     },
+     {
+      "site": "SI (Friday availability report)",
+      "url": "https://www.si.com/college/tennessee/football/tennessee-vs-vanderbilt-friday-night-availability-report-01m8fveg6p4h"
+     },
+     {
+      "site": "Rocky Top Insider (Friday report)",
+      "url": "https://www.rockytopinsider.com/2026/11/27/tennessee-football-at-vanderbilt-friday-availability-report/"
+     },
+     {
+      "site": "Covers",
+      "url": "https://www.covers.com/ncaaf/tennessee-vs-vanderbilt-prediction-picks-nov-28-2026"
+     },
+     {
+      "site": "The Big Lead",
+      "url": "https://www.thebiglead.com/week-13-college-football-best-bets-ohio-state-northwestern-tulsa-ndsu-army-tennessee-hawaii-rivalry-games/"
+     },
+     {
+      "site": "Covers (Top 25 roundup)",
+      "url": "https://www.covers.com/ncaaf/top-25-predictions-week-13-2026"
      }
     ],
-    "updated": "2026-11-27T06:40-08:00"
+    "updated": "2026-11-27T20:15-08:00"
    }
   },
   {
@@ -3896,8 +3516,8 @@
    "spread": -14.5,
    "open_spread": -10.0,
    "line_source": "DraftKings",
-   "total": 49.5,
-   "fav_ml": -700.0,
+   "total": 50.5,
+   "fav_ml": -675.0,
    "movement": 4.5,
    "home": {
     "code": 333,
@@ -4970,6 +4590,614 @@
     "home": 41,
     "away": 17
    }
+  },
+  {
+   "id": "401862838",
+   "kick_utc": "2026-11-27T20:30:00+00:00",
+   "kick_pt": "Fri 12:30 PM PT",
+   "day_et": "2026-11-27",
+   "state": "post",
+   "detail": "Final",
+   "neutral": false,
+   "venue": "Simmons Bank Liberty Stadium",
+   "favorite": "home",
+   "fav_home": true,
+   "spread": -19.5,
+   "open_spread": -17.5,
+   "line_source": "DraftKings",
+   "total": 66.5,
+   "fav_ml": -1100.0,
+   "movement": 2.0,
+   "home": {
+    "code": 235,
+    "abbr": "MEM",
+    "name": "Memphis",
+    "display": "Memphis Tigers",
+    "season": {
+     "off_epa": 0.188,
+     "off_sr": 0.4826,
+     "def_epa": 0.0652,
+     "def_sr": 0.411,
+     "games": 11,
+     "ranks": {
+      "off_epa": 16,
+      "off_sr": 25,
+      "def_epa": 91,
+      "def_sr": 45
+     }
+    },
+    "last3": {
+     "off_epa": 0.2605,
+     "off_sr": 0.4931,
+     "def_epa": 0.146,
+     "def_sr": 0.4299,
+     "games": 3,
+     "ranks": {
+      "off_epa": 6,
+      "off_sr": 19,
+      "def_epa": 111,
+      "def_sr": 70
+     }
+    },
+    "net": 0.1228,
+    "net_rank": 31,
+    "record": "8-3",
+    "last2_results": [
+     "W",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "L"
+    ],
+    "rest": 6,
+    "qb": {
+     "regular": "Marcus Stokes",
+     "dropbacks": 342,
+     "epa_db": 0.216,
+     "rank": 30
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 38,
+     "fpi": 55,
+     "own_net": 31
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.906
+   },
+   "away": {
+    "code": 218,
+    "abbr": "TEM",
+    "name": "Temple",
+    "display": "Temple Owls",
+    "season": {
+     "off_epa": 0.0923,
+     "off_sr": 0.4358,
+     "def_epa": 0.1722,
+     "def_sr": 0.496,
+     "games": 11,
+     "ranks": {
+      "off_epa": 50,
+      "off_sr": 82,
+      "def_epa": 131,
+      "def_sr": 134
+     }
+    },
+    "last3": {
+     "off_epa": -0.0607,
+     "off_sr": 0.375,
+     "def_epa": 0.2083,
+     "def_sr": 0.5179,
+     "games": 3,
+     "ranks": {
+      "off_epa": 104,
+      "off_sr": 121,
+      "def_epa": 130,
+      "def_sr": 133
+     }
+    },
+    "net": -0.0798,
+    "net_rank": 112,
+    "record": "2-9",
+    "last2_results": [
+     "L",
+     "L"
+    ],
+    "last3_results": [
+     "L",
+     "L",
+     "L"
+    ],
+    "rest": 7,
+    "qb": {
+     "regular": "Ajani Sheppard",
+     "dropbacks": 185,
+     "epa_db": 0.024,
+     "rank": 89
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 118,
+     "fpi": 114,
+     "own_net": 112
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.094
+   },
+   "fav": 235,
+   "dog": 218,
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 24 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 MEM last-3 top 25 in 2 of 4 \u00b7 \u2713 TEM last-3 bottom 25 (114+) in 3 of 4 \u00b7 \u2717 MEM season outside 1-69: Def EPA allowed #91 \u00b7 \u2713 TEM season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "TEM: consensus #118, ESPN FPI #114"
+     }
+    ],
+    "fails": [
+     "Watch list: score 24 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 24,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 5,
+      "dog_weakness": 13,
+      "health": 4,
+      "home": 1,
+      "rest": 0,
+      "form": 1
+     },
+     "max": 40
+    },
+    "call": "Watch list",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for MEM yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV27TEMMEM",
+    "fav_prob": 0.895,
+    "bid": 0.89,
+    "ask": 0.9
+   },
+   "locked_at": "2026-11-27T11:30:38-08:00",
+   "readout": {
+    "matchup": "TEM @ MEM",
+    "fav": "MEM",
+    "dog": "TEM",
+    "summary": "Everyone expects Memphis to win; the split is whether it covers 18.5. Memphis (8-3, 5-0 at home) leads the nation in total offense (520.8 yards per game) and is about 91% to win in both ESPN's predictor and the Dimers model. Temple is 2-9 and has lost five straight. Covers, The Rx and Fox's model back Memphis on the spread, while Predictem and Doc's Sports take Temple +17.5 because Memphis allows 209.7 rushing yards a game. Dimers projects 41-22 and, like Covers and Fox, likes the Under. Temple coach K.C. Keeler expects Jaxon Smolik to take most snaps while Ajani Sheppard recovers from an ankle injury. Memphis has allowed 30+ points in four of its last five, so a backdoor cover is the risk.",
+    "picks": [
+     {
+      "source": "Covers",
+      "side": "fav",
+      "bet": "Memphis -17.5; Under 65.5",
+      "price": "MEM 89%",
+      "note": "Memphis more motivated; Temple playing out a 2-9 season"
+     },
+     {
+      "source": "Yahoo Sports (Commercial Appeal)",
+      "side": "fav",
+      "bet": "Memphis to win",
+      "note": "Memphis offense gets back on track; Temple lacks firepower"
+     },
+     {
+      "source": "Yahoo Sports (College Football News)",
+      "side": "fav",
+      "bet": "Memphis (line -17.5)",
+      "note": "Memphis takes this down with ease"
+     },
+     {
+      "source": "Fox Sports The Gambler",
+      "side": "fav",
+      "bet": "Memphis -18.5; Under 66.5",
+      "price": "MEM -1136",
+      "note": "team strength algorithm"
+     },
+     {
+      "source": "Dimers",
+      "side": "fav",
+      "bet": "Under 66.5 (model 55.2%); Memphis wins 91.5%",
+      "price": "MEM 89c (Novig)",
+      "note": "model cover chance at -18.5 only 50.4%"
+     },
+     {
+      "source": "BangTheBook",
+      "side": "fav",
+      "bet": "Memphis moneyline",
+      "price": "MEM -1050",
+      "note": "unbeaten at home; Temple lost five straight, allows 211.8 rush yds"
+     },
+     {
+      "source": "BetMGM",
+      "side": "fav",
+      "bet": "Model: Memphis wins (94.5%), Temple +17 covers (67.4%)",
+      "price": "MEM -900",
+      "note": "game simulations"
+     },
+     {
+      "source": "The Rx",
+      "side": "fav",
+      "bet": "Memphis -17.5 (-112); Over 66",
+      "price": "MEM -875",
+      "note": "Memphis offense and 5-0 home record"
+     },
+     {
+      "source": "Predictem",
+      "side": "fav",
+      "bet": "Temple +17.5 (spread only)",
+      "note": "Memphis allows 209.7 rush yds (131st); Temple runs 185.5"
+     },
+     {
+      "source": "Doc's Sports",
+      "side": "fav",
+      "bet": "Temple +17.5 (spread only)",
+      "note": "Temple's run game vs a soft Memphis run defense"
+     }
+    ],
+    "scores": [
+     {
+      "source": "Yahoo Sports (Commercial Appeal)",
+      "fav": 42,
+      "dog": 17
+     },
+     {
+      "source": "Yahoo Sports (College Football News)",
+      "fav": 44,
+      "dog": 20
+     },
+     {
+      "source": "Fox Sports The Gambler",
+      "fav": 41,
+      "dog": 18
+     },
+     {
+      "source": "Dimers",
+      "fav": 41,
+      "dog": 22
+     },
+     {
+      "source": "Predictem",
+      "fav": 40,
+      "dog": 26
+     }
+    ],
+    "injuries": {
+     "fav": [],
+     "dog": [
+      {
+       "player": "Ajani Sheppard",
+       "status": "Questionable",
+       "note": "QB, ankle; Jaxon Smolik expected to play most snaps, Sheppard possibly in packages (PHL Sports Now, Nov 27; Inquirer, Nov 23)"
+      },
+      {
+       "player": "Sam Brown V",
+       "status": "Out",
+       "note": "RB, out for the season (PHL Sports Now, Nov 27)"
+      }
+     ],
+     "note": "No official availability report; Temple also has injuries in the secondary, at running back and on the offensive line (Inquirer, PHL Sports Now). No source reports any Memphis injuries."
+    },
+    "sources": [
+     {
+      "site": "Yahoo Sports (Commercial Appeal)",
+      "url": "https://sports.yahoo.com/articles/memphis-vs-temple-scouting-report-123950809.html"
+     },
+     {
+      "site": "Yahoo Sports (College Football News)",
+      "url": "https://sports.yahoo.com/college-football/articles/college-football-black-friday-predictions-101902520.html"
+     },
+     {
+      "site": "Covers",
+      "url": "https://www.covers.com/ncaaf/temple-vs-memphis-prediction-picks-nov-27-2026"
+     },
+     {
+      "site": "Fox Sports The Gambler",
+      "url": "https://foxphlgambler.iheart.com/content/2026-11-26-temple-vs-memphis-football-prediction-odds-nov-27/"
+     },
+     {
+      "site": "Dimers",
+      "url": "https://www.dimers.com/cfb/news/temple-vs-memphis-prediction-11-27-2026-ac"
+     },
+     {
+      "site": "BangTheBook",
+      "url": "https://bangthebook.com/temple-owls-vs-memphis-tigers-prediction-2026-11-27/"
+     },
+     {
+      "site": "BetMGM",
+      "url": "https://sports.betmgm.com/en/blog/college-football/temple-memphis-prediction-odds-player-prop-bets-picks-ncaaf-week-13-jaa/"
+     },
+     {
+      "site": "Predictem",
+      "url": "https://www.predictem.com/college-football/temple-vs-memphis-black-friday-pick-odds-and-preview/"
+     },
+     {
+      "site": "The Rx",
+      "url": "https://www.therx.com/college-football/temple-memphis-aac-betting-picks-nov-27-2026/56188/"
+     },
+     {
+      "site": "Doc's Sports",
+      "url": "https://www.docsports.com/free-picks/football/2026/temple-owls-vs-memphis-tigers-prediction-11-27-2026-college-football-picks-best-bets-odds.html"
+     },
+     {
+      "site": "PHL Sports Now (Temple QB)",
+      "url": "https://phlsportsnow.com/temple-football-preview-can-the-owls-play-spoiler-at-memphis/"
+     },
+     {
+      "site": "Philadelphia Inquirer (Temple QB)",
+      "url": "https://www.inquirer.com/college-sports/temple/kc-keeler-lost-season-program-changes-memphis-preview-20261123.html"
+     },
+     {
+      "site": "ESPN (matchup predictor)",
+      "url": "https://www.espn.com/college-football/game/_/gameId/401862838/temple-memphis"
+     }
+    ],
+    "updated": "2026-11-27T06:40-08:00"
+   },
+   "score": {
+    "home": 31,
+    "away": 35
+   }
+  },
+  {
+   "id": "401864549",
+   "kick_utc": "2026-11-27T20:30:00+00:00",
+   "kick_pt": "Fri 12:30 PM PT",
+   "day_et": "2026-11-27",
+   "state": "post",
+   "detail": "Final",
+   "neutral": false,
+   "venue": "CEFCU Stadium",
+   "favorite": "away",
+   "fav_home": false,
+   "spread": -10.5,
+   "open_spread": -11.5,
+   "line_source": "DraftKings",
+   "total": 40.5,
+   "fav_ml": -410.0,
+   "movement": -1.0,
+   "home": {
+    "code": 23,
+    "abbr": "SJSU",
+    "name": "San Jos\u00e9 St",
+    "display": "San Jos\u00e9 State Spartans",
+    "season": {
+     "off_epa": -0.0481,
+     "off_sr": 0.4021,
+     "def_epa": 0.0077,
+     "def_sr": 0.4591,
+     "games": 12,
+     "ranks": {
+      "off_epa": 122,
+      "off_sr": 122,
+      "def_epa": 56,
+      "def_sr": 113
+     }
+    },
+    "last3": {
+     "off_epa": -0.1267,
+     "off_sr": 0.3571,
+     "def_epa": 0.0343,
+     "def_sr": 0.4884,
+     "games": 3,
+     "ranks": {
+      "off_epa": 118,
+      "off_sr": 125,
+      "def_epa": 66,
+      "def_sr": 118
+     }
+    },
+    "net": -0.0558,
+    "net_rank": 100,
+    "record": "5-7",
+    "last2_results": [
+     "L",
+     "L"
+    ],
+    "last3_results": [
+     "W",
+     "L",
+     "L"
+    ],
+    "rest": 5,
+    "qb": {
+     "regular": "Luke Weaver",
+     "dropbacks": 322,
+     "epa_db": 0.106,
+     "rank": 59
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 110,
+     "fpi": 112,
+     "own_net": 100
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.249
+   },
+   "away": {
+    "code": 2449,
+    "abbr": "NDSU",
+    "name": "N Dakota St",
+    "display": "North Dakota State Bison",
+    "season": {
+     "off_epa": -0.0189,
+     "off_sr": 0.424,
+     "def_epa": -0.1484,
+     "def_sr": 0.3988,
+     "games": 11,
+     "ranks": {
+      "off_epa": 115,
+      "off_sr": 98,
+      "def_epa": 4,
+      "def_sr": 25
+     }
+    },
+    "last3": {
+     "off_epa": 0.0409,
+     "off_sr": 0.4365,
+     "def_epa": -0.1256,
+     "def_sr": 0.4021,
+     "games": 3,
+     "ranks": {
+      "off_epa": 75,
+      "off_sr": 64,
+      "def_epa": 22,
+      "def_sr": 40
+     }
+    },
+    "net": 0.1295,
+    "net_rank": 29,
+    "record": "9-2",
+    "last2_results": [
+     "W",
+     "W"
+    ],
+    "last3_results": [
+     "W",
+     "W",
+     "W"
+    ],
+    "rest": 5,
+    "qb": {
+     "regular": "Nathan Hayes",
+     "dropbacks": 283,
+     "epa_db": 0.052,
+     "rank": 74
+    },
+    "injuries_known": false,
+    "power": {
+     "consensus": 52,
+     "fpi": 75,
+     "own_net": 29
+    },
+    "key_out": [],
+    "key_long_term": [],
+    "key_questionable": [],
+    "qb_out": [],
+    "qb_active": true,
+    "injury_list": [],
+    "fpi_win": 0.751
+   },
+   "fav": 2449,
+   "dog": 23,
+   "scoring": {
+    "qualified": false,
+    "tier": "watch",
+    "tier_label": "Watch list",
+    "tracked": true,
+    "alerts": false,
+    "routes": [],
+    "route": "",
+    "rules": [
+     {
+      "rule": "A",
+      "name": "Hero score 28+",
+      "pass": false,
+      "detail": "Score 23 of 40"
+     },
+     {
+      "rule": "B",
+      "name": "Last-3 mismatch (3 of 4) with a season floor",
+      "pass": false,
+      "detail": "\u2717 NDSU last-3 top 25 in 1 of 4 \u00b7 \u2713 SJSU last-3 bottom 25 (114+) in 3 of 4 \u00b7 \u2717 NDSU season outside 1-69: Off EPA/play #115, Off success #98 \u00b7 \u2713 SJSU season top 25 in none"
+     },
+     {
+      "rule": "Injury",
+      "name": "No key player newly out or doubtful for the favorite",
+      "pass": true,
+      "detail": "No injury report (warning only; health assumed full)"
+     },
+     {
+      "rule": "Power",
+      "name": "Underdog not in the AP Top 25, the CFP rankings or FPI top 25",
+      "pass": true,
+      "detail": "SJSU: consensus #110, ESPN FPI #112"
+     }
+    ],
+    "fails": [
+     "Watch list: score 23 (qualifies at 28)"
+    ],
+    "hero": {
+     "score": 23,
+     "band": "yellow",
+     "parts": {
+      "fav_strength": 4,
+      "dog_weakness": 13,
+      "health": 4,
+      "home": 0,
+      "rest": 0,
+      "form": 2
+     },
+     "max": 40
+    },
+    "call": "Watch list",
+    "flags": [
+     {
+      "level": "yellow",
+      "text": "No injury report for NDSU yet: check before betting"
+     }
+    ]
+   },
+   "fav_defense_top25": false,
+   "kalshi": {
+    "event": "KXNCAAFGAME-26NOV27NDSUSJSU",
+    "fav_prob": 0.785,
+    "bid": 0.78,
+    "ask": 0.79
+   },
+   "locked_at": "2026-11-27T12:30:37-08:00",
+   "score": {
+    "home": 31,
+    "away": 38
+   }
   }
  ],
  "notes": [],
@@ -4979,15 +5207,15 @@
  ],
  "data_through": "Week 13",
  "n_fbs": 138,
- "other_fbs_games": 45,
+ "other_fbs_games": 43,
  "summary": {
   "season": 2026,
   "week": 13,
   "games": 17,
-  "upcoming": 13,
+  "upcoming": 12,
   "qualified": 0,
-  "watch": 8,
-  "other_fbs_games": 45,
-  "built_label": "Fri Nov 27, 3:30 PM PT"
+  "watch": 6,
+  "other_fbs_games": 43,
+  "built_label": "Fri Nov 27, 7:54 PM PT"
  }
 }
